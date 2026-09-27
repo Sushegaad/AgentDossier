@@ -16,7 +16,7 @@ Status: **P0** = delivered in Phase 0, **P1**–**P3** = planned phase.
 | FR-08 | Scoring | `agentdossier/score.py`, `config/scoring.json` | `tests/test_score.py` | P0 |
 | FR-09 | Search / API | web (P1), server (P2) | `eval/queries.yaml` | P1 |
 | FR-10 | Governance / provenance | `agentdossier/models.py`, `agentdossier/connectors/base.py` (snapshot store, hashes), `agentdossier/build.py` | `tests/test_dedup_build.py` | P1a (changelog in P1b) |
-| FR-11 | Public demo site | `web/src/pages/`, `web/astro.config.mjs`, `.github/workflows/pages.yml` (Astro build; offline seed catalog until the first refresh) | `.github/workflows/ci.yml` web job; Lighthouse and axe in P1d | P1c |
+| FR-11 | Public demo site | `web/src/pages/`, `web/astro.config.mjs`, `.github/workflows/pages.yml` (Astro build; offline seed catalog until the first refresh) | `.github/workflows/ci.yml` web job, `web/scripts/audit.mjs` (axe + Lighthouse gates) | P1d |
 | FR-12 | Open-source repository | `README.md`, `CONTRIBUTING.md`, `THIRD_PARTY_NOTICES.md`, `.github/workflows/ci.yml`, `.github/workflows/pages.yml`, `.github/workflows/refresh.yml`, `scripts/validate_catalog.py`, `scripts/catalog_summary.py` | CI; weekly refresh PR | P1a |
 | FR-13 | Enterprise private discovery | `agentdossier/enterprise/` (scanner in P2) | self-test in P2 | P2 |
 | FR-14 | Private data handling | `schema/resource.schema.json` (scope, tenant), `schema/catalog_index.schema.json` | P1 viewer | P0 (schema), P1 |
@@ -32,13 +32,13 @@ Status: **P0** = delivered in Phase 0, **P1**–**P3** = planned phase.
 | FR-24 | Compliance search and display | `web/src/components/SearchApp.tsx` (evidence-level filter, must-have chips), `web/src/pages/agents/[slug].astro` (evidence list with tier, status, source, link, next check) | `web/tests/search.test.ts` | P1c |
 | FR-25 | Evidence-based governance score | `agentdossier/compliance/engine.py` (governance_from_evidence, sar-score-1.1), `agentdossier/build.py` (governance_evidence per domain) | `tests/test_compliance.py` | P1b (shown beside sar-score-1.0; not yet blended) |
 | FR-26 | Evidence corrections | `CONTRIBUTING.md`, `data/curated/` (compliance.yaml, identity.yaml) | `tests/test_compliance.py` (curated) | P1b |
-| FR-27 | Intent-based onboarding | `config/intent_rules.json`, `web/src/lib/intent.ts`, `web/src/components/SearchApp.tsx` (chips, filters) | `web/tests/intent.test.ts` (runs `eval/intent_cases.yaml`) | P1c |
+| FR-27 | Intent-based onboarding | `config/intent_rules.json`, `web/src/lib/intent.ts`, `web/src/components/SearchApp.tsx` (chips, filters) | `web/tests/intent.test.ts` (52 cases in `eval/intent_cases.yaml`, ≥ 95 % gate) | P1d |
 | FR-28 | Decision lifecycle | server (P3) | P3 | P3 |
 | FR-29 | Identity and accounts | server (P2) | P2 | P2 |
 | FR-30 | Workspaces, saved searches, shortlists | `web/src/lib/shortlist.ts`, `web/src/components/ShortlistApp.tsx` (browser-local, JSON export); shareable search and compare URLs | manual | P1c (local), P2 (server) |
 | FR-31 | Watchlists and alerts | server jobs (P2) | P2 | P2 |
 | FR-32 | Policy profiles | `agentdossier/policy/engine.py`, `schema/policy.schema.json`, `config/policy_templates/` | `tests/test_policy_engine.py`, `eval/policy_cases.yaml` | P0 (engine, templates), P1 (UI) |
-| FR-33 | Recommendation explanations | `web/src/lib/search.ts` (template explanation per hit: rank, matched terms, capability, evidence tier, protocol, deployment, gaps) | `web/tests/search.test.ts` | P1c |
+| FR-33 | Recommendation explanations | `web/src/lib/search.ts` (template explanation per hit: rank, matched terms, capability, evidence tier, protocol, deployment, gaps), `config/search_synonyms.json` | `web/tests/search.test.ts` (precision@10 ≥ 0.80 on `eval/queries.yaml`) | P1d |
 | FR-34 | Collaboration and procurement workflow | server (P3) | P3 | P3 |
 | FR-35 | Internal feedback | server (P3) | P3 | P3 |
 | FR-36 | Publisher guidance | `CONTRIBUTING.md`, docs (P1) | process | P0/P1 |

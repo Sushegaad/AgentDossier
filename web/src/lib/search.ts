@@ -2,6 +2,7 @@
 // with a template explanation per result (FR-27..FR-31). Everything is deterministic.
 import MiniSearch from "minisearch";
 import rules from "../../../config/intent_rules.json";
+import synonymsFile from "../../../config/search_synonyms.json";
 import { domainLabel, frameworkName, variantLabel } from "./labels";
 import { intentIsEmpty, parseIntent, type Intent, type RequirementChip } from "./intent";
 import type { IndexRecord, SearchDoc } from "./types";
@@ -32,6 +33,14 @@ export interface SearchResult {
 }
 
 const CAPABILITY_PHRASES = (rules.dimensions as { capability: { phrases: Record<string, string[]> } }).capability.phrases;
+const SYNONYMS: Record<string, string[]> = synonymsFile.synonyms;
+
+function expand(terms: string[]): string[] {
+  const out = new Set(terms);
+  for (const t of terms) for (const s of SYNONYMS[t] ?? []) out.add(s);
+  return [...out];
+}
+
 const ECOSYSTEM_PHRASES = (rules.dimensions as { ecosystem: { phrases: Record<string, string[]> } }).ecosystem.phrases;
 
 export class Catalog {
@@ -90,13 +99,18 @@ export class Catalog {
   search(query: string, filters: Filters = {}, limit = 50): SearchResult {
     const intent = parseIntent(query);
     const strict = filters.strict ?? true;
-    const textQuery = [...intent.terms, ...intent.capability.map((c) => c.replace(/_/g, " "))].join(" ");
+    const baseTerms = [...intent.terms, ...intent.capability.map((c) => c.replace(/_/g, " "))];
+    const textQuery = expand(baseTerms).join(" ");
     const textScores = new Map<string, number>();
     if (textQuery.trim()) {
       let max = 0;
+      const nTerms = new Set(baseTerms.join(" ").toLowerCase().split(/\s+/).filter(Boolean)).size || 1;
       for (const hit of this.index.search(textQuery)) {
-        textScores.set(hit.id as string, hit.score);
-        max = Math.max(max, hit.score);
+        // reward covering more of the query, not just one common word many times
+        const coverage = Math.min(1, new Set(hit.terms).size / nTerms);
+        const s = hit.score * (0.4 + 0.6 * coverage);
+        textScores.set(hit.id as string, s);
+        max = Math.max(max, s);
       }
       for (const [id, s] of textScores) textScores.set(id, s / (max || 1));
     }
@@ -161,7 +175,7 @@ export class Catalog {
             : `listed in ${domainLabel(bestDomain.id)} (unranked)`,
         );
       } else {
-        score -= 15;
+        score -= 5; // domain words are hints, not filters: a strong text match still surfaces
         why.push(`not listed in ${intent.domain.map(domainLabel).join(" / ")}`);
       }
     } else if (bestDomain) {
@@ -181,7 +195,7 @@ export class Catalog {
       const phrases = CAPABILITY_PHRASES[cap] ?? [cap];
       const hit = phrases.find((p) => body.includes(p.toLowerCase()));
       if (hit) {
-        score += 12;
+        score += 8;
         why.push(`capability: ${hit}`);
       }
     }

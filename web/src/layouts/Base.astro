@@ -31,6 +31,7 @@ const current = (href: string) => (href === "/" ? path === "/" : path.startsWith
     <meta name="description" content={description} />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
     <link rel="ard" type="application/ai-registry+json" href={`${base}/.well-known/ard.json`} />
+    <slot name="head" />
   </head>
   <body>
     <header class="site-header">

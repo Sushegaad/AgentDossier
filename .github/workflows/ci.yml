@@ -73,6 +73,12 @@ jobs:
         run: npm run build
       - name: Smoke-check the output
         run: test -f web/dist/index.html && test -f web/dist/catalog/index.json && test -f web/dist/.well-known/ard.json
+      - name: Browser for the audit
+        working-directory: web
+        run: npx playwright install --with-deps chromium
+      - name: Launch gates (axe WCAG 2.1 AA, Lighthouse >= 85/95/90/90)
+        working-directory: web
+        run: npm run audit
 
   security:
     name: security

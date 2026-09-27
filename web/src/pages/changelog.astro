@@ -17,7 +17,7 @@ const slugOf = (id: string) => index?.records.find((r) => r.id === id)?.slug;
   {events.length === 0 ? (
     <p class="notice">No events yet. The first entries appear after the second weekly refresh.</p>
   ) : (
-    <div class="scroll-x">
+    <div class="scroll-x" tabindex="0">
       <table>
         <thead><tr><th>When</th><th>Agent</th><th>Event</th><th>Framework</th><th>Change</th></tr></thead>
         <tbody>

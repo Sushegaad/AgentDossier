@@ -32,7 +32,7 @@ export default function SearchApp(props: SearchAppProps) {
   const [docs, setDocs] = useState<SearchDoc[]>(props.docs ?? []);
   const [q, setQ] = useState(props.initialQuery ?? "");
   const [filters, setFilters] = useState<Filters>({ strict: true });
-  const [limit, setLimit] = useState(25);
+  const [limit, setLimit] = useState(10);
   const [expanded, setExpanded] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const syncUrl = props.syncUrl ?? true;
@@ -80,7 +80,8 @@ export default function SearchApp(props: SearchAppProps) {
       </div>
     );
   }
-  if (!index) return <p className="muted">Loading catalog…</p>;
+  // the wrapper reserves space so content below does not jump when results arrive (CLS)
+  if (!index) return <div style={{ minHeight: "70vh" }}><p className="muted">Loading catalog…</p></div>;
 
   const intent = result?.intent;
   const chips: { label: string; kind: string }[] = [];
@@ -96,13 +97,13 @@ export default function SearchApp(props: SearchAppProps) {
   }
 
   return (
-    <div>
+    <div style={{ minHeight: "70vh" }}>
       <form
         className="searchbox"
         role="search"
         onSubmit={(e) => {
           e.preventDefault();
-          setLimit(25);
+          setLimit(10);
         }}
       >
         <label className="sr-only" htmlFor="q">
@@ -116,7 +117,7 @@ export default function SearchApp(props: SearchAppProps) {
           placeholder="Describe what you need, e.g. “insurance claims agent that can handle PHI”"
           onChange={(e) => {
             setQ(e.target.value);
-            setLimit(25);
+            setLimit(10);
           }}
           autoComplete="off"
         />

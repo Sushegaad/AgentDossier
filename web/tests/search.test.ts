@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { existsSync, readFileSync } from "node:fs";
 import { Catalog } from "../src/lib/search";
+import { loadYaml, type EvalSet } from "./eval";
 import type { CatalogIndex, SearchDoc } from "../src/lib/types";
 
 const dir = process.env.CATALOG_DIR ?? new URL("../../data/catalog", import.meta.url).pathname;
@@ -44,28 +45,19 @@ describe.skipIf(!have)("search over the built catalog", () => {
   });
 });
 
-describe.skipIf(!have)("precision@10 on eval/queries.yaml (informational until P1d)", () => {
-  it("reports precision", () => {
-    const src = readFileSync(new URL("../../eval/queries.yaml", import.meta.url), "utf8");
-    const queries: { query: string; domain: string; relevant: string[] }[] = [];
-    let cur: (typeof queries)[number] | null = null;
-    for (const line of src.split("\n")) {
-      const q = line.match(/^\s+query: (.+)$/);
-      if (q) { cur = { query: q[1], domain: "", relevant: [] }; queries.push(cur); continue; }
-      const d = line.match(/^\s+domain: (\S+)$/);
-      if (d && cur) cur.domain = d[1];
-      const r = line.match(/^\s+- (.+)$/);
-      if (r && cur && !line.includes("id:")) cur.relevant.push(r[1]);
-    }
+describe.skipIf(!have)("precision@10 gate on eval/queries.yaml", () => {
+  it("meets the threshold", () => {
+    const set = loadYaml<EvalSet>("../../eval/queries.yaml");
     const cat = load();
-    let sum = 0;
-    for (const q of queries) {
+    const rows: { id: string; p: number; hits: string[]; missed: string[] }[] = [];
+    for (const q of set.queries) {
       const top = cat.search(q.query).hits.slice(0, 10).map((h) => h.record.name);
-      const inter = top.filter((n) => q.relevant.includes(n)).length;
-      sum += inter / Math.min(10, q.relevant.length || 1);
+      const hit = top.filter((n) => q.relevant.includes(n));
+      rows.push({ id: q.id, p: hit.length / Math.min(10, q.relevant.length || 1), hits: hit, missed: q.relevant.filter((n) => !top.includes(n)) });
     }
-    const p = sum / queries.length;
-    console.log(`precision@10 = ${p.toFixed(3)} over ${queries.length} derived queries`);
-    expect(p).toBeGreaterThan(0.3);
+    const p = rows.reduce((a, r) => a + r.p, 0) / rows.length;
+    const weak = rows.filter((r) => r.p < 0.6);
+    console.log(`precision@10 = ${p.toFixed(3)} over ${rows.length} queries (${set.version}); below 0.6: ${weak.map((r) => `${r.id}=${r.p.toFixed(2)} missed[${r.missed.join("; ")}]`).join(" | ") || "none"}`);
+    expect(p).toBeGreaterThanOrEqual(set.threshold);
   });
 });
