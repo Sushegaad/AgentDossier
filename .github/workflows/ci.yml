@@ -45,11 +45,15 @@ jobs:
       pull-requests: read  # gitleaks lists the PR's commits on pull_request events
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # gitleaks scans the base..head commit range, so the base must be present
       - uses: astral-sh/setup-uv@v5
         with:
           python-version: "3.12"
-      - name: pip-audit
-        run: uv sync --extra dev && uv run --with pip-audit pip-audit --strict --desc || true
+      - name: pip-audit (locked third-party dependencies)
+        run: |
+          uv export --extra dev --no-emit-project --format requirements-txt --frozen > /tmp/requirements.txt
+          uv run --with pip-audit pip-audit --strict --desc -r /tmp/requirements.txt
       - name: gitleaks
         uses: gitleaks/gitleaks-action@v2
         env:
