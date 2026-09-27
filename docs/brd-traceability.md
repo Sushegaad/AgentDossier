@@ -14,13 +14,13 @@ Status: **P0** = delivered in Phase 0, **P1**–**P3** = planned phase.
 | FR-06 | Identity / dedup | `agentdossier/dedup.py`, `data/review/` | `tests/test_dedup_build.py` | P1a |
 | FR-07 | Classification | `agentdossier/classify.py`, `config/taxonomy.json` | `tests/test_config.py` | P0 (keyword), P2 (model) |
 | FR-08 | Scoring | `agentdossier/score.py`, `config/scoring.json` | `tests/test_score.py` | P0 |
-| FR-09 | Search / API | web (P1), server (P2) | `eval/queries.yaml` | P1 |
+| FR-09 | Search / API | `web/src/lib/search.ts` (site), `agentdossier/server/catalog.py` + `agentdossier/server/app.py` (`POST /search`, `/explore`, `GET /agents`) | `web/tests/search.test.ts`, `tests/test_server.py` | P1d (site), P2 (API) |
 | FR-10 | Governance / provenance | `agentdossier/models.py`, `agentdossier/connectors/base.py` (snapshot store, hashes), `agentdossier/build.py` | `tests/test_dedup_build.py` | P1a (changelog in P1b) |
 | FR-11 | Public demo site | `web/src/pages/`, `web/astro.config.mjs`, `.github/workflows/pages.yml` (Astro build; offline seed catalog until the first refresh) | `.github/workflows/ci.yml` web job, `web/scripts/audit.mjs` (axe + Lighthouse gates) | P1d |
 | FR-12 | Open-source repository | `README.md`, `CONTRIBUTING.md`, `THIRD_PARTY_NOTICES.md`, `.github/workflows/ci.yml`, `.github/workflows/pages.yml`, `.github/workflows/refresh.yml`, `scripts/validate_catalog.py`, `scripts/catalog_summary.py` | CI; weekly refresh PR | P1a |
-| FR-13 | Enterprise private discovery | `agentdossier/enterprise/` (scanner in P2) | self-test in P2 | P2 |
-| FR-14 | Private data handling | `schema/resource.schema.json` (scope, tenant), `schema/catalog_index.schema.json` | P1 viewer | P0 (schema), P1 |
-| FR-15 | ARD registry API | `agentdossier/server/` (P2) | conformance CLI in P2 | P2 |
+| FR-13 | Enterprise private discovery | `agentdossier/enterprise/scanner.py`, `agentdossier/enterprise/targets.py` (hosts, CIDRs, DNS SVCB, registries), `agentdossier/enterprise/config.py` | `tests/test_enterprise.py` (loopback self-test) | P2 |
+| FR-14 | Private data handling | `schema/resource.schema.json` (scope, tenant), `agentdossier/build.py` (scope/tenant/site options), `web/src/components/PrivateCatalogApp.tsx` | `tests/test_enterprise.py` (scope=private, tenant) | P2 |
+| FR-15 | ARD registry API | `agentdossier/server/app.py` (`/.well-known/ard.json`, `POST /search`, `POST /explore`, `GET /agents`, `GET /agents/{id}`) | `tests/test_server.py` | P2 |
 | FR-16 | Seed import with score reproduction | `agentdossier/connectors/seed_xlsx.py` | `tests/test_seed_import.py`, CI step "Seed fidelity" | P0 |
 | FR-17 | Registry self-description | `web/public/.well-known/ard.json` | validated by `agentdossier/standards/ard.py` | P0 |
 | FR-18 | Corrections via GitHub | `CONTRIBUTING.md`, `data/review/` | maintainer process | P0 (process), P1 (changelog) |
@@ -34,20 +34,20 @@ Status: **P0** = delivered in Phase 0, **P1**–**P3** = planned phase.
 | FR-26 | Evidence corrections | `CONTRIBUTING.md`, `data/curated/` (compliance.yaml, identity.yaml) | `tests/test_compliance.py` (curated) | P1b |
 | FR-27 | Intent-based onboarding | `config/intent_rules.json`, `web/src/lib/intent.ts`, `web/src/components/SearchApp.tsx` (chips, filters) | `web/tests/intent.test.ts` (52 cases in `eval/intent_cases.yaml`, ≥ 95 % gate) | P1d |
 | FR-28 | Decision lifecycle | server (P3) | P3 | P3 |
-| FR-29 | Identity and accounts | server (P2) | P2 | P2 |
+| FR-29 | Identity and accounts | `agentdossier/server/auth.py` (none / static token / OIDC via Authlib, admin group), `agentdossier/server/settings.py` | `tests/test_server.py` (token mode, OIDC validation) | P2 (OIDC login; no user store by design) |
 | FR-30 | Workspaces, saved searches, shortlists | `web/src/lib/shortlist.ts`, `web/src/components/ShortlistApp.tsx` (browser-local, JSON export); shareable search and compare URLs | manual | P1c (local), P2 (server) |
-| FR-31 | Watchlists and alerts | server jobs (P2) | P2 | P2 |
+| FR-31 | Watchlists and alerts | `agentdossier/server/app.py` (scheduled scans, audit trail); alerts P3 | `tests/test_server.py` | P2 (schedule), P3 (alerts) |
 | FR-32 | Policy profiles | `agentdossier/policy/engine.py`, `schema/policy.schema.json`, `config/policy_templates/` | `tests/test_policy_engine.py`, `eval/policy_cases.yaml` | P0 (engine, templates), P1 (UI) |
 | FR-33 | Recommendation explanations | `web/src/lib/search.ts` (template explanation per hit: rank, matched terms, capability, evidence tier, protocol, deployment, gaps), `config/search_synonyms.json` | `web/tests/search.test.ts` (precision@10 ≥ 0.80 on `eval/queries.yaml`) | P1d |
 | FR-34 | Collaboration and procurement workflow | server (P3) | P3 | P3 |
 | FR-35 | Internal feedback | server (P3) | P3 | P3 |
 | FR-36 | Publisher guidance | `CONTRIBUTING.md`, docs (P1) | process | P0/P1 |
 | FR-37 | Integrations | server (P3) | P3 | P3 |
-| FR-38 | Machine constraint contract | `agentdossier/policy/engine.py`; `POST /qualify` (P2) | `tests/test_policy_engine.py` | P0 (engine), P2 (API) |
+| FR-38 | Machine constraint contract | `agentdossier/policy/engine.py`, `agentdossier/server/app.py` (`POST /qualify`, `GET /policies`), `agentdossier/server/mcp_server.py` (`qualify_agent`) | `tests/test_policy_engine.py`, `tests/test_server.py` | P2 |
 | FR-39 | Contributions via GitHub | `CONTRIBUTING.md`, `.github/CODEOWNERS` | process | P0 |
 | FR-40 | Instance analytics (optional) | server (P3) | P3 | P3 |
-| FR-41 | Dry run and self-test | `agentdossier/enterprise/` (P2) | P2 | P2 |
-| FR-42 | Preflight and operator kit | `agentdossier/enterprise/` (P2), `examples/enterprise/enterprise.json` | `tests/test_config.py` (config schema) | P0 (schema, example), P2 |
+| FR-41 | Dry run and self-test | `agentdossier/enterprise/selftest.py` (loopback publisher), `agentdossier/enterprise/scanner.py` (dry_run), CLI `enterprise selftest` / `plan` | `tests/test_enterprise.py` | P2 |
+| FR-42 | Preflight and operator kit | `agentdossier/enterprise/preflight.py`, `examples/enterprise/enterprise.json`, `deploy/Dockerfile`, `deploy/docker-compose.yml`, `docs/enterprise-runbook.md` | `tests/test_enterprise.py`, `tests/test_config.py` (schema) | P2 |
 | FR-43 | News sources | `agentdossier/news/sources.py` (Hacker News, GDELT with circuit breaker, GitHub releases, vendor RSS/Atom, NVD) | `tests/test_news.py` | P1b |
 | FR-44 | Entity linking | `agentdossier/news/linking.py` (link_confidence ≥ 0.85, distinctive names) | `tests/test_news.py` | P1b |
 | FR-45 | Ranking and diversity | `agentdossier/news/linking.py` (cluster, rank) | `tests/test_news.py` | P1b |

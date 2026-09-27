@@ -23,7 +23,7 @@ jobs:
           python-version: ${{ matrix.python }}
           enable-cache: true
       - name: Install
-        run: uv sync --extra dev
+        run: uv sync --extra dev --extra server --extra mcp
       - name: Lint
         run: uv run ruff check . && uv run ruff format --check .
       - name: Types
@@ -36,6 +36,8 @@ jobs:
         run: uv run pytest -q --cov=agentdossier --cov-report=term-missing
       - name: BRD traceability
         run: uv run python scripts/check_traceability.py
+      - name: Enterprise self-test (loopback)
+        run: uv run agentdossier enterprise selftest
 
   web:
     name: web

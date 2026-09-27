@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sushegaad.github.io/AgentDossier/schema/enterprise_config.schema.json",
   "title": "EnterpriseScanConfig",
-  "description": "Scanner configuration (BRD v3.2 \u00a74.4). Exactly the documented shape; there is no allow_public key.",
+  "description": "Scanner configuration (BRD v3.2 \u00a74.4). Exactly the documented shape; there is no allow_public key. `schedule` is honoured by the self-hosted server.",
   "type": "object",
   "required": [
     "tenant",
@@ -163,6 +163,20 @@
     },
     "output_dir": {
       "type": "string"
+    },
+    "schedule": {
+      "type": "object",
+      "description": "Optional recurring scan, run by the server's scheduler.",
+      "properties": {
+        "cron": {
+          "type": "string",
+          "description": "5-field cron expression, UTC"
+        }
+      },
+      "required": [
+        "cron"
+      ],
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

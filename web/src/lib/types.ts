@@ -158,6 +158,7 @@ export interface Resource {
   tags?: string[];
   capabilities?: string[];
   scope: "public" | "private";
+  tenant?: string | null;
   domains: Record<string, DomainEntry>;
   components?: Record<string, number | null>;
   trust: TrustSummary;

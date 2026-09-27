@@ -1,1 +1,1 @@
-"""enterprise subpackage (see docs/architecture.md)."""
+"""Self-hosted enterprise edition: authorized private-network scanning (BRD §4.4)."""
