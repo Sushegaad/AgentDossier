@@ -445,6 +445,18 @@
               "integer",
               "null"
             ]
+          },
+          "discussion_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "engagement": {
+            "type": [
+              "number",
+              "null"
+            ]
           }
         }
       }
@@ -599,12 +611,18 @@
             "string",
             "null"
           ]
+        },
+        "source": {
+          "type": "string"
         }
       },
       "additionalProperties": true
     },
     "disclaimer": {
       "type": "string"
+    },
+    "news_checked": {
+      "type": "boolean"
     }
   },
   "additionalProperties": false

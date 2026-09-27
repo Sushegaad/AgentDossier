@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -19,12 +20,20 @@ from typing import Any
 
 from . import SCORE_VERSION, __version__
 from .classify import Classifier
+from .compliance import run as compliance_run
+from .compliance.engine import (
+    GOVERNANCE_VERSION,
+    append_changelog,
+    changelog_events,
+    governance_from_evidence,
+)
 from .connectors import ard_web, github, huggingface, marketplaces, mcp_registry
 from .connectors.base import SnapshotStore
 from .connectors.seed_xlsx import import_seed
 from .dedup import dedup, load_decisions, resource_slug, write_review_file
+from .news import run as news_run
 from .score import COMPONENTS_VERSION, ScoringConfig, components_from_signals, score_for_domain
-from .util import ROOT, NetPolicy, load_config, now_iso
+from .util import ROOT, NetPolicy, domain_of, load_config, now_iso
 
 ALL_SOURCES = ("seed", "marketplaces", "mcp_registry", "huggingface", "github", "ard_web")
 DISCLAIMER = (
@@ -49,6 +58,11 @@ class BuildOptions:
     github_min_stars: int = 25
     policy: NetPolicy = field(default_factory=NetPolicy)
     write_review: bool = True
+    compliance: bool = True
+    news: bool = True
+    claim_domain_limit: int | None = None
+    news_limit: int | None = None
+    changelog_path: Path = ROOT / "data" / "changelog" / "trust-changelog.jsonl"
 
 
 @dataclass
@@ -58,23 +72,76 @@ class BuildResult:
     summary: dict[str, Any]
 
 
-def _identity(res: dict[str, Any]) -> dict[str, Any]:
+_VENDOR_STOP = {
+    "inc",
+    "llc",
+    "ltd",
+    "corp",
+    "labs",
+    "the",
+    "and",
+    "ai",
+    "technologies",
+    "software",
+    "systems",
+}
+
+
+def _domain_matches_vendor(domain: str | None, vendor: str | None) -> bool:
+    """everlaw.com <- "Everlaw"; salesforce.com <- "Salesforce, Inc."; needs a 4+ letter vendor token."""
+    if not domain or not vendor:
+        return False
+    label = domain.lower().removeprefix("www.").split(".")[0].replace("-", "")
+    for tok in re.findall(r"[a-z0-9]+", vendor.lower()):
+        if len(tok) >= 4 and tok not in _VENDOR_STOP and tok in label:
+            return True
+    return False
+
+
+def _identity(res: dict[str, Any], curated: dict[str, dict[str, Any]] | None = None) -> dict[str, Any]:
     """Identity tier before any cryptographic verification (FR-49, v1 rules)."""
     ext = res.get("external_ids") or {}
     evidence: list[str] = []
     tier = 5
     ard_block = res["protocols"].get("ard", {})
+    domain = res.get("publisher_domain") or domain_of(res.get("url"))
+    cur = (curated or {}).get((domain or "").lower().removeprefix("www."))
     if ard_block.get("status") == "verified" and ard_block.get("trust_manifest") == "present-binding-ok":
         tier, evidence = 1, ["ard_trust_manifest_binding"]
     elif any(k in ext for k in ("aws_marketplace", "microsoft_agent_store", "google_cloud_marketplace")):
         tier, evidence = 2, ["marketplace_listing"]
     elif ard_block.get("status") == "verified" or res["protocols"].get("a2a", {}).get("status") == "verified":
         tier, evidence = 2, ["standards_metadata_at_publisher_domain"]
+    elif cur and _domain_matches_vendor(domain, cur.get("vendor") or res.get("vendor")):
+        tier, evidence = 2, ["maintainer_verified_publisher_domain"]
     elif "github" in ext or "huggingface_space" in ext or "huggingface_model" in ext:
         tier, evidence = 3, ["repository_ownership"]
+    elif _domain_matches_vendor(domain, res.get("vendor")):
+        tier, evidence = 3, ["publisher_domain_matches_vendor"]
     elif res.get("vendor"):
         tier, evidence = 4, ["vendor_name_only"]
-    return {"tier": tier, "evidence": evidence, "rules_version": "identity-1.0"}
+    out: dict[str, Any] = {"tier": tier, "evidence": evidence, "rules_version": "identity-1.0"}
+    if cur and tier == 2 and evidence == ["maintainer_verified_publisher_domain"]:
+        out["verified_by"] = cur.get("checked_by", "maintainer")
+        out["verified_on"] = cur.get("checked_on")
+    return out
+
+
+def load_curated_identity(path: Path | None = None) -> dict[str, dict[str, Any]]:
+    """``data/curated/identity.yaml``: publisher domains the maintainer confirmed belong to the vendor."""
+    path = path or ROOT / "data" / "curated" / "identity.yaml"
+    if not path.exists():
+        return {}
+    try:
+        import yaml  # noqa: PLC0415
+    except ImportError:  # pragma: no cover
+        return {}
+    doc = yaml.safe_load(path.read_text()) or {}
+    return {
+        str(e["publisher_domain"]).lower().removeprefix("www."): e
+        for e in doc.get("domains", [])
+        if e.get("publisher_domain") and e.get("checked_on")
+    }
 
 
 def _trust_summary(res: dict[str, Any]) -> dict[str, int | None]:
@@ -86,8 +153,15 @@ def _trust_summary(res: dict[str, Any]) -> dict[str, int | None]:
         "compliance": min(active) if active else 5,
         "security": res.get("security", {}).get("tier") if res.get("security") else None,
         "protocols": 1 if "verified" in protos else 3 if "claimed" in protos else 5,
-        "issues": res.get("issues", {}).get("tier") if res.get("issues") else None,
+        "issues": _issues_tier(res),
     }
+
+
+def _issues_tier(res: dict[str, Any]) -> int | None:
+    issues = res.get("issues")
+    if not issues or not res.get("security", {}).get("checked_at") and not res.get("news_checked"):
+        return None
+    return 1 if not issues.get("links") else 3
 
 
 def collect(opts: BuildOptions) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
@@ -170,10 +244,28 @@ def enrich(
 
     cfg = ScoringConfig.load()
     clf = Classifier()
+    curated_identity = load_curated_identity()
     for res in resources:
-        res["identity"] = _identity(res)
+        res["identity"] = _identity(res, curated_identity)
         res.setdefault("compliance", [])
         res.setdefault("news", [])
+        res["slug"] = resource_slug(res)
+
+    if opts.compliance and not opts.offline:
+        store = SnapshotStore(opts.cache_dir)
+        comp_reports, review = compliance_run.run(
+            resources, store=store, policy=opts.policy, claim_domain_limit=opts.claim_domain_limit
+        )
+        reports.update(comp_reports)
+        if opts.write_review and review:
+            reports["compliance_review_added"] = {"added": write_review_file(review)}
+    if opts.news and not opts.offline:
+        store = SnapshotStore(opts.cache_dir)
+        reports.update(news_run.run(resources, store=store, policy=opts.policy, limit=opts.news_limit))
+        for res in resources:
+            res["news_checked"] = True
+
+    for res in resources:
         is_seed = any(s["system"] == "seed_xlsx" for s in res["sources"])
         if not is_seed:
             cls = clf.classify(
@@ -204,8 +296,27 @@ def enrich(
                     "components_version": COMPONENTS_VERSION,
                     "unknown": list(sr.unknown),
                 }
+        # Evidence-based governance (sar-score-1.1) shown beside the sar-score-1.0 value (FR-25)
+        for d, entry in res["domains"].items():
+            gov, detail = governance_from_evidence(res.get("compliance", []), d)
+            comps = dict(res.get("components") or entry.get("components") or {})
+            if gov is not None and comps:
+                comps["governance"] = gov
+                alt = score_for_domain(comps, d, cfg)
+                entry["governance_evidence"] = {
+                    "value": gov,
+                    "score": alt.score,
+                    "version": GOVERNANCE_VERSION,
+                    "credited": detail["credited"],
+                }
+            else:
+                entry["governance_evidence"] = {
+                    "value": None,
+                    "score": None,
+                    "version": GOVERNANCE_VERSION,
+                    "credited": {},
+                }
         res["trust"] = _trust_summary(res)
-        res["slug"] = resource_slug(res)
     return resources
 
 
@@ -220,6 +331,15 @@ def write_outputs(
     snapshot = reports.get("seed", {}).get("snapshot") or now_iso()[:10]
     built = now_iso()
     frameworks_version = "frameworks-1.0"
+
+    previous_index = None
+    if (out / "index.json").exists():
+        try:
+            previous_index = json.loads((out / "index.json").read_text())
+        except ValueError:
+            previous_index = None
+    events = changelog_events(previous_index, resources, built)
+    reports["changelog"] = {"events": len(events), "appended": append_changelog(events, opts.changelog_path)}
 
     index_records = []
     for res in sorted(resources, key=lambda r: r["name"].lower()):
@@ -245,6 +365,8 @@ def write_outputs(
                         "variant": c.get("variant"),
                         "tier": c["tier"],
                         "status": c["status"],
+                        "credited": c.get("credited", False),
+                        "source": c.get("source"),
                     }
                     for c in res.get("compliance", [])
                 ],

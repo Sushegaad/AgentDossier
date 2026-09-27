@@ -171,6 +171,7 @@ def fetch(
     retries: int = 1,
     verify_tls: bool = True,
     follow_redirects: bool = True,
+    max_bytes: int = MAX_BYTES,
 ) -> FetchResult:
     """Fetch with SSRF guard, size cap, rate limit and retry/backoff. Never raises for HTTP errors."""
     policy = policy or NetPolicy()
@@ -204,8 +205,8 @@ def fetch(
         req = urllib.request.Request(url, data=data, method=method, headers=hdrs)
         try:
             with opener.open(req, timeout=timeout) as resp:
-                body = resp.read(MAX_BYTES + 1)
-                if len(body) > MAX_BYTES:
+                body = resp.read(max_bytes + 1)
+                if len(body) > max_bytes:
                     return FetchResult(url, resp.status, dict(resp.headers), b"", error="response too large")
                 return FetchResult(resp.geturl(), resp.status, dict(resp.headers), body)
         except urllib.error.HTTPError as exc:

@@ -196,6 +196,15 @@
                 },
                 "status": {
                   "type": "string"
+                },
+                "credited": {
+                  "type": "boolean"
+                },
+                "source": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
                 }
               }
             }

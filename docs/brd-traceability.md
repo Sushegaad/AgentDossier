@@ -25,13 +25,13 @@ Status: **P0** = delivered in Phase 0, **P1**–**P3** = planned phase.
 | FR-17 | Registry self-description | `web/public/.well-known/ard.json` | validated by `agentdossier/standards/ard.py` | P0 |
 | FR-18 | Corrections via GitHub | `CONTRIBUTING.md`, `data/review/` | maintainer process | P0 (process), P1 (changelog) |
 | FR-19 | Compliance evidence model | `schema/compliance_record.schema.json` | `tests/test_config.py` | P0 |
-| FR-20 | Authoritative registry connectors | `agentdossier/compliance/` (P1), `config/sources.json` | P1 | P1 |
-| FR-21 | Claim extraction | `agentdossier/compliance/` (P1) | P1 | P1 |
-| FR-22 | Verification and tiering | `config/frameworks/` (credit, wording) | `tests/test_config.py` | P0 (config), P1 (engine) |
-| FR-23 | Freshness and expiry | `config/frameworks/` (expiry_rule) | P1 | P0 (config), P1 |
+| FR-20 | Authoritative registry connectors | `agentdossier/compliance/fedramp.py`, `agentdossier/compliance/csa_star.py`, `agentdossier/compliance/matching.py`, `agentdossier/compliance/curated.py` (DPF, IAF, HITRUST by hand), `config/sources.json` | `tests/test_compliance.py`, `tests/fixtures/compliance/` | P1b (FedRAMP, CSA STAR automatic; DPF curated) |
+| FR-21 | Claim extraction | `agentdossier/compliance/claims.py` (robots-aware, ≤5 pages/domain) | `tests/test_compliance.py` | P1b |
+| FR-22 | Verification and tiering | `agentdossier/compliance/engine.py` (finalize, render_display), `config/frameworks/` (credit, wording) | `tests/test_compliance.py`, `tests/test_config.py` | P1b |
+| FR-23 | Freshness and expiry | `agentdossier/compliance/engine.py` (apply_freshness), `config/frameworks/` (expiry_rule) | `tests/test_compliance.py` | P1b |
 | FR-24 | Compliance search and display | web (P1) | P1 | P1 |
-| FR-25 | Evidence-based governance score | `agentdossier/score.py` (sar-score-1.1 in P2) | P2 | P2 |
-| FR-26 | Evidence corrections | `CONTRIBUTING.md` | process | P0 |
+| FR-25 | Evidence-based governance score | `agentdossier/compliance/engine.py` (governance_from_evidence, sar-score-1.1), `agentdossier/build.py` (governance_evidence per domain) | `tests/test_compliance.py` | P1b (shown beside sar-score-1.0; not yet blended) |
+| FR-26 | Evidence corrections | `CONTRIBUTING.md`, `data/curated/` (compliance.yaml, identity.yaml) | `tests/test_compliance.py` (curated) | P1b |
 | FR-27 | Intent-based onboarding | `config/intent_rules.json`; `web/` intent.ts (P1) | `eval/intent_cases.yaml` | P0 (rules), P1 |
 | FR-28 | Decision lifecycle | server (P3) | P3 | P3 |
 | FR-29 | Identity and accounts | server (P2) | P2 | P2 |
@@ -48,13 +48,17 @@ Status: **P0** = delivered in Phase 0, **P1**–**P3** = planned phase.
 | FR-40 | Instance analytics (optional) | server (P3) | P3 | P3 |
 | FR-41 | Dry run and self-test | `agentdossier/enterprise/` (P2) | P2 | P2 |
 | FR-42 | Preflight and operator kit | `agentdossier/enterprise/` (P2), `examples/enterprise/enterprise.json` | `tests/test_config.py` (config schema) | P0 (schema, example), P2 |
-| FR-43–47 | News and chatter | `agentdossier/news/` (P1) | P1 | P1 |
+| FR-43 | News sources | `agentdossier/news/sources.py` (Hacker News, GDELT with circuit breaker, GitHub releases, vendor RSS/Atom, NVD) | `tests/test_news.py` | P1b |
+| FR-44 | Entity linking | `agentdossier/news/linking.py` (link_confidence ≥ 0.85, distinctive names) | `tests/test_news.py` | P1b |
+| FR-45 | Ranking and diversity | `agentdossier/news/linking.py` (cluster, rank) | `tests/test_news.py` | P1b |
+| FR-46 | News panel | web (P1c) | P1c | P1c |
+| FR-47 | Headline, link and short description only | `agentdossier/news/sources.py` (item: 240-char summaries, no article bodies) | `tests/test_news.py` | P1b |
 | FR-48 | Trust profile | web (P1), `schema/catalog_index.schema.json` (trust summary) | P1 | P0 (schema), P1 |
-| FR-49 | Identity-first crediting | `agentdossier/build.py` (identity-1.0 rules), `config/frameworks/` credit | `tests/test_dedup_build.py` | P1a (crediting rule applied in P1b) |
+| FR-49 | Identity-first crediting | `agentdossier/build.py` (identity-1.0 rules incl. publisher-domain and curated), `agentdossier/compliance/engine.py` (credited flag), `data/curated/identity.yaml` | `tests/test_dedup_build.py`, `tests/test_compliance.py` | P1b |
 | FR-50 | Framework catalog as configuration | `config/frameworks/` (15 files) | `tests/test_config.py`, `agentdossier/cli.py` config-check | P0 |
 | FR-51 | Jurisdiction applicability | `config/frameworks/` (jurisdictions), `schema/policy.schema.json` | P1 | P0 (config), P1 |
-| FR-52 | Negative evidence and checklist | `schema/resource.schema.json` (issues) | P1 | P0 (schema), P1 |
-| FR-53 | Registry accountability | `docs/` methodology (P1), `data/changelog/` | P1 | P1 |
+| FR-52 | Negative evidence and checklist | `agentdossier/news/run.py` (issues from tagged news + NVD CVEs), `schema/resource.schema.json` (issues, security) | `tests/test_news.py` | P1b (checklist UI in P1c) |
+| FR-53 | Registry accountability | `agentdossier/compliance/engine.py` (changelog_events, append_changelog), `data/changelog/`, `docs/methodology.md` | `tests/test_compliance.py` | P1b |
 
 Security controls (plan section 9): SSRF guard and scanner scope in
 `agentdossier/util.py`, tested by `tests/test_netpolicy.py` (P0).
