@@ -5,21 +5,20 @@ import { loadIndexMeta } from "../lib/catalog";
 interface Props {
   title: string;
   description?: string;
+  wide?: boolean;
 }
-const { title, description = "AgentDossier — a standards-aware registry of AI agents with evidence you can check." } = Astro.props;
+const { title, description = "AgentDossier — find AI agents you can actually trust, with the evidence behind every one." } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const meta = loadIndexMeta();
 const path = Astro.url.pathname.replace(base, "") || "/";
 const nav = [
-  ["/", "Search"],
   ["/domains/", "Domains"],
-  ["/compare/", "Compare"],
-  ["/shortlist/", "Shortlist"],
-  ["/private/", "Private catalog"],
-  ["/changelog/", "Changelog"],
-  ["/methodology/", "Methodology"],
+  ["/search/", "Search"],
+  ["/methodology/", "Trust methodology"],
+  ["/enterprise/", "Enterprise edition"],
 ];
-const current = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+const current = (href: string) => path.startsWith(href);
+const snapshot = meta?.snapshot_date ?? "the last build";
 ---
 
 <!doctype html>
@@ -31,18 +30,38 @@ const current = (href: string) => (href === "/" ? path === "/" : path.startsWith
     <meta name="description" content={description} />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
     <link rel="ard" type="application/ai-registry+json" href={`${base}/.well-known/ard.json`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet" /></noscript>
     <slot name="head" />
   </head>
   <body>
+    <div class="disclaimer-bar">
+      <div class="container">
+        <span class="tag">Reference implementation</span>
+        <span>
+          Data compiled from public sources as of {snapshot}. Not an assessment, certification or recommendation. Confirm
+          current status with the vendor and the issuing body.
+        </span>
+      </div>
+    </div>
     <header class="site-header">
       <div class="container">
-        <a class="brand" href={`${base}/`}>Agent<span>Dossier</span></a>
+        <a class="brand" href={`${base}/`}>
+          <span class="sq" aria-hidden="true"></span>
+          <span>
+            <b>AgentDossier <span>· AI Agent Registry</span></b>
+            <small>Find agents you can actually trust — public or inside your enterprise.</small>
+          </span>
+        </a>
         <nav class="nav" aria-label="Main">
           {nav.map(([href, label]) => (
             <a href={`${base}${href}`} aria-current={current(href) ? "page" : undefined}>
               {label}
             </a>
           ))}
+          <a class="btn" href="https://github.com/Sushegaad/AgentDossier">GitHub · MIT</a>
         </nav>
       </div>
     </header>
@@ -51,24 +70,20 @@ const current = (href: string) => (href === "/" ? path === "/" : path.startsWith
     </main>
     <footer class="site-footer">
       <div class="container">
-        <p>
-          {meta?.disclaimer ??
-            "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation."}
-        </p>
-        <p>
-          {meta ? (
-            <>
-              Catalog snapshot {meta.snapshot_date}, built {meta.built_at.slice(0, 10)} ({meta.score_version}). Refreshed weekly.
-              {" "}
-            </>
-          ) : (
-            <>No catalog is bundled with this build. </>
-          )}
-          Code MIT-licensed, catalog data CC BY 4.0 · <a href="https://github.com/Sushegaad/AgentDossier">GitHub</a>
-          {" · "}
-          <a href={`${base}/methodology/`}>How evidence is graded</a>
-        </p>
+        <span>Reference implementation by Hemant Naik · MIT license · catalog data CC BY 4.0</span>
+        <span>ARD = Agentic Resource Discovery · A2A = Agent2Agent · MCP = Model Context Protocol</span>
+        <a href={`${base}/changelog/`}>Trust changelog</a>
+        <a href={`${base}/methodology/`}>Methodology</a>
+        <a href={`${base}/shortlist/`}>Shortlist</a>
+        <a href={`${base}/compare/`}>Compare</a>
+        <a href={`${base}/private/`}>Private catalog</a>
+        <a href="https://github.com/Sushegaad/AgentDossier/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a>
+        <span>No accounts · no analytics · no tracking cookies</span>
       </div>
     </footer>
+    <script>
+      // code blocks and wide tables scroll horizontally; make them reachable by keyboard (axe: scrollable-region-focusable)
+      for (const el of document.querySelectorAll("pre, .scroll-x")) if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "0");
+    </script>
   </body>
 </html>

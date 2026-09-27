@@ -29,8 +29,10 @@ into `public/catalog/` so the browser can fetch it, and its `ard.json` into
 
 | Route | What it is |
 | --- | --- |
-| `/` | Search: plain-language query → requirement chips → ranked, explained results with the trust strip |
-| `/agents/<slug>/` | Trust profile: identity, compliance evidence with tiers and links, rankings, protocols, security, news, provenance |
+| `/` | Landing: statement hero, stats, the 12-domain grid, the evidence scale, how it works |
+| `/search/` | Search: plain-language query → editable requirement chips → facet rail → ledger result cards with the trust profile; CSV/JSON export |
+| `/enterprise/` | The self-hosted edition: safety controls, the eight-step procedure, `enterprise.json`, ways to run it |
+| `/agents/<slug>/` | Dossier: trust profile above the fold, compliance evidence ledger (found / claimed / not found), GDPR assembled from checks, domain score breakdown, buyer checklist, provenance, news |
 | `/domains/`, `/domains/<id>/` | The twelve ranked top-100 lists |
 | `/compare/?ids=a,b,c` | Side-by-side comparison (up to four) |
 | `/shortlist/` | Browser-local shortlist (localStorage), exportable as JSON |
@@ -38,6 +40,10 @@ into `public/catalog/` so the browser can fetch it, and its `ard.json` into
 | `/changelog/` | Trust changelog (badges added / changed / removed per weekly build) |
 | `/methodology/` | `docs/methodology.md` rendered, plus what the badges mean |
 | `/agent/?id=…` | Dynamic dossier for self-hosted instances (built with `PUBLIC_DYNAMIC_AGENTS=1`), whose catalog changes with every scan |
+
+The visual design follows the Claude Design mockups (editorial ledger: Archivo, one red accent,
+ruled rows, tiers always written out); tokens live in `src/styles/global.css`, rule-driven
+dossier blocks in `src/lib/dossier.ts`.
 
 Configuration is read from the repository, not duplicated: `config/intent_rules.json`,
 `config/taxonomy.json` and `config/frameworks/*.json` are imported at build time.

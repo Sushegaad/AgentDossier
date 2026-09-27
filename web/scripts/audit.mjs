@@ -36,9 +36,9 @@ async function waitFor(url, tries = 40) {
 }
 
 async function firstAgentPath(page) {
-  await page.goto(`${ORIGIN}${BASE}/`);
-  await page.waitForSelector("article.result a, .notice", { timeout: 10000 });
-  const href = await page.$eval("article.result a", (a) => a.getAttribute("href")).catch(() => null);
+  await page.goto(`${ORIGIN}${BASE}/search/?q=agent`);
+  await page.waitForSelector("article.result h3 a, .notice", { timeout: 20000 });
+  const href = await page.$eval("article.result h3 a", (a) => a.getAttribute("href")).catch(() => null);
   return href;
 }
 
@@ -48,7 +48,7 @@ const main = async () => {
   const browser = await chromium.launch({ executablePath: CHROME });
   const page = await browser.newPage();
   const agent = await firstAgentPath(page);
-  const pages = [`${BASE}/`, `${BASE}/?q=insurance%20claims%20agent`, `${BASE}/domains/`, `${BASE}/compare/`, `${BASE}/private/`, `${BASE}/methodology/`];
+  const pages = [`${BASE}/`, `${BASE}/search/?q=insurance%20claims%20agent`, `${BASE}/domains/`, `${BASE}/compare/`, `${BASE}/private/`, `${BASE}/methodology/`, `${BASE}/enterprise/`];
   if (agent) pages.push(agent);
 
   // --- axe ---------------------------------------------------------------------

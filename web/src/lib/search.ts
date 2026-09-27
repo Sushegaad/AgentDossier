@@ -14,6 +14,19 @@ export interface Filters {
   protocol?: string; // "mcp" | "a2a" | "ard"
   open_source?: boolean;
   strict?: boolean; // enforce must_have chips (default true)
+  /** hard filter on identity tier (T1 best) */
+  identity_max_tier?: number;
+  license?: "commercial" | "open_source";
+  self_hostable?: boolean;
+  source?: string; // e.g. "aws_marketplace"
+  /** must-have chips added from the facet rail, in addition to those parsed from the query */
+  extra_must?: RequirementChip[];
+  /** chips the user dismissed: "domain:insurance", "capability:claims", "data_class:phi", "must:hipaa|BAA_AVAILABLE", "prefer:soc2|" */
+  drop?: string[];
+}
+
+export function chipKey(kind: string, c: RequirementChip): string {
+  return `${kind}:${c.framework}|${c.variant ?? ""}`;
 }
 
 export interface Hit {
@@ -98,6 +111,17 @@ export class Catalog {
 
   search(query: string, filters: Filters = {}, limit = 50): SearchResult {
     const intent = parseIntent(query);
+    const drop = new Set(filters.drop ?? []);
+    if (drop.size) {
+      for (const dim of ["domain", "capability", "data_class", "deployment", "compliance", "protocol", "ecosystem", "jurisdiction", "trust"] as const) {
+        (intent[dim] as string[]).splice(0, intent[dim].length, ...intent[dim].filter((v) => !drop.has(`${dim}:${v}`)));
+      }
+      intent.must_have = intent.must_have.filter((c) => !drop.has(chipKey("must", c)));
+      intent.prefer = intent.prefer.filter((c) => !drop.has(chipKey("prefer", c)));
+    }
+    for (const c of filters.extra_must ?? []) {
+      if (!intent.must_have.some((m) => m.framework === c.framework && (m.variant ?? null) === (c.variant ?? null))) intent.must_have.push(c);
+    }
     const strict = filters.strict ?? true;
     const baseTerms = [...intent.terms, ...intent.capability.map((c) => c.replace(/_/g, " "))];
     const textQuery = expand(baseTerms).join(" ");
@@ -138,6 +162,11 @@ export class Catalog {
       if (filters.resource_type && r.resource_type !== filters.resource_type) continue;
       if (filters.protocol && !["verified", "claimed"].includes(r.protocols[filters.protocol] ?? "")) continue;
       if (filters.open_source && !isOpenSource(r)) continue;
+      if (filters.license === "open_source" && !isOpenSource(r)) continue;
+      if (filters.license === "commercial" && isOpenSource(r)) continue;
+      if (filters.self_hostable && !isSelfHostable(r)) continue;
+      if (filters.source && !r.sources.includes(filters.source)) continue;
+      if (filters.identity_max_tier && r.trust.identity > filters.identity_max_tier) continue;
       if (filters.max_compliance_tier && bestActiveTier(r) > filters.max_compliance_tier) continue;
       if (intent.trust.includes("open_source") && !isOpenSource(r)) continue;
 

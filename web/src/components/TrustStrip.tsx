@@ -26,7 +26,7 @@ export default function TrustStrip({ trust, compact = false }: { trust: TrustSum
         const t = trust[k];
         const label = t == null ? "–" : `T${t}`;
         return (
-          <span key={k} className="tier" data-tier={t ?? "null"} title={TITLES[k](t)}>
+          <span key={k} className="tierbox" title={TITLES[k](t)}>
             {compact ? "" : `${LABELS[k]} `}
             {label}
           </span>

@@ -10,5 +10,5 @@ const { res } = Astro.props;
 ---
 
 <Base title={res.name} description={res.description ?? undefined}>
-  <AgentProfile client:load resource={res} />
+  <AgentProfile client:idle resource={res} />
 </Base>
