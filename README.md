@@ -16,8 +16,11 @@ recommendation. Confirm current status with the vendor and the issuing body.
 
 ## Status
 
-Phase 0 (design): schemas, configuration, seed import and CI. See
-`docs/brd-traceability.md` for what each requirement maps to.
+Phase 1 in progress: connectors (seed workbook, GitHub, Hugging Face, MCP
+Registry, ARD publishers, marketplaces), compliance evidence (FedRAMP, CSA
+STAR, curated records, vendor claims) with the tier/freshness engine, and
+news/security feeds. See `docs/brd-traceability.md` for what each
+requirement maps to and `docs/methodology.md` for how evidence is graded.
 
 ## Quick start
 
@@ -25,7 +28,19 @@ Phase 0 (design): schemas, configuration, seed import and CI. See
 uv sync --extra dev
 uv run pytest
 uv run agentdossier seed-check data/seed/top_100_ai_agents_by_domain_2026-09-25.xlsx
+
+# offline catalog from the seed workbook only (no network)
+uv run agentdossier build --sources seed --offline --out /tmp/catalog
+
+# live build: registries, vendor claims and news for a small slice
+uv run agentdossier build --sources seed,marketplaces --claim-domains 12 --news-limit 12 \
+  --out /tmp/catalog --cache /tmp/cache
 ```
+
+`--no-compliance` and `--no-news` skip those stages; `GITHUB_TOKEN` enables
+the GitHub connector and release feeds, `NVD_API_KEY` lifts the NVD rate
+limit. Hand-verified evidence and publisher-domain checks live in
+`data/curated/`.
 
 The core package uses only the Python standard library; `openpyxl` is needed
 to read the seed workbook (`--extra connectors` or `--extra dev`).

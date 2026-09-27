@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
+import threading
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -30,7 +31,9 @@ class SnapshotStore:
     def __init__(self, root: str | Path):
         self.root = Path(root)
         self.root.mkdir(parents=True, exist_ok=True)
-        self.db = sqlite3.connect(self.root / "snapshots.db")
+        # connectors run in thread pools; one connection guarded by a lock is enough
+        self.db = sqlite3.connect(self.root / "snapshots.db", check_same_thread=False)
+        self.lock = threading.RLock()
         self.db.execute(
             "CREATE TABLE IF NOT EXISTS snapshots (source TEXT, key TEXT, payload_hash TEXT, etag TEXT, "
             "fetched_at TEXT, path TEXT, PRIMARY KEY (source, key))"
@@ -44,19 +47,26 @@ class SnapshotStore:
         if not path.exists():
             path.write_bytes(body)
         fetched = now_iso()
-        self.db.execute(
-            "INSERT OR REPLACE INTO snapshots VALUES (?, ?, ?, ?, ?, ?)",
-            (source, key, h, etag, fetched, str(path)),
-        )
-        self.db.commit()
+        with self.lock:
+            self.db.execute(
+                "INSERT OR REPLACE INTO snapshots VALUES (?, ?, ?, ?, ?, ?)",
+                (source, key, h, etag, fetched, str(path)),
+            )
+            self.db.commit()
         return Snapshot(source, key, h, fetched, path)
 
     def etag(self, source: str, key: str) -> str | None:
-        row = self.db.execute("SELECT etag FROM snapshots WHERE source=? AND key=?", (source, key)).fetchone()
+        with self.lock:
+            row = self.db.execute(
+                "SELECT etag FROM snapshots WHERE source=? AND key=?", (source, key)
+            ).fetchone()
         return row[0] if row else None
 
     def load(self, source: str, key: str) -> Any | None:
-        row = self.db.execute("SELECT path FROM snapshots WHERE source=? AND key=?", (source, key)).fetchone()
+        with self.lock:
+            row = self.db.execute(
+                "SELECT path FROM snapshots WHERE source=? AND key=?", (source, key)
+            ).fetchone()
         if not row or not Path(row[0]).exists():
             return None
         return json.loads(Path(row[0]).read_text())
@@ -78,6 +88,8 @@ def get_json(
     headers: dict[str, str] | None = None,
     policy: NetPolicy | None = None,
     timeout: float = 15.0,
+    max_bytes: int = 2_000_000,
+    retries: int = 1,
 ) -> tuple[Any | None, FetchResult | None, str | None]:
     """Fetch JSON with ETag reuse. Returns (data, result, payload_hash).
 
@@ -88,12 +100,13 @@ def get_json(
         et = store.etag(source, key)
         if et:
             hdrs["If-None-Match"] = et
-    r = fetch(url, headers=hdrs, policy=policy, timeout=timeout)
+    r = fetch(url, headers=hdrs, policy=policy, timeout=timeout, max_bytes=max_bytes, retries=retries)
     if r.status == 304 and store:
         cached = store.load(source, key)
-        row = store.db.execute(
-            "SELECT payload_hash FROM snapshots WHERE source=? AND key=?", (source, key)
-        ).fetchone()
+        with store.lock:
+            row = store.db.execute(
+                "SELECT payload_hash FROM snapshots WHERE source=? AND key=?", (source, key)
+            ).fetchone()
         return cached, r, (row[0] if row else None)
     if not r.ok:
         return None, r, None

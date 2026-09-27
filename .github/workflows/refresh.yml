@@ -9,6 +9,10 @@ on:
         description: "Cap discovered resources per source (leave empty for a full run)"
         required: false
         default: ""
+      news_limit:
+        description: "Cap resources searched for news/CVEs (leave empty for all)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -16,6 +20,7 @@ permissions:
 jobs:
   build-catalog:
     runs-on: ubuntu-latest
+    timeout-minutes: 180   # NVD allows 5 requests / 30 s without NVD_API_KEY
     permissions:
       contents: write        # push the refresh branch
       pull-requests: write   # open the catalog PR
@@ -36,9 +41,12 @@ jobs:
       - name: Build catalog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
         run: |
           LIMIT="${{ github.event.inputs.limit }}"
-          uv run agentdossier build --out data/catalog --cache build/snapshots ${LIMIT:+--limit $LIMIT}
+          NEWS_LIMIT="${{ github.event.inputs.news_limit }}"
+          uv run agentdossier build --out data/catalog --cache build/snapshots \
+            ${LIMIT:+--limit $LIMIT} ${NEWS_LIMIT:+--news-limit $NEWS_LIMIT}
       - name: Validate outputs
         run: uv run python scripts/validate_catalog.py data/catalog
       - name: Summarize for the PR body

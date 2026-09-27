@@ -74,6 +74,10 @@ def cmd_build(args: argparse.Namespace) -> int:
         ard_domain_limit=args.ard_domains,
         mcp_handshake=args.mcp_handshake,
         write_review=not args.no_review,
+        compliance=not args.no_compliance,
+        news=not args.no_news,
+        claim_domain_limit=args.claim_domains,
+        news_limit=args.news_limit,
     )
     result = build(opts)
     s = result.summary
@@ -186,6 +190,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--no-review", action="store_true", help="do not append near-duplicates to data/review/matches.yaml"
     )
+    p.add_argument(
+        "--no-compliance", action="store_true", help="skip compliance evidence (registries, curated, claims)"
+    )
+    p.add_argument("--no-news", action="store_true", help="skip news, community and NVD checks")
+    p.add_argument("--claim-domains", type=int, help="cap the number of vendor domains crawled for claims")
+    p.add_argument("--news-limit", type=int, help="cap the number of resources checked for news and CVEs")
     p.set_defaults(func=cmd_build)
 
     p = sub.add_parser(

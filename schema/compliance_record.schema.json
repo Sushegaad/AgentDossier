@@ -145,6 +145,19 @@
     "display": {
       "type": "string",
       "description": "Rendered wording from the framework template, e.g. 'Found in FedRAMP Marketplace on 2026-09-22'"
+    },
+    "credited": {
+      "type": "boolean"
+    },
+    "stale_since": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "detail": {
+      "type": "object",
+      "additionalProperties": true
     }
   },
   "additionalProperties": false

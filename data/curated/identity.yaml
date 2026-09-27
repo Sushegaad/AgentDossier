@@ -1,0 +1,19 @@
+# Publisher domains the maintainer confirmed belong to the named vendor.
+#
+# A resource whose URL is on one of these domains gets identity tier 2
+# ("maintainer_verified_publisher_domain"), which is the threshold at which
+# registry and marketplace evidence is credited in the evidence-based
+# governance score (FR-49). Verify by opening the domain and checking that
+# the site is operated by the vendor (legal notice, imprint or footer), then
+# record the date and who checked. Keep this list short and honest; a
+# vendor publishing an ARD manifest or A2A card on its domain replaces the
+# need for an entry here.
+#
+# domains:
+#   - publisher_domain: example.com
+#     vendor: Example Inc.
+#     checked_by: hemant.naik
+#     checked_on: 2026-09-27
+#     evidence_url: https://example.com/legal
+#     note: legal notice names Example Inc.
+domains: []

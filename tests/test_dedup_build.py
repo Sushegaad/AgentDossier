@@ -100,4 +100,38 @@ def test_offline_build_writes_valid_outputs(tmp_path):
     ] == "Agentforce Financial Services"
     assert (tmp_path / "ard.json").exists() and (tmp_path / "agents-list" / "page-1.json").exists()
     agent = json.loads(next((tmp_path / "agents").glob("*.json")).read_text())
-    assert "raw" not in agent and agent["identity"]["tier"] in (2, 4)
+    assert "raw" not in agent and agent["identity"]["tier"] in (2, 3, 4)
+
+
+def test_identity_rules_domain_match_and_curated():
+    from agentdossier.build import _domain_matches_vendor, _identity
+
+    assert _domain_matches_vendor("www.everlaw.com", "Everlaw, Inc.")
+    assert _domain_matches_vendor("salesforce.com", "Salesforce")
+    assert not _domain_matches_vendor("github.com", "Acme AI Labs")
+    assert not _domain_matches_vendor("example.com", "The AI Inc")  # only stop-words / short tokens
+    base = {"protocols": {}, "vendor": "Everlaw", "url": "https://www.everlaw.com/ai", "external_ids": {}}
+    assert _identity(base)["tier"] == 3 and _identity(base)["evidence"] == ["publisher_domain_matches_vendor"]
+    curated = {"everlaw.com": {"vendor": "Everlaw", "checked_by": "hemant.naik", "checked_on": "2026-09-27"}}
+    ident = _identity(base, curated)
+    assert ident["tier"] == 2 and ident["verified_by"] == "hemant.naik"
+    assert (
+        _identity({"protocols": {}, "vendor": "Acme", "url": "https://other.io", "external_ids": {}})["tier"]
+        == 4
+    )
+
+
+def test_offline_build_skips_evidence_and_news_but_keeps_fields(tmp_path):
+    result = build(
+        BuildOptions(
+            out_dir=tmp_path,
+            cache_dir=tmp_path / "cache",
+            offline=True,
+            write_review=False,
+            compliance=False,
+            news=False,
+        )
+    )
+    agent = json.loads(next((tmp_path / "agents").glob("*.json")).read_text())
+    assert agent["compliance"] == [] and agent["news"] == [] and not agent.get("news_checked")
+    assert "compliance_summary" in result.summary or "identity_tiers" in result.summary
