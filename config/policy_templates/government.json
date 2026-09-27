@@ -1,0 +1,59 @@
+{
+  "id": "pol_government_default",
+  "name": "Government (US federal)",
+  "version": 1,
+  "jurisdictions": [
+    "US"
+  ],
+  "rules": [
+    {
+      "id": "r1",
+      "kind": "must",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "fedramp",
+        "variant": "FEDRAMP_MODERATE",
+        "minTier": 1,
+        "orHigher": true
+      }
+    },
+    {
+      "id": "r2",
+      "kind": "must",
+      "field": "deployment",
+      "op": "in",
+      "value": [
+        "private",
+        "vpc",
+        "on_prem",
+        "gov_cloud",
+        "saas"
+      ]
+    },
+    {
+      "id": "r3",
+      "kind": "must",
+      "field": "identity.tier",
+      "op": "lte",
+      "value": 2
+    },
+    {
+      "id": "r4",
+      "kind": "must_not",
+      "field": "issues.regulator_actions",
+      "op": "gte",
+      "value": 1
+    },
+    {
+      "id": "r5",
+      "kind": "preferred",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "iso42001",
+        "minTier": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "hipaa",
+  "name": "HIPAA",
+  "jurisdictions": [
+    "US"
+  ],
+  "group": "law",
+  "priority": "launch",
+  "sources": [
+    {
+      "kind": "vendor",
+      "url": "trust center / BAA page",
+      "terms_note": "Claims only",
+      "cadence": "weekly"
+    },
+    {
+      "kind": "marketplace",
+      "url": "https://aws.amazon.com/marketplace/",
+      "terms_note": "HIPAA-eligible flags where present",
+      "cadence": "weekly"
+    },
+    {
+      "kind": "registry",
+      "url": "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf",
+      "terms_note": "HHS OCR breach portal for negative evidence",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "BAA_AVAILABLE"
+  ],
+  "expiry_rule": {
+    "kind": "recheck_months",
+    "months": 1
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.7,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "Found in {registry} on {date}",
+    "tier2": "HIPAA: BAA available (marketplace listing, {date})",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "HIPAA: BAA available (vendor-claimed, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "healthcare",
+    "insurance",
+    "*"
+  ],
+  "notes": "No certification exists. 'HIPAA certified' is never displayed."
+}

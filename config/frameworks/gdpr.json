@@ -1,0 +1,67 @@
+{
+  "id": "gdpr",
+  "name": "GDPR (EU)",
+  "jurisdictions": [
+    "EU"
+  ],
+  "group": "law",
+  "priority": "launch",
+  "sources": [
+    {
+      "kind": "registry",
+      "url": "https://www.edpb.europa.eu/our-work-tools/accountability-tools/certification-mechanisms-seals-and-marks_en",
+      "terms_note": "EDPB register of Article 42 schemes; certificates listed by each scheme (e.g. Europrivacy)",
+      "cadence": "weekly"
+    },
+    {
+      "kind": "registry",
+      "url": "https://www.dataprivacyframework.gov/list",
+      "terms_note": "EU-U.S. DPF participant list",
+      "cadence": "weekly"
+    },
+    {
+      "kind": "vendor",
+      "url": "DPA / SCCs / subprocessor list",
+      "terms_note": "Claims / documents",
+      "cadence": "weekly"
+    },
+    {
+      "kind": "registry",
+      "url": "https://www.enforcementtracker.com/",
+      "terms_note": "GDPR fines (third-party tracker) for negative evidence; verify against the authority's decision",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "ART42_SEAL",
+    "DPF_ACTIVE",
+    "DPA_AVAILABLE",
+    "SCCS",
+    "EU_RESIDENCY"
+  ],
+  "expiry_rule": {
+    "kind": "mirror_registry"
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.7,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "{variant_label}: {status} ({registry}, {date})",
+    "tier2": "Listed on {marketplace} on {date}",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "Vendor-claimed ({source}, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "*"
+  ],
+  "notes": "'GDPR certified' only for a verified Article 42 seal whose scope covers this agent (BRD §5.10)."
+}

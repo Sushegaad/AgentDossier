@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sushegaad.github.io/AgentDossier/schema/compliance_record.schema.json",
+  "title": "ComplianceRecord",
+  "description": "One piece of certification or compliance evidence attached to a resource (BRD v3.2 \u00a75.4, FR-19).",
+  "type": "object",
+  "required": [
+    "framework",
+    "status",
+    "tier",
+    "scope",
+    "covers_resource",
+    "source",
+    "retrieved_at",
+    "display"
+  ],
+  "properties": {
+    "framework": {
+      "type": "string",
+      "description": "id of a file in config/frameworks/"
+    },
+    "variant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "in_process",
+        "stale",
+        "expired",
+        "revoked",
+        "inherited",
+        "not_found"
+      ]
+    },
+    "tier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "entity",
+        "product",
+        "platform",
+        "processing_activity",
+        "unknown"
+      ]
+    },
+    "covers_resource": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "partial",
+        "inherited",
+        "unknown"
+      ]
+    },
+    "issuer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "certificate_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "issued": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "valid_until": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "period_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "evidence_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "source": {
+      "type": "string",
+      "description": "id from config/sources.json"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "payload_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "match_confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_check": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "display": {
+      "type": "string",
+      "description": "Rendered wording from the framework template, e.g. 'Found in FedRAMP Marketplace on 2026-09-22'"
+    }
+  },
+  "additionalProperties": false
+}

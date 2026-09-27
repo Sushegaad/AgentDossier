@@ -1,0 +1,30 @@
+{
+  "version": "sar-taxonomy-1.0",
+  "domains": {
+    "business":      {"label": "Business & Enterprise Operations", "keywords": ["enterprise", "business", "workflow", "automation", "productivity", "operations", "office", "email", "calendar", "meeting", "hr", "human resources", "project management", "erp", "back office", "document", "knowledge", "assistant", "copilot", "rpa", "slack", "teams", "notion", "jira", "confluence"]},
+    "finance":       {"label": "Finance & Banking", "keywords": ["finance", "financial", "bank", "banking", "payment", "trading", "stock", "invest", "accounting", "invoice", "ledger", "fintech", "crypto", "treasury", "loan", "credit", "wealth", "portfolio", "expense", "tax", "stripe", "quickbooks", "kyc", "aml"]},
+    "healthcare":    {"label": "Healthcare & Life Sciences", "keywords": ["health", "healthcare", "clinical", "medical", "patient", "hospital", "pharma", "drug", "biology", "bioinformatics", "genomic", "protein", "fhir", "ehr", "emr", "hipaa", "radiology", "diagnos", "life science", "nurse", "physician", "rcm"]},
+    "regulatory":    {"label": "Regulatory, Risk & Compliance", "keywords": ["compliance", "regulatory", "regulation", "risk", "grc", "audit", "policy", "governance", "soc 2", "soc2", "iso 27001", "gdpr", "controls", "privacy", "ai governance", "attestation"]},
+    "technology":    {"label": "Technology & Software Engineering", "keywords": ["code", "coding", "developer", "software", "github", "git", "ide", "programming", "devops", "kubernetes", "docker", "terminal", "cli", "api", "sdk", "framework", "debug", "test", "deploy", "cloud", "infrastructure", "browser automation", "playwright", "mcp", "llm", "agent framework", "orchestration", "typescript", "python"]},
+    "cybersecurity": {"label": "Cybersecurity", "keywords": ["security", "cyber", "threat", "vulnerability", "pentest", "penetration", "malware", "soc ", "siem", "soar", "incident", "detection", "firewall", "zero trust", "iam", "secrets", "cve", "osint", "red team", "blue team", "edr", "xdr"]},
+    "sales":         {"label": "Sales, Marketing & Customer Experience", "keywords": ["sales", "marketing", "crm", "customer", "support", "service desk", "helpdesk", "lead", "seo", "advertis", "campaign", "social media", "e-commerce", "ecommerce", "shopify", "hubspot", "salesforce", "contact center", "chatbot", "outreach", "revenue"]},
+    "legal":         {"label": "Legal", "keywords": ["legal", "law", "lawyer", "contract", "clause", "litigation", "ediscovery", "e-discovery", "court", "case law", "attorney", "paralegal", "patent", "trademark", "clm"]},
+    "data":          {"label": "Data & Analytics", "keywords": ["data", "analytics", "sql", "database", "warehouse", "bigquery", "snowflake", "postgres", "mysql", "etl", "bi ", "dashboard", "visualization", "rag", "retrieval", "vector", "search", "scrape", "scraping", "crawl", "spreadsheet", "pandas", "embedding", "knowledge graph"]},
+    "supply_chain":  {"label": "Supply Chain, Manufacturing & Logistics", "keywords": ["supply chain", "logistics", "manufacturing", "inventory", "warehouse management", "procurement", "shipping", "freight", "fleet", "factory", "industrial", "iot", "scm", "planning", "sourcing", "route", "delivery"]},
+    "insurance":     {"label": "Insurance", "keywords": ["insurance", "insurer", "claims", "underwriting", "policyholder", "actuarial", "reinsurance", "broker"]},
+    "government":    {"label": "Government & Public Sector", "keywords": ["government", "public sector", "federal", "state agency", "municipal", "citizen", "fedramp", "defense", "civic", "public service", "gov", "election", "census"]}
+  },
+  "resource_types": {
+    "agent": "Agent / agentic application",
+    "a2a_agent": "A2A agent (Agent Card)",
+    "mcp_server": "MCP server",
+    "skill": "Skill",
+    "api": "API",
+    "workflow": "Workflow",
+    "framework": "Framework / SDK / runtime",
+    "platform": "Agent platform",
+    "marketplace": "Marketplace / discovery hub",
+    "tool": "Tool / guardrail",
+    "registry": "Agent registry"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Legacy Agent",
+  "description": "A 0.3-era card using url and preferredTransport.",
+  "url": "https://legacy.example.com/a2a",
+  "preferredTransport": "JSONRPC",
+  "protocolVersion": "0.3.0",
+  "version": "0.9.1",
+  "capabilities": {"streaming": false},
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "skills": [{"id": "hello", "name": "Hello", "description": "Says hello", "tags": ["demo"]}]
+}

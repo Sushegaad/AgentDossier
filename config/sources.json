@@ -1,0 +1,231 @@
+{
+  "version": "sources-1.0",
+  "notes": "Source register (BRD §7.3, plan section 4). Every connector lists its legal basis and terms note. 'automated' = fetched by the weekly build; 'manual' = maintainer-entered records with links until terms are confirmed. Raw snapshots are cached, never committed.",
+  "sources": [
+    {
+      "id": "seed_xlsx",
+      "name": "Top 100 AI agents by domain workbook (25 Sep 2026)",
+      "kind": "file",
+      "access": "automated",
+      "url": "data/seed/top_100_ai_agents_by_domain_2026-09-25.xlsx",
+      "terms": "Compiled by the maintainer from public sources; CC BY 4.0",
+      "cadence": "frozen baseline",
+      "provides": [
+        "resources",
+        "scores",
+        "source_catalog"
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub REST and GraphQL APIs",
+      "kind": "api",
+      "access": "automated",
+      "url": "https://api.github.com",
+      "terms": "GitHub Terms of Service; API rate limits (GITHUB_TOKEN 1,000/h in Actions; fine-grained PAT 5,000/h); no redistribution of user personal data",
+      "cadence": "weekly",
+      "provides": [
+        "repositories",
+        "topics",
+        "releases",
+        "advisories",
+        "stars",
+        "forks",
+        "contributors"
+      ],
+      "topics": [
+        "ai-agents",
+        "ai-agent",
+        "llm-agents",
+        "mcp-server",
+        "mcp",
+        "a2a",
+        "agentic"
+      ]
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face Hub API",
+      "kind": "api",
+      "access": "automated",
+      "url": "https://huggingface.co/api",
+      "terms": "Hugging Face Hub terms; public metadata only",
+      "cadence": "weekly",
+      "provides": [
+        "spaces",
+        "models",
+        "likes",
+        "tags"
+      ]
+    },
+    {
+      "id": "mcp_registry",
+      "name": "Official MCP Registry",
+      "kind": "api",
+      "access": "automated",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers",
+      "terms": "Open registry API; cursor pagination; version=latest",
+      "cadence": "weekly",
+      "provides": [
+        "mcp_servers",
+        "remotes",
+        "packages"
+      ]
+    },
+    {
+      "id": "ard_web",
+      "name": "ARD well-known manifests, link rel=ard, in-page JSON-LD, Agentmap, DNS SVCB",
+      "kind": "crawl",
+      "access": "automated",
+      "url": "https://agenticresourcediscovery.org/spec/",
+      "terms": "Publisher-hosted manifests intended for discovery; robots.txt honored",
+      "cadence": "weekly",
+      "provides": [
+        "ard_entries",
+        "a2a_cards",
+        "mcp_server_cards"
+      ]
+    },
+    {
+      "id": "aws_marketplace",
+      "name": "AWS Marketplace AI Agents & Tools",
+      "kind": "curated",
+      "access": "manual",
+      "url": "https://aws.amazon.com/marketplace/solutions/ai-agents-and-tools",
+      "terms": "AWS Marketplace terms restrict automated collection; curated records with listing URLs until partner API access is confirmed",
+      "cadence": "monthly",
+      "provides": [
+        "listings",
+        "compliance_fields"
+      ]
+    },
+    {
+      "id": "microsoft_agent_store",
+      "name": "Microsoft Agent Store",
+      "kind": "curated",
+      "access": "manual",
+      "url": "https://learn.microsoft.com/",
+      "terms": "Curated records with listing URLs",
+      "cadence": "monthly",
+      "provides": [
+        "listings",
+        "certification_status"
+      ]
+    },
+    {
+      "id": "google_cloud_marketplace",
+      "name": "Google Cloud Marketplace (A2A agents)",
+      "kind": "curated",
+      "access": "manual",
+      "url": "https://cloud.google.com/marketplace",
+      "terms": "Curated records with listing URLs",
+      "cadence": "monthly",
+      "provides": [
+        "listings",
+        "agent_cards"
+      ]
+    },
+    {
+      "id": "fedramp",
+      "name": "FedRAMP Marketplace public data",
+      "kind": "file",
+      "access": "automated",
+      "url": "https://raw.githubusercontent.com/FedRAMP/marketplace-fedramp-gov-data/main/data.json",
+      "terms": "US Government work; public domain",
+      "cadence": "weekly",
+      "provides": [
+        "fedramp_status"
+      ]
+    },
+    {
+      "id": "csa_star",
+      "name": "CSA STAR Registry",
+      "kind": "web",
+      "access": "manual",
+      "url": "https://cloudsecurityalliance.org/star/registry",
+      "terms": "Confirm automated-access terms in Phase 0; maintainer-entered until then",
+      "cadence": "monthly",
+      "provides": [
+        "star_level",
+        "iso42001",
+        "star_for_ai",
+        "aiuc1"
+      ]
+    },
+    {
+      "id": "dpf",
+      "name": "EU-U.S. Data Privacy Framework participant list",
+      "kind": "web",
+      "access": "manual",
+      "url": "https://www.dataprivacyframework.gov/list",
+      "terms": "US Government site; confirm automated-access terms; per-record lookup",
+      "cadence": "monthly",
+      "provides": [
+        "dpf_status",
+        "uk_extension"
+      ]
+    },
+    {
+      "id": "iaf_certsearch",
+      "name": "IAF CertSearch",
+      "kind": "web",
+      "access": "manual",
+      "url": "https://www.iafcertsearch.org/",
+      "terms": "Terms restrict bulk automation; per-record lookup by maintainer",
+      "cadence": "monthly",
+      "provides": [
+        "iso_certificates"
+      ]
+    },
+    {
+      "id": "vendor_trust_centers",
+      "name": "Vendor trust centers and newsroom feeds",
+      "kind": "crawl",
+      "access": "automated",
+      "url": "per config/sources domains",
+      "terms": "Public pages; robots.txt honored; claims only",
+      "cadence": "monthly",
+      "provides": [
+        "compliance_claims",
+        "news"
+      ]
+    },
+    {
+      "id": "gdelt",
+      "name": "GDELT DOC 2.0 API",
+      "kind": "api",
+      "access": "automated",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+      "terms": "Open data; headline, URL, outlet and date only",
+      "cadence": "weekly",
+      "provides": [
+        "news"
+      ]
+    },
+    {
+      "id": "hackernews",
+      "name": "Hacker News (Algolia API)",
+      "kind": "api",
+      "access": "automated",
+      "url": "https://hn.algolia.com/api/v1/search",
+      "terms": "Public API; titles, URLs and counts only",
+      "cadence": "weekly",
+      "provides": [
+        "community"
+      ]
+    },
+    {
+      "id": "nvd",
+      "name": "NVD CVE API and GitHub Security Advisories",
+      "kind": "api",
+      "access": "automated",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "terms": "Public; NVD asks for an API key for higher rate limits",
+      "cadence": "weekly",
+      "provides": [
+        "cves",
+        "advisories"
+      ]
+    }
+  ]
+}

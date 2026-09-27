@@ -1,0 +1,45 @@
+{
+  "id": "cyber_essentials",
+  "name": "Cyber Essentials / Cyber Essentials Plus",
+  "jurisdictions": [
+    "UK"
+  ],
+  "group": "certification",
+  "priority": "launch",
+  "sources": [
+    {
+      "kind": "registry",
+      "url": "https://iasme.co.uk/cyber-essentials/ncsc-certificate-search/",
+      "terms_note": "IASME certificate search; per-record lookup",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "CYBER_ESSENTIALS",
+    "CYBER_ESSENTIALS_PLUS"
+  ],
+  "expiry_rule": {
+    "kind": "fixed_date"
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.7,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "Found in {registry} on {date}",
+    "tier2": "Listed on {marketplace} on {date}",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "Vendor-claimed ({source}, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "*"
+  ]
+}

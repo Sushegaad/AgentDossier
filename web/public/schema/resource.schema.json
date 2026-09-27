@@ -1,0 +1,509 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sushegaad.github.io/AgentDossier/schema/resource.schema.json",
+  "title": "Resource",
+  "description": "Canonical AgentDossier resource record (BRD v3.2 \u00a73.1, FR-05). Public and private records share this shape; private records carry scope=private and a tenant.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "resource_type",
+    "scope",
+    "protocols",
+    "domains",
+    "sources",
+    "first_seen",
+    "last_seen"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^res_[0-9a-f]{16}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "vendor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publisher_domain": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canonical_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resource_type": {
+      "type": "string",
+      "enum": [
+        "agent",
+        "a2a_agent",
+        "mcp_server",
+        "skill",
+        "api",
+        "workflow",
+        "framework",
+        "platform",
+        "marketplace",
+        "tool",
+        "registry"
+      ]
+    },
+    "category": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "public",
+        "private"
+      ]
+    },
+    "tenant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deployment": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "commercial": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "representative_queries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 10
+    },
+    "external_ids": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "protocols": {
+      "type": "object",
+      "required": [
+        "a2a",
+        "mcp",
+        "ard"
+      ],
+      "properties": {
+        "a2a": {
+          "type": "object",
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "verified",
+                "claimed",
+                "not_found",
+                "unknown",
+                "invalid"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "mcp": {
+          "type": "object",
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "verified",
+                "claimed",
+                "not_found",
+                "unknown",
+                "invalid"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "ard": {
+          "type": "object",
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "verified",
+                "claimed",
+                "not_found",
+                "unknown",
+                "invalid"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "identity": {
+      "type": "object",
+      "properties": {
+        "tier": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "components": {
+      "type": "object",
+      "properties": {
+        "adoption": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "trust": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "health": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ecosystem": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "domain_fit": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "governance": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "docs": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "domains": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "score",
+          "profile",
+          "score_version",
+          "confidence"
+        ],
+        "properties": {
+          "rank": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "recomputed": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "profile": {
+            "type": "string"
+          },
+          "score_version": {
+            "type": "string"
+          },
+          "evidence_coverage": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "compliance": {
+      "type": "array",
+      "items": {
+        "$ref": "compliance_record.schema.json"
+      }
+    },
+    "issues": {
+      "type": "object",
+      "properties": {
+        "regulator_actions": {
+          "type": "integer"
+        },
+        "cves": {
+          "type": "integer"
+        },
+        "advisories": {
+          "type": "integer"
+        },
+        "incidents": {
+          "type": "integer"
+        },
+        "withdrawn_certificates": {
+          "type": "integer"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "url"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "date": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "news": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "headline",
+          "url",
+          "outlet",
+          "date",
+          "tag",
+          "link_confidence"
+        ],
+        "properties": {
+          "headline": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "outlet": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "tag": {
+            "type": "string"
+          },
+          "summary": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "news",
+              "community",
+              "vendor",
+              "security"
+            ]
+          },
+          "link_confidence": {
+            "type": "number",
+            "minimum": 0.85,
+            "maximum": 1
+          },
+          "cluster_size": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "signals": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "seed": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "system",
+          "retrieved_at"
+        ],
+        "properties": {
+          "system": {
+            "type": "string"
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "payload_hash": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "raw": {
+      "type": "object",
+      "description": "Raw protocol payloads kept for forward migration; never committed to the public catalog",
+      "additionalProperties": true
+    },
+    "first_seen": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_seen": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}
