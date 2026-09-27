@@ -10,5 +10,24 @@ const { res } = Astro.props;
 ---
 
 <Base title={res.name} description={res.description ?? undefined}>
-  <AgentProfile client:load resource={res} />
+  {/* rendered at build time with no client-side React: the dossier is static HTML */}
+  <AgentProfile resource={res} shortlist="static" />
+  <script>
+    import { inShortlist, onShortlistChange, toggleShortlist } from "../../lib/shortlist";
+    const btn = document.querySelector<HTMLButtonElement>("button[data-shortlist-id]");
+    if (btn) {
+      const item = { id: btn.dataset.shortlistId!, slug: btn.dataset.slug!, name: btn.dataset.name!, vendor: btn.dataset.vendor || null };
+      const paint = () => {
+        const on = inShortlist(item.id);
+        btn.setAttribute("aria-pressed", String(on));
+        btn.textContent = on ? "★ Shortlisted" : "☆ Shortlist";
+      };
+      btn.addEventListener("click", () => {
+        toggleShortlist(item);
+        paint();
+      });
+      onShortlistChange(paint);
+      paint();
+    }
+  </script>
 </Base>

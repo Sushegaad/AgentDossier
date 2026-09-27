@@ -1,0 +1,10 @@
+---
+import Base from "../layouts/Base.astro";
+import SearchApp from "../components/SearchApp";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<Base title="Search">
+  <link slot="head" rel="preload" href={`${base}/catalog/index.json`} as="fetch" crossorigin="anonymous" />
+  <SearchApp client:load />
+</Base>

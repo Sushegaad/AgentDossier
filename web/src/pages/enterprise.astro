@@ -1,0 +1,120 @@
+---
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const repo = "https://github.com/Sushegaad/AgentDossier";
+const controls = [
+  ["Authorization gate", "Starts only with an approver name and a change ticket in the configuration. Both go to the scan report and the audit log."],
+  ["Allow-list scope", "Only listed CIDRs and hosts are reachable. Redirects are re-checked against the scope. Public addresses are always refused; there is no allow-public switch."],
+  ["Read-only probes", "HTTP GET of the standards' well-known documents and, optionally, the MCP list methods. No tool calls, no A2A messages, no credential guessing, no port sweeps."],
+  ["Throttled", "4 requests/s per host, 16 concurrent hosts, 2 MB response cap, 8 s timeout by default. Give SecOps the scanner IP and window."],
+  ["Secrets stay out", "Auth headers come from environment variables named in the config and are never written to the file, the catalog or the report."],
+  ["Tenant-private", "Records carry scope=private and the tenant ID and live only in your catalog. Runs air-gapped; the public demo never scans anyone."],
+];
+const steps = [
+  ["Authorize", "Written approval of subnets, hosts, ports and window, plus a change ticket. The scanner records approver and ticket.", "approved change ticket exists"],
+  ["Place the scanner inside the network", "Linux VM, jump host or Kubernetes job in the same segment. No inbound ports needed; runs air-gapped. Avoid laptops on VPN.", "host reaches a sample target"],
+  ["Install", "Pull the image into your internal registry or install the Python package (3.11+). Verify the checksum.", "agentdossier --version runs"],
+  ["Open the network path", "Firewall rules to targets on the configured ports. Add internal ranges to NO_PROXY. Tell SecOps the scanner IP and window.", "preflight passes"],
+  ["Configure", "Write enterprise.json. Trust the internal CA via tls.ca_bundle. Secrets by environment variable only. Leave the MCP handshake off until service owners agree.", "config validates"],
+  ["Test", "The self-test must find the bundled loopback fixtures. The plan (dry run) lists every target and sends nothing. Pilot on one small subnet.", "zero out-of-scope requests"],
+  ["Run and protect results", "Outputs a private catalog, scan-report.json, raw probe snapshots and a generated ard.json. The catalog maps internal endpoints: store it restricted.", "catalog behind SSO"],
+  ["Operate", "Weekly schedule in the config, rotate the token, review the audit log. Ask teams to publish agent-card.json, ard.json or an MCP server card.", "scheduled scan running"],
+];
+const config = `{
+  "tenant": "acme-corp",
+  "authorized_by": "J. Smith, CISO office",
+  "ticket": "CHG-10432",
+  "scope": { "allow_cidrs": ["10.20.0.0/16"],
+             "allow_hosts": ["agents.corp.acme.com"] },
+  "targets": { "cidrs": ["10.20.4.0/24"],
+               "hosts": ["claims-agent.corp.acme.com"],
+               "dns_domains": ["corp.acme.com"],
+               "registries": ["https://agent-registry.corp.acme.com"] },
+  "ports": [443, 8080],
+  "probes": { "ard": true, "a2a": true,
+              "mcp_server_card": true, "mcp_handshake": false },
+  "limits": { "requests_per_host_per_sec": 4,
+              "concurrency": 16, "timeout_sec": 8 },
+  "auth": { "headers_from_env": { "Authorization": "AGENTREG_INTERNAL_TOKEN" } },
+  "tls": { "ca_bundle": "/etc/ssl/corp-root-ca.pem" },
+  "schedule": { "cron": "0 6 * * 1" }
+}`;
+---
+
+<Base title="Enterprise edition">
+  <section class="split" style="padding: 40px 0 56px; border-bottom: 2px solid var(--rule)">
+    <div>
+      <h1>Find the agents already running on your network.</h1>
+      <p class="body" style="font-size: 1.1rem; margin-top: 24px; max-width: 60ch">
+        One self-hosted container: a scanner for Agentic Resource Discovery (ARD), Agent2Agent (A2A) and Model Context
+        Protocol (MCP) metadata inside subnets you authorize, a private registry with the ARD REST API, policy
+        qualification and scheduled scans. Same MIT codebase as this demo. Nothing leaves your tenant.
+      </p>
+      <div class="row" style="margin-top: 28px; gap: 12px">
+        <a class="btn primary" href={`${repo}/blob/main/docs/enterprise-runbook.md`}>Operator runbook →</a>
+        <a class="btn" href={`${repo}/tree/main/deploy`}>Container and compose file</a>
+      </div>
+    </div>
+    <pre class="code"><span class="c">$</span> agentdossier enterprise selftest
+<span class="c">$</span> agentdossier enterprise preflight enterprise.json
+<span class="c">$</span> agentdossier enterprise plan enterprise.json      <span class="c"># dry run, nothing fetched</span>
+<span class="c">$</span> agentdossier enterprise scan enterprise.json
+<span class="c">$</span> agentdossier serve --catalog build/enterprise/acme-corp/catalog \
+      --enterprise-config enterprise.json</pre>
+  </section>
+
+  <section class="section" style="padding-top: 56px">
+    <div class="section-head"><h2>The scanner cannot do harm by design</h2></div>
+    <div class="four" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))">
+      {controls.map(([t, b]) => (
+        <div><h4>{t}</h4><p>{b}</p></div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Eight steps to a private inventory</h2></div>
+    <div class="ledger">
+      {steps.map(([t, b, done], i) => (
+        <div class="ledger-row" style="grid-template-columns: 48px 220px 1fr 220px; padding: 14px 0">
+          <b style="font-size: 1.1rem">{String(i + 1).padStart(2, "0")}</b>
+          <b>{t}</b>
+          <span class="body">{b}</span>
+          <span class="tiny muted">Done when: {done}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split rev" style="border-top: 2px solid var(--rule); padding-top: 16px">
+      <div>
+        <h2>enterprise.json</h2>
+        <p class="body" style="margin-top: 16px; max-width: 44ch">
+          Validates against the published <a href={`${base}/schema/enterprise_config.schema.json`}>schema</a>. Authorization is part of the file; secrets are not. The
+          scope is the only address space the scanner can reach.
+        </p>
+        <h3 style="margin-top: 32px">Three ways to run it</h3>
+        <div class="ledger" style="margin-top: 12px">
+          <div class="ledger-row" style="grid-template-columns: 180px 1fr"><b>CLI + local viewer</b><span>The scanner writes a catalog; open its <code>index.json</code> in the <a href={`${base}/private/`}>private catalog viewer</a>. The file stays in the browser. Quick inventories, pilots.</span></div>
+          <div class="ledger-row" style="grid-template-columns: 180px 1fr"><b>Self-hosted registry</b><span>The container serves the UI, the ARD REST API, <code>POST /qualify</code>, scheduled scans and an MCP wrapper. Production, people and orchestrators.</span></div>
+          <div class="ledger-row" style="grid-template-columns: 180px 1fr"><b>Publish internally</b><span>Serve the generated <code>ard.json</code> on an internal domain so other registries and agents can discover what you found.</span></div>
+        </div>
+      </div>
+      <pre class="code">{config}</pre>
+    </div>
+  </section>
+
+  <div class="band full-bleed">
+    <h2><span style="display:block">From discovered</span><span style="display:block">to approved and monitored.</span></h2>
+    <div>
+      <p style="font-size: 1.1rem; line-height: 1.55">
+        Policy templates mark every result Eligible, Needs review, Disallowed or Unknown with the rule-by-rule reason, on the page and through <code>POST /qualify</code> for your orchestrators. Templates ship for healthcare, bank, insurer, startup and government. Scheduled scans, scan history and an audit trail are built in; workspaces, approvals and alerts are the next phase.
+      </p>
+      <div class="row" style="margin-top: 24px; gap: 12px">
+        <a class="btn dark" href={`${repo}/blob/main/docs/enterprise-runbook.md`}>Read the runbook →</a>
+        <a class="btn" href={`${repo}/tree/main/config/policy_templates`}>Policy templates</a>
+      </div>
+    </div>
+  </div>
+</Base>

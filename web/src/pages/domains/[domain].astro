@@ -1,52 +1,94 @@
 ---
 import Base from "../../layouts/Base.astro";
-import TrustStrip from "../../components/TrustStrip";
 import { loadDomains } from "../../lib/catalog";
+import { COMPONENT_MAX, DOMAIN_PROFILES, PROFILES } from "../../lib/dossier";
+import { badgeLabel } from "../../lib/labels";
 
 export function getStaticPaths() {
-  return loadDomains().map((d) => ({ params: { domain: d.domain }, props: { d } }));
+  const all = loadDomains();
+  return all.map((d) => ({ params: { domain: d.domain }, props: { d, all } }));
 }
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-const { d } = Astro.props;
+const { d, all } = Astro.props;
+const order = Object.keys(DOMAIN_PROFILES);
+const sorted = [...all].sort((a, b) => order.indexOf(a.domain) - order.indexOf(b.domain));
+const num = order.indexOf(d.domain) + 1;
+const profile = DOMAIN_PROFILES[d.domain] ?? d.profile;
+const w = PROFILES[profile] ?? PROFILES.general;
+const wtext = Object.entries(w).map(([k, v]) => `${k.replace("_", " ")} ${v}`).join(", ");
+const comps = Object.keys(COMPONENT_MAX);
+const short: Record<string, string> = { adoption: "Adopt", trust: "Trust", health: "Health", ecosystem: "Eco", domain_fit: "Fit", governance: "Gov", docs: "Docs" };
+const g = (s: string | undefined) => (s === "verified" ? "✔" : s === "claimed" ? "○" : "–");
+const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.compliance}`;
 ---
 
-<Base title={d.label}>
-  <h1>{d.label}</h1>
-  <p class="muted">
-    Top {d.ranked.length} ranked under the <strong>{d.profile}</strong> profile · snapshot {d.snapshot_date} · {d.score_version}.
-    {d.note && <span> {d.note}</span>}
+<Base title={`${d.label} · Top 100`}>
+  <nav class="row small" style="border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 20px; gap: 1.25rem" aria-label="Domains">
+    {sorted.map((x) => (
+      <a href={`${base}/domains/${x.domain}/`} style={x.domain === d.domain ? "color: var(--accent-ink); font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--accent-ink)" : "color: var(--ink); text-decoration: none"}>
+        {x.label.split(/[,&]/)[0].trim()}
+      </a>
+    ))}
+  </nav>
+  <div class="eyebrow muted">Domain {num} of {sorted.length} · {profile} profile</div>
+  <h1 style="margin-top: 6px; font-size: clamp(2rem, 4.5vw, 3rem)">{d.label} · Top 100</h1>
+  <p class="body" style="margin-top: 14px; max-width: 72ch">
+    Ranked by domain score under the <strong>{profile}</strong> profile: {wtext}. Every row exposes its components.
+    Scores are comparative discovery signals, not certification. Snapshot {d.snapshot_date} · {d.score_version}.
   </p>
-  <p><a class="btn" href={`${base}/?domain=${d.domain}`}>Search within {d.label}</a></p>
+  <div class="row" style="margin: 20px 0 12px; gap: 12px">
+    <a class="btn" href={`${base}/search/?domain=${d.domain}`}>Search within {d.label.split(/[,&]/)[0].trim()}</a>
+    <a class="btn" href={`${base}/catalog/domains/${d.domain}.json`}>Export JSON</a>
+  </div>
   <div class="scroll-x" tabindex="0">
     <table>
       <thead>
-        <tr><th>#</th><th>Agent</th><th>Vendor</th><th>Type</th><th>Score</th><th>Trust</th><th>Coverage</th></tr>
+        <tr>
+          <th>#</th>
+          <th>Agent / product</th>
+          <th>Trust profile</th>
+          <th>Protocols (MCP · A2A · ARD)</th>
+          <th>License</th>
+          {comps.map((c) => <th title={c}>{short[c]}</th>)}
+          <th>Score</th>
+        </tr>
       </thead>
       <tbody>
         {d.ranked.map((r) => (
           <tr>
-            <td>{r.rank}</td>
-            <td><a href={`${base}/agents/${r.slug}/`}>{r.name}</a><div class="muted small">{r.category}</div></td>
-            <td>{r.vendor}</td>
-            <td>{r.resource_type.replace(/_/g, " ")}</td>
-            <td>{r.score.toFixed(1)}</td>
-            <td><TrustStrip trust={r.trust} compact /></td>
-            <td title="share of score components that were known (unknown = 0, never imputed)">{Math.round(r.evidence_coverage * 100)}%</td>
+            <td style="font-weight: 800">{r.rank}</td>
+            <td>
+              <a href={`${base}/agents/${r.slug}/`} style="font-weight: 800; color: var(--ink); text-decoration: none">{r.name}</a>
+              <div class="tiny muted">{r.vendor} · {r.category}</div>
+            </td>
+            <td>
+              <div style="font-weight: 800">Identity T{r.trust.identity} · evidence {tierRange(r)}</div>
+              <div class="tiny muted">{r.trust.security ? `security T${r.trust.security}` : "security –"} · {r.trust.issues == null ? "issues –" : r.trust.issues === 1 ? "no issues" : "issues linked"}</div>
+            </td>
+            <td style="white-space: nowrap">{g(r.protocols.mcp)} · {g(r.protocols.a2a)} · {g(r.protocols.ard)}</td>
+            <td class="small">{r.license ?? "—"}</td>
+            {comps.map((c) => <td class="small muted">{r.components?.[c] ?? "?"}</td>)}
+            <td style="font-weight: 800">{r.score.toFixed(1)}</td>
           </tr>
         ))}
       </tbody>
     </table>
   </div>
+  <p class="tiny muted" style="margin-top: 10px">
+    MCP = Model Context Protocol, A2A = Agent2Agent, ARD = Agentic Resource Discovery · ✔ verified · ○ claimed · – not observed · components: adoption /30, trust /25, health /20, ecosystem /15, fit /100, governance /100, docs /10 · "?" = unknown, counted as 0.
+  </p>
   {d.discovered.length > 0 && (
-    <>
-      <h2>Discovered (unranked)</h2>
-      <p class="muted small">Found by the connectors; classified into this domain but not scored against the seed baseline.</p>
-      <ul>
+    <section class="section" style="margin-top: 48px">
+      <div class="section-head"><h2>Discovered, unranked</h2><span class="small muted">found by the connectors; classified into this domain but not scored against the seed baseline</span></div>
+      <div class="ledger">
         {d.discovered.map((r) => (
-          <li><a href={`${base}/agents/${r.slug}/`}>{r.name}</a> <span class="muted small">{r.vendor}</span></li>
+          <div class="ledger-row" style="grid-template-columns: 1fr auto">
+            <span><a href={`${base}/agents/${r.slug}/`}>{r.name}</a> <span class="muted small">{r.vendor}</span></span>
+            <span class="tierbox">Identity T{r.trust.identity}</span>
+          </div>
         ))}
-      </ul>
-    </>
+      </div>
+    </section>
   )}
-  <p class="notice small" style="margin-top: 1.5rem">{d.disclaimer}</p>
+  <p class="tiny muted" style="border-top: 2px solid var(--rule); padding: 10px 0; margin-top: 32px">{d.disclaimer}</p>
 </Base>
