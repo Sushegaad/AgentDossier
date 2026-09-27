@@ -1,0 +1,10 @@
+---
+import Base from "../layouts/Base.astro";
+import ShortlistApp from "../components/ShortlistApp";
+---
+
+<Base title="Shortlist">
+  <h1>Shortlist</h1>
+  <p class="muted">Kept in this browser's local storage; there are no accounts and nothing is sent to a server.</p>
+  <ShortlistApp client:load />
+</Base>

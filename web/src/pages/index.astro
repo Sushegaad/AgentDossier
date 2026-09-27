@@ -1,0 +1,41 @@
+---
+import Base from "../layouts/Base.astro";
+import SearchApp from "../components/SearchApp";
+import { loadIndex, loadSummary } from "../lib/catalog";
+import { domainLabel } from "../lib/labels";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const index = loadIndex();
+const summary = loadSummary() as { resources?: number; identity_tiers?: Record<string, number>; domains?: Record<string, { ranked: number; discovered: number }> } | null;
+const withEvidence = index?.records.filter((r) => r.compliance_summary.some((c) => c.status === "active")).length ?? 0;
+const t1 = index?.records.filter((r) => r.compliance_summary.some((c) => c.status === "active" && c.tier === 1)).length ?? 0;
+const domains = Object.keys(summary?.domains ?? {});
+---
+
+<Base title="Search">
+  <section class="hero">
+    <h1>Find AI agents, with evidence you can check.</h1>
+    <p>
+      Describe what you need in plain words. AgentDossier turns it into requirement chips, ranks the seed top-100 lists
+      and discovered resources by fit, and shows for every agent what evidence exists for the certifications it claims —
+      registry-matched, marketplace-listed, document-evidenced or vendor-claimed — and how fresh it is.
+    </p>
+  </section>
+  <SearchApp client:load />
+  {index && (
+    <section style="margin-top: 2.5rem">
+      <h2>Catalog at a glance</h2>
+      <div class="kpi">
+        <div class="card"><div class="n">{index.records.length}</div><div class="muted small">resources</div></div>
+        <div class="card"><div class="n">{domains.length}</div><div class="muted small">domains with ranked top-100 lists</div></div>
+        <div class="card"><div class="n">{withEvidence}</div><div class="muted small">with any compliance evidence</div></div>
+        <div class="card"><div class="n">{t1}</div><div class="muted small">with registry-matched (T1) evidence</div></div>
+      </div>
+      <p class="row" style="margin-top: 1rem">
+        {domains.map((d) => (
+          <a class="chip" href={`${base}/domains/${d}/`}>{domainLabel(d)}</a>
+        ))}
+      </p>
+    </section>
+  )}
+</Base>

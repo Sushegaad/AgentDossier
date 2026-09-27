@@ -37,6 +37,43 @@ jobs:
       - name: BRD traceability
         run: uv run python scripts/check_traceability.py
 
+  web:
+    name: web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Offline catalog for the build (seed workbook only)
+        run: |
+          uv sync --extra connectors
+          uv run agentdossier build --sources seed --offline --no-review --out build/catalog
+      - name: Install
+        working-directory: web
+        run: npm ci
+      - name: Type check
+        working-directory: web
+        run: npm run check
+      - name: Unit tests (intent parser, search, precision@10)
+        working-directory: web
+        env:
+          CATALOG_DIR: ../build/catalog
+        run: npm test
+      - name: Build
+        working-directory: web
+        env:
+          CATALOG_DIR: ../build/catalog
+        run: npm run build
+      - name: Smoke-check the output
+        run: test -f web/dist/index.html && test -f web/dist/catalog/index.json && test -f web/dist/.well-known/ard.json
+
   security:
     name: security
     runs-on: ubuntu-latest

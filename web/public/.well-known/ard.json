@@ -1,19 +1,25 @@
 {
-  "entries": [
-    {
-      "@context": "https://agenticresourcediscovery.org/context/v1",
-      "identifier": "urn:air:sushegaad.github.io:registry:agentdossier",
-      "displayName": "AgentDossier public demo registry",
-      "type": "application/ai-registry+json",
-      "url": "https://sushegaad.github.io/AgentDossier/",
-      "description": "Reference implementation of a standards-aware AI agent registry. Static demo; the ARD search API is served by the self-hosted edition.",
-      "representativeQueries": [
-        "find an insurance claims agent with a HIPAA BAA",
-        "which coding agents support MCP",
-        "FedRAMP authorized agent platforms"
-      ],
-      "tags": ["registry", "reference-implementation", "ard", "a2a", "mcp"],
-      "version": "0.1.0"
-    }
-  ]
+ "entries": [
+  {
+   "@context": "https://agenticresourcediscovery.org/context/v1",
+   "identifier": "urn:air:sushegaad.github.io:registry:agentdossier",
+   "displayName": "AgentDossier public demo registry",
+   "type": "application/ai-registry+json",
+   "url": "https://sushegaad.github.io/AgentDossier/",
+   "description": "Reference implementation of a standards-aware AI agent registry. Static demo; the ARD search API is served by the self-hosted edition.",
+   "representativeQueries": [
+    "find an insurance claims agent with a HIPAA BAA",
+    "which coding agents support MCP",
+    "FedRAMP authorized agent platforms"
+   ],
+   "tags": [
+    "registry",
+    "reference-implementation",
+    "ard",
+    "a2a",
+    "mcp"
+   ],
+   "version": "0.1.0"
+  }
+ ]
 }

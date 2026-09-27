@@ -3,7 +3,7 @@ name: pages
 on:
   push:
     branches: [main]
-    paths: ["web/**", "data/catalog/**", ".github/workflows/pages.yml"]
+    paths: ["web/**", "data/catalog/**", "docs/methodology.md", "config/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -20,17 +20,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # Phase 0: publish the static placeholder in web/public. Phase 1 replaces this
-      # step with the Astro build (pnpm install && pnpm build --mode demo).
-      - name: Assemble site
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Choose the catalog
+        # The weekly refresh commits data/catalog. Until the first refresh PR is merged,
+        # publish an offline build of the seed workbook so the demo is never empty.
+        id: catalog
         run: |
-          mkdir -p dist/catalog
-          cp -r web/public/. dist/
-          if [ -f data/catalog/index.json ]; then cp -r data/catalog/. dist/catalog/; cp data/catalog/ard.json dist/.well-known/ard.json; fi
-          test -f dist/index.html
+          if [ -f data/catalog/index.json ]; then
+            echo "dir=$PWD/data/catalog" >> "$GITHUB_OUTPUT"
+          else
+            uv sync --extra connectors
+            uv run agentdossier build --sources seed --offline --no-review --out build/catalog
+            echo "dir=$PWD/build/catalog" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Build the site
+        working-directory: web
+        env:
+          CATALOG_DIR: ${{ steps.catalog.outputs.dir }}
+          SITE_BASE: /AgentDossier
+          SITE_URL: https://sushegaad.github.io
+        run: |
+          npm ci
+          npm run build
+          test -f dist/index.html && test -f dist/catalog/index.json
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: web/dist
 
   deploy:
     needs: build

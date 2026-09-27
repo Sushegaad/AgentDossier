@@ -1,0 +1,10 @@
+---
+import Base from "../layouts/Base.astro";
+import CompareApp from "../components/CompareApp";
+---
+
+<Base title="Compare">
+  <h1>Compare</h1>
+  <p class="muted">Side by side: trust tiers, domain ranks, evidence per framework, protocols, CVEs and issues.</p>
+  <CompareApp client:load />
+</Base>
