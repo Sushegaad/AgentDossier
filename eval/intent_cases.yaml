@@ -1,0 +1,102 @@
+version: intent-cases-0.1
+notes: 'Starter set: the three BRD examples plus seven more. Target 50+ before the Phase 1 gate; >=95% chip accuracy.'
+cases:
+- id: ic001
+  text: I need an agent for insurance claims that can handle PHI
+  expected:
+    domain:
+    - insurance
+    capability:
+    - claims
+    data_class:
+    - phi
+    must_have:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      min_tier: 4
+- id: ic002
+  text: Find coding agents we can deploy inside our VPC
+  expected:
+    domain:
+    - technology
+    capability:
+    - coding
+    deployment:
+    - private
+- id: ic003
+  text: I need a customer-service agent approved for our Microsoft stack
+  expected:
+    domain:
+    - sales
+    capability:
+    - customer_service
+    ecosystem:
+    - microsoft
+- id: ic004
+  text: Find a legal research agent with SOC 2 Type II
+  expected:
+    domain:
+    - legal
+    capability:
+    - legal_research
+    must_have:
+    - framework: soc2
+      min_tier: 4
+- id: ic005
+  text: open source MCP server for SQL data analysis
+  expected:
+    domain:
+    - data
+    capability:
+    - data_analysis
+    protocol:
+    - mcp
+    trust:
+    - open_source
+- id: ic006
+  text: FedRAMP moderate agent for public sector case management
+  expected:
+    domain:
+    - government
+    must_have:
+    - framework: fedramp
+      min_tier: 4
+- id: ic007
+  text: customer support agent for Salesforce that handles PII
+  expected:
+    domain:
+    - sales
+    capability:
+    - customer_service
+    ecosystem:
+    - salesforce
+    data_class:
+    - pii
+- id: ic008
+  text: supply chain planning agent on SAP
+  expected:
+    domain:
+    - supply_chain
+    capability:
+    - supply_chain_planning
+    ecosystem:
+    - sap
+- id: ic009
+  text: a security operations agent that is self-hosted
+  expected:
+    domain:
+    - cybersecurity
+    capability:
+    - security_operations
+    deployment:
+    - private
+- id: ic010
+  text: contract review agent for EU customers under GDPR
+  expected:
+    domain:
+    - legal
+    capability:
+    - contract_review
+    must_have:
+    - framework: gdpr
+      min_tier: 4

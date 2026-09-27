@@ -1,0 +1,409 @@
+{
+  "version": "intent-rules-1.0",
+  "notes": "Rule-based intent parser (FR-27). Runs in the browser (web/src/lib/intent.ts) and in Python (agentdossier/policy/intent.py). Phrases are matched case-insensitively on word boundaries; longer phrases win. 'emits' lists the requirement chips produced.",
+  "dimensions": {
+    "domain": {
+      "source": "config/taxonomy.json#domains.*.keywords"
+    },
+    "capability": {
+      "phrases": {
+        "claims": [
+          "claims",
+          "claim handling",
+          "claims processing",
+          "claims intake",
+          "claims adjudication"
+        ],
+        "underwriting": [
+          "underwriting",
+          "underwriter"
+        ],
+        "coding": [
+          "coding",
+          "code",
+          "write code",
+          "software engineering",
+          "developer",
+          "programming",
+          "pull requests"
+        ],
+        "customer_service": [
+          "customer service",
+          "customer support",
+          "support agent",
+          "help desk",
+          "helpdesk",
+          "contact center",
+          "service desk"
+        ],
+        "sales": [
+          "sales",
+          "lead generation",
+          "outreach",
+          "sdr",
+          "prospecting"
+        ],
+        "contract_review": [
+          "contract review",
+          "contract analysis",
+          "clause",
+          "redline",
+          "redlining"
+        ],
+        "legal_research": [
+          "legal research",
+          "case law"
+        ],
+        "data_analysis": [
+          "data analysis",
+          "analytics",
+          "sql",
+          "reporting",
+          "dashboards"
+        ],
+        "document_processing": [
+          "document processing",
+          "document extraction",
+          "invoice processing",
+          "ocr"
+        ],
+        "security_operations": [
+          "soc",
+          "security operations",
+          "threat detection",
+          "incident response",
+          "vulnerability"
+        ],
+        "compliance_monitoring": [
+          "compliance monitoring",
+          "regulatory monitoring",
+          "controls testing",
+          "audit"
+        ],
+        "supply_chain_planning": [
+          "supply chain",
+          "inventory",
+          "logistics",
+          "procurement",
+          "demand planning"
+        ],
+        "research": [
+          "research",
+          "web research",
+          "market research"
+        ],
+        "workflow_automation": [
+          "workflow",
+          "automation",
+          "rpa",
+          "back office"
+        ]
+      }
+    },
+    "data_class": {
+      "phrases": {
+        "phi": [
+          "phi",
+          "protected health information",
+          "patient data",
+          "health records",
+          "medical records",
+          "hipaa data"
+        ],
+        "pii": [
+          "pii",
+          "personal data",
+          "personally identifiable",
+          "customer data"
+        ],
+        "pci": [
+          "card data",
+          "payment card",
+          "cardholder data",
+          "pci data"
+        ],
+        "confidential": [
+          "confidential",
+          "internal data",
+          "proprietary data",
+          "trade secrets"
+        ],
+        "public": [
+          "public data only",
+          "non-sensitive"
+        ]
+      },
+      "implies": {
+        "phi": [
+          {
+            "chip": "must_have",
+            "framework": "hipaa",
+            "variant": "BAA_AVAILABLE",
+            "min_tier": 4
+          }
+        ],
+        "pci": [
+          {
+            "chip": "must_have",
+            "framework": "pci_dss",
+            "min_tier": 2
+          }
+        ],
+        "pii": [
+          {
+            "chip": "prefer",
+            "framework": "iso27701",
+            "min_tier": 4
+          }
+        ]
+      }
+    },
+    "deployment": {
+      "phrases": {
+        "private": [
+          "inside our vpc",
+          "in our vpc",
+          "vpc",
+          "private deployment",
+          "self-hosted",
+          "self hosted",
+          "on-prem",
+          "on prem",
+          "on-premises",
+          "air-gapped",
+          "air gapped",
+          "inside our network",
+          "our own cloud"
+        ],
+        "saas": [
+          "saas",
+          "hosted",
+          "cloud service"
+        ]
+      }
+    },
+    "compliance": {
+      "phrases": {
+        "hipaa": [
+          "hipaa",
+          "baa"
+        ],
+        "soc2": [
+          "soc 2",
+          "soc2",
+          "soc ii"
+        ],
+        "fedramp": [
+          "fedramp",
+          "fedramp moderate",
+          "fedramp high",
+          "federal"
+        ],
+        "gdpr": [
+          "gdpr",
+          "eu data",
+          "european customers",
+          "eu residency"
+        ],
+        "iso27001": [
+          "iso 27001",
+          "iso27001"
+        ],
+        "iso42001": [
+          "iso 42001",
+          "iso42001"
+        ],
+        "pci_dss": [
+          "pci",
+          "pci dss",
+          "pci-dss"
+        ],
+        "cyber_essentials": [
+          "cyber essentials"
+        ],
+        "uk_gdpr": [
+          "uk gdpr",
+          "ico"
+        ],
+        "eu_ai_act": [
+          "ai act",
+          "eu ai act"
+        ]
+      },
+      "default_min_tier": 4,
+      "phrase_tiers": {
+        "verified": 1,
+        "certified": 1,
+        "audited": 2,
+        "approved": 2
+      }
+    },
+    "protocol": {
+      "phrases": {
+        "mcp": [
+          "mcp",
+          "model context protocol",
+          "mcp server"
+        ],
+        "a2a": [
+          "a2a",
+          "agent2agent",
+          "agent card"
+        ],
+        "ard": [
+          "ard",
+          "agentic resource discovery"
+        ]
+      }
+    },
+    "ecosystem": {
+      "phrases": {
+        "microsoft": [
+          "microsoft stack",
+          "microsoft 365",
+          "m365",
+          "azure",
+          "copilot studio",
+          "teams"
+        ],
+        "salesforce": [
+          "salesforce",
+          "agentforce"
+        ],
+        "aws": [
+          "aws",
+          "bedrock",
+          "amazon"
+        ],
+        "google": [
+          "google cloud",
+          "gcp",
+          "vertex",
+          "google workspace"
+        ],
+        "servicenow": [
+          "servicenow"
+        ],
+        "sap": [
+          "sap"
+        ],
+        "github": [
+          "github"
+        ]
+      }
+    },
+    "jurisdiction": {
+      "phrases": {
+        "US": [
+          "united states",
+          "us-based",
+          "us data residency",
+          "us only"
+        ],
+        "UK": [
+          "united kingdom",
+          "uk-based",
+          "uk data"
+        ],
+        "EU": [
+          "european union",
+          "eu-based",
+          "eu data residency",
+          "eea"
+        ]
+      }
+    },
+    "trust": {
+      "phrases": {
+        "verified_only": [
+          "verified",
+          "certified only",
+          "audited vendors"
+        ],
+        "open_source": [
+          "open source",
+          "open-source",
+          "oss"
+        ]
+      }
+    }
+  },
+  "stopwords": [
+    "i",
+    "need",
+    "an",
+    "a",
+    "the",
+    "for",
+    "that",
+    "can",
+    "handle",
+    "we",
+    "our",
+    "find",
+    "agents",
+    "agent",
+    "with",
+    "to",
+    "in",
+    "of",
+    "and",
+    "approved",
+    "deploy",
+    "inside",
+    "which",
+    "is",
+    "are"
+  ],
+  "examples": [
+    {
+      "text": "I need an agent for insurance claims that can handle PHI",
+      "chips": {
+        "domain": [
+          "insurance"
+        ],
+        "capability": [
+          "claims"
+        ],
+        "data_class": [
+          "phi"
+        ],
+        "must_have": [
+          {
+            "framework": "hipaa",
+            "variant": "BAA_AVAILABLE",
+            "min_tier": 4
+          }
+        ]
+      }
+    },
+    {
+      "text": "Find coding agents we can deploy inside our VPC",
+      "chips": {
+        "domain": [
+          "technology"
+        ],
+        "capability": [
+          "coding"
+        ],
+        "deployment": [
+          "private"
+        ]
+      }
+    },
+    {
+      "text": "I need a customer-service agent approved for our Microsoft stack",
+      "chips": {
+        "domain": [
+          "sales"
+        ],
+        "capability": [
+          "customer_service"
+        ],
+        "ecosystem": [
+          "microsoft"
+        ]
+      }
+    }
+  ]
+}

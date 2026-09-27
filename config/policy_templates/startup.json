@@ -1,0 +1,44 @@
+{
+  "id": "pol_startup_default",
+  "name": "Startup",
+  "version": 1,
+  "jurisdictions": [
+    "US"
+  ],
+  "rules": [
+    {
+      "id": "r1",
+      "kind": "must",
+      "field": "identity.tier",
+      "op": "lte",
+      "value": 4
+    },
+    {
+      "id": "r2",
+      "kind": "preferred",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "soc2",
+        "minTier": 4
+      }
+    },
+    {
+      "id": "r3",
+      "kind": "preferred",
+      "field": "license.open_source",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "id": "r4",
+      "kind": "preferred",
+      "field": "protocols.mcp.status",
+      "op": "in",
+      "value": [
+        "verified",
+        "claimed"
+      ]
+    }
+  ]
+}

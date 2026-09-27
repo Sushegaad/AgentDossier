@@ -1,0 +1,59 @@
+{
+  "id": "pol_insurer_default",
+  "name": "Insurer (US)",
+  "version": 1,
+  "jurisdictions": [
+    "US"
+  ],
+  "rules": [
+    {
+      "id": "r1",
+      "kind": "must",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "soc2",
+        "variant": "SOC2_TYPE_II",
+        "minTier": 2
+      }
+    },
+    {
+      "id": "r2",
+      "kind": "must",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "hipaa",
+        "variant": "BAA_AVAILABLE",
+        "minTier": 4
+      }
+    },
+    {
+      "id": "r3",
+      "kind": "must",
+      "field": "identity.tier",
+      "op": "lte",
+      "value": 2
+    },
+    {
+      "id": "r4",
+      "kind": "preferred",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "iso27001",
+        "minTier": 2
+      }
+    },
+    {
+      "id": "r5",
+      "kind": "preferred",
+      "field": "protocols.a2a.status",
+      "op": "in",
+      "value": [
+        "verified",
+        "claimed"
+      ]
+    }
+  ]
+}

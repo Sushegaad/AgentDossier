@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sushegaad.github.io/AgentDossier/schema/policy.schema.json",
+  "title": "PolicyProfile",
+  "description": "Policy DSL (BRD FR-32, FR-38). Small by design so the Python and TypeScript evaluators stay identical. Field paths are a fixed whitelist.",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "rules"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pol_[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "US",
+          "UK",
+          "EU"
+        ]
+      }
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "field",
+          "op",
+          "value"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "must",
+              "must_not",
+              "preferred"
+            ]
+          },
+          "field": {
+            "type": "string",
+            "enum": [
+              "compliance",
+              "identity.tier",
+              "deployment",
+              "license.open_source",
+              "data_handling.trains_on_customer_data",
+              "data_handling.residency",
+              "protocols.mcp.status",
+              "protocols.a2a.status",
+              "protocols.ard.status",
+              "issues.regulator_actions",
+              "issues.cves",
+              "issues.incidents",
+              "resource_type",
+              "domains",
+              "vendor"
+            ]
+          },
+          "op": {
+            "type": "string",
+            "enum": [
+              "eq",
+              "in",
+              "lte",
+              "gte",
+              "has",
+              "exists"
+            ]
+          },
+          "value": {}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

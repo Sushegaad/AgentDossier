@@ -1,0 +1,47 @@
+{
+  "id": "nist_ai_rmf",
+  "name": "NIST AI RMF / NIST CSF 2.0",
+  "jurisdictions": [
+    "US"
+  ],
+  "group": "voluntary",
+  "priority": "launch",
+  "sources": [
+    {
+      "kind": "vendor",
+      "url": "trust center",
+      "terms_note": "Alignment statements only; never verified",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "NIST_AI_RMF_ALIGNED",
+    "NIST_CSF_2_ALIGNED"
+  ],
+  "expiry_rule": {
+    "kind": "recheck_months",
+    "months": 1
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.7,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "Found in {registry} on {date}",
+    "tier2": "Listed on {marketplace} on {date}",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "Aligned with {framework} (vendor statement, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "*"
+  ],
+  "notes": "Voluntary framework: shown as a claim, maximum tier 4."
+}

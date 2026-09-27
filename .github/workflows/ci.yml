@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: python ${{ matrix.python }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python }}
+          enable-cache: true
+      - name: Install
+        run: uv sync --extra dev
+      - name: Lint
+        run: uv run ruff check . && uv run ruff format --check .
+      - name: Types
+        run: uv run mypy agentdossier
+      - name: Config and schema check
+        run: uv run agentdossier config-check
+      - name: Seed fidelity (FR-16)
+        run: uv run agentdossier seed-check data/seed/top_100_ai_agents_by_domain_2026-09-25.xlsx
+      - name: Tests
+        run: uv run pytest -q --cov=agentdossier --cov-report=term-missing
+      - name: BRD traceability
+        run: uv run python scripts/check_traceability.py
+
+  security:
+    name: security
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+      - name: pip-audit
+        run: uv sync --extra dev && uv run --with pip-audit pip-audit --strict --desc || true
+      - name: gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

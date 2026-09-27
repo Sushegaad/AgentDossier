@@ -1,0 +1,41 @@
+{
+  "score_version": "sar-score-1.0",
+  "notes": "Component weights per domain. Reproduces the 2026-09-25 seed spreadsheet exactly (max error 0.07) and is applied unchanged to newly discovered resources so rankings stay comparable. Weights are normalized by their sum. Scores are comparative discovery signals, NOT security certification or regulatory approval.",
+  "components": {
+    "adoption":   {"label": "Adoption / usage",               "seed_max": 30},
+    "trust":      {"label": "Trust & security",               "seed_max": 25},
+    "health":     {"label": "Project / product health",       "seed_max": 20},
+    "ecosystem":  {"label": "Ecosystem / interoperability",   "seed_max": 15},
+    "domain_fit": {"label": "Domain expertise / fit",         "seed_max": 100},
+    "governance": {"label": "Governance / compliance evidence","seed_max": 100},
+    "docs":       {"label": "Docs / transparency",            "seed_max": 10}
+  },
+  "profiles": {
+    "general":       {"adoption": 25, "trust": 20, "health": 15, "ecosystem": 10, "domain_fit": 10, "governance": 5,  "docs": 5},
+    "technology":    {"adoption": 30, "trust": 20, "health": 20, "ecosystem": 15, "domain_fit": 10, "governance": 0,  "docs": 5},
+    "regulated":     {"adoption": 15, "trust": 25, "health": 10, "ecosystem": 10, "domain_fit": 20, "governance": 15, "docs": 5},
+    "security":      {"adoption": 20, "trust": 25, "health": 15, "ecosystem": 10, "domain_fit": 15, "governance": 10, "docs": 5},
+    "commercial":    {"adoption": 25, "trust": 20, "health": 15, "ecosystem": 15, "domain_fit": 15, "governance": 5,  "docs": 5},
+    "data":          {"adoption": 25, "trust": 20, "health": 20, "ecosystem": 15, "domain_fit": 15, "governance": 0,  "docs": 5},
+    "operations":    {"adoption": 20, "trust": 20, "health": 15, "ecosystem": 15, "domain_fit": 20, "governance": 5,  "docs": 5}
+  },
+  "domain_profiles": {
+    "business": "general",
+    "finance": "regulated",
+    "healthcare": "regulated",
+    "regulatory": "regulated",
+    "technology": "technology",
+    "cybersecurity": "security",
+    "sales": "commercial",
+    "legal": "regulated",
+    "data": "data",
+    "supply_chain": "operations",
+    "insurance": "regulated",
+    "government": "regulated"
+  },
+  "discovered": {
+    "adoption_log_ceiling": 150000,
+    "min_domain_confidence": 0.34,
+    "unknown_policy": "Unknown components contribute 0 to the composite and are flagged; they are never imputed. evidence_coverage reports the share of weight backed by observed evidence."
+  }
+}

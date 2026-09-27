@@ -1,0 +1,54 @@
+{
+  "id": "iso27001",
+  "name": "ISO/IEC 27001 (with 27017, 27018)",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "EU"
+  ],
+  "group": "certification",
+  "priority": "launch",
+  "sources": [
+    {
+      "kind": "registry",
+      "url": "https://www.iafcertsearch.org/",
+      "terms_note": "IAF CertSearch; terms restrict bulk automation, use per-record lookup or maintainer entry",
+      "cadence": "weekly"
+    },
+    {
+      "kind": "registry",
+      "url": "https://cloudsecurityalliance.org/star/registry",
+      "terms_note": "CSA STAR Certification (ISO 27001 based)",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "ISO27001",
+    "ISO27017",
+    "ISO27018"
+  ],
+  "expiry_rule": {
+    "kind": "fixed_date"
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.7,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "Found in {registry} on {date}",
+    "tier2": "Listed on {marketplace} on {date}",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "Vendor-claimed ({source}, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "*"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "tenant": "acme-corp",
+  "authorized_by": "J. Smith, CISO office",
+  "ticket": "CHG-10432",
+  "scope": {
+    "allow_cidrs": ["10.20.0.0/16"],
+    "allow_hosts": ["agents.corp.acme.com"]
+  },
+  "targets": {
+    "cidrs": ["10.20.4.0/24"],
+    "hosts": ["claims-agent.corp.acme.com"],
+    "dns_domains": ["corp.acme.com"],
+    "registries": ["https://agent-registry.corp.acme.com"]
+  },
+  "ports": [443, 8080],
+  "probes": { "ard": true, "a2a": true, "mcp_server_card": true, "mcp_handshake": false },
+  "limits": { "requests_per_host_per_sec": 4, "concurrency": 16, "timeout_sec": 8 },
+  "auth": { "headers_from_env": { "Authorization": "AGENTREG_INTERNAL_TOKEN" } },
+  "tls": { "ca_bundle": "/etc/ssl/corp-root-ca.pem" }
+}

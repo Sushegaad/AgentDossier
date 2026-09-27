@@ -1,0 +1,836 @@
+version: eval-queries-0.1
+notes: Starter precision@10 set (plan section 9). Derived automatically from seed sheet categories; the maintainer should
+  review and replace with hand-labeled queries before the Phase 1 gate. precision@10 = |top10 ∩ relevant| / min(10, |relevant|).
+threshold: 0.8
+max_drop: 0.05
+queries:
+- id: q001
+  query: coding agent for business operations
+  domain: business
+  relevant:
+  - GitHub Copilot coding agent
+  - Gemini CLI
+  - OpenAI Codex CLI
+  - Claude Code
+  - OpenHands
+  source: derived from seed categories; review before relying on it
+- id: q002
+  query: enterprise agent platform for business operations
+  domain: business
+  relevant:
+  - Microsoft Copilot Studio
+  - Salesforce Agentforce
+  - IBM watsonx Orchestrate
+  - Oracle AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q003
+  query: managed agent platform for business operations
+  domain: business
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Azure AI Foundry Agent Service
+  - Google Vertex AI Agent Engine
+  source: derived from seed categories; review before relying on it
+- id: q004
+  query: marketplace or discovery hub for business operations
+  domain: business
+  relevant:
+  - AWS Marketplace AI Agents & Tools
+  - Microsoft Agent Store
+  - Google Cloud Marketplace AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q005
+  query: agent sdk for business operations
+  domain: business
+  relevant:
+  - Google Agent Development Kit (ADK)
+  - OpenAI Agents SDK (Python)
+  - Strands Agents
+  source: derived from seed categories; review before relying on it
+- id: q006
+  query: enterprise agents for business operations
+  domain: business
+  relevant:
+  - ServiceNow AI Agents
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  source: derived from seed categories; review before relying on it
+- id: q007
+  query: supply-chain agents for business operations
+  domain: business
+  relevant:
+  - SAP Joule for Supply Chain
+  - Microsoft Dynamics 365 Supply Chain agents
+  - Oracle SCM AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q008
+  query: security agent for business operations
+  domain: business
+  relevant:
+  - CrowdStrike Charlotte AI
+  - Microsoft Security Copilot
+  - SentinelOne Purple AI
+  source: derived from seed categories; review before relying on it
+- id: q009
+  query: clinical documentation agent for business operations
+  domain: business
+  relevant:
+  - Microsoft Dragon Copilot
+  - Abridge
+  - Nabla Copilot
+  source: derived from seed categories; review before relying on it
+- id: q010
+  query: enterprise agentic automation for business operations
+  domain: business
+  relevant:
+  - UiPath Agentic Automation
+  - Automation Anywhere AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q011
+  query: security compliance automation for business operations
+  domain: business
+  relevant:
+  - Vanta AI / GRC
+  - Drata
+  source: derived from seed categories; review before relying on it
+- id: q012
+  query: workflow/agent automation for business operations
+  domain: business
+  relevant:
+  - n8n
+  - Activepieces
+  source: derived from seed categories; review before relying on it
+- id: q013
+  query: coding agent for banking
+  domain: finance
+  relevant:
+  - GitHub Copilot coding agent
+  - OpenAI Codex CLI
+  - Gemini CLI
+  - Claude Code
+  - Goose
+  - Cline
+  - Aider
+  source: derived from seed categories; review before relying on it
+- id: q014
+  query: enterprise agent platform for banking
+  domain: finance
+  relevant:
+  - Microsoft Copilot Studio
+  - Salesforce Agentforce
+  - IBM watsonx Orchestrate
+  - Oracle AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q015
+  query: security agent for banking
+  domain: finance
+  relevant:
+  - Microsoft Security Copilot
+  - CrowdStrike Charlotte AI
+  - SentinelOne Purple AI
+  source: derived from seed categories; review before relying on it
+- id: q016
+  query: marketplace or discovery hub for banking
+  domain: finance
+  relevant:
+  - AWS Marketplace AI Agents & Tools
+  - Microsoft Agent Store
+  - Google Cloud Marketplace AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q017
+  query: agent sdk for banking
+  domain: finance
+  relevant:
+  - OpenAI Agents SDK (Python)
+  - Google Agent Development Kit (ADK)
+  - Strands Agents
+  source: derived from seed categories; review before relying on it
+- id: q018
+  query: managed agent platform for banking
+  domain: finance
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Azure AI Foundry Agent Service
+  - Google Vertex AI Agent Engine
+  source: derived from seed categories; review before relying on it
+- id: q019
+  query: agent framework for banking
+  domain: finance
+  relevant:
+  - Microsoft Agent Framework
+  - Pydantic AI
+  - Hugging Face smolagents
+  source: derived from seed categories; review before relying on it
+- id: q020
+  query: enterprise agents for banking
+  domain: finance
+  relevant:
+  - ServiceNow AI Agents
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  source: derived from seed categories; review before relying on it
+- id: q021
+  query: supply-chain agents for banking
+  domain: finance
+  relevant:
+  - SAP Joule for Supply Chain
+  - Microsoft Dynamics 365 Supply Chain agents
+  - Oracle SCM AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q022
+  query: enterprise agentic automation for banking
+  domain: finance
+  relevant:
+  - UiPath Agentic Automation
+  - Automation Anywhere AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q023
+  query: regulatory compliance agents for banking
+  domain: finance
+  relevant:
+  - Norm AI
+  - Zensar AI-Powered Regulatory Compliance
+  source: derived from seed categories; review before relying on it
+- id: q024
+  query: regulatory intelligence ai for banking
+  domain: finance
+  relevant:
+  - CUBE RegPlatform
+  - Regology
+  source: derived from seed categories; review before relying on it
+- id: q025
+  query: coding agent for healthcare
+  domain: healthcare
+  relevant:
+  - GitHub Copilot coding agent
+  - OpenAI Codex CLI
+  - Gemini CLI
+  - Claude Code
+  - Goose
+  - Cline
+  - Aider
+  source: derived from seed categories; review before relying on it
+- id: q026
+  query: enterprise agent platform for healthcare
+  domain: healthcare
+  relevant:
+  - Microsoft Copilot Studio
+  - Salesforce Agentforce
+  - IBM watsonx Orchestrate
+  - Oracle AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q027
+  query: clinical documentation agent for healthcare
+  domain: healthcare
+  relevant:
+  - Microsoft Dragon Copilot
+  - Abridge
+  - Nabla Copilot
+  source: derived from seed categories; review before relying on it
+- id: q028
+  query: security agent for healthcare
+  domain: healthcare
+  relevant:
+  - Microsoft Security Copilot
+  - CrowdStrike Charlotte AI
+  - SentinelOne Purple AI
+  source: derived from seed categories; review before relying on it
+- id: q029
+  query: marketplace or discovery hub for healthcare
+  domain: healthcare
+  relevant:
+  - AWS Marketplace AI Agents & Tools
+  - Microsoft Agent Store
+  - Google Cloud Marketplace AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q030
+  query: agent sdk for healthcare
+  domain: healthcare
+  relevant:
+  - OpenAI Agents SDK (Python)
+  - Google Agent Development Kit (ADK)
+  - Strands Agents
+  source: derived from seed categories; review before relying on it
+- id: q031
+  query: managed agent platform for healthcare
+  domain: healthcare
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Azure AI Foundry Agent Service
+  - Google Vertex AI Agent Engine
+  source: derived from seed categories; review before relying on it
+- id: q032
+  query: agent framework for healthcare
+  domain: healthcare
+  relevant:
+  - Microsoft Agent Framework
+  - Pydantic AI
+  - Hugging Face smolagents
+  source: derived from seed categories; review before relying on it
+- id: q033
+  query: enterprise agents for healthcare
+  domain: healthcare
+  relevant:
+  - ServiceNow AI Agents
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  source: derived from seed categories; review before relying on it
+- id: q034
+  query: supply-chain agents for healthcare
+  domain: healthcare
+  relevant:
+  - SAP Joule for Supply Chain
+  - Microsoft Dynamics 365 Supply Chain agents
+  - Oracle SCM AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q035
+  query: enterprise agentic automation for healthcare
+  domain: healthcare
+  relevant:
+  - UiPath Agentic Automation
+  - Automation Anywhere AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q036
+  query: security compliance automation for healthcare
+  domain: healthcare
+  relevant:
+  - Vanta AI / GRC
+  - Drata
+  source: derived from seed categories; review before relying on it
+- id: q037
+  query: coding agent for compliance
+  domain: regulatory
+  relevant:
+  - GitHub Copilot coding agent
+  - OpenAI Codex CLI
+  - Gemini CLI
+  - Claude Code
+  - Goose
+  - Cline
+  - Aider
+  source: derived from seed categories; review before relying on it
+- id: q038
+  query: enterprise agent platform for compliance
+  domain: regulatory
+  relevant:
+  - Microsoft Copilot Studio
+  - Salesforce Agentforce
+  - IBM watsonx Orchestrate
+  - Oracle AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q039
+  query: security agent for compliance
+  domain: regulatory
+  relevant:
+  - Microsoft Security Copilot
+  - CrowdStrike Charlotte AI
+  - SentinelOne Purple AI
+  source: derived from seed categories; review before relying on it
+- id: q040
+  query: marketplace or discovery hub for compliance
+  domain: regulatory
+  relevant:
+  - AWS Marketplace AI Agents & Tools
+  - Microsoft Agent Store
+  - Google Cloud Marketplace AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q041
+  query: agent sdk for compliance
+  domain: regulatory
+  relevant:
+  - OpenAI Agents SDK (Python)
+  - Google Agent Development Kit (ADK)
+  - Strands Agents
+  source: derived from seed categories; review before relying on it
+- id: q042
+  query: managed agent platform for compliance
+  domain: regulatory
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Azure AI Foundry Agent Service
+  - Google Vertex AI Agent Engine
+  source: derived from seed categories; review before relying on it
+- id: q043
+  query: agent framework for compliance
+  domain: regulatory
+  relevant:
+  - Microsoft Agent Framework
+  - Pydantic AI
+  - Hugging Face smolagents
+  source: derived from seed categories; review before relying on it
+- id: q044
+  query: enterprise agents for compliance
+  domain: regulatory
+  relevant:
+  - ServiceNow AI Agents
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  source: derived from seed categories; review before relying on it
+- id: q045
+  query: supply-chain agents for compliance
+  domain: regulatory
+  relevant:
+  - SAP Joule for Supply Chain
+  - Microsoft Dynamics 365 Supply Chain agents
+  - Oracle SCM AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q046
+  query: security compliance automation for compliance
+  domain: regulatory
+  relevant:
+  - Vanta AI / GRC
+  - Drata
+  source: derived from seed categories; review before relying on it
+- id: q047
+  query: enterprise agentic automation for compliance
+  domain: regulatory
+  relevant:
+  - UiPath Agentic Automation
+  - Automation Anywhere AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q048
+  query: legal research agent for compliance
+  domain: regulatory
+  relevant:
+  - Lexis+ AI
+  - vLex Vincent AI
+  source: derived from seed categories; review before relying on it
+- id: q049
+  query: coding agent for software engineering
+  domain: technology
+  relevant:
+  - GitHub Copilot coding agent
+  - Claude Code
+  - Gemini CLI
+  - OpenAI Codex CLI
+  - Cline
+  - OpenHands
+  - Goose
+  - Aider
+  - Roo Code
+  source: derived from seed categories; review before relying on it
+- id: q050
+  query: agent framework for software engineering
+  domain: technology
+  relevant:
+  - Microsoft Agent Framework
+  - Pydantic AI
+  - Hugging Face smolagents
+  - Agno
+  - Mastra
+  source: derived from seed categories; review before relying on it
+- id: q051
+  query: enterprise agent platform for software engineering
+  domain: technology
+  relevant:
+  - Microsoft Copilot Studio
+  - Salesforce Agentforce
+  - IBM watsonx Orchestrate
+  - Oracle AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q052
+  query: managed agent platform for software engineering
+  domain: technology
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Google Vertex AI Agent Engine
+  - Azure AI Foundry Agent Service
+  source: derived from seed categories; review before relying on it
+- id: q053
+  query: security agent for software engineering
+  domain: technology
+  relevant:
+  - Microsoft Security Copilot
+  - CrowdStrike Charlotte AI
+  - SentinelOne Purple AI
+  source: derived from seed categories; review before relying on it
+- id: q054
+  query: agent sdk for software engineering
+  domain: technology
+  relevant:
+  - Google Agent Development Kit (ADK)
+  - OpenAI Agents SDK (Python)
+  - Strands Agents
+  source: derived from seed categories; review before relying on it
+- id: q055
+  query: marketplace or discovery hub for software engineering
+  domain: technology
+  relevant:
+  - AWS Marketplace AI Agents & Tools
+  - Microsoft Agent Store
+  - Google Cloud Marketplace AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q056
+  query: enterprise agents for software engineering
+  domain: technology
+  relevant:
+  - ServiceNow AI Agents
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  source: derived from seed categories; review before relying on it
+- id: q057
+  query: supply-chain agents for software engineering
+  domain: technology
+  relevant:
+  - SAP Joule for Supply Chain
+  - Microsoft Dynamics 365 Supply Chain agents
+  - Oracle SCM AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q058
+  query: enterprise agentic automation for software engineering
+  domain: technology
+  relevant:
+  - UiPath Agentic Automation
+  - Automation Anywhere AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q059
+  query: workflow/agent automation for software engineering
+  domain: technology
+  relevant:
+  - n8n
+  - Activepieces
+  source: derived from seed categories; review before relying on it
+- id: q060
+  query: clinical documentation agent for software engineering
+  domain: technology
+  relevant:
+  - Microsoft Dragon Copilot
+  - Abridge
+  source: derived from seed categories; review before relying on it
+- id: q061
+  query: coding agent for security
+  domain: cybersecurity
+  relevant:
+  - GitHub Copilot coding agent
+  - OpenAI Codex CLI
+  - Claude Code
+  - Gemini CLI
+  - Cline
+  - Goose
+  - Aider
+  - OpenHands
+  source: derived from seed categories; review before relying on it
+- id: q062
+  query: enterprise agent platform for security
+  domain: cybersecurity
+  relevant:
+  - Microsoft Copilot Studio
+  - Salesforce Agentforce
+  - IBM watsonx Orchestrate
+  - Oracle AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q063
+  query: security agent for security
+  domain: cybersecurity
+  relevant:
+  - Microsoft Security Copilot
+  - CrowdStrike Charlotte AI
+  - SentinelOne Purple AI
+  source: derived from seed categories; review before relying on it
+- id: q064
+  query: managed agent platform for security
+  domain: cybersecurity
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Azure AI Foundry Agent Service
+  - Google Vertex AI Agent Engine
+  source: derived from seed categories; review before relying on it
+- id: q065
+  query: agent sdk for security
+  domain: cybersecurity
+  relevant:
+  - OpenAI Agents SDK (Python)
+  - Google Agent Development Kit (ADK)
+  - Strands Agents
+  source: derived from seed categories; review before relying on it
+- id: q066
+  query: marketplace or discovery hub for security
+  domain: cybersecurity
+  relevant:
+  - AWS Marketplace AI Agents & Tools
+  - Microsoft Agent Store
+  - Google Cloud Marketplace AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q067
+  query: enterprise agents for security
+  domain: cybersecurity
+  relevant:
+  - ServiceNow AI Agents
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  source: derived from seed categories; review before relying on it
+- id: q068
+  query: agent framework for security
+  domain: cybersecurity
+  relevant:
+  - Microsoft Agent Framework
+  - Pydantic AI
+  - Hugging Face smolagents
+  source: derived from seed categories; review before relying on it
+- id: q069
+  query: clinical documentation agent for security
+  domain: cybersecurity
+  relevant:
+  - Microsoft Dragon Copilot
+  - Abridge
+  - Nabla Copilot
+  source: derived from seed categories; review before relying on it
+- id: q070
+  query: supply-chain agents for security
+  domain: cybersecurity
+  relevant:
+  - SAP Joule for Supply Chain
+  - Microsoft Dynamics 365 Supply Chain agents
+  - Oracle SCM AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q071
+  query: security compliance automation for security
+  domain: cybersecurity
+  relevant:
+  - Vanta AI / GRC
+  - Drata
+  source: derived from seed categories; review before relying on it
+- id: q072
+  query: enterprise agentic automation for security
+  domain: cybersecurity
+  relevant:
+  - UiPath Agentic Automation
+  - Automation Anywhere AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q073
+  query: coding agent for customer experience
+  domain: sales
+  relevant:
+  - GitHub Copilot coding agent
+  - Gemini CLI
+  - Claude Code
+  - OpenAI Codex CLI
+  - Cline
+  - OpenHands
+  - Goose
+  - Aider
+  - Roo Code
+  source: derived from seed categories; review before relying on it
+- id: q074
+  query: enterprise agent platform for customer experience
+  domain: sales
+  relevant:
+  - Salesforce Agentforce
+  - Microsoft Copilot Studio
+  - IBM watsonx Orchestrate
+  - Oracle AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q075
+  query: security agent for customer experience
+  domain: sales
+  relevant:
+  - Microsoft Security Copilot
+  - CrowdStrike Charlotte AI
+  - SentinelOne Purple AI
+  source: derived from seed categories; review before relying on it
+- id: q076
+  query: managed agent platform for customer experience
+  domain: sales
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Azure AI Foundry Agent Service
+  - Google Vertex AI Agent Engine
+  source: derived from seed categories; review before relying on it
+- id: q077
+  query: marketplace or discovery hub for customer experience
+  domain: sales
+  relevant:
+  - AWS Marketplace AI Agents & Tools
+  - Microsoft Agent Store
+  - Google Cloud Marketplace AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q078
+  query: agent sdk for customer experience
+  domain: sales
+  relevant:
+  - OpenAI Agents SDK (Python)
+  - Google Agent Development Kit (ADK)
+  - Strands Agents
+  source: derived from seed categories; review before relying on it
+- id: q079
+  query: enterprise agents for customer experience
+  domain: sales
+  relevant:
+  - ServiceNow AI Agents
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  source: derived from seed categories; review before relying on it
+- id: q080
+  query: agent framework for customer experience
+  domain: sales
+  relevant:
+  - Microsoft Agent Framework
+  - Pydantic AI
+  - Hugging Face smolagents
+  source: derived from seed categories; review before relying on it
+- id: q081
+  query: supply-chain agents for customer experience
+  domain: sales
+  relevant:
+  - SAP Joule for Supply Chain
+  - Microsoft Dynamics 365 Supply Chain agents
+  - Oracle SCM AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q082
+  query: customer service agents for customer experience
+  domain: sales
+  relevant:
+  - Zendesk AI Agents
+  - Sierra
+  source: derived from seed categories; review before relying on it
+- id: q083
+  query: sales agents for customer experience
+  domain: sales
+  relevant:
+  - Outreach AI Agents
+  - Salesloft AI / Rhythm
+  source: derived from seed categories; review before relying on it
+- id: q084
+  query: enterprise agentic automation for customer experience
+  domain: sales
+  relevant:
+  - UiPath Agentic Automation
+  - Automation Anywhere AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q085
+  query: coding agent for legal
+  domain: legal
+  relevant:
+  - GitHub Copilot coding agent
+  - OpenAI Codex CLI
+  - Gemini CLI
+  - Claude Code
+  - Goose
+  - Cline
+  - Aider
+  - OpenHands
+  source: derived from seed categories; review before relying on it
+- id: q086
+  query: enterprise agent platform for legal
+  domain: legal
+  relevant:
+  - Microsoft Copilot Studio
+  - Salesforce Agentforce
+  - IBM watsonx Orchestrate
+  - Oracle AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q087
+  query: security agent for legal
+  domain: legal
+  relevant:
+  - Microsoft Security Copilot
+  - CrowdStrike Charlotte AI
+  - SentinelOne Purple AI
+  source: derived from seed categories; review before relying on it
+- id: q088
+  query: marketplace or discovery hub for legal
+  domain: legal
+  relevant:
+  - AWS Marketplace AI Agents & Tools
+  - Microsoft Agent Store
+  - Google Cloud Marketplace AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q089
+  query: agent sdk for legal
+  domain: legal
+  relevant:
+  - OpenAI Agents SDK (Python)
+  - Google Agent Development Kit (ADK)
+  - Strands Agents
+  source: derived from seed categories; review before relying on it
+- id: q090
+  query: managed agent platform for legal
+  domain: legal
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Azure AI Foundry Agent Service
+  - Google Vertex AI Agent Engine
+  source: derived from seed categories; review before relying on it
+- id: q091
+  query: agent framework for legal
+  domain: legal
+  relevant:
+  - Microsoft Agent Framework
+  - Pydantic AI
+  - Hugging Face smolagents
+  source: derived from seed categories; review before relying on it
+- id: q092
+  query: enterprise agents for legal
+  domain: legal
+  relevant:
+  - ServiceNow AI Agents
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  source: derived from seed categories; review before relying on it
+- id: q093
+  query: supply-chain agents for legal
+  domain: legal
+  relevant:
+  - SAP Joule for Supply Chain
+  - Microsoft Dynamics 365 Supply Chain agents
+  - Oracle SCM AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q094
+  query: legal research agent for legal
+  domain: legal
+  relevant:
+  - Lexis+ AI
+  - vLex Vincent AI
+  source: derived from seed categories; review before relying on it
+- id: q095
+  query: enterprise agentic automation for legal
+  domain: legal
+  relevant:
+  - UiPath Agentic Automation
+  - Automation Anywhere AI Agent Studio
+  source: derived from seed categories; review before relying on it
+- id: q096
+  query: security compliance automation for legal
+  domain: legal
+  relevant:
+  - Vanta AI / GRC
+  - Drata
+  source: derived from seed categories; review before relying on it
+- id: q097
+  query: coding agent for data analytics
+  domain: data
+  relevant:
+  - GitHub Copilot coding agent
+  - Gemini CLI
+  - Claude Code
+  - OpenAI Codex CLI
+  - SWE-agent
+  - Cline
+  - OpenHands
+  - Goose
+  source: derived from seed categories; review before relying on it
+- id: q098
+  query: agent framework for data analytics
+  domain: data
+  relevant:
+  - Microsoft Agent Framework
+  - BeeAI Framework
+  - Pydantic AI
+  - Qwen-Agent
+  source: derived from seed categories; review before relying on it
+- id: q099
+  query: enterprise agents for data analytics
+  domain: data
+  relevant:
+  - Gemini Enterprise agents
+  - SAP Joule Agents
+  - ServiceNow AI Agents
+  source: derived from seed categories; review before relying on it
+- id: q100
+  query: managed agent platform for data analytics
+  domain: data
+  relevant:
+  - Amazon Bedrock Agents / AgentCore
+  - Azure AI Foundry Agent Service
+  - Google Vertex AI Agent Engine
+  source: derived from seed categories; review before relying on it

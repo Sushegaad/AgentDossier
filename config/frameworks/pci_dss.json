@@ -1,0 +1,63 @@
+{
+  "id": "pci_dss",
+  "name": "PCI DSS",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "EU"
+  ],
+  "group": "certification",
+  "priority": "phase2",
+  "sources": [
+    {
+      "kind": "registry",
+      "url": "https://www.visa.com/splisting/",
+      "terms_note": "Visa Global Registry of Service Providers; confirm terms",
+      "cadence": "weekly"
+    },
+    {
+      "kind": "registry",
+      "url": "https://www.mastercard.us/en-us/business/overview/safety-and-security/security-recommendations/service-providers-need-to-know.html",
+      "terms_note": "Mastercard SDP compliant service providers list",
+      "cadence": "weekly"
+    },
+    {
+      "kind": "vendor",
+      "url": "Attestation of Compliance",
+      "terms_note": "Document review",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "PCI_DSS_SERVICE_PROVIDER_L1",
+    "PCI_DSS_SERVICE_PROVIDER_L2"
+  ],
+  "expiry_rule": {
+    "kind": "period_end_plus_months",
+    "months": 12
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.7,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "Found in {registry} on {date}",
+    "tier2": "Listed on {marketplace} on {date}",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "Vendor-claimed ({source}, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "finance",
+    "insurance",
+    "sales",
+    "*"
+  ]
+}

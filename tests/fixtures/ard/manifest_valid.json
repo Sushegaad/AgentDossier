@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:acme.com:server:weather",
+      "displayName": "Weather Data Node",
+      "type": "application/mcp-server-card+json",
+      "url": "https://api.acme.com/mcp/weather.json",
+      "capabilities": ["WeatherTool", "ForecastTool"],
+      "description": "Enterprise weather MCP server for live telemetry.",
+      "representativeQueries": ["what is the current wind speed in Chicago", "get the 5-day forecast for Seattle"]
+    },
+    {
+      "identifier": "urn:air:github.com:alice-dev:pptx-creator",
+      "displayName": "pptx-creator",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/alice-dev/pptx-creator",
+      "description": "Create professional PowerPoint presentations following brand guidelines.",
+      "representativeQueries": ["turn these bullet points into a branded slide deck", "make a PowerPoint from this outline"]
+    }
+  ]
+}

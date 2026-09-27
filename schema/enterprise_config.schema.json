@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sushegaad.github.io/AgentDossier/schema/enterprise_config.schema.json",
+  "title": "EnterpriseScanConfig",
+  "description": "Scanner configuration (BRD v3.2 \u00a74.4). Exactly the documented shape; there is no allow_public key.",
+  "type": "object",
+  "required": [
+    "tenant",
+    "authorized_by",
+    "ticket",
+    "scope",
+    "targets"
+  ],
+  "properties": {
+    "tenant": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorized_by": {
+      "type": "string",
+      "minLength": 3
+    },
+    "ticket": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "allow_cidrs"
+      ],
+      "properties": {
+        "allow_cidrs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allow_hosts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "targets": {
+      "type": "object",
+      "properties": {
+        "cidrs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hosts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dns_domains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "registries": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ports": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 65535
+      },
+      "default": [
+        443,
+        80,
+        8080,
+        8000,
+        3000
+      ]
+    },
+    "probes": {
+      "type": "object",
+      "properties": {
+        "ard": {
+          "type": "boolean",
+          "default": true
+        },
+        "a2a": {
+          "type": "boolean",
+          "default": true
+        },
+        "mcp_server_card": {
+          "type": "boolean",
+          "default": true
+        },
+        "mcp_handshake": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "limits": {
+      "type": "object",
+      "properties": {
+        "requests_per_host_per_sec": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 50,
+          "default": 4
+        },
+        "concurrency": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 128,
+          "default": 16
+        },
+        "timeout_sec": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 60,
+          "default": 8
+        }
+      },
+      "additionalProperties": false
+    },
+    "auth": {
+      "type": "object",
+      "properties": {
+        "headers_from_env": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "vault_ref": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "tls": {
+      "type": "object",
+      "properties": {
+        "ca_bundle": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "output_dir": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

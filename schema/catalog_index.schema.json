@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sushegaad.github.io/AgentDossier/schema/catalog_index.schema.json",
+  "title": "CatalogIndex",
+  "description": "Compact catalog listing served as data/catalog/index.json and accepted by 'Open private catalog' (FR-11, FR-14).",
+  "type": "object",
+  "required": [
+    "snapshot_date",
+    "score_version",
+    "records"
+  ],
+  "properties": {
+    "snapshot_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "score_version": {
+      "type": "string"
+    },
+    "taxonomy_version": {
+      "type": "string"
+    },
+    "frameworks_version": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "public",
+        "private"
+      ]
+    },
+    "tenant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "resource_type",
+          "domains",
+          "trust",
+          "protocols"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "vendor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resource_type": {
+            "type": "string"
+          },
+          "license": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "deployment": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scope": {
+            "type": "string"
+          },
+          "domains": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "rank": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "score": {
+                  "type": "number"
+                }
+              }
+            }
+          },
+          "trust": {
+            "type": "object",
+            "properties": {
+              "identity": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "compliance": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "security": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "protocols": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "issues": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "protocols": {
+            "type": "object",
+            "properties": {
+              "a2a": {
+                "type": "string",
+                "enum": [
+                  "verified",
+                  "claimed",
+                  "not_found",
+                  "unknown",
+                  "invalid"
+                ]
+              },
+              "mcp": {
+                "type": "string",
+                "enum": [
+                  "verified",
+                  "claimed",
+                  "not_found",
+                  "unknown",
+                  "invalid"
+                ]
+              },
+              "ard": {
+                "type": "string",
+                "enum": [
+                  "verified",
+                  "claimed",
+                  "not_found",
+                  "unknown",
+                  "invalid"
+                ]
+              }
+            }
+          },
+          "compliance_summary": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "framework",
+                "tier",
+                "status"
+              ],
+              "properties": {
+                "framework": {
+                  "type": "string"
+                },
+                "variant": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "tier": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 5
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

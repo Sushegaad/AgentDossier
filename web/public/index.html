@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+<title>AgentDossier</title>
+<meta name="description" content="An evidence dossier for every AI agent. Reference implementation by Hemant Naik.">
+<style>
+  :root { --ink: #1a1f2b; --quiet: #5b6472; --line: #d9dee6; --accent: #1f4e79; --bg: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e8ecf2; --quiet: #a3adbb; --line: #2e3542; --accent: #8ab4e8; --bg: #0f1218; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  .notice { border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; color: var(--quiet); font-size: 14px; }
+  h1 { font-size: 34px; margin: 24px 0 4px; } .sub { color: var(--quiet); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  footer { margin-top: 48px; color: var(--quiet); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="notice">Reference implementation. Sample data compiled from public sources as of a stated date. Not an assessment, certification or recommendation. Confirm current status with the vendor and the issuing body.</p>
+  <h1>AgentDossier</h1>
+  <p class="sub">An evidence dossier for every AI agent. Standards-aware agent registry: ARD, A2A, MCP.</p>
+  <p>Phase 0 (design) is complete: canonical schemas, the framework catalog, scoring configuration and the seed import are in the repository, and the seed workbook's 1,200 domain scores reproduce under score version <code>sar-score-1.0</code>. The searchable demo arrives with Phase 1.</p>
+  <ul>
+    <li><a href="https://github.com/Sushegaad/AgentDossier">Source code and documentation (MIT)</a></li>
+    <li><a href="schema/resource.schema.json">Canonical resource schema</a></li>
+    <li><a href=".well-known/ard.json">ARD manifest for this registry</a></li>
+  </ul>
+  <footer>Reference implementation by Hemant Naik · MIT license · No accounts, no analytics, no tracking cookies.</footer>
+</main>
+</body>
+</html>

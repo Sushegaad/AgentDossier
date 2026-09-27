@@ -1,0 +1,63 @@
+{
+  "id": "pol_healthcare_default",
+  "name": "Healthcare (US)",
+  "version": 1,
+  "jurisdictions": [
+    "US"
+  ],
+  "rules": [
+    {
+      "id": "r1",
+      "kind": "must",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "hipaa",
+        "variant": "BAA_AVAILABLE",
+        "minTier": 4
+      }
+    },
+    {
+      "id": "r2",
+      "kind": "must",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "soc2",
+        "variant": "SOC2_TYPE_II",
+        "minTier": 2
+      }
+    },
+    {
+      "id": "r3",
+      "kind": "must",
+      "field": "identity.tier",
+      "op": "lte",
+      "value": 2
+    },
+    {
+      "id": "r4",
+      "kind": "must_not",
+      "field": "data_handling.trains_on_customer_data",
+      "op": "eq",
+      "value": true
+    },
+    {
+      "id": "r5",
+      "kind": "preferred",
+      "field": "compliance",
+      "op": "has",
+      "value": {
+        "framework": "hitrust",
+        "minTier": 3
+      }
+    },
+    {
+      "id": "r6",
+      "kind": "preferred",
+      "field": "protocols.mcp.status",
+      "op": "eq",
+      "value": "verified"
+    }
+  ]
+}

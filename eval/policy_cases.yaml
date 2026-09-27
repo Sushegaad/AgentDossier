@@ -1,0 +1,4993 @@
+version: policy-cases-0.1
+notes: 100 generated cases with expected verdicts from the reference evaluator (agentdossier/policy/engine.py). Both the Python
+  and TypeScript evaluators must reproduce every verdict and per-rule result.
+cases:
+- id: pc001
+  template: healthcare
+  resource:
+    id: case000
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 2
+      status: expired
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: pass
+- id: pc002
+  template: government
+  resource:
+    id: case001
+    identity:
+      tier: 2
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc003
+  template: startup
+  resource:
+    id: case002
+    identity:
+      tier: 2
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+- id: pc004
+  template: healthcare
+  resource:
+    id: case003
+    identity:
+      tier: 1
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 1
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc005
+  template: startup
+  resource:
+    id: case004
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+- id: pc006
+  template: insurer
+  resource:
+    id: case005
+    identity:
+      tier: 1
+    deployment: vpc
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 4
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+- id: pc007
+  template: insurer
+  resource:
+    id: case006
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: unknown
+    rules:
+    - id: r1
+      result: unknown
+    - id: r2
+      result: unknown
+    - id: r3
+      result: pass
+    - id: r4
+      result: unknown
+    - id: r5
+      result: pass
+- id: pc008
+  template: startup
+  resource:
+    id: case007
+    identity:
+      tier: 3
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: unknown
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+- id: pc009
+  template: healthcare
+  resource:
+    id: case008
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc010
+  template: healthcare
+  resource:
+    id: case009
+    identity:
+      tier: 1
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: expired
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: pass
+- id: pc011
+  template: healthcare
+  resource:
+    id: case010
+    identity:
+      tier: 2
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+  expected:
+    verdict: eligible
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: pass
+- id: pc012
+  template: bank
+  resource:
+    id: case011
+    identity:
+      tier: 1
+    deployment: private
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: expired
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc013
+  template: bank
+  resource:
+    id: case012
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 1
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: pass
+- id: pc014
+  template: insurer
+  resource:
+    id: case013
+    identity:
+      tier: 2
+    deployment: saas
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 3
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: pass
+- id: pc015
+  template: healthcare
+  resource:
+    id: case014
+    identity:
+      tier: 1
+    deployment: saas
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 2
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: expired
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: eligible
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: pass
+- id: pc016
+  template: startup
+  resource:
+    id: case015
+    identity:
+      tier: 1
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance: []
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+- id: pc017
+  template: government
+  resource:
+    id: case016
+    identity:
+      tier: 5
+    deployment: private
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+- id: pc018
+  template: startup
+  resource:
+    id: case017
+    identity:
+      tier: 3
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 3
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 2
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+- id: pc019
+  template: government
+  resource:
+    id: case018
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc020
+  template: bank
+  resource:
+    id: case019
+    identity:
+      tier: 5
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+    - id: r6
+      result: pass
+    - id: r7
+      result: fail
+- id: pc021
+  template: insurer
+  resource:
+    id: case020
+    identity:
+      tier: 1
+    deployment: on_prem
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: expired
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 4
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: pass
+- id: pc022
+  template: startup
+  resource:
+    id: case021
+    identity:
+      tier: 2
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: expired
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: expired
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+- id: pc023
+  template: government
+  resource:
+    id: case022
+    identity:
+      tier: 4
+    deployment: null
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: unknown
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc024
+  template: bank
+  resource:
+    id: case023
+    identity:
+      tier: 4
+    deployment: private
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+    - id: r6
+      result: pass
+    - id: r7
+      result: fail
+- id: pc025
+  template: bank
+  resource:
+    id: case024
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc026
+  template: bank
+  resource:
+    id: case025
+    identity:
+      tier: 2
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc027
+  template: healthcare
+  resource:
+    id: case026
+    identity:
+      tier: 1
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc028
+  template: startup
+  resource:
+    id: case027
+    identity:
+      tier: 5
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+- id: pc029
+  template: government
+  resource:
+    id: case028
+    identity:
+      tier: 4
+    deployment: on_prem
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+- id: pc030
+  template: government
+  resource:
+    id: case029
+    identity:
+      tier: 1
+    deployment: saas
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: expired
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc031
+  template: insurer
+  resource:
+    id: case030
+    identity:
+      tier: 1
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 2
+      status: expired
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+- id: pc032
+  template: insurer
+  resource:
+    id: case031
+    identity:
+      tier: 1
+    deployment: saas
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: pass
+- id: pc033
+  template: bank
+  resource:
+    id: case032
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 4
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc034
+  template: healthcare
+  resource:
+    id: case033
+    identity:
+      tier: 2
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: expired
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc035
+  template: bank
+  resource:
+    id: case034
+    identity:
+      tier: 3
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: unknown
+    - id: r2
+      result: unknown
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: unknown
+    - id: r6
+      result: unknown
+    - id: r7
+      result: unknown
+- id: pc036
+  template: startup
+  resource:
+    id: case035
+    identity:
+      tier: 1
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: expired
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 2
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 3
+      status: expired
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+- id: pc037
+  template: healthcare
+  resource:
+    id: case036
+    identity:
+      tier: 2
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc038
+  template: bank
+  resource:
+    id: case037
+    identity:
+      tier: 4
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc039
+  template: startup
+  resource:
+    id: case038
+    identity:
+      tier: 3
+    deployment: vpc
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 1
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 2
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+- id: pc040
+  template: bank
+  resource:
+    id: case039
+    identity:
+      tier: 3
+    deployment: private
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance: []
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: unknown
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc041
+  template: startup
+  resource:
+    id: case040
+    identity:
+      tier: 2
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 4
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 3
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+- id: pc042
+  template: healthcare
+  resource:
+    id: case041
+    identity:
+      tier: 2
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 1
+      status: expired
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+- id: pc043
+  template: bank
+  resource:
+    id: case042
+    identity:
+      tier: 4
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: unknown
+    - id: r2
+      result: unknown
+    - id: r3
+      result: unknown
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+    - id: r6
+      result: unknown
+    - id: r7
+      result: unknown
+- id: pc044
+  template: government
+  resource:
+    id: case043
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 3
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: expired
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc045
+  template: healthcare
+  resource:
+    id: case044
+    identity:
+      tier: 4
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 4
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 3
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: pass
+- id: pc046
+  template: insurer
+  resource:
+    id: case045
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 3
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+- id: pc047
+  template: startup
+  resource:
+    id: case046
+    identity:
+      tier: 2
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+- id: pc048
+  template: bank
+  resource:
+    id: case047
+    identity:
+      tier: 4
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance: []
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+    - id: r5
+      result: unknown
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc049
+  template: bank
+  resource:
+    id: case048
+    identity:
+      tier: 1
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 4
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: expired
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc050
+  template: insurer
+  resource:
+    id: case049
+    identity:
+      tier: 3
+    deployment: saas
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: unknown
+    - id: r2
+      result: unknown
+    - id: r3
+      result: fail
+    - id: r4
+      result: unknown
+    - id: r5
+      result: pass
+- id: pc051
+  template: startup
+  resource:
+    id: case050
+    identity:
+      tier: 4
+    deployment: on_prem
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 3
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 3
+      status: active
+  expected:
+    verdict: eligible
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+- id: pc052
+  template: healthcare
+  resource:
+    id: case051
+    identity:
+      tier: 2
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: unknown
+    - id: r2
+      result: unknown
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: unknown
+    - id: r6
+      result: fail
+- id: pc053
+  template: bank
+  resource:
+    id: case052
+    identity:
+      tier: 2
+    deployment: saas
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: unknown
+    rules:
+    - id: r1
+      result: unknown
+    - id: r2
+      result: unknown
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: unknown
+    - id: r6
+      result: unknown
+    - id: r7
+      result: unknown
+- id: pc054
+  template: bank
+  resource:
+    id: case053
+    identity:
+      tier: 2
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc055
+  template: insurer
+  resource:
+    id: case054
+    identity:
+      tier: 1
+    deployment: private
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 2
+      status: expired
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 1
+      status: expired
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc056
+  template: healthcare
+  resource:
+    id: case055
+    identity:
+      tier: 4
+    deployment: saas
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 3
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 2
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: pass
+- id: pc057
+  template: startup
+  resource:
+    id: case056
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 4
+      status: expired
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: expired
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 3
+      status: expired
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+- id: pc058
+  template: government
+  resource:
+    id: case057
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 3
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: eligible
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+- id: pc059
+  template: startup
+  resource:
+    id: case058
+    identity:
+      tier: 3
+    deployment: gov_cloud
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+- id: pc060
+  template: healthcare
+  resource:
+    id: case059
+    identity:
+      tier: 2
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 1
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc061
+  template: government
+  resource:
+    id: case060
+    identity:
+      tier: 5
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance: []
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: unknown
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc062
+  template: insurer
+  resource:
+    id: case061
+    identity:
+      tier: 2
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: expired
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 2
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+  expected:
+    verdict: eligible
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+- id: pc063
+  template: startup
+  resource:
+    id: case062
+    identity:
+      tier: 2
+    deployment: vpc
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 3
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+- id: pc064
+  template: government
+  resource:
+    id: case063
+    identity:
+      tier: 3
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 2
+      status: expired
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 1
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: unknown
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc065
+  template: bank
+  resource:
+    id: case064
+    identity:
+      tier: 2
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 2
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 1
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: unknown
+    - id: r4
+      result: pass
+    - id: r5
+      result: unknown
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc066
+  template: bank
+  resource:
+    id: case065
+    identity:
+      tier: 2
+    deployment: null
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: unknown
+    - id: r4
+      result: pass
+    - id: r5
+      result: unknown
+    - id: r6
+      result: fail
+    - id: r7
+      result: pass
+- id: pc067
+  template: government
+  resource:
+    id: case066
+    identity:
+      tier: 1
+    deployment: on_prem
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc068
+  template: insurer
+  resource:
+    id: case067
+    identity:
+      tier: 3
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance: []
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+- id: pc069
+  template: government
+  resource:
+    id: case068
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: eligible
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+- id: pc070
+  template: healthcare
+  resource:
+    id: case069
+    identity:
+      tier: 2
+    deployment: vpc
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: unknown
+    rules:
+    - id: r1
+      result: unknown
+    - id: r2
+      result: unknown
+    - id: r3
+      result: pass
+    - id: r4
+      result: unknown
+    - id: r5
+      result: unknown
+    - id: r6
+      result: fail
+- id: pc071
+  template: insurer
+  resource:
+    id: case070
+    identity:
+      tier: 1
+    deployment: saas
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: pass
+- id: pc072
+  template: insurer
+  resource:
+    id: case071
+    identity:
+      tier: 1
+    deployment: vpc
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+  expected:
+    verdict: unknown
+    rules:
+    - id: r1
+      result: unknown
+    - id: r2
+      result: unknown
+    - id: r3
+      result: pass
+    - id: r4
+      result: unknown
+    - id: r5
+      result: fail
+- id: pc073
+  template: government
+  resource:
+    id: case072
+    identity:
+      tier: 5
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance: []
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+- id: pc074
+  template: bank
+  resource:
+    id: case073
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 1
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 2
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: pass
+    - id: r7
+      result: fail
+- id: pc075
+  template: government
+  resource:
+    id: case074
+    identity:
+      tier: 1
+    deployment: on_prem
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 3
+      status: expired
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc076
+  template: bank
+  resource:
+    id: case075
+    identity:
+      tier: 2
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: expired
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: pass
+    - id: r7
+      result: fail
+- id: pc077
+  template: startup
+  resource:
+    id: case076
+    identity:
+      tier: 2
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+- id: pc078
+  template: healthcare
+  resource:
+    id: case077
+    identity:
+      tier: 1
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 2
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 3
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc079
+  template: healthcare
+  resource:
+    id: case078
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 3
+      status: expired
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 3
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc080
+  template: startup
+  resource:
+    id: case079
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+- id: pc081
+  template: insurer
+  resource:
+    id: case080
+    identity:
+      tier: 2
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: pass
+- id: pc082
+  template: government
+  resource:
+    id: case081
+    identity:
+      tier: 3
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc083
+  template: startup
+  resource:
+    id: case082
+    identity:
+      tier: 2
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
+- id: pc084
+  template: insurer
+  resource:
+    id: case083
+    identity:
+      tier: 1
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 1
+      status: expired
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc085
+  template: healthcare
+  resource:
+    id: case084
+    identity:
+      tier: 1
+    deployment: private
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc086
+  template: startup
+  resource:
+    id: case085
+    identity:
+      tier: 1
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 3
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 3
+      status: expired
+  expected:
+    verdict: eligible
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+- id: pc087
+  template: bank
+  resource:
+    id: case086
+    identity:
+      tier: 2
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc088
+  template: government
+  resource:
+    id: case087
+    identity:
+      tier: 1
+    deployment: vpc
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 4
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: expired
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: expired
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 2
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc089
+  template: healthcare
+  resource:
+    id: case088
+    identity:
+      tier: 2
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 1
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 4
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: expired
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 2
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: expired
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: expired
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: unknown
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc090
+  template: government
+  resource:
+    id: case089
+    identity:
+      tier: 1
+    deployment: private
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: expired
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 3
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc091
+  template: government
+  resource:
+    id: case090
+    identity:
+      tier: 1
+    deployment: vpc
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 3
+      status: expired
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 1
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc092
+  template: startup
+  resource:
+    id: case091
+    identity:
+      tier: 2
+    deployment: null
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: true
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 3
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 2
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 3
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 2
+      status: active
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: expired
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+- id: pc093
+  template: healthcare
+  resource:
+    id: case092
+    identity:
+      tier: 1
+    deployment: private
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 3
+      status: expired
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: expired
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+    - id: r6
+      result: fail
+- id: pc094
+  template: government
+  resource:
+    id: case093
+    identity:
+      tier: 1
+    deployment: gov_cloud
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso27001
+      variant: null
+      tier: 4
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc095
+  template: bank
+  resource:
+    id: case094
+    identity:
+      tier: 1
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: unknown
+      a2a:
+        status: not_found
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 2
+      status: expired
+    - framework: iso42001
+      variant: null
+      tier: 2
+      status: active
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 3
+      status: active
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: expired
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 2
+      status: active
+    - framework: iso27001
+      variant: null
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: pass
+    - id: r6
+      result: fail
+    - id: r7
+      result: fail
+- id: pc096
+  template: healthcare
+  resource:
+    id: case095
+    identity:
+      tier: 2
+    deployment: null
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: null
+    protocols:
+      mcp:
+        status: verified
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: pci_dss
+      variant: PCI_DSS_SERVICE_PROVIDER_L1
+      tier: 4
+      status: active
+    - framework: iso42001
+      variant: null
+      tier: 3
+      status: active
+    - framework: hitrust
+      variant: HITRUST_R2
+      tier: 4
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 4
+      status: active
+  expected:
+    verdict: disallowed
+    rules:
+    - id: r1
+      result: fail
+    - id: r2
+      result: fail
+    - id: r3
+      result: pass
+    - id: r4
+      result: unknown
+    - id: r5
+      result: fail
+    - id: r6
+      result: pass
+- id: pc097
+  template: government
+  resource:
+    id: case096
+    identity:
+      tier: 2
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 3
+      status: expired
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 3
+      status: expired
+    - framework: fedramp
+      variant: FEDRAMP_MODERATE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: pass
+    - id: r5
+      result: fail
+- id: pc098
+  template: insurer
+  resource:
+    id: case097
+    identity:
+      tier: 2
+    deployment: saas
+    license:
+      open_source: true
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: claimed
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: gdpr
+      variant: DPF_ACTIVE
+      tier: 2
+      status: active
+    - framework: soc2
+      variant: SOC2_TYPE_II
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 1
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: pass
+    - id: r3
+      result: pass
+    - id: r4
+      result: fail
+    - id: r5
+      result: pass
+- id: pc099
+  template: startup
+  resource:
+    id: case098
+    identity:
+      tier: 2
+    deployment: on_prem
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: not_found
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: iso42001
+      variant: null
+      tier: 1
+      status: active
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: active
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: fail
+- id: pc100
+  template: startup
+  resource:
+    id: case099
+    identity:
+      tier: 2
+    deployment: vpc
+    license:
+      open_source: false
+    data_handling:
+      trains_on_customer_data: false
+    protocols:
+      mcp:
+        status: claimed
+      a2a:
+        status: verified
+      ard:
+        status: not_found
+    issues:
+      regulator_actions: 0
+      cves: 0
+      incidents: 0
+    compliance:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      tier: 4
+      status: expired
+  expected:
+    verdict: needs_review
+    rules:
+    - id: r1
+      result: pass
+    - id: r2
+      result: fail
+    - id: r3
+      result: fail
+    - id: r4
+      result: pass
