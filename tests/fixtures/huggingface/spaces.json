@@ -1,0 +1,65 @@
+[
+ {
+  "_id": "67e582bb572cd419a31c2d4b",
+  "id": "smolagents/computer-agent",
+  "author": "smolagents",
+  "cardData": {
+   "title": "Computer Agent",
+   "emoji": "\ud83d\udda5\ufe0f\ud83e\udde0",
+   "colorFrom": "red",
+   "colorTo": "yellow",
+   "sdk": "gradio",
+   "header": "mini",
+   "sdk_version": "5.23.1",
+   "app_file": "app.py",
+   "pinned": false
+  },
+  "lastModified": "2025-11-17T11:52:34.000Z",
+  "likes": 984,
+  "private": false,
+  "sha": "7d5643816398af01e1d966d2323f6c4ccf4f48dc",
+  "subdomain": "smolagents-computer-agent",
+  "sdk": "gradio",
+  "tags": [
+   "gradio",
+   "region:us"
+  ],
+  "createdAt": "2025-03-27T16:54:19.000Z"
+ },
+ {
+  "_id": "6a74a5ba58805c6b7ea1b6cf",
+  "id": "agent-memory-leaderboard/leaderboard",
+  "author": "agent-memory-leaderboard",
+  "cardData": {
+   "title": "Agent Memory Leaderboard",
+   "emoji": "\ud83e\udde0",
+   "colorFrom": "blue",
+   "colorTo": "green",
+   "sdk": "static",
+   "app_file": "index.html",
+   "pinned": true,
+   "short_description": "Unified memory evaluation \u00b7 Results expected August 12.",
+   "tags": [
+    "leaderboard",
+    "benchmark",
+    "agent-memory",
+    "long-term-memory"
+   ]
+  },
+  "lastModified": "2026-08-18T04:49:26.000Z",
+  "likes": 818,
+  "private": false,
+  "sha": "d01a32165aef2124b9732bd0fda7f79380b931dc",
+  "subdomain": "agent-memory-leaderboard-leaderboard",
+  "sdk": "static",
+  "tags": [
+   "static",
+   "leaderboard",
+   "benchmark",
+   "agent-memory",
+   "long-term-memory",
+   "region:us"
+  ],
+  "createdAt": "2026-08-06T15:18:18.000Z"
+ }
+]

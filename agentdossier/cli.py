@@ -62,6 +62,43 @@ def cmd_a2a_card(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_build(args: argparse.Namespace) -> int:
+    from .build import BuildOptions, build
+
+    opts = BuildOptions(
+        out_dir=Path(args.out),
+        cache_dir=Path(args.cache),
+        sources=tuple(args.sources.split(",")),
+        offline=args.offline,
+        limit=args.limit,
+        ard_domain_limit=args.ard_domains,
+        mcp_handshake=args.mcp_handshake,
+        write_review=not args.no_review,
+    )
+    result = build(opts)
+    s = result.summary
+    print(
+        f"built {s['resources']} resources -> {args.out} (snapshot {s['snapshot_date']}, {s['score_version']})"
+    )
+    print("  by source:", s["by_source"])
+    print("  protocols:", s["protocols"])
+    for name, rep in result.reports.items():
+        if rep.get("errors") or rep.get("skipped"):
+            print(
+                f"  {name}: {json.dumps({k: v for k, v in rep.items() if k in ('fetched', 'produced', 'skipped', 'errors', 'error_samples')})}"
+            )
+    return 0
+
+
+def cmd_mcp_probe(args: argparse.Namespace) -> int:
+    from .standards.mcp import fetch_card, handshake
+
+    report = fetch_card(args.origin) if not args.handshake else handshake(args.origin)
+    report.pop("card", None)
+    print(json.dumps(report, indent=1, default=str))
+    return 0
+
+
 def cmd_config_check(args: argparse.Namespace) -> int:
     """Validate config/ and schema/ files: JSON parses, profiles map to every domain, frameworks complete."""
     problems: list[str] = []
@@ -135,6 +172,28 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("origin")
     p.add_argument("--raw", action="store_true", help="include the full card")
     p.set_defaults(func=cmd_a2a_card)
+
+    p = sub.add_parser("build", help="build the static catalog from the seed workbook and live sources")
+    p.add_argument("--out", default=str(ROOT / "data" / "catalog"))
+    p.add_argument("--cache", default=str(ROOT / "build" / "snapshots"))
+    p.add_argument("--sources", default="seed,marketplaces,mcp_registry,huggingface,github,ard_web")
+    p.add_argument("--offline", action="store_true", help="seed and curated sources only; no network")
+    p.add_argument("--limit", type=int, help="cap discovered resources per source (development runs)")
+    p.add_argument("--ard-domains", type=int, help="cap the number of publisher domains inspected")
+    p.add_argument(
+        "--mcp-handshake", action="store_true", help="enable the list-only MCP handshake (public build: off)"
+    )
+    p.add_argument(
+        "--no-review", action="store_true", help="do not append near-duplicates to data/review/matches.yaml"
+    )
+    p.set_defaults(func=cmd_build)
+
+    p = sub.add_parser(
+        "mcp-probe", help="fetch an MCP server card (or run the list-only handshake with --handshake)"
+    )
+    p.add_argument("origin", help="https://host for a card, or the MCP endpoint URL with --handshake")
+    p.add_argument("--handshake", action="store_true")
+    p.set_defaults(func=cmd_mcp_probe)
 
     p = sub.add_parser("config-check", help="validate config/ and schema/ files")
     p.set_defaults(func=cmd_config_check)

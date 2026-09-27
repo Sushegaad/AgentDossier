@@ -33,3 +33,45 @@ their dates. Wording per framework lives in `config/frameworks/*.json`.
 Any change to scoring weights, the taxonomy, a framework file or an evidence
 rule goes through a reviewed pull request, bumps the relevant version string
 and is recorded in `data/changelog/trust-changelog.jsonl`.
+
+## Discovered resources (`components-from-signals-1.0`)
+
+Resources found by the live connectors have no workbook components, so the
+seven components are derived from observable signals. Every rule is
+heuristic and versioned; a component with no supporting signal is unknown
+(scored 0 and flagged), never imputed.
+
+| Component | Derived from |
+| --- | --- |
+| Adoption /30 | log10 of GitHub stars (or Hugging Face likes ×10, downloads /100) against a ceiling of 150,000 |
+| Trust /25 | identity tier base (T1 20, T2 18, T3 15, T4 10, T5 6) + 2 per verified protocol, 1 per claimed, +1 signed Agent Card, +1 declared license |
+| Health /20 | days since last push or update: <30 → 20, <90 → 16, <180 → 12, <365 → 8, else 4; archived → 2 |
+| Ecosystem /15 | MCP verified 6 / claimed 3.6, A2A 5 / 3, ARD 4 / 2.4, +0.3 per topic (max 3), +1 per MCP transport |
+| Domain fit /100 | classifier confidence × 100 |
+| Governance /100 | tier-weighted credit of active compliance records (Phase 1b); unknown until evidence exists |
+| Docs /10 | description 4, homepage 3, representative queries 2, capabilities 1 |
+
+Discovered resources appear in domain lists as **unranked** entries sorted
+by score. The seed workbook remains the ranked Top 100 per domain (frozen
+baseline) until the maintainer re-scores.
+
+## Identity tiers (`identity-1.0`)
+
+| Tier | Evidence |
+| --- | --- |
+| 1 | ARD manifest with a `trustManifest.identity` that binds to the publisher domain |
+| 2 | Marketplace listing, or ARD/A2A metadata served at the publisher's own domain |
+| 3 | Repository or Hub account ownership (GitHub, Hugging Face) |
+| 4 | Vendor name only |
+| 5 | Unknown |
+
+Certifications earn governance credit only once identity is tier 2 or better
+(FR-49); until then they show as "pending publisher verification".
+
+## Duplicate handling
+
+Deterministic keys (ARD URN, GitHub `owner/repo`, Hugging Face id, MCP
+Registry name, A2A card URL, canonical URL) merge automatically, with the
+seed record winning on descriptive fields. Two workbook products that share
+a key stay separate. Name similarity ≥ 0.92 only creates a candidate in
+`data/review/matches.yaml`; nothing merges without a recorded decision.
