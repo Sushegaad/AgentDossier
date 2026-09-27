@@ -1,0 +1,73 @@
+---
+import "../styles/global.css";
+import { loadIndexMeta } from "../lib/catalog";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "AgentDossier — a standards-aware registry of AI agents with evidence you can check." } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const meta = loadIndexMeta();
+const path = Astro.url.pathname.replace(base, "") || "/";
+const nav = [
+  ["/", "Search"],
+  ["/domains/", "Domains"],
+  ["/compare/", "Compare"],
+  ["/shortlist/", "Shortlist"],
+  ["/private/", "Private catalog"],
+  ["/changelog/", "Changelog"],
+  ["/methodology/", "Methodology"],
+];
+const current = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · AgentDossier</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    <link rel="ard" type="application/ai-registry+json" href={`${base}/.well-known/ard.json`} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href={`${base}/`}>Agent<span>Dossier</span></a>
+        <nav class="nav" aria-label="Main">
+          {nav.map(([href, label]) => (
+            <a href={`${base}${href}`} aria-current={current(href) ? "page" : undefined}>
+              {label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          {meta?.disclaimer ??
+            "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation."}
+        </p>
+        <p>
+          {meta ? (
+            <>
+              Catalog snapshot {meta.snapshot_date}, built {meta.built_at.slice(0, 10)} ({meta.score_version}). Refreshed weekly.
+              {" "}
+            </>
+          ) : (
+            <>No catalog is bundled with this build. </>
+          )}
+          Code MIT-licensed, catalog data CC BY 4.0 · <a href="https://github.com/Sushegaad/AgentDossier">GitHub</a>
+          {" · "}
+          <a href={`${base}/methodology/`}>How evidence is graded</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

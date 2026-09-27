@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro";
+import PrivateCatalogApp from "../components/PrivateCatalogApp";
+---
+
+<Base title="Private catalog">
+  <h1>Private catalog viewer</h1>
+  <p class="muted" style="max-width: 70ch">
+    Enterprises run their own AgentDossier instance to scan internal networks for agents that publish ARD manifests,
+    A2A agent cards or MCP servers. This page opens the catalog such an instance produces and searches it here, in the
+    browser, with the same intent parser and explanations as the public demo. Nothing is uploaded.
+  </p>
+  <PrivateCatalogApp client:load />
+  <h2>Produce a private catalog</h2>
+  <pre class="card small"><code>uv sync --extra connectors
+agentdossier build --sources seed,ard --ard-domains agents.example.internal \
+  --net-policy enterprise --scope private --tenant "Example Corp" --out ./catalog
+# then open ./catalog/index.json above, or serve ./catalog behind your SSO</code></pre>
+  <p class="muted small">The self-hosted edition (Phase 2) adds the scheduled scanner, ARD REST API and OIDC login in one container.</p>
+</Base>

@@ -1,0 +1,52 @@
+---
+import Base from "../../layouts/Base.astro";
+import TrustStrip from "../../components/TrustStrip";
+import { loadDomains } from "../../lib/catalog";
+
+export function getStaticPaths() {
+  return loadDomains().map((d) => ({ params: { domain: d.domain }, props: { d } }));
+}
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const { d } = Astro.props;
+---
+
+<Base title={d.label}>
+  <h1>{d.label}</h1>
+  <p class="muted">
+    Top {d.ranked.length} ranked under the <strong>{d.profile}</strong> profile · snapshot {d.snapshot_date} · {d.score_version}.
+    {d.note && <span> {d.note}</span>}
+  </p>
+  <p><a class="btn" href={`${base}/?domain=${d.domain}`}>Search within {d.label}</a></p>
+  <div class="scroll-x">
+    <table>
+      <thead>
+        <tr><th>#</th><th>Agent</th><th>Vendor</th><th>Type</th><th>Score</th><th>Trust</th><th>Coverage</th></tr>
+      </thead>
+      <tbody>
+        {d.ranked.map((r) => (
+          <tr>
+            <td>{r.rank}</td>
+            <td><a href={`${base}/agents/${r.slug}/`}>{r.name}</a><div class="muted small">{r.category}</div></td>
+            <td>{r.vendor}</td>
+            <td>{r.resource_type.replace(/_/g, " ")}</td>
+            <td>{r.score.toFixed(1)}</td>
+            <td><TrustStrip trust={r.trust} compact /></td>
+            <td title="share of score components that were known (unknown = 0, never imputed)">{Math.round(r.evidence_coverage * 100)}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  {d.discovered.length > 0 && (
+    <>
+      <h2>Discovered (unranked)</h2>
+      <p class="muted small">Found by the connectors; classified into this domain but not scored against the seed baseline.</p>
+      <ul>
+        {d.discovered.map((r) => (
+          <li><a href={`${base}/agents/${r.slug}/`}>{r.name}</a> <span class="muted small">{r.vendor}</span></li>
+        ))}
+      </ul>
+    </>
+  )}
+  <p class="notice small" style="margin-top: 1.5rem">{d.disclaimer}</p>
+</Base>

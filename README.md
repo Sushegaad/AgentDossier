@@ -19,8 +19,10 @@ recommendation. Confirm current status with the vendor and the issuing body.
 Phase 1 in progress: connectors (seed workbook, GitHub, Hugging Face, MCP
 Registry, ARD publishers, marketplaces), compliance evidence (FedRAMP, CSA
 STAR, curated records, vendor claims) with the tier/freshness engine, and
-news/security feeds. See `docs/brd-traceability.md` for what each
-requirement maps to and `docs/methodology.md` for how evidence is graded.
+news/security feeds, and the public site (`web/`, Astro) with search,
+trust profiles, compare and the private-catalog viewer. See
+`docs/brd-traceability.md` for what each requirement maps to and
+`docs/methodology.md` for how evidence is graded.
 
 ## Quick start
 
@@ -41,6 +43,8 @@ uv run agentdossier build --sources seed,marketplaces --claim-domains 12 --news-
 the GitHub connector and release feeds, `NVD_API_KEY` lifts the NVD rate
 limit. Hand-verified evidence and publisher-domain checks live in
 `data/curated/`.
+
+The site: `cd web && npm ci && CATALOG_DIR=/tmp/catalog npm run dev` (see `web/README.md`).
 
 The core package uses only the Python standard library; `openpyxl` is needed
 to read the seed workbook (`--extra connectors` or `--extra dev`).
