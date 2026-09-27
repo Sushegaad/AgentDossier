@@ -1,0 +1,16 @@
+{
+ "name": "Example Weather MCP",
+ "description": "Weather data over MCP",
+ "version": "1.2.0",
+ "remotes": [
+  {
+   "type": "streamable-http",
+   "url": "https://mcp.example.com/mcp"
+  }
+ ],
+ "tools": [
+  {
+   "name": "get_weather"
+  }
+ ]
+}

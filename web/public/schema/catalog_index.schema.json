@@ -199,10 +199,44 @@
                 }
               }
             }
+          },
+          "slug": {
+            "type": "string"
+          },
+          "category": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         },
         "additionalProperties": true
       }
+    },
+    "built_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generator": {
+      "type": "string"
     }
   },
   "additionalProperties": false

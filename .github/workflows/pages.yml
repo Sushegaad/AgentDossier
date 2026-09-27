@@ -24,8 +24,9 @@ jobs:
       # step with the Astro build (pnpm install && pnpm build --mode demo).
       - name: Assemble site
         run: |
-          mkdir -p dist
+          mkdir -p dist/catalog
           cp -r web/public/. dist/
+          if [ -f data/catalog/index.json ]; then cp -r data/catalog/. dist/catalog/; cp data/catalog/ard.json dist/.well-known/ard.json; fi
           test -f dist/index.html
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,61 @@
+name: refresh
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC (BRD v3.1: weekly refresh)
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Cap discovered resources per source (leave empty for a full run)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  build-catalog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # push the refresh branch
+      pull-requests: write   # open the catalog PR
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: Install
+        run: uv sync --extra dev
+      - name: Restore raw snapshots (never committed)
+        uses: actions/cache@v4
+        with:
+          path: build/snapshots
+          key: snapshots-${{ github.run_id }}
+          restore-keys: snapshots-
+      - name: Build catalog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LIMIT="${{ github.event.inputs.limit }}"
+          uv run agentdossier build --out data/catalog --cache build/snapshots ${LIMIT:+--limit $LIMIT}
+      - name: Validate outputs
+        run: uv run python scripts/validate_catalog.py data/catalog
+      - name: Summarize for the PR body
+        id: summary
+        run: |
+          uv run python scripts/catalog_summary.py data/catalog > /tmp/pr-body.md
+          echo "body<<EOF" >> "$GITHUB_OUTPUT"; cat /tmp/pr-body.md >> "$GITHUB_OUTPUT"; echo "EOF" >> "$GITHUB_OUTPUT"
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: refresh/catalog
+          title: "data: weekly catalog refresh ${{ github.run_started_at }}"
+          commit-message: "data: weekly catalog refresh"
+          body: ${{ steps.summary.outputs.body }}
+          labels: catalog-refresh
+          add-paths: |
+            data/catalog/**
+            data/review/**
+            data/changelog/**
+          delete-branch: true

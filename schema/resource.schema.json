@@ -223,6 +223,9 @@
             "null"
           ],
           "format": "date-time"
+        },
+        "rules_version": {
+          "type": "string"
         }
       },
       "additionalProperties": true
@@ -503,6 +506,105 @@
     "last_seen": {
       "type": "string",
       "format": "date-time"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "trust": {
+      "type": "object",
+      "properties": {
+        "identity": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "compliance": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "security": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "protocols": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "issues": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "additionalProperties": false
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "taxonomy_version": {
+          "type": "string"
+        },
+        "matched": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "merged_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "security": {
+      "type": "object",
+      "properties": {
+        "tier": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "cves": {
+          "type": "integer"
+        },
+        "advisories": {
+          "type": "integer"
+        },
+        "checked_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "disclaimer": {
+      "type": "string"
     }
   },
   "additionalProperties": false

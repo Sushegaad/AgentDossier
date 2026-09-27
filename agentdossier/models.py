@@ -81,6 +81,10 @@ def new_resource(
 
 
 def add_source(res: dict, system: str, url: str | None, raw=None) -> None:
+    """Record a source on a resource; the same (system, url) pair is recorded once."""
+    if any(s["system"] == system and s.get("url") == url for s in res["sources"]):
+        res["last_seen"] = now_iso()
+        return
     res["sources"].append(
         {
             "system": system,

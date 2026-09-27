@@ -1,6 +1,6 @@
 {
   "version": "sources-1.0",
-  "notes": "Source register (BRD §7.3, plan section 4). Every connector lists its legal basis and terms note. 'automated' = fetched by the weekly build; 'manual' = maintainer-entered records with links until terms are confirmed. Raw snapshots are cached, never committed.",
+  "notes": "Source register (BRD §7.3, plan section 4). Every connector lists its legal basis and terms note. 'automated' = fetched by the weekly build; 'manual' = maintainer-entered records with links until terms are confirmed. Raw snapshots are cached, never committed. 'ard_domains' lists extra origins to resolve for ARD entries beyond the publisher domains already in the catalog.",
   "sources": [
     {
       "id": "seed_xlsx",
@@ -226,6 +226,12 @@
         "cves",
         "advisories"
       ]
+    }
+  ],
+  "ard_domains": [
+    {
+      "domain": "agenticresourcediscovery.org",
+      "note": "spec home; registry referrals"
     }
   ]
 }
