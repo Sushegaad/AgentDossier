@@ -1,0 +1,36 @@
+# Self-hosted AgentDossier. Copy enterprise.json next to this file, set the secrets in .env,
+# then: docker compose up -d
+services:
+  agentdossier:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: agentdossier:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - agentdossier-data:/data
+      - ./enterprise.json:/config/enterprise.json:ro
+      # - /etc/ssl/corp-root-ca.pem:/config/corp-root-ca.pem:ro
+    environment:
+      AGENTDOSSIER_ENTERPRISE_CONFIG: /config/enterprise.json
+      AGENTDOSSIER_SITE: ${AGENTDOSSIER_SITE:-http://localhost:8080/}
+      AGENTDOSSIER_SCAN_ON_START: "1"
+      # --- auth: pick one ---------------------------------------------------------
+      # token mode (API clients, CI):
+      AGENTDOSSIER_AUTH_MODE: ${AGENTDOSSIER_AUTH_MODE:-token}
+      AGENTDOSSIER_API_TOKEN: ${AGENTDOSSIER_API_TOKEN:?set a reader token in .env}
+      AGENTDOSSIER_ADMIN_TOKEN: ${AGENTDOSSIER_ADMIN_TOKEN:-}
+      # oidc mode (browser login through your IdP):
+      OIDC_ISSUER: ${OIDC_ISSUER:-}
+      OIDC_CLIENT_ID: ${OIDC_CLIENT_ID:-}
+      OIDC_CLIENT_SECRET: ${OIDC_CLIENT_SECRET:-}
+      OIDC_ADMIN_GROUP: ${OIDC_ADMIN_GROUP:-agentdossier-admins}
+      SESSION_SECRET: ${SESSION_SECRET:-}
+      # --- scanner credentials referenced by enterprise.json auth.headers_from_env ----
+      AGENTREG_INTERNAL_TOKEN: ${AGENTREG_INTERNAL_TOKEN:-}
+      # --- optional --------------------------------------------------------------------
+      NVD_API_KEY: ${NVD_API_KEY:-}
+    restart: unless-stopped
+volumes:
+  agentdossier-data:

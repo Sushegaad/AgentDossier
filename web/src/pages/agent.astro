@@ -1,0 +1,10 @@
+---
+// Dynamic dossier for self-hosted instances: /agent/?id=<resource id or slug>.
+// The catalog there changes with every scan, so pages cannot be pre-rendered.
+import Base from "../layouts/Base.astro";
+import AgentProfile from "../components/AgentProfile";
+---
+
+<Base title="Agent dossier">
+  <AgentProfile client:only="react" />
+</Base>

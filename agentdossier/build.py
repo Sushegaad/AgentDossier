@@ -63,6 +63,16 @@ class BuildOptions:
     claim_domain_limit: int | None = None
     news_limit: int | None = None
     changelog_path: Path = ROOT / "data" / "changelog" / "trust-changelog.jsonl"
+    # Self-hosted / private catalogs (enterprise edition)
+    scope: str = "public"
+    tenant: str | None = None
+    site: str = SITE
+    registry_urn: str = REGISTRY_URN
+    registry_name: str = "AgentDossier public demo registry"
+    registry_description: str = (
+        "Reference implementation of a standards-aware AI agent registry. Static demo; the ARD search API is "
+        "served by the self-hosted edition."
+    )
 
 
 @dataclass
@@ -381,8 +391,8 @@ def write_outputs(
         "score_version": SCORE_VERSION,
         "taxonomy_version": taxonomy["version"],
         "frameworks_version": frameworks_version,
-        "scope": "public",
-        "tenant": None,
+        "scope": opts.scope,
+        "tenant": opts.tenant,
         "disclaimer": DISCLAIMER,
         "generator": f"agentdossier {__version__}",
         "records": index_records,
@@ -450,10 +460,10 @@ def write_outputs(
     page = 100
     listing = [
         {
-            "identifier": f"urn:air:sushegaad.github.io:catalog:{r['slug']}",
+            "identifier": f"{opts.registry_urn.rsplit(':registry:', 1)[0]}:catalog:{r['slug']}",
             "displayName": r["name"],
             "type": _ard_type(r),
-            "url": f"{SITE}agents/{r['slug']}/",
+            "url": f"{opts.site}agents/{r['slug']}/",
             "resourceId": r["id"],
         }
         for r in sorted(resources, key=lambda r: r["name"].lower())
@@ -477,11 +487,11 @@ def write_outputs(
     ard_entries = [
         {
             "@context": "https://agenticresourcediscovery.org/context/v1",
-            "identifier": REGISTRY_URN,
-            "displayName": "AgentDossier public demo registry",
+            "identifier": opts.registry_urn,
+            "displayName": opts.registry_name,
             "type": "application/ai-registry+json",
-            "url": SITE,
-            "description": "Reference implementation of a standards-aware AI agent registry. Static demo; the ARD search API is served by the self-hosted edition.",
+            "url": opts.site,
+            "description": opts.registry_description,
             "representativeQueries": [
                 "find an insurance claims agent with a HIPAA BAA",
                 "which coding agents support MCP",

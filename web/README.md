@@ -37,9 +37,11 @@ into `public/catalog/` so the browser can fetch it, and its `ard.json` into
 | `/private/` | Opens a catalog from a self-hosted instance (file or URL) and searches it locally |
 | `/changelog/` | Trust changelog (badges added / changed / removed per weekly build) |
 | `/methodology/` | `docs/methodology.md` rendered, plus what the badges mean |
+| `/agent/?id=…` | Dynamic dossier for self-hosted instances (built with `PUBLIC_DYNAMIC_AGENTS=1`), whose catalog changes with every scan |
 
 Configuration is read from the repository, not duplicated: `config/intent_rules.json`,
 `config/taxonomy.json` and `config/frameworks/*.json` are imported at build time.
 `SITE_BASE` (default `/AgentDossier`) and `SITE_URL` set the deployment path for
-an enterprise instance served elsewhere. `public/schema/` is a copy of
+an enterprise instance served elsewhere; `PUBLIC_DYNAMIC_AGENTS=1` makes agent
+links point at the client-rendered dossier (`deploy/Dockerfile` sets all three). `public/schema/` is a copy of
 `../schema/` published for machine readers.

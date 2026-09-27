@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { BASE, fetchIndex, fetchSearchDocs } from "../lib/data";
+import { BASE, agentHref, fetchIndex, fetchSearchDocs } from "../lib/data";
 import { chipLabel } from "../lib/search";
 import { Catalog, type Filters, type Hit } from "../lib/search";
 import { badgeLabel, domainLabel, frameworkName } from "../lib/labels";
@@ -280,7 +280,7 @@ function Result({ hit, linkAgents, expanded, onToggle }: { hit: Hit; linkAgents:
     <article className="result">
       <div>
         <h3>
-          {linkAgents ? <a href={`${BASE}/agents/${r.slug}/`}>{r.name}</a> : <button type="button" className="btn small" onClick={onToggle}>{r.name}</button>}{" "}
+          {linkAgents ? <a href={agentHref(r.slug)}>{r.name}</a> : <button type="button" className="btn small" onClick={onToggle}>{r.name}</button>}{" "}
           <span className="muted small">
             {r.vendor} · {r.resource_type.replace(/_/g, " ")}
             {r.license ? ` · ${r.license}` : ""}

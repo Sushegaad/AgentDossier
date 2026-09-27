@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { BASE, fetchIndex, fetchResource } from "../lib/data";
+import { BASE, agentHref, fetchIndex, fetchResource } from "../lib/data";
 import { FRAMEWORKS, domainLabel, frameworkName, protocolLabel, variantLabel } from "../lib/labels";
 import { getShortlist, onShortlistChange } from "../lib/shortlist";
 import type { CatalogIndex, IndexRecord, Resource } from "../lib/types";
@@ -100,7 +100,7 @@ export default function CompareApp() {
                 <th></th>
                 {records.map((r) => (
                   <th key={r.id} style={{ textTransform: "none", fontSize: "1rem", color: "var(--text)" }}>
-                    <a href={`${BASE}/agents/${r.slug}/`}>{r.name}</a>
+                    <a href={agentHref(r.slug)}>{r.name}</a>
                     <div className="muted small" style={{ fontWeight: 400 }}>
                       {r.vendor}
                     </div>

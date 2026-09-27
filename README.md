@@ -16,11 +16,12 @@ recommendation. Confirm current status with the vendor and the issuing body.
 
 ## Status
 
-Phase 1 in progress: connectors (seed workbook, GitHub, Hugging Face, MCP
+Phases 0–2 delivered: connectors (seed workbook, GitHub, Hugging Face, MCP
 Registry, ARD publishers, marketplaces), compliance evidence (FedRAMP, CSA
 STAR, curated records, vendor claims) with the tier/freshness engine, and
-news/security feeds, and the public site (`web/`, Astro) with search,
-trust profiles, compare and the private-catalog viewer. See
+news/security feeds, the public site (`web/`, Astro) with search, trust
+profiles, compare and the private-catalog viewer, and the self-hosted
+enterprise edition (`agentdossier/enterprise/`, `agentdossier/server/`). See
 `docs/brd-traceability.md` for what each requirement maps to and
 `docs/methodology.md` for how evidence is graded.
 
@@ -45,6 +46,19 @@ limit. Hand-verified evidence and publisher-domain checks live in
 `data/curated/`.
 
 The site: `cd web && npm ci && CATALOG_DIR=/tmp/catalog npm run dev` (see `web/README.md`).
+
+## Self-hosted edition
+
+```bash
+uv sync --extra connectors --extra server --extra mcp
+agentdossier enterprise selftest                       # loopback end-to-end check
+agentdossier enterprise preflight examples/enterprise/enterprise.json
+agentdossier enterprise plan examples/enterprise/enterprise.json   # dry run
+agentdossier serve --catalog build/enterprise/acme-corp/catalog --enterprise-config enterprise.json
+```
+
+One container (`deploy/`) serves the web UI, the ARD REST API, `POST /qualify`,
+scheduled authorized scans and an MCP wrapper. See `docs/enterprise-runbook.md`.
 
 The core package uses only the Python standard library; `openpyxl` is needed
 to read the seed workbook (`--extra connectors` or `--extra dev`).

@@ -54,7 +54,7 @@ target-version = "py311"
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP", "S", "N", "W"]
 ignore = ["S101", "S310", "S324", "E501"]
-per-file-ignores = { "tests/*" = ["S", "B"] }
+per-file-ignores = { "tests/*" = ["S", "B"], "agentdossier/server/app.py" = ["B008"] }
 
 [tool.mypy]
 python_version = "3.11"

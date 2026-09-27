@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BASE } from "../lib/data";
+import { BASE, agentHref } from "../lib/data";
 import { clearShortlist, getShortlist, onShortlistChange, toggleShortlist, type ShortlistItem } from "../lib/shortlist";
 
 export default function ShortlistApp() {
@@ -51,7 +51,7 @@ export default function ShortlistApp() {
           {items.map((i) => (
             <tr key={i.id}>
               <td>
-                <a href={`${BASE}/agents/${i.slug}/`}>{i.name}</a>
+                <a href={agentHref(i.slug)}>{i.name}</a>
               </td>
               <td>{i.vendor}</td>
               <td className="muted small">{i.added.slice(0, 10)}</td>

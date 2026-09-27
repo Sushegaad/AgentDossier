@@ -149,6 +149,98 @@ def cmd_config_check(args: argparse.Namespace) -> int:
     return 1 if problems else 0
 
 
+def cmd_enterprise(args: argparse.Namespace) -> int:
+    from .enterprise import preflight, scanner, selftest
+    from .enterprise.config import ConfigError, load
+
+    if args.action == "selftest":
+        result = selftest.run(Path(args.out) if args.out else None)
+        for step in result["steps"]:
+            print(f"{'ok ' if step['ok'] else 'FAIL'} {step['step']}")
+            if step["step"] == "preflight":
+                for c in step["checks"]:
+                    if c["status"] != "pass":
+                        print(f"     {c['status']}: {c['message']}")
+            else:
+                print(f"     probed {step['origin']}: {step['probed'][0] if step['probed'] else 'nothing'}")
+                print(f"     found: {', '.join(step['found']) or 'nothing'}")
+                for e in step.get("errors", []):
+                    print(f"     error: {e}")
+        print("self-test", "passed" if result["ok"] else "FAILED", f"(catalog: {result.get('catalog')})")
+        return 0 if result["ok"] else 1
+    try:
+        cfg = load(args.config)
+    except ConfigError as exc:
+        print(f"config error: {exc}", file=sys.stderr)
+        return 2
+    if args.action == "preflight":
+        pf = preflight.run(cfg)
+        for c in pf.checks:
+            print(f"{c.status:4} {c.id}: {c.message}")
+        print("preflight", "passed" if pf.ok else "FAILED")
+        return 0 if pf.ok else 1
+    pf = preflight.run(cfg)
+    if not pf.ok and not args.force:
+        for c in pf.checks:
+            if c.status == "fail":
+                print(f"fail {c.id}: {c.message}", file=sys.stderr)
+        print(
+            "preflight FAILED; fix the configuration or pass --force to override warnings only",
+            file=sys.stderr,
+        )
+        return 1
+    report = scanner.scan(cfg, dry_run=(args.action == "plan"), out_dir=Path(args.out) if args.out else None)
+    if args.action == "plan":
+        plan = report["plan"]
+        print(
+            f"tenant {cfg.tenant}: {len(plan['targets'])} origin(s), {len(plan['registries'])} registr{'y' if len(plan['registries']) == 1 else 'ies'}, {len(plan['refused'])} refused"
+        )
+        for t in plan["targets"][: args.show]:
+            print(f"  probe   {t['origin']}  ({t['kind']}{' via ' + t['via'] if t.get('via') else ''})")
+        if len(plan["targets"]) > args.show:
+            print(f"  ... {len(plan['targets']) - args.show} more")
+        for r in plan["refused"][: args.show]:
+            print(f"  refuse  {r['origin']}: {r['reason']}")
+        for w in plan["warnings"]:
+            print(f"  warning {w}")
+        return 0
+    print(
+        f"scanned {len(report['probed'])} origin(s)/registr(ies) for {cfg.tenant}: {report['resources']} resource(s) -> {report['catalog']}"
+    )
+    for e in report["errors"][:10]:
+        print("  error:", e)
+    return 0
+
+
+def cmd_serve(args: argparse.Namespace) -> int:
+    import os
+
+    if args.catalog:
+        os.environ["AGENTDOSSIER_CATALOG_DIR"] = args.catalog
+    if args.enterprise_config:
+        os.environ["AGENTDOSSIER_ENTERPRISE_CONFIG"] = args.enterprise_config
+    try:
+        import uvicorn
+
+        from .server.app import create_app
+    except ImportError:
+        print("the server needs the 'server' extra: uv sync --extra server", file=sys.stderr)
+        return 2
+    app = create_app()
+    uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+    return 0
+
+
+def cmd_mcp(args: argparse.Namespace) -> int:
+    try:
+        from .server.mcp_server import main as mcp_main
+    except ImportError:
+        print("the MCP wrapper needs the 'mcp' extra: uv sync --extra mcp", file=sys.stderr)
+        return 2
+    mcp_main(args.catalog)
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="agentdossier", description="AgentDossier: an evidence dossier for every AI agent."
@@ -207,6 +299,31 @@ def main(argv: list[str] | None = None) -> int:
 
     p = sub.add_parser("config-check", help="validate config/ and schema/ files")
     p.set_defaults(func=cmd_config_check)
+
+    p = sub.add_parser("enterprise", help="authorized private-network scan (self-hosted edition)")
+    p.add_argument(
+        "action",
+        choices=["preflight", "plan", "scan", "selftest"],
+        help="preflight: check the config; plan: dry run (nothing fetched); scan: probe and build; selftest: loopback end-to-end check",
+    )
+    p.add_argument("config", nargs="?", help="enterprise.json (not needed for selftest)")
+    p.add_argument("--out", help="output directory (default: config output_dir)")
+    p.add_argument("--force", action="store_true", help="scan even when preflight reports failures")
+    p.add_argument("--show", type=int, default=20, help="plan: how many targets to print")
+    p.set_defaults(func=cmd_enterprise)
+
+    p = sub.add_parser(
+        "serve", help="run the self-hosted server (ARD REST API, /qualify, scan control, web UI)"
+    )
+    p.add_argument("--host", default="127.0.0.1")
+    p.add_argument("--port", type=int, default=8080)
+    p.add_argument("--catalog", help="catalog directory (default: AGENTDOSSIER_CATALOG_DIR or data/catalog)")
+    p.add_argument("--enterprise-config", help="enterprise.json to enable scans and the schedule")
+    p.set_defaults(func=cmd_serve)
+
+    p = sub.add_parser("mcp", help="expose the registry to agents over MCP (stdio)")
+    p.add_argument("--catalog", default=str(ROOT / "data" / "catalog"))
+    p.set_defaults(func=cmd_mcp)
 
     args = parser.parse_args(argv)
     return int(args.func(args))
