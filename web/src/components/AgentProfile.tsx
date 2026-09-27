@@ -14,7 +14,7 @@ const MARK: Record<Mark | "you", { glyph: string; color: string }> = {
 };
 
 /** The dossier (mockup 1g). Static for the public demo (resource prop), client-rendered on self-hosted instances (id from the URL). */
-export default function AgentProfile({ resource, id }: { resource?: Resource; id?: string }) {
+export default function AgentProfile({ resource, id, shortlist = "island" }: { resource?: Resource; id?: string; shortlist?: "island" | "static" }) {
   const [res, setRes] = useState<Resource | null | undefined>(resource);
   useEffect(() => {
     if (resource) return;
@@ -93,7 +93,14 @@ export default function AgentProfile({ resource, id }: { resource?: Resource; id
             <a className="btn" href={`${BASE}/compare/?ids=${res.slug}`}>
               + Compare
             </a>
-            <ShortlistButton id={res.id} slug={res.slug} name={res.name} vendor={res.vendor} />
+            {shortlist === "island" ? (
+              <ShortlistButton id={res.id} slug={res.slug} name={res.name} vendor={res.vendor} />
+            ) : (
+              // the public dossier ships no React at all; a tiny script in the page wires this button
+              <button type="button" className="btn" data-shortlist-id={res.id} data-slug={res.slug} data-name={res.name} data-vendor={res.vendor ?? ""} aria-pressed="false">
+                ☆ Shortlist
+              </button>
+            )}
             <a className="btn" href={`${BASE}/catalog/agents/${res.id}.json`}>
               Export JSON
             </a>
