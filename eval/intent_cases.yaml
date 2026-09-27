@@ -1,5 +1,7 @@
-version: intent-cases-0.1
-notes: 'Starter set: the three BRD examples plus seven more. Target 50+ before the Phase 1 gate; >=95% chip accuracy.'
+version: intent-cases-1.0
+notes: '52 cases: the three BRD examples plus hand-written variants covering every dimension (domain, capability, data class,
+  deployment, compliance, protocol, ecosystem, jurisdiction, trust) and the must-have/prefer chips. Gate: every expected chip
+  present (>=95% of cases).'
 cases:
 - id: ic001
   text: I need an agent for insurance claims that can handle PHI
@@ -100,3 +102,358 @@ cases:
     must_have:
     - framework: gdpr
       min_tier: 4
+- id: ic011
+  text: underwriting agent for a UK insurer that must hold Cyber Essentials
+  expected:
+    domain:
+    - insurance
+    capability:
+    - underwriting
+    must_have:
+    - framework: cyber_essentials
+      min_tier: 4
+- id: ic012
+  text: verified FedRAMP High agent for federal case work
+  expected:
+    domain:
+    - government
+    must_have:
+    - framework: fedramp
+      min_tier: 1
+- id: ic013
+  text: clinical documentation agent that handles patient data
+  expected:
+    domain:
+    - healthcare
+    data_class:
+    - phi
+    must_have:
+    - framework: hipaa
+      variant: BAA_AVAILABLE
+      min_tier: 4
+- id: ic014
+  text: threat detection agent with ISO 27001
+  expected:
+    domain:
+    - cybersecurity
+    capability:
+    - security_operations
+    must_have:
+    - framework: iso27001
+      min_tier: 4
+- id: ic015
+  text: invoice processing agent for accounts payable
+  expected:
+    domain:
+    - finance
+    capability:
+    - document_processing
+- id: ic016
+  text: demand planning agent for logistics on AWS
+  expected:
+    domain:
+    - supply_chain
+    capability:
+    - supply_chain_planning
+    ecosystem:
+    - aws
+- id: ic017
+  text: regulatory monitoring for banking with audit trail
+  expected:
+    domain:
+    - regulatory
+    - finance
+    capability:
+    - compliance_monitoring
+- id: ic018
+  text: open-source coding agent with an MCP server
+  expected:
+    domain:
+    - technology
+    capability:
+    - coding
+    protocol:
+    - mcp
+    trust:
+    - open_source
+- id: ic019
+  text: A2A agent card for a sales prospecting agent
+  expected:
+    domain:
+    - sales
+    capability:
+    - sales
+    protocol:
+    - a2a
+- id: ic020
+  text: agents that publish ARD manifests
+  expected:
+    protocol:
+    - ard
+- id: ic021
+  text: market research agent on Google Cloud
+  expected:
+    capability:
+    - research
+    ecosystem:
+    - google
+- id: ic022
+  text: SDR agent for outbound outreach in HubSpot
+  expected:
+    domain:
+    - sales
+    capability:
+    - sales
+- id: ic023
+  text: agent that processes cardholder data
+  expected:
+    data_class:
+    - pci
+    must_have:
+    - framework: pci_dss
+      min_tier: 2
+- id: ic024
+  text: hosted customer support agent for EU customers
+  expected:
+    domain:
+    - sales
+    capability:
+    - customer_service
+    deployment:
+    - saas
+    must_have:
+    - framework: gdpr
+      min_tier: 4
+- id: ic025
+  text: air-gapped agent for document extraction
+  expected:
+    capability:
+    - document_processing
+    deployment:
+    - private
+- id: ic026
+  text: SQL analytics agent for Snowflake with PII
+  expected:
+    domain:
+    - data
+    capability:
+    - data_analysis
+    data_class:
+    - pii
+    prefer:
+    - framework: iso27701
+      min_tier: 4
+- id: ic027
+  text: ServiceNow help desk agent
+  expected:
+    domain:
+    - sales
+    capability:
+    - customer_service
+    ecosystem:
+    - servicenow
+- id: ic028
+  text: RPA back office automation for insurance claims
+  expected:
+    domain:
+    - insurance
+    - business
+    capability:
+    - workflow_automation
+    - claims
+- id: ic029
+  text: EU AI Act high-risk registration for an HR screening agent
+  expected:
+    must_have:
+    - framework: eu_ai_act
+      min_tier: 4
+- id: ic030
+  text: ISO 42001 certified agent platform
+  expected:
+    must_have:
+    - framework: iso42001
+      min_tier: 1
+- id: ic031
+  text: litigation agent for e-discovery with confidential data
+  expected:
+    domain:
+    - legal
+    data_class:
+    - confidential
+- id: ic032
+  text: 'audited vendors only: coding agent'
+  expected:
+    capability:
+    - coding
+    trust:
+    - verified_only
+- id: ic033
+  text: penetration testing agent on Azure
+  expected:
+    domain:
+    - cybersecurity
+    ecosystem:
+    - microsoft
+- id: ic034
+  text: contract analysis agent under UK GDPR
+  expected:
+    domain:
+    - legal
+    capability:
+    - contract_review
+    must_have:
+    - framework: uk_gdpr
+      min_tier: 4
+- id: ic035
+  text: procurement agent on SAP inside our network
+  expected:
+    domain:
+    - supply_chain
+    capability:
+    - supply_chain_planning
+    ecosystem:
+    - sap
+    deployment:
+    - private
+- id: ic036
+  text: incident response agent, SOC 2 audited
+  expected:
+    domain:
+    - cybersecurity
+    capability:
+    - security_operations
+    must_have:
+    - framework: soc2
+      min_tier: 2
+- id: ic037
+  text: patient data agent for a hospital on GitHub
+  expected:
+    domain:
+    - healthcare
+    data_class:
+    - phi
+    ecosystem:
+    - github
+- id: ic038
+  text: public data only research agent
+  expected:
+    capability:
+    - research
+    data_class:
+    - public
+- id: ic039
+  text: lead generation agent for marketing
+  expected:
+    domain:
+    - sales
+    capability:
+    - sales
+- id: ic040
+  text: dashboards and reporting agent for finance
+  expected:
+    domain:
+    - finance
+    capability:
+    - data_analysis
+- id: ic041
+  text: compliance monitoring agent with HIPAA and SOC 2
+  expected:
+    capability:
+    - compliance_monitoring
+    prefer:
+    - framework: hipaa
+      min_tier: 4
+    - framework: soc2
+      min_tier: 4
+- id: ic042
+  text: developer agent for Teams
+  expected:
+    domain:
+    - technology
+    capability:
+    - coding
+    ecosystem:
+    - microsoft
+- id: ic043
+  text: OCR agent for medical records
+  expected:
+    domain:
+    - healthcare
+    capability:
+    - document_processing
+    data_class:
+    - phi
+- id: ic044
+  text: self hosted OSS workflow agent
+  expected:
+    capability:
+    - workflow_automation
+    deployment:
+    - private
+    trust:
+    - open_source
+- id: ic045
+  text: vulnerability management agent for a US-based agency
+  expected:
+    domain:
+    - cybersecurity
+    capability:
+    - security_operations
+    jurisdiction:
+    - US
+- id: ic046
+  text: case law research for a UK-based firm
+  expected:
+    domain:
+    - legal
+    capability:
+    - legal_research
+    jurisdiction:
+    - UK
+- id: ic047
+  text: agent for EU-based insurer claims intake
+  expected:
+    domain:
+    - insurance
+    capability:
+    - claims
+    jurisdiction:
+    - EU
+- id: ic048
+  text: Bedrock agent with PCI DSS
+  expected:
+    ecosystem:
+    - aws
+    must_have:
+    - framework: pci_dss
+      min_tier: 4
+- id: ic049
+  text: low-code agent builder for the business
+  expected:
+    domain:
+    - business
+- id: ic050
+  text: inventory agent in our own cloud
+  expected:
+    domain:
+    - supply_chain
+    capability:
+    - supply_chain_planning
+    deployment:
+    - private
+- id: ic051
+  text: trading desk agent with confidential data on GCP
+  expected:
+    domain:
+    - finance
+    data_class:
+    - confidential
+    ecosystem:
+    - google
+- id: ic052
+  text: customer data platform agent for Vertex
+  expected:
+    data_class:
+    - pii
+    ecosystem:
+    - google

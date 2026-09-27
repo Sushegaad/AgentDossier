@@ -93,7 +93,7 @@ export default function CompareApp() {
         </p>
       )}
       {records.length > 0 && (
-        <div className="scroll-x">
+        <div className="scroll-x" tabIndex={0}>
           <table>
             <thead>
               <tr>

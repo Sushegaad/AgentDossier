@@ -13,6 +13,7 @@ const domains = Object.keys(summary?.domains ?? {});
 ---
 
 <Base title="Search">
+  <link slot="head" rel="preload" href={`${base}/catalog/index.json`} as="fetch" crossorigin="anonymous" />
   <section class="hero">
     <h1>Find AI agents, with evidence you can check.</h1>
     <p>
@@ -21,7 +22,7 @@ const domains = Object.keys(summary?.domains ?? {});
       registry-matched, marketplace-listed, document-evidenced or vendor-claimed — and how fresh it is.
     </p>
   </section>
-  <SearchApp client:load />
+  <SearchApp client:idle />
   {index && (
     <section style="margin-top: 2.5rem">
       <h2>Catalog at a glance</h2>

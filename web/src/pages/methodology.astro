@@ -25,4 +25,8 @@ import { Content as Methodology } from "../../../docs/methodology.md";
       regulator actions). "–" means not checked in this build.
     </p>
   </div>
+  <script>
+    // wide markdown tables scroll horizontally; make the scroll region reachable by keyboard (axe: scrollable-region-focusable)
+    for (const t of document.querySelectorAll(".prose table")) t.setAttribute("tabindex", "0");
+  </script>
 </Base>

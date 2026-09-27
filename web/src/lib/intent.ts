@@ -40,7 +40,12 @@ const COMPLIANCE_DEFAULT_TIER: number = (DIMENSIONS.compliance as { default_min_
 const PHRASE_TIERS: Record<string, number> =
   (DIMENSIONS.compliance as { phrase_tiers?: Record<string, number> }).phrase_tiers ?? {};
 
-const ORDER = ["domain", "capability", "data_class", "deployment", "compliance", "protocol", "ecosystem", "jurisdiction", "trust"] as const;
+// Specific dimensions first: once "soc 2" is claimed by compliance it is blanked out, so the
+// capability dimension cannot read it as "soc" (security operations). Domain and capability
+// phrases are matched last and never blanked, because they remain useful free-text terms.
+const ORDER = ["compliance", "protocol", "data_class", "deployment", "ecosystem", "jurisdiction", "trust", "capability", "domain"] as const;
+// When the query is *about* compliance work, framework names are the topic, not a requirement.
+const TOPIC_WORDS = ["compliance", "audit", "audits", "grc", "program", "programs", "certification", "certifications", "readiness", "attestation", "controls"];
 
 function normalize(text: string): string {
   return text
@@ -55,9 +60,15 @@ function escapeRe(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function phraseRe(phrase: string): RegExp {
-  // word boundaries that also work for phrases ending in a digit or symbol
-  return new RegExp(`(^|[^a-z0-9])${escapeRe(phrase.toLowerCase()).replace(/[\s-]+/g, "[\\s-]+")}(?=$|[^a-z0-9])`, "i");
+function phraseRe(phrase: string, opts: { prefix?: boolean; loose?: boolean } = {}): RegExp {
+  // Strict (default): a hyphenated compound is one word, so "low-code" does not match "code".
+  // Loose (taxonomy keywords): hyphens are boundaries and the keyword may be a stem
+  // ("advertis" matches "advertising"; "customer-service" matches "customer").
+  const body = escapeRe(phrase.toLowerCase()).replace(/[\s-]+/g, "[\\s-]+");
+  const before = opts.loose ? "(^|[^a-z0-9])" : "(^|[^a-z0-9-])";
+  const after = opts.prefix ? "[a-z]*" : "";
+  const end = opts.loose ? "(?=$|[^a-z0-9])" : "(?=$|[^a-z0-9-])";
+  return new RegExp(`${before}${body}${after}${end}`, "i");
 }
 
 function phrasesFor(dimension: string): PhraseMap {
@@ -91,6 +102,7 @@ export function parseIntent(text: string): Intent {
     matches: [],
   };
   const consumed: string[] = [];
+  let work = norm;
   for (const dim of ORDER) {
     const map = phrasesFor(dim);
     // longest phrase first so "soc 2 type ii" beats "soc 2"
@@ -100,10 +112,15 @@ export function parseIntent(text: string): Intent {
     const hits = new Map<string, string>();
     for (const c of candidates) {
       if (hits.has(c.value)) continue;
-      if (phraseRe(c.phrase).test(norm)) {
+      const re = dim === "domain" ? phraseRe(c.phrase, { prefix: true, loose: true }) : phraseRe(c.phrase);
+      // the domain is judged on the whole query: "medical records" is PHI *and* healthcare
+      if (re.test(dim === "domain" ? norm : work)) {
         hits.set(c.value, c.phrase);
         // domain and capability words stay searchable as free text ("claims" should still find claims agents)
-        if (dim !== "domain" && dim !== "capability") consumed.push(c.phrase);
+        if (dim !== "domain" && dim !== "capability") {
+          consumed.push(c.phrase);
+          work = work.replace(re, "$1 ");
+        }
       }
     }
     for (const [value, phrase] of hits) {
@@ -124,10 +141,10 @@ export function parseIntent(text: string): Intent {
   for (const [word, t] of Object.entries(PHRASE_TIERS)) {
     if (phraseRe(word).test(norm)) tier = Math.min(tier, t);
   }
+  const topical = TOPIC_WORDS.some((w) => phraseRe(w).test(work));
   for (const fw of intent.compliance) {
-    if (!intent.must_have.some((c) => c.framework === fw)) {
-      intent.must_have.push({ framework: fw, min_tier: tier });
-    }
+    const target = topical ? intent.prefer : intent.must_have;
+    if (!target.some((c) => c.framework === fw)) target.push({ framework: fw, min_tier: tier });
   }
   if (intent.trust.includes("verified_only")) {
     for (const c of intent.must_have) c.min_tier = Math.min(c.min_tier, 2);

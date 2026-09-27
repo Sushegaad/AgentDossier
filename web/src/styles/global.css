@@ -8,10 +8,10 @@
   --accent: #1f5f8b;
   --accent-ink: #ffffff;
   --t1: #1f7a4d;
-  --t2: #2f7fa8;
-  --t3: #8a6d1f;
-  --t4: #a8512f;
-  --t5: #7a7a75;
+  --t2: #22617f;
+  --t3: #7a5f14;
+  --t4: #9a4726;
+  --t5: #5f5f5a;
   --danger: #b3261e;
   --warn: #9a6b00;
   --radius: 10px;
@@ -75,9 +75,19 @@ body {
 }
 a {
   color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.nav a,
+.brand,
+.btn,
+.chip,
+.card > a,
+h1 a {
   text-decoration: none;
 }
-a:hover {
+.card > a:hover {
   text-decoration: underline;
 }
 code,
@@ -304,8 +314,8 @@ main {
   background: var(--t5);
 }
 .tier.pending {
-  opacity: 0.75;
-  outline: 1px dashed currentColor;
+  outline: 2px dashed var(--bg);
+  outline-offset: -3px;
 }
 .badge {
   display: inline-block;

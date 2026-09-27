@@ -17,7 +17,7 @@ const { d } = Astro.props;
     {d.note && <span> {d.note}</span>}
   </p>
   <p><a class="btn" href={`${base}/?domain=${d.domain}`}>Search within {d.label}</a></p>
-  <div class="scroll-x">
+  <div class="scroll-x" tabindex="0">
     <table>
       <thead>
         <tr><th>#</th><th>Agent</th><th>Vendor</th><th>Type</th><th>Score</th><th>Trust</th><th>Coverage</th></tr>
