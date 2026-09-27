@@ -40,6 +40,9 @@ jobs:
   security:
     name: security
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read  # gitleaks lists the PR's commits on pull_request events
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
