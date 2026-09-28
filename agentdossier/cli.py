@@ -298,7 +298,9 @@ def main(argv: list[str] | None = None) -> int:
         default=150.0,
         help="wall-clock budget; later stages skip remaining items when it runs out (0 = unlimited)",
     )
-    p.add_argument("--github-cap", type=int, default=300, help="most-starred GitHub repositories kept per run")
+    p.add_argument(
+        "--github-cap", type=int, default=300, help="most-starred GitHub repositories kept per run"
+    )
     p.add_argument("--huggingface-cap", type=int, default=150)
     p.add_argument("--mcp-registry-cap", type=int, default=300)
     p.set_defaults(func=cmd_build)
