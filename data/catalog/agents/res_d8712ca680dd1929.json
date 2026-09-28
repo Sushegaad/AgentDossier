@@ -1,0 +1,296 @@
+{
+"canonical_url": "palantir.com/platforms/aip",
+"category": "Enterprise operational agents",
+"commercial": true,
+"compliance": [],
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 25.0
+},
+"deployment": "AIP; private/government deployments",
+"description": "Operational AI platform with strong controlled-data and public-sector footprint.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": 25,
+"recomputed": 91.9,
+"score": 91.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"cybersecurity": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": 41,
+"recomputed": 80.9,
+"score": 80.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 13,
+"recomputed": 91.0,
+"score": 91.0,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"finance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 7,
+"recomputed": 93.3,
+"score": 93.3,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"government": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 21,
+"recomputed": 94.1,
+"score": 94.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"healthcare": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 5,
+"recomputed": 93.3,
+"score": 93.3,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"insurance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 49,
+"recomputed": 75.6,
+"score": 75.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"legal": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 50,
+"recomputed": 75.6,
+"score": 75.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"regulatory": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 56,
+"recomputed": 75.6,
+"score": 75.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"sales": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": 52,
+"recomputed": 82.7,
+"score": 82.7,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"supply_chain": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": 4,
+"recomputed": 92.3,
+"score": 92.3,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"technology": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": 33,
+"recomputed": 94.1,
+"score": 94.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d8712ca680dd1929",
+"identity": {
+"evidence": [
+"publisher_domain_matches_vendor"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "Commercial",
+"name": "Palantir AIP Agents",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://www.palantir.com/404",
+"checked_at": "2026-09-28T00:16:54Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:51Z",
+"errors": [
+"https://palantir.com/.well-known/ard.json: not valid JSON",
+"https://palantir.com/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://www.palantir.com/404",
+"checked_at": "2026-09-28T00:16:55Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "palantir.com",
+"resource_type": "agent",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Commercial"
+},
+"slug": "palantir-palantir-aip-agents",
+"sources": [
+{
+"payload_hash": "f302c6130bfff20f96b486a1598962f34a8c6dbe0ccebd94d992ada2f2bbcc18",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://www.palantir.com/platforms/aip/"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://www.palantir.com/platforms/aip/",
+"vendor": "Palantir"
+}

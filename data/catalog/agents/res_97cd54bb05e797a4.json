@@ -1,0 +1,281 @@
+{
+"canonical_url": "github.com/anthropics/claude-code",
+"category": "Coding agent",
+"commercial": true,
+"compliance": [],
+"components": {
+"adoption": 29.0,
+"docs": 10.0,
+"domain_fit": 38.0,
+"ecosystem": 14.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 24.0
+},
+"deployment": "CLI; GitHub integrations",
+"description": "Widely used terminal coding agent with strong tool-use and ecosystem integrations.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": 77,
+"recomputed": 87.5,
+"score": 87.5,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"cybersecurity": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": 27,
+"recomputed": 82.4,
+"score": 82.4,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 40,
+"recomputed": 87.6,
+"score": 87.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"finance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 51,
+"recomputed": 76.6,
+"score": 76.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"government": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 51,
+"recomputed": 76.6,
+"score": 76.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"healthcare": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 43,
+"recomputed": 76.6,
+"score": 76.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"insurance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 37,
+"recomputed": 76.6,
+"score": 76.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"legal": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 40,
+"recomputed": 76.6,
+"score": 76.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"regulatory": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 49,
+"recomputed": 76.6,
+"score": 76.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"sales": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": 32,
+"recomputed": 84.9,
+"score": 84.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"supply_chain": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": 29,
+"recomputed": 81.8,
+"score": 81.8,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"technology": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": 12,
+"recomputed": 97.2,
+"score": 97.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_97cd54bb05e797a4",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "Commercial",
+"name": "Claude Code",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "agent",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Not captured"
+},
+"slug": "anthropic-claude-code",
+"sources": [
+{
+"payload_hash": "13291d1010ed42eef8d3270f14df2950e6a747fdacf2e0272098aadeb0a1817c",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://github.com/anthropics/claude-code"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 4,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://github.com/anthropics/claude-code",
+"vendor": "Anthropic"
+}

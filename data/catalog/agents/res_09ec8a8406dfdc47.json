@@ -1,0 +1,281 @@
+{
+"canonical_url": "github.com/run-llama/llama_index",
+"category": "Data/agent framework",
+"commercial": false,
+"compliance": [],
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 23.0
+},
+"deployment": "GitHub; LlamaCloud",
+"description": "Widely used data/RAG framework with agent and workflow primitives.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": 64,
+"recomputed": 88.5,
+"score": 88.5,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"cybersecurity": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": 53,
+"recomputed": 80.1,
+"score": 80.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 1,
+"recomputed": 94.9,
+"score": 94.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"finance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 70,
+"recomputed": 74.6,
+"score": 74.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"government": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 70,
+"recomputed": 74.6,
+"score": 74.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"healthcare": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 64,
+"recomputed": 74.6,
+"score": 74.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"insurance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 58,
+"recomputed": 74.6,
+"score": 74.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"legal": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 59,
+"recomputed": 74.6,
+"score": 74.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"regulatory": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 65,
+"recomputed": 74.6,
+"score": 74.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"sales": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": 58,
+"recomputed": 82.4,
+"score": 82.4,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"supply_chain": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": 49,
+"recomputed": 79.7,
+"score": 79.7,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"technology": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": 29,
+"recomputed": 94.4,
+"score": 94.4,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_09ec8a8406dfdc47",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "MIT",
+"name": "LlamaIndex",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "framework",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Not captured"
+},
+"slug": "llamaindex-llamaindex",
+"sources": [
+{
+"payload_hash": "79deded6fae377708efdbc4854e849141d7848dd5d6d7931b1acb2449e011907",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://github.com/run-llama/llama_index"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 4,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://github.com/run-llama/llama_index",
+"vendor": "LlamaIndex"
+}

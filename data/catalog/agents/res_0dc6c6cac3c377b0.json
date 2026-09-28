@@ -1,0 +1,121 @@
+{
+"canonical_url": "github.com/i-am-bee/beeai-framework",
+"category": "Agent framework",
+"commercial": false,
+"compliance": [],
+"components": {
+"adoption": 19.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 12.0,
+"governance": 45.0,
+"health": 19.0,
+"trust": 23.0
+},
+"deployment": "GitHub",
+"description": "Open framework with enterprise/research provenance and multi-agent support.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 71,
+"recomputed": 84.6,
+"score": 84.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"government": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 32,
+"recomputed": 86.6,
+"score": 86.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_0dc6c6cac3c377b0",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "Apache-2.0",
+"name": "BeeAI Framework",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "framework",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Not captured"
+},
+"slug": "ibm-research-linux-foundation-ecosystem-beeai-framework",
+"sources": [
+{
+"payload_hash": "fb31e3b311a8d69e6c1ebc6eab527eeb3a7666605a1dba32e956bb5a5a3e3524",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://github.com/i-am-bee/beeai-framework"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 4,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://github.com/i-am-bee/beeai-framework",
+"vendor": "IBM Research / Linux Foundation ecosystem"
+}

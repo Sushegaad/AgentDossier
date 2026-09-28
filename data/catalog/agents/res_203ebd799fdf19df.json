@@ -1,0 +1,226 @@
+{
+"canonical_url": "cognitum.one",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"assistant",
+"workflow"
+],
+"data": [
+"rag",
+"vector"
+],
+"technology": [
+"code",
+"deploy",
+"framework",
+"mcp",
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 28.2,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 69.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 28.2,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 71.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 28.2,
+"docs": 7.0,
+"domain_fit": 87.5,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.875,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 76.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "ruvnet/ruflo"
+},
+"first_seen": "2026-09-28T00:14:58Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_203ebd799fdf19df",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:58Z",
+"license": "MIT",
+"name": "ruflo",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://cognitum.one/.well-known/agent.json",
+"checked_at": "2026-09-28T00:16:30Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:29Z",
+"errors": [
+"https://cognitum.one/.well-known/ard.json: not valid JSON",
+"https://cognitum.one/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://cognitum.one/.well-known/mcp.json",
+"checked_at": "2026-09-28T00:16:30Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "cognitum.one",
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-06-02T21:24:20Z",
+"github_forks": 8715,
+"github_language": "TypeScript",
+"github_open_issues": 996,
+"github_pushed_at": "2026-09-27T20:02:47Z",
+"github_stars": 73401,
+"github_topic": "ai-agents",
+"homepage": "https://Cognitum.One"
+},
+"slug": "ruvnet-ruflo",
+"sources": [
+{
+"payload_hash": "fe80efdffbc8e912989bc21312a21bf0c9576a796bb1b4c81b4c80945e571752",
+"retrieved_at": "2026-09-28T00:14:58Z",
+"system": "github",
+"url": "https://github.com/ruvnet/ruflo"
+}
+],
+"tags": [
+"agentic-ai",
+"agentic-framework",
+"agentic-workflow",
+"agents",
+"ai-agents",
+"ai-assistant",
+"ai-skills",
+"autonomous-agents",
+"claude-code",
+"codex",
+"dsh-plugin",
+"harness",
+"mcp-server",
+"multi-agent",
+"multi-agent-systems",
+"npm",
+"skills",
+"swarm",
+"swarm-intelligence",
+"typescript"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://Cognitum.One",
+"vendor": "ruvnet"
+}

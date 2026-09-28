@@ -1,0 +1,105 @@
+{
+"canonical_url": "github.com/stanford-oval/storm",
+"category": "Research agent",
+"commercial": false,
+"compliance": [],
+"components": {
+"adoption": 23.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 11.0,
+"governance": 45.0,
+"health": 17.0,
+"trust": 24.0
+},
+"deployment": "GitHub",
+"description": "Academic research/writing agent with strong institutional provenance.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 59,
+"recomputed": 85.7,
+"score": 85.7,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_dfdb90fb855cf32e",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "MIT",
+"name": "STORM",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "agent",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Not captured"
+},
+"slug": "stanford-oval-storm",
+"sources": [
+{
+"payload_hash": "472e2c6515637bfeb8e4616568d669b437752bd5ccf183e8fe81258105df90fe",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://github.com/stanford-oval/storm"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 4,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://github.com/stanford-oval/storm",
+"vendor": "Stanford OVAL"
+}

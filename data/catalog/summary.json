@@ -1,0 +1,234 @@
+{
+ "built_at": "2026-09-28T00:20:55Z",
+ "snapshot_date": "2026-09-25",
+ "generator": "agentdossier 0.1.0",
+ "score_version": "sar-score-1.0",
+ "resources": 231,
+ "by_source": {
+  "ard": 23,
+  "aws_marketplace": 7,
+  "github": 20,
+  "huggingface": 20,
+  "mcp_registry": 18,
+  "seed_xlsx": 158
+ },
+ "by_type": {
+  "agent": 154,
+  "api": 1,
+  "framework": 27,
+  "marketplace": 4,
+  "mcp_server": 22,
+  "platform": 17,
+  "skill": 4,
+  "tool": 2
+ },
+ "protocols": {
+  "a2a": {
+   "unknown": 106,
+   "not_found": 114,
+   "invalid": 10,
+   "verified": 1
+  },
+  "mcp": {
+   "unknown": 103,
+   "not_found": 98,
+   "invalid": 10,
+   "claimed": 20
+  },
+  "ard": {
+   "unknown": 83,
+   "not_found": 113,
+   "invalid": 10,
+   "verified": 25
+  }
+ },
+ "domains": {
+  "business": {
+   "ranked": 100,
+   "discovered": 14
+  },
+  "finance": {
+   "ranked": 100,
+   "discovered": 5
+  },
+  "healthcare": {
+   "ranked": 100,
+   "discovered": 3
+  },
+  "regulatory": {
+   "ranked": 100,
+   "discovered": 1
+  },
+  "technology": {
+   "ranked": 100,
+   "discovered": 50
+  },
+  "cybersecurity": {
+   "ranked": 100,
+   "discovered": 1
+  },
+  "sales": {
+   "ranked": 100,
+   "discovered": 6
+  },
+  "legal": {
+   "ranked": 100,
+   "discovered": 0
+  },
+  "data": {
+   "ranked": 100,
+   "discovered": 16
+  },
+  "supply_chain": {
+   "ranked": 100,
+   "discovered": 1
+  },
+  "insurance": {
+   "ranked": 100,
+   "discovered": 0
+  },
+  "government": {
+   "ranked": 100,
+   "discovered": 1
+  }
+ },
+ "identity_tiers": {
+  "T2": 33,
+  "T3": 129,
+  "T4": 69
+ },
+ "reports": {
+  "seed": {
+   "source": "seed",
+   "produced": 158,
+   "rows": 1200,
+   "snapshot": "2026-09-25"
+  },
+  "marketplaces": {
+   "source": "marketplaces",
+   "fetched": 1,
+   "produced": 7,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:14:54Z",
+   "finished": "2026-09-28T00:14:54Z"
+  },
+  "mcp_registry": {
+   "source": "mcp_registry",
+   "fetched": 2,
+   "produced": 198,
+   "skipped": 2,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:14:54Z",
+   "finished": "2026-09-28T00:14:54Z"
+  },
+  "huggingface": {
+   "source": "huggingface",
+   "fetched": 5,
+   "produced": 65,
+   "skipped": 35,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:14:54Z",
+   "finished": "2026-09-28T00:14:56Z"
+  },
+  "github": {
+   "source": "github",
+   "fetched": 30,
+   "produced": 2168,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:14:56Z",
+   "finished": "2026-09-28T00:16:21Z"
+  },
+  "dedup": {
+   "input": 225,
+   "output": 208,
+   "merged": 17,
+   "review_candidates": 7,
+   "review_added": 7
+  },
+  "ard_web": {
+   "source": "ard_web",
+   "fetched": 106,
+   "produced": 23,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:16:21Z",
+   "finished": "2026-09-28T00:17:07Z"
+  },
+  "fedramp": {
+   "source": "fedramp",
+   "fetched": 1,
+   "produced": 7,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:17:07Z",
+   "finished": "2026-09-28T00:17:24Z"
+  },
+  "csa_star": {
+   "source": "csa_star",
+   "fetched": 1,
+   "produced": 51,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:17:24Z",
+   "finished": "2026-09-28T00:17:50Z"
+  },
+  "curated": {
+   "source": "curated",
+   "fetched": 0,
+   "produced": 0,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:17:50Z",
+   "finished": "2026-09-28T00:17:50Z"
+  },
+  "vendor_claims": {
+   "source": "vendor_trust_centers",
+   "fetched": 104,
+   "produced": 269,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:17:50Z",
+   "finished": "2026-09-28T00:18:39Z"
+  },
+  "compliance_review_added": {
+   "added": 156
+  },
+  "news": {
+   "source": "news",
+   "fetched": 20,
+   "produced": 9,
+   "skipped": 0,
+   "errors": 1,
+   "error_samples": [
+    "gdelt: GDELT unavailable (HTTP 429); skipped for the rest of the run"
+   ],
+   "started": "2026-09-28T00:18:39Z",
+   "finished": "2026-09-28T00:20:55Z"
+  },
+  "nvd": {
+   "source": "nvd",
+   "fetched": 20,
+   "produced": 20,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-09-28T00:18:39Z",
+   "finished": "2026-09-28T00:20:55Z"
+  },
+  "changelog": {
+   "events": 414,
+   "appended": 414
+  }
+ }
+}

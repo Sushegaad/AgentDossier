@@ -1,0 +1,111 @@
+{
+"canonical_url": "regie.ai",
+"category": "Sales prospecting agents",
+"commercial": true,
+"compliance": [],
+"components": {
+"adoption": 22.0,
+"docs": 8.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 20.0
+},
+"deployment": "SaaS",
+"description": "AI prospecting and sales engagement agents.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"sales": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": 55,
+"recomputed": 82.6,
+"score": 82.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_a29edcd327c26107",
+"identity": {
+"evidence": [
+"publisher_domain_matches_vendor"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "Commercial",
+"name": "Regie.ai AI Agents",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T00:16:54Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:53Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T00:16:55Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "regie.ai",
+"resource_type": "agent",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Commercial"
+},
+"slug": "regie-ai-regie-ai-ai-agents",
+"sources": [
+{
+"payload_hash": "27526b9f92b6d6690ce5b48a11472fd33bbc02e2d0fe210b6cdcaea66655e6a5",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://www.regie.ai/"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://www.regie.ai/",
+"vendor": "Regie.ai"
+}

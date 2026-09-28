@@ -1,0 +1,122 @@
+{
+"canonical_url": "huggingface.co/spaces/agents-mcp-hackathon/graphify",
+"category": "Hugging Face Space",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "hosted",
+"description": "Create multiple diagram types instantly from JSON!",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 19.18,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 0.9,
+"governance": null,
+"health": 4.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 43.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"huggingface_space": "Agents-MCP-Hackathon/Graphify"
+},
+"first_seen": "2026-09-28T00:14:55Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_cd96dc38c92e0db4",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:55Z",
+"license": "mit",
+"name": "Graphify",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "huggingface.co",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"hf_created_at": "2025-06-06T08:14:06.000Z",
+"hf_last_modified": "2025-06-10T23:16:21.000Z",
+"hf_likes": 204,
+"hf_pinned": false,
+"hf_sdk": "gradio"
+},
+"slug": "agents-mcp-hackathon-graphify",
+"sources": [
+{
+"payload_hash": "bdc7bd0a67807a55c6389750fbe171a7ff3b5ded36f629b52ad06d8033a21977",
+"retrieved_at": "2026-09-28T00:14:55Z",
+"system": "huggingface",
+"url": "https://huggingface.co/spaces/Agents-MCP-Hackathon/Graphify"
+}
+],
+"tags": [
+"gradio",
+"mcp-server",
+"mcp-server-track"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://huggingface.co/spaces/Agents-MCP-Hackathon/Graphify",
+"vendor": "Agents-MCP-Hackathon"
+}

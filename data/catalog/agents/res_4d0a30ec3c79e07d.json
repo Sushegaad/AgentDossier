@@ -1,0 +1,441 @@
+{
+"canonical_url": "learn.microsoft.com/en-us/microsoft-365/copilot/copilot-agent-store",
+"category": "Marketplace / discovery hub",
+"commercial": false,
+"compliance": [
+{
+"certificate_id": "microsoft",
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
+"organization": "Microsoft",
+"terms": [
+"star_level_1",
+"star_level_2",
+"star_for_ai_level_1",
+"partner_entries",
+"caiq",
+"certification",
+"validaited-ai-caiq",
+"eu-cloud-coc",
+"iso-iec-42001",
+"star_for_ai_level_2",
+"validaited-42001"
+]
+},
+"display": "STAR for AI: found in CSA STAR Registry on 2026-09-28 (pending publisher verification)",
+"evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
+"framework": "csa_star",
+"issued": "2016-04-05",
+"issuer": "Cloud Security Alliance",
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"period_end": null,
+"retrieved_at": "2026-09-28T00:17:27Z",
+"review_reason": "entity 1.00 (index card)",
+"reviewer": null,
+"scope": "entity",
+"source": "csa_star",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "STAR_FOR_AI"
+},
+{
+"certificate_id": "microsoft",
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
+"organization": "Microsoft",
+"terms": [
+"star_level_1",
+"star_level_2",
+"star_for_ai_level_1",
+"partner_entries",
+"caiq",
+"certification",
+"validaited-ai-caiq",
+"eu-cloud-coc",
+"iso-iec-42001",
+"star_for_ai_level_2",
+"validaited-42001"
+]
+},
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-09-28 (pending publisher verification)",
+"evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
+"framework": "csa_star",
+"issued": "2016-04-05",
+"issuer": "Cloud Security Alliance",
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"period_end": null,
+"retrieved_at": "2026-09-28T00:17:27Z",
+"review_reason": "entity 1.00 (index card)",
+"reviewer": null,
+"scope": "entity",
+"source": "csa_star",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "microsoft",
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
+"organization": "Microsoft",
+"terms": [
+"star_level_1",
+"star_level_2",
+"star_for_ai_level_1",
+"partner_entries",
+"caiq",
+"certification",
+"validaited-ai-caiq",
+"eu-cloud-coc",
+"iso-iec-42001",
+"star_for_ai_level_2",
+"validaited-42001"
+]
+},
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-09-28 (pending publisher verification)",
+"evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
+"framework": "iso42001",
+"issued": "2016-04-05",
+"issuer": "Cloud Security Alliance",
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"period_end": null,
+"retrieved_at": "2026-09-28T00:17:27Z",
+"review_reason": "entity 1.00 (index card)",
+"reviewer": null,
+"scope": "entity",
+"source": "csa_star",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "ISO42001"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "15817f8eb207fb3588ff51a350411302cafaead962d3d4710c3f186c0ddd79aa",
+"period_end": null,
+"retrieved_at": "2026-09-28T00:18:20Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 25.0
+},
+"deployment": "Microsoft Copilot / Marketplace",
+"description": "Central Microsoft discovery hub for Microsoft, partner and organization-built agents.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 91.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": 14,
+"recomputed": 94.1,
+"score": 94.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"cybersecurity": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 87.8,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": 24,
+"recomputed": 82.8,
+"score": 82.8,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 97.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 37,
+"recomputed": 87.8,
+"score": 87.8,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"finance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 83.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 41,
+"recomputed": 77.2,
+"score": 77.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"government": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 83.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 16,
+"recomputed": 95.0,
+"score": 95.0,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"healthcare": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 83.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 33,
+"recomputed": 77.2,
+"score": 77.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"insurance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 83.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 26,
+"recomputed": 77.2,
+"score": 77.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"legal": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 83.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 28,
+"recomputed": 77.2,
+"score": 77.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"regulatory": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 83.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 40,
+"recomputed": 77.2,
+"score": 77.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"sales": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 92.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": 30,
+"recomputed": 85.0,
+"score": 85.0,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"supply_chain": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 92.8,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": 23,
+"recomputed": 82.2,
+"score": 82.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"technology": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 96.9,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": 18,
+"recomputed": 96.6,
+"score": 96.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_4d0a30ec3c79e07d",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": null,
+"name": "Microsoft Agent Store",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T00:16:46Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:44Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T00:16:47Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "learn.microsoft.com",
+"resource_type": "marketplace",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T00:20:14Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Marketplace"
+},
+"slug": "microsoft-microsoft-agent-store",
+"sources": [
+{
+"payload_hash": "afbc12a4a713a34852385bee95515493d979bfd947ab3e5035d49f9333b61c8a",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-agent-store"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 1,
+"identity": 4,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-agent-store",
+"vendor": "Microsoft"
+}

@@ -1,0 +1,294 @@
+{
+"canonical_url": "aws.amazon.com/bedrock/agentcore",
+"category": "Managed agent platform",
+"commercial": true,
+"compliance": [],
+"components": {
+"adoption": 29.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 25.0
+},
+"deployment": "AWS; AWS Marketplace",
+"description": "Major managed platform for deploying and operating production agents securely at scale.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": 4,
+"recomputed": 95.9,
+"score": 95.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"cybersecurity": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": 10,
+"recomputed": 84.1,
+"score": 84.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 17,
+"recomputed": 89.4,
+"score": 89.4,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"finance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 32,
+"recomputed": 78.2,
+"score": 78.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"government": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 9,
+"recomputed": 96.0,
+"score": 96.0,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"healthcare": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 24,
+"recomputed": 78.2,
+"score": 78.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"insurance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 17,
+"recomputed": 78.2,
+"score": 78.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"legal": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 18,
+"recomputed": 78.2,
+"score": 78.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"regulatory": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 30,
+"recomputed": 78.2,
+"score": 78.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"sales": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": 16,
+"recomputed": 86.7,
+"score": 86.7,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"supply_chain": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": 11,
+"recomputed": 83.6,
+"score": 83.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"technology": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": 2,
+"recomputed": 98.6,
+"score": 98.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_e7fed3f38586645f",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "AWS service",
+"name": "Amazon Bedrock Agents / AgentCore",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T00:16:27Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:26Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T00:16:28Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "aws.amazon.com",
+"resource_type": "platform",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T00:19:06Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Commercial"
+},
+"slug": "aws-amazon-bedrock-agents-agentcore",
+"sources": [
+{
+"payload_hash": "5bd2b7ff601ff7d321fcd5a540ad3937cdf2bbb3dd0403ee9af52d21c9072e1d",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://aws.amazon.com/bedrock/agentcore/"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 4,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://aws.amazon.com/bedrock/agentcore/",
+"vendor": "AWS"
+}

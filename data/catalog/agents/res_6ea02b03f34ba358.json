@@ -1,0 +1,202 @@
+{
+"canonical_url": "ecc.tools",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"productivity"
+],
+"cybersecurity": [
+"security"
+],
+"technology": [
+"code",
+"developer",
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 30.0,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 2.4,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 68.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"cybersecurity": {
+"components": {
+"adoption": 30.0,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 2.4,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.9,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": null,
+"score": 61.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 30.0,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 2.4,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 76.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "affaan-m/ECC"
+},
+"first_seen": "2026-09-28T00:14:58Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_6ea02b03f34ba358",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:58Z",
+"license": "MIT",
+"name": "ECC",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T00:16:34Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:33Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T00:16:35Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "ecc.tools",
+"resource_type": "skill",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-01-18T00:51:51Z",
+"github_forks": 40099,
+"github_language": "JavaScript",
+"github_open_issues": 236,
+"github_pushed_at": "2026-09-28T00:04:11Z",
+"github_stars": 268407,
+"github_topic": "ai-agents",
+"homepage": "https://ecc.tools"
+},
+"slug": "affaan-m-ecc",
+"sources": [
+{
+"payload_hash": "fe80efdffbc8e912989bc21312a21bf0c9576a796bb1b4c81b4c80945e571752",
+"retrieved_at": "2026-09-28T00:14:58Z",
+"system": "github",
+"url": "https://github.com/affaan-m/ECC"
+}
+],
+"tags": [
+"ai-agents",
+"anthropic",
+"claude",
+"claude-code",
+"developer-tools",
+"llm",
+"mcp",
+"productivity"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://ecc.tools",
+"vendor": "affaan-m"
+}

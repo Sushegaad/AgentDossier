@@ -1,0 +1,510 @@
+{
+ "entries": [
+  {
+   "@context": "https://agenticresourcediscovery.org/context/v1",
+   "identifier": "urn:air:sushegaad.github.io:registry:agentdossier",
+   "displayName": "AgentDossier public demo registry",
+   "type": "application/ai-registry+json",
+   "url": "https://sushegaad.github.io/AgentDossier/",
+   "description": "Reference implementation of a standards-aware AI agent registry. Static demo; the ARD search API is served by the self-hosted edition.",
+   "representativeQueries": [
+    "find an insurance claims agent with a HIPAA BAA",
+    "which coding agents support MCP",
+    "FedRAMP authorized agent platforms"
+   ],
+   "tags": [
+    "registry",
+    "reference-implementation",
+    "ard",
+    "a2a",
+    "mcp"
+   ],
+   "version": "0.1.0"
+  },
+  {
+   "identifier": "urn:air:aard.ai:mcp:gateway",
+   "displayName": "Aard MCP",
+   "type": "application/mcp-server-card+json",
+   "url": "https://aard.ai/.well-known/mcp-server-card",
+   "description": "Aard MCP for macroeconomic intelligence - official data from 170+ sources",
+   "tags": [
+    "mcp",
+    "official-statistics",
+    "sdmx"
+   ],
+   "capabilities": [
+    "inspect",
+    "discover",
+    "ask",
+    "browse_dimension_codes",
+    "build_url",
+    "fetch",
+    "stage_url",
+    "inspect_dataset",
+    "query_dataset",
+    "release_dataset"
+   ],
+   "version": "1.0.0",
+   "representativeQueries": [
+    "what was euro area inflation in 2024",
+    "find official GDP data for Japan from the IMF or OECD",
+    "which publishers have labour force statistics for Canada",
+    "query an SDMX dataset and return citation-ready rows"
+   ]
+  },
+  {
+   "identifier": "urn:air:aard.ai:api:rest-v1",
+   "displayName": "Aard REST API",
+   "type": "application/vnd.oai.openapi+json",
+   "url": "https://aard.ai/.well-known/openapi-v1.json",
+   "description": "OpenAPI 3.1 description of the api.aard.ai REST surface: POST /v1/{discover,inspect,ask,build_url} over official statistical data, plus the public health endpoint at https://api.aard.ai/v1/_health. Request and response schemas, error vocabulary and bearer API-key auth; no key is needed to read it. The RFC 9727 catalog at https://aard.ai/.well-known/api-catalog links the same document as the /v1 anchor's service-desc.",
+   "tags": [
+    "rest",
+    "http-api",
+    "official-statistics"
+   ],
+   "capabilities": [
+    "discover",
+    "inspect",
+    "ask",
+    "build_url"
+   ],
+   "representativeQueries": [
+    "call a REST endpoint to discover statistical datasets",
+    "HTTP API for querying official economic statistics",
+    "build an SDMX query URL over plain HTTP"
+   ]
+  },
+  {
+   "identifier": "urn:air:aard.ai:skills:index",
+   "displayName": "Aard Agent Skills",
+   "type": "application/json",
+   "url": "https://aard.ai/.well-known/agent-skills/index.json",
+   "description": "Agent Skills Discovery index for the skills this origin hosts, each with a sha256 digest over the bytes served at its URL.",
+   "tags": [
+    "agent-skills",
+    "discovery"
+   ],
+   "capabilities": [
+    "aard",
+    "citing-official-statistics",
+    "decomposing-data-questions",
+    "guarding-derived-indicators",
+    "reasoning-linkage-confidence"
+   ],
+   "representativeQueries": [
+    "what agent skills does aard.ai publish",
+    "install the Aard agent skills",
+    "list skills for working with official statistics"
+   ]
+  },
+  {
+   "identifier": "urn:air:aard.ai:skill:aard",
+   "displayName": "Aard (agent skill)",
+   "type": "text/markdown",
+   "url": "https://aard.ai/.well-known/agent-skills/aard/SKILL.md",
+   "description": "Ground answers about official economic and statistical data (GDP, inflation, trade, government finance, labour, health, demography, education, SDGs, energy and more) in citation-ready figures from 170+ official publishers including the OECD, IMF, World Bank, WHO, UN, Eurostat, ILO and FAO. Use whenever a question needs authoritative macroeconomic or statistical numbers with sources, or when you would otherwise guess, hedge, or cite figures you cannot verify. Aard is a remote MCP server — connect to it rather than approximating.",
+   "tags": [
+    "agent-skill",
+    "official-statistics"
+   ],
+   "representativeQueries": [
+    "what was Australia's GDP growth last quarter",
+    "find official inflation figures for the euro area",
+    "which agencies publish youth unemployment statistics"
+   ]
+  },
+  {
+   "identifier": "urn:air:aard.ai:skill:citing-official-statistics",
+   "displayName": "Citing official statistics (agent skill)",
+   "type": "application/zip",
+   "url": "https://aard.ai/.well-known/agent-skills/citing-official-statistics.zip",
+   "description": "Cites and provenance-tags figures from official statistics — SDMX dataflows, ABS, OECD, Eurostat, ILOSTAT, Statistics Canada, World Bank, UN. Fires at emission, whenever a number reaches the reader — prose, report, table, chart, slide, dashboard, media release, one-line answer — including plain lookups, derived and cross-provider values, and series named in a refusal or escalation, even when citation is never mentioned. Covers the citation skeleton, extraction date and vintage, DOI/URN/query-URL precedence, quality flags, chart titles, table and figure source lines, footnote markers and mandatory licence attribution wording. Excludes computation admissibility (guarding-derived-indicators) and series combinability (reasoning-linkage-confidence).",
+   "tags": [
+    "agent-skill",
+    "official-statistics"
+   ],
+   "representativeQueries": [
+    "how do I cite an OECD statistic properly",
+    "what attribution wording does the ABS licence require",
+    "reference this World Bank figure with its vintage and extraction date"
+   ]
+  },
+  {
+   "identifier": "urn:air:aard.ai:skill:decomposing-data-questions",
+   "displayName": "Decomposing data questions (agent skill)",
+   "type": "application/zip",
+   "url": "https://aard.ai/.well-known/agent-skills/decomposing-data-questions.zip",
+   "description": "Decomposes an economic or statistical question into the minimal set of data units — one dataflow plus a partial key each — before any Aard MCP retrieval. Use whenever an answer needs more than one number or is not a single-series lookup — ratios, shares, per capita, growth, contributions, correlations, rankings, composite indices, comparisons across countries, periods or sectors — even when no breakdown was requested. Does not judge combinability (reasoning-linkage-confidence), run arithmetic (guarding-derived-indicators) or format citations (citing-official-statistics).",
+   "tags": [
+    "agent-skill",
+    "official-statistics"
+   ],
+   "representativeQueries": [
+    "which datasets do I need to answer this economic question",
+    "what data do I need to compare inflation across the G7",
+    "break GDP per capita down into the series I have to fetch"
+   ]
+  },
+  {
+   "identifier": "urn:air:aard.ai:skill:guarding-derived-indicators",
+   "displayName": "Guarding derived indicators (agent skill)",
+   "type": "application/zip",
+   "url": "https://aard.ai/.well-known/agent-skills/guarding-derived-indicators.zip",
+   "description": "Applies pre-computation rules to arithmetic deriving a ratio, per-capita, share, growth rate, contribution, composite index or currency/PPP conversion from official statistics via the Aard MCP. Blocks summed chain-linked volumes, averaged pre-computed rates, nominal mixed with real, seasonally adjusted with raw, mismatched index bases, frequencies or unit multipliers. Fires before and during such arithmetic, even on single-dataflow cases that skip linkage and on intermediates never shown to a reader. Governs admissibility and caveats, not attribution or licensing, which is citing-official-statistics.",
+   "tags": [
+    "agent-skill",
+    "official-statistics"
+   ],
+   "representativeQueries": [
+    "can I add chain-linked volume series together",
+    "is it valid to average these pre-computed percentage rates",
+    "how do I safely compute a per-capita indicator from two series"
+   ]
+  },
+  {
+   "identifier": "urn:air:aard.ai:skill:reasoning-linkage-confidence",
+   "displayName": "Reasoning linkage confidence (agent skill)",
+   "type": "application/zip",
+   "url": "https://aard.ai/.well-known/agent-skills/reasoning-linkage-confidence.zip",
+   "description": "Classifies combinations of two or more official-statistics data units into five metadata-only confidence tiers, each mandating an action — compute silently, add a stated assumption or explicit caveat, escalate with a fixed template, or refuse. Fires when units combine for a ratio, share, difference, contribution, correlation or ranking, even when combining sources is unstated, for intermediate values never surfaced, and when series from different agencies or dataflows sit side by side. Does not do the arithmetic (guarding-derived-indicators) or compose data citations and attribution wording (citing-official-statistics).",
+   "tags": [
+    "agent-skill",
+    "official-statistics"
+   ],
+   "representativeQueries": [
+    "can I combine these two statistical series",
+    "is it safe to divide IMF values by UN population figures",
+    "how much confidence does joining OECD and Eurostat series deserve"
+   ]
+  },
+  {
+   "identifier": "urn:air:aard.ai:docs:llms-txt",
+   "displayName": "Aard llms.txt",
+   "type": "text/markdown",
+   "url": "https://aard.ai/llms.txt",
+   "description": "Agent-facing overview of aard.ai: what the service covers, how to connect to the MCP server, and where the machine-readable entry points live.",
+   "tags": [
+    "documentation",
+    "llms-txt"
+   ],
+   "representativeQueries": [
+    "what does aard.ai do",
+    "how do I connect an AI agent to Aard",
+    "documentation for aard.ai written for LLMs"
+   ]
+  },
+  {
+   "identifier": "urn:air:zapier.com:mcp",
+   "displayName": "Zapier MCP",
+   "type": "application/mcp-server-card+json",
+   "url": "https://zapier.com/.well-known/mcp/server-card.json",
+   "description": "Connect any MCP-aware agent to 9,000+ app integrations and 40,000+ actions. Remote streamable-HTTP server with OAuth2. Take actions across Slack, Gmail, Google Sheets, Jira, GitHub, HubSpot, and thousands more.",
+   "tags": [
+    "mcp",
+    "integrations",
+    "actions",
+    "automation"
+   ],
+   "representativeQueries": [
+    "send a Slack message from my agent",
+    "create a row in Google Sheets",
+    "open a Jira issue when a webhook fires",
+    "what apps can Zapier connect to"
+   ],
+   "metadata": {
+    "endpoint": "https://mcp.zapier.com/api/v1/connect",
+    "auth": "oauth2",
+    "documentationUrl": "https://docs.zapier.com/mcp/home.md",
+    "repository": "https://github.com/zapier/zapier-mcp"
+   },
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:webmcp:web-tools",
+   "displayName": "Zapier Web Tools (WebMCP)",
+   "type": "application/json",
+   "url": "https://zapier.com/.well-known/webmcp.json",
+   "description": "WebMCP manifest exposing machine-discoverable website tools for browser-resident agents, such as browsing Zapier's app directory and docs before navigating.",
+   "tags": [
+    "webmcp",
+    "web-tools",
+    "discovery"
+   ],
+   "representativeQueries": [
+    "browse Zapier apps starting with N",
+    "find Zapier apps for CRM"
+   ],
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:api:partner",
+   "displayName": "Zapier Partner API",
+   "type": "application/vnd.oai.openapi",
+   "url": "https://api.zapier.com/schema",
+   "description": "OpenAPI 3.1 spec for the Partner API. Programmatically manage connections, Zaps, and embedded workflows for Powered by Zapier and White Label integrations.",
+   "tags": [
+    "openapi",
+    "partner-api",
+    "embed",
+    "rest"
+   ],
+   "capabilities": [
+    "manage-connections",
+    "manage-zaps",
+    "embed-workflows"
+   ],
+   "representativeQueries": [
+    "manage a user's Zapier connections via API",
+    "create a Zap programmatically"
+   ],
+   "metadata": {
+    "documentationUrl": "https://docs.zapier.com/powered-by-zapier/index.md"
+   },
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:api:reference",
+   "displayName": "Zapier Public API Reference",
+   "type": "text/html",
+   "url": "https://docs.zapier.com/api-reference/overview",
+   "description": "Unified reference for the public Zapier APIs on api.zapier.com — build workflows, execute actions, set up trigger inboxes, and more. Browsable by developers and AI agents, rendered from per-service OpenAPI specs.",
+   "tags": [
+    "openapi",
+    "api-reference",
+    "rest",
+    "public-api"
+   ],
+   "representativeQueries": [
+    "what public APIs does Zapier offer",
+    "Zapier REST API reference",
+    "how do I call the Zapier API directly"
+   ],
+   "updatedAt": "2026-07-17T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:sdk:typescript",
+   "displayName": "Zapier SDK (TypeScript)",
+   "type": "text/markdown",
+   "url": "https://docs.zapier.com/sdk/index.md",
+   "description": "TypeScript SDK and CLI for building agent tools and backend integrations against Zapier's connection layer. Zapier handles auth, tokens, and retries.",
+   "tags": [
+    "sdk",
+    "typescript",
+    "cli",
+    "integrations"
+   ],
+   "capabilities": [
+    "actions",
+    "triggers",
+    "connections"
+   ],
+   "representativeQueries": [
+    "add Zapier tools to my TypeScript agent",
+    "programmatically run a Zapier action from code"
+   ],
+   "metadata": {
+    "npmPackages": [
+     "@zapier/zapier-sdk",
+     "@zapier/zapier-sdk-cli",
+     "@zapier/zapier-sdk-core",
+     "@zapier/zapier-sdk-mcp"
+    ],
+    "repository": "https://github.com/zapier/sdk",
+    "reference": "https://docs.zapier.com/sdk/reference.md"
+   },
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:platform:cli",
+   "displayName": "Zapier Platform CLI",
+   "type": "text/markdown",
+   "url": "https://docs.zapier.com/integrations/index.md",
+   "description": "Build and publish app integrations to the Zapier directory. For developers adding an app to Zapier's catalog, distinct from the consumer SDK.",
+   "tags": [
+    "platform",
+    "cli",
+    "integration-builder"
+   ],
+   "representativeQueries": [
+    "build a Zapier integration for my app",
+    "publish an app to the Zapier directory"
+   ],
+   "metadata": {
+    "npmPackages": [
+     "zapier-platform-cli",
+     "zapier-platform-core"
+    ],
+    "repository": "https://github.com/zapier/zapier-platform"
+   },
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:embed:powered-by-zapier",
+   "displayName": "Powered by Zapier (embedded MCP + Workflow API)",
+   "type": "text/markdown",
+   "url": "https://docs.zapier.com/powered-by-zapier/index.md",
+   "description": "Embed Zapier's automation, MCP, and connections inside your own product. Covers embedded MCP, the Workflow API, embedded editors, and White Label.",
+   "tags": [
+    "embed",
+    "mcp",
+    "white-label",
+    "workflow-api"
+   ],
+   "representativeQueries": [
+    "embed Zapier MCP in my product",
+    "let my users connect their apps through my agent"
+   ],
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:skills:catalog",
+   "displayName": "Zapier Agent Skills",
+   "type": "application/json",
+   "url": "https://zapier.com/.well-known/agent-skills/index.json",
+   "description": "Discovery index of installable Zapier agent skills (SKILL.md), following the agentskills.io schema. Covers the core Zapier surfaces (MCP, SDK, embedded MCP, Platform CLI) plus every published connector.",
+   "tags": [
+    "skills",
+    "skill-md",
+    "install"
+   ],
+   "representativeQueries": [
+    "install the Zapier skill for my agent",
+    "how do I set up Zapier with Claude"
+   ],
+   "metadata": {
+    "registry": "https://skills.sh/zapier/agent-skills",
+    "repository": "https://github.com/zapier/agent-skills",
+    "connectorsRepository": "https://github.com/zapier/connectors",
+    "skills": [
+     "https://zapier.com/.well-known/agent-skills/zapier-mcp/SKILL.md",
+     "https://zapier.com/.well-known/agent-skills/zapier-sdk/SKILL.md",
+     "https://zapier.com/.well-known/agent-skills/zapier-embed-mcp/SKILL.md",
+     "https://zapier.com/.well-known/agent-skills/zapier-platform-cli/SKILL.md"
+    ]
+   },
+   "updatedAt": "2026-07-31T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:connectors:catalog",
+   "displayName": "Zapier Connectors",
+   "type": "application/ai-catalog+json",
+   "url": "https://connectors-skills.zapier.com/.well-known/ai-catalog.json",
+   "description": "Open source agent-callable connectors for apps Zapier integrates with. Each connector is simultaneously an agentskills.io skill and an MCP tool module. Runs with user-held credentials or Zapier-managed auth.",
+   "tags": [
+    "connectors",
+    "skills",
+    "mcp",
+    "opensource",
+    "typescript"
+   ],
+   "capabilities": [
+    "install-skill",
+    "mcp-server",
+    "npm-package",
+    "cli"
+   ],
+   "representativeQueries": [
+    "install a Notion connector for my agent",
+    "call Google Sheets from my agent without writing auth code",
+    "run a Trello tool as a local MCP server"
+   ],
+   "metadata": {
+    "repository": "https://github.com/zapier/connectors",
+    "packageNamePattern": "@zapier/<slug>-connector",
+    "license": "Elastic-2.0",
+    "status": "prototype"
+   },
+   "updatedAt": "2026-07-31T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:install:router",
+   "displayName": "Install Zapier (router)",
+   "type": "text/markdown",
+   "url": "https://docs.zapier.com/install.md",
+   "description": "Front-door router. Picks the right surface (MCP for AI clients, SDK for code, CLI for terminal) for connecting Zapier to an agent, with steps for each.",
+   "tags": [
+    "install",
+    "onboarding",
+    "router"
+   ],
+   "representativeQueries": [
+    "how do I connect Zapier to my agent",
+    "which Zapier surface should I use"
+   ],
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:content:agents-md",
+   "displayName": "AGENTS.md (agent guide)",
+   "type": "text/markdown",
+   "url": "https://zapier.com/AGENTS.md",
+   "description": "Agent onboarding guide: how to connect to, discover, and interact with Zapier across MCP, SDK, and the APIs.",
+   "tags": [
+    "agents-md",
+    "onboarding",
+    "guide"
+   ],
+   "representativeQueries": [
+    "how should an agent use Zapier",
+    "Zapier agent guide"
+   ],
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:content:auth-md",
+   "displayName": "Agent auth guide (auth.md)",
+   "type": "text/markdown",
+   "url": "https://zapier.com/auth.md",
+   "description": "OAuth 2.0 + PKCE walkthrough for agents authenticating to Zapier.",
+   "tags": [
+    "auth",
+    "oauth",
+    "pkce"
+   ],
+   "representativeQueries": [
+    "how does an agent authenticate to Zapier",
+    "Zapier OAuth for agents"
+   ],
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:content:llms-txt",
+   "displayName": "Zapier root map (llms.txt)",
+   "type": "text/plain",
+   "url": "https://zapier.com/llms.txt",
+   "description": "Canonical agent-readable map of Zapier. Per-surface indexes and topic-keyed cross-references with stable anchors. Expanded inline content at /llms-full.txt.",
+   "tags": [
+    "llms.txt",
+    "site-map",
+    "discovery"
+   ],
+   "representativeQueries": [
+    "what does Zapier offer for agents",
+    "map of Zapier's developer surfaces"
+   ],
+   "metadata": {
+    "full": "https://zapier.com/llms-full.txt",
+    "docsIndex": "https://docs.zapier.com/llms.txt"
+   },
+   "updatedAt": "2026-07-02T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:zapier.com:content:apps",
+   "displayName": "Zapier app catalog",
+   "type": "text/html",
+   "url": "https://zapier.com/apps",
+   "description": "The canonical list of the 9,000+ apps Zapier connects to. Use to check whether Zapier supports a given app or what actions it exposes. Per-app pages at zapier.com/apps/{slug}/integrations.",
+   "tags": [
+    "apps",
+    "integrations",
+    "catalog"
+   ],
+   "representativeQueries": [
+    "does Zapier support Notion",
+    "what actions does Zapier have for HubSpot"
+   ],
+   "updatedAt": "2026-07-02T00:00:00Z"
+  }
+ ]
+}

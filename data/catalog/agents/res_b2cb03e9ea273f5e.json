@@ -1,0 +1,127 @@
+{
+"canonical_url": "kensho.com",
+"category": "Financial data AI",
+"commercial": true,
+"compliance": [],
+"components": {
+"adoption": 23.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 12.0,
+"governance": 82.0,
+"health": 19.0,
+"trust": 24.0
+},
+"deployment": "S&P Global ecosystem",
+"description": "Financial-data AI from S&P Global with strong domain provenance.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 24,
+"recomputed": 88.7,
+"score": 88.7,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"finance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 17,
+"recomputed": 89.6,
+"score": 89.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_b2cb03e9ea273f5e",
+"identity": {
+"evidence": [
+"publisher_domain_matches_vendor"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "Commercial",
+"name": "Kensho AI",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T00:16:44Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:43Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T00:16:45Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "kensho.com",
+"resource_type": "agent",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Commercial"
+},
+"slug": "kensho-s-p-global-kensho-ai",
+"sources": [
+{
+"payload_hash": "fc96b6aed2c3c9b3870a0e3c9dfd505a449f1f4a3303198858412a95ba0b6b75",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://www.kensho.com/"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://www.kensho.com/",
+"vendor": "Kensho / S&P Global"
+}

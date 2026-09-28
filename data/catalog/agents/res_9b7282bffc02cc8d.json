@@ -1,0 +1,162 @@
+{
+"canonical_url": "aard.ai/.well-known/agent-skills/decomposing-data-questions.zip",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data",
+"retrieval"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Decomposes an economic or statistical question into the minimal set of data units — one dataflow plus a partial key each — before any Aard MCP retrieval. Use whenever an answer needs more than one number or is not a single-series lookup — ratios, shares, per capita, growth, contributions, correlations, rankings, composite indices, comparisons across countries, periods or sectors — even when no breakdown was requested. Does not judge combinability (reasoning-linkage-confidence), run arithmetic (guarding-derived-indicators) or format citations (citing-official-statistics).",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 33.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 28.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:aard.ai:skill:decomposing-data-questions"
+},
+"first_seen": "2026-09-28T00:16:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9b7282bffc02cc8d",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:16:26Z",
+"license": null,
+"name": "Decomposing data questions (agent skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:aard.ai:skill:decomposing-data-questions",
+"manifest_url": "https://aard.ai/.well-known/ard.json",
+"media_type": "application/zip",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "aard.ai",
+"representative_queries": [
+"which datasets do I need to answer this economic question",
+"what data do I need to compare inflation across the G7",
+"break GDP per capita down into the series I have to fetch"
+],
+"resource_type": "agent",
+"scope": "public",
+"signals": {},
+"slug": "aard-ai-decomposing-data-questions-agent-skill",
+"sources": [
+{
+"payload_hash": "37006e48ce19874bd8f8c5c0cb0135336065673064ae41ba806241535866b3a0",
+"retrieved_at": "2026-09-28T00:16:26Z",
+"system": "ard",
+"url": "https://aard.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"agent-skill",
+"official-statistics"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": null
+},
+"url": "https://aard.ai/.well-known/agent-skills/decomposing-data-questions.zip",
+"vendor": "aard.ai"
+}
