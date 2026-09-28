@@ -1,0 +1,287 @@
+{
+"canonical_url": "kinaxis.com",
+"category": "Supply-chain planning AI",
+"commercial": true,
+"compliance": [
+{
+"certificate_id": "kinaxis",
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
+"organization": "Kinaxis",
+"terms": [
+"star_level_1",
+"caiq"
+]
+},
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-09-28 (pending publisher verification)",
+"evidence_url": "https://cloudsecurityalliance.org/star/registry/kinaxis",
+"framework": "csa_star",
+"issued": "2019-02-15",
+"issuer": "Cloud Security Alliance",
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"period_end": null,
+"retrieved_at": "2026-09-28T00:17:35Z",
+"review_reason": "entity 1.00 (index card)",
+"reviewer": null,
+"scope": "entity",
+"source": "csa_star",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "STAR_LEVEL_1"
+}
+],
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 24.0
+},
+"deployment": "Kinaxis Maestro",
+"description": "Supply-chain planning/orchestration platform with AI decision support.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.9,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": 93,
+"recomputed": 85.4,
+"score": 85.4,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"cybersecurity": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 79.0,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": 84,
+"recomputed": 77.9,
+"score": 77.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"finance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 73.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 95,
+"recomputed": 72.9,
+"score": 72.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"government": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 73.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 91,
+"recomputed": 72.9,
+"score": 72.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"healthcare": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 73.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 91,
+"recomputed": 72.9,
+"score": 72.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"insurance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 73.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 88,
+"recomputed": 72.9,
+"score": 72.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"legal": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 73.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 88,
+"recomputed": 72.9,
+"score": 72.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"regulatory": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 73.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 92,
+"recomputed": 72.9,
+"score": 72.9,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"sales": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.5,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": 98,
+"recomputed": 79.2,
+"score": 79.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"supply_chain": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": 5,
+"recomputed": 90.0,
+"score": 90.0,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_aa1e30d1b4f9edd5",
+"identity": {
+"evidence": [
+"publisher_domain_matches_vendor"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "Commercial",
+"name": "Kinaxis Maestro AI",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T00:16:44Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:43Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T00:16:45Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "kinaxis.com",
+"resource_type": "agent",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Commercial"
+},
+"slug": "kinaxis-kinaxis-maestro-ai",
+"sources": [
+{
+"payload_hash": "85d263e00ce370937f1585e356f130cfc1bb67b49509e5a92d50d6c5420c50c9",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://www.kinaxis.com/"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 1,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://www.kinaxis.com/",
+"vendor": "Kinaxis"
+}

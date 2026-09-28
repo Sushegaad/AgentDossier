@@ -1,0 +1,128 @@
+{
+"canonical_url": "aard.ai/.well-known/agent-skills/reasoning-linkage-confidence.zip",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Classifies combinations of two or more official-statistics data units into five metadata-only confidence tiers, each mandating an action — compute silently, add a stated assumption or explicit caveat, escalate with a fixed template, or refuse. Fires when units combine for a ratio, share, difference, contribution, correlation or ranking, even when combining sources is unstated, for intermediate values never surfaced, and when series from different agencies or dataflows sit side by side. Does not do the arithmetic (guarding-derived-indicators) or compose data citations and attribution wording (citing-official-statistics).",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 30.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:aard.ai:skill:reasoning-linkage-confidence"
+},
+"first_seen": "2026-09-28T00:16:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_b0c135942516bc6e",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:16:26Z",
+"license": null,
+"name": "Reasoning linkage confidence (agent skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:aard.ai:skill:reasoning-linkage-confidence",
+"manifest_url": "https://aard.ai/.well-known/ard.json",
+"media_type": "application/zip",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "aard.ai",
+"representative_queries": [
+"can I combine these two statistical series",
+"is it safe to divide IMF values by UN population figures",
+"how much confidence does joining OECD and Eurostat series deserve"
+],
+"resource_type": "agent",
+"scope": "public",
+"signals": {},
+"slug": "aard-ai-reasoning-linkage-confidence-agent-skill",
+"sources": [
+{
+"payload_hash": "dd91cf8c3e23afbd94b7c12c83eb30124e5857c76723848d4684ae0a1177a186",
+"retrieved_at": "2026-09-28T00:16:26Z",
+"system": "ard",
+"url": "https://aard.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"agent-skill",
+"official-statistics"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": null
+},
+"url": "https://aard.ai/.well-known/agent-skills/reasoning-linkage-confidence.zip",
+"vendor": "aard.ai"
+}

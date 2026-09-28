@@ -1,0 +1,176 @@
+{
+"canonical_url": "aard.ai/.well-known/mcp-server-card",
+"capabilities": [
+"inspect",
+"discover",
+"ask",
+"browse_dimension_codes",
+"build_url",
+"fetch",
+"stage_url",
+"inspect_dataset",
+"query_dataset",
+"release_dataset"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Aard MCP for macroeconomic intelligence - official data from 170+ sources",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 8.5,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 35.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 8.5,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 33.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:aard.ai:mcp:gateway"
+},
+"first_seen": "2026-09-28T00:16:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d2972fd5877c3493",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:16:26Z",
+"license": null,
+"name": "Aard MCP",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:aard.ai:mcp:gateway",
+"manifest_url": "https://aard.ai/.well-known/ard.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"server_card_url": "https://aard.ai/.well-known/mcp-server-card",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "aard.ai",
+"representative_queries": [
+"what was euro area inflation in 2024",
+"find official GDP data for Japan from the IMF or OECD",
+"which publishers have labour force statistics for Canada",
+"query an SDMX dataset and return citation-ready rows"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {},
+"slug": "aard-ai-aard-mcp",
+"sources": [
+{
+"payload_hash": "aaca01226adf876bf46e529a880bf4e6f3c09c9da19bd397908724a430fbaaa5",
+"retrieved_at": "2026-09-28T00:16:26Z",
+"system": "ard",
+"url": "https://aard.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"mcp",
+"official-statistics",
+"sdmx"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": null
+},
+"url": "https://aard.ai/.well-known/mcp-server-card",
+"vendor": "aard.ai"
+}

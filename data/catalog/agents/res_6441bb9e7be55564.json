@@ -1,0 +1,91 @@
+{
+"canonical_url": "huggingface.co/spaces/agent-memory-leaderboard/leaderboard",
+"category": "Hugging Face Space",
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "hosted",
+"description": "Unified memory evaluation · Results expected August 12.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"huggingface_space": "agent-memory-leaderboard/leaderboard"
+},
+"first_seen": "2026-09-28T00:14:55Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_6441bb9e7be55564",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:55Z",
+"license": null,
+"name": "Agent Memory Leaderboard",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "huggingface.co",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"hf_created_at": "2026-08-06T15:18:18.000Z",
+"hf_last_modified": "2026-08-18T04:49:26.000Z",
+"hf_likes": 818,
+"hf_pinned": true,
+"hf_sdk": "static"
+},
+"slug": "agent-memory-leaderboard-agent-memory-leaderboard",
+"sources": [
+{
+"payload_hash": "bdc7bd0a67807a55c6389750fbe171a7ff3b5ded36f629b52ad06d8033a21977",
+"retrieved_at": "2026-09-28T00:14:55Z",
+"system": "huggingface",
+"url": "https://huggingface.co/spaces/agent-memory-leaderboard/leaderboard"
+}
+],
+"tags": [
+"agent-memory",
+"benchmark",
+"leaderboard",
+"long-term-memory",
+"static"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://huggingface.co/spaces/agent-memory-leaderboard/leaderboard",
+"vendor": "agent-memory-leaderboard"
+}

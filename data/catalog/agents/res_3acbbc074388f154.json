@@ -1,0 +1,105 @@
+{
+"canonical_url": "github.com/swe-agent/swe-agent",
+"category": "Coding agent",
+"commercial": false,
+"compliance": [],
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 12.0,
+"governance": 45.0,
+"health": 18.0,
+"trust": 24.0
+},
+"deployment": "GitHub",
+"description": "Research-backed software-engineering agent tied to SWE-bench workflows.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 75,
+"recomputed": 84.5,
+"score": 84.5,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_3acbbc074388f154",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "MIT",
+"name": "SWE-agent",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "agent",
+"scope": "public",
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Not captured"
+},
+"slug": "princeton-nlp-swe-agent",
+"sources": [
+{
+"payload_hash": "6160c04a70a91dfc1cbd8092b4bc9982de0f2be136f43871a50fec9d6bdb37b6",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://github.com/SWE-agent/SWE-agent"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 4,
+"issues": 1,
+"protocols": 5,
+"security": null
+},
+"url": "https://github.com/SWE-agent/SWE-agent",
+"vendor": "Princeton NLP"
+}

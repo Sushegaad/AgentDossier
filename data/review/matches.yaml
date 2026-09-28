@@ -1,0 +1,1634 @@
+notes: Near-duplicate candidates. Set decision to merge or keep_separate, add decided_by
+  and decided_on.
+candidates:
+- a_id: res_e1a49ce74cd20ace
+  a_name: SAP Joule for Supply Chain
+  b_id: res_d6cc968e4d9694d8
+  b_name: SAP Joule Agents
+  similarity: 1.0
+  reason: shared identity key url:sap.com/products/artificial-intelligence/ai-assistant.html
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_3090e84aa06f9154
+  a_name: Hugging Face Agents / Spaces ecosystem
+  b_id: res_7f69803e36148c8f
+  b_name: Hugging Face smolagents
+  similarity: 1.0
+  reason: shared identity key github:huggingface/smolagents
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_84ea6f71f3e37631
+  a_name: Vercel AI SDK
+  b_id: res_e564167c7e234223
+  b_name: AI SDK Agents / ToolLoopAgent
+  similarity: 1.0
+  reason: shared identity key github:vercel/ai
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_19f72b71b09069d6
+  a_name: Microsoft AutoGen
+  b_id: res_11a1741a7adbd24c
+  b_name: AutoGen Studio
+  similarity: 1.0
+  reason: shared identity key github:microsoft/autogen
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_19f72b71b09069d6
+  a_name: Microsoft AutoGen
+  b_id: res_a48ef583c6dcf1a9
+  b_name: AutoGen Bench
+  similarity: 1.0
+  reason: shared identity key github:microsoft/autogen
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ff2721a0b38df59a
+  a_name: CAMEL
+  b_id: res_517dd401a1039b49
+  b_name: Camel Agents
+  similarity: 1.0
+  reason: name similarity 1.00
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_19f72b71b09069d6
+  a_name: Microsoft AutoGen
+  b_id: res_11a1741a7adbd24c
+  b_name: AutoGen Studio
+  similarity: 1.0
+  reason: name similarity 1.00
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_f80a0e1295d21843
+  a_name: GitHub Copilot coding agent
+  b_id: fedramp:FR1812058188
+  b_name: GitHub / GitHub Enterprise Cloud
+  similarity: 0.85
+  reason: fedramp entity 0.85, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_a10498228c36b41a
+  a_name: Microsoft Copilot Studio
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.761
+  reason: fedramp entity 1.00, offering 0.47
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_a10498228c36b41a
+  a_name: Microsoft Copilot Studio
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.761
+  reason: fedramp entity 1.00, offering 0.47
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_a10498228c36b41a
+  a_name: Microsoft Copilot Studio
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.756
+  reason: fedramp entity 1.00, offering 0.46
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_96d1291379220228
+  a_name: Salesforce Agentforce
+  b_id: fedramp:FR2003061248
+  b_name: Salesforce / Salesforce Government Cloud Plus
+  similarity: 0.808
+  reason: fedramp entity 1.00, offering 0.57
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_0f638fd2d1d77a83
+  a_name: Azure AI Foundry Agent Service
+  b_id: fedramp:F1209051525
+  b_name: Microsoft / Azure Commercial Cloud
+  similarity: 0.798
+  reason: fedramp entity 1.00, offering 0.55
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_0f638fd2d1d77a83
+  a_name: Azure AI Foundry Agent Service
+  b_id: fedramp:F1603087869
+  b_name: Microsoft / Azure Government (includes Dynamics 365)
+  similarity: 0.709
+  reason: fedramp entity 1.00, offering 0.35
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_0f638fd2d1d77a83
+  a_name: Azure AI Foundry Agent Service
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.7
+  reason: fedramp entity 1.00, offering 0.33
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_7c289a53db079f6b
+  a_name: UiPath Agentic Automation
+  b_id: fedramp:FR2132958724
+  b_name: UiPath / Automation Cloud Public Sector
+  similarity: 0.764
+  reason: fedramp entity 1.00, offering 0.48
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_afbcc884bcc7edd1
+  a_name: Google Vertex AI Agent Engine
+  b_id: fedramp:FR2405153785
+  b_name: Google LLC / Google Cloud VMware Engine (GCVE)
+  similarity: 0.755
+  reason: fedramp entity 0.85, offering 0.64
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_3929f878d4d8171a
+  a_name: Microsoft 365 Copilot for Government
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.824
+  reason: fedramp entity 1.00, offering 0.61
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_3929f878d4d8171a
+  a_name: Microsoft 365 Copilot for Government
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.802
+  reason: fedramp entity 1.00, offering 0.56
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_3929f878d4d8171a
+  a_name: Microsoft 365 Copilot for Government
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.802
+  reason: fedramp entity 1.00, offering 0.56
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_91ee4e27b4414fcb
+  a_name: Google Agent Development Kit (ADK)
+  b_id: fedramp:FR2604952026
+  b_name: Google / Gemini for Government
+  similarity: 0.725
+  reason: fedramp entity 1.00, offering 0.39
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_91ee4e27b4414fcb
+  a_name: Google Agent Development Kit (ADK)
+  b_id: fedramp:FR2405153785
+  b_name: Google LLC / Google Cloud VMware Engine (GCVE)
+  similarity: 0.709
+  reason: fedramp entity 1.00, offering 0.35
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_91ee4e27b4414fcb
+  a_name: Google Agent Development Kit (ADK)
+  b_id: fedramp:F1206081364
+  b_name: Google / Google Workspace
+  similarity: 0.704
+  reason: fedramp entity 1.00, offering 0.34
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4d0a30ec3c79e07d
+  a_name: Microsoft Agent Store
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.73
+  reason: fedramp entity 1.00, offering 0.40
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4d0a30ec3c79e07d
+  a_name: Microsoft Agent Store
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.725
+  reason: fedramp entity 1.00, offering 0.39
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4d0a30ec3c79e07d
+  a_name: Microsoft Agent Store
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.725
+  reason: fedramp entity 1.00, offering 0.39
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_295f819fc4100333
+  a_name: Gemini CLI
+  b_id: fedramp:FR2604952026
+  b_name: Google / Gemini for Government
+  similarity: 0.784
+  reason: fedramp entity 1.00, offering 0.52
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_295f819fc4100333
+  a_name: Gemini CLI
+  b_id: fedramp:FR2405153785
+  b_name: Google LLC / Google Cloud VMware Engine (GCVE)
+  similarity: 0.712
+  reason: fedramp entity 1.00, offering 0.36
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_88efcf6073d24d81
+  a_name: ServiceNow AI Agents
+  b_id: fedramp:F1305072116
+  b_name: ServiceNow / Government Community Cloud
+  similarity: 0.7
+  reason: fedramp entity 1.00, offering 0.33
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_d36f55db48527365
+  a_name: Vanta AI / GRC
+  b_id: fedramp:FR2525556241XM
+  b_name: Vanta / Vanta Government Cloud
+  similarity: 0.809
+  reason: fedramp entity 1.00, offering 0.58
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_d36f55db48527365
+  a_name: Vanta AI / GRC
+  b_id: fedramp:FR2525556241
+  b_name: Vanta / Vanta Trust Management Platform
+  similarity: 0.733
+  reason: fedramp entity 1.00, offering 0.41
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_1611748acf41aa81
+  a_name: Microsoft Agent Framework
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.746
+  reason: fedramp entity 1.00, offering 0.43
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_1611748acf41aa81
+  a_name: Microsoft Agent Framework
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.74
+  reason: fedramp entity 1.00, offering 0.42
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_1611748acf41aa81
+  a_name: Microsoft Agent Framework
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.74
+  reason: fedramp entity 1.00, offering 0.42
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_d8712ca680dd1929
+  a_name: Palantir AIP Agents
+  b_id: fedramp:FR2434554673
+  b_name: Palantir Technologies Inc. / Palantir Federal Cloud Service
+  similarity: 0.757
+  reason: fedramp entity 0.85, offering 0.64
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_276e8c10da98fe90
+  a_name: Microsoft Dynamics 365 Supply Chain agents
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.758
+  reason: fedramp entity 1.00, offering 0.46
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_276e8c10da98fe90
+  a_name: Microsoft Dynamics 365 Supply Chain agents
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.753
+  reason: fedramp entity 1.00, offering 0.45
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_276e8c10da98fe90
+  a_name: Microsoft Dynamics 365 Supply Chain agents
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.753
+  reason: fedramp entity 1.00, offering 0.45
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_2f4433d5fb4343a8
+  a_name: Google Cloud Marketplace AI Agents
+  b_id: fedramp:F1206081364
+  b_name: Google / Google Workspace
+  similarity: 0.777
+  reason: fedramp entity 0.85, offering 0.69
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_2f4433d5fb4343a8
+  a_name: Google Cloud Marketplace AI Agents
+  b_id: fedramp:FR2405153785
+  b_name: Google LLC / Google Cloud VMware Engine (GCVE)
+  similarity: 0.713
+  reason: fedramp entity 0.85, offering 0.54
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_0f7d5d220132fc29
+  a_name: Databricks Mosaic AI Agent Framework
+  b_id: fedramp:FR2324740262
+  b_name: Databricks, Inc. / Databricks on AWS GovCloud
+  similarity: 0.779
+  reason: fedramp entity 1.00, offering 0.51
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_0f7d5d220132fc29
+  a_name: Databricks Mosaic AI Agent Framework
+  b_id: fedramp:FR1834740315
+  b_name: Databricks, Inc. / Databricks on AWS US East/West
+  similarity: 0.777
+  reason: fedramp entity 1.00, offering 0.50
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_0f7d5d220132fc29
+  a_name: Databricks Mosaic AI Agent Framework
+  b_id: fedramp:FR2525247858
+  b_name: Databricks, Inc. / Databricks on Azure Commercial
+  similarity: 0.763
+  reason: fedramp entity 1.00, offering 0.47
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_67068f0d7f2e2999
+  a_name: CrowdStrike Charlotte AI
+  b_id: fedramp:FR1807853629A
+  b_name: CrowdStrike, Inc. / CrowdStrike Falcon Platform for Government
+  similarity: 0.793
+  reason: fedramp entity 1.00, offering 0.54
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_67068f0d7f2e2999
+  a_name: CrowdStrike Charlotte AI
+  b_id: fedramp:FR2627547824
+  b_name: CrowdStrike, Inc. / CrowdStrike Falcon Platform IL5 SaaS
+  similarity: 0.786
+  reason: fedramp entity 1.00, offering 0.52
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_600f4bcf6dd69565
+  a_name: Moveworks Agentic AI
+  b_id: fedramp:FR2332364851
+  b_name: Moveworks / Moveworks GovCloud
+  similarity: 0.828
+  reason: fedramp entity 1.00, offering 0.62
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4228b38ff5ed0580
+  a_name: IBM watsonx Orchestrate
+  b_id: fedramp:FR1728053006
+  b_name: IBM / IBM Automation Services for Government
+  similarity: 0.77
+  reason: fedramp entity 1.00, offering 0.49
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4228b38ff5ed0580
+  a_name: IBM watsonx Orchestrate
+  b_id: fedramp:FR2524349489
+  b_name: IBM / IBM Data Services for Government
+  similarity: 0.743
+  reason: fedramp entity 1.00, offering 0.43
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4228b38ff5ed0580
+  a_name: IBM watsonx Orchestrate
+  b_id: fedramp:FR2417469779
+  b_name: IBM / IBM Envizi ESG Reporting
+  similarity: 0.705
+  reason: fedramp entity 1.00, offering 0.34
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4920fae88604fbf7
+  a_name: Agentforce Financial Services
+  b_id: fedramp:FR2003061248
+  b_name: Salesforce / Salesforce Government Cloud Plus
+  similarity: 0.744
+  reason: fedramp entity 1.00, offering 0.43
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ff82ade783ff687e
+  a_name: Oracle SCM AI Agents
+  b_id: fedramp:F1206061351
+  b_name: Oracle / Oracle Service Cloud (OSvC)
+  similarity: 0.897
+  reason: fedramp entity 1.00, offering 0.77
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ff82ade783ff687e
+  a_name: Oracle SCM AI Agents
+  b_id: fedramp:FR1900048743
+  b_name: Oracle / Oracle Cloud Infrastructure-Government Cloud
+  similarity: 0.743
+  reason: fedramp entity 1.00, offering 0.43
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ff82ade783ff687e
+  a_name: Oracle SCM AI Agents
+  b_id: fedramp:FR2534673267
+  b_name: Oracle Corporation / Oracle Primavera Cloud for Government
+  similarity: 0.725
+  reason: fedramp entity 1.00, offering 0.39
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4de534be005bf907
+  a_name: Thomson Reuters CoCounsel
+  b_id: fedramp:FR2502148523
+  b_name: Thomson Reuters / Thomson Reuters Legal Research (TR LR)
+  similarity: 0.802
+  reason: fedramp entity 1.00, offering 0.56
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4de534be005bf907
+  a_name: Thomson Reuters CoCounsel
+  b_id: fedramp:FR2333543855
+  b_name: Thomson Reuters / Thomson Reuters Risk & Fraud (TR R&F)
+  similarity: 0.787
+  reason: fedramp entity 1.00, offering 0.53
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_dbfb3ee4c780e3f0
+  a_name: Microsoft Dragon Copilot
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.781
+  reason: fedramp entity 1.00, offering 0.51
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_dbfb3ee4c780e3f0
+  a_name: Microsoft Dragon Copilot
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.761
+  reason: fedramp entity 1.00, offering 0.47
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_dbfb3ee4c780e3f0
+  a_name: Microsoft Dragon Copilot
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.761
+  reason: fedramp entity 1.00, offering 0.47
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_eac59c87fdc35644
+  a_name: Salesforce Government Cloud / Agentforce
+  b_id: fedramp:FR2003061248
+  b_name: Salesforce / Salesforce Government Cloud Plus
+  similarity: 0.857
+  reason: fedramp entity 1.00, offering 0.68
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_eac59c87fdc35644
+  a_name: Salesforce Government Cloud / Agentforce
+  b_id: fedramp:FR1818161169
+  b_name: MuleSoft / MuleSoft Government Cloud
+  similarity: 0.708
+  reason: fedramp entity 0.44, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_bd88ec1030d2fc6c
+  a_name: Atlassian Rovo
+  b_id: fedramp:FR2412062433
+  b_name: Atlassian / Atlassian Government Cloud
+  similarity: 0.836
+  reason: fedramp entity 1.00, offering 0.64
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_87d8238bc6c69d8d
+  a_name: Microsoft Security Copilot
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.774
+  reason: fedramp entity 1.00, offering 0.50
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_87d8238bc6c69d8d
+  a_name: Microsoft Security Copilot
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.767
+  reason: fedramp entity 1.00, offering 0.48
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_87d8238bc6c69d8d
+  a_name: Microsoft Security Copilot
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.767
+  reason: fedramp entity 1.00, offering 0.48
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_d047d4c2fb417e09
+  a_name: SentinelOne Purple AI
+  b_id: fedramp:FR1919071020A
+  b_name: SentinelOne / SentinelOne Singularity Platform High
+  similarity: 0.797
+  reason: fedramp entity 1.00, offering 0.55
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_66d49fde53f973da
+  a_name: Microsoft Semantic Kernel
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.74
+  reason: fedramp entity 1.00, offering 0.42
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_66d49fde53f973da
+  a_name: Microsoft Semantic Kernel
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.724
+  reason: fedramp entity 1.00, offering 0.39
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_66d49fde53f973da
+  a_name: Microsoft Semantic Kernel
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.724
+  reason: fedramp entity 1.00, offering 0.39
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_20e04add7389b497
+  a_name: Palantir AIP for Government
+  b_id: fedramp:FR1913470600
+  b_name: Palo Alto Networks, Inc. / Palo Alto Networks Government Cloud Services
+  similarity: 0.741
+  reason: fedramp entity 0.54, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_20e04add7389b497
+  a_name: Palantir AIP for Government
+  b_id: fedramp:FR2412062433
+  b_name: Atlassian / Atlassian Government Cloud
+  similarity: 0.717
+  reason: fedramp entity 0.47, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_20e04add7389b497
+  a_name: Palantir AIP for Government
+  b_id: fedramp:FR2525556241XM
+  b_name: Vanta / Vanta Government Cloud
+  similarity: 0.714
+  reason: fedramp entity 0.46, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_fd8491b395d72294
+  a_name: Oracle AI Agent Studio
+  b_id: fedramp:F1206061351
+  b_name: Oracle / Oracle Service Cloud (OSvC)
+  similarity: 0.82
+  reason: fedramp entity 1.00, offering 0.60
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_fd8491b395d72294
+  a_name: Oracle AI Agent Studio
+  b_id: fedramp:F1603257882
+  b_name: Oracle / Fusion Cloud
+  similarity: 0.775
+  reason: fedramp entity 1.00, offering 0.50
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_fd8491b395d72294
+  a_name: Oracle AI Agent Studio
+  b_id: fedramp:FR1900048743
+  b_name: Oracle / Oracle Cloud Infrastructure-Government Cloud
+  similarity: 0.748
+  reason: fedramp entity 1.00, offering 0.44
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_f1912c71acc80c75
+  a_name: Agentforce Insurance
+  b_id: fedramp:FR2003061248
+  b_name: Salesforce / Salesforce Government Cloud Plus
+  similarity: 0.726
+  reason: fedramp entity 1.00, offering 0.39
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_e24abc7175705328
+  a_name: Google Gemini for Government
+  b_id: fedramp:FR2405153785
+  b_name: Google LLC / Google Cloud VMware Engine (GCVE)
+  similarity: 0.781
+  reason: fedramp entity 1.00, offering 0.51
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_e24abc7175705328
+  a_name: Google Gemini for Government
+  b_id: fedramp:FR2619446518
+  b_name: Moodle US LLC / Moodle for Government
+  similarity: 0.739
+  reason: fedramp entity 0.53, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_6081e1c01dce83e2
+  a_name: Lexis+ AI
+  b_id: fedramp:FR2510634052
+  b_name: LexisNexis Legal and Professional / Lexis+® for Government
+  similarity: 0.85
+  reason: fedramp entity 0.85, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_6081e1c01dce83e2
+  a_name: Lexis+ AI
+  b_id: fedramp:FR2611036548
+  b_name: LexisNexis Risk Solutions / LexisNexis Risk Enterprise Platform
+  similarity: 0.85
+  reason: fedramp entity 0.85, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_6896fc269a638cef
+  a_name: Google Security Operations AI
+  b_id: fedramp:FR2221161553
+  b_name: SecurityScorecard, LLC / SecurityScorecard Security Ratings
+  similarity: 0.718
+  reason: fedramp entity 0.46, offering 0.86
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_6896fc269a638cef
+  a_name: Google Security Operations AI
+  b_id: fedramp:FR2611539908
+  b_name: RegDOX Solutions / RegDOX Cloud Security Solutions
+  similarity: 0.702
+  reason: fedramp entity 0.43, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_6896fc269a638cef
+  a_name: Google Security Operations AI
+  b_id: fedramp:F1603297883
+  b_name: Lookout, Inc. / Lookout Security Platform
+  similarity: 0.7
+  reason: fedramp entity 0.42, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ce7f4ff12b3dab7b
+  a_name: Norm AI
+  b_id: fedramp:FR2425960757
+  b_name: Abnormal AI  / Abnormal AI for Government
+  similarity: 0.81
+  reason: fedramp entity 0.78, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_9e31a3ec9204f559
+  a_name: LogicGate Risk Cloud AI
+  b_id: fedramp:FR1913835324
+  b_name: TalaTek, LLC / TalaTek intelligent Governance and Risk Integrated Solution
+    (TiGRIS)
+  similarity: 0.728
+  reason: fedramp entity 0.50, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_6ce3823a7bc236fb
+  a_name: Palo Alto Networks Unit 42 Continuous Frontier AI Defense
+  b_id: fedramp:FR1913470600
+  b_name: Palo Alto Networks, Inc. / Palo Alto Networks Government Cloud Services
+  similarity: 0.765
+  reason: fedramp entity 1.00, offering 0.48
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_9eb37471cfd88b65
+  a_name: Perplexica
+  b_id: fedramp:FR2604643715
+  b_name: Perplexity AI / Perplexity Enterprise and API Platform
+  similarity: 0.768
+  reason: fedramp entity 0.78, offering 0.75
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_19f72b71b09069d6
+  a_name: Microsoft AutoGen
+  b_id: fedramp:FR1824057433
+  b_name: 'Microsoft / Microsoft 365 Government Community Cloud-High '
+  similarity: 0.738
+  reason: fedramp entity 1.00, offering 0.42
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_19f72b71b09069d6
+  a_name: Microsoft AutoGen
+  b_id: fedramp:MSO365MT
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.72
+  reason: fedramp entity 1.00, offering 0.38
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_19f72b71b09069d6
+  a_name: Microsoft AutoGen
+  b_id: fedramp:MSO365MTA
+  b_name: Microsoft / Microsoft 365 Government Community Cloud & Supporting Services
+  similarity: 0.72
+  reason: fedramp entity 1.00, offering 0.38
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_11a1741a7adbd24c
+  a_name: AutoGen Studio
+  b_id: fedramp:F1603087869
+  b_name: Microsoft / Azure Government (includes Dynamics 365)
+  similarity: 0.706
+  reason: fedramp entity 1.00, offering 0.35
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_11a1741a7adbd24c
+  a_name: AutoGen Studio
+  b_id: fedramp:F1209051525
+  b_name: Microsoft / Azure Commercial Cloud
+  similarity: 0.7
+  reason: fedramp entity 1.00, offering 0.33
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_a48ef583c6dcf1a9
+  a_name: AutoGen Bench
+  b_id: fedramp:F1209051525
+  b_name: Microsoft / Azure Commercial Cloud
+  similarity: 0.705
+  reason: fedramp entity 1.00, offering 0.34
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_b470a0494145e37e
+  a_name: orca
+  b_id: fedramp:FR2301844932
+  b_name: Orca Security / Orca Cloud Security Platform
+  similarity: 0.803
+  reason: fedramp entity 0.77, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_9b7282bffc02cc8d
+  a_name: Decomposing data questions (agent skill)
+  b_id: fedramp:FR2023666173
+  b_name: Scale AI, Inc / Scale AI Data Platform
+  similarity: 0.739
+  reason: fedramp entity 0.53, offering 0.85
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_f80a0e1295d21843
+  a_name: GitHub Copilot coding agent
+  b_id: csa_star:github, inc.
+  b_name: GitHub, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_96d1291379220228
+  a_name: Salesforce Agentforce
+  b_id: csa_star:salesforce.com, inc.
+  b_name: Salesforce.com, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_afbcc884bcc7edd1
+  a_name: Google Vertex AI Agent Engine
+  b_id: csa_star:google
+  b_name: Google
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_98b705df32ec7802
+  a_name: HubSpot Breeze Agents
+  b_id: csa_star:spot
+  b_name: Spot
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_d8712ca680dd1929
+  a_name: Palantir AIP Agents
+  b_id: csa_star:palantir technologies inc.
+  b_name: Palantir Technologies Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_2f4433d5fb4343a8
+  a_name: Google Cloud Marketplace AI Agents
+  b_id: csa_star:google
+  b_name: Google
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4920fae88604fbf7
+  a_name: Agentforce Financial Services
+  b_id: csa_star:salesforce.com, inc.
+  b_name: Salesforce.com, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_b1e8e9418c133543
+  a_name: Dataiku AI Agents
+  b_id: csa_star:datalink
+  b_name: Datalink
+  similarity: 0.8
+  reason: csa_star entity 0.80 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ff82ade783ff687e
+  a_name: Oracle SCM AI Agents
+  b_id: csa_star:oracle america, inc.
+  b_name: Oracle America, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_eac59c87fdc35644
+  a_name: Salesforce Government Cloud / Agentforce
+  b_id: csa_star:salesforce.com, inc.
+  b_name: Salesforce.com, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_0212992ec8356ec3
+  a_name: Open WebUI
+  b_id: csa_star:open it, inc.
+  b_name: Open iT, Inc.
+  similarity: 0.706
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ef400416efc1096a
+  a_name: Rasa Pro / CALM agents
+  b_id: csa_star:aras corporation
+  b_name: Aras Corporation
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_8caf8bafe3d3a38c
+  a_name: Zapier Agents
+  b_id: csa_star:aper
+  b_name: Aper
+  similarity: 0.8
+  reason: csa_star entity 0.80 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_9d2f1c7356c7e1b9
+  a_name: Workato Agentic / AI
+  b_id: csa_star:oration inc
+  b_name: Oration Inc
+  similarity: 0.714
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_20e04add7389b497
+  a_name: Palantir AIP for Government
+  b_id: csa_star:palantir technologies inc.
+  b_name: Palantir Technologies Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4d0d52f8a5956cf7
+  a_name: CrewAI
+  b_id: csa_star:cream ai inc
+  b_name: CREAM AI Inc
+  similarity: 0.714
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_f5d3db52cf445d12
+  a_name: AuditBoard AI
+  b_id: csa_star:audit dashboard inc.
+  b_name: Audit Dashboard Inc.
+  similarity: 0.8
+  reason: csa_star entity 0.80 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ae4eee3003228b75
+  a_name: Kore.ai AI for Work / XO
+  b_id: csa_star:roar ai
+  b_name: Roar AI
+  similarity: 0.714
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_fd8491b395d72294
+  a_name: Oracle AI Agent Studio
+  b_id: csa_star:oracle america, inc.
+  b_name: Oracle America, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_1414301045677667
+  a_name: Abridge
+  b_id: csa_star:abre
+  b_name: Abre
+  similarity: 0.727
+  reason: csa_star entity 0.73 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_f1912c71acc80c75
+  a_name: Agentforce Insurance
+  b_id: csa_star:salesforce.com, inc.
+  b_name: Salesforce.com, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_3456bd873bfc8a52
+  a_name: Sierra
+  b_id: csa_star:sierra technologies, inc.
+  b_name: Sierra Technologies, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_9d4b04b9165d2304
+  a_name: o9 Digital Brain / Agents
+  b_id: csa_star:egov solutions ltd
+  b_name: eGOV Solutions LTD
+  similarity: 0.846
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_c82d4ba1e83d26ab
+  a_name: Continue
+  b_id: csa_star:continuity srl
+  b_name: Continuity SRL
+  similarity: 0.778
+  reason: csa_star entity 0.78 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_97cd54bb05e797a4
+  a_name: Claude Code
+  b_id: csa_star:anthropic, pbc
+  b_name: Anthropic, PBC
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_f9683dc0f1786305
+  a_name: Salesloft AI / Rhythm
+  b_id: csa_star:gameloft srl
+  b_name: Gameloft SRL
+  similarity: 0.706
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_168afea5e80c1a46
+  a_name: 6sense AI Agents
+  b_id: csa_star:6sense insights, inc.
+  b_name: 6Sense Insights, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_6896fc269a638cef
+  a_name: Google Security Operations AI
+  b_id: csa_star:google
+  b_name: Google
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_5e48875d5cd32c76
+  a_name: NVIDIA NeMo Agent Toolkit
+  b_id: csa_star:vindicia, inc.
+  b_name: Vindicia, Inc.
+  similarity: 0.714
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_e27b317e0e601da0
+  a_name: LobeChat
+  b_id: csa_star:oncehub
+  b_name: OnceHub
+  similarity: 0.714
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_279ec4b8aca48367
+  a_name: Everlaw AI
+  b_id: csa_star:everylayer
+  b_name: EveryLayer
+  similarity: 0.706
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_7b2e43ce2657a1d3
+  a_name: Letta
+  b_id: csa_star:vretta inc.
+  b_name: Vretta Inc.
+  similarity: 0.727
+  reason: csa_star entity 0.73 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_b7598ea0014ae303
+  a_name: Nabla Copilot
+  b_id: csa_star:abluva
+  b_name: Abluva
+  similarity: 0.727
+  reason: csa_star entity 0.73 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_10bd68643065c3fe
+  a_name: Credo AI
+  b_id: csa_star:cream ai inc
+  b_name: CREAM AI Inc
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ce7f4ff12b3dab7b
+  a_name: Norm AI
+  b_id: csa_star:abnormal ai
+  b_name: Abnormal AI
+  similarity: 0.778
+  reason: csa_star entity 0.78 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_3a108bf0e20d6760
+  a_name: CUBE RegPlatform
+  b_id: csa_star:deepcube srl
+  b_name: Deepcube srl
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_f4bec3f1c5df6bb1
+  a_name: Zensar AI-Powered Regulatory Compliance
+  b_id: csa_star:zensai
+  b_name: Zensai
+  similarity: 0.833
+  reason: csa_star entity 0.83 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_e2b06a32b809f35d
+  a_name: Cline
+  b_id: csa_star:cloudsine
+  b_name: Cloudsine
+  similarity: 0.714
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_94bad96f7316f09e
+  a_name: Aider
+  b_id: csa_star:aisera inc.
+  b_name: Aisera Inc.
+  similarity: 0.714
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_d39bb057a80e890e
+  a_name: Shift Technology AI
+  b_id: csa_star:fti technology
+  b_name: FTI Technology
+  similarity: 0.867
+  reason: csa_star entity 0.87 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_7fd1138b773e687a
+  a_name: vLex Vincent AI
+  b_id: 'csa_star:flex corp. '
+  b_name: flex Corp.
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_e4f8f57472aa3d43
+  a_name: Roo Code
+  b_id: csa_star:armorcode inc.
+  b_name: ArmorCode Inc.
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_e13ef2811499fa46
+  a_name: Composio
+  b_id: csa_star:complion
+  b_name: Complion
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ce63b3b052187a90
+  a_name: Agno
+  b_id: csa_star:ethics computerized diagnostic systems ltd. (midot)
+  b_name: Ethics Computerized Diagnostic Systems Ltd. (Midot)
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_9db0d7a7fea9e7c8
+  a_name: Qualified Piper
+  b_id: csa_star:qualified.com, inc.
+  b_name: Qualified.com, Inc.
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_a29edcd327c26107
+  a_name: Regie.ai AI Agents
+  b_id: csa_star:edgify ai
+  b_name: Edgify AI
+  similarity: 0.706
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_ff2721a0b38df59a
+  a_name: CAMEL
+  b_id: csa_star:cream ai inc
+  b_name: CREAM AI Inc
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_a057c32ab396945e
+  a_name: Tractable
+  b_id: csa_star:traceable
+  b_name: Traceable
+  similarity: 0.889
+  reason: csa_star entity 0.89 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_b1bd033fde872fc1
+  a_name: Cytora
+  b_id: csa_star:cyara
+  b_name: Cyara
+  similarity: 0.727
+  reason: csa_star entity 0.73 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_b8b40db4ccff39a3
+  a_name: BeeAI Platform
+  b_id: csa_star:invision community
+  b_name: Invision Community
+  similarity: 0.71
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_37d78a3a2a83195a
+  a_name: inference.sh
+  b_id: csa_star:nference
+  b_name: nference
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_38046afef8270383
+  a_name: hood. — .hood name service
+  b_id: csa_star:omegahood llc
+  b_name: OmegaHood LLC
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_e03b8e0190e3f884
+  a_name: agency.goji/goji
+  b_id: csa_star:omne agency
+  b_name: Omne Agency
+  similarity: 0.727
+  reason: csa_star entity 0.73 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_2ea454c2986179a0
+  a_name: agency.lona/trading
+  b_id: csa_star:omne agency
+  b_name: Omne Agency
+  similarity: 0.818
+  reason: csa_star entity 0.82 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_c7f8af54bd1b2ce2
+  a_name: Aard
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_51bf6731ddbc5177
+  a_name: aTars MCP
+  b_id: csa_star:evara ai ltd
+  b_name: Evara AI Ltd
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_517dd401a1039b49
+  a_name: Camel Agents
+  b_id: csa_star:cream ai inc
+  b_name: CREAM AI Inc
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_24fe14941d0ec9cd
+  a_name: SoccerTwos
+  b_id: csa_star:invision community
+  b_name: Invision Community
+  similarity: 0.85
+  reason: csa_star entity 0.85 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_6e4fdf71068e2d65
+  a_name: graphify
+  b_id: csa_star:grafana labs
+  b_name: Grafana Labs
+  similarity: 0.72
+  reason: csa_star entity 0.72 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_3697bbc89c699c26
+  a_name: Prompt-Engineering-Guide
+  b_id: csa_star:roar ai
+  b_name: Roar AI
+  similarity: 0.714
+  reason: csa_star entity 0.71 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_d2972fd5877c3493
+  a_name: Aard MCP
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_d19afe7dd1d840aa
+  a_name: Aard REST API
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_84d868d6f22d01d8
+  a_name: Aard Agent Skills
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_4fdc3aa76cd68f62
+  a_name: Aard (agent skill)
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_7c34d5d28534899d
+  a_name: Citing official statistics (agent skill)
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_9b7282bffc02cc8d
+  a_name: Decomposing data questions (agent skill)
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_7e573c0ed94c137f
+  a_name: Guarding derived indicators (agent skill)
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_b0c135942516bc6e
+  a_name: Reasoning linkage confidence (agent skill)
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'
+- a_id: res_157b48ec195d47b4
+  a_name: Aard llms.txt
+  b_id: csa_star:ansvar ai
+  b_name: Ansvar AI
+  similarity: 0.75
+  reason: csa_star entity 0.75 (index card)
+  decision: pending
+  decided_by: null
+  decided_on: null
+  found_on: '2026-09-28'

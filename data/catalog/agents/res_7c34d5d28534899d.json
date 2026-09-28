@@ -1,0 +1,161 @@
+{
+"canonical_url": "aard.ai/.well-known/agent-skills/citing-official-statistics.zip",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"dashboard"
+],
+"finance": [
+"bank"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Cites and provenance-tags figures from official statistics — SDMX dataflows, ABS, OECD, Eurostat, ILOSTAT, Statistics Canada, World Bank, UN. Fires at emission, whenever a number reaches the reader — prose, report, table, chart, slide, dashboard, media release, one-line answer — including plain lookups, derived and cross-provider values, and series named in a refusal or escalation, even when citation is never mentioned. Covers the citation skeleton, extraction date and vintage, DOI/URN/query-URL precedence, quality flags, chart titles, table and figure source lines, footnote markers and mandatory licence attribution wording. Excludes computation admissibility (guarding-derived-indicators) and series combinability (reasoning-linkage-confidence).",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 30.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"finance": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": null,
+"score": 34.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:aard.ai:skill:citing-official-statistics"
+},
+"first_seen": "2026-09-28T00:16:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_7c34d5d28534899d",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:16:26Z",
+"license": null,
+"name": "Citing official statistics (agent skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:aard.ai:skill:citing-official-statistics",
+"manifest_url": "https://aard.ai/.well-known/ard.json",
+"media_type": "application/zip",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "aard.ai",
+"representative_queries": [
+"how do I cite an OECD statistic properly",
+"what attribution wording does the ABS licence require",
+"reference this World Bank figure with its vintage and extraction date"
+],
+"resource_type": "agent",
+"scope": "public",
+"signals": {},
+"slug": "aard-ai-citing-official-statistics-agent-skill",
+"sources": [
+{
+"payload_hash": "3f32ee76620071a548bc6f60b58713676bcc268afb3f767b39d510d4abec416b",
+"retrieved_at": "2026-09-28T00:16:26Z",
+"system": "ard",
+"url": "https://aard.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"agent-skill",
+"official-statistics"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": null
+},
+"url": "https://aard.ai/.well-known/agent-skills/citing-official-statistics.zip",
+"vendor": "aard.ai"
+}

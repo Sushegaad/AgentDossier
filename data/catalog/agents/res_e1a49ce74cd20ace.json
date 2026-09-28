@@ -1,0 +1,330 @@
+{
+"canonical_url": "sap.com/products/artificial-intelligence/ai-assistant.html",
+"category": "Supply-chain agents",
+"commercial": true,
+"compliance": [
+{
+"certificate_id": "sap",
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
+"organization": "SAP",
+"terms": [
+"star_level_1",
+"star_level_2",
+"partner_entries",
+"caiq",
+"certification",
+"eu-cloud-coc"
+]
+},
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-09-28 (pending publisher verification)",
+"evidence_url": "https://cloudsecurityalliance.org/star/registry/sap",
+"framework": "csa_star",
+"issued": "2016-06-25",
+"issuer": "Cloud Security Alliance",
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"period_end": null,
+"retrieved_at": "2026-09-28T00:17:27Z",
+"review_reason": "entity 1.00 (index card)",
+"reviewer": null,
+"scope": "entity",
+"source": "csa_star",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "STAR_LEVEL_2"
+}
+],
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 25.0
+},
+"deployment": "SAP BTP/Supply Chain",
+"description": "AI assistant/agents across SAP enterprise and supply-chain processes.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 90.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": 19,
+"recomputed": 92.8,
+"score": 92.8,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"cybersecurity": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 86.7,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": 35,
+"recomputed": 81.6,
+"score": 81.6,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"data": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 95.8,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": 51,
+"recomputed": 86.2,
+"score": 86.2,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"finance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 59,
+"recomputed": 76.1,
+"score": 76.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"government": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 50,
+"recomputed": 76.7,
+"score": 76.7,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"healthcare": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 51,
+"recomputed": 76.1,
+"score": 76.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"insurance": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 46,
+"recomputed": 76.1,
+"score": 76.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"legal": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 47,
+"recomputed": 76.1,
+"score": 76.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"regulatory": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 82.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": 54,
+"recomputed": 76.1,
+"score": 76.1,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"sales": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 90.8,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": 45,
+"recomputed": 83.5,
+"score": 83.5,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"supply_chain": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 91.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": 1,
+"recomputed": 93.5,
+"score": 93.5,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+},
+"technology": {
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 95.4,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": 45,
+"recomputed": 93.3,
+"score": 93.3,
+"score_version": "sar-score-1.0",
+"source": "seed_xlsx"
+}
+},
+"external_ids": {},
+"first_seen": "2026-09-28T00:14:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_e1a49ce74cd20ace",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T00:14:54Z",
+"license": "Commercial",
+"name": "SAP Joule for Supply Chain",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T00:16:59Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T00:16:55Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T00:17:00Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "sap.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T00:20:48Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"seed": {
+"last_verified": "2026-09-25",
+"snapshot_date": "2026-09-25"
+},
+"signals": {
+"observed_popularity": "Commercial"
+},
+"slug": "sap-sap-joule-for-supply-chain",
+"sources": [
+{
+"payload_hash": "225f68477820ea2df726792879af5248515ddf2a07a630384a38e2bcd9838bd6",
+"retrieved_at": "2026-09-28T00:14:54Z",
+"system": "seed_xlsx",
+"url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 1,
+"identity": 4,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html",
+"vendor": "SAP"
+}
