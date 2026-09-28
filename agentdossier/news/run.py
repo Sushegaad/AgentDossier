@@ -63,6 +63,7 @@ def run(
     use_nvd: bool = True,
     vendor_feeds: bool = True,
     concurrency: int = 6,
+    deadline: Any = None,
 ) -> dict[str, dict[str, Any]]:
     token = os.environ.get("GITHUB_TOKEN")
     nvd_key = os.environ.get("NVD_API_KEY")
@@ -78,9 +79,17 @@ def run(
     gdelt_items: dict[str, list[dict[str, Any]]] = {}
     nvd_results: dict[str, dict[str, Any]] = {}
 
+    skipped: set[str] = set()
+
+    def out_of_time() -> bool:
+        return deadline is not None and deadline.expired()
+
     def fast(res: dict[str, Any]) -> None:
         name = res["name"]
         items: list[dict[str, Any]] = []
+        if out_of_time():
+            skipped.add(res["id"])
+            return
         try:
             items += sources.hackernews(name, store=store, policy=policy)
             gh = (res.get("external_ids") or {}).get("github")
@@ -97,6 +106,8 @@ def run(
 
     def gdelt_lane() -> None:
         for i, res in enumerate(targets, 1):
+            if out_of_time():
+                return
             try:
                 gdelt_items[res["id"]] = sources.gdelt(res["name"], store=store, policy=policy)
             except sources.GdeltUnavailableError as exc:
@@ -110,6 +121,8 @@ def run(
 
     def nvd_lane() -> None:
         for i, res in enumerate(targets, 1):
+            if out_of_time():
+                return
             try:
                 nvd_results[res["id"]] = sources.nvd_cves(
                     res["name"], store=store, policy=policy, api_key=nvd_key
@@ -131,6 +144,10 @@ def run(
             f.result()
 
     for res in targets:
+        if res["id"] in skipped:
+            rep.skipped += 1
+            continue
+        res["news_checked"] = True
         items = fast_items.get(res["id"], []) + gdelt_items.get(res["id"], [])
         rep.fetched += 1
         linked = []
@@ -181,5 +198,7 @@ def run(
     for res in resources:
         res.setdefault("news", [])
         res.setdefault("issues", _empty_issues())
-    _log(f"done: {rep.produced} items on {rep.fetched} resources ({time.monotonic() - started:.0f}s)")
+    _log(
+        f"done: {rep.produced} items on {rep.fetched} resources, {rep.skipped} skipped for time ({time.monotonic() - started:.0f}s)"
+    )
     return {"news": rep.as_dict(), "nvd": sec.as_dict()}

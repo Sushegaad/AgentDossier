@@ -9,6 +9,7 @@ import os
 import re
 import socket
 import ssl
+import sys
 import threading
 import time
 import urllib.error
@@ -235,3 +236,30 @@ def fetch_json(url: str, **kw):
         return r.json(), r
     except ValueError:
         return None, FetchResult(r.url, r.status, r.headers, r.body, error="invalid JSON")
+
+
+class Deadline:
+    """Wall-clock budget shared by the build stages (the weekly job must finish inside its runner limit)."""
+
+    def __init__(self, minutes: float | None):
+        self.started = time.monotonic()
+        self.seconds = None if minutes is None else float(minutes) * 60.0
+
+    @property
+    def elapsed(self) -> float:
+        return time.monotonic() - self.started
+
+    @property
+    def remaining(self) -> float | None:
+        return None if self.seconds is None else max(0.0, self.seconds - self.elapsed)
+
+    def expired(self) -> bool:
+        return self.seconds is not None and self.elapsed >= self.seconds
+
+    def log(self, stage: str, msg: str = "") -> None:
+        left = "" if self.remaining is None else f", {self.remaining / 60:.0f} min left"
+        print(
+            f"[build] {self.elapsed / 60:.1f} min{left} · {stage}{(': ' + msg) if msg else ''}",
+            file=sys.stderr,
+            flush=True,
+        )

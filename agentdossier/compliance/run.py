@@ -21,6 +21,7 @@ def run(
     crawl_claims: bool = True,
     claim_domain_limit: int | None = None,
     concurrency: int = 6,
+    deadline: Any = None,
 ) -> tuple[dict[str, dict[str, Any]], list[ReviewCandidate]]:
     reports: dict[str, dict[str, Any]] = {}
     review: list[ReviewCandidate] = []
@@ -103,6 +104,9 @@ def run(
         domains = sorted(by_domain)[:claim_domain_limit] if claim_domain_limit else sorted(by_domain)
 
         def work(domain: str) -> tuple[str, dict[str, Any] | None]:
+            if deadline is not None and deadline.expired():
+                cl_report.skipped += 1
+                return domain, None
             try:
                 return domain, claims.crawl_domain(domain, policy=policy)
             except Exception as exc:  # noqa: BLE001
@@ -110,10 +114,12 @@ def run(
                 return domain, None
 
         with ThreadPoolExecutor(max_workers=concurrency) as pool:
-            for domain, crawl in pool.map(work, domains):
-                cl_report.fetched += 1
+            for i, (domain, crawl) in enumerate(pool.map(work, domains), 1):
+                if i % 25 == 0 and deadline is not None:
+                    deadline.log("vendor_claims", f"{i}/{len(domains)} domains")
                 if not crawl:
                     continue
+                cl_report.fetched += 1
                 if store:
                     import json
 

@@ -45,7 +45,9 @@ jobs:
         run: |
           LIMIT="${{ github.event.inputs.limit }}"
           NEWS_LIMIT="${{ github.event.inputs.news_limit }}"
-          uv run agentdossier build --out data/catalog --cache build/snapshots \
+          # 150-minute budget inside the 180-minute job limit: stages that run out of time
+          # skip their remaining items and say so in the report, so a PR is always produced.
+          uv run agentdossier build --out data/catalog --cache build/snapshots --budget-minutes 150 \
             ${LIMIT:+--limit $LIMIT} ${NEWS_LIMIT:+--news-limit $NEWS_LIMIT}
       - name: Validate outputs
         run: uv run python scripts/validate_catalog.py data/catalog
