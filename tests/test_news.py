@@ -142,3 +142,29 @@ def test_gdelt_circuit_breaker(monkeypatch):
         pass
     assert len(calls) == n  # no further requests once tripped
     sources.gdelt_reset()
+
+
+def test_budget_skips_remaining_resources(monkeypatch, tmp_path):
+    """A build budget that has already run out leaves resources unchecked, never half-checked."""
+    from agentdossier.news import run as news_run
+    from agentdossier.util import Deadline
+
+    monkeypatch.setattr(sources, "hackernews", lambda *a, **k: [])
+    monkeypatch.setattr(sources, "vendor_feed", lambda *a, **k: [])
+    resources = [
+        {
+            "id": f"r{i}",
+            "name": f"Distinctive Agent {i}",
+            "vendor": "V",
+            "publisher_domain": None,
+            "url": None,
+        }
+        for i in range(3)
+    ]
+    expired = Deadline(0.0)  # zero minutes: expired immediately
+    rep = news_run.run(resources, store=None, use_gdelt=False, use_nvd=False, deadline=expired)
+    assert rep["news"]["skipped"] == 3 and rep["news"]["fetched"] == 0
+    assert not any(r.get("news_checked") for r in resources)
+    fresh = Deadline(None)
+    rep = news_run.run(resources, store=None, use_gdelt=False, use_nvd=False, deadline=fresh)
+    assert rep["news"]["fetched"] == 3 and all(r.get("news_checked") for r in resources)

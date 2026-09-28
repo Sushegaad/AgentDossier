@@ -108,6 +108,7 @@ def run(
     concurrency: int = 8,
     limit: int | None = None,
     mcp_handshake: bool = False,
+    deadline: Any = None,
 ) -> tuple[list[dict[str, Any]], ConnectorReport]:
     """Inspect every distinct publisher domain; returns new resources from ARD entries."""
     report = ConnectorReport(SOURCE)
@@ -121,6 +122,9 @@ def run(
     domains = sorted(by_domain)[:limit] if limit else sorted(by_domain)
 
     def work(domain: str) -> tuple[str, dict[str, Any] | None]:
+        if deadline is not None and deadline.expired():
+            report.skipped += 1
+            return domain, None
         try:
             return domain, inspect_origin(f"https://{domain}", policy=policy, mcp_handshake=mcp_handshake)
         except Exception as exc:  # noqa: BLE001 - one bad host must not stop the run
@@ -130,10 +134,12 @@ def run(
     new_resources: list[dict[str, Any]] = []
     known_ids = {r.get("external_ids", {}).get("ard") for r in resources}
     with ThreadPoolExecutor(max_workers=concurrency) as pool:
-        for domain, inspection in pool.map(work, domains):
-            report.fetched += 1
+        for i, (domain, inspection) in enumerate(pool.map(work, domains), 1):
+            if i % 50 == 0 and deadline is not None:
+                deadline.log("ard_web", f"{i}/{len(domains)} origins")
             if inspection is None:
                 continue
+            report.fetched += 1
             if store:
                 import json
 

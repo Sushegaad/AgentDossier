@@ -78,6 +78,10 @@ def cmd_build(args: argparse.Namespace) -> int:
         news=not args.no_news,
         claim_domain_limit=args.claim_domains,
         news_limit=args.news_limit,
+        budget_minutes=(args.budget_minutes or None),
+        github_cap=args.github_cap,
+        huggingface_cap=args.huggingface_cap,
+        mcp_registry_cap=args.mcp_registry_cap,
     )
     result = build(opts)
     s = result.summary
@@ -288,6 +292,15 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-news", action="store_true", help="skip news, community and NVD checks")
     p.add_argument("--claim-domains", type=int, help="cap the number of vendor domains crawled for claims")
     p.add_argument("--news-limit", type=int, help="cap the number of resources checked for news and CVEs")
+    p.add_argument(
+        "--budget-minutes",
+        type=float,
+        default=150.0,
+        help="wall-clock budget; later stages skip remaining items when it runs out (0 = unlimited)",
+    )
+    p.add_argument("--github-cap", type=int, default=300, help="most-starred GitHub repositories kept per run")
+    p.add_argument("--huggingface-cap", type=int, default=150)
+    p.add_argument("--mcp-registry-cap", type=int, default=300)
     p.set_defaults(func=cmd_build)
 
     p = sub.add_parser(

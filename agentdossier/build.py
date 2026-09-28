@@ -33,7 +33,7 @@ from .connectors.seed_xlsx import import_seed
 from .dedup import dedup, load_decisions, resource_slug, write_review_file
 from .news import run as news_run
 from .score import COMPONENTS_VERSION, ScoringConfig, components_from_signals, score_for_domain
-from .util import ROOT, NetPolicy, domain_of, load_config, now_iso
+from .util import ROOT, Deadline, NetPolicy, domain_of, load_config, now_iso
 
 ALL_SOURCES = ("seed", "marketplaces", "mcp_registry", "huggingface", "github", "ard_web")
 DISCLAIMER = (
@@ -53,6 +53,13 @@ class BuildOptions:
     seed_path: Path = ROOT / "data" / "seed" / "top_100_ai_agents_by_domain_2026-09-25.xlsx"
     offline: bool = False
     limit: int | None = None  # cap discovered resources per source (dev runs)
+    # Default caps for a weekly run: the public catalog is curated, not exhaustive. GitHub alone
+    # matches 2,000+ repositories above 25 stars; taking the best few hundred keeps the crawl,
+    # evidence and news stages inside the runner's time limit. --limit overrides all three.
+    github_cap: int = 300
+    huggingface_cap: int = 150
+    mcp_registry_cap: int = 300
+    budget_minutes: float | None = 150.0  # wall-clock budget for the whole build (None = unlimited)
     ard_domain_limit: int | None = None
     mcp_handshake: bool = False
     github_min_stars: int = 25
@@ -174,10 +181,20 @@ def _issues_tier(res: dict[str, Any]) -> int | None:
     return 1 if not issues.get("links") else 3
 
 
+_deadline: Deadline = Deadline(None)
+
+
+def deadline() -> Deadline:
+    return _deadline
+
+
 def collect(opts: BuildOptions) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
+    global _deadline
+    _deadline = Deadline(opts.budget_minutes)
     store = None if opts.offline else SnapshotStore(opts.cache_dir)
     reports: dict[str, dict[str, Any]] = {}
     resources: list[dict[str, Any]] = []
+    _deadline.log("collect", f"sources {', '.join(opts.sources)}")
 
     if "seed" in opts.sources:
         seed = import_seed(opts.seed_path)
@@ -199,12 +216,14 @@ def collect(opts: BuildOptions) -> tuple[list[dict[str, Any]], dict[str, dict[st
 
     if "mcp_registry" in opts.sources:
         rs, rep = mcp_registry.run(store=store, policy=opts.policy, max_pages=(2 if opts.limit else 200))
-        resources.extend(rs[: opts.limit] if opts.limit else rs)
+        resources.extend(rs[: (opts.limit or opts.mcp_registry_cap)])
         reports["mcp_registry"] = rep.as_dict()
+        _deadline.log("mcp_registry", f"{min(len(rs), opts.limit or opts.mcp_registry_cap)} of {len(rs)}")
     if "huggingface" in opts.sources:
         rs, rep = huggingface.run(store=store, policy=opts.policy, limit=(opts.limit or 500))
-        resources.extend(rs[: opts.limit] if opts.limit else rs)
+        resources.extend(rs[: (opts.limit or opts.huggingface_cap)])
         reports["huggingface"] = rep.as_dict()
+        _deadline.log("huggingface", f"{min(len(rs), opts.limit or opts.huggingface_cap)} of {len(rs)}")
     if "github" in opts.sources:
         if os.environ.get("GITHUB_TOKEN"):
             rs, rep = github.run(
@@ -213,8 +232,11 @@ def collect(opts: BuildOptions) -> tuple[list[dict[str, Any]], dict[str, dict[st
                 min_stars=opts.github_min_stars,
                 max_pages=(1 if opts.limit else 10),
             )
-            resources.extend(rs[: opts.limit] if opts.limit else rs)
+            # best-first: the cap keeps the most-starred repositories
+            rs.sort(key=lambda r: -int((r.get("signals") or {}).get("github_stars") or 0))
+            resources.extend(rs[: (opts.limit or opts.github_cap)])
             reports["github"] = rep.as_dict()
+            _deadline.log("github", f"{min(len(rs), opts.limit or opts.github_cap)} of {len(rs)} (by stars)")
         else:
             reports["github"] = {"source": "github", "skipped": "GITHUB_TOKEN not set"}
     return resources, reports
@@ -234,6 +256,7 @@ def enrich(
     if opts.write_review and result.candidates:
         reports["dedup"]["review_added"] = write_review_file(result.candidates)
     resources = result.resources
+    _deadline.log("dedup", f"{len(resources)} resources")
 
     if "ard_web" in opts.sources and not opts.offline:
         store = SnapshotStore(opts.cache_dir)
@@ -247,7 +270,9 @@ def enrich(
             policy=opts.policy,
             limit=opts.ard_domain_limit,
             mcp_handshake=opts.mcp_handshake,
+            deadline=_deadline,
         )
+        _deadline.log("ard_web", f"{rep.fetched} origins inspected, {len(new)} ARD entries")
         reports["ard_web"] = rep.as_dict()
         if new:
             resources = dedup(resources + new, decisions=decisions, fuzzy=False).resources
@@ -264,16 +289,24 @@ def enrich(
     if opts.compliance and not opts.offline:
         store = SnapshotStore(opts.cache_dir)
         comp_reports, review = compliance_run.run(
-            resources, store=store, policy=opts.policy, claim_domain_limit=opts.claim_domain_limit
+            resources,
+            store=store,
+            policy=opts.policy,
+            claim_domain_limit=opts.claim_domain_limit,
+            deadline=_deadline,
         )
+        _deadline.log("compliance", "done")
         reports.update(comp_reports)
         if opts.write_review and review:
             reports["compliance_review_added"] = {"added": write_review_file(review)}
     if opts.news and not opts.offline:
         store = SnapshotStore(opts.cache_dir)
-        reports.update(news_run.run(resources, store=store, policy=opts.policy, limit=opts.news_limit))
-        for res in resources:
-            res["news_checked"] = True
+        reports.update(
+            news_run.run(
+                resources, store=store, policy=opts.policy, limit=opts.news_limit, deadline=_deadline
+            )
+        )
+        _deadline.log("news", "done")
 
     for res in resources:
         is_seed = any(s["system"] == "seed_xlsx" for s in res["sources"])
