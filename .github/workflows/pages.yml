@@ -47,6 +47,7 @@ jobs:
           CATALOG_DIR: ${{ steps.catalog.outputs.dir }}
           SITE_BASE: /AgentDossier
           SITE_URL: https://sushegaad.github.io
+          PUBLIC_GA_ID: G-H3M4PC9X93  # public demo only; consent mode, cookieless until opted in
         run: |
           npm ci
           npm run build

@@ -10,7 +10,7 @@ Reference implementation by Hemant Naik. Sample data compiled from public
 sources as of a stated date. It is not an assessment, certification or
 recommendation. Confirm current status with the vendor and the issuing body.
 
-- **Public demo:** https://sushegaad.github.io/AgentDossier/ (static, no accounts, no analytics)
+- **Public demo:** https://sushegaad.github.io/AgentDossier/ (static, no accounts; Google Analytics in cookieless consent mode)
 - **Enterprise edition:** the same MIT codebase as one self-hosted container with a private-network scanner (Phase 2)
 - **Docs:** `docs/` (architecture, methodology, operator guide, BRD traceability)
 

@@ -913,3 +913,34 @@ dl.facts dd {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1rem;
 }
+
+/* analytics consent banner (only rendered when PUBLIC_GA_ID is set) */
+.consent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 0.85rem;
+  border-top: 2px solid var(--accent);
+  z-index: 20;
+}
+.consent .container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.consent .btn {
+  color: var(--bg);
+  border-color: var(--bg);
+}
+.consent .btn.primary {
+  background: var(--accent-ink);
+  border-color: var(--accent-ink);
+  color: #f3f2f2;
+}

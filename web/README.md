@@ -2,7 +2,8 @@
 
 The public demo site (Astro 5 + React islands + TypeScript + MiniSearch), served
 from GitHub Pages at https://sushegaad.github.io/AgentDossier/. It is fully
-static: no server, no accounts, no analytics. Search, the intent parser, the
+static: no server, no accounts; Google Analytics runs in cookieless consent mode on the
+public demo only (`PUBLIC_GA_ID`), self-hosted builds ship no analytics. Search, the intent parser, the
 explanations and the shortlist all run in the browser.
 
 ```bash
