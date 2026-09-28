@@ -1,0 +1,213 @@
+{
+"canonical_url": "docs.copilotkit.ai",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"assistant",
+"copilot",
+"slack"
+],
+"technology": [
+"llm",
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 26.52,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 69.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 26.52,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 71.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "CopilotKit/CopilotKit"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_2dea3cbc081f1c1e",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "MIT",
+"name": "CopilotKit",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-28T19:48:49Z",
+"headline": "CopilotKit v1.75.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "### Features\n\n- feat(react-core): add transformMessages to CopilotChatMessageView (#7488) (eb460b3)\n\n### Fixes\n\n- fix(core): keep the reconnect cursor when a control frame repeats an old checkpoint (#7490) (d3c36bb)\n- fix(runtime): enforce",
+"tag": "product_update",
+"url": "https://github.com/CopilotKit/CopilotKit/releases/tag/v1.75.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-25T23:44:33Z",
+"headline": "CopilotKit v1.74.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "### Features\n\n- feat(web-inspector): support targeted notifications in What's New (#6956) (9434edd)\n- feat: consume learned skills from multiple containers across SDKs (#7384) (6252d10)\n- feat(web-inspector): track launcher HUD impressions",
+"tag": "product_update",
+"url": "https://github.com/CopilotKit/CopilotKit/releases/tag/v1.74.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:32Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:31Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:32Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "docs.copilotkit.ai",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:09Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2023-06-19T04:08:31Z",
+"github_forks": 4667,
+"github_language": "TypeScript",
+"github_open_issues": 314,
+"github_pushed_at": "2026-09-28T23:18:13Z",
+"github_stars": 37585,
+"github_topic": "ai-agent",
+"homepage": "https://docs.copilotkit.ai"
+},
+"slug": "copilotkit-copilotkit",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/CopilotKit/CopilotKit"
+}
+],
+"tags": [
+"agent",
+"agent-native",
+"agentic-ai",
+"agents",
+"ai",
+"ai-agent",
+"ai-assistant",
+"assistant",
+"assistant-chat-bots",
+"copilot",
+"copilot-chat",
+"generative-ui",
+"js",
+"llm",
+"nextjs",
+"open-source",
+"react",
+"reactjs",
+"ts",
+"typescript"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://docs.copilotkit.ai",
+"vendor": "CopilotKit"
+}

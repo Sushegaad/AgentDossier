@@ -1,0 +1,164 @@
+{
+"canonical_url": "open-sandbox.ai",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"kubernetes"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 24.3,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 1.5,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 65.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "opensandbox-group/OpenSandbox"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_c621e3d1b121e018",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "Apache-2.0",
+"name": "OpenSandbox",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-28T08:21:29Z",
+"headline": "OpenSandbox OpenSandbox 1.1.1-rc.1",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# OpenSandbox 1.1.1-rc.1\n\nFirst release candidate on the 1.1.1 patch line, cut to fix the broken `1.1.0` server wheel: hatchling's VCS-exclude filtering silently dropped the committed FastPath gRPC stubs from the PyPI package, so every `1.1",
+"tag": "product_update",
+"url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.1.1-rc.1"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-21T07:46:25Z",
+"headline": "OpenSandbox OpenSandbox 1.1.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# OpenSandbox 1.1.0\r\n\r\nFirst stable release of the unified umbrella release line: one platform version — `1.1.0` — covers server, component images, charts, CLI, and every published SDK, cut from one commit and pinned in a signed BOM (versio",
+"tag": "product_update",
+"url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.1.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:11Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:10Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:12Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "open-sandbox.ai",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:54Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-12-17T08:41:09Z",
+"github_forks": 1432,
+"github_language": "Python",
+"github_open_issues": 128,
+"github_pushed_at": "2026-09-28T11:34:51Z",
+"github_stars": 15557,
+"github_topic": "ai-agent",
+"homepage": "https://open-sandbox.ai"
+},
+"slug": "opensandbox-group-opensandbox",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/opensandbox-group/OpenSandbox"
+}
+],
+"tags": [
+"ai",
+"ai-agent",
+"ai-infra",
+"kubernetes",
+"sandbox"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://open-sandbox.ai",
+"vendor": "opensandbox-group"
+}

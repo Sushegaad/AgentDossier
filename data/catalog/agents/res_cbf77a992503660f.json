@@ -19,7 +19,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "ef1774d0afc0b95b6dce4b3917bc4c0d2f57b4602e5d0bcd24cfb1ea61305fb7",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:20Z",
+"retrieved_at": "2026-09-28T23:33:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "6474d88f583945e540b9f30e169933bb8460bd49c77f8e51e3070bc617b4bc6f",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:20Z",
+"retrieved_at": "2026-09-28T23:33:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "ef1774d0afc0b95b6dce4b3917bc4c0d2f57b4602e5d0bcd24cfb1ea61305fb7",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:20Z",
+"retrieved_at": "2026-09-28T23:33:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "db4c2a8abdf808677360f1c0313169b5df414df0c8a6e65683bb3499d0e616fb",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:20Z",
+"retrieved_at": "2026-09-28T23:33:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -123,7 +123,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "ef1774d0afc0b95b6dce4b3917bc4c0d2f57b4602e5d0bcd24cfb1ea61305fb7",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:20Z",
+"retrieved_at": "2026-09-28T23:33:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -165,7 +165,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -187,24 +187,23 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Lindy",
 "news": [],
-"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:47Z",
+"checked_at": "2026-09-28T23:26:55Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:45Z",
+"checked_at": "2026-09-28T23:26:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:48Z",
+"checked_at": "2026-09-28T23:26:56Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -223,7 +222,7 @@
 "sources": [
 {
 "payload_hash": "fec522e1664b3dbd42cb6e8b13c2e0d502fead10c047785545458992d483e2d5",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.lindy.ai/"
 }
@@ -233,7 +232,7 @@
 "trust": {
 "compliance": 4,
 "identity": 3,
-"issues": 1,
+"issues": null,
 "protocols": 5,
 "security": null
 },

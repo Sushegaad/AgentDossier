@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:30Z",
+"retrieved_at": "2026-09-28T23:29:33Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -48,9 +48,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "16b80fff2bb731349dad0b290b6901f1151375cf4bfaccc0f90a73736cbc9619",
+"payload_hash": "016702e48c5acea5b327cf33ae51b1468a940b405dab755754bebd3f665d25da",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:55Z",
+"retrieved_at": "2026-09-28T23:31:46Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -74,9 +74,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "842420f8e0e32dcca9e980bc2279acd21764701dc40c8d04517c27f48d4c5c65",
+"payload_hash": "dbb7c53ad8a3299ba6abb9020644842dc50f0975f38cf3169f38a3867dd0729b",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:55Z",
+"retrieved_at": "2026-09-28T23:31:46Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -294,7 +294,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -316,24 +316,38 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Atlassian service",
 "name": "Atlassian Rovo",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-08-05T17:23:25Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49185983",
+"engagement": 444,
+"headline": "Atlassian Rovo Exfiltrates Data, Bypassing Controls",
+"kind": "community",
+"link_confidence": 0.95,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:25Z",
+"checked_at": "2026-09-28T23:25:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:23Z",
+"checked_at": "2026-09-28T23:25:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:26Z",
+"checked_at": "2026-09-28T23:25:33Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -341,6 +355,13 @@
 "publisher_domain": "atlassian.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:10Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -352,7 +373,7 @@
 "sources": [
 {
 "payload_hash": "d50e0c762e9606a9e537de7b81e479256b903323fe3d4ef9c344d542af44f601",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.atlassian.com/software/rovo"
 }
@@ -364,7 +385,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.atlassian.com/software/rovo",
 "vendor": "Atlassian"

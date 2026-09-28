@@ -1,0 +1,203 @@
+{
+"canonical_url": "oh-my-claudecode.dev",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation",
+"teams"
+],
+"technology": [
+"code",
+"coding",
+"orchestration"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Teams-first Multi-agent orchestration for Claude Code",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 26.63,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 67.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 26.63,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 73.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "Yeachan-Heo/oh-my-claudecode"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_1735c88d02269a2b",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "oh-my-claudecode",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-22T01:34:18Z",
+"headline": "oh-my-claudecode v5.5.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# oh-my-claudecode v5.5.0: jev — advisory, point registry and, jev — ralph\n\n## Release Notes\n\nRelease with **22 new features**, **24 bug fixes**, **5 other changes** across **57 merged PRs**.\n\n### Highlights\n\n- **feat(hooks): jev — advisory",
+"tag": "product_update",
+"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.5.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-11T12:51:48Z",
+"headline": "oh-my-claudecode v5.4.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# oh-my-claudecode v5.4.0: respect CLAUDE_CODE_OAUTH_TOKEN when, add agent-doc-discipline skill, pre-flight danger scan\n\n## Release Notes\n\nRelease with **5 new features**, **10 bug fixes** across **16 merged PRs**.\n\n### Highlights\n\n- **feat",
+"tag": "product_update",
+"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.4.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:08Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:07Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:08Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "oh-my-claudecode.dev",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:06Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-01-09T03:36:29Z",
+"github_forks": 3520,
+"github_language": "TypeScript",
+"github_open_issues": 1,
+"github_pushed_at": "2026-09-28T18:39:25Z",
+"github_stars": 39395,
+"github_topic": "ai-agents",
+"homepage": "https://oh-my-claudecode.dev"
+},
+"slug": "yeachan-heo-oh-my-claudecode",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
+}
+],
+"tags": [
+"agentic-coding",
+"ai-agents",
+"automation",
+"claude",
+"claude-code",
+"multi-agent-systems",
+"oh-my-opencode",
+"opencode",
+"parallel-execution",
+"vibe-coding"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://oh-my-claudecode.dev",
+"vendor": "Yeachan-Heo"
+}

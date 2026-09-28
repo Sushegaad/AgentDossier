@@ -66,7 +66,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -82,13 +82,74 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 18,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2025-06-27",
+"kind": "cve",
+"title": "CVE-2025-53097",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-53097"
+},
+{
+"date": "2025-06-27",
+"kind": "cve",
+"title": "CVE-2025-53098",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-53098"
+},
+{
+"date": "2025-07-07",
+"kind": "cve",
+"title": "CVE-2025-53536",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-53536"
+},
+{
+"date": "2025-07-23",
+"kind": "cve",
+"title": "CVE-2025-54377",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54377"
+},
+{
+"date": "2025-08-22",
+"kind": "cve",
+"title": "CVE-2025-57771",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-57771"
+},
+{
+"date": "2025-09-05",
+"kind": "cve",
+"title": "CVE-2025-58370",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58370"
+},
+{
+"date": "2025-09-05",
+"kind": "cve",
+"title": "CVE-2025-58371",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58371"
+},
+{
+"date": "2025-09-05",
+"kind": "cve",
+"title": "CVE-2025-58372",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58372"
+},
+{
+"date": "2025-09-05",
+"kind": "cve",
+"title": "CVE-2025-58373",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58373"
+},
+{
+"date": "2025-09-06",
+"kind": "cve",
+"title": "CVE-2025-58374",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58374"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Apache-2.0",
 "name": "Roo Code",
 "news": [],
@@ -107,6 +168,13 @@
 "publisher_domain": "github.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:36:06Z",
+"cves": 18,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -118,7 +186,7 @@
 "sources": [
 {
 "payload_hash": "c4275786703aa21da30324323702e8ada04eacd9ed53d06a290cba9d5630723f",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://github.com/RooCodeInc/Roo-Code"
 }
@@ -128,9 +196,9 @@
 "trust": {
 "compliance": 5,
 "identity": 4,
-"issues": 1,
+"issues": 3,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://github.com/RooCodeInc/Roo-Code",
 "vendor": "RooCode"

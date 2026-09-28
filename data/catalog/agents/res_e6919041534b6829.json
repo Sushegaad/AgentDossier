@@ -1,0 +1,182 @@
+{
+"canonical_url": "hypit.ai",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation",
+"workflow"
+],
+"technology": [
+"llm",
+"programming",
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 24.55,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 66.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 24.55,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 71.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "hypit-ai/hypit"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_e6919041534b6829",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "Other",
+"name": "hypit",
+"news": [],
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:51Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:48Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:52Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "hypit.ai",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-07-29T18:49:19Z",
+"github_forks": 2054,
+"github_language": "TypeScript",
+"github_open_issues": 17,
+"github_pushed_at": "2026-09-28T08:54:48Z",
+"github_stars": 17215,
+"github_topic": "ai-agents",
+"homepage": "https://hypit.ai"
+},
+"slug": "hypit-ai-hypit",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/hypit-ai/hypit"
+}
+],
+"tags": [
+"agentic-ai",
+"ai",
+"ai-agents",
+"ai-video",
+"compiler",
+"dsl",
+"ffmpeg",
+"generative-ai",
+"llm",
+"markup-language",
+"monorepo",
+"plugin-system",
+"programming-language",
+"text-to-video",
+"typescript",
+"video",
+"video-automation",
+"video-clone",
+"video-editing",
+"video-generation"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://hypit.ai",
+"vendor": "hypit-ai"
+}

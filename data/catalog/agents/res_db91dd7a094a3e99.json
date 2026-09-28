@@ -1,0 +1,224 @@
+{
+"canonical_url": "go.kestra.io/home",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation",
+"workflow"
+],
+"data": [
+"data",
+"etl"
+],
+"technology": [
+"code",
+"devops",
+"infrastructure",
+"orchestration"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Event Driven Orchestration & Scheduling Platform for Mission Critical Applications",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 25.82,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 67.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 25.82,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 69.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 25.82,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 73.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "kestra-io/kestra"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_db91dd7a094a3e99",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "Apache-2.0",
+"name": "kestra",
+"news": [],
+"protocols": {
+"a2a": {
+"card_url": "https://go.kestra.io/.well-known/agent.json",
+"checked_at": "2026-09-28T23:26:43Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:42Z",
+"errors": [
+"https://go.kestra.io/.well-known/ard.json: not valid JSON",
+"https://go.kestra.io/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://go.kestra.io/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:26:44Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "go.kestra.io",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2019-08-24T13:56:15Z",
+"github_forks": 3068,
+"github_language": "Java",
+"github_open_issues": 686,
+"github_pushed_at": "2026-09-28T22:25:40Z",
+"github_stars": 28451,
+"github_topic": "ai-agents",
+"homepage": "https://go.kestra.io/home"
+},
+"slug": "kestra-io-kestra",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/kestra-io/kestra"
+}
+],
+"tags": [
+"ai-agents",
+"automation",
+"control-plane",
+"data-engineering",
+"data-orchestration",
+"data-orchestrator",
+"devops",
+"etl",
+"hacktoberfest",
+"high-availability",
+"infra-automation",
+"infra-ops",
+"infrastructure-as-code",
+"java",
+"low-code",
+"orchestration",
+"pipeline",
+"pipeline-as-code",
+"scheduler",
+"workflow"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://go.kestra.io/home",
+"vendor": "kestra-io"
+}

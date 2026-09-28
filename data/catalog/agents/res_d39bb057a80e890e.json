@@ -19,7 +19,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "85c1e20f2760da411ca4ac37f968fb3410c7318a2f92040fe453d6631928321e",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:32Z",
+"retrieved_at": "2026-09-28T23:33:45Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "e70f3586b5f49405b51449ff51caf6bf3a3c6e69a0a9d6ea4b5fda6027903fd5",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:32Z",
+"retrieved_at": "2026-09-28T23:33:45Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "8eb28f093c9657b20a512de502df47055d433619832725c51c96e8495e204d8f",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:32Z",
+"retrieved_at": "2026-09-28T23:33:45Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "85c1e20f2760da411ca4ac37f968fb3410c7318a2f92040fe453d6631928321e",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:32Z",
+"retrieved_at": "2026-09-28T23:33:45Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -203,7 +203,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -225,24 +225,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Shift Technology AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:58Z",
+"checked_at": "2026-09-28T23:27:28Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:56Z",
+"checked_at": "2026-09-28T23:27:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:59Z",
+"checked_at": "2026-09-28T23:27:29Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -250,6 +250,13 @@
 "publisher_domain": "shift-technology.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:36:02Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -261,7 +268,7 @@
 "sources": [
 {
 "payload_hash": "0d6d8538f168f4845d66b9b921aa7c1e438c51a3515d26c083a6db692c5eb7ee",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.shift-technology.com/"
 }
@@ -273,7 +280,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.shift-technology.com/",
 "vendor": "Shift Technology"

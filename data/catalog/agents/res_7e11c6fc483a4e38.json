@@ -1,0 +1,140 @@
+{
+"canonical_url": "github.com/bitroadai/bitroad-mcp",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Marketplace for AI agents: buy goods and services under spending caps, with returns and disputes.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": null,
+"health": 16.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 42.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "bitroadai/bitroad-mcp",
+"mcp_registry": "ai.bitroad/bitroad"
+},
+"first_seen": "2026-09-28T23:18:08Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_7e11c6fc483a4e38",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:18:08Z",
+"license": null,
+"name": "ai.bitroad/bitroad",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://app.bitroad.ai/api/v1/mcp"
+}
+],
+"server_name": "ai.bitroad/bitroad",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:38:22Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-08-17T19:06:22.088057Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-08-17T19:06:22.088057Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "bitroad-ai-ai-bitroad-bitroad",
+"sources": [
+{
+"payload_hash": "6d8edb12df8af8bd08e83f9ae14dc913f58386c25fe63b33b9eb73c3e4570c90",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bitroad/bitroad"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": 1
+},
+"url": "https://github.com/bitroadai/bitroad-mcp",
+"vendor": "bitroad.ai"
+}

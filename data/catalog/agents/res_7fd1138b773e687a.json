@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "7aa32ec6e63e2a71f8e15f3a97dbee6140a787aa6cbafcc0f384fcc71646b317",
+"payload_hash": "491d2e88baaf3f929ac2790a9a0da8d63c65ed819fc4658f3049342d9987b54f",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:35Z",
+"retrieved_at": "2026-09-28T23:34:03Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "60704c4bed9c2e0a7958834df2c05567c861ba3c2e52594d4ddff055fcdc1763",
+"payload_hash": "3867622b6d7881351ffc7941a4d14073b9c7a0238e8ffdb39621992baf470a27",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:35Z",
+"retrieved_at": "2026-09-28T23:34:03Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "60704c4bed9c2e0a7958834df2c05567c861ba3c2e52594d4ddff055fcdc1763",
+"payload_hash": "3867622b6d7881351ffc7941a4d14073b9c7a0238e8ffdb39621992baf470a27",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:35Z",
+"retrieved_at": "2026-09-28T23:34:03Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -145,7 +145,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -167,24 +167,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "vLex Vincent AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:17:02Z",
+"checked_at": "2026-09-28T23:27:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:17:01Z",
+"checked_at": "2026-09-28T23:27:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:17:03Z",
+"checked_at": "2026-09-28T23:27:41Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -192,6 +192,13 @@
 "publisher_domain": "vlex.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:36:05Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -203,7 +210,7 @@
 "sources": [
 {
 "payload_hash": "0191dc24738229fedad8c7a19804e17566f7c63492b34279a593df7bc469bf3a",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://vlex.com/vincent-ai"
 }
@@ -215,7 +222,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://vlex.com/vincent-ai",
 "vendor": "vLex"

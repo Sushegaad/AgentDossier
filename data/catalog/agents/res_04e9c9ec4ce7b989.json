@@ -1,0 +1,209 @@
+{
+"canonical_url": "steel.dev",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation"
+],
+"technology": [
+"api",
+"infrastructure",
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "HIPAA: BAA available (vendor-claimed, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://steel.dev/",
+"framework": "hipaa",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "530c435f661fed05196cc939b7d0a7afa39d2def42e7311c9962ce7ec29421e4",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:33:49Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "BAA_AVAILABLE"
+}
+],
+"deployment": "self-hosted",
+"description": "🔥 Open Source Browser API for AI Agents & Apps. Steel Browser is a batteries-included browser sandbox that lets you automate the web without worrying about infrastructure.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 22.53,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 1.5,
+"governance": 10.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 60.5,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 61.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 22.53,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 1.5,
+"governance": 10.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 67.5,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 67.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "steel-dev/steel-browser"
+},
+"first_seen": "2026-09-28T23:19:17Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_04e9c9ec4ce7b989",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:17Z",
+"license": "Apache-2.0",
+"name": "steel-browser",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-08-25T19:41:16Z",
+"headline": "steel-browser Release v0.5.4-beta",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## Improvements\n\n- [`3b2335`](https://github.com/steel-dev/steel-browser/commit/3b2335ec8e001bafd496af095d7cffce574e34ab): feat: update chrome browser support for 146 + resolve extension installtion (#292) (@jagadeshjai)\n- [`fc75fc`](https:",
+"tag": "product_update",
+"url": "https://github.com/steel-dev/steel-browser/releases/tag/v0.5.4-beta"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:30Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:29Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:31Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "steel.dev",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:41Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2024-11-01T18:15:29Z",
+"github_forks": 982,
+"github_language": "TypeScript",
+"github_open_issues": 71,
+"github_pushed_at": "2026-09-28T20:40:14Z",
+"github_stars": 7708,
+"github_topic": "ai-agents",
+"homepage": "https://steel.dev"
+},
+"slug": "steel-dev-steel-browser",
+"sources": [
+{
+"payload_hash": "ec7e7a70a241a9f4d77eac9f21621dc1003b58d355aefbc8c78dfeb9f9d4afb6",
+"retrieved_at": "2026-09-28T23:19:17Z",
+"system": "github",
+"url": "https://github.com/steel-dev/steel-browser"
+}
+],
+"tags": [
+"ai",
+"ai-agents",
+"ai-tools",
+"browser-automation",
+"llm"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://steel.dev",
+"vendor": "steel-dev"
+}

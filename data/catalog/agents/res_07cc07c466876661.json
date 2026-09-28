@@ -47,7 +47,7 @@
 "external_ids": {
 "huggingface_space": "smolagents/computer-use-agent"
 },
-"first_seen": "2026-09-28T00:14:55Z",
+"first_seen": "2026-09-28T23:19:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -69,7 +69,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:55Z",
+"last_seen": "2026-09-28T23:19:10Z",
 "license": null,
 "name": "CUA - Computer Use Agent 2.0",
 "news": [],
@@ -88,6 +88,13 @@
 "publisher_domain": "huggingface.co",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:39:45Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "signals": {
 "hf_created_at": "2025-11-07T12:53:39.000Z",
 "hf_last_modified": "2025-11-27T16:37:28.000Z",
@@ -98,8 +105,8 @@
 "slug": "smolagents-cua-computer-use-agent-2-0",
 "sources": [
 {
-"payload_hash": "bdc7bd0a67807a55c6389750fbe171a7ff3b5ded36f629b52ad06d8033a21977",
-"retrieved_at": "2026-09-28T00:14:55Z",
+"payload_hash": "a0992693f7d0a52045903435887764010e7037b275d9faca10dd21c3cf4f2e3f",
+"retrieved_at": "2026-09-28T23:19:10Z",
 "system": "huggingface",
 "url": "https://huggingface.co/spaces/smolagents/computer-use-agent"
 }
@@ -113,7 +120,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://huggingface.co/spaces/smolagents/computer-use-agent",
 "vendor": "smolagents"

@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "180ea9532ccb3d4a8e083c4f5c77fcf1253a8c9db2794f5e0dd73e91b59d16d1",
+"payload_hash": "fd869b908dc9aa5a402562168ed3b7426971e952d93cf7d7e46249ace7bb8295",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:38Z",
+"retrieved_at": "2026-09-28T23:33:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "180ea9532ccb3d4a8e083c4f5c77fcf1253a8c9db2794f5e0dd73e91b59d16d1",
+"payload_hash": "fd869b908dc9aa5a402562168ed3b7426971e952d93cf7d7e46249ace7bb8295",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:38Z",
+"retrieved_at": "2026-09-28T23:33:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "180ea9532ccb3d4a8e083c4f5c77fcf1253a8c9db2794f5e0dd73e91b59d16d1",
+"payload_hash": "fd869b908dc9aa5a402562168ed3b7426971e952d93cf7d7e46249ace7bb8295",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:38Z",
+"retrieved_at": "2026-09-28T23:33:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -113,7 +113,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -135,24 +135,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Tractable",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:17:03Z",
+"checked_at": "2026-09-28T23:27:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:17:00Z",
+"checked_at": "2026-09-28T23:27:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:17:06Z",
+"checked_at": "2026-09-28T23:27:39Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -160,6 +160,13 @@
 "publisher_domain": "tractable.ai",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:36:20Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -171,7 +178,7 @@
 "sources": [
 {
 "payload_hash": "cb4ea29fa405ee970bc481fafe814968d11dbec9f6bcedfd7c6e747c006d131c",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://tractable.ai/"
 }
@@ -183,7 +190,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://tractable.ai/",
 "vendor": "Tractable"

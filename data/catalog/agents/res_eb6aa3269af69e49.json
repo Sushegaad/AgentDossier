@@ -1,0 +1,104 @@
+{
+"canonical_url": "cotal.ai/skills/cotal/skill.md",
+"capabilities": [
+"cotal_send",
+"cotal_dm",
+"cotal_anycast",
+"cotal_spawn",
+"cotal_persona"
+],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Agent Skill: put an AI agent on a Cotal mesh and coordinate with other agents across vendors and machines — install, start a local mesh, join, message peers, spawn teammates.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:cotal.ai:skill:cotal-mesh"
+},
+"first_seen": "2026-09-28T23:26:41Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_eb6aa3269af69e49",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:26:41Z",
+"license": null,
+"name": "cotal-mesh",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:cotal.ai:skill:cotal-mesh",
+"manifest_url": "https://cotal.ai/.well-known/ard.json",
+"media_type": "application/ai-skill+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "cotal.ai",
+"representative_queries": [
+"put my agent on a Cotal mesh",
+"make two coding agents from different vendors work as a team",
+"coordinate agents across my laptop and a CI runner",
+"install cotal and start a local mesh"
+],
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:25Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "cotal-ai-cotal-mesh",
+"sources": [
+{
+"payload_hash": "99c3cf1161138178e79e1838d4d8fecbfc0d5d28514a8ea5217ec8b1036a6dec",
+"retrieved_at": "2026-09-28T23:26:41Z",
+"system": "ard",
+"url": "https://cotal.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://cotal.ai/skills/cotal/SKILL.md",
+"vendor": "cotal.ai"
+}

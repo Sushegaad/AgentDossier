@@ -50,7 +50,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,13 +66,74 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 170,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2024-06-10",
+"kind": "cve",
+"title": "CVE-2024-37014",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37014"
+},
+{
+"date": "2024-07-30",
+"kind": "cve",
+"title": "CVE-2024-7297",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7297"
+},
+{
+"date": "2024-09-27",
+"kind": "cve",
+"title": "CVE-2024-9277",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9277"
+},
+{
+"date": "2024-10-31",
+"kind": "cve",
+"title": "CVE-2024-42835",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-42835"
+},
+{
+"date": "2024-11-04",
+"kind": "cve",
+"title": "CVE-2024-48061",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-48061"
+},
+{
+"date": "2025-04-07",
+"kind": "cve",
+"title": "CVE-2025-3248",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-3248"
+},
+{
+"date": "2025-08-25",
+"kind": "cve",
+"title": "CVE-2025-57760",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-57760"
+},
+{
+"date": "2025-12-05",
+"kind": "cve",
+"title": "CVE-2025-34291",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34291"
+},
+{
+"date": "2025-12-19",
+"kind": "cve",
+"title": "CVE-2025-68477",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68477"
+},
+{
+"date": "2025-12-19",
+"kind": "cve",
+"title": "CVE-2025-68478",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68478"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "MIT",
 "name": "Langflow",
 "news": [],
@@ -91,6 +152,13 @@
 "publisher_domain": "github.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:36:10Z",
+"cves": 170,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -102,7 +170,7 @@
 "sources": [
 {
 "payload_hash": "426392fcfacb8dd02fd71594c4e06d643cc142d96c1c83c4ed10c580c7946dc9",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://github.com/langflow-ai/langflow"
 }
@@ -112,9 +180,9 @@
 "trust": {
 "compliance": 5,
 "identity": 4,
-"issues": 1,
+"issues": 3,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://github.com/langflow-ai/langflow",
 "vendor": "Langflow"

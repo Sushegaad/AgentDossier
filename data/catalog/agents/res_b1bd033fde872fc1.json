@@ -19,7 +19,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "1328b6ba751602aef829453bcbc8f62979860d8dc63fba2426ce7b159ea41a0f",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:02Z",
+"retrieved_at": "2026-09-28T23:32:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "b79a3ab3f6bfbea8c5db868aa3dfdc772119d338d9813353f83f91ae9cd08d48",
+"payload_hash": "7fab67b95da059123beac6321c0572f9fad0cadd924f0758346b7bb70088c205",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:02Z",
+"retrieved_at": "2026-09-28T23:32:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "b79a3ab3f6bfbea8c5db868aa3dfdc772119d338d9813353f83f91ae9cd08d48",
+"payload_hash": "7fab67b95da059123beac6321c0572f9fad0cadd924f0758346b7bb70088c205",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:02Z",
+"retrieved_at": "2026-09-28T23:32:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -113,7 +113,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -135,24 +135,23 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Cytora",
 "news": [],
-"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:32Z",
+"checked_at": "2026-09-28T23:26:23Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:30Z",
+"checked_at": "2026-09-28T23:26:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:32Z",
+"checked_at": "2026-09-28T23:26:24Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -171,7 +170,7 @@
 "sources": [
 {
 "payload_hash": "d143ac85dce42d77153440bf8b6be45e2376f0a424fe831a0cdbb29b1b7a1f25",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.cytora.com/"
 }
@@ -181,7 +180,7 @@
 "trust": {
 "compliance": 4,
 "identity": 3,
-"issues": 1,
+"issues": null,
 "protocols": 5,
 "security": null
 },

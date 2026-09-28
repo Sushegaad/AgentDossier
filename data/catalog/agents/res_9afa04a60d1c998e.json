@@ -1,0 +1,183 @@
+{
+"canonical_url": "reasonix.io",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"cli",
+"coding",
+"developer",
+"framework",
+"llm",
+"terminal",
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 26.39,
+"docs": 7.0,
+"domain_fit": 94.5,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.945,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 75.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "esengine/DeepSeek-Reasonix"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9afa04a60d1c998e",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "MIT",
+"name": "DeepSeek-Reasonix",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-28T09:07:45Z",
+"headline": "DeepSeek-Reasonix Reasonix Studio v2.21.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "本版开始建设 Studio 的扩展生态：设置里新增社区市场，可以浏览、安装和发布技能、插件、MCP 服务器与主题；登录账号后还能把配置备份到云端。同时加强了本地服务、宿主 git 和沙盒的安全边界。\n\n## 新增\n\n- 设置 → 扩展新增「发现」页，可浏览社区市场并安装技能、插件和 MCP 服务器；只安装经过审核、绑定了内容摘要的版本，内容与审核时不一致会拒绝安装 (#11107 by @esengine)\n- 登录后可以从 Studio 直接发布技能、插件、MCP 服务器和",
+"tag": "product_update",
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.21.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-28T08:22:44Z",
+"headline": "DeepSeek-Reasonix Reasonix CLI v1.39.4",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "> CLI 与桌面端修复：/mcp 重试不再卡住对话、审查子代理不再被 8 轮上限打断、更换密钥保留原变量名、远程标签页显示上下文。\n\n**发布渠道：稳定版 · v1.39.4**\n\n[English →](https://reasonix.io/changelog/v1.39.4/?lang=en) · [网页版完整更新日志 →](https://reasonix.io/changelog/v1.39.4/)\n\n## 概览\n\n**Reasonix v1.39.4 — Rea",
+"tag": "product_update",
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v1.39.4"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:22Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:21Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:23Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "reasonix.io",
+"resource_type": "framework",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:10Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-04-21T08:27:02Z",
+"github_forks": 2424,
+"github_language": "Go",
+"github_open_issues": 127,
+"github_pushed_at": "2026-09-28T20:18:55Z",
+"github_stars": 35703,
+"github_topic": "ai-agent",
+"homepage": "http://reasonix.io/"
+},
+"slug": "esengine-deepseek-reasonix",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/esengine/DeepSeek-Reasonix"
+}
+],
+"tags": [
+"agent",
+"agent-framework",
+"ai-agent",
+"ai-coding",
+"cli",
+"coding-agent",
+"deepseek",
+"developer-tools",
+"dsh",
+"dsh-plugin",
+"ink",
+"llm",
+"prompt-caching",
+"r1",
+"terminal",
+"tool-use",
+"tui",
+"typescript"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "http://reasonix.io/",
+"vendor": "esengine"
+}

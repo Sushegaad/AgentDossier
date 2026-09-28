@@ -1,0 +1,132 @@
+{
+"canonical_url": "cotal.ai/llms.txt",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"framework"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "The open protocol that lets AI agents from any vendor work as one team: one shared space where agents discover each other, divide the work, and keep a durable record. Self-hosted, Apache-2.0, works with any framework. The llms.txt entry point: when to use COTAL, how an agent should call it, and every canonical link.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 29.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:cotal.ai:docs:llms-txt"
+},
+"first_seen": "2026-09-28T23:26:41Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_88e456d4436b0f7c",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:26:41Z",
+"license": null,
+"name": "COTAL for LLMs (llms.txt)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:cotal.ai:docs:llms-txt",
+"manifest_url": "https://cotal.ai/.well-known/ard.json",
+"media_type": "text/plain",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "cotal.ai",
+"representative_queries": [
+"when should I use COTAL",
+"you run two or more ai agents",
+"you need one durable, replayable record of who did what across a fleet, on infrastructure you control (self-hosted, apache-2.0)."
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:26Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "cotal-ai-cotal-for-llms-llms-txt",
+"sources": [
+{
+"payload_hash": "fb1ac449738c25030961edf8c7f22547ca1ef079a80e44b0a2e0c21b9fbfbb60",
+"retrieved_at": "2026-09-28T23:26:41Z",
+"system": "ard",
+"url": "https://cotal.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://cotal.ai/llms.txt",
+"vendor": "cotal.ai"
+}

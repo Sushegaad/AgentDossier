@@ -1,0 +1,194 @@
+{
+"canonical_url": "github.com/aipentest/cyberstrikeai",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"cybersecurity": [
+"penetration",
+"security"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "The system of action for AI-native cybersecurity—where intent becomes governed execution, evidence becomes operational memory, and every operation improves the next.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"cybersecurity": {
+"components": {
+"adoption": 22.31,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 2.7,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.9,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": null,
+"score": 59.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 22.31,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 2.7,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 64.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "AIPentest/CyberStrikeAI"
+},
+"first_seen": "2026-09-28T23:19:17Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_0a7e550ce44056b6",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:17Z",
+"license": "Apache-2.0",
+"name": "CyberStrikeAI",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-22T14:08:35Z",
+"headline": "CyberStrikeAI v1.7.20",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "CyberStrikeAI 现已接入 TypeSafe Jev 作为人机协同审批引擎：Agent 每次非白名单工具调用，会把工具名、参数和策略一次性交给 Jev 做结构化放通/拦截，不再依赖聊天模型输出 JSON。Jev 并行判断破坏性风险与授权渗透意图，本地规则合成 approve/reject；默认放行授权渗透，只拦截打挂业务、毁数据、改账号权限或改线上配置的操作。自定义审批策略会作为组织规则叠加，OpenAI 协议小模型仍可选用。\r\n\r\n---\r\n\r\nCyberStri",
+"tag": "product_update",
+"url": "https://github.com/AIPentest/CyberStrikeAI/releases/tag/v1.7.20"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-18T03:40:07Z",
+"headline": "CyberStrikeAI v1.7.19",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Supervisor 调用 exit 结束时，若助手正文只有「交付终审报告：」这类开场白，而真正内容写在 final_result 里，最终回复会漏掉报告。本次修复会优先采用 exit.final_result，并与开场白合并展示，避免只看到空壳文案。\r\n\r\n---\r\n\r\n When Supervisor ends via exit with only a short intro in the assistant text and the real report in fin",
+"tag": "product_update",
+"url": "https://github.com/AIPentest/CyberStrikeAI/releases/tag/v1.7.19"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:49Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-11-08T10:41:23Z",
+"github_forks": 1203,
+"github_language": "Go",
+"github_open_issues": 61,
+"github_pushed_at": "2026-09-25T06:46:24Z",
+"github_stars": 7075,
+"github_topic": "ai-agents",
+"homepage": null
+},
+"slug": "aipentest-cyberstrikeai",
+"sources": [
+{
+"payload_hash": "ec7e7a70a241a9f4d77eac9f21621dc1003b58d355aefbc8c78dfeb9f9d4afb6",
+"retrieved_at": "2026-09-28T23:19:17Z",
+"system": "github",
+"url": "https://github.com/AIPentest/CyberStrikeAI"
+}
+],
+"tags": [
+"ai",
+"ai-agents",
+"ai-cybersecurity",
+"ai-hacking",
+"ai-penetration-testing",
+"ai-security-tool",
+"ctf-tools",
+"mcp",
+"pentesting-tools"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://github.com/AIPentest/CyberStrikeAI",
+"vendor": "AIPentest"
+}

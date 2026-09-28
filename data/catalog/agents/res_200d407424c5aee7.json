@@ -1,0 +1,173 @@
+{
+"canonical_url": "context7.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"code",
+"coding",
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 27.8,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 1.2,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 73.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "upstash/context7"
+},
+"first_seen": "2026-09-28T23:23:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_200d407424c5aee7",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2026-08-18",
+"kind": "cve",
+"title": "CVE-2026-75130",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75130"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "MIT",
+"name": "context7",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-22T21:04:48Z",
+"headline": "context7 @upstash/context7-sdk@0.5.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "### Minor Changes\n\n- 2c6c8e7: Add a typed `search` method that finds relevant documentation without a separate library resolution request.",
+"tag": "product_update",
+"url": "https://github.com/upstash/context7/releases/tag/%40upstash/context7-sdk%400.5.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-22T21:04:45Z",
+"headline": "context7 ctx7@0.5.12",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "### Patch Changes\n\n- 4416fb8: Use the shared API URL for login and explain how to sign in again when the server rejects a saved session.\n\n  Recommend logout and login only when the server returns HTTP 401. Report other identity-check failur",
+"tag": "product_update",
+"url": "https://github.com/upstash/context7/releases/tag/ctx7%400.5.12"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:15Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:14Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:16Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "context7.com",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:41:54Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-03-26T23:40:39Z",
+"github_forks": 3035,
+"github_language": "TypeScript",
+"github_open_issues": 63,
+"github_pushed_at": "2026-09-28T18:14:48Z",
+"github_stars": 62508,
+"github_topic": "mcp-server",
+"homepage": "https://context7.com"
+},
+"slug": "upstash-context7",
+"sources": [
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
+"url": "https://github.com/upstash/context7"
+}
+],
+"tags": [
+"llm",
+"mcp",
+"mcp-server",
+"vibe-coding"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://context7.com",
+"vendor": "upstash"
+}

@@ -1,0 +1,197 @@
+{
+"canonical_url": "ao.aiolaola.com/experts",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"copilot",
+"workflow"
+],
+"technology": [
+"code",
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "🎭 277 个即插即用的 AI 专家角色 — 支持 Claude Code/Cursor/Copilot 等 20 种工具，覆盖工程/设计/营销/金融等 20 个部门。含 64 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉/Qt 上位机/机械设计）。搭配编排器 agency-orchestrator，一句话即可让多位专家按 DAG 自动协作。",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 25.05,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 66.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 25.05,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 70.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "jnMetaCode/agency-agents-zh"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_07bcc9f498e88168",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "agency-agents-zh",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://ao.aiolaola.com/.well-known/agent.json",
+"checked_at": "2026-09-28T23:25:21Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:20Z",
+"errors": [
+"https://ao.aiolaola.com/.well-known/ard.json: not valid JSON",
+"https://ao.aiolaola.com/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://ao.aiolaola.com/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:25:22Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "ao.aiolaola.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:38Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-03-06T11:11:51Z",
+"github_forks": 3387,
+"github_language": "Shell",
+"github_open_issues": 1,
+"github_pushed_at": "2026-09-17T13:32:57Z",
+"github_stars": 20986,
+"github_topic": "ai-agents",
+"homepage": "https://ao.aiolaola.com/experts"
+},
+"slug": "jnmetacode-agency-agents-zh",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/jnMetaCode/agency-agents-zh"
+}
+],
+"tags": [
+"agency-orchestrator",
+"agent-definitions",
+"ai-agents",
+"ai-roles",
+"chinese",
+"claude",
+"claude-code",
+"copilot-agent",
+"cursor-rules",
+"deepseek",
+"hermes-agent",
+"llm",
+"multi-agent",
+"no-code",
+"prompt-engineering",
+"qwen",
+"system-prompt",
+"workbuddy",
+"workflow"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://ao.aiolaola.com/experts",
+"vendor": "jnMetaCode"
+}

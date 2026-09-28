@@ -1,0 +1,231 @@
+{
+"canonical_url": "hugohe3.github.io/ppt-master-examples",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"office"
+],
+"data": [
+"data"
+],
+"sales": [
+"support"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 27.56,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 66.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 27.56,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 67.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"sales": {
+"components": {
+"adoption": 27.56,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.95,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": null,
+"score": 62.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "hugohe3/ppt-master"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_ee3669637c182855",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "MIT",
+"name": "ppt-master",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-19T05:06:18Z",
+"headline": "ppt-master v6.6.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Minor release from three days of end-to-end runs since v6.5.0: every route was driven through real decks — same-deck hyperlink navigation, Beautify under Quick, Edit Native with pages dropped and with a foreign PPTX used as a template, Crea",
+"tag": "product_update",
+"url": "https://github.com/hugohe3/ppt-master/releases/tag/v6.6.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-16T12:20:17Z",
+"headline": "ppt-master v6.5.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Minor release from two focused rounds since v6.4.0: the Create Template / use-template flow was audited and reworked, and the Edit Native PPTX route was exercised on real government and university decks (multi-master, source animations, nat",
+"tag": "product_update",
+"url": "https://github.com/hugohe3/ppt-master/releases/tag/v6.5.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:49Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:48Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:49Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "hugohe3.github.io",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:41:55Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-12-10T06:54:33Z",
+"github_forks": 4499,
+"github_language": "Python",
+"github_open_issues": 2,
+"github_pushed_at": "2026-09-27T05:20:02Z",
+"github_stars": 56836,
+"github_topic": "ai-agent",
+"homepage": "https://hugohe3.github.io/ppt-master-examples/"
+},
+"slug": "hugohe3-ppt-master",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/hugohe3/ppt-master"
+}
+],
+"tags": [
+"ai-agent",
+"aippt",
+"office",
+"powerpoint",
+"powerpoint-generation",
+"ppt",
+"pptx",
+"presentation",
+"slide",
+"slides"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://hugohe3.github.io/ppt-master-examples/",
+"vendor": "hugohe3"
+}

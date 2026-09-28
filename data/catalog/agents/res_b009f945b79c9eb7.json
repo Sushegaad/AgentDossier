@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:28Z",
+"retrieved_at": "2026-09-28T23:29:31Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": "Program / 3PAO Schellman Compliance, LLC",
 "match_confidence": 0.933,
 "next_check": "2026-10-05",
-"payload_hash": "cc38f65754752a52fc5546b0b94ca641ae463ca60c64b331156eace741742b2f",
+"payload_hash": "9a02d4e11d69bbbd2c1a43f222328fb6fb1b6bc889c2398d7fd6d0436d956572",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:10Z",
+"retrieved_at": "2026-09-28T23:28:27Z",
 "review_reason": "entity 1.00, offering 0.85",
 "reviewer": null,
 "scope": "product",
@@ -256,7 +256,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -278,24 +278,23 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Drata",
 "news": [],
-"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:34Z",
+"checked_at": "2026-09-28T23:26:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:33Z",
+"checked_at": "2026-09-28T23:26:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:35Z",
+"checked_at": "2026-09-28T23:26:35Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -314,7 +313,7 @@
 "sources": [
 {
 "payload_hash": "0959eb64efae0dabaa28b183244474d34b1520fe19bc942222208a2acc360035",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://drata.com/"
 }
@@ -324,7 +323,7 @@
 "trust": {
 "compliance": 1,
 "identity": 3,
-"issues": 1,
+"issues": null,
 "protocols": 5,
 "security": null
 },

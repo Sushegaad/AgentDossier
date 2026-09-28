@@ -56,7 +56,7 @@
 "external_ids": {
 "ard": "urn:air:aard.ai:skills:index"
 },
-"first_seen": "2026-09-28T00:16:26Z",
+"first_seen": "2026-09-28T23:25:04Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -78,7 +78,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:16:26Z",
+"last_seen": "2026-09-28T23:25:04Z",
 "license": null,
 "name": "Aard Agent Skills",
 "news": [],
@@ -107,12 +107,19 @@
 ],
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:52Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "signals": {},
 "slug": "aard-ai-aard-agent-skills",
 "sources": [
 {
 "payload_hash": "269720d1af4af1557fbff173071bfd4748ab4632759e263bbc6b00892dbb0d23",
-"retrieved_at": "2026-09-28T00:16:26Z",
+"retrieved_at": "2026-09-28T23:25:04Z",
 "system": "ard",
 "url": "https://aard.ai/.well-known/ard.json"
 }
@@ -127,7 +134,7 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": null
+"security": 1
 },
 "url": "https://aard.ai/.well-known/agent-skills/index.json",
 "vendor": "aard.ai"

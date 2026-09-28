@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "3787d185aa576cbebbcffd6f955c2dc62a0f1f7eddf98c51bf543a6429b2d0e1",
+"payload_hash": "dd3949daab60677e599db939757c3d1ead165ed3ffd4d3d5914b05014ec4b861",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:28Z",
+"retrieved_at": "2026-09-28T23:33:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -221,7 +221,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -243,24 +243,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Oracle service",
 "name": "Oracle AI Agent Studio",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:52Z",
+"checked_at": "2026-09-28T23:27:14Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:51Z",
+"checked_at": "2026-09-28T23:27:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:53Z",
+"checked_at": "2026-09-28T23:27:15Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -268,6 +268,13 @@
 "publisher_domain": "oracle.com",
 "resource_type": "platform",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:23Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -279,7 +286,7 @@
 "sources": [
 {
 "payload_hash": "9695aa8f6a734a511d7ab57339d0c10a336088eacd3aa10027168f227a43c35d",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.oracle.com/artificial-intelligence/ai-agents/"
 }
@@ -291,7 +298,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.oracle.com/artificial-intelligence/ai-agents/",
 "vendor": "Oracle"

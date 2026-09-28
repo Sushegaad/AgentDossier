@@ -29,7 +29,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "e9ce690b64fa4601754333e7f5241a8e21e703cf1e6999e06c39f633dfa1060f",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:26Z",
+"retrieved_at": "2026-09-28T23:33:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -46,7 +46,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 29.95,
+"adoption": 29.96,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -74,7 +74,7 @@
 "external_ids": {
 "github": "DietrichGebert/ponytail"
 },
-"first_seen": "2026-09-28T00:14:58Z",
+"first_seen": "2026-09-28T23:19:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -96,15 +96,64 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:58Z",
+"last_seen": "2026-09-28T23:19:13Z",
 "license": "MIT",
 "name": "ponytail",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-14T14:38:56Z",
+"headline": "ponytail v4.10.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Two new homes for Ponytail. The headline: native Cursor support through `hooks.json`, with a `scripts/cursor-hooks.js install` that merges into your existing Cursor hooks file and leaves everything else in it alone. Also new: a Grok Build s",
+"tag": "product_update",
+"url": "https://github.com/DietrichGebert/ponytail/releases/tag/v4.10.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-07T21:15:11Z",
+"headline": "ponytail v4.9.0: 53 commits of doing less",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Five weeks of merged work in one drop. The headline: `/ponytail default <mode>` makes your chosen mode survive restarts, and a bare `/ponytail` now reports the active level instead of resetting it. Also new: Qoder support, subagent scoping",
+"tag": "product_update",
+"url": "https://github.com/DietrichGebert/ponytail/releases/tag/v4.9.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-13T00:36:40Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49678717",
+"engagement": 6,
+"headline": "Show HN: Fleecevest – The Product Counterpart to Ponytail",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://github.com/Websites-On-Computers/fleecevest"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-07T01:18:17Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49592706",
+"engagement": 53,
+"headline": "Ponytail: Lazy Senior Engineer Skill",
+"kind": "community",
+"link_confidence": 0.95,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://ponytail.dev/"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://ponytail.dev/.well-known/agent.json",
-"checked_at": "2026-09-28T00:16:53Z",
+"checked_at": "2026-09-28T23:27:18Z",
 "errors": [
 "not valid JSON"
 ],
@@ -112,7 +161,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:52Z",
+"checked_at": "2026-09-28T23:27:17Z",
 "errors": [
 "https://ponytail.dev/.well-known/ard.json: not valid JSON",
 "https://ponytail.dev/.well-known/ai-catalog.json: not valid JSON"
@@ -122,7 +171,7 @@
 },
 "mcp": {
 "card_url": "https://ponytail.dev/.well-known/mcp.json",
-"checked_at": "2026-09-28T00:16:53Z",
+"checked_at": "2026-09-28T23:27:18Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -130,22 +179,29 @@
 "publisher_domain": "ponytail.dev",
 "resource_type": "skill",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:41:39Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-06-12T00:52:37Z",
-"github_forks": 7895,
+"github_forks": 7924,
 "github_language": "JavaScript",
-"github_open_issues": 309,
+"github_open_issues": 310,
 "github_pushed_at": "2026-09-14T14:34:56Z",
-"github_stars": 146918,
+"github_stars": 147532,
 "github_topic": "ai-agents",
 "homepage": "https://ponytail.dev"
 },
 "slug": "dietrichgebert-ponytail",
 "sources": [
 {
-"payload_hash": "fe80efdffbc8e912989bc21312a21bf0c9576a796bb1b4c81b4c80945e571752",
-"retrieved_at": "2026-09-28T00:14:58Z",
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
 "system": "github",
 "url": "https://github.com/DietrichGebert/ponytail"
 }
@@ -168,7 +224,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://ponytail.dev",
 "vendor": "DietrichGebert"

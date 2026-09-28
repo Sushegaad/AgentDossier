@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "64a9f8c6c7fc168ae58226065f52d09bfcc3de8b3a472ff67133c9c34993e35c",
+"payload_hash": "478d845c396811d02925f2b673e0260e7e47a1676165047a6511d18542e9de1d",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:23Z",
+"retrieved_at": "2026-09-28T23:33:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "64a9f8c6c7fc168ae58226065f52d09bfcc3de8b3a472ff67133c9c34993e35c",
+"payload_hash": "478d845c396811d02925f2b673e0260e7e47a1676165047a6511d18542e9de1d",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:23Z",
+"retrieved_at": "2026-09-28T23:33:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "64a9f8c6c7fc168ae58226065f52d09bfcc3de8b3a472ff67133c9c34993e35c",
+"payload_hash": "478d845c396811d02925f2b673e0260e7e47a1676165047a6511d18542e9de1d",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:23Z",
+"retrieved_at": "2026-09-28T23:33:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -95,9 +95,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "64a9f8c6c7fc168ae58226065f52d09bfcc3de8b3a472ff67133c9c34993e35c",
+"payload_hash": "478d845c396811d02925f2b673e0260e7e47a1676165047a6511d18542e9de1d",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:23Z",
+"retrieved_at": "2026-09-28T23:33:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -171,7 +171,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -193,24 +193,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "o9 Digital Brain / Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:50Z",
+"checked_at": "2026-09-28T23:27:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:49Z",
+"checked_at": "2026-09-28T23:27:07Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:51Z",
+"checked_at": "2026-09-28T23:27:08Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -218,6 +218,13 @@
 "publisher_domain": "o9solutions.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:27Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -229,7 +236,7 @@
 "sources": [
 {
 "payload_hash": "dacd7952a1db4d6d30af7331463348b1421a86290f02d4b38886f086e17de6ef",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://o9solutions.com/"
 }
@@ -241,7 +248,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://o9solutions.com/",
 "vendor": "o9 Solutions"

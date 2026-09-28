@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "2daa0a30a47573c6cc096052bb8c534b27ea0765ffc58e6eac18b5aed91ef751",
+"payload_hash": "9c863e889fd6e23ebfa4f0975cfbfd0e8688d179eeb1464870e5bc3b762cb7f8",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:36Z",
+"retrieved_at": "2026-09-28T23:33:51Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "2daa0a30a47573c6cc096052bb8c534b27ea0765ffc58e6eac18b5aed91ef751",
+"payload_hash": "9c863e889fd6e23ebfa4f0975cfbfd0e8688d179eeb1464870e5bc3b762cb7f8",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:36Z",
+"retrieved_at": "2026-09-28T23:33:51Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -103,7 +103,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -125,24 +125,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Suki Assistant",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:17:01Z",
+"checked_at": "2026-09-28T23:27:32Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:58Z",
+"checked_at": "2026-09-28T23:27:30Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:17:02Z",
+"checked_at": "2026-09-28T23:27:33Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -150,6 +150,13 @@
 "publisher_domain": "suki.ai",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:47Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -161,7 +168,7 @@
 "sources": [
 {
 "payload_hash": "3256038dd8c2cb71d8ffe206c1f058d38b3292b345f92116039994eb50aea120",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.suki.ai/"
 }
@@ -173,7 +180,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.suki.ai/",
 "vendor": "Suki"

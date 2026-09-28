@@ -1,0 +1,224 @@
+{
+"canonical_url": "omniroute.online",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"copilot"
+],
+"technology": [
+"code",
+"coding",
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Never stop coding. Free MIT AI gateway: one endpoint, 359 providers (150+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by hundreds of contributors",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 28.12,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 66.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 28.12,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 75.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "diegosouzapw/OmniRoute"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_32486cdd6aa8e70c",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2026-09-10",
+"kind": "cve",
+"title": "CVE-2026-88062",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88062"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:24:47Z",
+"license": "MIT",
+"merged_ids": [
+"res_32486cdd6aa8e70c"
+],
+"name": "OmniRoute",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-08-26T19:30:30Z",
+"headline": "OmniRoute v3.8.50",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "### 📊 Release by the numbers\n\n| | |\n| --- | ---: |\n| 👥 People who contributed | **248** |\n| 📝 Commits in the cycle | **1,714** |\n| 🔀 Pull requests referenced | **1,666** |\n| 📋 Changelog entries | **1,182** |\n| 🙌 Contributors credited in ent",
+"tag": "product_update",
+"url": "https://github.com/diegosouzapw/OmniRoute/releases/tag/v3.8.50"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-20T11:19:58Z",
+"headline": "OmniRoute Radar catalog export (rolling)",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Export estável do catálogo OmniRoute para o Radar. Atualizado automaticamente; NÃO é um release de versão do produto.",
+"tag": "product_update",
+"url": "https://github.com/diegosouzapw/OmniRoute/releases/tag/radar-export-latest"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:09Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:08Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:09Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "omniroute.online",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:41:49Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-02-13T12:38:31Z",
+"github_forks": 10118,
+"github_language": "TypeScript",
+"github_open_issues": 617,
+"github_pushed_at": "2026-09-28T23:16:20Z",
+"github_stars": 71073,
+"github_topic": "a2a",
+"homepage": "https://omniroute.online"
+},
+"slug": "diegosouzapw-omniroute",
+"sources": [
+{
+"payload_hash": "4b7522172b5a7fbef419aca622bc2a2a3c92b83e2495b8be09ebd668fba2ae13",
+"retrieved_at": "2026-09-28T23:24:47Z",
+"system": "github",
+"url": "https://github.com/diegosouzapw/OmniRoute"
+}
+],
+"tags": [
+"a2a",
+"ai-agents",
+"ai-gateway",
+"anthropic",
+"claude",
+"claude-code",
+"cline",
+"codex",
+"copilot",
+"cursor",
+"deepseek",
+"free-ai",
+"gemini",
+"kimi",
+"llm-gateway",
+"mcp",
+"openai",
+"openai-proxy",
+"qwen",
+"token-saver"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://omniroute.online",
+"vendor": "diegosouzapw"
+}

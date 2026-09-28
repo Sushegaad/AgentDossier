@@ -195,6 +195,1014 @@
    ]
   },
   {
+   "identifier": "urn:air:agent-bev.ai:bev-door",
+   "displayName": "agent-bev",
+   "type": "application/mcp-server+json",
+   "url": "https://mcp.bev-buyer.ai/mcp",
+   "capabilities": [
+    "search_drinks",
+    "get_record",
+    "find_producer",
+    "list_nodes",
+    "compare_drinks",
+    "get_order_route",
+    "create_order_intent",
+    "get_offers",
+    "accept_offer"
+   ],
+   "description": "Agentic B2B hub for beer, wine and spirits across Europe."
+  },
+  {
+   "identifier": "urn:air:agent-bev.ai:bev-seller",
+   "displayName": "agent-bev · sellers",
+   "type": "application/mcp-server+json",
+   "url": "https://mcp.bev-seller.ai/mcp",
+   "capabilities": [
+    "claim_record",
+    "update_record",
+    "get_claim_status",
+    "verify_producer",
+    "register_brand_agent",
+    "get_demand",
+    "list_order_intents",
+    "make_offer"
+   ],
+   "description": "Be on the shelf the agents buy from."
+  },
+  {
+   "identifier": "urn:air:agent-bev.ai:bev-audit",
+   "displayName": "agent-bev · audit",
+   "type": "application/mcp-server+json",
+   "url": "https://mcp.bev-registry.ai/mcp",
+   "capabilities": [
+    "verify_record",
+    "get_provenance",
+    "list_changes_since",
+    "get_keyring",
+    "get_claim_history"
+   ],
+   "description": "Check what agent-bev says: signatures, sources, history, keys, claims."
+  },
+  {
+   "identifier": "urn:air:agent-bev.ai:bev-cuvee",
+   "displayName": "CUVEE",
+   "type": "application/mcp-server+json",
+   "url": "https://mcp.bev-cuvee.ai/mcp",
+   "capabilities": [
+    "validate_cuvee",
+    "list_vocab",
+    "resolve_cuvee",
+    "explain_cuvee"
+   ],
+   "description": "The classification standard for beverage alcohol."
+  },
+  {
+   "identifier": "urn:air:agent-bev.ai:eu-bev",
+   "displayName": "agent-bev · Europe",
+   "type": "application/mcp-server+json",
+   "url": "https://mcp.eu-bev.ai/mcp",
+   "capabilities": [
+    "resolve_product",
+    "get_record",
+    "find_producer",
+    "get_order_route",
+    "list_nodes"
+   ],
+   "description": "Agentic B2B hub for beer, wine and spirits across Europe."
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:platform:mcp",
+   "displayName": "Agentgates MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://agentgates.ai/.well-known/mcp.json",
+   "description": "Pair an Agentgates wallet over MCP (OAuth) and act with it under owner-approved grants.",
+   "tags": [
+    "mcp",
+    "wallet",
+    "usdc"
+   ],
+   "representativeQueries": [
+    "MCP server that can hold a wallet and pay in USDC",
+    "pair my agent with a crypto wallet over MCP",
+    "agent wallet with owner-approved spending grants"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:platform:api",
+   "displayName": "Agentgates REST API (x402)",
+   "type": "application/openapi+json",
+   "url": "https://agentgates.ai/openapi.json",
+   "description": "Confidential VMs by the hour and pay-per-request inference, quoted and paid over x402 USDC. No signup.",
+   "tags": [
+    "x402",
+    "compute",
+    "inference",
+    "usdc",
+    "tee"
+   ],
+   "representativeQueries": [
+    "rent a confidential VM with USDC, no signup",
+    "pay per request LLM inference over x402",
+    "GPU TEE inference an agent can pay for itself",
+    "buy compute with crypto over plain HTTP"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:platform:directory",
+   "displayName": "x402 Directory",
+   "type": "application/json",
+   "url": "https://agentgates.ai/api/directory/resources",
+   "description": "Every x402 service that exists, aggregated free from the public registries, with ratings that only a wallet which PAID can write: every review carries the settle hash that earned it.",
+   "tags": [
+    "directory",
+    "discovery",
+    "x402",
+    "reviews",
+    "usdc"
+   ],
+   "representativeQueries": [
+    "directory of APIs an agent can pay for with USDC",
+    "which x402 service is actually good, with proof someone paid",
+    "cheapest paid API for web search on Solana",
+    "list my x402 endpoint so agents can find it"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:skills:directory",
+   "displayName": "Find and review paid APIs (skill)",
+   "type": "application/ai-skill+md",
+   "url": "https://agentgates.ai/skills/agentgates-directory/SKILL.md",
+   "description": "Step-by-step skill: search the x402 directory, list your own service free, and turn a settle you already made into a verified review.",
+   "tags": [
+    "skill",
+    "directory",
+    "x402",
+    "reviews"
+   ],
+   "representativeQueries": [
+    "how do I find a paid API my agent can call",
+    "how do I prove I paid and leave a review"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:skills:compute",
+   "displayName": "Buy confidential compute (skill)",
+   "type": "application/ai-skill+md",
+   "url": "https://agentgates.ai/skills/agentgates-compute/SKILL.md",
+   "description": "Step-by-step skill: buy a confidential VM by the hour with x402 USDC and run a Docker workload.",
+   "tags": [
+    "skill",
+    "compute",
+    "x402"
+   ],
+   "representativeQueries": [
+    "how do I buy a confidential VM with USDC",
+    "run docker on a TEE machine my agent pays for"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:skills:inference",
+   "displayName": "Pay-per-request inference (skill)",
+   "type": "application/ai-skill+md",
+   "url": "https://agentgates.ai/skills/agentgates-inference/SKILL.md",
+   "description": "Step-by-step skill: ask open models on attested GPUs, one request one x402 payment, or prepay a balance and mint bearer keys.",
+   "tags": [
+    "skill",
+    "inference",
+    "x402"
+   ],
+   "representativeQueries": [
+    "cheapest way for an agent to pay for LLM inference per request",
+    "inference API with no signup that takes USDC"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentmesh.ai:mcp:mesh",
+   "displayName": "AgentMesh",
+   "type": "application/mcp-server-card+json",
+   "version": "1.0.0",
+   "description": "The AgentMesh connector: paste one URL into Claude Code, Cursor, or any assistant that speaks MCP, and it becomes your agent on the mesh. It can find agents, hire them, be hired, and read its own mesh inbox. Hosted by AgentMesh; nothing to install.",
+   "url": "https://dev.agentmesh.ai/mcp.html",
+   "tags": [
+    "agentmesh",
+    "mcp",
+    "agents",
+    "connector",
+    "hosted"
+   ],
+   "capabilities": [
+    "discover",
+    "find_agent",
+    "send_message",
+    "check_inbox",
+    "reply",
+    "publish_my_agent"
+   ],
+   "representativeQueries": [
+    "connect my assistant to the agent mesh",
+    "let my personal agent talk to other agents",
+    "find and hire agents from claude code",
+    "give my agent an inbox that works while I am away"
+   ]
+  },
+  {
+   "identifier": "urn:air:alpic.ai:mcp:platform",
+   "type": "application/mcp-server-card+json",
+   "description": "Manage Alpic projects, inspect deployments, retrieve logs, and review MCP analytics.",
+   "version": "1.0.0",
+   "url": "https://alpic.ai/.well-known/mcp-server-card.json",
+   "publisher": {
+    "identifier": "did:web:alpic.ai",
+    "displayName": "Alpic",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:alpic.ai:skill:build-mcp-apps",
+   "displayName": "Build MCP Apps with Skybridge",
+   "type": "application/agent-skills+md",
+   "description": "Build and update MCP servers, MCP Apps, and ChatGPT Apps with Skybridge.",
+   "url": "https://raw.githubusercontent.com/alpic-ai/alpic-plugin/main/plugins/alpic/skills/build-mcp-apps/SKILL.md",
+   "publisher": {
+    "identifier": "did:web:alpic.ai",
+    "displayName": "Alpic",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:alpic.ai:skill:use-alpic",
+   "displayName": "Use Alpic Cloud",
+   "type": "application/agent-skills+md",
+   "description": "Deploy, manage, debug, secure, analyze, distribute, and publish MCP applications on Alpic.",
+   "url": "https://raw.githubusercontent.com/alpic-ai/alpic-plugin/main/plugins/alpic/skills/use-alpic/SKILL.md",
+   "publisher": {
+    "identifier": "did:web:alpic.ai",
+    "displayName": "Alpic",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:alpic.ai:plugin:alpic",
+   "displayName": "Alpic Plugin",
+   "type": "application/agent-plugins+zip",
+   "description": "Alpic and Skybridge plugin for Claude Code, Cursor, and Codex.",
+   "url": "https://github.com/alpic-ai/alpic-plugin/archive/refs/heads/main.zip",
+   "publisher": {
+    "identifier": "did:web:alpic.ai",
+    "displayName": "Alpic",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:alpic.ai:api:platform",
+   "displayName": "Alpic Platform API",
+   "type": "application/vnd.oai.openapi+json",
+   "description": "Programmatic access to Alpic projects, deployments, analytics, and distribution.",
+   "url": "https://api.alpic.ai/openapi.json",
+   "publisher": {
+    "identifier": "did:web:alpic.ai",
+    "displayName": "Alpic",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:alpic.ai:cli:alpic",
+   "displayName": "Alpic CLI",
+   "type": "application/vnd.npm.package+json",
+   "description": "Deploy and manage MCP servers from a terminal or an automated agent workflow.",
+   "url": "https://registry.npmjs.org/alpic/latest",
+   "publisher": {
+    "identifier": "did:web:alpic.ai",
+    "displayName": "Alpic",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:apatero.ai:mcp:studio",
+   "displayName": "Apatero Studio MCP server",
+   "description": "Remote MCP server (streamable HTTP) with 20 generation, character and story tools.",
+   "type": "application/mcp-server-card+json",
+   "url": "https://apatero.ai/.well-known/mcp/server-card.json",
+   "representativeQueries": [
+    "generate a product photo of my water bottle on a marble counter",
+    "make a 5 second video of a foggy forest at sunrise",
+    "create a consistent AI character and put her in three new scenes",
+    "animate this portrait so it reads my script"
+   ]
+  },
+  {
+   "identifier": "urn:air:apatero.ai:a2a:studio",
+   "displayName": "Apatero Studio A2A agent",
+   "description": "A2A JSON-RPC endpoint that turns a prompt into a rendered image or video task.",
+   "type": "application/json",
+   "url": "https://apatero.ai/.well-known/agent-card.json",
+   "representativeQueries": [
+    "send this prompt to an image generation agent and return the file",
+    "render a short video from a text description"
+   ]
+  },
+  {
+   "identifier": "urn:air:apatero.ai:openapi:studio-api",
+   "displayName": "Apatero Studio REST API",
+   "description": "OpenAPI 3 description of the generation, gallery, billing and account endpoints.",
+   "type": "application/vnd.oai.openapi",
+   "url": "https://api.apatero.ai/api/schema/",
+   "representativeQueries": [
+    "what models can I generate with and what do they cost",
+    "check the status of my generation job",
+    "how many credits are left on my account"
+   ]
+  },
+  {
+   "identifier": "urn:air:apatero.ai:skills:index",
+   "displayName": "Apatero agent skills",
+   "description": "SKILL.md documents for generating with Apatero and for authenticating as an agent.",
+   "type": "application/json",
+   "url": "https://apatero.ai/.well-known/agent-skills/index.json",
+   "representativeQueries": [
+    "how do I authenticate an agent to Apatero",
+    "which Apatero transport should my agent use"
+   ]
+  },
+  {
+   "identifier": "urn:air:apatero.ai:doc:llms-txt",
+   "displayName": "Apatero site summary for language models",
+   "description": "llms.txt overview of apatero.ai with the key pages as markdown links.",
+   "type": "text/markdown",
+   "url": "https://apatero.ai/llms.txt",
+   "representativeQueries": [
+    "what is Apatero Studio",
+    "where is the Apatero journal"
+   ]
+  },
+  {
+   "identifier": "urn:air:assetlog.ai:server:mcp",
+   "displayName": "AssetLog MCP server",
+   "description": "45 tools for searching listings, publishing them on a user's behalf, finding agents by service area, managing their own ads, watchdogs, calendar and enquiries, and walking a seller through a step-by-step sale checklist.",
+   "type": "application/mcp-server-card+json",
+   "url": "https://assetlog.ai/.well-known/mcp/server-card.json",
+   "representativeQueries": [
+    "find apartments near the sea in Spain under 300000 EUR",
+    "add my car listing to a classifieds site",
+    "which real estate agents cover Alicante",
+    "show me jobs in Brno that allow remote work"
+   ]
+  },
+  {
+   "identifier": "urn:air:assetlog.ai:api:rest",
+   "displayName": "AssetLog REST API",
+   "description": "Public geo-aware search over vehicles, real estate and jobs. No authentication required for reading.",
+   "type": "application/yaml",
+   "url": "https://assetlog.ai/openapi.yaml",
+   "representativeQueries": [
+    "search classified listings by city and price range",
+    "how many listings are published on AssetLog",
+    "list used diesel estate cars under 200000 CZK"
+   ]
+  },
+  {
+   "identifier": "urn:air:assetlog.ai:skills:index",
+   "displayName": "AssetLog agent skills",
+   "description": "Short instructions telling an agent how to search listings, publish one, and connect over MCP.",
+   "type": "application/json",
+   "url": "https://assetlog.ai/.well-known/agent-skills/index.json",
+   "representativeQueries": [
+    "how do I publish a classified ad through an API",
+    "how do I connect AssetLog as an MCP server"
+   ]
+  },
+  {
+   "identifier": "urn:air:assetlog.ai:agent:a2a",
+   "displayName": "AssetLog A2A agent",
+   "description": "Agent-to-agent endpoint that answers natural-language listing queries over the A2A protocol.",
+   "type": "application/json",
+   "url": "https://assetlog.ai/.well-known/agent-card.json",
+   "representativeQueries": [
+    "ask another agent to find property listings",
+    "delegate a classifieds search to a remote agent"
+   ]
+  },
+  {
+   "identifier": "urn:ai:augmentev.com:paseo:khanoor",
+   "displayName": "Khanoor",
+   "type": "application/mcp-server-card+json",
+   "url": "https://augmentev.com/.well-known/paseo/paseo-mcp-card.json",
+   "capabilities": [
+    "SecurityLogTriage",
+    "AlertCorrelation",
+    "TriageQueue"
+   ],
+   "description": "Security log triage — corroborated multi-signal alerting plus a ranked triage queue. Available on Standard, with a post-quantum-signed Proof-of-Task-Execution (ML-DSA-65), and on Confidential, which adds attested Intel TDX isolation. REST + MCP at api.augmentev.ai.",
+   "representativeQueries": [
+    "triage and rank these security alerts",
+    "correlate multi-signal security events into a queue",
+    "confidential security log triage with a verifiable proof"
+   ],
+   "trustManifest": {
+    "identity": "did:web:augmentev.com",
+    "identityType": "did",
+    "provenance": [
+     {
+      "relation": "publishedFrom",
+      "sourceId": "urn:ai:augmentev.com:paseo:engine"
+     }
+    ],
+    "attestations": [
+     {
+      "type": "PQC-MLDSA65",
+      "uri": "https://augmentev.com/.well-known/paseo/pqc-attestation.json",
+      "mediaType": "application/json",
+      "digest": "sha256-b6a0826291fe13ff8e8fd445dea1116e0d7e95ae6ad535b99800536f9b7df200"
+     },
+     {
+      "type": "Phala-TDX",
+      "uri": "https://augmentev.com/.well-known/paseo/phala-attestation.json",
+      "mediaType": "application/json",
+      "digest": "sha256-0de69d8e050318589ac951f2e28faf376cea77d86af49927fe9e51990edc37f8"
+     }
+    ],
+    "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6InBhc2VvLWVkMjU1MTktdGVlLTcyNGRhNzY4NDM1MSJ9..b8uE-BiUlrbNIjlirhao8izWqxBzSX_HrVwtWaMwRZ5zj4N30AFo9k1GFtZC67KJ2HxAftXZgoApaTGcmzMdCg"
+   }
+  },
+  {
+   "identifier": "urn:air:autorfp.ai:server:mcp",
+   "displayName": "AutoRFP.ai MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://autorfp.ai/.well-known/mcp/server-card.json",
+   "representativeQueries": [
+    "connect to the AutoRFP.ai MCP server",
+    "list approved RFP content through MCP",
+    "read workspace projects and tags with AutoRFP.ai"
+   ]
+  },
+  {
+   "identifier": "urn:air:autorfp.ai:api:openapi",
+   "displayName": "AutoRFP.ai OpenAPI specification",
+   "type": "application/openapi+json",
+   "url": "https://autorfp.ai/openapi.json",
+   "representativeQueries": [
+    "AutoRFP.ai OpenAPI specification",
+    "MCP OAuth scopes for AutoRFP.ai",
+    "how to call the AutoRFP.ai agent API"
+   ]
+  },
+  {
+   "identifier": "urn:air:autorfp.ai:docs:developers",
+   "displayName": "AutoRFP.ai developer documentation",
+   "type": "text/html",
+   "url": "https://autorfp.ai/developers",
+   "representativeQueries": [
+    "AutoRFP.ai API documentation",
+    "how agents authenticate to AutoRFP.ai",
+    "regional AutoRFP.ai MCP endpoints"
+   ]
+  },
+  {
+   "identifier": "urn:air:autorfp.ai:index:llms",
+   "displayName": "AutoRFP.ai llms.txt index",
+   "type": "text/plain",
+   "url": "https://autorfp.ai/llms.txt",
+   "representativeQueries": [
+    "AutoRFP.ai site map for language models",
+    "which AutoRFP.ai pages should an agent read first"
+   ]
+  },
+  {
+   "identifier": "urn:air:autorfp.ai:skills:index",
+   "displayName": "AutoRFP.ai Agent Skills index",
+   "type": "application/json",
+   "url": "https://autorfp.ai/.well-known/agent-skills/index.json",
+   "representativeQueries": [
+    "download AutoRFP.ai agent skills",
+    "RFP go no-go skill for Claude",
+    "compliance matrix builder skill"
+   ]
+  },
+  {
+   "identifier": "urn:air:cotal.ai:server:cotal",
+   "displayName": "cotal.ai MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://cotal.ai/.well-known/mcp/server-card.json",
+   "description": "Product MCP server for cotal.ai (Streamable HTTP, no credentials): read what COTAL is, search the build log, file feedback, join the Cotal Cloud waitlist, subscribe to updates, request a call with the founders.",
+   "capabilities": [
+    "cotal_submit_feedback",
+    "cotal_join_waitlist",
+    "cotal_subscribe_newsletter",
+    "cotal_request_call",
+    "cotal_overview",
+    "cotal_search",
+    "cotal_list_posts",
+    "cotal_get_post"
+   ],
+   "representativeQueries": [
+    "what does cotal.ai do and who is it for",
+    "send feedback to the COTAL team",
+    "join the Cotal Cloud waitlist",
+    "find the COTAL blog post about the hackathon",
+    "book a call with the COTAL founders"
+   ],
+   "version": "1.0.0",
+   "updatedAt": "2026-09-08",
+   "trustManifest": {
+    "identity": {
+     "type": "domain",
+     "domain": "cotal.ai",
+     "assertedBy": "publisher",
+     "homepage": "https://cotal.ai",
+     "sourceRepository": "https://github.com/Cotal-Ai/Cotal",
+     "contact": "hello@cotal.ai"
+    },
+    "license": "Apache-2.0",
+    "policies": {
+     "privacy": "https://cotal.ai/privacy",
+     "auth": "https://cotal.ai/auth.md"
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:cotal.ai:api:public",
+   "displayName": "cotal.ai public API",
+   "type": "application/openapi+json",
+   "url": "https://cotal.ai/openapi.json",
+   "description": "OpenAPI 3.1 description of the open HTTP endpoints on cotal.ai: build-log reads and search, feedback, waitlist, newsletter and discovery-call intake, with JSON errors, RateLimit headers, Idempotency-Key and a sandbox mode.",
+   "capabilities": [
+    "listPosts",
+    "getPost",
+    "searchSite",
+    "submitFeedback",
+    "joinWaitlist",
+    "subscribeNewsletter",
+    "submitLead"
+   ],
+   "representativeQueries": [
+    "list the latest posts on the COTAL build log",
+    "file a bug report with COTAL over HTTP",
+    "subscribe an email to COTAL updates"
+   ],
+   "version": "1.1.0",
+   "updatedAt": "2026-09-08",
+   "trustManifest": {
+    "identity": {
+     "type": "domain",
+     "domain": "cotal.ai",
+     "assertedBy": "publisher",
+     "homepage": "https://cotal.ai",
+     "sourceRepository": "https://github.com/Cotal-Ai/Cotal",
+     "contact": "hello@cotal.ai"
+    },
+    "license": "Apache-2.0",
+    "policies": {
+     "privacy": "https://cotal.ai/privacy",
+     "auth": "https://cotal.ai/auth.md"
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:cotal.ai:skill:cotal-mesh",
+   "displayName": "cotal-mesh",
+   "type": "application/ai-skill+md",
+   "url": "https://cotal.ai/skills/cotal/SKILL.md",
+   "description": "Agent Skill: put an AI agent on a Cotal mesh and coordinate with other agents across vendors and machines — install, start a local mesh, join, message peers, spawn teammates.",
+   "capabilities": [
+    "cotal_send",
+    "cotal_dm",
+    "cotal_anycast",
+    "cotal_spawn",
+    "cotal_persona"
+   ],
+   "representativeQueries": [
+    "put my agent on a Cotal mesh",
+    "make two coding agents from different vendors work as a team",
+    "coordinate agents across my laptop and a CI runner",
+    "install cotal and start a local mesh"
+   ],
+   "version": "2026-09-08",
+   "updatedAt": "2026-09-08",
+   "trustManifest": {
+    "identity": {
+     "type": "domain",
+     "domain": "cotal.ai",
+     "assertedBy": "publisher",
+     "homepage": "https://cotal.ai",
+     "sourceRepository": "https://github.com/Cotal-Ai/Cotal",
+     "contact": "hello@cotal.ai"
+    },
+    "license": "Apache-2.0",
+    "policies": {
+     "privacy": "https://cotal.ai/privacy",
+     "auth": "https://cotal.ai/auth.md"
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:cotal.ai:docs:llms-txt",
+   "displayName": "COTAL for LLMs (llms.txt)",
+   "type": "text/plain",
+   "url": "https://cotal.ai/llms.txt",
+   "description": "The open protocol that lets AI agents from any vendor work as one team: one shared space where agents discover each other, divide the work, and keep a durable record. Self-hosted, Apache-2.0, works with any framework. The llms.txt entry point: when to use COTAL, how an agent should call it, and every canonical link.",
+   "representativeQueries": [
+    "when should I use COTAL",
+    "you run two or more ai agents",
+    "you need one durable, replayable record of who did what across a fleet, on infrastructure you control (self-hosted, apache-2.0)."
+   ],
+   "updatedAt": "2026-09-08",
+   "trustManifest": {
+    "identity": {
+     "type": "domain",
+     "domain": "cotal.ai",
+     "assertedBy": "publisher",
+     "homepage": "https://cotal.ai",
+     "sourceRepository": "https://github.com/Cotal-Ai/Cotal",
+     "contact": "hello@cotal.ai"
+    },
+    "license": "Apache-2.0",
+    "policies": {
+     "privacy": "https://cotal.ai/privacy",
+     "auth": "https://cotal.ai/auth.md"
+    }
+   }
+  },
+  {
+   "@context": "https://agenticresourcediscovery.org/context/v1",
+   "identifier": "urn:air:councilof.ai:server:gspc-mcp",
+   "displayName": "Council of AI — GSPC Measurement Tools",
+   "type": "application/mcp-server-card+json",
+   "url": "https://councilof.ai/.well-known/mcp/server.json",
+   "description": "MCP tools for reading the public GSPC measurement board and published evidence, including card signature and root-inclusion checks. Measurement, not certification.",
+   "representativeQueries": [
+    "Show the current public GSPC measurement board",
+    "Find a published measurement card and check its signature",
+    "Check whether a published card is included in a published root"
+   ],
+   "capabilities": [
+    "board_totals",
+    "get_card",
+    "verify_card",
+    "get_root",
+    "verify_inclusion"
+   ],
+   "tags": [
+    "GSPC",
+    "MCP",
+    "AI governance measurement",
+    "evidence verification"
+   ]
+  },
+  {
+   "identifier": "urn:air:createprints.ai:mcp:createprints",
+   "displayName": "Create Prints MCP Server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://api.createprints.ai/api/mcp/server-card",
+   "description": "Generate original artwork, choose physical print options, create checkout links, and track orders.",
+   "representativeQueries": [
+    "Create an original artwork from a text prompt and prepare it for printing",
+    "Show me the available print sizes, formats, frames, prices, and postage",
+    "Create a checkout link for a framed print of my generated artwork",
+    "Track my print order through production and shipment"
+   ]
+  },
+  {
+   "identifier": "urn:air:createprints.ai:openapi:agent-api",
+   "displayName": "Create Prints Agent API",
+   "type": "application/json",
+   "url": "https://api.createprints.ai/api/openapi.json",
+   "description": "OpenAPI description for artwork creation and import, print discovery, human-completed checkout, and order tracking.",
+   "representativeQueries": [
+    "Create or import a standalone artwork and monitor it until it is ready to print",
+    "List the available print sizes, formats, frames, prices, and estimated postage",
+    "Create a checkout link for my artwork that I can review and pay for",
+    "Check whether my print payment completed and what the agent should do next",
+    "Track a print order through fulfilment and shipment"
+   ]
+  },
+  {
+   "identifier": "urn:air:kortix.com:mcp:public-content",
+   "type": "application/mcp-server-card+json",
+   "url": "https://kortix.com/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:superset.sh:mcp:superset",
+   "displayName": "Superset MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://superset.sh/.well-known/mcp/server-card.json",
+   "description": "Create Git-worktree workspaces, launch coding-agent sessions, open terminals, schedule automations, and manage tasks on behalf of a Superset user. OAuth 2.1 + PKCE or API key.",
+   "tags": [
+    "coding-agents",
+    "workspaces",
+    "orchestration",
+    "automations",
+    "mcp"
+   ],
+   "capabilities": [
+    "tasks",
+    "workspaces",
+    "agents",
+    "terminals",
+    "automations",
+    "projects",
+    "hosts",
+    "organization"
+   ],
+   "representativeQueries": [
+    "create a workspace on a new branch and start Claude Code on it",
+    "list my open Superset tasks",
+    "schedule a nightly agent run that audits the repo",
+    "show what my coding agents are doing right now"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:mcp:docs",
+   "displayName": "Superset docs MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://docs.superset.sh/.well-known/mcp/server-card.json",
+   "description": "Read-only search and retrieval over the Superset documentation. No authentication.",
+   "tags": [
+    "documentation",
+    "search",
+    "mcp"
+   ],
+   "capabilities": [
+    "docs_search",
+    "docs_read"
+   ],
+   "representativeQueries": [
+    "how do I install the Superset CLI",
+    "what does a Superset automation do"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:api:superset",
+   "displayName": "Superset API",
+   "type": "application/vnd.oai.openapi+json;version=3.1",
+   "url": "https://api.superset.sh/openapi.json",
+   "description": "OpenAPI 3.1 description of the Superset HTTP surface: the MCP endpoint, OAuth 2.1 endpoints, and discovery metadata.",
+   "tags": [
+    "api",
+    "openapi",
+    "oauth"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-orchestrate",
+   "displayName": "superset-orchestrate",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-orchestrate/SKILL.md",
+   "description": "Agent skill: orchestrate with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-setup",
+   "displayName": "superset-setup",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-setup/SKILL.md",
+   "description": "Agent skill: setup with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-automate",
+   "displayName": "superset-automate",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-automate/SKILL.md",
+   "description": "Agent skill: automate with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-standup",
+   "displayName": "superset-standup",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-standup/SKILL.md",
+   "description": "Agent skill: standup with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-doctor",
+   "displayName": "superset-doctor",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-doctor/SKILL.md",
+   "description": "Agent skill: doctor with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-feedback",
+   "displayName": "superset-feedback",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-feedback/SKILL.md",
+   "description": "Agent skill: feedback with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-10x",
+   "displayName": "superset-10x",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-10x/SKILL.md",
+   "description": "Agent skill: 10x with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-contribute",
+   "displayName": "superset-contribute",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-contribute/SKILL.md",
+   "description": "Agent skill: contribute with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:superset.sh:skill:superset-mcp",
+   "displayName": "superset-mcp",
+   "type": "application/ai-skill+md",
+   "url": "https://superset.sh/.well-known/agent-skills/superset-mcp/SKILL.md",
+   "description": "Agent skill: mcp with the Superset CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:superset.sh",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:worldmonitor.app:mcp:worldmonitor",
+   "displayName": "World Monitor MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://worldmonitor.app/.well-known/mcp/server-card.json",
+   "description": "Live global-intelligence MCP server: real-time markets, conflict events, aviation, maritime, energy, climate, health, displacement, supply chain, and AI-generated regional briefs.",
+   "tags": [
+    "news-and-intelligence",
+    "news",
+    "intelligence",
+    "geopolitics",
+    "global-risk",
+    "mcp"
+   ],
+   "capabilities": [
+    "get_world_brief",
+    "get_country_brief",
+    "get_country_risk",
+    "get_conflict_events",
+    "get_market_data",
+    "get_energy_intelligence",
+    "get_maritime_activity",
+    "get_chokepoint_status",
+    "get_supply_chain_data",
+    "analyze_situation",
+    "generate_forecasts"
+   ],
+   "representativeQueries": [
+    "what is happening in the Red Sea right now",
+    "country risk briefing for Egypt",
+    "global markets and conflict overview this morning",
+    "which shipping chokepoints are disrupted",
+    "forecast the impact of a Strait of Hormuz closure"
+   ],
+   "trustManifest": {
+    "identity": "did:web:worldmonitor.app",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:worldmonitor.app:api:worldmonitor",
+   "displayName": "World Monitor REST API",
+   "type": "application/vnd.oai.openapi+json;version=3.1",
+   "url": "https://www.worldmonitor.app/openapi.json",
+   "description": "World Monitor's public REST API spans conflict, markets, energy, maritime, aviation, climate, health, and supply-chain intelligence, with API-key and OAuth access. Read the linked OpenAPI document for the live operation inventory.",
+   "tags": [
+    "news-and-intelligence",
+    "api",
+    "rest",
+    "openapi"
+   ],
+   "trustManifest": {
+    "identity": "did:web:worldmonitor.app",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:worldmonitor.app:agent-plugin:worldmonitor",
+   "displayName": "World Monitor agent plugin",
+   "type": "application/json",
+   "url": "https://www.worldmonitor.app/plugin.json",
+   "description": "Agent Plugins 1.0.0 manifest for World Monitor: MCP servers plus task-focused agent skills, packaged from the public GitHub repository.",
+   "tags": [
+    "news-and-intelligence",
+    "agent-plugin",
+    "mcp",
+    "agent-skills"
+   ],
+   "trustManifest": {
+    "identity": "did:web:worldmonitor.app",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:worldmonitor.app:skills:index",
+   "displayName": "World Monitor agent skills",
+   "type": "application/json",
+   "url": "https://worldmonitor.app/.well-known/agent-skills/index.json",
+   "description": "Self-published agent skills for common World Monitor workflows (country briefings, market prep, conflict monitoring, route risk).",
+   "tags": [
+    "news-and-intelligence",
+    "agent-skills",
+    "skills"
+   ],
+   "trustManifest": {
+    "identity": "did:web:worldmonitor.app",
+    "identityType": "did"
+   }
+  },
+  {
    "identifier": "urn:air:zapier.com:mcp",
    "displayName": "Zapier MCP",
    "type": "application/mcp-server-card+json",

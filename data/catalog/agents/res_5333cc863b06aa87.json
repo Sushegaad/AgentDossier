@@ -1,0 +1,219 @@
+{
+"canonical_url": "browser-harness.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation"
+],
+"technology": [
+"cloud",
+"llm",
+"playwright"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Browser Harness | Self-healing harness that enables LLMs to complete any task.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 24.69,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 63.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 24.69,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 71.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "browser-use/browser-harness"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_5333cc863b06aa87",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "MIT",
+"name": "browser-harness",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-04T02:52:52Z",
+"headline": "browser-harness v0.1.13",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What changed\n\n- Pin the MCP extra to mcp 2.1.1.\n- Pin release build tooling to build 1.6.0 and setuptools 84.0.0.\n- Preserve the Chrome permission and macOS accessibility reliability improvements from 0.1.12.\n\n## Verification\n\n- 251 unit",
+"tag": "product_update",
+"url": "https://github.com/browser-use/browser-harness/releases/tag/v0.1.13"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-04T01:09:15Z",
+"headline": "browser-harness v0.1.12",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* fix: discover Brave Origin profiles on macOS by @MagMueller in https://github.com/browser-use/browser-harness/pull/728\n* Keep one Chrome approval pending per daemon by @MagMueller in https://github.com/browser-use/browse",
+"tag": "product_update",
+"url": "https://github.com/browser-use/browser-harness/releases/tag/v0.1.12"
+},
+{
+"cluster_size": 1,
+"date": "2026-07-21T21:01:57Z",
+"discussion_url": "https://news.ycombinator.com/item?id=48998262",
+"engagement": 17,
+"headline": "Show HN: Browser Tools SDK – an optimal browser harness for agents",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://libretto.sh/browser-tools"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:25:52Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:50Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:25:52Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "browser-harness.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:44Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-04-17T01:56:15Z",
+"github_forks": 1770,
+"github_language": "Python",
+"github_open_issues": 401,
+"github_pushed_at": "2026-09-27T19:51:31Z",
+"github_stars": 18193,
+"github_topic": "ai-agent",
+"homepage": "https://browser-harness.com"
+},
+"slug": "browser-use-browser-harness",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/browser-use/browser-harness"
+}
+],
+"tags": [
+"ai-agent",
+"browser-agent",
+"browser-automation",
+"browser-use",
+"browser-use-box",
+"browser-use-cloud",
+"cdp",
+"cloud-browser",
+"llm",
+"persistent-browser",
+"playwright",
+"telegram-agent",
+"vps-agent",
+"web-automation"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://browser-harness.com",
+"vendor": "browser-use"
+}

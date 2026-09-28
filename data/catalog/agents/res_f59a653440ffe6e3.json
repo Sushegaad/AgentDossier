@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "41b07f10f93ffebc0023f5848b9e7a5e190f764f55ec9f096a264ee60bffb6fa",
+"payload_hash": "de9fb7e35292fbd74a5bc16eb715a9ce96b47a9ab07846cde40ca1bed8c173fd",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:11Z",
+"retrieved_at": "2026-09-28T23:32:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "41b07f10f93ffebc0023f5848b9e7a5e190f764f55ec9f096a264ee60bffb6fa",
+"payload_hash": "de9fb7e35292fbd74a5bc16eb715a9ce96b47a9ab07846cde40ca1bed8c173fd",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:11Z",
+"retrieved_at": "2026-09-28T23:32:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "ae1351948e6ad17edaff0ade9a26f0562a421c9b2f9a76fd05fa01c97a75a536",
+"payload_hash": "077cd65ae853e97ff47fe564ba52e532cfcf490a7d512276d5a037a503007884",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:11Z",
+"retrieved_at": "2026-09-28T23:32:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -95,9 +95,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "ae1351948e6ad17edaff0ade9a26f0562a421c9b2f9a76fd05fa01c97a75a536",
+"payload_hash": "077cd65ae853e97ff47fe564ba52e532cfcf490a7d512276d5a037a503007884",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:11Z",
+"retrieved_at": "2026-09-28T23:32:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -121,9 +121,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "ae1351948e6ad17edaff0ade9a26f0562a421c9b2f9a76fd05fa01c97a75a536",
+"payload_hash": "077cd65ae853e97ff47fe564ba52e532cfcf490a7d512276d5a037a503007884",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:11Z",
+"retrieved_at": "2026-09-28T23:32:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -147,9 +147,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "ae1351948e6ad17edaff0ade9a26f0562a421c9b2f9a76fd05fa01c97a75a536",
+"payload_hash": "077cd65ae853e97ff47fe564ba52e532cfcf490a7d512276d5a037a503007884",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:11Z",
+"retrieved_at": "2026-09-28T23:32:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -351,7 +351,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -373,24 +373,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Guidewire AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:39Z",
+"checked_at": "2026-09-28T23:26:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:37Z",
+"checked_at": "2026-09-28T23:26:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:40Z",
+"checked_at": "2026-09-28T23:26:47Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -398,6 +398,13 @@
 "publisher_domain": "guidewire.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:31Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -409,7 +416,7 @@
 "sources": [
 {
 "payload_hash": "4b9c91a7d26cf5828e9e531a0faa571741cdf43d5077aa356c9b75b06d014b84",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.guidewire.com/"
 }
@@ -421,7 +428,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.guidewire.com/",
 "vendor": "Guidewire"

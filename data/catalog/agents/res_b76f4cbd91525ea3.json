@@ -1,0 +1,135 @@
+{
+"canonical_url": "a2a-protocol.org",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 25.58,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 2.1,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 67.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "a2aproject/A2A"
+},
+"first_seen": "2026-09-28T23:24:47Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_b76f4cbd91525ea3",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:24:47Z",
+"license": "Apache-2.0",
+"name": "A2A",
+"news": [],
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:25:01Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:00Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:25:01Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "a2a-protocol.org",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-03-25T18:44:21Z",
+"github_forks": 2636,
+"github_language": "Shell",
+"github_open_issues": 263,
+"github_pushed_at": "2026-09-25T13:44:10Z",
+"github_stars": 25960,
+"github_topic": "a2a",
+"homepage": "https://a2a-protocol.org/"
+},
+"slug": "a2aproject-a2a",
+"sources": [
+{
+"payload_hash": "4b7522172b5a7fbef419aca622bc2a2a3c92b83e2495b8be09ebd668fba2ae13",
+"retrieved_at": "2026-09-28T23:24:47Z",
+"system": "github",
+"url": "https://github.com/a2aproject/A2A"
+}
+],
+"tags": [
+"a2a",
+"a2a-mcp",
+"a2a-protocol",
+"a2a-server",
+"agents",
+"generative-ai",
+"linux-foundation"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://a2a-protocol.org/",
+"vendor": "a2aproject"
+}

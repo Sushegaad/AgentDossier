@@ -1,0 +1,266 @@
+{
+"canonical_url": "mcp.agentutility.ai/agentops",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"api",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "MCP server for the @agentutility agentops cluster — pay-per-call x402 tools, no API keys, USDC on…",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.6,
+"governance": null,
+"health": 16.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 0.7,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 44.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "rooz21/x402",
+"mcp_registry": "ai.agentutility/mcp-agentops"
+},
+"first_seen": "2026-09-28T23:18:08Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f3e91dfe497a4686",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:18:08Z",
+"license": null,
+"merged_ids": [
+"res_77568dfda7fab642",
+"res_e2400a1c845f7e92",
+"res_7081bc9cc98e3a42",
+"res_ccd3aa72ab14febc",
+"res_ef1d316036e430c1",
+"res_05e291b7807580a6",
+"res_127fef021ba7c446",
+"res_08a20a6bd26a8e23",
+"res_f9e8c80bbfdced3d",
+"res_a7c99fc513da4e75",
+"res_1e9083f6aa82add5",
+"res_9c895fe9b1f7e49e",
+"res_38a9cddad56edfca",
+"res_6de25b3ad57605ad",
+"res_4902fb79fb6c30c6",
+"res_35bedc3a5570a762"
+],
+"name": "AgentUtility Agentops",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://mcp.agentutility.ai/.well-known/agent.json",
+"checked_at": "2026-09-28T23:26:59Z",
+"errors": [
+"missing 'name'",
+"missing 'description'",
+"missing 'version'"
+],
+"parser_version": "a2a-0.3+1.0",
+"signed": false,
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:58Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"packages": [
+{
+"identifier": "@agentutility/mcp-agentops",
+"registry": "npm",
+"transport": "stdio",
+"version": "0.1.1"
+}
+],
+"parser_version": "mcp-2025-06-18",
+"server_name": "ai.agentutility/mcp-agentops",
+"status": "claimed",
+"version": "0.1.1",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "mcp.agentutility.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:37:09Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 1,
+"mcp_registry_published_at": "2026-07-14T21:10:14.904919Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-07-14T21:10:14.904919Z",
+"mcp_transports": []
+},
+"slug": "agentutility-ai-agentutility-agentops",
+"sources": [
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-agentops"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-bestiary"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-browser-workflow"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-compose"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-edge-finance"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-edge-market"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-locale"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-matchpoint"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-mediakit"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-model-router"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-prooflayer"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-retail"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-rollforge"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-statline"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-synthforge"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-web-probe"
+},
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentutility/mcp-wordmint"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": 1
+},
+"url": "https://mcp.agentutility.ai/agentops/",
+"vendor": "agentutility.ai"
+}

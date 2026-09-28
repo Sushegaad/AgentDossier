@@ -1,0 +1,153 @@
+{
+"canonical_url": "jcode.sh",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"cli",
+"coding",
+"llm",
+"mcp",
+"terminal"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "The most RAM efficient harness",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 24.95,
+"docs": 7.0,
+"domain_fit": 87.5,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.875,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 73.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "1jehuang/jcode"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_fbb53b26bf337c13",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "MIT",
+"name": "jcode",
+"news": [],
+"protocols": {
+"a2a": {
+"card_url": "https://jcode.sh/.well-known/agent.json",
+"checked_at": "2026-09-28T23:26:53Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:51Z",
+"errors": [
+"https://jcode.sh/.well-known/ard.json: not valid JSON",
+"https://jcode.sh/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://jcode.sh/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:26:53Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "jcode.sh",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-01-05T09:43:36Z",
+"github_forks": 2342,
+"github_language": "Rust",
+"github_open_issues": 617,
+"github_pushed_at": "2026-09-28T04:46:11Z",
+"github_stars": 20197,
+"github_topic": "ai-agent",
+"homepage": "https://jcode.sh"
+},
+"slug": "1jehuang-jcode",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/1jehuang/jcode"
+}
+],
+"tags": [
+"ai",
+"ai-agent",
+"ai-coding-agent",
+"claude",
+"cli",
+"coding-agent",
+"llm",
+"mcp",
+"openai",
+"rust",
+"terminal",
+"tui"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://jcode.sh",
+"vendor": "1jehuang"
+}

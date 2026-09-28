@@ -31,9 +31,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:27Z",
+"retrieved_at": "2026-09-28T23:29:30Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -71,9 +71,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:27Z",
+"retrieved_at": "2026-09-28T23:29:30Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -111,9 +111,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:27Z",
+"retrieved_at": "2026-09-28T23:29:30Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -139,7 +139,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "15817f8eb207fb3588ff51a350411302cafaead962d3d4710c3f186c0ddd79aa",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:20Z",
+"retrieved_at": "2026-09-28T23:33:09Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -357,7 +357,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -379,24 +379,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": null,
 "name": "Microsoft Agent Store",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:46Z",
+"checked_at": "2026-09-28T23:26:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:44Z",
+"checked_at": "2026-09-28T23:26:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:47Z",
+"checked_at": "2026-09-28T23:26:55Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -406,7 +406,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T00:20:14Z",
+"checked_at": "2026-09-28T23:34:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -422,7 +422,7 @@
 "sources": [
 {
 "payload_hash": "afbc12a4a713a34852385bee95515493d979bfd947ab3e5035d49f9333b61c8a",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-agent-store"
 }

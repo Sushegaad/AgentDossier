@@ -1,0 +1,102 @@
+{
+"canonical_url": "huggingface.co/spaces/agents-mcp-hackathon/healthmateai-medical-triage-assistant",
+"category": "Hugging Face Space",
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "hosted",
+"description": null,
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"huggingface_space": "Agents-MCP-Hackathon/HealthMateAI-Medical-Triage-Assistant"
+},
+"first_seen": "2026-09-28T23:19:10Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_0a335f383b5d40d1",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2023-01-09",
+"kind": "cve",
+"title": "CVE-2015-10032",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2015-10032"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:10Z",
+"license": null,
+"name": "HealthMate",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "huggingface.co",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:40:33Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"hf_created_at": "2025-06-06T19:19:44.000Z",
+"hf_last_modified": "2025-09-01T19:04:13.000Z",
+"hf_likes": 21,
+"hf_pinned": true,
+"hf_sdk": "gradio"
+},
+"slug": "agents-mcp-hackathon-healthmate",
+"sources": [
+{
+"payload_hash": "a0992693f7d0a52045903435887764010e7037b275d9faca10dd21c3cf4f2e3f",
+"retrieved_at": "2026-09-28T23:19:10Z",
+"system": "huggingface",
+"url": "https://huggingface.co/spaces/Agents-MCP-Hackathon/HealthMateAI-Medical-Triage-Assistant"
+}
+],
+"tags": [
+"agent-demo-track",
+"gradio"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://huggingface.co/spaces/Agents-MCP-Hackathon/HealthMateAI-Medical-Triage-Assistant",
+"vendor": "Agents-MCP-Hackathon"
+}

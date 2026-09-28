@@ -1,0 +1,174 @@
+{
+"canonical_url": "mcp.bev-buyer.ai/mcp",
+"capabilities": [
+"search_drinks",
+"get_record",
+"find_producer",
+"list_nodes",
+"compare_drinks",
+"get_order_route",
+"create_order_intent",
+"get_offers",
+"accept_offer"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"supply_chain": [
+"route"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Agentic B2B hub for beer, wine and spirits across Europe.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 8.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 29.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"supply_chain": {
+"components": {
+"adoption": null,
+"docs": 8.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": null,
+"score": 30.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:agent-bev.ai:bev-door"
+},
+"first_seen": "2026-09-28T23:25:09Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_5938a34e13830b7c",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:25:09Z",
+"license": null,
+"name": "agent-bev",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agent-bev.ai:bev-door",
+"manifest_url": "https://agent-bev.ai/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "agent-bev.ai",
+"representative_queries": [],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:58Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agent-bev-ai-agent-bev",
+"sources": [
+{
+"payload_hash": "0db1811a59ecd4a5f46b95ce38ab9fee1329a022c1667de2eb19cf2557d32d4d",
+"retrieved_at": "2026-09-28T23:25:09Z",
+"system": "ard",
+"url": "https://agent-bev.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://mcp.bev-buyer.ai/mcp",
+"vendor": "agent-bev.ai"
+}

@@ -1,0 +1,93 @@
+{
+"canonical_url": "mcp.bev-cuvee.ai/mcp",
+"capabilities": [
+"validate_cuvee",
+"list_vocab",
+"resolve_cuvee",
+"explain_cuvee"
+],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "The classification standard for beverage alcohol.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:agent-bev.ai:bev-cuvee"
+},
+"first_seen": "2026-09-28T23:25:09Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_1bae2f7705112069",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:25:09Z",
+"license": null,
+"name": "CUVEE",
+"news": [],
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agent-bev.ai:bev-cuvee",
+"manifest_url": "https://agent-bev.ai/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "agent-bev.ai",
+"representative_queries": [],
+"resource_type": "agent",
+"scope": "public",
+"signals": {},
+"slug": "agent-bev-ai-cuvee",
+"sources": [
+{
+"payload_hash": "5a40909561a080c103673eec497b1a3deb05da732dd97ef14b2edbbcbacbad93",
+"retrieved_at": "2026-09-28T23:25:09Z",
+"system": "ard",
+"url": "https://agent-bev.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": null,
+"protocols": 1,
+"security": null
+},
+"url": "https://mcp.bev-cuvee.ai/mcp",
+"vendor": "agent-bev.ai"
+}

@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:31Z",
+"retrieved_at": "2026-09-28T23:29:33Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -48,9 +48,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "63925d8c68ffe031af07db5c9cb144b4e538c10fa9b4460a7d1f3a915e89c6e6",
+"payload_hash": "e4d2f9543c25de8dfc816b0edc9ff7a899273ee746b4b1421fd36d31476b804a",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:31Z",
+"retrieved_at": "2026-09-28T23:33:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -268,7 +268,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -290,24 +290,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "SentinelOne Purple AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:58Z",
+"checked_at": "2026-09-28T23:27:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:56Z",
+"checked_at": "2026-09-28T23:27:25Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:59Z",
+"checked_at": "2026-09-28T23:27:27Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -315,6 +315,13 @@
 "publisher_domain": "sentinelone.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:12Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -326,7 +333,7 @@
 "sources": [
 {
 "payload_hash": "72bd775b688dbcf043e0a92f984f777cff76c2a81f949057c8f8069ff81a7ae6",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.sentinelone.com/platform/purple-ai/"
 }
@@ -338,7 +345,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.sentinelone.com/platform/purple-ai/",
 "vendor": "SentinelOne"

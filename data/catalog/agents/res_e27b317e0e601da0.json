@@ -50,7 +50,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,13 +66,74 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 10,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2025-10-17",
+"kind": "cve",
+"title": "CVE-2025-62505",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62505"
+},
+{
+"date": "2026-01-18",
+"kind": "cve",
+"title": "CVE-2026-23733",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-23733"
+},
+{
+"date": "2026-01-19",
+"kind": "cve",
+"title": "CVE-2026-23522",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-23522"
+},
+{
+"date": "2026-05-12",
+"kind": "cve",
+"title": "CVE-2026-42045",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42045"
+},
+{
+"date": "2026-07-02",
+"kind": "cve",
+"title": "CVE-2026-58578",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58578"
+},
+{
+"date": "2026-07-02",
+"kind": "cve",
+"title": "CVE-2026-58580",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58580"
+},
+{
+"date": "2026-07-02",
+"kind": "cve",
+"title": "CVE-2026-59095",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59095"
+},
+{
+"date": "2026-07-02",
+"kind": "cve",
+"title": "CVE-2026-59098",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59098"
+},
+{
+"date": "2026-07-02",
+"kind": "cve",
+"title": "CVE-2026-59100",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59100"
+},
+{
+"date": "2026-09-04",
+"kind": "cve",
+"title": "CVE-2026-85621",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85621"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Apache-2.0",
 "name": "LobeChat",
 "news": [],
@@ -91,6 +152,13 @@
 "publisher_domain": "github.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:40Z",
+"cves": 10,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -102,7 +170,7 @@
 "sources": [
 {
 "payload_hash": "aafb49535b290bfbe39a9380449fc1265519ec0ae74ab3fa535c1038773b05d1",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://github.com/lobehub/lobe-chat"
 }
@@ -112,9 +180,9 @@
 "trust": {
 "compliance": 5,
 "identity": 4,
-"issues": 1,
+"issues": 3,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://github.com/lobehub/lobe-chat",
 "vendor": "LobeHub"

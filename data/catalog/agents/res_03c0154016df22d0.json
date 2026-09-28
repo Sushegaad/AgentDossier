@@ -34,7 +34,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -50,13 +50,26 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 2,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2026-08-28",
+"kind": "cve",
+"title": "CVE-2026-82268",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82268"
+},
+{
+"date": "2026-08-28",
+"kind": "cve",
+"title": "CVE-2026-82275",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82275"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Apache-2.0",
 "name": "Qwen-Agent",
 "news": [],
@@ -75,6 +88,13 @@
 "publisher_domain": "github.com",
 "resource_type": "framework",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:36:17Z",
+"cves": 2,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -86,7 +106,7 @@
 "sources": [
 {
 "payload_hash": "a2d4143d51fae9a74890ecd59c0aa26efbc2720c8c52e9b330f3ad9c472920c1",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://github.com/QwenLM/Qwen-Agent"
 }
@@ -96,9 +116,9 @@
 "trust": {
 "compliance": 5,
 "identity": 4,
-"issues": 1,
+"issues": 3,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://github.com/QwenLM/Qwen-Agent",
 "vendor": "Alibaba / Qwen"

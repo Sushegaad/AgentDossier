@@ -1,0 +1,309 @@
+{
+"canonical_url": "worldmonitor.app/.well-known/mcp/server-card.json",
+"capabilities": [
+"get_world_brief",
+"get_country_brief",
+"get_country_risk",
+"get_conflict_events",
+"get_market_data",
+"get_energy_intelligence",
+"get_maritime_activity",
+"get_chokepoint_status",
+"get_supply_chain_data",
+"analyze_situation",
+"generate_forecasts"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"healthcare": [
+"health"
+],
+"regulatory": [
+"risk"
+],
+"supply_chain": [
+"supply chain"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-09-28)",
+"evidence_url": "https://www.worldmonitor.app/docs/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "4aada3344892499f8a31ba460724cd8cdfda8d8b420b078a70d47693113f6228",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:34:06Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+}
+],
+"deployment": null,
+"description": "Live global-intelligence MCP server: real-time markets, conflict events, aviation, maritime, energy, climate, health, displacement, supply chain, and AI-generated regional briefs.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": 10.0,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": 37.9,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 37.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+},
+"healthcare": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": 10.0,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_evidence": {
+"credited": {},
+"score": 41.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": null,
+"score": 42.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+},
+"regulatory": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": 10.0,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_evidence": {
+"credited": {},
+"score": 41.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": null,
+"score": 42.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+},
+"supply_chain": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": 10.0,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.65,
+"governance_evidence": {
+"credited": {},
+"score": 39.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": null,
+"score": 40.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": 10.0,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": 36.2,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 36.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:worldmonitor.app:mcp:worldmonitor"
+},
+"first_seen": "2026-09-28T23:28:25Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_136089b1a3fb62d4",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:28:25Z",
+"license": null,
+"name": "World Monitor MCP server",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:worldmonitor.app:mcp:worldmonitor",
+"manifest_url": "https://worldmonitor.app/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"server_card_url": "https://worldmonitor.app/.well-known/mcp/server-card.json",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "worldmonitor.app",
+"representative_queries": [
+"what is happening in the Red Sea right now",
+"country risk briefing for Egypt",
+"global markets and conflict overview this morning",
+"which shipping chokepoints are disrupted",
+"forecast the impact of a Strait of Hormuz closure"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:40Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "worldmonitor-app-world-monitor-mcp-server",
+"sources": [
+{
+"payload_hash": "14a0e03b9224298ab9444ebfa033cc6f5ff87ccfb894d960df319060f2818bc9",
+"retrieved_at": "2026-09-28T23:28:25Z",
+"system": "ard",
+"url": "https://worldmonitor.app/.well-known/ai-catalog.json"
+}
+],
+"tags": [
+"news-and-intelligence",
+"news",
+"intelligence",
+"geopolitics",
+"global-risk",
+"mcp"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://worldmonitor.app/.well-known/mcp/server-card.json",
+"vendor": "worldmonitor.app"
+}

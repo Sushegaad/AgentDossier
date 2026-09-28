@@ -1,0 +1,135 @@
+{
+"canonical_url": "agentgates.ai/skills/agentgates-inference/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"finance": [
+"payment"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Step-by-step skill: ask open models on attested GPUs, one request one x402 payment, or prepay a balance and mint bearer keys.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"finance": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.9,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": null,
+"score": 36.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:agentgates.ai:skills:inference"
+},
+"first_seen": "2026-09-28T23:25:09Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f43b74ec46ab141d",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:25:09Z",
+"license": null,
+"name": "Pay-per-request inference (skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agentgates.ai:skills:inference",
+"manifest_url": "https://agentgates.ai/.well-known/ai-catalog.json",
+"media_type": "application/ai-skill+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "agentgates.ai",
+"representative_queries": [
+"cheapest way for an agent to pay for LLM inference per request",
+"inference API with no signup that takes USDC"
+],
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:05Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agentgates-ai-pay-per-request-inference-skill",
+"sources": [
+{
+"payload_hash": "95ba67a4bba02d47d445c8ce268559f08bd135631e94bacd08937018994f0827",
+"retrieved_at": "2026-09-28T23:25:09Z",
+"system": "ard",
+"url": "https://agentgates.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [
+"skill",
+"inference",
+"x402"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://agentgates.ai/skills/agentgates-inference/SKILL.md",
+"vendor": "agentgates.ai"
+}

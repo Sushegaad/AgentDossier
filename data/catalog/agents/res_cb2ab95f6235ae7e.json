@@ -1,0 +1,161 @@
+{
+"canonical_url": "fastapi-mcp.tadata.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 23.65,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 8.0,
+"governance": null,
+"health": 8.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 65.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "tadata-org/fastapi_mcp"
+},
+"first_seen": "2026-09-28T23:23:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_cb2ab95f6235ae7e",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "MIT",
+"name": "fastapi_mcp",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://fastapi-mcp.tadata.com/.well-known/agent-card.json",
+"checked_at": "2026-09-28T23:26:38Z",
+"parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3",
+"signed": false,
+"status": "verified",
+"version": "1.0.0"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:36Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"card_url": "https://fastapi-mcp.tadata.com/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:26:38Z",
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "http",
+"url": "https://tadata-a67d782f.main-kill-isr.mintlify.me/mcp"
+}
+],
+"status": "invalid"
+}
+},
+"publisher_domain": "fastapi-mcp.tadata.com",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:10Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-03-08T11:15:43Z",
+"github_forks": 971,
+"github_language": "Python",
+"github_open_issues": 171,
+"github_pushed_at": "2025-11-24T14:51:54Z",
+"github_stars": 12012,
+"github_topic": "mcp-server",
+"homepage": "https://fastapi-mcp.tadata.com/"
+},
+"slug": "tadata-org-fastapi-mcp",
+"sources": [
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
+"url": "https://github.com/tadata-org/fastapi_mcp"
+}
+],
+"tags": [
+"ai",
+"authentication",
+"authorization",
+"claude",
+"cursor",
+"fastapi",
+"llm",
+"mcp",
+"mcp-server",
+"mcp-servers",
+"modelcontextprotocol",
+"openapi",
+"windsurf"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://fastapi-mcp.tadata.com/",
+"vendor": "tadata-org"
+}

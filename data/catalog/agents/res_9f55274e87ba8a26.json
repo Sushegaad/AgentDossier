@@ -1,0 +1,105 @@
+{
+"canonical_url": "mcp.bev-seller.ai/mcp",
+"capabilities": [
+"claim_record",
+"update_record",
+"get_claim_status",
+"verify_producer",
+"register_brand_agent",
+"get_demand",
+"list_order_intents",
+"make_offer"
+],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Be on the shelf the agents buy from.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:agent-bev.ai:bev-seller"
+},
+"first_seen": "2026-09-28T23:25:09Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9f55274e87ba8a26",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:25:09Z",
+"license": null,
+"name": "agent-bev · sellers",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agent-bev.ai:bev-seller",
+"manifest_url": "https://agent-bev.ai/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "agent-bev.ai",
+"representative_queries": [],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:58Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agent-bev-ai-agent-bev-sellers",
+"sources": [
+{
+"payload_hash": "70f4261b660439762b4af42b00099dd55809029bb29af90810a04dec67bdd5c4",
+"retrieved_at": "2026-09-28T23:25:09Z",
+"system": "ard",
+"url": "https://agent-bev.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://mcp.bev-seller.ai/mcp",
+"vendor": "agent-bev.ai"
+}

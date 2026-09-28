@@ -1,0 +1,290 @@
+{
+"canonical_url": "cua.ai",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation"
+],
+"data": [
+"data"
+],
+"technology": [
+"framework"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://cua.ai/privacy-policy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "48e5247bd2f4c1c69ed88781fad5c32ac667a58fd4a7a3f34e5782a5197ffb62",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:32:32Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "SOC 2 Type I: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://cua.ai/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "138136da6fc837ac33e8c55e653b982b08c0f787402fe93f7cd277f920b9f51b",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:32:32Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_I"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://cua.ai/trust",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "c6c0c9f36d0fdf64d9bb63ddc393d534ca26d40182c26ac874d62eb0433fcb4f",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:32:32Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
+}
+],
+"deployment": "self-hosted",
+"description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 25.67,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": 30.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 64.5,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 66.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"data": {
+"components": {
+"adoption": 25.67,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": 30.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 65.8,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 65.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 25.67,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": 30.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 68.4,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 68.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "trycua/cua"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_a8c4598fe23aabbd",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "MIT",
+"name": "cua",
+"news": [],
+"protocols": {
+"a2a": {
+"card_url": "https://run.cua.ai/",
+"checked_at": "2026-09-28T23:26:22Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:21Z",
+"errors": [
+"https://cua.ai/.well-known/ard.json: not valid JSON",
+"https://cua.ai/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://run.cua.ai/",
+"checked_at": "2026-09-28T23:26:23Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "cua.ai",
+"resource_type": "framework",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-01-31T15:02:49Z",
+"github_forks": 1867,
+"github_language": "HTML",
+"github_open_issues": 1055,
+"github_pushed_at": "2026-09-28T23:20:41Z",
+"github_stars": 26850,
+"github_topic": "ai-agent",
+"homepage": "https://cua.ai"
+},
+"slug": "trycua-cua",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/trycua/cua"
+}
+],
+"tags": [
+"agent",
+"ai-agent",
+"apple",
+"computer-use",
+"computer-use-agent",
+"containerization",
+"cua",
+"desktop-automation",
+"hacktoberfest",
+"lume",
+"macos",
+"manus",
+"operator",
+"swift",
+"virtualization",
+"virtualization-framework",
+"windows",
+"windows-sandbox"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://cua.ai",
+"vendor": "trycua"
+}

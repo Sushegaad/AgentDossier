@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:31Z",
+"retrieved_at": "2026-09-28T23:29:34Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": "Agency / 3PAO Tevora Business Solutions, Inc.",
 "match_confidence": 0.933,
 "next_check": "2026-10-05",
-"payload_hash": "cc38f65754752a52fc5546b0b94ca641ae463ca60c64b331156eace741742b2f",
+"payload_hash": "9a02d4e11d69bbbd2c1a43f222328fb6fb1b6bc889c2398d7fd6d0436d956572",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:12Z",
+"retrieved_at": "2026-09-28T23:28:29Z",
 "review_reason": "entity 1.00, offering 0.85",
 "reviewer": null,
 "scope": "product",
@@ -80,7 +80,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "6fd90d637e60f608df5342355bdfbb39e58e5974d22ee6e75a136f9a97099bad",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -106,7 +106,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "6fd90d637e60f608df5342355bdfbb39e58e5974d22ee6e75a136f9a97099bad",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -132,7 +132,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "6fd90d637e60f608df5342355bdfbb39e58e5974d22ee6e75a136f9a97099bad",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -158,7 +158,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "6fd90d637e60f608df5342355bdfbb39e58e5974d22ee6e75a136f9a97099bad",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -184,7 +184,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "6fd90d637e60f608df5342355bdfbb39e58e5974d22ee6e75a136f9a97099bad",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -210,7 +210,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "6fd90d637e60f608df5342355bdfbb39e58e5974d22ee6e75a136f9a97099bad",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -412,7 +412,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -434,7 +434,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Ironclad AI",
 "news": [],
@@ -442,7 +442,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://ironcladapp.com/.well-known/agent.json",
-"checked_at": "2026-09-28T00:16:43Z",
+"checked_at": "2026-09-28T23:26:52Z",
 "errors": [
 "not valid JSON"
 ],
@@ -450,7 +450,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:42Z",
+"checked_at": "2026-09-28T23:26:51Z",
 "errors": [
 "https://ironcladapp.com/.well-known/ard.json: not valid JSON",
 "https://ironcladapp.com/.well-known/ai-catalog.json: not valid JSON"
@@ -460,7 +460,7 @@
 },
 "mcp": {
 "card_url": "https://ironcladapp.com/.well-known/mcp.json",
-"checked_at": "2026-09-28T00:16:44Z",
+"checked_at": "2026-09-28T23:26:52Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -468,6 +468,13 @@
 "publisher_domain": "ironcladapp.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:13Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -479,7 +486,7 @@
 "sources": [
 {
 "payload_hash": "beae8addcace1b658e7563481c23d582b4e6ef9fe721227a02b4f82728a37f36",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://ironcladapp.com/ai/"
 }
@@ -491,7 +498,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://ironcladapp.com/ai/",
 "vendor": "Ironclad"

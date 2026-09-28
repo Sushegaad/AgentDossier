@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:33Z",
+"retrieved_at": "2026-09-28T23:29:35Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -242,7 +242,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -264,24 +264,23 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Wiz AI",
 "news": [],
-"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:17:03Z",
+"checked_at": "2026-09-28T23:27:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:17:01Z",
+"checked_at": "2026-09-28T23:27:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:17:04Z",
+"checked_at": "2026-09-28T23:27:43Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -300,7 +299,7 @@
 "sources": [
 {
 "payload_hash": "b8632166626ef92869177c6602fc654f5fe0aa5760f50cb2cb109ca64b014961",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.wiz.io/"
 }
@@ -310,7 +309,7 @@
 "trust": {
 "compliance": 1,
 "identity": 4,
-"issues": 1,
+"issues": null,
 "protocols": 5,
 "security": null
 },

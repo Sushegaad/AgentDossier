@@ -1,0 +1,278 @@
+{
+"canonical_url": "github.com/feder-cr/invisible_playwright_mcp/wiki",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation",
+"productivity"
+],
+"data": [
+"scraping",
+"search"
+],
+"sales": [
+"lead"
+],
+"technology": [
+"browser automation",
+"cli",
+"code",
+"llm",
+"mcp",
+"playwright",
+"python"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Python, undetected browser automation, scraping, computer use.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 26.09,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 67.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 26.09,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 69.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"sales": {
+"components": {
+"adoption": 26.09,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.95,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": null,
+"score": 61.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 26.09,
+"docs": 7.0,
+"domain_fit": 94.5,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.945,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 74.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "feder-cr/invisible_playwright_mcp"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_1a47679fcd21c627",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "MIT",
+"merged_ids": [
+"res_1a47679fcd21c627"
+],
+"name": "invisible_playwright_mcp",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-25T13:56:56Z",
+"headline": "invisible_playwright_mcp 0.70.2",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "browser_navigate to YouTube, Reddit, or any page that replaces itself from\nscript while it loads waited 45 s for a navigation that was gone and answered\nwith an error on a page that was ready. Through this server's own tools, on\ninvisible-p",
+"tag": "product_update",
+"url": "https://github.com/feder-cr/invisible_playwright_mcp/releases/tag/v0.70.2"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-25T08:59:46Z",
+"headline": "invisible_playwright_mcp 0.70.1",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Claude Desktop on Windows is an MSIX package. Files the server wrote under\nAppData really landed in the package's own LocalCache folder, and the engine\ndownloaded there could not be started from the AppData path: the first\n`browser_open` of",
+"tag": "product_update",
+"url": "https://github.com/feder-cr/invisible_playwright_mcp/releases/tag/v0.70.1"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:20Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2024-08-04T12:15:06Z",
+"github_forks": 4680,
+"github_language": "Python",
+"github_open_issues": 5,
+"github_pushed_at": "2026-09-25T13:53:08Z",
+"github_stars": 31692,
+"github_topic": "ai-agent",
+"homepage": "https://github.com/feder-cr/invisible_playwright_mcp/wiki"
+},
+"slug": "feder-cr-invisible-playwright-mcp",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/feder-cr/invisible_playwright_mcp"
+}
+],
+"tags": [
+"agentic-ai",
+"ai-agent",
+"ai-automation",
+"autonomous-agents",
+"browser",
+"claude-code-plugin",
+"crawler",
+"gemini-cli-extension",
+"job-hunting",
+"job-search",
+"lead-generation",
+"llm-agent",
+"market-research",
+"mcp-server",
+"model-context-protocol",
+"playwright",
+"productivity",
+"scraper",
+"web-automation",
+"web-research"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://github.com/feder-cr/invisible_playwright_mcp/wiki",
+"vendor": "feder-cr"
+}

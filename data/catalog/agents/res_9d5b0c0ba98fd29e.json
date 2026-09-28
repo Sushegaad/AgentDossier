@@ -1,0 +1,138 @@
+{
+"canonical_url": "agentgates.ai/.well-known/mcp.json",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Pair an Agentgates wallet over MCP (OAuth) and act with it under owner-approved grants.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 8.5,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 34.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:agentgates.ai:platform:mcp"
+},
+"first_seen": "2026-09-28T23:25:09Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9d5b0c0ba98fd29e",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:25:09Z",
+"license": null,
+"name": "Agentgates MCP server",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agentgates.ai:platform:mcp",
+"manifest_url": "https://agentgates.ai/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"server_card_url": "https://agentgates.ai/.well-known/mcp.json",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "agentgates.ai",
+"representative_queries": [
+"MCP server that can hold a wallet and pay in USDC",
+"pair my agent with a crypto wallet over MCP",
+"agent wallet with owner-approved spending grants"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:01Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agentgates-ai-agentgates-mcp-server",
+"sources": [
+{
+"payload_hash": "78cab5162bb33dc804d9b0471abcc990575c0a8ce8c67cfbd63a64e886b543c2",
+"retrieved_at": "2026-09-28T23:25:09Z",
+"system": "ard",
+"url": "https://agentgates.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [
+"mcp",
+"wallet",
+"usdc"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://agentgates.ai/.well-known/mcp.json",
+"vendor": "agentgates.ai"
+}

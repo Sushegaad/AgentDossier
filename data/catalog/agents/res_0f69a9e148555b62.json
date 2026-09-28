@@ -1,0 +1,132 @@
+{
+"canonical_url": "api.apatero.ai/api/schema",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"api"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "OpenAPI 3 description of the generation, gallery, billing and account endpoints.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 27.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:apatero.ai:openapi:studio-api"
+},
+"first_seen": "2026-09-28T23:26:04Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_0f69a9e148555b62",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:26:04Z",
+"license": null,
+"name": "Apatero Studio REST API",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:apatero.ai:openapi:studio-api",
+"manifest_url": "https://apatero.ai/.well-known/ai-catalog.json",
+"media_type": "application/vnd.oai.openapi",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "apatero.ai",
+"representative_queries": [
+"what models can I generate with and what do they cost",
+"check the status of my generation job",
+"how many credits are left on my account"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:13Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "apatero-ai-apatero-studio-rest-api",
+"sources": [
+{
+"payload_hash": "10508cdf44c3c26f6f5515d774496aaf57d33aba1b66b3d4dee3fd73d62cb39c",
+"retrieved_at": "2026-09-28T23:26:04Z",
+"system": "ard",
+"url": "https://apatero.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://api.apatero.ai/api/schema/",
+"vendor": "apatero.ai"
+}

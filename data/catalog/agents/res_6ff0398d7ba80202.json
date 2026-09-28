@@ -1,0 +1,235 @@
+{
+"canonical_url": "github.com/simonlin1212/a-stock-data",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"finance": [
+"finance",
+"financial",
+"fintech",
+"stock",
+"trading"
+],
+"technology": [
+"code",
+"llm",
+"python"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "A股全栈数据工具包：行情K线·当日逐笔·研报·信号·资金面·新闻·财务·公告·打板·ETF期权·舆情·宏观利率·期货大宗(含大商所日K)·事件驱动·可转债 | 15层·87端点·34数据源·除iwencai外免Key | A-share data for AI agents: K-lines, ticks, reports, fund flow, news, financials, filings, options, macro, futures, events, convertibles | 15 layers·87 endpoints·34 sources",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": 23.29,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 63.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"finance": {
+"components": {
+"adoption": 23.29,
+"docs": 7.0,
+"domain_fit": 87.5,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.875,
+"evidence_coverage": 0.85,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": null,
+"score": 60.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 23.29,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "simonlin1212/a-stock-data"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_6ff0398d7ba80202",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "Apache-2.0",
+"name": "a-stock-data",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-22T16:11:05Z",
+"headline": "a-stock-data v3.10.0 — 当日逐笔 / 期货日 K（含大商所）/ 行情层重排",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "新增 **2 个能力入口**，来源数不变：十五层、87 个入口（82 主入口 + 5 备胎）、34 个来源。\n通达信公开服务器的 K 线 / 盘口 / 逐笔命令 2026-09 起返回空（#52），本版补上逐笔的替代来源，并把行情层的可用来源排到前面。\n\n### Breaking Changes\n\n- **Layer 1 重新编号**，可用来源在前、mootdx 放最后留档。旧 → 新：\n  1.2 腾讯财经 → **1.1**、1.5 腾讯 K 线 → **1.2**、1.",
+"tag": "product_update",
+"url": "https://github.com/simonlin1212/a-stock-data/releases/tag/v3.10.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-20T00:36:31Z",
+"headline": "a-stock-data v3.9.0 — 期货大宗 / 事件驱动 / 可转债三层，15 层 · 85 入口 · 34 源",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "新增 **3 层、25 个能力入口、12 个来源**：十五层、85 个入口（80 主入口 + 5 备胎）、34 个来源。\n新来源为通达信官网盘后包、华尔街见闻、央视网、上证e互动、中债、中国货币网、上期所、上期能源、郑商所、中金所、\n广期所、上金所；腾讯、新浪、东财、沪深交易所已存在，本次增加其端点。处理 #49、#52、#53、#55。\n\n### Breaking Changes\n\n无。旧函数签名保留；`tdx_client()` 新增 `check` 参数，默认仍是 `",
+"tag": "product_update",
+"url": "https://github.com/simonlin1212/a-stock-data/releases/tag/v3.9.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:19Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-05-11T01:08:15Z",
+"github_forks": 1896,
+"github_language": "Python",
+"github_open_issues": 1,
+"github_pushed_at": "2026-09-25T09:56:12Z",
+"github_stars": 10416,
+"github_topic": "ai-agent",
+"homepage": null
+},
+"slug": "simonlin1212-a-stock-data",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/simonlin1212/a-stock-data"
+}
+],
+"tags": [
+"a-share",
+"ai-agent",
+"ai-skill",
+"china-stocks",
+"claude-code",
+"financial-data",
+"fintech",
+"investment-research",
+"llm-tools",
+"market-data",
+"python",
+"quantitative-finance",
+"stock-market",
+"trading"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://github.com/simonlin1212/a-stock-data",
+"vendor": "simonlin1212"
+}

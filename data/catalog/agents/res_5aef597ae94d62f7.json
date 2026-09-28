@@ -1,0 +1,238 @@
+{
+"canonical_url": "vibetrading.wiki",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"finance": [
+"finance",
+"fintech",
+"trading"
+],
+"technology": [
+"llm",
+"mcp",
+"python"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"finance": {
+"components": {
+"adoption": 26.28,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.85,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": null,
+"score": 58.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 26.28,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 72.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "HKUDS/Vibe-Trading"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_5aef597ae94d62f7",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 4,
+"incidents": 0,
+"links": [
+{
+"date": "2026-06-30",
+"kind": "cve",
+"title": "CVE-2026-58169",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58169"
+},
+{
+"date": "2026-06-30",
+"kind": "cve",
+"title": "CVE-2026-58170",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58170"
+},
+{
+"date": "2026-06-30",
+"kind": "cve",
+"title": "CVE-2026-58171",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58171"
+},
+{
+"date": "2026-06-30",
+"kind": "cve",
+"title": "CVE-2026-58173",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58173"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "MIT",
+"name": "Vibe-Trading",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-09T07:49:47Z",
+"headline": "Vibe-Trading v0.1.15 — data that says what it is",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Rolls up 551 commits / 162 merged pull requests since 0.1.14, from 35\ncontributors.\n\nThe theme of this cycle is data that says what it is. A price frame now\ncarries the adjustment caliber it was served under. A factor propagates the\ngaps in",
+"tag": "product_update",
+"url": "https://github.com/HKUDS/Vibe-Trading/releases/tag/v0.1.15"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-20T00:02:31Z",
+"headline": "Vibe-Trading v0.1.14 — a backtest you can read, and Intel Macs that can install",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Rolls up 272 commits / 74 merged pull requests since 0.1.13.\n\n### Added\n\n- **Options Lab** (#1096, closes #1095, thanks @shadowinlife) — a Web UI page\n  with four surfaces: expiry payoff diagram, spot×IV scenario P&L matrix,\n  portfolio Gr",
+"tag": "product_update",
+"url": "https://github.com/HKUDS/Vibe-Trading/releases/tag/v0.1.14"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://vibetrading.wiki/.well-known/agent.json",
+"checked_at": "2026-09-28T23:27:39Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:38Z",
+"errors": [
+"https://vibetrading.wiki/.well-known/ard.json: not valid JSON",
+"https://vibetrading.wiki/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://vibetrading.wiki/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:27:40Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "vibetrading.wiki",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:13Z",
+"cves": 4,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-04-01T09:52:20Z",
+"github_forks": 5573,
+"github_language": "Python",
+"github_open_issues": 37,
+"github_pushed_at": "2026-09-28T15:50:32Z",
+"github_stars": 34230,
+"github_topic": "ai-agent",
+"homepage": "https://vibetrading.wiki/"
+},
+"slug": "hkuds-vibe-trading",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/HKUDS/Vibe-Trading"
+}
+],
+"tags": [
+"ai-agent",
+"algorithmic-trading",
+"backtesting",
+"fintech",
+"llm",
+"mcp",
+"multi-agent",
+"python",
+"quantitative-finance",
+"trading"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://vibetrading.wiki/",
+"vendor": "HKUDS"
+}

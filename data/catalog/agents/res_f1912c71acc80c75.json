@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "5f60840113e51f35712812fbf2bca088757c59a197febff4015b0e9a34479c1c",
+"payload_hash": "4c3da3bce88a0d2855c151f2c4486ff7358e5fd43d1be163111efe82dbc244ff",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:32Z",
+"retrieved_at": "2026-09-28T23:33:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "5f60840113e51f35712812fbf2bca088757c59a197febff4015b0e9a34479c1c",
+"payload_hash": "4c3da3bce88a0d2855c151f2c4486ff7358e5fd43d1be163111efe82dbc244ff",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:32Z",
+"retrieved_at": "2026-09-28T23:33:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -263,7 +263,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -285,24 +285,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Agentforce Insurance",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:57Z",
+"checked_at": "2026-09-28T23:27:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:54Z",
+"checked_at": "2026-09-28T23:27:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:58Z",
+"checked_at": "2026-09-28T23:27:28Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -310,6 +310,13 @@
 "publisher_domain": "salesforce.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:24Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -321,7 +328,7 @@
 "sources": [
 {
 "payload_hash": "46aff99a03186b39e13a739964e23ad3cb8628755bb2245efc9ab8b52d8a4547",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.salesforce.com/financial-services/insurance/"
 }
@@ -333,7 +340,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.salesforce.com/financial-services/insurance/",
 "vendor": "Salesforce"

@@ -1,0 +1,219 @@
+{
+"canonical_url": "2fastlabs.github.io/agent-squad",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"sales": [
+"chatbot"
+],
+"technology": [
+"framework",
+"python",
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Flexible and powerful framework for managing multiple AI agents and handling complex conversations",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"sales": {
+"components": {
+"adoption": 22.55,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.95,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": null,
+"score": 58.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 22.55,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "2FastLabs/agent-squad"
+},
+"first_seen": "2026-09-28T23:19:17Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_509c0c8b59715e39",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2026-09-03",
+"kind": "cve",
+"title": "CVE-2026-85100",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85100"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:17Z",
+"license": "Apache-2.0",
+"name": "agent-squad",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-23T10:04:42Z",
+"headline": "agent-squad TypeScript 1.1.5",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's new\n\n- Added `JevClassifier`: routes with TypeSafe's Jev decision model instead of an LLM. The registered agents become a typed `choice` question, and Jev returns the chosen agent plus a calibrated confidence, billed on input toke",
+"tag": "product_update",
+"url": "https://github.com/2FastLabs/agent-squad/releases/tag/typescript_1.1.5"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-23T10:04:41Z",
+"headline": "agent-squad Python 1.1.4",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's new\n\n- Added `JevClassifier`: routes with TypeSafe's Jev decision model instead of an LLM. The registered agents become a typed `choice` question, and Jev returns the chosen agent plus a calibrated confidence, billed on input toke",
+"tag": "product_update",
+"url": "https://github.com/2FastLabs/agent-squad/releases/tag/python_1.1.4"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:25:00Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:00Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:25:01Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "2fastlabs.github.io",
+"resource_type": "framework",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:40Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2024-07-23T12:48:30Z",
+"github_forks": 739,
+"github_language": "Python",
+"github_open_issues": 114,
+"github_pushed_at": "2026-09-23T11:09:25Z",
+"github_stars": 7774,
+"github_topic": "ai-agents",
+"homepage": "https://2fastlabs.github.io/agent-squad/"
+},
+"slug": "2fastlabs-agent-squad",
+"sources": [
+{
+"payload_hash": "ec7e7a70a241a9f4d77eac9f21621dc1003b58d355aefbc8c78dfeb9f9d4afb6",
+"retrieved_at": "2026-09-28T23:19:17Z",
+"system": "github",
+"url": "https://github.com/2FastLabs/agent-squad"
+}
+],
+"tags": [
+"agentic-ai",
+"agents",
+"ai-agents",
+"ai-agents-framework",
+"anthropic",
+"anthropic-claude",
+"aws",
+"aws-bedrock",
+"aws-cdk",
+"aws-lambda",
+"chatbot",
+"framework",
+"generative-ai",
+"machine-learning",
+"openai",
+"openaiapi",
+"orchestrator",
+"python",
+"serverless",
+"typescript"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://2fastlabs.github.io/agent-squad/",
+"vendor": "2FastLabs"
+}

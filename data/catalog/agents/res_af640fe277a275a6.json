@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "0511b9b0a8a5f5e81e953a3b64c3d1a28a5118db298ca8c0f60f7b4eabd766de",
+"payload_hash": "00e0f65c68cec7f55bebc214e73f42fae7463a2f9372b73ae1470f074dff5b1a",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:12Z",
+"retrieved_at": "2026-09-28T23:32:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "a99b986215603971849f5c0edd857f84a9ce397dfa03ab49b0a81ef2d6f997fe",
+"payload_hash": "5d4dd670ea5b05b6536c51ba23c4f76ee59bc0707be25efa5be5d76d81d26eed",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:12Z",
+"retrieved_at": "2026-09-28T23:32:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "0511b9b0a8a5f5e81e953a3b64c3d1a28a5118db298ca8c0f60f7b4eabd766de",
+"payload_hash": "00e0f65c68cec7f55bebc214e73f42fae7463a2f9372b73ae1470f074dff5b1a",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:12Z",
+"retrieved_at": "2026-09-28T23:32:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -95,9 +95,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "0511b9b0a8a5f5e81e953a3b64c3d1a28a5118db298ca8c0f60f7b4eabd766de",
+"payload_hash": "00e0f65c68cec7f55bebc214e73f42fae7463a2f9372b73ae1470f074dff5b1a",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:12Z",
+"retrieved_at": "2026-09-28T23:32:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -121,9 +121,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "0511b9b0a8a5f5e81e953a3b64c3d1a28a5118db298ca8c0f60f7b4eabd766de",
+"payload_hash": "00e0f65c68cec7f55bebc214e73f42fae7463a2f9372b73ae1470f074dff5b1a",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:12Z",
+"retrieved_at": "2026-09-28T23:32:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -213,7 +213,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -235,24 +235,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Hebbia Matrix",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:39Z",
+"checked_at": "2026-09-28T23:26:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:38Z",
+"checked_at": "2026-09-28T23:26:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:40Z",
+"checked_at": "2026-09-28T23:26:46Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -260,6 +260,13 @@
 "publisher_domain": "hebbia.ai",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:36Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -271,7 +278,7 @@
 "sources": [
 {
 "payload_hash": "6e8f64ab56c506685a759f70bedc0221f588708fd4194276e37077bd5ecdb02d",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.hebbia.ai/"
 }
@@ -283,7 +290,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.hebbia.ai/",
 "vendor": "Hebbia"

@@ -1,0 +1,196 @@
+{
+"canonical_url": "github.com/tencentcloud/tencentdb-agent-memory",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"data": [
+"embedding",
+"search",
+"vector"
+],
+"technology": [
+"code",
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": 25.72,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 2.7,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 71.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 25.72,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 2.7,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 70.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "TencentCloud/TencentDB-Agent-Memory"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_ce15adeedbca2b17",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "Other",
+"name": "TencentDB-Agent-Memory",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-22T09:40:39Z",
+"headline": "TencentDB-Agent-Memory v1.0.3",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## [1.0.3] - 2026-09-22\r\n\r\n### 🐛 修复\r\n\r\n#### OpenClaw 宿主兼容\r\n\r\n- **兼容 OpenClaw 9.5**：适配新版宿主的 gateway-ized 插件安装流程与 sqlite-vec 加载方式，并前向兼容旧版本（8.2 / 9.4）。\r\n  - **修复首次 install 缺少 `enabled` 字段**：OpenClaw 9.5 在 gateway 进程内执行 `plugins install`，存在竞态导致",
+"tag": "product_update",
+"url": "https://github.com/TencentCloud/TencentDB-Agent-Memory/releases/tag/v1.0.3"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-21T08:41:23Z",
+"headline": "TencentDB-Agent-Memory v2.0.2-beta.3",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## [2.0.2-beta.3] - 2026-09-21\r\n\r\nv2.0.2-beta.3 发布，相比 v2.0.1 新增可选的 MongoDB 存储后端、更丰富的面板登录方式、\r\n全新的数据分析与可观测能力，并优化了技能展示、会话接入体验，修复了记忆召回、\r\n多团队切换等若干问题。\r\n\r\n> **产品定位**：让 Agent 的经验、文档、代码沉淀成可复用资产，让下一位 Agent\r\n> 直接读档。详见 [README_CN.md](./README_CN.md)。",
+"tag": "product_update",
+"url": "https://github.com/TencentCloud/TencentDB-Agent-Memory/releases/tag/v2.0.2-beta.3"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "framework",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:25Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-04-07T06:34:26Z",
+"github_forks": 2639,
+"github_language": "TypeScript",
+"github_open_issues": 856,
+"github_pushed_at": "2026-09-28T11:27:14Z",
+"github_stars": 27416,
+"github_topic": "ai-agent",
+"homepage": null
+},
+"slug": "tencentcloud-tencentdb-agent-memory",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/TencentCloud/TencentDB-Agent-Memory"
+}
+],
+"tags": [
+"agent",
+"ai-agent",
+"embedding",
+"llm",
+"local-first",
+"long-term-memory",
+"memory",
+"openclaw-plugin",
+"vector-search"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+"vendor": "TencentCloud"
+}

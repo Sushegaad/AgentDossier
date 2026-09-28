@@ -19,7 +19,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "0b48b3ddb7e6ec3d40d481967ad9fce6ebd9b8d204e7f9b660252d60f6094129",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:29Z",
+"retrieved_at": "2026-09-28T23:33:41Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "0b48b3ddb7e6ec3d40d481967ad9fce6ebd9b8d204e7f9b660252d60f6094129",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:29Z",
+"retrieved_at": "2026-09-28T23:33:41Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -103,7 +103,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -125,24 +125,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Relevance AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:55Z",
+"checked_at": "2026-09-28T23:27:23Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:54Z",
+"checked_at": "2026-09-28T23:27:22Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:56Z",
+"checked_at": "2026-09-28T23:27:24Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -150,6 +150,13 @@
 "publisher_domain": "relevanceai.com",
 "resource_type": "platform",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:39Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -161,7 +168,7 @@
 "sources": [
 {
 "payload_hash": "6a5c8c2f56b6f9b6a3af9af25f3d5f5ba3742b9b2505d5575d01e9dc0daef8f0",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://relevanceai.com/"
 }
@@ -173,7 +180,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://relevanceai.com/",
 "vendor": "Relevance AI"
