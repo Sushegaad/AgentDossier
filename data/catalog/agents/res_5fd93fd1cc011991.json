@@ -1,0 +1,245 @@
+{
+"canonical_url": "open-design.ai/html-anything",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"copilot"
+],
+"data": [
+"data"
+],
+"technology": [
+"api",
+"code",
+"coding"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://open-design.ai/privacy/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "3439df59f1eb04b42a31d031cf0ff9487d278bda5dbccb56c29915a7a45698a9",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:33:26Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+}
+],
+"deployment": "self-hosted",
+"description": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 22.91,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 62.0,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 62.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"data": {
+"components": {
+"adoption": 22.91,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 63.5,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 63.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 22.91,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 69.3,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "nexu-io/html-anything"
+},
+"first_seen": "2026-09-28T23:19:17Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_5fd93fd1cc011991",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:24:52Z",
+"license": "Apache-2.0",
+"merged_ids": [
+"res_5fd93fd1cc011991"
+],
+"name": "html-anything",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:10Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:10Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:11Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "open-design.ai",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:30Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-05-11T09:40:38Z",
+"github_forks": 868,
+"github_language": "HTML",
+"github_open_issues": 70,
+"github_pushed_at": "2026-09-15T03:36:24Z",
+"github_stars": 8969,
+"github_topic": "ai-agents",
+"homepage": "https://open-design.ai/html-anything/"
+},
+"slug": "nexu-io-html-anything",
+"sources": [
+{
+"payload_hash": "ec7e7a70a241a9f4d77eac9f21621dc1003b58d355aefbc8c78dfeb9f9d4afb6",
+"retrieved_at": "2026-09-28T23:19:17Z",
+"system": "github",
+"url": "https://github.com/nexu-io/html-anything"
+}
+],
+"tags": [
+"agent-skills",
+"agentic",
+"ai-agents",
+"ai-design",
+"ai-editor",
+"byok",
+"claude",
+"claude-code",
+"claude-skills",
+"coding-agents",
+"generative-ai",
+"html",
+"html-editor",
+"hyperframes",
+"local-first",
+"markdown",
+"nextjs",
+"vibe-coding",
+"wechat",
+"xiaohongshu"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://open-design.ai/html-anything/",
+"vendor": "nexu-io"
+}

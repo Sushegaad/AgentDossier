@@ -1,0 +1,206 @@
+{
+"canonical_url": "arxiv.org/abs/2604.26962",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"data": [
+"rag"
+],
+"technology": [
+"cli"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": 26.7,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 2.7,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 66.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 26.7,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 2.7,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "HKUDS/DeepTutor"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_cd09fc63c0437620",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2026-06-30",
+"kind": "cve",
+"title": "CVE-2026-58168",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58168"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "Apache-2.0",
+"name": "DeepTutor",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-27T05:34:32Z",
+"headline": "DeepTutor v1.6.12",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# DeepTutor v1.6.12 Release Notes\n\n**Release Date:** 2026.09.27\n\nBuilding on [v1.6.11](ver1-6-11.md), v1.6.12 lets each workspace place and move its knowledge bases, connects searchable Kiwix archives, and carries source figures into ground",
+"tag": "product_update",
+"url": "https://github.com/HKUDS/DeepTutor/releases/tag/v1.6.12"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-24T03:35:13Z",
+"headline": "DeepTutor v1.6.11",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# DeepTutor v1.6.11 Release Notes\n\n**Release Date:** 2026.09.24\n\nBuilding on [v1.6.10](ver1-6-10.md), v1.6.11 is a wide release: French and Ukrainian join the interface, immersive reading gets folders, figures and in-chat selection actions,",
+"tag": "product_update",
+"url": "https://github.com/HKUDS/DeepTutor/releases/tag/v1.6.11"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:25:29Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:27Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:25:29Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "arxiv.org",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:04Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-12-28T15:35:54Z",
+"github_forks": 5104,
+"github_language": "Python",
+"github_open_issues": 208,
+"github_pushed_at": "2026-09-27T05:34:30Z",
+"github_stars": 40446,
+"github_topic": "ai-agents",
+"homepage": "http://arxiv.org/abs/2604.26962"
+},
+"slug": "hkuds-deeptutor",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/HKUDS/DeepTutor"
+}
+],
+"tags": [
+"ai-agents",
+"ai-tutor",
+"clawbot",
+"cli-tool",
+"deepresearch",
+"interactive-learning",
+"learning",
+"multi-agent-systems",
+"rag"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "http://arxiv.org/abs/2604.26962",
+"vendor": "HKUDS"
+}

@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:30Z",
+"retrieved_at": "2026-09-28T23:29:33Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -48,9 +48,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "7973c58e0dd15705e7f2c15bc5725f132f116bceaf7bbdb1ad149f30f6094d3f",
+"payload_hash": "ba471be80e0ee91a567b3faa185e65dfa8297259d0c77916d47fa1c2bd860eaf",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:33Z",
+"retrieved_at": "2026-09-28T23:33:48Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -268,7 +268,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -290,24 +290,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Snowflake service",
 "name": "Snowflake Cortex Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:17:00Z",
+"checked_at": "2026-09-28T23:27:31Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:58Z",
+"checked_at": "2026-09-28T23:27:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:17:02Z",
+"checked_at": "2026-09-28T23:27:32Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -315,6 +315,13 @@
 "publisher_domain": "snowflake.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:07Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -326,7 +333,7 @@
 "sources": [
 {
 "payload_hash": "46ccf65a7efbd54d98f622d88b60204ae9d5ded7140150d502d43cf17951150e",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.snowflake.com/en/product/features/cortex/"
 }
@@ -338,7 +345,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.snowflake.com/en/product/features/cortex/",
 "vendor": "Snowflake"

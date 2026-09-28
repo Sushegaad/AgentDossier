@@ -1,0 +1,313 @@
+{
+"canonical_url": "openstatus.dev",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"cybersecurity": [
+"incident"
+],
+"technology": [
+"api",
+"code",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.openstatus.dev/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "fe06d227b15f38513859c5aa49bcf4a1173d7826e55b4491b894ba2edd94ac3f",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:33:30Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.openstatus.dev/use-case/compliance",
+"framework": "iso27001",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "322b3390b4423108a4301edcfac75793fd71f2f83a9fc697e04afb66d3d1fd8f",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:33:30Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ISO27001"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.openstatus.dev/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "f35859e0bd2e961d2be0f8cf4e7a32ef4ef0e06d9886dc6bd1fc0e42e053a773",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:33:30Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.openstatus.dev/use-case/compliance",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "322b3390b4423108a4301edcfac75793fd71f2f83a9fc697e04afb66d3d1fd8f",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:33:30Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
+}
+],
+"deployment": "self-hosted",
+"description": "🫖 Status page with uptime monitoring & API monitoring as code   🫖",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"cybersecurity": {
+"components": {
+"adoption": 22.96,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": 30.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 56.9,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": null,
+"score": 59.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 22.96,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": 30.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 69.4,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "openstatusHQ/openstatus"
+},
+"first_seen": "2026-09-28T23:23:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f67b9608118688ae",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 2,
+"incidents": 0,
+"links": [
+{
+"date": "2026-04-08",
+"kind": "cve",
+"title": "CVE-2026-5808",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5808"
+},
+{
+"date": "2026-09-12",
+"kind": "cve",
+"title": "CVE-2026-90486",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90486"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "AGPL-3.0",
+"name": "openstatus",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:14Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:13Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"card_url": "https://www.openstatus.dev/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:27:14Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid",
+"tools": [
+"list_status_pages",
+"list_status_reports",
+"create_status_report",
+"append_status_report_update",
+"resolve_status_report",
+"update_status_report",
+"create_maintenance",
+"update_maintenance"
+]
+}
+},
+"publisher_domain": "openstatus.dev",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:28Z",
+"cves": 2,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2023-06-19T15:32:41Z",
+"github_forks": 775,
+"github_language": "TypeScript",
+"github_open_issues": 118,
+"github_pushed_at": "2026-09-28T14:35:36Z",
+"github_stars": 9149,
+"github_topic": "mcp-server",
+"homepage": "https://openstatus.dev"
+},
+"slug": "openstatushq-openstatus",
+"sources": [
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
+"url": "https://github.com/openstatusHQ/openstatus"
+}
+],
+"tags": [
+"alerting",
+"incident-management",
+"mcp",
+"mcp-server",
+"monitoring",
+"monitoring-as-code",
+"observability",
+"on-call",
+"open-source",
+"sre",
+"status-page",
+"statuspage",
+"synthetic-monitoring",
+"terraform",
+"tinybird",
+"turso",
+"uptime",
+"uptime-checker",
+"uptime-monitor"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://openstatus.dev",
+"vendor": "openstatusHQ"
+}

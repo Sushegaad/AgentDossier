@@ -1,0 +1,175 @@
+{
+"canonical_url": "developer.chrome.com/docs/devtools/agents",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"coding",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Chrome DevTools for coding agents",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 27.37,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 2.4,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 71.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "ChromeDevTools/chrome-devtools-mcp"
+},
+"first_seen": "2026-09-28T23:23:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_4113ee6c98a7ab97",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2026-06-24",
+"kind": "cve",
+"title": "CVE-2026-53765",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53765"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "Apache-2.0",
+"name": "chrome-devtools-mcp",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-23T10:37:16Z",
+"headline": "chrome-devtools-mcp chrome-devtools-mcp: v1.10.1",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## [1.10.1](https://github.com/ChromeDevTools/chrome-devtools-mcp/compare/chrome-devtools-mcp-v1.10.0...chrome-devtools-mcp-v1.10.1) (2026-09-23)\n\n\n### 🛠️ Fixes\n\n* **build:** resolve node export conditions in rollup bundle ([#2814](https://",
+"tag": "product_update",
+"url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/releases/tag/chrome-devtools-mcp-v1.10.1"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-23T09:52:30Z",
+"headline": "chrome-devtools-mcp chrome-devtools-mcp: v1.10.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## [1.10.0](https://github.com/ChromeDevTools/chrome-devtools-mcp/compare/chrome-devtools-mcp-v1.9.0...chrome-devtools-mcp-v1.10.0) (2026-09-23)\n\n\n### 🎉 Features\n\n* add css formatter class ([#2707](https://github.com/ChromeDevTools/chrome-d",
+"tag": "product_update",
+"url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/releases/tag/chrome-devtools-mcp-v1.10.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:27Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:26Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:28Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "developer.chrome.com",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:41:56Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-09-11T10:39:55Z",
+"github_forks": 5137,
+"github_language": "TypeScript",
+"github_open_issues": 114,
+"github_pushed_at": "2026-09-28T21:18:14Z",
+"github_stars": 52705,
+"github_topic": "mcp-server",
+"homepage": "https://developer.chrome.com/docs/devtools/agents"
+},
+"slug": "chromedevtools-chrome-devtools-mcp",
+"sources": [
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
+"url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+}
+],
+"tags": [
+"browser",
+"chrome",
+"chrome-devtools",
+"debugging",
+"devtools",
+"mcp",
+"mcp-server",
+"puppeteer"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://developer.chrome.com/docs/devtools/agents",
+"vendor": "ChromeDevTools"
+}

@@ -1,0 +1,144 @@
+{
+"canonical_url": "get-hermes.ai/setup",
+"category": "Open-source project",
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"github": "nesquena/hermes-webui"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_deb67ff9ad892c26",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 2,
+"incidents": 0,
+"links": [
+{
+"date": "2026-04-21",
+"kind": "cve",
+"title": "CVE-2026-6829",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6829"
+},
+{
+"date": "2026-04-21",
+"kind": "cve",
+"title": "CVE-2026-6830",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6830"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "hermes-webui",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-24T19:24:40Z",
+"headline": "hermes-webui exp-v0.52.379",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* release: gateway-backend turns survive a WebUI restart (#7785) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/7818\n* fix(gateway): reattach runs-API turns after a WebUI restart instead of marking th",
+"tag": "product_update",
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.379"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-24T19:14:40Z",
+"headline": "hermes-webui exp-v0.52.378",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* release: stop three self-inflicted console errors (#7789) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/7817\n* fix(console): stop git-info 404s on subagent/CLI sessions, 409 poll loops after a prof",
+"tag": "product_update",
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.378"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:40Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:39Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:40Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "get-hermes.ai",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:42Z",
+"cves": 2,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-03-30T21:50:12Z",
+"github_forks": 2650,
+"github_language": "Python",
+"github_open_issues": 918,
+"github_pushed_at": "2026-09-28T11:00:50Z",
+"github_stars": 18653,
+"github_topic": "ai-agents",
+"homepage": "https://get-hermes.ai/setup"
+},
+"slug": "nesquena-hermes-webui",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/nesquena/hermes-webui"
+}
+],
+"tags": [
+"agent",
+"ai-agents",
+"hermes",
+"hermes-agent",
+"nous-research"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://get-hermes.ai/setup",
+"vendor": "nesquena"
+}

@@ -1,0 +1,255 @@
+{
+"canonical_url": "pageindex.ai",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"document"
+],
+"data": [
+"database",
+"rag",
+"retrieval",
+"vector"
+],
+"technology": [
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 26.43,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 65.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 26.43,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 73.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 26.43,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "VectifyAI/PageIndex"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d046a61a22bbb119",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 3,
+"incidents": 0,
+"links": [
+{
+"date": "2006-03-13",
+"kind": "cve",
+"title": "CVE-2006-1196",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2006-1196"
+},
+{
+"date": "2008-05-21",
+"kind": "cve",
+"title": "CVE-2008-2391",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2008-2391"
+},
+{
+"date": "2026-05-11",
+"kind": "cve",
+"title": "CVE-2026-8318",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8318"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "PageIndex",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-28T14:03:36Z",
+"headline": "PageIndex v0.2.20",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "- The **PageIndex SDK**, **local** or **cloud** — vectorless, reasoning-based RAG, end to end.\n- **Much faster indexing** — the **PageIndex Flash** engine gets the tree from layout stats: no LLM involved for the structure generation itself,",
+"tag": "product_update",
+"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.2.20"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-21T04:49:29Z",
+"headline": "PageIndex v0.2.19",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "- The **PageIndex SDK**, **local** or **cloud** — vectorless, reasoning-based RAG, end to end.\n- **Much faster indexing** — the **PageIndex Flash** engine gets the tree from layout stats: no LLM involved for the structure generation itself,",
+"tag": "product_update",
+"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.2.19"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:15Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:15Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:16Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "pageindex.ai",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:09Z",
+"cves": 3,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-04-01T10:53:54Z",
+"github_forks": 3182,
+"github_language": "Python",
+"github_open_issues": 108,
+"github_pushed_at": "2026-09-28T14:01:31Z",
+"github_stars": 36256,
+"github_topic": "ai-agents",
+"homepage": "https://pageindex.ai"
+},
+"slug": "vectifyai-pageindex",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/VectifyAI/PageIndex"
+}
+],
+"tags": [
+"agentic-ai",
+"agents",
+"ai",
+"ai-agents",
+"context-engineering",
+"information-retrieval",
+"llm",
+"rag",
+"reasoning",
+"retrieval",
+"retrieval-augmented-generation",
+"vector-database"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://pageindex.ai",
+"vendor": "VectifyAI"
+}

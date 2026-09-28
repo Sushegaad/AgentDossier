@@ -1,0 +1,189 @@
+{
+"canonical_url": "mcp.airshelf.ai/mcp",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Cross-vendor B2B catalog for AI agents: search, compare, find equivalents, request a quote.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 8.6,
+"governance": null,
+"health": 12.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 46.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 8.6,
+"governance": null,
+"health": 12.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 46.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:airshelf:mcp:generic-catalog",
+"mcp_registry": "ai.airshelf/catalog"
+},
+"first_seen": "2026-09-28T23:18:08Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_2b87a4f5a1d08a91",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:27:08Z",
+"license": null,
+"merged_ids": [
+"res_f793879ff61c9869"
+],
+"name": "AirShelf Catalog",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:58Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:58Z",
+"entries": 1,
+"parser_version": "ard-0.91",
+"sources": [
+"https://mcp.airshelf.ai/.well-known/ai-catalog.json"
+],
+"status": "verified"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://mcp.airshelf.ai/mcp"
+}
+],
+"server_name": "ai.airshelf/catalog",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "mcp.airshelf.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:37:16Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-06-16T09:32:12.311101Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-06-16T09:32:12.311101Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "airshelf-ai-airshelf-catalog",
+"sources": [
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.airshelf/catalog"
+},
+{
+"payload_hash": "33b75fed4da119c3b0893c5e9c80d1324dad201c3af7a1f2fc844717f5366e17",
+"retrieved_at": "2026-09-28T23:27:08Z",
+"system": "ard",
+"url": "https://mcp.airshelf.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://mcp.airshelf.ai/mcp",
+"vendor": "airshelf.ai"
+}

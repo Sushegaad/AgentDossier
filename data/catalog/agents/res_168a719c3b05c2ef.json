@@ -1,0 +1,205 @@
+{
+"canonical_url": "docs.nvidia.com/nemoclaw/latest",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Run agents like Hermes, LangChain Deep Agents, and OpenClaw more securely inside NVIDIA OpenShell with managed inference",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 25.23,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 2.4,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 67.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "NVIDIA/NemoClaw"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_168a719c3b05c2ef",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 14,
+"incidents": 0,
+"links": [
+{
+"date": "2026-04-28",
+"kind": "cve",
+"title": "CVE-2026-24222",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24222"
+},
+{
+"date": "2026-04-28",
+"kind": "cve",
+"title": "CVE-2026-24231",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24231"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-65081",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65081"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-65082",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65082"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-65084",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65084"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-65087",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65087"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-65088",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65088"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-65089",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65089"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-65090",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65090"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-65096",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65096"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "Apache-2.0",
+"name": "NemoClaw",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:33Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:32Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:34Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "docs.nvidia.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:36Z",
+"cves": 14,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-03-15T17:04:09Z",
+"github_forks": 3120,
+"github_language": "TypeScript",
+"github_open_issues": 720,
+"github_pushed_at": "2026-09-28T23:16:17Z",
+"github_stars": 22570,
+"github_topic": "ai-agents",
+"homepage": "https://docs.nvidia.com/nemoclaw/latest/"
+},
+"slug": "nvidia-nemoclaw",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/NVIDIA/NemoClaw"
+}
+],
+"tags": [
+"ai-agents",
+"deep-agents",
+"hermes",
+"nvidia",
+"openclaw",
+"openshell",
+"sandboxing",
+"typescript"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://docs.nvidia.com/nemoclaw/latest/",
+"vendor": "NVIDIA"
+}

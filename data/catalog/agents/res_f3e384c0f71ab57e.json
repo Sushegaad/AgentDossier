@@ -1,0 +1,154 @@
+{
+"canonical_url": "walkinglabs.github.io/learn-harness-engineering",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"framework",
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Harness engineering beginner tutorial, from 0 to 1",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 24.47,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 16.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 65.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "walkinglabs/learn-harness-engineering"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f3e384c0f71ab57e",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:24:52Z",
+"license": "MIT",
+"merged_ids": [
+"res_f3e384c0f71ab57e",
+"res_f3e384c0f71ab57e"
+],
+"name": "learn-harness-engineering",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:41Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:40Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:41Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "walkinglabs.github.io",
+"resource_type": "framework",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:48Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-03-29T12:28:19Z",
+"github_forks": 1723,
+"github_language": "TypeScript",
+"github_open_issues": 19,
+"github_pushed_at": "2026-08-26T01:08:59Z",
+"github_stars": 16660,
+"github_topic": "ai-agents",
+"homepage": "https://walkinglabs.github.io/learn-harness-engineering/"
+},
+"slug": "walkinglabs-learn-harness-engineering",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/walkinglabs/learn-harness-engineering"
+}
+],
+"tags": [
+"agent",
+"agentic",
+"agentic-ai",
+"ai",
+"ai-agent",
+"ai-agents",
+"dsh",
+"dsh-plugin",
+"harness",
+"harness-engineering",
+"harness-framework",
+"llm"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://walkinglabs.github.io/learn-harness-engineering/",
+"vendor": "walkinglabs"
+}

@@ -1,0 +1,230 @@
+{
+"canonical_url": "b77.ai/apps/file-storage",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://b77.ai/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "8d10de45fbf0088eb55e56dd50c4847b2d39e3ac9ed55f667ee2843185111a6d",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:31:54Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": null,
+"description": "Upload files and get public CDN links in chat.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": 10.0,
+"health": 16.0,
+"trust": 11.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_evidence": {
+"credited": {},
+"score": 38.5,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 38.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.b77/file-storage"
+},
+"first_seen": "2026-09-28T23:18:08Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_80f14a09fcde84ad",
+"identity": {
+"evidence": [
+"vendor_name_only"
+],
+"rules_version": "identity-1.0",
+"tier": 4
+},
+"issues": {
+"advisories": 0,
+"cves": 63,
+"incidents": 0,
+"links": [
+{
+"date": "2017-12-22",
+"kind": "cve",
+"title": "CVE-2017-15309",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2017-15309"
+},
+{
+"date": "2018-01-30",
+"kind": "cve",
+"title": "CVE-2016-6598",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2016-6598"
+},
+{
+"date": "2018-04-18",
+"kind": "cve",
+"title": "CVE-2015-9209",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2015-9209"
+},
+{
+"date": "2019-05-09",
+"kind": "cve",
+"title": "CVE-2019-11836",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2019-11836"
+},
+{
+"date": "2019-11-06",
+"kind": "cve",
+"title": "CVE-2019-8140",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2019-8140"
+},
+{
+"date": "2020-06-19",
+"kind": "cve",
+"title": "CVE-2019-20846",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2019-20846"
+},
+{
+"date": "2020-12-09",
+"kind": "cve",
+"title": "CVE-2020-26260",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26260"
+},
+{
+"date": "2020-12-29",
+"kind": "cve",
+"title": "CVE-2020-26286",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26286"
+},
+{
+"date": "2021-06-09",
+"kind": "cve",
+"title": "CVE-2021-33669",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2021-33669"
+},
+{
+"date": "2021-06-24",
+"kind": "cve",
+"title": "CVE-2021-32708",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2021-32708"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:18:08Z",
+"license": null,
+"name": "File Storage",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:25:40Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:37Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://file-storage.b77.ai/mcp"
+}
+],
+"server_name": "ai.b77/file-storage",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "b77.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:37:59Z",
+"cves": 63,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-08-14T20:37:53.160486Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-08-14T20:37:53.160486Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "b77-ai-file-storage",
+"sources": [
+{
+"payload_hash": "6d8edb12df8af8bd08e83f9ae14dc913f58386c25fe63b33b9eb73c3e4570c90",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.b77/file-storage"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 4,
+"issues": 3,
+"protocols": 3,
+"security": 1
+},
+"url": "https://b77.ai/apps/file-storage",
+"vendor": "b77.ai"
+}

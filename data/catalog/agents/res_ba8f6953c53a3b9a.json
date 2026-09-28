@@ -1,0 +1,217 @@
+{
+"canonical_url": "wenyuchiou.github.io/awesome-agentic-ai-zh",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"data": [
+"rag"
+],
+"technology": [
+"cli",
+"code",
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": 22.36,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 63.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 22.36,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "WenyuChiou/awesome-agentic-ai-zh"
+},
+"first_seen": "2026-09-28T23:19:17Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_ba8f6953c53a3b9a",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:04Z",
+"license": "MIT",
+"merged_ids": [
+"res_ba8f6953c53a3b9a",
+"res_ba8f6953c53a3b9a"
+],
+"name": "awesome-agentic-ai-zh",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-23T01:15:20Z",
+"headline": "awesome-agentic-ai-zh v2026.09.23 — 三語正式版 / Trilingual release",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# v2026.09.23 — 三語正式版 / Trilingual release\n\n## 繁體中文\n\n- `learning-content` Stage 1 三語補上 GPT-6 Sol 與 Luna 的選型、API ID、context、Standard 價格和長上下文計費。模型詳表仍有 18 個家族；全表與本次 GPT 查核日期分開標示，入門 Ollama 路徑不變。 [來源 1](https://github.com/WenyuChiou/awesome-agen",
+"tag": "product_update",
+"url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh/releases/tag/v2026.09.23"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-22T23:54:12Z",
+"headline": "awesome-agentic-ai-zh v2026.09.22 — 三語正式版 / Trilingual release",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# v2026.09.22 — 三語正式版 / Trilingual release\n\n## 繁體中文\n\n- `learning-content` Stage 1 三語加入 TypeSafe AI 的 Jev。它是用於有型別選項、分數與門檻的決策模型，不是一般聊天模型；教材標示 early access、API 限制與需要人工確認的風險界線。 [來源 1](https://github.com/WenyuChiou/awesome-agentic-ai-zh/pull/274",
+"tag": "product_update",
+"url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh/releases/tag/v2026.09.22"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:42Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:41Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:43Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "wenyuchiou.github.io",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:46Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-05-04T22:18:51Z",
+"github_forks": 977,
+"github_language": "Python",
+"github_open_issues": 3,
+"github_pushed_at": "2026-09-28T22:04:49Z",
+"github_stars": 7208,
+"github_topic": "ai-agents",
+"homepage": "https://wenyuchiou.github.io/awesome-agentic-ai-zh/"
+},
+"slug": "wenyuchiou-awesome-agentic-ai-zh",
+"sources": [
+{
+"payload_hash": "ec7e7a70a241a9f4d77eac9f21621dc1003b58d355aefbc8c78dfeb9f9d4afb6",
+"retrieved_at": "2026-09-28T23:19:17Z",
+"system": "github",
+"url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh"
+}
+],
+"tags": [
+"agentic-ai",
+"agentic-workflows",
+"ai-agent",
+"ai-agents",
+"awesome-list",
+"chinese-llm",
+"claude-code",
+"claude-skills",
+"cli",
+"learning-roadmap",
+"llm",
+"llm-agents",
+"mcp",
+"model-context-protocol",
+"multi-agent-systems",
+"prompt-engineering",
+"rag",
+"trilingual",
+"tutorial"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://wenyuchiou.github.io/awesome-agentic-ai-zh/",
+"vendor": "WenyuChiou"
+}

@@ -1,0 +1,189 @@
+{
+"canonical_url": "huggingface.co/spaces/lvwerra/agent-manager-template",
+"category": "Hugging Face Space",
+"classification": {
+"matched": {
+"technology": [
+"cli",
+"cloud",
+"coding",
+"docker"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "hosted",
+"description": "Private cloud manager for AI coding CLI sessions",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 12.79,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 0.3,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 57.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"huggingface_space": "lvwerra/agent-manager-template"
+},
+"first_seen": "2026-09-28T23:19:10Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_38903832023b6f31",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 3,
+"incidents": 0,
+"links": [
+{
+"date": "2006-11-16",
+"kind": "cve",
+"title": "CVE-2006-5934",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2006-5934"
+},
+{
+"date": "2014-05-20",
+"kind": "cve",
+"title": "CVE-2014-3460",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3460"
+},
+{
+"date": "2019-04-25",
+"kind": "cve",
+"title": "CVE-2019-11537",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2019-11537"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:10Z",
+"license": "apache-2.0",
+"name": "Agent Manager",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-22T19:41:50Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49807014",
+"engagement": 7,
+"headline": "Agent manager now with mouse support",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://agent-manager.dev/writing/mouse-support/"
+},
+{
+"cluster_size": 1,
+"date": "2026-07-30T09:34:27Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49107749",
+"engagement": 178,
+"headline": "Agent-Manager: A Tmux TUI for Running Claude Code, Codex and OpenCode",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://github.com/YoanWai/agent-manager"
+},
+{
+"cluster_size": 1,
+"date": "2026-07-30T14:12:42Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49110318",
+"engagement": 6,
+"headline": "Show HN: Wrapper – Best Ever Agent Manager",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://github.com/xatuke/wrapper"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "huggingface.co",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:40:52Z",
+"cves": 3,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"hf_created_at": "2026-06-29T15:53:07.000Z",
+"hf_last_modified": "2026-09-17T20:21:01.000Z",
+"hf_likes": 16,
+"hf_pinned": false,
+"hf_sdk": "docker"
+},
+"slug": "lvwerra-agent-manager",
+"sources": [
+{
+"payload_hash": "a0992693f7d0a52045903435887764010e7037b275d9faca10dd21c3cf4f2e3f",
+"retrieved_at": "2026-09-28T23:19:10Z",
+"system": "huggingface",
+"url": "https://huggingface.co/spaces/lvwerra/agent-manager-template"
+}
+],
+"tags": [
+"docker"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://huggingface.co/spaces/lvwerra/agent-manager-template",
+"vendor": "lvwerra"
+}

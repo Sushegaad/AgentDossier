@@ -25,9 +25,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:36Z",
+"retrieved_at": "2026-09-28T23:29:39Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -58,9 +58,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:36Z",
+"retrieved_at": "2026-09-28T23:29:39Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -145,7 +145,7 @@
 "external_ids": {
 "aws_marketplace": "https://aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm"
 },
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -167,7 +167,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "merged_ids": [
 "res_dfa0e7fc6bed3ac7"
@@ -177,17 +177,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:27Z",
+"checked_at": "2026-09-28T23:25:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:26Z",
+"checked_at": "2026-09-28T23:25:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:28Z",
+"checked_at": "2026-09-28T23:25:37Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -195,6 +195,13 @@
 "publisher_domain": "aws.amazon.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:51Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -216,13 +223,13 @@
 "sources": [
 {
 "payload_hash": "4342af73f378a2dfc2dd1cafa85bb3c5cc004185d1ddd37f09e1f3a7e6667a1b",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm"
 },
 {
 "payload_hash": "d2df22162421b5fa34cabc9b4f27eec6e1799661559fba32fcb406e90b06eba8",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "aws_marketplace",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm"
 }
@@ -234,7 +241,7 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm",
 "vendor": "Automation Anywhere"

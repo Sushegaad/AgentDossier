@@ -1,0 +1,96 @@
+{
+"canonical_url": "apatero.ai/llms.txt",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "llms.txt overview of apatero.ai with the key pages as markdown links.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:apatero.ai:doc:llms-txt"
+},
+"first_seen": "2026-09-28T23:26:04Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d1d95ea40310b526",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:26:04Z",
+"license": null,
+"name": "Apatero site summary for language models",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:apatero.ai:doc:llms-txt",
+"manifest_url": "https://apatero.ai/.well-known/ai-catalog.json",
+"media_type": "text/markdown",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "apatero.ai",
+"representative_queries": [
+"what is Apatero Studio",
+"where is the Apatero journal"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:15Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "apatero-ai-apatero-site-summary-for-language-models",
+"sources": [
+{
+"payload_hash": "82b47d2d3cfca124358611bce231a8b3b61a92d6a08a47c2f37763a73817fcd5",
+"retrieved_at": "2026-09-28T23:26:04Z",
+"system": "ard",
+"url": "https://apatero.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://apatero.ai/llms.txt",
+"vendor": "apatero.ai"
+}

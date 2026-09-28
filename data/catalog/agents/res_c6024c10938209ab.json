@@ -210,7 +210,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -226,16 +226,61 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 5,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2026-07-15",
+"kind": "cve",
+"title": "CVE-2026-15746",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15746"
+},
+{
+"date": "2026-07-31",
+"kind": "cve",
+"title": "CVE-2026-18394",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18394"
+},
+{
+"date": "2026-08-03",
+"kind": "cve",
+"title": "CVE-2026-18733",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18733"
+},
+{
+"date": "2026-08-06",
+"kind": "cve",
+"title": "CVE-2026-19111",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19111"
+},
+{
+"date": "2026-08-25",
+"kind": "cve",
+"title": "CVE-2026-78379",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78379"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Apache-2.0",
 "name": "Strands Agents",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-07-13T18:18:23Z",
+"discussion_url": "https://news.ycombinator.com/item?id=48896599",
+"engagement": 100,
+"headline": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
+"kind": "community",
+"link_confidence": 0.95,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://github.com/morganwilliscloud/billai-bass"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
@@ -251,6 +296,13 @@
 "publisher_domain": "github.com",
 "resource_type": "framework",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:05Z",
+"cves": 5,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -262,7 +314,7 @@
 "sources": [
 {
 "payload_hash": "3fbe1afa76461a06a6e3f8682f345dd261f46a3ae24033a857daf172381ff601",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://github.com/strands-agents/sdk-python"
 }
@@ -272,9 +324,9 @@
 "trust": {
 "compliance": 5,
 "identity": 4,
-"issues": 1,
+"issues": 3,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://github.com/strands-agents/sdk-python",
 "vendor": "AWS"

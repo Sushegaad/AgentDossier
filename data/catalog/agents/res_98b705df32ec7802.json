@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8af77f64f08e7345ccf33c571b13de8f181596bb075510abeead5ca18f6cad95",
+"payload_hash": "63439d1321a7069b6a8e0dc98a9e9395909cccd0b10068e142d509a66055901b",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8af77f64f08e7345ccf33c571b13de8f181596bb075510abeead5ca18f6cad95",
+"payload_hash": "63439d1321a7069b6a8e0dc98a9e9395909cccd0b10068e142d509a66055901b",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8af77f64f08e7345ccf33c571b13de8f181596bb075510abeead5ca18f6cad95",
+"payload_hash": "63439d1321a7069b6a8e0dc98a9e9395909cccd0b10068e142d509a66055901b",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:16Z",
+"retrieved_at": "2026-09-28T23:33:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -289,7 +289,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -311,24 +311,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "HubSpot Breeze Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:43Z",
+"checked_at": "2026-09-28T23:26:49Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:39Z",
+"checked_at": "2026-09-28T23:26:47Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:45Z",
+"checked_at": "2026-09-28T23:26:51Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -336,6 +336,13 @@
 "publisher_domain": "hubspot.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:34:50Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -347,7 +354,7 @@
 "sources": [
 {
 "payload_hash": "6c9d1e49aa1cd2ee40a43a05a070a3e0a108650835935b06675a5638979d85dd",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.hubspot.com/products/artificial-intelligence"
 }
@@ -359,7 +366,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.hubspot.com/products/artificial-intelligence",
 "vendor": "HubSpot"

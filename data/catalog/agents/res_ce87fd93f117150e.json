@@ -1,0 +1,309 @@
+{
+"canonical_url": "ai-portal.ai/developers",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"business": [
+"enterprise"
+],
+"data": [
+"data"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.ai-portal.ai/",
+"framework": "eu_ai_act",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "53ae4ddfa41b00fc2e02af6c9140380a76a7677ac494c2800e9aae2609add885",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:31:23Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ART50_STATEMENT"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.ai-portal.ai/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "53ae4ddfa41b00fc2e02af6c9140380a76a7677ac494c2800e9aae2609add885",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:31:23Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "ISO 42001: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.ai-portal.ai/compliance",
+"framework": "iso42001",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "26358ae7552581107cdaaed26d52fb2c9e56a4064555bb1d430fada981b9a212",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:31:23Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ISO42001"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "NIST AI RMF aligned: Aligned with NIST AI RMF / NIST CSF 2.0 (vendor statement, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.ai-portal.ai/compliance",
+"framework": "nist_ai_rmf",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "26358ae7552581107cdaaed26d52fb2c9e56a4064555bb1d430fada981b9a212",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:31:23Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "NIST_AI_RMF_ALIGNED"
+}
+],
+"deployment": null,
+"description": "Live AI data for agents: model releases, regulations (EU AI Act), GenAI glossary, daily news.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": 30.0,
+"health": 16.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.722,
+"governance_evidence": {
+"credited": {},
+"score": 38.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 40.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+},
+"data": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": 30.0,
+"health": 16.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_evidence": {
+"credited": {},
+"score": 42.0,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 42.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": 30.0,
+"health": 16.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_evidence": {
+"credited": {},
+"score": 42.5,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 42.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.ai-portal/ai-portal"
+},
+"first_seen": "2026-09-28T23:18:08Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_ce87fd93f117150e",
+"identity": {
+"evidence": [
+"publisher_domain_matches_vendor"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:18:08Z",
+"license": null,
+"name": "AI-Portal Enterprise GenAI Briefing",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:25:11Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:10Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://www.ai-portal.ai/mcp"
+}
+],
+"server_name": "ai.ai-portal/ai-portal",
+"status": "claimed",
+"version": "1.0.1",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "ai-portal.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:37:13Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-07-13T15:07:28.114017Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-07-13T15:07:28.114017Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "ai-portal-ai-ai-portal-enterprise-genai-briefing",
+"sources": [
+{
+"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
+"retrieved_at": "2026-09-28T23:18:08Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ai-portal/ai-portal"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": 1
+},
+"url": "https://www.ai-portal.ai/developers",
+"vendor": "ai-portal.ai"
+}

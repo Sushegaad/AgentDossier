@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "b0393639d53a35b7070aa8af6020c66d57a7d6792fac09674a8ab0d974ac17ab",
+"payload_hash": "f2dff1bbf5d52261c674d9319b9b5099480e33a277fd86bb1378dbca2eb849a6",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:09Z",
+"retrieved_at": "2026-09-28T23:32:54Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8b407f731796d46c8d5c7486ad5f72111871797e09a7400ddc4d8df2ee157e86",
+"payload_hash": "4e4ad6c4ad9a53a4f40066701f9d77f101499c683ba92cabc556a096e85ace0c",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:09Z",
+"retrieved_at": "2026-09-28T23:32:54Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "b0393639d53a35b7070aa8af6020c66d57a7d6792fac09674a8ab0d974ac17ab",
+"payload_hash": "f2dff1bbf5d52261c674d9319b9b5099480e33a277fd86bb1378dbca2eb849a6",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:09Z",
+"retrieved_at": "2026-09-28T23:32:54Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -95,9 +95,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "b0393639d53a35b7070aa8af6020c66d57a7d6792fac09674a8ab0d974ac17ab",
+"payload_hash": "f2dff1bbf5d52261c674d9319b9b5099480e33a277fd86bb1378dbca2eb849a6",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:09Z",
+"retrieved_at": "2026-09-28T23:32:54Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -121,9 +121,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "b0393639d53a35b7070aa8af6020c66d57a7d6792fac09674a8ab0d974ac17ab",
+"payload_hash": "f2dff1bbf5d52261c674d9319b9b5099480e33a277fd86bb1378dbca2eb849a6",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:09Z",
+"retrieved_at": "2026-09-28T23:32:54Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -147,9 +147,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "b0393639d53a35b7070aa8af6020c66d57a7d6792fac09674a8ab0d974ac17ab",
+"payload_hash": "f2dff1bbf5d52261c674d9319b9b5099480e33a277fd86bb1378dbca2eb849a6",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:09Z",
+"retrieved_at": "2026-09-28T23:32:54Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -367,7 +367,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -389,24 +389,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Glean Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:36Z",
+"checked_at": "2026-09-28T23:26:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:35Z",
+"checked_at": "2026-09-28T23:26:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:37Z",
+"checked_at": "2026-09-28T23:26:42Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -414,6 +414,13 @@
 "publisher_domain": "glean.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:34:51Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -425,7 +432,7 @@
 "sources": [
 {
 "payload_hash": "08d4ba7b00fbc48b02057ec3728e7c1aea462f5fd024a8fa13ace8f39e734ee7",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.glean.com/"
 }
@@ -437,7 +444,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.glean.com/",
 "vendor": "Glean"

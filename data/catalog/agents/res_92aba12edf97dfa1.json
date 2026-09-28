@@ -1,5 +1,6 @@
 {
 "canonical_url": "github.com/n8n-io/n8n",
+"capabilities": [],
 "category": "Workflow/agent automation",
 "commercial": true,
 "compliance": [],
@@ -209,8 +210,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"external_ids": {
+"github": "n8n-io/n8n"
+},
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -219,10 +222,10 @@
 "id": "res_92aba12edf97dfa1",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -232,11 +235,13 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:23:20Z",
 "license": "Sustainable Use License",
+"merged_ids": [
+"res_47005ed1f60c52a2"
+],
 "name": "n8n",
 "news": [],
-"news_checked": true,
 "protocols": {
 "a2a": {
 "status": "unknown"
@@ -249,30 +254,66 @@
 }
 },
 "publisher_domain": "github.com",
-"resource_type": "agent",
+"resource_type": "mcp_server",
 "scope": "public",
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
 "signals": {
+"github_archived": false,
+"github_created_at": "2019-06-22T09:24:21Z",
+"github_forks": 60918,
+"github_language": "TypeScript",
+"github_open_issues": 1113,
+"github_pushed_at": "2026-09-28T22:45:13Z",
+"github_stars": 206221,
+"github_topic": "mcp-server",
+"homepage": "https://n8n.io",
 "observed_popularity": "Not captured"
 },
 "slug": "n8n-n8n",
 "sources": [
 {
 "payload_hash": "f66978e4dc5b7493ea7428565e21fc901be928f1321fcad855512200c631f88a",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
+"url": "https://github.com/n8n-io/n8n"
+},
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
 "url": "https://github.com/n8n-io/n8n"
 }
 ],
-"tags": [],
+"tags": [
+"ai",
+"apis",
+"automation",
+"cli",
+"data-flow",
+"development",
+"integration-framework",
+"integrations",
+"ipaas",
+"low-code",
+"low-code-platform",
+"mcp",
+"mcp-client",
+"mcp-server",
+"n8n",
+"no-code",
+"self-hosted",
+"typescript",
+"workflow",
+"workflow-automation"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
-"issues": 1,
+"identity": 3,
+"issues": null,
 "protocols": 5,
 "security": null
 },

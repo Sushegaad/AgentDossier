@@ -1,0 +1,199 @@
+{
+"canonical_url": "alibaba.github.io/page-agent",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation"
+],
+"technology": [
+"mcp",
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 25.89,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 2.4,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 64.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 25.89,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 2.4,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 70.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "alibaba/page-agent"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_91007ae2d9529f86",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "page-agent",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-06T07:46:41Z",
+"headline": "page-agent 🌟v1.12.4",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* feat: update models by @gaomeng1900 in https://github.com/alibaba/page-agent/pull/713\r\n* chore: fix size badge by @gaomeng1900 in https://github.com/alibaba/page-agent/pull/714\r\n\r\n\r\n**Full Changelog**: https://github.co",
+"tag": "product_update",
+"url": "https://github.com/alibaba/page-agent/releases/tag/v1.12.4"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-05T17:47:54Z",
+"headline": "page-agent 🌟v1.12.3",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* chore: add a skill to auto maintain the model list by @gaomeng1900 in https://github.com/alibaba/page-agent/pull/624\r\n* feat(llms): add Kimi K3 support by @gaomeng1900 in https://github.com/alibaba/page-agent/pull/625",
+"tag": "product_update",
+"url": "https://github.com/alibaba/page-agent/releases/tag/v1.12.3"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:25:15Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:14Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:25:16Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "alibaba.github.io",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:22Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-09-23T09:30:17Z",
+"github_forks": 2635,
+"github_language": "TypeScript",
+"github_open_issues": 97,
+"github_pushed_at": "2026-09-28T19:07:23Z",
+"github_stars": 29260,
+"github_topic": "ai-agents",
+"homepage": "https://alibaba.github.io/page-agent/"
+},
+"slug": "alibaba-page-agent",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/alibaba/page-agent"
+}
+],
+"tags": [
+"agent",
+"ai",
+"ai-agents",
+"browser-automation",
+"javascript",
+"mcp",
+"typescript",
+"web"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://alibaba.github.io/page-agent/",
+"vendor": "alibaba"
+}

@@ -1,0 +1,174 @@
+{
+"canonical_url": null,
+"category": "Open-source project",
+"classification": {
+"matched": {
+"cybersecurity": [
+"detection"
+],
+"technology": [
+"api",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"cybersecurity": {
+"components": {
+"adoption": 24.99,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.9,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": null,
+"score": 58.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 24.99,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "modelscope/FunASR"
+},
+"first_seen": "2026-09-28T23:23:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_96e164405dfd5fef",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "MIT",
+"name": "FunASR",
+"news": [],
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": null,
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2022-11-24T02:28:11Z",
+"github_forks": 2052,
+"github_language": "Python",
+"github_open_issues": 35,
+"github_pushed_at": "2026-09-28T13:57:23Z",
+"github_stars": 20536,
+"github_topic": "mcp-server",
+"homepage": "www.funasr.com"
+},
+"slug": "modelscope-funasr",
+"sources": [
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
+"url": "https://github.com/modelscope/FunASR"
+}
+],
+"tags": [
+"asr",
+"audio",
+"chinese",
+"emotion-recognition",
+"funasr",
+"mcp-server",
+"multilingual-asr",
+"openai-compatible-api",
+"paraformer",
+"punctuation",
+"pytorch",
+"real-time-asr",
+"speaker-diarization",
+"speech-recognition",
+"speech-to-text",
+"streaming-asr",
+"transcription",
+"vllm",
+"voice-activity-detection",
+"whisper-alternative"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "www.funasr.com",
+"vendor": "modelscope"
+}

@@ -1,0 +1,340 @@
+{
+"canonical_url": "nocobase.com",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"assistant",
+"business",
+"erp"
+],
+"data": [
+"dashboard"
+],
+"sales": [
+"crm",
+"salesforce"
+],
+"technology": [
+"code",
+"infrastructure"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "NocoBase is an open-source AI + no-code platform for building business systems fast. Instead of generating everything from scratch, AI works on top of production-proven infrastructure and a WYSIWYG no-code interface, so you get both speed and reliability.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 25.43,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 68.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 25.43,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 65.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"sales": {
+"components": {
+"adoption": 25.43,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.95,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": null,
+"score": 64.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 25.43,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 70.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "nocobase/nocobase"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_a347a92496f5218b",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 14,
+"incidents": 0,
+"links": [
+{
+"date": "2025-12-02",
+"kind": "cve",
+"title": "CVE-2025-13877",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13877"
+},
+{
+"date": "2026-03-31",
+"kind": "cve",
+"title": "CVE-2026-34156",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34156"
+},
+{
+"date": "2026-04-02",
+"kind": "cve",
+"title": "CVE-2026-34825",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34825"
+},
+{
+"date": "2026-04-13",
+"kind": "cve",
+"title": "CVE-2026-6224",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6224"
+},
+{
+"date": "2026-04-18",
+"kind": "cve",
+"title": "CVE-2026-40346",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40346"
+},
+{
+"date": "2026-05-07",
+"kind": "cve",
+"title": "CVE-2026-41640",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41640"
+},
+{
+"date": "2026-05-07",
+"kind": "cve",
+"title": "CVE-2026-41641",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41641"
+},
+{
+"date": "2026-07-07",
+"kind": "cve",
+"title": "CVE-2026-58468",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58468"
+},
+{
+"date": "2026-07-15",
+"kind": "cve",
+"title": "CVE-2026-52887",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52887"
+},
+{
+"date": "2026-07-15",
+"kind": "cve",
+"title": "CVE-2026-52888",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52888"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:21:37Z",
+"license": "Other",
+"merged_ids": [
+"res_a347a92496f5218b"
+],
+"name": "nocobase",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-25T14:51:27Z",
+"headline": "nocobase v2.2.18",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "### 🐛 Bug Fixes\n\n- **[client]** Fixed workflow manual node form layouts failing when multiple fields are arranged in one row. ([#10545](https://github.com/nocobase/nocobase/pull/10545)) by @mytharcher\n\n- **[client-v2]** Fixed saving attachm",
+"tag": "product_update",
+"url": "https://github.com/nocobase/nocobase/releases/tag/v2.2.18"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-24T07:20:24Z",
+"headline": "nocobase v2.4.0-alpha.8",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "### 🐛 Bug Fixes\n\n- **[client-v2]**\n  - Fix: sub-table fields were still editable after the field was set to disabled ([#10532](https://github.com/nocobase/nocobase/pull/10532)) by @katherinehhh\n\n  - Fixed quick edit popover closing when col",
+"tag": "product_update",
+"url": "https://github.com/nocobase/nocobase/releases/tag/v2.4.0-alpha.8"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:12Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:06Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:15Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "nocobase.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:34Z",
+"cves": 14,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2020-10-24T07:27:48Z",
+"github_forks": 2894,
+"github_language": "TypeScript",
+"github_open_issues": 309,
+"github_pushed_at": "2026-09-28T22:55:46Z",
+"github_stars": 24382,
+"github_topic": "ai-agents",
+"homepage": "https://www.nocobase.com"
+},
+"slug": "nocobase-nocobase",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/nocobase/nocobase"
+}
+],
+"tags": [
+"admin-dashboard",
+"ai-agent",
+"ai-agents",
+"ai-assistant",
+"ai-tools",
+"crm",
+"crud",
+"dsh-plugin",
+"erp",
+"internal-tool",
+"internal-tools",
+"low-code",
+"lowcode",
+"no-code",
+"nocode",
+"project-management",
+"salesforce",
+"self-hosted",
+"workflows"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://www.nocobase.com",
+"vendor": "nocobase"
+}

@@ -1,0 +1,180 @@
+{
+"canonical_url": "github.com/budtmo/docker-android",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"cloud",
+"docker",
+"kubernetes",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Android in docker solution with noVNC supported, video recording, mcp server and AI-agent",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 24.35,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 71.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "budtmo/docker-android"
+},
+"first_seen": "2026-09-28T23:21:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_ee6ce558280b7190",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "Other",
+"merged_ids": [
+"res_ee6ce558280b7190"
+],
+"name": "docker-android",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-18T07:12:31Z",
+"headline": "docker-android v3.7.0-p1",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "**Changes:**\r\n\r\n- Using the latest base image [v3.7.0-p0](https://github.com/appium/appium-docker-android/releases/tag/v3.7.0-p0)\r\n- Fix: preserve spaces (issue #430 ), credits @Iams4kura\r\n- Bump coverage to version 7.16.1",
+"tag": "product_update",
+"url": "https://github.com/budtmo/docker-android/releases/tag/v3.7.0-p1"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-01T12:11:18Z",
+"headline": "docker-android v3.7.0-p0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "**Changes:**\r\n\r\n- Using the latest base image [v3.7.0-p0](https://github.com/appium/appium-docker-android/releases/tag/v3.7.0-p0)\r\n- Bump coverage to version 7.16.0\r\n- Bump click to version 8.5.0\r\n- Bump setuptools to version 84.0.0\r\n- Bump",
+"tag": "product_update",
+"url": "https://github.com/budtmo/docker-android/releases/tag/v3.7.0-p0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:53Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2016-12-22T13:02:48Z",
+"github_forks": 1757,
+"github_language": "Python",
+"github_open_issues": 163,
+"github_pushed_at": "2026-09-28T23:04:00Z",
+"github_stars": 15897,
+"github_topic": "ai-agent",
+"homepage": null
+},
+"slug": "budtmo-docker-android",
+"sources": [
+{
+"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
+"retrieved_at": "2026-09-28T23:21:37Z",
+"system": "github",
+"url": "https://github.com/budtmo/docker-android"
+}
+],
+"tags": [
+"ai-agent",
+"android",
+"android-emulator",
+"aws",
+"azure",
+"cloud",
+"docker",
+"docker-android",
+"emulator",
+"fastapi",
+"gcp",
+"genymotion",
+"jenkins",
+"kubernetes",
+"mcp",
+"mcp-server",
+"mobile-app",
+"novnc",
+"ollama",
+"selenium"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://github.com/budtmo/docker-android",
+"vendor": "budtmo"
+}

@@ -1,0 +1,179 @@
+{
+"canonical_url": "cotal.ai/.well-known/mcp/server-card.json",
+"capabilities": [
+"cotal_submit_feedback",
+"cotal_join_waitlist",
+"cotal_subscribe_newsletter",
+"cotal_request_call",
+"cotal_overview",
+"cotal_search",
+"cotal_list_posts",
+"cotal_get_post"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"technology": [
+"cloud",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Product MCP server for cotal.ai (Streamable HTTP, no credentials): read what COTAL is, search the build log, file feedback, join the Cotal Cloud waitlist, subscribe to updates, request a call with the founders.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 7.6,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 36.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 7.6,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 36.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:cotal.ai:server:cotal"
+},
+"first_seen": "2026-09-28T23:26:41Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d742072e4881925f",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:26:41Z",
+"license": null,
+"name": "cotal.ai MCP server",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:cotal.ai:server:cotal",
+"manifest_url": "https://cotal.ai/.well-known/ard.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"server_card_url": "https://cotal.ai/.well-known/mcp/server-card.json",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "cotal.ai",
+"representative_queries": [
+"what does cotal.ai do and who is it for",
+"send feedback to the COTAL team",
+"join the Cotal Cloud waitlist",
+"find the COTAL blog post about the hackathon",
+"book a call with the COTAL founders"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:24Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "cotal-ai-cotal-ai-mcp-server",
+"sources": [
+{
+"payload_hash": "0dd53ade1a62b7191f44a1bffa84c53097ab48c5e86cac7c80055e3ed71f1c02",
+"retrieved_at": "2026-09-28T23:26:41Z",
+"system": "ard",
+"url": "https://cotal.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://cotal.ai/.well-known/mcp/server-card.json",
+"vendor": "cotal.ai"
+}

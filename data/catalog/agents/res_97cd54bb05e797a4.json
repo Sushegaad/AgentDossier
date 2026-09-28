@@ -210,7 +210,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -226,13 +226,74 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 45,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2025-06-24",
+"kind": "cve",
+"title": "CVE-2025-52882",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52882"
+},
+{
+"date": "2025-08-05",
+"kind": "cve",
+"title": "CVE-2025-54794",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54794"
+},
+{
+"date": "2025-08-05",
+"kind": "cve",
+"title": "CVE-2025-54795",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54795"
+},
+{
+"date": "2025-08-16",
+"kind": "cve",
+"title": "CVE-2025-55284",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55284"
+},
+{
+"date": "2025-08-21",
+"kind": "cve",
+"title": "CVE-2025-57755",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-57755"
+},
+{
+"date": "2025-09-10",
+"kind": "cve",
+"title": "CVE-2025-58764",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58764"
+},
+{
+"date": "2025-09-10",
+"kind": "cve",
+"title": "CVE-2025-59041",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59041"
+},
+{
+"date": "2025-09-24",
+"kind": "cve",
+"title": "CVE-2025-59828",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59828"
+},
+{
+"date": "2025-09-30",
+"kind": "cve",
+"title": "CVE-2025-59956",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59956"
+},
+{
+"date": "2025-10-03",
+"kind": "cve",
+"title": "CVE-2025-59536",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59536"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Claude Code",
 "news": [],
@@ -251,6 +312,13 @@
 "publisher_domain": "github.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:29Z",
+"cves": 45,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -262,7 +330,7 @@
 "sources": [
 {
 "payload_hash": "13291d1010ed42eef8d3270f14df2950e6a747fdacf2e0272098aadeb0a1817c",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://github.com/anthropics/claude-code"
 }
@@ -272,9 +340,9 @@
 "trust": {
 "compliance": 5,
 "identity": 4,
-"issues": 1,
+"issues": 3,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://github.com/anthropics/claude-code",
 "vendor": "Anthropic"

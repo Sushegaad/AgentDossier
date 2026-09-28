@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "e181f63709faa49ffd5840742d2d9412b25815ade15c149bf5302d711810e841",
+"payload_hash": "720dca8a5014a40ac1bf0794dd8a3448072b81c099764b008f082e2c08338072",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:38Z",
+"retrieved_at": "2026-09-28T23:34:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "f011db6d9f396aa7e9c9a8b5f6608555801ef9f9fa425ece030b19352cb98b51",
+"payload_hash": "c75dee4f236ffeea0fb82c4e84d26032a723e99a2ec60c14c2b3555e69fe0289",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:38Z",
+"retrieved_at": "2026-09-28T23:34:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "e181f63709faa49ffd5840742d2d9412b25815ade15c149bf5302d711810e841",
+"payload_hash": "720dca8a5014a40ac1bf0794dd8a3448072b81c099764b008f082e2c08338072",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:38Z",
+"retrieved_at": "2026-09-28T23:34:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -294,7 +294,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -316,19 +316,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Zapier Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:17:04Z",
+"checked_at": "2026-09-28T23:27:44Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:17:03Z",
+"checked_at": "2026-09-28T23:27:43Z",
 "entries": 14,
 "parser_version": "ard-0.91",
 "sources": [
@@ -337,7 +337,7 @@
 "status": "verified"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:17:05Z",
+"checked_at": "2026-09-28T23:27:45Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -345,6 +345,13 @@
 "publisher_domain": "zapier.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:17Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -356,7 +363,7 @@
 "sources": [
 {
 "payload_hash": "1ce9ca9ecebb21fb90775d03b9cbfd8f6574b00896fdf9b209d073f572b3e46b",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://zapier.com/agents"
 }
@@ -368,7 +375,7 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": null
+"security": 1
 },
 "url": "https://zapier.com/agents",
 "vendor": "Zapier"

@@ -1,0 +1,187 @@
+{
+"canonical_url": "pentagi.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation"
+],
+"cybersecurity": [
+"penetration",
+"security"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 25.5,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 64.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"cybersecurity": {
+"components": {
+"adoption": 25.5,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.9,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": null,
+"score": 62.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "vxcontrol/pentagi"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_eea84cdf93e10282",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "pentagi",
+"news": [],
+"protocols": {
+"a2a": {
+"card_url": "https://pentagi.com/.well-known/agent.json",
+"checked_at": "2026-09-28T23:27:18Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:16Z",
+"errors": [
+"https://pentagi.com/.well-known/ard.json: not valid JSON",
+"https://pentagi.com/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://pentagi.com/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:27:19Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "pentagi.com",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-01-06T22:22:48Z",
+"github_forks": 3223,
+"github_language": "Go",
+"github_open_issues": 14,
+"github_pushed_at": "2026-09-23T12:43:46Z",
+"github_stars": 25078,
+"github_topic": "ai-agents",
+"homepage": "https://pentagi.com"
+},
+"slug": "vxcontrol-pentagi",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/vxcontrol/pentagi"
+}
+],
+"tags": [
+"ai-agents",
+"ai-security-tool",
+"anthropic",
+"autonomous-agents",
+"golang",
+"gpt",
+"graphql",
+"multi-agent-system",
+"offensive-security",
+"open-source",
+"openai",
+"penetration-testing",
+"penetration-testing-tools",
+"react",
+"security-automation",
+"security-testing",
+"security-tools",
+"self-hosted"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://pentagi.com",
+"vendor": "vxcontrol"
+}

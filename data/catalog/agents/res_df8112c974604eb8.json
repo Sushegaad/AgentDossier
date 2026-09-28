@@ -1,0 +1,213 @@
+{
+"canonical_url": "agents365-ai.github.io/drawio-skill",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"data": [
+"sql"
+],
+"technology": [
+"code",
+"github",
+"kubernetes",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Agent skill that turns natural language, code, Terraform/K8s, SQL, OpenAPI, AsyncAPI, Protobuf and GraphQL sources into editable, tested draw.io architecture diagrams: incremental sync, multi-view projection, drift diff, CI architecture tests, whiteboard derasterize, interactive HTML/PPTX/Mermaid exports.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": 23.12,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 63.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 23.12,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 70.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "Agents365-ai/drawio-skill"
+},
+"first_seen": "2026-09-28T23:23:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_df8112c974604eb8",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "MIT",
+"name": "drawio-skill",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-14T08:26:11Z",
+"headline": "drawio-skill v3.4.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "See CHANGELOG [3.4.0].\n\n- **GraphQL importer** (`graphqlerd.py`, #131): GraphQL SDL (`.graphql` / `.gql`) or an introspection JSON dump becomes an entity type diagram, with `@deprecated` markers, `implements` and union edges, and optional g",
+"tag": "product_update",
+"url": "https://github.com/Agents365-ai/drawio-skill/releases/tag/v3.4.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-11T16:08:35Z",
+"headline": "drawio-skill v3.3.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "See CHANGELOG [3.3.0]: two new importers.\n\n- **AsyncAPI 2/3** (`asyncapiimports.py`, #127): channel, publish/subscribe operation and payload-schema graphs with JSON Pointer provenance, `--direction`, and `--group` by operation tag, channel",
+"tag": "product_update",
+"url": "https://github.com/Agents365-ai/drawio-skill/releases/tag/v3.3.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:25:10Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:09Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:25:10Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "agents365-ai.github.io",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:24Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-03-03T16:54:59Z",
+"github_forks": 683,
+"github_language": "Python",
+"github_open_issues": 0,
+"github_pushed_at": "2026-09-14T08:26:11Z",
+"github_stars": 9734,
+"github_topic": "mcp-server",
+"homepage": "https://agents365-ai.github.io/drawio-skill/"
+},
+"slug": "agents365-ai-drawio-skill",
+"sources": [
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
+"url": "https://github.com/Agents365-ai/drawio-skill"
+}
+],
+"tags": [
+"agent-skills",
+"architecture",
+"architecture-diagram",
+"asyncapi",
+"bpmn",
+"c4-model",
+"claude-code",
+"diagram",
+"diagrams-as-code",
+"drawio",
+"flowchart",
+"github-actions",
+"graphql",
+"image-to-diagram",
+"kubernetes",
+"mcp-server",
+"protobuf",
+"sysml",
+"terraform",
+"uml"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://agents365-ai.github.io/drawio-skill/",
+"vendor": "Agents365-ai"
+}

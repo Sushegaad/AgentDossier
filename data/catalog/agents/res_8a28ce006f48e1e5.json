@@ -1,0 +1,150 @@
+{
+"canonical_url": "corsair.dev",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"api",
+"developer",
+"llm",
+"mcp",
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Connect your users to their apps",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 23.79,
+"docs": 7.0,
+"domain_fit": 87.5,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.875,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 71.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "corsairdev/corsair"
+},
+"first_seen": "2026-09-28T23:19:17Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_8a28ce006f48e1e5",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:17Z",
+"license": "Other",
+"name": "corsair",
+"news": [],
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:18Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:17Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:18Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "corsair.dev",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-10-14T18:50:32Z",
+"github_forks": 667,
+"github_language": "TypeScript",
+"github_open_issues": 316,
+"github_pushed_at": "2026-09-28T22:05:53Z",
+"github_stars": 12729,
+"github_topic": "ai-agents",
+"homepage": "https://corsair.dev"
+},
+"slug": "corsairdev-corsair",
+"sources": [
+{
+"payload_hash": "ec7e7a70a241a9f4d77eac9f21621dc1003b58d355aefbc8c78dfeb9f9d4afb6",
+"retrieved_at": "2026-09-28T23:19:17Z",
+"system": "github",
+"url": "https://github.com/corsairdev/corsair"
+}
+],
+"tags": [
+"agentic-ai",
+"agents",
+"ai",
+"ai-agents",
+"aiagents",
+"api-integration",
+"corsair",
+"developer-tools",
+"function-calling",
+"integrations",
+"javascript",
+"llm",
+"managed-oauth",
+"mcp",
+"oauth",
+"oauth2",
+"typescript",
+"unified-api"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://corsair.dev",
+"vendor": "corsairdev"
+}

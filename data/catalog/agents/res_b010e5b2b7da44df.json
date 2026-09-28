@@ -1,0 +1,264 @@
+{
+"canonical_url": "getwren.ai/en/open-core",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"business"
+],
+"data": [
+"bi",
+"bigquery",
+"dashboard",
+"data",
+"rag",
+"snowflake",
+"sql"
+],
+"technology": [
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.getwren.ai/privacy-policy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "9da7facf3dd5f73288adc9ff38990d904bcc451b41ff8063f6653ab6a00989c3",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:32:54Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"evidence_url": "https://www.getwren.ai/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "dec82caab6d911af88a035df22df6d1a5dcc06e61289c6dda37816bfc3db0a91",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:32:54Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": "self-hosted",
+"description": "GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 24.63,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 63.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 64.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"data": {
+"components": {
+"adoption": 24.63,
+"docs": 7.0,
+"domain_fit": 94.5,
+"ecosystem": 3.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.945,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 74.0,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 74.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 24.63,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 69.6,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "Canner/WrenAI"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_b010e5b2b7da44df",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "Other",
+"name": "WrenAI",
+"news": [],
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:26:42Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:26:41Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:26:42Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "getwren.ai",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2024-03-13T06:18:20Z",
+"github_forks": 2027,
+"github_language": "Python",
+"github_open_issues": 296,
+"github_pushed_at": "2026-09-25T11:24:44Z",
+"github_stars": 17768,
+"github_topic": "ai-agents",
+"homepage": "https://www.getwren.ai/en/open-core"
+},
+"slug": "canner-wrenai",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/Canner/WrenAI"
+}
+],
+"tags": [
+"ai-agents",
+"bigquery",
+"business-intelligence",
+"charts",
+"clickhouse",
+"context-engineering",
+"dashboard",
+"databricks",
+"duckdb",
+"genbi",
+"generative-ai",
+"llm",
+"mcp",
+"postgresql",
+"rag",
+"semantic-layer",
+"snowflake",
+"sql",
+"text-to-sql",
+"text2sql"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://www.getwren.ai/en/open-core",
+"vendor": "Canner"
+}

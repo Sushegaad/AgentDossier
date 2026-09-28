@@ -1,0 +1,148 @@
+{
+"canonical_url": "texttocad.dev",
+"category": "Open-source project",
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "A library of agent skills for CAD, CAE and CAM",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"github": "earthtojake/text-to-cad"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d94af560efcea017",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "text-to-cad",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-27T22:21:15Z",
+"headline": "text-to-cad v0.7.2",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at v0.7.2 -->\n\n## What's Changed\n### Other Changes\n* Viewer e2e: the camera tolerance is 1e-6 relative, above a mode switch's rounding by @earthtojake in https://github",
+"tag": "product_update",
+"url": "https://github.com/earthtojake/text-to-cad/releases/tag/v0.7.2"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-27T21:18:05Z",
+"headline": "text-to-cad v0.7.1",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at v0.7.1 -->\n\n## What's Changed\n### Other Changes\n* Every test file is one a CI runner collects: delete the manual web e2e scripts by @earthtojake in https://github.co",
+"tag": "product_update",
+"url": "https://github.com/earthtojake/text-to-cad/releases/tag/v0.7.1"
+},
+{
+"cluster_size": 1,
+"date": "2026-07-15T22:29:08Z",
+"discussion_url": "https://news.ycombinator.com/item?id=48927987",
+"engagement": 6,
+"headline": "Hardware Builders Need More Than Text-to-CAD",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://opuslabs.substack.com/p/hardware-needs-its-vibe-coding-moment"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:33Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:32Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:33Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "texttocad.dev",
+"resource_type": "framework",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:50Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-04-22T01:09:45Z",
+"github_forks": 1705,
+"github_language": "Python",
+"github_open_issues": 16,
+"github_pushed_at": "2026-09-28T21:15:47Z",
+"github_stars": 16461,
+"github_topic": "ai-agents",
+"homepage": "https://www.texttocad.dev"
+},
+"slug": "earthtojake-text-to-cad",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/earthtojake/text-to-cad"
+}
+],
+"tags": [
+"agents",
+"ai-agents",
+"cad",
+"mechanical-engineering",
+"robotics",
+"step",
+"stl",
+"stp",
+"text-to-cad"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://www.texttocad.dev",
+"vendor": "earthtojake"
+}

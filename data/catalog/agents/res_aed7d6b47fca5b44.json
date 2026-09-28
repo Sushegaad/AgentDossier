@@ -53,7 +53,7 @@
 "external_ids": {
 "aws_marketplace": "https://aws.amazon.com/marketplace/pp/prodview-fsq37lp4nxapi"
 },
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -75,7 +75,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "merged_ids": [
 "res_c5c41d4ef4167eb1"
@@ -85,17 +85,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:27Z",
+"checked_at": "2026-09-28T23:25:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:26Z",
+"checked_at": "2026-09-28T23:25:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:28Z",
+"checked_at": "2026-09-28T23:25:37Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -103,6 +103,13 @@
 "publisher_domain": "aws.amazon.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:55Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -123,13 +130,13 @@
 "sources": [
 {
 "payload_hash": "ef130c4ed0c5b14c2c9496706a9207da201c3c42daa57d80903285965922c39b",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-fsq37lp4nxapi"
 },
 {
 "payload_hash": "6ab162a936592d392014b0fa46a384cd4501a34b0bbc97a9ef45d57ddbed3b93",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "aws_marketplace",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-fsq37lp4nxapi"
 }
@@ -141,7 +148,7 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://aws.amazon.com/marketplace/pp/prodview-fsq37lp4nxapi",
 "vendor": "Searce"

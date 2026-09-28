@@ -1,5 +1,6 @@
 {
 "canonical_url": "github.com/mem0ai/mem0",
+"capabilities": [],
 "category": "Agent memory layer",
 "commercial": false,
 "compliance": [],
@@ -81,8 +82,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"external_ids": {
+"github": "mem0ai/mem0"
+},
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,10 +94,10 @@
 "id": "res_01bcf9d24086a102",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -104,11 +107,13 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:19:13Z",
 "license": "Apache-2.0",
+"merged_ids": [
+"res_777ea3dd47ff968f"
+],
 "name": "mem0",
 "news": [],
-"news_checked": true,
 "protocols": {
 "a2a": {
 "status": "unknown"
@@ -128,23 +133,53 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
+"github_archived": false,
+"github_created_at": "2023-06-20T08:58:36Z",
+"github_forks": 7790,
+"github_language": "Python",
+"github_open_issues": 759,
+"github_pushed_at": "2026-09-25T17:36:35Z",
+"github_stars": 66237,
+"github_topic": "ai-agents",
+"homepage": "https://mem0.ai",
 "observed_popularity": "Not captured"
 },
 "slug": "mem0-mem0",
 "sources": [
 {
 "payload_hash": "160f718d0ba26d84a21aae4a403f3e70838c6fb797ab2eb9a2e2f5c63bfbc440",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
+"url": "https://github.com/mem0ai/mem0"
+},
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
 "url": "https://github.com/mem0ai/mem0"
 }
 ],
-"tags": [],
+"tags": [
+"agentic-memory",
+"agentic-memory-system",
+"agents",
+"ai",
+"ai-agents",
+"chatgpt",
+"genai",
+"llm",
+"long-term-memory",
+"memory",
+"memory-management",
+"python",
+"rag",
+"state-management"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
-"issues": 1,
+"identity": 3,
+"issues": null,
 "protocols": 5,
 "security": null
 },

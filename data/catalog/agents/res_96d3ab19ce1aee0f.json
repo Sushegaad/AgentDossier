@@ -1,0 +1,244 @@
+{
+"canonical_url": "skills.sh/othmanadi/planning-with-files/planning-with-files",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"copilot"
+],
+"supply_chain": [
+"planning"
+],
+"technology": [
+"code",
+"coding",
+"github",
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx skills. Codex, Cursor, OpenCode, 60+ agents.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 25.7,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 64.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"supply_chain": {
+"components": {
+"adoption": 25.7,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.95,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": null,
+"score": 58.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 25.7,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 73.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "OthmanAdi/planning-with-files"
+},
+"first_seen": "2026-09-28T23:23:04Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_96d3ab19ce1aee0f",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:04Z",
+"license": "MIT",
+"name": "planning-with-files",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-27T02:43:41Z",
+"headline": "planning-with-files v3.21.0 - Explicit attestation targets and pointer race recovery",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "`attest-plan.sh` can now attest a root roadmap while a named ticket plan remains active. Use `--target root` or `--target <plan-id>`; the selection honors `PWF_PLAN_ROOT`, refuses invalid or linked targets, and prints the resolved paths bef",
+"tag": "product_update",
+"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.21.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-25T15:57:32Z",
+"headline": "planning-with-files v3.20.8 - Quiet Stop hook, current Cursor and Gemini hook schemas, owned pointer backups",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What changed\n\n- **Claude Code no longer shows a notice after every reply in sessions without a plan.** The Stop hook runs `check-complete --gate`, whose no-plan branch printed \"No task_plan.md found\" on every turn. The automatic check is",
+"tag": "product_update",
+"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.20.8"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:30Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:28Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:31Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "skills.sh",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:27Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-01-03T07:37:28Z",
+"github_forks": 2257,
+"github_language": "Shell",
+"github_open_issues": 7,
+"github_pushed_at": "2026-09-27T02:43:39Z",
+"github_stars": 27169,
+"github_topic": "llm-agents",
+"homepage": "https://www.skills.sh/othmanadi/planning-with-files/planning-with-files"
+},
+"slug": "othmanadi-planning-with-files",
+"sources": [
+{
+"payload_hash": "300760a8c9422a2b1d922c77c19ef54f3b23ed44c6d73527d9fe3308c6463568",
+"retrieved_at": "2026-09-28T23:23:04Z",
+"system": "github",
+"url": "https://github.com/OthmanAdi/planning-with-files"
+}
+],
+"tags": [
+"agent-skills",
+"autonomous-agents",
+"claude",
+"claude-code",
+"claude-code-skills",
+"claude-skills",
+"codex",
+"coding-agent",
+"context-engineering",
+"context-rot",
+"cursor",
+"github-copilot",
+"hermes-plugin",
+"hermes-skill",
+"llm-agents",
+"long-running-agents",
+"manus",
+"multi-agent-systems",
+"planning",
+"session-recovery"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://www.skills.sh/othmanadi/planning-with-files/planning-with-files",
+"vendor": "OthmanAdi"
+}

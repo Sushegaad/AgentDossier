@@ -1,0 +1,230 @@
+{
+"canonical_url": "github.com/virgiliojr94/book-to-skill",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"document",
+"knowledge"
+],
+"data": [
+"rag"
+],
+"technology": [
+"code",
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 26.18,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 67.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 26.18,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 66.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 26.18,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 71.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "virgiliojr94/book-to-skill"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_97f9bee1a104a4d2",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "book-to-skill",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-08-10T19:06:32Z",
+"headline": "book-to-skill v1.4.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Extraction reliability release: six fixes for silent content loss or silent wrong answers, plus the first changelog generated from commit messages.\n\n**Highlights**\n\n- **Scanned PDFs fail fast.** An image-only PDF used to run the whole extra",
+"tag": "product_update",
+"url": "https://github.com/virgiliojr94/book-to-skill/releases/tag/v1.4.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-07-30T14:19:44Z",
+"headline": "book-to-skill v1.3.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## book-to-skill v1.3.0\n\n36 commits since v1.2.0. This release is security-heavy and adds multilingual chapter detection.\n\n### 🔒 Security\n- **Generated-skill prompt-injection scan** — a dependency-free advisory scanner flags instruction-ove",
+"tag": "product_update",
+"url": "https://github.com/virgiliojr94/book-to-skill/releases/tag/v1.3.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:18Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-05-01T02:09:39Z",
+"github_forks": 3437,
+"github_language": "Python",
+"github_open_issues": 23,
+"github_pushed_at": "2026-09-28T21:28:53Z",
+"github_stars": 32898,
+"github_topic": "ai-agents",
+"homepage": null
+},
+"slug": "virgiliojr94-book-to-skill",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/virgiliojr94/book-to-skill"
+}
+],
+"tags": [
+"agent-skills",
+"ai-agents",
+"book-to-skill",
+"context-engineering",
+"document-processing",
+"edtech",
+"knowledge-base",
+"knowledge-management",
+"llm",
+"pdf-to-markdown",
+"rag",
+"self-study",
+"study-tools"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://github.com/virgiliojr94/book-to-skill",
+"vendor": "virgiliojr94"
+}

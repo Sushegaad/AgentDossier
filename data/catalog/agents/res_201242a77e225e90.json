@@ -1,0 +1,223 @@
+{
+"canonical_url": "aaskills.tech",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"supply_chain": [
+"planning"
+],
+"technology": [
+"cli",
+"code",
+"coding",
+"developer",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,400+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"supply_chain": {
+"components": {
+"adoption": 27.08,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.95,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": null,
+"score": 59.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 27.08,
+"docs": 7.0,
+"domain_fit": 87.5,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.875,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 75.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "sickn33/agentic-awesome-skills"
+},
+"first_seen": "2026-09-28T23:19:13Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_201242a77e225e90",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:19:13Z",
+"license": "MIT",
+"name": "agentic-awesome-skills",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-28T07:26:15Z",
+"headline": "agentic-awesome-skills v18.8.0 \"Serply Search, NSFW AI SpicyAPI, and the Jev Social v0.1.10 Pin\"",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## [18.8.0] - 2026-09-28 - \"Serply Search, NSFW AI SpicyAPI, and the Jev Social v0.1.10 Pin\"\r\n\r\n> Adds 2 reviewed skills for Google/News/Scholar search via MCP and for adult media generation with spend gates and consent rules, refreshes the",
+"tag": "product_update",
+"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v18.8.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-27T10:06:11Z",
+"headline": "agentic-awesome-skills v18.7.0 \"Prompt Provenance, LintLang Audits, and a Fully Categorized Catalog\"",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## [18.7.0] - 2026-09-27 - \"Prompt Provenance, LintLang Audits, and a Fully Categorized Catalog\"\r\n\r\n> Adds 2 reviewed skills for verifying what a shipped AI product was actually told and for static auditing of agent instructions, refreshes",
+"tag": "product_update",
+"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v18.7.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://aaskills.tech/.well-known/agent.json",
+"checked_at": "2026-09-28T23:25:00Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-09-28T23:25:00Z",
+"errors": [
+"https://aaskills.tech/.well-known/ard.json: not valid JSON",
+"https://aaskills.tech/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://aaskills.tech/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:25:01Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "aaskills.tech",
+"resource_type": "framework",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:41:59Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-01-14T17:48:09Z",
+"github_forks": 6851,
+"github_language": "Python",
+"github_open_issues": 1,
+"github_pushed_at": "2026-09-28T22:36:25Z",
+"github_stars": 47040,
+"github_topic": "ai-agents",
+"homepage": "https://aaskills.tech/"
+},
+"slug": "sickn33-agentic-awesome-skills",
+"sources": [
+{
+"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
+"retrieved_at": "2026-09-28T23:19:13Z",
+"system": "github",
+"url": "https://github.com/sickn33/agentic-awesome-skills"
+}
+],
+"tags": [
+"agent-skills",
+"agentic-skills",
+"ai-agent-skills",
+"ai-agents",
+"ai-coding",
+"ai-workflows",
+"antigravity",
+"antigravity-skills",
+"claude-code",
+"claude-code-skills",
+"codex-cli",
+"codex-skills",
+"cursor",
+"cursor-skills",
+"developer-tools",
+"gemini-cli",
+"gemini-skills",
+"kiro",
+"mcp",
+"skill-library"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://aaskills.tech/",
+"vendor": "sickn33"
+}

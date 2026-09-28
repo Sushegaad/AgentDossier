@@ -1,0 +1,163 @@
+{
+"canonical_url": "superset.sh/.well-known/agent-skills/superset-mcp/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"cli",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-09-28)",
+"evidence_url": "https://superset.sh/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "267fd193e059d3496bd366c0de8489cfddced08856bb9475608a062a88f19ce3",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:33:51Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
+}
+],
+"deployment": null,
+"description": "Agent skill: mcp with the Superset CLI and MCP server.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": 10.0,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {
+"soc2": 0.3
+},
+"score": 31.3,
+"value": 6.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 31.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:superset.sh:skill:superset-mcp"
+},
+"first_seen": "2026-09-28T23:28:25Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_48301d86deae0c46",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:28:25Z",
+"license": null,
+"name": "superset-mcp",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:superset.sh:skill:superset-mcp",
+"manifest_url": "https://superset.sh/.well-known/ai-catalog.json",
+"media_type": "application/ai-skill+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "superset.sh",
+"representative_queries": [],
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:44:39Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "superset-sh-superset-mcp",
+"sources": [
+{
+"payload_hash": "831befb5c0646c906e923be50efe1a52e3725401e07aae0333b705bbe1a0a97f",
+"retrieved_at": "2026-09-28T23:28:25Z",
+"system": "ard",
+"url": "https://superset.sh/.well-known/ai-catalog.json"
+}
+],
+"tags": [
+"skill",
+"superset"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://superset.sh/.well-known/agent-skills/superset-mcp/SKILL.md",
+"vendor": "superset.sh"
+}

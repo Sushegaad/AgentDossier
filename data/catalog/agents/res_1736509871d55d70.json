@@ -1,0 +1,340 @@
+{
+"canonical_url": "worldmonitor.app",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"cybersecurity": [
+"osint"
+],
+"data": [
+"dashboard"
+],
+"technology": [
+"infrastructure",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-09-28)",
+"evidence_url": "https://www.worldmonitor.app/docs/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-05",
+"payload_hash": "4aada3344892499f8a31ba460724cd8cdfda8d8b420b078a70d47693113f6228",
+"period_end": null,
+"retrieved_at": "2026-09-28T23:34:06Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+}
+],
+"deployment": "self-hosted",
+"description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"cybersecurity": {
+"components": {
+"adoption": 28.64,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 15.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 24.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 76.7,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "security",
+"rank": null,
+"score": 77.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"data": {
+"components": {
+"adoption": 28.64,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 15.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 24.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 86.7,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 86.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 28.64,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 15.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 24.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 92.0,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 92.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "koala73/worldmonitor"
+},
+"first_seen": "2026-09-28T23:23:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_1736509871d55d70",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "AGPL-3.0",
+"name": "worldmonitor",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-08T17:25:40Z",
+"headline": "worldmonitor World Monitor v2.10.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n\n- chore(release): automate desktop release train (#6586)\n- docs(sources): reconcile provider and host counts (#6582)\n- docs: publish panel implementation count (#6584)\n- fix(license): put AGPL title first for detection (#",
+"tag": "product_update",
+"url": "https://github.com/koala73/worldmonitor/releases/tag/v2.10.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://worldmonitor.app/.well-known/agent-card.json",
+"checked_at": "2026-09-28T23:27:43Z",
+"parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3.0",
+"signed": false,
+"skills": [
+"Capability discovery and tool routing",
+"Data freshness probe"
+],
+"status": "verified",
+"version": "1.0.0"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:42Z",
+"entries": 4,
+"parser_version": "ard-0.91",
+"sources": [
+"https://worldmonitor.app/.well-known/ai-catalog.json"
+],
+"status": "verified"
+},
+"mcp": {
+"card_url": "https://worldmonitor.app/.well-known/mcp.json",
+"checked_at": "2026-09-28T23:27:43Z",
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://worldmonitor.app/mcp"
+}
+],
+"status": "claimed",
+"tools": [
+"get_toronto_reported_occurrences",
+"get_toronto_calls_attended",
+"get_market_data",
+"get_conflict_events",
+"get_aviation_status",
+"get_news_intelligence",
+"get_natural_disasters",
+"get_military_posture",
+"get_cyber_threats",
+"get_economic_data",
+"get_country_macro",
+"get_eu_housing_cycle",
+"get_eu_quarterly_gov_debt",
+"get_eu_industrial_production",
+"get_prediction_markets",
+"get_sanctions_data",
+"get_displacement_data",
+"get_health_signals",
+"get_energy_intelligence",
+"get_climate_data",
+"get_imd_cyclone_marine",
+"get_infrastructure_status",
+"get_supply_chain_data",
+"get_tariff_trends",
+"get_chokepoint_status",
+"get_positive_events",
+"get_radiation_data",
+"get_research_signals",
+"get_forecast_predictions",
+"get_forecast_scorecard",
+"get_social_velocity",
+"get_temporal_anomalies",
+"get_test_site_seismicity",
+"get_defense_industrial_base",
+"get_china_decision_signals",
+"get_procurement_opportunities",
+"get_wto_trade_flows",
+"get_world_brief",
+"get_country_brief",
+"get_country_risk",
+"get_country_coverage",
+"list_x_feed",
+"get_food_stocks",
+"get_demographics_capability",
+"get_resilience_indicators",
+"get_five_factor_scorecard",
+"list_five_factor_scorecards",
+"get_consumer_prices",
+"get_airspace",
+"get_maritime_activity",
+"analyze_situation",
+"generate_forecasts",
+"search_flights",
+"search_flight_prices_by_date",
+"get_commodity_geo",
+"get_mineral_production",
+"get_supply_vulnerabilities",
+"get_chokepoint_dependencies",
+"get_signal_convergence",
+"get_focal_points",
+"simulate_infrastructure_cascade",
+"get_military_surge",
+"get_population_exposure",
+"get_alert_digest",
+"get_hotspot_escalation",
+"search_intel_history",
+"get_intel_timeline",
+"get_similar_events",
+"get_company_intelligence",
+"describe_tool",
+"classify_event",
+"extract_entities",
+"get_news_clusters",
+"get_keyword_spikes",
+"get_sources"
+]
+}
+},
+"publisher_domain": "worldmonitor.app",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:41:41Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-01-08T17:26:06Z",
+"github_forks": 13346,
+"github_language": "TypeScript",
+"github_open_issues": 348,
+"github_pushed_at": "2026-09-28T19:01:54Z",
+"github_stars": 87520,
+"github_topic": "mcp-server",
+"homepage": "https://worldmonitor.app"
+},
+"slug": "koala73-worldmonitor",
+"sources": [
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
+"url": "https://github.com/koala73/worldmonitor"
+}
+],
+"tags": [
+"agent",
+"ai",
+"dashboard",
+"geopolitics",
+"mcp",
+"mcp-server",
+"monitoring",
+"news",
+"opensource",
+"osint",
+"palantir",
+"situation"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://worldmonitor.app",
+"vendor": "koala73"
+}

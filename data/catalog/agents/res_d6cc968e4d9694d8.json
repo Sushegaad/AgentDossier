@@ -26,9 +26,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "8db333793d58f9fb7200b75730827cf08927b8e6a4afa8a8484216f95ee99f5e",
+"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:31Z",
+"retrieved_at": "2026-09-28T23:29:34Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -246,7 +246,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -268,24 +268,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "SAP service",
 "name": "SAP Joule Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:59Z",
+"checked_at": "2026-09-28T23:27:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:55Z",
+"checked_at": "2026-09-28T23:27:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:17:00Z",
+"checked_at": "2026-09-28T23:27:28Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -293,6 +293,13 @@
 "publisher_domain": "sap.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:14Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -304,7 +311,7 @@
 "sources": [
 {
 "payload_hash": "752572dc1bca02c2f0b6ef9491aacc57c776240d8634163ea0a58998e22c8ff9",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html"
 }
@@ -316,7 +323,7 @@
 "identity": 4,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html",
 "vendor": "SAP"

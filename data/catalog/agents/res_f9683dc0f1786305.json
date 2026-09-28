@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "243e5aeca4bbbecfd088dec287beeb210ecfeaa0cb1ab5361af852c228785047",
+"payload_hash": "c16720c13fec14215b8caaea83e92a1f6cb3ec64c742e464c9024f9cdfb8ef88",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:31Z",
+"retrieved_at": "2026-09-28T23:33:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "bbec66d4348d1a944d5d25fdb1b195b84fa7ad5efa09439069212fd1cb9898ed",
+"payload_hash": "9ef50baf0eca10205194c9f712b3e66852e1be67cf26b7406f1bd3306e462f53",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:31Z",
+"retrieved_at": "2026-09-28T23:33:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "243e5aeca4bbbecfd088dec287beeb210ecfeaa0cb1ab5361af852c228785047",
+"payload_hash": "c16720c13fec14215b8caaea83e92a1f6cb3ec64c742e464c9024f9cdfb8ef88",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:31Z",
+"retrieved_at": "2026-09-28T23:33:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -95,9 +95,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "243e5aeca4bbbecfd088dec287beeb210ecfeaa0cb1ab5361af852c228785047",
+"payload_hash": "c16720c13fec14215b8caaea83e92a1f6cb3ec64c742e464c9024f9cdfb8ef88",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:31Z",
+"retrieved_at": "2026-09-28T23:33:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -121,9 +121,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "243e5aeca4bbbecfd088dec287beeb210ecfeaa0cb1ab5361af852c228785047",
+"payload_hash": "c16720c13fec14215b8caaea83e92a1f6cb3ec64c742e464c9024f9cdfb8ef88",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:31Z",
+"retrieved_at": "2026-09-28T23:33:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -181,7 +181,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -203,24 +203,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Salesloft AI / Rhythm",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:57Z",
+"checked_at": "2026-09-28T23:27:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:55Z",
+"checked_at": "2026-09-28T23:27:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:58Z",
+"checked_at": "2026-09-28T23:27:26Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -228,6 +228,13 @@
 "publisher_domain": "salesloft.com",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:31Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -239,7 +246,7 @@
 "sources": [
 {
 "payload_hash": "11c56b09bbee6b2cc507a166ff8ac540d5c7c2e0ee9b414d4b721f2dd92a498e",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.salesloft.com/"
 }
@@ -251,7 +258,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.salesloft.com/",
 "vendor": "Salesloft"

@@ -1,0 +1,334 @@
+{
+"canonical_url": "open-metadata.org",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"business"
+],
+"data": [
+"data"
+],
+"regulatory": [
+"governance"
+],
+"technology": [
+"api",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building trusted data context and business semantics for humans, AI assistants, and agents.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 24.26,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 63.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 24.26,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 64.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"regulatory": {
+"components": {
+"adoption": 24.26,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.85,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": null,
+"score": 50.4,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 24.26,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "open-metadata/OpenMetadata"
+},
+"first_seen": "2026-09-28T23:23:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_3ef420992e6078bd",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 15,
+"incidents": 0,
+"links": [
+{
+"date": "2024-03-15",
+"kind": "cve",
+"title": "CVE-2024-28253",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28253"
+},
+{
+"date": "2024-03-15",
+"kind": "cve",
+"title": "CVE-2024-28254",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28254"
+},
+{
+"date": "2024-03-15",
+"kind": "cve",
+"title": "CVE-2024-28255",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28255"
+},
+{
+"date": "2024-03-15",
+"kind": "cve",
+"title": "CVE-2024-28847",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28847"
+},
+{
+"date": "2024-03-15",
+"kind": "cve",
+"title": "CVE-2024-28848",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28848"
+},
+{
+"date": "2025-04-17",
+"kind": "cve",
+"title": "CVE-2024-55238",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-55238"
+},
+{
+"date": "2025-08-08",
+"kind": "cve",
+"title": "CVE-2025-50465",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-50465"
+},
+{
+"date": "2025-08-08",
+"kind": "cve",
+"title": "CVE-2025-50466",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-50466"
+},
+{
+"date": "2025-08-08",
+"kind": "cve",
+"title": "CVE-2025-50467",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-50467"
+},
+{
+"date": "2025-08-08",
+"kind": "cve",
+"title": "CVE-2025-50468",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-50468"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:23:20Z",
+"license": "Apache-2.0",
+"name": "OpenMetadata",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-16T05:01:16Z",
+"headline": "OpenMetadata 2.0.2-release",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## Changelog\r\n\r\nOpenMetadata 2.0.2 is a maintenance release focused on connector reliability across Oracle, Databricks, Snowflake, BigQuery, Clickhouse, KafkaConnect, Grafana, and StarRocks, MCP tool consolidation and hardening, a governanc",
+"tag": "product_update",
+"url": "https://github.com/open-metadata/OpenMetadata/releases/tag/2.0.2-release"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-11T07:55:15Z",
+"headline": "OpenMetadata 1.13.6-release",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## Changelog\r\n\r\nOpenMetadata 1.13.6 is a maintenance release focused on connector reliability across Kafka Connect, Tableau, Snowflake, BigQuery, Athena, Airflow, Looker, Grafana, Mode and Doris, correct change events and alerting for inges",
+"tag": "product_update",
+"url": "https://github.com/open-metadata/OpenMetadata/releases/tag/1.13.6-release"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-09-28T23:27:11Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-09-28T23:27:10Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-09-28T23:27:12Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "open-metadata.org",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:42:55Z",
+"cves": 15,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2021-08-01T21:17:17Z",
+"github_forks": 2414,
+"github_language": "TypeScript",
+"github_open_issues": 879,
+"github_pushed_at": "2026-09-28T23:19:00Z",
+"github_stars": 15352,
+"github_topic": "mcp-server",
+"homepage": "https://open-metadata.org"
+},
+"slug": "open-metadata-openmetadata",
+"sources": [
+{
+"payload_hash": "380d8b0222ea621fefe4e22989b80696f39be56499cb40e8408220d9bf89472c",
+"retrieved_at": "2026-09-28T23:23:20Z",
+"system": "github",
+"url": "https://github.com/open-metadata/OpenMetadata"
+}
+],
+"tags": [
+"context",
+"context-layer",
+"data-catalog",
+"data-collaboration",
+"data-contracts",
+"data-discovery",
+"data-governance",
+"data-lineage",
+"data-observability",
+"data-profiling",
+"data-quality",
+"datadiscovery",
+"dataquality",
+"mcp",
+"mcp-server",
+"metadata",
+"metadata-management",
+"ontologies",
+"ontologies-api",
+"semantics"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://open-metadata.org",
+"vendor": "open-metadata"
+}

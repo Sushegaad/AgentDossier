@@ -1,0 +1,213 @@
+{
+"canonical_url": "github.com/ykdojo/claude-code-tips",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"productivity",
+"workflow"
+],
+"technology": [
+"cli",
+"code",
+"coding",
+"developer"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "45+ tips for getting the most out of Claude Code, from basics to advanced - includes a custom status line script and Claude Code running itself in a container. Also includes the dx plugin: skills for everyday dev workflows.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 23.22,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 64.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 23.22,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 70.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "ykdojo/claude-code-tips"
+},
+"first_seen": "2026-09-28T23:24:52Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_7bf0ea3adf6c2cfe",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-09-28T23:24:52Z",
+"license": "Other",
+"name": "claude-code-tips",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-08-30T22:42:10Z",
+"headline": "claude-code-tips v0.26.39",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Refresh captured command outputs in Tip 1 (#70): /usage, /chrome, /mcp, /stats updated to current Claude Code (v2.1.250). Also includes the Ctrl+L shortcut fix and hooks doc link update from main.",
+"tag": "product_update",
+"url": "https://github.com/ykdojo/claude-code-tips/releases/tag/v0.26.39"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-30T22:22:31Z",
+"headline": "claude-code-tips v0.26.38",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Update outdated claims in the README (#69): Tip 8 context numbers and plan mode section, Tip 20 Opus phrasing, Tip 32 Remote Control default, Tip 33 artifact CDNs, Tip 36 subagent model default. Also includes Tip 49 (concise output style) f",
+"tag": "product_update",
+"url": "https://github.com/ykdojo/claude-code-tips/releases/tag/v0.26.38"
+},
+{
+"cluster_size": 2,
+"date": "2026-08-24T17:53:36Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49423500",
+"engagement": 6,
+"headline": "Claude Code Tips",
+"kind": "community",
+"link_confidence": 0.95,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://github.com/ykdojo/claude-code-tips"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"status": "unknown"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:43:21Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-11-28T00:52:00Z",
+"github_forks": 820,
+"github_language": "HTML",
+"github_open_issues": 4,
+"github_pushed_at": "2026-09-25T03:50:54Z",
+"github_stars": 10154,
+"github_topic": "agentic",
+"homepage": null
+},
+"slug": "ykdojo-claude-code-tips",
+"sources": [
+{
+"payload_hash": "a28b0d532e428a0c95e050fcafe1d51a3bac5888a5d391976133acf8c5014597",
+"retrieved_at": "2026-09-28T23:24:52Z",
+"system": "github",
+"url": "https://github.com/ykdojo/claude-code-tips"
+}
+],
+"tags": [
+"agentic",
+"agentic-ai",
+"agentic-coding",
+"agentic-workflow",
+"ai",
+"claude",
+"claude-ai",
+"claude-code",
+"cli",
+"developer-tools",
+"productivity",
+"tips-and-tricks"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://github.com/ykdojo/claude-code-tips",
+"vendor": "ykdojo"
+}

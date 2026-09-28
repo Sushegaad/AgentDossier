@@ -19,7 +19,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "70f5e06c9a4daa69c46a5f135cd050ac6f77a4ce1920a33591f3e4689be7fdb9",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:02Z",
+"retrieved_at": "2026-09-28T23:32:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "70f5e06c9a4daa69c46a5f135cd050ac6f77a4ce1920a33591f3e4689be7fdb9",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:02Z",
+"retrieved_at": "2026-09-28T23:32:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "70f5e06c9a4daa69c46a5f135cd050ac6f77a4ce1920a33591f3e4689be7fdb9",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:02Z",
+"retrieved_at": "2026-09-28T23:32:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-05",
 "payload_hash": "f07f962ec2f74f2fd54d03328b7f16bda20a51f7a470c1802c4e65d95d93a96e",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:18:02Z",
+"retrieved_at": "2026-09-28T23:32:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -235,7 +235,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -257,24 +257,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Credo AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:31Z",
+"checked_at": "2026-09-28T23:26:20Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:29Z",
+"checked_at": "2026-09-28T23:26:19Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:31Z",
+"checked_at": "2026-09-28T23:26:21Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -282,6 +282,13 @@
 "publisher_domain": "credo.ai",
 "resource_type": "agent",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:48Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -293,7 +300,7 @@
 "sources": [
 {
 "payload_hash": "9e814dabe4487c9b101ef8de7ad372db6ee9528e204a84fe461c86c86350bbc9",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://www.credo.ai/"
 }
@@ -305,7 +312,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://www.credo.ai/",
 "vendor": "Credo AI"

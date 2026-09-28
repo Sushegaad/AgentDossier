@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "e688cca6aaaa573a0b2dc1ea825f1b4bba8616e1912c7858079c0d45db78af61",
+"payload_hash": "dde4133cf0f595732029b3cc50bb39bb7456f059835d9d74a5b0c786efd93e6e",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:58Z",
+"retrieved_at": "2026-09-28T23:32:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "f7085f968041da9916f655966c45fcc6c123556439b6871abafa76ab1aa48c91",
+"payload_hash": "7fec1ed6161966b2032478838f8512afb1ec4015bd5da5ad465b3bcd78e7dd63",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:58Z",
+"retrieved_at": "2026-09-28T23:32:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "f7085f968041da9916f655966c45fcc6c123556439b6871abafa76ab1aa48c91",
+"payload_hash": "7fec1ed6161966b2032478838f8512afb1ec4015bd5da5ad465b3bcd78e7dd63",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:58Z",
+"retrieved_at": "2026-09-28T23:32:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -95,9 +95,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-05",
-"payload_hash": "e688cca6aaaa573a0b2dc1ea825f1b4bba8616e1912c7858079c0d45db78af61",
+"payload_hash": "dde4133cf0f595732029b3cc50bb39bb7456f059835d9d74a5b0c786efd93e6e",
 "period_end": null,
-"retrieved_at": "2026-09-28T00:17:58Z",
+"retrieved_at": "2026-09-28T23:32:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -155,7 +155,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T00:14:54Z",
+"first_seen": "2026-09-28T23:18:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -177,24 +177,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T00:14:54Z",
+"last_seen": "2026-09-28T23:18:07Z",
 "license": "Commercial",
 "name": "Botpress",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T00:16:28Z",
+"checked_at": "2026-09-28T23:25:49Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T00:16:26Z",
+"checked_at": "2026-09-28T23:25:48Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T00:16:28Z",
+"checked_at": "2026-09-28T23:25:49Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -202,6 +202,13 @@
 "publisher_domain": "botpress.com",
 "resource_type": "platform",
 "scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-09-28T23:35:30Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
 "seed": {
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
@@ -213,7 +220,7 @@
 "sources": [
 {
 "payload_hash": "11084ef6afa2e0963d64e29524576c9928960e24bf5c9040cf86557e3bb29d3b",
-"retrieved_at": "2026-09-28T00:14:54Z",
+"retrieved_at": "2026-09-28T23:18:07Z",
 "system": "seed_xlsx",
 "url": "https://botpress.com/"
 }
@@ -225,7 +232,7 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": 1
 },
 "url": "https://botpress.com/",
 "vendor": "Botpress"
