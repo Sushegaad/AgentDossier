@@ -34,10 +34,15 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
     <meta name="description" content={description} />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
     <link rel="ard" type="application/ai-registry+json" href={`${base}/.well-known/ard.json`} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet" /></noscript>
+    <link rel="preload" href={`${base}/fonts/archivo-latin.woff2`} as="font" type="font/woff2" crossorigin />
+    <style is:inline set:html={`
+      /* Archivo (SIL Open Font License), self-hosted latin subset, variable weight. The fallback face is
+         metric-matched to Arial so text does not reflow when the web font arrives. */
+      @font-face { font-family: "Archivo"; font-style: normal; font-weight: 100 900; font-display: swap;
+        src: url("${base}/fonts/archivo-latin.woff2") format("woff2"); }
+      @font-face { font-family: "Archivo Fallback"; src: local("Arial"), local("Helvetica"), local("Liberation Sans");
+        size-adjust: 103%; ascent-override: 88%; descent-override: 22%; line-gap-override: 0%; }
+    `}></style>
     {gaId && (
       <>
         <script is:inline define:vars={{ gaId }}>

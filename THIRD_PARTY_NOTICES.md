@@ -11,3 +11,7 @@ AgentDossier is MIT licensed. The files and data below keep their own terms.
 | FedRAMP Marketplace public data | US Government work (public domain) | Fetched at build time, not committed |
 
 Source terms for every connector are recorded in `config/sources.json`.
+
+## Archivo (web font)
+
+The public site self-hosts the Archivo typeface (latin subset, `web/public/fonts/archivo-latin.woff2`), by Omnibus-Type, licensed under the SIL Open Font License 1.1. https://github.com/Omnibus-Type/Archivo
