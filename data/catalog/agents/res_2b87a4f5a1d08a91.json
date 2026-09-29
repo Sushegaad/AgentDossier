@@ -82,7 +82,7 @@
 "ard": "urn:air:airshelf:mcp:generic-catalog",
 "mcp_registry": "ai.airshelf/catalog"
 },
-"first_seen": "2026-09-28T23:18:08Z",
+"first_seen": "2026-09-29T00:06:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,7 +104,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:27:08Z",
+"last_seen": "2026-09-29T00:15:36Z",
 "license": null,
 "merged_ids": [
 "res_f793879ff61c9869"
@@ -114,12 +114,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T23:26:58Z",
+"checked_at": "2026-09-29T00:15:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T23:26:58Z",
+"checked_at": "2026-09-29T00:15:25Z",
 "entries": 1,
 "parser_version": "ard-0.91",
 "sources": [
@@ -146,7 +146,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T23:37:16Z",
+"checked_at": "2026-09-29T00:26:04Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -164,13 +164,13 @@
 "sources": [
 {
 "payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
-"retrieved_at": "2026-09-28T23:18:08Z",
+"retrieved_at": "2026-09-29T00:06:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.airshelf/catalog"
 },
 {
 "payload_hash": "33b75fed4da119c3b0893c5e9c80d1324dad201c3af7a1f2fc844717f5366e17",
-"retrieved_at": "2026-09-28T23:27:08Z",
+"retrieved_at": "2026-09-29T00:15:36Z",
 "system": "ard",
 "url": "https://mcp.airshelf.ai/.well-known/ai-catalog.json"
 }

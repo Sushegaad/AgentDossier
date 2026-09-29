@@ -22,16 +22,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
 "evidence_url": "https://backrow.ai/legal/privacy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-05",
-"payload_hash": "be1ab99c1ee26f519715462a886d3591bba584a33a42b95ee4ae7662306ada4c",
+"next_check": "2026-10-06",
+"payload_hash": "7f835001e41526fb6cddc68a4d9ec75edaea000b397c91ff72253aeb6060378e",
 "period_end": null,
-"retrieved_at": "2026-09-28T23:31:52Z",
+"retrieved_at": "2026-09-29T00:20:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -106,7 +106,7 @@
 "external_ids": {
 "mcp_registry": "ai.backrow/backrow"
 },
-"first_seen": "2026-09-28T23:18:08Z",
+"first_seen": "2026-09-29T00:06:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -128,7 +128,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:18:08Z",
+"last_seen": "2026-09-29T00:06:20Z",
 "license": null,
 "name": "ai.backrow/backrow",
 "news": [],
@@ -136,7 +136,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://backrow.ai/.well-known/agent.json",
-"checked_at": "2026-09-28T23:25:39Z",
+"checked_at": "2026-09-29T00:14:00Z",
 "errors": [
 "not valid JSON"
 ],
@@ -144,7 +144,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-28T23:25:38Z",
+"checked_at": "2026-09-29T00:13:58Z",
 "errors": [
 "https://backrow.ai/.well-known/ard.json: not valid JSON",
 "https://backrow.ai/.well-known/ai-catalog.json: not valid JSON"
@@ -171,7 +171,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T23:38:09Z",
+"checked_at": "2026-09-29T00:27:03Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -189,7 +189,7 @@
 "sources": [
 {
 "payload_hash": "6d8edb12df8af8bd08e83f9ae14dc913f58386c25fe63b33b9eb73c3e4570c90",
-"retrieved_at": "2026-09-28T23:18:08Z",
+"retrieved_at": "2026-09-29T00:06:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.backrow/backrow"
 }

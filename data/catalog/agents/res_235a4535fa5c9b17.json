@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-09-28 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/c3 ai",
 "framework": "csa_star",
 "issued": "2025-11-04",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-05",
-"payload_hash": "a0fc6b074a61dd5ba264207704c0886aa4f95a215073eeef3463c2532c0cab30",
+"next_check": "2026-10-06",
+"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
 "period_end": null,
-"retrieved_at": "2026-09-28T23:29:44Z",
+"retrieved_at": "2026-09-29T00:18:21Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -82,7 +82,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-28T23:18:07Z",
+"first_seen": "2026-09-29T00:06:19Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,24 +104,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:18:07Z",
+"last_seen": "2026-09-29T00:06:19Z",
 "license": "Commercial",
 "name": "C3 AI Supply Chain",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T23:25:56Z",
+"checked_at": "2026-09-29T00:14:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T23:25:55Z",
+"checked_at": "2026-09-29T00:14:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T23:25:56Z",
+"checked_at": "2026-09-29T00:14:17Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -131,7 +131,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T23:36:19Z",
+"checked_at": "2026-09-29T00:25:10Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -147,7 +147,7 @@
 "sources": [
 {
 "payload_hash": "80ee37d9c4d037e96c71e0a3e76f0726f8838f2b53230f7b925d9dd1efbe5e78",
-"retrieved_at": "2026-09-28T23:18:07Z",
+"retrieved_at": "2026-09-29T00:06:19Z",
 "system": "seed_xlsx",
 "url": "https://c3.ai/"
 }

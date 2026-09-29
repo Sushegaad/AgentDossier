@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-28T23:44:55Z",
+ "built_at": "2026-09-29T00:34:35Z",
  "snapshot_date": "2026-09-25",
  "generator": "agentdossier 0.1.0",
  "score_version": "sar-score-1.0",
@@ -114,8 +114,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:18:07Z",
-   "finished": "2026-09-28T23:18:07Z"
+   "started": "2026-09-29T00:06:19Z",
+   "finished": "2026-09-29T00:06:19Z"
   },
   "mcp_registry": {
    "source": "mcp_registry",
@@ -124,8 +124,8 @@
    "skipped": 288,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:18:07Z",
-   "finished": "2026-09-28T23:19:10Z"
+   "started": "2026-09-29T00:06:19Z",
+   "finished": "2026-09-29T00:07:31Z"
   },
   "huggingface": {
    "source": "huggingface",
@@ -136,25 +136,25 @@
    "error_samples": [
     "https://huggingface.co/api/spaces?search=agentic&sort=likes&direction=-1&limit=500&full=true: response too large"
    ],
-   "started": "2026-09-28T23:19:10Z",
-   "finished": "2026-09-28T23:19:11Z"
+   "started": "2026-09-29T00:07:31Z",
+   "finished": "2026-09-29T00:07:33Z"
   },
   "github": {
    "source": "github",
    "fetched": 98,
-   "produced": 8429,
+   "produced": 8430,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:19:11Z",
-   "finished": "2026-09-28T23:24:59Z"
+   "started": "2026-09-29T00:07:33Z",
+   "finished": "2026-09-29T00:13:20Z"
   },
   "dedup": {
    "input": 915,
    "output": 804,
    "merged": 111,
    "review_candidates": 10,
-   "review_added": 3
+   "review_added": 0
   },
   "ard_web": {
    "source": "ard_web",
@@ -163,8 +163,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:25:00Z",
-   "finished": "2026-09-28T23:28:25Z"
+   "started": "2026-09-29T00:13:20Z",
+   "finished": "2026-09-29T00:16:54Z"
   },
   "fedramp": {
    "source": "fedramp",
@@ -173,8 +173,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:28:25Z",
-   "finished": "2026-09-28T23:29:27Z"
+   "started": "2026-09-29T00:16:54Z",
+   "finished": "2026-09-29T00:17:57Z"
   },
   "csa_star": {
    "source": "csa_star",
@@ -183,8 +183,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:29:27Z",
-   "finished": "2026-09-28T23:31:07Z"
+   "started": "2026-09-29T00:17:57Z",
+   "finished": "2026-09-29T00:19:45Z"
   },
   "curated": {
    "source": "curated",
@@ -193,21 +193,21 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:31:07Z",
-   "finished": "2026-09-28T23:31:07Z"
+   "started": "2026-09-29T00:19:45Z",
+   "finished": "2026-09-29T00:19:45Z"
   },
   "vendor_claims": {
    "source": "vendor_trust_centers",
    "fetched": 481,
-   "produced": 493,
+   "produced": 492,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:31:07Z",
-   "finished": "2026-09-28T23:34:32Z"
+   "started": "2026-09-29T00:19:45Z",
+   "finished": "2026-09-29T00:23:14Z"
   },
   "compliance_review_added": {
-   "added": 154
+   "added": 0
   },
   "news": {
    "source": "news",
@@ -218,8 +218,8 @@
    "error_samples": [
     "gdelt: GDELT unavailable (HTTP 429); skipped for the rest of the run"
    ],
-   "started": "2026-09-28T23:34:32Z",
-   "finished": "2026-09-28T23:44:54Z"
+   "started": "2026-09-29T00:23:14Z",
+   "finished": "2026-09-29T00:34:34Z"
   },
   "nvd": {
    "source": "nvd",
@@ -228,12 +228,12 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-09-28T23:34:32Z",
-   "finished": "2026-09-28T23:44:54Z"
+   "started": "2026-09-29T00:23:14Z",
+   "finished": "2026-09-29T00:34:34Z"
   },
   "changelog": {
-   "events": 311,
-   "appended": 311
+   "events": 1,
+   "appended": 1
   }
  }
 }

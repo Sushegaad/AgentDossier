@@ -21,16 +21,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
 "evidence_url": "https://presenton.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-05",
+"next_check": "2026-10-06",
 "payload_hash": "894b8d0cdd35352df3f22133ea11832a0afd67e109bffeb5796401cbaac3a48d",
 "period_end": null,
-"retrieved_at": "2026-09-28T23:33:36Z",
+"retrieved_at": "2026-09-29T00:22:19Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -47,7 +47,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.38,
+"adoption": 23.39,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.4,
@@ -73,7 +73,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.38,
+"adoption": 23.39,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.4,
@@ -101,7 +101,7 @@
 "external_ids": {
 "github": "presenton/presenton"
 },
-"first_seen": "2026-09-28T23:21:37Z",
+"first_seen": "2026-09-29T00:09:58Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -136,7 +136,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:21:37Z",
+"last_seen": "2026-09-29T00:09:58Z",
 "license": "Apache-2.0",
 "name": "presenton",
 "news": [
@@ -166,17 +166,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T23:27:18Z",
+"checked_at": "2026-09-29T00:15:48Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T23:27:17Z",
+"checked_at": "2026-09-29T00:15:46Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T23:27:19Z",
+"checked_at": "2026-09-29T00:15:48Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -186,7 +186,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T23:43:16Z",
+"checked_at": "2026-09-29T00:32:49Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -198,15 +198,15 @@
 "github_language": "TypeScript",
 "github_open_issues": 26,
 "github_pushed_at": "2026-09-28T14:50:44Z",
-"github_stars": 10831,
+"github_stars": 10833,
 "github_topic": "ai-agent",
 "homepage": "https://presenton.ai"
 },
 "slug": "presenton-presenton",
 "sources": [
 {
-"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
-"retrieved_at": "2026-09-28T23:21:37Z",
+"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
+"retrieved_at": "2026-09-29T00:09:58Z",
 "system": "github",
 "url": "https://github.com/presenton/presenton"
 }

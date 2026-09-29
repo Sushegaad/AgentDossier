@@ -52,7 +52,7 @@
 "external_ids": {
 "github": "herdrdev/herdr"
 },
-"first_seen": "2026-09-28T23:19:13Z",
+"first_seen": "2026-09-29T00:07:35Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -74,14 +74,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:19:13Z",
+"last_seen": "2026-09-29T00:07:35Z",
 "license": "Apache-2.0",
 "name": "herdr",
 "news": [],
 "protocols": {
 "a2a": {
 "card_url": "https://herdr.dev/.well-known/agent.json",
-"checked_at": "2026-09-28T23:26:46Z",
+"checked_at": "2026-09-29T00:15:12Z",
 "errors": [
 "not valid JSON"
 ],
@@ -89,7 +89,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-28T23:26:46Z",
+"checked_at": "2026-09-29T00:15:11Z",
 "errors": [
 "https://herdr.dev/.well-known/ard.json: not valid JSON",
 "https://herdr.dev/.well-known/ai-catalog.json: not valid JSON"
@@ -99,7 +99,7 @@
 },
 "mcp": {
 "card_url": "https://herdr.dev/.well-known/mcp.json",
-"checked_at": "2026-09-28T23:26:47Z",
+"checked_at": "2026-09-29T00:15:13Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -110,19 +110,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-27T17:54:33Z",
-"github_forks": 3171,
+"github_forks": 3174,
 "github_language": "Rust",
-"github_open_issues": 371,
+"github_open_issues": 372,
 "github_pushed_at": "2026-09-28T23:16:21Z",
-"github_stars": 41264,
+"github_stars": 41267,
 "github_topic": "ai-agents",
 "homepage": "https://herdr.dev"
 },
 "slug": "herdrdev-herdr",
 "sources": [
 {
-"payload_hash": "37b4825978894c66fc4851cd8d2bf3c5863c0854ec564513f68a7d4b69f21fb2",
-"retrieved_at": "2026-09-28T23:19:13Z",
+"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
+"retrieved_at": "2026-09-29T00:07:35Z",
 "system": "github",
 "url": "https://github.com/herdrdev/herdr"
 }

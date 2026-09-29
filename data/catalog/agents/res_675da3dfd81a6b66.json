@@ -79,7 +79,7 @@
 "external_ids": {
 "github": "CherryHQ/cherry-studio"
 },
-"first_seen": "2026-09-28T23:21:37Z",
+"first_seen": "2026-09-29T00:09:58Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -120,7 +120,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:21:37Z",
+"last_seen": "2026-09-29T00:09:58Z",
 "license": "AGPL-3.0",
 "name": "cherry-studio",
 "news": [
@@ -151,7 +151,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://cherryai.com/.well-known/agent.json",
-"checked_at": "2026-09-28T23:25:59Z",
+"checked_at": "2026-09-29T00:14:21Z",
 "errors": [
 "not valid JSON"
 ],
@@ -159,7 +159,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-28T23:25:58Z",
+"checked_at": "2026-09-29T00:14:20Z",
 "errors": [
 "https://cherryai.com/.well-known/ard.json: not valid JSON",
 "https://cherryai.com/.well-known/ai-catalog.json: not valid JSON"
@@ -169,7 +169,7 @@
 },
 "mcp": {
 "card_url": "https://cherryai.com/.well-known/mcp.json",
-"checked_at": "2026-09-28T23:26:00Z",
+"checked_at": "2026-09-29T00:14:22Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -179,7 +179,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T23:41:57Z",
+"checked_at": "2026-09-29T00:31:16Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -189,17 +189,17 @@
 "github_created_at": "2024-05-24T01:56:26Z",
 "github_forks": 5021,
 "github_language": "TypeScript",
-"github_open_issues": 1693,
-"github_pushed_at": "2026-09-28T23:21:13Z",
-"github_stars": 52217,
+"github_open_issues": 1692,
+"github_pushed_at": "2026-09-28T23:52:39Z",
+"github_stars": 52218,
 "github_topic": "ai-agent",
 "homepage": "https://cherryai.com"
 },
 "slug": "cherryhq-cherry-studio",
 "sources": [
 {
-"payload_hash": "3df3a2e1fa0dc124cb79d4f6eb0832f8b1a99bc44b08362794c3c4346df2f542",
-"retrieved_at": "2026-09-28T23:21:37Z",
+"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
+"retrieved_at": "2026-09-29T00:09:58Z",
 "system": "github",
 "url": "https://github.com/CherryHQ/cherry-studio"
 }
