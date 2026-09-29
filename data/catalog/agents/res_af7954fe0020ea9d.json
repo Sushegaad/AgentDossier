@@ -27,7 +27,7 @@
 "domain_fit": 34.0,
 "ecosystem": 4.6,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -41,7 +41,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 42.0,
+"score": 38.6,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -56,7 +56,7 @@
 "domain_fit": 71.3,
 "ecosystem": 4.6,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -70,7 +70,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 48.0,
+"score": 44.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -83,7 +83,7 @@
 "github": "abmeter/abmeter",
 "mcp_registry": "ai.abmeter/abmeter"
 },
-"first_seen": "2026-09-28T23:18:08Z",
+"first_seen": "2026-09-29T00:06:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -105,18 +105,18 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:18:08Z",
+"last_seen": "2026-09-29T00:06:20Z",
 "license": null,
 "name": "ABMeter",
 "news": [],
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T23:25:01Z",
+"checked_at": "2026-09-29T00:13:21Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T23:25:00Z",
+"checked_at": "2026-09-29T00:13:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -150,7 +150,7 @@
 "sources": [
 {
 "payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
-"retrieved_at": "2026-09-28T23:18:08Z",
+"retrieved_at": "2026-09-29T00:06:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.abmeter/abmeter"
 }

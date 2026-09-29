@@ -31,16 +31,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
 "evidence_url": "https://www.pingcap.com/trust-hub/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-05",
+"next_check": "2026-10-06",
 "payload_hash": "6b814ec045fd6cd6e84830ec0e1b78eeeb3d156b960b2d8699ff2bd15ea917c2",
 "period_end": null,
-"retrieved_at": "2026-09-28T23:33:58Z",
+"retrieved_at": "2026-09-29T00:22:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,16 +57,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
 "evidence_url": "https://www.pingcap.com/trust-hub/",
 "framework": "pci_dss",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-05",
+"next_check": "2026-10-06",
 "payload_hash": "6b814ec045fd6cd6e84830ec0e1b78eeeb3d156b960b2d8699ff2bd15ea917c2",
 "period_end": null,
-"retrieved_at": "2026-09-28T23:33:58Z",
+"retrieved_at": "2026-09-29T00:22:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,16 +83,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
 "evidence_url": "https://www.pingcap.com/trust-hub/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-05",
+"next_check": "2026-10-06",
 "payload_hash": "6b814ec045fd6cd6e84830ec0e1b78eeeb3d156b960b2d8699ff2bd15ea917c2",
 "period_end": null,
-"retrieved_at": "2026-09-28T23:33:58Z",
+"retrieved_at": "2026-09-29T00:22:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -189,7 +189,7 @@
 "external_ids": {
 "github": "pingcap/tidb"
 },
-"first_seen": "2026-09-28T23:24:52Z",
+"first_seen": "2026-09-29T00:13:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -211,23 +211,23 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:24:52Z",
+"last_seen": "2026-09-29T00:13:13Z",
 "license": "Apache-2.0",
 "name": "tidb",
 "news": [],
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T23:27:36Z",
+"checked_at": "2026-09-29T00:16:06Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T23:27:33Z",
+"checked_at": "2026-09-29T00:16:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T23:27:39Z",
+"checked_at": "2026-09-29T00:16:08Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -240,17 +240,17 @@
 "github_created_at": "2015-09-06T04:01:52Z",
 "github_forks": 6250,
 "github_language": "Go",
-"github_open_issues": 7173,
+"github_open_issues": 7179,
 "github_pushed_at": "2026-09-28T22:06:54Z",
-"github_stars": 40601,
+"github_stars": 40602,
 "github_topic": "agentic",
 "homepage": "https://www.tidb.io/"
 },
 "slug": "pingcap-tidb",
 "sources": [
 {
-"payload_hash": "a28b0d532e428a0c95e050fcafe1d51a3bac5888a5d391976133acf8c5014597",
-"retrieved_at": "2026-09-28T23:24:52Z",
+"payload_hash": "27055281ceef7f5868c5924752a3c31c68f0f1629b23c19559f3c01eaa7d6820",
+"retrieved_at": "2026-09-29T00:13:13Z",
 "system": "github",
 "url": "https://github.com/pingcap/tidb"
 }

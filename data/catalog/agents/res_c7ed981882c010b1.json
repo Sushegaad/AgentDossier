@@ -50,7 +50,7 @@
 "github": "Autonomad1/autonomad1",
 "mcp_registry": "ai.autonomad/travel"
 },
-"first_seen": "2026-09-28T23:18:08Z",
+"first_seen": "2026-09-29T00:06:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -72,7 +72,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:18:08Z",
+"last_seen": "2026-09-29T00:06:20Z",
 "license": null,
 "name": "ai.autonomad/travel",
 "news": [],
@@ -83,18 +83,19 @@
 "agentWalletSignature"
 ],
 "card_url": "https://autonomad.ai/.well-known/agent.json",
-"checked_at": "2026-09-28T23:25:35Z",
+"checked_at": "2026-09-29T00:13:56Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.2.0",
 "signed": false,
 "skills": [
-"Coordination message"
+"Coordination message",
+"Staying on duty"
 ],
 "status": "verified",
 "version": "0.1.0"
 },
 "ard": {
-"checked_at": "2026-09-28T23:25:34Z",
+"checked_at": "2026-09-29T00:13:55Z",
 "errors": [
 "https://autonomad.ai/.well-known/ard.json: not valid JSON",
 "https://autonomad.ai/.well-known/ai-catalog.json: not valid JSON"
@@ -129,7 +130,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T23:37:49Z",
+"checked_at": "2026-09-29T00:26:39Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -147,7 +148,7 @@
 "sources": [
 {
 "payload_hash": "6d8edb12df8af8bd08e83f9ae14dc913f58386c25fe63b33b9eb73c3e4570c90",
-"retrieved_at": "2026-09-28T23:18:08Z",
+"retrieved_at": "2026-09-29T00:06:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.autonomad/travel"
 }

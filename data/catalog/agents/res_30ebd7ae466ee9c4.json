@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
 "evidence_url": "https://cosmonote.ai/en/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-05",
-"payload_hash": "b03a57f5ac1eb47e8ad7e2a19afcd6a8c65cbe5d7b5908fdd6f5742da283c638",
+"next_check": "2026-10-06",
+"payload_hash": "051512d030e25eef1818406cbd965a3c5bbb310ab30a12dcfd7d1aeef28a1e6e",
 "period_end": null,
-"retrieved_at": "2026-09-28T23:32:29Z",
+"retrieved_at": "2026-09-29T00:21:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -76,7 +76,7 @@
 "github": "cosmonote/pocketbase",
 "mcp_registry": "ai.cosmonote/notes"
 },
-"first_seen": "2026-09-28T23:18:08Z",
+"first_seen": "2026-09-29T00:06:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -98,19 +98,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:18:08Z",
+"last_seen": "2026-09-29T00:06:21Z",
 "license": null,
 "name": "Cosmonote",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T23:26:18Z",
+"checked_at": "2026-09-29T00:14:38Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T23:26:17Z",
+"checked_at": "2026-09-29T00:14:37Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -133,7 +133,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T23:39:17Z",
+"checked_at": "2026-09-29T00:28:19Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -151,7 +151,7 @@
 "sources": [
 {
 "payload_hash": "2f830669767507d2755d2033fef8a09f446bc4d2e5ac3c3b7ed15071900a35da",
-"retrieved_at": "2026-09-28T23:18:08Z",
+"retrieved_at": "2026-09-29T00:06:21Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.cosmonote/notes"
 }

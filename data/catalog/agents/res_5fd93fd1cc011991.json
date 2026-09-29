@@ -27,16 +27,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-09-28) (pending publisher verification)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
 "evidence_url": "https://open-design.ai/privacy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-05",
-"payload_hash": "3439df59f1eb04b42a31d031cf0ff9487d278bda5dbccb56c29915a7a45698a9",
+"next_check": "2026-10-06",
+"payload_hash": "9fad32572c34848b85f5764c32da9de7251a85e7d86d445aacafcaec836f2a19",
 "period_end": null,
-"retrieved_at": "2026-09-28T23:33:26Z",
+"retrieved_at": "2026-09-29T00:22:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -133,7 +133,7 @@
 "external_ids": {
 "github": "nexu-io/html-anything"
 },
-"first_seen": "2026-09-28T23:19:17Z",
+"first_seen": "2026-09-29T00:07:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -155,7 +155,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-28T23:24:52Z",
+"last_seen": "2026-09-29T00:13:13Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_5fd93fd1cc011991"
@@ -165,17 +165,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-28T23:27:10Z",
+"checked_at": "2026-09-29T00:15:38Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-28T23:27:10Z",
+"checked_at": "2026-09-29T00:15:37Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-28T23:27:11Z",
+"checked_at": "2026-09-29T00:15:39Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -185,7 +185,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-28T23:43:30Z",
+"checked_at": "2026-09-29T00:33:05Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -204,8 +204,8 @@
 "slug": "nexu-io-html-anything",
 "sources": [
 {
-"payload_hash": "ec7e7a70a241a9f4d77eac9f21621dc1003b58d355aefbc8c78dfeb9f9d4afb6",
-"retrieved_at": "2026-09-28T23:19:17Z",
+"payload_hash": "0fa34e4c4ef8d40eb4e4960fcead8529f41fffeb35c0ac9111944d27521e8b44",
+"retrieved_at": "2026-09-29T00:07:39Z",
 "system": "github",
 "url": "https://github.com/nexu-io/html-anything"
 }
