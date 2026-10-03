@@ -64,6 +64,12 @@ warn_unused_ignores = true
 files = ["agentdossier"]
 ignore_missing_imports = true
 
+[[tool.mypy.overrides]]
+# slowapi depends on `deprecated`, whose source uses the 3.12 `type` statement; mypy
+# must not follow imports into it while this project targets 3.11.
+module = ["slowapi", "slowapi.*", "deprecated", "deprecated.*", "wrapt", "wrapt.*"]
+follow_imports = "skip"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
