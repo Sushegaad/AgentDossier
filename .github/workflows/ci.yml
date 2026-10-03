@@ -103,3 +103,19 @@ jobs:
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  helm:
+    name: helm chart
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/setup-helm@v4
+        with:
+          version: v3.16.2
+      - name: Lint and render the chart
+        run: |
+          helm lint deploy/helm/agentdossier
+          helm template ref deploy/helm/agentdossier \
+            --set ingress.enabled=true --set secrets.AGENTDOSSIER_API_TOKEN=r \
+            --set-file enterpriseConfig=examples/enterprise/enterprise.json > /tmp/rendered.yaml
+          python3 -c "import yaml; docs=[d for d in yaml.safe_load_all(open('/tmp/rendered.yaml')) if d]; print([d['kind'] for d in docs]); assert len(docs) == 7"

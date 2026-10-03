@@ -18,6 +18,10 @@ Operations (admin)
   GET  /api/scans, /api/scans/{id}  scan history and reports
   GET  /api/audit                   audit trail
   POST /api/reload                  reload the catalog from disk
+  GET  /api/deliveries              notification deliveries (email, webhook)
+  POST /api/notify/test             send a test notification to every channel
+  GET  /api/evidence/expiring       compliance records expiring or due for recheck
+  POST /api/jobs/evidence-expiry    run the daily expiry job now
   GET  /healthz, /api/status        liveness and instance info
 Static
   /catalog/*                        the catalog files (index.json, agents/…)
@@ -39,6 +43,7 @@ from .. import __version__
 from ..util import now_iso
 from .auth import Auth
 from .catalog import Catalog
+from .notify import Notifier, catalog_diff, evidence_expiring, expiry_text, scan_text
 from .settings import Settings
 
 log = logging.getLogger("agentdossier.server")
@@ -58,6 +63,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     store = Store(settings.db_path)
     auth = Auth(settings)
     state: dict[str, Any] = {"scan_lock": threading.Lock(), "scheduler": None, "config": None}
+    notifier = Notifier(settings.notify, store, site=settings.site, tenant=None)
 
     if settings.auth_mode == "oidc":
         from starlette.middleware.sessions import SessionMiddleware  # noqa: PLC0415
@@ -71,6 +77,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         from ..enterprise.config import load  # noqa: PLC0415
 
         state["config"] = load(settings.enterprise_config)
+        notifier.tenant = state["config"].tenant
 
     def run_scan(trigger: str, user: str = "system") -> dict[str, Any]:
         cfg = state["config"]
@@ -88,38 +95,89 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 pf = preflight.run(cfg)
                 if not pf.ok:
                     store.finish_scan(scan_id, "preflight_failed", pf.as_dict())
+                    failed = [c for c in pf.as_dict().get("checks", []) if c.get("status") == "fail"]
+                    notifier.send(
+                        "scan.failed",
+                        f"scan #{scan_id} stopped at preflight",
+                        "Preflight failed:\n"
+                        + "\n".join(f"  {c.get('id')}: {c.get('message')}" for c in failed),
+                        {"scanId": scan_id, "preflight": pf.as_dict()},
+                    )
                     return
+                before = list(catalog.records)
                 report = scanner.scan(cfg)
                 catalog.path = Path(report["catalog"])
                 n = catalog.reload()
                 store.finish_scan(scan_id, "done", report, resources=n)
                 store.audit(user, "scan.done", f"resources={n}")
+                diff = catalog_diff(before, catalog.records)
+                summary = {
+                    k: v
+                    for k, v in report.items()
+                    if k in ("tenant", "ticket", "resources", "errors", "finished")
+                }
+                notifier.send(
+                    "scan.done",
+                    f"scan #{scan_id} done: {n} resources",
+                    scan_text(report, diff, settings.site),
+                    {"scanId": scan_id, "report": summary, "diff": diff},
+                )
+                if diff["added"] or diff["removed"] or diff["changed"]:
+                    notifier.send(
+                        "catalog.changed",
+                        f"catalog changed: +{len(diff['added'])} -{len(diff['removed'])} ~{len(diff['changed'])}",
+                        scan_text(report, diff, settings.site),
+                        {"scanId": scan_id, "diff": diff},
+                    )
             except Exception as exc:  # noqa: BLE001
                 log.exception("scan failed")
                 store.finish_scan(scan_id, "error", {"error": f"{type(exc).__name__}: {exc}"})
+                notifier.send(
+                    "scan.failed",
+                    f"scan #{scan_id} failed",
+                    f"{type(exc).__name__}: {exc}",
+                    {"scanId": scan_id},
+                )
             finally:
                 state["scan_lock"].release()
 
         threading.Thread(target=work, daemon=True, name=f"scan-{scan_id}").start()
         return {"scanId": scan_id, "status": "running"}
 
+    def run_expiry(trigger: str = "schedule") -> dict[str, Any]:
+        """Daily job: warn about compliance evidence that expires or is due for a recheck."""
+        full = [catalog.resource(r["id"]) or r for r in catalog.records]
+        items = evidence_expiring(full, days=settings.notify.expiry_warning_days)
+        store.audit("system", "evidence.expiry", f"trigger={trigger} items={len(items)}")
+        deliveries: list[dict[str, Any]] = []
+        if items:
+            deliveries = notifier.send(
+                "evidence.expiring",
+                f"{len(items)} compliance record(s) expiring or due for recheck",
+                expiry_text(items, settings.site),
+                {"items": items},
+            )
+        return {"items": items, "deliveries": deliveries}
+
     cfg = state["config"]
+    jobs: list[tuple[str, str, Any]] = []
     if cfg is not None and cfg.schedule:
+        jobs.append(("scan", cfg.schedule, lambda: run_scan("schedule")))
+    if settings.expiry_cron and notifier.channels:
+        jobs.append(("evidence_expiry", settings.expiry_cron, lambda: run_expiry("schedule")))
+    if jobs and settings.start_scheduler:
         try:
             from apscheduler.schedulers.background import BackgroundScheduler  # noqa: PLC0415
             from apscheduler.triggers.cron import CronTrigger  # noqa: PLC0415
 
             sched = BackgroundScheduler(timezone="UTC")
-            sched.add_job(
-                lambda: run_scan("schedule"),
-                CronTrigger.from_crontab(cfg.schedule),
-                id="scan",
-                replace_existing=True,
-            )
+            for job_id, cron, fn in jobs:
+                sched.add_job(fn, CronTrigger.from_crontab(cron), id=job_id, replace_existing=True)
             sched.start()
             state["scheduler"] = sched
         except ImportError:
             log.warning("apscheduler not installed; schedule ignored")
+    state["jobs"] = [{"id": j, "cron": c} for j, c, _ in jobs]
 
     @app.middleware("http")
     async def _scan_on_first_request(request: Request, call_next):  # noqa: ANN001
@@ -304,6 +362,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             if c
             else None,
             "scans": store.scans(5),
+            "notify": {"channels": notifier.channels, "events": sorted(settings.notify.events)},
+            "jobs": state.get("jobs", []),
         }
 
     @app.post("/api/scan")
@@ -335,6 +395,35 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         n = catalog.reload()
         store.audit(u.subject, "catalog.reload", f"resources={n}")
         return {"resources": n}
+
+    @app.get("/api/deliveries")
+    def deliveries(request: Request):
+        user(request, admin=True)
+        return {"channels": notifier.channels, "deliveries": store.deliveries(100)}
+
+    @app.post("/api/notify/test")
+    def notify_test(request: Request):
+        u = user(request, admin=True)
+        if not notifier.channels:
+            raise HTTPException(
+                400, "no notification channel configured (SMTP_* or AGENTDOSSIER_WEBHOOK_URL)"
+            )
+        out = notifier.send(
+            "test", "test notification", f"Sent by {u.subject} from {settings.site}", {"by": u.subject}
+        )
+        store.audit(u.subject, "notify.test", ", ".join(f"{d['channel']}={d['status']}" for d in out))
+        return {"deliveries": out}
+
+    @app.get("/api/evidence/expiring")
+    def expiring(request: Request, days: int = Query(30, ge=0, le=730)):
+        user(request)
+        full = [catalog.resource(r["id"]) or r for r in catalog.records]
+        return {"days": days, "items": evidence_expiring(full, days=days)}
+
+    @app.post("/api/jobs/evidence-expiry")
+    def expiry_now(request: Request):
+        u = user(request, admin=True)
+        return run_expiry(f"manual:{u.subject}")
 
     # --- OIDC login flow --------------------------------------------------------------------
     if settings.auth_mode == "oidc":

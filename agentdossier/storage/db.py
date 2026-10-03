@@ -30,6 +30,10 @@ class Store:
             self.db.execute(
                 "CREATE TABLE IF NOT EXISTS audit (id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT, user TEXT, action TEXT, detail TEXT)"
             )
+            self.db.execute(
+                "CREATE TABLE IF NOT EXISTS deliveries (id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT, event TEXT, "
+                "channel TEXT, target TEXT, status TEXT, attempts INTEGER, detail TEXT)"
+            )
             self.db.commit()
 
     def start_scan(self, trigger: str) -> int:
@@ -73,6 +77,25 @@ class Store:
                 (now_iso(), user, action, detail[:2000]),
             )
             self.db.commit()
+
+    def record_delivery(
+        self, event: str, channel: str, target: str, status: str, attempts: int, detail: str = ""
+    ) -> None:
+        with self.lock:
+            self.db.execute(
+                "INSERT INTO deliveries (at, event, channel, target, status, attempts, detail) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                (now_iso(), event, channel, target[:500], status, attempts, detail[:2000]),
+            )
+            self.db.commit()
+
+    def deliveries(self, limit: int = 100) -> list[dict[str, Any]]:
+        with self.lock:
+            rows = self.db.execute(
+                "SELECT id, at, event, channel, target, status, attempts, detail FROM deliveries ORDER BY id DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        keys = ("id", "at", "event", "channel", "target", "status", "attempts", "detail")
+        return [dict(zip(keys, r, strict=True)) for r in rows]
 
     def audit_log(self, limit: int = 100) -> list[dict[str, Any]]:
         with self.lock:

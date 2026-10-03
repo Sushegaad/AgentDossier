@@ -1,0 +1,99 @@
+# Default values for the AgentDossier chart. Everything the compose file sets is here too.
+replicaCount: 1            # the scanner and the SQLite store are single-writer; keep 1
+
+image:
+  repository: ghcr.io/sushegaad/agentdossier
+  tag: ""                  # defaults to .Chart.AppVersion
+  pullPolicy: IfNotPresent
+imagePullSecrets: []
+
+# enterprise.json (scope, targets, schedule). Rendered into a ConfigMap; contains no secrets.
+# Set `existingConfigMap` to use one you manage elsewhere (key: enterprise.json).
+enterpriseConfig: {}
+existingConfigMap: ""
+
+# Plain environment (non-secret). AGENTDOSSIER_ENTERPRISE_CONFIG, _DB, _CATALOG_DIR are set by the chart.
+env:
+  AGENTDOSSIER_SITE: https://agents.corp.example.com/
+  AGENTDOSSIER_AUTH_MODE: token
+  AGENTDOSSIER_SCAN_ON_START: "1"
+  OIDC_ISSUER: ""
+  OIDC_CLIENT_ID: ""
+  OIDC_ADMIN_GROUP: agentdossier-admins
+  SMTP_HOST: ""
+  SMTP_PORT: "587"
+  SMTP_FROM: ""
+  SMTP_STARTTLS: "1"
+  AGENTDOSSIER_NOTIFY_EMAIL: ""
+  AGENTDOSSIER_WEBHOOK_URL: ""
+  AGENTDOSSIER_NOTIFY_EVENTS: ""
+  AGENTDOSSIER_EXPIRY_CRON: "0 7 * * *"
+  AGENTDOSSIER_EXPIRY_WARNING_DAYS: "30"
+
+# Secrets. Either give values here (rendered into a Secret — fine for a test cluster) or
+# point `existingSecret` at a Secret you manage with your own tooling; keys are the env names.
+secrets:
+  AGENTDOSSIER_API_TOKEN: ""
+  AGENTDOSSIER_ADMIN_TOKEN: ""
+  OIDC_CLIENT_SECRET: ""
+  SESSION_SECRET: ""
+  AGENTREG_INTERNAL_TOKEN: ""
+  SMTP_USER: ""
+  SMTP_PASSWORD: ""
+  AGENTDOSSIER_WEBHOOK_SECRET: ""
+  NVD_API_KEY: ""
+existingSecret: ""
+
+# Internal root CA for agents with private certificates (mounted at /config/corp-root-ca.pem
+# and referenced from enterprise.json tls.ca_bundle). Key `ca.crt` in the named Secret/ConfigMap.
+caBundle:
+  configMap: ""
+
+persistence:
+  enabled: true
+  size: 5Gi
+  storageClass: ""
+  existingClaim: ""
+  accessMode: ReadWriteOnce
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  hosts:
+    - host: agents.corp.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+resources:
+  requests: { cpu: 250m, memory: 512Mi }
+  limits: { cpu: "2", memory: 2Gi }
+
+# The scanner must reach the agent subnets; add a NetworkPolicy from your own tooling if the
+# cluster default denies egress. The pod itself never needs ingress beyond the Service.
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 10001
+  runAsGroup: 10001
+  fsGroup: 10001
+  seccompProfile: { type: RuntimeDefault }
+securityContext:
+  allowPrivilegeEscalation: false
+  readOnlyRootFilesystem: true
+  capabilities: { drop: [ALL] }
+
+serviceAccount:
+  create: true
+  name: ""
+  annotations: {}
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
+podAnnotations: {}

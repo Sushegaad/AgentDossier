@@ -1,0 +1,15 @@
+{{- if not .Values.existingConfigMap }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "agentdossier.configMapName" . }}
+  labels:
+    {{- include "agentdossier.labels" . | nindent 4 }}
+data:
+  enterprise.json: |
+    {{- if kindIs "string" .Values.enterpriseConfig }}
+    {{- .Values.enterpriseConfig | nindent 4 }}
+    {{- else }}
+    {{- toPrettyJson .Values.enterpriseConfig | nindent 4 }}
+    {{- end }}
+{{- end }}
