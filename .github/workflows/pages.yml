@@ -52,9 +52,17 @@ jobs:
           npm ci
           npm run build
           test -f dist/index.html && test -f dist/catalog/index.json
-      - uses: actions/upload-pages-artifact@v3
+      - name: Package the site for Pages
+        # The same tar upload-pages-artifact makes, but uploaded with overwrite so that
+        # re-running a run never leaves two "github-pages" artifacts for deploy-pages to find.
+        run: tar --dereference --hard-dereference --directory web/dist -cf "$RUNNER_TEMP/artifact.tar" .
+      - uses: actions/upload-artifact@v4
         with:
-          path: web/dist
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          overwrite: true
+          if-no-files-found: error
 
   deploy:
     needs: build
