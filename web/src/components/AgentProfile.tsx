@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BASE, fetchResourceByIdOrSlug } from "../lib/data";
-import { COMPONENT_LABELS, COMPONENT_MAX, DOMAIN_PROFILES, PROFILES, bestDomain, checklist, evidenceRows, gdprPanel, protocolSentence, provenance, tierCounts, tierRange, type Mark } from "../lib/dossier";
+import { COMPONENT_LABELS, COMPONENT_MAX, DOMAIN_PROFILES, PROFILES, bestDomain, checklist, evidenceRows, gdprPanel, protocolLines, provenance, tierCounts, tierRange, type Mark } from "../lib/dossier";
 import { IDENTITY_EVIDENCE, IDENTITY_LABEL, NEWS_TAG_LABEL, RISK_TAGS, domainLabel, fmtDate, frameworkName, variantLabel } from "../lib/labels";
 import type { Resource } from "../lib/types";
 import ShortlistButton from "./ShortlistButton";
@@ -37,7 +37,8 @@ export default function AgentProfile({ resource, id, shortlist = "island" }: { r
   const gdpr = gdprPanel(res);
   const checks = checklist(res);
   const prov = provenance(res);
-  const proto = protocolSentence(res);
+  const protoLines = protocolLines(res);
+  const protoCount = `${protoLines.filter((l) => ["verified", "claimed"].includes(l.status)).length} / 3`;
   const news = res.news ?? [];
   const issues = res.issues;
   const checked = !!(res.news_checked || res.security);
@@ -114,7 +115,26 @@ export default function AgentProfile({ resource, id, shortlist = "island" }: { r
           <TrustRow k="Identity" v={<>T{res.identity.tier} · {IDENTITY_LABEL[res.identity.tier]}{res.identity.evidence.length > 0 && <span className="muted"> — {res.identity.evidence.map((e) => IDENTITY_EVIDENCE[e] ?? e).join("; ")}</span>}</>} t={`T${res.identity.tier}`} />
           <TrustRow k="Compliance" v={tierCounts(res)} t={tierRange(res)} />
           <TrustRow k="Security" v={res.security ? `${res.security.cves === 0 ? "No CVE naming this product in NVD" : `${res.security.cves} CVE${res.security.cves === 1 ? "" : "s"} matching the product name in NVD`} · checked ${fmtDate(res.security.checked_at)}` : "Not checked in this build"} t={res.security ? `T${res.security.tier}` : "–"} />
-          <TrustRow k="Protocols" v={proto.text} t={proto.count} />
+          <TrustRow
+            k="Protocols"
+            v={
+              <span style={{ display: "grid", gap: "2px" }}>
+                {protoLines.map((l) => (
+                  <span key={l.key}>
+                    {l.name} <b>{l.word}</b>
+                    {l.why && <span className="muted"> — {l.why}</span>}
+                    {l.evidenceUrl && (
+                      <>
+                        {" "}
+                        <a href={l.evidenceUrl} rel="noopener">source</a>
+                      </>
+                    )}
+                  </span>
+                ))}
+              </span>
+            }
+            t={protoCount}
+          />
           <TrustRow k="Issues found" v={issues && checked ? `${issues.regulator_actions} regulator actions · ${issues.incidents} incidents · ${issues.withdrawn_certificates} withdrawn certificates · ${issues.cves} CVEs` : "Not checked in this build"} t="links only" last />
           {res.identity.tier > 2 && rows.some((r) => r.mark !== "missing") && (
             <p className="tiny muted" style={{ marginTop: "10px" }}>

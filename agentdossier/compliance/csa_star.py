@@ -16,7 +16,7 @@ from typing import Any
 
 from ..connectors.base import ConnectorReport, SnapshotStore
 from ..util import NetPolicy, fetch, now_iso, sha256
-from .matching import Match, normalize_entity, similarity
+from .matching import Match, normalize_entity, similarity, vendor_variants
 
 SOURCE = "csa_star"
 INDEX_URL = "https://cloudsecurityalliance.org/star/registry"
@@ -78,15 +78,15 @@ def load_index(
 
 
 def find_match(vendor: str | None, index: dict[str, Listing]) -> tuple[Listing, Match] | None:
-    v = normalize_entity(vendor)
-    if len(v) < 3:
+    """Best CSA STAR listing for a vendor; a compound vendor ("GitHub / Microsoft") tries each part."""
+    variants = [normalize_entity(v) for v in vendor_variants(vendor)]
+    variants = [v for v in variants if len(v) >= 3]
+    if not variants:
         return None
     best: tuple[Listing, float] | None = None
     for lst in index.values():
-        s = max(
-            similarity(v, normalize_entity(lst.name)),
-            similarity(v, normalize_entity(lst.slug.replace("-", " "))),
-        )
+        names = (normalize_entity(lst.name), normalize_entity(lst.slug.replace("-", " ")))
+        s = max(similarity(v, n) for v in variants for n in names)
         if best is None or s > best[1]:
             best = (lst, s)
     if best is None or best[1] < 0.7:

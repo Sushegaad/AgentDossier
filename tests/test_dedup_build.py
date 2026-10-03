@@ -66,8 +66,11 @@ def test_fuzzy_names_become_review_candidates_not_merges():
 
 
 def test_components_from_signals_flags_unknowns():
+    from datetime import UTC, datetime, timedelta
+
+    pushed = (datetime.now(UTC) - timedelta(days=5)).strftime("%Y-%m-%dT%H:%M:%SZ")  # health decays with age
     r = {
-        "signals": {"github_stars": 1000, "github_pushed_at": "2026-09-01T00:00:00Z"},
+        "signals": {"github_stars": 1000, "github_pushed_at": pushed},
         "protocols": {
             "a2a": {"status": "unknown"},
             "mcp": {"status": "claimed"},

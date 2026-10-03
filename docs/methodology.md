@@ -89,6 +89,22 @@ Discovered resources appear in domain lists as **unranked** entries sorted
 by score. The seed workbook remains the ranked Top 100 per domain (frozen
 baseline) until the maintainer re-scores.
 
+## Protocol status (MCP · A2A · ARD)
+
+Each resource carries one status per protocol:
+
+| Status | Meaning | Site glyph |
+|---|---|---|
+| `verified` | the build fetched and parsed the artefact on the publisher's own domain: `/.well-known/ard.json`, the A2A agent card, the MCP server card (or completed an MCP handshake) | ✔ |
+| `claimed` | the vendor documents support (`data/curated/protocols.yaml`, with a reviewer, a date and the documentation URL) or the resource names the protocol in its own tags, description or deployment text; `source` says which | ○ |
+| `invalid` | an artefact was found but did not validate | – |
+| `not_found` | the publisher domain was probed and nothing was there | – |
+| `unknown` | never probed; `not_checked` says why (`code_host`: the URL is on github.com, huggingface.co, pypi.org or npmjs.com, which never carry a publisher's well-known files; `no_publisher_domain`) | ? |
+
+A claim never outranks an observation. When a curated claim sits next to a `not_found` probe the probe result is kept under `probe`, so the dossier can say "documented by the vendor; no endpoint at the well-known paths". Protocol trust tier is 1 with any `verified`, 3 with any `claimed`, else 5.
+
+Vendor strings that name more than one entity ("GitHub / Microsoft", "OpenAI (Microsoft)") are matched against registries part by part and the best part wins, so a product sold under a subsidiary's name still finds the parent's FedRAMP and CSA STAR rows.
+
 ## Identity tiers (`identity-1.0`)
 
 | Tier | Evidence |

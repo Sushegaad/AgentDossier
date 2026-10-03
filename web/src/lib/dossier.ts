@@ -208,12 +208,42 @@ export function tierRange(res: Resource): string {
   return lo === hi ? `T${lo}` : `T${lo}–T${hi}`;
 }
 
-export function protocolSentence(res: Resource): { text: string; count: string } {
+export interface ProtocolLine {
+  key: string;
+  name: string;
+  status: string;
+  word: string;
+  /** where a claim comes from: vendor documentation (curated) or the resource's own description */
+  why?: string;
+  evidenceUrl?: string;
+}
+
+const PROTO_NAMES: Record<string, string> = { mcp: "Model Context Protocol (MCP)", a2a: "Agent2Agent (A2A)", ard: "Agentic Resource Discovery (ARD)" };
+const NOT_CHECKED: Record<string, string> = { code_host: "not probed: URL is on a code host, which never carries a publisher's well-known files", no_publisher_domain: "not probed: no publisher domain on record" };
+
+export function protocolLines(res: Resource): ProtocolLine[] {
   const p = res.protocols ?? {};
-  const word = (s?: string) => (s === "verified" ? "verified" : s === "claimed" ? "claimed" : s === "invalid" ? "invalid" : s === "not_found" ? "not found" : "not checked");
-  const parts = [`Model Context Protocol (MCP) ${word(p.mcp?.status)}`, `Agent2Agent (A2A) ${word(p.a2a?.status)}`, `Agentic Resource Discovery (ARD) ${word(p.ard?.status)}`];
-  const n = ["mcp", "a2a", "ard"].filter((k) => ["verified", "claimed"].includes(p[k]?.status ?? "")).length;
-  return { text: parts.join(" · "), count: `${n} / 3` };
+  return ["mcp", "a2a", "ard"].map((key) => {
+    const b = p[key] ?? { status: "unknown" };
+    const s = b.status as string;
+    const word = s === "verified" ? "verified at the publisher's endpoint" : s === "claimed" ? "claimed" : s === "invalid" ? "found but invalid" : s === "not_found" ? "probed, not found" : "not checked";
+    let why: string | undefined;
+    let evidenceUrl: string | undefined;
+    if (s === "claimed") {
+      const src = b.source as string | undefined;
+      why = src === "curated_claim" ? `vendor documentation${b.note ? ` — ${b.note}` : ""}${b.checked_on ? ` (checked ${b.checked_on})` : ""}` : (b.note as string | undefined) ?? "named by the resource itself";
+      evidenceUrl = (b.evidence_url as string | undefined) ?? undefined;
+      const probe = b.probe as { status?: string } | undefined;
+      if (probe?.status === "not_found") why += "; no endpoint at the publisher's well-known paths";
+    } else if (s === "unknown" && typeof b.not_checked === "string") why = NOT_CHECKED[b.not_checked] ?? b.not_checked;
+    return { key, name: PROTO_NAMES[key], status: s, word, why, evidenceUrl };
+  });
+}
+
+export function protocolSentence(res: Resource): { text: string; count: string } {
+  const lines = protocolLines(res);
+  const n = lines.filter((l) => ["verified", "claimed"].includes(l.status)).length;
+  return { text: lines.map((l) => `${l.name} ${l.word}`).join(" · "), count: `${n} / 3` };
 }
 
 export { variantLabel };

@@ -99,6 +99,9 @@ def apply_to_resource(res: dict[str, Any], inspection: dict[str, Any]) -> None:
     res["protocols"]["mcp"] = better(res["protocols"]["mcp"], mcp_block)
 
 
+CODE_HOSTS = ("github.com", "huggingface.co", "pypi.org", "npmjs.com")
+
+
 def run(
     resources: list[dict[str, Any]],
     *,
@@ -115,8 +118,14 @@ def run(
     by_domain: dict[str, list[dict[str, Any]]] = {}
     for res in resources:
         d = res.get("publisher_domain") or domain_of(res.get("url"))
-        if d and d not in ("github.com", "huggingface.co", "pypi.org", "npmjs.com"):
+        if d and d not in CODE_HOSTS:
             by_domain.setdefault(d, []).append(res)
+        else:
+            # Say why the row stays "unknown": code hosts never carry a publisher's well-known files.
+            why = "code_host" if d else "no_publisher_domain"
+            for block in res["protocols"].values():
+                if block.get("status") == "unknown":
+                    block["not_checked"] = why
     for d in extra_domains or []:
         by_domain.setdefault(d, [])
     domains = sorted(by_domain)[:limit] if limit else sorted(by_domain)
