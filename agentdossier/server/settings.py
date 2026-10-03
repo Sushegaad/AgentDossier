@@ -7,6 +7,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from ..util import ROOT
+from .notify import NotifySettings
 
 
 @dataclass
@@ -44,6 +45,13 @@ class Settings:
     scan_on_start: bool = field(
         default_factory=lambda: os.environ.get("AGENTDOSSIER_SCAN_ON_START", "0") == "1"
     )
+    # notifications: email through SMTP_* and/or a signed webhook; see server/notify.py
+    notify: NotifySettings = field(default_factory=lambda: notify_from_env())
+    start_scheduler: bool = field(
+        default_factory=lambda: os.environ.get("AGENTDOSSIER_SCHEDULER", "1") == "1"
+    )
+    # daily evidence-expiry job (5-field cron, UTC); empty disables it
+    expiry_cron: str = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_EXPIRY_CRON", "0 7 * * *"))
 
     def validate(self) -> list[str]:
         problems = []
@@ -57,4 +65,26 @@ class Settings:
             problems.append("auth_mode=token needs AGENTDOSSIER_API_TOKEN")
         if self.auth_mode not in ("none", "token", "oidc"):
             problems.append(f"unknown AGENTDOSSIER_AUTH_MODE {self.auth_mode}")
+        problems += self.notify.validate()
         return problems
+
+
+def _csv(name: str) -> list[str]:
+    return [x.strip() for x in os.environ.get(name, "").split(",") if x.strip()]
+
+
+def notify_from_env() -> NotifySettings:
+    events = _csv("AGENTDOSSIER_NOTIFY_EVENTS")
+    return NotifySettings(
+        smtp_host=os.environ.get("SMTP_HOST") or None,
+        smtp_port=int(os.environ.get("SMTP_PORT", "587")),
+        smtp_user=os.environ.get("SMTP_USER") or None,
+        smtp_password=os.environ.get("SMTP_PASSWORD") or None,
+        smtp_from=os.environ.get("SMTP_FROM") or None,
+        smtp_starttls=os.environ.get("SMTP_STARTTLS", "1") == "1",
+        email_to=_csv("AGENTDOSSIER_NOTIFY_EMAIL"),
+        webhook_url=os.environ.get("AGENTDOSSIER_WEBHOOK_URL") or None,
+        webhook_secret=os.environ.get("AGENTDOSSIER_WEBHOOK_SECRET") or None,
+        events=set(events) if events else NotifySettings().events,
+        expiry_warning_days=int(os.environ.get("AGENTDOSSIER_EXPIRY_WARNING_DAYS", "30")),
+    )

@@ -29,6 +29,19 @@ services:
       SESSION_SECRET: ${SESSION_SECRET:-}
       # --- scanner credentials referenced by enterprise.json auth.headers_from_env ----
       AGENTREG_INTERNAL_TOKEN: ${AGENTREG_INTERNAL_TOKEN:-}
+      # --- notifications (see .env.example) ----------------------------------------------
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_FROM: ${SMTP_FROM:-}
+      SMTP_STARTTLS: ${SMTP_STARTTLS:-1}
+      AGENTDOSSIER_NOTIFY_EMAIL: ${AGENTDOSSIER_NOTIFY_EMAIL:-}
+      AGENTDOSSIER_WEBHOOK_URL: ${AGENTDOSSIER_WEBHOOK_URL:-}
+      AGENTDOSSIER_WEBHOOK_SECRET: ${AGENTDOSSIER_WEBHOOK_SECRET:-}
+      AGENTDOSSIER_NOTIFY_EVENTS: ${AGENTDOSSIER_NOTIFY_EVENTS:-}
+      AGENTDOSSIER_EXPIRY_CRON: ${AGENTDOSSIER_EXPIRY_CRON:-0 7 * * *}
+      AGENTDOSSIER_EXPIRY_WARNING_DAYS: ${AGENTDOSSIER_EXPIRY_WARNING_DAYS:-30}
       # --- optional --------------------------------------------------------------------
       NVD_API_KEY: ${NVD_API_KEY:-}
     restart: unless-stopped

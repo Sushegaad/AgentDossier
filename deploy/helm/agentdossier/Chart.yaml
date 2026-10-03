@@ -1,0 +1,12 @@
+apiVersion: v2
+name: agentdossier
+description: Self-hosted AgentDossier — authorized agent scanner, ARD REST API, policy qualification and web UI in one container
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+home: https://github.com/Sushegaad/AgentDossier
+sources:
+  - https://github.com/Sushegaad/AgentDossier
+maintainers:
+  - name: Hemant Naik
+keywords: [ai-agents, registry, ard, a2a, mcp, compliance]

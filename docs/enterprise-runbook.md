@@ -16,7 +16,8 @@ One container (`deploy/Dockerfile`) that serves:
 | ARD REST API | `POST /search`, `POST /explore`, `GET /agents`, `GET /agents/{id}`, `GET /.well-known/ard.json` | other registries and agents can federate or query you |
 | Policy qualification | `POST /qualify`, `GET /policies` | the machine constraint contract (FR-38): verdict per agent against a policy template or an inline policy |
 | Scan control | `POST /api/scan`, `GET /api/scans`, `GET /api/scans/{id}`, `GET /api/status`, `GET /api/audit`, `POST /api/reload` | admin-only |
-| Scheduler | in-process (APScheduler) | runs the scan on the `schedule.cron` in `enterprise.json` |
+| Scheduler | in-process (APScheduler) | runs the scan on the `schedule.cron` in `enterprise.json` and the daily evidence-expiry job |
+| Notifications | `GET /api/deliveries`, `POST /api/notify/test`, `GET /api/evidence/expiring`, `POST /api/jobs/evidence-expiry` | email (SMTP) and signed webhooks for scan results, catalog changes and expiring evidence |
 | MCP wrapper | `agentdossier mcp --catalog /data/catalog` | lets an internal agent search the registry over MCP (stdio) |
 | Catalog files | `/catalog/*` | the same JSON the public site uses; the private-catalog viewer can open it |
 
@@ -79,6 +80,65 @@ admin can start one any time with `POST /api/scan`.
 OIDC uses standard discovery (`<issuer>/.well-known/openid-configuration`); the
 callback is `/auth/callback`. Put the container behind your TLS-terminating
 proxy and set `AGENTDOSSIER_SITE` to the public URL.
+
+### Notifications
+
+The instance can tell you when something happened, by email (any SMTP relay,
+through the standard library) and/or a signed webhook. Both are off until
+configured; see `deploy/.env.example`.
+
+| Event | When |
+| --- | --- |
+| `scan.done` | a scan finished and the catalog was reloaded; the message carries what changed (added, removed, trust-tier changes) |
+| `catalog.changed` | sent alongside `scan.done` only when something did change — subscribe to this one for a quiet channel |
+| `scan.failed` | preflight refused the scan, or the scanner raised |
+| `evidence.expiring` | the daily job (`AGENTDOSSIER_EXPIRY_CRON`, default 07:00 UTC) found compliance records that expire within `AGENTDOSSIER_EXPIRY_WARNING_DAYS`, are expired but still active, or whose `next_check` has passed |
+| `test` | `POST /api/notify/test` |
+
+Webhook bodies are JSON (`event`, `at`, `tenant`, `subject`, `text`, `data`)
+with `X-AgentDossier-Event` and, when `AGENTDOSSIER_WEBHOOK_SECRET` is set,
+`X-AgentDossier-Signature: sha256=<HMAC of the raw body>`; verify it with
+`agentdossier.server.notify.verify_signature`. Each attempt (three, with
+backoff) is recorded and visible at `GET /api/deliveries`; `GET
+/api/evidence/expiring?days=30` shows what the next expiry run would report
+and `POST /api/jobs/evidence-expiry` runs it now. Restrict events with
+`AGENTDOSSIER_NOTIFY_EVENTS=catalog.changed,scan.failed,evidence.expiring`.
+
+### Kubernetes (Helm)
+
+`deploy/helm/agentdossier` deploys the same container: one replica (the scanner
+and the SQLite store are single-writer; the Deployment uses `Recreate`), a
+PersistentVolumeClaim for `/data`, `enterprise.json` from a ConfigMap, secrets
+from a Secret you render or one you already manage (`existingSecret`), optional
+Ingress and an optional internal root CA mount.
+
+```bash
+helm upgrade --install agentdossier deploy/helm/agentdossier \
+  --namespace agent-governance --create-namespace \
+  --set-file enterpriseConfig=enterprise.json \
+  --set env.AGENTDOSSIER_SITE=https://agents.corp.example.com/ \
+  --set existingSecret=agentdossier-secrets \
+  --set ingress.enabled=true --set ingress.hosts[0].host=agents.corp.example.com
+```
+
+`helm lint` and `helm template` run in CI. The pod runs as uid 10001 with a
+read-only root filesystem; `/data` and `/tmp` are the only writable mounts. The
+scanner's egress to the agent subnets is yours to allow in NetworkPolicy.
+
+### Reference deployment (the enterprise-beta gate)
+
+The end-to-end path — scan mock agents, rebuild the catalog, answer `/search`
+and `/qualify`, deliver `scan.done` to a webhook, run the expiry job — is
+exercised in `tests/test_notify.py::test_reference_deployment_scan_notifies_and_expiry_job_runs`
+on every CI run, against the loopback fixtures `agentdossier enterprise selftest`
+uses. To reproduce it on a real host:
+
+```bash
+docker compose -f deploy/docker-compose.yml up -d
+curl -s -X POST -H "Authorization: Bearer $AGENTDOSSIER_ADMIN_TOKEN" localhost:8080/api/notify/test
+curl -s -X POST -H "Authorization: Bearer $AGENTDOSSIER_ADMIN_TOKEN" localhost:8080/api/scan
+curl -s -H "Authorization: Bearer $AGENTDOSSIER_ADMIN_TOKEN" localhost:8080/api/deliveries
+```
 
 ### Backups and upgrades
 
