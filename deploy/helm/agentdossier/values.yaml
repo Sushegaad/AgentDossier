@@ -37,6 +37,10 @@ env:
   SERVICENOW_INSTANCE_URL: ""
   SERVICENOW_USER: ""
   SERVICENOW_TABLE: incident
+  AGENTDOSSIER_FEDERATION_PEERS: ""
+  AGENTDOSSIER_FEDERATION_MODE: referrals
+  AGENTDOSSIER_RATE_LIMIT: 120/minute
+  AGENTDOSSIER_BEHIND_TLS_PROXY: "1"
 
 # Secrets. Either give values here (rendered into a Secret — fine for a test cluster) or
 # point `existingSecret` at a Secret you manage with your own tooling; keys are the env names.
@@ -56,6 +60,8 @@ secrets:
   GRC_WEBHOOK_URL: ""
   GRC_WEBHOOK_SECRET: ""
   NVD_API_KEY: ""
+  AGENTDOSSIER_FEDERATION_TOKEN: ""
+  SCIM_TOKEN: ""
 existingSecret: ""
 
 # Internal root CA for agents with private certificates (mounted at /config/corp-root-ca.pem

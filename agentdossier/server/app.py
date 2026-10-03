@@ -37,6 +37,13 @@ Decision workflow (FR-28, FR-34, FR-35; members read and open, reviewers sign an
   POST /api/feedback/{id}           {status}                 reviewer
 Integrations (server/integrations.py): Slack, Teams, Jira, ServiceNow, GRC webhook are extra
   notification channels configured by environment; GET /api/status lists the active ones.
+Federation (server/federation.py): POST /search {federation: none|referrals|auto} answers with
+  `referrals` to peer registries or, in auto mode, their hits marked source_registry.
+SCIM 2.0 (server/scim.py, on when SCIM_TOKEN is set)
+  GET  /scim/v2/ServiceProviderConfig · GET/POST /scim/v2/Users · GET/PUT/PATCH/DELETE /scim/v2/Users/{id}
+  GET  /scim/v2/Groups              a deprovisioned user is refused at sign-in
+Hardening: security headers on every response, request bodies capped (AGENTDOSSIER_MAX_BODY_BYTES),
+  per-client rate limit on /search, /explore and /qualify (AGENTDOSSIER_RATE_LIMIT).
   GET  /healthz, /api/status        liveness and instance info
 Static
   /catalog/*                        the catalog files (index.json, agents/…)
@@ -58,8 +65,10 @@ from .. import __version__
 from ..util import now_iso
 from .auth import Auth
 from .catalog import Catalog
+from .federation import HOP_HEADER, Federation, peers_from_env
 from .integrations import build_integrations
 from .notify import Notifier, catalog_diff, evidence_expiring, expiry_text, scan_text
+from .scim import LIST_SCHEMA, Scim, scim_error
 from .settings import Settings
 from .workflow import Actor, Workflow, WorkflowError
 
@@ -88,6 +97,64 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         instance={**catalog.meta, "site": settings.site},
     )
     notifier.integrations = build_integrations(settings.integrations)
+    federation = Federation(
+        peers_from_env(
+            settings.federation_peers, token=settings.federation_token, timeout=settings.federation_timeout
+        ),
+        settings.federation_mode,
+    )
+    scim = Scim(store.db, store.lock, settings.scim_token, site=settings.site)
+    auth.allowed = scim.allowed
+
+    # --- hardening: headers, body cap, rate limit ------------------------------------------
+    @app.middleware("http")
+    async def _harden(request: Request, call_next):  # noqa: ANN001
+        length = request.headers.get("content-length")
+        if length and length.isdigit() and int(length) > settings.max_body_bytes:
+            return JSONResponse({"error": "request body too large"}, status_code=413)
+        response = await call_next(request)
+        response.headers.setdefault("X-Content-Type-Options", "nosniff")
+        response.headers.setdefault("X-Frame-Options", "DENY")
+        response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
+        response.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+        response.headers.setdefault(
+            "Cache-Control",
+            "no-store"
+            if request.url.path.startswith(("/api/", "/scim/", "/auth/"))
+            else "public, max-age=300",
+        )
+        if not request.url.path.startswith("/api/docs"):
+            response.headers.setdefault(
+                "Content-Security-Policy",
+                "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+                "font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+            )
+        if settings.behind_tls_proxy or settings.site.startswith("https://"):
+            response.headers.setdefault("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
+        return response
+
+    limiter: Any = None
+    if settings.rate_limit:
+        try:
+            from slowapi import Limiter  # noqa: PLC0415
+            from slowapi.errors import RateLimitExceeded  # noqa: PLC0415
+            from slowapi.util import get_remote_address  # noqa: PLC0415
+
+            limiter = Limiter(key_func=get_remote_address, default_limits=[])
+            app.state.limiter = limiter
+
+            @app.exception_handler(RateLimitExceeded)
+            async def _rl(request: Request, exc: RateLimitExceeded):  # noqa: ANN001
+                return JSONResponse(
+                    {"error": "rate limit exceeded", "detail": str(exc.detail)},
+                    status_code=429,
+                    headers={"Retry-After": "60"},
+                )
+        except ImportError:  # pragma: no cover
+            log.warning("slowapi not installed; rate limiting off")
+
+    def limited(fn):  # noqa: ANN001
+        return limiter.limit(settings.rate_limit)(fn) if limiter else fn
 
     if settings.auth_mode == "oidc":
         from starlette.middleware.sessions import SessionMiddleware  # noqa: PLC0415
@@ -244,6 +311,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return {"entries": []}
 
     @app.post("/search")
+    @limited
     def search(request: Request, body: dict[str, Any] = Body(default={})):
         user(request)
         q = str(body.get("query") or "")
@@ -258,14 +326,31 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             max_tier=f.get("maxTier"),
             protocol=f.get("protocol"),
         )
-        return {
+        out: dict[str, Any] = {
             "query": q,
             "count": len(hits),
             "results": [to_result(h) for h in hits],
             "catalog": catalog.meta,
         }
+        mode = federation.effective_mode(body.get("federation"), request.headers.get(HOP_HEADER))
+        if mode == "referrals":
+            out["federation"] = {"mode": mode, "referrals": federation.referrals(q)}
+        elif mode == "auto":
+            peers = federation.query(body)
+            merged = []
+            for p in peers:
+                for r in p["results"]:
+                    merged.append({**r, "source_registry": p["registry"]})
+            out["federation"] = {
+                "mode": mode,
+                "peers": [{k: v for k, v in p.items() if k != "results"} for p in peers],
+            }
+            out["results"] += merged
+            out["count"] = len(out["results"])
+        return out
 
     @app.post("/explore")
+    @limited
     def explore(request: Request, body: dict[str, Any] = Body(default={})):
         user(request)
         domain, rtype = body.get("domain"), body.get("type")
@@ -344,6 +429,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         }
 
     @app.post("/qualify")
+    @limited
     def qualify(request: Request, body: dict[str, Any] = Body(...)):
         u = user(request)
         policy = body.get("policy") or body.get("policyId")
@@ -394,6 +480,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             "scans": store.scans(5),
             "notify": {"channels": notifier.channels, "events": sorted(settings.notify.events)},
             "jobs": state.get("jobs", []),
+            "federation": {"mode": settings.federation_mode, "peers": [p.base for p in federation.peers]},
+            "scim": scim.enabled,
         }
 
     @app.post("/api/scan")
@@ -631,6 +719,85 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         f = _flow(lambda: flow.set_feedback(a, fid, str(body.get("status") or "")))
         store.audit(a.subject, "feedback.status", f"id={fid} status={f['status']}")
         return f
+
+    # --- SCIM 2.0 ------------------------------------------------------------------------------
+    if scim.enabled:
+        scim_mt = "application/scim+json"
+
+        @app.get("/scim/v2/ServiceProviderConfig")
+        def scim_spc(request: Request):
+            scim.require(request)
+            return JSONResponse(scim.service_provider_config(), media_type=scim_mt)
+
+        @app.get("/scim/v2/Users")
+        def scim_users(request: Request, filter: str | None = None, startIndex: int = 1, count: int = 100):  # noqa: A002, N803
+            scim.require(request)
+            try:
+                return JSONResponse(scim.list(filter, startIndex, min(count, 200)), media_type=scim_mt)
+            except HTTPException as exc:
+                return scim_error(exc.status_code, str(exc.detail))
+
+        @app.post("/scim/v2/Users", status_code=201)
+        def scim_create(request: Request, body: dict[str, Any] = Body(...)):
+            scim.require(request)
+            try:
+                u = scim.create(body)
+            except HTTPException as exc:
+                return scim_error(exc.status_code, str(exc.detail))
+            store.audit("scim", "scim.user.create", f"{u['userName']} id={u['id']}")
+            return JSONResponse(u, status_code=201, media_type=scim_mt)
+
+        @app.get("/scim/v2/Users/{uid}")
+        def scim_get(request: Request, uid: str):
+            scim.require(request)
+            try:
+                return JSONResponse(scim.get(uid), media_type=scim_mt)
+            except HTTPException as exc:
+                return scim_error(exc.status_code, str(exc.detail))
+
+        @app.put("/scim/v2/Users/{uid}")
+        def scim_put(request: Request, uid: str, body: dict[str, Any] = Body(...)):
+            scim.require(request)
+            try:
+                u = scim.replace(uid, body)
+            except HTTPException as exc:
+                return scim_error(exc.status_code, str(exc.detail))
+            store.audit("scim", "scim.user.replace", f"{u['userName']} active={u['active']}")
+            return JSONResponse(u, media_type=scim_mt)
+
+        @app.patch("/scim/v2/Users/{uid}")
+        def scim_patch(request: Request, uid: str, body: dict[str, Any] = Body(...)):
+            scim.require(request)
+            try:
+                u = scim.patch(uid, body)
+            except HTTPException as exc:
+                return scim_error(exc.status_code, str(exc.detail))
+            store.audit("scim", "scim.user.patch", f"{u['userName']} active={u['active']}")
+            return JSONResponse(u, media_type=scim_mt)
+
+        @app.delete("/scim/v2/Users/{uid}", status_code=204)
+        def scim_delete(request: Request, uid: str):
+            scim.require(request)
+            try:
+                scim.delete(uid)
+            except HTTPException as exc:
+                return scim_error(exc.status_code, str(exc.detail))
+            store.audit("scim", "scim.user.delete", uid)
+            return JSONResponse(None, status_code=204)
+
+        @app.get("/scim/v2/Groups")
+        def scim_groups(request: Request):
+            scim.require(request)
+            return JSONResponse(
+                {
+                    "schemas": [LIST_SCHEMA],
+                    "totalResults": 0,
+                    "startIndex": 1,
+                    "itemsPerPage": 0,
+                    "Resources": [],
+                },
+                media_type=scim_mt,
+            )
 
     # --- OIDC login flow --------------------------------------------------------------------
     if settings.auth_mode == "oidc":

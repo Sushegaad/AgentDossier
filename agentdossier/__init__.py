@@ -9,6 +9,6 @@ Discovery is metadata-first and non-invasive: AgentDossier never executes a
 third-party agent or tool. BRD reference: v3.2, 26 Sep 2026.
 """
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 PARSER_VERSIONS = {"ard": "ard-0.91", "a2a": "a2a-0.3+1.0", "mcp": "mcp-2025-06-18"}
 SCORE_VERSION = "sar-score-1.0"

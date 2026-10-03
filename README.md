@@ -16,14 +16,20 @@ recommendation. Confirm current status with the vendor and the issuing body.
 
 ## Status
 
-Phases 0–2 delivered: connectors (seed workbook, GitHub, Hugging Face, MCP
-Registry, ARD publishers, marketplaces), compliance evidence (FedRAMP, CSA
-STAR, curated records, vendor claims) with the tier/freshness engine, and
-news/security feeds, the public site (`web/`, Astro) with search, trust
-profiles, compare and the private-catalog viewer, and the self-hosted
-enterprise edition (`agentdossier/enterprise/`, `agentdossier/server/`). See
-`docs/brd-traceability.md` for what each requirement maps to and
-`docs/methodology.md` for how evidence is graded.
+**v1.0.0** — both editions are feature-complete for the plan's four phases
+(see `CHANGELOG.md`). Public demo: connectors (seed workbook, GitHub, Hugging
+Face, MCP Registry, ARD publishers, marketplaces), compliance evidence
+(FedRAMP, CSA STAR, curated records, vendor claims) with the tier/freshness
+engine, protocol status with a claimed layer, news/security feeds, and the
+Astro site with intent search, dossiers, compare and the private-catalog
+viewer. Enterprise edition (`agentdossier/enterprise/`, `agentdossier/server/`):
+authorized scanner, ARD REST API with federation, `/qualify`, decision
+workflow with sign-offs, notifications and integrations (email, webhooks,
+Slack, Teams, Jira, ServiceNow, GRC), SCIM provisioning, a GitHub Action policy
+check, Docker/compose/Helm deployment with a signed image. See
+`docs/brd-traceability.md` for what each requirement maps to,
+`docs/methodology.md` for how evidence is graded and `docs/enterprise-runbook.md`
+to run your own instance.
 
 ## Quick start
 

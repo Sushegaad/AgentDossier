@@ -130,6 +130,53 @@ annotation per blocking agent. The script is standard-library Python and runs
 anywhere: `python3 deploy/action/policy_check.py agents.lock.json --registry … --token …`.
 See `deploy/action/README.md` and `examples/agents.lock.json`.
 
+### Federation
+
+Other registries can be peers (`AGENTDOSSIER_FEDERATION_PEERS`, comma-separated
+base URLs; `AGENTDOSSIER_FEDERATION_TOKEN` if they need one). The widest mode
+this instance allows is `AGENTDOSSIER_FEDERATION_MODE`:
+
+| Mode | `POST /search` adds |
+| --- | --- |
+| `none` | nothing |
+| `referrals` (default) | `federation.referrals`: each peer's `/search` and `/.well-known/ard.json`, for the client to query itself |
+| `auto` | the peers' hits, queried in parallel with `AGENTDOSSIER_FEDERATION_TIMEOUT` seconds each and marked `source_registry`; `federation.peers` reports count, route (`rest` or `manifest`) and errors per peer |
+
+A request may narrow the mode (`"federation": "none"`) but never widen it. A
+peer that has no REST API — the public demo, or any publisher's static manifest
+— is matched locally on its `ard.json`. Federated queries carry
+`X-AgentDossier-Federation-Hop: 1` and are never federated again, so two
+instances that list each other cannot loop.
+
+### SCIM provisioning
+
+Set `SCIM_TOKEN` and point the IdP's SCIM connector at `/scim/v2` (Okta,
+Entra ID and others): `ServiceProviderConfig`, `Users` (list with `filter`,
+create, read, replace, patch `active`, delete) and an empty `Groups`. The
+stub exists for **deprovisioning**: a person whose SCIM record is inactive or
+deleted is refused at sign-in even while the IdP session is still valid.
+Unknown people are still admitted — SCIM may not cover every group and the
+IdP already authenticated them.
+
+### Hardening
+
+Every response carries `X-Content-Type-Options`, `X-Frame-Options: DENY`, a
+`Referrer-Policy`, a `Permissions-Policy` and a Content-Security-Policy; API,
+SCIM and auth responses are `no-store`; `Strict-Transport-Security` is sent
+when `AGENTDOSSIER_SITE` is https or `AGENTDOSSIER_BEHIND_TLS_PROXY=1`.
+Request bodies above `AGENTDOSSIER_MAX_BODY_BYTES` (1 MiB) get 413.
+`/search`, `/explore` and `/qualify` are rate-limited per client address
+(`AGENTDOSSIER_RATE_LIMIT`, default `120/minute`; empty disables).
+
+Releases publish a container image signed with cosign (keyless) with a
+CycloneDX SBOM attestation and build provenance; verify before deploying:
+
+```bash
+cosign verify --certificate-identity-regexp github.com/Sushegaad/AgentDossier \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+  ghcr.io/sushegaad/agentdossier:1.0.0
+```
+
 ### Kubernetes (Helm)
 
 `deploy/helm/agentdossier` deploys the same container: one replica (the scanner

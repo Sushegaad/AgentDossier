@@ -381,7 +381,7 @@ def write_outputs(
     taxonomy = load_config("taxonomy.json")
     snapshot = reports.get("seed", {}).get("snapshot") or now_iso()[:10]
     built = now_iso()
-    frameworks_version = "frameworks-1.0"
+    frameworks_version = "frameworks-1.1"
 
     previous_index = None
     if (out / "index.json").exists():

@@ -1,0 +1,49 @@
+{
+  "id": "c5",
+  "name": "BSI C5 (Cloud Computing Compliance Criteria Catalogue)",
+  "jurisdictions": [
+    "DE",
+    "EU"
+  ],
+  "group": "certification",
+  "priority": "phase2",
+  "sources": [
+    {
+      "kind": "vendor",
+      "url": "C5 attestation report (ISAE 3000)",
+      "terms_note": "Document review; BSI keeps no public register",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "C5_TYPE_1",
+    "C5_TYPE_2"
+  ],
+  "expiry_rule": {
+    "kind": "period_end_plus_months",
+    "months": 12
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.7,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "Found in {registry} on {date}",
+    "tier2": "Listed on {marketplace} on {date}",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "Vendor-claimed ({source}, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "government",
+    "finance",
+    "*"
+  ]
+}

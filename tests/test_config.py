@@ -17,8 +17,10 @@ def test_frameworks_launch_set_is_15():
     fws = [json.loads(p.read_text()) for p in (ROOT / "config" / "frameworks").glob("*.json")]
     launch = [f for f in fws if f["priority"] == "launch"]
     assert (
-        len(launch) == 13 and len(fws) == 15
+        len(launch) == 13
     )  # 13 files cover the 15-framework launch set (ISO 27001 family and NIST pair share files)
+    phase2 = sorted(f["id"] for f in fws if f["priority"] == "phase2")
+    assert phase2 == ["c5", "dora", "govramp", "hitrust", "irap", "pci_dss"] and len(fws) == 19
     for f in fws:
         assert f["group"] in {"certification", "law", "voluntary"}
         assert set(f["credit"]) == {"1", "2", "3", "4", "5"}
