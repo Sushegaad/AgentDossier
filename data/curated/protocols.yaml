@@ -1,0 +1,38 @@
+# Protocol support a vendor documents but does not expose at a well-known endpoint.
+#
+# The build probes https://<publisher_domain>/.well-known/ard.json, the A2A agent
+# card and the MCP server card. Most vendors document MCP or A2A support in
+# prose instead, so an entry here marks the protocol as *claimed* (○ on the
+# site, protocol tier 3) with a link to the page that says so. A claim is never
+# shown as verified; a later probe that finds the endpoint upgrades it on its
+# own. Match on `name` (exact, case-insensitive) or `slug`; `publisher_domain`
+# alone matches every resource on that domain, so use it only for a vendor
+# whose whole product line supports the protocol.
+#
+# Fields per protocol (mcp, a2a, ard): evidence_url (required), note.
+# Entry fields: checked_by, checked_on (required), note.
+claims:
+  - name: Microsoft Copilot Studio
+    checked_by: maintainer
+    checked_on: 2026-10-02
+    mcp:
+      evidence_url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp
+      note: '"Extend your agent with Model Context Protocol" (Microsoft Learn)'
+  - name: GitHub Copilot coding agent
+    checked_by: maintainer
+    checked_on: 2026-10-02
+    mcp:
+      evidence_url: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp
+      note: '"Configure MCP servers for your repository" (GitHub Docs)'
+  - name: Salesforce Agentforce
+    checked_by: maintainer
+    checked_on: 2026-10-02
+    mcp:
+      evidence_url: https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html
+      note: "MCP Solutions (Agentforce developer guide)"
+  - name: LangChain
+    checked_by: maintainer
+    checked_on: 2026-10-02
+    mcp:
+      evidence_url: https://github.com/langchain-ai/langchain-mcp-adapters
+      note: "langchain-mcp-adapters (official LangChain organisation)"

@@ -32,6 +32,7 @@ from .connectors.base import SnapshotStore
 from .connectors.seed_xlsx import import_seed
 from .dedup import dedup, load_decisions, resource_slug, write_review_file
 from .news import run as news_run
+from .protocol_claims import apply_claims, load_curated_protocols
 from .score import COMPONENTS_VERSION, ScoringConfig, components_from_signals, score_for_domain
 from .util import ROOT, Deadline, NetPolicy, domain_of, load_config, now_iso
 
@@ -277,6 +278,13 @@ def enrich(
         if new:
             resources = dedup(resources + new, decisions=decisions, fuzzy=False).resources
 
+    claim_counts = apply_claims(resources, load_curated_protocols())
+    reports["protocol_claims"] = {"source": "protocol_claims", **claim_counts}
+    _deadline.log(
+        "protocol_claims",
+        f"{claim_counts['curated']} curated, {claim_counts['self_description']} self-described",
+    )
+
     cfg = ScoringConfig.load()
     clf = Classifier()
     curated_identity = load_curated_identity()
@@ -478,6 +486,7 @@ def write_outputs(
             "domain": slug_,
             "label": spec["label"],
             "snapshot_date": snapshot,
+            "built_at": built,
             "score_version": SCORE_VERSION,
             "profile": ScoringConfig.load().profile_for_domain(slug_),
             "ranked": [row(r) for r in ranked],

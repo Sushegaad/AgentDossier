@@ -13,6 +13,7 @@ const profiles = (scoring as { domain_profiles: Record<string, string> }).domain
 const frameworks = Object.keys(FRAMEWORKS).length;
 const withEvidence = index?.records.filter((r) => r.compliance_summary.some((c) => c.status === "active")).length ?? 0;
 const snapshot = index?.snapshot_date ?? "—";
+const asOf = index?.built_at ? index.built_at.slice(0, 10) : "—";
 const credit = { 1: "1.0", 2: "0.8", 3: "0.7", 4: "0.3", 5: "0" };
 const tiers = [
   ["T1", "Registry-matched", `found in a named authoritative registry, e.g. "Found in FedRAMP Marketplace on ${snapshot}"`, credit[1]],
@@ -58,7 +59,7 @@ const tiers = [
   <section class="section">
     <div class="section-head">
       <h2>Pick a domain. Every list is Top 100, ranked by a published formula.</h2>
-      <span class="small muted">Snapshot {snapshot} · score version {index?.score_version ?? "sar-score-1.0"}</span>
+      <span class="small muted">Data as of {asOf} · ranking snapshot {snapshot} · score version {index?.score_version ?? "sar-score-1.0"}</span>
     </div>
     {sorted.length === 0 ? (
       <p class="notice warn">No catalog is bundled with this build.</p>

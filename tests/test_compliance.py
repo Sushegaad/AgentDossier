@@ -330,3 +330,27 @@ def test_changelog_events_added_changed_removed(tmp_path):
     assert engine.append_changelog(events, path) == 3
     assert len(path.read_text().splitlines()) == 3
     assert engine.append_changelog([], path) == 0
+
+
+def test_compound_vendor_matches_each_part():
+    """ "GitHub / Microsoft" must find Microsoft's registry rows (FR-20)."""
+    from agentdossier.compliance.matching import match, vendor_variants
+
+    assert vendor_variants("GitHub / Microsoft") == ["GitHub / Microsoft", "GitHub", "Microsoft"]
+    assert vendor_variants("OpenAI (Microsoft)")[1:] == ["OpenAI", "Microsoft"]
+    assert vendor_variants(None) == []
+    whole = match("GitHub / Microsoft", None, "Microsoft Corporation")
+    assert whole.entity_score >= 0.85 and whole.decision == "accept"
+    assert match("GitHub / Microsoft", "Copilot", "Microsoft", "Copilot").decision == "accept"
+
+
+def test_csa_star_find_match_handles_compound_vendor():
+    from agentdossier.compliance import csa_star
+
+    idx = {
+        "microsoft": csa_star.Listing(
+            slug="microsoft", name="Microsoft", terms=("STAR Level 1",), listed_since=None
+        )
+    }
+    found = csa_star.find_match("GitHub / Microsoft", idx)
+    assert found is not None and found[0].slug == "microsoft" and found[1].confidence >= 0.9

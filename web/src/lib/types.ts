@@ -183,6 +183,7 @@ export interface DomainFile {
   domain: string;
   label: string;
   snapshot_date: string;
+  built_at?: string;
   score_version: string;
   profile: string;
   ranked: (Pick<IndexRecord, "id" | "slug" | "name" | "vendor" | "category" | "resource_type" | "license" | "trust" | "protocols"> & {

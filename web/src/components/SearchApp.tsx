@@ -387,7 +387,7 @@ export default function SearchApp(props: SearchAppProps) {
         </div>
       </div>
       <p className="tiny muted" style={{ borderTop: "2px solid var(--rule)", padding: "10px 0", marginTop: "32px" }}>
-        Reference implementation. Scores are comparative discovery signals, not certification. Data as of {index.snapshot_date}.
+        Reference implementation. Scores are comparative discovery signals, not certification. Data as of {index.built_at.slice(0, 10)}; ranking snapshot {index.snapshot_date}.
       </p>
     </div>
   );
@@ -402,7 +402,7 @@ function tierRange(r: IndexRecord): string {
 }
 
 function protoGlyphs(r: IndexRecord): string {
-  const g = (s: string | undefined) => (s === "verified" ? "✔" : s === "claimed" ? "○" : "–");
+  const g = (s: string | undefined) => (s === "verified" ? "✔" : s === "claimed" ? "○" : s === "unknown" || !s ? "?" : "–");
   return `MCP ${g(r.protocols.mcp)} A2A ${g(r.protocols.a2a)} ARD ${g(r.protocols.ard)}`;
 }
 

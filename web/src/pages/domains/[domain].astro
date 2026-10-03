@@ -18,7 +18,10 @@ const w = PROFILES[profile] ?? PROFILES.general;
 const wtext = Object.entries(w).map(([k, v]) => `${k.replace("_", " ")} ${v}`).join(", ");
 const comps = Object.keys(COMPONENT_MAX);
 const short: Record<string, string> = { adoption: "Adopt", trust: "Trust", health: "Health", ecosystem: "Eco", domain_fit: "Fit", governance: "Gov", docs: "Docs" };
-const g = (s: string | undefined) => (s === "verified" ? "✔" : s === "claimed" ? "○" : "–");
+// ✔ observed at the publisher's well-known endpoint · ○ documented by the vendor or named by the resource itself
+// · – probed, nothing there · ? never probed (code-host URL or no publisher domain)
+const g = (s: string | undefined) => (s === "verified" ? "✔" : s === "claimed" ? "○" : s === "unknown" || !s ? "?" : "–");
+const asOf = d.built_at ? d.built_at.slice(0, 10) : d.snapshot_date;
 const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.compliance}`;
 ---
 
@@ -34,7 +37,7 @@ const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.complian
   <h1 style="margin-top: 6px; font-size: clamp(2rem, 4.5vw, 3rem)">{d.label} · Top 100</h1>
   <p class="body" style="margin-top: 14px; max-width: 72ch">
     Ranked by domain score under the <strong>{profile}</strong> profile: {wtext}. Every row exposes its components.
-    Scores are comparative discovery signals, not certification. Snapshot {d.snapshot_date} · {d.score_version}.
+    Scores are comparative discovery signals, not certification. Ranking snapshot {d.snapshot_date} (frozen seed baseline) · evidence as of {asOf} · {d.score_version}.
   </p>
   <div class="row" style="margin: 20px 0 12px; gap: 12px">
     <a class="btn" href={`${base}/search/?domain=${d.domain}`}>Search within {d.label.split(/[,&]/)[0].trim()}</a>
@@ -75,7 +78,7 @@ const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.complian
     </table>
   </div>
   <p class="tiny muted" style="margin-top: 10px">
-    MCP = Model Context Protocol, A2A = Agent2Agent, ARD = Agentic Resource Discovery · ✔ verified · ○ claimed · – not observed · components: adoption /30, trust /25, health /20, ecosystem /15, fit /100, governance /100, docs /10 · "?" = unknown, counted as 0.
+    MCP = Model Context Protocol, A2A = Agent2Agent, ARD = Agentic Resource Discovery · ✔ verified at the publisher's endpoint · ○ claimed (vendor documentation or the resource's own description) · – probed, not found · ? not probed (code-host URL or no publisher domain) · components: adoption /30, trust /25, health /20, ecosystem /15, fit /100, governance /100, docs /10 · "?" = unknown, counted as 0.
   </p>
   {d.discovered.length > 0 && (
     <section class="section" style="margin-top: 48px">

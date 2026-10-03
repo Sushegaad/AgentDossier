@@ -18,7 +18,8 @@ const nav = [
   ["/enterprise/", "Enterprise edition"],
 ];
 const current = (href: string) => path.startsWith(href);
-const snapshot = meta?.snapshot_date ?? "the last build";
+// "as of" is the last catalog build (the weekly refresh); the seed ranking snapshot is shown on domain pages.
+const asOf = meta?.built_at ? meta.built_at.slice(0, 10) : "the last build";
 // Google Analytics 4 with Consent Mode v2. Nothing is stored on the visitor's device until they
 // opt in from the banner below; before that GA receives only cookieless, aggregate pings.
 // PUBLIC_GA_ID is set for the public demo build only (pages.yml); self-hosted instances leave it unset.
@@ -72,7 +73,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
       <div class="container">
         <span class="tag">Reference implementation</span>
         <span>
-          Data compiled from public sources as of {snapshot}. Not an assessment, certification or recommendation. Confirm
+          Data compiled from public sources as of {asOf}. Not an assessment, certification or recommendation. Confirm
           current status with the vendor and the issuing body.
         </span>
       </div>

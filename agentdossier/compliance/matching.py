@@ -81,8 +81,41 @@ class Match:
         return "drop"
 
 
+_VENDOR_SPLIT = re.compile(r"\s*(?:/|\||,|;|\(|\)|\bvia\b|\bby\b)\s*|\s+and\s+|\s+&\s+")
+
+
+def vendor_variants(vendor: str | None) -> list[str]:
+    """Every entity a compound vendor string names, longest first.
+
+    Catalog vendors are often written as "GitHub / Microsoft", "OpenAI (Microsoft)" or
+    "Salesforce, Inc. and MuleSoft". A registry lists one legal entity per row, so each
+    part is tried on its own, after the whole string.
+    """
+    if not vendor:
+        return []
+    parts = [vendor.strip()]
+    for piece in _VENDOR_SPLIT.split(vendor):
+        piece = (piece or "").strip()
+        if len(normalize_entity(piece)) >= 3 and piece not in parts:
+            parts.append(piece)
+    return parts
+
+
 def match(vendor: str | None, product: str | None, entity: str | None, offering: str | None = None) -> Match:
-    """Score a catalog (vendor, product) pair against a registry (entity, offering) pair."""
+    """Score a catalog (vendor, product) pair against a registry (entity, offering) pair.
+
+    A compound vendor ("GitHub / Microsoft") is matched part by part and the best part wins.
+    """
+    variants = vendor_variants(vendor)
+    if len(variants) > 1:
+        best = max((_match_one(v, product, entity, offering) for v in variants), key=lambda m: m.confidence)
+        return best
+    return _match_one(vendor, product, entity, offering)
+
+
+def _match_one(
+    vendor: str | None, product: str | None, entity: str | None, offering: str | None = None
+) -> Match:
     v, p = normalize_entity(vendor), normalize_product(product)
     e, o = normalize_entity(entity), normalize_product(offering)
     es = max(similarity(v, e), similarity(p, e) * 0.9) if e else 0.0
