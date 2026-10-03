@@ -13,6 +13,7 @@ Three modes, chosen by ``AGENTDOSSIER_AUTH_MODE``:
 from __future__ import annotations
 
 import hmac
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -44,6 +45,8 @@ class Auth:
     def __init__(self, settings: Settings):
         self.settings = settings
         self.oauth: Any = None
+        # set by the app when SCIM is on: returns False for a deprovisioned person
+        self.allowed: Callable[..., bool] = lambda **kw: True
         if settings.auth_mode == "oidc":
             from authlib.integrations.starlette_client import OAuth  # noqa: PLC0415
 
@@ -77,6 +80,9 @@ class Auth:
         if self.settings.auth_mode == "oidc":
             sess = request.session.get("user") if "session" in request.scope else None
             if sess:
+                if not self.allowed(subject=sess.get("sub"), email=sess.get("email")):
+                    request.session.clear()
+                    raise HTTPException(401, "account deprovisioned")
                 groups = sess.get("groups") or []
                 admin = bool(self.settings.oidc_admin_group and self.settings.oidc_admin_group in groups)
                 roles = {"member"}

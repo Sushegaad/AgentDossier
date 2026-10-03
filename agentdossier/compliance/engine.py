@@ -23,7 +23,7 @@ from typing import Any
 
 from ..util import CONFIG_DIR, load_json
 
-FRAMEWORKS_VERSION = "frameworks-1.0"
+FRAMEWORKS_VERSION = "frameworks-1.1"  # 1.1: Phase-2 set (GovRAMP, BSI C5, IRAP, DORA)
 GOVERNANCE_VERSION = "sar-score-1.1"
 CREDIT_MAX_IDENTITY_TIER = 2
 DOMAIN_PRESETS: dict[str, list[str]] = {

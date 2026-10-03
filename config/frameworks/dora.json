@@ -1,0 +1,48 @@
+{
+  "id": "dora",
+  "name": "EU DORA (Digital Operational Resilience Act)",
+  "jurisdictions": [
+    "EU"
+  ],
+  "group": "law",
+  "priority": "phase2",
+  "sources": [
+    {
+      "kind": "vendor",
+      "url": "Trust center / DORA statement",
+      "terms_note": "Vendor statement on ICT third-party provider obligations (Art. 28\u201330)",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "DORA_ICT_THIRD_PARTY_READY",
+    "DORA_REGISTER_OF_INFORMATION"
+  ],
+  "expiry_rule": {
+    "kind": "recheck_months",
+    "months": 6
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.6,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "Found in {registry} on {date}",
+    "tier2": "Listed on {marketplace} on {date}",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "Vendor-claimed ({source}, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "finance",
+    "insurance",
+    "*"
+  ]
+}

@@ -13,13 +13,17 @@ export const FRAMEWORKS: Record<string, FrameworkFile> = Object.fromEntries(
 );
 
 export const SHORT_NAMES: Record<string, string> = {
+  c5: "BSI C5",
   csa_star: "CSA STAR",
   cyber_essentials: "Cyber Essentials",
+  dora: "DORA",
   eu_ai_act: "EU AI Act",
   fedramp: "FedRAMP",
   gdpr: "GDPR",
+  govramp: "GovRAMP",
   hipaa: "HIPAA",
   hitrust: "HITRUST",
+  irap: "IRAP",
   iso27001: "ISO 27001",
   iso27701: "ISO 27701",
   iso42001: "ISO 42001",

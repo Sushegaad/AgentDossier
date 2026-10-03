@@ -50,6 +50,27 @@ class Settings:
     # notifications: email through SMTP_* and/or a signed webhook; see server/notify.py
     notify: NotifySettings = field(default_factory=lambda: notify_from_env())
     integrations: IntegrationSettings = field(default_factory=IntegrationSettings.from_env)
+    # ARD federation: peer registries and the widest mode this instance allows (none | referrals | auto)
+    federation_peers: str = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_FEDERATION_PEERS", ""))
+    federation_mode: str = field(
+        default_factory=lambda: os.environ.get("AGENTDOSSIER_FEDERATION_MODE", "referrals")
+    )
+    federation_token: str | None = field(
+        default_factory=lambda: os.environ.get("AGENTDOSSIER_FEDERATION_TOKEN")
+    )
+    federation_timeout: float = field(
+        default_factory=lambda: float(os.environ.get("AGENTDOSSIER_FEDERATION_TIMEOUT", "5"))
+    )
+    # SCIM 2.0 provisioning (off until a token is set)
+    scim_token: str | None = field(default_factory=lambda: os.environ.get("SCIM_TOKEN"))
+    # hardening
+    rate_limit: str = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_RATE_LIMIT", "120/minute"))
+    max_body_bytes: int = field(
+        default_factory=lambda: int(os.environ.get("AGENTDOSSIER_MAX_BODY_BYTES", str(1024 * 1024)))
+    )
+    behind_tls_proxy: bool = field(
+        default_factory=lambda: os.environ.get("AGENTDOSSIER_BEHIND_TLS_PROXY", "0") == "1"
+    )
     start_scheduler: bool = field(
         default_factory=lambda: os.environ.get("AGENTDOSSIER_SCHEDULER", "1") == "1"
     )
@@ -70,6 +91,11 @@ class Settings:
             problems.append(f"unknown AGENTDOSSIER_AUTH_MODE {self.auth_mode}")
         problems += self.notify.validate()
         problems += self.integrations.validate()
+        if self.federation_mode not in ("none", "referrals", "auto"):
+            problems.append(f"unknown AGENTDOSSIER_FEDERATION_MODE {self.federation_mode}")
+        for peer in [p.strip() for p in self.federation_peers.split(",") if p.strip()]:
+            if not peer.startswith(("https://", "http://localhost", "http://127.0.0.1")):
+                problems.append(f"federation peer must be https: {peer}")
         return problems
 
 

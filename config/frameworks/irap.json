@@ -1,0 +1,47 @@
+{
+  "id": "irap",
+  "name": "IRAP assessment (Australian ISM)",
+  "jurisdictions": [
+    "AU"
+  ],
+  "group": "certification",
+  "priority": "phase2",
+  "sources": [
+    {
+      "kind": "vendor",
+      "url": "IRAP assessment letter / trust center",
+      "terms_note": "ASD publishes no public list; vendor statement with assessment date",
+      "cadence": "weekly"
+    }
+  ],
+  "variants": [
+    "IRAP_OFFICIAL",
+    "IRAP_PROTECTED"
+  ],
+  "expiry_rule": {
+    "kind": "period_end_plus_months",
+    "months": 24
+  },
+  "credit": {
+    "1": 1.0,
+    "2": 0.8,
+    "3": 0.7,
+    "4": 0.3,
+    "5": 0.0
+  },
+  "wording": {
+    "tier1": "Found in {registry} on {date}",
+    "tier2": "Listed on {marketplace} on {date}",
+    "tier3": "Document reviewed: {issuer}, {identifier}, valid to {valid_until}",
+    "tier4": "Vendor-claimed ({source}, {date})",
+    "tier5": "No evidence found",
+    "expired": "Expired {valid_until}",
+    "stale": "Stale since {stale_since}",
+    "in_process": "In process ({registry})",
+    "inherited": "Inherited from {scope}: covers platform, not this agent"
+  },
+  "applies_to_domains": [
+    "government",
+    "*"
+  ]
+}
