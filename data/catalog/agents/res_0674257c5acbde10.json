@@ -27,13 +27,13 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.99,
+"adoption": 27.01,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -46,7 +46,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 65.8,
+"score": 69.3,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -55,13 +55,13 @@
 },
 "data": {
 "components": {
-"adoption": 26.99,
+"adoption": 27.01,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -74,7 +74,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 70.3,
+"score": 74.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -83,13 +83,13 @@
 },
 "technology": {
 "components": {
-"adoption": 26.99,
+"adoption": 27.01,
 "docs": 7.0,
 "domain_fit": 81.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
@@ -102,7 +102,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 74.4,
+"score": 78.8,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -113,7 +113,7 @@
 "external_ids": {
 "github": "DeusData/codebase-memory-mcp"
 },
-"first_seen": "2026-09-29T00:11:39Z",
+"first_seen": "2026-10-03T04:04:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -135,7 +135,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "name": "codebase-memory-mcp",
 "news": [
@@ -165,19 +165,24 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:14:49Z",
+"checked_at": "2026-10-03T04:07:09Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:14:48Z",
+"checked_at": "2026-10-03T04:07:08Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:14:49Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://deusdata.github.io/codebase-memory-mcp/",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:07:10Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "deusdata.github.io",
@@ -185,7 +190,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:20Z",
+"checked_at": "2026-10-03T04:23:41Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -193,19 +198,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-24T22:01:00Z",
-"github_forks": 3718,
+"github_forks": 3754,
 "github_language": "C",
-"github_open_issues": 643,
-"github_pushed_at": "2026-09-28T22:55:27Z",
-"github_stars": 45377,
+"github_open_issues": 633,
+"github_pushed_at": "2026-10-02T23:46:03Z",
+"github_stars": 45703,
 "github_topic": "mcp-server",
 "homepage": "https://deusdata.github.io/codebase-memory-mcp/"
 },
 "slug": "deusdata-codebase-memory-mcp",
 "sources": [
 {
-"payload_hash": "3575ea6205dcc27e90504987133d12ccfa248bd8d8ba405898730d3e14720869",
-"retrieved_at": "2026-09-29T00:11:39Z",
+"payload_hash": "95d8497c0dddb9d5ee711ea712e415792bab709f746fa7052deac2cf521457b8",
+"retrieved_at": "2026-10-03T04:04:10Z",
 "system": "github",
 "url": "https://github.com/DeusData/codebase-memory-mcp"
 }
@@ -237,7 +242,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://deusdata.github.io/codebase-memory-mcp/",

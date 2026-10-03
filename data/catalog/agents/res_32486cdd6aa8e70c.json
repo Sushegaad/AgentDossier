@@ -24,13 +24,13 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.12,
+"adoption": 28.17,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 9.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 18.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -43,7 +43,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 66.8,
+"score": 73.5,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -52,13 +52,13 @@
 },
 "technology": {
 "components": {
-"adoption": 28.12,
+"adoption": 28.17,
 "docs": 7.0,
 "domain_fit": 81.0,
-"ecosystem": 3.0,
+"ecosystem": 9.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 18.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
@@ -71,7 +71,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 75.5,
+"score": 83.8,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -82,7 +82,7 @@
 "external_ids": {
 "github": "diegosouzapw/OmniRoute"
 },
-"first_seen": "2026-09-29T00:07:35Z",
+"first_seen": "2026-10-03T04:00:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -111,13 +111,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:13:08Z",
+"last_seen": "2026-10-03T04:05:36Z",
 "license": "MIT",
 "merged_ids": [
 "res_32486cdd6aa8e70c"
 ],
 "name": "OmniRoute",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-09-30T01:41:50Z",
+"headline": "OmniRoute v3.8.51",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# OmniRoute v3.8.51\n\n**2,022 documented changes** — 235 features, 1,454 fixes and 333 maintenance entries from 1,973 commits in the cycle, with **301 external contributors**. Thank you all.\n\n📄 **Complete release notes** (every entry, full d",
+"tag": "product_update",
+"url": "https://github.com/diegosouzapw/OmniRoute/releases/tag/v3.8.51"
+},
 {
 "cluster_size": 1,
 "date": "2026-08-26T19:30:30Z",
@@ -128,35 +139,34 @@
 "summary": "### 📊 Release by the numbers\n\n| | |\n| --- | ---: |\n| 👥 People who contributed | **248** |\n| 📝 Commits in the cycle | **1,714** |\n| 🔀 Pull requests referenced | **1,666** |\n| 📋 Changelog entries | **1,182** |\n| 🙌 Contributors credited in ent",
 "tag": "product_update",
 "url": "https://github.com/diegosouzapw/OmniRoute/releases/tag/v3.8.50"
-},
-{
-"cluster_size": 1,
-"date": "2026-08-20T11:19:58Z",
-"headline": "OmniRoute Radar catalog export (rolling)",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "Export estável do catálogo OmniRoute para o Radar. Atualizado automaticamente; NÃO é um release de versão do produto.",
-"tag": "product_update",
-"url": "https://github.com/diegosouzapw/OmniRoute/releases/tag/radar-export-latest"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:37Z",
-"parser_version": "a2a-0.3+1.0",
+"evidence_url": "https://omniroute.online",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:07:55Z",
 "status": "not_found"
 },
+"source": "self_description",
+"status": "claimed"
+},
 "ard": {
-"checked_at": "2026-09-29T00:15:36Z",
+"checked_at": "2026-10-03T04:07:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:37Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://omniroute.online",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:07:55Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "omniroute.online",
@@ -164,7 +174,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:07Z",
+"checked_at": "2026-10-03T04:23:27Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -172,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-13T12:38:31Z",
-"github_forks": 10118,
+"github_forks": 10336,
 "github_language": "TypeScript",
-"github_open_issues": 604,
-"github_pushed_at": "2026-09-28T23:52:38Z",
-"github_stars": 71079,
-"github_topic": "a2a",
+"github_open_issues": 567,
+"github_pushed_at": "2026-10-02T18:26:57Z",
+"github_stars": 72413,
+"github_topic": "ai-agents",
 "homepage": "https://omniroute.online"
 },
 "slug": "diegosouzapw-omniroute",
 "sources": [
 {
-"payload_hash": "e44beed7a11bd1763fccc3cb4ce324bf5127b930d2611929c8fd7e6321ba9c3c",
-"retrieved_at": "2026-09-29T00:13:08Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/diegosouzapw/OmniRoute"
 }
@@ -216,7 +226,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://omniroute.online",

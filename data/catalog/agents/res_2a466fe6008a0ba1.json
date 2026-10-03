@@ -18,7 +18,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 26.87,
+"adoption": 26.89,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 2.4,
@@ -48,7 +48,7 @@
 "external_ids": {
 "github": "chatanywhere/GPT_API_free"
 },
-"first_seen": "2026-09-29T00:11:24Z",
+"first_seen": "2026-10-03T04:03:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -70,7 +70,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:24Z",
+"last_seen": "2026-10-03T04:03:56Z",
 "license": "MIT",
 "name": "GPT_API_free",
 "news": [],
@@ -78,7 +78,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://chatanywhere.tech/",
-"checked_at": "2026-09-29T00:13:48Z",
+"checked_at": "2026-10-03T04:06:14Z",
 "errors": [
 "not valid JSON"
 ],
@@ -86,7 +86,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-29T00:13:43Z",
+"checked_at": "2026-10-03T04:06:08Z",
 "errors": [
 "https://api.chatanywhere.tech/.well-known/ard.json: not valid JSON",
 "https://api.chatanywhere.tech/.well-known/ai-catalog.json: not valid JSON"
@@ -96,7 +96,7 @@
 },
 "mcp": {
 "card_url": "https://chatanywhere.tech/",
-"checked_at": "2026-09-29T00:13:51Z",
+"checked_at": "2026-10-03T04:06:16Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -106,7 +106,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:23Z",
+"checked_at": "2026-10-03T04:23:43Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -114,19 +114,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-04-23T12:42:08Z",
-"github_forks": 2734,
+"github_forks": 2735,
 "github_language": null,
 "github_open_issues": 11,
 "github_pushed_at": "2026-09-07T17:19:11Z",
-"github_stars": 43324,
+"github_stars": 43522,
 "github_topic": "llm-agents",
 "homepage": "https://api.chatanywhere.tech"
 },
 "slug": "chatanywhere-gpt-api-free",
 "sources": [
 {
-"payload_hash": "2860b628f3d0c0978a17304063dccbb50ae155666e22cd7e0848d3a4c2648a77",
-"retrieved_at": "2026-09-29T00:11:24Z",
+"payload_hash": "65e98c551e0f25beb1ba85996c8930d858a2716c935e2108acc019a6e99a0494",
+"retrieved_at": "2026-10-03T04:03:56Z",
 "system": "github",
 "url": "https://github.com/chatanywhere/GPT_API_free"
 }

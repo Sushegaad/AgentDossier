@@ -30,16 +30,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-03) (pending publisher verification)",
 "evidence_url": "https://fincept.in/privacy",
 "framework": "pci_dss",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "a18ccd81e04497ff72ecd2f0277653d074ca1ea9d746c38bf86403fbb1ee8164",
+"next_check": "2026-10-10",
+"payload_hash": "968a093879f688b3951375874cbba9b35ce13940940bf00f18724c1409dbfea5",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:21:38Z",
+"retrieved_at": "2026-10-03T04:13:51Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -136,7 +136,7 @@
 "external_ids": {
 "github": "Fincept-Corporation/FinceptTerminal"
 },
-"first_seen": "2026-09-29T00:07:35Z",
+"first_seen": "2026-10-03T04:00:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -158,7 +158,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:35Z",
+"last_seen": "2026-10-03T04:00:06Z",
 "license": "Other",
 "name": "FinceptTerminal",
 "news": [
@@ -188,17 +188,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:05Z",
+"checked_at": "2026-10-03T04:07:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:01Z",
+"checked_at": "2026-10-03T04:07:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:06Z",
+"checked_at": "2026-10-03T04:07:25Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -208,7 +208,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:40Z",
+"checked_at": "2026-10-03T04:24:01Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -216,19 +216,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-08-29T14:38:08Z",
-"github_forks": 4541,
+"github_forks": 4542,
 "github_language": "C++",
-"github_open_issues": 8,
-"github_pushed_at": "2026-09-19T12:41:43Z",
-"github_stars": 32057,
+"github_open_issues": 4,
+"github_pushed_at": "2026-10-01T08:59:02Z",
+"github_stars": 32138,
 "github_topic": "ai-agents",
 "homepage": "https://fincept.in"
 },
 "slug": "fincept-corporation-finceptterminal",
 "sources": [
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/Fincept-Corporation/FinceptTerminal"
 }

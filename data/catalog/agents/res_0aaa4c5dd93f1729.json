@@ -26,13 +26,13 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.24,
+"adoption": 26.27,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -45,7 +45,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 65.1,
+"score": 68.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -54,13 +54,13 @@
 },
 "technology": {
 "components": {
-"adoption": 26.24,
+"adoption": 26.27,
 "docs": 7.0,
 "domain_fit": 94.5,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.945,
@@ -73,7 +73,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 75.0,
+"score": 79.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -84,7 +84,7 @@
 "external_ids": {
 "github": "can1357/oh-my-pi"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -106,31 +106,44 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "oh-my-pi",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-28T11:50:29Z",
-"headline": "oh-my-pi v18.4.2",
+"date": "2026-10-03T01:26:08Z",
+"headline": "oh-my-pi v18.5.0",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "## @oh-my-pi/pi-agent-core\n\n### Added\n\n- Added tool_execution_end events that fire as each tool call settles for live UI updates\n\n### Changed\n\n- Emitted tool result messages in the order of tool calls, preserving call order regardless of co",
+"summary": "## @oh-my-pi/pi-ai\n\n### Fixed\n\n- Fixed AWS `credential_process` on Windows stripping backslashes from unquoted paths such as `C:\\Users\\me\\helper.exe`; commands are now split with Windows command-line rules there, matching the AWS CLI.\n\n## @",
 "tag": "product_update",
-"url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.4.2"
+"url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.5.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-28T06:49:42Z",
-"headline": "oh-my-pi v18.4.1",
+"date": "2026-10-02T16:03:50Z",
+"headline": "oh-my-pi v18.4.12",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "## @oh-my-pi/pi-agent-core\n\n### Fixed\n\n- Fixed fitted output caps overshooting the context window by a few tokens on strict Chat Completions hosts (e.g. llama.cpp), causing 400s.\n- Fixed native remote compaction sending requests already est",
+"summary": "## @oh-my-pi/pi-ai\n\n### Added\n\n- Added `createAuthGatewayRouter`, the auth-gateway's routes without the HTTP listener, and `serveAuthGatewayStdio`, which serves them as JSON lines (`{\"id\", \"path\", \"body\"}` in, `{\"id\", \"status\", \"body\"}` out",
 "tag": "product_update",
-"url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.4.1"
+"url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.4.12"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-01T00:27:00Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49916232",
+"engagement": 6,
+"headline": "Current Agentic Development Environment: Orca and Oh My Pi",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://james-carr.org/posts/2026-09-30-current-agentic-development-setup-orca-oh-my-pi/"
 },
 {
 "cluster_size": 1,
@@ -157,37 +170,29 @@
 "summary": null,
 "tag": "news",
 "url": "https://stencil.so/blog/harness-playbook"
-},
-{
-"cluster_size": 1,
-"date": "2026-08-02T15:23:59Z",
-"discussion_url": "https://news.ycombinator.com/item?id=49145463",
-"engagement": 34,
-"headline": "Having fun with oh my pi, DeepSeek-V4-Flash, GPT-5.6 Luna and Antigravity CLI",
-"kind": "community",
-"link_confidence": 0.88,
-"outlet": "Hacker News",
-"summary": null,
-"tag": "product_update",
-"url": "https://flashblaze.xyz/posts/having-fun-with-omp-deepseek-luna-and-agy/"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:37Z",
+"checked_at": "2026-10-03T04:07:55Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:36Z",
+"checked_at": "2026-10-03T04:07:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:37Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://omp.sh",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:07:56Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "omp.sh",
@@ -195,7 +200,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:34Z",
+"checked_at": "2026-10-03T04:23:55Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -203,19 +208,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-31T14:01:28Z",
-"github_forks": 3603,
+"github_forks": 3690,
 "github_language": "TypeScript",
-"github_open_issues": 3244,
-"github_pushed_at": "2026-09-28T23:53:18Z",
-"github_stars": 33639,
+"github_open_issues": 3384,
+"github_pushed_at": "2026-10-03T03:51:54Z",
+"github_stars": 34126,
 "github_topic": "ai-agent",
 "homepage": "https://omp.sh"
 },
 "slug": "can1357-oh-my-pi",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/can1357/oh-my-pi"
 }
@@ -242,7 +247,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://omp.sh",

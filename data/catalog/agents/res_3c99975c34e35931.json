@@ -53,7 +53,7 @@
 "external_ids": {
 "github": "activepieces/activepieces"
 },
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -124,7 +124,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "merged_ids": [
 "res_32daeba988d6a301",
@@ -135,6 +135,17 @@
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-09-30T11:51:23Z",
+"headline": "activepieces 0.92.1",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## 🐞 Bug Fixes\r\n\r\n* fix(engine): remove per-sandbox piece LRU (#15786) @amrdb\r\n\r\nThis restores the piece-loading fix from 0.91.3, which 0.92.0 was missing.\r\n\r\n> 📌 **Upgrading a self-hosted instance?** Review the [Breaking Changes](https://w",
+"tag": "product_update",
+"url": "https://github.com/activepieces/activepieces/releases/tag/0.92.1"
+},
+{
+"cluster_size": 1,
 "date": "2026-09-24T21:04:30Z",
 "headline": "activepieces 0.91.3",
 "kind": "vendor",
@@ -143,29 +154,23 @@
 "summary": "## 🔌 Pieces\n\n* fix: cherry-pick subflow retry and connection-reference fixes into 0.91.1 (#15689) @abuaboud, @hazemadelkhalel, @Louai-Zokerburg, @majewskibartosz\n\n## ⛓️‍💥 Breaking Changes\n\n* fix: cherry-pick subflow retry and connection-re",
 "tag": "product_update",
 "url": "https://github.com/activepieces/activepieces/releases/tag/0.91.3"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-24T18:49:44Z",
-"headline": "activepieces 0.92.0",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "* refactor(web): variable fonts, and a real --font-mono for the first time (#15663) @moaaz-ae\n* feat(delay): improve the step forms (#15318) @Talaljaber\n* feat(analytics): stamp marketing attribution on the PostHog person at sign-up (#1553",
-"tag": "product_update",
-"url": "https://github.com/activepieces/activepieces/releases/tag/0.92.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
-"status": "unknown"
+"evidence_url": "https://github.com/activepieces/activepieces",
+"note": "named in the resource's own tags",
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "github.com",
@@ -173,7 +178,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:24:25Z",
+"checked_at": "2026-10-03T04:16:54Z",
 "cves": 8,
 "source": "nvd",
 "tier": 1
@@ -185,11 +190,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-12-03T02:52:46Z",
-"github_forks": 4262,
+"github_forks": 4288,
 "github_language": "TypeScript",
-"github_open_issues": 614,
-"github_pushed_at": "2026-09-28T22:17:36Z",
-"github_stars": 24774,
+"github_open_issues": 687,
+"github_pushed_at": "2026-10-02T22:44:03Z",
+"github_stars": 24862,
 "github_topic": "ai-agents",
 "homepage": "https://www.activepieces.com",
 "observed_popularity": "Not captured"
@@ -198,13 +203,13 @@
 "sources": [
 {
 "payload_hash": "1051f58c016b1d775401e9157ba1e773fcfc8c8b25f682da46a76182d507a674",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://github.com/activepieces/activepieces"
 },
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/activepieces/activepieces"
 }
@@ -229,7 +234,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://github.com/activepieces/activepieces",

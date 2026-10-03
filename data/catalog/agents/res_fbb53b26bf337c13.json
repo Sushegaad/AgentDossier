@@ -16,18 +16,18 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "The most RAM efficient harness",
+"description": "High performance coding agent harness written in rust",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.95,
+"adoption": 24.96,
 "docs": 7.0,
 "domain_fit": 87.5,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.875,
@@ -40,7 +40,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 73.0,
+"score": 77.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -51,7 +51,7 @@
 "external_ids": {
 "github": "1jehuang/jcode"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -73,14 +73,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "jcode",
 "news": [],
 "protocols": {
 "a2a": {
 "card_url": "https://jcode.sh/.well-known/agent.json",
-"checked_at": "2026-09-29T00:15:19Z",
+"checked_at": "2026-10-03T04:07:37Z",
 "errors": [
 "not valid JSON"
 ],
@@ -88,7 +88,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:18Z",
+"checked_at": "2026-10-03T04:07:35Z",
 "errors": [
 "https://jcode.sh/.well-known/ard.json: not valid JSON",
 "https://jcode.sh/.well-known/ai-catalog.json: not valid JSON"
@@ -97,10 +97,15 @@
 "status": "invalid"
 },
 "mcp": {
+"evidence_url": "https://jcode.sh",
+"note": "named in the resource's own tags",
+"probe": {
 "card_url": "https://jcode.sh/.well-known/mcp.json",
-"checked_at": "2026-09-29T00:15:20Z",
-"parser_version": "mcp-2025-06-18",
+"checked_at": "2026-10-03T04:07:37Z",
 "status": "invalid"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "jcode.sh",
@@ -109,19 +114,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-05T09:43:36Z",
-"github_forks": 2342,
+"github_forks": 2350,
 "github_language": "Rust",
-"github_open_issues": 615,
-"github_pushed_at": "2026-09-28T23:44:12Z",
-"github_stars": 20198,
+"github_open_issues": 686,
+"github_pushed_at": "2026-10-03T03:41:51Z",
+"github_stars": 20276,
 "github_topic": "ai-agent",
 "homepage": "https://jcode.sh"
 },
 "slug": "1jehuang-jcode",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/1jehuang/jcode"
 }
@@ -145,7 +150,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": null,
-"protocols": 5,
+"protocols": 3,
 "security": null
 },
 "url": "https://jcode.sh",

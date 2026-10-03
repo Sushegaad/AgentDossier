@@ -21,7 +21,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 27.34,
+"adoption": 27.35,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.7,
@@ -49,7 +49,7 @@
 },
 "technology": {
 "components": {
-"adoption": 27.34,
+"adoption": 27.35,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 2.7,
@@ -79,7 +79,7 @@
 "external_ids": {
 "github": "CherryHQ/cherry-studio"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -120,10 +120,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "AGPL-3.0",
 "name": "cherry-studio",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-09-30T21:26:19Z",
+"headline": "cherry-studio v2.1.4",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## Downloads (v2.1.4)\r\n\r\n| Platform | Architecture | Download |\r\n| --- | --- | --- |\r\n| Windows | x64 | [Installer](https://github.com/CherryHQ/cherry-studio/releases/download/v2.1.4/Cherry-Studio-2.1.4-win-x64-setup.exe) · [Portable](https",
+"tag": "product_update",
+"url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.4"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-24T11:53:27Z",
@@ -134,24 +145,13 @@
 "summary": "## Downloads (v2.1.3)\r\n\r\n| Platform | Architecture | Download |\r\n| --- | --- | --- |\r\n| Windows | x64 | [Installer](https://github.com/CherryHQ/cherry-studio/releases/download/v2.1.3/Cherry-Studio-2.1.3-win-x64-setup.exe) · [Portable](https",
 "tag": "product_update",
 "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.3"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-21T10:07:09Z",
-"headline": "cherry-studio v2.1.2",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "## Downloads / 下载 (v2.1.2)\r\n\r\n| Platform | Architecture | Global | China Edition |\r\n| --- | --- | --- | --- |\r\n| Windows | x64 | [Installer](https://github.com/CherryHQ/cherry-studio/releases/download/v2.1.2/Cherry-Studio-2.1.2-win-x64-setu",
-"tag": "product_update",
-"url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://cherryai.com/.well-known/agent.json",
-"checked_at": "2026-09-29T00:14:21Z",
+"checked_at": "2026-10-03T04:06:48Z",
 "errors": [
 "not valid JSON"
 ],
@@ -159,7 +159,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-29T00:14:20Z",
+"checked_at": "2026-10-03T04:06:47Z",
 "errors": [
 "https://cherryai.com/.well-known/ard.json: not valid JSON",
 "https://cherryai.com/.well-known/ai-catalog.json: not valid JSON"
@@ -169,7 +169,7 @@
 },
 "mcp": {
 "card_url": "https://cherryai.com/.well-known/mcp.json",
-"checked_at": "2026-09-29T00:14:22Z",
+"checked_at": "2026-10-03T04:06:49Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -179,7 +179,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:16Z",
+"checked_at": "2026-10-03T04:23:37Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -187,19 +187,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-05-24T01:56:26Z",
-"github_forks": 5021,
+"github_forks": 5034,
 "github_language": "TypeScript",
-"github_open_issues": 1692,
-"github_pushed_at": "2026-09-28T23:52:39Z",
-"github_stars": 52218,
+"github_open_issues": 1704,
+"github_pushed_at": "2026-10-03T03:16:56Z",
+"github_stars": 52326,
 "github_topic": "ai-agent",
 "homepage": "https://cherryai.com"
 },
 "slug": "cherryhq-cherry-studio",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/CherryHQ/cherry-studio"
 }

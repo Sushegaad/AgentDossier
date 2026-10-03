@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.7,
+"adoption": 25.71,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -54,7 +54,7 @@
 },
 "supply_chain": {
 "components": {
-"adoption": 25.7,
+"adoption": 25.71,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -82,7 +82,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.7,
+"adoption": 25.71,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.0,
@@ -112,7 +112,7 @@
 "external_ids": {
 "github": "OthmanAdi/planning-with-files"
 },
-"first_seen": "2026-09-29T00:11:24Z",
+"first_seen": "2026-10-03T04:03:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -134,10 +134,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:24Z",
+"last_seen": "2026-10-03T04:03:56Z",
 "license": "MIT",
 "name": "planning-with-files",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-01T19:57:51Z",
+"headline": "planning-with-files v3.22.0 - OpenCode 2 support",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "OpenCode 2 can load `opencode-planning-with-files` 1.2.0 and use native plan injection, write reminders, compaction context, planning tools and the idle completion gate. The same package retains OpenCode 1 support.\n\nSessions moved to anothe",
+"tag": "product_update",
+"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.22.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-27T02:43:41Z",
@@ -148,33 +159,22 @@
 "summary": "`attest-plan.sh` can now attest a root roadmap while a named ticket plan remains active. Use `--target root` or `--target <plan-id>`; the selection honors `PWF_PLAN_ROOT`, refuses invalid or linked targets, and prints the resolved paths bef",
 "tag": "product_update",
 "url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.21.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-25T15:57:32Z",
-"headline": "planning-with-files v3.20.8 - Quiet Stop hook, current Cursor and Gemini hook schemas, owned pointer backups",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "## What changed\n\n- **Claude Code no longer shows a notice after every reply in sessions without a plan.** The Stop hook runs `check-complete --gate`, whose no-plan branch printed \"No task_plan.md found\" on every turn. The automatic check is",
-"tag": "product_update",
-"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.20.8"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:59Z",
+"checked_at": "2026-10-03T04:08:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:57Z",
+"checked_at": "2026-10-03T04:08:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:59Z",
+"checked_at": "2026-10-03T04:08:15Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -184,7 +184,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:53Z",
+"checked_at": "2026-10-03T04:24:11Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -192,19 +192,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-03T07:37:28Z",
-"github_forks": 2257,
+"github_forks": 2268,
 "github_language": "Shell",
-"github_open_issues": 7,
-"github_pushed_at": "2026-09-27T02:43:39Z",
-"github_stars": 27169,
+"github_open_issues": 8,
+"github_pushed_at": "2026-10-01T19:57:49Z",
+"github_stars": 27263,
 "github_topic": "llm-agents",
 "homepage": "https://www.skills.sh/othmanadi/planning-with-files/planning-with-files"
 },
 "slug": "othmanadi-planning-with-files",
 "sources": [
 {
-"payload_hash": "2860b628f3d0c0978a17304063dccbb50ae155666e22cd7e0848d3a4c2648a77",
-"retrieved_at": "2026-09-29T00:11:24Z",
+"payload_hash": "65e98c551e0f25beb1ba85996c8930d858a2716c935e2108acc019a6e99a0494",
+"retrieved_at": "2026-10-03T04:03:56Z",
 "system": "github",
 "url": "https://github.com/OthmanAdi/planning-with-files"
 }

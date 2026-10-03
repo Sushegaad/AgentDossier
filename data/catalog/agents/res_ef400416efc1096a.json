@@ -194,7 +194,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -216,19 +216,22 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:19Z",
+"last_seen": "2026-10-03T03:59:11Z",
 "license": "Apache-2.0 core",
 "name": "Rasa Pro / CALM agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -237,7 +240,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:24:01Z",
+"checked_at": "2026-10-03T04:16:14Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -253,7 +256,7 @@
 "sources": [
 {
 "payload_hash": "8340b571a604bd4d6650d8a9069cf474c296b7756da0d4e6df246824955c4ef7",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://github.com/RasaHQ/rasa"
 }

@@ -25,7 +25,7 @@
 "domain_fit": 34.0,
 "ecosystem": 1.8,
 "governance": null,
-"health": 12.0,
+"health": 8.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -39,7 +39,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 54.6,
+"score": 51.2,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -53,7 +53,7 @@
 "domain_fit": 34.0,
 "ecosystem": 1.8,
 "governance": null,
-"health": 12.0,
+"health": 8.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -67,7 +67,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 56.6,
+"score": 52.6,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -78,7 +78,7 @@
 "external_ids": {
 "github": "ntegrals/openbrowser"
 },
-"first_seen": "2026-09-29T00:07:39Z",
+"first_seen": "2026-10-03T04:00:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -125,19 +125,22 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:39Z",
+"last_seen": "2026-10-03T04:00:10Z",
 "license": "MIT",
 "name": "openbrowser",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -146,7 +149,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:33:00Z",
+"checked_at": "2026-10-03T04:25:19Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -158,15 +161,15 @@
 "github_language": "TypeScript",
 "github_open_issues": 20,
 "github_pushed_at": "2026-04-02T12:55:42Z",
-"github_stars": 9549,
+"github_stars": 9554,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "ntegrals-openbrowser",
 "sources": [
 {
-"payload_hash": "0fa34e4c4ef8d40eb4e4960fcead8529f41fffeb35c0ac9111944d27521e8b44",
-"retrieved_at": "2026-09-29T00:07:39Z",
+"payload_hash": "ff84ac1b9ac762848cd16771391741efa2294328d7200b9abf099adad8144ba4",
+"retrieved_at": "2026-10-03T04:00:10Z",
 "system": "github",
 "url": "https://github.com/ntegrals/openbrowser"
 }

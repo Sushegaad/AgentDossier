@@ -21,10 +21,10 @@
 "adoption": 23.65,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 8.0,
+"ecosystem": 11.6,
 "governance": null,
 "health": 8.0,
-"trust": 21.0
+"trust": 22.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -37,7 +37,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 65.6,
+"score": 70.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -48,7 +48,7 @@
 "external_ids": {
 "github": "tadata-org/fastapi_mcp"
 },
-"first_seen": "2026-09-29T00:11:39Z",
+"first_seen": "2026-10-03T04:04:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -70,7 +70,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "name": "fastapi_mcp",
 "news": [],
@@ -78,7 +78,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://fastapi-mcp.tadata.com/.well-known/agent-card.json",
-"checked_at": "2026-09-29T00:15:04Z",
+"checked_at": "2026-10-03T04:07:21Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -86,21 +86,20 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:00Z",
+"checked_at": "2026-10-03T04:07:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
+"evidence_url": "https://fastapi-mcp.tadata.com/",
+"note": "named in the resource's own tags",
+"probe": {
 "card_url": "https://fastapi-mcp.tadata.com/.well-known/mcp.json",
-"checked_at": "2026-09-29T00:15:04Z",
-"parser_version": "mcp-2025-06-18",
-"remotes": [
-{
-"type": "http",
-"url": "https://tadata-a67d782f.main-kill-isr.mintlify.me/mcp"
-}
-],
+"checked_at": "2026-10-03T04:07:21Z",
 "status": "invalid"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "fastapi-mcp.tadata.com",
@@ -108,7 +107,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:32:42Z",
+"checked_at": "2026-10-03T04:24:59Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -116,19 +115,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-08T11:15:43Z",
-"github_forks": 971,
+"github_forks": 972,
 "github_language": "Python",
 "github_open_issues": 171,
 "github_pushed_at": "2025-11-24T14:51:54Z",
-"github_stars": 12012,
+"github_stars": 12015,
 "github_topic": "mcp-server",
 "homepage": "https://fastapi-mcp.tadata.com/"
 },
 "slug": "tadata-org-fastapi-mcp",
 "sources": [
 {
-"payload_hash": "3575ea6205dcc27e90504987133d12ccfa248bd8d8ba405898730d3e14720869",
-"retrieved_at": "2026-09-29T00:11:39Z",
+"payload_hash": "95d8497c0dddb9d5ee711ea712e415792bab709f746fa7052deac2cf521457b8",
+"retrieved_at": "2026-10-03T04:04:10Z",
 "system": "github",
 "url": "https://github.com/tadata-org/fastapi_mcp"
 }

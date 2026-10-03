@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-03) (pending publisher verification)",
 "evidence_url": "https://adako.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "aeb5cd4e5516f87cebde650ce58a5640c5657b4954154f2c1580548c5d1eb7c1",
+"next_check": "2026-10-10",
+"payload_hash": "43af3a86fe3c51fe2d2348e6dcaa29f0f51635a0604c425f43d3eb0cc53833a2",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:19:50Z",
+"retrieved_at": "2026-10-03T04:12:07Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,16 +45,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-03) (pending publisher verification)",
 "evidence_url": "https://adako.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "466665d19cfb79a8ddbec0e7eb0d1df2e809bb71d4c96893b1ae63fc012e797c",
+"next_check": "2026-10-10",
+"payload_hash": "1fa2589d62721e5006640df1d48e68ba827a1a2200a438d9aff3af8d3d73959b",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:19:50Z",
+"retrieved_at": "2026-10-03T04:12:07Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -102,7 +102,7 @@
 "github": "ruslan2027/adako-mcp",
 "mcp_registry": "ai.adako/ads"
 },
-"first_seen": "2026-09-29T00:06:20Z",
+"first_seen": "2026-10-03T03:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -124,19 +124,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:20Z",
+"last_seen": "2026-10-03T03:59:12Z",
 "license": null,
 "name": "Adako: ad ops for AI assistants",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:13:23Z",
+"checked_at": "2026-10-03T04:05:50Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:13:22Z",
+"checked_at": "2026-10-03T04:05:49Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -159,7 +159,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:25:28Z",
+"checked_at": "2026-10-03T04:18:06Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -176,8 +176,8 @@
 "slug": "adako-ai-adako-ad-ops-for-ai-assistants",
 "sources": [
 {
-"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
-"retrieved_at": "2026-09-29T00:06:20Z",
+"payload_hash": "30afd48b66ba6d5db0b4bc30d52bc855592a0811682b41ec8c357fdca332c24b",
+"retrieved_at": "2026-10-03T03:59:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.adako/ads"
 }

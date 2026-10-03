@@ -29,13 +29,13 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.21,
+"adoption": 24.22,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -48,7 +48,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 63.2,
+"score": 66.8,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -57,13 +57,13 @@
 },
 "cybersecurity": {
 "components": {
-"adoption": 24.21,
+"adoption": 24.22,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -76,7 +76,7 @@
 },
 "profile": "security",
 "rank": null,
-"score": 57.7,
+"score": 61.1,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -85,13 +85,13 @@
 },
 "data": {
 "components": {
-"adoption": 24.21,
+"adoption": 24.22,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -104,7 +104,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 64.6,
+"score": 69.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -113,13 +113,13 @@
 },
 "technology": {
 "components": {
-"adoption": 24.21,
+"adoption": 24.22,
 "docs": 7.0,
 "domain_fit": 81.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
@@ -132,7 +132,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 71.6,
+"score": 76.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -143,7 +143,7 @@
 "external_ids": {
 "github": "yusufkaraaslan/Skill_Seekers"
 },
-"first_seen": "2026-09-29T00:11:39Z",
+"first_seen": "2026-10-03T04:04:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -165,10 +165,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "name": "Skill_Seekers",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-09-30T18:53:11Z",
+"headline": "Skill_Seekers v3.10.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## [3.10.0] - 2026-09-30\n\n**Theme:** Seeker HUD (beta) — a local web UI for the whole toolchain — plus a path-traversal security fix, three machine-readable CLI commands, an opt-in SQLite skill search index, MiniMax video input, and PDF vec",
+"tag": "product_update",
+"url": "https://github.com/yusufkaraaslan/Skill_Seekers/releases/tag/v3.10.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-08-03T00:52:12Z",
@@ -179,35 +190,29 @@
 "summary": "## [3.9.1] - 2026-08-02\n\n**Theme:** Documentation and project-infrastructure release. No runtime code changed — the package is functionally identical to 3.9.0.\n\n### Added\n- **Sponsorship program** (#442) — `SPONSORSHIP.md` (five tiers plus",
 "tag": "product_update",
 "url": "https://github.com/yusufkaraaslan/Skill_Seekers/releases/tag/v3.9.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-07-29T11:33:40Z",
-"headline": "Skill_Seekers v3.9.0",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "## [3.9.0] - 2026-07-29\n\n### Added\n- **HTML parser fallback for broken markup** (#96, task F1.4) — new `parse_html()` helper (`cli/html_parsing.py`) keeps `html.parser` as the primary parser (well-formed pages stay byte-identical) but retri",
-"tag": "product_update",
-"url": "https://github.com/yusufkaraaslan/Skill_Seekers/releases/tag/v3.9.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:58Z",
+"checked_at": "2026-10-03T04:08:14Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:57Z",
+"checked_at": "2026-10-03T04:08:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:59Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://skillseekersweb.com/",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:08:15Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "skillseekersweb.com",
@@ -215,7 +220,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:32:29Z",
+"checked_at": "2026-10-03T04:24:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -223,19 +228,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-10-17T14:43:48Z",
-"github_forks": 1536,
+"github_forks": 1539,
 "github_language": "Python",
 "github_open_issues": 47,
-"github_pushed_at": "2026-09-20T16:14:08Z",
-"github_stars": 15043,
+"github_pushed_at": "2026-09-30T18:49:17Z",
+"github_stars": 15092,
 "github_topic": "mcp-server",
 "homepage": "https://skillseekersweb.com/"
 },
 "slug": "yusufkaraaslan-skill-seekers",
 "sources": [
 {
-"payload_hash": "3575ea6205dcc27e90504987133d12ccfa248bd8d8ba405898730d3e14720869",
-"retrieved_at": "2026-09-29T00:11:39Z",
+"payload_hash": "95d8497c0dddb9d5ee711ea712e415792bab709f746fa7052deac2cf521457b8",
+"retrieved_at": "2026-10-03T04:04:10Z",
 "system": "github",
 "url": "https://github.com/yusufkaraaslan/Skill_Seekers"
 }
@@ -265,7 +270,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://skillseekersweb.com/",

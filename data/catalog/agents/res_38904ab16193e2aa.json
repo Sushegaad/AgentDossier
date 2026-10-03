@@ -82,7 +82,7 @@
 "external_ids": {
 "mcp_registry": "ai.chatthing/chat-thing"
 },
-"first_seen": "2026-09-29T00:06:21Z",
+"first_seen": "2026-10-03T03:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,10 +104,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:21Z",
+"last_seen": "2026-10-03T03:59:12Z",
 "license": null,
 "name": "Chat Thing",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-09-30T13:24:24+00:00",
+"headline": "Chat Thing agents can talk: voice calls and phone numbers are here",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "app.chatthing.ai (vendor)",
+"summary": "Chat Thing agents can now hold voice conversations in your web chat and answer a US or UK phone number, with the same knowledge, power-ups and AI model you've already set up.",
+"tag": "news",
+"url": "https://app.chatthing.ai/blog/voice-calls-and-phone-numbers"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-21T10:42:46+00:00",
@@ -118,28 +129,17 @@
 "summary": "Chat Thing can now discover the tools a WebMCP-enabled page exposes and let an embedded agent use them. Add the widget, switch on WebMCP, and the page has a conversational copilot.",
 "tag": "news",
 "url": "https://app.chatthing.ai/blog/chat-thing-webmcp-website-copilot"
-},
-{
-"cluster_size": 1,
-"date": "2026-08-28T10:26:43+00:00",
-"headline": "GLM 5.3 Flash lands in Chat Thing, plus SupportBench and link controls",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "app.chatthing.ai (vendor)",
-"summary": "GLM 5.3 Flash is now available in Chat Thing, alongside SupportBench model testing and control over where links in embedded agents open.",
-"tag": "launch",
-"url": "https://app.chatthing.ai/blog/glm-5-3-flash-supportbench-and-link-controls"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:13:46Z",
+"checked_at": "2026-10-03T04:06:12Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:13:45Z",
+"checked_at": "2026-10-03T04:06:11Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -162,7 +162,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:27:43Z",
+"checked_at": "2026-10-03T04:20:26Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -179,8 +179,8 @@
 "slug": "chatthing-ai-chat-thing",
 "sources": [
 {
-"payload_hash": "2f830669767507d2755d2033fef8a09f446bc4d2e5ac3c3b7ed15071900a35da",
-"retrieved_at": "2026-09-29T00:06:21Z",
+"payload_hash": "b0af77e13cfcf899c32316131161a58b09bcf8960cb5bc1188b613c61471bc89",
+"retrieved_at": "2026-10-03T03:59:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.chatthing/chat-thing"
 }

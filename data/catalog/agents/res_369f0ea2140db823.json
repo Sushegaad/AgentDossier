@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.48,
+"adoption": 23.49,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -54,7 +54,7 @@
 },
 "data": {
 "components": {
-"adoption": 23.48,
+"adoption": 23.49,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -82,7 +82,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.48,
+"adoption": 23.49,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -112,7 +112,7 @@
 "external_ids": {
 "github": "EKKOLearnAI/ekko-studio"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -134,47 +134,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "Other",
 "name": "ekko-studio",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-29T00:05:00Z",
-"headline": "ekko-studio Ekko Studio Android v1.0.5",
+"date": "2026-10-03T02:21:26Z",
+"headline": "ekko-studio Ekko Studio v0.7.29",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "Ekko Studio Android v1.0.5\n\n- 版本：1.0.5\n- 版本号（versionCode）：142\n- 架构：arm64-v8a\n- 安装包：EkkoStudio.apk\n- 文件大小：32,736,938 bytes\n- SHA-256：`3acf817160e938c75ec9998b47133d073760dc3dfa305320eb2ac21379160926`",
+"summary": "## 更新重点\n\n- 恢复聊天和群聊工作区文件树菜单及差异工具栏中的文件下载功能 (#3268)\n- 修复实时活动通知将 Antigravity 错误识别为 Ekko 的问题 (#3272)\n\n## What's Changed\n* fix(files): restore workspace file downloads in tree and Diff by @wtj-0527 in https://github.com/EKKOLearnAI/ekko-studio/pu",
 "tag": "product_update",
-"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v1.0.5"
+"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.29"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-28T12:53:57Z",
-"headline": "ekko-studio Ekko Studio v0.7.25",
+"date": "2026-10-02T15:33:09Z",
+"headline": "ekko-studio Ekko Studio v0.7.28",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "## 更新重点\n\n- 新增 Cursor CLI，支持聊天、群聊、工作流和独立的 Studio MCP 配置。\n- 新增可配置的 JEV 记忆、技能、浏览器、群聊与工作流检查。\n- 增强浏览器批量操作、多标签页和大页面处理，改进桌面更新下载进度。\n- 修复 DSH 新版预置与插件配置兼容性、配置持久化和插件页面布局，同时保留旧版适配。\n- 修复聊天附件、长对话搜索、会话置顶、Hermes 更新与跨实例 MCP 路由等问题。\n\n## What's Changed\n* [code",
+"summary": "## 更新重点\n\n- 新增 Antigravity CLI，支持全局和独立配置模式下的聊天、群聊与工作流，并接入原生配置、MCP 和技能管理 (#3256)\n- 新增 APIKEY.FAN 中转服务页面，可按已配置的 API Key 查看余额、今日与累计用量及模型明细 (#3257)\n- 修复编程 Agent 手动检查更新后的状态和更新版本识别，并保护正在运行的会话 (#3261)\n- 修复 Claude 回复提前结束、内容缺失或重复的问题，完整保存最终输出 (#3260、#",
 "tag": "product_update",
-"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.25"
+"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.28"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:01Z",
+"checked_at": "2026-10-03T04:07:22Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:14:59Z",
+"checked_at": "2026-10-03T04:07:19Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:04Z",
+"checked_at": "2026-10-03T04:07:23Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -184,7 +184,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:32:48Z",
+"checked_at": "2026-10-03T04:25:05Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -192,19 +192,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-11T07:38:18Z",
-"github_forks": 1380,
+"github_forks": 1385,
 "github_language": "TypeScript",
-"github_open_issues": 430,
-"github_pushed_at": "2026-09-29T00:05:00Z",
-"github_stars": 11228,
+"github_open_issues": 451,
+"github_pushed_at": "2026-10-03T02:20:54Z",
+"github_stars": 11280,
 "github_topic": "ai-agent",
 "homepage": "https://ekkostudio.xyz"
 },
 "slug": "ekkolearnai-ekko-studio",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/EKKOLearnAI/ekko-studio"
 }

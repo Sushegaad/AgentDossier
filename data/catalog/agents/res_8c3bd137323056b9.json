@@ -19,13 +19,13 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.43,
+"adoption": 25.44,
 "docs": 7.0,
 "domain_fit": 71.3,
-"ecosystem": 1.2,
+"ecosystem": 4.8,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
@@ -38,7 +38,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 70.1,
+"score": 74.5,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -49,7 +49,7 @@
 "external_ids": {
 "github": "modelcontextprotocol/python-sdk"
 },
-"first_seen": "2026-09-29T00:11:39Z",
+"first_seen": "2026-10-03T04:04:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -71,10 +71,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "name": "python-sdk",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-02T22:02:27Z",
+"headline": "python-sdk v2.3.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "`pip install -U mcp`. Docs: https://py.sdk.modelcontextprotocol.io/\r\n\r\nMostly fixes, plus three new options. A few things behave differently, so skim these first:\r\n\r\n## Behaviour changes\r\n\r\n**`httpx2>=2.10.0` is now required** (#3600)\r\n- It",
+"tag": "product_update",
+"url": "https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.3.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-07T15:53:57Z",
@@ -85,35 +96,29 @@
 "summary": "`pip install -U mcp`. Docs: https://py.sdk.modelcontextprotocol.io/\r\n\r\nA few defaults changed in this release. If you run a server or client on 2.x, skim these first:\r\n\r\n## Behaviour changes\r\n\r\n**HTTP client redirects are only followed with",
 "tag": "product_update",
 "url": "https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.2.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-07T14:03:59Z",
-"headline": "python-sdk v1.30.0",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "Maintenance release of the 1.x line. 2.x is the current line; 1.x docs are at https://py.sdk.modelcontextprotocol.io/v1/.\r\n\r\nA few defaults changed in this release. If you run a server or client on 1.x, skim these first:\r\n\r\n## Behaviour cha",
-"tag": "product_update",
-"url": "https://github.com/modelcontextprotocol/python-sdk/releases/tag/v1.30.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:49Z",
+"checked_at": "2026-10-03T04:08:06Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:48Z",
+"checked_at": "2026-10-03T04:08:05Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:50Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://py.sdk.modelcontextprotocol.io/",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:08:06Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "py.sdk.modelcontextprotocol.io",
@@ -121,7 +126,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:59Z",
+"checked_at": "2026-10-03T04:24:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -129,19 +134,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-09-24T21:01:35Z",
-"github_forks": 3985,
+"github_forks": 4005,
 "github_language": "Python",
-"github_open_issues": 457,
-"github_pushed_at": "2026-09-25T09:25:15Z",
-"github_stars": 24425,
+"github_open_issues": 432,
+"github_pushed_at": "2026-10-02T22:02:27Z",
+"github_stars": 24465,
 "github_topic": "mcp-server",
 "homepage": "https://py.sdk.modelcontextprotocol.io/"
 },
 "slug": "modelcontextprotocol-python-sdk",
 "sources": [
 {
-"payload_hash": "3575ea6205dcc27e90504987133d12ccfa248bd8d8ba405898730d3e14720869",
-"retrieved_at": "2026-09-29T00:11:39Z",
+"payload_hash": "95d8497c0dddb9d5ee711ea712e415792bab709f746fa7052deac2cf521457b8",
+"retrieved_at": "2026-10-03T04:04:10Z",
 "system": "github",
 "url": "https://github.com/modelcontextprotocol/python-sdk"
 }
@@ -157,7 +162,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://py.sdk.modelcontextprotocol.io/",

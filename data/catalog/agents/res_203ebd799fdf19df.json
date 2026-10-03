@@ -30,13 +30,13 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.2,
+"adoption": 28.21,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -49,7 +49,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 69.4,
+"score": 72.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -58,13 +58,13 @@
 },
 "data": {
 "components": {
-"adoption": 28.2,
+"adoption": 28.21,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -77,7 +77,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 71.3,
+"score": 75.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -86,13 +86,13 @@
 },
 "technology": {
 "components": {
-"adoption": 28.2,
+"adoption": 28.21,
 "docs": 7.0,
 "domain_fit": 87.5,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.875,
@@ -105,7 +105,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 76.2,
+"score": 80.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -116,7 +116,7 @@
 "external_ids": {
 "github": "ruvnet/ruflo"
 },
-"first_seen": "2026-09-29T00:07:35Z",
+"first_seen": "2026-10-03T04:00:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -138,7 +138,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "merged_ids": [
 "res_203ebd799fdf19df"
@@ -148,7 +148,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://cognitum.one/.well-known/agent.json",
-"checked_at": "2026-09-29T00:14:30Z",
+"checked_at": "2026-10-03T04:06:58Z",
 "errors": [
 "not valid JSON"
 ],
@@ -156,7 +156,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-29T00:14:29Z",
+"checked_at": "2026-10-03T04:06:57Z",
 "errors": [
 "https://cognitum.one/.well-known/ard.json: not valid JSON",
 "https://cognitum.one/.well-known/ai-catalog.json: not valid JSON"
@@ -165,10 +165,15 @@
 "status": "invalid"
 },
 "mcp": {
+"evidence_url": "https://Cognitum.One",
+"note": "named in the resource's own tags",
+"probe": {
 "card_url": "https://cognitum.one/.well-known/mcp.json",
-"checked_at": "2026-09-29T00:14:30Z",
-"parser_version": "mcp-2025-06-18",
+"checked_at": "2026-10-03T04:06:58Z",
 "status": "invalid"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "cognitum.one",
@@ -177,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-02T21:24:20Z",
-"github_forks": 8722,
+"github_forks": 8761,
 "github_language": "TypeScript",
-"github_open_issues": 1012,
-"github_pushed_at": "2026-09-28T23:25:42Z",
-"github_stars": 73443,
-"github_topic": "ai-agents",
+"github_open_issues": 1052,
+"github_pushed_at": "2026-10-03T03:53:24Z",
+"github_stars": 73746,
+"github_topic": "mcp-server",
 "homepage": "https://Cognitum.One"
 },
 "slug": "ruvnet-ruflo",
 "sources": [
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "95d8497c0dddb9d5ee711ea712e415792bab709f746fa7052deac2cf521457b8",
+"retrieved_at": "2026-10-03T04:04:10Z",
 "system": "github",
 "url": "https://github.com/ruvnet/ruflo"
 }
@@ -203,7 +208,7 @@
 "ai-assistant",
 "ai-skills",
 "autonomous-agents",
-"claude-code",
+"claude",
 "codex",
 "dsh-plugin",
 "harness",
@@ -221,7 +226,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": null,
-"protocols": 5,
+"protocols": 3,
 "security": null
 },
 "url": "https://Cognitum.One",

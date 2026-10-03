@@ -24,16 +24,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR for AI: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "STAR for AI: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:18:05Z",
+"retrieved_at": "2026-10-03T04:10:19Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -64,16 +64,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:18:05Z",
+"retrieved_at": "2026-10-03T04:10:19Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -104,16 +104,16 @@
 "validaited-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "iso42001",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:18:05Z",
+"retrieved_at": "2026-10-03T04:10:19Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -130,16 +130,42 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-09-29) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-03) (pending publisher verification)",
+"evidence_url": "https://www.microsoft.com/en-us/trust-center",
+"framework": "dora",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-10",
+"payload_hash": "e6e0e4429c11b7fd11d0e6bedd444db6062055830ce752ab1e590374c5e71aa1",
+"period_end": null,
+"retrieved_at": "2026-10-03T04:14:10Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-03) (pending publisher verification)",
 "evidence_url": "https://www.microsoft.com/en-us/trust-center",
 "framework": "eu_ai_act",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "6eea0afde989398998250f0e7619c0073400f5adadf0c8da068642ee01b87a2c",
+"next_check": "2026-10-10",
+"payload_hash": "e6e0e4429c11b7fd11d0e6bedd444db6062055830ce752ab1e590374c5e71aa1",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:21:58Z",
+"retrieved_at": "2026-10-03T04:14:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -156,16 +182,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-09-29) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-03) (pending publisher verification)",
 "evidence_url": "https://www.microsoft.com/en-us/privacy?icid=DSM_Footer_Company_Privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "7f52993d156cf148be53e5f3f35a2c32565e32a95d20b6be4187987f24daa44b",
+"next_check": "2026-10-10",
+"payload_hash": "6375aa56b0f5d15c855d2aeb34fbd0e160342af9608032fa40391b61ad27d84c",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:21:58Z",
+"retrieved_at": "2026-10-03T04:14:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -383,7 +409,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -412,26 +438,33 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:19Z",
+"last_seen": "2026-10-03T03:59:11Z",
 "license": "Microsoft service",
 "name": "Microsoft Copilot Studio",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:28Z",
+"checked_at": "2026-10-03T04:07:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:27Z",
+"checked_at": "2026-10-03T04:07:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:28Z",
-"parser_version": "mcp-2025-06-18",
+"checked_by": "maintainer",
+"checked_on": "2026-10-02",
+"evidence_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp",
+"note": "\"Extend your agent with Model Context Protocol\" (Microsoft Learn)",
+"probe": {
+"checked_at": "2026-10-03T04:07:46Z",
 "status": "not_found"
+},
+"source": "curated_claim",
+"status": "claimed"
 }
 },
 "publisher_domain": "microsoft.com",
@@ -439,7 +472,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:23:16Z",
+"checked_at": "2026-10-03T04:15:29Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -455,7 +488,7 @@
 "sources": [
 {
 "payload_hash": "9405d2f7b70ed936751f60e23a7575af3da507efd53ca79a7b5e9f53b659c8de",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio"
 }
@@ -466,7 +499,7 @@
 "compliance": 1,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",

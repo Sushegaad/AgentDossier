@@ -11,50 +11,18 @@
 "taxonomy_version": "sar-taxonomy-1.0"
 },
 "commercial": false,
-"compliance": [
-{
-"certificate_id": "gitlab",
-"covers_resource": "unknown",
-"credited": false,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "GitLab",
-"terms": [
-"star_level_1",
-"caiq"
-]
-},
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/gitlab",
-"framework": "csa_star",
-"issued": "2020-04-13",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 0.923,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
-"period_end": null,
-"retrieved_at": "2026-09-29T00:19:18Z",
-"review_reason": "entity 0.92 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "STAR_LEVEL_1"
-}
-],
+"compliance": [],
 "deployment": "self-hosted",
 "description": "runs anywhere. uses anything",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
 "components": {
-"adoption": 26.23,
+"adoption": 26.24,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 1.5,
-"governance": 33.3,
+"governance": null,
 "health": 20.0,
 "trust": 16.0
 },
@@ -63,8 +31,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": 69.7,
-"value": 0.0,
+"score": null,
+"value": null,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -72,19 +40,21 @@
 "score": 69.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
-"unknown": []
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
-"github": "Gitlawb/openclaude"
+"github": "Twigpine/openclaude"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
 "evidence_urls": []
 },
-"id": "res_b432b0bd8182df0e",
+"id": "res_a19352ceea1b26e8",
 "identity": {
 "evidence": [
 "repository_ownership"
@@ -125,7 +95,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "Other",
 "name": "openclaude",
 "news": [
@@ -138,7 +108,7 @@
 "outlet": "GitHub releases",
 "summary": "## [0.31.0](https://github.com/Gitlawb/openclaude/compare/v0.30.0...v0.31.0) (2026-09-22)\n\n\n### Features\n\n* **launcher:** support --max-old-space-size-percentage ([#2219](https://github.com/Gitlawb/openclaude/issues/2219)) ([055e5d5](https:",
 "tag": "product_update",
-"url": "https://github.com/Gitlawb/openclaude/releases/tag/v0.31.0"
+"url": "https://github.com/Twigpine/openclaude/releases/tag/v0.31.0"
 },
 {
 "cluster_size": 1,
@@ -149,23 +119,23 @@
 "outlet": "GitHub releases",
 "summary": "## [0.30.0](https://github.com/Gitlawb/openclaude/compare/v0.29.1...v0.30.0) (2026-08-31)\n\n\n### Features\n\n* **providers:** add focused LLMTR hybrid gateway ([#2150](https://github.com/Gitlawb/openclaude/issues/2150)) ([1e56d4e](https://gith",
 "tag": "product_update",
-"url": "https://github.com/Gitlawb/openclaude/releases/tag/v0.30.0"
+"url": "https://github.com/Twigpine/openclaude/releases/tag/v0.30.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:39Z",
+"checked_at": "2026-10-03T04:07:58Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:38Z",
+"checked_at": "2026-10-03T04:07:57Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:39Z",
+"checked_at": "2026-10-03T04:07:58Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -175,7 +145,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:35Z",
+"checked_at": "2026-10-03T04:23:57Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -183,21 +153,21 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-01T03:15:49Z",
-"github_forks": 9102,
+"github_forks": 9101,
 "github_language": "TypeScript",
-"github_open_issues": 67,
-"github_pushed_at": "2026-09-22T03:54:15Z",
-"github_stars": 33559,
+"github_open_issues": 70,
+"github_pushed_at": "2026-09-29T05:00:16Z",
+"github_stars": 33626,
 "github_topic": "ai-agent",
 "homepage": "https://openclaude.gitlawb.com"
 },
-"slug": "gitlawb-openclaude",
+"slug": "twigpine-openclaude",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
-"url": "https://github.com/Gitlawb/openclaude"
+"url": "https://github.com/Twigpine/openclaude"
 }
 ],
 "tags": [
@@ -209,12 +179,12 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 1,
+"compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 5,
 "security": 1
 },
 "url": "https://openclaude.gitlawb.com",
-"vendor": "Gitlawb"
+"vendor": "Twigpine"
 }

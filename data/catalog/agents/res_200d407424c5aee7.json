@@ -23,10 +23,10 @@
 "adoption": 27.8,
 "docs": 7.0,
 "domain_fit": 81.0,
-"ecosystem": 1.2,
+"ecosystem": 4.8,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
@@ -39,7 +39,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 73.4,
+"score": 77.8,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -50,7 +50,7 @@
 "external_ids": {
 "github": "upstash/context7"
 },
-"first_seen": "2026-09-29T00:11:39Z",
+"first_seen": "2026-10-03T04:04:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -79,10 +79,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "name": "context7",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-02T09:26:44Z",
+"headline": "context7 @upstash/context7-opencode@0.2.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "### Minor Changes\n\n- 635cfc8: Support OpenCode v2. The plugin now exports a v2 `setup` entrypoint next to the v1 `server` entrypoint, so `opencode plugin add @upstash/context7-opencode` registers the Context7 MCP server and the `context7-mc",
+"tag": "product_update",
+"url": "https://github.com/upstash/context7/releases/tag/%40upstash/context7-opencode%400.2.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-22T21:04:48Z",
@@ -93,35 +104,29 @@
 "summary": "### Minor Changes\n\n- 2c6c8e7: Add a typed `search` method that finds relevant documentation without a separate library resolution request.",
 "tag": "product_update",
 "url": "https://github.com/upstash/context7/releases/tag/%40upstash/context7-sdk%400.5.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-22T21:04:45Z",
-"headline": "context7 ctx7@0.5.12",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "### Patch Changes\n\n- 4416fb8: Use the shared API URL for login and explain how to sign in again when the server rejects a saved session.\n\n  Recommend logout and login only when the server returns HTTP 401. Report other identity-check failur",
-"tag": "product_update",
-"url": "https://github.com/upstash/context7/releases/tag/ctx7%400.5.12"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:14:34Z",
+"checked_at": "2026-10-03T04:07:04Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:14:33Z",
+"checked_at": "2026-10-03T04:07:03Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:14:35Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://context7.com",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:07:04Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "context7.com",
@@ -129,7 +134,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:13Z",
+"checked_at": "2026-10-03T04:23:34Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -137,19 +142,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-26T23:40:39Z",
-"github_forks": 3035,
+"github_forks": 3044,
 "github_language": "TypeScript",
-"github_open_issues": 63,
-"github_pushed_at": "2026-09-28T18:14:48Z",
-"github_stars": 62510,
+"github_open_issues": 90,
+"github_pushed_at": "2026-10-02T11:48:38Z",
+"github_stars": 62619,
 "github_topic": "mcp-server",
 "homepage": "https://context7.com"
 },
 "slug": "upstash-context7",
 "sources": [
 {
-"payload_hash": "3575ea6205dcc27e90504987133d12ccfa248bd8d8ba405898730d3e14720869",
-"retrieved_at": "2026-09-29T00:11:39Z",
+"payload_hash": "95d8497c0dddb9d5ee711ea712e415792bab709f746fa7052deac2cf521457b8",
+"retrieved_at": "2026-10-03T04:04:10Z",
 "system": "github",
 "url": "https://github.com/upstash/context7"
 }
@@ -165,7 +170,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://context7.com",

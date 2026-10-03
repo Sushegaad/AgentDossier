@@ -1,0 +1,137 @@
+{
+"canonical_url": "reefinfra.ai",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"infrastructure",
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Infrastructure for continually self‑improving agents",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 22.45,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 2.4,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 66.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "Human-Agent-Society/reef"
+},
+"first_seen": "2026-10-03T04:00:10Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_3143b00402122150",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-03T04:00:10Z",
+"license": "Apache-2.0",
+"name": "reef",
+"news": [],
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-03T04:08:08Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-03T04:08:07Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-10-03T04:08:09Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "reefinfra.ai",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-08-31T01:39:18Z",
+"github_forks": 694,
+"github_language": "Python",
+"github_open_issues": 85,
+"github_pushed_at": "2026-10-03T02:07:14Z",
+"github_stars": 7482,
+"github_topic": "ai-agents",
+"homepage": "https://reefinfra.ai"
+},
+"slug": "human-agent-society-reef",
+"sources": [
+{
+"payload_hash": "ff84ac1b9ac762848cd16771391741efa2294328d7200b9abf099adad8144ba4",
+"retrieved_at": "2026-10-03T04:00:10Z",
+"system": "github",
+"url": "https://github.com/Human-Agent-Society/reef"
+}
+],
+"tags": [
+"agent-infrastructure",
+"ai-agents",
+"continual-learning",
+"inference",
+"llm",
+"llm-training",
+"reinforcement-learning",
+"self-improving-agents"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": null,
+"protocols": 5,
+"security": null
+},
+"url": "https://reefinfra.ai",
+"vendor": "Human-Agent-Society"
+}

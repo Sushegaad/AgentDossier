@@ -81,7 +81,7 @@
 "external_ids": {
 "github": "CopilotKit/CopilotKit"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -103,47 +103,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "CopilotKit",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-28T19:48:49Z",
-"headline": "CopilotKit v1.75.0",
+"date": "2026-10-02T21:32:38Z",
+"headline": "CopilotKit v1.77.0",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "### Features\n\n- feat(react-core): add transformMessages to CopilotChatMessageView (#7488) (eb460b3)\n\n### Fixes\n\n- fix(core): keep the reconnect cursor when a control frame repeats an old checkpoint (#7490) (d3c36bb)\n- fix(runtime): enforce",
+"summary": "### Features\n\n- feat(react-core): make intelligence indicator auto-mount configurable (#6612) (a161b38)\n- feat(learning): capture raw browser activity as AG-UI events (#7556) (1840e7c)\n- feat(mcp-apps): consolidate the Vue and Angular hosts",
 "tag": "product_update",
-"url": "https://github.com/CopilotKit/CopilotKit/releases/tag/v1.75.0"
+"url": "https://github.com/CopilotKit/CopilotKit/releases/tag/v1.77.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-25T23:44:33Z",
-"headline": "CopilotKit v1.74.0",
+"date": "2026-10-01T06:15:03Z",
+"headline": "CopilotKit v1.76.0",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "### Features\n\n- feat(web-inspector): support targeted notifications in What's New (#6956) (9434edd)\n- feat: consume learned skills from multiple containers across SDKs (#7384) (6252d10)\n- feat(web-inspector): track launcher HUD impressions",
+"summary": "### Features\n\n- feat: AG-UI 1.0 for CopilotKit (#7270) (7693a04)\n\n### Fixes\n\n- fix(runtime): stop reusing per-response provider ids as message ids (#7522) (5832fff)\n- fix(web-inspector): fit and scale the Inspector on small screens (#7529)",
 "tag": "product_update",
-"url": "https://github.com/CopilotKit/CopilotKit/releases/tag/v1.74.0"
+"url": "https://github.com/CopilotKit/CopilotKit/releases/tag/v1.76.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:14:56Z",
+"checked_at": "2026-10-03T04:07:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:14:55Z",
+"checked_at": "2026-10-03T04:07:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:14:56Z",
+"checked_at": "2026-10-03T04:07:17Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -153,7 +153,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:29Z",
+"checked_at": "2026-10-03T04:23:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -161,19 +161,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-06-19T04:08:31Z",
-"github_forks": 4667,
+"github_forks": 4682,
 "github_language": "TypeScript",
-"github_open_issues": 315,
-"github_pushed_at": "2026-09-28T23:49:21Z",
-"github_stars": 37588,
+"github_open_issues": 276,
+"github_pushed_at": "2026-10-03T01:10:36Z",
+"github_stars": 37685,
 "github_topic": "ai-agent",
 "homepage": "https://docs.copilotkit.ai"
 },
 "slug": "copilotkit-copilotkit",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/CopilotKit/CopilotKit"
 }

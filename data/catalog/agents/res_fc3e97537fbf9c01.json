@@ -28,7 +28,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.03,
+"adoption": 26.1,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -56,7 +56,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.03,
+"adoption": 26.1,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -84,7 +84,7 @@
 },
 "sales": {
 "components": {
-"adoption": 26.03,
+"adoption": 26.1,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -112,7 +112,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.03,
+"adoption": 26.1,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -131,7 +131,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 68.7,
+"score": 68.8,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -142,7 +142,7 @@
 "external_ids": {
 "github": "Tencent/WeKnora"
 },
-"first_seen": "2026-09-29T00:13:13Z",
+"first_seen": "2026-10-03T04:05:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -164,14 +164,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:13:13Z",
+"last_seen": "2026-10-03T04:05:40Z",
 "license": "Other",
 "name": "WeKnora",
 "news": [],
 "protocols": {
 "a2a": {
 "card_url": "https://weknora.weixin.qq.com/.well-known/agent.json",
-"checked_at": "2026-09-29T00:16:14Z",
+"checked_at": "2026-10-03T04:08:30Z",
 "errors": [
 "not valid JSON"
 ],
@@ -179,7 +179,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-29T00:16:10Z",
+"checked_at": "2026-10-03T04:08:26Z",
 "errors": [
 "https://weknora.weixin.qq.com/.well-known/ard.json: not valid JSON",
 "https://weknora.weixin.qq.com/.well-known/ai-catalog.json: not valid JSON"
@@ -189,7 +189,7 @@
 },
 "mcp": {
 "card_url": "https://weknora.weixin.qq.com/.well-known/mcp.json",
-"checked_at": "2026-09-29T00:16:15Z",
+"checked_at": "2026-10-03T04:08:31Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -200,19 +200,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-22T08:01:23Z",
-"github_forks": 4133,
+"github_forks": 4245,
 "github_language": "Go",
-"github_open_issues": 566,
-"github_pushed_at": "2026-09-28T17:32:23Z",
-"github_stars": 30947,
+"github_open_issues": 636,
+"github_pushed_at": "2026-10-01T11:57:46Z",
+"github_stars": 31793,
 "github_topic": "agentic",
 "homepage": "https://weknora.weixin.qq.com"
 },
 "slug": "tencent-weknora",
 "sources": [
 {
-"payload_hash": "27055281ceef7f5868c5924752a3c31c68f0f1629b23c19559f3c01eaa7d6820",
-"retrieved_at": "2026-09-29T00:13:13Z",
+"payload_hash": "bae71180c5bf41075ca639d45cc5fb10d4b1349b640f293e1ae3fe75ed27ad84",
+"retrieved_at": "2026-10-03T04:05:40Z",
 "system": "github",
 "url": "https://github.com/Tencent/WeKnora"
 }

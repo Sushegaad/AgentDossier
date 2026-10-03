@@ -25,13 +25,13 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.79,
+"adoption": 25.8,
 "docs": 7.0,
 "domain_fit": 96.4,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.964,
@@ -44,7 +44,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 74.7,
+"score": 79.1,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -55,7 +55,7 @@
 "external_ids": {
 "github": "QwenLM/qwen-code"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -77,7 +77,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:13:13Z",
+"last_seen": "2026-10-03T04:05:40Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_7c1d6b2c137ffb50"
@@ -86,43 +86,48 @@
 "news": [
 {
 "cluster_size": 2,
-"date": "2026-09-26T22:20:46Z",
-"headline": "qwen-code Release v0.24.6-nightly.20260926.d6f414190a",
+"date": "2026-09-30T22:19:59Z",
+"headline": "qwen-code Release v0.24.7-nightly.20260930.57e720bc97",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.24.6-nightly.20260926.d6f414190a -->\n\n## What's Changed\n* test(cli): Close the fixture gaps deferred from managed-context/1 by @wenshao in https://github.",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.24.7-nightly.20260930.57e720bc97 -->\n\n## What's Changed\n* fix(core): align Code Mode text with lazy tool discovery by @tanzhenxin in https://github.com/Qw",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6-nightly.20260926.d6f414190a"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20260930.57e720bc97"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-26T01:26:02Z",
-"headline": "qwen-code SDK TypeScript Release v0.1.16",
+"date": "2026-10-02T22:04:50Z",
+"headline": "qwen-code Release v0.24.7-nightly.20261002.a011f66944",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "## Bundled CLI Version\n\nThis SDK release bundles CLI version: 0.24.6\n\nSource: CLI built from source (same branch/ref as SDK)\n\n---\n\n## Bundled CLI Version\n\nThis SDK release bundles CLI version: 0.24.5\n\nSource: CLI built from source (same bra",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.24.7-nightly.20261002.a011f66944 -->\n\n## What's Changed\n* fix(core): align Code Mode text with lazy tool discovery by @tanzhenxin in https://github.com/Qw",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.16"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20261002.a011f66944"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:50Z",
+"checked_at": "2026-10-03T04:08:07Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:49Z",
+"checked_at": "2026-10-03T04:08:06Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:51Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:08:07Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "qwenlm.github.io",
@@ -130,7 +135,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:50Z",
+"checked_at": "2026-10-03T04:24:06Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -138,19 +143,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-26T01:37:46Z",
-"github_forks": 3124,
+"github_forks": 3144,
 "github_language": "TypeScript",
-"github_open_issues": 1518,
-"github_pushed_at": "2026-09-29T00:00:28Z",
-"github_stars": 28200,
+"github_open_issues": 1598,
+"github_pushed_at": "2026-10-03T03:58:44Z",
+"github_stars": 28280,
 "github_topic": "ai-agent",
 "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview"
 },
 "slug": "qwenlm-qwen-code",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/QwenLM/qwen-code"
 }
@@ -174,7 +179,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",

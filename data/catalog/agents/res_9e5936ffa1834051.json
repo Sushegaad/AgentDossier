@@ -22,13 +22,13 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.16,
+"adoption": 24.18,
 "docs": 7.0,
 "domain_fit": 91.7,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.917,
@@ -41,7 +41,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 72.6,
+"score": 77.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -52,7 +52,7 @@
 "external_ids": {
 "github": "NanmiCoder/cc-haha"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -74,19 +74,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "cc-haha",
 "news": [],
 "protocols": {
 "a2a": {
+"not_checked": "no_publisher_domain",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "no_publisher_domain",
 "status": "unknown"
 },
 "mcp": {
-"status": "unknown"
+"evidence_url": "cchaha.ai",
+"note": "named in the resource's own tags",
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": null,
@@ -95,19 +100,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-31T17:30:14Z",
-"github_forks": 8589,
+"github_forks": 8596,
 "github_language": "TypeScript",
-"github_open_issues": 189,
-"github_pushed_at": "2026-09-27T18:30:09Z",
-"github_stars": 14752,
+"github_open_issues": 181,
+"github_pushed_at": "2026-10-01T18:49:34Z",
+"github_stars": 14841,
 "github_topic": "ai-agent",
 "homepage": "cchaha.ai"
 },
 "slug": "nanmicoder-cc-haha",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/NanmiCoder/cc-haha"
 }
@@ -133,7 +138,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": null,
-"protocols": 5,
+"protocols": 3,
 "security": null
 },
 "url": "cchaha.ai",

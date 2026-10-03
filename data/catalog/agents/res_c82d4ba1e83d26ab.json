@@ -50,7 +50,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,7 +66,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 1036,
+"cves": 1046,
 "incidents": 0,
 "links": [
 {
@@ -133,7 +133,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:19Z",
+"last_seen": "2026-10-03T03:59:11Z",
 "license": "Apache-2.0",
 "name": "Continue",
 "news": [
@@ -154,12 +154,15 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -168,8 +171,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:24:13Z",
-"cves": 1036,
+"checked_at": "2026-10-03T04:16:42Z",
+"cves": 1046,
 "source": "nvd",
 "tier": 1
 },
@@ -184,7 +187,7 @@
 "sources": [
 {
 "payload_hash": "cfcd4010357ef805ce34e8df6c45461346b4f786d7882b0cd40dc5bbb86145e3",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://github.com/continuedev/continue"
 }
