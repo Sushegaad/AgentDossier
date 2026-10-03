@@ -22,6 +22,19 @@ Operations (admin)
   POST /api/notify/test             send a test notification to every channel
   GET  /api/evidence/expiring       compliance records expiring or due for recheck
   POST /api/jobs/evidence-expiry    run the daily expiry job now
+Decision workflow (FR-28, FR-34, FR-35; members read and open, reviewers sign and move)
+  GET/POST /api/decisions           list / open a decision for a resource (runs the policy if given)
+  GET  /api/decisions/export.csv    every decision with its sign-off state
+  GET  /api/decisions/{id}          decision with events, approvals, comments, tasks, feedback
+  POST /api/decisions/{id}/stage    {stage, note}            reviewer
+  POST /api/decisions/{id}/sign     {role, verdict, note}    reviewer
+  POST /api/decisions/{id}/comments {body, parentId}
+  POST /api/decisions/{id}/tasks    {title, assignee, due}
+  GET  /api/decisions/{id}/export   ?format=json|csv — the decision packet with a trust snapshot
+  POST /api/tasks/{id}              {status, note}
+  GET  /api/tasks                   open review tasks (?assignee=)
+  GET/POST /api/feedback            feedback on a resource (?resourceId=, ?status=)
+  POST /api/feedback/{id}           {status}                 reviewer
   GET  /healthz, /api/status        liveness and instance info
 Static
   /catalog/*                        the catalog files (index.json, agents/…)
@@ -36,7 +49,7 @@ from pathlib import Path
 from typing import Any
 
 from fastapi import Body, FastAPI, HTTPException, Query, Request
-from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
+from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 from .. import __version__
@@ -45,6 +58,7 @@ from .auth import Auth
 from .catalog import Catalog
 from .notify import Notifier, catalog_diff, evidence_expiring, expiry_text, scan_text
 from .settings import Settings
+from .workflow import Actor, Workflow, WorkflowError
 
 log = logging.getLogger("agentdossier.server")
 
@@ -64,6 +78,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     auth = Auth(settings)
     state: dict[str, Any] = {"scan_lock": threading.Lock(), "scheduler": None, "config": None}
     notifier = Notifier(settings.notify, store, site=settings.site, tenant=None)
+    flow = Workflow(store.db, store.lock)
 
     if settings.auth_mode == "oidc":
         from starlette.middleware.sessions import SessionMiddleware  # noqa: PLC0415
@@ -190,8 +205,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return await call_next(request)
 
     # --- helpers ----------------------------------------------------------------------
-    def user(request: Request, admin: bool = False):
-        return auth.require(request, admin=admin)
+    def user(request: Request, admin: bool = False, reviewer: bool = False):
+        return auth.require(request, admin=admin, reviewer=reviewer)
 
     def to_result(hit) -> dict[str, Any]:  # noqa: ANN001
         r = hit.record
@@ -424,6 +439,183 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     def expiry_now(request: Request):
         u = user(request, admin=True)
         return run_expiry(f"manual:{u.subject}")
+
+    # --- decision workflow ------------------------------------------------------------------
+    def actor(request: Request, *, reviewer: bool = False) -> Actor:
+        u = user(request, reviewer=reviewer)
+        return Actor(u.subject, u.name, set(u.roles))
+
+    def _flow(fn):  # noqa: ANN001 - translate workflow errors into HTTP
+        try:
+            return fn()
+        except WorkflowError as exc:
+            raise HTTPException(exc.status, str(exc)) from exc
+
+    def _decision_event(d: dict[str, Any], what: str, who: str) -> None:
+        store.audit(who, f"decision.{what}", f"id={d['id']} resource={d['resource_id']} stage={d['stage']}")
+        notifier.send(
+            "decision.changed",
+            f"decision #{d['id']} {what}: {d['title']} → {d['stage']}",
+            f"{who} — {what}\nDecision #{d['id']}: {d['title']}\nStage: {d['stage']}\n"
+            f"Sign-offs: approved {', '.join(d['signoff']['approved']) or '-'}; missing {', '.join(d['signoff']['missing']) or '-'}\n"
+            f"{settings.site.rstrip('/')}/api/decisions/{d['id']}",
+            {"decisionId": d["id"], "stage": d["stage"], "signoff": d["signoff"], "by": who, "what": what},
+        )
+
+    @app.get("/api/decisions")
+    def list_decisions(request: Request, stage: str | None = None, resourceId: str | None = None):  # noqa: N803
+        user(request)
+        return {"decisions": flow.decisions(stage=stage, resource_id=resourceId)}
+
+    @app.get("/api/decisions/export.csv")
+    def decisions_csv(request: Request):
+        user(request)
+        return PlainTextResponse(flow.decisions_csv(), media_type="text/csv")
+
+    @app.post("/api/decisions", status_code=201)
+    def open_decision(request: Request, body: dict[str, Any] = Body(...)):
+        a = actor(request)
+        rid = body.get("resourceId")
+        if not rid:
+            raise HTTPException(400, "resourceId is required")
+        res = catalog.resource(str(rid))
+        if not res:
+            raise HTTPException(404, "unknown resource")
+        verdict = None
+        pid = body.get("policyId")
+        if pid:
+            if pid not in catalog.policies:
+                raise HTTPException(404, f"unknown policyId {pid}")
+            results = catalog.qualify(pid, [res["id"]])
+            verdict = results[0]["verdict"] if results else None
+        d = _flow(
+            lambda: flow.create_decision(
+                a,
+                resource_id=res["id"],
+                resource_name=res.get("name"),
+                title=body.get("title"),
+                policy_id=pid,
+                required_roles=body.get("requiredRoles"),
+                owner=body.get("owner"),
+                notes=body.get("notes"),
+                verdict=verdict,
+            )
+        )
+        _decision_event(d, "opened", a.subject)
+        return d
+
+    @app.get("/api/decisions/{did}")
+    def get_decision(request: Request, did: int):
+        user(request)
+        return _flow(lambda: flow.decision(did))
+
+    @app.post("/api/decisions/{did}/stage")
+    def set_stage(request: Request, did: int, body: dict[str, Any] = Body(...)):
+        a = actor(request, reviewer=True)
+        stage = str(body.get("stage") or "")
+        verdict = None
+        d0 = _flow(lambda: flow.decision(did))
+        if stage == "approved" and d0.get("policy_id"):
+            results = catalog.qualify(d0["policy_id"], [d0["resource_id"]])
+            verdict = results[0]["verdict"] if results else None
+        d = _flow(lambda: flow.transition(a, did, stage, note=body.get("note"), verdict=verdict))
+        _decision_event(d, f"moved to {stage}", a.subject)
+        return d
+
+    @app.post("/api/decisions/{did}/sign")
+    def sign_decision(request: Request, did: int, body: dict[str, Any] = Body(...)):
+        a = actor(request, reviewer=True)
+        d = _flow(
+            lambda: flow.sign(
+                a, did, str(body.get("role") or ""), str(body.get("verdict") or ""), body.get("note")
+            )
+        )
+        _decision_event(d, f"{body.get('role')} {body.get('verdict')}", a.subject)
+        return d
+
+    @app.post("/api/decisions/{did}/comments", status_code=201)
+    def add_comment(request: Request, did: int, body: dict[str, Any] = Body(...)):
+        a = actor(request)
+        c = _flow(lambda: flow.comment(a, did, str(body.get("body") or ""), body.get("parentId")))
+        store.audit(a.subject, "decision.comment", f"id={did} comment={c['id']}")
+        return c
+
+    @app.post("/api/decisions/{did}/tasks", status_code=201)
+    def add_task(request: Request, did: int, body: dict[str, Any] = Body(...)):
+        a = actor(request)
+        t = _flow(
+            lambda: flow.add_task(
+                a, did, str(body.get("title") or ""), assignee=body.get("assignee"), due=body.get("due")
+            )
+        )
+        store.audit(a.subject, "decision.task", f"id={did} task={t['id']}")
+        return t
+
+    @app.get("/api/decisions/{did}/export")
+    def export_decision(request: Request, did: int, format: str = Query("json", pattern="^(json|csv)$")):  # noqa: A002
+        u = user(request)
+        d = _flow(lambda: flow.decision(did))
+        res = catalog.resource(d["resource_id"])
+        packet = flow.packet(
+            did, resource=res, instance={**catalog.meta, "site": settings.site, "exported_by": u.subject}
+        )
+        store.audit(u.subject, "decision.export", f"id={did} format={format}")
+        if format == "csv":
+            return PlainTextResponse(
+                flow.packet_csv(packet),
+                media_type="text/csv",
+                headers={"Content-Disposition": f'attachment; filename="decision-{did}.csv"'},
+            )
+        return JSONResponse(
+            packet, headers={"Content-Disposition": f'attachment; filename="decision-{did}.json"'}
+        )
+
+    @app.get("/api/tasks")
+    def tasks(request: Request, assignee: str | None = None):
+        user(request)
+        return {"tasks": flow.open_tasks(assignee)}
+
+    @app.post("/api/tasks/{tid}")
+    def set_task(request: Request, tid: int, body: dict[str, Any] = Body(...)):
+        a = actor(request)
+        t = _flow(lambda: flow.set_task(a, tid, str(body.get("status") or ""), body.get("note")))
+        store.audit(a.subject, "task.status", f"task={tid} status={t['status']}")
+        return t
+
+    @app.get("/api/feedback")
+    def list_feedback(request: Request, resourceId: str | None = None, status: str | None = None):  # noqa: N803
+        user(request)
+        out: dict[str, Any] = {"feedback": flow.feedback_for(resourceId, status)}
+        if resourceId:
+            out["summary"] = flow.feedback_summary(resourceId)
+        return out
+
+    @app.post("/api/feedback", status_code=201)
+    def add_feedback(request: Request, body: dict[str, Any] = Body(...)):
+        a = actor(request)
+        rid = body.get("resourceId")
+        res = catalog.resource(str(rid or ""))
+        if not res:
+            raise HTTPException(404, "unknown resource")
+        f = _flow(
+            lambda: flow.add_feedback(
+                a,
+                resource_id=res["id"],
+                kind=str(body.get("kind") or "note"),
+                body=body.get("body"),
+                rating=body.get("rating"),
+                decision_id=body.get("decisionId"),
+            )
+        )
+        store.audit(a.subject, "feedback.add", f"resource={res['id']} kind={f['kind']} id={f['id']}")
+        return f
+
+    @app.post("/api/feedback/{fid}")
+    def triage_feedback(request: Request, fid: int, body: dict[str, Any] = Body(...)):
+        a = actor(request, reviewer=True)
+        f = _flow(lambda: flow.set_feedback(a, fid, str(body.get("status") or "")))
+        store.audit(a.subject, "feedback.status", f"id={fid} status={f['status']}")
+        return f
 
     # --- OIDC login flow --------------------------------------------------------------------
     if settings.auth_mode == "oidc":

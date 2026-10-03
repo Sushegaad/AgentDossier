@@ -13,7 +13,7 @@ Three modes, chosen by ``AGENTDOSSIER_AUTH_MODE``:
 from __future__ import annotations
 
 import hmac
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
 
 from fastapi import HTTPException, Request
@@ -27,6 +27,17 @@ class User:
     name: str
     admin: bool = False
     via: str = "none"
+    # member: read, comment, open decisions, feedback · reviewer: sign off, change stages · admin: operate
+    roles: set[str] = field(default_factory=lambda: {"member"})
+
+    def __post_init__(self) -> None:
+        self.roles = set(self.roles) | {"member"}
+        if self.admin:
+            self.roles |= {"reviewer", "admin"}
+
+    @property
+    def reviewer(self) -> bool:
+        return "reviewer" in self.roles
 
 
 class Auth:
@@ -68,15 +79,19 @@ class Auth:
             if sess:
                 groups = sess.get("groups") or []
                 admin = bool(self.settings.oidc_admin_group and self.settings.oidc_admin_group in groups)
+                roles = {"member"}
+                if self.settings.oidc_reviewer_group and self.settings.oidc_reviewer_group in groups:
+                    roles.add("reviewer")
                 return User(
                     sess.get("sub", "?"),
                     sess.get("name") or sess.get("email") or "user",
                     admin=admin,
                     via="oidc",
+                    roles=roles,
                 )
         return None
 
-    def require(self, request: Request, *, admin: bool = False) -> User:
+    def require(self, request: Request, *, admin: bool = False, reviewer: bool = False) -> User:
         u = self.current(request)
         if u is None:
             raise HTTPException(
@@ -86,4 +101,6 @@ class Auth:
             )
         if admin and not u.admin:
             raise HTTPException(403, "administrator rights required")
+        if reviewer and not u.reviewer:
+            raise HTTPException(403, "reviewer rights required")
         return u

@@ -41,6 +41,7 @@ class Settings:
     oidc_client_id: str | None = field(default_factory=lambda: os.environ.get("OIDC_CLIENT_ID"))
     oidc_client_secret: str | None = field(default_factory=lambda: os.environ.get("OIDC_CLIENT_SECRET"))
     oidc_admin_group: str | None = field(default_factory=lambda: os.environ.get("OIDC_ADMIN_GROUP"))
+    oidc_reviewer_group: str | None = field(default_factory=lambda: os.environ.get("OIDC_REVIEWER_GROUP"))
     session_secret: str | None = field(default_factory=lambda: os.environ.get("SESSION_SECRET"))
     scan_on_start: bool = field(
         default_factory=lambda: os.environ.get("AGENTDOSSIER_SCAN_ON_START", "0") == "1"
