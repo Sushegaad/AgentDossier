@@ -26,6 +26,7 @@ services:
       OIDC_CLIENT_ID: ${OIDC_CLIENT_ID:-}
       OIDC_CLIENT_SECRET: ${OIDC_CLIENT_SECRET:-}
       OIDC_ADMIN_GROUP: ${OIDC_ADMIN_GROUP:-agentdossier-admins}
+      OIDC_REVIEWER_GROUP: ${OIDC_REVIEWER_GROUP:-agentdossier-reviewers}
       SESSION_SECRET: ${SESSION_SECRET:-}
       # --- scanner credentials referenced by enterprise.json auth.headers_from_env ----
       AGENTREG_INTERNAL_TOKEN: ${AGENTREG_INTERNAL_TOKEN:-}

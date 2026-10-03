@@ -77,6 +77,8 @@ admin can start one any time with `POST /api/scan`.
 | `token` | `Authorization: Bearer $AGENTDOSSIER_API_TOKEN` | `$AGENTDOSSIER_ADMIN_TOKEN` | service accounts, CI, agents |
 | `oidc` | anyone who signs in at `/auth/login` through your IdP | members of `OIDC_ADMIN_GROUP` (from the `groups` claim); tokens still work for APIs | people using the web UI |
 
+Roles: every signed-in user is a **member** (read, open decisions, comment, add tasks and feedback); members of `OIDC_REVIEWER_GROUP` — and the admin token — are **reviewers** (sign off, move stages, triage feedback); admins also operate the instance.
+
 OIDC uses standard discovery (`<issuer>/.well-known/openid-configuration`); the
 callback is `/auth/callback`. Put the container behind your TLS-terminating
 proxy and set `AGENTDOSSIER_SITE` to the public URL.
@@ -139,6 +141,45 @@ curl -s -X POST -H "Authorization: Bearer $AGENTDOSSIER_ADMIN_TOKEN" localhost:8
 curl -s -X POST -H "Authorization: Bearer $AGENTDOSSIER_ADMIN_TOKEN" localhost:8080/api/scan
 curl -s -H "Authorization: Bearer $AGENTDOSSIER_ADMIN_TOKEN" localhost:8080/api/deliveries
 ```
+
+### Decision workflow
+
+`/api/decisions` keeps the organisation's record per agent (FR-28, FR-34, FR-35):
+
+```
+candidate ──► under_review ──► approved ──► retired
+                  │                ▲
+                  ├──► rejected    │
+                  └──► deferred ───┘
+```
+
+1. A member opens a decision for a resource: `POST /api/decisions {resourceId, policyId?, requiredRoles?}`.
+   With a policy the verdict from `/qualify` is recorded on the opening event and
+   again on approval, so the packet shows what the policy said at both moments.
+   `requiredRoles` defaults to `security` and `business`; any of `security`,
+   `legal`, `procurement`, `business`, `privacy`, `architecture`.
+2. Reviewers sign per role: `POST /api/decisions/{id}/sign {role, verdict: approve|reject, note}`.
+   The first sign-off moves the decision under review; a reject moves it to
+   `rejected` (it can be reopened with `stage: under_review` once the blocker is
+   gone). The latest verdict per role counts.
+3. `POST /api/decisions/{id}/stage {stage: approved}` succeeds only when every
+   required role has approved and none has rejected — the enterprise gate
+   "end-to-end approval recorded with sign-offs".
+4. Discussion and follow-ups live on the decision: `POST …/comments {body, parentId}`,
+   `POST …/tasks {title, assignee, due}`, `POST /api/tasks/{id} {status: done|cancelled}`,
+   `GET /api/tasks?assignee=`.
+5. Feedback on a resource (ratings 1–5, corrections, incidents, notes) is
+   `POST /api/feedback {resourceId, kind, body, rating, decisionId?}`; reviewers
+   triage it with `POST /api/feedback/{id} {status}`. `GET /api/feedback?resourceId=`
+   returns the items and a summary (count, open, average rating).
+
+**Export.** `GET /api/decisions/{id}/export` (`?format=csv` for a flat file)
+returns the decision packet: lifecycle events, sign-offs, comments, tasks,
+feedback and a snapshot of the agent's trust profile, compliance records,
+security and issues at export time, plus who exported it and from which
+catalog build. `GET /api/decisions/export.csv` lists every decision with its
+sign-off state for a GRC import. Every workflow action is in the audit trail and
+`decision.changed` goes out through the notification channels.
 
 ### Backups and upgrades
 

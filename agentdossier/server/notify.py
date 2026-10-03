@@ -7,6 +7,7 @@ Events
 ``catalog.changed``    resources appeared, disappeared or changed trust tier (sent with scan.done)
 ``evidence.expiring``  compliance records with ``valid_until`` inside the warning window,
                        or whose ``next_check`` date has passed (daily job)
+``decision.changed``   a decision moved stage or received a sign-off (FR-28)
 ``test``               ``POST /api/notify/test``
 
 Every attempt is written to the ``deliveries`` table so an operator can see what
@@ -36,7 +37,7 @@ from ..util import now_iso
 
 log = logging.getLogger("agentdossier.notify")
 
-EVENTS = ("scan.done", "scan.failed", "catalog.changed", "evidence.expiring", "test")
+EVENTS = ("scan.done", "scan.failed", "catalog.changed", "evidence.expiring", "decision.changed", "test")
 
 
 @dataclass
