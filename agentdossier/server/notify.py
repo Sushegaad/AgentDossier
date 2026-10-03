@@ -87,6 +87,8 @@ class Notifier:
         self.store = store
         self.site = site.rstrip("/")
         self.tenant = tenant
+        # extra channels (Slack, Teams, Jira, ServiceNow, GRC): see server/integrations.py
+        self.integrations: list[Any] = []
 
     @property
     def channels(self) -> list[str]:
@@ -95,6 +97,7 @@ class Notifier:
             out.append("email")
         if self.settings.webhook_enabled:
             out.append("webhook")
+        out += [i.name for i in self.integrations]
         return out
 
     def send(
@@ -122,6 +125,9 @@ class Notifier:
             results.append(
                 self._attempt("webhook", self.settings.webhook_url or "", lambda: self._webhook(event, body))
             )
+        for integ in self.integrations:
+            if integ.wants(event, body):
+                results.append(self._attempt(integ.name, integ.target, lambda i=integ: i.send(event, body)))
         for r in results:
             if self.store is not None:
                 self.store.record_delivery(

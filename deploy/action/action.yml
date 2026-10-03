@@ -1,0 +1,38 @@
+name: AgentDossier policy check
+description: Qualify the agents a repository depends on (agents.lock.json) against a policy on your self-hosted AgentDossier and fail the job on a disallowed verdict.
+branding:
+  icon: shield
+  color: red
+inputs:
+  manifest:
+    description: Path to the agents.lock.json manifest
+    default: agents.lock.json
+  registry:
+    description: Base URL of the AgentDossier instance (overrides manifest.registry)
+    required: false
+  token:
+    description: Bearer token for the registry (a reader token is enough)
+    required: false
+  policy:
+    description: Policy id to qualify against (overrides manifest.policyId)
+    required: false
+  fail-on:
+    description: Fail when any verdict is this severe or worse — disallowed, unknown or needs_review
+    default: disallowed
+outputs:
+  result:
+    description: Path to the JSON result
+    value: ${{ steps.check.outputs.result }}
+runs:
+  using: composite
+  steps:
+    - id: check
+      shell: bash
+      env:
+        AGENTDOSSIER_REGISTRY: ${{ inputs.registry }}
+        AGENTDOSSIER_TOKEN: ${{ inputs.token }}
+        AGENTDOSSIER_POLICY: ${{ inputs.policy }}
+        AGENTDOSSIER_FAIL_ON: ${{ inputs.fail-on }}
+      run: |
+        python3 "${{ github.action_path }}/policy_check.py" "${{ inputs.manifest }}" --json "$RUNNER_TEMP/agentdossier-policy.json"
+        echo "result=$RUNNER_TEMP/agentdossier-policy.json" >> "$GITHUB_OUTPUT"

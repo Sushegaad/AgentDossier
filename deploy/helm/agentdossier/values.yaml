@@ -30,6 +30,13 @@ env:
   AGENTDOSSIER_NOTIFY_EVENTS: ""
   AGENTDOSSIER_EXPIRY_CRON: "0 7 * * *"
   AGENTDOSSIER_EXPIRY_WARNING_DAYS: "30"
+  JIRA_BASE_URL: ""
+  JIRA_EMAIL: ""
+  JIRA_PROJECT_KEY: ""
+  JIRA_ISSUE_TYPE: Task
+  SERVICENOW_INSTANCE_URL: ""
+  SERVICENOW_USER: ""
+  SERVICENOW_TABLE: incident
 
 # Secrets. Either give values here (rendered into a Secret — fine for a test cluster) or
 # point `existingSecret` at a Secret you manage with your own tooling; keys are the env names.
@@ -42,6 +49,12 @@ secrets:
   SMTP_USER: ""
   SMTP_PASSWORD: ""
   AGENTDOSSIER_WEBHOOK_SECRET: ""
+  SLACK_WEBHOOK_URL: ""
+  TEAMS_WEBHOOK_URL: ""
+  JIRA_API_TOKEN: ""
+  SERVICENOW_PASSWORD: ""
+  GRC_WEBHOOK_URL: ""
+  GRC_WEBHOOK_SECRET: ""
   NVD_API_KEY: ""
 existingSecret: ""
 
