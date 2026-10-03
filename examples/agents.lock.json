@@ -1,0 +1,8 @@
+{
+  "registry": "https://agents.corp.example.com",
+  "policyId": "pol_insurer_default",
+  "agents": [
+    { "slug": "acme-claims-intake-agent", "use": "claims intake" },
+    { "identifier": "urn:air:acme-corp:catalog:acme-document-triage", "use": "document triage" }
+  ]
+}

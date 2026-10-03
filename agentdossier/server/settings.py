@@ -7,6 +7,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from ..util import ROOT
+from .integrations import IntegrationSettings
 from .notify import NotifySettings
 
 
@@ -48,6 +49,7 @@ class Settings:
     )
     # notifications: email through SMTP_* and/or a signed webhook; see server/notify.py
     notify: NotifySettings = field(default_factory=lambda: notify_from_env())
+    integrations: IntegrationSettings = field(default_factory=IntegrationSettings.from_env)
     start_scheduler: bool = field(
         default_factory=lambda: os.environ.get("AGENTDOSSIER_SCHEDULER", "1") == "1"
     )
@@ -67,6 +69,7 @@ class Settings:
         if self.auth_mode not in ("none", "token", "oidc"):
             problems.append(f"unknown AGENTDOSSIER_AUTH_MODE {self.auth_mode}")
         problems += self.notify.validate()
+        problems += self.integrations.validate()
         return problems
 
 

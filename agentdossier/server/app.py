@@ -35,6 +35,8 @@ Decision workflow (FR-28, FR-34, FR-35; members read and open, reviewers sign an
   GET  /api/tasks                   open review tasks (?assignee=)
   GET/POST /api/feedback            feedback on a resource (?resourceId=, ?status=)
   POST /api/feedback/{id}           {status}                 reviewer
+Integrations (server/integrations.py): Slack, Teams, Jira, ServiceNow, GRC webhook are extra
+  notification channels configured by environment; GET /api/status lists the active ones.
   GET  /healthz, /api/status        liveness and instance info
 Static
   /catalog/*                        the catalog files (index.json, agents/…)
@@ -56,6 +58,7 @@ from .. import __version__
 from ..util import now_iso
 from .auth import Auth
 from .catalog import Catalog
+from .integrations import build_integrations
 from .notify import Notifier, catalog_diff, evidence_expiring, expiry_text, scan_text
 from .settings import Settings
 from .workflow import Actor, Workflow, WorkflowError
@@ -79,6 +82,12 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     state: dict[str, Any] = {"scan_lock": threading.Lock(), "scheduler": None, "config": None}
     notifier = Notifier(settings.notify, store, site=settings.site, tenant=None)
     flow = Workflow(store.db, store.lock)
+    settings.integrations.packet_for = lambda did: flow.packet(
+        did,
+        resource=catalog.resource(flow.decision(did)["resource_id"]),
+        instance={**catalog.meta, "site": settings.site},
+    )
+    notifier.integrations = build_integrations(settings.integrations)
 
     if settings.auth_mode == "oidc":
         from starlette.middleware.sessions import SessionMiddleware  # noqa: PLC0415
@@ -344,6 +353,11 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             raise HTTPException(404, f"unknown policyId {policy}")
         ids = body.get("resourceIds")
         results = catalog.qualify(policy, ids)
+        not_found = [i for i in ids or [] if catalog.resource(str(i)) is None]
+        for r in results:  # echo the slug so callers that asked by slug can match the answer
+            rec = catalog.by_id.get(r["resourceId"])
+            if rec:
+                r["slug"] = rec.get("slug")
         store.audit(
             u.subject,
             "qualify",
@@ -353,6 +367,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             "policyId": policy if isinstance(policy, str) else policy.get("id", "inline"),
             "count": len(results),
             "results": results,
+            "notFound": not_found,
         }
 
     # --- operations -------------------------------------------------------------------

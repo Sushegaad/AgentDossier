@@ -106,6 +106,30 @@ backoff) is recorded and visible at `GET /api/deliveries`; `GET
 and `POST /api/jobs/evidence-expiry` runs it now. Restrict events with
 `AGENTDOSSIER_NOTIFY_EVENTS=catalog.changed,scan.failed,evidence.expiring`.
 
+### Integrations
+
+Each integration is one more notification channel: same events, same delivery
+log (`GET /api/deliveries`), configured by environment (`deploy/.env.example`).
+
+| Channel | Setting | Receives |
+| --- | --- | --- |
+| Slack | `SLACK_WEBHOOK_URL` (incoming webhook) | every enabled event, as a Block Kit message |
+| Microsoft Teams | `TEAMS_WEBHOOK_URL` (incoming webhook) | every enabled event, as an Adaptive Card |
+| Jira | `JIRA_BASE_URL`, `JIRA_EMAIL`, `JIRA_API_TOKEN`, `JIRA_PROJECT_KEY`, `JIRA_ISSUE_TYPE` | one issue for `scan.failed`, `evidence.expiring`, and a decision opened for review (labels `agentdossier`, `<event>`) |
+| ServiceNow | `SERVICENOW_INSTANCE_URL`, `SERVICENOW_USER`, `SERVICENOW_PASSWORD`, `SERVICENOW_TABLE` | the same actionable events as records in the table (default `incident`) |
+| GRC webhook | `GRC_WEBHOOK_URL`, `GRC_WEBHOOK_SECRET` | the full decision packet, signed, when a decision is approved, rejected or retired |
+
+### CI policy check (GitHub Action)
+
+`deploy/action` is a composite action that reads a repository's
+`agents.lock.json` (the agents it depends on; schema in
+`schema/agents_lock.schema.json`), calls `POST /qualify` on your instance and
+fails the job when any verdict is `disallowed` (or `needs_review` / `unknown`
+with `fail-on`). It prints a table into the job summary and one error
+annotation per blocking agent. The script is standard-library Python and runs
+anywhere: `python3 deploy/action/policy_check.py agents.lock.json --registry … --token …`.
+See `deploy/action/README.md` and `examples/agents.lock.json`.
+
 ### Kubernetes (Helm)
 
 `deploy/helm/agentdossier` deploys the same container: one replica (the scanner
