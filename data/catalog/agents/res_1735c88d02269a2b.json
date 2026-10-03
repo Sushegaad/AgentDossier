@@ -23,7 +23,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.63,
+"adoption": 26.64,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -51,7 +51,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.63,
+"adoption": 26.64,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -81,7 +81,7 @@
 "external_ids": {
 "github": "Yeachan-Heo/oh-my-claudecode"
 },
-"first_seen": "2026-09-29T00:07:35Z",
+"first_seen": "2026-10-03T04:00:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -103,10 +103,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:35Z",
+"last_seen": "2026-10-03T04:00:06Z",
 "license": "MIT",
 "name": "oh-my-claudecode",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-01T05:18:28Z",
+"headline": "oh-my-claudecode Release v5.6.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "# oh-my-claudecode v5.6.0: omc ralph verify, omc ralph afk, risk-ordered stories, repo\n\n## Release Notes\n\nRelease with **19 new features**, **47 bug fixes**, **7 other changes** across **78 merged PRs**.\n\n### Highlights\n\n- **feat(ralph): om",
+"tag": "product_update",
+"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.6.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-22T01:34:18Z",
@@ -117,33 +128,22 @@
 "summary": "# oh-my-claudecode v5.5.0: jev — advisory, point registry and, jev — ralph\n\n## Release Notes\n\nRelease with **22 new features**, **24 bug fixes**, **5 other changes** across **57 merged PRs**.\n\n### Highlights\n\n- **feat(hooks): jev — advisory",
 "tag": "product_update",
 "url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.5.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-11T12:51:48Z",
-"headline": "oh-my-claudecode v5.4.0",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "# oh-my-claudecode v5.4.0: respect CLAUDE_CODE_OAUTH_TOKEN when, add agent-doc-discipline skill, pre-flight danger scan\n\n## Release Notes\n\nRelease with **5 new features**, **10 bug fixes** across **16 merged PRs**.\n\n### Highlights\n\n- **feat",
-"tag": "product_update",
-"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.4.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:35Z",
+"checked_at": "2026-10-03T04:07:53Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:35Z",
+"checked_at": "2026-10-03T04:07:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:36Z",
+"checked_at": "2026-10-03T04:07:54Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -153,7 +153,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:26Z",
+"checked_at": "2026-10-03T04:23:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -161,19 +161,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-09T03:36:29Z",
-"github_forks": 3520,
+"github_forks": 3531,
 "github_language": "TypeScript",
-"github_open_issues": 1,
-"github_pushed_at": "2026-09-28T18:39:25Z",
-"github_stars": 39395,
+"github_open_issues": 3,
+"github_pushed_at": "2026-10-02T21:55:26Z",
+"github_stars": 39542,
 "github_topic": "ai-agents",
 "homepage": "https://oh-my-claudecode.dev"
 },
 "slug": "yeachan-heo-oh-my-claudecode",
 "sources": [
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
 }

@@ -19,7 +19,7 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.",
+"description": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
@@ -27,10 +27,10 @@
 "adoption": 27.09,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -43,7 +43,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 68.3,
+"score": 71.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -55,10 +55,10 @@
 "adoption": 27.09,
 "docs": 7.0,
 "domain_fit": 71.3,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
@@ -71,7 +71,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 73.5,
+"score": 77.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -82,7 +82,7 @@
 "external_ids": {
 "github": "zhayujie/CowAgent"
 },
-"first_seen": "2026-09-29T00:07:35Z",
+"first_seen": "2026-10-03T04:00:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -165,13 +165,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "merged_ids": [
 "res_6dfa521154fabef5"
 ],
 "name": "CowAgent",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-09-30T02:14:19Z",
+"headline": "CowAgent 2.2.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "🌐 [English](https://docs.cowagent.ai/releases/v2.2.0) | [中文](https://docs.cowagent.ai/zh/releases/v2.2.0)\r\n\r\n## 🧩 Capabilities Center\r\n\r\nThe former **Skills** menu is now **Capabilities**, a single place in the Web console and desktop clien",
+"tag": "product_update",
+"url": "https://github.com/zhayujie/CowAgent/releases/tag/2.2.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-14T06:38:17Z",
@@ -182,24 +193,13 @@
 "summary": "🌐 [English](https://docs.cowagent.ai/releases/v2.1.9) | [中文](https://docs.cowagent.ai/zh/releases/v2.1.9)\r\n\r\n> This is a refinement release for the [2.1.8 multi-Agent version](https://docs.cowagent.ai/releases/v2.1.8), building on it with a",
 "tag": "product_update",
 "url": "https://github.com/zhayujie/CowAgent/releases/tag/2.1.9"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-11T01:54:03Z",
-"headline": "CowAgent 2.1.8",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "🌐 [English](https://docs.cowagent.ai/releases/v2.1.8) | [中文](https://docs.cowagent.ai/zh/releases/v2.1.8)\r\n\r\n## 🤝 Multi-Agent Teams\r\n\r\nCowAgent is now a **multi-Agent framework**. You can create multiple Agents, each with its own role, to f",
-"tag": "product_update",
-"url": "https://github.com/zhayujie/CowAgent/releases/tag/2.1.8"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://cowagent.ai/.well-known/agent.json",
-"checked_at": "2026-09-29T00:14:39Z",
+"checked_at": "2026-10-03T04:07:06Z",
 "errors": [
 "not valid JSON"
 ],
@@ -207,7 +207,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-29T00:14:38Z",
+"checked_at": "2026-10-03T04:07:05Z",
 "errors": [
 "https://cowagent.ai/.well-known/ard.json: not valid JSON",
 "https://cowagent.ai/.well-known/ai-catalog.json: not valid JSON"
@@ -216,10 +216,15 @@
 "status": "invalid"
 },
 "mcp": {
+"evidence_url": "https://cowagent.ai",
+"note": "named in the resource's own tags",
+"probe": {
 "card_url": "https://cowagent.ai/.well-known/mcp.json",
-"checked_at": "2026-09-29T00:14:39Z",
-"parser_version": "mcp-2025-06-18",
+"checked_at": "2026-10-03T04:07:06Z",
 "status": "invalid"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "cowagent.ai",
@@ -227,7 +232,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:18Z",
+"checked_at": "2026-10-03T04:23:39Z",
 "cves": 13,
 "source": "nvd",
 "tier": 1
@@ -235,19 +240,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-08-07T08:33:41Z",
-"github_forks": 10374,
+"github_forks": 10373,
 "github_language": "Python",
-"github_open_issues": 52,
-"github_pushed_at": "2026-09-28T09:05:10Z",
-"github_stars": 47154,
+"github_open_issues": 82,
+"github_pushed_at": "2026-10-02T07:43:19Z",
+"github_stars": 47215,
 "github_topic": "ai-agents",
 "homepage": "https://cowagent.ai"
 },
 "slug": "zhayujie-cowagent",
 "sources": [
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/zhayujie/CowAgent"
 }
@@ -268,6 +273,7 @@
 "multi-agent",
 "openai",
 "openclaw",
+"personal-agent",
 "skills"
 ],
 "tenant": null,
@@ -275,7 +281,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://cowagent.ai",

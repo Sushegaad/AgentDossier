@@ -114,7 +114,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -197,19 +197,22 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:19Z",
+"last_seen": "2026-10-03T03:59:11Z",
 "license": "BSD-3-Clause",
 "name": "Open WebUI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -218,7 +221,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:23:58Z",
+"checked_at": "2026-10-03T04:16:11Z",
 "cves": 145,
 "source": "nvd",
 "tier": 1
@@ -234,7 +237,7 @@
 "sources": [
 {
 "payload_hash": "85ea5ffc878375e6afa26b15618c522e900b3a273e1ae7d210522c7d84104cf7",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://github.com/open-webui/open-webui"
 }

@@ -24,10 +24,10 @@
 "adoption": 26.74,
 "docs": 7.0,
 "domain_fit": 87.5,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.875,
@@ -40,7 +40,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 74.8,
+"score": 79.2,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -51,7 +51,7 @@
 "external_ids": {
 "github": "Hmbown/Codewhale"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -134,7 +134,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "Codewhale",
 "news": [
@@ -164,19 +164,24 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:14:30Z",
+"checked_at": "2026-10-03T04:06:58Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:14:28Z",
+"checked_at": "2026-10-03T04:06:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:14:31Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://codewhale.net/",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:06:59Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "codewhale.net",
@@ -184,7 +189,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:24Z",
+"checked_at": "2026-10-03T04:23:44Z",
 "cves": 13,
 "source": "nvd",
 "tier": 1
@@ -192,19 +197,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-19T18:21:01Z",
-"github_forks": 3565,
+"github_forks": 3564,
 "github_language": "Rust",
-"github_open_issues": 184,
-"github_pushed_at": "2026-09-29T00:04:55Z",
-"github_stars": 41038,
+"github_open_issues": 197,
+"github_pushed_at": "2026-10-02T21:15:14Z",
+"github_stars": 41035,
 "github_topic": "ai-agent",
 "homepage": "https://codewhale.net/"
 },
 "slug": "hmbown-codewhale",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/Hmbown/Codewhale"
 }
@@ -227,7 +232,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://codewhale.net/",

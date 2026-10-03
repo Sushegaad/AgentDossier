@@ -14,7 +14,7 @@
 "external_ids": {
 "huggingface_space": "smolagents/computer-agent"
 },
-"first_seen": "2026-09-29T00:07:31Z",
+"first_seen": "2026-10-03T04:00:03Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -36,19 +36,22 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:31Z",
+"last_seen": "2026-10-03T04:00:03Z",
 "license": null,
 "name": "Computer Agent",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -57,7 +60,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:28:30Z",
+"checked_at": "2026-10-03T04:21:04Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -72,8 +75,8 @@
 "slug": "smolagents-computer-agent",
 "sources": [
 {
-"payload_hash": "a0992693f7d0a52045903435887764010e7037b275d9faca10dd21c3cf4f2e3f",
-"retrieved_at": "2026-09-29T00:07:31Z",
+"payload_hash": "894766b9c2b2c90cd0138336ecd23e0ddba85c5e38eca4048e9b976055040567",
+"retrieved_at": "2026-10-03T04:00:03Z",
 "system": "huggingface",
 "url": "https://huggingface.co/spaces/smolagents/computer-agent"
 }

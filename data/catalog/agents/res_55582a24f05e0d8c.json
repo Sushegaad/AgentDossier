@@ -16,16 +16,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/langchain, inc.",
 "framework": "csa_star",
 "issued": "2025-11-25",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:18:06Z",
+"retrieved_at": "2026-10-03T04:10:20Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -245,7 +245,7 @@
 "external_ids": {
 "github": "langchain-ai/langchain"
 },
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -261,7 +261,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 71,
+"cves": 74,
 "incidents": 0,
 "links": [
 {
@@ -328,7 +328,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:35Z",
+"last_seen": "2026-10-03T04:00:06Z",
 "license": "MIT",
 "merged_ids": [
 "res_8d4b18cd3300a582"
@@ -337,37 +337,44 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-28T20:46:50Z",
-"headline": "langchain langchain-fireworks==1.7.0",
+"date": "2026-10-02T15:46:49Z",
+"headline": "langchain langchain-text-splitters==1.1.3",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "Changes since langchain-fireworks==1.6.3\n\nhotfix(fireworks): replace unavailable integration test model (#40890)\nrelease(fireworks): 1.7.0 (#40889)\nfeat(fireworks): add prompt caching middleware (#38823)\nfix(fireworks): classify mid-stream",
+"summary": "Changes since langchain-text-splitters==1.1.2\n\nrelease(text-splitters): 1.1.3 (#41001)\nchore(deps): bump the minor-and-patch group across 3 directories with 4 updates (#40969)\nchore(deps): bump tornado from 6.5.9 to 6.5.10 in /libs/text-spl",
 "tag": "product_update",
-"url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.0"
+"url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D1.1.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-28T20:17:43Z",
-"headline": "langchain langchain==1.4.3",
+"date": "2026-09-30T15:12:17Z",
+"headline": "langchain langchain-openai==1.6.7",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "Changes since langchain==1.4.2\n\nrelease(langchain): 1.4.3 (#40888)\nfix(langchain): sanitize cache settings for fallback models (#40886)\nfeat(langchain): support Bedrock Mantle chat models in `init_chat_model` (#40837)\nfix(langchain): recogn",
+"summary": "Changes since langchain-openai==1.6.6\n\nrelease(openai): 1.6.7 (#40933)\nchore(model-profiles): refresh model profile data (#40924)\ntest(openai): drop retired completions live tests (#40910)\nchore(model-profiles): refresh model profile data (",
 "tag": "product_update",
-"url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.3"
+"url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.7"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
-"status": "unknown"
+"checked_by": "maintainer",
+"checked_on": "2026-10-02",
+"evidence_url": "https://github.com/langchain-ai/langchain-mcp-adapters",
+"note": "langchain-mcp-adapters (official LangChain organisation)",
+"source": "curated_claim",
+"status": "claimed"
 }
 },
 "publisher_domain": "github.com",
@@ -375,8 +382,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:23:18Z",
-"cves": 71,
+"checked_at": "2026-10-03T04:15:31Z",
+"cves": 74,
 "source": "nvd",
 "tier": 1
 },
@@ -387,11 +394,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-10-17T02:58:36Z",
-"github_forks": 24644,
+"github_forks": 24686,
 "github_language": "Python",
-"github_open_issues": 577,
-"github_pushed_at": "2026-09-28T23:57:29Z",
-"github_stars": 147212,
+"github_open_issues": 606,
+"github_pushed_at": "2026-10-02T22:57:27Z",
+"github_stars": 147390,
 "github_topic": "ai-agents",
 "homepage": "https://docs.langchain.com/langchain/",
 "observed_popularity": "147k"
@@ -400,13 +407,13 @@
 "sources": [
 {
 "payload_hash": "2ba5e920e3f35c488931b46722904b7e32f4bf48398d33d45719d407d187480e",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://github.com/langchain-ai/langchain"
 },
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/langchain-ai/langchain"
 }
@@ -438,7 +445,7 @@
 "compliance": 1,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://github.com/langchain-ai/langchain",

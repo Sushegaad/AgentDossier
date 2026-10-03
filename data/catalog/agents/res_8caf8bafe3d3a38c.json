@@ -10,16 +10,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-09-29)",
+"display": "Vendor-claimed (vendor page, 2026-10-03)",
 "evidence_url": "https://zapier.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "720dca8a5014a40ac1bf0794dd8a3448072b81c099764b008f082e2c08338072",
+"next_check": "2026-10-10",
+"payload_hash": "17b85d5bb4675ee5ae396a7273024a546b18c55304cce9808329115770c1ee46",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:22:49Z",
+"retrieved_at": "2026-10-03T04:15:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -36,16 +36,42 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-09-29)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-03)",
+"evidence_url": "https://zapier.com/security-compliance",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-10",
+"payload_hash": "9a8ddfb9e3f1d5c007c46c4f6e551d82735c326c14e9f6ef956b8d578ff1b8af",
+"period_end": null,
+"retrieved_at": "2026-10-03T04:15:00Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-03)",
 "evidence_url": "https://zapier.com/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "c75dee4f236ffeea0fb82c4e84d26032a723e99a2ec60c14c2b3555e69fe0289",
+"next_check": "2026-10-10",
+"payload_hash": "507d1475b977fb8a88ed6a4cca228dacf02685b2bca71e937804df13a7646e31",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:22:49Z",
+"retrieved_at": "2026-10-03T04:15:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -62,16 +88,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-09-29)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-03)",
 "evidence_url": "https://zapier.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "720dca8a5014a40ac1bf0794dd8a3448072b81c099764b008f082e2c08338072",
+"next_check": "2026-10-10",
+"payload_hash": "17b85d5bb4675ee5ae396a7273024a546b18c55304cce9808329115770c1ee46",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:22:49Z",
+"retrieved_at": "2026-10-03T04:15:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -294,7 +320,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -316,19 +342,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:19Z",
+"last_seen": "2026-10-03T03:59:11Z",
 "license": "Commercial",
 "name": "Zapier Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:16:14Z",
+"checked_at": "2026-10-03T04:08:30Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:16:13Z",
+"checked_at": "2026-10-03T04:08:29Z",
 "entries": 14,
 "parser_version": "ard-0.91",
 "sources": [
@@ -337,7 +363,7 @@
 "status": "verified"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:16:15Z",
+"checked_at": "2026-10-03T04:08:31Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -347,7 +373,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:24:02Z",
+"checked_at": "2026-10-03T04:16:15Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -363,7 +389,7 @@
 "sources": [
 {
 "payload_hash": "1ce9ca9ecebb21fb90775d03b9cbfd8f6574b00896fdf9b209d073f572b3e46b",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://zapier.com/agents"
 }

@@ -9,6 +9,7 @@
 "developer",
 "framework",
 "llm",
+"software",
 "terminal",
 "typescript"
 ]
@@ -18,21 +19,21 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+"description": "A reliable coding agent for complex software engineering tasks.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
 "components": {
 "adoption": 26.39,
 "docs": 7.0,
-"domain_fit": 94.5,
+"domain_fit": 96.4,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.945,
+"confidence": 0.964,
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
@@ -42,7 +43,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 75.1,
+"score": 75.3,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -53,7 +54,7 @@
 "external_ids": {
 "github": "esengine/DeepSeek-Reasonix"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -69,53 +70,60 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 1,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2026-09-29",
+"kind": "cve",
+"title": "CVE-2026-102437",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102437"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "DeepSeek-Reasonix",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-28T09:07:45Z",
-"headline": "DeepSeek-Reasonix Reasonix Studio v2.21.0",
+"date": "2026-10-02T13:12:57Z",
+"headline": "DeepSeek-Reasonix Reasonix Studio v2.26.0",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "本版开始建设 Studio 的扩展生态：设置里新增社区市场，可以浏览、安装和发布技能、插件、MCP 服务器与主题；登录账号后还能把配置备份到云端。同时加强了本地服务、宿主 git 和沙盒的安全边界。\n\n## 新增\n\n- 设置 → 扩展新增「发现」页，可浏览社区市场并安装技能、插件和 MCP 服务器；只安装经过审核、绑定了内容摘要的版本，内容与审核时不一致会拒绝安装 (#11107 by @esengine)\n- 登录后可以从 Studio 直接发布技能、插件、MCP 服务器和",
+"summary": "本版让 Studio 终端界面补齐 1.x 的连接引导、排队与引导命令、设置命令和 YOLO 模式，设置里新增社区与贡献者入口，并修复已保存的默认模型不在配置里时 Studio 启动失败、DeepSeek 请求偶发连接错误、子代理状态一直显示运行中等问题。\n\n## 新增\n\n- 终端界面：没有可用密钥时启动即打开「配置连接」面板，随时可用 `/setup`（别名 `/auth`）再打开；支持筛选连接、掩码输入密钥、Ctrl+T 测试、Enter 保存 (#11682, #114",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.21.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.26.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-28T08:22:44Z",
-"headline": "DeepSeek-Reasonix Reasonix CLI v1.39.4",
+"date": "2026-10-02T06:33:51Z",
+"headline": "DeepSeek-Reasonix Reasonix Desktop v1.39.7",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "> CLI 与桌面端修复：/mcp 重试不再卡住对话、审查子代理不再被 8 轮上限打断、更换密钥保留原变量名、远程标签页显示上下文。\n\n**发布渠道：稳定版 · v1.39.4**\n\n[English →](https://reasonix.io/changelog/v1.39.4/?lang=en) · [网页版完整更新日志 →](https://reasonix.io/changelog/v1.39.4/)\n\n## 概览\n\n**Reasonix v1.39.4 — Rea",
+"summary": "> 桌面端修复：会话用量统计清零、长轮次历史分页、远端会话切换、分叉会话和编辑目标，并部分修复迁移后会话消失的问题。\n\n**发布渠道：稳定版 · v1.39.7**\n\n[English →](https://reasonix.io/changelog/v1.39.7/?lang=en) · [网页版完整更新日志 →](https://reasonix.io/changelog/v1.39.7/)\n\n## 概览\n\n**Reasonix v1.39.7 — Reasonix 1.",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v1.39.4"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/desktop-v1.39.7"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:51Z",
+"checked_at": "2026-10-03T04:08:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:50Z",
+"checked_at": "2026-10-03T04:08:07Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:51Z",
+"checked_at": "2026-10-03T04:08:08Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -125,27 +133,27 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:31Z",
-"cves": 0,
+"checked_at": "2026-10-03T04:23:52Z",
+"cves": 1,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-21T08:27:02Z",
-"github_forks": 2424,
+"github_forks": 2438,
 "github_language": "Go",
-"github_open_issues": 122,
-"github_pushed_at": "2026-09-28T23:58:39Z",
-"github_stars": 35705,
+"github_open_issues": 298,
+"github_pushed_at": "2026-10-03T03:50:46Z",
+"github_stars": 35731,
 "github_topic": "ai-agent",
 "homepage": "http://reasonix.io/"
 },
 "slug": "esengine-deepseek-reasonix",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/esengine/DeepSeek-Reasonix"
 }
@@ -174,7 +182,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": 1,
+"issues": 3,
 "protocols": 5,
 "security": 1
 },

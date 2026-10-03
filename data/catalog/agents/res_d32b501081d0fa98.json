@@ -26,7 +26,7 @@
 "domain_fit": 34.0,
 "ecosystem": 4.6,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -40,7 +40,7 @@
 },
 "profile": "security",
 "rank": null,
-"score": 42.7,
+"score": 39.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -55,7 +55,7 @@
 "domain_fit": 56.4,
 "ecosystem": 4.6,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -69,7 +69,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 46.5,
+"score": 42.5,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -81,7 +81,7 @@
 "external_ids": {
 "mcp_registry": "ai.aislabs/cve"
 },
-"first_seen": "2026-09-29T00:06:20Z",
+"first_seen": "2026-10-03T03:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -103,7 +103,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:20Z",
+"last_seen": "2026-10-03T03:59:12Z",
 "license": null,
 "merged_ids": [
 "res_81fcabd040903819",
@@ -114,12 +114,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:13:34Z",
+"checked_at": "2026-10-03T04:06:01Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:13:33Z",
+"checked_at": "2026-10-03T04:06:00Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -142,7 +142,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:26:05Z",
+"checked_at": "2026-10-03T04:18:45Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -159,20 +159,20 @@
 "slug": "aislabs-ai-ais-cve-priorities-daily-exploit-ranked-patch-list-for-ai-agents",
 "sources": [
 {
-"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
-"retrieved_at": "2026-09-29T00:06:20Z",
+"payload_hash": "30afd48b66ba6d5db0b4bc30d52bc855592a0811682b41ec8c357fdca332c24b",
+"retrieved_at": "2026-10-03T03:59:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aislabs/cve"
 },
 {
-"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
-"retrieved_at": "2026-09-29T00:06:20Z",
+"payload_hash": "30afd48b66ba6d5db0b4bc30d52bc855592a0811682b41ec8c357fdca332c24b",
+"retrieved_at": "2026-10-03T03:59:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aislabs/gateway"
 },
 {
-"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
-"retrieved_at": "2026-09-29T00:06:20Z",
+"payload_hash": "30afd48b66ba6d5db0b4bc30d52bc855592a0811682b41ec8c357fdca332c24b",
+"retrieved_at": "2026-10-03T03:59:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aislabs/recorder"
 }

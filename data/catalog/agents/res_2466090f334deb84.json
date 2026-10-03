@@ -30,10 +30,10 @@
 "adoption": 12.63,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 1.5,
+"ecosystem": 5.1,
 "governance": null,
 "health": 8.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -46,7 +46,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 41.4,
+"score": 44.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -58,10 +58,10 @@
 "adoption": 12.63,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 1.5,
+"ecosystem": 5.1,
 "governance": null,
 "health": 8.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -74,7 +74,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 44.8,
+"score": 49.2,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -86,10 +86,10 @@
 "adoption": 12.63,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 1.5,
+"ecosystem": 5.1,
 "governance": null,
 "health": 8.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -102,7 +102,7 @@
 },
 "profile": "regulated",
 "rank": null,
-"score": 37.6,
+"score": 41.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -114,10 +114,10 @@
 "adoption": 12.63,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 1.5,
+"ecosystem": 5.1,
 "governance": null,
 "health": 8.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -130,7 +130,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 41.8,
+"score": 46.2,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -141,7 +141,7 @@
 "external_ids": {
 "huggingface_space": "MCP-1st-Birthday/MedLLM-Agent"
 },
-"first_seen": "2026-09-29T00:07:31Z",
+"first_seen": "2026-10-03T04:00:03Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -163,20 +163,25 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:31Z",
+"last_seen": "2026-10-03T04:00:03Z",
 "license": "mit",
 "name": "MedLLM Agent",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
-"status": "unknown"
+"evidence_url": "https://huggingface.co/spaces/MCP-1st-Birthday/MedLLM-Agent",
+"note": "named in the resource's own description",
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "huggingface.co",
@@ -184,7 +189,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:30:12Z",
+"checked_at": "2026-10-03T04:22:32Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -199,8 +204,8 @@
 "slug": "mcp-1st-birthday-medllm-agent",
 "sources": [
 {
-"payload_hash": "a0992693f7d0a52045903435887764010e7037b275d9faca10dd21c3cf4f2e3f",
-"retrieved_at": "2026-09-29T00:07:31Z",
+"payload_hash": "894766b9c2b2c90cd0138336ecd23e0ddba85c5e38eca4048e9b976055040567",
+"retrieved_at": "2026-10-03T04:00:03Z",
 "system": "huggingface",
 "url": "https://huggingface.co/spaces/MCP-1st-Birthday/MedLLM-Agent"
 }
@@ -217,7 +222,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://huggingface.co/spaces/MCP-1st-Birthday/MedLLM-Agent",

@@ -25,13 +25,13 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.68,
+"adoption": 26.7,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -44,7 +44,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 65.5,
+"score": 69.1,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -53,13 +53,13 @@
 },
 "regulatory": {
 "components": {
-"adoption": 26.68,
+"adoption": 26.7,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -72,7 +72,7 @@
 },
 "profile": "regulated",
 "rank": null,
-"score": 51.6,
+"score": 55.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -81,13 +81,13 @@
 },
 "technology": {
 "components": {
-"adoption": 26.68,
+"adoption": 26.7,
 "docs": 7.0,
 "domain_fit": 71.3,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
@@ -100,7 +100,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 73.1,
+"score": 77.5,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -111,7 +111,7 @@
 "external_ids": {
 "github": "tinyhumansai/openhuman"
 },
-"first_seen": "2026-09-29T00:07:35Z",
+"first_seen": "2026-10-03T04:00:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -146,49 +146,54 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:35Z",
+"last_seen": "2026-10-03T04:00:06Z",
 "license": "GPL-3.0",
 "name": "openhuman",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-26T00:57:43Z",
-"headline": "openhuman OpenHuman v0.64.4",
+"date": "2026-09-30T21:18:38Z",
+"headline": "openhuman OpenHuman v0.64.10",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "# The Better Windows Desktop Upgrade\n\nThis release is all about making the Windows desktop experience more reliable, more polished, and smoother to operate—especially when you’re offline. 🎉\n\n## Highlights\n\n### Offline-ready Windows installe",
+"summary": "# The Speed, Structure & Reliability Upgrade\n\nThis release tightens the core experience from end to end—faster first turns, clearer chat feedback, sturdier integrations, and a big internal modularity push that sets us up for even quicker it",
 "tag": "product_update",
-"url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.4"
+"url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.10"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-25T23:47:06Z",
-"headline": "openhuman OpenHuman v0.64.3",
+"date": "2026-09-29T01:33:55Z",
+"headline": "openhuman OpenHuman v0.64.7",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "# The Reliability & Speed Upgrade\n\nv0.64.0 → v0.64.3 is all about making OpenHuman feel steadier under real workloads—fewer loops, better recovery, faster turn startup, and clearer billing/usage surfaces. Ship it. 🚀\n\n## Highlights\n\n### Agen",
+"summary": "# The Intelligence Upgrade 🎉\n\nv0.64.4 to v0.64.7 brings 12 PRs across 12 commits, with upgrades across memory, voice, agents, reliability, and developer foundations. Thank you to everyone who contributed to this release. ✨\n\n## Highlights 🚀",
 "tag": "product_update",
-"url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.3"
+"url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.7"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:16:03Z",
+"checked_at": "2026-10-03T04:08:19Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:16:02Z",
+"checked_at": "2026-10-03T04:08:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:16:04Z",
-"parser_version": "mcp-2025-06-18",
+"evidence_url": "https://tinyhumans.ai/openhuman",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:08:20Z",
 "status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "tinyhumans.ai",
@@ -196,7 +201,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:25Z",
+"checked_at": "2026-10-03T04:23:46Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -204,19 +209,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-18T20:01:27Z",
-"github_forks": 3963,
+"github_forks": 3996,
 "github_language": "Rust",
-"github_open_issues": 269,
-"github_pushed_at": "2026-09-29T00:04:25Z",
-"github_stars": 40158,
+"github_open_issues": 260,
+"github_pushed_at": "2026-10-03T03:20:04Z",
+"github_stars": 40462,
 "github_topic": "ai-agents",
 "homepage": "https://tinyhumans.ai/openhuman"
 },
 "slug": "tinyhumansai-openhuman",
 "sources": [
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/tinyhumansai/openhuman"
 }
@@ -240,7 +245,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://tinyhumans.ai/openhuman",

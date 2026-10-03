@@ -38,16 +38,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR for AI: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "STAR for AI: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:19:24Z",
+"retrieved_at": "2026-10-03T04:11:42Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -78,16 +78,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:19:24Z",
+"retrieved_at": "2026-10-03T04:11:42Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -118,16 +118,16 @@
 "validaited-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "iso42001",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:19:24Z",
+"retrieved_at": "2026-10-03T04:11:42Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -144,52 +144,52 @@
 "domains": {
 "cybersecurity": {
 "components": {
-"adoption": 24.57,
+"adoption": 24.58,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": 100.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": 58.0,
+"score": 61.4,
 "value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "security",
 "rank": null,
-"score": 68.0,
+"score": 71.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": []
 },
 "technology": {
 "components": {
-"adoption": 24.57,
+"adoption": 24.58,
 "docs": 7.0,
 "domain_fit": 81.0,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": 100.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": 72.0,
+"score": 76.4,
 "value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
 "rank": null,
-"score": 72.0,
+"score": 76.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": []
@@ -198,7 +198,7 @@
 "external_ids": {
 "github": "microsoft/mcp-for-beginners"
 },
-"first_seen": "2026-09-29T00:11:39Z",
+"first_seen": "2026-10-03T04:04:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -220,20 +220,25 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "name": "mcp-for-beginners",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
-"status": "unknown"
+"evidence_url": "https://github.com/microsoft/mcp-for-beginners",
+"note": "named in the resource's own tags",
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "github.com",
@@ -241,7 +246,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:32:15Z",
+"checked_at": "2026-10-03T04:24:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -249,19 +254,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-04T20:46:17Z",
-"github_forks": 5621,
+"github_forks": 5636,
 "github_language": "Jupyter Notebook",
-"github_open_issues": 16,
-"github_pushed_at": "2026-09-22T10:44:42Z",
-"github_stars": 17347,
+"github_open_issues": 5,
+"github_pushed_at": "2026-10-01T06:04:58Z",
+"github_stars": 17381,
 "github_topic": "mcp-server",
 "homepage": null
 },
 "slug": "microsoft-mcp-for-beginners",
 "sources": [
 {
-"payload_hash": "3575ea6205dcc27e90504987133d12ccfa248bd8d8ba405898730d3e14720869",
-"retrieved_at": "2026-09-29T00:11:39Z",
+"payload_hash": "95d8497c0dddb9d5ee711ea712e415792bab709f746fa7052deac2cf521457b8",
+"retrieved_at": "2026-10-03T04:04:10Z",
 "system": "github",
 "url": "https://github.com/microsoft/mcp-for-beginners"
 }
@@ -287,7 +292,7 @@
 "compliance": 1,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://github.com/microsoft/mcp-for-beginners",

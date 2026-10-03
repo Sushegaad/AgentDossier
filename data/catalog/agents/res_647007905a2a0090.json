@@ -4,11 +4,8 @@
 "category": "MCP server",
 "classification": {
 "matched": {
-"supply_chain": [
-"planning"
-],
 "technology": [
-"infrastructure",
+"api",
 "mcp"
 ]
 },
@@ -17,38 +14,9 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Gold Coast property due diligence: planning, flood, schools, transport and infrastructure reports.",
+"description": "Gold Coast property intelligence and due diligence for AI agents, renters and buyers.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
-"supply_chain": {
-"components": {
-"adoption": null,
-"docs": 7.0,
-"domain_fit": 34.0,
-"ecosystem": 9.6,
-"governance": null,
-"health": 20.0,
-"trust": 21.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 0.34,
-"evidence_coverage": 0.75,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
-"profile": "operations",
-"rank": null,
-"score": 51.7,
-"score_version": "sar-score-1.0",
-"source": "classifier",
-"unknown": [
-"adoption",
-"governance"
-]
-},
 "technology": {
 "components": {
 "adoption": null,
@@ -82,7 +50,7 @@
 "external_ids": {
 "mcp_registry": "ai.alphaquantlabs/propertycheck"
 },
-"first_seen": "2026-09-29T00:06:20Z",
+"first_seen": "2026-10-03T03:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,9 +72,9 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:20Z",
+"last_seen": "2026-10-03T03:59:12Z",
 "license": null,
-"name": "AQL PropertyCheck - Gold Coast Property Intelligence",
+"name": "AQL PropertyCheck — Gold Coast Property Intelligence API",
 "news": [],
 "news_checked": true,
 "protocols": {
@@ -115,18 +83,18 @@
 "bearer"
 ],
 "card_url": "https://agents.alphaquantlabs.ai/.well-known/agent-card.json",
-"checked_at": "2026-09-29T00:13:30Z",
+"checked_at": "2026-10-03T04:05:56Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
 "skills": [
-"Gold Coast property due-diligence report"
+"Gold Coast property due diligence for buyers and renters"
 ],
 "status": "verified",
-"version": "1.6.1"
+"version": "1.9.0"
 },
 "ard": {
-"checked_at": "2026-09-29T00:13:29Z",
+"checked_at": "2026-10-03T04:05:55Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -140,7 +108,7 @@
 ],
 "server_name": "ai.alphaquantlabs/propertycheck",
 "status": "claimed",
-"version": "1.6.1",
+"version": "1.6.7",
 "via": "mcp_registry"
 }
 },
@@ -149,25 +117,25 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:26:09Z",
+"checked_at": "2026-10-03T04:18:50Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-09-28T22:30:30.425557Z",
+"mcp_registry_published_at": "2026-10-01T01:33:04.821367Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-09-28T22:30:30.425557Z",
+"mcp_registry_updated_at": "2026-10-01T01:33:04.821367Z",
 "mcp_transports": [
 "streamable-http"
 ]
 },
-"slug": "alphaquantlabs-ai-aql-propertycheck-gold-coast-property-intelligence",
+"slug": "alphaquantlabs-ai-aql-propertycheck-gold-coast-property-intelligence-api",
 "sources": [
 {
-"payload_hash": "66a04fb274d864d710acf487139e32f2706ffea6bb794858f317fb6796160006",
-"retrieved_at": "2026-09-29T00:06:20Z",
+"payload_hash": "30afd48b66ba6d5db0b4bc30d52bc855592a0811682b41ec8c357fdca332c24b",
+"retrieved_at": "2026-10-03T03:59:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.alphaquantlabs/propertycheck"
 }

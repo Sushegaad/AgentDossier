@@ -28,13 +28,13 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.69,
+"adoption": 23.7,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 16.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -47,7 +47,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 61.9,
+"score": 65.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -56,13 +56,13 @@
 },
 "cybersecurity": {
 "components": {
-"adoption": 23.69,
+"adoption": 23.7,
 "docs": 7.0,
 "domain_fit": 71.3,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 16.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
@@ -75,7 +75,7 @@
 },
 "profile": "security",
 "rank": null,
-"score": 60.0,
+"score": 63.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -84,13 +84,13 @@
 },
 "technology": {
 "components": {
-"adoption": 23.69,
+"adoption": 23.7,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 3.0,
+"ecosystem": 6.6,
 "governance": null,
 "health": 16.0,
-"trust": 16.0
+"trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -103,7 +103,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 64.6,
+"score": 69.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -114,7 +114,7 @@
 "external_ids": {
 "github": "0x4m4/hexstrike-ai"
 },
-"first_seen": "2026-09-29T00:07:39Z",
+"first_seen": "2026-10-03T04:00:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -136,7 +136,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:11:39Z",
+"last_seen": "2026-10-03T04:04:10Z",
 "license": "MIT",
 "merged_ids": [
 "res_b464db439fdbc1e0"
@@ -147,7 +147,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://github.com/0x4m4/hexstrike-ai",
-"checked_at": "2026-09-29T00:15:13Z",
+"checked_at": "2026-10-03T04:07:32Z",
 "errors": [
 "not valid JSON"
 ],
@@ -155,7 +155,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:12Z",
+"checked_at": "2026-10-03T04:07:30Z",
 "errors": [
 "https://hexstrike.com/.well-known/ard.json: not valid JSON",
 "https://hexstrike.com/.well-known/ai-catalog.json: not valid JSON"
@@ -164,10 +164,15 @@
 "status": "invalid"
 },
 "mcp": {
+"evidence_url": "https://www.hexstrike.com/",
+"note": "named in the resource's own tags",
+"probe": {
 "card_url": "https://github.com/0x4m4/hexstrike-ai",
-"checked_at": "2026-09-29T00:15:14Z",
-"parser_version": "mcp-2025-06-18",
+"checked_at": "2026-10-03T04:07:32Z",
 "status": "invalid"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "hexstrike.com",
@@ -175,7 +180,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:32:41Z",
+"checked_at": "2026-10-03T04:24:58Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -183,19 +188,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-10T17:53:18Z",
-"github_forks": 2488,
+"github_forks": 2498,
 "github_language": "Python",
-"github_open_issues": 112,
+"github_open_issues": 114,
 "github_pushed_at": "2026-08-03T14:33:09Z",
-"github_stars": 12218,
+"github_stars": 12284,
 "github_topic": "ai-agents",
 "homepage": "https://www.hexstrike.com/"
 },
 "slug": "0x4m4-hexstrike-ai",
 "sources": [
 {
-"payload_hash": "0fa34e4c4ef8d40eb4e4960fcead8529f41fffeb35c0ac9111944d27521e8b44",
-"retrieved_at": "2026-09-29T00:07:39Z",
+"payload_hash": "ff84ac1b9ac762848cd16771391741efa2294328d7200b9abf099adad8144ba4",
+"retrieved_at": "2026-10-03T04:00:10Z",
 "system": "github",
 "url": "https://github.com/0x4m4/hexstrike-ai"
 }
@@ -227,7 +232,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://www.hexstrike.com/",

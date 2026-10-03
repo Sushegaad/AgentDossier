@@ -18,7 +18,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 22.64,
+"adoption": 22.67,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 1.8,
@@ -48,7 +48,7 @@
 "external_ids": {
 "github": "SWE-agent/mini-swe-agent"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -70,7 +70,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "mini-swe-agent",
 "news": [
@@ -100,17 +100,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-09-29T00:15:28Z",
+"checked_at": "2026-10-03T04:07:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-09-29T00:15:27Z",
+"checked_at": "2026-10-03T04:07:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-09-29T00:15:29Z",
+"checked_at": "2026-10-03T04:07:46Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -120,7 +120,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:33:14Z",
+"checked_at": "2026-10-03T04:25:30Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -128,19 +128,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-28T20:18:15Z",
-"github_forks": 1103,
+"github_forks": 1121,
 "github_language": "Python",
-"github_open_issues": 81,
+"github_open_issues": 83,
 "github_pushed_at": "2026-09-28T22:56:08Z",
-"github_stars": 8054,
+"github_stars": 8164,
 "github_topic": "ai-agent",
 "homepage": "https://mini-swe-agent.com"
 },
 "slug": "swe-agent-mini-swe-agent",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/SWE-agent/mini-swe-agent"
 }

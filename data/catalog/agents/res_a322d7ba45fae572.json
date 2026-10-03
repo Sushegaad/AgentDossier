@@ -27,7 +27,7 @@
 "domain_fit": 34.0,
 "ecosystem": 3.6,
 "governance": null,
-"health": 16.0,
+"health": 12.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -41,7 +41,7 @@
 },
 "profile": "regulated",
 "rank": null,
-"score": 36.7,
+"score": 34.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -56,7 +56,7 @@
 "domain_fit": 71.3,
 "ecosystem": 3.6,
 "governance": null,
-"health": 16.0,
+"health": 12.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -70,7 +70,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 43.0,
+"score": 39.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -82,7 +82,7 @@
 "external_ids": {
 "mcp_registry": "ai.apithreshold/apithreshold"
 },
-"first_seen": "2026-09-29T00:06:20Z",
+"first_seen": "2026-10-03T03:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,7 +104,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:20Z",
+"last_seen": "2026-10-03T03:59:12Z",
 "license": null,
 "name": "APIThreshold",
 "news": [],
@@ -112,7 +112,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://apithreshold.ai/.well-known/agent.json",
-"checked_at": "2026-09-29T00:13:45Z",
+"checked_at": "2026-10-03T04:06:10Z",
 "errors": [
 "not valid JSON"
 ],
@@ -120,7 +120,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-09-29T00:13:44Z",
+"checked_at": "2026-10-03T04:06:09Z",
 "errors": [
 "https://apithreshold.ai/.well-known/ard.json: not valid JSON",
 "https://apithreshold.ai/.well-known/ai-catalog.json: not valid JSON"
@@ -149,7 +149,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:26:17Z",
+"checked_at": "2026-10-03T04:18:57Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -164,8 +164,8 @@
 "slug": "apithreshold-ai-apithreshold",
 "sources": [
 {
-"payload_hash": "6d8edb12df8af8bd08e83f9ae14dc913f58386c25fe63b33b9eb73c3e4570c90",
-"retrieved_at": "2026-09-29T00:06:20Z",
+"payload_hash": "8cf43d82f287f4b2d80f8f732467682a037f7d7bfa4526afe749acb581412b00",
+"retrieved_at": "2026-10-03T03:59:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.apithreshold/apithreshold"
 }

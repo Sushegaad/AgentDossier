@@ -2,7 +2,71 @@
 "canonical_url": "github.com/features/copilot",
 "category": "Coding agent",
 "commercial": true,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": "github, inc.",
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
+"organization": "GitHub, Inc.",
+"terms": [
+"star_level_1",
+"star_level_2",
+"caiq",
+"certification"
+]
+},
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
+"evidence_url": "https://cloudsecurityalliance.org/star/registry/github, inc.",
+"framework": "csa_star",
+"issued": "2018-05-30",
+"issuer": "Cloud Security Alliance",
+"match_confidence": 1.0,
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
+"period_end": null,
+"retrieved_at": "2026-10-03T04:10:19Z",
+"review_reason": "entity 1.00 (index card)",
+"reviewer": null,
+"scope": "entity",
+"source": "csa_star",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "FR1812058188",
+"covers_resource": "partial",
+"credited": false,
+"detail": {
+"cso": "GitHub Enterprise Cloud",
+"csp": "GitHub",
+"deployment_model": "Public Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "LI-SaaS"
+},
+"display": "FedRAMP LI-SaaS: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-03) (pending publisher verification)",
+"evidence_url": "https://marketplace.fedramp.gov/products/FR1812058188",
+"framework": "fedramp",
+"issued": "2018-10-04",
+"issuer": "Agency / 3PAO Coalfire Systems, Inc.",
+"match_confidence": 0.933,
+"next_check": "2026-10-10",
+"payload_hash": "11f64ea31e91e61a3baa29fe8ad27f0af14b8fef730b7d61311960b6460545e4",
+"period_end": null,
+"retrieved_at": "2026-10-03T04:09:12Z",
+"review_reason": "entity 1.00, offering 0.85",
+"reviewer": null,
+"scope": "product",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_LI_SAAS"
+}
+],
 "components": {
 "adoption": 30.0,
 "docs": 10.0,
@@ -21,8 +85,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 94.4,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "general",
@@ -37,8 +101,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 90.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "security",
@@ -53,8 +117,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 100.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "data",
@@ -69,8 +133,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 85.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -85,8 +149,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 85.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -101,8 +165,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 85.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -117,8 +181,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 85.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -133,8 +197,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 85.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -149,8 +213,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 85.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -165,8 +229,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 95.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "commercial",
@@ -181,8 +245,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 95.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "operations",
@@ -197,8 +261,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 100.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -210,7 +274,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -232,20 +296,27 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:06:19Z",
+"last_seen": "2026-10-03T03:59:11Z",
 "license": "Proprietary",
 "name": "GitHub Copilot coding agent",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
-"status": "unknown"
+"checked_by": "maintainer",
+"checked_on": "2026-10-02",
+"evidence_url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp",
+"note": "\"Configure MCP servers for your repository\" (GitHub Docs)",
+"source": "curated_claim",
+"status": "claimed"
 }
 },
 "publisher_domain": "github.com",
@@ -253,7 +324,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:23:15Z",
+"checked_at": "2026-10-03T04:15:28Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -269,7 +340,7 @@
 "sources": [
 {
 "payload_hash": "eed24d4e9b6459846936ea478d1f7d4ea47522b6df41a59f0062ed6be6ab72de",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://github.com/features/copilot"
 }
@@ -277,10 +348,10 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 5,
+"compliance": 1,
 "identity": 3,
 "issues": 1,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://github.com/features/copilot",

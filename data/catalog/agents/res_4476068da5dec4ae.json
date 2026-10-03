@@ -37,7 +37,7 @@
 "external_ids": {
 "github": "unclecode/crawl4ai"
 },
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -120,7 +120,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:35Z",
+"last_seen": "2026-10-03T04:00:06Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_d87aebf78b6e5a58"
@@ -153,13 +153,18 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
-"status": "unknown"
+"evidence_url": "https://github.com/unclecode/crawl4ai",
+"note": "named in the resource's own tags",
+"source": "self_description",
+"status": "claimed"
 }
 },
 "publisher_domain": "github.com",
@@ -167,7 +172,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:24:59Z",
+"checked_at": "2026-10-03T04:17:34Z",
 "cves": 25,
 "source": "nvd",
 "tier": 1
@@ -179,11 +184,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-05-09T09:48:50Z",
-"github_forks": 8728,
+"github_forks": 8759,
 "github_language": "Python",
-"github_open_issues": 208,
+"github_open_issues": 225,
 "github_pushed_at": "2026-09-25T06:37:14Z",
-"github_stars": 84421,
+"github_stars": 84658,
 "github_topic": "ai-agents",
 "homepage": "https://crawl4ai.com",
 "observed_popularity": "Not captured"
@@ -192,13 +197,13 @@
 "sources": [
 {
 "payload_hash": "6e108a555bb2036c27d3f49789b23e7428bcf45deaf107092e15d73ad7ff38e3",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://github.com/unclecode/crawl4ai"
 },
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/unclecode/crawl4ai"
 }
@@ -225,7 +230,7 @@
 "compliance": 5,
 "identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://github.com/unclecode/crawl4ai",

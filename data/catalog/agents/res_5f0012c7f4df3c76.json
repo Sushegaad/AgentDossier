@@ -1,0 +1,211 @@
+{
+"canonical_url": "browseros.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation"
+],
+"technology": [
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "🌐 The open-source Agentic browser; alternative to ChatGPT Atlas, Perplexity Comet, Dia.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 23.99,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 66.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 23.99,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 73.3,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "browseros-ai/BrowserOS"
+},
+"first_seen": "2026-10-03T04:00:10Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_5f0012c7f4df3c76",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-03T04:00:10Z",
+"license": "AGPL-3.0",
+"name": "BrowserOS",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-03T01:12:51Z",
+"headline": "BrowserOS BrowserOS neo Extension - v0.2.30.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "- chore: bump browserclaw extension version to 0.2.29.0 (#2813) (98a9b56f8)",
+"tag": "product_update",
+"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/ext-browserclaw/v0.2.30.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-03T01:07:26Z",
+"headline": "BrowserOS BrowserClaw Server - v0.0.63",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "- chore: updating version (f33f6c33e)\n- feat(chromium): add a 30-minute fresh bundle update grace (#2820) (839579325)\n- chore(release): promote Claw server 0.0.62 to production (557e941ce)\n- chore(release): update extension prod feeds (7a74",
+"tag": "product_update",
+"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/claw-server/v0.0.63"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-03T04:06:38Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-03T04:06:37Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://BrowserOS.com",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-03T04:06:39Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "browseros.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-03T04:24:50Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-05-18T16:23:54Z",
+"github_forks": 1470,
+"github_language": "TypeScript",
+"github_open_issues": 90,
+"github_pushed_at": "2026-10-03T03:18:52Z",
+"github_stars": 13801,
+"github_topic": "ai-agents",
+"homepage": "https://BrowserOS.com"
+},
+"slug": "browseros-ai-browseros",
+"sources": [
+{
+"payload_hash": "ff84ac1b9ac762848cd16771391741efa2294328d7200b9abf099adad8144ba4",
+"retrieved_at": "2026-10-03T04:00:10Z",
+"system": "github",
+"url": "https://github.com/browseros-ai/BrowserOS"
+}
+],
+"tags": [
+"agent",
+"ai-agents",
+"automation",
+"browser",
+"browser-automation",
+"browseros",
+"chromium",
+"claude",
+"linux",
+"llm",
+"lmstudio",
+"macos",
+"mcp",
+"ollama",
+"windows"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": 1
+},
+"url": "https://BrowserOS.com",
+"vendor": "browseros-ai"
+}

@@ -25,16 +25,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR for AI: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "STAR for AI: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:18:21Z",
+"retrieved_at": "2026-10-03T04:10:36Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -65,16 +65,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:18:21Z",
+"retrieved_at": "2026-10-03T04:10:36Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -105,16 +105,16 @@
 "validaited-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-09-29 (pending publisher verification)",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "iso42001",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-06",
-"payload_hash": "cf29cdbd424b9d0a21e8b07d4149528e41f8e5752408dffe62d01f61526b4d14",
+"next_check": "2026-10-10",
+"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
 "period_end": null,
-"retrieved_at": "2026-09-29T00:18:21Z",
+"retrieved_at": "2026-10-03T04:10:36Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -158,7 +158,7 @@
 "external_ids": {
 "github": "microsoft/autogen"
 },
-"first_seen": "2026-09-29T00:06:19Z",
+"first_seen": "2026-10-03T03:59:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -180,7 +180,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:13:13Z",
+"last_seen": "2026-10-03T04:05:40Z",
 "license": "CC-BY-4.0 / MIT components",
 "merged_ids": [
 "res_84d2a9305df10f2d"
@@ -190,12 +190,15 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -204,7 +207,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:25:12Z",
+"checked_at": "2026-10-03T04:17:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -216,11 +219,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-08-18T11:43:45Z",
-"github_forks": 9259,
+"github_forks": 9276,
 "github_language": "Python",
-"github_open_issues": 1110,
+"github_open_issues": 1109,
 "github_pushed_at": "2026-04-15T11:59:09Z",
-"github_stars": 61209,
+"github_stars": 61249,
 "github_topic": "agentic",
 "homepage": "https://microsoft.github.io/autogen/",
 "observed_popularity": "61.1k"
@@ -229,13 +232,13 @@
 "sources": [
 {
 "payload_hash": "d8eabc0d48edb701cd88ae90b5a78eeebc576d86c5a5fdc29c7212a007069654",
-"retrieved_at": "2026-09-29T00:06:19Z",
+"retrieved_at": "2026-10-03T03:59:11Z",
 "system": "seed_xlsx",
 "url": "https://github.com/microsoft/autogen"
 },
 {
-"payload_hash": "27055281ceef7f5868c5924752a3c31c68f0f1629b23c19559f3c01eaa7d6820",
-"retrieved_at": "2026-09-29T00:13:13Z",
+"payload_hash": "bae71180c5bf41075ca639d45cc5fb10d4b1349b640f293e1ae3fe75ed27ad84",
+"retrieved_at": "2026-10-03T04:05:40Z",
 "system": "github",
 "url": "https://github.com/microsoft/autogen"
 }

@@ -21,7 +21,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 26.93,
+"adoption": 26.96,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -40,7 +40,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 66.8,
+"score": 66.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -49,7 +49,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.93,
+"adoption": 26.96,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -79,7 +79,7 @@
 "external_ids": {
 "github": "MadsLorentzen/ai-job-search"
 },
-"first_seen": "2026-09-29T00:07:35Z",
+"first_seen": "2026-10-03T04:00:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,10 +101,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:07:35Z",
+"last_seen": "2026-10-03T04:00:06Z",
 "license": "MIT",
 "name": "ai-job-search",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-09-29T18:32:55Z",
+"headline": "ai-job-search v1.7.2 - Measured PDFs, CLIs that stop trusting the digits, tools that survive non-ASCII",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "A patch release with one theme: **the checks the workflow documented now actually run, and the tools stop breaking on anything that is not ASCII.** Compiled PDFs get measured instead of eyeballed, the portal CLIs stop trusting the digits in",
+"tag": "product_update",
+"url": "https://github.com/MadsLorentzen/ai-job-search/releases/tag/v1.7.2"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-06T18:19:35Z",
@@ -115,28 +126,20 @@
 "summary": "A patch release with one theme: **the workflow stops paying for work it does not need and stops hiding work it failed to do.** `/rank` no longer drags your whole job history through the conversation on every run, the portal CLIs now refuse",
 "tag": "product_update",
 "url": "https://github.com/MadsLorentzen/ai-job-search/releases/tag/v1.7.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-08-29T09:20:44Z",
-"headline": "ai-job-search v1.7.0 - Trackers that stay private, postings that admit they're closed",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "Two themes this release: **your job search stays yours**, and **stored state tells the truth about what it holds**. The headline fix closes a real privacy leak reported and fixed by the community within a day, and stored jobs now know when",
-"tag": "product_update",
-"url": "https://github.com/MadsLorentzen/ai-job-search/releases/tag/v1.7.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -145,7 +148,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:31:21Z",
+"checked_at": "2026-10-03T04:23:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -153,19 +156,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-18T14:33:04Z",
-"github_forks": 15278,
+"github_forks": 15495,
 "github_language": "Python",
-"github_open_issues": 5,
-"github_pushed_at": "2026-09-28T17:06:41Z",
-"github_stars": 44380,
+"github_open_issues": 3,
+"github_pushed_at": "2026-10-02T18:03:35Z",
+"github_stars": 44817,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "madslorentzen-ai-job-search",
 "sources": [
 {
-"payload_hash": "3b9df07179a1dc4738200a43b4ad1829037ebe0158ce78604151f8ec201a753b",
-"retrieved_at": "2026-09-29T00:07:35Z",
+"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
+"retrieved_at": "2026-10-03T04:00:06Z",
 "system": "github",
 "url": "https://github.com/MadsLorentzen/ai-job-search"
 }

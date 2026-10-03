@@ -79,7 +79,7 @@
 "external_ids": {
 "github": "lsdefine/GenericAgent"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,7 +101,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "GenericAgent",
 "news": [
@@ -131,12 +131,15 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -145,7 +148,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:32:33Z",
+"checked_at": "2026-10-03T04:24:48Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -155,17 +158,17 @@
 "github_created_at": "2026-01-16T15:45:24Z",
 "github_forks": 1663,
 "github_language": "Python",
-"github_open_issues": 173,
-"github_pushed_at": "2026-09-22T15:42:24Z",
-"github_stars": 14265,
+"github_open_issues": 177,
+"github_pushed_at": "2026-09-30T09:52:54Z",
+"github_stars": 14272,
 "github_topic": "ai-agent",
 "homepage": "https://github.com/lsdefine/GenericAgent"
 },
 "slug": "lsdefine-genericagent",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/lsdefine/GenericAgent"
 }

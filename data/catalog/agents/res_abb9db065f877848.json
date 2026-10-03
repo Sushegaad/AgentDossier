@@ -27,7 +27,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.48,
+"adoption": 23.51,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -55,7 +55,7 @@
 },
 "cybersecurity": {
 "components": {
-"adoption": 23.48,
+"adoption": 23.51,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -83,7 +83,7 @@
 },
 "data": {
 "components": {
-"adoption": 23.48,
+"adoption": 23.51,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -111,7 +111,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.48,
+"adoption": 23.51,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -130,7 +130,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 68.4,
+"score": 68.5,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -141,7 +141,7 @@
 "external_ids": {
 "github": "jo-inc/camofox-browser"
 },
-"first_seen": "2026-09-29T00:09:58Z",
+"first_seen": "2026-10-03T04:02:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -163,10 +163,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-09-29T00:09:58Z",
+"last_seen": "2026-10-03T04:02:26Z",
 "license": "MIT",
 "name": "camofox-browser",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-09-30T17:09:40Z",
+"headline": "camofox-browser v1.18.0 — Reliability and platform fixes",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## v1.18.0\n\n### More reliable browser interactions\n\nTab creation cleans up after failures and timeouts ([#11613](https://github.com/jo-inc/camofox-browser/pull/11613)). Proxy-rotation retries return the replacement page ([#11625](https://gi",
+"tag": "product_update",
+"url": "https://github.com/jo-inc/camofox-browser/releases/tag/v1.18.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-22T23:39:30Z",
@@ -177,28 +188,20 @@
 "summary": "## v1.17.0\n\nA browser tab can clear a site’s challenge, follow its redirect, and render a PDF. Then a second request for that same PDF can still get blocked.\n\nThat was the remaining hole in inline-PDF retrieval.\n\nThanks to [Anand Patel](htt",
 "tag": "product_update",
 "url": "https://github.com/jo-inc/camofox-browser/releases/tag/v1.17.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-14T23:04:36Z",
-"headline": "camofox-browser v1.16.0 — Stop claiming a location you do not have",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "A direct browser connection should not pretend it is somewhere else. A Windows shutdown should not leave a browser tree behind. And if an agent is already looking at an authenticated PDF, it should be able to save that document without star",
-"tag": "product_update",
-"url": "https://github.com/jo-inc/camofox-browser/releases/tag/v1.16.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "ard": {
+"not_checked": "code_host",
 "status": "unknown"
 },
 "mcp": {
+"not_checked": "code_host",
 "status": "unknown"
 }
 },
@@ -207,7 +210,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-09-29T00:32:47Z",
+"checked_at": "2026-10-03T04:25:04Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -215,19 +218,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-26T07:31:13Z",
-"github_forks": 1116,
+"github_forks": 1132,
 "github_language": "JavaScript",
-"github_open_issues": 134,
-"github_pushed_at": "2026-09-22T23:39:29Z",
-"github_stars": 11252,
+"github_open_issues": 148,
+"github_pushed_at": "2026-10-02T18:50:56Z",
+"github_stars": 11377,
 "github_topic": "ai-agent",
 "homepage": "https://github.com/jo-inc/camofox-browser#readme"
 },
 "slug": "jo-inc-camofox-browser",
 "sources": [
 {
-"payload_hash": "28f28f8996fbc7531ecc2faf54c8abfdfd14fb65e45839b51ec41820239441f2",
-"retrieved_at": "2026-09-29T00:09:58Z",
+"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
+"retrieved_at": "2026-10-03T04:02:26Z",
 "system": "github",
 "url": "https://github.com/jo-inc/camofox-browser"
 }
