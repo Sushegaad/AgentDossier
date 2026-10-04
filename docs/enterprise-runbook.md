@@ -73,9 +73,18 @@ admin can start one any time with `POST /api/scan`.
 
 | `AGENTDOSSIER_AUTH_MODE` | Who can read | Who can scan | Use |
 | --- | --- | --- | --- |
-| `none` | everyone | everyone | local development only |
+| `none` | everyone | everyone | local development only: `agentdossier serve --dev` (needs `AGENTDOSSIER_DEV=1` and a loopback bind; refused otherwise) |
 | `token` | `Authorization: Bearer $AGENTDOSSIER_API_TOKEN` | `$AGENTDOSSIER_ADMIN_TOKEN` | service accounts, CI, agents |
 | `oidc` | anyone who signs in at `/auth/login` through your IdP | members of `OIDC_ADMIN_GROUP` (from the `groups` claim); tokens still work for APIs | people using the web UI |
+
+There is no default. An instance started without `AGENTDOSSIER_AUTH_MODE` refuses to start
+(`uvicorn --factory agentdossier.server.app:create_app` exits; the container does not come up),
+so a missing environment variable can never produce an open administrator API.
+
+Behind a TLS-terminating proxy set `AGENTDOSSIER_TRUSTED_PROXIES` to the proxy's address(es)
+(for example `10.0.0.0/8` or `172.17.0.1`): client addresses, the `https` scheme for the OIDC
+callback and the session cookie's `Secure` flag then come from `X-Forwarded-*` headers only
+when a trusted proxy sent them. Without it, forwarded headers are ignored.
 
 Roles: every signed-in user is a **member** (read, open decisions, comment, add tasks and feedback); members of `OIDC_REVIEWER_GROUP` — and the admin token — are **reviewers** (sign off, move stages, triage feedback); admins also operate the instance.
 

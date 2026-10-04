@@ -44,6 +44,7 @@ def _settings(catalog_dir: Path, tmp_path: Path, **kw) -> Settings:
         db_path=tmp_path / "s.db",
         web_dist=None,
         auth_mode="none",
+        dev=True,
         api_token=None,
         admin_token=None,
         enterprise_config=None,

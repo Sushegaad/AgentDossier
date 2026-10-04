@@ -17,8 +17,8 @@ jobs:
       matrix:
         python: ["3.12", "3.13"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86  # v5
         with:
           python-version: ${{ matrix.python }}
           enable-cache: true
@@ -43,12 +43,12 @@ jobs:
     name: web
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86  # v5
         with:
           python-version: "3.12"
           enable-cache: true
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4
         with:
           node-version: "22"
           cache: npm
@@ -89,10 +89,10 @@ jobs:
       contents: read
       pull-requests: read  # gitleaks lists the PR's commits on pull_request events
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
         with:
           fetch-depth: 0  # gitleaks scans the base..head commit range, so the base must be present
-      - uses: astral-sh/setup-uv@v5
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86  # v5
         with:
           python-version: "3.12"
       - name: pip-audit (locked third-party dependencies)
@@ -100,7 +100,7 @@ jobs:
           uv export --extra dev --no-emit-project --format requirements-txt --frozen > /tmp/requirements.txt
           uv run --with pip-audit pip-audit --strict --desc -r /tmp/requirements.txt
       - name: gitleaks
-        uses: gitleaks/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@ff98106e4c7b2bc287b24eaf42907196329070c7  # v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -108,8 +108,8 @@ jobs:
     name: helm chart
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: azure/setup-helm@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+      - uses: azure/setup-helm@1a275c3b69536ee54be43f2070a358922e12c8d4  # v4
         with:
           version: v3.16.2
       - name: Lint and render the chart
@@ -119,3 +119,26 @@ jobs:
             --set ingress.enabled=true --set secrets.AGENTDOSSIER_API_TOKEN=r \
             --set-file enterpriseConfig=examples/enterprise/enterprise.json > /tmp/rendered.yaml
           python3 -c "import yaml; docs=[d for d in yaml.safe_load_all(open('/tmp/rendered.yaml')) if d]; print([d['kind'] for d in docs]); assert len(docs) == 7"
+
+  image:
+    name: container image (build only)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+      - uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f  # v3
+      - name: Build from the lockfile (no push)
+        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8  # v6
+        with:
+          context: .
+          file: deploy/Dockerfile
+          push: false
+          load: true
+          tags: agentdossier:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: The image refuses to start without an auth mode, and starts with one
+        run: |
+          set -e
+          if docker run --rm agentdossier:ci python -c "from agentdossier.server.app import create_app; create_app()" 2>/dev/null; then echo "started without AGENTDOSSIER_AUTH_MODE"; exit 1; fi
+          docker run --rm -e AGENTDOSSIER_AUTH_MODE=token -e AGENTDOSSIER_API_TOKEN=t agentdossier:ci python -c "from agentdossier.server.app import create_app; create_app(); print('ok')"
+          docker run --rm agentdossier:ci agentdossier --help | head -1

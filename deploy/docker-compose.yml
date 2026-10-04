@@ -15,6 +15,7 @@ services:
     environment:
       AGENTDOSSIER_ENTERPRISE_CONFIG: /config/enterprise.json
       AGENTDOSSIER_SITE: ${AGENTDOSSIER_SITE:-http://localhost:8080/}
+      AGENTDOSSIER_TRUSTED_PROXIES: ${AGENTDOSSIER_TRUSTED_PROXIES:-}
       AGENTDOSSIER_SCAN_ON_START: "1"
       # --- auth: pick one ---------------------------------------------------------
       # token mode (API clients, CI):

@@ -1,7 +1,7 @@
 """Self-hosted AgentDossier server: one process serving the ARD REST API, policy
 qualification, scan control and the web UI (BRD §4.3–4.4).
 
-    uvicorn agentdossier.server.app:app --host 0.0.0.0 --port 8080
+    uvicorn --factory agentdossier.server.app:create_app --host 0.0.0.0 --port 8080
 
 Routes
 ------
@@ -160,7 +160,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         from starlette.middleware.sessions import SessionMiddleware  # noqa: PLC0415
 
         app.add_middleware(
-            SessionMiddleware, secret_key=settings.session_secret or "", https_only=False, same_site="lax"
+            SessionMiddleware,
+            secret_key=settings.session_secret or "",
+            https_only=settings.behind_tls_proxy or settings.site.startswith("https://"),
+            same_site="lax",
         )
 
     # --- enterprise config and scheduler ----------------------------------------------
@@ -864,12 +867,5 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     return app
 
 
-try:  # module-level app for `uvicorn agentdossier.server.app:app`
-    app = create_app()
-except Exception as _exc:  # noqa: BLE001 - surfaced on first request instead of import time
-    _err = str(_exc)
-    app = FastAPI(title="AgentDossier (misconfigured)")
-
-    @app.get("/{path:path}")
-    def _misconfigured(path: str):
-        return JSONResponse({"error": _err}, status_code=500)
+# No module-level instance: run with `uvicorn --factory agentdossier.server.app:create_app` (or
+# `agentdossier serve`). A misconfigured instance then fails at startup instead of serving errors.

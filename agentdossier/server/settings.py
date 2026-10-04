@@ -30,12 +30,12 @@ class Settings:
         default_factory=lambda: Path(os.environ.get("AGENTDOSSIER_DB", ROOT / "build" / "agentdossier.db"))
     )
     site: str = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_SITE", "http://localhost:8080/"))
-    # auth: none (development only) | token (static bearer) | oidc
-    auth_mode: str = field(
-        default_factory=lambda: os.environ.get(
-            "AGENTDOSSIER_AUTH_MODE", "token" if os.environ.get("AGENTDOSSIER_API_TOKEN") else "none"
-        )
-    )
+    # auth: token (static bearer) | oidc | none. There is no inferred default: an instance that is
+    # not told how to authenticate refuses to start rather than starting open. `none` is for local
+    # development only and additionally needs AGENTDOSSIER_DEV=1 and a loopback bind.
+    auth_mode: str = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_AUTH_MODE", ""))
+    dev: bool = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_DEV", "0") == "1")
+    bind_host: str = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_BIND_HOST", ""))
     api_token: str | None = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_API_TOKEN"))
     admin_token: str | None = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_ADMIN_TOKEN"))
     oidc_issuer: str | None = field(default_factory=lambda: os.environ.get("OIDC_ISSUER"))
@@ -87,8 +87,20 @@ class Settings:
             )
         if self.auth_mode == "token" and not self.api_token:
             problems.append("auth_mode=token needs AGENTDOSSIER_API_TOKEN")
-        if self.auth_mode not in ("none", "token", "oidc"):
+        if not self.auth_mode:
+            problems.append(
+                "AGENTDOSSIER_AUTH_MODE is not set (token | oidc; `none` only for local development with "
+                "AGENTDOSSIER_DEV=1 on a loopback address)"
+            )
+        elif self.auth_mode not in ("none", "token", "oidc"):
             problems.append(f"unknown AGENTDOSSIER_AUTH_MODE {self.auth_mode}")
+        if self.auth_mode == "none":
+            if not self.dev:
+                problems.append(
+                    "auth_mode=none needs AGENTDOSSIER_DEV=1 (every request would be an administrator)"
+                )
+            if self.bind_host and self.bind_host not in ("127.0.0.1", "::1", "localhost"):
+                problems.append(f"auth_mode=none may only bind a loopback address, not {self.bind_host}")
         problems += self.notify.validate()
         problems += self.integrations.validate()
         if self.federation_mode not in ("none", "referrals", "auto"):
