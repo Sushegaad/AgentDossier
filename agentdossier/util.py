@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import http.client
 import ipaddress
 import json
 import os
@@ -18,6 +19,7 @@ import urllib.request
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
 
 from . import __version__
 
@@ -96,28 +98,38 @@ class NetPolicy:
     allow_public: bool = False  # enterprise mode: may it also reach public IPs?
 
     def check(self, url: str) -> None:
+        """Refuse a URL whose scheme or resolved address is out of policy (the pre-flight form)."""
         p = urllib.parse.urlparse(url)
         if p.scheme not in ("http", "https"):
             raise FetchBlockedError(f"scheme not allowed: {p.scheme}")
-        host = p.hostname or ""
+        self.vet(p.hostname or "", p.port or (443 if p.scheme == "https" else 80))
+
+    def vet(self, host: str, port: int) -> str:
+        """Resolve ``host`` once, check every address, and return the one address the connection
+        must use. ``fetch`` connects to that address (with the name only in SNI and the Host header),
+        so a second lookup can never answer differently from the one that was checked (DNS rebinding)."""
         try:
-            infos = socket.getaddrinfo(host, p.port or (443 if p.scheme == "https" else 80))
-            addrs = {ipaddress.ip_address(i[4][0]) for i in infos}
-        except socket.gaierror as exc:
+            infos = socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)
+        except (socket.gaierror, UnicodeError) as exc:
             raise FetchBlockedError(f"cannot resolve {host}: {exc}") from exc
+        addrs = [ipaddress.ip_address(i[4][0]) for i in infos]
+        if not addrs:
+            raise FetchBlockedError(f"cannot resolve {host}")
+        allowed_host = host.lower() in {h.lower() for h in self.allow_hosts}
         for addr in addrs:
             internal = addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved
             if self.mode == "public":
                 if internal:
                     raise FetchBlockedError(f"{host} resolves to non-public address {addr}")
             else:
-                if host.lower() in {h.lower() for h in self.allow_hosts}:
+                if allowed_host:
                     continue
                 if any(addr in ipaddress.ip_network(c, strict=False) for c in self.allow_cidrs):
                     continue
                 if self.allow_public and not internal:
                     continue
                 raise FetchBlockedError(f"{host} ({addr}) is outside the authorized scan scope")
+        return str(addrs[0])
 
 
 class RateLimiter:
@@ -160,6 +172,42 @@ class FetchResult:
 _DEFAULT_LIMITER = RateLimiter()
 
 
+class _GuardedHandler(urllib.request.HTTPHandler, urllib.request.HTTPSHandler):
+    """Opens every connection — the first request and every redirect hop — to an address the
+    policy vetted a moment earlier, so the SSRF check and the connection cannot disagree."""
+
+    def __init__(self, policy: NetPolicy, ctx: ssl.SSLContext, follow_redirects: bool):
+        urllib.request.HTTPHandler.__init__(self)
+        urllib.request.HTTPSHandler.__init__(self, context=ctx)
+        self.policy, self.ctx, self.follow_redirects = policy, ctx, follow_redirects
+
+    def _open(self, req, https: bool):  # noqa: ANN001
+        if req.type not in ("http", "https"):
+            raise FetchBlockedError(f"scheme not allowed: {req.type}")
+        target = urllib.parse.urlsplit("//" + req.host)
+        host = target.hostname or ""
+        port_n = target.port or (443 if https else 80)
+        ip = self.policy.vet(host, port_n)
+        ctx = self.ctx
+        base: type[http.client.HTTPConnection] = (
+            http.client.HTTPSConnection if https else http.client.HTTPConnection
+        )
+
+        class Pinned(base):  # type: ignore[valid-type, misc]
+            def connect(self) -> None:
+                self.sock = socket.create_connection((ip, self.port), self.timeout, self.source_address)
+                if https:
+                    self.sock = ctx.wrap_socket(self.sock, server_hostname=host)
+
+        return self.do_open(Pinned, req, **({"context": ctx} if https else {}))
+
+    def http_open(self, req):  # noqa: ANN001
+        return self._open(req, https=False)
+
+    def https_open(self, req):  # noqa: ANN001
+        return self._open(req, https=True)
+
+
 def fetch(
     url: str,
     *,
@@ -179,26 +227,20 @@ def fetch(
     limiter = limiter or _DEFAULT_LIMITER
     hdrs = {"User-Agent": USER_AGENT, "Accept": "application/json, text/html;q=0.8, */*;q=0.5"}
     hdrs.update(headers or {})
-    try:
-        policy.check(url)
-    except FetchBlockedError as exc:
-        return FetchResult(url, 0, {}, b"", error=f"blocked: {exc}")
+    if urllib.parse.urlparse(url).scheme not in ("http", "https"):
+        return FetchResult(url, 0, {}, b"", error="blocked: scheme not allowed")
 
     ctx = ssl.create_default_context(cafile=os.environ.get("SSL_CERT_FILE") or None)
     if not verify_tls:
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
 
-    active_policy = policy
-
     class _Redirect(urllib.request.HTTPRedirectHandler):
-        def redirect_request(self, req, fp, code, msg, hdrs_, newurl):
-            if not follow_redirects:
-                return None
-            active_policy.check(newurl)  # re-check every hop (SSRF via redirect)
-            return super().redirect_request(req, fp, code, msg, hdrs_, newurl)
+        def redirect_request(self, req, fp, code, msg, hdrs_, newurl):  # noqa: ANN001
+            # the next hop is vetted and pinned by _GuardedHandler when it opens the connection
+            return super().redirect_request(req, fp, code, msg, hdrs_, newurl) if follow_redirects else None
 
-    opener = urllib.request.build_opener(urllib.request.HTTPSHandler(context=ctx), _Redirect())
+    opener = urllib.request.build_opener(_GuardedHandler(policy, ctx, follow_redirects), _Redirect())
     attempt = 0
     while True:
         attempt += 1
@@ -226,6 +268,38 @@ def fetch(
                 time.sleep(min(2**attempt, 8))
                 continue
             return FetchResult(url, 0, {}, b"", error=f"{type(exc).__name__}: {exc}")
+
+
+def post_json(
+    url: str,
+    body: Any,
+    *,
+    headers: dict | None = None,
+    policy: NetPolicy | None = None,
+    timeout: float = 15.0,
+    signature_secret: str | None = None,
+) -> FetchResult:
+    """POST a JSON document through the guarded client: no redirects, size-capped, policy-checked.
+    With ``signature_secret`` the body is signed as ``X-AgentDossier-Signature: sha256=<hmac>``."""
+    import hmac  # noqa: PLC0415
+
+    raw = json.dumps(body, sort_keys=True, default=str).encode()
+    hdrs = {"Content-Type": "application/json", "Accept": "application/json", **(headers or {})}
+    if signature_secret:
+        hdrs["X-AgentDossier-Signature"] = (
+            "sha256=" + hmac.new(signature_secret.encode(), raw, hashlib.sha256).hexdigest()
+        )
+    return fetch(
+        url,
+        method="POST",
+        data=raw,
+        headers=hdrs,
+        policy=policy,
+        timeout=timeout,
+        retries=0,
+        follow_redirects=False,
+        limiter=RateLimiter(0.0),
+    )
 
 
 def fetch_json(url: str, **kw):

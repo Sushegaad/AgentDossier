@@ -50,7 +50,8 @@ def _settings(catalog_dir: Path, tmp_path: Path, **kw) -> Settings:
 
 def test_ard_rest_search_agents_and_qualify(catalog_dir, tmp_path):
     c = TestClient(create_app(_settings(catalog_dir, tmp_path)))
-    assert c.get("/healthz").json()["resources"] == 158
+    assert c.get("/healthz").json() == {"ok": True}
+    assert c.get("/api/status").json()["catalog"]["resources"] == 158
     r = c.post("/search", json={"query": "insurance claims agent", "limit": 5}).json()
     assert r["count"] == 5 and all("insurance" in x["domains"] for x in r["results"])
     assert r["results"][0]["explanation"] and r["results"][0]["identifier"].startswith("urn:air:")
@@ -125,7 +126,7 @@ def test_scan_endpoint_runs_the_scanner_and_reloads_the_catalog(tmp_path):
         empty.mkdir()
         app = create_app(_settings(empty, tmp_path, enterprise_config=cfg_path))
         c = TestClient(app)
-        assert c.get("/healthz").json()["resources"] == 0
+        assert c.get("/api/status").json()["catalog"]["resources"] == 0
         started = c.post("/api/scan").json()
         assert started["status"] == "running"
         for _ in range(100):
@@ -134,7 +135,7 @@ def test_scan_endpoint_runs_the_scanner_and_reloads_the_catalog(tmp_path):
                 break
             time.sleep(0.2)
         assert scans[0]["status"] == "done", scans
-        assert c.get("/healthz").json()["resources"] >= 2
+        assert c.get("/api/status").json()["catalog"]["resources"] >= 2
         rep = c.get(f"/api/scans/{scans[0]['id']}").json()
         assert rep["tenant"] == "acme-test" and rep["probed"][0]["ard"] == "verified"
         r = c.post("/search", json={"query": "claims intake"}).json()

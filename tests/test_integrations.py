@@ -16,6 +16,10 @@ import pytest
 from agentdossier.server.integrations import IntegrationSettings, build_integrations
 from agentdossier.server.notify import Notifier, NotifySettings, verify_signature
 from agentdossier.storage.db import Store
+from agentdossier.util import NetPolicy
+
+# the sinks in these tests listen on loopback, which the public egress policy refuses by design
+LOOPBACK = NetPolicy(mode="enterprise", allow_cidrs=["127.0.0.0/8"], allow_public=True)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -84,7 +88,9 @@ def _settings(sink: Sink, **kw) -> IntegrationSettings:
         grc_webhook_secret="grc-secret",
     )
     base.update(kw)
-    return IntegrationSettings(**base)
+    out = IntegrationSettings(**base)
+    out.policy = LOOPBACK
+    return out
 
 
 def test_validation():

@@ -6,7 +6,7 @@ import os
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from ..util import ROOT
+from ..util import ROOT, NetPolicy
 from .integrations import IntegrationSettings
 from .notify import NotifySettings
 
@@ -61,6 +61,10 @@ class Settings:
     federation_timeout: float = field(
         default_factory=lambda: float(os.environ.get("AGENTDOSSIER_FEDERATION_TIMEOUT", "5"))
     )
+    # egress for everything the server itself calls (webhooks, tickets, chat, federation peers):
+    # public addresses only, unless AGENTDOSSIER_EGRESS_ALLOW lists the private CIDRs/hosts
+    # (on-prem Jira, an internal peer registry) it may reach as well
+    egress_allow: str = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_EGRESS_ALLOW", ""))
     # SCIM 2.0 provisioning (off until a token is set)
     scim_token: str | None = field(default_factory=lambda: os.environ.get("SCIM_TOKEN"))
     # hardening
@@ -76,6 +80,20 @@ class Settings:
     )
     # daily evidence-expiry job (5-field cron, UTC); empty disables it
     expiry_cron: str = field(default_factory=lambda: os.environ.get("AGENTDOSSIER_EXPIRY_CRON", "0 7 * * *"))
+
+    def egress_policy(self) -> NetPolicy:
+        """Public-only by default; private targets only when listed; loopback only in dev."""
+        items = [x.strip() for x in self.egress_allow.split(",") if x.strip()]
+        cidrs = [
+            x for x in items if "/" in x or x.replace(".", "").replace(":", "").isalnum() and x[0].isdigit()
+        ]
+        hosts = [x for x in items if x not in cidrs]
+        if self.dev:
+            cidrs = [*cidrs, "127.0.0.0/8", "::1/128"]
+            hosts = [*hosts, "localhost"]
+        if not cidrs and not hosts:
+            return NetPolicy()
+        return NetPolicy(mode="enterprise", allow_cidrs=cidrs, allow_hosts=hosts, allow_public=True)
 
     def validate(self) -> list[str]:
         problems = []

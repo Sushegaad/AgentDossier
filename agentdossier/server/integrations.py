@@ -16,31 +16,29 @@ the delivery log.
 from __future__ import annotations
 
 import base64
-import hashlib
-import hmac
-import json
 import os
-import urllib.error
-import urllib.request
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from typing import Any
+
+from ..util import FetchResult, NetPolicy, post_json
 
 TICKET_EVENTS = ("scan.failed", "evidence.expiring", "decision.changed")
 GRC_STAGES = ("approved", "rejected", "retired")
 
 
-def _post_json(url: str, body: dict[str, Any], headers: dict[str, str], timeout: float) -> str:
-    raw = json.dumps(body, default=str).encode()
-    req = urllib.request.Request(
-        url, data=raw, headers={"Content-Type": "application/json", **headers}, method="POST"
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310 - operator-configured URL
-            return f"HTTP {resp.status}"
-    except urllib.error.HTTPError as exc:
-        detail = exc.read(300).decode(errors="replace") if exc.fp else ""
-        raise RuntimeError(f"HTTP {exc.code} {detail.strip()}".strip()) from exc
+def _post(
+    s: IntegrationSettings,
+    url: str,
+    body: Any,
+    headers: dict[str, str] | None = None,
+    secret: str | None = None,
+) -> FetchResult:
+    r = post_json(url, body, headers=headers, policy=s.policy, timeout=s.timeout_sec, signature_secret=secret)
+    if not r.ok:
+        detail = r.body[:300].decode(errors="replace").strip() if r.body else ""
+        raise RuntimeError((r.error or f"HTTP {r.status}") + (f" {detail}" if detail else ""))
+    return r
 
 
 def _basic(user: str, secret: str) -> str:
@@ -76,6 +74,8 @@ class IntegrationSettings:
     timeout_sec: float = 15.0
     # callback that renders a decision packet for the GRC channel; set by the app
     packet_for: Callable[[int], dict[str, Any]] | None = field(default=None, repr=False)
+    # egress policy every channel sends through; set by the app
+    policy: NetPolicy = field(default_factory=NetPolicy, repr=False)
 
     @classmethod
     def from_env(cls) -> IntegrationSettings:
@@ -131,7 +131,6 @@ def _grc_worthy(event: str, body: dict[str, Any]) -> bool:
 
 def build_integrations(s: IntegrationSettings) -> list[Integration]:
     out: list[Integration] = []
-    t = s.timeout_sec
 
     if s.slack_webhook_url:
 
@@ -154,7 +153,7 @@ def build_integrations(s: IntegrationSettings) -> list[Integration]:
                     },
                 ],
             }
-            return _post_json(s.slack_webhook_url or "", payload, {}, t)
+            return f"HTTP {_post(s, s.slack_webhook_url or '', payload).status}"
 
         out.append(Integration("slack", "slack incoming webhook", lambda e, b: True, slack))
 
@@ -196,7 +195,7 @@ def build_integrations(s: IntegrationSettings) -> list[Integration]:
                     }
                 ],
             }
-            return _post_json(s.teams_webhook_url or "", card, {}, t)
+            return f"HTTP {_post(s, s.teams_webhook_url or '', card).status}"
 
         out.append(Integration("teams", "teams incoming webhook", lambda e, b: True, teams))
 
@@ -214,23 +213,14 @@ def build_integrations(s: IntegrationSettings) -> list[Integration]:
                     "labels": ["agentdossier", event.replace(".", "-")],
                 }
             }
-            url = f"{s.jira_base_url}/rest/api/2/issue"
-            raw = json.dumps(payload).encode()
-            req = urllib.request.Request(
-                url,
-                data=raw,
-                method="POST",
-                headers={
-                    "Content-Type": "application/json",
-                    "Authorization": _basic(s.jira_email or "", s.jira_api_token or ""),
-                },
+            r = _post(
+                s,
+                f"{s.jira_base_url}/rest/api/2/issue",
+                payload,
+                {"Authorization": _basic(s.jira_email or "", s.jira_api_token or "")},
             )
-            try:
-                with urllib.request.urlopen(req, timeout=t) as resp:  # noqa: S310
-                    data = json.loads(resp.read() or b"{}")
-                    return f"issue {data.get('key', '?')}"
-            except urllib.error.HTTPError as exc:
-                raise RuntimeError(f"HTTP {exc.code}") from exc
+            data = r.json() if r.body else {}
+            return f"issue {data.get('key', '?')}"
 
         out.append(
             Integration("jira", f"{s.jira_base_url} project {s.jira_project_key}", _ticket_worthy, jira)
@@ -245,24 +235,14 @@ def build_integrations(s: IntegrationSettings) -> list[Integration]:
                 "category": "software",
                 "u_source": "agentdossier",
             }
-            url = f"{s.servicenow_instance_url}/api/now/table/{s.servicenow_table}"
-            raw = json.dumps(payload).encode()
-            req = urllib.request.Request(
-                url,
-                data=raw,
-                method="POST",
-                headers={
-                    "Content-Type": "application/json",
-                    "Accept": "application/json",
-                    "Authorization": _basic(s.servicenow_user or "", s.servicenow_password or ""),
-                },
+            r = _post(
+                s,
+                f"{s.servicenow_instance_url}/api/now/table/{s.servicenow_table}",
+                payload,
+                {"Authorization": _basic(s.servicenow_user or "", s.servicenow_password or "")},
             )
-            try:
-                with urllib.request.urlopen(req, timeout=t) as resp:  # noqa: S310
-                    data = json.loads(resp.read() or b"{}").get("result", {})
-                    return f"{s.servicenow_table} {data.get('number', '?')}"
-            except urllib.error.HTTPError as exc:
-                raise RuntimeError(f"HTTP {exc.code}") from exc
+            data = (r.json() if r.body else {}).get("result", {})
+            return f"{s.servicenow_table} {data.get('number', '?')}"
 
         out.append(
             Integration(
@@ -285,23 +265,14 @@ def build_integrations(s: IntegrationSettings) -> list[Integration]:
                 "decision_packet": packet,
                 "summary": body.get("data"),
             }
-            raw = json.dumps(payload, sort_keys=True, default=str).encode()
-            headers = {"X-AgentDossier-Event": event}
-            if s.grc_webhook_secret:
-                headers["X-AgentDossier-Signature"] = (
-                    "sha256=" + hmac.new(s.grc_webhook_secret.encode(), raw, hashlib.sha256).hexdigest()
-                )
-            req = urllib.request.Request(
+            r = _post(
+                s,
                 s.grc_webhook_url or "",
-                data=raw,
-                headers={"Content-Type": "application/json", **headers},
-                method="POST",
+                payload,
+                {"X-AgentDossier-Event": event},
+                secret=s.grc_webhook_secret,
             )
-            try:
-                with urllib.request.urlopen(req, timeout=t) as resp:  # noqa: S310
-                    return f"HTTP {resp.status} packet={'yes' if packet else 'no'}"
-            except urllib.error.HTTPError as exc:
-                raise RuntimeError(f"HTTP {exc.code}") from exc
+            return f"HTTP {r.status} packet={'yes' if packet else 'no'}"
 
         out.append(Integration("grc", s.grc_webhook_url, _grc_worthy, grc))
 

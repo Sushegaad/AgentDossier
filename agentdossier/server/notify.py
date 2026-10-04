@@ -21,19 +21,16 @@ from __future__ import annotations
 
 import hashlib
 import hmac
-import json
 import logging
 import smtplib
 import ssl
 import time
-import urllib.error
-import urllib.request
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime, timedelta
 from email.message import EmailMessage
 from typing import Any
 
-from ..util import now_iso
+from ..util import NetPolicy, now_iso, post_json
 
 log = logging.getLogger("agentdossier.notify")
 
@@ -81,12 +78,20 @@ class Notifier:
     """Fan one event out to every configured channel and record each attempt."""
 
     def __init__(
-        self, settings: NotifySettings, store: Any = None, *, site: str = "", tenant: str | None = None
+        self,
+        settings: NotifySettings,
+        store: Any = None,
+        *,
+        site: str = "",
+        tenant: str | None = None,
+        policy: NetPolicy | None = None,
     ):
         self.settings = settings
         self.store = store
         self.site = site.rstrip("/")
         self.tenant = tenant
+        # every outbound call goes through util.fetch under this egress policy
+        self.policy = policy or NetPolicy()
         # extra channels (Slack, Teams, Jira, ServiceNow, GRC): see server/integrations.py
         self.integrations: list[Any] = []
 
@@ -180,22 +185,17 @@ class Notifier:
 
     def _webhook(self, event: str, body: dict[str, Any]) -> str:
         s = self.settings
-        raw = json.dumps(body, sort_keys=True, default=str).encode()
-        headers = {
-            "Content-Type": "application/json",
-            "User-Agent": "AgentDossier-notify/1",
-            "X-AgentDossier-Event": event,
-        }
-        if s.webhook_secret:
-            headers["X-AgentDossier-Signature"] = (
-                "sha256=" + hmac.new(s.webhook_secret.encode(), raw, hashlib.sha256).hexdigest()
-            )
-        req = urllib.request.Request(s.webhook_url or "", data=raw, headers=headers, method="POST")
-        try:
-            with urllib.request.urlopen(req, timeout=s.timeout_sec) as resp:  # noqa: S310 - operator-configured URL
-                return f"HTTP {resp.status}"
-        except urllib.error.HTTPError as exc:
-            raise RuntimeError(f"HTTP {exc.code}") from exc
+        r = post_json(
+            s.webhook_url or "",
+            body,
+            headers={"User-Agent": "AgentDossier-notify/1", "X-AgentDossier-Event": event},
+            policy=self.policy,
+            timeout=s.timeout_sec,
+            signature_secret=s.webhook_secret,
+        )
+        if not r.ok:
+            raise RuntimeError(r.error or f"HTTP {r.status}")
+        return f"HTTP {r.status}"
 
 
 def verify_signature(secret: str, raw_body: bytes, header: str | None) -> bool:
