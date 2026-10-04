@@ -22,9 +22,8 @@ dependencies = []
 [project.optional-dependencies]
 connectors = ["openpyxl>=3.1", "feedparser>=6.0", "rapidfuzz>=3.9", "dnspython>=2.6"]
 server = [
-  "fastapi>=0.115", "uvicorn[standard]>=0.30", "pydantic>=2.8", "sqlalchemy>=2.0",
-  "alembic>=1.13", "authlib>=1.3", "psycopg[binary]>=3.2", "apscheduler>=3.10",
-  "cryptography>=43", "slowapi>=0.1.9", "itsdangerous>=2.2",
+  "fastapi>=0.115", "uvicorn[standard]>=0.30", "pydantic>=2.8", "pydantic-settings>=2.5",
+  "authlib>=1.3", "apscheduler>=3.10", "itsdangerous>=2.2",
 ]
 mcp = ["mcp>=1.2"]
 dev = [
@@ -63,12 +62,6 @@ check_untyped_defs = true
 warn_unused_ignores = true
 files = ["agentdossier"]
 ignore_missing_imports = true
-
-[[tool.mypy.overrides]]
-# slowapi depends on `deprecated`, whose source uses the 3.12 `type` statement; mypy
-# must not follow imports into it while this project targets 3.11.
-module = ["slowapi", "slowapi.*", "deprecated", "deprecated.*", "wrapt", "wrapt.*"]
-follow_imports = "skip"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

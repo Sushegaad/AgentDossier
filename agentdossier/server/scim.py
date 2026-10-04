@@ -24,6 +24,7 @@ from typing import Any
 from fastapi import HTTPException, Request
 from fastapi.responses import JSONResponse
 
+from ..storage.db import ensure_schema
 from ..util import now_iso
 
 USER_SCHEMA = "urn:ietf:params:scim:schemas:core:2.0:User"
@@ -45,12 +46,7 @@ class Scim:
     def __init__(self, db: sqlite3.Connection, lock: threading.RLock, token: str | None, site: str = ""):
         self.db, self.lock, self.token = db, lock, token
         self.site = site.rstrip("/")
-        with self.lock:
-            self.db.execute(
-                "CREATE TABLE IF NOT EXISTS scim_users (id TEXT PRIMARY KEY, external_id TEXT, user_name TEXT UNIQUE, "
-                "display_name TEXT, email TEXT, active INTEGER NOT NULL DEFAULT 1, created TEXT, updated TEXT, raw TEXT)"
-            )
-            self.db.commit()
+        ensure_schema(self.db, self.lock)
 
     @property
     def enabled(self) -> bool:

@@ -52,7 +52,6 @@ Static
 
 from __future__ import annotations
 
-import hashlib
 import logging
 import threading
 from pathlib import Path
@@ -68,6 +67,7 @@ from .catalog import Catalog
 from .federation import HOP_HEADER, Federation, peers_from_env
 from .integrations import build_integrations
 from .notify import Notifier, catalog_diff, evidence_expiring, expiry_text, scan_text
+from .ratelimit import RateLimiter
 from .scim import LIST_SCHEMA, Scim, scim_error
 from .settings import Settings
 from .workflow import Actor, Workflow, WorkflowError
@@ -160,6 +160,17 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     scim = Scim(store.db, store.lock, settings.scim_token, site=settings.site)
     auth.allowed = scim.allowed
 
+    # --- errors: one place each ------------------------------------------------------------
+    @app.exception_handler(WorkflowError)
+    async def _workflow_error(request: Request, exc: WorkflowError):  # noqa: ANN001
+        return JSONResponse({"detail": str(exc)}, status_code=exc.status)
+
+    @app.exception_handler(HTTPException)
+    async def _http_error(request: Request, exc: HTTPException):  # noqa: ANN001
+        if request.url.path.startswith("/scim/"):
+            return scim_error(exc.status_code, str(exc.detail))  # RFC 7644 error shape
+        return JSONResponse({"detail": exc.detail}, status_code=exc.status_code, headers=exc.headers)
+
     # --- hardening: headers, body cap, rate limit ------------------------------------------
     app.add_middleware(BodyCapMiddleware, limit=settings.max_body_bytes)
 
@@ -189,35 +200,11 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             response.headers.setdefault("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
         return response
 
-    limiter: Any = None
-    if settings.rate_limit:
-        try:
-            from slowapi import Limiter  # noqa: PLC0415
-            from slowapi.errors import RateLimitExceeded  # noqa: PLC0415
-            from slowapi.util import get_remote_address  # noqa: PLC0415
+    limiter = RateLimiter(settings.rate_limit) if settings.rate_limit else None
 
-            def client_key(request: Request) -> str:
-                # a bearer token identifies the client better than an address shared behind a proxy
-                header = request.headers.get("authorization", "")
-                if header.lower().startswith("bearer ") and len(header) > 7:
-                    return "tok:" + hashlib.sha256(header[7:].strip().encode()).hexdigest()[:16]
-                return "ip:" + get_remote_address(request)
-
-            limiter = Limiter(key_func=client_key, default_limits=[])
-            app.state.limiter = limiter
-
-            @app.exception_handler(RateLimitExceeded)
-            async def _rl(request: Request, exc: RateLimitExceeded):  # noqa: ANN001
-                return JSONResponse(
-                    {"error": "rate limit exceeded", "detail": str(exc.detail)},
-                    status_code=429,
-                    headers={"Retry-After": "60"},
-                )
-        except ImportError:  # pragma: no cover
-            log.warning("slowapi not installed; rate limiting off")
-
-    def limited(fn):  # noqa: ANN001
-        return limiter.limit(settings.rate_limit)(fn) if limiter else fn
+    def limited(request: Request) -> None:
+        if limiter is not None:
+            limiter.check(request)
 
     if settings.auth_mode == "oidc":
         from starlette.middleware.sessions import SessionMiddleware  # noqa: PLC0415
@@ -381,8 +368,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return {"entries": []}
 
     @app.post("/search")
-    @limited
     def search(request: Request, body: dict[str, Any] = Body(default={})):
+        limited(request)
         user(request)
         q = str(body.get("query") or "")
         limit = min(int(body.get("limit") or 20), 100)
@@ -420,8 +407,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return out
 
     @app.post("/explore")
-    @limited
     def explore(request: Request, body: dict[str, Any] = Body(default={})):
+        limited(request)
         user(request)
         domain, rtype = body.get("domain"), body.get("type")
         recs = [
@@ -499,8 +486,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         }
 
     @app.post("/qualify")
-    @limited
     def qualify(request: Request, body: dict[str, Any] = Body(...)):
+        limited(request)
         u = user(request)
         policy = body.get("policy") or body.get("policyId")
         if not policy:
@@ -618,12 +605,6 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         u = user(request, reviewer=reviewer)
         return Actor(u.subject, u.name, set(u.roles))
 
-    def _flow(fn):  # noqa: ANN001 - translate workflow errors into HTTP
-        try:
-            return fn()
-        except WorkflowError as exc:
-            raise HTTPException(exc.status, str(exc)) from exc
-
     def _decision_event(d: dict[str, Any], what: str, who: str) -> None:
         store.audit(who, f"decision.{what}", f"id={d['id']} resource={d['resource_id']} stage={d['stage']}")
         notifier.send(
@@ -661,18 +642,16 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 raise HTTPException(404, f"unknown policyId {pid}")
             results = catalog.qualify(pid, [res["id"]])
             verdict = results[0]["verdict"] if results else None
-        d = _flow(
-            lambda: flow.create_decision(
-                a,
-                resource_id=res["id"],
-                resource_name=res.get("name"),
-                title=body.get("title"),
-                policy_id=pid,
-                required_roles=body.get("requiredRoles"),
-                owner=body.get("owner"),
-                notes=body.get("notes"),
-                verdict=verdict,
-            )
+        d = flow.create_decision(
+            a,
+            resource_id=res["id"],
+            resource_name=res.get("name"),
+            title=body.get("title"),
+            policy_id=pid,
+            required_roles=body.get("requiredRoles"),
+            owner=body.get("owner"),
+            notes=body.get("notes"),
+            verdict=verdict,
         )
         _decision_event(d, "opened", a.subject)
         return d
@@ -680,46 +659,40 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/api/decisions/{did}")
     def get_decision(request: Request, did: int):
         user(request)
-        return _flow(lambda: flow.decision(did))
+        return flow.decision(did)
 
     @app.post("/api/decisions/{did}/stage")
     def set_stage(request: Request, did: int, body: dict[str, Any] = Body(...)):
         a = actor(request, reviewer=True)
         stage = str(body.get("stage") or "")
         verdict = None
-        d0 = _flow(lambda: flow.decision(did))
+        d0 = flow.decision(did)
         if stage == "approved" and d0.get("policy_id"):
             results = catalog.qualify(d0["policy_id"], [d0["resource_id"]])
             verdict = results[0]["verdict"] if results else None
-        d = _flow(lambda: flow.transition(a, did, stage, note=body.get("note"), verdict=verdict))
+        d = flow.transition(a, did, stage, note=body.get("note"), verdict=verdict)
         _decision_event(d, f"moved to {stage}", a.subject)
         return d
 
     @app.post("/api/decisions/{did}/sign")
     def sign_decision(request: Request, did: int, body: dict[str, Any] = Body(...)):
         a = actor(request, reviewer=True)
-        d = _flow(
-            lambda: flow.sign(
-                a, did, str(body.get("role") or ""), str(body.get("verdict") or ""), body.get("note")
-            )
-        )
+        d = flow.sign(a, did, str(body.get("role") or ""), str(body.get("verdict") or ""), body.get("note"))
         _decision_event(d, f"{body.get('role')} {body.get('verdict')}", a.subject)
         return d
 
     @app.post("/api/decisions/{did}/comments", status_code=201)
     def add_comment(request: Request, did: int, body: dict[str, Any] = Body(...)):
         a = actor(request)
-        c = _flow(lambda: flow.comment(a, did, str(body.get("body") or ""), body.get("parentId")))
+        c = flow.comment(a, did, str(body.get("body") or ""), body.get("parentId"))
         store.audit(a.subject, "decision.comment", f"id={did} comment={c['id']}")
         return c
 
     @app.post("/api/decisions/{did}/tasks", status_code=201)
     def add_task(request: Request, did: int, body: dict[str, Any] = Body(...)):
         a = actor(request)
-        t = _flow(
-            lambda: flow.add_task(
-                a, did, str(body.get("title") or ""), assignee=body.get("assignee"), due=body.get("due")
-            )
+        t = flow.add_task(
+            a, did, str(body.get("title") or ""), assignee=body.get("assignee"), due=body.get("due")
         )
         store.audit(a.subject, "decision.task", f"id={did} task={t['id']}")
         return t
@@ -727,7 +700,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/api/decisions/{did}/export")
     def export_decision(request: Request, did: int, format: str = Query("json", pattern="^(json|csv)$")):  # noqa: A002
         u = user(request)
-        d = _flow(lambda: flow.decision(did))
+        d = flow.decision(did)
         res = catalog.resource(d["resource_id"])
         packet = flow.packet(
             did, resource=res, instance={**catalog.meta, "site": settings.site, "exported_by": u.subject}
@@ -751,7 +724,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.post("/api/tasks/{tid}")
     def set_task(request: Request, tid: int, body: dict[str, Any] = Body(...)):
         a = actor(request)
-        t = _flow(lambda: flow.set_task(a, tid, str(body.get("status") or ""), body.get("note")))
+        t = flow.set_task(a, tid, str(body.get("status") or ""), body.get("note"))
         store.audit(a.subject, "task.status", f"task={tid} status={t['status']}")
         return t
 
@@ -770,15 +743,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         res = catalog.resource(str(rid or ""))
         if not res:
             raise HTTPException(404, "unknown resource")
-        f = _flow(
-            lambda: flow.add_feedback(
-                a,
-                resource_id=res["id"],
-                kind=str(body.get("kind") or "note"),
-                body=body.get("body"),
-                rating=body.get("rating"),
-                decision_id=body.get("decisionId"),
-            )
+        f = flow.add_feedback(
+            a,
+            resource_id=res["id"],
+            kind=str(body.get("kind") or "note"),
+            body=body.get("body"),
+            rating=body.get("rating"),
+            decision_id=body.get("decisionId"),
         )
         store.audit(a.subject, "feedback.add", f"resource={res['id']} kind={f['kind']} id={f['id']}")
         return f
@@ -786,7 +757,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.post("/api/feedback/{fid}")
     def triage_feedback(request: Request, fid: int, body: dict[str, Any] = Body(...)):
         a = actor(request, reviewer=True)
-        f = _flow(lambda: flow.set_feedback(a, fid, str(body.get("status") or "")))
+        f = flow.set_feedback(a, fid, str(body.get("status") or ""))
         store.audit(a.subject, "feedback.status", f"id={fid} status={f['status']}")
         return f
 
@@ -802,56 +773,38 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         @app.get("/scim/v2/Users")
         def scim_users(request: Request, filter: str | None = None, startIndex: int = 1, count: int = 100):  # noqa: A002, N803
             scim.require(request)
-            try:
-                return JSONResponse(scim.list(filter, startIndex, min(count, 200)), media_type=scim_mt)
-            except HTTPException as exc:
-                return scim_error(exc.status_code, str(exc.detail))
+            return JSONResponse(scim.list(filter, startIndex, min(count, 200)), media_type=scim_mt)
 
         @app.post("/scim/v2/Users", status_code=201)
         def scim_create(request: Request, body: dict[str, Any] = Body(...)):
             scim.require(request)
-            try:
-                u = scim.create(body)
-            except HTTPException as exc:
-                return scim_error(exc.status_code, str(exc.detail))
+            u = scim.create(body)
             store.audit("scim", "scim.user.create", f"{u['userName']} id={u['id']}")
             return JSONResponse(u, status_code=201, media_type=scim_mt)
 
         @app.get("/scim/v2/Users/{uid}")
         def scim_get(request: Request, uid: str):
             scim.require(request)
-            try:
-                return JSONResponse(scim.get(uid), media_type=scim_mt)
-            except HTTPException as exc:
-                return scim_error(exc.status_code, str(exc.detail))
+            return JSONResponse(scim.get(uid), media_type=scim_mt)
 
         @app.put("/scim/v2/Users/{uid}")
         def scim_put(request: Request, uid: str, body: dict[str, Any] = Body(...)):
             scim.require(request)
-            try:
-                u = scim.replace(uid, body)
-            except HTTPException as exc:
-                return scim_error(exc.status_code, str(exc.detail))
+            u = scim.replace(uid, body)
             store.audit("scim", "scim.user.replace", f"{u['userName']} active={u['active']}")
             return JSONResponse(u, media_type=scim_mt)
 
         @app.patch("/scim/v2/Users/{uid}")
         def scim_patch(request: Request, uid: str, body: dict[str, Any] = Body(...)):
             scim.require(request)
-            try:
-                u = scim.patch(uid, body)
-            except HTTPException as exc:
-                return scim_error(exc.status_code, str(exc.detail))
+            u = scim.patch(uid, body)
             store.audit("scim", "scim.user.patch", f"{u['userName']} active={u['active']}")
             return JSONResponse(u, media_type=scim_mt)
 
         @app.delete("/scim/v2/Users/{uid}", status_code=204)
         def scim_delete(request: Request, uid: str):
             scim.require(request)
-            try:
-                scim.delete(uid)
-            except HTTPException as exc:
-                return scim_error(exc.status_code, str(exc.detail))
+            scim.delete(uid)
             store.audit("scim", "scim.user.delete", uid)
             return JSONResponse(None, status_code=204)
 
