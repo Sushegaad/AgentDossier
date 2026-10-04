@@ -39,7 +39,8 @@ trail), the catalog, raw probe snapshots and the trust changelog.
 4. **Credentials.** Headers the scanner should send come from environment
    variables named in `auth.headers_from_env`; the values are never in the file.
 5. **TLS.** Point `tls.ca_bundle` at your internal root CA when agents use
-   private certificates.
+   private certificates; it applies to the scan's own connections only, never to
+   the rest of the process.
 6. **Probes.** ARD, A2A and MCP server cards are metadata reads. The MCP
    handshake (`initialize` + `tools/list`) is off by default and never calls a
    tool.
@@ -54,6 +55,15 @@ agentdossier enterprise scan enterprise.json          # the real thing; writes <
 ```
 
 `plan` output is what you attach to the change ticket.
+
+**Audit log.** Every scan writes `audit.jsonl` next to `scan-report.json`: one
+line per event (`run` header with who authorized it, the ticket, the hash of the
+configuration used and the scanner version; `blocked` for every target the scope
+refused; `probe`, `found`, `registry`, `error`; `done`). Each line carries the
+SHA-256 of the previous line, so an edit, a removed line or a cut tail is
+detectable: `agentdossier enterprise audit-verify audit.jsonl` re-walks the
+chain and prints the header, or the first problem. `scan-report.json` records
+the final hash (`audit_hash`) so the report and the log vouch for each other.
 
 ## Running the container
 

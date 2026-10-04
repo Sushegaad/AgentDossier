@@ -49,6 +49,9 @@ def load_curated_protocols(path: Path | None = None) -> list[dict[str, Any]]:
     for e in doc.get("claims", []) or []:
         if not e.get("checked_on") or not any(e.get(p) for p in PROTOCOLS):
             continue
+        if str(e.get("checked_by") or "").strip().lower() in ("", "maintainer", "todo", "tbd", "unknown"):
+            # the file's whole point is that a named person looked; a placeholder is not that
+            continue
         if not (e.get("name") or e.get("publisher_domain") or e.get("slug")):
             continue
         out.append(e)

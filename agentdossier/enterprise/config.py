@@ -51,7 +51,10 @@ class EnterpriseConfig:
     @property
     def policy(self) -> NetPolicy:
         return NetPolicy(
-            mode="enterprise", allow_cidrs=list(self.allow_cidrs), allow_hosts=list(self.allow_hosts)
+            mode="enterprise",
+            allow_cidrs=list(self.allow_cidrs),
+            allow_hosts=list(self.allow_hosts),
+            ca_bundle=self.ca_bundle,
         )
 
     def headers(self) -> dict[str, str]:
