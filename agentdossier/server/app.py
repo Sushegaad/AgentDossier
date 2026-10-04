@@ -53,91 +53,37 @@ Static
 from __future__ import annotations
 
 import logging
-import threading
-from pathlib import Path
-from typing import Any
 
-from fastapi import Body, FastAPI, HTTPException, Query, Request
-from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse, RedirectResponse
-from fastapi.staticfiles import StaticFiles
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
 
 from .. import __version__
 from .auth import Auth
 from .catalog import Catalog
-from .federation import HOP_HEADER, Federation, peers_from_env
+from .deps import Deps
+from .federation import Federation, peers_from_env
+from .hardening import BodyCapMiddleware, security_headers
 from .integrations import build_integrations
-from .notify import Notifier, catalog_diff, evidence_expiring, expiry_text, scan_text
+from .jobs import run_scan, start_scheduler
+from .notify import Notifier
 from .ratelimit import RateLimiter
-from .scim import LIST_SCHEMA, Scim, scim_error
+from .routers import ard, ops, static
+from .routers import auth as auth_routes
+from .routers import scim as scim_routes
+from .routers import workflow as workflow_routes
+from .scim import Scim, scim_error
 from .settings import Settings
-from .workflow import Actor, Workflow, WorkflowError
+from .workflow import Workflow, WorkflowError
 
 log = logging.getLogger("agentdossier.server")
 
 
-class BodyCapMiddleware:
-    """Pure-ASGI body cap: buffers up to ``limit`` bytes (chunked bodies included), answers 413
-    beyond it, and replays the buffered body to the app otherwise. Content-Length alone is not
-    enough because a client can lie about it or send chunked."""
-
-    def __init__(self, app, limit: int):  # noqa: ANN001
-        self.app, self.limit = app, limit
-
-    async def __call__(self, scope, receive, send):  # noqa: ANN001
-        if scope["type"] != "http":
-            return await self.app(scope, receive, send)
-        chunks: list[bytes] = []
-        total = 0
-        while True:
-            msg = await receive()
-            if msg["type"] != "http.request":
-                break  # disconnect before the body ended; let the app see it
-            body = msg.get("body", b"") or b""
-            total += len(body)
-            if total > self.limit:
-                payload = b'{"error": "request body too large"}'
-                await send(
-                    {
-                        "type": "http.response.start",
-                        "status": 413,
-                        "headers": [
-                            (b"content-type", b"application/json"),
-                            (b"content-length", str(len(payload)).encode()),
-                        ],
-                    }
-                )
-                await send({"type": "http.response.body", "body": payload})
-                return
-            chunks.append(body)
-            if not msg.get("more_body", False):
-                break
-        buffered = b"".join(chunks)
-        sent = False
-
-        async def replay():  # noqa: ANN202
-            nonlocal sent
-            if not sent:
-                sent = True
-                return {"type": "http.request", "body": buffered, "more_body": False}
-            return await receive()
-
-        return await self.app(scope, replay, send)
-
-
-def create_app(settings: Settings | None = None) -> FastAPI:
-    settings = settings or Settings()
-    problems = settings.validate()
-    if problems:
-        raise RuntimeError("; ".join(problems))
+def build_deps(settings: Settings) -> Deps:
+    """Everything the routers share, wired once."""
     from ..storage.db import Store  # noqa: PLC0415
 
-    app = FastAPI(
-        title="AgentDossier", version=__version__, docs_url="/api/docs", openapi_url="/api/openapi.json"
-    )
     catalog = Catalog(settings.catalog_dir)
     store = Store(settings.db_path)
-    auth = Auth(settings)
-    state: dict[str, Any] = {"scan_lock": threading.Lock(), "scheduler": None, "config": None}
     egress = settings.egress_policy()
     notifier = Notifier(settings.notify, store, site=settings.site, tenant=None, policy=egress)
     flow = Workflow(store.db, store.lock)
@@ -158,7 +104,39 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         settings.federation_mode,
     )
     scim = Scim(store.db, store.lock, settings.scim_token, site=settings.site)
+    auth = Auth(settings)
     auth.allowed = scim.allowed
+    d = Deps(
+        settings=settings,
+        catalog=catalog,
+        store=store,
+        auth=auth,
+        notifier=notifier,
+        flow=flow,
+        scim=scim,
+        federation=federation,
+        limiter=RateLimiter(settings.rate_limit) if settings.rate_limit else None,
+    )
+    if settings.enterprise_config:
+        from ..enterprise.config import load  # noqa: PLC0415
+
+        d.state["config"] = load(settings.enterprise_config)
+        notifier.tenant = d.state["config"].tenant
+    return d
+
+
+def create_app(settings: Settings | None = None) -> FastAPI:
+    settings = settings or Settings()
+    problems = settings.validate()
+    if problems:
+        raise RuntimeError("; ".join(problems))
+    d = build_deps(settings)
+
+    app = FastAPI(
+        title="AgentDossier", version=__version__, docs_url="/api/docs", openapi_url="/api/openapi.json"
+    )
+    app.state.deps = d
+    app.state.catalog, app.state.store, app.state.settings = d.catalog, d.store, settings  # back-compat
 
     # --- errors: one place each ------------------------------------------------------------
     @app.exception_handler(WorkflowError)
@@ -171,41 +149,14 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             return scim_error(exc.status_code, str(exc.detail))  # RFC 7644 error shape
         return JSONResponse({"detail": exc.detail}, status_code=exc.status_code, headers=exc.headers)
 
-    # --- hardening: headers, body cap, rate limit ------------------------------------------
+    # --- middleware (outermost last) ----------------------------------------------------------
     app.add_middleware(BodyCapMiddleware, limit=settings.max_body_bytes)
-
-    @app.middleware("http")
-    async def _harden(request: Request, call_next):  # noqa: ANN001
-        length = request.headers.get("content-length")
-        if length and length.isdigit() and int(length) > settings.max_body_bytes:
-            return JSONResponse({"error": "request body too large"}, status_code=413)
-        response = await call_next(request)
-        response.headers.setdefault("X-Content-Type-Options", "nosniff")
-        response.headers.setdefault("X-Frame-Options", "DENY")
-        response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
-        response.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
-        response.headers.setdefault(
-            "Cache-Control",
-            "no-store"
-            if request.url.path.startswith(("/api/", "/scim/", "/auth/"))
-            else "public, max-age=300",
+    app.middleware("http")(
+        security_headers(
+            max_body_bytes=settings.max_body_bytes,
+            hsts=settings.behind_tls_proxy or settings.site.startswith("https://"),
         )
-        if not request.url.path.startswith("/api/docs"):
-            response.headers.setdefault(
-                "Content-Security-Policy",
-                "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
-                "font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
-            )
-        if settings.behind_tls_proxy or settings.site.startswith("https://"):
-            response.headers.setdefault("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
-        return response
-
-    limiter = RateLimiter(settings.rate_limit) if settings.rate_limit else None
-
-    def limited(request: Request) -> None:
-        if limiter is not None:
-            limiter.check(request)
-
+    )
     if settings.auth_mode == "oidc":
         from starlette.middleware.sessions import SessionMiddleware  # noqa: PLC0415
 
@@ -216,674 +167,26 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             same_site="lax",
         )
 
-    # --- enterprise config and scheduler ----------------------------------------------
-    if settings.enterprise_config:
-        from ..enterprise.config import load  # noqa: PLC0415
-
-        state["config"] = load(settings.enterprise_config)
-        notifier.tenant = state["config"].tenant
-
-    def run_scan(trigger: str, user: str = "system") -> dict[str, Any]:
-        cfg = state["config"]
-        if cfg is None:
-            raise HTTPException(400, "no enterprise configuration (set AGENTDOSSIER_ENTERPRISE_CONFIG)")
-        if not state["scan_lock"].acquire(blocking=False):
-            raise HTTPException(409, "a scan is already running")
-        scan_id = store.start_scan(trigger)
-        store.audit(user, "scan.start", f"trigger={trigger} tenant={cfg.tenant} ticket={cfg.ticket}")
-
-        def work() -> None:
-            from ..enterprise import preflight, scanner  # noqa: PLC0415
-
-            try:
-                pf = preflight.run(cfg)
-                if not pf.ok:
-                    store.finish_scan(scan_id, "preflight_failed", pf.as_dict())
-                    failed = [c for c in pf.as_dict().get("checks", []) if c.get("status") == "fail"]
-                    notifier.send(
-                        "scan.failed",
-                        f"scan #{scan_id} stopped at preflight",
-                        "Preflight failed:\n"
-                        + "\n".join(f"  {c.get('id')}: {c.get('message')}" for c in failed),
-                        {"scanId": scan_id, "preflight": pf.as_dict()},
-                    )
-                    return
-                before = list(catalog.records)
-                report = scanner.scan(cfg)
-                catalog.path = Path(report["catalog"])
-                n = catalog.reload()
-                store.finish_scan(scan_id, "done", report, resources=n)
-                store.audit(user, "scan.done", f"resources={n}")
-                diff = catalog_diff(before, catalog.records)
-                summary = {
-                    k: v
-                    for k, v in report.items()
-                    if k in ("tenant", "ticket", "resources", "errors", "finished")
-                }
-                notifier.send(
-                    "scan.done",
-                    f"scan #{scan_id} done: {n} resources",
-                    scan_text(report, diff, settings.site),
-                    {"scanId": scan_id, "report": summary, "diff": diff},
-                )
-                if diff["added"] or diff["removed"] or diff["changed"]:
-                    notifier.send(
-                        "catalog.changed",
-                        f"catalog changed: +{len(diff['added'])} -{len(diff['removed'])} ~{len(diff['changed'])}",
-                        scan_text(report, diff, settings.site),
-                        {"scanId": scan_id, "diff": diff},
-                    )
-            except Exception as exc:  # noqa: BLE001
-                log.exception("scan failed")
-                store.finish_scan(scan_id, "error", {"error": f"{type(exc).__name__}: {exc}"})
-                notifier.send(
-                    "scan.failed",
-                    f"scan #{scan_id} failed",
-                    f"{type(exc).__name__}: {exc}",
-                    {"scanId": scan_id},
-                )
-            finally:
-                state["scan_lock"].release()
-
-        threading.Thread(target=work, daemon=True, name=f"scan-{scan_id}").start()
-        return {"scanId": scan_id, "status": "running"}
-
-    def run_expiry(trigger: str = "schedule") -> dict[str, Any]:
-        """Daily job: warn about compliance evidence that expires or is due for a recheck."""
-        full = [catalog.resource(r["id"]) or r for r in catalog.records]
-        items = evidence_expiring(full, days=settings.notify.expiry_warning_days)
-        store.audit("system", "evidence.expiry", f"trigger={trigger} items={len(items)}")
-        deliveries: list[dict[str, Any]] = []
-        if items:
-            deliveries = notifier.send(
-                "evidence.expiring",
-                f"{len(items)} compliance record(s) expiring or due for recheck",
-                expiry_text(items, settings.site),
-                {"items": items},
-            )
-        return {"items": items, "deliveries": deliveries}
-
-    cfg = state["config"]
-    jobs: list[tuple[str, str, Any]] = []
-    if cfg is not None and cfg.schedule:
-        jobs.append(("scan", cfg.schedule, lambda: run_scan("schedule")))
-    if settings.expiry_cron and notifier.channels:
-        jobs.append(("evidence_expiry", settings.expiry_cron, lambda: run_expiry("schedule")))
-    if jobs and settings.start_scheduler:
-        try:
-            from apscheduler.schedulers.background import BackgroundScheduler  # noqa: PLC0415
-            from apscheduler.triggers.cron import CronTrigger  # noqa: PLC0415
-
-            sched = BackgroundScheduler(timezone="UTC")
-            for job_id, cron, fn in jobs:
-                sched.add_job(fn, CronTrigger.from_crontab(cron), id=job_id, replace_existing=True)
-            sched.start()
-            state["scheduler"] = sched
-        except ImportError:
-            log.warning("apscheduler not installed; schedule ignored")
-    state["jobs"] = [{"id": j, "cron": c} for j, c, _ in jobs]
-
     @app.middleware("http")
     async def _scan_on_first_request(request: Request, call_next):  # noqa: ANN001
-        if settings.scan_on_start and state["config"] is not None and not state.get("started"):
-            state["started"] = True
+        if settings.scan_on_start and d.state["config"] is not None and not d.state.get("started"):
+            d.state["started"] = True
             try:
-                run_scan("startup")
+                run_scan(d, "startup")
             except HTTPException:
                 pass
         return await call_next(request)
 
-    # --- helpers ----------------------------------------------------------------------
-    def user(request: Request, admin: bool = False, reviewer: bool = False):
-        return auth.require(request, admin=admin, reviewer=reviewer)
-
-    def to_result(hit) -> dict[str, Any]:  # noqa: ANN001
-        r = hit.record
-        return {
-            "identifier": f"urn:air:{catalog.index.get('tenant') or 'agentdossier'}:catalog:{r['slug']}",
-            "resourceId": r["id"],
-            "displayName": r["name"],
-            "vendor": r.get("vendor"),
-            "type": r.get("resource_type"),
-            "url": f"{settings.site.rstrip('/')}/agents/{r['slug']}/",
-            "description": r.get("description"),
-            "score": hit.score,
-            "explanation": hit.explanation,
-            "trust": r.get("trust"),
-            "protocols": r.get("protocols"),
-            "compliance": r.get("compliance_summary", []),
-            "domains": r.get("domains", {}),
-        }
-
-    # --- ARD REST ----------------------------------------------------------------------
-    @app.get("/.well-known/ard.json")
-    def ard_manifest(request: Request):
-        # a private registry's manifest maps internal endpoints: readers (and federation peers,
-        # which carry a token) must authenticate; a public-scope catalog stays open for discovery
-        if catalog.index.get("scope") == "private":
-            user(request)
-        p = catalog.path / "ard.json"
-        if p.exists():
-            return FileResponse(p, media_type="application/ai-registry+json")
-        return {"entries": []}
-
-    @app.post("/search")
-    def search(request: Request, body: dict[str, Any] = Body(default={})):
-        limited(request)
-        user(request)
-        q = str(body.get("query") or "")
-        limit = min(int(body.get("limit") or 20), 100)
-        f = body.get("filters") or {}
-        hits = catalog.search(
-            q,
-            limit=limit,
-            domain=f.get("domain"),
-            resource_type=f.get("type"),
-            framework=f.get("framework"),
-            max_tier=f.get("maxTier"),
-            protocol=f.get("protocol"),
-        )
-        out: dict[str, Any] = {
-            "query": q,
-            "count": len(hits),
-            "results": [to_result(h) for h in hits],
-            "catalog": catalog.meta,
-        }
-        mode = federation.effective_mode(body.get("federation"), request.headers.get(HOP_HEADER))
-        if mode == "referrals":
-            out["federation"] = {"mode": mode, "referrals": federation.referrals(q)}
-        elif mode == "auto":
-            peers = federation.query(body)
-            merged = []
-            for p in peers:
-                for r in p["results"]:
-                    merged.append({**r, "source_registry": p["registry"]})
-            out["federation"] = {
-                "mode": mode,
-                "peers": [{k: v for k, v in p.items() if k != "results"} for p in peers],
-            }
-            out["results"] += merged
-            out["count"] = len(out["results"])
-        return out
-
-    @app.post("/explore")
-    def explore(request: Request, body: dict[str, Any] = Body(default={})):
-        limited(request)
-        user(request)
-        domain, rtype = body.get("domain"), body.get("type")
-        recs = [
-            r
-            for r in catalog.records
-            if (not domain or domain in r.get("domains", {}))
-            and (not rtype or r.get("resource_type") == rtype)
-        ]
-        by_domain: dict[str, int] = {}
-        by_type: dict[str, int] = {}
-        by_tier: dict[str, int] = {}
-        by_protocol: dict[str, int] = {}
-        for r in recs:
-            for d in r.get("domains", {}):
-                by_domain[d] = by_domain.get(d, 0) + 1
-            by_type[r.get("resource_type", "?")] = by_type.get(r.get("resource_type", "?"), 0) + 1
-            t = f"T{r.get('trust', {}).get('compliance', 5)}"
-            by_tier[t] = by_tier.get(t, 0) + 1
-            for p, s in (r.get("protocols") or {}).items():
-                if s in ("verified", "claimed"):
-                    by_protocol[p] = by_protocol.get(p, 0) + 1
-        return {
-            "total": len(recs),
-            "byDomain": by_domain,
-            "byType": by_type,
-            "byEvidenceTier": dict(sorted(by_tier.items())),
-            "byProtocol": by_protocol,
-        }
-
-    @app.get("/agents")
-    def agents(request: Request, pageSize: int = Query(100, ge=1, le=500), pageToken: str | None = None):  # noqa: N803 - ARD REST names
-        user(request)
-        recs = sorted(catalog.records, key=lambda r: r["name"].lower())
-        start = int(pageToken) if pageToken and pageToken.isdigit() else 0
-        page = recs[start : start + pageSize]
-        nxt = str(start + pageSize) if start + pageSize < len(recs) else None
-        return {
-            "agents": [
-                {
-                    "identifier": f"urn:air:{catalog.index.get('tenant') or 'agentdossier'}:catalog:{r['slug']}",
-                    "displayName": r["name"],
-                    "type": r.get("resource_type"),
-                    "url": f"{settings.site.rstrip('/')}/agents/{r['slug']}/",
-                    "resourceId": r["id"],
-                }
-                for r in page
-            ],
-            "total": len(recs),
-            "pageSize": pageSize,
-            "nextPageToken": nxt,
-        }
-
-    @app.get("/agents/{ident}")
-    def agent(request: Request, ident: str):
-        user(request)
-        res = catalog.resource(ident)
-        if not res:
-            raise HTTPException(404, "unknown resource")
-        return res
-
-    @app.get("/policies")
-    def policies(request: Request):
-        user(request)
-        return {
-            "policies": [
-                {
-                    "id": k,
-                    "name": v.get("name"),
-                    "version": v.get("version"),
-                    "jurisdictions": v.get("jurisdictions"),
-                    "rules": len(v.get("rules", [])),
-                }
-                for k, v in catalog.policies.items()
-            ]
-        }
-
-    @app.post("/qualify")
-    def qualify(request: Request, body: dict[str, Any] = Body(...)):
-        limited(request)
-        u = user(request)
-        policy = body.get("policy") or body.get("policyId")
-        if not policy:
-            raise HTTPException(400, "policy (inline) or policyId is required")
-        if isinstance(policy, str) and policy not in catalog.policies:
-            raise HTTPException(404, f"unknown policyId {policy}")
-        ids = body.get("resourceIds")
-        results = catalog.qualify(policy, ids)
-        not_found = [i for i in ids or [] if catalog.resource(str(i)) is None]
-        for r in results:  # echo the slug so callers that asked by slug can match the answer
-            rec = catalog.by_id.get(r["resourceId"])
-            if rec:
-                r["slug"] = rec.get("slug")
-        store.audit(
-            u.subject,
-            "qualify",
-            f"policy={policy if isinstance(policy, str) else policy.get('id', 'inline')} n={len(results)}",
-        )
-        return {
-            "policyId": policy if isinstance(policy, str) else policy.get("id", "inline"),
-            "count": len(results),
-            "results": results,
-            "notFound": not_found,
-        }
-
-    # --- operations -------------------------------------------------------------------
-    @app.get("/healthz")
-    def healthz():
-        return {"ok": True}  # liveness only; version and counts are on /api/status (authenticated)
-
-    @app.get("/api/status")
-    def status(request: Request):
-        user(request)
-        c = state["config"]
-        return {
-            "version": __version__,
-            "catalog": {**catalog.meta, "resources": len(catalog.records), "path": str(catalog.path)},
-            "auth_mode": settings.auth_mode,
-            "enterprise": {
-                "tenant": c.tenant,
-                "ticket": c.ticket,
-                "schedule": c.schedule,
-                "targets": len(c.target_hosts) + len(c.target_cidrs) + len(c.dns_domains),
-            }
-            if c
-            else None,
-            "scans": store.scans(5),
-            "notify": {"channels": notifier.channels, "events": sorted(settings.notify.events)},
-            "jobs": state.get("jobs", []),
-            "federation": {"mode": settings.federation_mode, "peers": [p.base for p in federation.peers]},
-            "scim": scim.enabled,
-        }
-
-    @app.post("/api/scan")
-    def scan_now(request: Request):
-        u = user(request, admin=True)
-        return run_scan("manual", u.subject)
-
-    @app.get("/api/scans")
-    def scans(request: Request):
-        user(request)
-        return {"scans": store.scans(50)}
-
-    @app.get("/api/scans/{scan_id}")
-    def scan_report(request: Request, scan_id: int):
-        user(request)
-        rep = store.scan_report(scan_id)
-        if rep is None:
-            raise HTTPException(404, "no report")
-        return rep
-
-    @app.get("/api/audit")
-    def audit(request: Request):
-        user(request, admin=True)
-        return {"events": store.audit_log()}
-
-    @app.post("/api/reload")
-    def reload(request: Request):
-        u = user(request, admin=True)
-        n = catalog.reload()
-        store.audit(u.subject, "catalog.reload", f"resources={n}")
-        return {"resources": n}
-
-    @app.get("/api/deliveries")
-    def deliveries(request: Request):
-        user(request, admin=True)
-        return {"channels": notifier.channels, "deliveries": store.deliveries(100)}
-
-    @app.post("/api/notify/test")
-    def notify_test(request: Request):
-        u = user(request, admin=True)
-        if not notifier.channels:
-            raise HTTPException(
-                400, "no notification channel configured (SMTP_* or AGENTDOSSIER_WEBHOOK_URL)"
-            )
-        out = notifier.send(
-            "test", "test notification", f"Sent by {u.subject} from {settings.site}", {"by": u.subject}
-        )
-        store.audit(u.subject, "notify.test", ", ".join(f"{d['channel']}={d['status']}" for d in out))
-        return {"deliveries": out}
-
-    @app.get("/api/evidence/expiring")
-    def expiring(request: Request, days: int = Query(30, ge=0, le=730)):
-        user(request)
-        full = [catalog.resource(r["id"]) or r for r in catalog.records]
-        return {"days": days, "items": evidence_expiring(full, days=days)}
-
-    @app.post("/api/jobs/evidence-expiry")
-    def expiry_now(request: Request):
-        u = user(request, admin=True)
-        return run_expiry(f"manual:{u.subject}")
-
-    # --- decision workflow ------------------------------------------------------------------
-    def actor(request: Request, *, reviewer: bool = False) -> Actor:
-        u = user(request, reviewer=reviewer)
-        return Actor(u.subject, u.name, set(u.roles))
-
-    def _decision_event(d: dict[str, Any], what: str, who: str) -> None:
-        store.audit(who, f"decision.{what}", f"id={d['id']} resource={d['resource_id']} stage={d['stage']}")
-        notifier.send(
-            "decision.changed",
-            f"decision #{d['id']} {what}: {d['title']} → {d['stage']}",
-            f"{who} — {what}\nDecision #{d['id']}: {d['title']}\nStage: {d['stage']}\n"
-            f"Sign-offs: approved {', '.join(d['signoff']['approved']) or '-'}; missing {', '.join(d['signoff']['missing']) or '-'}\n"
-            f"{settings.site.rstrip('/')}/api/decisions/{d['id']}",
-            {"decisionId": d["id"], "stage": d["stage"], "signoff": d["signoff"], "by": who, "what": what},
-        )
-
-    @app.get("/api/decisions")
-    def list_decisions(request: Request, stage: str | None = None, resourceId: str | None = None):  # noqa: N803
-        user(request)
-        return {"decisions": flow.decisions(stage=stage, resource_id=resourceId)}
-
-    @app.get("/api/decisions/export.csv")
-    def decisions_csv(request: Request):
-        user(request)
-        return PlainTextResponse(flow.decisions_csv(), media_type="text/csv")
-
-    @app.post("/api/decisions", status_code=201)
-    def open_decision(request: Request, body: dict[str, Any] = Body(...)):
-        a = actor(request)
-        rid = body.get("resourceId")
-        if not rid:
-            raise HTTPException(400, "resourceId is required")
-        res = catalog.resource(str(rid))
-        if not res:
-            raise HTTPException(404, "unknown resource")
-        verdict = None
-        pid = body.get("policyId")
-        if pid:
-            if pid not in catalog.policies:
-                raise HTTPException(404, f"unknown policyId {pid}")
-            results = catalog.qualify(pid, [res["id"]])
-            verdict = results[0]["verdict"] if results else None
-        d = flow.create_decision(
-            a,
-            resource_id=res["id"],
-            resource_name=res.get("name"),
-            title=body.get("title"),
-            policy_id=pid,
-            required_roles=body.get("requiredRoles"),
-            owner=body.get("owner"),
-            notes=body.get("notes"),
-            verdict=verdict,
-        )
-        _decision_event(d, "opened", a.subject)
-        return d
-
-    @app.get("/api/decisions/{did}")
-    def get_decision(request: Request, did: int):
-        user(request)
-        return flow.decision(did)
-
-    @app.post("/api/decisions/{did}/stage")
-    def set_stage(request: Request, did: int, body: dict[str, Any] = Body(...)):
-        a = actor(request, reviewer=True)
-        stage = str(body.get("stage") or "")
-        verdict = None
-        d0 = flow.decision(did)
-        if stage == "approved" and d0.get("policy_id"):
-            results = catalog.qualify(d0["policy_id"], [d0["resource_id"]])
-            verdict = results[0]["verdict"] if results else None
-        d = flow.transition(a, did, stage, note=body.get("note"), verdict=verdict)
-        _decision_event(d, f"moved to {stage}", a.subject)
-        return d
-
-    @app.post("/api/decisions/{did}/sign")
-    def sign_decision(request: Request, did: int, body: dict[str, Any] = Body(...)):
-        a = actor(request, reviewer=True)
-        d = flow.sign(a, did, str(body.get("role") or ""), str(body.get("verdict") or ""), body.get("note"))
-        _decision_event(d, f"{body.get('role')} {body.get('verdict')}", a.subject)
-        return d
-
-    @app.post("/api/decisions/{did}/comments", status_code=201)
-    def add_comment(request: Request, did: int, body: dict[str, Any] = Body(...)):
-        a = actor(request)
-        c = flow.comment(a, did, str(body.get("body") or ""), body.get("parentId"))
-        store.audit(a.subject, "decision.comment", f"id={did} comment={c['id']}")
-        return c
-
-    @app.post("/api/decisions/{did}/tasks", status_code=201)
-    def add_task(request: Request, did: int, body: dict[str, Any] = Body(...)):
-        a = actor(request)
-        t = flow.add_task(
-            a, did, str(body.get("title") or ""), assignee=body.get("assignee"), due=body.get("due")
-        )
-        store.audit(a.subject, "decision.task", f"id={did} task={t['id']}")
-        return t
-
-    @app.get("/api/decisions/{did}/export")
-    def export_decision(request: Request, did: int, format: str = Query("json", pattern="^(json|csv)$")):  # noqa: A002
-        u = user(request)
-        d = flow.decision(did)
-        res = catalog.resource(d["resource_id"])
-        packet = flow.packet(
-            did, resource=res, instance={**catalog.meta, "site": settings.site, "exported_by": u.subject}
-        )
-        store.audit(u.subject, "decision.export", f"id={did} format={format}")
-        if format == "csv":
-            return PlainTextResponse(
-                flow.packet_csv(packet),
-                media_type="text/csv",
-                headers={"Content-Disposition": f'attachment; filename="decision-{did}.csv"'},
-            )
-        return JSONResponse(
-            packet, headers={"Content-Disposition": f'attachment; filename="decision-{did}.json"'}
-        )
-
-    @app.get("/api/tasks")
-    def tasks(request: Request, assignee: str | None = None):
-        user(request)
-        return {"tasks": flow.open_tasks(assignee)}
-
-    @app.post("/api/tasks/{tid}")
-    def set_task(request: Request, tid: int, body: dict[str, Any] = Body(...)):
-        a = actor(request)
-        t = flow.set_task(a, tid, str(body.get("status") or ""), body.get("note"))
-        store.audit(a.subject, "task.status", f"task={tid} status={t['status']}")
-        return t
-
-    @app.get("/api/feedback")
-    def list_feedback(request: Request, resourceId: str | None = None, status: str | None = None):  # noqa: N803
-        user(request)
-        out: dict[str, Any] = {"feedback": flow.feedback_for(resourceId, status)}
-        if resourceId:
-            out["summary"] = flow.feedback_summary(resourceId)
-        return out
-
-    @app.post("/api/feedback", status_code=201)
-    def add_feedback(request: Request, body: dict[str, Any] = Body(...)):
-        a = actor(request)
-        rid = body.get("resourceId")
-        res = catalog.resource(str(rid or ""))
-        if not res:
-            raise HTTPException(404, "unknown resource")
-        f = flow.add_feedback(
-            a,
-            resource_id=res["id"],
-            kind=str(body.get("kind") or "note"),
-            body=body.get("body"),
-            rating=body.get("rating"),
-            decision_id=body.get("decisionId"),
-        )
-        store.audit(a.subject, "feedback.add", f"resource={res['id']} kind={f['kind']} id={f['id']}")
-        return f
-
-    @app.post("/api/feedback/{fid}")
-    def triage_feedback(request: Request, fid: int, body: dict[str, Any] = Body(...)):
-        a = actor(request, reviewer=True)
-        f = flow.set_feedback(a, fid, str(body.get("status") or ""))
-        store.audit(a.subject, "feedback.status", f"id={fid} status={f['status']}")
-        return f
-
-    # --- SCIM 2.0 ------------------------------------------------------------------------------
-    if scim.enabled:
-        scim_mt = "application/scim+json"
-
-        @app.get("/scim/v2/ServiceProviderConfig")
-        def scim_spc(request: Request):
-            scim.require(request)
-            return JSONResponse(scim.service_provider_config(), media_type=scim_mt)
-
-        @app.get("/scim/v2/Users")
-        def scim_users(request: Request, filter: str | None = None, startIndex: int = 1, count: int = 100):  # noqa: A002, N803
-            scim.require(request)
-            return JSONResponse(scim.list(filter, startIndex, min(count, 200)), media_type=scim_mt)
-
-        @app.post("/scim/v2/Users", status_code=201)
-        def scim_create(request: Request, body: dict[str, Any] = Body(...)):
-            scim.require(request)
-            u = scim.create(body)
-            store.audit("scim", "scim.user.create", f"{u['userName']} id={u['id']}")
-            return JSONResponse(u, status_code=201, media_type=scim_mt)
-
-        @app.get("/scim/v2/Users/{uid}")
-        def scim_get(request: Request, uid: str):
-            scim.require(request)
-            return JSONResponse(scim.get(uid), media_type=scim_mt)
-
-        @app.put("/scim/v2/Users/{uid}")
-        def scim_put(request: Request, uid: str, body: dict[str, Any] = Body(...)):
-            scim.require(request)
-            u = scim.replace(uid, body)
-            store.audit("scim", "scim.user.replace", f"{u['userName']} active={u['active']}")
-            return JSONResponse(u, media_type=scim_mt)
-
-        @app.patch("/scim/v2/Users/{uid}")
-        def scim_patch(request: Request, uid: str, body: dict[str, Any] = Body(...)):
-            scim.require(request)
-            u = scim.patch(uid, body)
-            store.audit("scim", "scim.user.patch", f"{u['userName']} active={u['active']}")
-            return JSONResponse(u, media_type=scim_mt)
-
-        @app.delete("/scim/v2/Users/{uid}", status_code=204)
-        def scim_delete(request: Request, uid: str):
-            scim.require(request)
-            scim.delete(uid)
-            store.audit("scim", "scim.user.delete", uid)
-            return JSONResponse(None, status_code=204)
-
-        @app.get("/scim/v2/Groups")
-        def scim_groups(request: Request):
-            scim.require(request)
-            return JSONResponse(
-                {
-                    "schemas": [LIST_SCHEMA],
-                    "totalResults": 0,
-                    "startIndex": 1,
-                    "itemsPerPage": 0,
-                    "Resources": [],
-                },
-                media_type=scim_mt,
-            )
-
-    # --- OIDC login flow --------------------------------------------------------------------
+    # --- routes -------------------------------------------------------------------------------
+    start_scheduler(d)
+    app.include_router(ard.router)
+    app.include_router(ops.router)
+    app.include_router(workflow_routes.router)
+    if d.scim.enabled:
+        app.include_router(scim_routes.router)
     if settings.auth_mode == "oidc":
-
-        @app.get("/auth/login")
-        async def login(request: Request):
-            redirect = str(request.url_for("auth_callback"))
-            return await auth.oauth.idp.authorize_redirect(request, redirect)
-
-        @app.get("/auth/callback", name="auth_callback")
-        async def auth_callback(request: Request):
-            token = await auth.oauth.idp.authorize_access_token(request)
-            info = token.get("userinfo") or await auth.oauth.idp.userinfo(token=token)
-            request.session["user"] = {
-                "sub": info.get("sub"),
-                "name": info.get("name"),
-                "email": info.get("email"),
-                "groups": info.get("groups") or [],
-            }
-            store.audit(str(info.get("sub")), "login", str(info.get("email") or ""))
-            return RedirectResponse("/")
-
-        @app.get("/auth/logout")
-        async def logout(request: Request):
-            request.session.clear()
-            return RedirectResponse("/")
-
-        @app.get("/auth/me")
-        def me(request: Request):
-            u = auth.current(request)
-            return {"user": u.__dict__ if u else None}
-
-    # --- static: catalog files and the web UI ----------------------------------------------
-    @app.get("/catalog/{path:path}")
-    def catalog_file(request: Request, path: str):
-        user(request)
-        base = catalog.path.resolve()
-        target = (base / path).resolve()
-        if base not in target.parents and target != base:
-            raise HTTPException(404)
-        if not target.is_file():
-            raise HTTPException(404)
-        return FileResponse(target)
-
-    dist = settings.web_dist
-    if dist and (dist / "index.html").exists():
-        app.mount("/", StaticFiles(directory=str(dist), html=True), name="ui")
-    else:
-
-        @app.get("/")
-        def root():
-            return JSONResponse(
-                {
-                    "name": "AgentDossier",
-                    "version": __version__,
-                    "docs": "/api/docs",
-                    "ard": "/.well-known/ard.json",
-                }
-            )
-
-    app.state.catalog = catalog
-    app.state.store = store
-    app.state.settings = settings
+        app.include_router(auth_routes.router)
+    static.mount(app, d)  # catalog files and the web UI; must be last (catch-all)
     return app
 
 
