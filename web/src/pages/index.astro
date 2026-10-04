@@ -1,7 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
-import { loadDomains, loadIndex } from "../lib/catalog";
+import HeroResult from "../components/HeroResult.astro";
+import { loadDomains, loadIndex, loadSearchDocs } from "../lib/catalog";
 import { FRAMEWORKS, domainLabel } from "../lib/labels";
+import { Catalog, HERO_QUERIES, heroPick } from "../lib/search";
 import scoring from "../../../config/scoring.json";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
@@ -14,13 +16,14 @@ const frameworks = Object.keys(FRAMEWORKS).length;
 const withEvidence = index?.records.filter((r) => r.compliance_summary.some((c) => c.status === "active")).length ?? 0;
 const snapshot = index?.snapshot_date ?? "—";
 const asOf = index?.built_at ? index.built_at.slice(0, 10) : "—";
-const credit = { 1: "1.0", 2: "0.8", 3: "0.7", 4: "0.3", 5: "0" };
+// the specimen result: the real #1 for an example query, chosen so it carries evidence when the catalog has any
+const pick = index ? heroPick(new Catalog(index.records, loadSearchDocs())) : null;
 const tiers = [
-  ["T1", "Registry-matched", `found in a named authoritative registry, e.g. "Found in FedRAMP Marketplace on ${snapshot}"`, credit[1]],
-  ["T2", "Marketplace-listed", "stated in a cloud marketplace compliance field or certification program", credit[2]],
-  ["T3", "Document-evidenced", "certificate, letter or AOC reviewed; issuer, number and dates recorded", credit[3]],
-  ["T4", "Vendor-claimed", "trust-center statement or machine-readable claim, not yet verified", credit[4]],
-  ["T5", "Unknown", "no evidence found. Shown as such, never as non-compliant", credit[5]],
+  ["T1", "Registry-matched", "found in a named authoritative registry (FedRAMP Marketplace, CSA STAR)"],
+  ["T2", "Marketplace-listed", "stated in a cloud marketplace compliance field"],
+  ["T3", "Document-evidenced", "certificate or letter reviewed; issuer and dates recorded"],
+  ["T4", "Vendor-claimed", "trust-center statement, not yet verified"],
+  ["T5", "Unknown", "no evidence found — shown as such, never as non-compliant"],
 ];
 ---
 
@@ -29,32 +32,40 @@ const tiers = [
     // legacy links: /?q=… → /search/?q=…
     if (location.search.includes("q=") || location.search.includes("domain=")) location.replace(`${base}/search/${location.search}`);
   </script>
-  <section style="padding: 56px 0 72px; display: flex; flex-direction: column; gap: 48px">
+  <section class="hero">
     <div>
       <h1>
         <span style="display:block">Find agents you can actually trust.</span>
-        <span style="display:block">See the evidence behind every one.</span>
-        <span style="display:block; color: var(--accent)">Decide with confidence.</span>
+        <span style="display:block; color: var(--accent)">See the evidence behind every one.</span>
       </h1>
-      <p class="body" style="font-size: 1.15rem; line-height: 1.6; max-width: 72ch; margin-top: 32px">
-        A vendor-neutral registry of AI agents across {domains.length || 12} domains. Agents are identified through Agentic
-        Resource Discovery (ARD), Agent2Agent (A2A), Model Context Protocol (MCP) and internal registries. Every result
-        leads with a trust profile against the governance frameworks we track for agents: HIPAA, SOC 2, FedRAMP, GDPR,
-        ISO/IEC 42001, the EU AI Act and more, each with who issued it, what it covers, whether it is current, and what
-        you still have to verify yourself. The catalog is updated weekly.
+      <p class="body" style="font-size: 1.1rem; line-height: 1.55; max-width: 56ch; margin-top: 20px">
+        Describe what you need. Every result leads with its trust profile — who issued the evidence, what it
+        covers, whether it is current, and what you still have to verify yourself.
       </p>
-      <div class="row" style="margin-top: 36px; gap: 12px">
-        <a class="btn primary" style="min-width: 280px" href={`${base}/domains/`}>Browse a domain Top 100 <span aria-hidden="true">→</span></a>
-        <a class="btn" href={`${base}/search/`}>Describe what you need</a>
+      <form class="searchbox hero-search" role="search" action={`${base}/search/`} method="get">
+        <label class="sr-only" for="hero-q">Describe the agent you need</label>
+        <input id="hero-q" name="q" type="search" placeholder="e.g. HIPAA-compliant claims intake agent" autocomplete="off" />
+        <button class="btn primary" type="submit">Search</button>
+      </form>
+      <div class="row examples" aria-label="Example searches">
+        <span class="tiny muted">Try:</span>
+        {HERO_QUERIES.map((q) => (
+          <a class="chip hint" href={`${base}/search/?q=${encodeURIComponent(q)}`}>{q}</a>
+        ))}
       </div>
+      <p class="small" style="margin-top: 18px">
+        <a href={`${base}/domains/`}>Or browse a domain Top 100 →</a>
+      </p>
     </div>
-    <div class="stats">
-      <div class="stat"><div class="n">{domains.length || 12}</div><div class="l">Domains, Top 100 each</div></div>
-      <div class="stat"><div class="n">{index?.records.length ?? "—"}</div><div class="l">Resources in the catalog</div></div>
-      <div class="stat"><div class="n">{frameworks}</div><div class="l">Compliance frameworks tracked</div></div>
-      <div class="stat"><div class="n">{withEvidence}</div><div class="l">Agents with evidence on file</div></div>
-    </div>
+    {pick ? <HeroResult pick={pick} /> : <p class="notice warn">No catalog is bundled with this build.</p>}
   </section>
+
+  <div class="stats">
+    <div class="stat"><div class="n">{index?.records.length ?? "—"}</div><div class="l">Agents in the catalog</div></div>
+    <div class="stat"><div class="n">{withEvidence}</div><div class="l">With evidence on file</div></div>
+    <div class="stat"><div class="n">{frameworks}</div><div class="l">Frameworks tracked</div></div>
+    <div class="stat"><div class="n">{domains.length || 12}</div><div class="l">Domains, Top 100 each</div></div>
+  </div>
 
   <section class="section">
     <div class="section-head">
@@ -78,66 +89,34 @@ const tiers = [
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>What it does, in three steps</h2></div>
-    <div class="steps">
-      <div class="step"><span class="n">01</span><div><h3>Discover</h3><p>One catalog over GitHub, Hugging Face, the official Model Context Protocol (MCP) Registry, Agentic Resource Discovery (ARD) manifests and cloud marketplaces. Agents are deduplicated, classified into 12 domains and inspected for ARD, Agent2Agent (A2A) and MCP support.</p></div></div>
-      <div class="step"><span class="n">02</span><div><h3>Read the trust profile</h3><p>HIPAA, SOC 2, FedRAMP, GDPR, ISO 42001 and more, each with its source, evidence tier, scope and as-of date. Text only, linked to the origin. Unknown is shown as "No evidence found", never as a failure.</p></div></div>
-      <div class="step"><span class="n">03</span><div><h3>Shortlist and export</h3><p>Filter by must-have compliance, protocol (ARD, A2A, MCP) and license. Compare up to four with the score breakdown. Export CSV or JSON with the sources attached. Shortlists stay in your browser.</p></div></div>
+    <div class="section-head">
+      <h2>One evidence scale, everywhere</h2>
+      <a class="small" href={`${base}/methodology/`}>How tiers, freshness and crediting work →</a>
     </div>
-  </section>
-
-  <section class="section">
-    <div class="split rev" style="border-top: 2px solid var(--rule); padding-top: 16px">
-      <div>
-        <h2>One evidence scale, everywhere</h2>
-        <p class="body" style="margin-top: 16px; max-width: 44ch">The same five tiers apply to identity, compliance, security and protocol claims. Tier is always written out; color is never the only cue.</p>
-        <p class="body" style="margin-top: 12px; max-width: 44ch">Governance credit is earned only after the publisher is verified. A certificate on an unverified publisher shows as "pending publisher verification".</p>
-      </div>
-      <div>
-        {tiers.map(([t, name, desc, c]) => (
-          <div class="ledger-row" style="grid-template-columns: 56px 1fr 72px">
-            <b>{t}</b>
-            <div><b>{name}</b><span class="muted"> — {desc}</span></div>
-            <span style="text-align: right; font-weight: 800; font-variant-numeric: tabular-nums">{c}</span>
-          </div>
-        ))}
-        <div class="tiny muted" style="padding-top: 10px">Governance credit per tier. Status overlays (in process, stale, expired, revoked, inherited) earn zero and are shown with their dates.</div>
-      </div>
+    <div class="tier-strip">
+      {tiers.map(([t, name, desc]) => (
+        <div><b>{t}</b><span><b>{name}</b><span class="muted"> — {desc}</span></span></div>
+      ))}
     </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head"><h2>Why you can rely on it</h2></div>
-    <div class="four">
-      <div><h4>Open method, MIT code</h4><p>Scoring weights, framework catalog, seed data and every parser are in the public repository. Change goes through reviewed pull requests.</p></div>
-      <div><h4>Nothing for sale</h4><p>No payment for inclusion, badges, tier or position. No publisher accounts, no vendor outreach, no hosted service.</p></div>
-      <div><h4>Every badge traceable</h4><p>Every badge shows its source link, tier and as-of date, and is re-checked on the schedule its framework file sets. Changes land in the public trust changelog.</p></div>
-      <div><h4>Corrections in the open</h4><p>Anyone, including vendors, can file a GitHub issue with a source link. Decisions are recorded in the public trust changelog.</p></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="split rev" style="border-top: 2px solid var(--rule); padding-top: 16px">
-      <div>
-        <h2>Built for machines too</h2>
-        <p class="body" style="margin-top: 16px; max-width: 44ch">The registry conforms to Agentic Resource Discovery (ARD), publishes its own <a href={`${base}/.well-known/ard.json`}>/.well-known/ard.json</a> and, in the self-hosted edition, serves the ARD REST API and wraps search as a Model Context Protocol (MCP) tool. Search relevance and trust are always separate fields.</p>
-      </div>
-      <pre class="code"><span class="k">POST</span> /search
-&#123; "query": "insurance claims agent, handles PHI",
-  "filters": &#123; "framework": "hipaa", "maxTier": 4, "protocol": "mcp" &#125;,
-  "limit": 10 &#125;
-
-<span class="c">→ 200</span>  results[].trust   <span class="c">// separate from results[].score and results[].explanation</span></pre>
-    </div>
+    <p class="tiny muted" style="margin-top: 10px">
+      The same five tiers apply to identity, compliance, security and protocol support. Tier is always written out; colour is never the only cue.
+      Evidence is credited in the score only after the publisher's identity is verified.
+    </p>
   </section>
 
   <div class="band full-bleed">
-    <h2><span style="display:block">Copy the code.</span><span style="display:block">Run your own registry.</span><span style="display:block">Scan your own network.</span></h2>
+    <h2><span style="display:block">Built for machines too.</span><span style="display:block">Run your own registry.</span></h2>
     <div>
-      <p style="font-size: 1.1rem; line-height: 1.55">The enterprise edition is the same MIT codebase in one self-hosted container: private-network discovery of agents via Agentic Resource Discovery (ARD), Agent2Agent (A2A) and Model Context Protocol (MCP), policy qualification, scheduled scans and an audit trail. Nothing leaves your tenant.</p>
+      <p style="font-size: 1.05rem; line-height: 1.55">
+        The registry conforms to Agentic Resource Discovery (ARD) and publishes
+        <a href={`${base}/.well-known/ard.json`}>/.well-known/ard.json</a>. The enterprise edition is the same MIT codebase in one
+        self-hosted container: discovery of the agents on your own network via ARD, Agent2Agent (A2A) and Model Context
+        Protocol (MCP), <code>POST /search</code> and <code>POST /qualify</code> for your agents and pipelines, decision workflow,
+        scheduled scans. Nothing leaves your tenant.
+      </p>
       <div class="row" style="margin-top: 24px; gap: 12px">
         <a class="btn dark" href={`${base}/enterprise/`}>Enterprise edition →</a>
-        <a class="btn" href={`${base}/methodology/`}>Read the methodology</a>
+        <a class="btn" href="https://github.com/Sushegaad/AgentDossier">Code on GitHub · MIT</a>
       </div>
     </div>
   </div>

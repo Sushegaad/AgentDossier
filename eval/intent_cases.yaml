@@ -1,5 +1,5 @@
 version: intent-cases-1.0
-notes: '52 cases: the three BRD examples plus hand-written variants covering every dimension (domain, capability, data class,
+notes: '54 cases: the three BRD examples plus hand-written variants covering every dimension (domain, capability, data class,
   deployment, compliance, protocol, ecosystem, jurisdiction, trust) and the must-have/prefer chips. Gate: every expected chip
   present (>=95% of cases).'
 cases:
@@ -457,3 +457,19 @@ cases:
     - pii
     ecosystem:
     - google
+- id: ic053
+  text: HIPAA-compliant claims intake agent
+  expected:
+    capability:
+    - claims
+    must_have:
+    - framework: hipaa
+      min_tier: 4
+- id: ic054
+  text: FedRAMP-authorized agent platform for government
+  expected:
+    domain:
+    - government
+    must_have:
+    - framework: fedramp
+      min_tier: 4

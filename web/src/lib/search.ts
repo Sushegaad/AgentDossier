@@ -340,3 +340,44 @@ export function chipLabel(c: RequirementChip): string {
 export function tierPhrase(tier: number): string {
   return { 1: "registry-matched (T1)", 2: "marketplace-listed (T2)", 3: "document-evidenced (T3)", 4: "vendor-claimed (T4)", 5: "no evidence" }[tier] ?? `tier ${tier}`;
 }
+
+// ---------------------------------------------------------------------------------------------
+// Homepage specimen: the real #1 result for an example query, chosen so that the first thing a
+// visitor sees carries evidence. Nothing here is hand-written; it is recomputed on every build.
+// ---------------------------------------------------------------------------------------------
+
+export interface HeroPick {
+  query: string;
+  hit: Hit;
+  /** position among the example queries that was used (0 = the first) */
+  index: number;
+  /** true when the pick carries active T1–T2 evidence; false when every example fell through */
+  withEvidence: boolean;
+}
+
+export const HERO_QUERIES = [
+  "FedRAMP authorized enterprise agent platform",
+  "HIPAA-compliant claims intake agent",
+  "SOC 2 coding agent with MCP support",
+] as const;
+
+/**
+ * Best specimen among the example queries, in order of preference:
+ * 1. a top hit that satisfies every must-have in its query *and* carries active T1–T2 evidence;
+ * 2. a top hit with active T1–T2 evidence;
+ * 3. the first query's top hit (offline seed-only builds have no evidence at all).
+ */
+export function heroPick(cat: Catalog, queries: readonly string[] = HERO_QUERIES): HeroPick | null {
+  let strong: HeroPick | null = null;
+  let fallback: HeroPick | null = null;
+  for (const [i, query] of queries.entries()) {
+    const res = cat.search(query, { strict: false }, 5);
+    const hit = res.hits[0];
+    if (!hit) continue;
+    const hasStrong = hit.record.compliance_summary.some((c) => c.status === "active" && c.tier <= 2);
+    if (hasStrong && hit.missing.length === 0) return { query, hit, index: i, withEvidence: true };
+    if (hasStrong) strong ??= { query, hit, index: i, withEvidence: true };
+    fallback ??= { query, hit, index: i, withEvidence: false };
+  }
+  return strong ?? fallback;
+}

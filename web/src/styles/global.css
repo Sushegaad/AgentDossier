@@ -944,3 +944,59 @@ dl.facts dd {
   border-color: var(--accent-ink);
   color: #f3f2f2;
 }
+
+/* --- homepage: search-first hero ---------------------------------------------------- */
+.hero {
+  padding: 48px 0 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 48px;
+    padding: 64px 0 48px;
+  }
+}
+.hero-search {
+  margin-top: 28px;
+  max-width: 640px;
+}
+.hero .examples {
+  margin-top: 12px;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hero .examples .chip {
+  text-decoration: none;
+}
+.tier-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 2px solid var(--ink);
+}
+.tier-strip > div {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+@media (min-width: 900px) {
+  .tier-strip {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  .tier-strip > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    border-bottom: 0;
+    border-top: 0;
+    padding: 10px 0 0;
+  }
+}

@@ -52,6 +52,8 @@ function normalize(text: string): string {
     .toLowerCase()
     .replace(/[‘’]/g, "'")
     .replace(/[^a-z0-9$+./' -]/g, " ")
+    // "hipaa-compliant", "fedramp-authorized", "gdpr-ready": the framework is a word of its own
+    .replace(/-(compliant|compliance|ready|certified|authori[sz]ed|aligned|approved)\b/g, " $1")
     .replace(/\s+/g, " ")
     .trim();
 }

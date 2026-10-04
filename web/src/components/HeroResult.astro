@@ -1,0 +1,115 @@
+---
+/**
+ * The homepage specimen: the real #1 result for an example query, rendered at build time from the
+ * catalog so the first thing a visitor sees is what a result looks like — score, evidence with
+ * issuer and date, the gaps, and why it ranked first. Never hand-written; see lib/search.ts heroPick.
+ */
+import { loadResource } from "../lib/catalog";
+import { evidenceRows, protocolLines } from "../lib/dossier";
+import { IDENTITY_LABEL, badgeLabel, domainLabel } from "../lib/labels";
+import type { HeroPick } from "../lib/search";
+import { bestActiveTier } from "../lib/search";
+
+interface Props {
+  pick: HeroPick;
+}
+const { pick } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const r = pick.hit.record;
+const res = loadResource(r.id);
+const rows = res ? evidenceRows(res).filter((x) => x.mark !== "missing").slice(0, 3) : [];
+const gaps = res ? evidenceRows(res).filter((x) => x.mark === "missing").map((x) => badgeLabel(x.framework, null)).slice(0, 3) : [];
+const protos = res ? protocolLines(res).filter((l) => ["verified", "claimed"].includes(l.status)) : [];
+const domainEntry = Object.entries(r.domains).sort((a, b) => (a[1].rank ?? 999) - (b[1].rank ?? 999))[0];
+const evidenceTier = bestActiveTier(r);
+const why = pick.hit.explanation.slice(0, 3).join(" · ");
+---
+
+<aside class="hero-result" aria-label="Example result">
+  <div class="eyebrow">
+    #1 for “{pick.query}”{domainEntry?.[1].rank ? ` · ${domainLabel(domainEntry[0])} #${domainEntry[1].rank} of 100` : ""}
+  </div>
+  <div class="row" style="justify-content: space-between; align-items: baseline; gap: 12px">
+    <h3><a href={`${base}/agents/${r.slug}/`}>{r.name}</a></h3>
+    <div class="score"><span class="n">{pick.hit.score.toFixed(1)}</span><span class="tiny muted"> fit</span></div>
+  </div>
+  <div class="small muted">{r.vendor}{r.category ? ` · ${r.category}` : ""}</div>
+  <div class="strip">
+    <span class="tierbox">Identity T{r.trust.identity}</span>
+    <span class="tierbox">Evidence T{evidenceTier}</span>
+    {protos.map((l) => <span class="tierbox">{l.key.toUpperCase()} {l.status === "verified" ? "✔" : "○"}</span>)}
+  </div>
+  {rows.length > 0 ? (
+    <ul class="evidence">
+      {rows.map((x) => (
+        <li>
+          <span class={`mark ${x.mark}`} aria-hidden="true">{x.mark === "found" ? "✔" : x.mark === "claimed" ? "○" : "⚠"}</span>
+          <span><b>{badgeLabel(x.framework, x.variant)}</b> <span class="muted">— {x.tierLabel}{x.asOf ? `, ${x.asOf}` : ""}</span>{x.sourceUrl && <> · <a href={x.sourceUrl} rel="noopener">source</a></>}</span>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="small muted">No compliance evidence found in the sources checked — shown as unknown, never as non-compliant.</p>
+  )}
+  {gaps.length > 0 && <p class="small"><span class="muted">Not yet verified:</span> {gaps.join(", ")} — ask the vendor.</p>}
+  {why && <p class="small why"><span class="muted">Why #1:</span> {why}.</p>}
+  <p class="tiny muted">Live specimen, recomputed on every catalog build · identity {IDENTITY_LABEL[r.trust.identity]?.toLowerCase()}</p>
+</aside>
+
+<style>
+  .hero-result {
+    border: 2px solid var(--ink);
+    padding: 18px 20px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--paper, transparent);
+  }
+  .hero-result h3 {
+    font-size: 1.35rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .hero-result h3 a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .hero-result h3 a:hover {
+    color: var(--accent-ink);
+    text-decoration: underline;
+  }
+  .hero-result .score .n {
+    font-weight: 800;
+    font-size: 1.6rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-result .strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .hero-result .evidence {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 1px solid var(--rule);
+    padding-top: 10px;
+  }
+  .hero-result .evidence li {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 8px;
+    align-items: baseline;
+  }
+  .hero-result .mark.found {
+    color: var(--accent-ink);
+    font-weight: 800;
+  }
+  .hero-result .why {
+    border-top: 1px solid var(--rule);
+    padding-top: 10px;
+  }
+</style>
