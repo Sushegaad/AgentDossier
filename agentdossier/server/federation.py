@@ -18,14 +18,13 @@ is never federated again. Peer failures are reported, never raised.
 
 from __future__ import annotations
 
-import json
 import re
 import threading
 import time
-import urllib.error
-import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any
+
+from ..util import NetPolicy, RateLimiter, fetch, post_json
 
 MODES = ("none", "referrals", "auto")
 HOP_HEADER = "X-AgentDossier-Federation-Hop"
@@ -38,11 +37,20 @@ def _tokens(text: str) -> set[str]:
 
 class Peer:
     def __init__(
-        self, base: str, *, token: str | None = None, timeout: float = 5.0, cache_ttl: float = 600.0
+        self,
+        base: str,
+        *,
+        token: str | None = None,
+        timeout: float = 5.0,
+        cache_ttl: float = 600.0,
+        policy: NetPolicy | None = None,
+        max_bytes: int = 2_000_000,
     ):
         self.base = base.rstrip("/")
         self.token = token
         self.timeout = timeout
+        self.policy = policy or NetPolicy()
+        self.max_bytes = max_bytes
         self.cache_ttl = cache_ttl
         self._manifest: dict[str, Any] | None = None
         self._manifest_at = 0.0
@@ -66,9 +74,19 @@ class Peer:
         with self._lock:
             if self._manifest is not None and time.monotonic() - self._manifest_at < self.cache_ttl:
                 return self._manifest
-        req = urllib.request.Request(self.manifest_url, headers=self._headers())
-        with urllib.request.urlopen(req, timeout=self.timeout) as resp:  # noqa: S310 - operator-configured peer
-            doc = json.loads(resp.read())
+        r = fetch(
+            self.manifest_url,
+            headers=self._headers(),
+            policy=self.policy,
+            timeout=self.timeout,
+            retries=0,
+            follow_redirects=False,
+            max_bytes=self.max_bytes,
+            limiter=RateLimiter(0.0),
+        )
+        if not r.ok:
+            raise RuntimeError(r.error or f"HTTP {r.status}")
+        doc = r.json()
         with self._lock:
             self._manifest, self._manifest_at = doc, time.monotonic()
         return doc
@@ -77,20 +95,14 @@ class Peer:
         """Hits from the peer: its REST API when it has one, else a manifest match."""
         payload = {k: v for k, v in body.items() if k != "federation"}
         payload["federation"] = "none"
-        raw = json.dumps(payload).encode()
-        req = urllib.request.Request(
-            self.search_url,
-            data=raw,
-            headers={**self._headers(), "Content-Type": "application/json"},
-            method="POST",
+        r = post_json(
+            self.search_url, payload, headers=self._headers(), policy=self.policy, timeout=self.timeout
         )
-        try:
-            with urllib.request.urlopen(req, timeout=self.timeout) as resp:  # noqa: S310
-                data = json.loads(resp.read())
-                return {"via": "rest", "results": data.get("results", []), "catalog": data.get("catalog")}
-        except urllib.error.HTTPError as exc:
-            if exc.code not in (404, 405, 501):
-                raise RuntimeError(f"HTTP {exc.code}") from exc
+        if r.ok:
+            data = r.json()
+            return {"via": "rest", "results": data.get("results", []), "catalog": data.get("catalog")}
+        if r.status not in (404, 405, 501):
+            raise RuntimeError(r.error or f"HTTP {r.status}")
         # static registry: match the manifest locally
         doc = self.manifest()
         q = _tokens(str(body.get("query") or ""))
@@ -189,5 +201,11 @@ class Federation:
             return list(pool.map(one, self.peers))
 
 
-def peers_from_env(value: str | None, *, token: str | None = None, timeout: float = 5.0) -> list[Peer]:
-    return [Peer(u.strip(), token=token, timeout=timeout) for u in (value or "").split(",") if u.strip()]
+def peers_from_env(
+    value: str | None, *, token: str | None = None, timeout: float = 5.0, policy: NetPolicy | None = None
+) -> list[Peer]:
+    return [
+        Peer(u.strip(), token=token, timeout=timeout, policy=policy)
+        for u in (value or "").split(",")
+        if u.strip()
+    ]

@@ -52,6 +52,7 @@ Static
 
 from __future__ import annotations
 
+import hashlib
 import logging
 import threading
 from pathlib import Path
@@ -62,7 +63,6 @@ from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse, Red
 from fastapi.staticfiles import StaticFiles
 
 from .. import __version__
-from ..util import now_iso
 from .auth import Auth
 from .catalog import Catalog
 from .federation import HOP_HEADER, Federation, peers_from_env
@@ -73,6 +73,55 @@ from .settings import Settings
 from .workflow import Actor, Workflow, WorkflowError
 
 log = logging.getLogger("agentdossier.server")
+
+
+class BodyCapMiddleware:
+    """Pure-ASGI body cap: buffers up to ``limit`` bytes (chunked bodies included), answers 413
+    beyond it, and replays the buffered body to the app otherwise. Content-Length alone is not
+    enough because a client can lie about it or send chunked."""
+
+    def __init__(self, app, limit: int):  # noqa: ANN001
+        self.app, self.limit = app, limit
+
+    async def __call__(self, scope, receive, send):  # noqa: ANN001
+        if scope["type"] != "http":
+            return await self.app(scope, receive, send)
+        chunks: list[bytes] = []
+        total = 0
+        while True:
+            msg = await receive()
+            if msg["type"] != "http.request":
+                break  # disconnect before the body ended; let the app see it
+            body = msg.get("body", b"") or b""
+            total += len(body)
+            if total > self.limit:
+                payload = b'{"error": "request body too large"}'
+                await send(
+                    {
+                        "type": "http.response.start",
+                        "status": 413,
+                        "headers": [
+                            (b"content-type", b"application/json"),
+                            (b"content-length", str(len(payload)).encode()),
+                        ],
+                    }
+                )
+                await send({"type": "http.response.body", "body": payload})
+                return
+            chunks.append(body)
+            if not msg.get("more_body", False):
+                break
+        buffered = b"".join(chunks)
+        sent = False
+
+        async def replay():  # noqa: ANN202
+            nonlocal sent
+            if not sent:
+                sent = True
+                return {"type": "http.request", "body": buffered, "more_body": False}
+            return await receive()
+
+        return await self.app(scope, replay, send)
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:
@@ -89,17 +138,22 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     store = Store(settings.db_path)
     auth = Auth(settings)
     state: dict[str, Any] = {"scan_lock": threading.Lock(), "scheduler": None, "config": None}
-    notifier = Notifier(settings.notify, store, site=settings.site, tenant=None)
+    egress = settings.egress_policy()
+    notifier = Notifier(settings.notify, store, site=settings.site, tenant=None, policy=egress)
     flow = Workflow(store.db, store.lock)
     settings.integrations.packet_for = lambda did: flow.packet(
         did,
         resource=catalog.resource(flow.decision(did)["resource_id"]),
         instance={**catalog.meta, "site": settings.site},
     )
+    settings.integrations.policy = egress
     notifier.integrations = build_integrations(settings.integrations)
     federation = Federation(
         peers_from_env(
-            settings.federation_peers, token=settings.federation_token, timeout=settings.federation_timeout
+            settings.federation_peers,
+            token=settings.federation_token,
+            timeout=settings.federation_timeout,
+            policy=egress,
         ),
         settings.federation_mode,
     )
@@ -107,6 +161,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     auth.allowed = scim.allowed
 
     # --- hardening: headers, body cap, rate limit ------------------------------------------
+    app.add_middleware(BodyCapMiddleware, limit=settings.max_body_bytes)
+
     @app.middleware("http")
     async def _harden(request: Request, call_next):  # noqa: ANN001
         length = request.headers.get("content-length")
@@ -140,7 +196,14 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             from slowapi.errors import RateLimitExceeded  # noqa: PLC0415
             from slowapi.util import get_remote_address  # noqa: PLC0415
 
-            limiter = Limiter(key_func=get_remote_address, default_limits=[])
+            def client_key(request: Request) -> str:
+                # a bearer token identifies the client better than an address shared behind a proxy
+                header = request.headers.get("authorization", "")
+                if header.lower().startswith("bearer ") and len(header) > 7:
+                    return "tok:" + hashlib.sha256(header[7:].strip().encode()).hexdigest()[:16]
+                return "ip:" + get_remote_address(request)
+
+            limiter = Limiter(key_func=client_key, default_limits=[])
             app.state.limiter = limiter
 
             @app.exception_handler(RateLimitExceeded)
@@ -308,6 +371,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     # --- ARD REST ----------------------------------------------------------------------
     @app.get("/.well-known/ard.json")
     def ard_manifest(request: Request):
+        # a private registry's manifest maps internal endpoints: readers (and federation peers,
+        # which carry a token) must authenticate; a public-scope catalog stays open for discovery
+        if catalog.index.get("scope") == "private":
+            user(request)
         p = catalog.path / "ard.json"
         if p.exists():
             return FileResponse(p, media_type="application/ai-registry+json")
@@ -462,7 +529,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     # --- operations -------------------------------------------------------------------
     @app.get("/healthz")
     def healthz():
-        return {"ok": True, "version": __version__, "resources": len(catalog.records), "at": now_iso()}
+        return {"ok": True}  # liveness only; version and counts are on /api/status (authenticated)
 
     @app.get("/api/status")
     def status(request: Request):

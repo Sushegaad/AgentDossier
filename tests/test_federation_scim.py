@@ -12,6 +12,9 @@ from pathlib import Path
 import pytest
 
 from agentdossier.server.federation import Federation, Peer, peers_from_env
+from agentdossier.util import NetPolicy
+
+LOOPBACK = NetPolicy(mode="enterprise", allow_cidrs=["127.0.0.0/8"], allow_public=True)
 
 fastapi = pytest.importorskip("fastapi")
 uvicorn = pytest.importorskip("uvicorn")
@@ -44,7 +47,7 @@ def _settings(catalog_dir: Path, tmp_path: Path, **kw) -> Settings:
         db_path=tmp_path / "s.db",
         web_dist=None,
         auth_mode="none",
-        dev=True,
+        dev=True,  # also admits loopback peers in the egress policy
         api_token=None,
         admin_token=None,
         enterprise_config=None,
@@ -281,3 +284,107 @@ def test_hardening_headers_body_cap_and_rate_limit(catalog_dir, tmp_path):
     codes = [c.post("/search", json={"query": "claims"}).status_code for _ in range(4)]
     assert codes == [200, 200, 200, 429]
     assert c.get("/healthz").status_code == 200  # the limit is per route, not global
+
+
+def test_peer_redirect_is_not_followed_and_private_peer_is_refused(catalog_dir, tmp_path):
+    """Outbound calls go through the guarded client: no redirects, policy-checked addresses."""
+    import http.server
+
+    class H(http.server.BaseHTTPRequestHandler):
+        def do_GET(self):  # noqa: N802
+            self.send_response(302)
+            self.send_header("Location", "http://10.0.0.1/.well-known/ard.json")
+            self.end_headers()
+
+        do_POST = do_GET  # noqa: N815
+
+        def log_message(self, *a):
+            pass
+
+    srv = http.server.HTTPServer(("127.0.0.1", 0), H)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    try:
+        bouncer = f"http://127.0.0.1:{srv.server_port}"
+        local = TestClient(
+            create_app(
+                _settings(
+                    catalog_dir,
+                    tmp_path,
+                    federation_peers=bouncer,
+                    federation_mode="auto",
+                    federation_timeout=1,
+                )
+            )
+        )
+        r = local.post("/search", json={"query": "claims", "federation": "auto"}).json()
+        peer = r["federation"]["peers"][0]
+        assert peer["count"] == 0 and "302" in peer["error"]
+        # without dev mode the loopback peer itself is out of policy
+        strict = _settings(
+            catalog_dir,
+            tmp_path / "strict",
+            federation_peers=bouncer,
+            federation_mode="auto",
+            federation_timeout=1,
+            auth_mode="token",
+            api_token="t",
+            dev=False,
+        )
+        c2 = TestClient(create_app(strict))
+        r = c2.post(
+            "/search", json={"query": "claims", "federation": "auto"}, headers={"Authorization": "Bearer t"}
+        ).json()
+        assert "non-public address" in r["federation"]["peers"][0]["error"]
+    finally:
+        srv.shutdown()
+
+
+def test_private_manifest_needs_auth_public_does_not(catalog_dir, tmp_path):
+    c = TestClient(create_app(_settings(catalog_dir, tmp_path, auth_mode="token", api_token="t", dev=False)))
+    assert c.get("/.well-known/ard.json").status_code == 200  # public-scope catalog
+    app = create_app(_settings(catalog_dir, tmp_path / "p", auth_mode="token", api_token="t", dev=False))
+    app.state.catalog.index["scope"] = "private"
+    c = TestClient(app)
+    assert c.get("/.well-known/ard.json").status_code == 401
+    assert c.get("/.well-known/ard.json", headers={"Authorization": "Bearer t"}).status_code == 200
+
+
+def test_chunked_body_is_capped_and_rate_limit_is_per_token(catalog_dir, tmp_path):
+    c = TestClient(
+        create_app(
+            _settings(
+                catalog_dir,
+                tmp_path,
+                auth_mode="token",
+                api_token="a",
+                admin_token="b",
+                dev=False,
+                max_body_bytes=500,
+                rate_limit="2/minute",
+            )
+        )
+    )
+
+    def chunks():
+        for _ in range(10):
+            yield b'{"query": "' + b"x" * 100 + b'"}'
+
+    r = c.post(
+        "/search",
+        content=chunks(),
+        headers={
+            "Authorization": "Bearer a",
+            "Transfer-Encoding": "chunked",
+            "Content-Type": "application/json",
+        },
+    )
+    assert r.status_code == 413
+    a = [
+        c.post("/search", json={"query": "claims"}, headers={"Authorization": "Bearer a"}).status_code
+        for _ in range(3)
+    ]
+    b = [
+        c.post("/search", json={"query": "claims"}, headers={"Authorization": "Bearer b"}).status_code
+        for _ in range(2)
+    ]
+    assert a == [200, 200, 429] and b == [200, 200]  # a second token has its own bucket

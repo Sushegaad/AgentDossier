@@ -20,6 +20,10 @@ from agentdossier.server.notify import (
     verify_signature,
 )
 from agentdossier.storage.db import Store
+from agentdossier.util import NetPolicy
+
+# the sinks in these tests listen on loopback, which the public egress policy refuses by design
+LOOPBACK = NetPolicy(mode="enterprise", allow_cidrs=["127.0.0.0/8"], allow_public=True)
 
 
 class WebhookSink:
@@ -70,7 +74,7 @@ def test_webhook_is_signed_recorded_and_retried(tmp_path):
     store = Store(tmp_path / "n.db")
     with WebhookSink(fail_first=1) as sink:
         s = NotifySettings(webhook_url=sink.url, webhook_secret="s3cret", attempts=3, backoff_sec=0)
-        n = Notifier(s, store, site="https://registry.example", tenant="acme")
+        n = Notifier(s, store, site="https://registry.example", tenant="acme", policy=LOOPBACK)
         out = n.send("test", "hello", "body text", {"k": 1})
         assert out == [
             {"channel": "webhook", "target": sink.url, "status": "sent", "attempts": 2, "detail": "HTTP 204"}
@@ -87,7 +91,7 @@ def test_webhook_is_signed_recorded_and_retried(tmp_path):
 def test_webhook_failure_is_recorded_not_raised(tmp_path):
     store = Store(tmp_path / "n.db")
     s = NotifySettings(webhook_url="http://127.0.0.1:9/nothing", attempts=2, backoff_sec=0, timeout_sec=1)
-    out = Notifier(s, store).send("scan.failed", "x", "y")
+    out = Notifier(s, store, policy=LOOPBACK).send("scan.failed", "x", "y")
     assert out[0]["status"] == "failed" and out[0]["attempts"] == 2
     assert store.deliveries()[0]["status"] == "failed"
 
@@ -224,6 +228,7 @@ def test_reference_deployment_scan_notifies_and_expiry_job_runs(tmp_path: Path):
             admin_token="admin",
             enterprise_config=cfg_path,
             start_scheduler=False,
+            dev=True,  # egress policy admits the loopback webhook sink
             notify=NotifySettings(webhook_url=sink.url, webhook_secret="k", attempts=1, backoff_sec=0),
         )
         c = TestClient(create_app(settings))

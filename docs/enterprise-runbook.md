@@ -149,13 +149,16 @@ this instance allows is `AGENTDOSSIER_FEDERATION_MODE`:
 | --- | --- |
 | `none` | nothing |
 | `referrals` (default) | `federation.referrals`: each peer's `/search` and `/.well-known/ard.json`, for the client to query itself |
-| `auto` | the peers' hits, queried in parallel with `AGENTDOSSIER_FEDERATION_TIMEOUT` seconds each and marked `source_registry`; `federation.peers` reports count, route (`rest` or `manifest`) and errors per peer |
+| `auto` | the peers' hits, queried in parallel through the guarded egress client (no redirects, `AGENTDOSSIER_EGRESS_ALLOW` applies) with `AGENTDOSSIER_FEDERATION_TIMEOUT` seconds each and marked `source_registry`; `federation.peers` reports count, route (`rest` or `manifest`) and errors per peer |
 
 A request may narrow the mode (`"federation": "none"`) but never widen it. A
 peer that has no REST API — the public demo, or any publisher's static manifest
 — is matched locally on its `ard.json`. Federated queries carry
 `X-AgentDossier-Federation-Hop: 1` and are never federated again, so two
 instances that list each other cannot loop.
+
+A private registry's `/.well-known/ard.json` requires authentication (peers send
+`AGENTDOSSIER_FEDERATION_TOKEN`); a public-scope catalog's manifest stays open.
 
 ### SCIM provisioning
 
@@ -169,13 +172,25 @@ IdP already authenticated them.
 
 ### Hardening
 
+**Egress.** Everything the server itself calls — webhooks, Slack/Teams, Jira,
+ServiceNow, the GRC hook, federation peers — goes through the same guarded HTTP
+client as discovery: scheme allow-list, address checked and *pinned* at connect
+time (a second DNS answer cannot redirect the connection), no redirects
+followed, 2 MB response cap. By default only public addresses are reachable;
+list the private CIDRs or hosts an instance may call in
+`AGENTDOSSIER_EGRESS_ALLOW` (for example an on-prem Jira or an internal peer
+registry). Loopback is admitted only in `--dev`.
+
 Every response carries `X-Content-Type-Options`, `X-Frame-Options: DENY`, a
 `Referrer-Policy`, a `Permissions-Policy` and a Content-Security-Policy; API,
 SCIM and auth responses are `no-store`; `Strict-Transport-Security` is sent
 when `AGENTDOSSIER_SITE` is https or `AGENTDOSSIER_BEHIND_TLS_PROXY=1`.
 Request bodies above `AGENTDOSSIER_MAX_BODY_BYTES` (1 MiB) get 413.
-`/search`, `/explore` and `/qualify` are rate-limited per client address
-(`AGENTDOSSIER_RATE_LIMIT`, default `120/minute`; empty disables).
+`/search`, `/explore` and `/qualify` are rate-limited per client — by bearer token
+when one is sent, otherwise by the (proxy-resolved) address — with
+`AGENTDOSSIER_RATE_LIMIT` (default `120/minute`; empty disables). `/healthz`
+returns only `{"ok": true}`; version and counts are on the authenticated
+`/api/status`.
 
 Releases publish a container image signed with cosign (keyless) with a
 CycloneDX SBOM attestation and build provenance; verify before deploying:
