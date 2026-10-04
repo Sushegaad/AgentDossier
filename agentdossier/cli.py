@@ -223,6 +223,10 @@ def cmd_serve(args: argparse.Namespace) -> int:
         os.environ["AGENTDOSSIER_CATALOG_DIR"] = args.catalog
     if args.enterprise_config:
         os.environ["AGENTDOSSIER_ENTERPRISE_CONFIG"] = args.enterprise_config
+    os.environ["AGENTDOSSIER_BIND_HOST"] = args.host  # auth_mode=none is refused off loopback
+    if args.dev:
+        os.environ["AGENTDOSSIER_DEV"] = "1"
+        os.environ.setdefault("AGENTDOSSIER_AUTH_MODE", "none")
     try:
         import uvicorn
 
@@ -230,8 +234,20 @@ def cmd_serve(args: argparse.Namespace) -> int:
     except ImportError:
         print("the server needs the 'server' extra: uv sync --extra server", file=sys.stderr)
         return 2
-    app = create_app()
-    uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+    try:
+        app = create_app()
+    except RuntimeError as exc:
+        print(f"refusing to start: {exc}", file=sys.stderr)
+        return 2
+    trusted = os.environ.get("AGENTDOSSIER_TRUSTED_PROXIES", "")
+    uvicorn.run(
+        app,
+        host=args.host,
+        port=args.port,
+        log_level="info",
+        proxy_headers=bool(trusted),
+        forwarded_allow_ips=trusted or None,
+    )
     return 0
 
 
@@ -334,6 +350,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--port", type=int, default=8080)
     p.add_argument("--catalog", help="catalog directory (default: AGENTDOSSIER_CATALOG_DIR or data/catalog)")
     p.add_argument("--enterprise-config", help="enterprise.json to enable scans and the schedule")
+    p.add_argument(
+        "--dev",
+        action="store_true",
+        help="local development: no authentication, loopback only (sets AGENTDOSSIER_DEV=1)",
+    )
     p.set_defaults(func=cmd_serve)
 
     p = sub.add_parser("mcp", help="expose the registry to agents over MCP (stdio)")

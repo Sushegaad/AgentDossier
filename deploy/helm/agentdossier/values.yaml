@@ -15,7 +15,8 @@ existingConfigMap: ""
 # Plain environment (non-secret). AGENTDOSSIER_ENTERPRISE_CONFIG, _DB, _CATALOG_DIR are set by the chart.
 env:
   AGENTDOSSIER_SITE: https://agents.corp.example.com/
-  AGENTDOSSIER_AUTH_MODE: token
+  AGENTDOSSIER_AUTH_MODE: token          # required; the pod refuses to start without it
+  AGENTDOSSIER_TRUSTED_PROXIES: "10.0.0.0/8"  # the ingress controller's pod network
   AGENTDOSSIER_SCAN_ON_START: "1"
   OIDC_ISSUER: ""
   OIDC_CLIENT_ID: ""

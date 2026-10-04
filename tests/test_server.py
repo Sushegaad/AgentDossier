@@ -39,6 +39,7 @@ def _settings(catalog_dir: Path, tmp_path: Path, **kw) -> Settings:
         "db_path": tmp_path / "srv.db",
         "web_dist": None,
         "auth_mode": "none",
+        "dev": True,
         "api_token": None,
         "admin_token": None,
         "enterprise_config": None,
@@ -140,3 +141,38 @@ def test_scan_endpoint_runs_the_scanner_and_reloads_the_catalog(tmp_path):
         assert r["results"] and r["results"][0]["displayName"] == "Self-test Claims Intake Agent"
         st = c.get("/api/status").json()
         assert st["catalog"]["scope"] == "private" and st["enterprise"]["tenant"] == "acme-test"
+
+
+def test_auth_is_fail_closed(catalog_dir, tmp_path):
+    """No auth mode -> refuse to start; `none` needs the dev flag and a loopback bind."""
+    with pytest.raises(RuntimeError, match="AGENTDOSSIER_AUTH_MODE"):
+        create_app(_settings(catalog_dir, tmp_path, auth_mode="", dev=False))
+    with pytest.raises(RuntimeError, match="AGENTDOSSIER_DEV"):
+        create_app(_settings(catalog_dir, tmp_path, auth_mode="none", dev=False))
+    with pytest.raises(RuntimeError, match="loopback"):
+        create_app(_settings(catalog_dir, tmp_path, auth_mode="none", dev=True, bind_host="0.0.0.0"))
+    create_app(_settings(catalog_dir, tmp_path, auth_mode="none", dev=True, bind_host="127.0.0.1"))
+
+
+def test_session_cookie_is_secure_behind_tls(catalog_dir, tmp_path, monkeypatch):
+    monkeypatch.setattr(
+        "agentdossier.server.auth.Auth.__init__",
+        lambda self, s: (
+            setattr(self, "settings", s)
+            or setattr(self, "oauth", None)
+            or setattr(self, "allowed", lambda **kw: True)
+        ),
+    )
+    s = _settings(
+        catalog_dir,
+        tmp_path,
+        auth_mode="oidc",
+        oidc_issuer="https://idp",
+        oidc_client_id="c",
+        oidc_client_secret="s",
+        session_secret="k",
+        site="https://reg.example/",
+    )
+    app = create_app(s)
+    mw = next(m for m in app.user_middleware if m.cls.__name__ == "SessionMiddleware")
+    assert mw.kwargs["https_only"] is True
