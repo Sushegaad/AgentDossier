@@ -25,7 +25,8 @@ from .. import __version__
 from ..build import BuildOptions, enrich, write_outputs
 from ..connectors.ard_web import inspect_origin
 from ..standards import a2a, ard, mcp
-from ..util import RateLimiter, fetch, now_iso
+from ..util import RateLimiter, fetch, now_iso, sha256
+from .audit import AuditLog
 from .config import EnterpriseConfig
 from .targets import plan
 
@@ -156,13 +157,29 @@ def scan(
     if dry_run:
         report["finished"] = now_iso()
         return report
-    if cfg.ca_bundle:
-        os.environ["SSL_CERT_FILE"] = cfg.ca_bundle
     limiter = RateLimiter(1.0 / float(cfg.limits.get("requests_per_host_per_sec", 4)))
     out.mkdir(parents=True, exist_ok=True)
     raw_dir = out / "raw"
     shutil.rmtree(raw_dir, ignore_errors=True)
     raw_dir.mkdir()
+    audit_path = out / "audit.jsonl"
+    audit_path.unlink(missing_ok=True)
+    audit = AuditLog(audit_path)
+    config_hash = (
+        sha256(cfg.path.read_bytes())
+        if cfg.path and cfg.path.exists()
+        else sha256(json.dumps(cfg.as_dict(), sort_keys=True, default=str))
+    )
+    audit.header(
+        tenant=cfg.tenant,
+        authorized_by=cfg.authorized_by,
+        ticket=cfg.ticket,
+        config_hash=config_hash,
+        targets=len(p["targets"]),
+    )
+    for refused in p.get("refused", []):
+        audit.append("blocked", origin=refused.get("origin"), reason=refused.get("reason"))
+    report["audit"] = str(audit_path)
 
     def work(origin: str) -> dict[str, Any]:
         try:
@@ -184,12 +201,18 @@ def scan(
             report["probed"].append(probed)
             if insp.get("error"):
                 report["errors"].append(f"{insp['origin']}: {insp['error']}")
+                audit.append("error", origin=insp["origin"], detail=insp["error"])
                 continue
-            resources += resources_from(insp, cfg)
+            audit.append("probe", **probed)
+            new = resources_from(insp, cfg)
+            if new:
+                audit.append("found", origin=insp["origin"], resources=[r["name"] for r in new])
+            resources += new
     for reg in p["registries"]:
         entries, errs = list_registry(reg, cfg, limiter)
         report["errors"] += errs
         report["probed"].append({"origin": reg, "registry": len(entries)})
+        audit.append("registry", origin=reg, entries=len(entries), errors=errs)
         for item in entries:
             resources.append(
                 ard.entry_to_resource(item["entry"], item["manifest"], scope="private", tenant=cfg.tenant)
@@ -229,5 +252,7 @@ def scan(
         if k in ("resources", "by_source", "by_type", "protocols", "identity_tiers")
     }
     report["finished"] = now_iso()
+    audit.append("done", resources=len(resources), errors=len(report["errors"]), catalog=report["catalog"])
+    report["audit_hash"] = audit.last_hash
     (out / "scan-report.json").write_text(json.dumps(report, indent=1, default=str))
     return report

@@ -16,7 +16,7 @@ def test_curated_claim_marks_claimed_and_keeps_probe_result(tmp_path):
     cur = tmp_path / "protocols.yaml"
     cur.write_text(
         "claims:\n"
-        "  - name: Copilot Studio\n    checked_by: maintainer\n    checked_on: 2026-10-02\n"
+        "  - name: Copilot Studio\n    checked_by: hemant.naik\n    checked_on: 2026-10-02\n"
         "    mcp:\n      evidence_url: https://learn.example/mcp\n      note: docs\n"
         "  - name: Undated\n    mcp: https://x\n"  # no checked_on -> ignored
     )

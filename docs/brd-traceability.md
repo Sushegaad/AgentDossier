@@ -48,7 +48,7 @@ Status: **P0** = delivered in Phase 0, **P1**–**P3** = planned phase.
 | FR-39 | Contributions via GitHub | `CONTRIBUTING.md`, `.github/CODEOWNERS` | process | P0 |
 | FR-40 | Instance analytics (optional) | server (P3) | P3 | P3 |
 | FR-41 | Dry run and self-test | `agentdossier/enterprise/selftest.py` (loopback publisher), `agentdossier/enterprise/scanner.py` (dry_run), CLI `enterprise selftest` / `plan` | `tests/test_enterprise.py` | P2 |
-| FR-42 | Preflight and operator kit | `agentdossier/enterprise/preflight.py`, `examples/enterprise/enterprise.json`, `deploy/Dockerfile`, `deploy/docker-compose.yml`, `docs/enterprise-runbook.md` | `tests/test_enterprise.py`, `tests/test_config.py` (schema) | P2 |
+| FR-42 | Preflight and operator kit | `agentdossier/enterprise/preflight.py`, `agentdossier/enterprise/audit.py` (hash-chained `audit.jsonl`, `enterprise audit-verify`), `examples/enterprise/enterprise.json`, `deploy/Dockerfile`, `deploy/docker-compose.yml`, `docs/enterprise-runbook.md` | `tests/test_enterprise.py`, `tests/test_config.py` (schema) | P2 |
 | FR-43 | News sources | `agentdossier/news/sources.py` (Hacker News, GDELT with circuit breaker, GitHub releases, vendor RSS/Atom, NVD) | `tests/test_news.py` | P1b |
 | FR-44 | Entity linking | `agentdossier/news/linking.py` (link_confidence ≥ 0.85, distinctive names) | `tests/test_news.py` | P1b |
 | FR-45 | Ranking and diversity | `agentdossier/news/linking.py` (cluster, rank) | `tests/test_news.py` | P1b |

@@ -96,6 +96,7 @@ class NetPolicy:
     allow_cidrs: list = field(default_factory=list)
     allow_hosts: list = field(default_factory=list)
     allow_public: bool = False  # enterprise mode: may it also reach public IPs?
+    ca_bundle: str | None = None  # extra/alternative trust root for TLS (enterprise CA), per policy
 
     def check(self, url: str) -> None:
         """Refuse a URL whose scheme or resolved address is out of policy (the pre-flight form)."""
@@ -230,7 +231,7 @@ def fetch(
     if urllib.parse.urlparse(url).scheme not in ("http", "https"):
         return FetchResult(url, 0, {}, b"", error="blocked: scheme not allowed")
 
-    ctx = ssl.create_default_context(cafile=os.environ.get("SSL_CERT_FILE") or None)
+    ctx = ssl.create_default_context(cafile=policy.ca_bundle or os.environ.get("SSL_CERT_FILE") or None)
     if not verify_tls:
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE

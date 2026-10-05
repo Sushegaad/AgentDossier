@@ -157,6 +157,20 @@ def cmd_enterprise(args: argparse.Namespace) -> int:
     from .enterprise import preflight, scanner, selftest
     from .enterprise.config import ConfigError, load
 
+    if args.action == "audit-verify":
+        from .enterprise.audit import verify
+
+        ok, entries, problem = verify(args.config)
+        if ok:
+            head = entries[0]
+            print(
+                f"ok: {len(entries)} entries, tenant {head.get('tenant')}, ticket {head.get('ticket')}, "
+                f"authorized by {head.get('authorized_by')}, config {str(head.get('config_hash'))[:12]}…, "
+                f"last hash {entries[-1]['hash'][:12]}…"
+            )
+            return 0
+        print(f"FAILED after {len(entries)} good entries: {problem}", file=sys.stderr)
+        return 1
     if args.action == "selftest":
         result = selftest.run(Path(args.out) if args.out else None)
         for step in result["steps"]:
@@ -334,10 +348,14 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("enterprise", help="authorized private-network scan (self-hosted edition)")
     p.add_argument(
         "action",
-        choices=["preflight", "plan", "scan", "selftest"],
-        help="preflight: check the config; plan: dry run (nothing fetched); scan: probe and build; selftest: loopback end-to-end check",
+        choices=["preflight", "plan", "scan", "selftest", "audit-verify"],
+        help="preflight: check the config; plan: dry run (nothing fetched); scan: probe and build; selftest: loopback end-to-end check; audit-verify: re-check a scan's audit.jsonl chain",
     )
-    p.add_argument("config", nargs="?", help="enterprise.json (not needed for selftest)")
+    p.add_argument(
+        "config",
+        nargs="?",
+        help="enterprise.json (audit-verify: the audit.jsonl to check; not needed for selftest)",
+    )
     p.add_argument("--out", help="output directory (default: config output_dir)")
     p.add_argument("--force", action="store_true", help="scan even when preflight reports failures")
     p.add_argument("--show", type=int, default=20, help="plan: how many targets to print")

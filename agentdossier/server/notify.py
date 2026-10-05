@@ -25,6 +25,7 @@ import logging
 import smtplib
 import ssl
 import time
+import urllib.parse
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime, timedelta
 from email.message import EmailMessage
@@ -136,7 +137,7 @@ class Notifier:
         for r in results:
             if self.store is not None:
                 self.store.record_delivery(
-                    event, r["channel"], r["target"], r["status"], r["attempts"], r["detail"]
+                    event, r["channel"], _safe_target(r["target"]), r["status"], r["attempts"], r["detail"]
                 )
         return results
 
@@ -196,6 +197,14 @@ class Notifier:
         if not r.ok:
             raise RuntimeError(r.error or f"HTTP {r.status}")
         return f"HTTP {r.status}"
+
+
+def _safe_target(target: str) -> str:
+    """A URL's query string may carry a token; the delivery log keeps scheme, host and path only."""
+    if "://" not in target:
+        return target
+    p = urllib.parse.urlsplit(target)
+    return urllib.parse.urlunsplit((p.scheme, p.netloc, p.path, "", ""))
 
 
 def verify_signature(secret: str, raw_body: bytes, header: str | None) -> bool:
