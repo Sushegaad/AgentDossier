@@ -50,7 +50,7 @@
 "github": "ankimcp/anki-mcp-server-addon",
 "mcp_registry": "ai.ankimcp/anki-mcp-server-addon"
 },
-"first_seen": "2026-10-03T03:59:12Z",
+"first_seen": "2026-10-05T13:30:32Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -72,19 +72,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:12Z",
+"last_seen": "2026-10-05T13:30:32Z",
 "license": null,
 "name": "AnkiMCP Server",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:06:07Z",
+"checked_at": "2026-10-05T13:38:01Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:06:06Z",
+"checked_at": "2026-10-05T13:38:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -92,7 +92,7 @@
 "parser_version": "mcp-2025-06-18",
 "server_name": "ai.ankimcp/anki-mcp-server-addon",
 "status": "claimed",
-"version": "0.30.0",
+"version": "0.32.0",
 "via": "mcp_registry"
 }
 },
@@ -101,23 +101,23 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:18:54Z",
+"checked_at": "2026-10-05T13:51:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-09-26T08:03:07.518871Z",
+"mcp_registry_published_at": "2026-10-04T16:10:41.879623Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-09-26T08:03:07.518871Z",
+"mcp_registry_updated_at": "2026-10-04T16:10:41.879623Z",
 "mcp_transports": []
 },
 "slug": "ankimcp-ai-ankimcp-server",
 "sources": [
 {
-"payload_hash": "8cf43d82f287f4b2d80f8f732467682a037f7d7bfa4526afe749acb581412b00",
-"retrieved_at": "2026-10-03T03:59:12Z",
+"payload_hash": "e783b2d772666f62e3cdb17446685196d7172509dac3c2d3c6869382eb50171f",
+"retrieved_at": "2026-10-05T13:30:32Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ankimcp/anki-mcp-server-addon"
 }

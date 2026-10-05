@@ -1,0 +1,207 @@
+{
+"canonical_url": "cloudcrane.ai/api/build/mcp",
+"capabilities": [
+"list_datasets",
+"get_dataset",
+"list_contracts",
+"get_readiness",
+"list_review_items",
+"get_receipts",
+"list_value_sets",
+"get_run",
+"list_approvals",
+"get_approval",
+"list_tools",
+"list_scenarios",
+"get_tool_insights",
+"list_drift_alerts",
+"get_usage",
+"get_next_actions",
+"list_events",
+"create_dataset",
+"create_field",
+"update_field",
+"create_value_set",
+"import_value_set_version",
+"start_run",
+"publish_release",
+"request_approval",
+"deploy_tool",
+"update_tool",
+"create_tool_key",
+"create_scenario",
+"run_scenarios"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"technology": [
+"deploy",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Read and build a CloudCrane workspace over MCP: its datasets, the contracts that define what each field may say, what is waiting for review, and the receipt behind any value. A key made to build can also create datasets, fields and value sets, start runs, publish a release when the accuracy gate passes by itself, and deploy it: a tool, its keys, and the scenarios that guard its releases. Sign in with a CloudCrane account (OAuth), where a workspace owner approves the app, or with a build key an owner creates. On every plan. Publishing past the accuracy gate, changing a safety field so a value could go missing, and resolving a review item stay with a person, because a receipt names who decided: an agent asks with request_approval, and a person approves. Editing a stored value, withholding a record and deleting are a person's alone.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.1,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 36.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 9.1,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 36.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:cloudcrane.ai:workspace:mcp"
+},
+"first_seen": "2026-10-05T13:39:32Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_ae538c278dd08ac9",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-05T13:39:32Z",
+"license": null,
+"name": "CloudCrane workspace",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:cloudcrane.ai:workspace:mcp",
+"manifest_url": "https://cloudcrane.ai/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"server_card_url": "https://cloudcrane.ai/api/build/mcp",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "cloudcrane.ai",
+"representative_queries": [
+"what datasets are in this workspace",
+"what values does this field allow, and what does each one mean",
+"what is blocking this dataset from being released",
+"why does this record have this value",
+"add a field for product category and run it"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-05T13:59:12Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "cloudcrane-ai-cloudcrane-workspace",
+"sources": [
+{
+"payload_hash": "0db8e5422a22d1cb774b970d73c759f1f9055c95421cec45f4f30e9b22532371",
+"retrieved_at": "2026-10-05T13:39:32Z",
+"system": "ard",
+"url": "https://cloudcrane.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [
+"data-curation",
+"catalog",
+"enrichment",
+"receipts",
+"data-quality"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://cloudcrane.ai/api/build/mcp",
+"vendor": "cloudcrane.ai"
+}

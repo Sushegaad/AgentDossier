@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-03) (pending publisher verification)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-05) (pending publisher verification)",
 "evidence_url": "https://bourdon.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
-"payload_hash": "7ad561470385c49a10cd825e2e5234555d143e3c8777f291350e9ebe1fab6290",
+"next_check": "2026-10-12",
+"payload_hash": "5e2586bb4f4dff6766526f0b4ecf9582c79ba2b0865362ef9327003e77e794c4",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:13:02Z",
+"retrieved_at": "2026-10-05T13:45:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,7 +75,7 @@
 "external_ids": {
 "mcp_registry": "ai.bourdon/bourdon"
 },
-"first_seen": "2026-10-03T03:59:12Z",
+"first_seen": "2026-10-05T13:30:32Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -97,18 +97,18 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:12Z",
+"last_seen": "2026-10-05T13:30:32Z",
 "license": null,
 "name": "Bourdon",
 "news": [],
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:06:36Z",
+"checked_at": "2026-10-05T13:38:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:06:35Z",
+"checked_at": "2026-10-05T13:38:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -147,8 +147,8 @@
 "slug": "bourdon-ai-bourdon",
 "sources": [
 {
-"payload_hash": "b0af77e13cfcf899c32316131161a58b09bcf8960cb5bc1188b613c61471bc89",
-"retrieved_at": "2026-10-03T03:59:12Z",
+"payload_hash": "25d508c119829b81d62714e8b2e43cfeb3829359ac8f2d6e78b2236f162eefd0",
+"retrieved_at": "2026-10-05T13:30:32Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bourdon/bourdon"
 }

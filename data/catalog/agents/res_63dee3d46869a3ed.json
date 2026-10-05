@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/langchain, inc.",
 "framework": "csa_star",
 "issued": "2025-11-25",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
-"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
+"next_check": "2026-10-12",
+"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:10:33Z",
+"retrieved_at": "2026-10-05T13:42:55Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -114,7 +114,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-03T03:59:11Z",
+"first_seen": "2026-10-05T13:30:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -136,7 +136,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:11Z",
+"last_seen": "2026-10-05T13:30:24Z",
 "license": "MIT",
 "name": "LangChain Deep Agents",
 "news": [],
@@ -160,7 +160,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:17:31Z",
+"checked_at": "2026-10-05T13:50:03Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -176,7 +176,7 @@
 "sources": [
 {
 "payload_hash": "2111c58d553f4b75295ced22ecd6fda83433ce35cb0e1fc471650ff4bdaf9351",
-"retrieved_at": "2026-10-03T03:59:11Z",
+"retrieved_at": "2026-10-05T13:30:24Z",
 "system": "seed_xlsx",
 "url": "https://github.com/langchain-ai/deepagents"
 }

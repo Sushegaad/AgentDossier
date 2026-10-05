@@ -14,7 +14,7 @@
 "external_ids": {
 "github": "deepseek-ai/deepseek-harness"
 },
-"first_seen": "2026-10-03T04:00:06Z",
+"first_seen": "2026-10-05T13:31:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -61,7 +61,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:00:06Z",
+"last_seen": "2026-10-05T13:31:11Z",
 "license": "MIT",
 "name": "deepseek-harness",
 "news": [
@@ -69,7 +69,7 @@
 "cluster_size": 1,
 "date": "2026-10-02T03:11:20Z",
 "discussion_url": "https://news.ycombinator.com/item?id=49929489",
-"engagement": 593,
+"engagement": 638,
 "headline": "DeepSeek Harness Desktop for macOS and Windows",
 "kind": "community",
 "link_confidence": 0.95,
@@ -77,6 +77,17 @@
 "summary": null,
 "tag": "news",
 "url": "https://www.deepseek.com/en/harness/"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-03T06:42:19Z",
+"headline": "deepseek-harness v0.2.1-alpha.1",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "[中文](#cn-v0.2.1-alpha.1-community) | [English](#en-v0.2.1-alpha.1-community)\n\n<h3 id=\"cn-v0.2.1-alpha.1-community\">✨ 新增功能</h3>\n\n- 新增实验性 Claude Code Mods 兼容层。目前阶段的主要目的是验证 Claude Code Mods API 功能大致为 DeepSeek Harness 插件的一个子集，而非为用户提供实际的完整兼容性。 @",
+"tag": "product_update",
+"url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.1"
 },
 {
 "cluster_size": 1,
@@ -88,17 +99,6 @@
 "summary": "[中文](#cn-v0.2.0-rc.2-community) | [English](#en-v0.2.0-rc.2-community)\r\n\r\n<h3 id=\"cn-v0.2.0-rc.2-community\">✨ 新增功能</h3>\r\n\r\n- macOS／Windows 桌面端可在菜单栏中管理和安装 dsh 命令，支持管理插件，无需另装 Node 或 pnpm。 @tianyicui\r\n\r\n### 🐛 问题修复\r\n\r\n- 修复新建终端菜单重复列出同名 shell 的问题",
 "tag": "product_update",
 "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.0-rc.2"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-28T12:36:21Z",
-"headline": "deepseek-harness v0.2.0-rc.1",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "[中文](#cn-v0.2.0-rc.1-community) | [English](#en-v0.2.0-rc.1-community)\r\n\r\n作为 `0.2.0` 系列的首个候选版本，本版本汇总了自 `v0.1.7-rc.2` 以来的主要用户和开发者相关变更。\r\n\r\n<h3 id=\"cn-v0.2.0-rc.1-community\">🎨 体验优化</h3>\r\n\r\n- 优化对话进行中和完成状态的实时动画、用时信息、过程信息间距。 @yixiangihsiang, @imc",
-"tag": "product_update",
-"url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.0-rc.1"
 },
 {
 "cluster_size": 1,
@@ -130,17 +130,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:07:09Z",
+"checked_at": "2026-10-05T13:39:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:08Z",
+"checked_at": "2026-10-05T13:39:10Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-03T04:07:10Z",
+"checked_at": "2026-10-05T13:39:11Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -150,7 +150,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:23:16Z",
+"checked_at": "2026-10-05T13:55:53Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -158,19 +158,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-08-13T11:56:32Z",
-"github_forks": 29077,
+"github_forks": 29206,
 "github_language": "TypeScript",
 "github_open_issues": 0,
-"github_pushed_at": "2026-10-03T00:01:28Z",
-"github_stars": 242439,
+"github_pushed_at": "2026-10-03T06:02:48Z",
+"github_stars": 243782,
 "github_topic": "ai-agents",
 "homepage": "https://deepseek.com/harness"
 },
 "slug": "deepseek-ai-deepseek-harness",
 "sources": [
 {
-"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
-"retrieved_at": "2026-10-03T04:00:06Z",
+"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
+"retrieved_at": "2026-10-05T13:31:11Z",
 "system": "github",
 "url": "https://github.com/deepseek-ai/deepseek-harness"
 }

@@ -17,16 +17,16 @@
 "certification"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/crowdstrike, inc",
 "framework": "csa_star",
 "issued": "2017-02-28",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
-"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
+"next_check": "2026-10-12",
+"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:10:22Z",
+"retrieved_at": "2026-10-05T13:42:46Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -244,7 +244,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-03T03:59:11Z",
+"first_seen": "2026-10-05T13:30:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -266,24 +266,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:11Z",
+"last_seen": "2026-10-05T13:30:24Z",
 "license": "Commercial",
 "name": "CrowdStrike Charlotte AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:07:07Z",
+"checked_at": "2026-10-05T13:39:06Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:05Z",
+"checked_at": "2026-10-05T13:39:05Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-03T04:07:08Z",
+"checked_at": "2026-10-05T13:39:07Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -293,7 +293,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:15:52Z",
+"checked_at": "2026-10-05T13:48:41Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -309,7 +309,7 @@
 "sources": [
 {
 "payload_hash": "e99c9592bd8169aaa30b1e99c7fc0720c6b2ca471ff64a23152c736acf53255b",
-"retrieved_at": "2026-10-03T03:59:11Z",
+"retrieved_at": "2026-10-05T13:30:24Z",
 "system": "seed_xlsx",
 "url": "https://www.crowdstrike.com/"
 }

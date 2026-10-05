@@ -17,16 +17,16 @@
 "certification"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/github, inc.",
 "framework": "csa_star",
 "issued": "2018-05-30",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
-"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
+"next_check": "2026-10-12",
+"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:10:19Z",
+"retrieved_at": "2026-10-05T13:42:43Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -47,16 +47,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "LI-SaaS"
 },
-"display": "FedRAMP LI-SaaS: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-03) (pending publisher verification)",
+"display": "FedRAMP LI-SaaS: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-05) (pending publisher verification)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1812058188",
 "framework": "fedramp",
 "issued": "2018-10-04",
 "issuer": "Agency / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 0.933,
-"next_check": "2026-10-10",
-"payload_hash": "11f64ea31e91e61a3baa29fe8ad27f0af14b8fef730b7d61311960b6460545e4",
+"next_check": "2026-10-12",
+"payload_hash": "efa08f56199604670b420ee110b0ec2c7ff2ec017d01b4f767879bf426cbdd8b",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:09:12Z",
+"retrieved_at": "2026-10-05T13:41:43Z",
 "review_reason": "entity 1.00, offering 0.85",
 "reviewer": null,
 "scope": "product",
@@ -274,7 +274,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-03T03:59:11Z",
+"first_seen": "2026-10-05T13:30:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -296,7 +296,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:11Z",
+"last_seen": "2026-10-05T13:30:24Z",
 "license": "Proprietary",
 "name": "GitHub Copilot coding agent",
 "news": [],
@@ -311,7 +311,7 @@
 "status": "unknown"
 },
 "mcp": {
-"checked_by": "maintainer",
+"checked_by": "hemant.naik",
 "checked_on": "2026-10-02",
 "evidence_url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp",
 "note": "\"Configure MCP servers for your repository\" (GitHub Docs)",
@@ -324,7 +324,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:15:28Z",
+"checked_at": "2026-10-05T13:48:15Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -340,7 +340,7 @@
 "sources": [
 {
 "payload_hash": "eed24d4e9b6459846936ea478d1f7d4ea47522b6df41a59f0062ed6be6ab72de",
-"retrieved_at": "2026-10-03T03:59:11Z",
+"retrieved_at": "2026-10-05T13:30:24Z",
 "system": "seed_xlsx",
 "url": "https://github.com/features/copilot"
 }

@@ -22,7 +22,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.01,
+"adoption": 24.02,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -50,7 +50,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.01,
+"adoption": 24.02,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -69,7 +69,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 70.4,
+"score": 70.5,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -80,7 +80,7 @@
 "external_ids": {
 "github": "nanobrowser/nanobrowser"
 },
-"first_seen": "2026-10-03T04:00:10Z",
+"first_seen": "2026-10-05T13:31:15Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -102,7 +102,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:00:10Z",
+"last_seen": "2026-10-05T13:31:15Z",
 "license": "Apache-2.0",
 "name": "nanobrowser",
 "news": [
@@ -121,17 +121,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:07:50Z",
+"checked_at": "2026-10-05T13:40:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:48Z",
+"checked_at": "2026-10-05T13:40:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-03T04:07:50Z",
+"checked_at": "2026-10-05T13:40:15Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -141,7 +141,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:24:49Z",
+"checked_at": "2026-10-05T13:57:28Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -149,19 +149,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-12-31T08:11:27Z",
-"github_forks": 1470,
+"github_forks": 1480,
 "github_language": "TypeScript",
-"github_open_issues": 80,
+"github_open_issues": 82,
 "github_pushed_at": "2026-10-02T14:46:19Z",
-"github_stars": 13868,
+"github_stars": 13965,
 "github_topic": "ai-agents",
 "homepage": "https://nanobrowser.ai"
 },
 "slug": "nanobrowser-nanobrowser",
 "sources": [
 {
-"payload_hash": "ff84ac1b9ac762848cd16771391741efa2294328d7200b9abf099adad8144ba4",
-"retrieved_at": "2026-10-03T04:00:10Z",
+"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
+"retrieved_at": "2026-10-05T13:31:15Z",
 "system": "github",
 "url": "https://github.com/nanobrowser/nanobrowser"
 }

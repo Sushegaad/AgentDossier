@@ -28,16 +28,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-03) (pending publisher verification)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-05) (pending publisher verification)",
 "evidence_url": "https://scan.kesey.agency/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
+"next_check": "2026-10-12",
 "payload_hash": "7ffa25de0d558e627cfd9a686e83452be7fcd79989db1d385764c60b8c9911af",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:14:37Z",
+"retrieved_at": "2026-10-05T13:47:27Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -168,7 +168,7 @@
 "external_ids": {
 "mcp_registry": "agency.kesey/pretrip"
 },
-"first_seen": "2026-10-03T03:59:12Z",
+"first_seen": "2026-10-05T13:30:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -190,19 +190,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:12Z",
+"last_seen": "2026-10-05T13:30:24Z",
 "license": null,
 "name": "Pre-Trip compliance scanner",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:08:11Z",
+"checked_at": "2026-10-05T13:40:40Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:08:10Z",
+"checked_at": "2026-10-05T13:40:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -227,7 +227,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:17:59Z",
+"checked_at": "2026-10-05T13:50:34Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -242,8 +242,8 @@
 "slug": "kesey-agency-pre-trip-compliance-scanner",
 "sources": [
 {
-"payload_hash": "30afd48b66ba6d5db0b4bc30d52bc855592a0811682b41ec8c357fdca332c24b",
-"retrieved_at": "2026-10-03T03:59:12Z",
+"payload_hash": "e8f065c376ca6daf00e1bad685f2840fb6023b6b9103d9fcf2286a3e4508d9e5",
+"retrieved_at": "2026-10-05T13:30:24Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.kesey/pretrip"
 }

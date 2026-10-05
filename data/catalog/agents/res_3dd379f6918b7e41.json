@@ -1,0 +1,204 @@
+{
+"canonical_url": "apify.com/store.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data",
+"search"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-05)",
+"evidence_url": "https://apify.com/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-12",
+"payload_hash": "60474d60e08a0195302b266d6a4abb4a908a4a1b3c1b72264fbb5920b4a9d94e",
+"period_end": null,
+"retrieved_at": "2026-10-05T13:44:53Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-05)",
+"evidence_url": "https://apify.com/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-12",
+"payload_hash": "60474d60e08a0195302b266d6a4abb4a908a4a1b3c1b72264fbb5920b4a9d94e",
+"period_end": null,
+"retrieved_at": "2026-10-05T13:44:53Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": null,
+"description": "Markdown index of Apify Store: the most-used Actors overall and per use case, and how to search the full catalog of thousands of tools from an agent.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 56.4,
+"ecosystem": 5.2,
+"governance": 20.0,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {
+"soc2": 0.3
+},
+"score": 35.8,
+"value": 6.0,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 35.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:apify.com:doc:store"
+},
+"first_seen": "2026-10-05T13:38:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_3dd379f6918b7e41",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 2,
+"incidents": 0,
+"links": [
+{
+"date": "2026-07-16",
+"kind": "cve",
+"title": "CVE-2026-46341",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46341"
+},
+{
+"date": "2026-08-18",
+"kind": "cve",
+"title": "CVE-2026-50143",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50143"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-05T13:38:43Z",
+"license": null,
+"name": "Apify Store",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:apify.com:doc:store",
+"manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+"media_type": "text/markdown",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "apify.com",
+"representative_queries": [
+"what tool can extract data from LinkedIn",
+"find a tool that collects TikTok comments"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-05T13:58:57Z",
+"cves": 2,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "apify-com-apify-store",
+"sources": [
+{
+"payload_hash": "30c68ad52c9179437b167abd02515565f17a31f2175e0cf0b8710d5af4535c93",
+"retrieved_at": "2026-10-05T13:38:43Z",
+"system": "ard",
+"url": "https://apify.com/.well-known/ai-catalog.json"
+}
+],
+"tags": [
+"actors",
+"apify-store",
+"tools-for-ai",
+"web-data"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 1,
+"issues": 3,
+"protocols": 1,
+"security": 1
+},
+"url": "https://apify.com/store.md",
+"vendor": "apify.com"
+}

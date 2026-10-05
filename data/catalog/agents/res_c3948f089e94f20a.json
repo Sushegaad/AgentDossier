@@ -1,0 +1,225 @@
+{
+"canonical_url": "agi.apify.com/agents.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"finance": [
+"payment"
+],
+"technology": [
+"api"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-05)",
+"evidence_url": "https://apify.com/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-12",
+"payload_hash": "60474d60e08a0195302b266d6a4abb4a908a4a1b3c1b72264fbb5920b4a9d94e",
+"period_end": null,
+"retrieved_at": "2026-10-05T13:44:53Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-05)",
+"evidence_url": "https://apify.com/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-12",
+"payload_hash": "60474d60e08a0195302b266d6a4abb4a908a4a1b3c1b72264fbb5920b4a9d94e",
+"period_end": null,
+"retrieved_at": "2026-10-05T13:44:53Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": null,
+"description": "How an agent with a wallet buys a prepaid, spend-capped Apify API token through an agentic payment protocol and runs Actors without a human signing up.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"finance": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 5.5,
+"governance": 20.0,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_evidence": {
+"credited": {
+"soc2": 0.3
+},
+"score": 37.9,
+"value": 6.0,
+"version": "sar-score-1.1"
+},
+"profile": "regulated",
+"rank": null,
+"score": 40.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 5.5,
+"governance": 20.0,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {
+"soc2": 0.3
+},
+"score": 31.0,
+"value": 6.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 31.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:apify.com:payments:agi"
+},
+"first_seen": "2026-10-05T13:38:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_c3948f089e94f20a",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-05T13:38:43Z",
+"license": null,
+"name": "Apify Agent General Interface (AGI)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:apify.com:payments:agi",
+"manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+"media_type": "text/markdown",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "apify.com",
+"representative_queries": [
+"pay for a web scraping API without a human signing up",
+"buy a spend-capped token for an API"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-05T13:58:58Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "apify-com-apify-agent-general-interface-agi",
+"sources": [
+{
+"payload_hash": "68bd3344e98a25692cccfd1b4e8721620b0b3fe959c381da95e14aca0130b925",
+"retrieved_at": "2026-10-05T13:38:43Z",
+"system": "ard",
+"url": "https://apify.com/.well-known/ai-catalog.json"
+}
+],
+"tags": [
+"payments",
+"agentic-payments",
+"x402",
+"mpp",
+"onboarding"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://agi.apify.com/AGENTS.md",
+"vendor": "apify.com"
+}

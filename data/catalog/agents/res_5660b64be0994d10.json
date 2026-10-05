@@ -1,0 +1,173 @@
+{
+"canonical_url": "vincentwei1021.github.io/video-shotcraft",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"code"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 23.27,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 66.0,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "Vincentwei1021/video-shotcraft"
+},
+"first_seen": "2026-10-05T13:31:15Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_5660b64be0994d10",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-05T13:31:15Z",
+"license": "Apache-2.0",
+"name": "video-shotcraft",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-01T16:47:16Z",
+"headline": "video-shotcraft Showcase media assets",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "User-submitted showcase videos + showcase.json (published by showcase-publish.yml / maintainer uploads, not tracked in git).",
+"tag": "product_update",
+"url": "https://github.com/Vincentwei1021/video-shotcraft/releases/tag/showcase-media"
+},
+{
+"cluster_size": 1,
+"date": "2026-07-26T13:06:23Z",
+"headline": "video-shotcraft Gallery media assets",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "Rolling storage for gallery motion previews (161 mp4). Downloaded by the pages-deploy workflow when assembling the gh-pages site; not part of the skill install. Update flow: render new mp4 into gallery/media/, then `gh release upload galler",
+"tag": "product_update",
+"url": "https://github.com/Vincentwei1021/video-shotcraft/releases/tag/gallery-media"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-05T13:41:12Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-05T13:41:12Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-10-05T13:41:13Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "vincentwei1021.github.io",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-05T13:57:52Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-07-19T11:44:41Z",
+"github_forks": 907,
+"github_language": "TypeScript",
+"github_open_issues": 6,
+"github_pushed_at": "2026-10-05T09:12:26Z",
+"github_stars": 10342,
+"github_topic": "ai-agents",
+"homepage": "https://vincentwei1021.github.io/video-shotcraft/"
+},
+"slug": "vincentwei1021-video-shotcraft",
+"sources": [
+{
+"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
+"retrieved_at": "2026-10-05T13:31:15Z",
+"system": "github",
+"url": "https://github.com/Vincentwei1021/video-shotcraft"
+}
+],
+"tags": [
+"agent-skills",
+"ai-agents",
+"ai-video",
+"claude-code",
+"claude-code-skills",
+"claude-skills",
+"codex",
+"motion-design",
+"motion-graphics",
+"product-video",
+"promo-video",
+"remotion",
+"video-generation",
+"video-production"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1
+},
+"url": "https://vincentwei1021.github.io/video-shotcraft/",
+"vendor": "Vincentwei1021"
+}

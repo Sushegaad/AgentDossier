@@ -48,7 +48,7 @@
 "external_ids": {
 "huggingface_space": "Agents-MCP-Hackathon/CodeReviewAgent"
 },
-"first_seen": "2026-10-03T04:00:03Z",
+"first_seen": "2026-10-05T13:31:07Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -89,10 +89,37 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:00:03Z",
+"last_seen": "2026-10-05T13:31:07Z",
 "license": null,
 "name": "Code Review Agent",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-08-27T14:50:59Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49465821",
+"engagement": 14,
+"headline": "Show HN: Proval – Self-hosted code review agent for GitLab, Forgejo, and GitHub",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "review",
+"url": "https://github.com/seoes/proval"
+},
+{
+"cluster_size": 1,
+"date": "2026-07-31T20:27:28Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49128177",
+"engagement": 35,
+"headline": "Show HN: How to build and self-host a code review agent",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "review",
+"url": "https://www.trytilde.ai/blog/how-to-build-code-review-agent"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
@@ -113,7 +140,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:22:40Z",
+"checked_at": "2026-10-05T13:55:19Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -128,8 +155,8 @@
 "slug": "agents-mcp-hackathon-code-review-agent",
 "sources": [
 {
-"payload_hash": "894766b9c2b2c90cd0138336ecd23e0ddba85c5e38eca4048e9b976055040567",
-"retrieved_at": "2026-10-03T04:00:03Z",
+"payload_hash": "a46e0d2d99b758e1a66edd31c108b8807bde69c8eb11aa2e0127014a33035ab2",
+"retrieved_at": "2026-10-05T13:31:07Z",
 "system": "huggingface",
 "url": "https://huggingface.co/spaces/Agents-MCP-Hackathon/CodeReviewAgent"
 }

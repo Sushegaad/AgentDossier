@@ -1,41 +1,40 @@
 {
-"canonical_url": "context-link.ai",
-"capabilities": [],
-"category": "MCP server",
+"canonical_url": "browser.lexmount.com",
+"category": "Open-source project",
 "classification": {
 "matched": {
 "business": [
-"email",
-"notion"
+"automation"
 ],
 "data": [
-"search"
+"scraping"
 ],
 "technology": [
-"mcp"
+"cloud",
+"playwright"
 ]
 },
 "taxonomy_version": "sar-taxonomy-1.0"
 },
-"commercial": null,
+"commercial": false,
 "compliance": [],
-"deployment": null,
-"description": "One semantic search across your sites, Drive, Notion, email, files and Basecamp.",
+"deployment": "self-hosted",
+"description": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": null,
+"adoption": 22.8,
 "docs": 7.0,
-"domain_fit": 56.4,
-"ecosystem": 4.6,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.564,
-"evidence_coverage": 0.667,
+"confidence": 0.34,
+"evidence_coverage": 0.944,
 "governance_evidence": {
 "credited": {},
 "score": null,
@@ -44,27 +43,26 @@
 },
 "profile": "general",
 "rank": null,
-"score": 44.5,
+"score": 61.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
-"adoption",
 "governance"
 ]
 },
 "data": {
 "components": {
-"adoption": null,
+"adoption": 22.8,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 4.6,
+"ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
-"evidence_coverage": 0.75,
+"evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
 "score": null,
@@ -73,27 +71,26 @@
 },
 "profile": "data",
 "rank": null,
-"score": 46.0,
+"score": 63.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
-"adoption",
 "governance"
 ]
 },
 "technology": {
 "components": {
-"adoption": null,
+"adoption": 22.8,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 4.6,
+"ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
-"evidence_coverage": 0.7,
+"evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
 "score": null,
@@ -102,28 +99,27 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 46.5,
+"score": 67.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
-"adoption",
 "governance"
 ]
 }
 },
 "external_ids": {
-"mcp_registry": "ai.context-link/context-link"
+"github": "lexmount/moli"
 },
-"first_seen": "2026-10-03T03:59:12Z",
+"first_seen": "2026-10-05T13:31:15Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
 "evidence_urls": []
 },
-"id": "res_cb186826c148f846",
+"id": "res_5834f0fdd33c690e",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
 "tier": 3
@@ -136,73 +132,74 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:12Z",
-"license": null,
-"name": "Context Link",
+"last_seen": "2026-10-05T13:31:15Z",
+"license": "Apache-2.0",
+"name": "moli",
 "news": [],
-"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:07:03Z",
+"checked_at": "2026-10-05T13:38:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:01Z",
+"checked_at": "2026-10-05T13:38:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
+"checked_at": "2026-10-05T13:38:44Z",
 "parser_version": "mcp-2025-06-18",
-"remotes": [
-{
-"type": "streamable-http",
-"url": "https://www.context-link.ai/mcp"
-}
-],
-"server_name": "ai.context-link/context-link",
-"status": "claimed",
-"version": "1.0.0",
-"via": "mcp_registry"
+"status": "not_found"
 }
 },
-"publisher_domain": "context-link.ai",
-"resource_type": "mcp_server",
+"publisher_domain": "browser.lexmount.com",
+"resource_type": "agent",
 "scope": "public",
-"security": {
-"advisories": 0,
-"checked_at": "2026-10-03T04:21:00Z",
-"cves": 0,
-"source": "nvd",
-"tier": 1
-},
 "signals": {
-"mcp_packages": 0,
-"mcp_registry_published_at": "2026-09-12T04:14:21.742772Z",
-"mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-09-12T04:14:21.742772Z",
-"mcp_transports": [
-"streamable-http"
-]
+"github_archived": false,
+"github_created_at": "2026-08-10T13:20:30Z",
+"github_forks": 268,
+"github_language": "Rust",
+"github_open_issues": 228,
+"github_pushed_at": "2026-10-05T13:18:08Z",
+"github_stars": 8579,
+"github_topic": "ai-agents",
+"homepage": "https://browser.lexmount.com"
 },
-"slug": "context-link-ai-context-link",
+"slug": "lexmount-moli",
 "sources": [
 {
-"payload_hash": "b0af77e13cfcf899c32316131161a58b09bcf8960cb5bc1188b613c61471bc89",
-"retrieved_at": "2026-10-03T03:59:12Z",
-"system": "mcp_registry",
-"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.context-link/context-link"
+"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
+"retrieved_at": "2026-10-05T13:31:15Z",
+"system": "github",
+"url": "https://github.com/lexmount/moli"
 }
 ],
-"tags": [],
+"tags": [
+"ai-agents",
+"ai-tools",
+"browser",
+"browser-automation",
+"cloud-browser",
+"kitesurf",
+"playwright",
+"puppeteer",
+"rust",
+"servo",
+"web-crawler",
+"web-crawling",
+"web-scraper",
+"web-scraping"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": 1,
-"protocols": 3,
-"security": 1
+"issues": null,
+"protocols": 5,
+"security": null
 },
-"url": "https://www.context-link.ai",
-"vendor": "context-link.ai"
+"url": "https://browser.lexmount.com",
+"vendor": "lexmount"
 }

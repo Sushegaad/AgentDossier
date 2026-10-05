@@ -1,57 +1,57 @@
 {
- "built_at": "2026-10-03T04:26:42Z",
+ "built_at": "2026-10-05T13:59:44Z",
  "snapshot_date": "2026-09-25",
  "generator": "agentdossier 1.0.0",
  "score_version": "sar-score-1.0",
- "resources": 875,
+ "resources": 894,
  "by_source": {
-  "ard": 76,
+  "ard": 94,
   "aws_marketplace": 7,
-  "github": 258,
+  "github": 259,
   "huggingface": 150,
   "mcp_registry": 258,
   "seed_xlsx": 158
  },
  "by_type": {
   "a2a_agent": 1,
-  "agent": 409,
-  "api": 4,
+  "agent": 416,
+  "api": 5,
   "framework": 58,
   "marketplace": 4,
-  "mcp_server": 326,
+  "mcp_server": 331,
   "platform": 17,
-  "skill": 54,
+  "skill": 60,
   "tool": 2
  },
  "protocols": {
   "a2a": {
-   "unknown": 348,
-   "not_found": 432,
-   "invalid": 61,
-   "verified": 26,
-   "claimed": 8
+   "unknown": 366,
+   "not_found": 433,
+   "invalid": 63,
+   "verified": 25,
+   "claimed": 7
   },
   "mcp": {
-   "claimed": 450,
+   "claimed": 458,
    "not_found": 180,
-   "unknown": 217,
-   "invalid": 28
+   "unknown": 227,
+   "invalid": 29
   },
   "ard": {
-   "unknown": 277,
-   "not_found": 456,
-   "invalid": 61,
-   "verified": 81
+   "unknown": 276,
+   "not_found": 452,
+   "invalid": 67,
+   "verified": 99
   }
  },
  "domains": {
   "business": {
    "ranked": 100,
-   "discovered": 161
+   "discovered": 164
   },
   "finance": {
    "ranked": 100,
-   "discovered": 40
+   "discovered": 41
   },
   "healthcare": {
    "ranked": 100,
@@ -63,7 +63,7 @@
   },
   "technology": {
    "ranked": 100,
-   "discovered": 603
+   "discovered": 615
   },
   "cybersecurity": {
    "ranked": 100,
@@ -71,7 +71,7 @@
   },
   "sales": {
    "ranked": 100,
-   "discovered": 50
+   "discovered": 53
   },
   "legal": {
    "ranked": 100,
@@ -79,11 +79,11 @@
   },
   "data": {
    "ranked": 100,
-   "discovered": 165
+   "discovered": 172
   },
   "supply_chain": {
    "ranked": 100,
-   "discovered": 13
+   "discovered": 15
   },
   "insurance": {
    "ranked": 100,
@@ -95,10 +95,10 @@
   }
  },
  "identity_tiers": {
-  "T1": 22,
-  "T2": 85,
-  "T3": 670,
-  "T4": 97,
+  "T1": 39,
+  "T2": 86,
+  "T3": 668,
+  "T4": 100,
   "T5": 1
  },
  "reports": {
@@ -115,62 +115,64 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-03T03:59:11Z",
-   "finished": "2026-10-03T03:59:11Z"
+   "started": "2026-10-05T13:30:24Z",
+   "finished": "2026-10-05T13:30:24Z"
   },
   "mcp_registry": {
    "source": "mcp_registry",
-   "fetched": 200,
-   "produced": 19662,
-   "skipped": 338,
-   "errors": 0,
-   "error_samples": [],
-   "started": "2026-10-03T03:59:11Z",
-   "finished": "2026-10-03T04:00:03Z"
+   "fetched": 30,
+   "produced": 2876,
+   "skipped": 24,
+   "errors": 1,
+   "error_samples": [
+    "https://registry.modelcontextprotocol.io/v0/servers?limit=100&version=latest&cursor=co.fastgpu/fastgpu%3A1.0.1: HTTP 500"
+   ],
+   "started": "2026-10-05T13:30:24Z",
+   "finished": "2026-10-05T13:31:07Z"
   },
   "huggingface": {
    "source": "huggingface",
    "fetched": 5,
-   "produced": 823,
+   "produced": 825,
    "skipped": 815,
    "errors": 1,
    "error_samples": [
     "https://huggingface.co/api/spaces?search=agentic&sort=likes&direction=-1&limit=500&full=true: response too large"
    ],
-   "started": "2026-10-03T04:00:03Z",
-   "finished": "2026-10-03T04:00:05Z"
+   "started": "2026-10-05T13:31:07Z",
+   "finished": "2026-10-05T13:31:08Z"
   },
   "github": {
    "source": "github",
    "fetched": 98,
-   "produced": 8494,
+   "produced": 8554,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-03T04:00:05Z",
-   "finished": "2026-10-03T04:05:47Z"
+   "started": "2026-10-05T13:31:08Z",
+   "finished": "2026-10-05T13:37:36Z"
   },
   "dedup": {
    "input": 915,
-   "output": 804,
-   "merged": 111,
-   "review_candidates": 10,
+   "output": 805,
+   "merged": 110,
+   "review_candidates": 9,
    "review_added": 0
   },
   "ard_web": {
    "source": "ard_web",
-   "fetched": 487,
-   "produced": 79,
+   "fetched": 489,
+   "produced": 97,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-03T04:05:47Z",
-   "finished": "2026-10-03T04:09:12Z"
+   "started": "2026-10-05T13:37:36Z",
+   "finished": "2026-10-05T13:41:43Z"
   },
   "protocol_claims": {
    "source": "protocol_claims",
    "curated": 4,
-   "self_description": 182
+   "self_description": 184
   },
   "fedramp": {
    "source": "fedramp",
@@ -179,8 +181,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-03T04:09:12Z",
-   "finished": "2026-10-03T04:10:18Z"
+   "started": "2026-10-05T13:41:43Z",
+   "finished": "2026-10-05T13:42:42Z"
   },
   "csa_star": {
    "source": "csa_star",
@@ -189,8 +191,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-03T04:10:18Z",
-   "finished": "2026-10-03T04:12:03Z"
+   "started": "2026-10-05T13:42:42Z",
+   "finished": "2026-10-05T13:44:17Z"
   },
   "curated": {
    "source": "curated",
@@ -199,47 +201,47 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-03T04:12:03Z",
-   "finished": "2026-10-03T04:12:03Z"
+   "started": "2026-10-05T13:44:17Z",
+   "finished": "2026-10-05T13:44:17Z"
   },
   "vendor_claims": {
    "source": "vendor_trust_centers",
-   "fetched": 485,
-   "produced": 509,
+   "fetched": 487,
+   "produced": 498,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-03T04:12:03Z",
-   "finished": "2026-10-03T04:15:27Z"
+   "started": "2026-10-05T13:44:17Z",
+   "finished": "2026-10-05T13:48:14Z"
   },
   "compliance_review_added": {
-   "added": 12
+   "added": 9
   },
   "news": {
    "source": "news",
-   "fetched": 724,
-   "produced": 287,
+   "fetched": 738,
+   "produced": 288,
    "skipped": 0,
    "errors": 1,
    "error_samples": [
     "gdelt: GDELT unavailable (HTTP 429); skipped for the rest of the run"
    ],
-   "started": "2026-10-03T04:15:27Z",
-   "finished": "2026-10-03T04:26:41Z"
+   "started": "2026-10-05T13:48:14Z",
+   "finished": "2026-10-05T13:59:43Z"
   },
   "nvd": {
    "source": "nvd",
-   "fetched": 724,
-   "produced": 724,
+   "fetched": 738,
+   "produced": 738,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-03T04:15:27Z",
-   "finished": "2026-10-03T04:26:41Z"
+   "started": "2026-10-05T13:48:14Z",
+   "finished": "2026-10-05T13:59:43Z"
   },
   "changelog": {
-   "events": 64,
-   "appended": 64
+   "events": 46,
+   "appended": 46
   }
  }
 }

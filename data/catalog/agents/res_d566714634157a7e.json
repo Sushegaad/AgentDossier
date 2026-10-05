@@ -20,16 +20,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-03)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-05)",
 "evidence_url": "https://superset.sh/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
-"payload_hash": "329d8ce1e9a15d3af3dcb4207fc7cb92a68ad6bcf0fe8685d80e468cdb4338d7",
+"next_check": "2026-10-12",
+"payload_hash": "251524f1bf1c3cad1b99161e2708fc71d485ee63c52ace2b361bfa3af7b758fb",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:14:45Z",
+"retrieved_at": "2026-10-05T13:47:37Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -79,7 +79,7 @@
 "external_ids": {
 "ard": "urn:air:superset.sh:skill:superset-contribute"
 },
-"first_seen": "2026-10-03T04:09:12Z",
+"first_seen": "2026-10-05T13:41:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,7 +101,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:09:12Z",
+"last_seen": "2026-10-05T13:41:43Z",
 "license": null,
 "name": "superset-contribute",
 "news": [],
@@ -134,7 +134,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:26:25Z",
+"checked_at": "2026-10-05T13:59:25Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -144,7 +144,7 @@
 "sources": [
 {
 "payload_hash": "c2460de06eef4da9d684d2c909e329627af5a791859c0f360f256b8525805203",
-"retrieved_at": "2026-10-03T04:09:12Z",
+"retrieved_at": "2026-10-05T13:41:43Z",
 "system": "ard",
 "url": "https://superset.sh/.well-known/ai-catalog.json"
 }
