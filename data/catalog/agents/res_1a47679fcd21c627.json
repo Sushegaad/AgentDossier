@@ -149,7 +149,7 @@
 "external_ids": {
 "github": "feder-cr/invisible_playwright_mcp"
 },
-"first_seen": "2026-10-03T04:02:26Z",
+"first_seen": "2026-10-05T13:33:49Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -171,7 +171,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:04:10Z",
+"last_seen": "2026-10-05T13:35:44Z",
 "license": "MIT",
 "merged_ids": [
 "res_1a47679fcd21c627"
@@ -180,25 +180,25 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-02T17:04:14Z",
-"headline": "invisible_playwright_mcp 0.70.8",
+"date": "2026-10-04T11:50:02Z",
+"headline": "invisible_playwright_mcp 0.70.10",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "browser_type said \"typed into\" from having sent the keys, not from what the field kept. A field that a store rewrote a moment after the focus, one that took only digits, or one with a maxlength all answered \"typed into\" while holding someth",
+"summary": "invisible-playwright 0.25.12 waits inside FileChooser.set_files for the\ntime a person takes to pick a file, and no longer exports the hesitation\nhelper, which was an addition to Playwright's API. The server drew that\npause itself with the h",
 "tag": "product_update",
-"url": "https://github.com/feder-cr/invisible_playwright_mcp/releases/tag/v0.70.8"
+"url": "https://github.com/feder-cr/invisible_playwright_mcp/releases/tag/v0.70.10"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-25T13:56:56Z",
-"headline": "invisible_playwright_mcp 0.70.2",
+"date": "2026-10-03T04:21:45Z",
+"headline": "invisible_playwright_mcp 0.70.9",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "browser_navigate to YouTube, Reddit, or any page that replaces itself from\nscript while it loads waited 45 s for a navigation that was gone and answered\nwith an error on a page that was ready. Through this server's own tools, on\ninvisible-p",
+"summary": "The server needs invisible-playwright 0.25.9, the wrapper that speaks the firefox-35 engine, so an install cannot resolve an older wrapper. On that engine browser_select_option can set a select inside an open shadow root, so its e2e is no l",
 "tag": "product_update",
-"url": "https://github.com/feder-cr/invisible_playwright_mcp/releases/tag/v0.70.2"
+"url": "https://github.com/feder-cr/invisible_playwright_mcp/releases/tag/v0.70.9"
 }
 ],
 "news_checked": true,
@@ -223,7 +223,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:24:02Z",
+"checked_at": "2026-10-05T13:56:40Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -231,19 +231,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-08-04T12:15:06Z",
-"github_forks": 4685,
+"github_forks": 4686,
 "github_language": "Python",
-"github_open_issues": 1,
-"github_pushed_at": "2026-10-03T04:02:18Z",
-"github_stars": 31754,
+"github_open_issues": 2,
+"github_pushed_at": "2026-10-04T11:42:01Z",
+"github_stars": 31768,
 "github_topic": "ai-agent",
 "homepage": "https://github.com/feder-cr/invisible_playwright_mcp/wiki"
 },
 "slug": "feder-cr-invisible-playwright-mcp",
 "sources": [
 {
-"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
-"retrieved_at": "2026-10-03T04:02:26Z",
+"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
+"retrieved_at": "2026-10-05T13:33:49Z",
 "system": "github",
 "url": "https://github.com/feder-cr/invisible_playwright_mcp"
 }

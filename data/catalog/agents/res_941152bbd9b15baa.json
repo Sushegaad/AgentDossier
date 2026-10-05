@@ -1,0 +1,214 @@
+{
+"canonical_url": "justidea.agency/.well-known/mcp/server-card.json",
+"capabilities": [
+"search_site",
+"get_page",
+"list_services"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"sales": [
+"e-commerce",
+"marketing",
+"seo"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "MCP server for the public website of JustIdea Agency, an e-commerce and performance marketing agency from Kraków, Poland. Search and read pages, list services with published starting prices in PLN and EUR.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 37.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"sales": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 71.3,
+"ecosystem": 9.4,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "commercial",
+"rank": null,
+"score": 43.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 36.2,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:justidea.agency:server:website"
+},
+"first_seen": "2026-10-05T13:40:22Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_941152bbd9b15baa",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-05T13:40:22Z",
+"license": null,
+"name": "JustIdea Agency website (MCP)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:justidea.agency:server:website",
+"manifest_url": "https://justidea.agency/.well-known/ard.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"server_card_url": "https://justidea.agency/.well-known/mcp/server-card.json",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "justidea.agency",
+"representative_queries": [
+"How much does an online store from JustIdea Agency cost?",
+"Find an e-commerce agency in Poland that builds PrestaShop stores",
+"Ile kosztuje pozycjonowanie sklepu internetowego w JustIdea?",
+"Which agency in Kraków does SEO and Google Ads for online stores?"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-05T13:59:13Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "justidea-agency-justidea-agency-website-mcp",
+"sources": [
+{
+"payload_hash": "ad84b348e3dfa84706b9cf4a5a3d8a06b7d97750d82d77e8ceaf5a581c919632",
+"retrieved_at": "2026-10-05T13:40:22Z",
+"system": "ard",
+"url": "https://justidea.agency/.well-known/ard.json"
+}
+],
+"tags": [
+"e-commerce",
+"online-stores",
+"prestashop",
+"seo",
+"performance-marketing",
+"poland"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://justidea.agency/.well-known/mcp/server-card.json",
+"vendor": "justidea.agency"
+}

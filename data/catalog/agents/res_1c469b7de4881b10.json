@@ -50,7 +50,7 @@
 "github": "ankimcp/anki-mcp-server",
 "mcp_registry": "ai.ankimcp/anki-mcp-server"
 },
-"first_seen": "2026-10-03T03:59:12Z",
+"first_seen": "2026-10-05T13:30:32Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -72,10 +72,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:12Z",
+"last_seen": "2026-10-05T13:30:32Z",
 "license": null,
 "name": "Anki MCP Server",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-04T18:35:35Z",
+"headline": "anki-mcp-server v0.27.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* Directory-policy pass on the tool surface, read-only hardening, createDeck fixes by @anatoly314 in https://github.com/ankimcp/anki-mcp-server/pull/71\n\n\n**Full Changelog**: https://github.com/ankimcp/anki-mcp-server/compa",
+"tag": "product_update",
+"url": "https://github.com/ankimcp/anki-mcp-server/releases/tag/v0.27.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-18T15:06:23Z",
@@ -86,28 +97,17 @@
 "summary": "## What's Changed\n* feat: add card suspension tools by @hunter-shepherd in https://github.com/ankimcp/anki-mcp-server/pull/68\n\n## New Contributors\n* @hunter-shepherd made their first contribution in https://github.com/ankimcp/anki-mcp-serve",
 "tag": "product_update",
 "url": "https://github.com/ankimcp/anki-mcp-server/releases/tag/v0.26.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-09T18:24:01Z",
-"headline": "anki-mcp-server v0.25.1",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "**Full Changelog**: https://github.com/ankimcp/anki-mcp-server/compare/v0.25.0...v0.25.1",
-"tag": "product_update",
-"url": "https://github.com/ankimcp/anki-mcp-server/releases/tag/v0.25.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:06:07Z",
+"checked_at": "2026-10-05T13:38:01Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:06:06Z",
+"checked_at": "2026-10-05T13:38:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -117,13 +117,13 @@
 "identifier": "@ankimcp/anki-mcp-server",
 "registry": "npm",
 "transport": "stdio",
-"version": "0.26.0"
+"version": "0.27.0"
 }
 ],
 "parser_version": "mcp-2025-06-18",
 "server_name": "ai.ankimcp/anki-mcp-server",
 "status": "claimed",
-"version": "0.26.0",
+"version": "0.27.0",
 "via": "mcp_registry"
 }
 },
@@ -132,23 +132,23 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:18:53Z",
+"checked_at": "2026-10-05T13:51:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 1,
-"mcp_registry_published_at": "2026-09-18T15:07:12.087643Z",
+"mcp_registry_published_at": "2026-10-04T18:28:29.903104Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-09-18T15:07:12.087643Z",
+"mcp_registry_updated_at": "2026-10-04T18:28:29.903104Z",
 "mcp_transports": []
 },
 "slug": "ankimcp-ai-anki-mcp-server",
 "sources": [
 {
-"payload_hash": "8cf43d82f287f4b2d80f8f732467682a037f7d7bfa4526afe749acb581412b00",
-"retrieved_at": "2026-10-03T03:59:12Z",
+"payload_hash": "e783b2d772666f62e3cdb17446685196d7172509dac3c2d3c6869382eb50171f",
+"retrieved_at": "2026-10-05T13:30:32Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ankimcp/anki-mcp-server"
 }

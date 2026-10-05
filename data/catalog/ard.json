@@ -430,6 +430,11 @@
    ]
   },
   {
+   "identifier": "urn:air:alcock.ai:mcp:arena",
+   "type": "application/mcp-server-card+json",
+   "url": "https://alcock.ai/api/mcp/server-card"
+  },
+  {
    "identifier": "urn:air:alpic.ai:mcp:platform",
    "type": "application/mcp-server-card+json",
    "description": "Manage Alpic projects, inspect deployments, retrieve logs, and review MCP analytics.",
@@ -560,6 +565,491 @@
    ]
   },
   {
+   "identifier": "urn:air:apify.com:mcp:apify",
+   "displayName": "Apify MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://mcp.apify.com/.well-known/mcp/server-card.json",
+   "description": "The hosted MCP server for Apify, the largest marketplace of trusted tools for AI. Search thousands of ready-to-run tools called Actors, read what one takes as input, run it, and read the structured web data it returns.",
+   "tags": [
+    "mcp",
+    "tools-for-ai",
+    "actors",
+    "apify-store",
+    "web-data",
+    "automation"
+   ],
+   "capabilities": [
+    "search-actors",
+    "fetch-actor-details",
+    "call-actor",
+    "get-actor-run",
+    "get-dataset-items",
+    "search-apify-docs",
+    "fetch-apify-docs"
+   ],
+   "representativeQueries": [
+    "get real-time web data for my AI agent",
+    "find a ready-made tool that pulls reviews from Google Maps",
+    "generate leads from a list of company websites",
+    "monitor social media mentions of a brand"
+   ],
+   "metadata": {
+    "agenticPayments": "https://agi.apify.com/AGENTS.md"
+   },
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:catalog:agent-skills",
+   "displayName": "Apify Agent Skills index",
+   "type": "application/json",
+   "url": "https://apify.com/.well-known/agent-skills/index.json",
+   "description": "Agent Skills Discovery index of the official Apify skills, each with a sha256 digest of the SKILL.md served for it.",
+   "tags": [
+    "skills",
+    "agent-skills",
+    "discovery"
+   ],
+   "capabilities": [
+    "apify-actor-development",
+    "apify-actorization",
+    "apify-generate-output-schema",
+    "apify-integration-development",
+    "apify-ultimate-scraper"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:catalog:api",
+   "displayName": "Apify API catalog",
+   "type": "application/linkset+json",
+   "url": "https://apify.com/.well-known/api-catalog",
+   "description": "RFC 9727 linkset naming Apify's REST API and hosted MCP server as catalog items, each with its description and documentation.",
+   "tags": [
+    "api",
+    "catalog",
+    "discovery",
+    "linkset"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:api:rest",
+   "displayName": "Apify API v2",
+   "type": "application/vnd.oai.openapi+json;version=3.1",
+   "url": "https://apify.com/openapi.json",
+   "description": "OpenAPI description of the Apify REST API: start an Actor run, poll it to a terminal status, and read the items of its dataset.",
+   "tags": [
+    "api",
+    "rest",
+    "openapi"
+   ],
+   "representativeQueries": [
+    "run an Apify Actor from my own code",
+    "read the items of an Apify dataset over HTTP"
+   ],
+   "metadata": {
+    "agenticPayments": "https://agi.apify.com/AGENTS.md"
+   },
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:doc:agent-quickstart",
+   "displayName": "Apify agent quickstart (agents.md)",
+   "type": "text/markdown",
+   "url": "https://apify.com/agents.md",
+   "description": "Quickstart for an agent integrating Apify: how to connect to the MCP server, the tool sequence from search to data, and the REST routes with the cost caps each one takes.",
+   "tags": [
+    "quickstart",
+    "integration",
+    "mcp",
+    "api"
+   ],
+   "representativeQueries": [
+    "how do I call an Apify Actor from my agent",
+    "how do I connect to the Apify MCP server"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:catalog:llms-txt",
+   "displayName": "Apify site index (llms.txt)",
+   "type": "text/plain",
+   "url": "https://apify.com/llms.txt",
+   "description": "Index of apify.com in the llmstxt.org format: every main page, use case, support program and agent-facing document, each with one line on what it answers. The homepage serves this document to a client that asks for text/markdown.",
+   "tags": [
+    "index",
+    "llms-txt",
+    "discovery",
+    "site-index"
+   ],
+   "representativeQueries": [
+    "what is on apify.com",
+    "which Apify page explains how pricing works"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:doc:store",
+   "displayName": "Apify Store",
+   "type": "text/markdown",
+   "url": "https://apify.com/store.md",
+   "description": "Markdown index of Apify Store: the most-used Actors overall and per use case, and how to search the full catalog of thousands of tools from an agent.",
+   "tags": [
+    "actors",
+    "apify-store",
+    "tools-for-ai",
+    "web-data"
+   ],
+   "representativeQueries": [
+    "what tool can extract data from LinkedIn",
+    "find a tool that collects TikTok comments"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:doc:pricing",
+   "displayName": "Apify pricing",
+   "type": "text/markdown",
+   "url": "https://apify.com/pricing.md",
+   "description": "Plans, the monthly usage credit on the free plan, and the pay-per-event and pay-per-result models Actors charge on.",
+   "tags": [
+    "pricing",
+    "plans",
+    "billing"
+   ],
+   "representativeQueries": [
+    "how much does Apify cost",
+    "does Apify have a free plan"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:payments:agi",
+   "displayName": "Apify Agent General Interface (AGI)",
+   "type": "text/markdown",
+   "url": "https://agi.apify.com/AGENTS.md",
+   "description": "How an agent with a wallet buys a prepaid, spend-capped Apify API token through an agentic payment protocol and runs Actors without a human signing up.",
+   "tags": [
+    "payments",
+    "agentic-payments",
+    "x402",
+    "mpp",
+    "onboarding"
+   ],
+   "representativeQueries": [
+    "pay for a web scraping API without a human signing up",
+    "buy a spend-capped token for an API"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:api:store-search",
+   "displayName": "Apify Store search",
+   "type": "application/json",
+   "url": "https://api.apify.com/v2/store",
+   "description": "Search endpoint over the 81,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
+   "tags": [
+    "search",
+    "discovery",
+    "actors",
+    "apify-store",
+    "marketplace"
+   ],
+   "representativeQueries": [
+    "find a ready-made tool that collects product data from an online store",
+    "which Apify tool extracts data from Google Maps"
+   ],
+   "metadata": {
+    "searchUrl": "https://api.apify.com/v2/store?search={query}&responseFormat=agent"
+   },
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:skill:apify-actor-development",
+   "displayName": "apify-actor-development",
+   "type": "application/ai-skill+md",
+   "url": "https://apify.com/.well-known/agent-skills/apify-actor-development/SKILL.md",
+   "description": "Create, modify, debug, and deploy Apify Actors, and write their input and output schemas. Use when building an Actor from scratch, changing or troubleshooting Actor code, generating or updating .actor schema files, or pushing an Actor to the Apify platform. To wrap an existing non-Actor project, use apify-actorization instead.",
+   "tags": [
+    "skill",
+    "agent-skills"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:skill:apify-actorization",
+   "displayName": "apify-actorization",
+   "type": "application/ai-skill+md",
+   "url": "https://apify.com/.well-known/agent-skills/apify-actorization/SKILL.md",
+   "description": "Convert existing projects into Apify Actors - serverless cloud programs. Actorize JavaScript/TypeScript (SDK with Actor.init/exit), Python (async context manager), or any language (CLI wrapper). Use when migrating code to Apify, wrapping CLI tools as Actors, or adding Actor SDK to existing projects.",
+   "tags": [
+    "skill",
+    "agent-skills"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:skill:apify-generate-output-schema",
+   "displayName": "apify-generate-output-schema",
+   "type": "application/ai-skill+md",
+   "url": "https://apify.com/.well-known/agent-skills/apify-generate-output-schema/SKILL.md",
+   "description": "Deprecated. Output schema generation moved to the apify-actor-development skill; prefer that skill whenever it is available.",
+   "tags": [
+    "skill",
+    "agent-skills"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:skill:apify-integration-development",
+   "displayName": "apify-integration-development",
+   "type": "application/ai-skill+md",
+   "url": "https://apify.com/.well-known/agent-skills/apify-integration-development/SKILL.md",
+   "description": "Design and build an official Apify integration for a company's product - workflow-automation apps (Zapier/n8n-style), AI agent plugins (coding-agent skills+MCP bundles or OpenClaw/Hermes-style harnesses), AI framework packages (LangChain/LlamaIndex-style), or direct application clients via apify-client. Use when planning, creating, or reviewing an integration that exposes Apify Actors, runs, datasets, or key-value stores inside another product.",
+   "tags": [
+    "skill",
+    "agent-skills"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apify.com:skill:apify-ultimate-scraper",
+   "displayName": "apify-ultimate-scraper",
+   "type": "application/ai-skill+md",
+   "url": "https://apify.com/.well-known/agent-skills/apify-ultimate-scraper/SKILL.md",
+   "description": "Universal AI-powered web scraper for any platform. Scrape data from Instagram, Facebook, TikTok, YouTube, LinkedIn, X/Twitter, Google Maps, Google Search, Google Trends, Reddit, Airbnb, Yelp, and 15+ more platforms. Use for lead generation, brand monitoring, competitor analysis, influencer discovery, trend research, content analytics, audience analysis, review analysis, SEO intelligence, recruitment, or any data extraction task.",
+   "tags": [
+    "skill",
+    "agent-skills"
+   ],
+   "trustManifest": {
+    "identity": "https://apify.com",
+    "identityType": "https",
+    "attestations": [
+     {
+      "type": "SOC2-Type2",
+      "uri": "https://trust.apify.com/",
+      "mediaType": "text/html"
+     },
+     {
+      "type": "GDPR",
+      "uri": "https://docs.apify.com/legal/gdpr-information",
+      "mediaType": "text/html"
+     }
+    ]
+   }
+  },
+  {
    "identifier": "urn:air:assetlog.ai:server:mcp",
    "displayName": "AssetLog MCP server",
    "description": "45 tools for searching listings, publishing them on a user's behalf, finding agents by service area, managing their own ads, watchdogs, calendar and enquiries, and walking a seller through a step-by-step sale checklist.",
@@ -569,19 +1059,9 @@
     "find apartments near the sea in Spain under 300000 EUR",
     "add my car listing to a classifieds site",
     "which real estate agents cover Alicante",
-    "show me jobs in Brno that allow remote work"
-   ]
-  },
-  {
-   "identifier": "urn:air:assetlog.ai:api:rest",
-   "displayName": "AssetLog REST API",
-   "description": "Public geo-aware search over vehicles, real estate and jobs. No authentication required for reading.",
-   "type": "application/yaml",
-   "url": "https://assetlog.ai/openapi.yaml",
-   "representativeQueries": [
-    "search classified listings by city and price range",
-    "how many listings are published on AssetLog",
-    "list used diesel estate cars under 200000 CZK"
+    "show me jobs in Brno that allow remote work",
+    "list used diesel estate cars under 200000 CZK",
+    "how many listings are published on AssetLog"
    ]
   },
   {
@@ -591,19 +1071,8 @@
    "type": "application/json",
    "url": "https://assetlog.ai/.well-known/agent-skills/index.json",
    "representativeQueries": [
-    "how do I publish a classified ad through an API",
+    "how do I publish a classified ad on a user's behalf",
     "how do I connect AssetLog as an MCP server"
-   ]
-  },
-  {
-   "identifier": "urn:air:assetlog.ai:agent:a2a",
-   "displayName": "AssetLog A2A agent",
-   "description": "Agent-to-agent endpoint that answers natural-language listing queries over the A2A protocol.",
-   "type": "application/json",
-   "url": "https://assetlog.ai/.well-known/agent-card.json",
-   "representativeQueries": [
-    "ask another agent to find property listings",
-    "delegate a classifieds search to a remote agent"
    ]
   },
   {
@@ -701,6 +1170,165 @@
     "RFP go no-go skill for Claude",
     "compliance matrix builder skill"
    ]
+  },
+  {
+   "identifier": "urn:air:centralcity.ai:mcp:central-city",
+   "type": "application/mcp-server-card+json",
+   "url": "https://centralcity.ai/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:cloudcrane.ai:workspace:mcp",
+   "displayName": "CloudCrane workspace",
+   "type": "application/mcp-server-card+json",
+   "url": "https://cloudcrane.ai/api/build/mcp",
+   "description": "Read and build a CloudCrane workspace over MCP: its datasets, the contracts that define what each field may say, what is waiting for review, and the receipt behind any value. A key made to build can also create datasets, fields and value sets, start runs, publish a release when the accuracy gate passes by itself, and deploy it: a tool, its keys, and the scenarios that guard its releases. Sign in with a CloudCrane account (OAuth), where a workspace owner approves the app, or with a build key an owner creates. On every plan. Publishing past the accuracy gate, changing a safety field so a value could go missing, and resolving a review item stay with a person, because a receipt names who decided: an agent asks with request_approval, and a person approves. Editing a stored value, withholding a record and deleting are a person's alone.",
+   "tags": [
+    "data-curation",
+    "catalog",
+    "enrichment",
+    "receipts",
+    "data-quality"
+   ],
+   "capabilities": [
+    "list_datasets",
+    "get_dataset",
+    "list_contracts",
+    "get_readiness",
+    "list_review_items",
+    "get_receipts",
+    "list_value_sets",
+    "get_run",
+    "list_approvals",
+    "get_approval",
+    "list_tools",
+    "list_scenarios",
+    "get_tool_insights",
+    "list_drift_alerts",
+    "get_usage",
+    "get_next_actions",
+    "list_events",
+    "create_dataset",
+    "create_field",
+    "update_field",
+    "create_value_set",
+    "import_value_set_version",
+    "start_run",
+    "publish_release",
+    "request_approval",
+    "deploy_tool",
+    "update_tool",
+    "create_tool_key",
+    "create_scenario",
+    "run_scenarios"
+   ],
+   "representativeQueries": [
+    "what datasets are in this workspace",
+    "what values does this field allow, and what does each one mean",
+    "what is blocking this dataset from being released",
+    "why does this record have this value",
+    "add a field for product category and run it"
+   ],
+   "version": "1.4.0",
+   "updatedAt": "2026-10-04T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:justidea.agency:server:website",
+   "displayName": "JustIdea Agency website (MCP)",
+   "type": "application/mcp-server-card+json",
+   "url": "https://justidea.agency/.well-known/mcp/server-card.json",
+   "description": "MCP server for the public website of JustIdea Agency, an e-commerce and performance marketing agency from Kraków, Poland. Search and read pages, list services with published starting prices in PLN and EUR.",
+   "version": "1.1.0",
+   "capabilities": [
+    "search_site",
+    "get_page",
+    "list_services"
+   ],
+   "tags": [
+    "e-commerce",
+    "online-stores",
+    "prestashop",
+    "seo",
+    "performance-marketing",
+    "poland"
+   ],
+   "representativeQueries": [
+    "How much does an online store from JustIdea Agency cost?",
+    "Find an e-commerce agency in Poland that builds PrestaShop stores",
+    "Ile kosztuje pozycjonowanie sklepu internetowego w JustIdea?",
+    "Which agency in Kraków does SEO and Google Ads for online stores?"
+   ],
+   "trustManifest": {
+    "identity": "https://justidea.agency",
+    "attestations": [
+     {
+      "type": "business-registry",
+      "uri": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0001019979?rejestr=P&format=json",
+      "mediaType": "application/json",
+      "description": "Current extract from the Polish National Court Register (KRS 0001019979): JustIdea Agency sp. z o.o., ul. Olszańska 7, 31-513 Kraków, Poland. NIP 6762636797, REGON 524491475."
+     },
+     {
+      "type": "mcp-registry-listing",
+      "uri": "https://registry.modelcontextprotocol.io/v0/servers/agency.justidea%2Fjustidea-agency/versions/latest",
+      "mediaType": "application/json",
+      "description": "Entry agency.justidea/justidea-agency in the official MCP Registry, published after domain verification of justidea.agency."
+     },
+     {
+      "type": "mcp-registry-listing",
+      "uri": "https://smithery.ai/servers/xawierek/justidea-agency",
+      "mediaType": "text/html",
+      "description": "Listing xawierek/justidea-agency on Smithery, pointing to https://justidea.agency/mcp."
+     }
+    ],
+    "privacyPolicyUrl": "https://justidea.agency/en/privacy-policy/"
+   }
+  },
+  {
+   "identifier": "urn:air:justidea.agency:api:website",
+   "displayName": "JustIdea Agency public REST API",
+   "type": "application/vnd.oai.openapi+json",
+   "url": "https://justidea.agency/api/v1/openapi",
+   "description": "Read-only REST API with the same public website content: search, pages as Markdown, services with published starting prices and contact options. No sign-up; an optional OAuth token raises the rate limit.",
+   "version": "1.0.0",
+   "capabilities": [
+    "searchSite",
+    "listPages",
+    "getPage",
+    "listServices",
+    "getContactOptions"
+   ],
+   "tags": [
+    "rest-api",
+    "openapi",
+    "read-only"
+   ],
+   "representativeQueries": [
+    "Get the JustIdea Agency price list as JSON",
+    "Search justidea.agency pages about WooCommerce"
+   ],
+   "trustManifest": {
+    "identity": "https://justidea.agency",
+    "attestations": [
+     {
+      "type": "business-registry",
+      "uri": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0001019979?rejestr=P&format=json",
+      "mediaType": "application/json",
+      "description": "Current extract from the Polish National Court Register (KRS 0001019979): JustIdea Agency sp. z o.o., ul. Olszańska 7, 31-513 Kraków, Poland. NIP 6762636797, REGON 524491475."
+     },
+     {
+      "type": "mcp-registry-listing",
+      "uri": "https://registry.modelcontextprotocol.io/v0/servers/agency.justidea%2Fjustidea-agency/versions/latest",
+      "mediaType": "application/json",
+      "description": "Entry agency.justidea/justidea-agency in the official MCP Registry, published after domain verification of justidea.agency."
+     },
+     {
+      "type": "mcp-registry-listing",
+      "uri": "https://smithery.ai/servers/xawierek/justidea-agency",
+      "mediaType": "text/html",
+      "description": "Listing xawierek/justidea-agency on Smithery, pointing to https://justidea.agency/mcp."
+     }
+    ],
+    "privacyPolicyUrl": "https://justidea.agency/en/privacy-policy/"
+   }
   },
   {
    "identifier": "urn:air:kortix.com:mcp:public-content",

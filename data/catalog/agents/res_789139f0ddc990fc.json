@@ -48,7 +48,7 @@
 "external_ids": {
 "github": "micro/go-micro"
 },
-"first_seen": "2026-10-03T04:00:06Z",
+"first_seen": "2026-10-05T13:31:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,13 +64,20 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 1,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2026-10-04",
+"kind": "cve",
+"title": "CVE-2026-105216",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105216"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:00:06Z",
+"last_seen": "2026-10-05T13:31:11Z",
 "license": "Apache-2.0",
 "name": "go-micro",
 "news": [
@@ -100,12 +107,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:07:28Z",
+"checked_at": "2026-10-05T13:39:39Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:26Z",
+"checked_at": "2026-10-05T13:39:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -113,7 +120,7 @@
 "evidence_url": "https://go-micro.dev",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-03T04:07:29Z",
+"checked_at": "2026-10-05T13:39:40Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -125,8 +132,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:24:21Z",
-"cves": 0,
+"checked_at": "2026-10-05T13:56:58Z",
+"cves": 1,
 "source": "nvd",
 "tier": 1
 },
@@ -135,17 +142,17 @@
 "github_created_at": "2015-01-13T23:30:18Z",
 "github_forks": 2425,
 "github_language": "Go",
-"github_open_issues": 4,
-"github_pushed_at": "2026-10-02T14:05:15Z",
-"github_stars": 23082,
+"github_open_issues": 2,
+"github_pushed_at": "2026-10-05T10:51:42Z",
+"github_stars": 23081,
 "github_topic": "ai-agents",
 "homepage": "https://go-micro.dev"
 },
 "slug": "micro-go-micro",
 "sources": [
 {
-"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
-"retrieved_at": "2026-10-03T04:00:06Z",
+"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
+"retrieved_at": "2026-10-05T13:31:11Z",
 "system": "github",
 "url": "https://github.com/micro/go-micro"
 }
@@ -164,7 +171,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": 1,
+"issues": 3,
 "protocols": 3,
 "security": 1
 },

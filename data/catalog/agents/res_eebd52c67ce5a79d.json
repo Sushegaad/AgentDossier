@@ -18,16 +18,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-03",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-05",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/automation anywhere",
 "framework": "csa_star",
 "issued": "2021-06-03",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
-"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
+"next_check": "2026-10-12",
+"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:10:30Z",
+"retrieved_at": "2026-10-05T13:42:52Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -51,16 +51,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-03",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-05",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/automation anywhere",
 "framework": "iso42001",
 "issued": "2021-06-03",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
-"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
+"next_check": "2026-10-12",
+"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:10:30Z",
+"retrieved_at": "2026-10-05T13:42:52Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -126,7 +126,7 @@
 "external_ids": {
 "aws_marketplace": "https://aws.amazon.com/marketplace/pp/prodview-cnojvl7fd7igm"
 },
-"first_seen": "2026-10-03T03:59:11Z",
+"first_seen": "2026-10-05T13:30:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -148,7 +148,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:11Z",
+"last_seen": "2026-10-05T13:30:24Z",
 "license": "Commercial",
 "merged_ids": [
 "res_00a993bdb30bf4ed"
@@ -158,17 +158,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:06:24Z",
+"checked_at": "2026-10-05T13:38:21Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:06:23Z",
+"checked_at": "2026-10-05T13:38:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-03T04:06:25Z",
+"checked_at": "2026-10-05T13:38:22Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -178,7 +178,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:17:05Z",
+"checked_at": "2026-10-05T13:49:40Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -203,13 +203,13 @@
 "sources": [
 {
 "payload_hash": "86f847e9be7fd679c316ae3f0f8f8347f83af7ade2468f6f160872da60da3b71",
-"retrieved_at": "2026-10-03T03:59:11Z",
+"retrieved_at": "2026-10-05T13:30:24Z",
 "system": "seed_xlsx",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-cnojvl7fd7igm"
 },
 {
 "payload_hash": "b1baa92d7f5e0c8a0615d043956f97c943a197225fd72b5db8444cd40e446817",
-"retrieved_at": "2026-10-03T03:59:11Z",
+"retrieved_at": "2026-10-05T13:30:24Z",
 "system": "aws_marketplace",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-cnojvl7fd7igm"
 }

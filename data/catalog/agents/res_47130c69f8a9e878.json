@@ -1,0 +1,279 @@
+{
+"canonical_url": "superplane.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation",
+"workflow"
+],
+"supply_chain": [
+"factory"
+],
+"technology": [
+"coding",
+"developer",
+"orchestration",
+"software"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-05) (pending publisher verification)",
+"evidence_url": "https://superplane.com/security/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-12",
+"payload_hash": "d1865173926d75ca03c321e06f9cb6fbe04c45d3c3b9bfe4617919c13e6e6980",
+"period_end": null,
+"retrieved_at": "2026-10-05T13:47:34Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": "self-hosted",
+"description": "Open source factory for one-shot engineering",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 22.53,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 64.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 64.7,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"supply_chain": {
+"components": {
+"adoption": 22.53,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 56.1,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "operations",
+"rank": null,
+"score": 56.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 22.53,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 3.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": 69.9,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 69.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "superplanehq/superplane"
+},
+"first_seen": "2026-10-05T13:31:15Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_47130c69f8a9e878",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 2,
+"incidents": 0,
+"links": [
+{
+"date": "2026-07-28",
+"kind": "cve",
+"title": "CVE-2026-57510",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57510"
+},
+{
+"date": "2026-07-28",
+"kind": "cve",
+"title": "CVE-2026-57511",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57511"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-05T13:31:15Z",
+"license": "Apache-2.0",
+"name": "superplane",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-07-27T19:33:04Z",
+"headline": "superplane v0.30.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's new since v0.29.0\r\n\r\nv0.30.0 is anchored by Software Factory's new app onboarding flow and a run-context expression for linking back into workflows, plus a wide GitLab expansion, a new Linear integration, and a round of reliabilit",
+"tag": "product_update",
+"url": "https://github.com/superplanehq/superplane/releases/tag/v0.30.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-07-16T14:23:36Z",
+"headline": "superplane v0.29.0",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## What's new since v0.28.0\r\n\r\n### Console dashboard widgets\r\n\r\n- **Scorecard widget** joins the panel lineup — a single-KPI view with a status-colored trend, an optional target with a progress bar, and a colored sparkline.\r\n- **Table widge",
+"tag": "product_update",
+"url": "https://github.com/superplanehq/superplane/releases/tag/v0.29.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://superplane.com/.well-known/agent.json",
+"checked_at": "2026-10-05T13:40:51Z",
+"errors": [
+"not valid JSON"
+],
+"parser_version": "a2a-0.3+1.0",
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-10-05T13:40:50Z",
+"errors": [
+"https://superplane.com/.well-known/ard.json: not valid JSON",
+"https://superplane.com/.well-known/ai-catalog.json: not valid JSON"
+],
+"parser_version": "ard-0.91",
+"status": "invalid"
+},
+"mcp": {
+"card_url": "https://superplane.com/.well-known/mcp.json",
+"checked_at": "2026-10-05T13:40:51Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid"
+}
+},
+"publisher_domain": "superplane.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-05T13:58:16Z",
+"cves": 2,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-05-07T17:48:39Z",
+"github_forks": 650,
+"github_language": "Go",
+"github_open_issues": 411,
+"github_pushed_at": "2026-10-05T13:23:59Z",
+"github_stars": 7707,
+"github_topic": "ai-agents",
+"homepage": "https://superplane.com"
+},
+"slug": "superplanehq-superplane",
+"sources": [
+{
+"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
+"retrieved_at": "2026-10-05T13:31:15Z",
+"system": "github",
+"url": "https://github.com/superplanehq/superplane"
+}
+],
+"tags": [
+"agent-orchestration",
+"agentic-workflows",
+"ai-agents",
+"ai-coding",
+"ai-software-engineering",
+"developer-tools",
+"go",
+"react",
+"self-hosted",
+"software-factory",
+"workflow-automation"
+],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 3,
+"issues": 3,
+"protocols": 5,
+"security": 1
+},
+"url": "https://superplane.com",
+"vendor": "superplanehq"
+}

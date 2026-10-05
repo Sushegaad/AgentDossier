@@ -22,7 +22,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 26.8,
+"adoption": 26.82,
 "docs": 7.0,
 "domain_fit": 91.7,
 "ecosystem": 3.0,
@@ -52,7 +52,7 @@
 "external_ids": {
 "github": "herdrdev/herdr"
 },
-"first_seen": "2026-10-03T04:00:06Z",
+"first_seen": "2026-10-05T13:31:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -74,14 +74,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:00:06Z",
+"last_seen": "2026-10-05T13:31:11Z",
 "license": "Apache-2.0",
 "name": "herdr",
 "news": [],
 "protocols": {
 "a2a": {
 "card_url": "https://herdr.dev/.well-known/agent.json",
-"checked_at": "2026-10-03T04:07:31Z",
+"checked_at": "2026-10-05T13:39:42Z",
 "errors": [
 "not valid JSON"
 ],
@@ -89,7 +89,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:30Z",
+"checked_at": "2026-10-05T13:39:41Z",
 "errors": [
 "https://herdr.dev/.well-known/ard.json: not valid JSON",
 "https://herdr.dev/.well-known/ai-catalog.json: not valid JSON"
@@ -99,7 +99,7 @@
 },
 "mcp": {
 "card_url": "https://herdr.dev/.well-known/mcp.json",
-"checked_at": "2026-10-03T04:07:31Z",
+"checked_at": "2026-10-05T13:39:43Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -110,19 +110,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-27T17:54:33Z",
-"github_forks": 3259,
+"github_forks": 3304,
 "github_language": "Rust",
-"github_open_issues": 317,
-"github_pushed_at": "2026-10-02T23:21:24Z",
-"github_stars": 41995,
+"github_open_issues": 323,
+"github_pushed_at": "2026-10-05T13:27:46Z",
+"github_stars": 42410,
 "github_topic": "ai-agents",
 "homepage": "https://herdr.dev"
 },
 "slug": "herdrdev-herdr",
 "sources": [
 {
-"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
-"retrieved_at": "2026-10-03T04:00:06Z",
+"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
+"retrieved_at": "2026-10-05T13:31:11Z",
 "system": "github",
 "url": "https://github.com/herdrdev/herdr"
 }

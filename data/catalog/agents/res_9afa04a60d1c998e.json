@@ -54,7 +54,7 @@
 "external_ids": {
 "github": "esengine/DeepSeek-Reasonix"
 },
-"first_seen": "2026-10-03T04:02:26Z",
+"first_seen": "2026-10-05T13:33:49Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -83,47 +83,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:02:26Z",
+"last_seen": "2026-10-05T13:33:49Z",
 "license": "MIT",
 "name": "DeepSeek-Reasonix",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-02T13:12:57Z",
-"headline": "DeepSeek-Reasonix Reasonix Studio v2.26.0",
+"date": "2026-10-05T00:54:26Z",
+"headline": "DeepSeek-Reasonix Reasonix CLI v2.28.0",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "本版让 Studio 终端界面补齐 1.x 的连接引导、排队与引导命令、设置命令和 YOLO 模式，设置里新增社区与贡献者入口，并修复已保存的默认模型不在配置里时 Studio 启动失败、DeepSeek 请求偶发连接错误、子代理状态一直显示运行中等问题。\n\n## 新增\n\n- 终端界面：没有可用密钥时启动即打开「配置连接」面板，随时可用 `/setup`（别名 `/auth`）再打开；支持筛选连接、掩码输入密钥、Ctrl+T 测试、Enter 保存 (#11682, #114",
+"summary": "CLI archives built from the Studio release [studio-v2.28.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.28.0).",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.26.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.28.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-02T06:33:51Z",
-"headline": "DeepSeek-Reasonix Reasonix Desktop v1.39.7",
+"date": "2026-10-05T00:51:38Z",
+"headline": "DeepSeek-Reasonix Reasonix Studio v2.28.0",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "> 桌面端修复：会话用量统计清零、长轮次历史分页、远端会话切换、分叉会话和编辑目标，并部分修复迁移后会话消失的问题。\n\n**发布渠道：稳定版 · v1.39.7**\n\n[English →](https://reasonix.io/changelog/v1.39.7/?lang=en) · [网页版完整更新日志 →](https://reasonix.io/changelog/v1.39.7/)\n\n## 概览\n\n**Reasonix v1.39.7 — Reasonix 1.",
+"summary": "本版是第一个同时发布命令行 `reasonix` 的 Studio 版本：终端界面补齐 1.x 的常用命令并换上 2.x 内核，同时加固权限规则、插件安装与凭据显示，并新增提交说明草拟、用量日历范围和复制会话信息。\n\n## 新增\n\n- 命令行：本版起 `reasonix` 命令行随 Studio 一同发布，1.x 的命令行迁移到 2.x 内核，迁移差异见 `docs/MIGRATING.md` (#11968, #11920)\n- 终端界面：`/model`、`/provid",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/desktop-v1.39.7"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.28.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:08:08Z",
+"checked_at": "2026-10-05T13:40:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:08:07Z",
+"checked_at": "2026-10-05T13:40:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-03T04:08:08Z",
+"checked_at": "2026-10-05T13:40:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -133,7 +133,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:23:52Z",
+"checked_at": "2026-10-05T13:56:30Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -141,10 +141,10 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-21T08:27:02Z",
-"github_forks": 2438,
+"github_forks": 2441,
 "github_language": "Go",
-"github_open_issues": 298,
-"github_pushed_at": "2026-10-03T03:50:46Z",
+"github_open_issues": 327,
+"github_pushed_at": "2026-10-05T12:49:58Z",
 "github_stars": 35731,
 "github_topic": "ai-agent",
 "homepage": "http://reasonix.io/"
@@ -152,8 +152,8 @@
 "slug": "esengine-deepseek-reasonix",
 "sources": [
 {
-"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
-"retrieved_at": "2026-10-03T04:02:26Z",
+"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
+"retrieved_at": "2026-10-05T13:33:49Z",
 "system": "github",
 "url": "https://github.com/esengine/DeepSeek-Reasonix"
 }

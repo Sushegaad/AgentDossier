@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.38,
+"adoption": 26.39,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -54,7 +54,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.38,
+"adoption": 26.39,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -82,7 +82,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.38,
+"adoption": 26.39,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.0,
@@ -112,7 +112,7 @@
 "external_ids": {
 "github": "JCodesMore/ai-website-cloner-template"
 },
-"first_seen": "2026-10-03T04:00:06Z",
+"first_seen": "2026-10-05T13:31:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -134,38 +134,38 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:00:06Z",
+"last_seen": "2026-10-05T13:31:11Z",
 "license": "MIT",
 "name": "ai-website-cloner-template",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-27T04:31:43Z",
-"headline": "ai-website-cloner-template v0.5.1 - Security Patch & Opus 5.5",
+"date": "2026-10-05T07:34:26Z",
+"headline": "ai-website-cloner-template v0.6.1 - Rule-based fidelity guidance",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "## Security Patch & Opus 5.5\n\nThis release updates Next.js to 16.3.5 to fix known vulnerabilities. The README now recommends Claude Code with Opus 5.5. Update if you started from an earlier version of the template.\n\n### Highlights\n\n- **Patc",
+"summary": "Sharper cloning guidance that catches more fidelity drift with fewer, more general directives.\n\n- Treat each observation as a sample of a rule: read declared values and vary viewport width (including wider than the design), height, input, a",
 "tag": "product_update",
-"url": "https://github.com/JCodesMore/ai-website-cloner-template/releases/tag/v0.5.1"
+"url": "https://github.com/JCodesMore/ai-website-cloner-template/releases/tag/v0.6.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-17T23:45:07Z",
-"headline": "ai-website-cloner-template v0.5.0 - Simpler Setup & Shared Agent Skills",
+"date": "2026-10-05T07:09:05Z",
+"headline": "ai-website-cloner-template v0.6.0 - Improved cloning workflow",
 "kind": "vendor",
 "link_confidence": 0.95,
 "outlet": "GitHub releases",
-"summary": "## Simpler Setup & Shared Agent Skills\n\nGet started by asking your coding agent to prepare a standalone project, or create your own GitHub repository with the template button. Claude Code, Codex, Cursor, and OpenCode now share one maintaine",
+"summary": "A simpler shared workflow for recreating websites, with improved guidance for responsive layouts, asset extraction, and interactive or animated pages.\n\n- Streamlined cloning instructions with focused inspection and motion references.\n- Upda",
 "tag": "product_update",
-"url": "https://github.com/JCodesMore/ai-website-cloner-template/releases/tag/v0.5.0"
+"url": "https://github.com/JCodesMore/ai-website-cloner-template/releases/tag/v0.6.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://dsc.gg/.well-known/agent.json",
-"checked_at": "2026-10-03T04:07:19Z",
+"checked_at": "2026-10-05T13:39:25Z",
 "errors": [
 "not valid JSON"
 ],
@@ -173,7 +173,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:18Z",
+"checked_at": "2026-10-05T13:39:23Z",
 "errors": [
 "https://dsc.gg/.well-known/ard.json: not valid JSON",
 "https://dsc.gg/.well-known/ai-catalog.json: not valid JSON"
@@ -183,7 +183,7 @@
 },
 "mcp": {
 "card_url": "https://dsc.gg/.well-known/mcp.json",
-"checked_at": "2026-10-03T04:07:19Z",
+"checked_at": "2026-10-05T13:39:25Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -193,7 +193,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:23:53Z",
+"checked_at": "2026-10-05T13:56:29Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -201,19 +201,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-13T11:14:39Z",
-"github_forks": 5190,
+"github_forks": 5233,
 "github_language": "TypeScript",
 "github_open_issues": 2,
-"github_pushed_at": "2026-09-27T04:51:46Z",
-"github_stars": 35560,
+"github_pushed_at": "2026-10-05T08:07:48Z",
+"github_stars": 35795,
 "github_topic": "ai-agents",
 "homepage": "https://dsc.gg/jcodesmore"
 },
 "slug": "jcodesmore-ai-website-cloner-template",
 "sources": [
 {
-"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
-"retrieved_at": "2026-10-03T04:00:06Z",
+"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
+"retrieved_at": "2026-10-05T13:31:11Z",
 "system": "github",
 "url": "https://github.com/JCodesMore/ai-website-cloner-template"
 }

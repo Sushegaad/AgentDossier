@@ -80,7 +80,7 @@
 "external_ids": {
 "github": "0xJacky/nginx-ui"
 },
-"first_seen": "2026-10-03T04:04:10Z",
+"first_seen": "2026-10-05T13:35:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -163,10 +163,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:04:10Z",
+"last_seen": "2026-10-05T13:35:44Z",
 "license": "AGPL-3.0",
 "name": "nginx-ui",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-05T13:00:27Z",
+"headline": "nginx-ui v2.8.3",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## Features\n\n- Show which sites and streams use each certificate by @0xJacky ([b8a0895a](https://github.com/0xJacky/nginx-ui/commit/b8a0895a689f7df05055817b91390d275de38f01))\n- Add a retention count to auto backup tasks by @SulimanAbdulrazz",
+"tag": "product_update",
+"url": "https://github.com/0xJacky/nginx-ui/releases/tag/v2.8.3"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-02T11:02:27Z",
@@ -177,28 +188,17 @@
 "summary": "## Features\n\n- Add a Snippets page to manage reusable Nginx snippets: edit them on their own page with variables and a live preview, start from built-in templates, include them from the site editor, and sync them to nodes by @Hintay ([dd7a4",
 "tag": "product_update",
 "url": "https://github.com/0xJacky/nginx-ui/releases/tag/v2.8.2"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-29T13:20:49Z",
-"headline": "nginx-ui v2.8.1",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "## Features\n\n- None.\n\n## Bug Fixes\n\n- Complete missing translations for the new access list, upstream group and certificate texts across all languages by @0xJacky ([e6d755bd](https://github.com/0xJacky/nginx-ui/commit/e6d755bd2a1d1973ba4024",
-"tag": "product_update",
-"url": "https://github.com/0xJacky/nginx-ui/releases/tag/v2.8.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:07:52Z",
+"checked_at": "2026-10-05T13:40:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:51Z",
+"checked_at": "2026-10-05T13:40:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -206,7 +206,7 @@
 "evidence_url": "https://nginxui.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-03T04:07:52Z",
+"checked_at": "2026-10-05T13:40:16Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -218,7 +218,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:25:02Z",
+"checked_at": "2026-10-05T13:57:41Z",
 "cves": 14,
 "source": "nvd",
 "tier": 1
@@ -226,19 +226,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2021-02-19T10:51:04Z",
-"github_forks": 886,
+"github_forks": 890,
 "github_language": "Go",
-"github_open_issues": 41,
-"github_pushed_at": "2026-10-02T23:27:08Z",
-"github_stars": 11563,
+"github_open_issues": 37,
+"github_pushed_at": "2026-10-05T13:05:20Z",
+"github_stars": 11569,
 "github_topic": "mcp-server",
 "homepage": "https://nginxui.com"
 },
 "slug": "0xjacky-nginx-ui",
 "sources": [
 {
-"payload_hash": "95d8497c0dddb9d5ee711ea712e415792bab709f746fa7052deac2cf521457b8",
-"retrieved_at": "2026-10-03T04:04:10Z",
+"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
+"retrieved_at": "2026-10-05T13:35:44Z",
 "system": "github",
 "url": "https://github.com/0xJacky/nginx-ui"
 }

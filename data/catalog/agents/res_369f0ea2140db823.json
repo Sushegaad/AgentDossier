@@ -112,7 +112,7 @@
 "external_ids": {
 "github": "EKKOLearnAI/ekko-studio"
 },
-"first_seen": "2026-10-03T04:02:26Z",
+"first_seen": "2026-10-05T13:33:49Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -134,10 +134,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:02:26Z",
+"last_seen": "2026-10-05T13:33:49Z",
 "license": "Other",
 "name": "ekko-studio",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-05T01:52:10Z",
+"headline": "ekko-studio Ekko Studio v0.7.30",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "GitHub releases",
+"summary": "## 更新重点\n\n- 新增 Qwen Code、Kimi Code、CodeBuddy、Qoder、GitHub Copilot 和 ZCode，接入聊天、群聊及工作流；Qoder 使用全局模式，其余五种也支持独立配置模型 (#3280)\n- Ekko 会话在历史和搜索中归入内置 Agent，并支持 `/context`、`/usage`、`/status` 和 `/compact` 命令 (#3276)\n- 新建聊天默认选择 Ekko，直接展示已安装 Agent，避免 CL",
+"tag": "product_update",
+"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.30"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-03T02:21:26Z",
@@ -148,33 +159,22 @@
 "summary": "## 更新重点\n\n- 恢复聊天和群聊工作区文件树菜单及差异工具栏中的文件下载功能 (#3268)\n- 修复实时活动通知将 Antigravity 错误识别为 Ekko 的问题 (#3272)\n\n## What's Changed\n* fix(files): restore workspace file downloads in tree and Diff by @wtj-0527 in https://github.com/EKKOLearnAI/ekko-studio/pu",
 "tag": "product_update",
 "url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.29"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-02T15:33:09Z",
-"headline": "ekko-studio Ekko Studio v0.7.28",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "## 更新重点\n\n- 新增 Antigravity CLI，支持全局和独立配置模式下的聊天、群聊与工作流，并接入原生配置、MCP 和技能管理 (#3256)\n- 新增 APIKEY.FAN 中转服务页面，可按已配置的 API Key 查看余额、今日与累计用量及模型明细 (#3257)\n- 修复编程 Agent 手动检查更新后的状态和更新版本识别，并保护正在运行的会话 (#3261)\n- 修复 Claude 回复提前结束、内容缺失或重复的问题，完整保存最终输出 (#3260、#",
-"tag": "product_update",
-"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.28"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:07:22Z",
+"checked_at": "2026-10-05T13:39:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:19Z",
+"checked_at": "2026-10-05T13:39:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-03T04:07:23Z",
+"checked_at": "2026-10-05T13:39:27Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -184,7 +184,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:25:05Z",
+"checked_at": "2026-10-05T13:57:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -192,19 +192,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-11T07:38:18Z",
-"github_forks": 1385,
+"github_forks": 1388,
 "github_language": "TypeScript",
-"github_open_issues": 451,
-"github_pushed_at": "2026-10-03T02:20:54Z",
-"github_stars": 11280,
+"github_open_issues": 457,
+"github_pushed_at": "2026-10-05T09:45:16Z",
+"github_stars": 11295,
 "github_topic": "ai-agent",
 "homepage": "https://ekkostudio.xyz"
 },
 "slug": "ekkolearnai-ekko-studio",
 "sources": [
 {
-"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
-"retrieved_at": "2026-10-03T04:02:26Z",
+"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
+"retrieved_at": "2026-10-05T13:33:49Z",
 "system": "github",
 "url": "https://github.com/EKKOLearnAI/ekko-studio"
 }

@@ -1,0 +1,174 @@
+{
+"canonical_url": "justidea.agency/api/v1/openapi",
+"capabilities": [
+"searchSite",
+"listPages",
+"getPage",
+"listServices",
+"getContactOptions"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"technology": [
+"api"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Read-only REST API with the same public website content: search, pages as Markdown, services with published starting prices and contact options. No sign-up; an optional OAuth token raises the rate limit.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.9,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 32.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.9,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 30.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:justidea.agency:api:website"
+},
+"first_seen": "2026-10-05T13:40:22Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_1fb0ebc53cdb0954",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.0",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-05T13:40:22Z",
+"license": null,
+"name": "JustIdea Agency public REST API",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:justidea.agency:api:website",
+"manifest_url": "https://justidea.agency/.well-known/ard.json",
+"media_type": "application/vnd.oai.openapi+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "justidea.agency",
+"representative_queries": [
+"Get the JustIdea Agency price list as JSON",
+"Search justidea.agency pages about WooCommerce"
+],
+"resource_type": "api",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-05T13:59:14Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "justidea-agency-justidea-agency-public-rest-api",
+"sources": [
+{
+"payload_hash": "862d187772fb67a31103d08b4cd3bce9560098ab4682710f53a2691cf9178448",
+"retrieved_at": "2026-10-05T13:40:22Z",
+"system": "ard",
+"url": "https://justidea.agency/.well-known/ard.json"
+}
+],
+"tags": [
+"rest-api",
+"openapi",
+"read-only"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://justidea.agency/api/v1/openapi",
+"vendor": "justidea.agency"
+}

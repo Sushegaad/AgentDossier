@@ -22,16 +22,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-03 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/google",
 "framework": "csa_star",
 "issued": "2017-02-21",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-10",
-"payload_hash": "d2a72147d1a8aea9ee68f0722cb0ad2348d8d3b9ed6a50f43d607e5f61f4149a",
+"next_check": "2026-10-12",
+"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
 "period_end": null,
-"retrieved_at": "2026-10-03T04:10:20Z",
+"retrieved_at": "2026-10-05T13:42:44Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -251,7 +251,7 @@
 "external_ids": {
 "github": "google/adk-python"
 },
-"first_seen": "2026-10-03T03:59:11Z",
+"first_seen": "2026-10-05T13:30:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -280,7 +280,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:05:40Z",
+"last_seen": "2026-10-05T13:37:28Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_57e95710c212c1a6",
@@ -308,7 +308,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:15:39Z",
+"checked_at": "2026-10-05T13:48:26Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -320,12 +320,12 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-01T20:44:40Z",
-"github_forks": 4088,
+"github_forks": 4101,
 "github_language": "Python",
-"github_open_issues": 434,
-"github_pushed_at": "2026-10-03T03:42:32Z",
-"github_stars": 21695,
-"github_topic": "ai-agents",
+"github_open_issues": 450,
+"github_pushed_at": "2026-10-05T09:07:51Z",
+"github_stars": 21709,
+"github_topic": "agentic",
 "homepage": "https://google.github.io/adk-docs/",
 "observed_popularity": "Not captured"
 },
@@ -333,13 +333,13 @@
 "sources": [
 {
 "payload_hash": "7b247523b6a149e9bbe236df010a61be6f765805de57a28c4a5fee5f15223486",
-"retrieved_at": "2026-10-03T03:59:11Z",
+"retrieved_at": "2026-10-05T13:30:24Z",
 "system": "seed_xlsx",
 "url": "https://google.github.io/adk-docs/"
 },
 {
-"payload_hash": "a9f9e387c2a907da80b623fa1c6d343b6f4dcb14848b0dccf1cf2dbfb077da9f",
-"retrieved_at": "2026-10-03T04:00:06Z",
+"payload_hash": "96de907abc8546fb010bdb5d46b760998b42a7b62d23d61a72c092c67db9d52f",
+"retrieved_at": "2026-10-05T13:37:28Z",
 "system": "github",
 "url": "https://github.com/google/adk-python"
 }

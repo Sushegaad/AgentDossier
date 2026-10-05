@@ -18,7 +18,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 22.67,
+"adoption": 22.69,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 1.8,
@@ -48,7 +48,7 @@
 "external_ids": {
 "github": "SWE-agent/mini-swe-agent"
 },
-"first_seen": "2026-10-03T04:02:26Z",
+"first_seen": "2026-10-05T13:33:49Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -70,7 +70,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T04:02:26Z",
+"last_seen": "2026-10-05T13:33:49Z",
 "license": "MIT",
 "name": "mini-swe-agent",
 "news": [
@@ -84,33 +84,22 @@
 "summary": "## What's Changed\r\n\r\n* fix(agents): count billed calls that fail to parse against cost_limit by @EnesYilmazcode in https://github.com/SWE-agent/mini-swe-agent/pull/915\r\n\r\n**Full Changelog**: https://github.com/SWE-agent/mini-swe-agent/compa",
 "tag": "product_update",
 "url": "https://github.com/SWE-agent/mini-swe-agent/releases/tag/v2.4.6"
-},
-{
-"cluster_size": 1,
-"date": "2026-07-06T16:12:43Z",
-"headline": "mini-swe-agent v2.4.5",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\r\n\r\n* fix(config): read config files as UTF-8 regardless of locale by @EnesYilmazcode in https://github.com/SWE-agent/mini-swe-agent/pull/892\r\n* fix(models): don't mask malformed tool-call errors as truncation by @klieret i",
-"tag": "product_update",
-"url": "https://github.com/SWE-agent/mini-swe-agent/releases/tag/v2.4.5"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:07:46Z",
+"checked_at": "2026-10-05T13:40:09Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:07:45Z",
+"checked_at": "2026-10-05T13:40:08Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-03T04:07:46Z",
+"checked_at": "2026-10-05T13:40:09Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -120,7 +109,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-03T04:25:30Z",
+"checked_at": "2026-10-05T13:58:11Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -128,19 +117,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-28T20:18:15Z",
-"github_forks": 1121,
+"github_forks": 1126,
 "github_language": "Python",
-"github_open_issues": 83,
+"github_open_issues": 88,
 "github_pushed_at": "2026-09-28T22:56:08Z",
-"github_stars": 8164,
+"github_stars": 8212,
 "github_topic": "ai-agent",
 "homepage": "https://mini-swe-agent.com"
 },
 "slug": "swe-agent-mini-swe-agent",
 "sources": [
 {
-"payload_hash": "cfe1a985dd04d194b6bbbda8b6f73f2ceda5caa63fe6b4cedea81afcdd1d6ac1",
-"retrieved_at": "2026-10-03T04:02:26Z",
+"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
+"retrieved_at": "2026-10-05T13:33:49Z",
 "system": "github",
 "url": "https://github.com/SWE-agent/mini-swe-agent"
 }

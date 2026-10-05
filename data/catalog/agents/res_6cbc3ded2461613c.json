@@ -1,17 +1,14 @@
 {
-"canonical_url": "registry.modelcontextprotocol.io/v0/servers",
+"canonical_url": "mcp.atalay.ai",
 "capabilities": [],
 "category": "MCP server",
 "classification": {
 "matched": {
+"business": [
+"business"
+],
 "data": [
 "data"
-],
-"legal": [
-"legal"
-],
-"regulatory": [
-"risk"
 ],
 "technology": [
 "mcp"
@@ -22,17 +19,46 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "ComplyMe.AI MCP server for legal & data protection risk analysis and audits.",
+"description": "Your Atalay business data: sites, domains, mail, invoices, shop, B2B, AI and project requests.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": null,
+"health": 20.0,
+"trust": 11.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.667,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "general",
+"rank": null,
+"score": 37.5,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+},
 "data": {
 "components": {
 "adoption": null,
 "docs": 7.0,
 "domain_fit": 34.0,
-"ecosystem": 3.6,
+"ecosystem": 4.6,
 "governance": null,
-"health": 12.0,
+"health": 20.0,
 "trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
@@ -46,65 +72,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 33.0,
-"score_version": "sar-score-1.0",
-"source": "classifier",
-"unknown": [
-"adoption",
-"governance"
-]
-},
-"legal": {
-"components": {
-"adoption": null,
-"docs": 7.0,
-"domain_fit": 34.0,
-"ecosystem": 3.6,
-"governance": null,
-"health": 12.0,
-"trust": 11.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 0.34,
-"evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
-"profile": "regulated",
-"rank": null,
-"score": 29.7,
-"score_version": "sar-score-1.0",
-"source": "classifier",
-"unknown": [
-"adoption",
-"governance"
-]
-},
-"regulatory": {
-"components": {
-"adoption": null,
-"docs": 7.0,
-"domain_fit": 34.0,
-"ecosystem": 3.6,
-"governance": null,
-"health": 12.0,
-"trust": 11.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 0.34,
-"evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
-"profile": "regulated",
-"rank": null,
-"score": 29.7,
+"score": 42.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -116,14 +84,14 @@
 "components": {
 "adoption": null,
 "docs": 7.0,
-"domain_fit": 71.3,
-"ecosystem": 3.6,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
 "governance": null,
-"health": 12.0,
+"health": 20.0,
 "trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.713,
+"confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_evidence": {
 "credited": {},
@@ -133,7 +101,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 35.0,
+"score": 42.5,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -143,15 +111,15 @@
 }
 },
 "external_ids": {
-"mcp_registry": "ai.complyme.mcp/mcp"
+"mcp_registry": "ai.atalay/mcp"
 },
-"first_seen": "2026-10-03T03:59:12Z",
+"first_seen": "2026-10-05T13:30:32Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
 "evidence_urls": []
 },
-"id": "res_d973e9bdae5b82d2",
+"id": "res_6cbc3ded2461613c",
 "identity": {
 "evidence": [
 "vendor_name_only"
@@ -167,54 +135,54 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-03T03:59:12Z",
+"last_seen": "2026-10-05T13:30:32Z",
 "license": null,
-"name": "ai.complyme.mcp/mcp",
+"name": "Atalay",
 "news": [],
-"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-03T04:08:09Z",
+"checked_at": "2026-10-05T13:40:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-03T04:08:07Z",
+"checked_at": "2026-10-05T13:40:05Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
 "parser_version": "mcp-2025-06-18",
-"server_name": "ai.complyme.mcp/mcp",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://mcp.atalay.ai"
+}
+],
+"server_name": "ai.atalay/mcp",
 "status": "claimed",
-"version": "1.0.0",
+"version": "1.4.0",
 "via": "mcp_registry"
 }
 },
-"publisher_domain": "registry.modelcontextprotocol.io",
+"publisher_domain": "mcp.atalay.ai",
 "resource_type": "mcp_server",
 "scope": "public",
-"security": {
-"advisories": 0,
-"checked_at": "2026-10-03T04:20:55Z",
-"cves": 0,
-"source": "nvd",
-"tier": 1
-},
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-04-30T06:51:34.82704Z",
+"mcp_registry_published_at": "2026-10-04T13:51:28.595834Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-04-30T06:51:34.82704Z",
-"mcp_transports": []
+"mcp_registry_updated_at": "2026-10-04T13:51:28.595834Z",
+"mcp_transports": [
+"streamable-http"
+]
 },
-"slug": "mcp-complyme-ai-ai-complyme-mcp-mcp",
+"slug": "atalay-ai-atalay",
 "sources": [
 {
-"payload_hash": "b0af77e13cfcf899c32316131161a58b09bcf8960cb5bc1188b613c61471bc89",
-"retrieved_at": "2026-10-03T03:59:12Z",
+"payload_hash": "e783b2d772666f62e3cdb17446685196d7172509dac3c2d3c6869382eb50171f",
+"retrieved_at": "2026-10-05T13:30:32Z",
 "system": "mcp_registry",
-"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.complyme.mcp/mcp"
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.atalay/mcp"
 }
 ],
 "tags": [],
@@ -222,10 +190,10 @@
 "trust": {
 "compliance": 5,
 "identity": 4,
-"issues": 1,
+"issues": null,
 "protocols": 3,
-"security": 1
+"security": null
 },
-"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.complyme.mcp/mcp",
-"vendor": "mcp.complyme.ai"
+"url": "https://mcp.atalay.ai",
+"vendor": "atalay.ai"
 }
