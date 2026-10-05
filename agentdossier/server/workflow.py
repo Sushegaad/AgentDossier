@@ -32,6 +32,7 @@ import threading
 from dataclasses import dataclass, field
 from typing import Any
 
+from ..storage.db import ensure_schema
 from ..util import now_iso
 
 STAGES = ("candidate", "under_review", "approved", "rejected", "deferred", "retired")
@@ -67,32 +68,6 @@ class Actor:
         return bool(self.roles & {"reviewer", "admin"})
 
 
-_SCHEMA = """
-CREATE TABLE IF NOT EXISTS decisions (
-  id INTEGER PRIMARY KEY AUTOINCREMENT, resource_id TEXT NOT NULL, resource_name TEXT, title TEXT,
-  stage TEXT NOT NULL, policy_id TEXT, required_roles TEXT NOT NULL, requested_by TEXT NOT NULL,
-  owner TEXT, created TEXT NOT NULL, updated TEXT NOT NULL, notes TEXT);
-CREATE TABLE IF NOT EXISTS decision_events (
-  id INTEGER PRIMARY KEY AUTOINCREMENT, decision_id INTEGER NOT NULL, at TEXT NOT NULL, user TEXT NOT NULL,
-  from_stage TEXT, to_stage TEXT NOT NULL, note TEXT, verdict TEXT);
-CREATE TABLE IF NOT EXISTS approvals (
-  id INTEGER PRIMARY KEY AUTOINCREMENT, decision_id INTEGER NOT NULL, at TEXT NOT NULL, user TEXT NOT NULL,
-  role TEXT NOT NULL, verdict TEXT NOT NULL, note TEXT);
-CREATE TABLE IF NOT EXISTS comments (
-  id INTEGER PRIMARY KEY AUTOINCREMENT, decision_id INTEGER NOT NULL, parent_id INTEGER, at TEXT NOT NULL,
-  user TEXT NOT NULL, body TEXT NOT NULL);
-CREATE TABLE IF NOT EXISTS review_tasks (
-  id INTEGER PRIMARY KEY AUTOINCREMENT, decision_id INTEGER NOT NULL, title TEXT NOT NULL, assignee TEXT,
-  due TEXT, status TEXT NOT NULL, created_by TEXT NOT NULL, created TEXT NOT NULL, completed TEXT, note TEXT);
-CREATE TABLE IF NOT EXISTS feedback (
-  id INTEGER PRIMARY KEY AUTOINCREMENT, resource_id TEXT NOT NULL, decision_id INTEGER, at TEXT NOT NULL,
-  user TEXT NOT NULL, kind TEXT NOT NULL, body TEXT, rating INTEGER, status TEXT NOT NULL, resolved_by TEXT,
-  resolved TEXT);
-CREATE INDEX IF NOT EXISTS ix_decisions_resource ON decisions(resource_id);
-CREATE INDEX IF NOT EXISTS ix_feedback_resource ON feedback(resource_id);
-"""
-
-
 def _row(cur: sqlite3.Cursor, r: tuple[Any, ...] | None) -> dict[str, Any] | None:
     if r is None:
         return None
@@ -108,9 +83,7 @@ class Workflow:
     def __init__(self, db: sqlite3.Connection, lock: threading.RLock | None = None):
         self.db = db
         self.lock = lock or threading.RLock()
-        with self.lock:
-            self.db.executescript(_SCHEMA)
-            self.db.commit()
+        ensure_schema(self.db, self.lock)
 
     # --- decisions --------------------------------------------------------------------
 

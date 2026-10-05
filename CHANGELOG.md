@@ -4,6 +4,31 @@ All notable changes to AgentDossier. The format follows Keep a Changelog; versio
 follow SemVer. Catalog data versions (`sar-score`, `frameworks`, `identity`) are
 listed in `docs/methodology.md`.
 
+## [Unreleased]
+
+### Security
+- Authentication is fail-closed: `AGENTDOSSIER_AUTH_MODE` has no inferred default and
+  `none` needs `AGENTDOSSIER_DEV=1` on a loopback bind; the app is started through a
+  uvicorn factory so a misconfigured container exits instead of serving an open admin API.
+- One guarded egress client for everything the server calls (webhooks, Slack, Teams,
+  Jira, ServiceNow, GRC, federation peers): address vetted and pinned at connect time
+  (DNS rebinding), no redirects, size cap, `AGENTDOSSIER_EGRESS_ALLOW` for private targets.
+- Private-scope `/.well-known/ard.json` requires auth; `/healthz` is liveness only;
+  chunked request bodies are capped; rate limits keyed per bearer token; session cookie
+  `Secure` behind TLS; `AGENTDOSSIER_TRUSTED_PROXIES` governs forwarded headers.
+- Container image built from `uv.lock` with digest-pinned bases; every GitHub Action
+  pinned to a commit SHA; release permissions scoped per job; Dependabot.
+- Hash-chained scan audit log (`audit.jsonl`, `agentdossier enterprise audit-verify`).
+
+### Changed
+- Homepage leads with search and a live specimen result; the detailed trust model moved
+  to Methodology. Intent parser understands "HIPAA-compliant" / "FedRAMP-authorized".
+- Server trimmed: `sqlalchemy`, `alembic`, `psycopg`, `cryptography` (direct) and
+  `slowapi` dropped; in-house fixed-window limiter; settings via pydantic-settings; one
+  `storage/schema.sql`; app-level exception handlers. `itsdangerous` declared (OIDC).
+- Curated protocol claims require a named reviewer; enterprise CA bundle rides on the
+  scan's network policy instead of the process environment.
+
 ## [1.0.0] — 2026-10-03
 
 First general-availability release of both editions.

@@ -22,6 +22,7 @@ from __future__ import annotations
 import hashlib
 import hmac
 import logging
+import os
 import smtplib
 import ssl
 import time
@@ -54,6 +55,28 @@ class NotifySettings:
     attempts: int = 3
     backoff_sec: float = 2.0
     timeout_sec: float = 10.0
+
+    @classmethod
+    def from_env(cls) -> NotifySettings:
+        e = os.environ.get
+
+        def csv(name: str) -> list[str]:
+            return [x.strip() for x in e(name, "").split(",") if x.strip()]
+
+        events = csv("AGENTDOSSIER_NOTIFY_EVENTS")
+        return cls(
+            smtp_host=e("SMTP_HOST") or None,
+            smtp_port=int(e("SMTP_PORT", "587")),
+            smtp_user=e("SMTP_USER") or None,
+            smtp_password=e("SMTP_PASSWORD") or None,
+            smtp_from=e("SMTP_FROM") or None,
+            smtp_starttls=e("SMTP_STARTTLS", "1") == "1",
+            email_to=csv("AGENTDOSSIER_NOTIFY_EMAIL"),
+            webhook_url=e("AGENTDOSSIER_WEBHOOK_URL") or None,
+            webhook_secret=e("AGENTDOSSIER_WEBHOOK_SECRET") or None,
+            events=set(events) if events else set(EVENTS),
+            expiry_warning_days=int(e("AGENTDOSSIER_EXPIRY_WARNING_DAYS", "30")),
+        )
 
     @property
     def email_enabled(self) -> bool:

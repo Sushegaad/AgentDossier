@@ -1,8 +1,9 @@
-"""Small SQLite store for the self-hosted server: scan runs and an audit trail.
+"""Small SQLite store for the self-hosted server: scan runs, audit trail, deliveries.
 
-SQLite (stdlib) keeps the container to one process and no external service.
-The schema is deliberately tiny; Postgres support is a Phase 3 item and would
-replace this module behind the same three functions.
+SQLite (stdlib) keeps the container to one process and no external service. The
+schema for every table (including the workflow's and SCIM's) is ``schema.sql``
+next to this module, applied idempotently by ``ensure_schema``. Postgres remains
+a v1.1 option behind the same functions.
 """
 
 from __future__ import annotations
@@ -15,6 +16,15 @@ from typing import Any
 
 from ..util import now_iso
 
+SCHEMA_PATH = Path(__file__).with_name("schema.sql")
+
+
+def ensure_schema(db: sqlite3.Connection, lock: threading.RLock | None = None) -> None:
+    """Apply storage/schema.sql (idempotent): the one place every table is defined."""
+    with lock or threading.RLock():
+        db.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))
+        db.commit()
+
 
 class Store:
     def __init__(self, path: str | Path):
@@ -22,19 +32,7 @@ class Store:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.db = sqlite3.connect(self.path, check_same_thread=False)
         self.lock = threading.RLock()
-        with self.lock:
-            self.db.execute(
-                "CREATE TABLE IF NOT EXISTS scans (id INTEGER PRIMARY KEY AUTOINCREMENT, started TEXT, finished TEXT, "
-                "status TEXT, trigger TEXT, resources INTEGER, report TEXT)"
-            )
-            self.db.execute(
-                "CREATE TABLE IF NOT EXISTS audit (id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT, user TEXT, action TEXT, detail TEXT)"
-            )
-            self.db.execute(
-                "CREATE TABLE IF NOT EXISTS deliveries (id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT, event TEXT, "
-                "channel TEXT, target TEXT, status TEXT, attempts INTEGER, detail TEXT)"
-            )
-            self.db.commit()
+        ensure_schema(self.db, self.lock)
 
     def start_scan(self, trigger: str) -> int:
         with self.lock:

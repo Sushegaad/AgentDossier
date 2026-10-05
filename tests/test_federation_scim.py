@@ -193,7 +193,8 @@ def test_scim_provisioning_and_deprovisioning(catalog_dir, tmp_path):
     app = create_app(_settings(catalog_dir, tmp_path, scim_token="scim-secret"))
     c = TestClient(app)
     h = {"Authorization": "Bearer scim-secret"}
-    assert c.get("/scim/v2/Users").status_code == 401
+    r = c.get("/scim/v2/Users")
+    assert r.status_code == 401 and r.json()["schemas"] == ["urn:ietf:params:scim:api:messages:2.0:Error"]
     spc = c.get("/scim/v2/ServiceProviderConfig", headers=h)
     assert (
         spc.status_code == 200
