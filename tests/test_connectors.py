@@ -88,10 +88,18 @@ def test_seed_enrich_apply_repo_fills_identity_domain_and_signals():
     }
     changed = apply_repo(res, repo)
     assert res["external_ids"]["github"] == "crewAIInc/crewAI"
-    assert res["publisher_domain"] == "crewai.com" and res["homepage"] == "https://crewai.com"
+    assert res["publisher_domain"] == "crewai.com" and res["signals"]["homepage"] == "https://crewai.com"
     assert "mcp" in res["tags"] and res["license"] == "MIT"
     assert res["signals"]["github_stars"] == 30000
-    assert res["enrichment"]["github"]["changed"] == changed and "publisher_domain" in changed
+    assert res["signals"]["seed_enrich"]["changed"] == changed and "publisher_domain" in changed
+    # every key written must exist in the closed resource schema (the refresh validate gate)
+    import json
+    from pathlib import Path
+
+    allowed = json.loads((Path(__file__).parent.parent / "schema" / "resource.schema.json").read_text())[
+        "properties"
+    ]
+    assert set(res) <= set(allowed), set(res) - set(allowed)
     # a GitHub Pages or code-host homepage does not become the publisher domain
     res2 = {
         "name": "AutoGen",
@@ -102,6 +110,7 @@ def test_seed_enrich_apply_repo_fills_identity_domain_and_signals():
     apply_repo(res2, {"full_name": "microsoft/autogen", "homepage": "https://microsoft.github.io/autogen/"})
     assert res2["publisher_domain"] == "github.com" and res2["external_ids"]["github"] == "microsoft/autogen"
     assert apply_repo(res2, {"full_name": "microsoft/autogen"}) == []  # idempotent
+    assert "homepage" not in res2 and "enrichment" not in res2
 
 
 def test_seed_enrich_run_only_touches_seed_rows(monkeypatch):

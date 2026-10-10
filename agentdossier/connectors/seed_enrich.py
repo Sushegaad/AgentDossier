@@ -7,7 +7,7 @@ trust page to crawl. One `GET /repos/{owner}/{repo}` fixes all three:
 
 * ``external_ids.github`` → identity T3 (repository ownership) and the GitHub
   release feed in the news stage;
-* ``homepage`` → the vendor's own domain becomes ``publisher_domain`` so the ARD /
+* the repository homepage → the vendor's own domain becomes ``publisher_domain`` so the ARD /
   A2A / MCP probes and the trust-page crawler have somewhere to look;
 * ``topics`` and ``description`` → self-described protocol claims and search text;
 * license, stars, last push → signals the discovered rows already carry.
@@ -54,8 +54,9 @@ def apply_repo(res: dict[str, Any], repo: dict[str, Any]) -> list[str]:
         changed.append("external_ids.github")
     home = (repo.get("homepage") or "").strip()
     hd = domain_of(home if "://" in home else f"https://{home}") if home else None
+    homepage = None
     if hd and hd not in CODE_HOSTS and not hd.endswith(".github.io"):
-        res["homepage"] = home if "://" in home else f"https://{home}"
+        homepage = home if "://" in home else f"https://{home}"
         if (res.get("publisher_domain") or "") in CODE_HOSTS or not res.get("publisher_domain"):
             res["publisher_domain"] = hd
             changed.append("publisher_domain")
@@ -79,12 +80,12 @@ def apply_repo(res: dict[str, Any], repo: dict[str, Any]) -> list[str]:
         "github_created_at": repo.get("created_at"),
         "github_archived": bool(repo.get("archived")),
         "github_language": repo.get("language"),
-        "homepage": res.get("homepage"),
+        "homepage": homepage,
     }.items():
         if v is not None and sig.get(k) is None:
             sig[k] = v
-    if changed:
-        res.setdefault("enrichment", {})["github"] = {"repo": full, "changed": changed}
+    # the resource schema is closed (additionalProperties: false); the note lives under signals
+    sig["seed_enrich"] = {"repo": full, "changed": changed}
     return changed
 
 
@@ -107,7 +108,7 @@ def run(
         full = repo_of(res.get("url")) or repo_of(
             res.get("canonical_url") and f"https://{res['canonical_url']}"
         )
-        if full and not (res.get("enrichment") or {}).get("github"):
+        if full and not (res.get("signals") or {}).get("seed_enrich"):
             todo.append((res, full))
     for res, full in todo:
         if deadline is not None and deadline.expired():
