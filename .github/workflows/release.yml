@@ -20,10 +20,10 @@ jobs:
     name: wheel and sdist
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
-      - uses: astral-sh/setup-uv@caf0cab7a618c569241d31dcd442f54681755d39  # v3
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
       - run: uv build
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
         with:
           name: python-dist
           path: dist/*
@@ -39,15 +39,15 @@ jobs:
     outputs:
       digest: ${{ steps.push.outputs.digest }}
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
-      - uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f  # v3
-      - uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9  # v3
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      - uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069  # v4.4.1
+      - uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f  # v4.6.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - id: meta
-        uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051  # v5
+        uses: docker/metadata-action@dc802804100637a589fabce1cb79ff13a1411302  # v6.2.0
         with:
           images: ${{ env.IMAGE }}
           tags: |
@@ -55,7 +55,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,value=latest
       - id: push
-        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8  # v6
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc  # v7.4.0
         with:
           context: .
           file: deploy/Dockerfile
@@ -64,14 +64,14 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           sbom: true
           provenance: mode=max
-      - uses: sigstore/cosign-installer@398d4b0eeef1380460a10c8013a76f728fb906ac  # v3
+      - uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6  # v4.1.2
       - name: Sign the image (keyless)
         env:
           DIGEST: ${{ steps.push.outputs.digest }}
           TAGS: ${{ steps.meta.outputs.tags }}
         run: |
           for tag in $TAGS; do cosign sign --yes "${tag}@${DIGEST}"; done
-      - uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610  # v0
+      - uses: anchore/sbom-action@3ad7283483fc7af8ff2b4ea19663c2d5ca935e26  # v0.24.2
         with:
           image: ${{ env.IMAGE }}@${{ steps.push.outputs.digest }}
           format: cyclonedx-json
@@ -80,12 +80,12 @@ jobs:
         env:
           DIGEST: ${{ steps.push.outputs.digest }}
         run: cosign attest --yes --type cyclonedx --predicate image-sbom.cdx.json "${IMAGE}@${DIGEST}"
-      - uses: actions/attest-build-provenance@ef244123eb79f2f7a7e75d99086184180e6d0018  # v1
+      - uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8  # v4.2.2
         with:
           subject-name: ${{ env.IMAGE }}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
         with:
           name: image-sbom
           path: image-sbom.cdx.json
@@ -94,14 +94,14 @@ jobs:
     name: helm chart
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
-      - uses: azure/setup-helm@1a275c3b69536ee54be43f2070a358922e12c8d4  # v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      - uses: azure/setup-helm@9bc31f4ebc9c6b171d7bfbaa5d006ae7abdb4310  # v5.0.1
         with:
           version: v3.16.2
       - run: |
           helm lint deploy/helm/agentdossier
           helm package deploy/helm/agentdossier --destination chart-dist
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
         with:
           name: helm-chart
           path: chart-dist/*.tgz
@@ -113,11 +113,11 @@ jobs:
     permissions:
       contents: write  # create the release and attach files
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
-      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093  # v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c  # v8.0.1
         with:
           path: artifacts
-      - uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610  # v0
+      - uses: anchore/sbom-action@3ad7283483fc7af8ff2b4ea19663c2d5ca935e26  # v0.24.2
         with:
           path: .
           format: spdx-json
@@ -131,7 +131,7 @@ jobs:
           ' CHANGELOG.md > notes.md
           [ -s notes.md ] || echo "Release ${GITHUB_REF_NAME}" > notes.md
           echo "Image: ${IMAGE}@${{ needs.image.outputs.digest }} (cosign-signed; verify with \`cosign verify --certificate-identity-regexp github.com/${{ github.repository }} --certificate-oidc-issuer https://token.actions.githubusercontent.com ${IMAGE}@${{ needs.image.outputs.digest }}\`)" >> notes.md
-      - uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65  # v2
+      - uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64  # v3.0.3
         with:
           body_path: notes.md
           files: |
