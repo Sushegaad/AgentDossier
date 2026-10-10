@@ -6,6 +6,10 @@ also try ``/trust``, ``/security`` and ``/compliance``, and look for
 framework mentions. Everything found is a **claim** (tier 4) with the page
 URL as evidence. robots.txt ``Disallow`` rules for ``User-agent: *`` are
 honored, and at most five pages per domain are fetched.
+
+Large vendor sites defeat that walk (the certifications page sits five
+clicks deep), so ``data/curated/trust_pages.yaml`` can name the page to
+read first; see :func:`load_trust_pages`.
 """
 
 from __future__ import annotations
@@ -13,10 +17,13 @@ from __future__ import annotations
 import html
 import re
 import urllib.parse
+from pathlib import Path
 from typing import Any
 
 from ..util import NetPolicy, fetch, now_iso, sha256
 
+ROOT = Path(__file__).resolve().parents[2]
+TRUST_PAGES = ROOT / "data" / "curated" / "trust_pages.yaml"
 SOURCE = "vendor_trust_centers"
 CANDIDATE_PATHS = ("/trust", "/security", "/compliance", "/trust-center", "/legal/security")
 LINK_WORDS = re.compile(r"trust|security|compliance|privacy", re.I)
@@ -117,18 +124,66 @@ def find_claims(text: str) -> list[tuple[str, str | None]]:
     return found
 
 
-def crawl_domain(domain: str, *, policy: NetPolicy | None = None, timeout: float = 8.0) -> dict[str, Any]:
+class TrustPages:
+    """Curated starting pages per publisher domain, plus vendor-name aliases."""
+
+    def __init__(self, domains: dict[str, list[str]], vendors: dict[str, str]):
+        self.domains = domains
+        self.vendors = vendors
+
+    def pages_for(self, domain: str | None) -> list[str]:
+        return list(self.domains.get((domain or "").lower().removeprefix("www."), []))
+
+    def domain_for_vendor(self, vendor: str | None) -> str | None:
+        """Domain whose pages speak for this vendor string ("IBM / community" → ibm.com)."""
+        if not vendor:
+            return None
+        for part in re.split(r"\s*[/,(]\s*", vendor.lower()):
+            d = self.vendors.get(part.strip())
+            if d:
+                return d
+        return None
+
+
+def load_trust_pages(path: Path = TRUST_PAGES) -> TrustPages:
+    if not path.exists():
+        return TrustPages({}, {})
+    try:
+        import yaml  # noqa: PLC0415
+    except ImportError:  # pragma: no cover
+        return TrustPages({}, {})
+    doc = yaml.safe_load(path.read_text()) or {}
+    domains: dict[str, list[str]] = {}
+    for dom, entry in (doc.get("domains") or {}).items():
+        pages = [str(u) for u in (entry or {}).get("pages") or [] if str(u).startswith("https://")]
+        if pages:
+            domains[str(dom).lower().removeprefix("www.")] = pages
+    vendors = {
+        str(k).lower(): str(v).lower()
+        for k, v in (doc.get("vendors") or {}).items()
+        if str(v).lower() in domains
+    }
+    return TrustPages(domains, vendors)
+
+
+def crawl_domain(
+    domain: str, *, pages: list[str] | None = None, policy: NetPolicy | None = None, timeout: float = 8.0
+) -> dict[str, Any]:
     origin = f"https://{domain}"
-    disallows = robots_disallows(origin, policy)
+    robots: dict[str, list[str]] = {}
     visited: list[str] = []
     claims: dict[tuple[str, str | None], str] = {}
     hashes: dict[str, str] = {}
+    limit = MAX_PAGES + len(pages or [])
 
     def visit(url: str) -> str | None:
-        if len(visited) >= MAX_PAGES:
+        if len(visited) >= limit:
             return None
-        path = urllib.parse.urlparse(url).path or "/"
-        if not allowed(path, disallows):
+        u = urllib.parse.urlparse(url)
+        page_origin = f"{u.scheme}://{u.netloc}"
+        if page_origin not in robots:
+            robots[page_origin] = robots_disallows(page_origin, policy)
+        if not allowed(u.path or "/", robots[page_origin]):
             return None
         r = fetch(url, policy=policy, timeout=timeout, retries=0)
         visited.append(url)
@@ -140,6 +195,8 @@ def crawl_domain(domain: str, *, policy: NetPolicy | None = None, timeout: float
             claims.setdefault(key, r.url)
         return body
 
+    for url in pages or []:  # curated certification pages first; they may sit on another host
+        visit(url)
     home = visit(origin + "/")
     links: list[str] = []
     if home:
@@ -154,7 +211,7 @@ def crawl_domain(domain: str, *, policy: NetPolicy | None = None, timeout: float
     for url in links[:3]:
         visit(url)
     for path in CANDIDATE_PATHS:
-        if len(visited) >= MAX_PAGES:
+        if len(visited) >= limit:
             break
         url = origin + path
         if url not in visited:

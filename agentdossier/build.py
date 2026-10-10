@@ -27,7 +27,7 @@ from .compliance.engine import (
     changelog_events,
     governance_from_evidence,
 )
-from .connectors import ard_web, github, huggingface, marketplaces, mcp_registry
+from .connectors import ard_web, github, huggingface, marketplaces, mcp_registry, seed_enrich
 from .connectors.base import SnapshotStore
 from .connectors.seed_xlsx import import_seed
 from .dedup import dedup, load_decisions, resource_slug, write_review_file
@@ -58,6 +58,7 @@ class BuildOptions:
     # matches 2,000+ repositories above 25 stars; taking the best few hundred keeps the crawl,
     # evidence and news stages inside the runner's time limit. --limit overrides all three.
     github_cap: int = 300
+    seed_enrich: bool = True  # look up seed rows whose URL is a GitHub repository
     huggingface_cap: int = 150
     mcp_registry_cap: int = 300
     budget_minutes: float | None = 150.0  # wall-clock budget for the whole build (None = unlimited)
@@ -258,6 +259,19 @@ def enrich(
         reports["dedup"]["review_added"] = write_review_file(result.candidates)
     resources = result.resources
     _deadline.log("dedup", f"{len(resources)} resources")
+
+    if opts.seed_enrich and not opts.offline:
+        # seed rows that point at a GitHub repository: one API call gives them a publisher domain,
+        # repository ownership (identity T3) and topics before the protocol and trust crawls run
+        rep = seed_enrich.run(
+            resources,
+            token=os.environ.get("GITHUB_TOKEN"),
+            store=SnapshotStore(opts.cache_dir),
+            policy=opts.policy,
+            deadline=_deadline,
+        )
+        reports["seed_enrich"] = rep.as_dict()
+        _deadline.log("seed_enrich", f"{rep.fetched} repositories, {rep.produced} rows enriched")
 
     if "ard_web" in opts.sources and not opts.offline:
         store = SnapshotStore(opts.cache_dir)

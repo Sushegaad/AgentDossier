@@ -109,7 +109,7 @@ def fetch_card(
     }
     for path in WELL_KNOWN:
         r = fetch(origin + path, policy=policy, headers=headers, timeout=timeout, retries=0)
-        if not r.ok:
+        if not r.ok or r.is_html:  # an HTML answer is the site's soft 404, not a card
             continue
         try:
             card = r.json()

@@ -6,6 +6,15 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Added
+- Refresh fills the gaps that left most ranked agents with an empty trust profile and
+  blank protocol column: seed rows on GitHub are looked up once (`seed_enrich`) for
+  repository ownership, publisher domain and topics; `data/curated/trust_pages.yaml`
+  names the certifications page of large vendors the crawler never reached, and rows on
+  shared hosts are crawled under their vendor's domain; a vendor's FedRAMP authorization
+  is shown as an inherited vendor-level row when no offering matches the agent; a web
+  page served where a protocol card should be is `not_found`, not `invalid`.
+
 ### Security
 - Authentication is fail-closed: `AGENTDOSSIER_AUTH_MODE` has no inferred default and
   `none` needs `AGENTDOSSIER_DEV=1` on a loopback bind; the app is started through a

@@ -169,6 +169,20 @@ class FetchResult:
     def text(self) -> str:
         return self.body.decode("utf-8", errors="replace")
 
+    @property
+    def is_html(self) -> bool:
+        """A web page where a JSON document was expected: the host's soft 404, not a broken file.
+
+        Many sites answer every unknown path with 200 and their home page. Treating that as an
+        invalid card would accuse a vendor of publishing broken metadata they never published.
+        """
+        ctype = str(self.headers.get("Content-Type") or self.headers.get("content-type") or "").lower()
+        if "json" in ctype:
+            return False
+        if "html" in ctype:
+            return True
+        return self.body.lstrip()[:1] == b"<"
+
 
 _DEFAULT_LIMITER = RateLimiter()
 

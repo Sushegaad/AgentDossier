@@ -280,6 +280,8 @@ def fetch_card(
         if r.error and r.error.startswith("blocked"):
             report["status"] = "unknown"
         return report
+    if r.is_html:  # an HTML answer is the site's soft 404, not a server card
+        return report
     try:
         card = r.json()
     except ValueError:

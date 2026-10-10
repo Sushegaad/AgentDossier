@@ -163,7 +163,7 @@ def resolve(
 
     def _ingest_manifest(url: str, via: str) -> bool:
         r = fetch(url, policy=policy, headers=headers, timeout=timeout, retries=0)
-        if not r.ok:
+        if not r.ok or r.is_html:  # an HTML answer is the site's soft 404, not a manifest
             return False
         try:
             doc = r.json()

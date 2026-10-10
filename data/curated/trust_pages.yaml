@@ -1,0 +1,83 @@
+# Trust and compliance pages the vendor-claims crawler should read first.
+#
+# The crawler normally fetches a publisher's homepage, follows up to three links that mention
+# trust, security or compliance, and tries /trust, /security and /compliance. On large vendor
+# sites that finds nothing: the compliance page sits under a deep path, the homepage links to
+# hundreds of products, and the crawler stops after five pages. Each entry here names the page
+# that lists the vendor's certifications so the crawl starts there.
+#
+# Every page is read as a tier-4 vendor claim about the publisher (scope: entity), exactly as
+# a page the crawler found on its own. Nothing here is treated as verified. Listing a page is a
+# decision about where to look, not about what is true, so no reviewer field is needed; keep
+# `checked_on` current when you confirm a page still renders its list without JavaScript.
+#
+# Keys:
+#   domains:  publisher_domain -> pages read before the usual walk.
+#   vendors:  lowercase vendor string -> domain in `domains`. Rows hosted on a shared host
+#             (github.com, huggingface.co, aws.amazon.com, azuremarketplace.microsoft.com) are
+#             crawled under their vendor's domain when the vendor is listed here, and otherwise
+#             not at all: a repository's owner is not GitHub, a marketplace seller is not AWS.
+version: trust-pages-1.0
+checked_on: 2026-10-09
+checked_by: hemant.naik
+
+domains:
+  aws.amazon.com:
+    pages:
+      - https://aws.amazon.com/compliance/programs/
+  cloud.google.com:
+    pages:
+      - https://cloud.google.com/security/compliance
+  docs.cloud.google.com:
+    pages:
+      - https://cloud.google.com/security/compliance
+  microsoft.com:
+    pages:
+      - https://learn.microsoft.com/en-us/compliance/regulatory/offering-home
+  learn.microsoft.com:
+    pages:
+      - https://learn.microsoft.com/en-us/compliance/regulatory/offering-home
+  azure.microsoft.com:
+    pages:
+      - https://learn.microsoft.com/en-us/compliance/regulatory/offering-home
+  github.com:
+    pages:
+      - https://github.com/security
+  huggingface.co:
+    pages:
+      - https://huggingface.co/docs/hub/security
+  databricks.com:
+    pages:
+      - https://www.databricks.com/trust/compliance
+  ibm.com:
+    pages:
+      - https://www.ibm.com/cloud/compliance
+  oracle.com:
+    pages:
+      - https://www.oracle.com/corporate/cloud-compliance/
+  sap.com:
+    pages:
+      - https://www.sap.com/about/trust-center/certification-compliance.html
+  servicenow.com:
+    pages:
+      - https://www.servicenow.com/company/trust/compliance.html
+  salesforce.com:
+    pages:
+      - https://www.salesforce.com/company/legal/compliance/
+
+vendors:
+  aws: aws.amazon.com
+  amazon web services: aws.amazon.com
+  amazon: aws.amazon.com
+  google: cloud.google.com
+  google cloud: cloud.google.com
+  microsoft: microsoft.com
+  github: github.com
+  hugging face: huggingface.co
+  databricks: databricks.com
+  ibm: ibm.com
+  ibm research: ibm.com
+  oracle: oracle.com
+  sap: sap.com
+  servicenow: servicenow.com
+  salesforce: salesforce.com

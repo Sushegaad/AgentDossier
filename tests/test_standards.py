@@ -69,3 +69,43 @@ def test_a2a_v03_card_uses_url_and_preferred_transport():
 def test_a2a_card_missing_endpoint_is_an_error():
     errors, _ = a2a.validate_card({"name": "x", "description": "y", "version": "1"})
     assert any("endpoint" in e for e in errors)
+
+
+# --- soft 404s: an HTML page where a JSON document was expected is "not found", not "invalid"
+
+
+def _html(url):
+    from agentdossier.util import FetchResult
+
+    return FetchResult(
+        url, 200, {"Content-Type": "text/html; charset=utf-8"}, b"<!doctype html><html>home</html>"
+    )
+
+
+def test_a2a_soft_404_is_not_found(monkeypatch):
+    monkeypatch.setattr(a2a, "fetch", lambda url, **kw: _html(url))
+    assert a2a.fetch_card("https://example.com")["status"] == "not_found"
+
+
+def test_ard_soft_404_is_not_found(monkeypatch):
+    monkeypatch.setattr(ard, "fetch", lambda url, **kw: _html(url))
+    report = ard.resolve("https://example.com", scan_homepage=False, consult_legacy=False)
+    assert report["status"] == "not_found" and report["errors"] == []
+
+
+def test_mcp_soft_404_is_not_found(monkeypatch):
+    from agentdossier.standards import mcp
+
+    monkeypatch.setattr(mcp, "fetch", lambda url, **kw: _html(url))
+    assert mcp.fetch_card("https://example.com")["status"] == "not_found"
+
+
+def test_broken_json_is_still_invalid(monkeypatch):
+    from agentdossier.util import FetchResult
+
+    monkeypatch.setattr(
+        a2a,
+        "fetch",
+        lambda url, **kw: FetchResult(url, 200, {"Content-Type": "application/json"}, b"{not json"),
+    )
+    assert a2a.fetch_card("https://example.com")["status"] == "invalid"

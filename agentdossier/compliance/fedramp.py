@@ -60,6 +60,44 @@ def find_matches(
     return out
 
 
+_LEVEL_RANK = {"high": 3, "moderate": 2, "low": 1, "li-saas": 0}
+
+
+def best_vendor_authorization(
+    vendor: str | None, products: list[dict[str, Any]]
+) -> tuple[dict[str, Any], Match] | None:
+    """The vendor's highest FedRAMP Authorized offering, when the vendor itself is a clear match.
+
+    Used when no offering matches the agent: "Amazon Bedrock Agents" is not on the marketplace,
+    but AWS holds authorizations the dossier can show as vendor-level, inherited evidence.
+    """
+    if not vendor:
+        return None
+    best: tuple[dict[str, Any], Match] | None = None
+    for p in products:
+        if p.get("status") != "FedRAMP Authorized":
+            continue
+        m = match(vendor, None, p.get("csp") or p.get("name"))
+        if m.decision != "accept":
+            continue
+        rank = _LEVEL_RANK.get(str(p.get("impact_level") or "").lower(), -1)
+        if best is None or (rank, m.confidence) > (
+            _LEVEL_RANK.get(str(best[0].get("impact_level") or "").lower(), -1),
+            best[1].confidence,
+        ):
+            best = (p, m)
+    return best
+
+
+def inherited_record(product: dict[str, Any], m: Match, payload_hash: str | None) -> dict[str, Any]:
+    """A vendor-level record: the authorization is real, but it covers another offering."""
+    rec = to_record(product, m, payload_hash)
+    rec["scope"] = "entity"
+    rec["covers_resource"] = "inherited"
+    rec["review_reason"] = f"vendor authorization for {product.get('cso') or 'another offering'}; {m.reason}"
+    return rec
+
+
 def to_record(product: dict[str, Any], m: Match, payload_hash: str | None) -> dict[str, Any]:
     level = str(product.get("impact_level") or "").lower()
     variant = LEVEL_VARIANT.get(level) or ("FEDRAMP_20X" if "20x" in level else None)

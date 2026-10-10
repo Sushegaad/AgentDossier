@@ -37,6 +37,7 @@ their dates. Wording per framework lives in `config/frameworks/*.json`.
 | Maintainer-curated (`data/curated/compliance.yaml`) | 1–4 by what was checked | DPF list, IAF CertSearch, HITRUST letters and any document reviewed by hand; every record carries an evidence URL, a date and who checked | on edit |
 | Marketplace listings (`data/curated/marketplaces.json`) | 2 | listing metadata (e.g. AWS "HIPAA eligible") | weekly |
 | Vendor trust/security pages | 4 | robots-aware crawl of at most five pages per publisher domain; a framework named on the page becomes a *claim* with that page as evidence | weekly, stale after 3 months |
+| Curated trust pages (`data/curated/trust_pages.yaml`) | 4 | the certifications page of a large vendor (AWS, Google Cloud, Microsoft, …) that the five-page walk never reaches; read first, then the normal walk. Rows hosted on a shared host (a GitHub repository, an AWS Marketplace listing) are crawled under their vendor's own domain when `vendors:` names it, never under the host's | weekly, stale after 3 months |
 
 Rules that never bend: "HIPAA certified" is never rendered (HIPAA has no
 certification; the badge reads *BAA available*); "GDPR certified" appears
@@ -109,6 +110,12 @@ organisation was assessed and says nothing about whether one product is inside t
 site groups such rows under "About the vendor — inherited" and the trust strip, the compare view
 and the homepage specimen count only agent-scoped rows (`agentScoped()` in `web/src/lib/dossier.ts`).
 
+FedRAMP has the same split. When no marketplace offering matches the agent but the vendor
+holds a FedRAMP authorization for something else, the build adds one vendor-level row for the
+vendor's highest authorized impact level with `covers_resource: inherited` (tier 1, scope
+`entity`). "Amazon Bedrock Agents" is not on the marketplace; AWS's authorizations are, and the
+dossier shows them in the vendor group, never in the agent-scoped strip.
+
 ## Before you deploy (`deploy-rules-1.0`)
 
 Every dossier ends with three lists derived from data, never written per agent:
@@ -143,8 +150,16 @@ Each resource carries one status per protocol:
 | `verified` | the build fetched and parsed the artefact on the publisher's own domain: `/.well-known/ard.json`, the A2A agent card, the MCP server card (or completed an MCP handshake) | ✔ |
 | `claimed` | the vendor documents support (`data/curated/protocols.yaml`, with a reviewer, a date and the documentation URL) or the resource names the protocol in its own tags, description or deployment text; `source` says which | ○ |
 | `invalid` | an artefact was found but did not validate | – |
-| `not_found` | the publisher domain was probed and nothing was there | – |
+| `not_found` | the publisher domain was probed and nothing was there. A web page served where the JSON artefact should be (the site's soft 404) counts as nothing there, not as an invalid artefact | – |
 | `unknown` | never probed; `not_checked` says why (`code_host`: the URL is on github.com, huggingface.co, pypi.org or npmjs.com, which never carry a publisher's well-known files; `no_publisher_domain`) | ? |
+
+Seed rows whose URL is a GitHub repository are looked up once (`GET /repos/{owner}/{repo}`,
+`agentdossier/connectors/seed_enrich.py`) before any probe runs. The repository becomes
+`external_ids.github` (identity tier 3, repository ownership), its homepage becomes the
+`publisher_domain` the probes and the trust-page crawler use (a GitHub Pages or code-host
+homepage does not), and its topics join the self-described protocol claims. Without that
+step a workbook row such as `github.com/crewAIInc/crewAI` is "vendor name only" and `unknown`
+on every protocol, however much the project publishes on crewai.com.
 
 A claim never outranks an observation. When a curated claim sits next to a `not_found` probe the probe result is kept under `probe`, so the dossier can say "documented by the vendor; no endpoint at the well-known paths". Protocol trust tier is 1 with any `verified`, 3 with any `claimed`, else 5.
 

@@ -354,3 +354,105 @@ def test_csa_star_find_match_handles_compound_vendor():
     }
     found = csa_star.find_match("GitHub / Microsoft", idx)
     assert found is not None and found[0].slug == "microsoft" and found[1].confidence >= 0.9
+
+
+# --- vendor-level (inherited) FedRAMP rows ------------------------------------------
+
+
+def test_fedramp_vendor_authorization_is_inherited_when_no_offering_matches():
+    products = _fedramp_products()
+    best = fedramp.best_vendor_authorization("Oracle", products)
+    assert best is not None
+    product, m = best
+    assert product["impact_level"] == "High"  # the highest authorized level the vendor holds
+    rec = fedramp.inherited_record(product, m, "sha256:x")
+    assert rec["tier"] == 1 and rec["status"] == "active"
+    assert rec["scope"] == "entity" and rec["covers_resource"] == "inherited"
+    assert "Oracle Cloud Infrastructure" in rec["review_reason"]
+    assert fedramp.best_vendor_authorization("Ironclad", products) is None  # Ready is not Authorized
+    assert fedramp.best_vendor_authorization("Nobody Inc", products) is None
+    assert fedramp.best_vendor_authorization(None, products) is None
+
+
+def test_compliance_run_adds_inherited_row_only_without_product_match(monkeypatch):
+    from agentdossier.compliance import run as comp_run
+
+    products = _fedramp_products()
+    monkeypatch.setattr(
+        fedramp,
+        "load_products",
+        lambda store, policy: (products, "sha256:f", fedramp.ConnectorReport("fedramp")),
+    )
+    monkeypatch.setattr(
+        csa_star, "load_index", lambda store, policy: ({}, None, fedramp.ConnectorReport("csa_star"))
+    )
+    monkeypatch.setattr(curated, "load", lambda: [])
+    agent = {"id": "r1", "name": "Oracle Agent Studio", "vendor": "Oracle", "identity": {"tier": 3}}
+    matched = {"id": "r2", "name": "Everlaw Platform", "vendor": "Everlaw", "identity": {"tier": 3}}
+    reports, _ = comp_run.run([agent, matched], store=None, crawl_claims=False)
+    inherited = [c for c in agent["compliance"] if c["covers_resource"] == "inherited"]
+    assert len(inherited) == 1 and inherited[0]["framework"] == "fedramp"
+    assert not [c for c in matched["compliance"] if c["covers_resource"] == "inherited"]
+    assert reports["fedramp"]["inherited"] == 1
+
+
+# --- curated trust pages ------------------------------------------------------------
+
+
+def test_trust_pages_loader_and_vendor_aliases(tmp_path):
+    path = tmp_path / "trust_pages.yaml"
+    path.write_text(
+        "domains:\n  aws.amazon.com:\n    pages: [https://aws.amazon.com/compliance/programs/]\n"
+        "  ibm.com:\n    pages: ['http://insecure.example/']\n"
+        "vendors:\n  aws: aws.amazon.com\n  ibm: ibm.com\n  ghost: nowhere.example\n"
+    )
+    tp = claims.load_trust_pages(path)
+    assert tp.pages_for("www.aws.amazon.com") == ["https://aws.amazon.com/compliance/programs/"]
+    assert tp.pages_for("ibm.com") == [] and "ibm" not in tp.vendors  # http pages are ignored
+    assert tp.domain_for_vendor("AWS") == "aws.amazon.com"
+    assert tp.domain_for_vendor("Amazon / AWS") == "aws.amazon.com"
+    assert tp.domain_for_vendor("Searce (AWS Partner)") is None  # a partner is not the vendor
+    assert tp.domain_for_vendor("ghost") is None and tp.domain_for_vendor(None) is None
+    assert claims.load_trust_pages(tmp_path / "missing.yaml").domains == {}
+
+
+def test_shipped_trust_pages_are_https_and_vendor_aliases_resolve():
+    tp = claims.load_trust_pages()
+    assert tp.pages_for("aws.amazon.com")
+    assert all(u.startswith("https://") for pages in tp.domains.values() for u in pages)
+    assert all(d in tp.domains for d in tp.vendors.values())
+
+
+def test_claim_domain_uses_vendor_pages_for_shared_hosts():
+    from agentdossier.compliance.run import claim_domain
+
+    tp = claims.TrustPages(
+        {"aws.amazon.com": ["https://aws.amazon.com/compliance/programs/"]}, {"aws": "aws.amazon.com"}
+    )
+    assert claim_domain({"url": "https://github.com/awslabs/x", "vendor": "AWS"}, tp) == "aws.amazon.com"
+    assert claim_domain({"url": "https://github.com/someone/x", "vendor": "Someone"}, tp) is None
+    assert claim_domain({"url": "https://aws.amazon.com/marketplace/pp/1", "vendor": "Zensar"}, tp) is None
+    assert claim_domain({"publisher_domain": "www.crewai.com", "vendor": "CrewAI"}, tp) == "crewai.com"
+
+
+def test_crawl_domain_reads_curated_pages_first(monkeypatch):
+    from agentdossier.util import FetchResult
+
+    seen: list[str] = []
+
+    def fake_fetch(url, **kw):
+        seen.append(url)
+        if url.endswith("robots.txt"):
+            return FetchResult(url, 404, {}, b"")
+        if url == "https://aws.amazon.com/compliance/programs/":
+            return FetchResult(
+                url, 200, {"Content-Type": "text/html"}, b"<html>SOC 2 Type II, FedRAMP and HIPAA</html>"
+            )
+        return FetchResult(url, 200, {"Content-Type": "text/html"}, b"<html><a href='/x'>x</a></html>")
+
+    monkeypatch.setattr(claims, "fetch", fake_fetch)
+    crawl = claims.crawl_domain("aws.amazon.com", pages=["https://aws.amazon.com/compliance/programs/"])
+    assert seen[1] == "https://aws.amazon.com/compliance/programs/"  # after robots.txt
+    found = {(c["framework"], c["variant"]) for c in crawl["claims"]}
+    assert ("soc2", "SOC2_TYPE_II") in found and ("fedramp", None) in found and ("hipaa", None) in found
+    assert len(crawl["pages"]) <= claims.MAX_PAGES + 1
