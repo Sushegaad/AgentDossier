@@ -21,7 +21,7 @@
 "domains": {
 "cybersecurity": {
 "components": {
-"adoption": 23.03,
+"adoption": 23.06,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -49,7 +49,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.03,
+"adoption": 23.06,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -79,7 +79,7 @@
 "external_ids": {
 "github": "Nasiko-Labs/nasiko"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,23 +101,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:15Z",
+"last_seen": "2026-10-10T04:50:21Z",
 "license": "Other",
 "name": "nasiko",
 "news": [],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:15Z",
+"checked_at": "2026-10-10T04:59:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:14Z",
+"checked_at": "2026-10-10T04:59:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:16Z",
+"checked_at": "2026-10-10T04:59:47Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -128,19 +129,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-12T10:45:29Z",
-"github_forks": 2073,
+"github_forks": 2065,
 "github_language": "Rust",
-"github_open_issues": 185,
-"github_pushed_at": "2026-10-03T06:26:22Z",
-"github_stars": 9406,
+"github_open_issues": 192,
+"github_pushed_at": "2026-10-07T18:38:36Z",
+"github_stars": 9509,
 "github_topic": "ai-agents",
 "homepage": "https://www.nasiko.com"
 },
 "slug": "nasiko-labs-nasiko",
 "sources": [
 {
-"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
-"retrieved_at": "2026-10-05T13:31:15Z",
+"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
+"retrieved_at": "2026-10-10T04:50:21Z",
 "system": "github",
 "url": "https://github.com/Nasiko-Labs/nasiko"
 }
@@ -162,7 +163,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

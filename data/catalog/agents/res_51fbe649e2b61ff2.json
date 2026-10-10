@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 23.59,
+"adoption": 23.6,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
@@ -47,7 +47,7 @@
 "external_ids": {
 "github": "Jeffallan/claude-skills"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -69,7 +69,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:15Z",
+"last_seen": "2026-10-10T04:50:21Z",
 "license": "MIT",
 "name": "claude-skills",
 "news": [
@@ -78,7 +78,7 @@
 "date": "2026-10-03T15:50:44Z",
 "headline": "claude-skills v0.4.18",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "### Changed\n- `MODELCLAUDE.md`: ported the Subagent Briefs, Writing Style Constraints, and Change Discipline sections from the maintainer's global CLAUDE.md, synced the 1% Rule wording, added the new attributions, and replaced personal exa",
 "tag": "product_update",
@@ -89,7 +89,7 @@
 "date": "2026-10-03T15:22:22Z",
 "headline": "claude-skills v0.4.17",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "### Added\n- Docs site footer: every page now ends with \"Maintained by @jeffallan, Principal Consultant at Synergetic Solutions\", linking to the GitHub profile and https://synergetic.solutions, via a Starlight `Footer` override that wraps t",
 "tag": "product_update",
@@ -129,7 +129,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:39Z",
+"checked_at": "2026-10-10T05:19:16Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -137,19 +137,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-10-20T20:27:22Z",
-"github_forks": 1134,
+"github_forks": 1136,
 "github_language": "Python",
 "github_open_issues": 32,
 "github_pushed_at": "2026-10-03T15:49:55Z",
-"github_stars": 11736,
+"github_stars": 11801,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "jeffallan-claude-skills",
 "sources": [
 {
-"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
-"retrieved_at": "2026-10-05T13:31:15Z",
+"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
+"retrieved_at": "2026-10-10T04:50:21Z",
 "system": "github",
 "url": "https://github.com/Jeffallan/claude-skills"
 }

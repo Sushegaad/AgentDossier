@@ -1,0 +1,108 @@
+{
+"canonical_url": "mcp.context7.com/mcp/server-card",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": null,
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:context7.com:mcp:context7"
+},
+"first_seen": "2026-10-10T04:59:07Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_6fb4a08108c9af30",
+"identity": {
+"evidence": [
+"publisher_domain_matches_vendor"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2026-08-18",
+"kind": "cve",
+"title": "CVE-2026-75130",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75130"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-10T04:59:07Z",
+"license": null,
+"name": "context7",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"errors": [
+"missing required term 'displayName'"
+],
+"identifier": "urn:air:context7.com:mcp:context7",
+"manifest_url": "https://context7.com/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "invalid",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"server_card_url": "https://mcp.context7.com/mcp/server-card",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "context7.com",
+"representative_queries": [],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-10T05:21:08Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "context7-com-context7",
+"sources": [
+{
+"payload_hash": "29cfe845b19466ba1d6dd48afc24ac7c5584645b3f171efdead688300f62961d",
+"retrieved_at": "2026-10-10T04:59:07Z",
+"system": "ard",
+"url": "https://context7.com/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 3,
+"security": 1
+},
+"url": "https://mcp.context7.com/mcp/server-card",
+"vendor": "context7.com"
+}

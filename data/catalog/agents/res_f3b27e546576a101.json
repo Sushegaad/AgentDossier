@@ -51,7 +51,7 @@
 "github": "clawfetch/clawfetch-mcp",
 "mcp_registry": "ai.clawfetch/mcp"
 },
-"first_seen": "2026-10-05T13:30:32Z",
+"first_seen": "2026-10-10T04:47:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -73,10 +73,22 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:32Z",
+"last_seen": "2026-10-10T04:47:52Z",
 "license": null,
 "name": "ai.clawfetch/mcp",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-25T08:48:46Z",
+"headline": "clawfetch-mcp v0.3.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Fixed\n- `check_domains` and `suggest_domains` now read the live API response shape. Previously they failed after a paid call.\n- `suggest_domains` replaces the ignored `count` option with `maxCheck` (1-50 candidates checked) and reports",
+"tag": "product_update",
+"url": "https://github.com/clawfetch/clawfetch-mcp/releases/tag/v0.3.2"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
@@ -108,7 +120,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:53:22Z",
+"checked_at": "2026-10-10T05:14:49Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -123,8 +135,8 @@
 "slug": "clawfetch-ai-ai-clawfetch-mcp",
 "sources": [
 {
-"payload_hash": "25d508c119829b81d62714e8b2e43cfeb3829359ac8f2d6e78b2236f162eefd0",
-"retrieved_at": "2026-10-05T13:30:32Z",
+"payload_hash": "0aae49172c8c9c6893e9a353e16cdb23b90468499ecb08c5cdf13b788b09cffa",
+"retrieved_at": "2026-10-10T04:47:52Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.clawfetch/mcp"
 }

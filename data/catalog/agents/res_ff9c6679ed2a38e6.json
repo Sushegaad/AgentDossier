@@ -34,16 +34,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/google",
 "framework": "csa_star",
 "issued": "2017-02-21",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:43:29Z",
+"retrieved_at": "2026-10-10T05:03:30Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -52,6 +52,36 @@
 "tier": 1,
 "valid_until": null,
 "variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "F1206081364",
+"covers_resource": "inherited",
+"credited": false,
+"detail": {
+"cso": "Google Workspace",
+"csp": "Google",
+"deployment_model": "Hybrid Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "High"
+},
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://marketplace.fedramp.gov/products/F1206081364",
+"framework": "fedramp",
+"issued": "2021-10-28",
+"issuer": "JAB / 3PAO Coalfire Systems, Inc.",
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:01:53Z",
+"review_reason": "vendor authorization for Google Workspace; entity 1.00",
+"reviewer": null,
+"scope": "entity",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_HIGH"
 }
 ],
 "deployment": "hosted",
@@ -64,7 +94,7 @@
 "docs": 3.0,
 "domain_fit": 71.3,
 "ecosystem": 2.1,
-"governance": 33.3,
+"governance": 66.7,
 "health": 12.0,
 "trust": 16.0
 },
@@ -79,7 +109,7 @@
 },
 "profile": "regulated",
 "rank": null,
-"score": 52.4,
+"score": 57.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": []
@@ -90,7 +120,7 @@
 "docs": 3.0,
 "domain_fit": 34.0,
 "ecosystem": 2.1,
-"governance": 33.3,
+"governance": 66.7,
 "health": 12.0,
 "trust": 16.0
 },
@@ -114,7 +144,7 @@
 "external_ids": {
 "huggingface_space": "google/ehr-navigator-agent-with-medgemma"
 },
-"first_seen": "2026-10-05T13:31:07Z",
+"first_seen": "2026-10-10T04:50:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -136,7 +166,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:07Z",
+"last_seen": "2026-10-10T04:50:13Z",
 "license": "apache-2.0",
 "name": "EHR Navigator Agent With MedGemma",
 "news": [],
@@ -160,7 +190,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:54:02Z",
+"checked_at": "2026-10-10T05:15:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -175,8 +205,8 @@
 "slug": "google-ehr-navigator-agent-with-medgemma",
 "sources": [
 {
-"payload_hash": "a46e0d2d99b758e1a66edd31c108b8807bde69c8eb11aa2e0127014a33035ab2",
-"retrieved_at": "2026-10-05T13:31:07Z",
+"payload_hash": "8fcee39677289a12c4516a6529d5fac60799801b77b471ef18ded4b667460526",
+"retrieved_at": "2026-10-10T04:50:13Z",
 "system": "huggingface",
 "url": "https://huggingface.co/spaces/google/ehr-navigator-agent-with-medgemma"
 }

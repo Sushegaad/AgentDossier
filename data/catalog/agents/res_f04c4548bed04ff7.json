@@ -143,7 +143,7 @@
 "external_ids": {
 "github": "yusufkaraaslan/Skill_Seekers"
 },
-"first_seen": "2026-10-05T13:35:44Z",
+"first_seen": "2026-10-10T04:54:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -165,7 +165,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "MIT",
 "name": "Skill_Seekers",
 "news": [
@@ -174,7 +174,7 @@
 "date": "2026-09-30T18:53:11Z",
 "headline": "Skill_Seekers v3.10.0",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## [3.10.0] - 2026-09-30\n\n**Theme:** Seeker HUD (beta) — a local web UI for the whole toolchain — plus a path-traversal security fix, three machine-readable CLI commands, an opt-in SQLite skill search index, MiniMax video input, and PDF vec",
 "tag": "product_update",
@@ -185,7 +185,7 @@
 "date": "2026-08-03T00:52:12Z",
 "headline": "Skill_Seekers v3.9.1",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## [3.9.1] - 2026-08-02\n\n**Theme:** Documentation and project-infrastructure release. No runtime code changed — the package is functionally identical to 3.9.0.\n\n### Added\n- **Sponsorship program** (#442) — `SPONSORSHIP.md` (five tiers plus",
 "tag": "product_update",
@@ -195,12 +195,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:46Z",
+"checked_at": "2026-10-10T05:00:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:44Z",
+"checked_at": "2026-10-10T05:00:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -208,7 +208,7 @@
 "evidence_url": "https://skillseekersweb.com/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:40:46Z",
+"checked_at": "2026-10-10T05:00:15Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -220,7 +220,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:22Z",
+"checked_at": "2026-10-10T05:18:58Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -228,19 +228,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-10-17T14:43:48Z",
-"github_forks": 1541,
+"github_forks": 1542,
 "github_language": "Python",
-"github_open_issues": 47,
+"github_open_issues": 49,
 "github_pushed_at": "2026-09-30T18:49:17Z",
-"github_stars": 15099,
+"github_stars": 15118,
 "github_topic": "mcp-server",
 "homepage": "https://skillseekersweb.com/"
 },
 "slug": "yusufkaraaslan-skill-seekers",
 "sources": [
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/yusufkaraaslan/Skill_Seekers"
 }

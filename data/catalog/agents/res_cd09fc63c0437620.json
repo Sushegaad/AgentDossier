@@ -20,7 +20,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 26.72,
+"adoption": 26.74,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.7,
@@ -48,7 +48,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.72,
+"adoption": 26.74,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.7,
@@ -78,7 +78,7 @@
 "external_ids": {
 "github": "HKUDS/DeepTutor"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -143,47 +143,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "Apache-2.0",
 "name": "DeepTutor",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-08T03:35:21Z",
+"headline": "DeepTutor v1.6.14",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# DeepTutor v1.6.14 Release Notes\n\n**Release Date:** 2026.10.08\n\nBuilding on [v1.6.13](ver1-6-13.md), v1.6.14 brings original-source visual practice, recoverable knowledge-base indexing, scientific research tools, and managed plugins. Video",
+"tag": "product_update",
+"url": "https://github.com/HKUDS/DeepTutor/releases/tag/v1.6.14"
+},
+{
+"cluster_size": 1,
 "date": "2026-10-04T13:35:37Z",
 "headline": "DeepTutor v1.6.13",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "# DeepTutor v1.6.13 Release Notes\n\n**Release Date:** 2026.10.04\n\nBuilding on [v1.6.12](past_releases/ver1-6-12.md), v1.6.13 expands reading, listening, and question-bank practice, improves document parsing and speech configuration, and brin",
 "tag": "product_update",
 "url": "https://github.com/HKUDS/DeepTutor/releases/tag/v1.6.13"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-27T05:34:32Z",
-"headline": "DeepTutor v1.6.12",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "# DeepTutor v1.6.12 Release Notes\n\n**Release Date:** 2026.09.27\n\nBuilding on [v1.6.11](ver1-6-11.md), v1.6.12 lets each workspace place and move its knowledge bases, connects searchable Kiwix archives, and carries source figures into ground",
-"tag": "product_update",
-"url": "https://github.com/HKUDS/DeepTutor/releases/tag/v1.6.12"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:38:13Z",
+"checked_at": "2026-10-10T04:57:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:38:11Z",
+"checked_at": "2026-10-10T04:57:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:38:13Z",
+"checked_at": "2026-10-10T04:57:42Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -193,7 +193,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:23Z",
+"checked_at": "2026-10-10T05:17:54Z",
 "cves": 7,
 "source": "nvd",
 "tier": 1
@@ -201,19 +201,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-28T15:35:54Z",
-"github_forks": 5156,
+"github_forks": 5179,
 "github_language": "Python",
-"github_open_issues": 245,
-"github_pushed_at": "2026-10-04T13:35:33Z",
-"github_stars": 40811,
+"github_open_issues": 142,
+"github_pushed_at": "2026-10-08T03:35:15Z",
+"github_stars": 41043,
 "github_topic": "ai-agents",
 "homepage": "http://arxiv.org/abs/2604.26962"
 },
 "slug": "hkuds-deeptutor",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/HKUDS/DeepTutor"
 }

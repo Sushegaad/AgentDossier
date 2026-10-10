@@ -2,7 +2,90 @@
 "canonical_url": "databricks.com/product/machine-learning/ai-agents",
 "category": "Enterprise agent framework",
 "commercial": true,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": "FR2525247858",
+"covers_resource": "inherited",
+"credited": false,
+"detail": {
+"cso": "Databricks on Azure Commercial",
+"csp": "Databricks, Inc.",
+"deployment_model": "Public Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "High"
+},
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://marketplace.fedramp.gov/products/FR2525247858",
+"framework": "fedramp",
+"issued": "2026-01-16",
+"issuer": "Agency / 3PAO Fortreum, LLC",
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:01:13Z",
+"review_reason": "vendor authorization for Databricks on Azure Commercial; entity 1.00",
+"reviewer": null,
+"scope": "entity",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_HIGH"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://www.databricks.com/trust/compliance",
+"framework": "eu_ai_act",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "5828adcffcf1f0a3f87a557e3fb42800d6bfbcaf065134426104f60b9c721311",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:06:27Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ART50_STATEMENT"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://www.databricks.com/trust/compliance",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "5828adcffcf1f0a3f87a557e3fb42800d6bfbcaf065134426104f60b9c721311",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:06:27Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
+}
+],
 "components": {
 "adoption": 25.0,
 "docs": 9.0,
@@ -21,8 +104,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 88.4,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "general",
@@ -37,8 +120,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 85.3,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "security",
@@ -53,8 +136,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 94.2,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "data",
@@ -69,8 +152,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 81.1,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -85,8 +168,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 81.1,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -101,8 +184,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 81.1,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -117,8 +200,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 81.1,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -133,8 +216,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 81.1,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -149,8 +232,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 81.1,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -165,8 +248,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 89.2,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "commercial",
@@ -181,8 +264,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 90.0,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "operations",
@@ -197,8 +280,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 93.4,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -210,7 +293,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -232,24 +315,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Databricks service",
 "name": "Databricks Mosaic AI Agent Framework",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:39:08Z",
+"checked_at": "2026-10-10T04:58:39Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:39:07Z",
+"checked_at": "2026-10-10T04:58:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:39:09Z",
+"checked_at": "2026-10-10T04:58:40Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -259,7 +342,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:48:40Z",
+"checked_at": "2026-10-10T05:09:20Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -275,7 +358,7 @@
 "sources": [
 {
 "payload_hash": "45049d4a6b61494a6591e6b2665fc53e3ec21b2bfcedee5922bb741b2fe87b86",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://www.databricks.com/product/machine-learning/ai-agents"
 }
@@ -283,7 +366,7 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 5,
+"compliance": 1,
 "identity": 3,
 "issues": 1,
 "protocols": 5,

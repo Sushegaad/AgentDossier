@@ -23,16 +23,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-05) (pending publisher verification)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
 "evidence_url": "https://steel.dev/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "0bb102880c9c13f703111fa8288d82235257d8079dd183046920940d9c7afc92",
+"next_check": "2026-10-17",
+"payload_hash": "3fe64cbd4459f521ab6d6ce55c8b9fb7ed46eb8f48faeaf690e6c1ce4f57a488",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:47:33Z",
+"retrieved_at": "2026-10-10T05:08:13Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -49,16 +49,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-05) (pending publisher verification)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-10) (pending publisher verification)",
 "evidence_url": "https://steel.dev/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "a20fa6e89ecbf6088edfca212a87958aff693ca3f71866a54ad4a4f44ba9290e",
+"next_check": "2026-10-17",
+"payload_hash": "e82bb81f92b1ecb3270e4f3c0965004d61c9ce19567c6e1bd2b8dab94426968b",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:47:33Z",
+"retrieved_at": "2026-10-10T05:08:13Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,7 +75,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 22.54,
+"adoption": 22.55,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
@@ -94,14 +94,14 @@
 },
 "profile": "general",
 "rank": null,
-"score": 61.6,
+"score": 61.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": []
 },
 "technology": {
 "components": {
-"adoption": 22.54,
+"adoption": 22.55,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 1.5,
@@ -129,7 +129,7 @@
 "external_ids": {
 "github": "steel-dev/steel-browser"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -151,7 +151,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:15Z",
+"last_seen": "2026-10-10T04:50:21Z",
 "license": "Apache-2.0",
 "name": "steel-browser",
 "news": [
@@ -160,7 +160,7 @@
 "date": "2026-08-25T19:41:16Z",
 "headline": "steel-browser Release v0.5.4-beta",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## Improvements\n\n- [`3b2335`](https://github.com/steel-dev/steel-browser/commit/3b2335ec8e001bafd496af095d7cffce574e34ab): feat: update chrome browser support for 146 + resolve extension installtion (#292) (@jagadeshjai)\n- [`fc75fc`](https:",
 "tag": "product_update",
@@ -170,17 +170,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:49Z",
+"checked_at": "2026-10-10T05:00:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:48Z",
+"checked_at": "2026-10-10T05:00:16Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:50Z",
+"checked_at": "2026-10-10T05:00:17Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -190,7 +190,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:58:16Z",
+"checked_at": "2026-10-10T05:19:55Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -198,19 +198,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-11-01T18:15:29Z",
-"github_forks": 988,
+"github_forks": 991,
 "github_language": "TypeScript",
-"github_open_issues": 74,
-"github_pushed_at": "2026-09-28T20:40:14Z",
-"github_stars": 7738,
+"github_open_issues": 75,
+"github_pushed_at": "2026-10-09T18:33:11Z",
+"github_stars": 7776,
 "github_topic": "ai-agents",
 "homepage": "https://steel.dev"
 },
 "slug": "steel-dev-steel-browser",
 "sources": [
 {
-"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
-"retrieved_at": "2026-10-05T13:31:15Z",
+"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
+"retrieved_at": "2026-10-10T04:50:21Z",
 "system": "github",
 "url": "https://github.com/steel-dev/steel-browser"
 }

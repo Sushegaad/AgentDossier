@@ -25,12 +25,12 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.21,
+"adoption": 26.22,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -44,7 +44,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 65.0,
+"score": 61.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -53,12 +53,12 @@
 },
 "sales": {
 "components": {
-"adoption": 26.21,
+"adoption": 26.22,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -72,7 +72,7 @@
 },
 "profile": "commercial",
 "rank": null,
-"score": 61.2,
+"score": 58.2,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -81,12 +81,12 @@
 },
 "technology": {
 "components": {
-"adoption": 26.21,
+"adoption": 26.22,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -100,7 +100,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 72.6,
+"score": 68.7,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -111,7 +111,7 @@
 "external_ids": {
 "github": "iOfficeAI/AionUi"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -133,34 +133,49 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "Apache-2.0",
 "name": "AionUi",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-09T11:29:49Z",
+"headline": "AionUi v2.2.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Highlights\n\n### Explorer: tab-scoped refresh and Collapse All\n- The Files and Changes panel now has a single top-bar Refresh button that does the right thing per tab: on Files it re-mounts every root and revalidates project detail; on Ch",
+"tag": "product_update",
+"url": "https://github.com/iOfficeAI/AionUi/releases/tag/v2.2.2"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-01T13:13:26Z",
+"headline": "AionUi v2.2.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Highlights\n\n### Clearer conversation notifications\n- Turn-completed notifications now include the conversation's name, so you can tell at a glance which conversation finished instead of seeing identical \"finished responding\" messages (lo",
+"tag": "product_update",
+"url": "https://github.com/iOfficeAI/AionUi/releases/tag/v2.2.1"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://www.aionui.com/.well-known/agent.json",
-"checked_at": "2026-10-05T13:37:54Z",
-"errors": [
-"not valid JSON"
-],
+"checked_at": "2026-10-10T04:57:17Z",
 "parser_version": "a2a-0.3+1.0",
-"status": "invalid"
+"status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:37:53Z",
-"errors": [
-"https://aionui.com/.well-known/ard.json: not valid JSON",
-"https://aionui.com/.well-known/ai-catalog.json: not valid JSON"
-],
+"checked_at": "2026-10-10T04:57:16Z",
 "parser_version": "ard-0.91",
-"status": "invalid"
+"status": "not_found"
 },
 "mcp": {
-"card_url": "https://www.aionui.com/.well-known/mcp.json",
-"checked_at": "2026-10-05T13:37:55Z",
+"checked_at": "2026-10-10T04:57:18Z",
 "parser_version": "mcp-2025-06-18",
-"status": "invalid"
+"status": "not_found"
 }
 },
 "publisher_domain": "aionui.com",
@@ -169,19 +184,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-08-07T10:29:51Z",
-"github_forks": 3465,
+"github_forks": 3469,
 "github_language": "TypeScript",
-"github_open_issues": 938,
+"github_open_issues": 939,
 "github_pushed_at": "2026-09-09T07:57:01Z",
-"github_stars": 33319,
+"github_stars": 33404,
 "github_topic": "ai-agent",
 "homepage": "https://www.aionui.com"
 },
 "slug": "iofficeai-aionui",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/iOfficeAI/AionUi"
 }
@@ -212,7 +227,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

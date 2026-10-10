@@ -78,7 +78,7 @@
 "external_ids": {
 "github": "fathah/hermes-desktop"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -100,7 +100,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "MIT",
 "name": "hermes-desktop",
 "news": [
@@ -109,7 +109,7 @@
 "date": "2026-09-04T04:48:16Z",
 "headline": "hermes-desktop Hermes Desktop v0.7.7",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## What's Changed\n* fix: support Docker-backed Hermes installs in SSH mode by @dergachoff in https://github.com/fathah/hermes-desktop/pull/435\n* feat(office): derive activity from running Kanban cards by @ohjy1006kenneth in https://github.c",
 "tag": "product_update",
@@ -120,7 +120,7 @@
 "date": "2026-07-22T11:50:02Z",
 "headline": "hermes-desktop Hermes Desktop v0.7.6",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## What's Changed\n* fix(stream): resolve message text truncation in streaming responses by @SpiritLiberation in https://github.com/fathah/hermes-desktop/pull/780\n* fix(config-health): audit API_SERVER_KEY for non-ASCII characters by @AmirF1",
 "tag": "product_update",
@@ -130,17 +130,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:39:44Z",
+"checked_at": "2026-10-10T04:59:20Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:39:43Z",
+"checked_at": "2026-10-10T04:59:19Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:39:45Z",
+"checked_at": "2026-10-10T04:59:21Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -150,7 +150,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:25Z",
+"checked_at": "2026-10-10T05:19:02Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -158,19 +158,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-02T15:26:49Z",
-"github_forks": 1625,
+"github_forks": 1626,
 "github_language": "TypeScript",
-"github_open_issues": 419,
+"github_open_issues": 421,
 "github_pushed_at": "2026-09-24T14:32:35Z",
-"github_stars": 14365,
+"github_stars": 14381,
 "github_topic": "ai-agent",
 "homepage": "https://hermesone.org"
 },
 "slug": "fathah-hermes-desktop",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/fathah/hermes-desktop"
 }

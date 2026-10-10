@@ -49,8 +49,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "continuedev/continue"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -59,14 +61,14 @@
 "id": "res_c82d4ba1e83d26ab",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
-"cves": 1047,
+"cves": 1072,
 "incidents": 0,
 "links": [
 {
@@ -133,7 +135,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Apache-2.0",
 "name": "Continue",
 "news": [
@@ -144,7 +146,7 @@
 "engagement": 273,
 "headline": "Following legal advice, the Nitter project will continue",
 "kind": "community",
-"link_confidence": 0.95,
+"link_confidence": 0.88,
 "outlet": "Hacker News",
 "summary": null,
 "tag": "news",
@@ -154,25 +156,28 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:35Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:34Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:35Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "continue.dev",
 "resource_type": "platform",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:16Z",
-"cves": 1047,
+"checked_at": "2026-10-10T05:10:00Z",
+"cves": 1072,
 "source": "nvd",
 "tier": 1
 },
@@ -181,22 +186,44 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2023-05-24T03:39:39Z",
+"github_forks": 5459,
+"github_language": "TypeScript",
+"github_open_issues": 832,
+"github_pushed_at": "2026-10-09T21:22:45Z",
+"github_stars": 36163,
+"homepage": "https://continue.dev",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "continuedev/continue"
+}
 },
 "slug": "continue-continue",
 "sources": [
 {
 "payload_hash": "cfcd4010357ef805ce34e8df6c45461346b4f786d7882b0cd40dc5bbb86145e3",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/continuedev/continue"
 }
 ],
-"tags": [],
+"tags": [
+"agent",
+"ai",
+"cli",
+"developer-tools",
+"open-source"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
+"identity": 3,
 "issues": 3,
 "protocols": 5,
 "security": 1

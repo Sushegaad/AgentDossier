@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-05) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
 "evidence_url": "https://contractors.agentlookups.ai/",
 "framework": "dora",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "3bcc92a3d3c31825e50e647a2adb9c5a760ae548d9b6631ed8e0d4c3e1344aad",
+"next_check": "2026-10-17",
+"payload_hash": "39b4c170792aa181702ab529ffcb97ad79a246423d0b605244be171dc6e17cc1",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:46:01Z",
+"retrieved_at": "2026-10-10T05:06:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,7 +75,7 @@
 "external_ids": {
 "mcp_registry": "ai.agentlookups/plumbline"
 },
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -97,19 +97,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": null,
 "name": "Plumbline - Contractor License Checks",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:39:36Z",
+"checked_at": "2026-10-10T04:58:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:39:04Z",
+"checked_at": "2026-10-10T04:58:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -132,7 +132,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:51:06Z",
+"checked_at": "2026-10-10T05:12:06Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -149,8 +149,8 @@
 "slug": "agentlookups-ai-plumbline-contractor-license-checks",
 "sources": [
 {
-"payload_hash": "e8f065c376ca6daf00e1bad685f2840fb6023b6b9103d9fcf2286a3e4508d9e5",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentlookups/plumbline"
 }

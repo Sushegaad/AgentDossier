@@ -21,16 +21,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/google",
 "framework": "csa_star",
 "issued": "2017-02-21",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:42:49Z",
+"retrieved_at": "2026-10-10T05:02:43Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -51,16 +51,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "20x Low"
 },
-"display": "FedRAMP 20x Low: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-05) (pending publisher verification)",
+"display": "FedRAMP 20x Low: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2604952026",
 "framework": "fedramp",
 "issued": "2026-01-21",
 "issuer": "Program / 3PAO Federal Risk and Authorization Management Program",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "efa08f56199604670b420ee110b0ec2c7ff2ec017d01b4f767879bf426cbdd8b",
+"next_check": "2026-10-17",
+"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:41:48Z",
+"retrieved_at": "2026-10-10T05:01:16Z",
 "review_reason": "entity 1.00, offering 1.00",
 "reviewer": null,
 "scope": "product",
@@ -278,7 +278,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -300,35 +300,26 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Commercial",
 "name": "Google Gemini for Government",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://cloud.google.com/.well-known/agent.json",
-"checked_at": "2026-10-05T13:38:58Z",
-"errors": [
-"not valid JSON"
-],
+"checked_at": "2026-10-10T04:58:30Z",
 "parser_version": "a2a-0.3+1.0",
-"status": "invalid"
+"status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:38:57Z",
-"errors": [
-"https://cloud.google.com/.well-known/ard.json: not valid JSON",
-"https://cloud.google.com/.well-known/ai-catalog.json: not valid JSON"
-],
+"checked_at": "2026-10-10T04:58:29Z",
 "parser_version": "ard-0.91",
-"status": "invalid"
+"status": "not_found"
 },
 "mcp": {
-"card_url": "https://cloud.google.com/.well-known/mcp.json",
-"checked_at": "2026-10-05T13:38:58Z",
+"checked_at": "2026-10-10T04:58:30Z",
 "parser_version": "mcp-2025-06-18",
-"status": "invalid"
+"status": "not_found"
 }
 },
 "publisher_domain": "cloud.google.com",
@@ -336,7 +327,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:13Z",
+"checked_at": "2026-10-10T05:09:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -352,7 +343,7 @@
 "sources": [
 {
 "payload_hash": "74a9ee249e77c8f39bb8b2ae0b116c08a333c21d00c503a80d099d8911a65a38",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://cloud.google.com/solutions/government"
 }

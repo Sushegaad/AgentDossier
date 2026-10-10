@@ -19,7 +19,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 28.07,
+"adoption": 28.08,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -49,7 +49,7 @@
 "external_ids": {
 "github": "code-yeongyu/oh-my-openagent"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -71,47 +71,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "Other",
 "name": "oh-my-openagent",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-05T03:45:02Z",
-"headline": "oh-my-openagent v5.1.19",
+"date": "2026-10-09T17:49:08Z",
+"headline": "oh-my-openagent v5.1.29",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Code mode can install JavaScript packages per session.** 5.1.19 runs on senpi 2026.10.10. A cell that is only `%bun add <package ...>` or `%npm add <package ...>` installs packages into the session's own managed environment without restar",
+"summary": "**Child tasks and Kibitzer wakes of a fast-mode session no longer fail with `model_unavailable`: a `-fast` pin is accepted when the session starts on its paired base model.** Since 5.1.25, a category pinned to a `-fast` catalog variant such",
 "tag": "product_update",
-"url": "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v5.1.19"
+"url": "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v5.1.29"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-04T23:29:48Z",
-"headline": "oh-my-openagent v5.1.18",
+"date": "2026-10-09T07:48:53Z",
+"headline": "oh-my-openagent v5.1.28",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**`omo models discover`, `omo schedule` and the other one-shot engine commands run again instead of opening the TUI.** 5.1.18 runs on senpi 2026.10.9. The launcher passed only a fixed list of commands straight to the engine and put `--exten",
+"summary": "**omo runs on senpi 2026.10.10-10.** With several Anthropic Subscription accounts, a session no longer switches accounts on a transient error and back on the next turn; it retries the same account, then stays on whichever account holds its",
 "tag": "product_update",
-"url": "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v5.1.18"
+"url": "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v5.1.28"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:28Z",
+"checked_at": "2026-10-10T05:00:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:18Z",
+"checked_at": "2026-10-10T04:59:51Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:31Z",
+"checked_at": "2026-10-10T05:00:07Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -121,7 +121,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:06Z",
+"checked_at": "2026-10-10T05:17:33Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -129,19 +129,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-03T01:40:05Z",
-"github_forks": 5746,
+"github_forks": 5744,
 "github_language": "TypeScript",
-"github_open_issues": 1135,
-"github_pushed_at": "2026-10-05T08:25:56Z",
-"github_stars": 69809,
+"github_open_issues": 1177,
+"github_pushed_at": "2026-10-10T04:25:20Z",
+"github_stars": 69923,
 "github_topic": "ai-agents",
 "homepage": "https://omo.dev"
 },
 "slug": "code-yeongyu-oh-my-openagent",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/code-yeongyu/oh-my-openagent"
 }

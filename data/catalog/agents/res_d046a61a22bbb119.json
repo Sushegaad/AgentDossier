@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.59,
+"adoption": 26.61,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -54,7 +54,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.59,
+"adoption": 26.61,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.0,
@@ -82,7 +82,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.59,
+"adoption": 26.61,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -112,7 +112,7 @@
 "external_ids": {
 "github": "VectifyAI/PageIndex"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -153,47 +153,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
 "name": "PageIndex",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-08T05:20:41Z",
+"headline": "PageIndex v0.2.22",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "- The **PageIndex SDK**, **local** or **cloud** — vectorless, reasoning-based RAG, end to end.\n- **Much faster indexing** — the **PageIndex Flash** engine gets the tree from layout stats: no LLM involved for the structure generation itself,",
+"tag": "product_update",
+"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.2.22"
+},
+{
+"cluster_size": 1,
 "date": "2026-10-01T15:26:25Z",
 "headline": "PageIndex v0.2.21",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "- The **PageIndex SDK**, **local** or **cloud** — vectorless, reasoning-based RAG, end to end.\n- **Much faster indexing** — the **PageIndex Flash** engine gets the tree from layout stats: no LLM involved for the structure generation itself,",
 "tag": "product_update",
 "url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.2.21"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-28T14:03:36Z",
-"headline": "PageIndex v0.2.20",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "- The **PageIndex SDK**, **local** or **cloud** — vectorless, reasoning-based RAG, end to end.\n- **Much faster indexing** — the **PageIndex Flash** engine gets the tree from layout stats: no LLM involved for the structure generation itself,",
-"tag": "product_update",
-"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.2.20"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:26Z",
+"checked_at": "2026-10-10T04:59:59Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:25Z",
+"checked_at": "2026-10-10T04:59:58Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:27Z",
+"checked_at": "2026-10-10T05:00:00Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -203,7 +203,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:26Z",
+"checked_at": "2026-10-10T05:17:58Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -211,19 +211,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-01T10:53:54Z",
-"github_forks": 3350,
+"github_forks": 3383,
 "github_language": "Python",
-"github_open_issues": 119,
-"github_pushed_at": "2026-10-05T10:43:14Z",
-"github_stars": 38670,
+"github_open_issues": 122,
+"github_pushed_at": "2026-10-08T05:18:34Z",
+"github_stars": 39027,
 "github_topic": "ai-agents",
 "homepage": "https://pageindex.ai"
 },
 "slug": "vectifyai-pageindex",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/VectifyAI/PageIndex"
 }

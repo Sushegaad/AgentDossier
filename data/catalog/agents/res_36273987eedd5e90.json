@@ -2,7 +2,112 @@
 "canonical_url": "github.com/pydantic/pydantic-ai",
 "category": "Agent framework",
 "commercial": false,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-10)",
+"evidence_url": "https://pydantic.dev/logfire/agent-governance",
+"framework": "eu_ai_act",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "7fc4e66a619e0b9251accf3cce198215d3619afb8384fe65d5ca0d7a394900fa",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:07:59Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ART50_STATEMENT"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10)",
+"evidence_url": "https://pydantic.dev/security",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:07:59Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-10)",
+"evidence_url": "https://pydantic.dev/security",
+"framework": "hipaa",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:07:59Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "BAA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10)",
+"evidence_url": "https://pydantic.dev/security",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:07:59Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
+}
+],
 "components": {
 "adoption": 25.0,
 "docs": 10.0,
@@ -20,9 +125,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"soc2": 0.3
+},
+"score": 75.2,
+"value": 6.0,
 "version": "sar-score-1.1"
 },
 "profile": "security",
@@ -36,9 +143,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"soc2": 0.3
+},
+"score": 83.3,
+"value": 6.0,
 "version": "sar-score-1.1"
 },
 "profile": "data",
@@ -52,9 +161,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"soc2": 0.3
+},
+"score": 68.1,
+"value": 6.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -69,8 +180,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 67.2,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -84,9 +195,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"hipaa": 0.3,
+"soc2": 0.3
+},
+"score": 69.0,
+"value": 12.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -100,9 +214,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"hipaa": 0.3,
+"soc2": 0.3
+},
+"score": 68.7,
+"value": 10.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -116,9 +233,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"soc2": 0.3
+},
+"score": 68.1,
+"value": 6.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -132,9 +251,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"soc2": 0.3
+},
+"score": 68.1,
+"value": 6.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -148,9 +269,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"gdpr": 0.3,
+"soc2": 0.3
+},
+"score": 78.9,
+"value": 12.0,
 "version": "sar-score-1.1"
 },
 "profile": "commercial",
@@ -164,9 +288,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"soc2": 0.3
+},
+"score": 76.2,
+"value": 7.5,
 "version": "sar-score-1.1"
 },
 "profile": "operations",
@@ -180,9 +306,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
+"credited": {
+"soc2": 0.3
+},
+"score": 85.7,
+"value": 6.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -193,8 +321,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "pydantic/pydantic-ai"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -203,14 +333,14 @@
 "id": "res_36273987eedd5e90",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"standards_metadata_at_publisher_domain"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 2
 },
 "issues": {
 "advisories": 0,
-"cves": 6,
+"cves": 16,
 "incidents": 0,
 "links": [
 {
@@ -248,37 +378,160 @@
 "kind": "cve",
 "title": "CVE-2026-65975",
 "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65975"
+},
+{
+"date": "2026-10-08",
+"kind": "cve",
+"title": "CVE-2026-107286",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107286"
+},
+{
+"date": "2026-10-08",
+"kind": "cve",
+"title": "CVE-2026-107287",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107287"
+},
+{
+"date": "2026-10-08",
+"kind": "cve",
+"title": "CVE-2026-107288",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107288"
+},
+{
+"date": "2026-10-08",
+"kind": "cve",
+"title": "CVE-2026-107289",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107289"
 }
 ],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "MIT",
 "name": "Pydantic AI",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-09T19:20:25Z",
+"headline": "pydantic-ai v2.55.0 (2026-10-09)",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at main -->\n\n## What's Changed\n### ⚠️ Compatibility Notes\n* Require Python 3.11 or newer in every package; Python 3.10 installs resolve to 2.54.0 and earlier by @Kludex",
+"tag": "product_update",
+"url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.55.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-06T01:25:23Z",
+"headline": "pydantic-ai CLAI2 bleeding",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Sdists rebuilt from `main` for `/update` on the CLAI `bleeding` channel. Not a release.",
+"tag": "product_update",
+"url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"auth_schemes": [
+"oauth2"
+],
+"card_url": "https://pydantic.dev/.well-known/agent-card.json",
+"checked_at": "2026-10-10T05:00:05Z",
+"parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3.0",
+"signed": false,
+"skills": [
+"Query telemetry data",
+"Manage dashboards",
+"Manage alerts",
+"Manage feature flags",
+"Manage notification channels",
+"Execute Python in a sandbox"
+],
+"status": "verified",
+"version": "1.0.0"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T05:00:04Z",
+"entries": 4,
+"parser_version": "ard-0.91",
+"sources": [
+"https://pydantic.dev/.well-known/ard.json"
+],
+"status": "verified"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"card_url": "https://pydantic.dev/.well-known/mcp.json",
+"checked_at": "2026-10-10T05:00:05Z",
+"parser_version": "mcp-2025-06-18",
+"status": "invalid",
+"tools": [
+"token_info",
+"query_schema_reference",
+"query_run",
+"query_find_exceptions_in_file",
+"project_list",
+"project_logfire_link",
+"dashboard_list",
+"dashboard_get",
+"dashboard_create",
+"dashboard_update",
+"dashboard_delete",
+"dashboard_update_settings",
+"dashboard_add_panel",
+"dashboard_update_panel",
+"dashboard_remove_panel",
+"dashboard_update_variables",
+"dashboard_add_variable",
+"dashboard_update_variable",
+"dashboard_remove_variable",
+"dashboard_create_group",
+"dashboard_delete_group",
+"dashboard_rename_group",
+"dashboard_toggle_group_collapse",
+"dashboard_reorder_groups",
+"alert_list",
+"alert_get",
+"alert_history",
+"alert_status",
+"alert_create",
+"alert_update",
+"alert_delete",
+"issue_list",
+"issue_set_states",
+"variable_list",
+"variable_get",
+"variable_list_versions",
+"variable_create",
+"variable_update",
+"variable_delete",
+"variable_update_rollout",
+"variable_create_version",
+"variable_assign_label",
+"channel_list",
+"channel_get",
+"channel_create_webhook",
+"channel_create_opsgenie",
+"channel_update_webhook",
+"channel_update_opsgenie",
+"channel_delete",
+"exec",
+"help"
+]
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "pydantic.dev",
 "resource_type": "framework",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:48Z",
-"cves": 6,
+"checked_at": "2026-10-10T05:10:39Z",
+"cves": 16,
 "source": "nvd",
 "tier": 1
 },
@@ -287,24 +540,48 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2024-06-21T15:55:04Z",
+"github_forks": 2896,
+"github_language": "Python",
+"github_open_issues": 1388,
+"github_pushed_at": "2026-10-10T03:51:21Z",
+"github_stars": 20516,
+"homepage": "https://pydantic.dev/pydantic-ai",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "pydantic/pydantic-ai"
+}
 },
 "slug": "pydantic-pydantic-ai",
 "sources": [
 {
 "payload_hash": "eed9caccefb340e0fbf1f507da7b5452330843471ed14bc0c0caefc82217a2c9",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/pydantic/pydantic-ai"
 }
 ],
-"tags": [],
+"tags": [
+"agent-framework",
+"genai",
+"harness",
+"harness-engineering",
+"llm",
+"pydantic",
+"python"
+],
 "tenant": null,
 "trust": {
-"compliance": 5,
-"identity": 4,
+"compliance": 4,
+"identity": 2,
 "issues": 3,
-"protocols": 5,
+"protocols": 1,
 "security": 1
 },
 "url": "https://github.com/pydantic/pydantic-ai",

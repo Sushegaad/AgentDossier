@@ -27,7 +27,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.52,
+"adoption": 23.54,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -55,7 +55,7 @@
 },
 "cybersecurity": {
 "components": {
-"adoption": 23.52,
+"adoption": 23.54,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -83,7 +83,7 @@
 },
 "data": {
 "components": {
-"adoption": 23.52,
+"adoption": 23.54,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -111,7 +111,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.52,
+"adoption": 23.54,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -141,7 +141,7 @@
 "external_ids": {
 "github": "jo-inc/camofox-browser"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -163,31 +163,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "MIT",
 "name": "camofox-browser",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-07T03:38:46Z",
+"headline": "camofox-browser Camoufox backup v156.0.1-beta.36",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Backup of [v156.0.1-beta.36](https://github.com/daijro/camoufox/releases/tag/v156.0.1-beta.36) from `daijro/camoufox`.\n\nThis is an availability backup. Verify the archive against `SHA256SUMS` before use.\n\n- Mirrored archives: 6\n- Total sour",
+"tag": "product_update",
+"url": "https://github.com/jo-inc/camofox-browser/releases/tag/camoufox-backup-404310733"
+},
+{
+"cluster_size": 1,
 "date": "2026-10-05T02:45:36Z",
 "headline": "camofox-browser v1.18.1 — VNC compatibility and MCP startup fix",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## v1.18.1\n\nA small patch for two broken paths:\n\n- **Bundled MCP server starts again.** The root npm package now includes the `mcp/package.json` that its `camofox-browser-mcp` command reads at startup. Fixes [#12323](https://github.com/jo-i",
 "tag": "product_update",
 "url": "https://github.com/jo-inc/camofox-browser/releases/tag/v1.18.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-04T04:36:33Z",
-"headline": "camofox-browser Camoufox backup v156.0.1-beta.34",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "Backup of [v156.0.1-beta.34](https://github.com/daijro/camoufox/releases/tag/v156.0.1-beta.34) from `daijro/camoufox`.\n\nThis is an availability backup. Verify the archive against `SHA256SUMS` before use.\n\n- Mirrored archives: 6\n- Total sour",
-"tag": "product_update",
-"url": "https://github.com/jo-inc/camofox-browser/releases/tag/camoufox-backup-402708180"
 }
 ],
 "news_checked": true,
@@ -210,7 +210,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:42Z",
+"checked_at": "2026-10-10T05:19:20Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -218,19 +218,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-26T07:31:13Z",
-"github_forks": 1146,
+"github_forks": 1148,
 "github_language": "JavaScript",
-"github_open_issues": 155,
-"github_pushed_at": "2026-10-05T02:38:56Z",
-"github_stars": 11434,
+"github_open_issues": 169,
+"github_pushed_at": "2026-10-07T03:38:45Z",
+"github_stars": 11509,
 "github_topic": "ai-agent",
 "homepage": "https://github.com/jo-inc/camofox-browser#readme"
 },
 "slug": "jo-inc-camofox-browser",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/jo-inc/camofox-browser"
 }

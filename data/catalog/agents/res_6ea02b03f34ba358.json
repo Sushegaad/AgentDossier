@@ -112,7 +112,7 @@
 "external_ids": {
 "github": "affaan-m/ECC"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -134,18 +134,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
 "name": "ECC",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-01T23:00:36Z",
+"headline": "ECC v2.2.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# ECC 2.2.3\n\nECC 2.2.3 is a naming and release-reliability update. The project is called ECC\neverywhere it ships, starting with the `pi/core` profile, and the release\nworkflow now waits long enough for npm to serve a freshly published versi",
+"tag": "product_update",
+"url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.3"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-30T19:04:52Z",
+"headline": "ECC v2.2.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# ECC 2.2.2\n\nECC 2.2.2 adds `pi/core`, a curated Pi-native skills+prompts-only profile built for\ndownstream packagers that mirror GitHub Releases, plus a set of packaging, memory,\nhooks, and Windows compatibility fixes.\n\n## Pi core profile",
+"tag": "product_update",
+"url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.2"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:39:24Z",
+"checked_at": "2026-10-10T04:58:59Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:39:23Z",
+"checked_at": "2026-10-10T04:58:59Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -153,7 +177,7 @@
 "evidence_url": "https://ecc.tools",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:39:25Z",
+"checked_at": "2026-10-10T04:59:00Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -166,19 +190,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-18T00:51:51Z",
-"github_forks": 40794,
+"github_forks": 41189,
 "github_language": "JavaScript",
-"github_open_issues": 347,
-"github_pushed_at": "2026-10-05T04:55:16Z",
-"github_stars": 273317,
+"github_open_issues": 225,
+"github_pushed_at": "2026-10-10T01:41:12Z",
+"github_stars": 276066,
 "github_topic": "ai-agents",
 "homepage": "https://ecc.tools"
 },
 "slug": "affaan-m-ecc",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/affaan-m/ECC"
 }
@@ -197,7 +221,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 3,
 "security": null
 },

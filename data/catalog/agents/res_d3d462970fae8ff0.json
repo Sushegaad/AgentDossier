@@ -20,7 +20,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 22.45,
+"adoption": 22.48,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -48,7 +48,7 @@
 },
 "technology": {
 "components": {
-"adoption": 22.45,
+"adoption": 22.48,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -78,7 +78,7 @@
 "external_ids": {
 "github": "plastic-labs/honcho"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -100,23 +100,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:15Z",
+"last_seen": "2026-10-10T04:50:21Z",
 "license": "AGPL-3.0",
 "name": "honcho",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-01T18:56:13Z",
+"headline": "honcho v3.2.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Added\n\n- `CACHE_CONNECT_TIMEOUT_SECONDS` (default 5) and `CACHE_CONNECT_RETRIES` (default 3). The Redis client retries a failed connect with exponential backoff (0.1s base, 0.5s cap), so an instance that boots alongside several others n",
+"tag": "product_update",
+"url": "https://github.com/plastic-labs/honcho/releases/tag/v3.2.2"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-24T19:43:32Z",
+"headline": "honcho v3.2.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Honcho API 3.2.1\n\n#### Added\n\n- Chat evidence conclusions carry `observer_id` and `observed_id`, matching the Conclusions response. Workspace chat reads across every peer into one evidence list, so each row now says which pair it belongs",
+"tag": "product_update",
+"url": "https://github.com/plastic-labs/honcho/releases/tag/v3.2.1"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:39:46Z",
+"checked_at": "2026-10-10T04:59:21Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:39:45Z",
+"checked_at": "2026-10-10T04:59:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:39:46Z",
+"checked_at": "2026-10-10T04:59:21Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -127,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-09-10T21:29:54Z",
-"github_forks": 918,
+"github_forks": 930,
 "github_language": "Python",
-"github_open_issues": 165,
-"github_pushed_at": "2026-10-02T21:21:22Z",
-"github_stars": 7468,
+"github_open_issues": 160,
+"github_pushed_at": "2026-10-09T22:33:07Z",
+"github_stars": 7549,
 "github_topic": "ai-agents",
 "homepage": "https://honcho.dev/docs"
 },
 "slug": "plastic-labs-honcho",
 "sources": [
 {
-"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
-"retrieved_at": "2026-10-05T13:31:15Z",
+"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
+"retrieved_at": "2026-10-10T04:50:21Z",
 "system": "github",
 "url": "https://github.com/plastic-labs/honcho"
 }
@@ -160,7 +184,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

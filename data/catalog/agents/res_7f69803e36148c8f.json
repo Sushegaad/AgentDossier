@@ -2,7 +2,86 @@
 "canonical_url": "github.com/huggingface/smolagents",
 "category": "Agent framework",
 "commercial": false,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://huggingface.co/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "c9d478536a203f478c3818538f637969a00599c477d851ff19a9a481563b3be4",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:07:10Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://huggingface.co/docs/hub/security",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "b1c4bad747ae0e03b5c8e63500c1eaa65984bcc883418cc27883041f52760a56",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:07:10Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://huggingface.co/docs/hub/security",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "b1c4bad747ae0e03b5c8e63500c1eaa65984bcc883418cc27883041f52760a56",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:07:10Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
+}
+],
 "components": {
 "adoption": 24.0,
 "docs": 10.0,
@@ -21,8 +100,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 73.9,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "security",
@@ -37,8 +116,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 66.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -53,8 +132,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 66.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -69,8 +148,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 66.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -85,8 +164,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 66.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -101,8 +180,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 66.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -117,8 +196,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 66.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -133,8 +212,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 77.5,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "commercial",
@@ -149,8 +228,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 75.2,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "operations",
@@ -165,8 +244,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 84.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -177,8 +256,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "huggingface/smolagents"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -187,10 +268,10 @@
 "id": "res_7f69803e36148c8f",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -213,7 +294,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Apache-2.0",
 "name": "Hugging Face smolagents",
 "news": [],
@@ -237,7 +318,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:52Z",
+"checked_at": "2026-10-10T05:10:41Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -247,13 +328,26 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "29.5k"
+"github_archived": false,
+"github_created_at": "2024-12-05T11:28:04Z",
+"github_forks": 3055,
+"github_language": "Python",
+"github_open_issues": 890,
+"github_pushed_at": "2026-10-06T18:35:07Z",
+"github_stars": 29760,
+"observed_popularity": "29.5k",
+"seed_enrich": {
+"changed": [
+"external_ids.github"
+],
+"repo": "huggingface/smolagents"
+}
 },
 "slug": "hugging-face-hugging-face-smolagents",
 "sources": [
 {
 "payload_hash": "b96d27e86fea6156017cd3077c11e6037d0b5abbe195428a83b5960ccd077df9",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/huggingface/smolagents"
 }
@@ -261,8 +355,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 5,
-"identity": 4,
+"compliance": 4,
+"identity": 3,
 "issues": 3,
 "protocols": 5,
 "security": 1

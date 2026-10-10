@@ -1,0 +1,158 @@
+{
+"canonical_url": "api.aivikings.ai/openapi.json",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"api"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10)",
+"evidence_url": "https://aivikings.ai/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "c6317c4604882fe209d328b80aa9c808a327420185f5deb808dc662354b3b694",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:04:55Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+}
+],
+"deployment": null,
+"description": null,
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 5.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": 10.0,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": 25.9,
+"value": 0.0,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 25.9,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:aivikings.ai:api:rest"
+},
+"first_seen": "2026-10-10T04:58:05Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_3d0b57233d90ee0f",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-10T04:58:05Z",
+"license": null,
+"name": "AIvikings REST API",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:aivikings.ai:api:rest",
+"manifest_url": "https://aivikings.ai/.well-known/ai-catalog.json",
+"media_type": "application/vnd.oai.openapi+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "aivikings.ai",
+"representative_queries": [
+"register a domain via API",
+"check domain pricing programmatically",
+"list my domain portfolio"
+],
+"resource_type": "api",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-10T05:20:29Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "aivikings-ai-aivikings-rest-api",
+"sources": [
+{
+"payload_hash": "8efb4598778de84fe87830c49dfcf5d261a0eb3bd139344c5194ad648d1cd03d",
+"retrieved_at": "2026-10-10T04:58:05Z",
+"system": "ard",
+"url": "https://aivikings.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 4,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://api.aivikings.ai/openapi.json",
+"vendor": "aivikings.ai"
+}

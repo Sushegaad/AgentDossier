@@ -28,7 +28,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.12,
+"adoption": 26.18,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -56,7 +56,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.12,
+"adoption": 26.18,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -84,7 +84,7 @@
 },
 "sales": {
 "components": {
-"adoption": 26.12,
+"adoption": 26.18,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -112,7 +112,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.12,
+"adoption": 26.18,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -131,7 +131,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 68.8,
+"score": 68.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -142,7 +142,7 @@
 "external_ids": {
 "github": "Tencent/WeKnora"
 },
-"first_seen": "2026-10-05T13:37:28Z",
+"first_seen": "2026-10-10T04:56:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -164,34 +164,49 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:37:28Z",
+"last_seen": "2026-10-10T04:56:24Z",
 "license": "Other",
 "name": "WeKnora",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-24T06:43:43Z",
+"headline": "WeKnora v0.8.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* feat(session): show owner badge for API sessions in sidebar by @FincherYuan in https://github.com/Tencent/WeKnora/pull/3024\r\n* fix(agent): web_fetch 兼容 LLM 双重序列化的 items 参数 by @asmh1989 in https://github.com/Tencent/WeKn",
+"tag": "product_update",
+"url": "https://github.com/Tencent/WeKnora/releases/tag/v0.8.2"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-03T07:03:36Z",
+"headline": "WeKnora v0.8.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* fix(tenant): clear stale home tenant after member removal by @jiahao6635 in https://github.com/Tencent/WeKnora/pull/2589\r\n* Feat/issue 2401 auto tag by @Syt3s in https://github.com/Tencent/WeKnora/pull/2548\r\n* fix(knowl",
+"tag": "product_update",
+"url": "https://github.com/Tencent/WeKnora/releases/tag/v0.8.0"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://weknora.weixin.qq.com/.well-known/agent.json",
-"checked_at": "2026-10-05T13:41:21Z",
-"errors": [
-"not valid JSON"
-],
+"checked_at": "2026-10-10T05:00:36Z",
 "parser_version": "a2a-0.3+1.0",
-"status": "invalid"
+"status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:41:17Z",
-"errors": [
-"https://weknora.weixin.qq.com/.well-known/ard.json: not valid JSON",
-"https://weknora.weixin.qq.com/.well-known/ai-catalog.json: not valid JSON"
-],
+"checked_at": "2026-10-10T05:00:33Z",
 "parser_version": "ard-0.91",
-"status": "invalid"
+"status": "not_found"
 },
 "mcp": {
-"card_url": "https://weknora.weixin.qq.com/.well-known/mcp.json",
-"checked_at": "2026-10-05T13:41:23Z",
+"checked_at": "2026-10-10T05:00:37Z",
 "parser_version": "mcp-2025-06-18",
-"status": "invalid"
+"status": "not_found"
 }
 },
 "publisher_domain": "weknora.weixin.qq.com",
@@ -200,19 +215,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-22T08:01:23Z",
-"github_forks": 4279,
+"github_forks": 4373,
 "github_language": "Go",
-"github_open_issues": 663,
-"github_pushed_at": "2026-10-01T11:57:46Z",
-"github_stars": 32114,
+"github_open_issues": 603,
+"github_pushed_at": "2026-10-10T03:59:00Z",
+"github_stars": 32895,
 "github_topic": "agentic",
 "homepage": "https://weknora.weixin.qq.com"
 },
 "slug": "tencent-weknora",
 "sources": [
 {
-"payload_hash": "96de907abc8546fb010bdb5d46b760998b42a7b62d23d61a72c092c67db9d52f",
-"retrieved_at": "2026-10-05T13:37:28Z",
+"payload_hash": "e9183efb7c3d6703efb0ffaaf433cad1073f34f1215bf3f4e7289a159e99115b",
+"retrieved_at": "2026-10-10T04:56:24Z",
 "system": "github",
 "url": "https://github.com/Tencent/WeKnora"
 }
@@ -243,7 +258,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

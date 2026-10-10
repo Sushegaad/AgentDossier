@@ -19,16 +19,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/sap",
 "framework": "csa_star",
 "issued": "2016-06-25",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:42:48Z",
+"retrieved_at": "2026-10-10T05:02:42Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -246,7 +246,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -268,24 +268,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "SAP service",
 "name": "SAP Joule Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:42Z",
+"checked_at": "2026-10-10T05:00:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:39Z",
+"checked_at": "2026-10-10T05:00:10Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:43Z",
+"checked_at": "2026-10-10T05:00:20Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -295,7 +295,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:01Z",
+"checked_at": "2026-10-10T05:09:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -311,7 +311,7 @@
 "sources": [
 {
 "payload_hash": "752572dc1bca02c2f0b6ef9491aacc57c776240d8634163ea0a58998e22c8ff9",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html"
 }

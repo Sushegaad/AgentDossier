@@ -113,8 +113,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "open-webui/open-webui"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,10 +125,10 @@
 "id": "res_0212992ec8356ec3",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -197,31 +199,62 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "BSD-3-Clause",
 "name": "Open WebUI",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-21T19:25:21Z",
+"headline": "open-webui v0.11.4",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Added\n\n- 📉 **Far smaller slim image.** A slim build now comes down at around 175 MB, near enough 89% smaller than the last release, the local models, the packages around them and the tools that installed them all gone from it; what tha",
+"tag": "product_update",
+"url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-31T14:55:53Z",
+"headline": "open-webui v0.11.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Added\n\n- ♿ **Accessibility mode reaches the menus.** Accessibility mode now marks the menu entry you are pointing at and the model already chosen with a stronger background, across the dropdown menus, their submenus, and the model pick",
+"tag": "product_update",
+"url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.3"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:56Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:55Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"evidence_url": "https://github.com/open-webui/open-webui",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-10T04:59:57Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "openwebui.com",
 "resource_type": "agent",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:00Z",
+"checked_at": "2026-10-10T05:09:40Z",
 "cves": 145,
 "source": "nvd",
 "tier": 1
@@ -231,24 +264,56 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2023-10-06T22:08:27Z",
+"github_forks": 22554,
+"github_language": "Python",
+"github_open_issues": 260,
+"github_pushed_at": "2026-10-09T21:28:43Z",
+"github_stars": 154168,
+"homepage": "https://openwebui.com",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "open-webui/open-webui"
+}
 },
 "slug": "open-webui-open-webui",
 "sources": [
 {
 "payload_hash": "85ea5ffc878375e6afa26b15618c522e900b3a273e1ae7d210522c7d84104cf7",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/open-webui/open-webui"
 }
 ],
-"tags": [],
+"tags": [
+"ai",
+"llm",
+"llm-ui",
+"llm-webui",
+"llms",
+"mcp",
+"ollama",
+"ollama-webui",
+"open-webui",
+"openai",
+"openapi",
+"rag",
+"self-hosted",
+"ui",
+"webui"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
+"identity": 3,
 "issues": 3,
-"protocols": 5,
+"protocols": 3,
 "security": 1
 },
 "url": "https://github.com/open-webui/open-webui",

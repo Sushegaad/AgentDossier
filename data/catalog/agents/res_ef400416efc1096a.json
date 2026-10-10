@@ -2,7 +2,34 @@
 "canonical_url": "github.com/rasahq/rasa",
 "category": "Conversational agent platform",
 "commercial": true,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://rasa.com/industries/finance-and-banking",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "82d16b24ae1df3dd8e65d2ba3a67b7669624f185f742e23f3a5b1a2b5a8c9fb1",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:08:02Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
+}
+],
 "components": {
 "adoption": 25.0,
 "docs": 10.0,
@@ -21,8 +48,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 86.6,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "general",
@@ -37,8 +64,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 83.6,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "security",
@@ -53,8 +80,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 79.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -69,8 +96,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 79.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -85,8 +112,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 79.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -101,8 +128,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 79.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -117,8 +144,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 79.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -133,8 +160,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 79.7,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -149,8 +176,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 87.3,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "commercial",
@@ -165,8 +192,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 88.1,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "operations",
@@ -181,8 +208,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 91.2,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -193,8 +220,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "RasaHQ/rasa"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -203,10 +232,10 @@
 "id": "res_ef400416efc1096a",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -216,31 +245,34 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Apache-2.0 core",
 "name": "Rasa Pro / CALM agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T05:00:08Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T05:00:07Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T05:00:08Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "rasa.com",
 "resource_type": "platform",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:03Z",
+"checked_at": "2026-10-10T05:09:43Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -250,22 +282,59 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2016-10-14T12:27:49Z",
+"github_forks": 4917,
+"github_language": "Python",
+"github_open_issues": 158,
+"github_pushed_at": "2026-07-24T07:39:04Z",
+"github_stars": 21345,
+"homepage": "https://rasa.com/docs/rasa/",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "RasaHQ/rasa"
+}
 },
 "slug": "rasa-rasa-pro-calm-agents",
 "sources": [
 {
 "payload_hash": "8340b571a604bd4d6650d8a9069cf474c296b7756da0d4e6df246824955c4ef7",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/RasaHQ/rasa"
 }
 ],
-"tags": [],
+"tags": [
+"bot",
+"bot-framework",
+"botkit",
+"bots",
+"chatbot",
+"chatbots",
+"chatbots-framework",
+"conversation-driven-development",
+"conversational-agents",
+"conversational-ai",
+"conversational-bots",
+"machine-learning",
+"machine-learning-library",
+"mitie",
+"natural-language-processing",
+"nlp",
+"nlu",
+"rasa",
+"spacy",
+"wit"
+],
 "tenant": null,
 "trust": {
-"compliance": 5,
-"identity": 4,
+"compliance": 4,
+"identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": 1

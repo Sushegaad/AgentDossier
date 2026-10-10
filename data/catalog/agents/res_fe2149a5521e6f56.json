@@ -35,16 +35,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR for AI: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR for AI: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:43:46Z",
+"retrieved_at": "2026-10-10T05:03:48Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -75,16 +75,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:43:46Z",
+"retrieved_at": "2026-10-10T05:03:48Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -93,6 +93,36 @@
 "tier": 1,
 "valid_until": null,
 "variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "FR1824057433",
+"covers_resource": "inherited",
+"credited": false,
+"detail": {
+"cso": "Microsoft 365 Government Community Cloud-High ",
+"csp": "Microsoft",
+"deployment_model": "Government Community Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "High"
+},
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://marketplace.fedramp.gov/products/FR1824057433",
+"framework": "fedramp",
+"issued": "2024-12-26",
+"issuer": "Agency / 3PAO Kratos",
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:02:06Z",
+"review_reason": "vendor authorization for Microsoft 365 Government Community Cloud-High ; entity 1.00",
+"reviewer": null,
+"scope": "entity",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_HIGH"
 },
 {
 "certificate_id": "microsoft",
@@ -115,16 +145,16 @@
 "validaited-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "iso42001",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:43:46Z",
+"retrieved_at": "2026-10-10T05:03:48Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -141,7 +171,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 28.3,
+"adoption": 28.31,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -167,7 +197,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.3,
+"adoption": 28.31,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -195,7 +225,7 @@
 "external_ids": {
 "github": "microsoft/ai-agents-for-beginners"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -217,35 +247,26 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
 "name": "ai-agents-for-beginners",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://www.bing.com/?ref=aka&shorturl=.well-known/agent.json",
-"checked_at": "2026-10-05T13:37:56Z",
-"errors": [
-"not valid JSON"
-],
+"checked_at": "2026-10-10T04:57:19Z",
 "parser_version": "a2a-0.3+1.0",
-"status": "invalid"
+"status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:37:55Z",
-"errors": [
-"https://aka.ms/.well-known/ard.json: not valid JSON",
-"https://aka.ms/.well-known/ai-catalog.json: not valid JSON"
-],
+"checked_at": "2026-10-10T04:57:18Z",
 "parser_version": "ard-0.91",
-"status": "invalid"
+"status": "not_found"
 },
 "mcp": {
-"card_url": "https://www.bing.com/?ref=aka&shorturl=.well-known/mcp.json",
-"checked_at": "2026-10-05T13:37:56Z",
+"checked_at": "2026-10-10T04:57:20Z",
 "parser_version": "mcp-2025-06-18",
-"status": "invalid"
+"status": "not_found"
 }
 },
 "publisher_domain": "aka.ms",
@@ -253,7 +274,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:02Z",
+"checked_at": "2026-10-10T05:17:28Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -261,19 +282,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-11-28T10:42:52Z",
-"github_forks": 25134,
+"github_forks": 25225,
 "github_language": "Jupyter Notebook",
-"github_open_issues": 26,
-"github_pushed_at": "2026-09-19T06:16:49Z",
-"github_stars": 76475,
+"github_open_issues": 17,
+"github_pushed_at": "2026-10-09T13:54:27Z",
+"github_stars": 76785,
 "github_topic": "ai-agents",
 "homepage": "https://aka.ms/ai-agents-beginners"
 },
 "slug": "microsoft-ai-agents-for-beginners",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/microsoft/ai-agents-for-beginners"
 }

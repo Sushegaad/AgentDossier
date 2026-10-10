@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 23.36,
+"adoption": 23.37,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 5.7,
@@ -47,7 +47,7 @@
 "external_ids": {
 "github": "xinnan-tech/xiaozhi-esp32-server"
 },
-"first_seen": "2026-10-05T13:35:44Z",
+"first_seen": "2026-10-10T04:54:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -82,7 +82,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "MIT",
 "name": "xiaozhi-esp32-server",
 "news": [
@@ -91,7 +91,7 @@
 "date": "2026-09-29T02:04:44Z",
 "headline": "xiaozhi-esp32-server v0.9.7",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "- 快照对话框新增代码对比视图，支持 `v-code-diff` 斜体样式兼容与窄屏适配\r\n- 阿里百炼 TTS 支持 workspace endpoints 与流式字幕同步\r\n- 参数管理按命名空间聚合展示，支持分页拉全量并重置空态全选\r\n- 豆包模型更新为 `doubao-seed-2-0-lite-260215`，DeepSeek 改为 `deepseek-v4-flash` 并关闭思考模式\r\n- 合并 HA 设备控制插件为 `hass_state` 模块，修复模块级插",
 "tag": "product_update",
@@ -102,7 +102,7 @@
 "date": "2026-07-24T03:41:18Z",
 "headline": "xiaozhi-esp32-server v0.9.6",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "- 在服务端增加了AEC（声学回声消除）功能，从此以后，单麦设备在编译环节开启了服务端AEC，也能实时打断了。消除了以往只有双麦设备才能实时打断的局限\r\n- 增加智能体快照的历史记录功能，害怕提示词丢失的问题，得到缓解\r\n- 解决了设备在跨时区使用时的时间显示和在线状态不一致的问题\r\n- 优化了声纹称呼的提示词和注入逻辑，减少了模型每次回答都带说话人信息的情况",
 "tag": "product_update",
@@ -112,12 +112,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:41:23Z",
+"checked_at": "2026-10-10T05:00:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:41:22Z",
+"checked_at": "2026-10-10T05:00:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -125,7 +125,7 @@
 "evidence_url": "http://xiaozhi.biz",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:41:24Z",
+"checked_at": "2026-10-10T05:00:36Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -137,7 +137,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:47Z",
+"checked_at": "2026-10-10T05:19:27Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -145,19 +145,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-02-02T14:25:16Z",
-"github_forks": 3665,
+"github_forks": 3673,
 "github_language": "JavaScript",
-"github_open_issues": 715,
-"github_pushed_at": "2026-09-29T04:16:41Z",
-"github_stars": 10732,
+"github_open_issues": 727,
+"github_pushed_at": "2026-10-09T09:27:12Z",
+"github_stars": 10766,
 "github_topic": "mcp-server",
 "homepage": "http://xiaozhi.biz"
 },
 "slug": "xinnan-tech-xiaozhi-esp32-server",
 "sources": [
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server"
 }

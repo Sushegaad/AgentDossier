@@ -82,7 +82,7 @@
 "github": "gallaghern51-art/calaf-mcp",
 "mcp_registry": "ai.calaf/calaf"
 },
-"first_seen": "2026-10-05T13:30:32Z",
+"first_seen": "2026-10-10T04:47:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,31 +104,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:32Z",
+"last_seen": "2026-10-10T04:47:51Z",
 "license": null,
 "merged_ids": [
 "res_16eefa37fe1a47dc"
 ],
 "name": "Calaf",
 "news": [],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://calaf.ai/.well-known/agent.json",
-"checked_at": "2026-10-05T13:38:46Z",
-"errors": [
-"not valid JSON"
-],
+"checked_at": "2026-10-10T04:58:20Z",
 "parser_version": "a2a-0.3+1.0",
-"status": "invalid"
+"status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:38:45Z",
-"errors": [
-"https://calaf.ai/.well-known/ard.json: not valid JSON",
-"https://calaf.ai/.well-known/ai-catalog.json: not valid JSON"
-],
+"checked_at": "2026-10-10T04:58:19Z",
 "parser_version": "ard-0.91",
-"status": "invalid"
+"status": "not_found"
 },
 "mcp": {
 "parser_version": "mcp-2025-06-18",
@@ -159,14 +152,14 @@
 "slug": "calaf-ai-calaf",
 "sources": [
 {
-"payload_hash": "25d508c119829b81d62714e8b2e43cfeb3829359ac8f2d6e78b2236f162eefd0",
-"retrieved_at": "2026-10-05T13:30:32Z",
+"payload_hash": "9f9384f268d76eedaa84dbfc9873dd0ad340355eb1999a09acd6162512996a4f",
+"retrieved_at": "2026-10-10T04:47:51Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.calaf/calaf"
 },
 {
-"payload_hash": "25d508c119829b81d62714e8b2e43cfeb3829359ac8f2d6e78b2236f162eefd0",
-"retrieved_at": "2026-10-05T13:30:32Z",
+"payload_hash": "9f9384f268d76eedaa84dbfc9873dd0ad340355eb1999a09acd6162512996a4f",
+"retrieved_at": "2026-10-10T04:47:51Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.calaf/seeds"
 }
@@ -176,7 +169,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 3,
 "security": null
 },

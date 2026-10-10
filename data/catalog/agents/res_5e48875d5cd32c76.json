@@ -209,8 +209,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "NVIDIA/NeMo-Agent-Toolkit"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -219,10 +221,10 @@
 "id": "res_5e48875d5cd32c76",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -239,31 +241,46 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Apache-2.0",
 "name": "NVIDIA NeMo Agent Toolkit",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-10T22:12:09Z",
+"headline": "NeMo-Agent-Toolkit v1.9.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at v1.9.0 -->\r\n\r\n## What's Changed\r\n### 🚨 Breaking Changes\r\n* chore: Remove `local_sandbox` by @dagardner-nv in https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2194",
+"tag": "product_update",
+"url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/releases/tag/v1.9.0"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:57Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:56Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:57Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "docs.nvidia.com",
 "resource_type": "framework",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:25Z",
+"checked_at": "2026-10-10T05:10:10Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -273,13 +290,28 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2025-03-06T17:23:52Z",
+"github_forks": 780,
+"github_language": "Python",
+"github_open_issues": 29,
+"github_pushed_at": "2026-10-08T00:15:30Z",
+"github_stars": 2662,
+"homepage": "https://docs.nvidia.com/nemo/agent-toolkit/latest/",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain"
+],
+"repo": "NVIDIA/NeMo-Agent-Toolkit"
+}
 },
 "slug": "nvidia-nvidia-nemo-agent-toolkit",
 "sources": [
 {
 "payload_hash": "25bfff0bb35f4a187050c2efc201ba99843b0dc1f7cbe8bf47d83d0cfbd712b0",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit"
 }
@@ -288,7 +320,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
+"identity": 3,
 "issues": 3,
 "protocols": 5,
 "security": 1

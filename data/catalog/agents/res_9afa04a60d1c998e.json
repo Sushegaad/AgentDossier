@@ -54,7 +54,7 @@
 "external_ids": {
 "github": "esengine/DeepSeek-Reasonix"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -83,47 +83,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "MIT",
 "name": "DeepSeek-Reasonix",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-05T00:54:26Z",
-"headline": "DeepSeek-Reasonix Reasonix CLI v2.28.0",
+"date": "2026-10-09T04:43:11Z",
+"headline": "DeepSeek-Reasonix Reasonix CLI v2.33.0",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "CLI archives built from the Studio release [studio-v2.28.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.28.0).",
+"summary": "CLI archives built from the Studio release [studio-v2.33.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.33.0).",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.28.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.33.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-05T00:51:38Z",
-"headline": "DeepSeek-Reasonix Reasonix Studio v2.28.0",
+"date": "2026-10-09T04:41:09Z",
+"headline": "DeepSeek-Reasonix Reasonix Studio v2.33.0",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "本版是第一个同时发布命令行 `reasonix` 的 Studio 版本：终端界面补齐 1.x 的常用命令并换上 2.x 内核，同时加固权限规则、插件安装与凭据显示，并新增提交说明草拟、用量日历范围和复制会话信息。\n\n## 新增\n\n- 命令行：本版起 `reasonix` 命令行随 Studio 一同发布，1.x 的命令行迁移到 2.x 内核，迁移差异见 `docs/MIGRATING.md` (#11968, #11920)\n- 终端界面：`/model`、`/provid",
+"summary": "本版把图标栏移到窗口最左侧并加入反馈入口与三档显示方式，新增模型选择器搜索与分组、HTML 文件页面预览和「视觉效果」节能档，补齐终端界面的多个按键，并修复队列编辑、回退重发、反馈截图和带天空主题包长时间占用显卡的问题。\n\n## 新增\n\n- 图标栏移到窗口最左边，底部新增带未读角标的「发送反馈」入口；外观页「图标栏」改为始终显示（默认）／仅侧栏折叠时显示／从不显示，立即生效 (#12428)\n- 输入框的模型选择器带搜索框（输入即过滤，回车选第一项，Esc 关闭），按服务商分",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.28.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.33.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:36Z",
+"checked_at": "2026-10-10T05:00:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:35Z",
+"checked_at": "2026-10-10T05:00:07Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:36Z",
+"checked_at": "2026-10-10T05:00:09Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -133,7 +133,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:30Z",
+"checked_at": "2026-10-10T05:18:01Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -141,19 +141,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-21T08:27:02Z",
-"github_forks": 2441,
+"github_forks": 2438,
 "github_language": "Go",
-"github_open_issues": 327,
-"github_pushed_at": "2026-10-05T12:49:58Z",
-"github_stars": 35731,
+"github_open_issues": 443,
+"github_pushed_at": "2026-10-10T04:42:47Z",
+"github_stars": 35751,
 "github_topic": "ai-agent",
 "homepage": "http://reasonix.io/"
 },
 "slug": "esengine-deepseek-reasonix",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/esengine/DeepSeek-Reasonix"
 }

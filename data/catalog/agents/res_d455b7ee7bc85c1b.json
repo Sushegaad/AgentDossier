@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 22.83,
+"adoption": 22.96,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -43,7 +43,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 61.9,
+"score": 62.0,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -52,7 +52,7 @@
 },
 "data": {
 "components": {
-"adoption": 22.83,
+"adoption": 22.96,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -71,7 +71,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 63.4,
+"score": 63.5,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -80,7 +80,7 @@
 },
 "technology": {
 "components": {
-"adoption": 22.83,
+"adoption": 22.96,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -99,7 +99,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 67.8,
+"score": 67.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -110,7 +110,7 @@
 "external_ids": {
 "github": "genspark-ai/genoffice"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -132,47 +132,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "Apache-2.0",
 "name": "genoffice",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-28T13:45:50Z",
-"headline": "genoffice GenOffice v0.11.0",
+"date": "2026-10-09T13:33:48Z",
+"headline": "genoffice GenOffice v0.11.505",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "GenOffice v0.11.0 stable desktop installers.\n\n## What's New\n\n- **Docs:** large multi-section documents open without pinning a CPU core, and a resource watchdog offers to close a runaway document; table column widths preview live while dragg",
+"summary": "GenOffice v0.11.505 stable desktop installers.\n\n## What's New\n\n- **PDF:** a Form Design tab to author fillable text, checkbox, radio, dropdown, date and signature fields, with multi-select, arrange and clipboard, editing of saved fields, an",
 "tag": "product_update",
-"url": "https://github.com/genspark-ai/genoffice/releases/tag/v0.11.0"
+"url": "https://github.com/genspark-ai/genoffice/releases/tag/v0.11.505"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-27T00:02:58Z",
-"headline": "genoffice GenOffice v0.10.1467",
+"date": "2026-10-08T08:17:33Z",
+"headline": "genoffice GenOffice v0.11.411",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "GenOffice v0.10.1467 stable desktop installers.\n\n## What's New\n\n- **Docs:** a large Word-parity batch — spelling suggestions and AutoCorrect, Find & Replace with wildcards and regex, a Navigation pane, rich header/footer editing, ruler inde",
+"summary": "GenOffice v0.11.411 stable desktop installers.\n\n## What's New\n\n- **Sheets:** a PivotTable Fields pane with report filters and every engine aggregation and show-as mode; an Excel-style Function Arguments dialog, Paste Special, Print with Pre",
 "tag": "product_update",
-"url": "https://github.com/genspark-ai/genoffice/releases/tag/v0.10.1467"
+"url": "https://github.com/genspark-ai/genoffice/releases/tag/v0.11.411"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:39:31Z",
+"checked_at": "2026-10-10T04:59:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:39:30Z",
+"checked_at": "2026-10-10T04:59:08Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:39:32Z",
+"checked_at": "2026-10-10T04:59:09Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -182,7 +182,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:58:07Z",
+"checked_at": "2026-10-10T05:19:46Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -190,19 +190,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-07-31T09:40:58Z",
-"github_forks": 1111,
+"github_forks": 1165,
 "github_language": "TypeScript",
-"github_open_issues": 81,
-"github_pushed_at": "2026-10-05T08:26:53Z",
-"github_stars": 8675,
+"github_open_issues": 65,
+"github_pushed_at": "2026-10-09T13:33:48Z",
+"github_stars": 9141,
 "github_topic": "ai-agent",
 "homepage": "https://genoffice.ai/"
 },
 "slug": "genspark-ai-genoffice",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/genspark-ai/genoffice"
 }

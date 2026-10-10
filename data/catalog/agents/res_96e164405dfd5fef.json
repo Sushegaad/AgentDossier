@@ -21,7 +21,7 @@
 "domains": {
 "cybersecurity": {
 "components": {
-"adoption": 25.0,
+"adoption": 25.01,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -49,7 +49,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.0,
+"adoption": 25.01,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -79,7 +79,7 @@
 "external_ids": {
 "github": "modelscope/FunASR"
 },
-"first_seen": "2026-10-05T13:35:44Z",
+"first_seen": "2026-10-10T04:54:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,10 +101,34 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "MIT",
 "name": "FunASR",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-18T05:42:45Z",
+"headline": "FunASR FunASR 1.4.16",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# FunASR 1.4.16\n\n## Highlights\n\n- **Reliable mixed-device pipelines:** explicit `vad_kwargs`, `punc_kwargs`, and `spk_kwargs` device placement is preserved across repeated inference calls. Runtime `device` overrides no longer mutate the pla",
+"tag": "product_update",
+"url": "https://github.com/modelscope/FunASR/releases/tag/v1.4.16"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-09T23:25:36Z",
+"headline": "FunASR funasr-onnx 0.4.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Standalone ONNX Runtime Python package\n\nInstall with:\n\n```bash\npython -m pip install --upgrade \"funasr-onnx==0.4.3\"\n```\n\nThis is the **funasr-onnx** distribution, not a new release of the separate **funasr** toolkit. Updating funasr alon",
+"tag": "product_update",
+"url": "https://github.com/modelscope/FunASR/releases/tag/funasr-onnx-v0.4.3"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
 "not_checked": "no_publisher_domain",
@@ -127,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-11-24T02:28:11Z",
-"github_forks": 2059,
+"github_forks": 2068,
 "github_language": "Python",
-"github_open_issues": 43,
-"github_pushed_at": "2026-10-02T04:51:05Z",
-"github_stars": 20585,
+"github_open_issues": 41,
+"github_pushed_at": "2026-10-08T06:50:57Z",
+"github_stars": 20623,
 "github_topic": "mcp-server",
 "homepage": "www.funasr.com"
 },
 "slug": "modelscope-funasr",
 "sources": [
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/modelscope/FunASR"
 }
@@ -170,7 +194,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 3,
 "security": null
 },

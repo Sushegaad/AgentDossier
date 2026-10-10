@@ -1,0 +1,145 @@
+{
+"canonical_url": "aimentiontracker.ai/.well-known/mcp/server-card.json",
+"capabilities": [
+"get_me",
+"list_brands",
+"get_visibility",
+"list_answers",
+"list_sources",
+"get_current_date",
+"get_sentiment",
+"get_share_of_voice",
+"list_competitors",
+"list_alerts"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": null,
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 6.0,
+"domain_fit": 34.0,
+"ecosystem": 7.6,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 30.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:aimentiontracker.ai:mcp:aimentiontracker"
+},
+"first_seen": "2026-10-10T04:58:05Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_87725fbf4438f814",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-10T04:58:05Z",
+"license": null,
+"name": "AIMentionTracker MCP server",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:aimentiontracker.ai:mcp:aimentiontracker",
+"manifest_url": "https://aimentiontracker.ai/.well-known/ard.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"server_card_url": "https://aimentiontracker.ai/.well-known/mcp/server-card.json",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "aimentiontracker.ai",
+"representative_queries": [
+"How often does ChatGPT name my brand?",
+"Which competitors do AI assistants recommend instead of us?",
+"Which sites do AI engines cite when they answer about my category?"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-10T05:20:24Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "aimentiontracker-ai-aimentiontracker-mcp-server",
+"sources": [
+{
+"payload_hash": "74c3f0316c87c619545b810b75d6569d50814f1e33fb5d82c65b016cd683c845",
+"retrieved_at": "2026-10-10T04:58:05Z",
+"system": "ard",
+"url": "https://aimentiontracker.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://aimentiontracker.ai/.well-known/mcp/server-card.json",
+"vendor": "aimentiontracker.ai"
+}

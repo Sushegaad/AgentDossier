@@ -23,7 +23,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 27.6,
+"adoption": 27.64,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -42,7 +42,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 66.3,
+"score": 66.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -51,7 +51,7 @@
 },
 "data": {
 "components": {
-"adoption": 27.6,
+"adoption": 27.64,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -79,7 +79,7 @@
 },
 "sales": {
 "components": {
-"adoption": 27.6,
+"adoption": 27.64,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -109,7 +109,7 @@
 "external_ids": {
 "github": "hugohe3/ppt-master"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -131,47 +131,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "MIT",
 "name": "ppt-master",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-08T02:01:38Z",
+"headline": "ppt-master v6.7.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Minor release: a browser review page for the design spec, Google's new Nano Banana 2.1 as the default Google image model, and fixes for content that source conversion and PPTX/SVG text round-trips used to lose without a warning.\n\n## Image g",
+"tag": "product_update",
+"url": "https://github.com/hugohe3/ppt-master/releases/tag/v6.7.0"
+},
+{
+"cluster_size": 1,
 "date": "2026-09-19T05:06:18Z",
 "headline": "ppt-master v6.6.0",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "Minor release from three days of end-to-end runs since v6.5.0: every route was driven through real decks — same-deck hyperlink navigation, Beautify under Quick, Edit Native with pages dropped and with a foreign PPTX used as a template, Crea",
 "tag": "product_update",
 "url": "https://github.com/hugohe3/ppt-master/releases/tag/v6.6.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-16T12:20:17Z",
-"headline": "ppt-master v6.5.0",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "Minor release from two focused rounds since v6.4.0: the Create Template / use-template flow was audited and reworked, and the Edit Native PPTX route was exercised on real government and university decks (multi-master, source animations, nat",
-"tag": "product_update",
-"url": "https://github.com/hugohe3/ppt-master/releases/tag/v6.5.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:39:47Z",
+"checked_at": "2026-10-10T04:59:22Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:39:47Z",
+"checked_at": "2026-10-10T04:59:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:39:48Z",
+"checked_at": "2026-10-10T04:59:22Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -181,7 +181,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:12Z",
+"checked_at": "2026-10-10T05:17:40Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -189,19 +189,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-10T06:54:33Z",
-"github_forks": 4561,
+"github_forks": 4643,
 "github_language": "Python",
-"github_open_issues": 5,
-"github_pushed_at": "2026-10-05T06:45:28Z",
-"github_stars": 57703,
+"github_open_issues": 6,
+"github_pushed_at": "2026-10-08T07:45:46Z",
+"github_stars": 58819,
 "github_topic": "ai-agent",
 "homepage": "https://hugohe3.github.io/ppt-master-examples/"
 },
 "slug": "hugohe3-ppt-master",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/hugohe3/ppt-master"
 }

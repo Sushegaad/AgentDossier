@@ -2,7 +2,34 @@
 "canonical_url": "github.com/mastra-ai/mastra",
 "category": "Agent framework",
 "commercial": true,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://mastra.ai/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "f65b0a9a01fa743d3b079ab71ccd52ae2dde2564348dc09b0f81a0fc12e676b9",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:07:26Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+}
+],
 "components": {
 "adoption": 24.0,
 "docs": 10.0,
@@ -21,8 +48,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 89.8,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -33,8 +60,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "mastra-ai/mastra"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -43,10 +72,10 @@
 "id": "res_14826ddbcfb85a27",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -56,25 +85,57 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Elastic-2.0",
 "name": "Mastra",
-"news": [],
+"news": [
+{
+"cluster_size": 2,
+"date": "2026-10-05T09:31:12Z",
+"headline": "mastra October 1, 2026",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Highlights\r\n\r\n### Tool Context Can Read the Full Conversation (`agent.getMessages()`)\r\nTools now have access to the current conversation state via `context.agent.getMessages()` in both standard and durable agent loops, including remember",
+"tag": "product_update",
+"url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.74.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-07T16:17:26Z",
+"headline": "mastra October 7, 2026",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Highlights\r\n\r\n### Span Query API (list completed spans across traces)\r\nNew core/server/client support lets you query individual completed spans (with filters, cursors, previews, and model cost) via `storage.querySpans()` / `client.queryS",
+"tag": "product_update",
+"url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.75.0"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:36Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:35Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"evidence_url": "https://github.com/mastra-ai/mastra",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-10T04:59:36Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "mastra.ai",
 "resource_type": "framework",
 "scope": "public",
 "seed": {
@@ -82,24 +143,54 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2024-08-06T20:44:31Z",
+"github_forks": 2947,
+"github_language": "TypeScript",
+"github_open_issues": 546,
+"github_pushed_at": "2026-10-10T04:55:44Z",
+"github_stars": 28674,
+"homepage": "https://mastra.ai",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "mastra-ai/mastra"
+}
 },
 "slug": "mastra-mastra",
 "sources": [
 {
 "payload_hash": "ed55274ab88591d562bd74fe65b633feaac631c779a3ca0ddfeb36eefd8ab326",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/mastra-ai/mastra"
 }
 ],
-"tags": [],
+"tags": [
+"agents",
+"ai",
+"chatbots",
+"evals",
+"javascript",
+"llm",
+"mcp",
+"nextjs",
+"nodejs",
+"reactjs",
+"tts",
+"typescript",
+"workflows"
+],
 "tenant": null,
 "trust": {
-"compliance": 5,
-"identity": 4,
-"issues": null,
-"protocols": 5,
+"compliance": 4,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
 "security": null
 },
 "url": "https://github.com/mastra-ai/mastra",

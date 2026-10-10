@@ -22,16 +22,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/google",
 "framework": "csa_star",
 "issued": "2017-02-21",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:42:44Z",
+"retrieved_at": "2026-10-10T05:02:38Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -40,6 +40,36 @@
 "tier": 1,
 "valid_until": null,
 "variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "F1206081364",
+"covers_resource": "inherited",
+"credited": false,
+"detail": {
+"cso": "Google Workspace",
+"csp": "Google",
+"deployment_model": "Hybrid Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "High"
+},
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://marketplace.fedramp.gov/products/F1206081364",
+"framework": "fedramp",
+"issued": "2021-10-28",
+"issuer": "JAB / 3PAO Coalfire Systems, Inc.",
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:01:11Z",
+"review_reason": "vendor authorization for Google Workspace; entity 1.00",
+"reviewer": null,
+"scope": "entity",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_HIGH"
 }
 ],
 "components": {
@@ -251,7 +281,7 @@
 "external_ids": {
 "github": "google-gemini/gemini-cli"
 },
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -298,7 +328,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_9c4c7cf821517a82",
@@ -308,25 +338,25 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-05T01:39:02Z",
-"headline": "gemini-cli Release v0.64.0-nightly.20261005.gfb972b2f8",
+"date": "2026-10-10T01:38:44Z",
+"headline": "gemini-cli Release v0.65.0-nightly.20261010.g9b6e0265d",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.64.0-nightly.20261003.gfb972b2f8...v0.64.0-nightly.20261005.gfb972b2f8",
+"summary": "## What's Changed\n* fix(cli): handle JSON parse and response stream errors in fetchJson by @jesussamuel-byte in https://github.com/google-gemini/gemini-cli/pull/29658\n* fix(core): preserve line terminators in truncateString by @diegogodinez",
 "tag": "product_update",
-"url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261005.gfb972b2f8"
+"url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0-nightly.20261010.g9b6e0265d"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-03T01:29:14Z",
-"headline": "gemini-cli Release v0.64.0-nightly.20261003.gfb972b2f8",
+"date": "2026-10-09T20:27:57Z",
+"headline": "gemini-cli Release v0.64.0-preview.1",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* fix(cli): ensure Enter and Spacebar reliably confirm selection list options by @ugorla-dev in https://github.com/google-gemini/gemini-cli/pull/29502\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compa",
+"summary": "## What's Changed\n* fix(patch): cherry-pick 2ce1a69 to release/v0.64.0-preview.0-pr-29672 to patch version v0.64.0-preview.0 and create version 0.64.0-preview.1 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/29696",
 "tag": "product_update",
-"url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261003.gfb972b2f8"
+"url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-preview.1"
 },
 {
 "cluster_size": 1,
@@ -345,26 +375,32 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:08Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:07Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
 "evidence_url": "https://github.com/google-gemini/gemini-cli",
 "note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-10T04:59:08Z",
+"status": "not_found"
+},
 "source": "self_description",
 "status": "claimed"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "geminicli.com",
 "resource_type": "mcp_server",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:48:28Z",
+"checked_at": "2026-10-10T05:09:07Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -376,26 +412,33 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-17T17:04:31Z",
-"github_forks": 14694,
+"github_forks": 14704,
 "github_language": "TypeScript",
-"github_open_issues": 782,
-"github_pushed_at": "2026-10-05T11:07:50Z",
-"github_stars": 107230,
-"github_topic": "ai-agents",
+"github_open_issues": 759,
+"github_pushed_at": "2026-10-10T01:38:43Z",
+"github_stars": 107268,
+"github_topic": "mcp-server",
 "homepage": "https://geminicli.com",
-"observed_popularity": "Not captured"
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"publisher_domain",
+"tags"
+],
+"repo": "google-gemini/gemini-cli"
+}
 },
 "slug": "google-gemini-cli",
 "sources": [
 {
 "payload_hash": "7a8e0f726b50746e9ab62edb1341f2b93cba74a0bf199906b9f59ba8c8b40a12",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/google-gemini/gemini-cli"
 },
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/google-gemini/gemini-cli"
 }

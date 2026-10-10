@@ -23,7 +23,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 22.65,
+"adoption": 22.66,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -51,7 +51,7 @@
 },
 "technology": {
 "components": {
-"adoption": 22.65,
+"adoption": 22.66,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.0,
@@ -70,7 +70,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 70.0,
+"score": 70.1,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -81,7 +81,7 @@
 "external_ids": {
 "github": "YaoApp/yao"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -103,23 +103,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:15Z",
+"last_seen": "2026-10-10T04:50:21Z",
 "license": "Other",
 "name": "yao",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-05T13:37:15Z",
+"headline": "yao Yao v1.0.0-rc26",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* fix(tests): improve assertions in system prompt unit tests by @trheyi in https://github.com/YaoApp/yao/pull/1608\n\n\n**Full Changelog**: https://github.com/YaoApp/yao/compare/v1.0.0-rc25...v1.0.0-rc26",
+"tag": "product_update",
+"url": "https://github.com/YaoApp/yao/releases/tag/v1.0.0-rc26"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-28T01:51:35Z",
+"headline": "yao Yao v1.0.0-rc25",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# Yao v1.0.0-rc25\n\n_This note covers **v1.0.0-rc25** together with the changes shipped in **v1.0.0-rc24**, i.e. everything since v1.0.0-rc23._\n\n_Generated and published automatically by Yao Agents._\n\n## New Features\n\n### DeepSeek Harness on",
+"tag": "product_update",
+"url": "https://github.com/YaoApp/yao/releases/tag/v1.0.0-rc25"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:41:24Z",
+"checked_at": "2026-10-10T05:00:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:41:22Z",
+"checked_at": "2026-10-10T05:00:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:41:24Z",
+"checked_at": "2026-10-10T05:00:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -130,19 +154,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2021-09-06T09:20:27Z",
-"github_forks": 721,
+"github_forks": 722,
 "github_language": "Go",
 "github_open_issues": 10,
-"github_pushed_at": "2026-10-05T12:17:43Z",
-"github_stars": 8077,
+"github_pushed_at": "2026-10-08T12:48:31Z",
+"github_stars": 8110,
 "github_topic": "ai-agents",
 "homepage": "https://yaoagents.com"
 },
 "slug": "yaoapp-yao",
 "sources": [
 {
-"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
-"retrieved_at": "2026-10-05T13:31:15Z",
+"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
+"retrieved_at": "2026-10-10T04:50:21Z",
 "system": "github",
 "url": "https://github.com/YaoApp/yao"
 }
@@ -170,7 +194,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

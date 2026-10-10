@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 22.8,
+"adoption": 24.2,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -43,7 +43,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 61.9,
+"score": 63.2,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -52,7 +52,7 @@
 },
 "data": {
 "components": {
-"adoption": 22.8,
+"adoption": 24.2,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -71,7 +71,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 63.4,
+"score": 64.6,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -80,7 +80,7 @@
 },
 "technology": {
 "components": {
-"adoption": 22.8,
+"adoption": 24.2,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -99,7 +99,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 67.7,
+"score": 69.1,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -110,7 +110,7 @@
 "external_ids": {
 "github": "lexmount/moli"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -132,23 +132,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:15Z",
+"last_seen": "2026-10-10T04:50:21Z",
 "license": "Apache-2.0",
 "name": "moli",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-07T15:56:35Z",
+"headline": "moli Moli v1.1.15",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n\r\n### CLI & CDP\r\n\r\n* feat(cli): add --timeout-ms alias for fetch timeout #1216\r\n* fix(cdp): misc fixes for cdp tab behaviour #957\r\n* fix(cdp): bound renderer navigation future stack usage #1195\r\n\r\n### Renderer, Navigation",
+"tag": "product_update",
+"url": "https://github.com/lexmount/moli/releases/tag/v1.1.15"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-05T16:55:38Z",
+"headline": "moli Moli v1.1.14",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n\r\n### WebMCP, Skills & Playground\r\n\r\n* feat(webapi): WebMCP support #1038\r\n* feat(playground): add native WebMCP demos #1192\r\n* fix(skills): remove Google from default websearch engines #1164\r\n\r\n### CDP, Navigation & Rend",
+"tag": "product_update",
+"url": "https://github.com/lexmount/moli/releases/tag/v1.1.14"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:38:43Z",
+"checked_at": "2026-10-10T04:58:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:38:39Z",
+"checked_at": "2026-10-10T04:58:12Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:38:44Z",
+"checked_at": "2026-10-10T04:58:17Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -159,19 +183,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-08-10T13:20:30Z",
-"github_forks": 268,
+"github_forks": 374,
 "github_language": "Rust",
-"github_open_issues": 228,
-"github_pushed_at": "2026-10-05T13:18:08Z",
-"github_stars": 8579,
+"github_open_issues": 296,
+"github_pushed_at": "2026-10-10T04:30:19Z",
+"github_stars": 15002,
 "github_topic": "ai-agents",
 "homepage": "https://browser.lexmount.com"
 },
 "slug": "lexmount-moli",
 "sources": [
 {
-"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
-"retrieved_at": "2026-10-05T13:31:15Z",
+"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
+"retrieved_at": "2026-10-10T04:50:21Z",
 "system": "github",
 "url": "https://github.com/lexmount/moli"
 }
@@ -196,7 +220,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },
