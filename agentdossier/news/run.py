@@ -69,10 +69,15 @@ def run(
     nvd_key = os.environ.get("NVD_API_KEY")
     rep = ConnectorReport("news")
     sec = ConnectorReport("nvd")
-    targets = [r for r in resources if distinctive(r.get("name", ""))]
-    targets = targets[:limit] if limit else targets
+    # Every resource gets its own repository's releases and its vendor's feed; only names that
+    # can be searched for without drowning in noise ("Aider", "Dify" cannot) go to the
+    # name-search sources (Hacker News, GDELT, NVD).
+    targets = resources[:limit] if limit else list(resources)
+    searchable = {r["id"] for r in targets if distinctive(r.get("name", ""))}
     started = time.monotonic()
-    _log(f"{len(targets)} resources with distinctive names; gdelt={use_gdelt} nvd={use_nvd}")
+    _log(
+        f"{len(targets)} resources, {len(searchable)} with searchable names; gdelt={use_gdelt} nvd={use_nvd}"
+    )
 
     feed_cache: dict[str, list[dict[str, Any]]] = {}
     fast_items: dict[str, list[dict[str, Any]]] = {}
@@ -91,7 +96,8 @@ def run(
             skipped.add(res["id"])
             return
         try:
-            items += sources.hackernews(name, store=store, policy=policy)
+            if res["id"] in searchable:
+                items += sources.hackernews(name, store=store, policy=policy)
             gh = (res.get("external_ids") or {}).get("github")
             if gh and token:
                 items += sources.github_releases(gh, token=token, store=store, policy=policy)
@@ -105,7 +111,7 @@ def run(
         fast_items[res["id"]] = items
 
     def gdelt_lane() -> None:
-        for i, res in enumerate(targets, 1):
+        for i, res in enumerate((r for r in targets if r["id"] in searchable), 1):
             if out_of_time():
                 return
             try:
@@ -120,7 +126,7 @@ def run(
                 _log(f"gdelt {i}/{len(targets)} ({time.monotonic() - started:.0f}s)")
 
     def nvd_lane() -> None:
-        for i, res in enumerate(targets, 1):
+        for i, res in enumerate((r for r in targets if r["id"] in searchable), 1):
             if out_of_time():
                 return
             try:

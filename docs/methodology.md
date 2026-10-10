@@ -186,9 +186,13 @@ maintainer records the domain check.
 Sources: Hacker News (Algolia, stories with ≥ 5 points), GDELT DOC 2.0 (90
 days, English; skipped for the rest of a run after two rate-limit failures),
 GitHub releases (with a token), the vendor's own RSS/Atom feed discovered
-from its homepage, and NVD for CVE counts. Only resources with a
-*distinctive* name are searched (two words, or one non-generic word of six or
-more letters; "Muse" alone is not searched).
+from its homepage, and NVD for CVE counts. Every resource gets its own
+repository's releases and its vendor's feed; only resources with a
+*distinctive* name go to the name-search sources (two words, or one
+non-generic word of six or more letters; "Muse" or "Dify" alone is not
+searched). A release published by the agent's own repository links at
+confidence 1.0 whatever its title; everything else must name the agent in
+the headline plus one more signal (vendor named, vendor domain, vendor feed).
 
 An item links to a resource only when the resource name appears in the
 headline **and** a second signal agrees (vendor name in the text, publisher

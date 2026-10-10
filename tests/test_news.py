@@ -168,3 +168,63 @@ def test_budget_skips_remaining_resources(monkeypatch, tmp_path):
     fresh = Deadline(None)
     rep = news_run.run(resources, store=None, use_gdelt=False, use_nvd=False, deadline=fresh)
     assert rep["news"]["fetched"] == 3 and all(r.get("news_checked") for r in resources)
+
+
+def test_own_repository_release_links_without_name_in_title():
+    res = {
+        "id": "r1",
+        "name": "Amazon Bedrock Agents",
+        "vendor": "AWS",
+        "external_ids": {"github": "awslabs/bedrock-agents"},
+    }
+    rel = _item(
+        "bedrock-agents v1.4.0",
+        url="https://github.com/awslabs/bedrock-agents/releases/tag/v1.4.0",
+        outlet="GitHub releases",
+    )
+    assert linking.link_confidence(rel, res) == 1.0
+    other = _item("foo v1", url="https://github.com/someone/else/releases/tag/v1", outlet="GitHub releases")
+    assert linking.link_confidence(other, res) == 0.0
+
+
+def test_short_names_still_get_releases_and_feeds_but_no_name_search(monkeypatch):
+    from agentdossier.news import run as news_run
+
+    calls: list[str] = []
+    monkeypatch.setattr(sources, "hackernews", lambda name, **k: calls.append(f"hn:{name}") or [])
+    monkeypatch.setattr(sources, "vendor_feed", lambda dom, **k: calls.append(f"feed:{dom}") or [])
+    monkeypatch.setattr(
+        sources,
+        "github_releases",
+        lambda full, **k: (
+            calls.append(f"gh:{full}")
+            or [
+                _item(
+                    "aider v0.9",
+                    url=f"https://github.com/{full}/releases/tag/v0.9",
+                    outlet="GitHub releases",
+                    kind="vendor",
+                )
+            ]
+        ),
+    )
+    monkeypatch.setenv("GITHUB_TOKEN", "t")
+    short = {
+        "id": "a",
+        "name": "Aider",
+        "vendor": "Aider AI",
+        "publisher_domain": "aider.chat",
+        "external_ids": {"github": "Aider-AI/aider"},
+    }
+    long = {
+        "id": "b",
+        "name": "Salesforce Agentforce",
+        "vendor": "Salesforce",
+        "publisher_domain": "salesforce.com",
+    }
+    rep = news_run.run([short, long], store=None, use_gdelt=False, use_nvd=False)
+    assert "hn:Aider" not in calls and "hn:Salesforce Agentforce" in calls
+    assert "gh:Aider-AI/aider" in calls and "feed:aider.chat" in calls
+    assert (
+        rep["news"]["fetched"] == 2 and short["news_checked"] and short["news"][0]["headline"] == "aider v0.9"
+    )

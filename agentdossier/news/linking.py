@@ -65,6 +65,14 @@ def distinctive(name: str) -> bool:
 
 
 def link_confidence(item: dict[str, Any], res: dict[str, Any]) -> float:
+    # a release published by the agent's own repository is about the agent whatever it is titled
+    gh = ((res.get("external_ids") or {}).get("github") or "").lower()
+    if (
+        gh
+        and item.get("outlet") == "GitHub releases"
+        and f"github.com/{gh}/" in (item.get("url") or "").lower()
+    ):
+        return 1.0
     title = _norm(item.get("headline"))
     text = f"{title} {_norm(item.get('summary'))}"
     name = _norm(res.get("name"))

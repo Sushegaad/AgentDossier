@@ -14,6 +14,9 @@ listed in `docs/methodology.md`.
   shared hosts are crawled under their vendor's domain; a vendor's FedRAMP authorization
   is shown as an inherited vendor-level row when no offering matches the agent; a web
   page served where a protocol card should be is `not_found`, not `invalid`.
+- News and chatter: every resource gets its repository's releases and its vendor's feed
+  (short names such as "Aider" or "Dify" were skipped entirely); a release from the
+  agent's own repository links without its name in the title.
 
 ### Security
 - Authentication is fail-closed: `AGENTDOSSIER_AUTH_MODE` has no inferred default and
