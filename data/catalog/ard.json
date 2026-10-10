@@ -401,6 +401,61 @@
    }
   },
   {
+   "identifier": "urn:air:agenticplug.ai:server:mcp",
+   "displayName": "agenticplug.ai MCP Server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://agenticplug.ai/.well-known/mcp/server-card.json",
+   "representativeQueries": [
+    "what is answer engine optimization",
+    "how do I make my site citable by ChatGPT",
+    "explain the agentic commerce protocol stack",
+    "book a consultation with an agentic commerce consultancy"
+   ]
+  },
+  {
+   "identifier": "urn:air:agenticplug.ai:server:agent-ready-report",
+   "displayName": "Agent Ready Report",
+   "type": "application/mcp-server-card+json",
+   "url": "https://scan.agenticplug.ai/.well-known/mcp/server-card.json",
+   "representativeQueries": [
+    "scan my website for AI agent readiness",
+    "is my site ready for AI search and AI agents",
+    "which agent readiness checks does my site fail"
+   ]
+  },
+  {
+   "identifier": "urn:air:agenticplug.ai:skill:agent-readiness-audit",
+   "displayName": "Agent Readiness Audit Skill",
+   "type": "text/markdown",
+   "url": "https://agenticplug.ai/.well-known/agent-skills/agent-readiness-audit/SKILL.md",
+   "representativeQueries": [
+    "how do I audit a website for AI agent readiness",
+    "what does an agent readiness score mean",
+    "how do I fix a failing agent readiness check"
+   ]
+  },
+  {
+   "identifier": "urn:air:agenticplug.ai:skill:agentic-commerce-protocols",
+   "displayName": "Agentic Commerce Protocols Skill",
+   "type": "text/markdown",
+   "url": "https://agenticplug.ai/.well-known/agent-skills/agentic-commerce-protocols/SKILL.md",
+   "representativeQueries": [
+    "what is the difference between ACP and UCP",
+    "how does x402 payment work",
+    "which agentic commerce protocol should I implement"
+   ]
+  },
+  {
+   "identifier": "urn:air:agenticplug.ai:api:openapi",
+   "displayName": "agenticplug.ai Public API",
+   "type": "application/vnd.oai.openapi+json",
+   "url": "https://agenticplug.ai/openapi.json",
+   "representativeQueries": [
+    "what public API endpoints does agenticplug.ai expose",
+    "how do I request a consultation programmatically"
+   ]
+  },
+  {
    "identifier": "urn:air:agentmesh.ai:mcp:mesh",
    "displayName": "AgentMesh",
    "type": "application/mcp-server-card+json",
@@ -427,6 +482,82 @@
     "let my personal agent talk to other agents",
     "find and hire agents from claude code",
     "give my agent an inbox that works while I am away"
+   ]
+  },
+  {
+   "identifier": "urn:air:aimentiontracker.ai:mcp:aimentiontracker",
+   "displayName": "AIMentionTracker MCP server",
+   "type": "application/mcp-server-card+json",
+   "capabilities": [
+    "get_me",
+    "list_brands",
+    "get_visibility",
+    "list_answers",
+    "list_sources",
+    "get_current_date",
+    "get_sentiment",
+    "get_share_of_voice",
+    "list_competitors",
+    "list_alerts"
+   ],
+   "url": "https://aimentiontracker.ai/.well-known/mcp/server-card.json",
+   "representativeQueries": [
+    "How often does ChatGPT name my brand?",
+    "Which competitors do AI assistants recommend instead of us?",
+    "Which sites do AI engines cite when they answer about my category?"
+   ]
+  },
+  {
+   "identifier": "urn:air:aimentiontracker.ai:api:v1",
+   "displayName": "AIMentionTracker REST API",
+   "type": "application/vnd.oai.openapi+json",
+   "url": "https://app.aimentiontracker.ai/api/v1/openapi.json",
+   "representativeQueries": [
+    "Get AI visibility per engine for a brand",
+    "List the AI answers that mentioned a brand"
+   ]
+  },
+  {
+   "identifier": "urn:air:aimentiontracker.ai:docs:llms",
+   "displayName": "AIMentionTracker llms.txt",
+   "type": "text/plain",
+   "url": "https://aimentiontracker.ai/llms.txt",
+   "representativeQueries": [
+    "What is AIMentionTracker?",
+    "Which AI engines does AIMentionTracker track?"
+   ]
+  },
+  {
+   "identifier": "urn:air:aimentiontracker.ai:skill:aimentiontracker",
+   "displayName": "AIMentionTracker agent skill",
+   "type": "text/markdown",
+   "url": "https://aimentiontracker.ai/.well-known/agent-skills/aimentiontracker/SKILL.md",
+   "representativeQueries": [
+    "How should an agent read AI visibility numbers?",
+    "How do I connect an agent to AIMentionTracker?"
+   ]
+  },
+  {
+   "identifier": "urn:air:aivikings.ai:server:domain-registrar",
+   "displayName": "AIvikings Domain Registrar MCP Server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://mcp.aivikings.ai",
+   "representativeQueries": [
+    "check if a domain is available",
+    "register a domain for my AI agent",
+    "renew my domain",
+    "get pricing for a .icu domain"
+   ]
+  },
+  {
+   "identifier": "urn:air:aivikings.ai:api:rest",
+   "displayName": "AIvikings REST API",
+   "type": "application/vnd.oai.openapi+json",
+   "url": "https://api.aivikings.ai/openapi.json",
+   "representativeQueries": [
+    "register a domain via API",
+    "check domain pricing programmatically",
+    "list my domain portfolio"
    ]
   },
   {
@@ -816,7 +947,7 @@
    "displayName": "Apify pricing",
    "type": "text/markdown",
    "url": "https://apify.com/pricing.md",
-   "description": "Plans, the monthly usage credit on the free plan, and the pay-per-event and pay-per-result models Actors charge on.",
+   "description": "Plans, the monthly usage credit on the free plan, and the pay-per-event and pay-per-usage models Actors charge on.",
    "tags": [
     "pricing",
     "plans",
@@ -882,7 +1013,7 @@
    "displayName": "Apify Store search",
    "type": "application/json",
    "url": "https://api.apify.com/v2/store",
-   "description": "Search endpoint over the 81,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
+   "description": "Search endpoint over the 83,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
    "tags": [
     "search",
     "discovery",
@@ -1052,15 +1183,15 @@
   {
    "identifier": "urn:air:assetlog.ai:server:mcp",
    "displayName": "AssetLog MCP server",
-   "description": "45 tools for searching listings, publishing them on a user's behalf, finding agents by service area, managing their own ads, watchdogs, calendar and enquiries, and walking a seller through a step-by-step sale checklist.",
+   "description": "40 tools for searching real estate listings, publishing them on a user's behalf, finding agents by service area, managing their own ads, watchdogs, calendar and enquiries, and walking a seller through a step-by-step sale checklist.",
    "type": "application/mcp-server-card+json",
    "url": "https://assetlog.ai/.well-known/mcp/server-card.json",
    "representativeQueries": [
     "find apartments near the sea in Spain under 300000 EUR",
-    "add my car listing to a classifieds site",
+    "add my apartment listing to a property site",
     "which real estate agents cover Alicante",
-    "show me jobs in Brno that allow remote work",
-    "list used diesel estate cars under 200000 CZK",
+    "villas with a pool for rent in Cyprus",
+    "two-bedroom apartments for sale in Dubai under 500000 USD",
     "how many listings are published on AssetLog"
    ]
   },
@@ -1071,7 +1202,7 @@
    "type": "application/json",
    "url": "https://assetlog.ai/.well-known/agent-skills/index.json",
    "representativeQueries": [
-    "how do I publish a classified ad on a user's behalf",
+    "how do I publish a property listing on a user's behalf",
     "how do I connect AssetLog as an MCP server"
    ]
   },
@@ -1116,6 +1247,70 @@
     ],
     "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6InBhc2VvLWVkMjU1MTktdGVlLTcyNGRhNzY4NDM1MSJ9..b8uE-BiUlrbNIjlirhao8izWqxBzSX_HrVwtWaMwRZ5zj4N30AFo9k1GFtZC67KJ2HxAftXZgoApaTGcmzMdCg"
    }
+  },
+  {
+   "identifier": "urn:air:autoposter.ai:social:mcp-server",
+   "displayName": "AutoPoster AI MCP Server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://agent.autoposter.ai/mcp",
+   "description": "Multi-platform social media automation and scheduling MCP server. Create drafts, schedule posts, manage queues, and publish content across Twitter/X, LinkedIn, Instagram, TikTok, Facebook, YouTube, Threads, and Bluesky.",
+   "tags": [
+    "social-media",
+    "mcp",
+    "scheduling",
+    "marketing",
+    "automation",
+    "publishing"
+   ],
+   "capabilities": [
+    "autoposter_list_accounts",
+    "autoposter_get_rules",
+    "autoposter_draft_post",
+    "autoposter_schedule_post",
+    "autoposter_publish_draft",
+    "autoposter_list_posts",
+    "autoposter_get_post",
+    "autoposter_get_post_status",
+    "autoposter_delete_post",
+    "autoposter_upload_media",
+    "autoposter_list_media"
+   ],
+   "representativeQueries": [
+    "schedule a social media post across Twitter and LinkedIn",
+    "publish video to TikTok and YouTube Shorts",
+    "create a draft social media post with images",
+    "check connected social media accounts and queue"
+   ]
+  },
+  {
+   "identifier": "urn:air:autoposter.ai:social:api",
+   "displayName": "AutoPoster AI Agent API",
+   "type": "application/openapi+json",
+   "url": "https://agent.autoposter.ai/openapi.json",
+   "description": "REST API and agent tools for autonomous AI agents to schedule, publish, and manage cross-platform social media campaigns with platform validation and rate limits.",
+   "tags": [
+    "social-media",
+    "agent-api",
+    "automation",
+    "scheduling"
+   ],
+   "capabilities": [
+    "listAccounts",
+    "getPlatformRules",
+    "listPosts",
+    "createPost",
+    "getPost",
+    "deletePost",
+    "publishDraftPost",
+    "getMediaUploadUrl",
+    "listMedia",
+    "createMedia"
+   ],
+   "representativeQueries": [
+    "post an announcement to company social media accounts",
+    "queue a thread on Twitter and Bluesky",
+    "find social media posting limits and character rules"
+   ]
   },
   {
    "identifier": "urn:air:autorfp.ai:server:mcp",
@@ -1172,64 +1367,51 @@
    ]
   },
   {
+   "identifier": "urn:air:beevr.ai:server:beevr",
+   "displayName": "BeevR MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://beevr.ai/.well-known/mcp/server-card.json",
+   "representativeQueries": [
+    "Can BeevR build a HIPAA-compliant AI agent?",
+    "How much does an MVP cost with BeevR?",
+    "BeevR case studies about AI agents"
+   ]
+  },
+  {
+   "identifier": "urn:air:beevr.ai:api:public",
+   "displayName": "BeevR public agent API",
+   "type": "application/linkset+json",
+   "url": "https://beevr.ai/.well-known/api-catalog",
+   "representativeQueries": [
+    "List BeevR services",
+    "Search BeevR articles about MVP cost"
+   ]
+  },
+  {
+   "identifier": "urn:air:beevr.ai:skills:index",
+   "displayName": "BeevR agent skills",
+   "type": "application/json",
+   "url": "https://beevr.ai/.well-known/agent-skills/index.json",
+   "representativeQueries": [
+    "How to research BeevR for a user",
+    "Estimate an MVP with BeevR packages"
+   ]
+  },
+  {
    "identifier": "urn:air:centralcity.ai:mcp:central-city",
    "type": "application/mcp-server-card+json",
    "url": "https://centralcity.ai/mcp/server-card"
   },
   {
-   "identifier": "urn:air:cloudcrane.ai:workspace:mcp",
-   "displayName": "CloudCrane workspace",
+   "identifier": "urn:air:context7.com:mcp:context7",
    "type": "application/mcp-server-card+json",
-   "url": "https://cloudcrane.ai/api/build/mcp",
-   "description": "Read and build a CloudCrane workspace over MCP: its datasets, the contracts that define what each field may say, what is waiting for review, and the receipt behind any value. A key made to build can also create datasets, fields and value sets, start runs, publish a release when the accuracy gate passes by itself, and deploy it: a tool, its keys, and the scenarios that guard its releases. Sign in with a CloudCrane account (OAuth), where a workspace owner approves the app, or with a build key an owner creates. On every plan. Publishing past the accuracy gate, changing a safety field so a value could go missing, and resolving a review item stay with a person, because a receipt names who decided: an agent asks with request_approval, and a person approves. Editing a stored value, withholding a record and deleting are a person's alone.",
-   "tags": [
-    "data-curation",
-    "catalog",
-    "enrichment",
-    "receipts",
-    "data-quality"
-   ],
-   "capabilities": [
-    "list_datasets",
-    "get_dataset",
-    "list_contracts",
-    "get_readiness",
-    "list_review_items",
-    "get_receipts",
-    "list_value_sets",
-    "get_run",
-    "list_approvals",
-    "get_approval",
-    "list_tools",
-    "list_scenarios",
-    "get_tool_insights",
-    "list_drift_alerts",
-    "get_usage",
-    "get_next_actions",
-    "list_events",
-    "create_dataset",
-    "create_field",
-    "update_field",
-    "create_value_set",
-    "import_value_set_version",
-    "start_run",
-    "publish_release",
-    "request_approval",
-    "deploy_tool",
-    "update_tool",
-    "create_tool_key",
-    "create_scenario",
-    "run_scenarios"
-   ],
-   "representativeQueries": [
-    "what datasets are in this workspace",
-    "what values does this field allow, and what does each one mean",
-    "what is blocking this dataset from being released",
-    "why does this record have this value",
-    "add a field for product category and run it"
-   ],
-   "version": "1.4.0",
-   "updatedAt": "2026-10-04T00:00:00Z"
+   "url": "https://mcp.context7.com/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:events.aero:mcp:events",
+   "displayName": "Events.Aero event discovery",
+   "type": "application/mcp-server-card+json",
+   "url": "https://events.aero/mcp/events/server-card"
   },
   {
    "identifier": "urn:air:justidea.agency:server:website",
@@ -1237,7 +1419,7 @@
    "type": "application/mcp-server-card+json",
    "url": "https://justidea.agency/.well-known/mcp/server-card.json",
    "description": "MCP server for the public website of JustIdea Agency, an e-commerce and performance marketing agency from Kraków, Poland. Search and read pages, list services with published starting prices in PLN and EUR.",
-   "version": "1.1.0",
+   "version": "1.2.0",
    "capabilities": [
     "search_site",
     "get_page",
@@ -1334,6 +1516,79 @@
    "identifier": "urn:air:kortix.com:mcp:public-content",
    "type": "application/mcp-server-card+json",
    "url": "https://kortix.com/mcp/server-card"
+  },
+  {
+   "@context": "https://agenticresourcediscovery.org/context/v1",
+   "identifier": "urn:air:pydantic.dev:server:logfire-mcp",
+   "displayName": "Pydantic Logfire MCP Server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://pydantic.dev/.well-known/mcp/server-card.json",
+   "description": "Query and manage Logfire observability data through an authenticated MCP server, including telemetry, dashboards, alerts, issues, notification channels, and managed variables.",
+   "capabilities": [
+    "QueryTelemetry",
+    "ManageDashboards",
+    "ManageAlerts",
+    "ManageFeatureFlags",
+    "ExecutePythonSandbox"
+   ],
+   "representativeQueries": [
+    "find the slowest LLM calls in my Logfire project",
+    "show recent exceptions from my checkout service",
+    "create a Logfire dashboard for p95 agent latency",
+    "alert me when the error rate exceeds its threshold"
+   ]
+  },
+  {
+   "@context": "https://agenticresourcediscovery.org/context/v1",
+   "identifier": "urn:air:pydantic.dev:api:documentation-search",
+   "displayName": "Pydantic Documentation Search API",
+   "type": "application/openapi+json",
+   "url": "https://pydantic.dev/docs/api/openapi.json",
+   "description": "Search the Pydantic Validation, Pydantic AI, Pydantic Logfire, HTTPX2, and Monty documentation with an explicit task goal.",
+   "capabilities": [
+    "SearchDocumentation",
+    "RetrieveDocumentation"
+   ],
+   "representativeQueries": [
+    "how do I validate untrusted data with Pydantic",
+    "how do I build a type-safe agent with Pydantic AI",
+    "how do I instrument an application with Pydantic Logfire",
+    "find the Pydantic API reference for model validators"
+   ]
+  },
+  {
+   "@context": "https://agenticresourcediscovery.org/context/v1",
+   "identifier": "urn:air:pydantic.dev:catalog:agent-skills",
+   "displayName": "Pydantic Agent Skills",
+   "type": "application/json",
+   "url": "https://pydantic.dev/.well-known/agent-skills/index.json",
+   "description": "Installable Agent Skills for building Pydantic AI agents and configuring, instrumenting, and operating Pydantic Logfire.",
+   "capabilities": [
+    "InstallAgentSkills",
+    "BuildPydanticAIAgents",
+    "ConfigureLogfire"
+   ],
+   "representativeQueries": [
+    "install guidance for building a Pydantic AI agent",
+    "teach my coding agent to instrument an application with Logfire",
+    "configure Logfire infrastructure using an Agent Skill"
+   ]
+  },
+  {
+   "@context": "https://agenticresourcediscovery.org/context/v1",
+   "identifier": "urn:air:pydantic.dev:catalog:apis",
+   "displayName": "Pydantic API Catalog",
+   "type": "application/linkset+json",
+   "url": "https://pydantic.dev/.well-known/api-catalog",
+   "description": "Discover the public OpenAPI descriptions and regional metadata for Pydantic and Pydantic Logfire APIs.",
+   "capabilities": [
+    "DiscoverApis",
+    "DiscoverOpenApiSchemas"
+   ],
+   "representativeQueries": [
+    "discover the public Pydantic and Logfire APIs",
+    "find the OpenAPI schema for my Logfire region"
+   ]
   },
   {
    "identifier": "urn:air:superset.sh:mcp:superset",

@@ -177,8 +177,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "Aider-AI/aider"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -187,10 +189,10 @@
 "id": "res_94bad96f7316f09e",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -200,25 +202,29 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Apache-2.0",
 "name": "Aider",
 "news": [],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:15Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:14Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:15Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "aider.chat",
 "resource_type": "agent",
 "scope": "public",
 "seed": {
@@ -226,23 +232,53 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2023-05-09T18:57:49Z",
+"github_forks": 5042,
+"github_language": "Python",
+"github_open_issues": 1910,
+"github_pushed_at": "2026-05-22T14:02:20Z",
+"github_stars": 49443,
+"homepage": "https://aider.chat/",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "Aider-AI/aider"
+}
 },
 "slug": "aider-ai-aider",
 "sources": [
 {
 "payload_hash": "02bc772efd1d98854b97efc5f313392474c3887c9c154801f22fd3867f0e0797",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/Aider-AI/aider"
 }
 ],
-"tags": [],
+"tags": [
+"anthropic",
+"chatgpt",
+"claude-3",
+"cli",
+"command-line",
+"gemini",
+"gpt-3",
+"gpt-35-turbo",
+"gpt-4",
+"gpt-4o",
+"llama",
+"openai",
+"sonnet"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
-"issues": null,
+"identity": 3,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

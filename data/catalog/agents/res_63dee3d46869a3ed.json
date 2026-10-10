@@ -6,7 +6,7 @@
 {
 "certificate_id": "langchain, inc.",
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
 "organization": "LangChain, Inc.",
@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-10",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/langchain, inc.",
 "framework": "csa_star",
 "issued": "2025-11-25",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:42:55Z",
+"retrieved_at": "2026-10-10T05:02:50Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -33,6 +33,84 @@
 "tier": 1,
 "valid_until": null,
 "variant": "STAR_LEVEL_1"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-10)",
+"evidence_url": "https://docs.langchain.com/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "efeb795e796dba589272000ea017c2f6ebeededd39419ba4bb677ab088803213",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:06:42Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-10)",
+"evidence_url": "https://docs.langchain.com/",
+"framework": "hipaa",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "efeb795e796dba589272000ea017c2f6ebeededd39419ba4bb677ab088803213",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:06:42Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10)",
+"evidence_url": "https://docs.langchain.com/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "efeb795e796dba589272000ea017c2f6ebeededd39419ba4bb677ab088803213",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:06:42Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
 }
 ],
 "components": {
@@ -52,9 +130,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": 81.6,
-"value": 0.0,
+"credited": {
+"csa_star": 1.0,
+"soc2": 0.3
+},
+"score": 86.2,
+"value": 46.0,
 "version": "sar-score-1.1"
 },
 "profile": "security",
@@ -68,9 +149,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": 77.5,
-"value": 0.0,
+"credited": {
+"csa_star": 1.0,
+"hipaa": 0.3,
+"soc2": 0.3
+},
+"score": 81.5,
+"value": 26.7,
 "version": "sar-score-1.1"
 },
 "profile": "regulated",
@@ -84,9 +169,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
-"score": 86.4,
-"value": 0.0,
+"credited": {
+"csa_star": 1.0,
+"soc2": 0.3
+},
+"score": 88.1,
+"value": 32.5,
 "version": "sar-score-1.1"
 },
 "profile": "operations",
@@ -100,9 +188,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_evidence": {
-"credited": {},
+"credited": {
+"csa_star": 1.0,
+"soc2": 0.3
+},
 "score": 89.5,
-"value": 0.0,
+"value": 26.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -113,8 +204,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "langchain-ai/deepagents"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,10 +216,10 @@
 "id": "res_63dee3d46869a3ed",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"standards_metadata_at_publisher_domain"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -136,31 +229,71 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "MIT",
 "name": "LangChain Deep Agents",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-07T21:56:01Z",
+"headline": "deepagents deepagents-code==0.1.83",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Features\n\n- Recommend Haiku 5.5 for sidecar models.\n\n---\n\nInternal maintainers: @mdrxy\n\nReleased by: @mdrxy\n\n<details>\n<summary>Git log since deepagents-code==0.1.82</summary>\n\nThis commit history includes changes to this package. Commi",
+"tag": "product_update",
+"url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents-code%3D%3D0.1.83"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-07T16:46:12Z",
+"headline": "deepagents deepagents==0.7.23",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Features\n\n- Pin skills by name with `pinned_skills` in the SDK ([#6810](https://github.com/langchain-ai/deepagents/pull/6810)).\n\n### Bug Fixes\n\n- Ensure each subagent uses its own `SkillsMiddleware` in the skills slot ([#6820](https://g",
+"tag": "product_update",
+"url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents%3D%3D0.7.23"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"card_url": "https://docs.langchain.com/.well-known/agent-card.json",
+"checked_at": "2026-10-10T04:58:57Z",
+"parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3",
+"signed": false,
+"skills": [
+"langchain"
+],
+"status": "verified",
+"version": "1.0.0"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:55Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"card_url": "https://docs.langchain.com/.well-known/mcp.json",
+"checked_at": "2026-10-10T04:58:57Z",
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "http",
+"url": "https://langchain-5e9cc07a.main-kill-isr.mintlify.me/mcp"
+}
+],
+"status": "invalid"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "docs.langchain.com",
 "resource_type": "agent",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:50:03Z",
+"checked_at": "2026-10-10T05:10:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -170,24 +303,49 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2025-07-27T23:07:53Z",
+"github_forks": 4217,
+"github_language": "Python",
+"github_open_issues": 205,
+"github_pushed_at": "2026-10-10T00:27:00Z",
+"github_stars": 30090,
+"homepage": "https://docs.langchain.com/deepagents",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "langchain-ai/deepagents"
+}
 },
 "slug": "langchain-langchain-deep-agents",
 "sources": [
 {
 "payload_hash": "2111c58d553f4b75295ced22ecd6fda83433ce35cb0e1fc471650ff4bdaf9351",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/langchain-ai/deepagents"
 }
 ],
-"tags": [],
+"tags": [
+"ai",
+"deepagents",
+"harness",
+"harness-engineering",
+"langchain",
+"langgraph",
+"python",
+"typescript"
+],
 "tenant": null,
 "trust": {
 "compliance": 1,
-"identity": 4,
+"identity": 2,
 "issues": 1,
-"protocols": 5,
+"protocols": 1,
 "security": 1
 },
 "url": "https://github.com/langchain-ai/deepagents",

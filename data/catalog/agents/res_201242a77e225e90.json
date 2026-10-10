@@ -24,7 +24,7 @@
 "domains": {
 "supply_chain": {
 "components": {
-"adoption": 27.09,
+"adoption": 27.1,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -52,7 +52,7 @@
 },
 "technology": {
 "components": {
-"adoption": 27.09,
+"adoption": 27.1,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -82,7 +82,7 @@
 "external_ids": {
 "github": "sickn33/agentic-awesome-skills"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,60 +104,51 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
 "name": "agentic-awesome-skills",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-04T23:30:47Z",
-"headline": "agentic-awesome-skills v18.15.0 \"Agent Publishing, Coverage Gaps, and Social Writing\"",
+"date": "2026-10-09T08:26:09Z",
+"headline": "agentic-awesome-skills v19.2.0",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [18.15.0] - 2026-10-05 - \"Agent Publishing, Coverage Gaps, and Social Writing\"\r\n\r\n> Adds **12** reviewed skills for agent-page publishing, coverage-driven test writing, macro/FX data, quantitative research, and Twitter/X and LinkedIn wri",
+"summary": "## [19.2.0] - 2026-10-09 - \"Market Data And Change-Safety Skills\"\n\n> Adds **6** reviewed skills for US stock-market data, change-impact proof, frontend visual gating, human-expert asks, browser-runtime verification and URL-to-Markdown fetch",
 "tag": "product_update",
-"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v18.15.0"
+"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v19.2.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-04T07:18:31Z",
-"headline": "agentic-awesome-skills v18.14.0 \"Container Deploys, Browser-Extension Launch, and a Cleaner Web Build\"",
+"date": "2026-10-08T14:41:56Z",
+"headline": "agentic-awesome-skills v19.1.0 \"Publishing, Data And QA Skills\"",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [18.14.0] - 2026-10-04 - \"Container Deploys, Browser-Extension Launch, and a Cleaner Web Build\"\r\n\r\n> Adds **2** reviewed skills for container deployment and end-to-end browser-extension delivery, and replaces a vulnerable web-app build d",
+"summary": "## [19.1.0] - 2026-10-08 - \"Publishing, Data And QA Skills\"\r\n\r\n> Adds **7** reviewed skills for website publishing, paid data APIs, social-link reading, email marketing, Telegram ad buying, motion references and local web-page QA. Ships **2",
 "tag": "product_update",
-"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v18.14.0"
+"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v19.1.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://aaskills.tech/.well-known/agent.json",
-"checked_at": "2026-10-05T13:37:39Z",
-"errors": [
-"not valid JSON"
-],
+"checked_at": "2026-10-10T04:56:59Z",
 "parser_version": "a2a-0.3+1.0",
-"status": "invalid"
+"status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:37:38Z",
-"errors": [
-"https://aaskills.tech/.well-known/ard.json: not valid JSON",
-"https://aaskills.tech/.well-known/ai-catalog.json: not valid JSON"
-],
+"checked_at": "2026-10-10T04:56:58Z",
 "parser_version": "ard-0.91",
-"status": "invalid"
+"status": "not_found"
 },
 "mcp": {
 "evidence_url": "https://aaskills.tech/",
 "note": "named in the resource's own tags",
 "probe": {
-"card_url": "https://aaskills.tech/.well-known/mcp.json",
-"checked_at": "2026-10-05T13:37:39Z",
-"status": "invalid"
+"checked_at": "2026-10-10T04:57:00Z",
+"status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
@@ -168,7 +159,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:16Z",
+"checked_at": "2026-10-10T05:17:46Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -176,19 +167,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-14T17:48:09Z",
-"github_forks": 6887,
+"github_forks": 6912,
 "github_language": "Python",
-"github_open_issues": 3,
-"github_pushed_at": "2026-10-04T23:57:35Z",
-"github_stars": 47260,
+"github_open_issues": 5,
+"github_pushed_at": "2026-10-09T08:26:07Z",
+"github_stars": 47401,
 "github_topic": "ai-agents",
 "homepage": "https://aaskills.tech/"
 },
 "slug": "sickn33-agentic-awesome-skills",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/sickn33/agentic-awesome-skills"
 }

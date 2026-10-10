@@ -23,7 +23,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 23.17,
+"adoption": 23.19,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -51,7 +51,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.17,
+"adoption": 23.19,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -81,7 +81,7 @@
 "external_ids": {
 "github": "Agents365-ai/drawio-skill"
 },
-"first_seen": "2026-10-05T13:35:44Z",
+"first_seen": "2026-10-10T04:54:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -103,7 +103,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "MIT",
 "name": "drawio-skill",
 "news": [
@@ -112,7 +112,7 @@
 "date": "2026-09-14T08:26:11Z",
 "headline": "drawio-skill v3.4.0",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "See CHANGELOG [3.4.0].\n\n- **GraphQL importer** (`graphqlerd.py`, #131): GraphQL SDL (`.graphql` / `.gql`) or an introspection JSON dump becomes an entity type diagram, with `@deprecated` markers, `implements` and union edges, and optional g",
 "tag": "product_update",
@@ -123,7 +123,7 @@
 "date": "2026-09-11T16:08:35Z",
 "headline": "drawio-skill v3.3.0",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "See CHANGELOG [3.3.0]: two new importers.\n\n- **AsyncAPI 2/3** (`asyncapiimports.py`, #127): channel, publish/subscribe operation and payload-schema graphs with JSON Pointer provenance, `--direction`, and `--group` by operation tag, channel",
 "tag": "product_update",
@@ -133,12 +133,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:37:49Z",
+"checked_at": "2026-10-10T04:57:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:37:48Z",
+"checked_at": "2026-10-10T04:57:10Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -146,7 +146,7 @@
 "evidence_url": "https://agents365-ai.github.io/drawio-skill/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:37:50Z",
+"checked_at": "2026-10-10T04:57:11Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -158,7 +158,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:55Z",
+"checked_at": "2026-10-10T05:19:35Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -166,19 +166,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-03T16:54:59Z",
-"github_forks": 699,
+"github_forks": 707,
 "github_language": "Python",
 "github_open_issues": 0,
 "github_pushed_at": "2026-10-02T11:13:54Z",
-"github_stars": 9927,
+"github_stars": 10039,
 "github_topic": "mcp-server",
 "homepage": "https://agents365-ai.github.io/drawio-skill/"
 },
 "slug": "agents365-ai-drawio-skill",
 "sources": [
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/Agents365-ai/drawio-skill"
 }

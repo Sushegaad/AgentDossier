@@ -25,7 +25,7 @@
 "domains": {
 "supply_chain": {
 "components": {
-"adoption": 28.58,
+"adoption": 28.68,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -53,7 +53,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.58,
+"adoption": 28.68,
 "docs": 7.0,
 "domain_fit": 91.7,
 "ecosystem": 3.0,
@@ -72,7 +72,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 77.0,
+"score": 77.2,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -83,7 +83,7 @@
 "external_ids": {
 "github": "stablyai/orca"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -105,23 +105,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
 "name": "orca",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-10T04:30:28Z",
+"headline": "orca v1.4.224",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Thank you so much for using Orca and for your continued support! ❤️\n\n## The short version\n\n- **Automations can now set the agent's model and effort for each run.** In the automation editor, open Advanced and fill in **Extra agent arguments*",
+"tag": "product_update",
+"url": "https://github.com/stablyai/orca/releases/tag/v1.4.224"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-08T22:09:53Z",
+"headline": "orca v1.4.223",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Thank you so much for using Orca and for your continued support! ❤️\n\nOrca Server 2.0 is coming soon, with improvements to make remote work more reliable. The current Remote Server remains experimental and may have bugs.\n\n## The short versio",
+"tag": "product_update",
+"url": "https://github.com/stablyai/orca/releases/tag/v1.4.223"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:21Z",
+"checked_at": "2026-10-10T04:59:52Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:20Z",
+"checked_at": "2026-10-10T04:59:51Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:22Z",
+"checked_at": "2026-10-10T04:59:53Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -132,19 +156,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-17T03:28:57Z",
-"github_forks": 5502,
+"github_forks": 5674,
 "github_language": "TypeScript",
-"github_open_issues": 7648,
-"github_pushed_at": "2026-10-05T13:26:13Z",
-"github_stars": 85472,
+"github_open_issues": 8305,
+"github_pushed_at": "2026-10-10T04:47:51Z",
+"github_stars": 88713,
 "github_topic": "ai-agents",
 "homepage": "https://onOrca.dev"
 },
 "slug": "stablyai-orca",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/stablyai/orca"
 }
@@ -173,7 +197,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

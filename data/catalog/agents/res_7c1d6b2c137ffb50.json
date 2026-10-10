@@ -25,7 +25,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.8,
+"adoption": 25.81,
 "docs": 7.0,
 "domain_fit": 96.4,
 "ecosystem": 6.6,
@@ -44,7 +44,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 79.1,
+"score": 79.2,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -55,7 +55,7 @@
 "external_ids": {
 "github": "QwenLM/qwen-code"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -77,7 +77,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:37:28Z",
+"last_seen": "2026-10-10T04:56:24Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_7c1d6b2c137ffb50"
@@ -86,36 +86,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-05T10:45:59Z",
-"headline": "qwen-code Qwen Code Desktop v0.25.0",
+"date": "2026-10-09T22:09:39Z",
+"headline": "qwen-code Release v0.25.0-nightly.20261009.085a44f336",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at 6788c035698a0ada471c958d1e789e96c6cddd9b -->\n\n## What's Changed\n* fix(serve): preserve session creation failure diagnostics by @callmeYe in https://github.com/QwenLM",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.25.0-nightly.20261009.085a44f336 -->\n\n## What's Changed\n* fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in https://git",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0-nightly.20261009.085a44f336"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-05T10:23:32Z",
-"headline": "qwen-code SDK TypeScript Release v0.1.18",
+"date": "2026-10-09T05:35:14Z",
+"headline": "qwen-code Release v0.25.1-preview.1",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Bundled CLI Version\n\nThis SDK release bundles CLI version: 0.25.0\n\nSource: CLI built from source (same branch/ref as SDK)\n\n---\n\n## Bundled CLI Version\n\nThis SDK release bundles CLI version: 0.24.7\n\nSource: CLI built from source (same bra",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.25.1-preview.1 -->\n\n## What's Changed\n* fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in https://github.com/QwenLM/qwe",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1-preview.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:34Z",
+"checked_at": "2026-10-10T05:00:06Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:34Z",
+"checked_at": "2026-10-10T05:00:05Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -123,7 +123,7 @@
 "evidence_url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:40:35Z",
+"checked_at": "2026-10-10T05:00:07Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -135,7 +135,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:44Z",
+"checked_at": "2026-10-10T05:18:16Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -143,19 +143,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-26T01:37:46Z",
-"github_forks": 3162,
+"github_forks": 3176,
 "github_language": "TypeScript",
-"github_open_issues": 1675,
-"github_pushed_at": "2026-10-05T13:32:28Z",
-"github_stars": 28311,
+"github_open_issues": 1791,
+"github_pushed_at": "2026-10-10T04:52:17Z",
+"github_stars": 28390,
 "github_topic": "ai-agent",
 "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview"
 },
 "slug": "qwenlm-qwen-code",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/QwenLM/qwen-code"
 }

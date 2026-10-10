@@ -29,7 +29,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.54,
+"adoption": 25.55,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -57,7 +57,7 @@
 },
 "data": {
 "components": {
-"adoption": 25.54,
+"adoption": 25.55,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -76,7 +76,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 69.0,
+"score": 69.1,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -85,7 +85,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.54,
+"adoption": 25.55,
 "docs": 7.0,
 "domain_fit": 91.7,
 "ecosystem": 3.0,
@@ -115,7 +115,7 @@
 "external_ids": {
 "github": "browserbase/stagehand"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -144,7 +144,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
 "name": "stagehand",
 "news": [
@@ -153,7 +153,7 @@
 "date": "2026-08-28T14:46:59Z",
 "headline": "stagehand @browserbasehq/stagehand@3.7.3",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "### Patch Changes\n\n-   [#2842](https://github.com/browserbase/stagehand/pull/2842) [`f86e609`](https://github.com/browserbase/stagehand/commit/f86e609b934d3f8ae625f5399104df2df9ade7a5) Thanks [@seanmcguire12](https://github.com/seanmcguire1",
 "tag": "product_update",
@@ -164,7 +164,7 @@
 "date": "2026-08-28T14:22:50Z",
 "headline": "stagehand stagehand/server-v3 v3.7.6",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## What's Changed\n* Version Packages by @github-actions[bot] in https://github.com/browserbase/stagehand/pull/2778\n* [V3]: rm docs pkg by @seanmcguire12 in https://github.com/browserbase/stagehand/pull/2830\n* [V3]: fix xpath building logic",
 "tag": "product_update",
@@ -174,17 +174,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:48Z",
+"checked_at": "2026-10-10T05:00:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:46Z",
+"checked_at": "2026-10-10T05:00:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:49Z",
+"checked_at": "2026-10-10T05:00:17Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -194,7 +194,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:52Z",
+"checked_at": "2026-10-10T05:18:26Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -202,19 +202,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-03-24T19:19:44Z",
-"github_forks": 1753,
+"github_forks": 1752,
 "github_language": "TypeScript",
-"github_open_issues": 378,
-"github_pushed_at": "2026-10-04T16:24:31Z",
-"github_stars": 25533,
+"github_open_issues": 395,
+"github_pushed_at": "2026-10-10T00:04:44Z",
+"github_stars": 25598,
 "github_topic": "ai-agents",
 "homepage": "https://stagehand.dev"
 },
 "slug": "browserbase-stagehand",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/browserbase/stagehand"
 }

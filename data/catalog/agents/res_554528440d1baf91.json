@@ -81,7 +81,7 @@
 "external_ids": {
 "mcp_registry": "ai.baselight/baselight"
 },
-"first_seen": "2026-10-05T13:30:32Z",
+"first_seen": "2026-10-10T04:47:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -103,29 +103,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:32Z",
+"last_seen": "2026-10-10T04:47:51Z",
 "license": null,
 "name": "ai.baselight/baselight",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://baselight.ai/.well-known/agent.json",
-"checked_at": "2026-10-05T13:38:27Z",
-"errors": [
-"not valid JSON"
-],
+"checked_at": "2026-10-10T04:57:59Z",
 "parser_version": "a2a-0.3+1.0",
-"status": "invalid"
+"status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:38:26Z",
-"errors": [
-"https://baselight.ai/.well-known/ard.json: not valid JSON",
-"https://baselight.ai/.well-known/ai-catalog.json: not valid JSON"
-],
+"checked_at": "2026-10-10T04:57:58Z",
 "parser_version": "ard-0.91",
-"status": "invalid"
+"status": "not_found"
 },
 "mcp": {
 "parser_version": "mcp-2025-06-18",
@@ -146,7 +138,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:52:28Z",
+"checked_at": "2026-10-10T05:13:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -163,8 +155,8 @@
 "slug": "baselight-ai-ai-baselight-baselight",
 "sources": [
 {
-"payload_hash": "e783b2d772666f62e3cdb17446685196d7172509dac3c2d3c6869382eb50171f",
-"retrieved_at": "2026-10-05T13:30:32Z",
+"payload_hash": "9f9384f268d76eedaa84dbfc9873dd0ad340355eb1999a09acd6162512996a4f",
+"retrieved_at": "2026-10-10T04:47:51Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.baselight/baselight"
 }

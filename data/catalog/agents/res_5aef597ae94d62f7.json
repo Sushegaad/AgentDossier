@@ -24,7 +24,7 @@
 "domains": {
 "finance": {
 "components": {
-"adoption": 26.32,
+"adoption": 26.34,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -52,7 +52,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.32,
+"adoption": 26.34,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -82,7 +82,7 @@
 "external_ids": {
 "github": "HKUDS/Vibe-Trading"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -129,7 +129,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "MIT",
 "name": "Vibe-Trading",
 "news": [
@@ -138,7 +138,7 @@
 "date": "2026-09-29T08:37:30Z",
 "headline": "Vibe-Trading v0.1.16 — a number that can show where it came from",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "Rolls up 492 commits / 116 merged pull requests since 0.1.15, from 16\ncontributors.\n\nThe theme of this cycle is a number that can show where it came from. The\nfinal-answer grounding gate stopped guessing what a number is from the words\narou",
 "tag": "product_update",
@@ -149,7 +149,7 @@
 "date": "2026-09-09T07:49:47Z",
 "headline": "Vibe-Trading v0.1.15 — data that says what it is",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "Rolls up 551 commits / 162 merged pull requests since 0.1.14, from 35\ncontributors.\n\nThe theme of this cycle is data that says what it is. A price frame now\ncarries the adjustment caliber it was served under. A factor propagates the\ngaps in",
 "tag": "product_update",
@@ -159,30 +159,21 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://vibetrading.wiki/.well-known/agent.json",
-"checked_at": "2026-10-05T13:41:12Z",
-"errors": [
-"not valid JSON"
-],
+"checked_at": "2026-10-10T05:00:31Z",
 "parser_version": "a2a-0.3+1.0",
-"status": "invalid"
+"status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:41:11Z",
-"errors": [
-"https://vibetrading.wiki/.well-known/ard.json: not valid JSON",
-"https://vibetrading.wiki/.well-known/ai-catalog.json: not valid JSON"
-],
+"checked_at": "2026-10-10T05:00:30Z",
 "parser_version": "ard-0.91",
-"status": "invalid"
+"status": "not_found"
 },
 "mcp": {
 "evidence_url": "https://vibetrading.wiki/",
 "note": "named in the resource's own tags",
 "probe": {
-"card_url": "https://vibetrading.wiki/.well-known/mcp.json",
-"checked_at": "2026-10-05T13:41:13Z",
-"status": "invalid"
+"checked_at": "2026-10-10T05:00:32Z",
+"status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
@@ -193,7 +184,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:32Z",
+"checked_at": "2026-10-10T05:18:03Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -201,19 +192,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-01T09:52:20Z",
-"github_forks": 5642,
+"github_forks": 5697,
 "github_language": "Python",
-"github_open_issues": 35,
-"github_pushed_at": "2026-10-05T09:22:45Z",
-"github_stars": 34758,
+"github_open_issues": 42,
+"github_pushed_at": "2026-10-09T11:18:38Z",
+"github_stars": 35087,
 "github_topic": "ai-agent",
 "homepage": "https://vibetrading.wiki/"
 },
 "slug": "hkuds-vibe-trading",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/HKUDS/Vibe-Trading"
 }

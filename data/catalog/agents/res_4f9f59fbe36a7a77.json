@@ -22,7 +22,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.94,
+"adoption": 25.95,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.1,
@@ -50,7 +50,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.94,
+"adoption": 25.95,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 2.1,
@@ -80,7 +80,7 @@
 "external_ids": {
 "github": "jackwener/OpenCLI"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -102,26 +102,50 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_4f9f59fbe36a7a77"
 ],
 "name": "OpenCLI",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-08-30T17:37:08Z",
+"headline": "OpenCLI v1.8.8",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* fix: upgrade undici to 7.29.0, 8.9.0 (CVE-2026-13697) by @anupamme in https://github.com/jackwener/OpenCLI/pull/2326\n* fix: sync package-lock with undici 7.29.0 bump by @jackwener in https://github.com/jackwener/OpenCLI/",
+"tag": "product_update",
+"url": "https://github.com/jackwener/OpenCLI/releases/tag/v1.8.8"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-23T16:11:05Z",
+"headline": "OpenCLI v1.8.7",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* test(e2e): headless AX smoke on all platforms (un-skip macOS) + daemon transport contract E2E by @jackwener in https://github.com/jackwener/OpenCLI/pull/2081\n* ci(e2e): place each e2e gate where its runner can run it det",
+"tag": "product_update",
+"url": "https://github.com/jackwener/OpenCLI/releases/tag/v1.8.7"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:23Z",
+"checked_at": "2026-10-10T04:59:56Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:22Z",
+"checked_at": "2026-10-10T04:59:55Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:24Z",
+"checked_at": "2026-10-10T04:59:57Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -132,19 +156,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-14T22:10:23Z",
-"github_forks": 2914,
+"github_forks": 2926,
 "github_language": "JavaScript",
-"github_open_issues": 313,
-"github_pushed_at": "2026-09-24T18:55:16Z",
-"github_stars": 29849,
+"github_open_issues": 333,
+"github_pushed_at": "2026-10-10T04:21:31Z",
+"github_stars": 29987,
 "github_topic": "ai-agents",
 "homepage": "https://opencli.info/"
 },
 "slug": "jackwener-opencli",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/jackwener/OpenCLI"
 }
@@ -162,7 +186,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

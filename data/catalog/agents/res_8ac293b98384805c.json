@@ -85,7 +85,7 @@
 "external_ids": {
 "github": "neuml/txtai"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -107,23 +107,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:15Z",
+"last_seen": "2026-10-10T04:50:21Z",
 "license": "Apache-2.0",
 "name": "txtai",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-06T12:49:05Z",
+"headline": "txtai v9.14.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**This release adds new ANN backends for RaBitQ and Zvec Sparse, native support for ONNX vectors along with a bonanza of improvements and bug fixes**\r\n\r\nSee below for full details on the new features, improvements and bug fixes.\r\n\r\nNew Feat",
+"tag": "product_update",
+"url": "https://github.com/neuml/txtai/releases/tag/v9.14.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-27T13:16:31Z",
+"headline": "txtai v9.13.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**This release adds LEMUR learned multi-vector retrieval, expands late-interaction retrieval capabilities, and includes improvements to MUVERA and pooling along with a number of bug fixes.**\r\n\r\nSee below for full details on the new features",
+"tag": "product_update",
+"url": "https://github.com/neuml/txtai/releases/tag/v9.13.0"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:15Z",
+"checked_at": "2026-10-10T04:59:47Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:14Z",
+"checked_at": "2026-10-10T04:59:46Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:15Z",
+"checked_at": "2026-10-10T04:59:47Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -134,19 +158,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2020-08-09T19:14:59Z",
-"github_forks": 916,
+"github_forks": 927,
 "github_language": "Python",
-"github_open_issues": 18,
-"github_pushed_at": "2026-10-05T12:59:19Z",
-"github_stars": 12990,
+"github_open_issues": 23,
+"github_pushed_at": "2026-10-09T14:35:47Z",
+"github_stars": 13002,
 "github_topic": "ai-agents",
 "homepage": "https://neuml.github.io/txtai"
 },
 "slug": "neuml-txtai",
 "sources": [
 {
-"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
-"retrieved_at": "2026-10-05T13:31:15Z",
+"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
+"retrieved_at": "2026-10-10T04:50:21Z",
 "system": "github",
 "url": "https://github.com/neuml/txtai"
 }
@@ -177,7 +201,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

@@ -193,8 +193,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "cline/cline"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -203,10 +205,10 @@
 "id": "res_e2b06a32b809f35d",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -216,27 +218,57 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Apache-2.0",
 "name": "Cline",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-08T06:50:30Z",
+"headline": "cline Desktop v0.0.45",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "- SSH remotes start again. Since 0.0.38, connecting to an SSH environment failed with `SyntaxError: Invalid character`\n- On SSH environments, the git branch label no longer opens two new SSH logins every 5 seconds. It checks every 30 secon",
+"tag": "product_update",
+"url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.45"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-08T05:55:09Z",
+"headline": "cline CLI v3.0.70",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "- Commit message generation and tasks with reasoning off no longer fail with a 400 error on GPT-6 Astra, GPT-6.1 Sol, Claude Fable 5 or Claude Opus 5.5\n- Cline no longer exits about 3 seconds after an MCP server or hook quits before readin",
+"tag": "product_update",
+"url": "https://github.com/cline/cline/releases/tag/cli-v3.0.70"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:29Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:28Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
 "evidence_url": "https://github.com/cline/cline",
 "note": "named in the resource's own description",
+"probe": {
+"checked_at": "2026-10-10T04:58:29Z",
+"status": "not_found"
+},
 "source": "self_description",
 "status": "claimed"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "cline.bot",
 "resource_type": "agent",
 "scope": "public",
 "seed": {
@@ -244,13 +276,28 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2024-07-06T07:28:10Z",
+"github_forks": 7628,
+"github_language": "TypeScript",
+"github_open_issues": 1649,
+"github_pushed_at": "2026-10-10T03:48:10Z",
+"github_stars": 70088,
+"homepage": "https://cline.bot",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain"
+],
+"repo": "cline/cline"
+}
 },
 "slug": "cline-cline",
 "sources": [
 {
 "payload_hash": "4c51346ca84d9eeb4d3c23884e0717ab2cd01dd7731f1d167076fdf87d165c9d",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/cline/cline"
 }
@@ -259,8 +306,8 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
-"issues": null,
+"identity": 3,
+"issues": 1,
 "protocols": 3,
 "security": null
 },

@@ -34,16 +34,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/google",
 "framework": "csa_star",
 "issued": "2017-02-21",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:44:01Z",
+"retrieved_at": "2026-10-10T05:04:06Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -52,6 +52,36 @@
 "tier": 1,
 "valid_until": null,
 "variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "F1206081364",
+"covers_resource": "inherited",
+"credited": false,
+"detail": {
+"cso": "Google Workspace",
+"csp": "Google",
+"deployment_model": "Hybrid Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "High"
+},
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://marketplace.fedramp.gov/products/F1206081364",
+"framework": "fedramp",
+"issued": "2021-10-28",
+"issuer": "JAB / 3PAO Coalfire Systems, Inc.",
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:02:19Z",
+"review_reason": "vendor authorization for Google Workspace; entity 1.00",
+"reviewer": null,
+"scope": "entity",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_HIGH"
 }
 ],
 "deployment": "self-hosted",
@@ -60,11 +90,11 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.42,
+"adoption": 23.48,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
-"governance": 33.3,
+"governance": 66.7,
 "health": 20.0,
 "trust": 16.0
 },
@@ -79,18 +109,18 @@
 },
 "profile": "general",
 "rank": null,
-"score": 63.2,
+"score": 65.1,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": []
 },
 "technology": {
 "components": {
-"adoption": 23.42,
+"adoption": 23.48,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 1.5,
-"governance": 33.3,
+"governance": 66.7,
 "health": 20.0,
 "trust": 16.0
 },
@@ -99,13 +129,13 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": 68.3,
+"score": 68.4,
 "value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
 "rank": null,
-"score": 68.3,
+"score": 68.4,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": []
@@ -114,7 +144,7 @@
 "external_ids": {
 "github": "google/artemis"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -136,10 +166,11 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:15Z",
+"last_seen": "2026-10-10T04:50:21Z",
 "license": "Apache-2.0",
 "name": "artemis",
 "news": [],
+"news_checked": true,
 "protocols": {
 "a2a": {
 "not_checked": "code_host",
@@ -160,19 +191,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-08-13T17:59:37Z",
-"github_forks": 1112,
+"github_forks": 1150,
 "github_language": "Python",
-"github_open_issues": 122,
+"github_open_issues": 132,
 "github_pushed_at": "2026-10-01T21:37:15Z",
-"github_stars": 10986,
+"github_stars": 11257,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "google-artemis",
 "sources": [
 {
-"payload_hash": "297022fc72912b7a408f0c0431d178cafff5cd6158fc1a4245ff285c9e4b984a",
-"retrieved_at": "2026-10-05T13:31:15Z",
+"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
+"retrieved_at": "2026-10-10T04:50:21Z",
 "system": "github",
 "url": "https://github.com/google/artemis"
 }
@@ -188,7 +219,7 @@
 "trust": {
 "compliance": 1,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

@@ -22,7 +22,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.18,
+"adoption": 24.19,
 "docs": 7.0,
 "domain_fit": 91.7,
 "ecosystem": 6.6,
@@ -41,7 +41,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 77.0,
+"score": 77.1,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -52,7 +52,7 @@
 "external_ids": {
 "github": "NanmiCoder/cc-haha"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -74,10 +74,34 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "MIT",
 "name": "cc-haha",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-08T16:17:57Z",
+"headline": "cc-haha Claude Code Haha v0.7.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# Claude Code Haha v0.7.0\n\n这是一次大版本改版：桌面端整体换上全新的「素 Porcelain」视觉系统，手机和平板 H5 按触屏重做，输入框「+」菜单重新组织为技能 / 连接器 / 运行方式三组，新增「编辑已发送的提示词并重跑」和会话「轨迹」视图。Agent Teams 的可靠性和后台任务的收尾也做了系统性修复——停止后保持停止、成员失败自动唤醒、跨会话的后台任务不再永久转圈。\n\n## 核心功能\n\n- **全新桌面视觉系统「素 Porcelain」*",
+"tag": "product_update",
+"url": "https://github.com/NanmiCoder/cc-haha/releases/tag/v0.7.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-01T19:26:23Z",
+"headline": "cc-haha Claude Code Haha v0.6.8",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# Claude Code Haha v0.6.8\n\n本次新增 **本地语音听写**、**工作区文档预览** 和 **精选技能目录**，加入 **等待处理的会话高亮** 和 **按格式的文件图标**；同时修复了「停止并关闭」没停干净、请求过大后每条消息都失败、后台任务回复被吞、Grok 报 426 等一批稳定性问题。\n\n## 核心功能\n\n- **本地语音听写**：输入框旁新增麦克风按钮，点击录音、再点结束。音频重采样为 16 kHz 单声道 PCM16 WAV 后交给本机识别",
+"tag": "product_update",
+"url": "https://github.com/NanmiCoder/cc-haha/releases/tag/v0.6.8"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
 "not_checked": "no_publisher_domain",
@@ -100,19 +124,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-31T17:30:14Z",
-"github_forks": 8594,
+"github_forks": 8602,
 "github_language": "TypeScript",
-"github_open_issues": 187,
-"github_pushed_at": "2026-10-05T13:12:25Z",
-"github_stars": 14868,
+"github_open_issues": 193,
+"github_pushed_at": "2026-10-09T19:59:31Z",
+"github_stars": 14938,
 "github_topic": "ai-agent",
 "homepage": "cchaha.ai"
 },
 "slug": "nanmicoder-cc-haha",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/NanmiCoder/cc-haha"
 }
@@ -137,7 +161,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 3,
 "security": null
 },

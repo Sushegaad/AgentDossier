@@ -17,16 +17,16 @@
 "certification"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/palo alto networks",
 "framework": "csa_star",
 "issued": "2020-07-16",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:42:53Z",
+"retrieved_at": "2026-10-10T05:02:48Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -35,6 +35,36 @@
 "tier": 1,
 "valid_until": null,
 "variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "FR2001619337",
+"covers_resource": "inherited",
+"credited": false,
+"detail": {
+"cso": "Idira Identity Security Government Services Platform",
+"csp": "Palo Alto Networks, Inc.",
+"deployment_model": "Public Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "High"
+},
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://marketplace.fedramp.gov/products/FR2001619337",
+"framework": "fedramp",
+"issued": "2024-03-14",
+"issuer": "Agency / 3PAO Schellman Compliance, LLC",
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:01:20Z",
+"review_reason": "vendor authorization for Idira Identity Security Government Services Platform; entity 1.00",
+"reviewer": null,
+"scope": "entity",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_HIGH"
 }
 ],
 "components": {
@@ -228,7 +258,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -250,24 +280,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Commercial",
 "name": "Palo Alto Networks Unit 42 Continuous Frontier AI Defense",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:27Z",
+"checked_at": "2026-10-10T05:00:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:26Z",
+"checked_at": "2026-10-10T04:59:59Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:28Z",
+"checked_at": "2026-10-10T05:00:00Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -277,7 +307,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:50Z",
+"checked_at": "2026-10-10T05:10:40Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -293,7 +323,7 @@
 "sources": [
 {
 "payload_hash": "74447696a6d159ef9d4b72b3c11fb2ab26e35eecf7458e6b33002209c371f635",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://www.reuters.com/technology/palo-alto-networks-unveils-ai-powered-cybersecurity-service-using-claude-gpt-2026-09-22/"
 }

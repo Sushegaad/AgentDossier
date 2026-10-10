@@ -14,7 +14,7 @@
 "external_ids": {
 "github": "deepseek-ai/deepseek-harness"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -61,29 +61,27 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
 "name": "deepseek-harness",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-02T03:11:20Z",
-"discussion_url": "https://news.ycombinator.com/item?id=49929489",
-"engagement": 638,
-"headline": "DeepSeek Harness Desktop for macOS and Windows",
-"kind": "community",
-"link_confidence": 0.95,
-"outlet": "Hacker News",
-"summary": null,
-"tag": "news",
-"url": "https://www.deepseek.com/en/harness/"
+"date": "2026-10-09T11:09:26Z",
+"headline": "deepseek-harness v0.2.1-alpha.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "[中文](#cn-v0.2.1-alpha.2-community) | [English](#en-v0.2.1-alpha.2-community)\r\n\r\n<h3 id=\"cn-v0.2.1-alpha.2-community\">新增功能</h3>\r\n\r\n- 新增实验性思考过程机器翻译插件，可在插件页启用，选择 Bing、Google 或付费 DeepSeek Flash。 @tianyicui, @ZiyaZhang, @imccyu\r\n- 新增实验性 Git Work",
+"tag": "product_update",
+"url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.2"
 },
 {
 "cluster_size": 1,
 "date": "2026-10-03T06:42:19Z",
 "headline": "deepseek-harness v0.2.1-alpha.1",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "[中文](#cn-v0.2.1-alpha.1-community) | [English](#en-v0.2.1-alpha.1-community)\n\n<h3 id=\"cn-v0.2.1-alpha.1-community\">✨ 新增功能</h3>\n\n- 新增实验性 Claude Code Mods 兼容层。目前阶段的主要目的是验证 Claude Code Mods API 功能大致为 DeepSeek Harness 插件的一个子集，而非为用户提供实际的完整兼容性。 @",
 "tag": "product_update",
@@ -91,14 +89,16 @@
 },
 {
 "cluster_size": 1,
-"date": "2026-09-29T09:42:36Z",
-"headline": "deepseek-harness v0.2.0-rc.2",
-"kind": "vendor",
+"date": "2026-10-02T03:11:20Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49929489",
+"engagement": 643,
+"headline": "DeepSeek Harness Desktop for macOS and Windows",
+"kind": "community",
 "link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "[中文](#cn-v0.2.0-rc.2-community) | [English](#en-v0.2.0-rc.2-community)\r\n\r\n<h3 id=\"cn-v0.2.0-rc.2-community\">✨ 新增功能</h3>\r\n\r\n- macOS／Windows 桌面端可在菜单栏中管理和安装 dsh 命令，支持管理插件，无需另装 Node 或 pnpm。 @tianyicui\r\n\r\n### 🐛 问题修复\r\n\r\n- 修复新建终端菜单重复列出同名 shell 的问题",
-"tag": "product_update",
-"url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.0-rc.2"
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://www.deepseek.com/en/harness/"
 },
 {
 "cluster_size": 1,
@@ -130,17 +130,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:39:11Z",
+"checked_at": "2026-10-10T04:58:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:39:10Z",
+"checked_at": "2026-10-10T04:58:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:39:11Z",
+"checked_at": "2026-10-10T04:58:42Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -150,7 +150,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:55:53Z",
+"checked_at": "2026-10-10T05:17:19Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -158,19 +158,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-08-13T11:56:32Z",
-"github_forks": 29206,
+"github_forks": 29594,
 "github_language": "TypeScript",
 "github_open_issues": 0,
-"github_pushed_at": "2026-10-03T06:02:48Z",
-"github_stars": 243782,
+"github_pushed_at": "2026-10-09T10:04:06Z",
+"github_stars": 246499,
 "github_topic": "ai-agents",
 "homepage": "https://deepseek.com/harness"
 },
 "slug": "deepseek-ai-deepseek-harness",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/deepseek-ai/deepseek-harness"
 }

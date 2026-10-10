@@ -18,7 +18,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 22.96,
+"adoption": 23.0,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -48,7 +48,7 @@
 "external_ids": {
 "github": "zhouxiaoka/autoclip"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -70,42 +70,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "MIT",
 "name": "autoclip",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-03T04:41:32Z",
-"headline": "autoclip AutoClip Desktop v1.5.3",
+"date": "2026-10-09T17:40:45Z",
+"headline": "autoclip AutoClip Desktop v1.5.6",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## AutoClip Desktop v1.5.3\n\n> **验收未通过，请暂缓安装此预发布版本。** 项目状态文件持续无法写入时，部分制作任务可能一直显示等待或进行中。对应修复仍在验收，本版安装包未包含。\n\n- 修复访谈式竖屏成片裁掉引用卡、幻灯片两侧文字的问题。\n- 百炼视觉模型缺少能力信息时可正确使用画面分析；未知模型能力可在设置中确认。\n- 关闭画面识别后，自动封面选帧和硬字幕语言判断不再向视觉服务发送素材画面。\n- 视觉高光分析兼容模型直接返回事件列表，保留选段边",
+"summary": "## AutoClip Desktop v1.5.6\n\n- 默认自动预检失败时改走字幕路线继续出片，不再整单失败；只有明确要求视觉分析时才停住。\n\n- 导入前检查分析模型、转写、视觉和 FFmpeg。缺什么直接给出连接、安装或打开设置的入口；没有字幕且转写未就绪时不能开始。\n\n- 自动出片失败事件补齐失败阶段、HTTP 状态和字幕/视觉路线，不再把所有失败都记成笼统的模型错误。\n\n- 安装冒烟改为走 Studio 一键出片，并用 ffprobe 检查成片。\n\n- 桌面版不再启",
 "tag": "product_update",
-"url": "https://github.com/zhouxiaoka/autoclip/releases/tag/v1.5.3"
+"url": "https://github.com/zhouxiaoka/autoclip/releases/tag/v1.5.6"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-02T18:55:51Z",
-"headline": "autoclip AutoClip Desktop v1.5.2",
+"date": "2026-10-06T09:12:24Z",
+"headline": "autoclip AutoClip Desktop v1.5.5",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## AutoClip Desktop v1.5.2\n\n- 修复 Windows 成片状态文件被短暂读取占用时导致导出失败；持续无法写入时保留原状态。\n\n- 快速视觉判断抽帧失败或超时时，继续使用字幕方案，保留原素材与重试入口。\n- 内容分析失败时保留具体阶段；模型限流、断网、超时和无法解析的回答提供对应提示，避免统一显示为未知错误。\n\n### 下载 / Download\n\n| 平台 | 文件 | 首次打开 |\n|---|---|---|\n| macOS（Apple Sili",
+"summary": "## AutoClip Desktop v1.5.5\n\n- 包含未公开发布的 1.5.4 全部修复（1.5.4 标签的发布构建被验收门禁误拦，未生成安装包），并修复发布构建读取验收标签的问题。\n\n- 云端转写失败时保留云端原因和配置提示，不再误报本地 Whisper 未安装；保留原有请求上限。\n\n- 成片保存后继续同步本次封面收尾，修复最后一张卡片封面生成后未自动显示的问题；可选封面失败或服务重启仍保留已生成视频。\n\n- 发布简介中的 CEO、CTO、CFO、COO 或“公司",
 "tag": "product_update",
-"url": "https://github.com/zhouxiaoka/autoclip/releases/tag/v1.5.2"
+"url": "https://github.com/zhouxiaoka/autoclip/releases/tag/v1.5.5"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:41:25Z",
+"checked_at": "2026-10-10T05:00:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:41:24Z",
+"checked_at": "2026-10-10T05:00:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -113,7 +113,7 @@
 "evidence_url": "https://zhouxiaoka.github.io/autoclip_intro/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:41:25Z",
+"checked_at": "2026-10-10T05:00:38Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -125,7 +125,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:58:03Z",
+"checked_at": "2026-10-10T05:19:43Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -133,19 +133,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-08T04:51:15Z",
-"github_forks": 1676,
+"github_forks": 1686,
 "github_language": "Python",
 "github_open_issues": 14,
-"github_pushed_at": "2026-10-05T09:40:28Z",
-"github_stars": 9162,
+"github_pushed_at": "2026-10-10T04:32:39Z",
+"github_stars": 9287,
 "github_topic": "ai-agent",
 "homepage": "https://zhouxiaoka.github.io/autoclip_intro/"
 },
 "slug": "zhouxiaoka-autoclip",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/zhouxiaoka/autoclip"
 }

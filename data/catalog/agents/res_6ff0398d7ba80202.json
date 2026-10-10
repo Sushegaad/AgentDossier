@@ -29,7 +29,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 23.32,
+"adoption": 23.36,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -48,7 +48,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 63.8,
+"score": 63.9,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -57,7 +57,7 @@
 },
 "finance": {
 "components": {
-"adoption": 23.32,
+"adoption": 23.36,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 3.0,
@@ -85,7 +85,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.32,
+"adoption": 23.36,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -115,7 +115,7 @@
 "external_ids": {
 "github": "simonlin1212/a-stock-data"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -137,31 +137,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "Apache-2.0",
 "name": "a-stock-data",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-07T06:22:49Z",
+"headline": "a-stock-data v3.10.1 — 成交量单位更正（#57）/ 逐笔提速与盘后核对",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "十五层、87 个入口、34 个来源都不变，返回的数据也不变。§1.2 只改文档；§1.4 逐笔和 §13.7 期货日 K 修的是\nv3.10.0 发版后补做代码复审查出的问题，§1.4 多了一个 `frame.attrs[\"complete\"]`。\n\n### 修复\n\n**§1.2 `tencent_kline()` 的成交量单位写错了：科创板是股，不是手（#57）**\n\n§1.2 的返回列、函数说明，以及「备用源速查」里的腾讯分钟 K 线字段说明，都把成交量写成「手」。\n20",
+"tag": "product_update",
+"url": "https://github.com/simonlin1212/a-stock-data/releases/tag/v3.10.1"
+},
+{
+"cluster_size": 1,
 "date": "2026-09-22T16:11:05Z",
 "headline": "a-stock-data v3.10.0 — 当日逐笔 / 期货日 K（含大商所）/ 行情层重排",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "新增 **2 个能力入口**，来源数不变：十五层、87 个入口（82 主入口 + 5 备胎）、34 个来源。\n通达信公开服务器的 K 线 / 盘口 / 逐笔命令 2026-09 起返回空（#52），本版补上逐笔的替代来源，并把行情层的可用来源排到前面。\n\n### Breaking Changes\n\n- **Layer 1 重新编号**，可用来源在前、mootdx 放最后留档。旧 → 新：\n  1.2 腾讯财经 → **1.1**、1.5 腾讯 K 线 → **1.2**、1.",
 "tag": "product_update",
 "url": "https://github.com/simonlin1212/a-stock-data/releases/tag/v3.10.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-20T00:36:31Z",
-"headline": "a-stock-data v3.9.0 — 期货大宗 / 事件驱动 / 可转债三层，15 层 · 85 入口 · 34 源",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "新增 **3 层、25 个能力入口、12 个来源**：十五层、85 个入口（80 主入口 + 5 备胎）、34 个来源。\n新来源为通达信官网盘后包、华尔街见闻、央视网、上证e互动、中债、中国货币网、上期所、上期能源、郑商所、中金所、\n广期所、上金所；腾讯、新浪、东财、沪深交易所已存在，本次增加其端点。处理 #49、#52、#53、#55。\n\n### Breaking Changes\n\n无。旧函数签名保留；`tdx_client()` 新增 `check` 参数，默认仍是 `",
-"tag": "product_update",
-"url": "https://github.com/simonlin1212/a-stock-data/releases/tag/v3.9.0"
 }
 ],
 "news_checked": true,
@@ -184,7 +184,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:50Z",
+"checked_at": "2026-10-10T05:19:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -192,19 +192,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-05-11T01:08:15Z",
-"github_forks": 1925,
+"github_forks": 1948,
 "github_language": "Python",
-"github_open_issues": 1,
-"github_pushed_at": "2026-09-25T09:56:12Z",
-"github_stars": 10564,
+"github_open_issues": 2,
+"github_pushed_at": "2026-10-07T06:22:49Z",
+"github_stars": 10739,
 "github_topic": "ai-agent",
 "homepage": null
 },
 "slug": "simonlin1212-a-stock-data",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/simonlin1212/a-stock-data"
 }

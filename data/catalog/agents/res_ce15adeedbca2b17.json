@@ -23,7 +23,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 25.75,
+"adoption": 25.76,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 2.7,
@@ -51,7 +51,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.75,
+"adoption": 25.76,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 2.7,
@@ -81,7 +81,7 @@
 "external_ids": {
 "github": "TencentCloud/TencentDB-Agent-Memory"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -103,47 +103,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "Other",
 "name": "TencentDB-Agent-Memory",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-09T11:19:45Z",
+"headline": "TencentDB-Agent-Memory v2.0.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## [2.0.2] - 2026-10-09\r\n\r\n> **产品定位**：让 Agent 的经验、文档、代码沉淀成可复用资产，让下一位 Agent\r\n> 直接读档。详见 [README_CN.md](./README_CN.md)。\r\n\r\n### 🗄️ 存储后端可扩展 · 支持 MongoDB\r\n\r\n团队记忆不再绑定单一数据底座，MongoDB 后端能力进一步补全：\r\n\r\n- 新增 memory-prompt 与 generation-ref 两类存储，覆盖更多记忆数据结构",
+"tag": "product_update",
+"url": "https://github.com/TencentCloud/TencentDB-Agent-Memory/releases/tag/v2.0.2"
+},
+{
+"cluster_size": 1,
 "date": "2026-09-22T09:40:39Z",
 "headline": "TencentDB-Agent-Memory v1.0.3",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## [1.0.3] - 2026-09-22\r\n\r\n### 🐛 修复\r\n\r\n#### OpenClaw 宿主兼容\r\n\r\n- **兼容 OpenClaw 9.5**：适配新版宿主的 gateway-ized 插件安装流程与 sqlite-vec 加载方式，并前向兼容旧版本（8.2 / 9.4）。\r\n  - **修复首次 install 缺少 `enabled` 字段**：OpenClaw 9.5 在 gateway 进程内执行 `plugins install`，存在竞态导致",
 "tag": "product_update",
 "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory/releases/tag/v1.0.3"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-21T08:41:23Z",
-"headline": "TencentDB-Agent-Memory v2.0.2-beta.3",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "## [2.0.2-beta.3] - 2026-09-21\r\n\r\nv2.0.2-beta.3 发布，相比 v2.0.1 新增可选的 MongoDB 存储后端、更丰富的面板登录方式、\r\n全新的数据分析与可观测能力，并优化了技能展示、会话接入体验，修复了记忆召回、\r\n多团队切换等若干问题。\r\n\r\n> **产品定位**：让 Agent 的经验、文档、代码沉淀成可复用资产，让下一位 Agent\r\n> 直接读档。详见 [README_CN.md](./README_CN.md)。",
-"tag": "product_update",
-"url": "https://github.com/TencentCloud/TencentDB-Agent-Memory/releases/tag/v2.0.2-beta.3"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:53Z",
+"checked_at": "2026-10-10T05:00:21Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:52Z",
+"checked_at": "2026-10-10T05:00:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-05T13:40:53Z",
+"checked_at": "2026-10-10T05:00:21Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -153,7 +153,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:46Z",
+"checked_at": "2026-10-10T05:18:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -161,19 +161,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-07T06:34:26Z",
-"github_forks": 2675,
+"github_forks": 2707,
 "github_language": "TypeScript",
-"github_open_issues": 897,
-"github_pushed_at": "2026-09-29T08:48:49Z",
-"github_stars": 27692,
+"github_open_issues": 900,
+"github_pushed_at": "2026-10-10T02:31:39Z",
+"github_stars": 27869,
 "github_topic": "ai-agent",
 "homepage": "https://tencentcloud.github.io/TencentDB-Agent-Memory/"
 },
 "slug": "tencentcloud-tencentdb-agent-memory",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory"
 }

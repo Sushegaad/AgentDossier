@@ -37,7 +37,7 @@
 "external_ids": {
 "github": "bytedance/deer-flow"
 },
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -78,35 +78,50 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:37:28Z",
+"last_seen": "2026-10-10T04:56:24Z",
 "license": "MIT",
 "merged_ids": [
 "res_7e43733404e9570a",
 "res_7e43733404e9570a"
 ],
 "name": "DeerFlow",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-24T10:40:44Z",
+"headline": "deer-flow v2.1.0 Release",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# DeerFlow 2.1.0\r\n\r\nDeerFlow 2.1 builds on the 2.0 super-agent harness with a focus on **trust,\r\nscale, and operability**: verifiable agent execution, durable batch delegation,\r\npluggable memory backends, four new sandbox providers, an out-",
+"tag": "product_update",
+"url": "https://github.com/bytedance/deer-flow/releases/tag/v2.1.0"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:44Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:40Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:45Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "deerflow.tech",
 "resource_type": "framework",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:50:09Z",
+"checked_at": "2026-10-10T05:11:00Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -118,26 +133,33 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-07T02:50:19Z",
-"github_forks": 11584,
+"github_forks": 11620,
 "github_language": "Python",
-"github_open_issues": 899,
-"github_pushed_at": "2026-10-05T13:28:08Z",
-"github_stars": 83403,
+"github_open_issues": 890,
+"github_pushed_at": "2026-10-10T03:03:26Z",
+"github_stars": 83598,
 "github_topic": "ai-agents",
 "homepage": "https://deerflow.tech",
-"observed_popularity": "Not captured"
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"publisher_domain",
+"tags"
+],
+"repo": "bytedance/deer-flow"
+}
 },
 "slug": "bytedance-deerflow",
 "sources": [
 {
 "payload_hash": "93652c0d067470a375b5a744f40787c48a86845989caa835aeff052b536bdd33",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/bytedance/deer-flow"
 },
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/bytedance/deer-flow"
 }

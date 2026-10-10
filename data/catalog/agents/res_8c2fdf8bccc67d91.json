@@ -1,0 +1,199 @@
+{
+"canonical_url": "agenticplug.ai/agent-ready-report",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Scan any public website and see how ready it is for AI agents and AI search, explained plainly.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 13.6,
+"governance": null,
+"health": 20.0,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "data",
+"rank": null,
+"score": 60.6,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 13.6,
+"governance": null,
+"health": 20.0,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 61.1,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:agenticplug.ai:agent:a2a",
+"mcp_registry": "ai.agenticplug/agent-ready-report"
+},
+"first_seen": "2026-10-10T04:47:46Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_8c2fdf8bccc67d91",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.0",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-10T04:57:09Z",
+"license": null,
+"merged_ids": [
+"res_98af53da4edbb125"
+],
+"name": "Agent Ready Report",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://agenticplug.ai/.well-known/agent-card.json",
+"checked_at": "2026-10-10T04:57:09Z",
+"parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3.0",
+"signed": false,
+"skills": [
+"Search Knowledge Base",
+"Get the A.G.E.N.T.I.C. Framework",
+"List Services",
+"List Blog Articles"
+],
+"status": "verified",
+"version": "1.0.0"
+},
+"ard": {
+"checked_at": "2026-10-10T04:57:08Z",
+"entries": 6,
+"parser_version": "ard-0.91",
+"sources": [
+"https://agenticplug.ai/.well-known/ai-catalog.json"
+],
+"status": "verified"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://scan.agenticplug.ai/mcp"
+}
+],
+"server_name": "ai.agenticplug/agent-ready-report",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "agenticplug.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-10T05:11:57Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-10-09T22:47:11.858569Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-10-09T22:47:11.858569Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "agenticplug-ai-agent-ready-report",
+"sources": [
+{
+"payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
+"retrieved_at": "2026-10-10T04:47:46Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agenticplug/agent-ready-report"
+},
+{
+"payload_hash": "e719a42dc225442369aa040ded191ca9165be4fb5dc0557211538865264d1751",
+"retrieved_at": "2026-10-10T04:57:09Z",
+"system": "ard",
+"url": "https://agenticplug.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1
+},
+"url": "https://agenticplug.ai/agent-ready-report",
+"vendor": "agenticplug.ai"
+}

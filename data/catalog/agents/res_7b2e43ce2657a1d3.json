@@ -53,7 +53,7 @@
 "external_ids": {
 "github": "letta-ai/letta"
 },
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -75,28 +75,32 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_131bb696ee5ba132"
 ],
 "name": "Letta",
 "news": [],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:56Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:55Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:57Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "docs.letta.com",
 "resource_type": "platform",
 "scope": "public",
 "seed": {
@@ -106,26 +110,33 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-10-11T07:38:37Z",
-"github_forks": 2641,
+"github_forks": 2642,
 "github_language": null,
 "github_open_issues": 0,
 "github_pushed_at": "2026-09-10T17:59:08Z",
-"github_stars": 25024,
+"github_stars": 25094,
 "github_topic": "ai-agents",
 "homepage": "https://docs.letta.com/",
-"observed_popularity": "Not captured"
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"publisher_domain",
+"tags"
+],
+"repo": "letta-ai/letta"
+}
 },
 "slug": "letta-letta",
 "sources": [
 {
 "payload_hash": "8845a0d8ac12a5490d064c89ea36c602d1077bc0885ac6458a4ebc31b03562aa",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/letta-ai/letta"
 },
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/letta-ai/letta"
 }
@@ -140,7 +151,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

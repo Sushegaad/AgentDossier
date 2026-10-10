@@ -20,12 +20,12 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "OpenHuman is the fastest, cheapest, most efficient open-source agent harness. Written in Rust",
+"description": "The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": 26.71,
+"adoption": 26.78,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -53,7 +53,7 @@
 },
 "regulatory": {
 "components": {
-"adoption": 26.71,
+"adoption": 26.78,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -81,7 +81,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.71,
+"adoption": 26.78,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -100,7 +100,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 77.5,
+"score": 77.6,
 "score_version": "sar-score-1.0",
 "source": "classifier",
 "unknown": [
@@ -111,7 +111,7 @@
 "external_ids": {
 "github": "tinyhumansai/openhuman"
 },
-"first_seen": "2026-10-05T13:31:11Z",
+"first_seen": "2026-10-10T04:50:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -146,42 +146,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "GPL-3.0",
 "name": "openhuman",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-30T21:18:38Z",
-"headline": "openhuman OpenHuman v0.64.10",
+"date": "2026-10-09T05:08:30Z",
+"headline": "openhuman OpenHuman v0.64.15",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# The Speed, Structure & Reliability Upgrade\n\nThis release tightens the core experience from end to end—faster first turns, clearer chat feedback, sturdier integrations, and a big internal modularity push that sets us up for even quicker it",
+"summary": "# The Installed-Build Reliability Upgrade\n\nThis release focuses on keeping installed apps rock-solid—especially when loading key modules like search and memory. Onward and upward! 🎉\n\n## Highlights\n\n### Modules & installed builds 🧩\nA targete",
 "tag": "product_update",
-"url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.10"
+"url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.15"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-29T01:33:55Z",
-"headline": "openhuman OpenHuman v0.64.7",
+"date": "2026-10-08T22:05:56Z",
+"headline": "openhuman OpenHuman v0.64.14",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# The Intelligence Upgrade 🎉\n\nv0.64.4 to v0.64.7 brings 12 PRs across 12 commits, with upgrades across memory, voice, agents, reliability, and developer foundations. Thank you to everyone who contributed to this release. ✨\n\n## Highlights 🚀",
+"summary": "# The Files, Memory & Voice Power-Up\n\nThis release is a big step forward in day-to-day usability: clearer files and sessions, a major memory evolution, and real-time voice agents—plus a ton of reliability and performance work across the sta",
 "tag": "product_update",
-"url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.7"
+"url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.14"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:57Z",
+"checked_at": "2026-10-10T05:00:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:55Z",
+"checked_at": "2026-10-10T05:00:22Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -189,7 +189,7 @@
 "evidence_url": "https://tinyhumans.ai/openhuman",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:40:57Z",
+"checked_at": "2026-10-10T05:00:25Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -201,7 +201,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:56:24Z",
+"checked_at": "2026-10-10T05:17:52Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -209,19 +209,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-18T20:01:27Z",
-"github_forks": 4027,
+"github_forks": 4108,
 "github_language": "Rust",
-"github_open_issues": 280,
-"github_pushed_at": "2026-10-05T05:51:24Z",
-"github_stars": 40642,
+"github_open_issues": 276,
+"github_pushed_at": "2026-10-10T03:30:57Z",
+"github_stars": 41759,
 "github_topic": "ai-agents",
 "homepage": "https://tinyhumans.ai/openhuman"
 },
 "slug": "tinyhumansai-openhuman",
 "sources": [
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/tinyhumansai/openhuman"
 }

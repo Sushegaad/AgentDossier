@@ -1,0 +1,181 @@
+{
+"canonical_url": "rea.tools",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"cli",
+"code",
+"developer",
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 27.31,
+"docs": 7.0,
+"domain_fit": 87.5,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.875,
+"evidence_coverage": 1.0,
+"governance_evidence": {
+"credited": {},
+"score": null,
+"value": null,
+"version": "sar-score-1.1"
+},
+"profile": "technology",
+"rank": null,
+"score": 79.8,
+"score_version": "sar-score-1.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "morluto/rea"
+},
+"first_seen": "2026-10-10T04:50:17Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_27299ce33f3d5361",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.0",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-10T04:50:17Z",
+"license": "MIT",
+"name": "rea",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-09T23:56:42Z",
+"headline": "rea rea-agents: v6.3.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## [6.3.0](https://github.com/morluto/rea/compare/rea-agents-6.2.0...rea-agents-6.3.0) (2026-10-09)\n\n\n### ⚠ BREAKING CHANGES\n\n* **captures:** Historical captures without current producer accounting or transaction identity, and web diffs mis",
+"tag": "product_update",
+"url": "https://github.com/morluto/rea/releases/tag/rea-agents-6.3.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-09T16:51:14Z",
+"headline": "rea rea-agents: v6.2.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## [6.2.0](https://github.com/morluto/rea/compare/rea-agents-6.1.0...rea-agents-6.2.0) (2026-10-09)\n\n\n### ⚠ BREAKING CHANGES\n\nRead the [6.1 to 6.2 migration guide](docs/migration-6.2.md) before upgrading. REA's `always-bump-minor` policy in",
+"tag": "product_update",
+"url": "https://github.com/morluto/rea/releases/tag/rea-agents-6.2.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-10T05:00:08Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-10T05:00:07Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://rea.tools",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-10T05:00:08Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "rea.tools",
+"resource_type": "skill",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-04-14T00:51:32Z",
+"github_forks": 9291,
+"github_language": "TypeScript",
+"github_open_issues": 117,
+"github_pushed_at": "2026-10-10T04:49:32Z",
+"github_stars": 51442,
+"github_topic": "ai-agents",
+"homepage": "https://rea.tools"
+},
+"slug": "morluto-rea",
+"sources": [
+{
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
+"system": "github",
+"url": "https://github.com/morluto/rea"
+}
+],
+"tags": [
+"agent-skills",
+"ai-agents",
+"binary-analysis",
+"claude-code",
+"cli",
+"codex",
+"cordis",
+"ctf",
+"decompiler",
+"developer-tools",
+"disassembler",
+"dsh",
+"dsh-plugin",
+"ghidra",
+"hopper",
+"llm",
+"mcp",
+"model-context-protocol",
+"reverse-engineering",
+"static-analysis"
+],
+"tenant": null,
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": null
+},
+"url": "https://rea.tools",
+"vendor": "morluto"
+}

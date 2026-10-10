@@ -33,8 +33,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "camel-ai/camel"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -43,10 +45,10 @@
 "id": "res_ff2721a0b38df59a",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -56,25 +58,69 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Apache-2.0",
 "name": "CAMEL",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-03T05:28:59Z",
+"headline": "camel v0.2.91a7",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* release: 0.2.91a7 with dependency compatibility fixes by @fengju0213 in https://github.com/camel-ai/camel/pull/4313\n\n\n**Full Changelog**: https://github.com/camel-ai/camel/compare/v0.2.91a6...v0.2.91a7",
+"tag": "product_update",
+"url": "https://github.com/camel-ai/camel/releases/tag/v0.2.91a7"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-03T05:12:24Z",
+"headline": "camel v0.2.91a6",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* fix(messages): preserve non-string tool-call args in Hermes ShareGPT round-trip by @ebarkhordar in https://github.com/camel-ai/camel/pull/4170\n* docs: document browser console exec trust boundary by @helloJamest in https",
+"tag": "product_update",
+"url": "https://github.com/camel-ai/camel/releases/tag/v0.2.91a6"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"card_url": "https://docs.camel-ai.org/.well-known/agent-card.json",
+"checked_at": "2026-10-10T04:58:54Z",
+"errors": [
+"missing 'description'"
+],
+"parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3",
+"signed": false,
+"skills": [
+"Eigentai"
+],
+"status": "invalid",
+"version": "1.0.0"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:52Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"card_url": "https://docs.camel-ai.org/.well-known/mcp.json",
+"checked_at": "2026-10-10T04:58:54Z",
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "http",
+"url": "https://eigentai-f9fe77bb.main-kill-isr.mintlify.me/mcp"
+}
+],
+"status": "invalid"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "docs.camel-ai.org",
 "resource_type": "framework",
 "scope": "public",
 "seed": {
@@ -82,23 +128,49 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2023-03-17T21:41:54Z",
+"github_forks": 2109,
+"github_language": "Python",
+"github_open_issues": 531,
+"github_pushed_at": "2026-10-05T11:43:27Z",
+"github_stars": 17844,
+"homepage": "https://docs.camel-ai.org/",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "camel-ai/camel"
+}
 },
 "slug": "camel-ai-camel",
 "sources": [
 {
 "payload_hash": "070419ca73226b0ca88de3234347acdcd078cd4aec35fc54e24f41f6c13a7759",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/camel-ai/camel"
 }
 ],
-"tags": [],
+"tags": [
+"agent",
+"ai-societies",
+"artificial-intelligence",
+"communicative-ai",
+"cooperative-ai",
+"deep-learning",
+"large-language-models",
+"multi-agent-systems",
+"natural-language-processing"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
-"issues": null,
+"identity": 3,
+"issues": 1,
 "protocols": 5,
 "security": null
 },

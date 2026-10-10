@@ -1,5 +1,6 @@
 {
 "canonical_url": "github.com/block/goose",
+"capabilities": [],
 "category": "Coding agent",
 "commercial": false,
 "compliance": [],
@@ -193,8 +194,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "aaif-goose/goose"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -203,10 +206,10 @@
 "id": "res_7774c6daf18c0246",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -216,25 +219,60 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "Apache-2.0",
+"merged_ids": [
+"res_b980b1e6cdce5cd2"
+],
 "name": "Goose",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-08T18:44:54Z",
+"headline": "goose v1.54.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## ✨ Features\n\n- Prompt for goose mode during first-time configure [#12629](https://github.com/aaif-goose/goose/pull/12629)\n- HTML session export with an interactive viewer [#11977](https://github.com/aaif-goose/goose/pull/11977)\n\n## 🐛 Bug",
+"tag": "product_update",
+"url": "https://github.com/aaif-goose/goose/releases/tag/v1.54.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-02T18:44:11Z",
+"headline": "goose v1.53.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## ✨ Features\n\n- Resizable Picture-in-Picture window for MCP Apps [#12417](https://github.com/aaif-goose/goose/pull/12417)\n- Fetch model metadata from models.dev live with bundled fallback [#12560](https://github.com/aaif-goose/goose/pull/1",
+"tag": "product_update",
+"url": "https://github.com/aaif-goose/goose/releases/tag/v1.53.0"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:14Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:13Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"evidence_url": "https://github.com/block/goose",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-10T04:59:14Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "goose-docs.ai",
 "resource_type": "agent",
 "scope": "public",
 "seed": {
@@ -242,24 +280,52 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2024-08-23T19:03:36Z",
+"github_forks": 6399,
+"github_language": "Rust",
+"github_open_issues": 484,
+"github_pushed_at": "2026-10-09T23:52:36Z",
+"github_stars": 55115,
+"github_topic": "ai-agents",
+"homepage": "https://goose-docs.ai/",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "aaif-goose/goose"
+}
 },
 "slug": "block-goose",
 "sources": [
 {
 "payload_hash": "9641a1b2083edac4e20c647017e0f00883c2648d87ad44053410799eafd33f75",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/block/goose"
+},
+{
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
+"system": "github",
+"url": "https://github.com/aaif-goose/goose"
 }
 ],
-"tags": [],
+"tags": [
+"acp",
+"ai",
+"ai-agents",
+"mcp"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
-"issues": null,
-"protocols": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
 "security": null
 },
 "url": "https://github.com/block/goose",

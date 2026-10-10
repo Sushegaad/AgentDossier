@@ -53,7 +53,7 @@
 "external_ids": {
 "github": "Mintplex-Labs/anything-llm"
 },
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -136,7 +136,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
 "merged_ids": [
 "res_5501dfa82f982555"
@@ -148,7 +148,7 @@
 "date": "2026-10-01T22:17:40Z",
 "headline": "anything-llm AnythingLLM v1.17.0",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## What's Changed\r\n* fix(collector): read spreadsheet dates as dates, not serial numbers by @L4XB in https://github.com/Mintplex-Labs/anything-llm/pull/6478\r\n* Drop temp param for Anthropic models by @shatfield4 in https://github.com/Mintpl",
 "tag": "product_update",
@@ -159,7 +159,7 @@
 "date": "2026-09-22T19:06:03Z",
 "headline": "anything-llm AnythingLLM v1.16.2",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## New Features\r\n\r\n- [x] [LLMman - OSS](https://github.com/llmmanorg/llmman) is now available as a local LLM provider, replacing Docker Model Runner\r\n- [x] [Google Vertex AI](https://cloud.google.com/products/gemini-enterprise-agent-platfor",
 "tag": "product_update",
@@ -169,24 +169,27 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:28Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:27Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:28Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "anythingllm.com",
 "resource_type": "agent",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:49:35Z",
+"checked_at": "2026-10-10T05:10:24Z",
 "cves": 25,
 "source": "nvd",
 "tier": 1
@@ -198,26 +201,33 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-06-04T02:29:14Z",
-"github_forks": 7449,
+"github_forks": 7463,
 "github_language": "JavaScript",
-"github_open_issues": 335,
-"github_pushed_at": "2026-10-04T01:30:10Z",
-"github_stars": 66714,
+"github_open_issues": 328,
+"github_pushed_at": "2026-10-09T15:18:53Z",
+"github_stars": 66872,
 "github_topic": "ai-agents",
 "homepage": "https://anythingllm.com",
-"observed_popularity": "Not captured"
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"publisher_domain",
+"tags"
+],
+"repo": "Mintplex-Labs/anything-llm"
+}
 },
 "slug": "mintplex-labs-anythingllm",
 "sources": [
 {
 "payload_hash": "8edac3990455ecf22a7860b53cba3a1fda1b055e53958ebcc26ab75c0f5faff3",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/Mintplex-Labs/anything-llm"
 },
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/Mintplex-Labs/anything-llm"
 }

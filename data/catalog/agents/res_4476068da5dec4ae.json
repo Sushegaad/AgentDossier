@@ -3,7 +3,60 @@
 "capabilities": [],
 "category": "Web crawling for agents",
 "commercial": false,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://crawl4ai.com/security/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "437ddd122b951afaf2d525bdf083441fd37ed415f499fa2239b0c9260e37dca9",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:06:25Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://crawl4ai.com/security/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "437ddd122b951afaf2d525bdf083441fd37ed415f499fa2239b0c9260e37dca9",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:06:25Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
 "components": {
 "adoption": 25.0,
 "docs": 9.0,
@@ -22,8 +75,8 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": null,
-"value": null,
+"score": 89.4,
+"value": 0.0,
 "version": "sar-score-1.1"
 },
 "profile": "technology",
@@ -37,7 +90,7 @@
 "external_ids": {
 "github": "unclecode/crawl4ai"
 },
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -120,7 +173,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:31:11Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_d87aebf78b6e5a58"
@@ -132,7 +185,7 @@
 "date": "2026-09-23T12:14:55Z",
 "headline": "crawl4ai Release v0.9.4",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## 🎉 Crawl4AI v0.9.4 Released!\n\n### 📦 Installation\n\n**PyPI:**\n```bash\npip install crawl4ai==0.9.4\n```\n\n**Docker:**\n```bash\ndocker pull unclecode/crawl4ai:0.9.4\ndocker pull unclecode/crawl4ai:latest\n```\n\n**Note:** Docker images are being bui",
 "tag": "product_update",
@@ -143,7 +196,7 @@
 "date": "2026-08-31T11:34:14Z",
 "headline": "crawl4ai Release v0.9.3",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## 🎉 Crawl4AI v0.9.3 Released!\n\n### 📦 Installation\n\n**PyPI:**\n```bash\npip install crawl4ai==0.9.3\n```\n\n**Docker:**\n```bash\ndocker pull unclecode/crawl4ai:0.9.3\ndocker pull unclecode/crawl4ai:latest\n```\n\n**Note:** Docker images are being bui",
 "tag": "product_update",
@@ -153,26 +206,32 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:37Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:58:35Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
 "evidence_url": "https://github.com/unclecode/crawl4ai",
 "note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-10T04:58:38Z",
+"status": "not_found"
+},
 "source": "self_description",
 "status": "claimed"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "crawl4ai.com",
 "resource_type": "agent",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:50:04Z",
+"checked_at": "2026-10-10T05:10:55Z",
 "cves": 25,
 "source": "nvd",
 "tier": 1
@@ -184,26 +243,33 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-05-09T09:48:50Z",
-"github_forks": 8778,
+"github_forks": 8825,
 "github_language": "Python",
-"github_open_issues": 232,
+"github_open_issues": 237,
 "github_pushed_at": "2026-10-05T11:26:42Z",
-"github_stars": 84776,
+"github_stars": 85109,
 "github_topic": "ai-agents",
 "homepage": "https://crawl4ai.com",
-"observed_popularity": "Not captured"
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"publisher_domain",
+"tags"
+],
+"repo": "unclecode/crawl4ai"
+}
 },
 "slug": "crawl4ai-crawl4ai",
 "sources": [
 {
 "payload_hash": "6e108a555bb2036c27d3f49789b23e7428bcf45deaf107092e15d73ad7ff38e3",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/unclecode/crawl4ai"
 },
 {
-"payload_hash": "f769a9dff11dafaf6509a35bac3dd83ff0ab5be3078d8c9a75f72c256d3ac490",
-"retrieved_at": "2026-10-05T13:31:11Z",
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
 "system": "github",
 "url": "https://github.com/unclecode/crawl4ai"
 }
@@ -227,7 +293,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 5,
+"compliance": 4,
 "identity": 3,
 "issues": 3,
 "protocols": 3,

@@ -1,57 +1,57 @@
 {
- "built_at": "2026-10-05T13:59:44Z",
+ "built_at": "2026-10-10T05:21:45Z",
  "snapshot_date": "2026-09-25",
  "generator": "agentdossier 1.0.0",
  "score_version": "sar-score-1.0",
- "resources": 894,
+ "resources": 924,
  "by_source": {
-  "ard": 94,
+  "ard": 117,
   "aws_marketplace": 7,
   "github": 259,
   "huggingface": 150,
-  "mcp_registry": 258,
+  "mcp_registry": 270,
   "seed_xlsx": 158
  },
  "by_type": {
   "a2a_agent": 1,
-  "agent": 416,
-  "api": 5,
-  "framework": 58,
+  "agent": 424,
+  "api": 10,
+  "framework": 57,
   "marketplace": 4,
-  "mcp_server": 331,
+  "mcp_server": 348,
   "platform": 17,
-  "skill": 60,
+  "skill": 61,
   "tool": 2
  },
  "protocols": {
   "a2a": {
-   "unknown": 366,
-   "not_found": 433,
-   "invalid": 63,
-   "verified": 25,
+   "unknown": 336,
+   "not_found": 533,
+   "verified": 34,
+   "invalid": 14,
    "claimed": 7
   },
   "mcp": {
-   "claimed": 458,
-   "not_found": 180,
-   "unknown": 227,
-   "invalid": 29
+   "claimed": 480,
+   "not_found": 233,
+   "invalid": 12,
+   "unknown": 199
   },
   "ard": {
-   "unknown": 276,
-   "not_found": 452,
-   "invalid": 67,
-   "verified": 99
+   "unknown": 225,
+   "not_found": 559,
+   "verified": 126,
+   "invalid": 14
   }
  },
  "domains": {
   "business": {
    "ranked": 100,
-   "discovered": 164
+   "discovered": 162
   },
   "finance": {
    "ranked": 100,
-   "discovered": 41
+   "discovered": 40
   },
   "healthcare": {
    "ranked": 100,
@@ -59,11 +59,11 @@
   },
   "regulatory": {
    "ranked": 100,
-   "discovered": 23
+   "discovered": 24
   },
   "technology": {
    "ranked": 100,
-   "discovered": 615
+   "discovered": 634
   },
   "cybersecurity": {
    "ranked": 100,
@@ -71,7 +71,7 @@
   },
   "sales": {
    "ranked": 100,
-   "discovered": 53
+   "discovered": 54
   },
   "legal": {
    "ranked": 100,
@@ -79,7 +79,7 @@
   },
   "data": {
    "ranked": 100,
-   "discovered": 172
+   "discovered": 169
   },
   "supply_chain": {
    "ranked": 100,
@@ -91,14 +91,14 @@
   },
   "government": {
    "ranked": 100,
-   "discovered": 5
+   "discovered": 6
   }
  },
  "identity_tiers": {
   "T1": 39,
-  "T2": 86,
-  "T3": 668,
-  "T4": 100,
+  "T2": 118,
+  "T3": 701,
+  "T4": 65,
   "T5": 1
  },
  "reports": {
@@ -115,59 +115,67 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-05T13:30:24Z",
-   "finished": "2026-10-05T13:30:24Z"
+   "started": "2026-10-10T04:47:46Z",
+   "finished": "2026-10-10T04:47:46Z"
   },
   "mcp_registry": {
    "source": "mcp_registry",
-   "fetched": 30,
-   "produced": 2876,
-   "skipped": 24,
-   "errors": 1,
-   "error_samples": [
-    "https://registry.modelcontextprotocol.io/v0/servers?limit=100&version=latest&cursor=co.fastgpu/fastgpu%3A1.0.1: HTTP 500"
-   ],
-   "started": "2026-10-05T13:30:24Z",
-   "finished": "2026-10-05T13:31:07Z"
+   "fetched": 200,
+   "produced": 19661,
+   "skipped": 339,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-10-10T04:47:46Z",
+   "finished": "2026-10-10T04:50:13Z"
   },
   "huggingface": {
    "source": "huggingface",
    "fetched": 5,
-   "produced": 825,
-   "skipped": 815,
+   "produced": 837,
+   "skipped": 804,
    "errors": 1,
    "error_samples": [
     "https://huggingface.co/api/spaces?search=agentic&sort=likes&direction=-1&limit=500&full=true: response too large"
    ],
-   "started": "2026-10-05T13:31:07Z",
-   "finished": "2026-10-05T13:31:08Z"
+   "started": "2026-10-10T04:50:13Z",
+   "finished": "2026-10-10T04:50:15Z"
   },
   "github": {
    "source": "github",
-   "fetched": 98,
-   "produced": 8554,
+   "fetched": 103,
+   "produced": 8703,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-05T13:31:08Z",
-   "finished": "2026-10-05T13:37:36Z"
+   "started": "2026-10-10T04:50:15Z",
+   "finished": "2026-10-10T04:56:36Z"
   },
   "dedup": {
    "input": 915,
-   "output": 805,
-   "merged": 110,
+   "output": 815,
+   "merged": 100,
    "review_candidates": 9,
    "review_added": 0
   },
-  "ard_web": {
-   "source": "ard_web",
-   "fetched": 489,
-   "produced": 97,
+  "seed_enrich": {
+   "source": "seed_enrich",
+   "fetched": 60,
+   "produced": 60,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-05T13:37:36Z",
-   "finished": "2026-10-05T13:41:43Z"
+   "started": "2026-10-10T04:56:36Z",
+   "finished": "2026-10-10T04:56:56Z"
+  },
+  "ard_web": {
+   "source": "ard_web",
+   "fetched": 540,
+   "produced": 120,
+   "skipped": 0,
+   "errors": 0,
+   "error_samples": [],
+   "started": "2026-10-10T04:56:56Z",
+   "finished": "2026-10-10T05:01:09Z"
   },
   "protocol_claims": {
    "source": "protocol_claims",
@@ -181,8 +189,9 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-05T13:41:43Z",
-   "finished": "2026-10-05T13:42:42Z"
+   "started": "2026-10-10T05:01:10Z",
+   "finished": "2026-10-10T05:02:35Z",
+   "inherited": 42
   },
   "csa_star": {
    "source": "csa_star",
@@ -191,8 +200,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-05T13:42:42Z",
-   "finished": "2026-10-05T13:44:17Z"
+   "started": "2026-10-10T05:02:35Z",
+   "finished": "2026-10-10T05:04:26Z"
   },
   "curated": {
    "source": "curated",
@@ -201,47 +210,47 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-05T13:44:17Z",
-   "finished": "2026-10-05T13:44:17Z"
+   "started": "2026-10-10T05:04:26Z",
+   "finished": "2026-10-10T05:04:26Z"
   },
   "vendor_claims": {
    "source": "vendor_trust_centers",
-   "fetched": 487,
-   "produced": 498,
+   "fetched": 541,
+   "produced": 652,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-05T13:44:17Z",
-   "finished": "2026-10-05T13:48:14Z"
+   "started": "2026-10-10T05:04:26Z",
+   "finished": "2026-10-10T05:08:51Z"
   },
   "compliance_review_added": {
-   "added": 9
+   "added": 12
   },
   "news": {
    "source": "news",
-   "fetched": 738,
-   "produced": 288,
+   "fetched": 924,
+   "produced": 469,
    "skipped": 0,
    "errors": 1,
    "error_samples": [
     "gdelt: GDELT unavailable (HTTP 429); skipped for the rest of the run"
    ],
-   "started": "2026-10-05T13:48:14Z",
-   "finished": "2026-10-05T13:59:43Z"
+   "started": "2026-10-10T05:08:52Z",
+   "finished": "2026-10-10T05:21:44Z"
   },
   "nvd": {
    "source": "nvd",
-   "fetched": 738,
-   "produced": 738,
+   "fetched": 767,
+   "produced": 767,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-05T13:48:14Z",
-   "finished": "2026-10-05T13:59:43Z"
+   "started": "2026-10-10T05:08:52Z",
+   "finished": "2026-10-10T05:21:44Z"
   },
   "changelog": {
-   "events": 46,
-   "appended": 46
+   "events": 437,
+   "appended": 437
   }
  }
 }

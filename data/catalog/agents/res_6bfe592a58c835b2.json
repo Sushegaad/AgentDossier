@@ -24,7 +24,7 @@
 "domains": {
 "finance": {
 "components": {
-"adoption": 23.74,
+"adoption": 23.77,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -52,7 +52,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.74,
+"adoption": 23.77,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -82,7 +82,7 @@
 "external_ids": {
 "github": "OpenByteInc/QuantDinger"
 },
-"first_seen": "2026-10-05T13:35:44Z",
+"first_seen": "2026-10-10T04:54:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,42 +104,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "Apache-2.0",
 "name": "QuantDinger",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-06T21:14:40Z",
+"headline": "QuantDinger v5.5.4",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Backend v5.5.4\n\n**Docker image (multi-arch, amd64 + arm64):**\n\n```bash\ndocker pull ghcr.io/OpenByteInc/quantdinger-backend:v5.5.4\n```\n\nPin in `docker-compose.ghcr.yml` via `IMAGE_TAG=v5.5.4` in a project-root `.env`.\n\n---\n\n\n**Full Change",
+"tag": "product_update",
+"url": "https://github.com/OpenByteInc/QuantDinger/releases/tag/v5.5.4"
+},
+{
+"cluster_size": 1,
 "date": "2026-10-05T08:36:57Z",
 "headline": "QuantDinger v5.5.3",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## Backend v5.5.3\n\n**Docker image (multi-arch, amd64 + arm64):**\n\n```bash\ndocker pull ghcr.io/OpenByteInc/quantdinger-backend:v5.5.3\n```\n\nPin in `docker-compose.ghcr.yml` via `IMAGE_TAG=v5.5.3` in a project-root `.env`.\n\n---\n\n\n**Full Change",
 "tag": "product_update",
 "url": "https://github.com/OpenByteInc/QuantDinger/releases/tag/v5.5.3"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-01T18:11:02Z",
-"headline": "QuantDinger v5.5.2",
-"kind": "vendor",
-"link_confidence": 0.95,
-"outlet": "GitHub releases",
-"summary": "## Backend v5.5.2\n\n**Docker image (multi-arch, amd64 + arm64):**\n\n```bash\ndocker pull ghcr.io/OpenByteInc/quantdinger-backend:v5.5.2\n```\n\nPin in `docker-compose.ghcr.yml` via `IMAGE_TAG=v5.5.2` in a project-root `.env`.\n\n---\n\n\n**Full Change",
-"tag": "product_update",
-"url": "https://github.com/OpenByteInc/QuantDinger/releases/tag/v5.5.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:37:54Z",
+"checked_at": "2026-10-10T04:57:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:37:50Z",
+"checked_at": "2026-10-10T04:57:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -147,7 +147,7 @@
 "evidence_url": "https://ai.quantdinger.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:37:56Z",
+"checked_at": "2026-10-10T04:57:18Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -159,7 +159,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:35Z",
+"checked_at": "2026-10-10T05:19:11Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -167,19 +167,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-28T18:39:26Z",
-"github_forks": 2537,
+"github_forks": 2558,
 "github_language": "Python",
-"github_open_issues": 44,
-"github_pushed_at": "2026-10-05T08:36:56Z",
-"github_stars": 12456,
+"github_open_issues": 47,
+"github_pushed_at": "2026-10-09T15:40:41Z",
+"github_stars": 12603,
 "github_topic": "mcp-server",
 "homepage": "https://ai.quantdinger.com"
 },
 "slug": "openbyteinc-quantdinger",
 "sources": [
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/OpenByteInc/QuantDinger"
 }

@@ -141,7 +141,7 @@
 "external_ids": {
 "github": "1Panel-dev/MaxKB"
 },
-"first_seen": "2026-10-05T13:35:44Z",
+"first_seen": "2026-10-10T04:54:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -163,18 +163,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "GPL-3.0",
 "name": "MaxKB",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-03T03:55:38Z",
+"headline": "MaxKB v2.10.6-lts",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Security Vulnerability Fixes\r\n- Security: Fixed a security vulnerability where Chat file uploads could spoof APPLICATION attribution and be read anonymously, allowing content injection into the application namespace.\r\n- Security: Fixed",
+"tag": "product_update",
+"url": "https://github.com/1Panel-dev/MaxKB/releases/tag/v2.10.6-lts"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-11T08:40:59Z",
+"headline": "MaxKB v1.10.15-lts",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Bug Fixes\r\n- **Security Vulnerability**: Fixed flaws in permission verification to block a high-risk privilege escalation vulnerability where anonymous application session tokens could be exploited to obtain the administrator's system A",
+"tag": "product_update",
+"url": "https://github.com/1Panel-dev/MaxKB/releases/tag/v1.10.15-lts"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:09Z",
+"checked_at": "2026-10-10T04:59:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:01Z",
+"checked_at": "2026-10-10T04:59:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -182,7 +206,7 @@
 "evidence_url": "https://maxkb.cn",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:40:12Z",
+"checked_at": "2026-10-10T04:59:44Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -195,19 +219,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-09-14T02:05:12Z",
-"github_forks": 3167,
+"github_forks": 3172,
 "github_language": "Python",
-"github_open_issues": 26,
-"github_pushed_at": "2026-10-04T03:52:36Z",
-"github_stars": 22898,
+"github_open_issues": 25,
+"github_pushed_at": "2026-10-10T04:30:28Z",
+"github_stars": 22931,
 "github_topic": "mcp-server",
 "homepage": "https://maxkb.cn"
 },
 "slug": "1panel-dev-maxkb",
 "sources": [
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/1Panel-dev/MaxKB"
 }
@@ -232,7 +256,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 3,
 "security": null
 },

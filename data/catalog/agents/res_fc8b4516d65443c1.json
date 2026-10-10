@@ -37,7 +37,7 @@
 "external_ids": {
 "github": "assafelovic/gpt-researcher"
 },
-"first_seen": "2026-10-05T13:30:24Z",
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -46,10 +46,10 @@
 "id": "res_fc8b4516d65443c1",
 "identity": {
 "evidence": [
-"repository_ownership"
+"standards_metadata_at_publisher_domain"
 ],
 "rules_version": "identity-1.0",
-"tier": 3
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -66,7 +66,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_d3140ab6ca3a0456"
@@ -78,7 +78,7 @@
 "date": "2026-09-26T17:46:25Z",
 "headline": "gpt-researcher Jev update and many bug fixes and improvements",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## Smarter context, no embeddings required\r\n\r\nGPT Researcher now picks the context it sends to the LLM by **usefulness, not similarity**.\r\nEvery passage scraped for a research question is scored by [Jev](https://typesafe.ai/blog/introducing",
 "tag": "product_update",
@@ -89,7 +89,7 @@
 "date": "2026-08-24T06:58:47Z",
 "headline": "gpt-researcher Major fixes",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## What's Changed\r\n* fix: restore main, add CI, and land 97 queued PRs by @assafelovic in https://github.com/assafelovic/gpt-researcher/pull/2074\r\n* fix(readme): restore broken star history chart by @Dessalines39394 in https://github.com/as",
 "tag": "product_update",
@@ -99,26 +99,56 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"card_url": "https://gptr.dev/.well-known/agent-card.json",
+"checked_at": "2026-10-10T04:59:17Z",
+"parser_version": "a2a-0.3+1.0",
+"signed": false,
+"skills": [
+"Deep research",
+"Quick search",
+"Write report",
+"Get research sources"
+],
+"status": "verified",
+"version": "0.14.8"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:59:14Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"evidence_url": "https://github.com/assafelovic/gpt-researcher",
-"note": "named in the resource's own tags",
-"source": "self_description",
-"status": "claimed"
+"card_url": "https://gptr.dev/.well-known/mcp.json",
+"checked_at": "2026-10-10T04:59:17Z",
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://github.com/assafelovic/gptr-mcp"
+}
+],
+"status": "claimed",
+"tools": [
+"get_full_mcp_server",
+"get_overview",
+"get_quickstart",
+"list_tools_in_full_mcp_server",
+"get_discovery_endpoints",
+"get_pricing",
+"deep_research",
+"quick_search",
+"write_report",
+"get_research_sources",
+"get_research_context"
+]
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "gptr.dev",
 "resource_type": "mcp_server",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:50:08Z",
+"checked_at": "2026-10-10T05:10:59Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -130,26 +160,33 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-05-12T10:33:54Z",
-"github_forks": 4084,
+"github_forks": 4096,
 "github_language": "Python",
-"github_open_issues": 25,
+"github_open_issues": 30,
 "github_pushed_at": "2026-10-01T19:33:35Z",
-"github_stars": 29919,
+"github_stars": 29982,
 "github_topic": "mcp-server",
 "homepage": "https://gptr.dev",
-"observed_popularity": "Not captured"
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"publisher_domain",
+"tags"
+],
+"repo": "assafelovic/gpt-researcher"
+}
 },
 "slug": "tavily-gpt-researcher",
 "sources": [
 {
 "payload_hash": "fc6cb83f166649e66d1ce742647baded087d9f5d44c17cdcbf376193217a6d4d",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/assafelovic/gpt-researcher"
 },
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/assafelovic/gpt-researcher"
 }
@@ -170,9 +207,9 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 3,
-"protocols": 3,
+"protocols": 1,
 "security": 1
 },
 "url": "https://github.com/assafelovic/gpt-researcher",

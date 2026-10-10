@@ -27,16 +27,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-05) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
 "evidence_url": "https://trailhq.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "3a314e7340e7b0b9365f7f67ff4fb1a4f9bd39f1b5c1cca0e5da76924283c82c",
+"next_check": "2026-10-17",
+"payload_hash": "cb2d411c0e50617f6f7d1b8fa8027df7a78e79b3f94f4b1e8e4bcd6798ad3350",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:47:38Z",
+"retrieved_at": "2026-10-10T05:08:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -53,16 +53,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-05) (pending publisher verification)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-10) (pending publisher verification)",
 "evidence_url": "https://trailhq.com/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "3a314e7340e7b0b9365f7f67ff4fb1a4f9bd39f1b5c1cca0e5da76924283c82c",
+"next_check": "2026-10-17",
+"payload_hash": "cb2d411c0e50617f6f7d1b8fa8027df7a78e79b3f94f4b1e8e4bcd6798ad3350",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:47:38Z",
+"retrieved_at": "2026-10-10T05:08:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -79,16 +79,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-05) (pending publisher verification)",
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
 "evidence_url": "https://trailhq.com/",
 "framework": "iso27001",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "3a314e7340e7b0b9365f7f67ff4fb1a4f9bd39f1b5c1cca0e5da76924283c82c",
+"next_check": "2026-10-17",
+"payload_hash": "cb2d411c0e50617f6f7d1b8fa8027df7a78e79b3f94f4b1e8e4bcd6798ad3350",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:47:38Z",
+"retrieved_at": "2026-10-10T05:08:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -105,16 +105,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-05) (pending publisher verification)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
 "evidence_url": "https://trailhq.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "3a314e7340e7b0b9365f7f67ff4fb1a4f9bd39f1b5c1cca0e5da76924283c82c",
+"next_check": "2026-10-17",
+"payload_hash": "cb2d411c0e50617f6f7d1b8fa8027df7a78e79b3f94f4b1e8e4bcd6798ad3350",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:47:38Z",
+"retrieved_at": "2026-10-10T05:08:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -131,7 +131,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.08,
+"adoption": 23.13,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -144,7 +144,7 @@
 "evidence_coverage": 1.0,
 "governance_evidence": {
 "credited": {},
-"score": 65.7,
+"score": 65.8,
 "value": 0.0,
 "version": "sar-score-1.1"
 },
@@ -157,7 +157,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.08,
+"adoption": 23.13,
 "docs": 7.0,
 "domain_fit": 91.7,
 "ecosystem": 6.6,
@@ -185,7 +185,7 @@
 "external_ids": {
 "github": "trailhq/Graft"
 },
-"first_seen": "2026-10-05T13:31:15Z",
+"first_seen": "2026-10-10T04:50:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -207,21 +207,22 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "MIT",
 "merged_ids": [
 "res_632e2241a6c12e03"
 ],
 "name": "Graft",
 "news": [],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:59Z",
+"checked_at": "2026-10-10T05:00:25Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:58Z",
+"checked_at": "2026-10-10T05:00:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -229,7 +230,7 @@
 "evidence_url": "https://trailhq.com/graft",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:41:00Z",
+"checked_at": "2026-10-10T05:00:25Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -242,19 +243,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-07-03T13:44:21Z",
-"github_forks": 882,
+"github_forks": 863,
 "github_language": "TypeScript",
-"github_open_issues": 211,
-"github_pushed_at": "2026-10-04T19:00:50Z",
-"github_stars": 9582,
+"github_open_issues": 235,
+"github_pushed_at": "2026-10-10T04:32:49Z",
+"github_stars": 9777,
 "github_topic": "mcp-server",
 "homepage": "https://trailhq.com/graft"
 },
 "slug": "trailhq-graft",
 "sources": [
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/trailhq/Graft"
 }
@@ -282,7 +283,7 @@
 "trust": {
 "compliance": 4,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 3,
 "security": null
 },

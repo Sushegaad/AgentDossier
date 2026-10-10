@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-05)",
+"display": "Vendor-claimed (vendor page, 2026-10-10)",
 "evidence_url": "https://apify.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "60474d60e08a0195302b266d6a4abb4a908a4a1b3c1b72264fbb5920b4a9d94e",
+"next_check": "2026-10-17",
+"payload_hash": "6340d72124e11ea21d5e9ead6fb762a21598b2509bcaf06d2fe26b856dc132c4",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:44:53Z",
+"retrieved_at": "2026-10-10T05:05:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,16 +45,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-05)",
+"display": "Vendor-claimed (vendor page, 2026-10-10)",
 "evidence_url": "https://apify.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "60474d60e08a0195302b266d6a4abb4a908a4a1b3c1b72264fbb5920b4a9d94e",
+"next_check": "2026-10-17",
+"payload_hash": "6340d72124e11ea21d5e9ead6fb762a21598b2509bcaf06d2fe26b856dc132c4",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:44:53Z",
+"retrieved_at": "2026-10-10T05:05:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -66,7 +66,7 @@
 }
 ],
 "deployment": null,
-"description": "Plans, the monthly usage credit on the free plan, and the pay-per-event and pay-per-result models Actors charge on.",
+"description": "Plans, the monthly usage credit on the free plan, and the pay-per-event and pay-per-usage models Actors charge on.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "finance": {
@@ -104,7 +104,7 @@
 "external_ids": {
 "ard": "urn:air:apify.com:doc:pricing"
 },
-"first_seen": "2026-10-05T13:38:43Z",
+"first_seen": "2026-10-10T04:58:05Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -126,7 +126,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:38:43Z",
+"last_seen": "2026-10-10T04:58:05Z",
 "license": null,
 "name": "Apify pricing",
 "news": [],
@@ -156,7 +156,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:58:58Z",
+"checked_at": "2026-10-10T05:20:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -165,8 +165,8 @@
 "slug": "apify-com-apify-pricing",
 "sources": [
 {
-"payload_hash": "d5130d927bb28f3544b39d23f661a4e3343f03e9f167f231bf38bbf3b787d3b9",
-"retrieved_at": "2026-10-05T13:38:43Z",
+"payload_hash": "4ae31517f2088240fc740ab9bf8e28481623d24fa3415caeaaea4fa4eb98d195",
+"retrieved_at": "2026-10-10T04:58:05Z",
 "system": "ard",
 "url": "https://apify.com/.well-known/ai-catalog.json"
 }

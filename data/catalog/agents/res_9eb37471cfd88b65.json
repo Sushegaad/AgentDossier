@@ -1,5 +1,6 @@
 {
 "canonical_url": "github.com/itzcrazykns/perplexica",
+"capabilities": [],
 "category": "Search/research agent",
 "commercial": false,
 "compliance": [],
@@ -33,8 +34,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "ItzCrazyKns/Vane"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -43,10 +46,10 @@
 "id": "res_9eb37471cfd88b65",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -56,8 +59,11 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:50:17Z",
 "license": "MIT",
+"merged_ids": [
+"res_9923f66ec95bb97c"
+],
 "name": "Perplexica",
 "news": [],
 "news_checked": true,
@@ -80,7 +86,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:50:13Z",
+"checked_at": "2026-10-10T05:11:05Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -90,22 +96,59 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2024-04-09T10:51:32Z",
+"github_forks": 4135,
+"github_language": "TypeScript",
+"github_open_issues": 357,
+"github_pushed_at": "2026-09-01T14:12:12Z",
+"github_stars": 37188,
+"github_topic": "ai-agents",
+"homepage": null,
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"tags"
+],
+"repo": "ItzCrazyKns/Vane"
+}
 },
 "slug": "perplexica-perplexica",
 "sources": [
 {
 "payload_hash": "0a58383dd6c5e1901e139a59868531eb03c285b32bf39497f88da09b48a023b3",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/ItzCrazyKns/Perplexica"
+},
+{
+"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
+"retrieved_at": "2026-10-10T04:50:17Z",
+"system": "github",
+"url": "https://github.com/ItzCrazyKns/Vane"
 }
 ],
-"tags": [],
+"tags": [
+"ai-agents",
+"ai-search-engine",
+"answering-engine",
+"artificial-intelligence",
+"llm",
+"machine-learning",
+"open-source-ai-search-engine",
+"perplexica",
+"rag",
+"search-engine",
+"searxng",
+"searxng-copilot",
+"self-hosted-ai",
+"vane"
+],
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
+"identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": 1

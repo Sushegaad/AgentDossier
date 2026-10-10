@@ -65,8 +65,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "RooCodeInc/Roo-Code"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -75,10 +77,10 @@
 "id": "res_e4f8f57472aa3d43",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -149,31 +151,34 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "Apache-2.0",
 "name": "Roo Code",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T05:00:10Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T05:00:09Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T05:00:10Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "roocode.com",
 "resource_type": "agent",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:50:00Z",
+"checked_at": "2026-10-10T05:10:51Z",
 "cves": 18,
 "source": "nvd",
 "tier": 1
@@ -183,13 +188,28 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": true,
+"github_created_at": "2024-10-31T17:56:50Z",
+"github_forks": 3424,
+"github_language": "TypeScript",
+"github_open_issues": 1033,
+"github_pushed_at": "2026-05-15T18:08:47Z",
+"github_stars": 24283,
+"homepage": "https://roocode.com",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain"
+],
+"repo": "RooCodeInc/Roo-Code"
+}
 },
 "slug": "roocode-roo-code",
 "sources": [
 {
 "payload_hash": "c4275786703aa21da30324323702e8ada04eacd9ed53d06a290cba9d5630723f",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/RooCodeInc/Roo-Code"
 }
@@ -198,7 +218,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 4,
+"identity": 3,
 "issues": 3,
 "protocols": 5,
 "security": 1

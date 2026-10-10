@@ -24,16 +24,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR for AI: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR for AI: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:42:44Z",
+"retrieved_at": "2026-10-10T05:02:38Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -64,16 +64,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:42:44Z",
+"retrieved_at": "2026-10-10T05:02:38Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -82,6 +82,36 @@
 "tier": 1,
 "valid_until": null,
 "variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "FR1824057433",
+"covers_resource": "inherited",
+"credited": false,
+"detail": {
+"cso": "Microsoft 365 Government Community Cloud-High ",
+"csp": "Microsoft",
+"deployment_model": "Government Community Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "High"
+},
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"evidence_url": "https://marketplace.fedramp.gov/products/FR1824057433",
+"framework": "fedramp",
+"issued": "2024-12-26",
+"issuer": "Agency / 3PAO Kratos",
+"match_confidence": 1.0,
+"next_check": "2026-10-17",
+"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"period_end": null,
+"retrieved_at": "2026-10-10T05:01:12Z",
+"review_reason": "vendor authorization for Microsoft 365 Government Community Cloud-High ; entity 1.00",
+"reviewer": null,
+"scope": "entity",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_HIGH"
 },
 {
 "certificate_id": "microsoft",
@@ -104,16 +134,16 @@
 "validaited-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-05 (pending publisher verification)",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "iso42001",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-12",
-"payload_hash": "cde0ccbe063d30345c7255eeca2c269ebea6f194ea9b2469277a54b61191ab8e",
+"next_check": "2026-10-17",
+"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
 "period_end": null,
-"retrieved_at": "2026-10-05T13:42:44Z",
+"retrieved_at": "2026-10-10T05:02:38Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -330,8 +360,10 @@
 "source": "seed_xlsx"
 }
 },
-"external_ids": {},
-"first_seen": "2026-10-05T13:30:24Z",
+"external_ids": {
+"github": "microsoft/agent-framework"
+},
+"first_seen": "2026-10-10T04:47:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -340,10 +372,10 @@
 "id": "res_1611748acf41aa81",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"repository_ownership"
 ],
 "rules_version": "identity-1.0",
-"tier": 4
+"tier": 3
 },
 "issues": {
 "advisories": 0,
@@ -353,10 +385,32 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:30:24Z",
+"last_seen": "2026-10-10T04:47:46Z",
 "license": "MIT",
 "name": "Microsoft Agent Framework",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-08T10:27:26Z",
+"headline": "agent-framework python-1.21.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## [1.21.0] - 2026-10-08\n\n### Added\n- **agent-framework**, **agent-framework-core**, **agent-framework-purview**: Add tool-result standing guidance, expose rewritten variable-expansion arguments, and support full-buffer Purview policy evalu",
+"tag": "product_update",
+"url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.21.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-07T13:26:03Z",
+"headline": "agent-framework dotnet-1.24.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Changes:\r\n\r\n* 245d4284a5018b7f446b5eac4d3add1fa5547229 .NET: Restore source-only release solution filter (#9140) [ #8537 ]\r\n* d0ccaa62761ec36c59c139940797978623fb630a .NET: Preserve explicit null session state across roundtrips (#9012)",
+"tag": "product_update",
+"url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.24.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-07-23T01:06:09Z",
@@ -374,24 +428,27 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:19Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:18Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-10T04:57:20Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "aka.ms",
 "resource_type": "framework",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:48:33Z",
+"checked_at": "2026-10-10T05:09:12Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -401,22 +458,49 @@
 "snapshot_date": "2026-09-25"
 },
 "signals": {
-"observed_popularity": "Not captured"
+"github_archived": false,
+"github_created_at": "2025-04-28T19:40:42Z",
+"github_forks": 2449,
+"github_language": "Python",
+"github_open_issues": 757,
+"github_pushed_at": "2026-10-09T17:40:19Z",
+"github_stars": 14041,
+"homepage": "https://aka.ms/agent-framework",
+"observed_popularity": "Not captured",
+"seed_enrich": {
+"changed": [
+"external_ids.github",
+"publisher_domain",
+"tags"
+],
+"repo": "microsoft/agent-framework"
+}
 },
 "slug": "microsoft-microsoft-agent-framework",
 "sources": [
 {
 "payload_hash": "ab764a8c58b92adbb7b1cf057a4b3eab7d0a883f8e2313fac35ddd208496373d",
-"retrieved_at": "2026-10-05T13:30:24Z",
+"retrieved_at": "2026-10-10T04:47:46Z",
 "system": "seed_xlsx",
 "url": "https://github.com/microsoft/agent-framework"
 }
 ],
-"tags": [],
+"tags": [
+"agent-framework",
+"agentic-ai",
+"agents",
+"ai",
+"dotnet",
+"multi-agent",
+"orchestration",
+"python",
+"sdk",
+"workflows"
+],
 "tenant": null,
 "trust": {
 "compliance": 1,
-"identity": 4,
+"identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": 1

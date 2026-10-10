@@ -109,7 +109,7 @@
 "external_ids": {
 "github": "siyuan-note/siyuan"
 },
-"first_seen": "2026-10-05T13:33:49Z",
+"first_seen": "2026-10-10T04:52:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -131,18 +131,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:33:49Z",
+"last_seen": "2026-10-10T04:52:51Z",
 "license": "AGPL-3.0",
 "name": "siyuan",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-07T11:34:19Z",
+"headline": "siyuan v3.8.7-alpha.6",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "<p align=\"center\">\n<a href=\"https://github.com/siyuan-note/siyuan/actions/workflows/cd.yml\"><img src=\"https://img.shields.io/github/actions/workflow/status/siyuan-note/siyuan/cd.yml?logo=github&label=cd.yml%20Action\" style=\"cursor:pointer;h",
+"tag": "product_update",
+"url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.7-alpha.6"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-06T12:33:38Z",
+"headline": "siyuan v3.8.7-alpha.5",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "<p align=\"center\">\n<a href=\"https://github.com/siyuan-note/siyuan/actions/workflows/cd.yml\"><img src=\"https://img.shields.io/github/actions/workflow/status/siyuan-note/siyuan/cd.yml?logo=github&label=cd.yml%20Action\" style=\"cursor:pointer;h",
+"tag": "product_update",
+"url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.7-alpha.5"
+}
+],
+"news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:38:24Z",
+"checked_at": "2026-10-10T04:57:55Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:38:22Z",
+"checked_at": "2026-10-10T04:57:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -150,7 +174,7 @@
 "evidence_url": "https://b3log.org/siyuan",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:38:24Z",
+"checked_at": "2026-10-10T04:57:56Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -163,19 +187,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2020-08-30T09:21:35Z",
-"github_forks": 3041,
+"github_forks": 3051,
 "github_language": "TypeScript",
-"github_open_issues": 24,
-"github_pushed_at": "2026-10-05T12:14:47Z",
-"github_stars": 46632,
+"github_open_issues": 8,
+"github_pushed_at": "2026-10-10T04:42:38Z",
+"github_stars": 46704,
 "github_topic": "ai-agent",
 "homepage": "https://b3log.org/siyuan"
 },
 "slug": "siyuan-note-siyuan",
 "sources": [
 {
-"payload_hash": "dfad7fba371186a8d35a99d661330f994e15fe1d7a8254d9758e1966f0040bdc",
-"retrieved_at": "2026-10-05T13:33:49Z",
+"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
+"retrieved_at": "2026-10-10T04:52:51Z",
 "system": "github",
 "url": "https://github.com/siyuan-note/siyuan"
 }
@@ -195,7 +219,7 @@
 "trust": {
 "compliance": 5,
 "identity": 3,
-"issues": null,
+"issues": 1,
 "protocols": 3,
 "security": null
 },

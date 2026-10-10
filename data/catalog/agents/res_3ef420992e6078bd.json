@@ -27,7 +27,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.27,
+"adoption": 24.28,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -55,7 +55,7 @@
 },
 "data": {
 "components": {
-"adoption": 24.27,
+"adoption": 24.28,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -83,7 +83,7 @@
 },
 "regulatory": {
 "components": {
-"adoption": 24.27,
+"adoption": 24.28,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -111,7 +111,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.27,
+"adoption": 24.28,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -141,7 +141,7 @@
 "external_ids": {
 "github": "open-metadata/OpenMetadata"
 },
-"first_seen": "2026-10-05T13:35:44Z",
+"first_seen": "2026-10-10T04:54:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -224,42 +224,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-05T13:35:44Z",
+"last_seen": "2026-10-10T04:54:44Z",
 "license": "Apache-2.0",
 "name": "OpenMetadata",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-30T05:01:47Z",
-"headline": "OpenMetadata 2.0.3-release",
+"date": "2026-10-08T12:24:34Z",
+"headline": "OpenMetadata 2.0.5-release",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\r\n\r\nOpenMetadata 2.0.3 is a maintenance release focused on connector reliability across Snowflake, BigQuery, MSSQL, Tableau, Looker, and DynamoDB, two data-integrity migrations, several security fixes including a certificate-ver",
+"summary": "## Changelog\r\n\r\nOpenMetadata 2.0.5 is a maintenance release focused on connector and lineage reliability. It restores metadata affected by 2.0 ingestion regressions and protects user-managed metadata during bot ingestion. It also improves s",
 "tag": "product_update",
-"url": "https://github.com/open-metadata/OpenMetadata/releases/tag/2.0.3-release"
+"url": "https://github.com/open-metadata/OpenMetadata/releases/tag/2.0.5-release"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-16T05:01:16Z",
-"headline": "OpenMetadata 2.0.2-release",
+"date": "2026-10-06T06:19:28Z",
+"headline": "OpenMetadata 2.0.4-release",
 "kind": "vendor",
-"link_confidence": 0.95,
+"link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\r\n\r\nOpenMetadata 2.0.2 is a maintenance release focused on connector reliability across Oracle, Databricks, Snowflake, BigQuery, Clickhouse, KafkaConnect, Grafana, and StarRocks, MCP tool consolidation and hardening, a governanc",
+"summary": "## Changelog\r\n\r\nOpenMetadata 2.0.4 is a maintenance release focused on connector reliability across AWS Glue, Snowflake, SQL Server, and Datalake, correctness fixes in search scoping and Explore counts, data quality and profiler fixes, and",
 "tag": "product_update",
-"url": "https://github.com/open-metadata/OpenMetadata/releases/tag/2.0.2-release"
+"url": "https://github.com/open-metadata/OpenMetadata/releases/tag/2.0.4-release"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-05T13:40:24Z",
+"checked_at": "2026-10-10T04:59:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-05T13:40:20Z",
+"checked_at": "2026-10-10T04:59:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -267,7 +267,7 @@
 "evidence_url": "https://open-metadata.org",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-05T13:40:25Z",
+"checked_at": "2026-10-10T04:59:55Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -279,7 +279,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-05T13:57:20Z",
+"checked_at": "2026-10-10T05:18:56Z",
 "cves": 15,
 "source": "nvd",
 "tier": 1
@@ -287,19 +287,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2021-08-01T21:17:17Z",
-"github_forks": 2428,
+"github_forks": 2440,
 "github_language": "TypeScript",
-"github_open_issues": 930,
-"github_pushed_at": "2026-10-05T13:31:06Z",
-"github_stars": 15376,
+"github_open_issues": 1065,
+"github_pushed_at": "2026-10-10T04:49:33Z",
+"github_stars": 15431,
 "github_topic": "mcp-server",
 "homepage": "https://open-metadata.org"
 },
 "slug": "open-metadata-openmetadata",
 "sources": [
 {
-"payload_hash": "01b396109fd987bd2a361f8fa478bd37958dec03269b709416fe540faad31cb5",
-"retrieved_at": "2026-10-05T13:35:44Z",
+"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
+"retrieved_at": "2026-10-10T04:54:44Z",
 "system": "github",
 "url": "https://github.com/open-metadata/OpenMetadata"
 }
