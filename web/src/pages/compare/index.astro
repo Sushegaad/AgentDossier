@@ -1,0 +1,19 @@
+---
+import Base from "../../layouts/Base.astro";
+import CompareApp from "../../components/CompareApp";
+import { loadReferenceSet } from "../../lib/reference";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const set = loadReferenceSet();
+---
+
+<Base title="Compare">
+  <h1 style="font-size: clamp(2rem, 4.5vw, 3rem)">Compare</h1>
+  <p class="muted">Side by side, unresolved questions first: what is still unknown about each agent, then evidence per framework (vendor-level rows marked), protocols, CVEs and issues.</p>
+  {set && (
+    <p class="small" style="margin: 8px 0 16px">
+      Worked comparisons from the reference set:{" "}
+      {set.use_cases.map((u, i) => <><a href={`${base}/compare/${u.id}/`}>{u.title}</a>{i < set.use_cases.length - 1 ? " · " : ""}</>)}
+    </p>
+  )}
+  <CompareApp client:load />
+</Base>

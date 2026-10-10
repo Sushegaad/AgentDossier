@@ -1,6 +1,6 @@
 # AgentDossier
 
-**An evidence dossier for every AI agent.**
+**An evidence dossier for every AI agent.** Discover AI agents. Inspect the evidence. Decide what fits your risk requirements.
 
 AgentDossier is a vendor-neutral registry of AI agents that leads with
 evidence instead of marketing. For each agent it shows what compliance and
@@ -13,6 +13,7 @@ can scan an enterprise's own network for the agents already running there.
 
 - **Public demo:** https://sushegaad.github.io/AgentDossier/ — static, no accounts, cookieless analytics unless you opt in
 - **Self-hosted edition:** the same MIT codebase as one container with an authorized private-network scanner, ARD REST API, policy qualification, decision workflow and integrations
+- **Worked comparison:** [three ways to let a coding agent into a private repository](https://sushegaad.github.io/AgentDossier/compare/coding-agents-private-repo/) — the same five deployment questions answered for six agents from their own documentation
 - **Docs:** [`docs/methodology.md`](docs/methodology.md) (how evidence is graded), [`docs/enterprise-runbook.md`](docs/enterprise-runbook.md) (run your own), [`docs/architecture.md`](docs/architecture.md), [`docs/brd-traceability.md`](docs/brd-traceability.md), [`CHANGELOG.md`](CHANGELOG.md)
 
 ### How it grades evidence

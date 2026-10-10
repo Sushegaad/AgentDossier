@@ -29,6 +29,22 @@ listed in `docs/methodology.md`.
 - Curated protocol claims require a named reviewer; enterprise CA bundle rides on the
   scan's network policy instead of the process environment.
 
+## [Unreleased]
+
+### Evidence-first dossiers
+- The promise is narrowed to what the data supports: "Discover AI agents. Inspect the evidence.
+  Decide what fits your risk requirements." (homepage, meta description, README).
+- Every dossier opens with "Evidence available — not a safety certification" and splits the
+  ledger into evidence about the agent and vendor-level (inherited) rows; the trust strip, the
+  compare view and the homepage specimen count agent-scoped rows only.
+- "Before you deploy" on every dossier: evidence supporting this use, unknowns to check, and
+  rule-driven pilot restrictions (`config/deploy_rules.json`). Compare puts unresolved questions
+  first and marks vendor-level rows.
+- Reference set (`data/curated/reference_set.yaml`): eleven agents across two use cases answer
+  five deployment questions each from vendor documentation, with sources; worked comparisons at
+  `/compare/coding-agents-private-repo/` and `/compare/claims-intake-pii/` close with one honest
+  sentence per agent. "Dispute or correct this dossier" opens a pre-filled GitHub issue.
+
 ## [1.0.0] — 2026-10-03
 
 First general-availability release of both editions.

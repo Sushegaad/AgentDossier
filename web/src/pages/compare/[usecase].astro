@@ -1,0 +1,119 @@
+---
+/**
+ * A worked comparison from the reference set: the same deployment questions answered for each
+ * agent from the vendor's own documentation, with the evidence ledger beside them. Not a ranking;
+ * the closing sentences say what the evidence supports and where it is not sufficient.
+ */
+import Base from "../../layouts/Base.astro";
+import { loadResources } from "../../lib/catalog";
+import { beforeYouDeploy, verdictSentence } from "../../lib/deploy";
+import { evidenceGroups, tierRange } from "../../lib/dossier";
+import { badgeLabel } from "../../lib/labels";
+import { ANSWER_GLYPH, ANSWER_WORD, loadReferenceSet, type Answer } from "../../lib/reference";
+
+export function getStaticPaths() {
+  const set = loadReferenceSet();
+  if (!set) return [];
+  const resources = loadResources();
+  return set.use_cases.map((useCase) => {
+    const rows = set.agents
+      .filter((a) => a.use_case === useCase.id)
+      .map((entry) => {
+        const res = resources.find((r) => r.slug === entry.slug);
+        return res ? { entry, res, byd: beforeYouDeploy(res, { entry, useCase }) } : null;
+      })
+      .filter((x): x is NonNullable<typeof x> => x !== null);
+    return { params: { usecase: useCase.id }, props: { useCase, rows, set } };
+  });
+}
+const { useCase, rows, set } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const counts = (answers: Record<string, Answer>) => {
+  const c = { yes: 0, configurable: 0, no: 0, unknown: 0 };
+  for (const q of useCase.questions) c[answers[q.id]?.value ?? "unknown"] += 1;
+  return c;
+};
+const unresolved = rows.map((r) => ({ r, n: counts(r.entry.answers).unknown + counts(r.entry.answers).no }));
+---
+
+<Base title={useCase.title} description={useCase.question}>
+  <div class="eyebrow muted">Worked comparison · reference set {set.version}</div>
+  <h1 style="margin-top: 6px; font-size: clamp(1.8rem, 4vw, 2.6rem); max-width: 24ch">{useCase.title}</h1>
+  <p class="body" style="margin-top: 14px; max-width: 70ch"><b>{useCase.question}</b> {useCase.intro}</p>
+  <p class="notice" role="note" style="margin-top: 12px">
+    Answers were read from the vendor pages linked in each cell on {set.collected_on}
+    {set.reviewed_by ? ` and re-checked by ${set.reviewed_by}` : " — maintainer review pending"}. "Not documented" means the pages checked do not say; it is a question for the vendor, not a finding against the agent.
+  </p>
+
+  <div class="scroll-x" tabindex="0" style="margin-top: 24px">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {rows.map(({ res }) => (
+            <th style="text-transform: none; font-size: 1rem; color: var(--text)">
+              <a href={`${base}/agents/${res.slug}/`}>{res.name}</a>
+              <div class="muted small" style="font-weight: 400">{res.vendor}</div>
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Unresolved questions</th>
+          {unresolved.map(({ n }) => (
+            <td style="font-weight: 800">{n} of {useCase.questions.length}</td>
+          ))}
+        </tr>
+        {useCase.questions.map((q) => (
+          <tr>
+            <th scope="row">{q.label}</th>
+            {rows.map(({ entry }) => {
+              const a = entry.answers[q.id];
+              return (
+                <td>
+                  <div><b>{ANSWER_GLYPH[a.value]} {ANSWER_WORD[a.value]}</b></div>
+                  <div class="tiny muted">{a.note} · <a href={a.source} rel="noopener">source</a></div>
+                </td>
+              );
+            })}
+          </tr>
+        ))}
+        <tr>
+          <th scope="row">Evidence about the agent</th>
+          {rows.map(({ res }) => {
+            const g = evidenceGroups(res);
+            const own = g.agent.filter((r) => r.mark === "found" || r.mark === "claimed");
+            return (
+              <td>
+                <div><b>{tierRange(res)}</b>{own.length ? ` · ${own.map((r) => badgeLabel(r.framework, r.variant)).join(", ")}` : " · none found in the sources checked"}</div>
+                {g.vendor.length > 0 && <div class="tiny muted">+{g.vendor.length} vendor-level (inherited): {g.vendor.map((r) => badgeLabel(r.framework, r.variant)).join(", ")}</div>}
+              </td>
+            );
+          })}
+        </tr>
+        <tr>
+          <th scope="row">Pilot restrictions that apply</th>
+          {rows.map(({ byd }) => (
+            <td>
+              <ul style="margin: 0; padding-left: 1.1em">
+                {byd.restrictions.map((x) => <li class="small">{x.text}</li>)}
+              </ul>
+            </td>
+          ))}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section class="section" style="margin-top: 32px">
+    <div class="section-head"><h2>What the evidence says</h2></div>
+    <ul class="body" style="max-width: 72ch; padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px">
+      {rows.map(({ res, byd }) => <li>{verdictSentence(byd, res.name)}</li>)}
+    </ul>
+    <p class="small muted" style="margin-top: 14px; max-width: 72ch">
+      None of this ranks the agents. A table with more ✔ marks documents more; it does not deploy more safely. Open each dossier for the full ledger, the sources and the
+      <a href="https://github.com/Sushegaad/AgentDossier/issues/new">dispute link</a>, and put the "not documented" rows to the vendor before scoping a pilot.
+    </p>
+  </section>
+</Base>

@@ -1,0 +1,71 @@
+{
+  "version": "deploy-rules-1.0",
+  "_note": "Rule-driven 'Before you deploy' section. Each rule adds a pilot restriction when its condition holds. Conditions: answer (a reference-set question id with the values that trigger), evidence_missing (a framework with no active record; only when the framework is in the agent's domain preset), identity_tier_min, protocol (status per protocol). Restrictions are advice for a bounded pilot, never a verdict.",
+  "rules": [
+    {
+      "id": "approval-gate",
+      "when": { "answer": { "approval": ["no", "unknown"] } },
+      "restriction": "Keep a human approval gate outside the agent — pull-request review or action confirmation — for every write and command during the pilot."
+    },
+    {
+      "id": "scoped-credentials",
+      "when": { "answer": { "credentials": ["unknown", "no"] } },
+      "restriction": "Pilot with scoped, short-lived tokens only; keep production secrets out of the agent's environment."
+    },
+    {
+      "id": "hosted-processor",
+      "when": { "answer": { "self_host": ["no"] } },
+      "restriction": "Treat it as a hosted processor: data-flow review and a signed DPA before any private data is in scope."
+    },
+    {
+      "id": "single-repo",
+      "when": { "answer": { "writes": ["yes", "configurable"], "approval": ["no", "unknown", "configurable"] } },
+      "restriction": "Limit the pilot to one non-production repository with a protected default branch; let the agent push to one branch only."
+    },
+    {
+      "id": "redact-first",
+      "when": { "answer": { "masking": ["no", "unknown"] } },
+      "restriction": "Keep PHI and PII out of pilot inputs, or apply your own redaction before the agent sees a record."
+    },
+    {
+      "id": "training-clause",
+      "when": { "answer": { "training": ["no", "unknown"] } },
+      "restriction": "Confirm in contract that customer data is excluded from model training before the pilot starts."
+    },
+    {
+      "id": "advisory-only",
+      "when": { "answer": { "hitl": ["no", "unknown"] } },
+      "restriction": "Keep the agent advisory: no automated claim decisions or system writes during the pilot."
+    },
+    {
+      "id": "own-audit",
+      "when": { "answer": { "audit": ["no", "unknown"] } },
+      "restriction": "Log inputs and outputs on your side; the vendor's audit trail is not documented."
+    },
+    {
+      "id": "residency-check",
+      "when": { "answer": { "residency": ["no", "unknown"] } },
+      "restriction": "Confirm the processing region in writing before personal data of EU or UK residents is in scope."
+    },
+    {
+      "id": "publisher-unconfirmed",
+      "when": { "identity_tier_min": 3 },
+      "restriction": "Confirm the publisher before procurement: no marketplace listing or ARD/A2A card ties this agent to the vendor's domain."
+    },
+    {
+      "id": "mcp-invalid",
+      "when": { "protocol": { "mcp": ["invalid"] } },
+      "restriction": "Do not wire it in over MCP until the server card validates."
+    },
+    {
+      "id": "soc2-missing",
+      "when": { "evidence_missing": "soc2" },
+      "restriction": "Ask for the SOC 2 report under NDA before the pilot touches customer data; none was found in the sources checked."
+    },
+    {
+      "id": "hipaa-missing",
+      "when": { "evidence_missing": "hipaa" },
+      "restriction": "No PHI in the pilot until a HIPAA BAA is in hand; no HIPAA evidence was found in the sources checked."
+    }
+  ]
+}

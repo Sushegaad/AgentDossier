@@ -89,6 +89,51 @@ Discovered resources appear in domain lists as **unranked** entries sorted
 by score. The seed workbook remains the ranked Top 100 per domain (frozen
 baseline) until the maintainer re-scores.
 
+## What one evidence row says
+
+Every material claim on a dossier is shown as a compact block with the same six fields, so a
+reader can tell at a glance what is independently supported, what is self-reported and what is
+unknown:
+
+| Field | Where it comes from | What the reader sees |
+|---|---|---|
+| Claim | `framework` + `variant` | the precise assertion ("SOC 2 Type II", "FedRAMP Moderate"), never "secure" or "compliant" |
+| Subject and scope | `scope` (`entity` / `product`) + `covers_resource` | whether the evidence is about this agent or about its vendor; vendor-level rows are shown in a separate, muted group and **never count toward the agent's evidence tier** |
+| Evidence type | `tier` | T1 registry match, T2 marketplace listing, T3 reviewed document, T4 vendor assertion, T5 nothing found |
+| Provenance | `issuer`, `source`, `evidence_url` | who issued it and the page or registry entry it was read from — every row links |
+| Timing | `issued`, `retrieved_at`, `valid_until` / `period_end` / `next_check` | the as-of date, the expiry where one exists, and when it is re-checked |
+| Limitations | the framework's wording template | what the row does not establish ("covers platform, not this agent", "pending publisher verification", "a DPA is a contract you still have to sign") |
+
+Agent-level versus vendor-level: a CSA STAR entry for "Microsoft" is real evidence that the
+organisation was assessed and says nothing about whether one product is inside that scope. The
+site groups such rows under "About the vendor — inherited" and the trust strip, the compare view
+and the homepage specimen count only agent-scoped rows (`agentScoped()` in `web/src/lib/dossier.ts`).
+
+## Before you deploy (`deploy-rules-1.0`)
+
+Every dossier ends with three lists derived from data, never written per agent:
+
+* **Evidence supporting this use** — active rows from the ledger (vendor-level ones labelled) and,
+  for agents in the reference set, the deployment questions answered "yes" or "configurable".
+* **Unknowns to check** — frameworks from the domain preset with nothing found, expired or stale
+  rows, questions the vendor documentation does not answer, and the buyer checklist.
+* **Suggested restrictions for a pilot** — rules in `config/deploy_rules.json`, each keyed to a
+  condition (an answer value, a missing framework, an identity tier, a protocol state). They are
+  advice for a bounded pilot, not a verdict.
+
+### The reference set (`reference-set-1.0`)
+
+`data/curated/reference_set.yaml` holds a small group of agents (two use cases: coding agents in a
+private repository; claims-intake agents touching personal data) whose dossiers answer five
+deployment questions each from the vendor's own documentation, with the page quoted and linked.
+Values are `yes`, `no`, `configurable` or `unknown`; `unknown` means the pages checked do not say
+and is a question for the vendor, not a mark against the agent. The file records who collected the
+answers and, once a maintainer has re-checked every source, `reviewed_by`; until then the pages say
+"maintainer review pending". The worked comparisons at `/compare/<use-case>/` are rendered from it
+and close with one honest sentence per agent, including when the evidence is not sufficient to
+scope a pilot. Corrections: the "Dispute or correct this dossier" link on every dossier opens a
+pre-filled GitHub issue.
+
 ## Protocol status (MCP · A2A · ARD)
 
 Each resource carries one status per protocol:

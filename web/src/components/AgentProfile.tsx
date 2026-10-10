@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BASE, fetchResourceByIdOrSlug } from "../lib/data";
-import { COMPONENT_LABELS, COMPONENT_MAX, DOMAIN_PROFILES, PROFILES, bestDomain, checklist, evidenceRows, gdprPanel, protocolLines, provenance, tierCounts, tierRange, type Mark } from "../lib/dossier";
+import { beforeYouDeploy, type BeforeYouDeploy } from "../lib/deploy";
+import { COMPONENT_LABELS, COMPONENT_MAX, DOMAIN_PROFILES, PROFILES, bestDomain, evidenceGroups, gdprPanel, protocolLines, provenance, tierCounts, tierRange, type EvidenceRow, type Mark } from "../lib/dossier";
 import { IDENTITY_EVIDENCE, IDENTITY_LABEL, NEWS_TAG_LABEL, RISK_TAGS, domainLabel, fmtDate, frameworkName, variantLabel } from "../lib/labels";
 import type { Resource } from "../lib/types";
 import ShortlistButton from "./ShortlistButton";
@@ -14,7 +15,21 @@ const MARK: Record<Mark | "you", { glyph: string; color: string }> = {
 };
 
 /** The dossier (mockup 1g). Static for the public demo (resource prop), client-rendered on self-hosted instances (id from the URL). */
-export default function AgentProfile({ resource, id, shortlist = "island" }: { resource?: Resource; id?: string; shortlist?: "island" | "static" }) {
+export default function AgentProfile({
+  resource,
+  id,
+  shortlist = "island",
+  deploy,
+  comparison,
+}: {
+  resource?: Resource;
+  id?: string;
+  shortlist?: "island" | "static";
+  /** computed at build time with the reference set; client-rendered instances compute it without */
+  deploy?: BeforeYouDeploy;
+  /** link to the worked comparison this agent appears in */
+  comparison?: { href: string; title: string } | null;
+}) {
   const [res, setRes] = useState<Resource | null | undefined>(resource);
   useEffect(() => {
     if (resource) return;
@@ -33,9 +48,13 @@ export default function AgentProfile({ resource, id, shortlist = "island" }: { r
     .filter(([d, e]) => e.rank && d !== best?.[0])
     .sort((a, b) => (a[1].rank ?? 999) - (b[1].rank ?? 999))
     .slice(0, 3);
-  const rows = evidenceRows(res);
+  const groups = evidenceGroups(res);
+  const rows = [...groups.agent, ...groups.vendor];
   const gdpr = gdprPanel(res);
-  const checks = checklist(res);
+  const byd = deploy ?? beforeYouDeploy(res, null);
+  const issueUrl = `https://github.com/Sushegaad/AgentDossier/issues/new?title=${encodeURIComponent(`Correction: ${res.name}`)}&body=${encodeURIComponent(
+    `Record: ${res.id} (${res.slug})\nDossier: ${BASE}/agents/${res.slug}/\n\nWhat is wrong or missing:\n\nSource that shows the correct information (URL):\n`,
+  )}`;
   const prov = provenance(res);
   const protoLines = protocolLines(res);
   const protoCount = `${protoLines.filter((l) => ["verified", "claimed"].includes(l.status)).length} / 3`;
@@ -144,7 +163,12 @@ export default function AgentProfile({ resource, id, shortlist = "island" }: { r
         </div>
       </header>
 
-      <div className="split" style={{ marginTop: "32px" }}>
+      <p className="notice" style={{ marginTop: "16px" }} role="note">
+        <b>Evidence available — not a safety certification.</b> Suitability depends on your task, deployment and permissions. Rows marked
+        <i> vendor-level</i> describe {res.vendor ?? "the vendor"}, not this agent specifically.
+      </p>
+
+      <div className="split" style={{ marginTop: "24px" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
           <section>
             <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", marginBottom: "12px" }}>
@@ -155,43 +179,29 @@ export default function AgentProfile({ resource, id, shortlist = "island" }: { r
               </span>
             </div>
             <div className="ledger">
-              {rows.map((r) => (
-                <div key={r.framework + (r.variant ?? "") + r.mark} className="ledger-row" style={{ gridTemplateColumns: "22px 150px 1fr 150px" }}>
-                  <span style={{ fontWeight: 800, color: MARK[r.mark].color }} aria-label={r.mark}>
-                    {MARK[r.mark].glyph}
-                  </span>
-                  <div>
-                    <div style={{ fontWeight: 800 }}>
-                      {frameworkName(r.framework)}
-                      {r.variant && <span style={{ fontWeight: 400 }}> · {variantLabel(r.variant)}</span>}
-                    </div>
-                    <div className="tiny muted">{r.tierLabel}</div>
-                  </div>
-                  <div>
-                    <div>{r.status}</div>
-                    <div className="tiny muted">
-                      Scope: {r.scope} ·{" "}
-                      {r.sourceUrl ? (
-                        <a href={r.sourceUrl} rel="noopener">
-                          {r.source}
-                        </a>
-                      ) : (
-                        r.source
-                      )}
-                      {r.asOf && <> · {r.asOf}</>}
-                      {r.record?.match_confidence != null && r.record.match_confidence < 1 && <> · match {Math.round(r.record.match_confidence * 100)}%</>}
-                      {r.record?.reviewer && <> · reviewed by {r.record.reviewer}</>}
-                    </div>
-                  </div>
-                  <div className="tiny muted" style={{ textAlign: "right" }}>
-                    {r.right}
-                  </div>
-                </div>
+              {groups.agent.map((r) => (
+                <LedgerRow key={r.framework + (r.variant ?? "") + r.mark} r={r} />
               ))}
             </div>
+            {groups.vendor.length > 0 && (
+              <>
+                <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", margin: "18px 0 8px" }}>
+                  <h3 style={{ fontSize: "1.05rem" }}>About the vendor — inherited, not agent-specific</h3>
+                  <span className="tiny muted">{groups.vendor.length} record{groups.vendor.length === 1 ? "" : "s"} matched at organisation level</span>
+                </div>
+                <div className="ledger inherited">
+                  {groups.vendor.map((r) => (
+                    <LedgerRow key={"v" + r.framework + (r.variant ?? "") + r.mark} r={r} />
+                  ))}
+                </div>
+                <p className="tiny muted" style={{ marginTop: "6px" }}>
+                  A vendor-level registry entry proves the organisation was assessed; whether this agent is inside that scope is a question for the vendor. These rows do not count toward the agent's evidence tier.
+                </p>
+              </>
+            )}
             <div className="row tiny muted" style={{ justifyContent: "space-between", marginTop: "10px" }}>
               <span>✔ found · ○ claimed · – not found · ⚠ expired, stale or revoked. Every row links to its source.</span>
-              <a href="https://github.com/Sushegaad/AgentDossier/issues/new">Request a correction on GitHub</a>
+              <a href={issueUrl} rel="noopener">Dispute or correct this dossier</a>
             </div>
           </section>
 
@@ -306,16 +316,42 @@ export default function AgentProfile({ resource, id, shortlist = "island" }: { r
             </p>
           </section>
 
-          <section style={{ borderTop: "2px solid var(--accent)", paddingTop: "12px" }}>
-            <h3 style={{ fontSize: "1.15rem" }}>Before you procure, you still verify</h3>
-            <div className="checklist" style={{ marginTop: "2px" }}>
-              {checks.map((c) => (
-                <div key={c}>
-                  <span aria-hidden="true">☐</span>
-                  <span>{c}</span>
-                </div>
-              ))}
-            </div>
+          <section style={{ borderTop: "2px solid var(--accent)", paddingTop: "12px" }} className="deploy">
+            <h3 style={{ fontSize: "1.15rem" }}>Before you deploy</h3>
+            <p className="tiny muted" style={{ margin: "4px 0 10px" }}>
+              {byd.inReferenceSet
+                ? "Deployment questions answered from the vendor's documentation, each with its source."
+                : "Derived from the evidence ledger. This agent is not yet in the reference set, so deployment questions (credentials, approval, data handling) are not answered here — ask the vendor."}
+            </p>
+            {byd.answers.length > 0 && (
+              <div className="ledger small" style={{ marginBottom: "12px" }}>
+                {byd.answers.map((a) => (
+                  <div key={a.question} className="ledger-row" style={{ gridTemplateColumns: "18px 1fr", padding: "6px 0" }}>
+                    <span aria-label={a.answer.value} style={{ fontWeight: 800, color: a.answer.value === "unknown" ? "var(--muted)" : "var(--ink)" }}>
+                      {{ yes: "✔", configurable: "◐", no: "✕", unknown: "?" }[a.answer.value]}
+                    </span>
+                    <span>
+                      <b>{a.label}</b> {a.answer.value === "yes" ? "Yes" : a.answer.value === "configurable" ? "Configurable" : a.answer.value === "no" ? "No" : "Not documented"}
+                      <span className="muted"> — {a.answer.note}</span>{" "}
+                      <a href={a.answer.source} rel="noopener">source</a>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
+            <DeployGroup title="Evidence supporting this use" items={byd.supporting} glyph="✔" empty="Nothing found in the sources checked." />
+            <DeployGroup title="Unknowns to check" items={byd.unknowns} glyph="?" empty="No open questions from the evidence." />
+            <DeployGroup title="Suggested restrictions for a pilot" items={byd.restrictions} glyph="▸" empty="No restriction rule fired — review the unknowns above before relying on that." />
+            {comparison && (
+              <p className="small" style={{ marginTop: "10px" }}>
+                <a href={comparison.href} style={{ fontWeight: 800 }}>
+                  See the worked comparison: {comparison.title} →
+                </a>
+              </p>
+            )}
+            <p className="tiny muted" style={{ marginTop: "8px" }}>
+              Rules: <code>config/deploy_rules.json</code>. Advice for a bounded pilot, not a verdict.
+            </p>
           </section>
 
           <section style={{ borderTop: "2px solid var(--rule)", paddingTop: "12px" }} className="small">
@@ -361,6 +397,75 @@ function TrustRow({ k, v, t, last = false }: { k: string; v: React.ReactNode; t:
       <b>{k}</b>
       <span>{v}</span>
       <span className="tierbox">{t}</span>
+    </div>
+  );
+}
+
+
+function LedgerRow({ r }: { r: EvidenceRow }) {
+  return (
+    <div className="ledger-row" style={{ gridTemplateColumns: "22px 150px 1fr 150px" }}>
+      <span style={{ fontWeight: 800, color: MARK[r.mark].color }} aria-label={r.mark}>
+        {MARK[r.mark].glyph}
+      </span>
+      <div>
+        <div style={{ fontWeight: 800 }}>
+          {frameworkName(r.framework)}
+          {r.variant && <span style={{ fontWeight: 400 }}> · {variantLabel(r.variant)}</span>}
+        </div>
+        <div className="tiny muted">{r.tierLabel}{!r.aboutAgent && " · vendor-level"}</div>
+      </div>
+      <div>
+        <div>{r.status}</div>
+        <div className="tiny muted">
+          Scope: {r.scope} ·{" "}
+          {r.sourceUrl ? (
+            <a href={r.sourceUrl} rel="noopener">
+              {r.source}
+            </a>
+          ) : (
+            r.source
+          )}
+          {r.asOf && <> · {r.asOf}</>}
+          {r.record?.match_confidence != null && r.record.match_confidence < 1 && <> · match {Math.round(r.record.match_confidence * 100)}%</>}
+          {r.record?.reviewer && <> · reviewed by {r.record.reviewer}</>}
+        </div>
+      </div>
+      <div className="tiny muted" style={{ textAlign: "right" }}>
+        {r.right}
+      </div>
+    </div>
+  );
+}
+
+function DeployGroup({ title, items, glyph, empty }: { title: string; items: { key: string; text: string; source?: string | null }[]; glyph: string; empty: string }) {
+  return (
+    <div style={{ marginTop: "10px" }}>
+      <div className="label" style={{ marginBottom: "4px" }}>
+        {title} <span className="muted" style={{ fontWeight: 400 }}>({items.length})</span>
+      </div>
+      {items.length === 0 ? (
+        <p className="tiny muted">{empty}</p>
+      ) : (
+        <div className="checklist">
+          {items.map((it) => (
+            <div key={it.key}>
+              <span aria-hidden="true">{glyph}</span>
+              <span>
+                {it.text}
+                {it.source && (
+                  <>
+                    {" "}
+                    <a href={it.source} rel="noopener" className="tiny">
+                      source
+                    </a>
+                  </>
+                )}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

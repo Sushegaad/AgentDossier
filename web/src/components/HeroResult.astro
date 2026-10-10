@@ -5,10 +5,10 @@
  * issuer and date, the gaps, and why it ranked first. Never hand-written; see lib/search.ts heroPick.
  */
 import { loadResource } from "../lib/catalog";
-import { evidenceRows, protocolLines } from "../lib/dossier";
+import { evidenceGroups, evidenceRows, protocolLines, tierRange } from "../lib/dossier";
+import { loadReferenceSet, referenceFor } from "../lib/reference";
 import { IDENTITY_LABEL, badgeLabel, domainLabel } from "../lib/labels";
 import type { HeroPick } from "../lib/search";
-import { bestActiveTier } from "../lib/search";
 
 interface Props {
   pick: HeroPick;
@@ -17,11 +17,14 @@ const { pick } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const r = pick.hit.record;
 const res = loadResource(r.id);
-const rows = res ? evidenceRows(res).filter((x) => x.mark !== "missing").slice(0, 3) : [];
+const groups = res ? evidenceGroups(res) : { agent: [], vendor: [] };
+// evidence about the agent first; vendor-inherited rows only fill remaining slots, labelled as such
+const rows = [...groups.agent.filter((x) => x.mark !== "missing"), ...groups.vendor.filter((x) => x.mark !== "missing")].slice(0, 3);
 const gaps = res ? evidenceRows(res).filter((x) => x.mark === "missing").map((x) => badgeLabel(x.framework, null)).slice(0, 3) : [];
 const protos = res ? protocolLines(res).filter((l) => ["verified", "claimed"].includes(l.status)) : [];
 const domainEntry = Object.entries(r.domains).sort((a, b) => (a[1].rank ?? 999) - (b[1].rank ?? 999))[0];
-const evidenceTier = bestActiveTier(r);
+const evidenceTier = res ? tierRange(res) : "T5";
+const ref = referenceFor(r.slug, loadReferenceSet());
 const why = pick.hit.explanation.slice(0, 3).join(" · ");
 ---
 
@@ -36,7 +39,7 @@ const why = pick.hit.explanation.slice(0, 3).join(" · ");
   <div class="small muted">{r.vendor}{r.category ? ` · ${r.category}` : ""}</div>
   <div class="strip">
     <span class="tierbox">Identity T{r.trust.identity}</span>
-    <span class="tierbox">Evidence T{evidenceTier}</span>
+    <span class="tierbox">Evidence {evidenceTier}</span>
     {protos.map((l) => <span class="tierbox">{l.key.toUpperCase()} {l.status === "verified" ? "✔" : "○"}</span>)}
   </div>
   {rows.length > 0 ? (
@@ -44,7 +47,7 @@ const why = pick.hit.explanation.slice(0, 3).join(" · ");
       {rows.map((x) => (
         <li>
           <span class={`mark ${x.mark}`} aria-hidden="true">{x.mark === "found" ? "✔" : x.mark === "claimed" ? "○" : "⚠"}</span>
-          <span><b>{badgeLabel(x.framework, x.variant)}</b> <span class="muted">— {x.tierLabel}{x.asOf ? `, ${x.asOf}` : ""}</span>{x.sourceUrl && <> · <a href={x.sourceUrl} rel="noopener">source</a></>}</span>
+          <span><b>{badgeLabel(x.framework, x.variant)}</b> <span class="muted">— {x.tierLabel}{x.aboutAgent ? "" : " · vendor-level"}{x.asOf ? `, ${x.asOf}` : ""}</span>{x.sourceUrl && <> · <a href={x.sourceUrl} rel="noopener">source</a></>}</span>
         </li>
       ))}
     </ul>
@@ -53,6 +56,7 @@ const why = pick.hit.explanation.slice(0, 3).join(" · ");
   )}
   {gaps.length > 0 && <p class="small"><span class="muted">Not yet verified:</span> {gaps.join(", ")} — ask the vendor.</p>}
   {why && <p class="small why"><span class="muted">Why #1:</span> {why}.</p>}
+  <p class="small"><a href={ref ? `${base}/compare/${ref.useCase.id}/` : `${base}/compare/coding-agents-private-repo/`} style="font-weight: 800">See a worked comparison: {ref ? ref.useCase.title : "three ways to let a coding agent into a private repository"} →</a></p>
   <p class="tiny muted">Live specimen, recomputed on every catalog build · identity {IDENTITY_LABEL[r.trust.identity]?.toLowerCase()}</p>
 </aside>
 

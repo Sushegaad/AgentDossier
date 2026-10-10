@@ -49,7 +49,7 @@ const main = async () => {
   const browser = await chromium.launch({ executablePath: CHROME });
   const page = await browser.newPage();
   const agent = await firstAgentPath(page);
-  const pages = [`${BASE}/`, `${BASE}/search/?q=insurance%20claims%20agent`, `${BASE}/domains/`, `${BASE}/compare/`, `${BASE}/private/`, `${BASE}/methodology/`, `${BASE}/enterprise/`];
+  const pages = [`${BASE}/`, `${BASE}/search/?q=insurance%20claims%20agent`, `${BASE}/domains/`, `${BASE}/compare/`, `${BASE}/private/`, `${BASE}/methodology/`, `${BASE}/enterprise/`, `${BASE}/compare/coding-agents-private-repo/`];
   if (agent) pages.push(agent);
 
   // --- axe ---------------------------------------------------------------------

@@ -7,7 +7,7 @@ interface Props {
   description?: string;
   wide?: boolean;
 }
-const { title, description = "AgentDossier — find AI agents you can actually trust, with the evidence behind every one." } = Astro.props;
+const { title, description = "AgentDossier — discover AI agents, inspect the evidence behind each one, and decide what fits your risk requirements." } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const meta = loadIndexMeta();
 const path = Astro.url.pathname.replace(base, "") || "/";
@@ -84,7 +84,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
           <span class="sq" aria-hidden="true"></span>
           <span>
             <b>AgentDossier <span>· AI Agent Registry</span></b>
-            <small>Find agents you can actually trust — public or inside your enterprise.</small>
+            <small>Discover agents. Inspect the evidence. Decide what fits — public or inside your enterprise.</small>
           </span>
         </a>
         <nav class="nav" aria-label="Main">

@@ -1,0 +1,317 @@
+# Reference set: a small group of agents whose dossiers answer deployment questions, not only
+# "which badges exist". Every answer carries the page it was read from. Values:
+#   yes · no · configurable · unknown   (unknown = not found in the vendor documentation checked;
+#   it is never treated as a failure, it is a question for the vendor)
+#
+# collected_by is who read the pages; reviewed_by is a person's handle once a maintainer has
+# re-checked every source — until then the site says "maintainer review pending". Placeholders
+# such as `maintainer` are rejected by the loader.
+version: reference-set-1.0
+collected_on: 2026-10-09
+collected_by: claude-assist (vendor documentation fetched and quoted)
+reviewed_by: null
+
+use_cases:
+  - id: coding-agents-private-repo
+    title: Three ways to let a coding agent into a private repository
+    question: Which coding agents can we let into a private repository, and under what controls?
+    intro: >-
+      The comparison is deliberately not a ranking. Each agent answers the same five deployment
+      questions from its own documentation; where the documentation is silent the answer is
+      "unknown", which is a question to put to the vendor before a pilot, not a mark against the agent.
+    questions:
+      - id: private_repo
+        label: Reads private repositories?
+      - id: writes
+        label: Executes code or writes changes?
+      - id: credentials
+        label: Credential handling documented?
+      - id: self_host
+        label: Can run entirely on your own machine or infrastructure?
+      - id: approval
+        label: Human approval before consequential actions?
+  - id: claims-intake-pii
+    title: Claims and document-intake agents that touch personal data
+    question: Which claims-intake agents document how they handle PII and PHI, and where a human stays in the loop?
+    intro: >-
+      Insurance intake agents read policyholder records by design, so the questions are about data
+      handling rather than access. Vendor trust pages describe certifications well and agent behaviour
+      poorly; most answers below are "unknown" for that reason.
+    questions:
+      - id: masking
+        label: Masks or minimises personal data before it reaches the model?
+      - id: residency
+        label: Data residency or regional hosting documented?
+      - id: training
+        label: Customer data excluded from model training (documented)?
+      - id: hitl
+        label: Human review before a decision or record change is executed?
+      - id: audit
+        label: Audit log of agent actions documented?
+
+agents:
+  # --- coding agents ------------------------------------------------------------------------
+  - slug: github-microsoft-github-copilot-coding-agent
+    use_case: coding-agents-private-repo
+    answers:
+      private_repo:
+        value: "yes"
+        note: '"available in eligible private and internal repositories"; owners can disable it per repository'
+        source: https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent
+      writes:
+        value: "yes"
+        note: '"edit files and run tests and linters in an ephemeral cloud development environment"; "only has the ability to push to a single branch"'
+        source: https://docs.github.com/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations
+      credentials:
+        value: "unknown"
+        note: 'Which secrets the agent can read is not stated on the pages checked; the risks page notes it "has access to code and other sensitive information, and could leak it" and that internet access is restricted by a firewall'
+        source: https://docs.github.com/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations
+      self_host:
+        value: "no"
+        note: 'Hosted: works "in a cloud environment rather than your local IDE"'
+        source: https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent
+      approval:
+        value: "yes"
+        note: '"Draft pull requests created by Copilot cloud agent must be reviewed and merged by a human"; "workflows are not triggered until Copilot cloud agent''s code is reviewed"'
+        source: https://docs.github.com/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations
+
+  - slug: anthropic-claude-code
+    use_case: coding-agents-private-repo
+    answers:
+      private_repo:
+        value: "yes"
+        note: 'Runs in the project directory on your machine; file tools are bounded to that folder in Manual mode'
+        source: https://code.claude.com/docs/en/security
+      writes:
+        value: "yes"
+        note: '"Manual mode: Claude Code starts with read-only permissions. When it needs to edit files, run tests, or execute commands, it asks you first"'
+        source: https://code.claude.com/docs/en/security
+      credentials:
+        value: "configurable"
+        note: '"API keys and tokens are stored in the macOS Keychain when available"; sandboxed bash with filesystem and network isolation; in cloud sessions "GitHub credentials ... never enter the session VM"'
+        source: https://code.claude.com/docs/en/security
+      self_host:
+        value: "yes"
+        note: 'Local terminal process; optional sandbox runtime or dev container; cloud sessions can be routed to a self-hosted environment'
+        source: https://code.claude.com/docs/en/security
+      approval:
+        value: "configurable"
+        note: 'Manual mode asks before edits and commands; Auto mode delegates to a classifier; Accept Edits mode auto-approves edits. "You''re responsible for reviewing proposed code and commands for safety before approval"'
+        source: https://code.claude.com/docs/en/security
+
+  - slug: openai-openai-codex-cli
+    use_case: coding-agents-private-repo
+    answers:
+      private_repo:
+        value: "yes"
+        note: '"Open a project directory and run codex"; it can "inspect files"'
+        source: https://learn.chatgpt.com/docs/codex/cli
+      writes:
+        value: "yes"
+        note: '"make edits, and run the tools already installed on your machine"'
+        source: https://learn.chatgpt.com/docs/codex/cli
+      credentials:
+        value: "unknown"
+        note: 'Sign in with ChatGPT or an API key; where credentials are stored is not stated on the pages checked'
+        source: https://learn.chatgpt.com/docs/codex/cli
+      self_host:
+        value: "yes"
+        note: '"a coding agent from OpenAI that runs locally on your computer"'
+        source: https://github.com/openai/codex
+      approval:
+        value: "configurable"
+        note: '/permissions chooses "when Codex can edit files or run commands without asking"; approval_policy on-request | never; permission profiles :read-only, :workspace, :danger-full-access'
+        source: https://learn.chatgpt.com/docs/config-file/config-reference
+
+  - slug: cline-cline
+    use_case: coding-agents-private-repo
+    answers:
+      private_repo:
+        value: "yes"
+        note: 'Works on the open workspace; "Read project files" is the recommended first auto-approve toggle'
+        source: https://docs.cline.bot/features/auto-approve
+      writes:
+        value: "configurable"
+        note: '"Auto Approve is evaluated per tool call"; recommended setup: "Leave edits, commands, browser, and MCP off until you have a specific reason"'
+        source: https://docs.cline.bot/features/auto-approve
+      credentials:
+        value: "unknown"
+        note: 'Not covered on the pages checked'
+        source: https://docs.cline.bot/features/auto-approve
+      self_host:
+        value: "yes"
+        note: 'Editor extension running on your machine; model requests go to the provider you configure'
+        source: https://docs.cline.bot/
+      approval:
+        value: "yes"
+        note: 'Each tool call prompts unless its auto-approve toggle is on; "YOLO mode" removes prompts and is documented as a deliberate choice'
+        source: https://docs.cline.bot/features/auto-approve
+
+  - slug: all-hands-ai-openhands
+    use_case: coding-agents-private-repo
+    answers:
+      private_repo:
+        value: "yes"
+        note: 'The agent server works on a workspace in a Process, Docker or Remote sandbox'
+        source: https://docs.openhands.dev/openhands/usage/sandboxes/overview.md
+      writes:
+        value: "yes"
+        note: 'Docker sandbox: "Good isolation from your host machine"; Process sandbox: "No container isolation"'
+        source: https://docs.openhands.dev/openhands/usage/sandboxes/overview.md
+      credentials:
+        value: "unknown"
+        note: 'Not covered on the pages checked'
+        source: https://docs.openhands.dev/openhands/usage/sandboxes/overview.md
+      self_host:
+        value: "yes"
+        note: 'Process and Docker sandboxes run on your machine; Remote "used by managed deployments and some hosted setups"'
+        source: https://docs.openhands.dev/openhands/usage/sandboxes/overview.md
+      approval:
+        value: "configurable"
+        note: '"Confirmation policy controls whether actions require user approval before execution"; ConfirmRisky needs a security analyzer; no default policy stated'
+        source: https://docs.openhands.dev/sdk/guides/security
+
+  - slug: aider-ai-aider
+    use_case: coding-agents-private-repo
+    answers:
+      private_repo:
+        value: "yes"
+        note: '"AI pair programming in your terminal" in your local git repo'
+        source: https://aider.chat/docs/usage.html
+      writes:
+        value: "yes"
+        note: '"Aider will git commit all of its changes, so they are easy to track and undo"'
+        source: https://aider.chat/docs/usage.html
+      credentials:
+        value: "configurable"
+        note: 'Model API keys are passed on the command line (--api-key) or from the environment; nothing else is documented on the page checked'
+        source: https://aider.chat/docs/usage.html
+      self_host:
+        value: "yes"
+        note: 'Local terminal tool; model calls go to the provider you configure'
+        source: https://aider.chat/docs/usage.html
+      approval:
+        value: "no"
+        note: 'Edits are applied and committed, then shown as diffs; review happens after the fact with /undo. No pre-edit approval step is documented'
+        source: https://aider.chat/docs/usage.html
+
+  # --- claims / document intake -------------------------------------------------------------
+  - slug: salesforce-agentforce-insurance
+    use_case: claims-intake-pii
+    answers:
+      masking:
+        value: "yes"
+        note: 'Einstein Trust Layer: "Sensitive data is detected and masked before sending the prompt to the LLM"; admins choose what is masked'
+        source: https://help.salesforce.com/s/articleView?id=sf.generative_ai_trust_layer.htm&type=5
+      residency:
+        value: "unknown"
+        note: 'Not covered on the pages checked'
+        source: https://help.salesforce.com/s/articleView?id=sf.generative_ai_trust_layer.htm&type=5
+      training:
+        value: "yes"
+        note: '"Your data isn''t retained by third-party LLMs" and is not used for their training'
+        source: https://help.salesforce.com/s/articleView?id=sf.generative_ai_trust_layer.htm&type=5
+      hitl:
+        value: "configurable"
+        note: 'Per action: "enable the Require user confirmation setting" so the agent asks before a record change'
+        source: https://help.salesforce.com/s/articleView?id=ai.copilot_actions_custom.htm&language=en_US&type=5
+      audit:
+        value: "yes"
+        note: '"Prompts, responses, and trust signals are logged and stored in Data 360"'
+        source: https://help.salesforce.com/s/articleView?id=sf.generative_ai_trust_layer.htm&type=5
+
+  - slug: tractable-tractable
+    use_case: claims-intake-pii
+    answers:
+      masking:
+        value: "unknown"
+        note: 'The security page could not be retrieved at collection time; the privacy page names SOC 2 Type II and ISO 27001 but not agent data handling'
+        source: https://tractable.ai/privacy/
+      residency:
+        value: "unknown"
+        note: 'Not found on the pages checked'
+        source: https://tractable.ai/privacy/
+      training:
+        value: "unknown"
+        note: 'Not found on the pages checked'
+        source: https://tractable.ai/privacy/
+      hitl:
+        value: "unknown"
+        note: 'Not found on the pages checked'
+        source: https://tractable.ai/privacy/
+      audit:
+        value: "unknown"
+        note: 'Not found on the pages checked'
+        source: https://tractable.ai/privacy/
+
+  - slug: shift-technology-shift-technology-ai
+    use_case: claims-intake-pii
+    answers:
+      masking:
+        value: "unknown"
+        note: 'Not covered on the security page'
+        source: https://www.shift-technology.com/security
+      residency:
+        value: "yes"
+        note: '"No transfer of European personal health data to a country outside the European Economic Area"'
+        source: https://www.shift-technology.com/security
+      training:
+        value: "unknown"
+        note: 'Not covered on the security page'
+        source: https://www.shift-technology.com/security
+      hitl:
+        value: "unknown"
+        note: 'The page describes agent actions as "human-guided" without saying what a handler approves'
+        source: https://www.shift-technology.com/security
+      audit:
+        value: "unknown"
+        note: 'Described as "auditable" without documentation of the log'
+        source: https://www.shift-technology.com/security
+
+  - slug: guidewire-guidewire-ai
+    use_case: claims-intake-pii
+    answers:
+      masking:
+        value: "unknown"
+        note: 'The trust page lists certifications (SOC 1/2 Type 2, ISO 27001, ISO 27701, PCI DSS) and makes no statement about AI features'
+        source: https://www.guidewire.com/resources/help-and-support/trust-and-security
+      residency:
+        value: "unknown"
+        note: 'Not mentioned on the trust page'
+        source: https://www.guidewire.com/resources/help-and-support/trust-and-security
+      training:
+        value: "unknown"
+        note: 'Not mentioned; only a general commitment to process data "as contractually permitted"'
+        source: https://www.guidewire.com/resources/help-and-support/trust-and-security
+      hitl:
+        value: "unknown"
+        note: 'Not mentioned on the trust page'
+        source: https://www.guidewire.com/resources/help-and-support/trust-and-security
+      audit:
+        value: "unknown"
+        note: 'Not mentioned on the trust page'
+        source: https://www.guidewire.com/resources/help-and-support/trust-and-security
+
+  - slug: uipath-uipath-agentic-automation
+    use_case: claims-intake-pii
+    answers:
+      masking:
+        value: "unknown"
+        note: 'Not covered on the governance page'
+        source: https://www.uipath.com/platform/agentic-automation/foundation/security-governance
+      residency:
+        value: "yes"
+        note: '"Regional data residency is available across Automation Cloud regions"; "air-gapped and on-premises deployments" via Automation Suite'
+        source: https://www.uipath.com/platform/agentic-automation/foundation/security-governance
+      training:
+        value: "yes"
+        note: '"Your data never trains a model and never leaves approved boundaries"'
+        source: https://www.uipath.com/platform/agentic-automation/foundation/security-governance
+      hitl:
+        value: "configurable"
+        note: 'Audit logs capture the "human approver" of agent actions, which implies an approval step; the mechanism itself is not described on this page'
+        source: https://www.uipath.com/platform/agentic-automation/foundation/security-governance
+      audit:
+        value: "yes"
+        note: '"Tamper-evident logs capture every agent action, prompt, response, tool call, model version, and human approver"'
+        source: https://www.uipath.com/platform/agentic-automation/foundation/security-governance

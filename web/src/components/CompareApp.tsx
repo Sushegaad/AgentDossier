@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { BASE, agentHref, fetchIndex, fetchResource } from "../lib/data";
+import { beforeYouDeploy } from "../lib/deploy";
+import { agentScoped } from "../lib/dossier";
 import { FRAMEWORKS, domainLabel, frameworkName, protocolLabel, variantLabel } from "../lib/labels";
 import { getShortlist, onShortlistChange } from "../lib/shortlist";
 import type { CatalogIndex, IndexRecord, Resource } from "../lib/types";
@@ -112,6 +114,30 @@ export default function CompareApp() {
               </tr>
             </thead>
             <tbody>
+              <Row label="Unresolved questions" title="Unknowns from the dossier's Before-you-deploy block: missing evidence, unconfirmed publisher, unobserved protocols. Fewer is better; zero is rare.">
+                {records.map((r) => {
+                  const d = details[r.id];
+                  if (!d) return <td key={r.id}>{d === null ? "…" : "—"}</td>;
+                  const b = beforeYouDeploy(d, null);
+                  return (
+                    <td key={r.id}>
+                      <b>{b.unknowns.length}</b>
+                      <ul className="tiny muted" style={{ margin: "4px 0 0", paddingLeft: "1.1em" }}>
+                        {b.unknowns.slice(0, 3).map((u) => (
+                          <li key={u.key}>{u.text}</li>
+                        ))}
+                        {b.unknowns.length > 3 && <li>…and {b.unknowns.length - 3} more on the dossier</li>}
+                      </ul>
+                    </td>
+                  );
+                })}
+              </Row>
+              <Row label="Pilot restrictions" title="From config/deploy_rules.json; advice for a bounded pilot, not a verdict.">
+                {records.map((r) => {
+                  const d = details[r.id];
+                  return <td key={r.id}>{d ? beforeYouDeploy(d, null).restrictions.length : d === null ? "…" : "—"}</td>;
+                })}
+              </Row>
               <Row label="Type / license">{records.map((r) => <td key={r.id}>{r.resource_type.replace(/_/g, " ")}{r.license ? ` · ${r.license}` : ""}</td>)}</Row>
               <Row label="Trust summary">{records.map((r) => <td key={r.id}><TrustStrip trust={r.trust} /></td>)}</Row>
               <Row label="Identity">
@@ -133,14 +159,20 @@ export default function CompareApp() {
                   {records.map((r) => {
                     const recs = r.compliance_summary.filter((c) => c.framework === fw);
                     if (!recs.length) return <td key={r.id} className="muted">no evidence</td>;
+                    const full = details[r.id]?.compliance ?? [];
                     return (
                       <td key={r.id}>
-                        {recs.map((c) => (
-                          <div key={c.variant ?? "-"}>
-                            <span className={`tier${c.credited === false ? " pending" : ""}`} data-tier={c.tier}>T{c.tier}</span>{" "}
-                            {c.variant ? variantLabel(c.variant) : ""} {c.status !== "active" ? `(${c.status})` : ""}
-                          </div>
-                        ))}
+                        {recs.map((c) => {
+                          const rec = full.find((x) => x.framework === c.framework && x.variant === c.variant && x.tier === c.tier);
+                          const vendorLevel = rec ? !agentScoped(rec) : false;
+                          return (
+                            <div key={c.variant ?? "-"} className={vendorLevel ? "muted" : undefined}>
+                              <span className={`tier${c.credited === false ? " pending" : ""}`} data-tier={c.tier}>T{c.tier}</span>{" "}
+                              {c.variant ? variantLabel(c.variant) : ""} {c.status !== "active" ? `(${c.status})` : ""}
+                              {vendorLevel ? " · vendor-level" : ""}
+                            </div>
+                          );
+                        })}
                       </td>
                     );
                   })}

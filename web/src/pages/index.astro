@@ -27,7 +27,7 @@ const tiers = [
 ];
 ---
 
-<Base title="Find agents you can actually trust">
+<Base title="Discover AI agents. Inspect the evidence." description="AgentDossier — discover AI agents, inspect the evidence behind each one, and decide what fits your risk requirements.">
   <script is:inline define:vars={{ base }}>
     // legacy links: /?q=… → /search/?q=…
     if (location.search.includes("q=") || location.search.includes("domain=")) location.replace(`${base}/search/${location.search}`);
@@ -35,12 +35,13 @@ const tiers = [
   <section class="hero">
     <div>
       <h1>
-        <span style="display:block">Find agents you can actually trust.</span>
-        <span style="display:block; color: var(--accent)">See the evidence behind every one.</span>
+        <span style="display:block">Discover AI agents.</span>
+        <span style="display:block">Inspect the evidence.</span>
+        <span style="display:block; color: var(--accent)">Decide what fits your risk requirements.</span>
       </h1>
       <p class="body" style="font-size: 1.1rem; line-height: 1.55; max-width: 56ch; margin-top: 20px">
-        Describe what you need. Every result leads with its trust profile — who issued the evidence, what it
-        covers, whether it is current, and what you still have to verify yourself.
+        Describe what you need. Every result shows what evidence exists, who issued it, what it covers, whether it is
+        current — and what is still unknown. Not a certification: a dossier you can check.
       </p>
       <form class="searchbox hero-search" role="search" action={`${base}/search/`} method="get">
         <label class="sr-only" for="hero-q">Describe the agent you need</label>

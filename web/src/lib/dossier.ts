@@ -32,8 +32,22 @@ export const COMPONENT_MAX: Record<string, number> = Object.fromEntries(
 
 export type Mark = "found" | "claimed" | "missing" | "issue";
 
+/**
+ * Evidence about *this agent* versus evidence about its vendor. A registry row matched at entity
+ * level (CSA STAR for "Microsoft") is real evidence, but it says nothing about one product; it is
+ * shown separately and never counted in the agent's own evidence tier (reviewer feedback: a vendor
+ * certification must not visually become a blanket endorsement of every agent it offers).
+ */
+export function agentScoped(c: Pick<ComplianceRecord, "scope" | "covers_resource">): boolean {
+  if (c.covers_resource === "yes") return true;
+  if (c.covers_resource === "inherited") return false;
+  return c.scope !== "entity";
+}
+
 export interface EvidenceRow {
   mark: Mark;
+  /** true: about this agent · false: inherited from the vendor */
+  aboutAgent: boolean;
   framework: string;
   variant: string | null;
   tierLabel: string;
@@ -72,6 +86,7 @@ export function evidenceRows(res: Resource): EvidenceRow[] {
     const mark: Mark = !active ? "issue" : c.tier === 4 ? "claimed" : "found";
     rows.push({
       mark,
+      aboutAgent: agentScoped(c),
       framework: c.framework,
       variant: c.variant,
       tierLabel: `T${c.tier} ${TIER_WORD[c.tier]}${c.credited === false && active ? " · pending publisher verification" : ""}`,
@@ -90,6 +105,7 @@ export function evidenceRows(res: Resource): EvidenceRow[] {
     if (have.has(f)) continue;
     rows.push({
       mark: "missing",
+      aboutAgent: true,
       framework: f,
       variant: null,
       tierLabel: "T5 Unknown",
@@ -189,19 +205,29 @@ export function provenance(res: Resource): { source: string; what: string }[] {
   return out;
 }
 
+/** The ledger split the way a buyer should read it. */
+export function evidenceGroups(res: Resource): { agent: EvidenceRow[]; vendor: EvidenceRow[] } {
+  const rows = evidenceRows(res);
+  return { agent: rows.filter((r) => r.aboutAgent), vendor: rows.filter((r) => !r.aboutAgent) };
+}
+
+/** Counts of active evidence *about this agent*; vendor-inherited rows are reported apart. */
 export function tierCounts(res: Resource): string {
   const active = (res.compliance ?? []).filter((c) => c.status === "active");
-  if (!active.length) return "no evidence found";
+  const own = active.filter(agentScoped);
+  const inherited = active.length - own.length;
+  if (!own.length) return inherited ? `no evidence about this agent · ${inherited} vendor-level record${inherited === 1 ? "" : "s"} (inherited)` : "no evidence found";
   const by: Record<number, number> = {};
-  for (const c of active) by[c.tier] = (by[c.tier] ?? 0) + 1;
+  for (const c of own) by[c.tier] = (by[c.tier] ?? 0) + 1;
   const parts = Object.entries(by)
     .sort()
     .map(([t, n]) => `${n} ${TIER_WORD[Number(t) as Tier].toLowerCase()}`);
-  return `${active.length} record${active.length === 1 ? "" : "s"} · ${parts.join(" · ")}`;
+  return `${own.length} record${own.length === 1 ? "" : "s"} about this agent · ${parts.join(" · ")}${inherited ? ` · +${inherited} vendor-level (inherited)` : ""}`;
 }
 
+/** Best–worst tier among active evidence about this agent only. */
 export function tierRange(res: Resource): string {
-  const tiers = (res.compliance ?? []).filter((c) => c.status === "active").map((c) => c.tier);
+  const tiers = (res.compliance ?? []).filter((c) => c.status === "active" && agentScoped(c)).map((c) => c.tier);
   if (!tiers.length) return "T5";
   const lo = Math.min(...tiers);
   const hi = Math.max(...tiers);

@@ -2,16 +2,23 @@
 import Base from "../../layouts/Base.astro";
 import AgentProfile from "../../components/AgentProfile";
 import { loadResources } from "../../lib/catalog";
+import { beforeYouDeploy } from "../../lib/deploy";
+import { referenceFor } from "../../lib/reference";
 
 export function getStaticPaths() {
   return loadResources().map((res) => ({ params: { slug: res.slug }, props: { res } }));
 }
 const { res } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+// the reference set (data/curated/reference_set.yaml) is read at build time only
+const ref = referenceFor(res.slug);
+const deploy = beforeYouDeploy(res, ref);
+const comparison = ref ? { href: `${base}/compare/${ref.useCase.id}/`, title: ref.useCase.title } : null;
 ---
 
 <Base title={res.name} description={res.description ?? undefined}>
   {/* rendered at build time with no client-side React: the dossier is static HTML */}
-  <AgentProfile resource={res} shortlist="static" />
+  <AgentProfile resource={res} shortlist="static" deploy={deploy} comparison={comparison} />
   <script>
     import { inShortlist, onShortlistChange, toggleShortlist } from "../../lib/shortlist";
     const btn = document.querySelector<HTMLButtonElement>("button[data-shortlist-id]");

@@ -1000,3 +1000,9 @@ dl.facts dd {
     padding: 10px 0 0;
   }
 }
+
+/* evidence-first dossier: inherited (vendor-level) rows and the Before-you-deploy block */
+.ledger.inherited .ledger-row { color: var(--muted); }
+.ledger.inherited .ledger-row a { color: var(--muted); }
+.deploy .label { font-weight: 800; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.deploy .checklist > div > span:first-child { color: var(--accent-ink); }
