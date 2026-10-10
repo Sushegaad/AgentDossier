@@ -11,6 +11,8 @@ standards they publish (Agentic Resource Discovery, Agent2Agent, Model Context
 Protocol) as well as public registries and marketplaces, and the same engine
 can scan an enterprise's own network for the agents already running there.
 
+[![AgentDossier homepage: search first, with example queries](docs/screenshots/home-search.png)](https://sushegaad.github.io/AgentDossier/)
+
 - **Public demo:** https://sushegaad.github.io/AgentDossier/ — static, no accounts, cookieless analytics unless you opt in
 - **Self-hosted edition:** the same MIT codebase as one container with an authorized private-network scanner, ARD REST API, policy qualification, decision workflow and integrations
 - **Worked comparison:** [three ways to let a coding agent into a private repository](https://sushegaad.github.io/AgentDossier/compare/coding-agents-private-repo/) — the same five deployment questions answered for six agents from their own documentation
@@ -35,6 +37,14 @@ itself, – probed and not found, ? never probed. Claims never outrank probes,
 and evidence only counts toward an agent's score once the publisher's identity
 is established. The full rules, with version numbers, are in
 `docs/methodology.md`.
+
+Every dossier opens with the trust profile and the line *Evidence available — not a
+safety certification*; evidence about the vendor is kept apart from evidence about
+the agent:
+
+[![GitHub Copilot coding agent dossier: trust profile, evidence banner, compliance ledger](docs/screenshots/dossier-copilot.png)](https://sushegaad.github.io/AgentDossier/agents/github-microsoft-github-copilot-coding-agent/)
+
+[![Gemini Enterprise agents dossier: identity T4, FedRAMP 20x registry match, protocol cards found but invalid](docs/screenshots/dossier-gemini.png)](https://sushegaad.github.io/AgentDossier/agents/google-gemini-enterprise-agents/)
 
 ## Example use case
 
