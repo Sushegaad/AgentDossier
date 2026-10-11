@@ -31,11 +31,20 @@ when nothing exists. The absence is the point: it is the number this project exi
    manifest, valid or not) and the observation differs from the last bundle for that agent, a
    `self_test` bundle is appended to the store (`agentdossier/traces/selftest.py`). A "not found"
    everywhere is recorded in the dossier's protocol block, not as a trace.
-3. **Vendor-published bundles** at a well-known path — proposed as an ARD manifest extension
-   (`traces: { url, format, sha256 }`); shown as `vendor_published` T1 when the bundle validates.
-4. **A sandbox harness** that runs self-hostable agents in a locked-down container against
-   public prompt-injection and tool-abuse scenarios and records OpenTelemetry GenAI spans — the
-   part that produces new attack-and-defense traces. Planned; see the implementation plan.
+3. **Vendor-published bundles** — a vendor serves a trace bundle and names it in its ARD manifest
+   entry (`traces: [{url, format, sha256}]`); the build fetches it, checks the hash, and shows it
+   as `vendor_published` (tier 1 when fetched and the hash matches, tier 4 when only claimed). The
+   vendor spec and an example bundle are in [docs/traces-spec.md](traces-spec.md).
+4. **The sandbox harness** (`agentdossier/harness/`, PR 3a) — the part that *produces* new
+   attack-and-defense traces. It does not author attacks: it runs an agent against
+   [AgentDojo](https://github.com/ethz-spylab/agentdojo) (MIT), a peer-reviewed set of
+   prompt-injection tasks and attacks, and records, per task, whether the injection succeeded,
+   with the tool trace. AgentDojo measures a *model's* susceptibility inside a generic tool-use
+   agent, so a harness trace is `scope: model` — inherited, model-level evidence for every agent
+   built on that model (`data/traces/harness/models.yaml` maps model → agents), never a claim
+   about one product. `agentdossier harness run --model mock` runs the whole pipeline with no
+   model or network (used by the tests); real runs use a model backend and happen in the
+   `harness` workflow, which opens a `traces/harness` PR. Tier 1: reproducible, public artifacts.
 
 ## The store: `data/traces/`
 
@@ -75,3 +84,14 @@ data/traces/
   transcript) and `trace-shows-exfiltration` (confirm the fix is in the deployed version; egress
   allowlist during the pilot).
 * Top 100 tables carry a Traces column; the homepage counts agents with a public trace.
+
+## Enterprise edition (private agents)
+
+A self-hosted tenant runs the same harness against agents the public registry never sees and
+keeps the results in its own database (`traces` table), not in `data/traces/`. Nothing leaves the
+tenant unless it chooses to publish a bundle back to the public store. A decision can carry a
+**trace gate**: set `require_trace_tier` (1–5) on the decision and approval is blocked until a
+trace of that tier or better exists for the agent — so "we approved it without ever watching it
+under attack" cannot happen by accident. `agentdossier enterprise trace-selftest` runs the gate
+and the harness end to end with the mock pipeline (no model, no network).
+

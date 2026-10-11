@@ -26,6 +26,9 @@ server = [
   "authlib>=1.8.0", "apscheduler>=3.11.3", "itsdangerous>=2.2",
 ]
 mcp = ["mcp>=2.3.0"]
+# The sandbox harness (PR 3a): AgentDojo (MIT) supplies the prompt-injection scenarios, attacks
+# and the success check; we run the agent against them and record the trace. Heavy and optional.
+harness = ["agentdojo>=0.1.35"]
 dev = [
   "pytest>=9.1.1", "pytest-cov>=7.1.0", "hypothesis>=6.168.5", "ruff>=0.16.10", "mypy>=2.4.0",
   "openpyxl>=3.1.5", "jsonschema>=4.26.0", "pyyaml>=6.0.3",

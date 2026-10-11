@@ -203,7 +203,9 @@ Every dossier lists the public traces of the agent under attack, in defence or i
 incident, with a tier (1 reproducible run · 2 third-party report with transcript · 3
 vendor report · 4 vendor claim · 5 none found) and says "none found" when nothing
 exists. Sources, the append-only store under `data/traces/` and the publication
-policy are in [docs/traces.md](traces.md).
+policy are in [docs/traces.md](traces.md). New traces are produced by a sandbox harness that
+runs agents against the AgentDojo prompt-injection benchmark (MIT) and records, per task, whether
+the injection succeeded — model-level evidence, never authored attacks.
 
 ## News and chatter (FR-43–FR-47)
 

@@ -7,6 +7,22 @@ listed in `docs/methodology.md`.
 ## [Unreleased]
 
 ### Added — traces
+- **Enterprise trace gate (PR 5).** A self-hosted tenant runs the harness against private agents
+  and stores the results in its own database (`traces` table, never in the public store). A
+  decision can set `require_trace_tier`, and approval is blocked until a trace of that tier or
+  better exists for the agent (`agentdossier enterprise trace-selftest` exercises it with the
+  mock). Optional publish-back to the public store.
+- **Vendor-published traces (PR 4).** A vendor can serve a trace bundle and name it in its ARD
+  manifest entry (`traces: [{url, format, sha256}]`); the build fetches it, checks the stated
+  hash, and shows it on the dossier as `vendor_published` (tier 1 verified, tier 4 when only
+  claimed). Spec and example bundle in `docs/traces-spec.md`.
+- **Sandbox harness (`agentdossier harness`).** Produces new attack-and-defense traces by running
+  an agent against the AgentDojo prompt-injection benchmark (MIT) — it does not author attacks —
+  and recording, per task, whether the injection succeeded, as a tier-1 `injection_eval` bundle in
+  the store. Model-level (`scope: model`), inherited by the catalog agents a model is mapped to in
+  `data/traces/harness/models.yaml`. `--model mock` runs the full pipeline with no model or
+  network; real runs go through the monthly `harness` workflow. Optional `harness` extra pins
+  AgentDojo.
 - Every dossier now carries **Traces**: public observations of the agent under attack, in
   defence or in an incident, tiered T1–T5 with "none found" said out loud. Seven curated
   public traces to start (EchoLeak, ForcedLeak, CamoLeak, the Gemini CLI and Amazon Q

@@ -207,6 +207,22 @@ def resolve(
     return report
 
 
+def trace_pointers(entry: dict) -> list[dict[str, str]]:
+    """Vendor-published trace bundles declared in an ARD entry's optional ``traces`` array.
+
+    Each item is ``{url, format, sha256?}``; a vendor serves a trace bundle at a stable URL and
+    names it here so the registry can fetch, hash and show it (PR 4). Malformed items are dropped.
+    """
+    out: list[dict[str, str]] = []
+    for item in entry.get("traces") or []:
+        if isinstance(item, dict) and isinstance(item.get("url"), str) and item["url"].startswith("https://"):
+            ptr = {"url": item["url"], "format": str(item.get("format", "bundle"))}
+            if isinstance(item.get("sha256"), str):
+                ptr["sha256"] = item["sha256"]
+            out.append(ptr)
+    return out
+
+
 def entry_to_resource(
     entry: dict, manifest_url: str, *, scope: str = "public", tenant: str | None = None
 ) -> dict:
@@ -232,6 +248,9 @@ def entry_to_resource(
     res["tags"] = list(entry.get("tags") or [])
     res["capabilities"] = list(entry.get("capabilities") or [])
     res["representative_queries"] = list(entry.get("representativeQueries") or [])
+    tp = trace_pointers(entry)
+    if tp:
+        res.setdefault("signals", {})["ard_trace_pointers"] = tp
     tm = entry.get("trustManifest")
     res["protocols"]["ard"] = protocol_block(
         "verified" if not errs else "invalid",

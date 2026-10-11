@@ -1,0 +1,36 @@
+# Harness model backends, and the catalog agents each model's injection traces are evidence for.
+#
+# The harness runs AgentDojo against a model inside a generic tool-use agent, so a result is about
+# the MODEL's susceptibility to prompt injection (scope: model). That is inherited evidence for a
+# catalog agent only when the agent runs on that model and does not add its own injection defences
+# the benchmark would miss — so `agents:` is deliberately conservative and maintainer-curated: a
+# vendor-hosted agent tied to one model, not a framework where the user picks the model. An empty
+# `agents:` means the model is benchmarked and shown on /traces/ but attached to no dossier yet.
+#
+# `backend` names the AgentDojo pipeline to build for a real run (agentdossier harness run). It is
+# only read when a run is actually performed; the map itself (model -> agents) is used at build
+# time with no model present.
+version: harness-models-1.0
+checked_on: 2026-10-11
+checked_by: hemant.naik
+
+models:
+  gpt-4o-mini:
+    backend: { provider: openai, model: gpt-4o-mini }
+    agents: []
+  gpt-4o:
+    backend: { provider: openai, model: gpt-4o-2024-08-06 }
+    agents: []
+  claude-3-5-sonnet:
+    backend: { provider: anthropic, model: claude-3-5-sonnet-20241022 }
+    agents: []
+  claude-3-5-haiku:
+    backend: { provider: anthropic, model: claude-3-5-haiku-20241022 }
+    agents: []
+  gemini-1-5-pro:
+    backend: { provider: google, model: gemini-1.5-pro-002 }
+    agents: []
+  local-open-weight:
+    # an OpenAI-compatible endpoint (llama.cpp, Ollama, vLLM) set by AGENTDOSSIER_HARNESS_BASE_URL
+    backend: { provider: local, model: "${AGENTDOSSIER_HARNESS_MODEL}" }
+    agents: []

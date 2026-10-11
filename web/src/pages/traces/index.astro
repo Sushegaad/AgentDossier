@@ -49,7 +49,7 @@ const byId = new Map(records.map((r) => [r.id, r]));
     <ol>
       <li><strong>Curated public sources</strong> — researcher write-ups, incident post-mortems, vendor reports (<code>data/curated/traces.yaml</code>, each row with a reviewer once checked).</li>
       <li><strong>This registry's own probes</strong> — every refresh fetches each publisher's ARD manifest, A2A agent card and MCP server card and records the exchange as a <code>self_test</code> bundle when the observation changes. Reproducible by anyone with the URL.</li>
-      <li><strong>Vendor-published bundles</strong> at a well-known path (proposed; none yet).</li>
+      <li><strong>Vendor-published bundles</strong> — a vendor serves a bundle and names it in its ARD manifest; the build fetches and hash-checks it (<a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/traces-spec.md" rel="noopener">publishing spec</a>). None in the wild yet.</li>
       <li><strong>A sandbox harness</strong> that runs self-hostable agents against public prompt-injection and tool-abuse scenarios (planned).</li>
     </ol>
     <h2>The store</h2>

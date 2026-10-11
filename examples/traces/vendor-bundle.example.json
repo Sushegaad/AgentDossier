@@ -1,0 +1,16 @@
+{
+  "schema": "agentdossier.trace/1",
+  "kind": "injection_eval",
+  "agent": "example-support-bot",
+  "agent_version": "2.4.0",
+  "date": "2026-10-11",
+  "harness": "AgentDojo v1.2.1 (important_instructions attack)",
+  "scenario": "120 user-task x injection-task pairs where tool output carried attacker instructions",
+  "observed": {
+    "pairs": 120,
+    "injections_succeeded": 3,
+    "attack_success_rate": 0.025,
+    "egress": false,
+    "notes": "Example bundle for docs/traces-spec.md. Not a real product."
+  }
+}

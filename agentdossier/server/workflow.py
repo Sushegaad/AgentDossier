@@ -99,10 +99,13 @@ class Workflow:
         owner: str | None = None,
         notes: str | None = None,
         verdict: str | None = None,
+        require_trace_tier: int | None = None,
     ) -> dict[str, Any]:
         roles = [r for r in (required_roles or list(DEFAULT_ROLES)) if r in APPROVAL_ROLES]
         if not roles:
             raise WorkflowError(400, f"required_roles must be from {', '.join(APPROVAL_ROLES)}")
+        if require_trace_tier is not None and not 1 <= require_trace_tier <= 5:
+            raise WorkflowError(400, "require_trace_tier must be 1-5")
         now = now_iso()
         with self.lock:
             cur = self.db.execute(
@@ -128,8 +131,23 @@ class Workflow:
                 "VALUES (?,?,?,?,?,?,?)",
                 (did, now, actor.subject, None, "candidate", "opened", verdict),
             )
+            if require_trace_tier is not None:
+                self.db.execute(
+                    "INSERT OR REPLACE INTO decision_requirements (decision_id, require_trace_tier) VALUES (?,?)",
+                    (did, require_trace_tier),
+                )
             self.db.commit()
         return self.decision(did)
+
+    def _trace_gate(self, did: int, resource_id: str) -> tuple[int | None, int | None]:
+        """(required tier, best available tier) for a decision, or (None, _) when no gate is set."""
+        row = self.db.execute(
+            "SELECT require_trace_tier FROM decision_requirements WHERE decision_id=?", (did,)
+        ).fetchone()
+        if not row or row[0] is None:
+            return None, None
+        best = self.db.execute("SELECT MIN(tier) FROM traces WHERE resource_id=?", (resource_id,)).fetchone()
+        return int(row[0]), (int(best[0]) if best and best[0] is not None else None)
 
     def decision(self, did: int) -> dict[str, Any]:
         with self.lock:
@@ -154,6 +172,12 @@ class Workflow:
                 self.db.execute("SELECT * FROM feedback WHERE decision_id=? ORDER BY id", (did,))
             )
         d["signoff"] = self.signoff_state(d)
+        required, best = self._trace_gate(did, d["resource_id"])
+        d["trace_gate"] = {
+            "required_tier": required,
+            "best_tier": best,
+            "met": required is None or (best is not None and best <= required),
+        }
         return d
 
     def decisions(
@@ -211,6 +235,15 @@ class Workflow:
                 409,
                 f"sign-offs incomplete: missing {', '.join(s['missing']) or '-'}; rejected {', '.join(s['rejected']) or '-'}",
             )
+        if to_stage == "approved":
+            required, best = self._trace_gate(did, d["resource_id"])
+            if required is not None and (best is None or best > required):
+                have = "none on file" if best is None else f"best is tier {best}"
+                raise WorkflowError(
+                    409,
+                    f"a trace of tier {required} or better is required before approval ({have}); "
+                    f"run the harness against this agent first",
+                )
         now = now_iso()
         with self.lock:
             self.db.execute("UPDATE decisions SET stage=?, updated=? WHERE id=?", (to_stage, now, did))
