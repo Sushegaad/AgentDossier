@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "82d16b24ae1df3dd8e65d2ba3a67b7669624f185f742e23f3a5b1a2b5a8c9fb1",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:45Z",
+"retrieved_at": "2026-10-11T17:46:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -302,7 +302,7 @@
 "external_ids": {
 "github": "RasaHQ/rasa"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -324,24 +324,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Apache-2.0 core",
 "name": "Rasa Pro / CALM agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:27Z",
+"checked_at": "2026-10-11T17:38:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:26Z",
+"checked_at": "2026-10-11T17:38:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:06:28Z",
+"checked_at": "2026-10-11T17:38:46Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -351,7 +351,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:14:33Z",
+"checked_at": "2026-10-11T17:47:25Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -376,7 +376,7 @@
 "github_language": "Python",
 "github_open_issues": 158,
 "github_pushed_at": "2026-07-24T07:39:04Z",
-"github_stars": 21347,
+"github_stars": 21346,
 "homepage": "https://rasa.com/docs/rasa/",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -392,7 +392,7 @@
 "sources": [
 {
 "payload_hash": "8340b571a604bd4d6650d8a9069cf474c296b7756da0d4e6df246824955c4ef7",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/RasaHQ/rasa"
 }
@@ -420,12 +420,14 @@
 "wit"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://github.com/RasaHQ/rasa",

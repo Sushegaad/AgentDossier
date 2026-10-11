@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.agentrapay/agentra"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,7 +66,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": null,
 "name": "ai.agentrapay/agentra",
 "news": [],
@@ -74,7 +74,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://api.agentrapay.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-11T03:03:49Z",
+"checked_at": "2026-10-11T17:36:17Z",
 "errors": [
 "missing 'version'",
 "missing service endpoint ('url' or 'supportedInterfaces')"
@@ -84,7 +84,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-10-11T03:03:48Z",
+"checked_at": "2026-10-11T17:36:16Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -107,7 +107,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:16:46Z",
+"checked_at": "2026-10-11T17:49:25Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -125,19 +125,53 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentrapay/agentra"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_c451383b8131a8e9_a1248e57",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_c451383b8131a8e9_a1248e57",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A invalid (unsigned; 2 validation errors)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:89e3691fda47007cdd5f93bd03d8cd0de3cc7c94d88128fa127a8e8da656ad0e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of ai.agentrapay/agentra's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_c451383b8131a8e9_a1248e57/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 4,
 "issues": 1,
 "protocols": 3,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://api.agentrapay.ai/mcp",

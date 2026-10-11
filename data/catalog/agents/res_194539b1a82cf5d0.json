@@ -27,9 +27,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "f2dd041fb59c666d2787126f4d2f184518e0b7c9a88f51aab137f6a036003487",
+"payload_hash": "a4aefc90bfb32297ee074fd8c803670b4b402bff7a336a75d4b31fc3c6ddba7e",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:58Z",
+"retrieved_at": "2026-10-11T17:46:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -74,7 +74,7 @@
 "external_ids": {
 "ard": "urn:air:superset.sh:skill:superset-setup"
 },
-"first_seen": "2026-10-11T03:06:44Z",
+"first_seen": "2026-10-11T17:38:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -96,7 +96,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:06:44Z",
+"last_seen": "2026-10-11T17:38:56Z",
 "license": null,
 "name": "superset-setup",
 "news": [],
@@ -129,7 +129,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:23:40Z",
+"checked_at": "2026-10-11T17:55:49Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -139,7 +139,7 @@
 "sources": [
 {
 "payload_hash": "8baf7d12e5d58e7258d562a85a77ea1a076e167214ea7d7fb7481320e99d5ee0",
-"retrieved_at": "2026-10-11T03:06:44Z",
+"retrieved_at": "2026-10-11T17:38:56Z",
 "system": "ard",
 "url": "https://superset.sh/.well-known/ai-catalog.json"
 }
@@ -149,12 +149,46 @@
 "superset"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_194539b1a82cf5d0_e35d567d",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_194539b1a82cf5d0_e35d567d",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:f13dfff6adba1363999a8378e7e85ea7aac2fcce5627f86202ee4a425bef49cb",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of superset-setup's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_194539b1a82cf5d0_e35d567d/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 1,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://superset.sh/.well-known/agent-skills/superset-setup/SKILL.md",

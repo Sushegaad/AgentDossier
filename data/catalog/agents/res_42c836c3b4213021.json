@@ -31,9 +31,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "128ce9e35364aad8643340cec6067a525de8c862e95e45fa7c5ed3fe8f9424bf",
+"payload_hash": "2e2ece701d694b8d0f7919ec8706b6f79e3cc9261ea2af86f9faf9506d0ba74e",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:55Z",
+"retrieved_at": "2026-10-11T17:44:24Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -94,7 +94,7 @@
 "external_ids": {
 "github": "career-ops-hq/career-ops"
 },
-"first_seen": "2026-10-11T02:59:12Z",
+"first_seen": "2026-10-11T17:31:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,7 +123,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "MIT",
 "name": "career-ops",
 "news": [
@@ -153,17 +153,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:04:46Z",
+"checked_at": "2026-10-11T17:37:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:04:46Z",
+"checked_at": "2026-10-11T17:37:07Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:04:47Z",
+"checked_at": "2026-10-11T17:37:09Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -173,7 +173,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:19:57Z",
+"checked_at": "2026-10-11T17:52:15Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -181,19 +181,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-04T18:21:18Z",
-"github_forks": 13885,
+"github_forks": 13891,
 "github_language": "JavaScript",
-"github_open_issues": 350,
-"github_pushed_at": "2026-10-11T02:58:34Z",
-"github_stars": 73986,
+"github_open_issues": 357,
+"github_pushed_at": "2026-10-11T11:06:33Z",
+"github_stars": 74047,
 "github_topic": "ai-agent",
 "homepage": "https://career-ops.org"
 },
 "slug": "career-ops-hq-career-ops",
 "sources": [
 {
-"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
-"retrieved_at": "2026-10-11T02:59:12Z",
+"payload_hash": "38ba1ea727a4b2a0fcd908d0387a63cb79f0edacac6ce13e16bf885f2d7a6b7b",
+"retrieved_at": "2026-10-11T17:31:54Z",
 "system": "github",
 "url": "https://github.com/career-ops-hq/career-ops"
 }
@@ -221,12 +221,14 @@
 "terminal"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 3,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://career-ops.org",

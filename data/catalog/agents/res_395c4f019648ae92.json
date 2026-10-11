@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "96e3614ef029be6c44b8597f541e348fb8202b70147029e7e167f3cb644f6675",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:50Z",
+"retrieved_at": "2026-10-11T17:45:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "0f5955d8a27f1f8bfcaa9c6ffb3b8930e38b1f0c25d177ee414e063bd38d7353",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:50Z",
+"retrieved_at": "2026-10-11T17:45:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "0f5955d8a27f1f8bfcaa9c6ffb3b8930e38b1f0c25d177ee414e063bd38d7353",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:50Z",
+"retrieved_at": "2026-10-11T17:45:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "96e3614ef029be6c44b8597f541e348fb8202b70147029e7e167f3cb644f6675",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:50Z",
+"retrieved_at": "2026-10-11T17:45:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -123,7 +123,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "96e3614ef029be6c44b8597f541e348fb8202b70147029e7e167f3cb644f6675",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:50Z",
+"retrieved_at": "2026-10-11T17:45:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -149,7 +149,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "96e3614ef029be6c44b8597f541e348fb8202b70147029e7e167f3cb644f6675",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:50Z",
+"retrieved_at": "2026-10-11T17:45:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -175,7 +175,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "96e3614ef029be6c44b8597f541e348fb8202b70147029e7e167f3cb644f6675",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:50Z",
+"retrieved_at": "2026-10-11T17:45:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -201,7 +201,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a95ca592832a912133ad20d08b0ac888c9c65f93e27678188ba937a853b00da6",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:50Z",
+"retrieved_at": "2026-10-11T17:45:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -556,7 +556,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -578,24 +578,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Commercial",
 "name": "Harvey",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:40Z",
+"checked_at": "2026-10-11T17:38:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:39Z",
+"checked_at": "2026-10-11T17:37:59Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:05:41Z",
+"checked_at": "2026-10-11T17:38:01Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -623,19 +623,21 @@
 "sources": [
 {
 "payload_hash": "c0b911808ec709d21e91e1fd2f7c48046fe322ff639c72b2361878264c7ce7b9",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://www.harvey.ai/"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://www.harvey.ai/",

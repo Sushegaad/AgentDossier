@@ -15,7 +15,7 @@
 "external_ids": {
 "ard": "urn:air:apatero.ai:doc:llms-txt"
 },
-"first_seen": "2026-10-11T03:04:27Z",
+"first_seen": "2026-10-11T17:36:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -37,7 +37,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:04:27Z",
+"last_seen": "2026-10-11T17:36:56Z",
 "license": null,
 "name": "Apatero site summary for language models",
 "news": [],
@@ -67,7 +67,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:23:00Z",
+"checked_at": "2026-10-11T17:54:59Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -77,19 +77,53 @@
 "sources": [
 {
 "payload_hash": "82b47d2d3cfca124358611bce231a8b3b61a92d6a08a47c2f37763a73817fcd5",
-"retrieved_at": "2026-10-11T03:04:27Z",
+"retrieved_at": "2026-10-11T17:36:56Z",
 "system": "ard",
 "url": "https://apatero.ai/.well-known/ai-catalog.json"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_d1d95ea40310b526_9f74eab3",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_d1d95ea40310b526_9f74eab3",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:a3b7fde0d7490c2ec16c09d9d0f1a4be8e6e4cb6e9f7279aad8c57fb9d88c40e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Apatero site summary for language models's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_d1d95ea40310b526_9f74eab3/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://apatero.ai/llms.txt",

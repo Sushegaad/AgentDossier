@@ -21,7 +21,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 28.25,
+"adoption": 28.86,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -35,7 +35,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 80.7,
+"score": 81.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -46,7 +46,7 @@
 "external_ids": {
 "github": "morluto/rea"
 },
-"first_seen": "2026-10-11T02:56:39Z",
+"first_seen": "2026-10-11T17:29:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -68,10 +68,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:56:39Z",
+"last_seen": "2026-10-11T17:29:25Z",
 "license": "MIT",
 "name": "rea",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-11T03:58:03Z",
+"headline": "rea-agents: v6.4.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## [6.4.0](https://github.com/morluto/rea/compare/rea-agents-6.3.0...rea-agents-6.4.0) (2026-10-11)\n\n### Highlights\n\n- Android: added device inspection, split-APK acquisition, logs, screenshots, file transfers and explicit app lifecycle act",
+"tag": "product_update",
+"url": "https://github.com/morluto/rea/releases/tag/rea-agents-6.4.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-09T23:56:42Z",
@@ -82,28 +93,17 @@
 "summary": "## [6.3.0](https://github.com/morluto/rea/compare/rea-agents-6.2.0...rea-agents-6.3.0) (2026-10-09)\n\n\n### ⚠ BREAKING CHANGES\n\n* **captures:** Historical captures without current producer accounting or transaction identity, and web diffs mis",
 "tag": "product_update",
 "url": "https://github.com/morluto/rea/releases/tag/rea-agents-6.3.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-09T16:51:14Z",
-"headline": "rea-agents: v6.2.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## [6.2.0](https://github.com/morluto/rea/compare/rea-agents-6.1.0...rea-agents-6.2.0) (2026-10-09)\n\n\n### ⚠ BREAKING CHANGES\n\nRead the [6.1 to 6.2 migration guide](docs/migration-6.2.md) before upgrading. REA's `always-bump-minor` policy in",
-"tag": "product_update",
-"url": "https://github.com/morluto/rea/releases/tag/rea-agents-6.2.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:28Z",
+"checked_at": "2026-10-11T17:38:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:27Z",
+"checked_at": "2026-10-11T17:38:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -111,7 +111,7 @@
 "evidence_url": "https://rea.tools",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:06:28Z",
+"checked_at": "2026-10-11T17:38:47Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -124,19 +124,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-14T00:51:32Z",
-"github_forks": 15904,
+"github_forks": 21239,
 "github_language": "TypeScript",
-"github_open_issues": 109,
-"github_pushed_at": "2026-10-11T02:50:27Z",
-"github_stars": 74966,
+"github_open_issues": 166,
+"github_pushed_at": "2026-10-11T17:23:54Z",
+"github_stars": 95232,
 "github_topic": "ai-agents",
 "homepage": "https://rea.tools"
 },
 "slug": "morluto-rea",
 "sources": [
 {
-"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
-"retrieved_at": "2026-10-11T02:56:39Z",
+"payload_hash": "a3ca83b8ced2cb995117d91da168ad7f0baebc61c647e647d733b664c47f5540",
+"retrieved_at": "2026-10-11T17:29:25Z",
 "system": "github",
 "url": "https://github.com/morluto/rea"
 }
@@ -164,12 +164,14 @@
 "static-analysis"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://rea.tools",

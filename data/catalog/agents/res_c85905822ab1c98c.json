@@ -79,7 +79,7 @@
 "external_ids": {
 "ard": "urn:air:agent-bev.ai:bev-audit"
 },
-"first_seen": "2026-10-11T03:03:31Z",
+"first_seen": "2026-10-11T17:36:01Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,7 +101,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:31Z",
+"last_seen": "2026-10-11T17:36:01Z",
 "license": null,
 "name": "agent-bev · audit",
 "news": [],
@@ -131,7 +131,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:30Z",
+"checked_at": "2026-10-11T17:54:34Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -141,19 +141,53 @@
 "sources": [
 {
 "payload_hash": "f4ed63f7a08fa9f43d6438aa80f537bfba89e867bcf3a4e5c11993b610ca0326",
-"retrieved_at": "2026-10-11T03:03:31Z",
+"retrieved_at": "2026-10-11T17:36:01Z",
 "system": "ard",
 "url": "https://agent-bev.ai/.well-known/ai-catalog.json"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_c85905822ab1c98c_cfb4f739",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_c85905822ab1c98c_cfb4f739",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:efa96299bbf7330d83dec435956d7de066a36b3fda74781e304d51cca8af4e60",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of agent-bev · audit's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_c85905822ab1c98c_cfb4f739/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://mcp.bev-registry.ai/mcp",

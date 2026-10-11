@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "HKUDS/Vibe-Trading"
 },
-"first_seen": "2026-10-11T02:59:12Z",
+"first_seen": "2026-10-11T17:31:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,7 +119,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "MIT",
 "name": "Vibe-Trading",
 "news": [
@@ -149,12 +149,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:46Z",
+"checked_at": "2026-10-11T17:39:03Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:45Z",
+"checked_at": "2026-10-11T17:39:02Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -162,7 +162,7 @@
 "evidence_url": "https://vibetrading.wiki/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:06:46Z",
+"checked_at": "2026-10-11T17:39:04Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -174,7 +174,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:20:26Z",
+"checked_at": "2026-10-11T17:52:39Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-01T09:52:20Z",
-"github_forks": 5708,
+"github_forks": 5714,
 "github_language": "Python",
-"github_open_issues": 25,
+"github_open_issues": 36,
 "github_pushed_at": "2026-10-10T15:53:23Z",
-"github_stars": 35151,
+"github_stars": 35206,
 "github_topic": "ai-agent",
 "homepage": "https://vibetrading.wiki/"
 },
 "slug": "hkuds-vibe-trading",
 "sources": [
 {
-"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
-"retrieved_at": "2026-10-11T02:59:12Z",
+"payload_hash": "38ba1ea727a4b2a0fcd908d0387a63cb79f0edacac6ce13e16bf885f2d7a6b7b",
+"retrieved_at": "2026-10-11T17:31:54Z",
 "system": "github",
 "url": "https://github.com/HKUDS/Vibe-Trading"
 }
@@ -212,12 +212,14 @@
 "trading"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://vibetrading.wiki/",

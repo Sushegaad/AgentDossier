@@ -31,9 +31,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "2d88397a2488d40fc77029a5c4a75ef6a5ab6340a0052dd48c57b28ea6992a85",
+"payload_hash": "858cf0724c543a07aad39fff413ea3bbbe6a697c228459393740fdb419befb44",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:25Z",
+"retrieved_at": "2026-10-11T17:45:51Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,9 +57,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "2d88397a2488d40fc77029a5c4a75ef6a5ab6340a0052dd48c57b28ea6992a85",
+"payload_hash": "858cf0724c543a07aad39fff413ea3bbbe6a697c228459393740fdb419befb44",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:25Z",
+"retrieved_at": "2026-10-11T17:45:51Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,9 +83,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "2d88397a2488d40fc77029a5c4a75ef6a5ab6340a0052dd48c57b28ea6992a85",
+"payload_hash": "858cf0724c543a07aad39fff413ea3bbbe6a697c228459393740fdb419befb44",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:25Z",
+"retrieved_at": "2026-10-11T17:45:51Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -167,7 +167,7 @@
 "external_ids": {
 "github": "NopeCHALLC/nopecha-extension"
 },
-"first_seen": "2026-10-11T02:56:43Z",
+"first_seen": "2026-10-11T17:29:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -189,7 +189,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:56:43Z",
+"last_seen": "2026-10-11T17:29:29Z",
 "license": "MIT",
 "name": "nopecha-extension",
 "news": [
@@ -208,17 +208,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:11Z",
+"checked_at": "2026-10-11T17:38:32Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:10Z",
+"checked_at": "2026-10-11T17:38:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:06:12Z",
+"checked_at": "2026-10-11T17:38:34Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -228,7 +228,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:21:44Z",
+"checked_at": "2026-10-11T17:53:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -240,15 +240,15 @@
 "github_language": null,
 "github_open_issues": 12,
 "github_pushed_at": "2026-10-02T18:27:45Z",
-"github_stars": 11026,
+"github_stars": 11030,
 "github_topic": "ai-agents",
 "homepage": "https://nopecha.com/"
 },
 "slug": "nopechallc-nopecha-extension",
 "sources": [
 {
-"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
-"retrieved_at": "2026-10-11T02:56:43Z",
+"payload_hash": "d22a387e11d59a9860a71e607b2fdbe4e0adc6dd011d59b18f943ab4e8bbf4fc",
+"retrieved_at": "2026-10-11T17:29:29Z",
 "system": "github",
 "url": "https://github.com/NopeCHALLC/nopecha-extension"
 }
@@ -271,12 +271,14 @@
 "web-scraping"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://nopecha.com/",

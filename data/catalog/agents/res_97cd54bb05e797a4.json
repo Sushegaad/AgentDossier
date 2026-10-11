@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
+"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:08:13Z",
+"retrieved_at": "2026-10-11T17:41:13Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -48,9 +48,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "dabc06fc60fc252f8de79a6dc27136c03465e41706a547d63aa275326ead4aca",
+"payload_hash": "9c1ef2bb907f6597de026866ad36df573bcd7ddc61669e4473be6ea480a07a1e",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:04Z",
+"retrieved_at": "2026-10-11T17:44:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -357,7 +357,7 @@
 "external_ids": {
 "github": "anthropics/claude-code"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -440,7 +440,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Commercial",
 "name": "Claude Code",
 "news": [
@@ -470,17 +470,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:04:54Z",
+"checked_at": "2026-10-11T17:37:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:04:53Z",
+"checked_at": "2026-10-11T17:37:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:04:55Z",
+"checked_at": "2026-10-11T17:37:15Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -490,7 +490,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:14:48Z",
+"checked_at": "2026-10-11T17:47:38Z",
 "cves": 47,
 "source": "nvd",
 "tier": 1
@@ -511,11 +511,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-02-22T17:41:21Z",
-"github_forks": 26101,
+"github_forks": 26204,
 "github_language": "TypeScript",
-"github_open_issues": 14663,
+"github_open_issues": 14719,
 "github_pushed_at": "2026-10-10T22:23:41Z",
-"github_stars": 150080,
+"github_stars": 150187,
 "homepage": "https://code.claude.com/docs/en/overview",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -530,19 +530,52 @@
 "sources": [
 {
 "payload_hash": "13291d1010ed42eef8d3270f14df2950e6a747fdacf2e0272098aadeb0a1817c",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/anthropics/claude-code"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"checked_on": null,
+"date": "2025-11-13",
+"format": "report",
+"id": "tr_claude_code_offensive_use_2025",
+"kind": "incident",
+"notes": "Vendor-authored; no transcript published, hence tier 3",
+"observed": {
+"actions": [
+"reconnaissance and vulnerability scanning",
+"exploit development and credential harvesting",
+"lateral movement and data exfiltration",
+"frequent hallucinated results the operators had to verify"
+],
+"approval": false,
+"egress": true,
+"entry": "operator prompts framed as authorised penetration testing; tasks split so no single request looked malicious",
+"outcome": "Agent acted as the attacker across the campaign; Anthropic banned the accounts and published the report. A trace of the agent attacking, not defending",
+"refused": false,
+"secrets_touched": true
+},
+"reviewer": null,
+"scenario": "Operators jailbroke the agent by presenting tasks as legitimate security testing and had it perform reconnaissance, exploitation, credential harvesting and exfiltration against ~30 targets",
+"scope": "product",
+"source": "Anthropic (vendor report)",
+"tier": 3,
+"title": "Anthropic: a state-sponsored group used Claude Code to run most of an intrusion campaign autonomously",
+"url": "https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf",
+"vendor_response": "Accounts banned; detection and classifier changes described in the report"
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 5,
 "security": 1,
+"traces": 3,
 "vendor_compliance": 1
 },
 "url": "https://github.com/anthropics/claude-code",

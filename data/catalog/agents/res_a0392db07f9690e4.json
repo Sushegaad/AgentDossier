@@ -35,7 +35,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "86ec9772fee884acb259135871f4d6fc730840428766ed705929b36665024348",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:22Z",
+"retrieved_at": "2026-10-11T17:45:47Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,7 +52,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.02,
+"adoption": 26.03,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 1.5,
@@ -66,14 +66,14 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 66.2,
+"score": 66.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
 },
 "cybersecurity": {
 "components": {
-"adoption": 26.02,
+"adoption": 26.03,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
@@ -87,14 +87,14 @@
 "governance_credited": {},
 "profile": "security",
 "rank": null,
-"score": 57.9,
+"score": 58.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
 },
 "technology": {
 "components": {
-"adoption": 26.02,
+"adoption": 26.03,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 1.5,
@@ -117,7 +117,7 @@
 "external_ids": {
 "github": "nanocoai/nanoclaw"
 },
-"first_seen": "2026-10-11T02:56:39Z",
+"first_seen": "2026-10-11T17:29:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -200,7 +200,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:56:39Z",
+"last_seen": "2026-10-11T17:29:25Z",
 "license": "MIT",
 "name": "nanoclaw",
 "news": [
@@ -256,17 +256,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:09Z",
+"checked_at": "2026-10-11T17:38:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:08Z",
+"checked_at": "2026-10-11T17:38:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:06:09Z",
+"checked_at": "2026-10-11T17:38:28Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -276,7 +276,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:20:36Z",
+"checked_at": "2026-10-11T17:52:48Z",
 "cves": 10,
 "source": "nvd",
 "tier": 1
@@ -284,19 +284,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-31T15:47:22Z",
-"github_forks": 12757,
+"github_forks": 12759,
 "github_language": "TypeScript",
-"github_open_issues": 1042,
-"github_pushed_at": "2026-10-10T13:19:38Z",
-"github_stars": 30915,
+"github_open_issues": 1043,
+"github_pushed_at": "2026-10-11T15:50:21Z",
+"github_stars": 30925,
 "github_topic": "ai-agents",
 "homepage": "https://nanoclaw.dev"
 },
 "slug": "nanocoai-nanoclaw",
 "sources": [
 {
-"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
-"retrieved_at": "2026-10-11T02:56:39Z",
+"payload_hash": "a3ca83b8ced2cb995117d91da168ad7f0baebc61c647e647d733b664c47f5540",
+"retrieved_at": "2026-10-11T17:29:25Z",
 "system": "github",
 "url": "https://github.com/nanocoai/nanoclaw"
 }
@@ -309,12 +309,14 @@
 "openclaw"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://nanoclaw.dev",

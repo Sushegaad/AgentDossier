@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "43811dd006e71ad91a482acec10992a3f9b3dce6870be5d7842b8235455e44a1",
+"payload_hash": "60fc6a4c628ef9ad1e99986e7905804a3fb7f2da89b3f5959e98b4307fde6f29",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:09Z",
+"retrieved_at": "2026-10-11T17:45:33Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -86,7 +86,7 @@
 "external_ids": {
 "github": "lobehub/lobehub"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -169,7 +169,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Apache-2.0",
 "name": "LobeChat",
 "news": [
@@ -200,7 +200,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://lobehub.com/.well-known/agent-card.json",
-"checked_at": "2026-10-11T03:05:55Z",
+"checked_at": "2026-10-11T17:38:16Z",
 "errors": [
 "missing service endpoint ('url' or 'supportedInterfaces')",
 "skills[0] missing id/name",
@@ -213,7 +213,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:54Z",
+"checked_at": "2026-10-11T17:38:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -221,7 +221,7 @@
 "evidence_url": "https://github.com/lobehub/lobe-chat",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:05:56Z",
+"checked_at": "2026-10-11T17:38:16Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -233,7 +233,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:15:00Z",
+"checked_at": "2026-10-11T17:47:49Z",
 "cves": 10,
 "source": "nvd",
 "tier": 1
@@ -254,11 +254,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-05-21T07:19:12Z",
-"github_forks": 15972,
+"github_forks": 15976,
 "github_language": "TypeScript",
-"github_open_issues": 1094,
-"github_pushed_at": "2026-10-11T02:58:41Z",
-"github_stars": 83117,
+"github_open_issues": 1052,
+"github_pushed_at": "2026-10-11T17:28:33Z",
+"github_stars": 83145,
 "homepage": "https://lobehub.com",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -274,7 +274,7 @@
 "sources": [
 {
 "payload_hash": "aafb49535b290bfbe39a9380449fc1265519ec0ae74ab3fa535c1038773b05d1",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/lobehub/lobe-chat"
 }
@@ -300,12 +300,46 @@
 "skills"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_e27b317e0e601da0_79ecd0dc",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_e27b317e0e601da0_79ecd0dc",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A invalid (unsigned; 4 validation errors)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:f0848ad74e4eb2ebd164a0fce49acf86eb07c26ba7329e3bdac533fdbee19874",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of LobeChat's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_e27b317e0e601da0_79ecd0dc/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://github.com/lobehub/lobe-chat",

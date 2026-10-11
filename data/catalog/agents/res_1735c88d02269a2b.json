@@ -71,7 +71,7 @@
 "external_ids": {
 "github": "Yeachan-Heo/oh-my-claudecode"
 },
-"first_seen": "2026-10-11T02:56:39Z",
+"first_seen": "2026-10-11T17:29:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,7 +93,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:56:39Z",
+"last_seen": "2026-10-11T17:29:25Z",
 "license": "MIT",
 "name": "oh-my-claudecode",
 "news": [
@@ -123,17 +123,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:12Z",
+"checked_at": "2026-10-11T17:38:31Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:11Z",
+"checked_at": "2026-10-11T17:38:30Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:06:13Z",
+"checked_at": "2026-10-11T17:38:31Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -143,7 +143,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:20:19Z",
+"checked_at": "2026-10-11T17:52:34Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -151,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-09T03:36:29Z",
-"github_forks": 3563,
+"github_forks": 3564,
 "github_language": "TypeScript",
-"github_open_issues": 48,
-"github_pushed_at": "2026-10-11T01:55:31Z",
-"github_stars": 39777,
+"github_open_issues": 4,
+"github_pushed_at": "2026-10-11T17:23:31Z",
+"github_stars": 39792,
 "github_topic": "ai-agents",
 "homepage": "https://oh-my-claudecode.dev"
 },
 "slug": "yeachan-heo-oh-my-claudecode",
 "sources": [
 {
-"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
-"retrieved_at": "2026-10-11T02:56:39Z",
+"payload_hash": "a3ca83b8ced2cb995117d91da168ad7f0baebc61c647e647d733b664c47f5540",
+"retrieved_at": "2026-10-11T17:29:25Z",
 "system": "github",
 "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
 }
@@ -181,12 +181,14 @@
 "vibe-coding"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://oh-my-claudecode.dev",

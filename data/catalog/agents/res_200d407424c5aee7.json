@@ -45,7 +45,7 @@
 "external_ids": {
 "github": "upstash/context7"
 },
-"first_seen": "2026-10-11T03:01:06Z",
+"first_seen": "2026-10-11T17:33:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -74,7 +74,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:01:06Z",
+"last_seen": "2026-10-11T17:33:43Z",
 "license": "MIT",
 "name": "context7",
 "news": [
@@ -104,12 +104,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:04:57Z",
+"checked_at": "2026-10-11T17:37:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:04:56Z",
+"checked_at": "2026-10-11T17:37:16Z",
 "entries": 1,
 "errors": [
 "entries[0]: missing required term 'displayName'"
@@ -124,7 +124,7 @@
 "evidence_url": "https://context7.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:04:58Z",
+"checked_at": "2026-10-11T17:37:18Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -136,7 +136,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:20:03Z",
+"checked_at": "2026-10-11T17:52:20Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -144,19 +144,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-26T23:40:39Z",
-"github_forks": 3062,
+"github_forks": 3064,
 "github_language": "TypeScript",
 "github_open_issues": 31,
 "github_pushed_at": "2026-10-10T02:04:01Z",
-"github_stars": 62881,
+"github_stars": 62904,
 "github_topic": "mcp-server",
 "homepage": "https://context7.com"
 },
 "slug": "upstash-context7",
 "sources": [
 {
-"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
-"retrieved_at": "2026-10-11T03:01:06Z",
+"payload_hash": "277122e690e54ef01141614efe2b9a0dbb58079565946bd71e01fbbd81427fd4",
+"retrieved_at": "2026-10-11T17:33:43Z",
 "system": "github",
 "url": "https://github.com/upstash/context7"
 }
@@ -168,12 +168,46 @@
 "vibe-coding"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_200d407424c5aee7_ea218ab0",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_200d407424c5aee7_ea218ab0",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD invalid (1 validation error)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:30b348dfea646e8811271d51b7f7137a14eda042c93327dc959b7807d0c4a743",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of context7's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_200d407424c5aee7_ea218ab0/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://context7.com",

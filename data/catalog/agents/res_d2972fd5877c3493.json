@@ -84,7 +84,7 @@
 "external_ids": {
 "ard": "urn:air:aard.ai:mcp:gateway"
 },
-"first_seen": "2026-10-11T03:03:26Z",
+"first_seen": "2026-10-11T17:35:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -106,7 +106,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:26Z",
+"last_seen": "2026-10-11T17:35:55Z",
 "license": null,
 "name": "Aard MCP",
 "news": [],
@@ -140,7 +140,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:19Z",
+"checked_at": "2026-10-11T17:54:24Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -150,7 +150,7 @@
 "sources": [
 {
 "payload_hash": "aaca01226adf876bf46e529a880bf4e6f3c09c9da19bd397908724a430fbaaa5",
-"retrieved_at": "2026-10-11T03:03:26Z",
+"retrieved_at": "2026-10-11T17:35:55Z",
 "system": "ard",
 "url": "https://aard.ai/.well-known/ard.json"
 }
@@ -161,12 +161,46 @@
 "sdmx"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_d2972fd5877c3493_34d2beae",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_d2972fd5877c3493_34d2beae",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:ac83a3b5383e2db7404208bad76eeeb51dd1b877047a201faa90160f7991da94",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Aard MCP's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_d2972fd5877c3493_34d2beae/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://aard.ai/.well-known/mcp-server-card",

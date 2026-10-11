@@ -25,9 +25,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "bd62c5972d09d52ff80564cdaf9a4175560e7d4d0eb30394a435cd44ff655974",
+"payload_hash": "eb04e75b026706d39117b1d221bb859c7743303969c0874b44335594632baedc",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:13:05Z",
+"retrieved_at": "2026-10-11T17:46:27Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -67,7 +67,7 @@
 "external_ids": {
 "github": "unicity-sphere/sphere"
 },
-"first_seen": "2026-10-11T02:56:44Z",
+"first_seen": "2026-10-11T17:29:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -89,24 +89,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:56:44Z",
+"last_seen": "2026-10-11T17:29:29Z",
 "license": null,
 "name": "sphere",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:45Z",
+"checked_at": "2026-10-11T17:39:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:44Z",
+"checked_at": "2026-10-11T17:39:00Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:06:46Z",
+"checked_at": "2026-10-11T17:39:02Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -121,15 +121,15 @@
 "github_language": "TypeScript",
 "github_open_issues": 52,
 "github_pushed_at": "2026-10-09T09:53:35Z",
-"github_stars": 9721,
+"github_stars": 9722,
 "github_topic": "ai-agents",
 "homepage": "https://unicity.ai"
 },
 "slug": "unicity-sphere-sphere",
 "sources": [
 {
-"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
-"retrieved_at": "2026-10-11T02:56:44Z",
+"payload_hash": "d22a387e11d59a9860a71e607b2fdbe4e0adc6dd011d59b18f943ab4e8bbf4fc",
+"retrieved_at": "2026-10-11T17:29:29Z",
 "system": "github",
 "url": "https://github.com/unicity-sphere/sphere"
 }
@@ -139,12 +139,14 @@
 "wallet"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://unicity.ai",

@@ -24,9 +24,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
+"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:07:58Z",
+"retrieved_at": "2026-10-11T17:40:52Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -54,9 +54,9 @@
 "issuer": "Agency / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 0.933,
 "next_check": "2026-10-18",
-"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
+"payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:06:54Z",
+"retrieved_at": "2026-10-11T17:39:14Z",
 "review_reason": "entity 1.00, offering 0.85",
 "reviewer": null,
 "scope": "product",
@@ -80,9 +80,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "ca4dc66c760dfad2f36c8342b2b3de8bc8fec18d9fadcd325f3586484269a1e6",
+"payload_hash": "647ed0ce6cc21e39f2981f029b67047238bd86c6a7fb489909c3a9cf1686a976",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:44Z",
+"retrieved_at": "2026-10-11T17:45:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -106,9 +106,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "ca4dc66c760dfad2f36c8342b2b3de8bc8fec18d9fadcd325f3586484269a1e6",
+"payload_hash": "647ed0ce6cc21e39f2981f029b67047238bd86c6a7fb489909c3a9cf1686a976",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:44Z",
+"retrieved_at": "2026-10-11T17:45:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -413,7 +413,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -435,7 +435,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Proprietary",
 "name": "GitHub Copilot coding agent",
 "news": [],
@@ -463,7 +463,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:13:16Z",
+"checked_at": "2026-10-11T17:46:37Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -488,19 +488,51 @@
 "sources": [
 {
 "payload_hash": "eed24d4e9b6459846936ea478d1f7d4ea47522b6df41a59f0062ed6be6ab72de",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/features/copilot"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"checked_on": null,
+"date": "2025-10-08",
+"format": "report",
+"id": "tr_camoleak_copilot_chat_2025",
+"kind": "red_team",
+"notes": "Copilot Chat, a sibling of the Copilot coding agent on the same platform",
+"observed": {
+"actions": [
+"read the hidden comment as instructions",
+"searched private repositories the victim could access",
+"rendered pre-signed Camo image URLs that encoded the data"
+],
+"approval": false,
+"egress": true,
+"entry": "indirect prompt injection via a hidden PR comment",
+"outcome": "Private source and secrets exfiltrated; GitHub disabled image rendering in Copilot Chat",
+"refused": false,
+"secrets_touched": true
+},
+"reviewer": null,
+"scenario": "An invisible comment in a pull request instructs Copilot Chat to encode private repository content as a sequence of image requests through GitHub's Camo proxy",
+"scope": "platform",
+"source": "Legit Security",
+"tier": 3,
+"title": "CamoLeak: hidden pull-request comment makes Copilot Chat leak private source via GitHub's image proxy (CVSS 9.6)",
+"url": "https://legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code",
+"vendor_response": "GitHub mitigation (image rendering disabled in Copilot Chat), August 2025"
+}
+],
 "trust": {
 "compliance": 1,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": 1,
+"traces": 3,
 "vendor_compliance": 1
 },
 "url": "https://github.com/features/copilot",

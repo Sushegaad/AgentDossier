@@ -68,7 +68,7 @@
 "external_ids": {
 "github": "fathah/hermes-desktop"
 },
-"first_seen": "2026-10-11T02:59:12Z",
+"first_seen": "2026-10-11T17:31:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -90,7 +90,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "MIT",
 "name": "hermes-desktop",
 "news": [
@@ -120,17 +120,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:42Z",
+"checked_at": "2026-10-11T17:38:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:41Z",
+"checked_at": "2026-10-11T17:38:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:05:43Z",
+"checked_at": "2026-10-11T17:38:03Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -140,7 +140,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:21:23Z",
+"checked_at": "2026-10-11T17:53:33Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -148,19 +148,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-02T15:26:49Z",
-"github_forks": 1628,
+"github_forks": 1631,
 "github_language": "TypeScript",
-"github_open_issues": 431,
-"github_pushed_at": "2026-09-24T14:32:35Z",
-"github_stars": 14391,
+"github_open_issues": 379,
+"github_pushed_at": "2026-10-11T14:35:45Z",
+"github_stars": 14392,
 "github_topic": "ai-agent",
 "homepage": "https://hermesone.org"
 },
 "slug": "fathah-hermes-desktop",
 "sources": [
 {
-"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
-"retrieved_at": "2026-10-11T02:59:12Z",
+"payload_hash": "38ba1ea727a4b2a0fcd908d0387a63cb79f0edacac6ce13e16bf885f2d7a6b7b",
+"retrieved_at": "2026-10-11T17:31:54Z",
 "system": "github",
 "url": "https://github.com/fathah/hermes-desktop"
 }
@@ -174,12 +174,14 @@
 "llm"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://hermesone.org",

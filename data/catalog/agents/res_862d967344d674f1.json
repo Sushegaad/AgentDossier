@@ -121,7 +121,7 @@
 "external_ids": {
 "github": "leon-ai/leon"
 },
-"first_seen": "2026-10-11T02:59:12Z",
+"first_seen": "2026-10-11T17:31:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -143,24 +143,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "MIT",
 "name": "leon",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:32Z",
+"checked_at": "2026-10-11T17:37:52Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:32Z",
+"checked_at": "2026-10-11T17:37:51Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:05:33Z",
+"checked_at": "2026-10-11T17:37:52Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -174,16 +174,16 @@
 "github_forks": 1474,
 "github_language": "TypeScript",
 "github_open_issues": 114,
-"github_pushed_at": "2026-10-11T01:46:01Z",
-"github_stars": 17564,
+"github_pushed_at": "2026-10-11T05:57:15Z",
+"github_stars": 17565,
 "github_topic": "ai-agent",
 "homepage": "https://getleon.ai"
 },
 "slug": "leon-ai-leon",
 "sources": [
 {
-"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
-"retrieved_at": "2026-10-11T02:59:12Z",
+"payload_hash": "38ba1ea727a4b2a0fcd908d0387a63cb79f0edacac6ce13e16bf885f2d7a6b7b",
+"retrieved_at": "2026-10-11T17:31:54Z",
 "system": "github",
 "url": "https://github.com/leon-ai/leon"
 }
@@ -211,12 +211,14 @@
 "voice-assistant"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": null,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://getleon.ai",

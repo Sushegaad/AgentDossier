@@ -32,9 +32,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d3ceef3a59734d860389f6cb078c19b788b658343ee9fd307b13b43447e0219e",
+"payload_hash": "66a8fa0849b26356d0a0d03cd0fae129cc7c4571b2c2750a97419d5168afb02a",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:44Z",
+"retrieved_at": "2026-10-11T17:45:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -58,9 +58,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d3ceef3a59734d860389f6cb078c19b788b658343ee9fd307b13b43447e0219e",
+"payload_hash": "66a8fa0849b26356d0a0d03cd0fae129cc7c4571b2c2750a97419d5168afb02a",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:44Z",
+"retrieved_at": "2026-10-11T17:45:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -84,9 +84,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "640ddd96e77d51820ee6a0f83bdfc2c6cc5481f3b070b1a9157a74b97de882f5",
+"payload_hash": "b223c869c5f62b08826c88516254e1e5fb9a501cc8073b788efa4fafa669decb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:44Z",
+"retrieved_at": "2026-10-11T17:45:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -110,9 +110,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "640ddd96e77d51820ee6a0f83bdfc2c6cc5481f3b070b1a9157a74b97de882f5",
+"payload_hash": "b223c869c5f62b08826c88516254e1e5fb9a501cc8073b788efa4fafa669decb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:44Z",
+"retrieved_at": "2026-10-11T17:45:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -136,9 +136,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "640ddd96e77d51820ee6a0f83bdfc2c6cc5481f3b070b1a9157a74b97de882f5",
+"payload_hash": "b223c869c5f62b08826c88516254e1e5fb9a501cc8073b788efa4fafa669decb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:44Z",
+"retrieved_at": "2026-10-11T17:45:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -220,7 +220,7 @@
 "external_ids": {
 "github": "maximhq/bifrost"
 },
-"first_seen": "2026-10-11T03:01:06Z",
+"first_seen": "2026-10-11T17:33:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -242,7 +242,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:01:06Z",
+"last_seen": "2026-10-11T17:33:43Z",
 "license": "Apache-2.0",
 "name": "bifrost",
 "news": [
@@ -272,12 +272,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:35Z",
+"checked_at": "2026-10-11T17:37:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:32Z",
+"checked_at": "2026-10-11T17:37:51Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -285,7 +285,7 @@
 "evidence_url": "https://www.getmaxim.ai/bifrost",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:05:36Z",
+"checked_at": "2026-10-11T17:37:55Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -298,19 +298,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-19T07:21:26Z",
-"github_forks": 1363,
+"github_forks": 1365,
 "github_language": "Go",
-"github_open_issues": 1240,
-"github_pushed_at": "2026-10-10T21:19:27Z",
-"github_stars": 8692,
+"github_open_issues": 1232,
+"github_pushed_at": "2026-10-11T17:32:08Z",
+"github_stars": 8703,
 "github_topic": "mcp-server",
 "homepage": "https://www.getmaxim.ai/bifrost"
 },
 "slug": "maximhq-bifrost",
 "sources": [
 {
-"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
-"retrieved_at": "2026-10-11T03:01:06Z",
+"payload_hash": "277122e690e54ef01141614efe2b9a0dbb58079565946bd71e01fbbd81427fd4",
+"retrieved_at": "2026-10-11T17:33:43Z",
 "system": "github",
 "url": "https://github.com/maximhq/bifrost"
 }
@@ -334,12 +334,14 @@
 "token-management"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://www.getmaxim.ai/bifrost",

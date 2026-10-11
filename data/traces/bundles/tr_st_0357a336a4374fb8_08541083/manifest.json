@@ -1,0 +1,19 @@
+{
+ "agent": "res_0357a336a4374fb8",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_0357a336a4374fb8_08541083",
+ "kind": "self_test",
+ "name": "Autoblogging.ai article writer",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:autoblogging.ai:skills:article-writer",
+   "manifest_url": "https://autoblogging.ai/.well-known/ai-catalog.json",
+   "media_type": "text/markdown; profile=\"urn:air:agent-skills\"",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "autoblogging-ai-autoblogging-ai-article-writer"
+}

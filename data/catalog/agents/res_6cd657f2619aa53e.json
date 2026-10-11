@@ -1,11 +1,10 @@
 {
-"canonical_url": "github.com/gernika-labs/clarx-cloud",
+"canonical_url": "arcdeck.ai/integrations",
 "capabilities": [],
 "category": "MCP server",
 "classification": {
 "matched": {
 "technology": [
-"ide",
 "mcp"
 ]
 },
@@ -14,26 +13,26 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Score agent manifests, generate CI workflows, and pull Clarx scan findings into your IDE.",
+"description": "Create consulting-style presentation decks (editable PowerPoint) from a topic or notes.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
 "components": {
 "adoption": null,
 "docs": 7.0,
-"domain_fit": 81.0,
-"ecosystem": 3.6,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
 "governance": null,
-"health": 16.0,
-"trust": 16.0
+"health": 20.0,
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.81,
+"confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 44.0,
+"score": 48.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -43,22 +42,21 @@
 }
 },
 "external_ids": {
-"github": "Gernika-Labs/clarx-cloud",
-"mcp_registry": "ai.clarx/mcp"
+"mcp_registry": "ai.arcdeck/arcdeck"
 },
-"first_seen": "2026-10-11T02:55:14Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
 "evidence_urls": []
 },
-"id": "res_c5face760a3676d4",
+"id": "res_6cd657f2619aa53e",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
 "rules_version": "identity-1.1",
-"tier": 3
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -68,72 +66,69 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:14Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": null,
-"name": "ai.clarx/mcp",
+"name": "Arcdeck",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-11T17:36:22Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-11T17:36:21Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"packages": [
+"parser_version": "mcp-2025-06-18",
+"remotes": [
 {
-"identifier": "@clarxai/mcp",
-"registry": "npm",
-"transport": "stdio",
-"version": "0.2.2"
+"type": "streamable-http",
+"url": "https://arcdeck.ai/mcp"
 }
 ],
-"parser_version": "mcp-2025-06-18",
-"server_name": "ai.clarx/mcp",
+"server_name": "ai.arcdeck/arcdeck",
 "status": "claimed",
-"version": "0.2.2",
+"version": "1.0.0",
 "via": "mcp_registry"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "arcdeck.ai",
 "resource_type": "mcp_server",
 "scope": "public",
-"security": {
-"advisories": 0,
-"checked_at": "2026-10-11T03:19:26Z",
-"cves": 0,
-"source": "nvd",
-"tier": 1
-},
 "signals": {
-"mcp_packages": 1,
-"mcp_registry_published_at": "2026-08-19T16:23:31.658789Z",
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-10-11T09:53:20.200537Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-08-19T16:23:31.658789Z",
-"mcp_transports": []
+"mcp_registry_updated_at": "2026-10-11T09:53:20.200537Z",
+"mcp_transports": [
+"streamable-http"
+]
 },
-"slug": "clarx-ai-ai-clarx-mcp",
+"slug": "arcdeck-ai-arcdeck",
 "sources": [
 {
-"payload_hash": "663da55f533f039d96cd0354ef7d8a916d9c8204bae7ed272cf90ee73ebddc4d",
-"retrieved_at": "2026-10-11T02:55:14Z",
+"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "mcp_registry",
-"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.clarx/mcp"
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.arcdeck/arcdeck"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1,
+"security": null,
+"traces": 5,
 "vendor_compliance": null
 },
-"url": "https://github.com/Gernika-Labs/clarx-cloud",
-"vendor": "clarx.ai"
+"url": "https://arcdeck.ai/integrations",
+"vendor": "arcdeck.ai"
 }

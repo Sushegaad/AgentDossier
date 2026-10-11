@@ -34,7 +34,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "7fc4e66a619e0b9251accf3cce198215d3619afb8384fe65d5ca0d7a394900fa",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:42Z",
+"retrieved_at": "2026-10-11T17:46:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -60,7 +60,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:42Z",
+"retrieved_at": "2026-10-11T17:46:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -86,7 +86,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:42Z",
+"retrieved_at": "2026-10-11T17:46:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -112,7 +112,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:42Z",
+"retrieved_at": "2026-10-11T17:46:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -183,7 +183,7 @@
 "external_ids": {
 "ard": "urn:air:pydantic.dev:api:documentation-search"
 },
-"first_seen": "2026-10-11T03:06:32Z",
+"first_seen": "2026-10-11T17:38:48Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -205,7 +205,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:06:32Z",
+"last_seen": "2026-10-11T17:38:48Z",
 "license": null,
 "name": "Pydantic Documentation Search API",
 "news": [],
@@ -237,7 +237,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:23:33Z",
+"checked_at": "2026-10-11T17:55:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -247,19 +247,53 @@
 "sources": [
 {
 "payload_hash": "c8f310319e07c7bc15833ff056f6c8d9949fb788b6eda54eeb15c8c2e70290e3",
-"retrieved_at": "2026-10-11T03:06:32Z",
+"retrieved_at": "2026-10-11T17:38:48Z",
 "system": "ard",
 "url": "https://pydantic.dev/.well-known/ard.json"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_83543c823fb3896e_c7b97605",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_83543c823fb3896e_c7b97605",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:f82693cb3e2c1fd8953bfa108ae7e5713e716f07a71ab33a23245ef881fa5afa",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Pydantic Documentation Search API's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_83543c823fb3896e_c7b97605/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://pydantic.dev/docs/api/openapi.json",

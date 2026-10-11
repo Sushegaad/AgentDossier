@@ -30,9 +30,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "f38466a1499cbffdc4807586e115824ab9e33ce6eb167e1bdfa030d192198f42",
+"payload_hash": "29a28f90b181ef9175d53f25dc85b8ad32e8e81897b3a20b83f100e75e0998b8",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:09:21Z",
+"retrieved_at": "2026-10-11T17:42:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -56,9 +56,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "66991e16544a2d055eb9c8368afcff8c7e8cd1ff90e5178890daa74f2d21181c",
+"payload_hash": "71e2ffc17144e1064053943de71ab86a3c370673ceac07271d98001a79785bad",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:09:21Z",
+"retrieved_at": "2026-10-11T17:42:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -82,9 +82,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "66991e16544a2d055eb9c8368afcff8c7e8cd1ff90e5178890daa74f2d21181c",
+"payload_hash": "71e2ffc17144e1064053943de71ab86a3c370673ceac07271d98001a79785bad",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:09:21Z",
+"retrieved_at": "2026-10-11T17:42:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -149,7 +149,7 @@
 "external_ids": {
 "mcp_registry": "ai.2kw/mcp-server"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -171,19 +171,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": null,
 "name": "2kw.ai",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:03:23Z",
+"checked_at": "2026-10-11T17:35:52Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:03:19Z",
+"checked_at": "2026-10-11T17:35:49Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -217,19 +217,21 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.2kw/mcp-server"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 4,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://2kw.ai",

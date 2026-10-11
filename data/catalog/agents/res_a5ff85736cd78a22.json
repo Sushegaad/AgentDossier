@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:agentgates.ai:platform:api"
 },
-"first_seen": "2026-10-11T03:03:32Z",
+"first_seen": "2026-10-11T17:36:01Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:32Z",
+"last_seen": "2026-10-11T17:36:01Z",
 "license": null,
 "name": "Agentgates REST API (x402)",
 "news": [],
@@ -99,7 +99,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:35Z",
+"checked_at": "2026-10-11T17:54:36Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -109,7 +109,7 @@
 "sources": [
 {
 "payload_hash": "7eb9106e22b699ef467e617d17305433ff691a3cc0286bb3d442d515e686a289",
-"retrieved_at": "2026-10-11T03:03:32Z",
+"retrieved_at": "2026-10-11T17:36:01Z",
 "system": "ard",
 "url": "https://agentgates.ai/.well-known/ai-catalog.json"
 }
@@ -122,12 +122,46 @@
 "tee"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_a5ff85736cd78a22_8e1cd277",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_a5ff85736cd78a22_8e1cd277",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:483121ec7fa5117f1c0cfe4603fccf3095016c39e71d583e18e1bc51c5f69df2",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Agentgates REST API (x402)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_a5ff85736cd78a22_8e1cd277/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 1,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://agentgates.ai/openapi.json",

@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "aero.events/events"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,19 +66,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": null,
 "name": "Events.Aero",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:26Z",
+"checked_at": "2026-10-11T17:37:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:23Z",
+"checked_at": "2026-10-11T17:37:42Z",
 "entries": 1,
 "parser_version": "ard-0.91",
 "sources": [
@@ -105,7 +105,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:16:04Z",
+"checked_at": "2026-10-11T17:48:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -123,19 +123,53 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=aero.events/events"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_d71e91ae43469852_4d73f575",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_d71e91ae43469852_4d73f575",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:e60c65086439a369538c3566f1e84cb273ef64b9ecdea506fec286648091b136",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Events.Aero's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_d71e91ae43469852_4d73f575/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://events.aero",

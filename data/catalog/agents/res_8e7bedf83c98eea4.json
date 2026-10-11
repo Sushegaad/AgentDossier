@@ -15,7 +15,7 @@
 "external_ids": {
 "ard": "urn:air:agentgates.ai:platform:directory"
 },
-"first_seen": "2026-10-11T03:03:32Z",
+"first_seen": "2026-10-11T17:36:01Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -37,7 +37,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:32Z",
+"last_seen": "2026-10-11T17:36:01Z",
 "license": null,
 "name": "x402 Directory",
 "news": [],
@@ -69,7 +69,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:36Z",
+"checked_at": "2026-10-11T17:54:37Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -79,7 +79,7 @@
 "sources": [
 {
 "payload_hash": "8eca79a81501c03e725abee1e29c1cf6400649221e31d1b2b82aa95cfc38eb6f",
-"retrieved_at": "2026-10-11T03:03:32Z",
+"retrieved_at": "2026-10-11T17:36:01Z",
 "system": "ard",
 "url": "https://agentgates.ai/.well-known/ai-catalog.json"
 }
@@ -92,12 +92,46 @@
 "usdc"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_8e7bedf83c98eea4_e8dc6c1b",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_8e7bedf83c98eea4_e8dc6c1b",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:8998d806c624084384abad0d0132b038c171e70ec386be883d78324c87bb530a",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of x402 Directory's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_8e7bedf83c98eea4_e8dc6c1b/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 1,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://agentgates.ai/api/directory/resources",

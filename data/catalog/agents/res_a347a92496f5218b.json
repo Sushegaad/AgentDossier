@@ -125,7 +125,7 @@
 "external_ids": {
 "github": "nocobase/nocobase"
 },
-"first_seen": "2026-10-11T02:56:39Z",
+"first_seen": "2026-10-11T17:29:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -208,7 +208,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "Other",
 "merged_ids": [
 "res_a347a92496f5218b"
@@ -217,41 +217,41 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-10T17:18:31Z",
-"headline": "nocobase: 2026-10-10.4",
+"date": "2026-10-11T14:44:38Z",
+"headline": "nocobase: 2026-10-11.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Beta release `2026-10-10.4` published 11 packages.\n\n| Package | Version |\n| --- | --- |\n| `@nocobase/agent-protocol` | `0.1.0-beta.3` |\n| `@nocobase/agent-runner` | `0.1.0-beta.4` |\n| `@nocobase/app-cli` | `1.0.0-beta.18` |\n| `@nocobase/app",
+"summary": "Beta release `2026-10-11.1` published 15 packages.\n\n| Package | Version |\n| --- | --- |\n| `@nocobase/agent-protocol` | `0.1.0-beta.4` |\n| `@nocobase/agent-runner` | `0.1.0-beta.5` |\n| `@nocobase/app-cli-client` | `0.1.0-beta.3` |\n| `@nocoba",
 "tag": "product_update",
-"url": "https://github.com/nocobase/nocobase/releases/tag/release-beta/2026-10-10.4"
+"url": "https://github.com/nocobase/nocobase/releases/tag/release-beta/2026-10-11.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-10T10:15:12Z",
-"headline": "nocobase: 2026-10-10.3",
+"date": "2026-10-11T13:22:48Z",
+"headline": "nocobase release v2.2.23",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Beta release `2026-10-10.3` published 4 packages.\n\n| Package | Version |\n| --- | --- |\n| `@nocobase/app-skills` | `0.1.0-beta.28` |\n| `@nocobase/app-template-default` | `1.0.0-beta.60` |\n| `@nocobase/app-template-examples` | `1.0.0-beta.42`",
+"summary": "### 🚀 Improvements\n\n- **[undefined]**\n  - V3 workflow entry filenames now use a consistent v3- prefix with documented cross-branch synchronization rules. ([#10590](https://github.com/nocobase/nocobase/pull/10590)) by @Molunerfinn\n\n  - Added",
 "tag": "product_update",
-"url": "https://github.com/nocobase/nocobase/releases/tag/release-beta/2026-10-10.3"
+"url": "https://github.com/nocobase/nocobase/releases/tag/v2.2.23"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:16Z",
+"checked_at": "2026-10-11T17:38:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:09Z",
+"checked_at": "2026-10-11T17:38:28Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:06:22Z",
+"checked_at": "2026-10-11T17:38:39Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -261,7 +261,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:20:52Z",
+"checked_at": "2026-10-11T17:53:04Z",
 "cves": 14,
 "source": "nvd",
 "tier": 1
@@ -269,19 +269,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2020-10-24T07:27:48Z",
-"github_forks": 2907,
+"github_forks": 2908,
 "github_language": "TypeScript",
-"github_open_issues": 369,
-"github_pushed_at": "2026-10-11T02:56:04Z",
-"github_stars": 24520,
+"github_open_issues": 362,
+"github_pushed_at": "2026-10-11T17:16:06Z",
+"github_stars": 24528,
 "github_topic": "ai-agents",
 "homepage": "https://www.nocobase.com"
 },
 "slug": "nocobase-nocobase",
 "sources": [
 {
-"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
-"retrieved_at": "2026-10-11T02:56:39Z",
+"payload_hash": "a3ca83b8ced2cb995117d91da168ad7f0baebc61c647e647d733b664c47f5540",
+"retrieved_at": "2026-10-11T17:29:25Z",
 "system": "github",
 "url": "https://github.com/nocobase/nocobase"
 }
@@ -308,12 +308,14 @@
 "workflows"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 3,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://www.nocobase.com",

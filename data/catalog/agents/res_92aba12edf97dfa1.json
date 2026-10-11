@@ -20,7 +20,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2025f53b8cc591a0e85ae6e021d914631a7fe28a2403dd0701cb58fb18d5b0bd",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:21Z",
+"retrieved_at": "2026-10-11T17:45:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -44,9 +44,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "02048e8113b4447efba593149fe53f4bac5323b6577fb34fafbd0101a27f02ec",
+"payload_hash": "63823df2bc50d4e4a0b25a0b2df6147bb67abd9723dbdfe57fee7204f5272c2c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:21Z",
+"retrieved_at": "2026-10-11T17:45:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -72,7 +72,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2025f53b8cc591a0e85ae6e021d914631a7fe28a2403dd0701cb58fb18d5b0bd",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:21Z",
+"retrieved_at": "2026-10-11T17:45:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -379,7 +379,7 @@
 "external_ids": {
 "github": "n8n-io/n8n"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -401,7 +401,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:01:06Z",
+"last_seen": "2026-10-11T17:33:43Z",
 "license": "Sustainable Use License",
 "merged_ids": [
 "res_47005ed1f60c52a2"
@@ -434,12 +434,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:07Z",
+"checked_at": "2026-10-11T17:38:25Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:06Z",
+"checked_at": "2026-10-11T17:38:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -447,7 +447,7 @@
 "evidence_url": "https://github.com/n8n-io/n8n",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:06:07Z",
+"checked_at": "2026-10-11T17:38:26Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -473,11 +473,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-06-22T09:24:21Z",
-"github_forks": 61051,
+"github_forks": 61076,
 "github_language": "TypeScript",
-"github_open_issues": 1174,
-"github_pushed_at": "2026-10-10T21:12:27Z",
-"github_stars": 206940,
+"github_open_issues": 1172,
+"github_pushed_at": "2026-10-11T17:10:47Z",
+"github_stars": 207002,
 "github_topic": "mcp-server",
 "homepage": "https://n8n.io",
 "observed_popularity": "Not captured",
@@ -493,13 +493,13 @@
 "sources": [
 {
 "payload_hash": "f66978e4dc5b7493ea7428565e21fc901be928f1321fcad855512200c631f88a",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/n8n-io/n8n"
 },
 {
-"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
-"retrieved_at": "2026-10-11T03:01:06Z",
+"payload_hash": "277122e690e54ef01141614efe2b9a0dbb58079565946bd71e01fbbd81427fd4",
+"retrieved_at": "2026-10-11T17:33:43Z",
 "system": "github",
 "url": "https://github.com/n8n-io/n8n"
 }
@@ -527,12 +527,14 @@
 "workflow-automation"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://github.com/n8n-io/n8n",

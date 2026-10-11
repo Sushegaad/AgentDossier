@@ -28,9 +28,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "79e25a34de002c1f82f2d98055eb6c4452f7a28a84dcc40ef2d65f384cf24abc",
+"payload_hash": "98f32d095d579fd1cee31bbbfa6e8de2a2c94732872471427ebb646af41daabc",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:29Z",
+"retrieved_at": "2026-10-11T17:44:56Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "pascalorg/editor"
 },
-"first_seen": "2026-10-11T02:56:39Z",
+"first_seen": "2026-10-11T17:29:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,7 +92,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:01:06Z",
+"last_seen": "2026-10-11T17:33:43Z",
 "license": "MIT",
 "merged_ids": [
 "res_ded48ed46b9a45e7"
@@ -125,12 +125,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:24Z",
+"checked_at": "2026-10-11T17:37:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:22Z",
+"checked_at": "2026-10-11T17:37:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -138,7 +138,7 @@
 "evidence_url": "https://editor.pascal.app",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:05:24Z",
+"checked_at": "2026-10-11T17:37:42Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -151,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-10-16T19:35:06Z",
-"github_forks": 3070,
+"github_forks": 3075,
 "github_language": "TypeScript",
-"github_open_issues": 53,
-"github_pushed_at": "2026-10-11T02:02:39Z",
-"github_stars": 24778,
+"github_open_issues": 54,
+"github_pushed_at": "2026-10-11T07:50:41Z",
+"github_stars": 24793,
 "github_topic": "ai-agents",
 "homepage": "https://editor.pascal.app"
 },
 "slug": "pascalorg-editor",
 "sources": [
 {
-"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
-"retrieved_at": "2026-10-11T02:56:39Z",
+"payload_hash": "a3ca83b8ced2cb995117d91da168ad7f0baebc61c647e647d733b664c47f5540",
+"retrieved_at": "2026-10-11T17:29:25Z",
 "system": "github",
 "url": "https://github.com/pascalorg/editor"
 }
@@ -189,12 +189,14 @@
 "typescript"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://editor.pascal.app",

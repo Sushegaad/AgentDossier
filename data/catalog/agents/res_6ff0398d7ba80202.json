@@ -100,7 +100,7 @@
 "external_ids": {
 "github": "simonlin1212/a-stock-data"
 },
-"first_seen": "2026-10-11T02:59:12Z",
+"first_seen": "2026-10-11T17:31:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -122,10 +122,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "Apache-2.0",
 "name": "a-stock-data",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-11T13:08:36Z",
+"headline": "a-stock-data: v3.10.2 — PE 消化年数修正（#58）",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "十五层、87 个入口、34 个来源都不变。只修 `full_valuation()` 的 PE 消化年数。\n\n### 修复\n\n**`full_valuation()` 在盈利不增长时把 PE 消化年数报成 0 年（#58）**\n\n前向 PE 高于 30x、下一年一致预期盈利持平或下降时，`digest_years` 原来返回 `0`，读起来像「已经消化到 30x」，\n实际是永远消化不到。同一份文档里的 `pe_digestion()` 对这种情况本来就返回无穷大，`full",
+"tag": "product_update",
+"url": "https://github.com/simonlin1212/a-stock-data/releases/tag/v3.10.2"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-07T06:22:49Z",
@@ -136,17 +147,6 @@
 "summary": "十五层、87 个入口、34 个来源都不变，返回的数据也不变。§1.2 只改文档；§1.4 逐笔和 §13.7 期货日 K 修的是\nv3.10.0 发版后补做代码复审查出的问题，§1.4 多了一个 `frame.attrs[\"complete\"]`。\n\n### 修复\n\n**§1.2 `tencent_kline()` 的成交量单位写错了：科创板是股，不是手（#57）**\n\n§1.2 的返回列、函数说明，以及「备用源速查」里的腾讯分钟 K 线字段说明，都把成交量写成「手」。\n20",
 "tag": "product_update",
 "url": "https://github.com/simonlin1212/a-stock-data/releases/tag/v3.10.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-22T16:11:05Z",
-"headline": "a-stock-data: v3.10.0 — 当日逐笔 / 期货日 K（含大商所）/ 行情层重排",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "新增 **2 个能力入口**，来源数不变：十五层、87 个入口（82 主入口 + 5 备胎）、34 个来源。\n通达信公开服务器的 K 线 / 盘口 / 逐笔命令 2026-09 起返回空（#52），本版补上逐笔的替代来源，并把行情层的可用来源排到前面。\n\n### Breaking Changes\n\n- **Layer 1 重新编号**，可用来源在前、mootdx 放最后留档。旧 → 新：\n  1.2 腾讯财经 → **1.1**、1.5 腾讯 K 线 → **1.2**、1.",
-"tag": "product_update",
-"url": "https://github.com/simonlin1212/a-stock-data/releases/tag/v3.10.0"
 }
 ],
 "news_checked": true,
@@ -169,7 +169,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:21:48Z",
+"checked_at": "2026-10-11T17:53:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -177,19 +177,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-05-11T01:08:15Z",
-"github_forks": 1952,
+"github_forks": 1953,
 "github_language": "Python",
-"github_open_issues": 2,
-"github_pushed_at": "2026-10-10T13:44:03Z",
-"github_stars": 10765,
+"github_open_issues": 0,
+"github_pushed_at": "2026-10-11T13:08:34Z",
+"github_stars": 10789,
 "github_topic": "ai-agent",
 "homepage": null
 },
 "slug": "simonlin1212-a-stock-data",
 "sources": [
 {
-"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
-"retrieved_at": "2026-10-11T02:59:12Z",
+"payload_hash": "38ba1ea727a4b2a0fcd908d0387a63cb79f0edacac6ce13e16bf885f2d7a6b7b",
+"retrieved_at": "2026-10-11T17:31:54Z",
 "system": "github",
 "url": "https://github.com/simonlin1212/a-stock-data"
 }
@@ -211,12 +211,14 @@
 "trading"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://github.com/simonlin1212/a-stock-data",
