@@ -289,8 +289,7 @@ export default function AgentProfile({
             </div>
             <div className="tiny muted" style={{ margin: "4px 0 12px" }}>
               {profileName} profile · {best?.[1].score_version ?? "sar-score-2.0"}
-              {best?.[1].rank ? ` · rank #${best[1].rank} of 100` : " · unranked"}
-              {best?.[1].seed_rank && best[1].seed_rank !== best[1].rank ? ` (workbook order #${best[1].seed_rank})` : ""}
+              {best?.[1].rank ? ` · #${best[1].rank} of 100 in the curated list` : " · unranked"}
             </div>
             {comps ? (
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "0.85rem" }}>
@@ -316,7 +315,7 @@ export default function AgentProfile({
               <p className="muted small">Not scored against the seed baseline.</p>
             )}
             <p className="tiny muted" style={{ marginTop: "12px" }}>
-              Raw component / maximum, then weighted by the {profileName} profile ({Object.entries(weights).map(([k, w]) => `${(COMPONENT_LABELS[k] ?? k).split(" ")[0].toLowerCase()} ${w}`).join(", ")}). Trust and governance are computed from the evidence on this page; the other components come from the curated workbook. Unknown components count as 0 and are never imputed.
+              Raw component / maximum, then weighted by the {profileName} profile ({Object.entries(weights).map(([k, w]) => `${(COMPONENT_LABELS[k] ?? k).split(" ")[0].toLowerCase()} ${w}`).join(", ")}). Trust and governance are computed from the evidence on this page (vendor-level rows at half credit); the other components come from the curated workbook, whose order is the rank. Unknown components count as 0 and are never imputed.
             </p>
           </section>
 

@@ -22,7 +22,8 @@ const short: Record<string, string> = { adoption: "Adopt", trust: "Trust", healt
 // · – probed, nothing there · ? never probed (code-host URL or no publisher domain)
 const g = (s: string | undefined) => (s === "verified" ? "✔" : s === "claimed" ? "○" : s === "unknown" || !s ? "?" : "–");
 const asOf = d.built_at ? d.built_at.slice(0, 10) : d.snapshot_date;
-const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.compliance}`;
+// evidence about the agent itself, then what the vendor holds at organisation level
+const evidenceCell = (t: { compliance: number; vendor_compliance?: number | null }) => `${t.compliance === 5 ? "agent –" : `agent T${t.compliance}`}${t.vendor_compliance ? ` · vendor T${t.vendor_compliance}` : ""}`;
 // the protocols column only earns its place when enough rows have something in it; otherwise one
 // honest line above the table says how many publish metadata, and the dossiers carry the detail
 const withProtocol = d.ranked.filter((r) => ["verified", "claimed"].includes(r.protocols.mcp) || ["verified", "claimed"].includes(r.protocols.a2a) || ["verified", "claimed"].includes(r.protocols.ard)).length;
@@ -40,8 +41,9 @@ const showProtocols = d.ranked.length > 0 && withProtocol / d.ranked.length >= 0
   <div class="eyebrow muted">Domain {num} of {sorted.length} · {profile} profile</div>
   <h1 style="margin-top: 6px; font-size: clamp(2rem, 4.5vw, 3rem)">{d.label} · Top 100</h1>
   <p class="body" style="margin-top: 14px; max-width: 72ch">
-    The Top 100 for this domain comes from the curated {d.snapshot_date} workbook; its order is recomputed on every build under the <strong>{profile}</strong> profile ({wtext}),
-    with the trust and governance components taken from the evidence ledger rather than the workbook. Every row exposes its components.
+    The Top 100 and its order are the curated {d.snapshot_date} workbook: the curator's judgment of which agents belong here and how well they fit.
+    The evidence columns are recomputed on every build — <strong>Trust</strong> from the publisher check and protocol probes, <strong>Gov</strong> from credited compliance evidence (vendor-level rows at half credit) — and the
+    <strong>Score</strong> weights all components under the <strong>{profile}</strong> profile ({wtext}). The score is shown beside the rank, not used to sort it.
     Scores are comparative discovery signals, not certification. Evidence as of {asOf} · {d.score_version}.
   </p>
   <div class="row" style="margin: 20px 0 12px; gap: 12px">
@@ -63,7 +65,7 @@ const showProtocols = d.ranked.length > 0 && withProtocol / d.ranked.length >= 0
           {showProtocols && <th>Protocols (MCP · A2A · ARD)</th>}
           <th>License</th>
           {comps.map((c) => <th title={c}>{short[c]}</th>)}
-          <th>Score</th>
+          <th title="evidence-weighted score; the list is in curated order">Score</th>
         </tr>
       </thead>
       <tbody>
@@ -75,7 +77,7 @@ const showProtocols = d.ranked.length > 0 && withProtocol / d.ranked.length >= 0
               <div class="tiny muted">{r.vendor} · {r.category}</div>
             </td>
             <td>
-              <div style="font-weight: 800">Publisher {IDENTITY_WORD[r.trust.identity as 1 | 2 | 3 | 4 | 5]} · evidence {tierRange(r)}</div>
+              <div style="font-weight: 800">Publisher {IDENTITY_WORD[r.trust.identity as 1 | 2 | 3 | 4 | 5]} · evidence {evidenceCell(r.trust)}</div>
               <div class="tiny muted">{securityWord(null, r.trust.security)} · {r.trust.issues == null ? "issues –" : r.trust.issues === 1 ? "no issues" : "issues linked"}</div>
             </td>
             {showProtocols && <td style="white-space: nowrap">{g(r.protocols.mcp)} · {g(r.protocols.a2a)} · {g(r.protocols.ard)}</td>}

@@ -6,6 +6,8 @@ export type ProtocolStatus = "verified" | "claimed" | "unknown" | "failed";
 export interface TrustSummary {
   identity: Tier;
   compliance: Tier;
+  /** best vendor-level (inherited) tier, null when none */
+  vendor_compliance?: Tier | null;
   security: Tier | null;
   protocols: Tier;
   issues: Tier | null;

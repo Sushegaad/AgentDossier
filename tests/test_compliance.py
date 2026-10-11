@@ -266,7 +266,12 @@ def test_finalize_dedupes_credits_and_flags_pending():
 
 def test_governance_from_evidence_uses_domain_preset_and_credit_weights():
     recs = engine.finalize(
-        [_rec("fedramp", "FEDRAMP_MODERATE"), _rec("iso27001", "ISO27001", tier=3)], 2, NOW
+        [
+            _rec("fedramp", "FEDRAMP_MODERATE", scope="product", covers_resource="yes"),
+            _rec("iso27001", "ISO27001", tier=3, scope="product", covers_resource="yes"),
+        ],
+        2,
+        NOW,
     )
     value, detail = engine.governance_from_evidence(recs, "government")
     # preset fedramp, csa_star, iso27001 + extras iso42001, csa_star: fedramp 1.0 + iso27001 0.7 over 5 slots
@@ -496,3 +501,11 @@ def test_claims_crawl_allows_heavy_vendor_pages(monkeypatch):
     monkeypatch.setattr(claims, "fetch", fake_fetch)
     claims.crawl_domain("example.com")
     assert all(v == claims.PAGE_MAX_BYTES for u, v in seen.items() if not u.endswith("robots.txt"))
+
+
+def test_governance_credits_vendor_level_rows_at_half():
+    agent = _rec("soc2", "SOC2_TYPE_II", tier=1, scope="product", covers_resource="yes", credited=True)
+    vendor = _rec("soc2", "SOC2_TYPE_II", tier=1, scope="entity", covers_resource="unknown", credited=True)
+    full, _ = engine.governance_from_evidence([agent], "technology")
+    half, _ = engine.governance_from_evidence([vendor], "technology")
+    assert full and half and abs(half - full / 2) < 0.2
