@@ -107,6 +107,61 @@ def cmd_mcp_probe(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_harness(args: argparse.Namespace) -> int:
+    """Run an AgentDojo prompt-injection suite against a model and record a trace (PR 3a)."""
+    from .build import SITE
+    from .harness import SOURCE, SUITES, record_run, run_suite
+    from .harness.models import load_models
+    from .traces.store import TraceStore
+    from .util import now_iso
+
+    if args.action == "list-suites":
+        print(f"{SOURCE} suites:", ", ".join(SUITES))
+        print("models:", ", ".join(load_models()) or "(none configured)")
+        return 0
+
+    if args.model == "mock":
+        from .harness.mock import RefusingPipeline
+
+        pipeline: object = RefusingPipeline()
+        model_key = "mock-refusing"
+    else:
+        models = load_models()
+        if args.model not in models:
+            print(f"unknown model '{args.model}'; known: {', '.join(models) or 'none'}")
+            return 2
+        pipeline = _build_backend(models[args.model]["backend"])
+        model_key = args.model
+
+    store = TraceStore()
+    suites = [args.suite] if args.suite else list(SUITES)
+    wrote = []
+    for suite in suites:
+        result = run_suite(pipeline, suite, attack_name=args.attack)
+        if result.error:
+            print(f"{suite}: {result.error}")
+            continue
+        print(
+            f"{suite}: {result.injections_succeeded}/{result.pairs} injections succeeded "
+            f"(attack success rate {result.attack_success_rate})"
+        )
+        tid = record_run(store, result, model_key, site=SITE, date=now_iso()[:10])
+        if tid:
+            wrote.append(tid)
+    print(f"appended {len(wrote)} bundle(s) to {store.index_path}: {', '.join(wrote) or 'none (unchanged)'}")
+    return 0
+
+
+def _build_backend(backend: dict[str, object]) -> object:
+    """An AgentDojo pipeline for a real run. Keys come from the environment, never the repo."""
+    from agentdojo.agent_pipeline import AgentPipeline
+
+    provider = str(backend.get("provider"))
+    model = str(backend.get("model"))
+    config = {"llm": provider, "model": model} if provider != "local" else {"llm": "local", "model": model}
+    return AgentPipeline.from_config(config)
+
+
 def cmd_config_check(args: argparse.Namespace) -> int:
     """Validate config/ and schema/ files: JSON parses, profiles map to every domain, frameworks complete."""
     problems: list[str] = []
@@ -341,6 +396,23 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("origin", help="https://host for a card, or the MCP endpoint URL with --handshake")
     p.add_argument("--handshake", action="store_true")
     p.set_defaults(func=cmd_mcp_probe)
+
+    p = sub.add_parser(
+        "harness", help="run a published prompt-injection benchmark against a model and record a trace"
+    )
+    p.add_argument(
+        "action",
+        choices=["run", "list-suites"],
+        help="run: benchmark and record; list-suites: show suites and models",
+    )
+    p.add_argument(
+        "--model",
+        default="mock",
+        help="model key from data/traces/harness/models.yaml, or 'mock' (no model/network)",
+    )
+    p.add_argument("--suite", help="one AgentDojo suite (default: all)")
+    p.add_argument("--attack", default="ignore_previous", help="AgentDojo attack name")
+    p.set_defaults(func=cmd_harness)
 
     p = sub.add_parser("config-check", help="validate config/ and schema/ files")
     p.set_defaults(func=cmd_config_check)

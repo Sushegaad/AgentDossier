@@ -7,6 +7,13 @@ listed in `docs/methodology.md`.
 ## [Unreleased]
 
 ### Added — traces
+- **Sandbox harness (`agentdossier harness`).** Produces new attack-and-defense traces by running
+  an agent against the AgentDojo prompt-injection benchmark (MIT) — it does not author attacks —
+  and recording, per task, whether the injection succeeded, as a tier-1 `injection_eval` bundle in
+  the store. Model-level (`scope: model`), inherited by the catalog agents a model is mapped to in
+  `data/traces/harness/models.yaml`. `--model mock` runs the full pipeline with no model or
+  network; real runs go through the monthly `harness` workflow. Optional `harness` extra pins
+  AgentDojo.
 - Every dossier now carries **Traces**: public observations of the agent under attack, in
   defence or in an incident, tiered T1–T5 with "none found" said out loud. Seven curated
   public traces to start (EchoLeak, ForcedLeak, CamoLeak, the Gemini CLI and Amazon Q

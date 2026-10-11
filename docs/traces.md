@@ -33,9 +33,16 @@ when nothing exists. The absence is the point: it is the number this project exi
    everywhere is recorded in the dossier's protocol block, not as a trace.
 3. **Vendor-published bundles** at a well-known path — proposed as an ARD manifest extension
    (`traces: { url, format, sha256 }`); shown as `vendor_published` T1 when the bundle validates.
-4. **A sandbox harness** that runs self-hostable agents in a locked-down container against
-   public prompt-injection and tool-abuse scenarios and records OpenTelemetry GenAI spans — the
-   part that produces new attack-and-defense traces. Planned; see the implementation plan.
+4. **The sandbox harness** (`agentdossier/harness/`, PR 3a) — the part that *produces* new
+   attack-and-defense traces. It does not author attacks: it runs an agent against
+   [AgentDojo](https://github.com/ethz-spylab/agentdojo) (MIT), a peer-reviewed set of
+   prompt-injection tasks and attacks, and records, per task, whether the injection succeeded,
+   with the tool trace. AgentDojo measures a *model's* susceptibility inside a generic tool-use
+   agent, so a harness trace is `scope: model` — inherited, model-level evidence for every agent
+   built on that model (`data/traces/harness/models.yaml` maps model → agents), never a claim
+   about one product. `agentdossier harness run --model mock` runs the whole pipeline with no
+   model or network (used by the tests); real runs use a model backend and happen in the
+   `harness` workflow, which opens a `traces/harness` PR. Tier 1: reproducible, public artifacts.
 
 ## The store: `data/traces/`
 

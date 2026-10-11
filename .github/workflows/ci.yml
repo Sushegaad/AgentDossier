@@ -38,6 +38,10 @@ jobs:
         run: uv run python scripts/check_traceability.py
       - name: Trace store chain (data/traces)
         run: uv run python scripts/verify_traces.py
+      - name: Harness (AgentDojo, model-free mock run)
+        run: |
+          uv sync --extra dev --extra harness
+          uv run pytest -q tests/test_harness.py
       - name: Enterprise self-test (loopback)
         run: uv run agentdossier enterprise selftest
 

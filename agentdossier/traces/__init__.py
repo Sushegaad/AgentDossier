@@ -36,25 +36,47 @@ KIND_WORD = {
 
 
 def apply_traces(resources: list[dict[str, Any]], store: TraceStore | None = None) -> dict[str, int]:
-    """Attach curated and stored trace records to every resource; returns counts for the report."""
+    """Attach curated and stored trace records to every resource; returns counts for the report.
+
+    Stored records whose line ``agent`` is a resource id or slug attach directly. Harness records
+    (``scope: model``) are stored under a model key and fan out to every catalog agent the model
+    map lists for that model, as inherited, model-level evidence.
+    """
     by_slug: dict[str, list[dict[str, Any]]] = {}
     for rec in load_curated():
         by_slug.setdefault(rec["agent"], []).append(rec)
     stored = store.records_by_agent() if store else {}
-    counts = {"curated": 0, "stored": 0, "agents_with_traces": 0}
+    model_fanout = _model_fanout(stored)
+    counts = {"curated": 0, "stored": 0, "model_level": 0, "agents_with_traces": 0}
     for res in resources:
         recs = [dict(r) for r in by_slug.get(res["slug"], [])]
         counts["curated"] += len(recs)
         own = stored.get(res["id"], []) + stored.get(res["slug"], [])
         counts["stored"] += len(own)
-        recs += own
+        inherited = model_fanout.get(res["slug"], []) + model_fanout.get(res["id"], [])
+        counts["model_level"] += len(inherited)
+        recs += own + inherited
         for r in recs:
             r.pop("agent", None)
-        recs.sort(key=lambda r: (int(r["tier"]), r.get("date") or ""), reverse=False)
+        recs.sort(key=lambda r: (int(r["tier"]), r.get("date") or ""))
         res["traces"] = recs
         if recs:
             counts["agents_with_traces"] += 1
     return counts
+
+
+def _model_fanout(stored: dict[str, list[dict[str, Any]]]) -> dict[str, list[dict[str, Any]]]:
+    """catalog slug/id -> the model-scoped records inherited from the models it runs."""
+    from ..harness.models import load_models
+
+    out: dict[str, list[dict[str, Any]]] = {}
+    for model_key, entry in load_models().items():
+        records = stored.get(model_key, [])
+        if not records:
+            continue
+        for agent in entry.get("agents") or []:
+            out.setdefault(str(agent), []).extend(records)
+    return out
 
 
 def trace_tier(res: dict[str, Any]) -> int:
