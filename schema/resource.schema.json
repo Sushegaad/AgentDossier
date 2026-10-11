@@ -593,6 +593,13 @@
           ],
           "minimum": 1,
           "maximum": 5
+        },
+        "vendor_compliance": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Best active tier among vendor-level (entity-scoped or inherited) records; null when none"
         }
       },
       "additionalProperties": false

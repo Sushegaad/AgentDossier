@@ -199,6 +199,18 @@ def finalize(
     return out
 
 
+VENDOR_LEVEL_CREDIT = 0.5
+
+
+def _agent_scoped(rec: dict[str, Any]) -> bool:
+    """Same split as web/src/lib/dossier.ts agentScoped(): about this agent, or about its vendor."""
+    if rec.get("covers_resource") == "yes":
+        return True
+    if rec.get("covers_resource") == "inherited":
+        return False
+    return rec.get("scope") != "entity"
+
+
 def governance_from_evidence(
     records: list[dict[str, Any]], domain: str
 ) -> tuple[float | None, dict[str, Any]]:
@@ -214,7 +226,10 @@ def governance_from_evidence(
         best = 0.0
         for rec in records:
             if rec["framework"] == fw_id and rec.get("credited") and rec["status"] == "active":
-                best = max(best, float(credit.get(str(rec["tier"]), 0.0)))
+                value = float(credit.get(str(rec["tier"]), 0.0))
+                if not _agent_scoped(rec):
+                    value *= VENDOR_LEVEL_CREDIT  # the vendor was assessed; this agent's scope is unknown
+                best = max(best, value)
         if best:
             detail["credited"][fw_id] = best
         total += best

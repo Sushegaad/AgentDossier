@@ -8,9 +8,12 @@ listed in `docs/methodology.md`.
 
 ### Changed — trust and credibility (one PR)
 - **Scores (`sar-score-2.0`).** Trust and governance are recomputed from evidence for every
-  row, including the curated Top 100, and each domain list is re-ordered by the result; the
-  workbook's values and order stay on the record (`seed_components`, `seed_rank`). The second
-  "evidence-based governance" figure is gone; scores are shown as integers.
+  row, including the curated Top 100; the workbook's values stay on the record
+  (`seed_components`). The second "evidence-based governance" figure is gone; scores are
+  integers. The Top 100 keeps the curator's order: the first build sorted by the recomputed
+  score and put LangChain first in Sales and Copilot Studio first in Healthcare, because the
+  workbook's fit value is 100 for nearly every row. Vendor-level evidence earns half credit in
+  governance, and list rows show "agent T1 · vendor T1" instead of one tier.
 - **Publisher identity (`identity-1.1`).** A product page on the vendor's own domain confirms
   the publisher (tier 2), so registry evidence for Agentforce, Bedrock and the like is credited.
   `config/vendor_aliases.json` maps workbook names to registry spellings ("AWS" → "Amazon",

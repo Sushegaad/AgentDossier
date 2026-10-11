@@ -223,26 +223,32 @@ def _score_domains(res: dict[str, Any], cfg: ScoringConfig, *, is_seed: bool) ->
 
 
 def _rerank_seed_rows(resources: list[dict[str, Any]]) -> None:
-    """Order each domain's Top 100 by the recomputed score; the workbook's order is ``seed_rank``."""
-    by_domain: dict[str, list[dict[str, Any]]] = {}
+    """Keep each domain's Top 100 in the workbook's order; the recomputed score sits beside it.
+
+    The first sar-score-2.0 build ordered the lists by the recomputed score and put LangChain
+    first in Sales and Copilot Studio first in Healthcare: the workbook's domain-fit value is
+    100 for nearly every row, so once trust and governance came from evidence the only thing
+    left to separate a clinical-documentation agent from a general platform was the platform
+    vendor's certifications. The curator's order is the domain-fit judgment the components do
+    not carry, so it stays the rank. The evidence-weighted score is shown, not sorted on.
+    """
     for res in resources:
-        for d, entry in res["domains"].items():
+        for entry in res["domains"].values():
             if entry.get("seed_rank"):
-                by_domain.setdefault(d, []).append(entry)
-    for entries in by_domain.values():
-        entries.sort(key=lambda e: (-float(e["score"]), int(e["seed_rank"])))
-        for i, e in enumerate(entries, 1):
-            e["rank"] = i
+                entry["rank"] = entry["seed_rank"]
 
 
 def _trust_summary(res: dict[str, Any]) -> dict[str, int | None]:
     comp = res.get("compliance") or []
-    # agent-scoped rows only, the same split the dossier makes (web/src/lib/dossier.ts agentScoped)
+    # agent-scoped rows only, the same split the dossier makes (web/src/lib/dossier.ts agentScoped);
+    # vendor-level rows are summarised separately so a list row can say "agent – · vendor T1"
     active = [int(c["tier"]) for c in comp if c.get("status") == "active" and _agent_scoped(c)]
+    vendor = [int(c["tier"]) for c in comp if c.get("status") == "active" and not _agent_scoped(c)]
     protos = [p.get("status") for p in res["protocols"].values()]
     return {
         "identity": int(res["identity"]["tier"]),
         "compliance": min(active) if active else 5,
+        "vendor_compliance": min(vendor) if vendor else None,
         "security": res.get("security", {}).get("tier") if res.get("security") else None,
         "protocols": 1 if "verified" in protos else 3 if "claimed" in protos else 5,
         "issues": _issues_tier(res),

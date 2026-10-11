@@ -99,12 +99,11 @@ def test_offline_build_writes_valid_outputs(tmp_path):
     assert len(index["records"]) == 158 and index["disclaimer"].startswith("Reference implementation")
     ins = json.loads((tmp_path / "domains" / "insurance.json").read_text())
     assert [r["rank"] for r in ins["ranked"]] == list(range(1, 101))
-    # sar-score-2.0: the workbook's order is kept as seed_rank; rank follows the recomputed score
-    assert sorted(r["seed_rank"] for r in ins["ranked"]) == list(range(1, 101))
-    assert next(r for r in ins["ranked"] if r["seed_rank"] == 1)["name"] == "Agentforce Financial Services"
-    scores = [r["score"] for r in ins["ranked"]]
-    assert scores == sorted(scores, reverse=True)
+    # sar-score-2.0: the curated order is the rank; the evidence-weighted score sits beside it
+    assert [r["seed_rank"] for r in ins["ranked"]] == list(range(1, 101))
+    assert ins["ranked"][0]["name"] == "Agentforce Financial Services"
     assert all(r["components"]["trust"] is not None for r in ins["ranked"])
+    assert "vendor_compliance" in ins["ranked"][0]["trust"]
     assert (tmp_path / "ard.json").exists() and (tmp_path / "agents-list" / "page-1.json").exists()
     agent = json.loads(next((tmp_path / "agents").glob("*.json")).read_text())
     assert "raw" not in agent and agent["identity"]["tier"] in (2, 3, 4)

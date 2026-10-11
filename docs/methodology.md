@@ -9,10 +9,16 @@ from the curated workbook: **trust** is derived from the publisher identity
 tier and the protocol probes, and **governance** from credited compliance
 evidence (next section), for workbook and discovered rows alike. The
 workbook's five other values (adoption, health, ecosystem, fit, docs) are
-kept because nothing better is known for them, and its original values and
-order stay on every record as `seed_components` and `seed_rank`. Each
-domain's Top 100 is therefore the workbook's *list*, re-ordered on every
-build by the evidence.
+kept because nothing better is known for them, and its original values stay
+on every record as `seed_components`. Each domain's Top 100 keeps the
+workbook's *order* (`seed_rank`): the curator's ranking is the domain-fit
+judgment that the components do not carry (the workbook's fit value is 100
+for nearly every row), and an experiment that sorted by the recomputed score
+put general platforms first in every regulated domain on the strength of
+their vendors' certifications. The evidence-weighted score is shown beside
+the rank, never used to sort it. Vendor-level evidence (a certification the
+organisation holds, scope unknown for this agent) earns half credit in the
+governance component.
 
 | Dimension | General | Technology | Regulated | Security | Commercial | Data | Operations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
