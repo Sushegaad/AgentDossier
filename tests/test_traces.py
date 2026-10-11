@@ -157,3 +157,96 @@ def test_self_test_bundles_only_for_found_probes_and_only_when_changed(tmp_path)
     assert counts["appended"] == 1 and len(store.lines()) == 2 and store.verify() == []
     apply_traces([found], store)
     assert len(found["traces"]) == 2 and trace_tier(found) == 1
+
+
+# --- vendor-published traces (PR 4) ------------------------------------------------------------
+
+
+def test_ard_trace_pointers_parsed_and_stashed():
+    from agentdossier.standards.ard import entry_to_resource, trace_pointers
+
+    entry = {
+        "identifier": "urn:air:acme:agent:bot",
+        "displayName": "Acme Bot",
+        "type": "agent",
+        "url": "https://acme.example/bot",
+        "traces": [
+            {"url": "https://acme.example/t.json", "format": "bundle", "sha256": "sha256:abc"},
+            {"url": "http://insecure.example/t.json"},  # not https → dropped
+            {"format": "bundle"},  # no url → dropped
+        ],
+    }
+    ptrs = trace_pointers(entry)
+    assert ptrs == [{"url": "https://acme.example/t.json", "format": "bundle", "sha256": "sha256:abc"}]
+    res = entry_to_resource(entry, "https://acme.example/.well-known/ard.json")
+    assert res["signals"]["ard_trace_pointers"] == ptrs
+
+
+def test_fetch_vendor_traces_tiers_on_hash_and_reachability(tmp_path, monkeypatch):
+    import hashlib
+
+    from agentdossier.traces import vendor
+    from agentdossier.util import FetchResult
+
+    body = b'{"schema":"agentdossier.trace/1","observed":{"injections_succeeded":0}}'
+    good = "sha256:" + hashlib.sha256(body).hexdigest()
+
+    def fake_fetch(url, **kw):
+        if "good" in url:
+            return FetchResult(url, 200, {"Content-Type": "application/json"}, body)
+        if "mismatch" in url:
+            return FetchResult(url, 200, {"Content-Type": "application/json"}, body)
+        return FetchResult(url, 404, {}, b"", error="not found")
+
+    monkeypatch.setattr(vendor, "fetch", fake_fetch)
+    store = TraceStore(tmp_path / "traces")
+    resources = [
+        {
+            "id": "r1",
+            "name": "Good",
+            "vendor": "Acme",
+            "signals": {
+                "ard_trace_pointers": [{"url": "https://acme/good.json", "format": "bundle", "sha256": good}]
+            },
+        },
+        {
+            "id": "r2",
+            "name": "Mismatch",
+            "vendor": "Acme",
+            "signals": {
+                "ard_trace_pointers": [
+                    {"url": "https://acme/mismatch.json", "format": "bundle", "sha256": "sha256:" + "0" * 64}
+                ]
+            },
+        },
+        {
+            "id": "r3",
+            "name": "Gone",
+            "vendor": "Acme",
+            "signals": {"ard_trace_pointers": [{"url": "https://acme/gone.json", "format": "bundle"}]},
+        },
+    ]
+    counts = vendor.fetch_vendor_traces(resources, store, site="https://s.example/", date="2026-10-11")
+    assert counts == {"declared": 3, "verified": 1, "claimed": 2}
+    by_agent = store.records_by_agent()
+    assert by_agent["r1"][0]["tier"] == 1 and by_agent["r1"][0]["kind"] == "vendor_published"
+    assert by_agent["r2"][0]["tier"] == 4 and "does not match" in by_agent["r2"][0]["observed"]["outcome"]
+    assert by_agent["r3"][0]["tier"] == 4 and store.verify() == []
+    # deduped by url+hash
+    assert (
+        vendor.fetch_vendor_traces(resources, store, site="https://s.example/", date="2026-10-18")["declared"]
+        == 3
+    )
+    assert len(store.lines()) == 3
+
+
+def test_example_bundle_matches_spec_shape():
+    import json
+    from pathlib import Path
+
+    b = json.loads(
+        (Path(__file__).parent.parent / "examples" / "traces" / "vendor-bundle.example.json").read_text()
+    )
+    assert (
+        b["schema"] == "agentdossier.trace/1" and "observed" in b and "injections_succeeded" in b["observed"]
+    )

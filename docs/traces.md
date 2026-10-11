@@ -31,8 +31,10 @@ when nothing exists. The absence is the point: it is the number this project exi
    manifest, valid or not) and the observation differs from the last bundle for that agent, a
    `self_test` bundle is appended to the store (`agentdossier/traces/selftest.py`). A "not found"
    everywhere is recorded in the dossier's protocol block, not as a trace.
-3. **Vendor-published bundles** at a well-known path — proposed as an ARD manifest extension
-   (`traces: { url, format, sha256 }`); shown as `vendor_published` T1 when the bundle validates.
+3. **Vendor-published bundles** — a vendor serves a trace bundle and names it in its ARD manifest
+   entry (`traces: [{url, format, sha256}]`); the build fetches it, checks the hash, and shows it
+   as `vendor_published` (tier 1 when fetched and the hash matches, tier 4 when only claimed). The
+   vendor spec and an example bundle are in [docs/traces-spec.md](traces-spec.md).
 4. **The sandbox harness** (`agentdossier/harness/`, PR 3a) — the part that *produces* new
    attack-and-defense traces. It does not author attacks: it runs an agent against
    [AgentDojo](https://github.com/ethz-spylab/agentdojo) (MIT), a peer-reviewed set of

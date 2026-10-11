@@ -7,6 +7,10 @@ listed in `docs/methodology.md`.
 ## [Unreleased]
 
 ### Added — traces
+- **Vendor-published traces (PR 4).** A vendor can serve a trace bundle and name it in its ARD
+  manifest entry (`traces: [{url, format, sha256}]`); the build fetches it, checks the stated
+  hash, and shows it on the dossier as `vendor_published` (tier 1 verified, tier 4 when only
+  claimed). Spec and example bundle in `docs/traces-spec.md`.
 - **Sandbox harness (`agentdossier harness`).** Produces new attack-and-defense traces by running
   an agent against the AgentDojo prompt-injection benchmark (MIT) — it does not author attacks —
   and recording, per task, whether the injection succeeded, as a tier-1 `injection_eval` bundle in

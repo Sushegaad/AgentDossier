@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:example:agent:support-bot",
+      "displayName": "Example Support Bot",
+      "type": "agent",
+      "url": "https://example.com/agents/support-bot",
+      "traces": [
+        {
+          "url": "https://example.com/.well-known/traces/support-bot-2.4.0.json",
+          "format": "bundle",
+          "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    }
+  ]
+}

@@ -37,6 +37,7 @@ from .score import COMPONENTS_VERSION, ScoringConfig, components_from_signals, s
 from .traces import TraceStore, apply_traces, trace_tier
 from .traces.selftest import record_probes
 from .traces.store import STORE_ROOT
+from .traces.vendor import fetch_vendor_traces
 from .util import ROOT, Deadline, NetPolicy, domain_of, load_config, now_iso
 
 ALL_SOURCES = ("seed", "marketplaces", "mcp_registry", "huggingface", "github", "ard_web")
@@ -464,6 +465,13 @@ def enrich(
             **record_probes(resources, store_t, site=opts.site, date=now_iso()[:10]),
         }
         _deadline.log("traces", f"{reports['self_test_traces']['appended']} new probe transcripts")
+        # vendor-published bundles declared in ARD manifests (PR 4); none in the wild yet
+        reports["vendor_traces"] = {
+            "source": "vendor_published",
+            **fetch_vendor_traces(
+                resources, store_t, policy=opts.policy, site=opts.site, date=now_iso()[:10]
+            ),
+        }
     reports["traces"] = {"source": "traces", **apply_traces(resources, store_t)}
 
     for res in resources:
