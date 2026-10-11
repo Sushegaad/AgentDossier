@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d0d48ad9290a72ce4ff69247883bcd15728443e656b9fb83da079e568b0a7052",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:07Z",
+"retrieved_at": "2026-10-11T03:12:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "01a0f4a668d542ade732a2259d261ff02bf2956d56c9c3e577bcb461355d333b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:07Z",
+"retrieved_at": "2026-10-11T03:12:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "6e7bccf918407dd9e9a675d92f11dcddccc3215596708003898a0703da2e9e94",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:07Z",
+"retrieved_at": "2026-10-11T03:12:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d0d48ad9290a72ce4ff69247883bcd15728443e656b9fb83da079e568b0a7052",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:07Z",
+"retrieved_at": "2026-10-11T03:12:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -127,7 +127,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "security",
-"rank": 94,
+"rank": 95,
 "recomputed": 77.2,
 "score": 68.2,
 "score_version": "sar-score-2.0",
@@ -151,7 +151,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 92,
+"rank": 100,
 "recomputed": 72.2,
 "score": 61.1,
 "score_version": "sar-score-2.0",
@@ -175,7 +175,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 92,
+"rank": 93,
 "recomputed": 72.8,
 "score": 61.1,
 "score_version": "sar-score-2.0",
@@ -199,7 +199,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 92,
+"rank": 6,
 "recomputed": 90.8,
 "score": 61.1,
 "score_version": "sar-score-2.0",
@@ -223,7 +223,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 93,
+"rank": 97,
 "recomputed": 72.2,
 "score": 61.1,
 "score_version": "sar-score-2.0",
@@ -234,7 +234,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -256,24 +256,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Shift Technology AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:35Z",
+"checked_at": "2026-10-11T03:06:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:33Z",
+"checked_at": "2026-10-11T03:06:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:37Z",
+"checked_at": "2026-10-11T03:06:33Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -283,7 +283,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:23Z",
+"checked_at": "2026-10-11T03:15:29Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -308,7 +308,7 @@
 "sources": [
 {
 "payload_hash": "0d6d8538f168f4845d66b9b921aa7c1e438c51a3515d26c083a6db692c5eb7ee",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.shift-technology.com/"
 }
@@ -320,7 +320,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://www.shift-technology.com/",
 "vendor": "Shift Technology"

@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3b830dc22e0a8b6e84b939c9f54540d05a83ccae46c9710b9c0436e01ea38186",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:52Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "24da02895fb12cb17918abb8beb5bb7b1dc57faf0488e3bd061e024ef2f9468e",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:52Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3b830dc22e0a8b6e84b939c9f54540d05a83ccae46c9710b9c0436e01ea38186",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:52Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3b830dc22e0a8b6e84b939c9f54540d05a83ccae46c9710b9c0436e01ea38186",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:52Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -123,7 +123,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3b830dc22e0a8b6e84b939c9f54540d05a83ccae46c9710b9c0436e01ea38186",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:52Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -149,7 +149,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3b830dc22e0a8b6e84b939c9f54540d05a83ccae46c9710b9c0436e01ea38186",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:52Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -170,7 +170,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 22.5,
+"governance": 11.2,
 "health": 20.0,
 "trust": 19.0
 },
@@ -178,14 +178,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "general",
-"rank": 27,
+"rank": 24,
 "recomputed": 92.0,
-"score": 86.3,
+"score": 85.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 24,
 "seed_score": 92.0,
@@ -198,7 +198,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 18.0,
+"governance": 9.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -206,14 +206,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "security",
-"rank": 35,
+"rank": 45,
 "recomputed": 80.6,
-"score": 82.6,
+"score": 81.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 45,
 "seed_score": 80.6,
@@ -226,7 +226,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 18.0,
+"governance": 9.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -234,12 +234,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "data",
-"rank": 21,
+"rank": 12,
 "recomputed": 91.0,
 "score": 91.2,
 "score_version": "sar-score-2.0",
@@ -254,7 +254,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 18.0,
+"governance": 9.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -262,14 +262,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 29,
+"rank": 66,
 "recomputed": 75.1,
-"score": 79.0,
+"score": 77.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 66,
 "seed_score": 75.1,
@@ -277,6 +277,202 @@
 "unknown": []
 },
 "government": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"iso27001": 0.15,
+"iso42001": 0.15
+},
+"profile": "regulated",
+"rank": 56,
+"recomputed": 75.7,
+"score": 77.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 56,
+"seed_score": 75.7,
+"source": "seed_xlsx",
+"unknown": []
+},
+"healthcare": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 9.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"hipaa": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
+},
+"profile": "regulated",
+"rank": 58,
+"recomputed": 75.1,
+"score": 77.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 58,
+"seed_score": 75.1,
+"source": "seed_xlsx",
+"unknown": []
+},
+"insurance": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"hipaa": 0.15,
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
+},
+"profile": "regulated",
+"rank": 54,
+"recomputed": 75.1,
+"score": 77.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 54,
+"seed_score": 75.1,
+"source": "seed_xlsx",
+"unknown": []
+},
+"legal": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 9.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
+},
+"profile": "regulated",
+"rank": 55,
+"recomputed": 75.1,
+"score": 77.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 55,
+"seed_score": 75.1,
+"source": "seed_xlsx",
+"unknown": []
+},
+"regulatory": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 9.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
+},
+"profile": "regulated",
+"rank": 61,
+"recomputed": 75.1,
+"score": 77.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 61,
+"seed_score": 75.1,
+"source": "seed_xlsx",
+"unknown": []
+},
+"sales": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 9.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"gdpr": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
+},
+"profile": "commercial",
+"rank": 3,
+"recomputed": 91.8,
+"score": 86.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 3,
+"seed_score": 91.8,
+"source": "seed_xlsx",
+"unknown": []
+},
+"supply_chain": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 11.2,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
+},
+"profile": "operations",
+"rank": 46,
+"recomputed": 80.0,
+"score": 87.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 46,
+"seed_score": 80.0,
+"source": "seed_xlsx",
+"unknown": []
+},
+"technology": {
 "components": {
 "adoption": 27.0,
 "docs": 9.0,
@@ -290,208 +486,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
-},
-"profile": "regulated",
-"rank": 47,
-"recomputed": 75.7,
-"score": 78.1,
-"score_version": "sar-score-2.0",
-"seed_rank": 56,
-"seed_score": 75.7,
-"source": "seed_xlsx",
-"unknown": []
-},
-"healthcare": {
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 18.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"hipaa": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
-},
-"profile": "regulated",
-"rank": 29,
-"recomputed": 75.1,
-"score": 79.0,
-"score_version": "sar-score-2.0",
-"seed_rank": 58,
-"seed_score": 75.1,
-"source": "seed_xlsx",
-"unknown": []
-},
-"insurance": {
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 20.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"hipaa": 0.3,
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
-},
-"profile": "regulated",
-"rank": 27,
-"recomputed": 75.1,
-"score": 79.3,
-"score_version": "sar-score-2.0",
-"seed_rank": 54,
-"seed_score": 75.1,
-"source": "seed_xlsx",
-"unknown": []
-},
-"legal": {
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 18.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
-},
-"profile": "regulated",
-"rank": 31,
-"recomputed": 75.1,
-"score": 79.0,
-"score_version": "sar-score-2.0",
-"seed_rank": 55,
-"seed_score": 75.1,
-"source": "seed_xlsx",
-"unknown": []
-},
-"regulatory": {
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 18.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
-},
-"profile": "regulated",
-"rank": 31,
-"recomputed": 75.1,
-"score": 79.0,
-"score_version": "sar-score-2.0",
-"seed_rank": 61,
-"seed_score": 75.1,
-"source": "seed_xlsx",
-"unknown": []
-},
-"sales": {
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 18.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"gdpr": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
-},
-"profile": "commercial",
-"rank": 26,
-"recomputed": 91.8,
-"score": 87.1,
-"score_version": "sar-score-2.0",
-"seed_rank": 3,
-"seed_score": 91.8,
-"source": "seed_xlsx",
-"unknown": []
-},
-"supply_chain": {
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 22.5,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
-},
-"profile": "operations",
-"rank": 27,
-"recomputed": 80.0,
-"score": 87.8,
-"score_version": "sar-score-2.0",
-"seed_rank": 46,
-"seed_score": 80.0,
-"source": "seed_xlsx",
-"unknown": []
-},
-"technology": {
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 24.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "technology",
-"rank": 22,
+"rank": 30,
 "recomputed": 94.3,
 "score": 90.7,
 "score_version": "sar-score-2.0",
@@ -502,7 +502,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -524,24 +524,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Glean Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:31Z",
+"checked_at": "2026-10-11T03:05:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:30Z",
+"checked_at": "2026-10-11T03:05:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:32Z",
+"checked_at": "2026-10-11T03:05:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -551,7 +551,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:57:56Z",
+"checked_at": "2026-10-11T03:13:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -576,7 +576,7 @@
 "sources": [
 {
 "payload_hash": "08d4ba7b00fbc48b02057ec3728e7c1aea462f5fd024a8fa13ace8f39e734ee7",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.glean.com/"
 }
@@ -588,7 +588,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://www.glean.com/",
 "vendor": "Glean"

@@ -30,7 +30,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ad5daa95c24dc7d17a2ec05b2e034d3f66059ab127d32fcb8dadfec2909f0a7f",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:31Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -54,9 +54,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "eb160755bfe3ebbceebfb68bf83cd4f9323c087dce3afe2777fd45a30b1870ca",
+"payload_hash": "67510feb8da1d904f0f2f14e587740a4edc79ec0dee676c0cda7cf30bef8951b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:31Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -82,7 +82,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "5b61ef8cf9830424cc8af20c2c1eb8855b0fc62118ed178afe26310b8c519ad4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:31Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -108,7 +108,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ad5daa95c24dc7d17a2ec05b2e034d3f66059ab127d32fcb8dadfec2909f0a7f",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:31Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -129,7 +129,7 @@
 "docs": 9.0,
 "domain_fit": 71.3,
 "ecosystem": 8.5,
-"governance": 6.0,
+"governance": 3.0,
 "health": null,
 "trust": 21.0
 },
@@ -137,7 +137,7 @@
 "confidence": 0.713,
 "evidence_coverage": 0.5,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -153,7 +153,7 @@
 "external_ids": {
 "ard": "urn:air:zapier.com:skills:catalog"
 },
-"first_seen": "2026-10-11T01:50:01Z",
+"first_seen": "2026-10-11T03:06:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -175,7 +175,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:50:01Z",
+"last_seen": "2026-10-11T03:06:54Z",
 "license": null,
 "name": "Zapier Agent Skills",
 "news": [],
@@ -208,7 +208,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:09:03Z",
+"checked_at": "2026-10-11T03:23:58Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -218,7 +218,7 @@
 "sources": [
 {
 "payload_hash": "b202c9bd3ef61b0d49b23bdf7963384f6b9ded9360093ba9308bb7a5b71c6b35",
-"retrieved_at": "2026-10-11T01:50:01Z",
+"retrieved_at": "2026-10-11T03:06:54Z",
 "system": "ard",
 "url": "https://zapier.com/.well-known/ai-catalog.json"
 }
@@ -234,7 +234,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://zapier.com/.well-known/agent-skills/index.json",
 "vendor": "zapier.com"

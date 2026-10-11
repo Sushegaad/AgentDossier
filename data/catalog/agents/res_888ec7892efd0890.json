@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:alpic.ai:plugin:alpic"
 },
-"first_seen": "2026-10-11T01:47:19Z",
+"first_seen": "2026-10-11T03:04:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:19Z",
+"last_seen": "2026-10-11T03:04:27Z",
 "license": null,
 "name": "Alpic Plugin",
 "news": [],
@@ -97,7 +97,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:52Z",
+"checked_at": "2026-10-11T03:22:53Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -107,7 +107,7 @@
 "sources": [
 {
 "payload_hash": "3146bbafc0eaa92ca66f3bcb426a8c71bd8894ef0841cda4fcc50c21ec7e6cab",
-"retrieved_at": "2026-10-11T01:47:19Z",
+"retrieved_at": "2026-10-11T03:04:27Z",
 "system": "ard",
 "url": "https://alpic.ai/.well-known/ai-catalog.json"
 }
@@ -119,7 +119,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://github.com/alpic-ai/alpic-plugin/archive/refs/heads/main.zip",
 "vendor": "alpic.ai"

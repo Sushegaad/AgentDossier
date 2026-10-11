@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "Evil0ctal/Douyin_TikTok_Download_API"
 },
-"first_seen": "2026-10-11T01:43:40Z",
+"first_seen": "2026-10-11T03:01:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,7 +101,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:40Z",
+"last_seen": "2026-10-11T03:01:06Z",
 "license": "Apache-2.0",
 "name": "Douyin_TikTok_Download_API",
 "news": [
@@ -131,12 +131,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:17Z",
+"checked_at": "2026-10-11T03:05:21Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:16Z",
+"checked_at": "2026-10-11T03:05:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -144,7 +144,7 @@
 "evidence_url": "https://douyin.wtf",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:48:18Z",
+"checked_at": "2026-10-11T03:05:22Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -156,7 +156,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:05:56Z",
+"checked_at": "2026-10-11T03:21:00Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -175,8 +175,8 @@
 "slug": "evil0ctal-douyin-tiktok-download-api",
 "sources": [
 {
-"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
-"retrieved_at": "2026-10-11T01:43:40Z",
+"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
+"retrieved_at": "2026-10-11T03:01:06Z",
 "system": "github",
 "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API"
 }
@@ -209,7 +209,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://douyin.wtf",
 "vendor": "Evil0ctal"

@@ -28,7 +28,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "bf6a720c645a46442a19dcb3422668d68bc21a0147acfc69c95189191ed7eb45",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:33Z",
+"retrieved_at": "2026-10-11T03:12:21Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -68,7 +68,7 @@
 "external_ids": {
 "github": "czlonkowski/n8n-mcp"
 },
-"first_seen": "2026-10-11T01:43:40Z",
+"first_seen": "2026-10-11T03:01:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -90,7 +90,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:40Z",
+"last_seen": "2026-10-11T03:01:06Z",
 "license": "MIT",
 "name": "n8n-mcp",
 "news": [
@@ -120,12 +120,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:07Z",
+"checked_at": "2026-10-11T03:06:07Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:04Z",
+"checked_at": "2026-10-11T03:06:05Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -133,7 +133,7 @@
 "evidence_url": "https://www.n8n-mcp.com/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:49:08Z",
+"checked_at": "2026-10-11T03:06:08Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -148,7 +148,7 @@
 "github_created_at": "2025-06-07T12:15:57Z",
 "github_forks": 3660,
 "github_language": "TypeScript",
-"github_open_issues": 69,
+"github_open_issues": 70,
 "github_pushed_at": "2026-10-06T13:22:38Z",
 "github_stars": 23055,
 "github_topic": "mcp-server",
@@ -157,8 +157,8 @@
 "slug": "czlonkowski-n8n-mcp",
 "sources": [
 {
-"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
-"retrieved_at": "2026-10-11T01:43:40Z",
+"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
+"retrieved_at": "2026-10-11T03:01:06Z",
 "system": "github",
 "url": "https://github.com/czlonkowski/n8n-mcp"
 }
@@ -175,7 +175,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://www.n8n-mcp.com/",
 "vendor": "czlonkowski"

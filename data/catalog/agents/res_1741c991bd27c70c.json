@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "c5be7bccaad90fe598a95bfa94bff28a8839727a699e6ccb9dae33fedbdb37e4",
+"payload_hash": "bd508e82ab9dc04c00970e366f29d208c355ca864f425ac5586f8d23495f0f15",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:47Z",
+"retrieved_at": "2026-10-11T03:11:39Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "c5be7bccaad90fe598a95bfa94bff28a8839727a699e6ccb9dae33fedbdb37e4",
+"payload_hash": "bd508e82ab9dc04c00970e366f29d208c355ca864f425ac5586f8d23495f0f15",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:47Z",
+"retrieved_at": "2026-10-11T03:11:39Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -94,7 +94,7 @@
 "external_ids": {
 "github": "VoltAgent/awesome-claude-code-subagents"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -116,24 +116,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "MIT",
 "name": "awesome-claude-code-subagents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:29Z",
+"checked_at": "2026-10-11T03:05:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:28Z",
+"checked_at": "2026-10-11T03:05:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:29Z",
+"checked_at": "2026-10-11T03:05:35Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -143,7 +143,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:05:42Z",
+"checked_at": "2026-10-11T03:20:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -151,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-30T12:31:51Z",
-"github_forks": 2955,
+"github_forks": 2954,
 "github_language": "Shell",
 "github_open_issues": 3,
 "github_pushed_at": "2026-10-05T07:38:56Z",
-"github_stars": 25632,
+"github_stars": 25634,
 "github_topic": "ai-agents",
 "homepage": "https://getdesign.md/"
 },
 "slug": "voltagent-awesome-claude-code-subagents",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/VoltAgent/awesome-claude-code-subagents"
 }
@@ -186,7 +186,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://getdesign.md/",
 "vendor": "VoltAgent"

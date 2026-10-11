@@ -33,7 +33,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a3bd6b14b4ea2f2f75778d3a9d1743ef7f781a4e57d25f406591779761d8e366",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:57Z",
+"retrieved_at": "2026-10-11T03:10:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -59,7 +59,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a3bd6b14b4ea2f2f75778d3a9d1743ef7f781a4e57d25f406591779761d8e366",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:57Z",
+"retrieved_at": "2026-10-11T03:10:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -80,7 +80,7 @@
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 12.0,
 "trust": 19.0
 },
@@ -88,7 +88,7 @@
 "confidence": 0.713,
 "evidence_coverage": 0.75,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "data",
 "rank": null,
@@ -105,7 +105,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 12.0,
 "trust": 19.0
 },
@@ -113,7 +113,7 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -129,7 +129,7 @@
 "github": "andrewjgaber-commits/empire-distribution",
 "mcp_registry": "ai.argushq/enforcement-database"
 },
-"first_seen": "2026-10-11T01:36:24Z",
+"first_seen": "2026-10-11T02:55:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -151,19 +151,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:24Z",
+"last_seen": "2026-10-11T02:55:13Z",
 "license": null,
 "name": "ai.argushq/enforcement-database",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:53Z",
+"checked_at": "2026-10-11T03:03:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:51Z",
+"checked_at": "2026-10-11T03:03:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -186,7 +186,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:02:06Z",
+"checked_at": "2026-10-11T03:17:21Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -204,7 +204,7 @@
 "sources": [
 {
 "payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
-"retrieved_at": "2026-10-11T01:36:24Z",
+"retrieved_at": "2026-10-11T02:55:13Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.argushq/enforcement-database"
 }
@@ -216,7 +216,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://argushq.ai",
 "vendor": "argushq.ai"

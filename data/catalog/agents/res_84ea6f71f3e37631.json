@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "6c6a45217170222dd6ebc0746503a3be949052d9e0ece94ac27906f80b120e1d",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:31Z",
+"retrieved_at": "2026-10-11T03:09:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -49,7 +49,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "general",
-"rank": 97,
+"rank": 95,
 "recomputed": 85.3,
 "score": 75.7,
 "score_version": "sar-score-2.0",
@@ -73,7 +73,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "security",
-"rank": 93,
+"rank": 40,
 "recomputed": 81.1,
 "score": 68.6,
 "score_version": "sar-score-2.0",
@@ -97,7 +97,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 91,
+"rank": 55,
 "recomputed": 86.0,
 "score": 79.5,
 "score_version": "sar-score-2.0",
@@ -121,7 +121,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 94,
+"rank": 61,
 "recomputed": 75.6,
 "score": 60.8,
 "score_version": "sar-score-2.0",
@@ -145,7 +145,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 94,
+"rank": 58,
 "recomputed": 75.6,
 "score": 60.8,
 "score_version": "sar-score-2.0",
@@ -169,7 +169,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 93,
+"rank": 53,
 "recomputed": 75.6,
 "score": 60.8,
 "score_version": "sar-score-2.0",
@@ -193,7 +193,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 93,
+"rank": 48,
 "recomputed": 75.6,
 "score": 60.8,
 "score_version": "sar-score-2.0",
@@ -217,7 +217,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 94,
+"rank": 49,
 "recomputed": 75.6,
 "score": 60.8,
 "score_version": "sar-score-2.0",
@@ -241,7 +241,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 93,
+"rank": 55,
 "recomputed": 75.6,
 "score": 60.8,
 "score_version": "sar-score-2.0",
@@ -265,7 +265,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "commercial",
-"rank": 94,
+"rank": 50,
 "recomputed": 83.2,
 "score": 74.5,
 "score_version": "sar-score-2.0",
@@ -289,7 +289,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "operations",
-"rank": 94,
+"rank": 39,
 "recomputed": 80.5,
 "score": 71.8,
 "score_version": "sar-score-2.0",
@@ -313,7 +313,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 90,
+"rank": 25,
 "recomputed": 95.2,
 "score": 82.3,
 "score_version": "sar-score-2.0",
@@ -326,7 +326,7 @@
 "external_ids": {
 "github": "vercel/ai"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -348,7 +348,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Apache-2.0",
 "name": "Vercel AI SDK",
 "news": [
@@ -378,17 +378,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:29Z",
+"checked_at": "2026-10-11T03:03:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:27Z",
+"checked_at": "2026-10-11T03:03:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:46:30Z",
+"checked_at": "2026-10-11T03:03:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -398,7 +398,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:00Z",
+"checked_at": "2026-10-11T03:15:06Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -419,11 +419,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-05-23T15:04:08Z",
-"github_forks": 5302,
+"github_forks": 5301,
 "github_language": "TypeScript",
 "github_open_issues": 1585,
 "github_pushed_at": "2026-10-11T00:57:00Z",
-"github_stars": 27232,
+"github_stars": 27233,
 "homepage": "https://ai-sdk.dev",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -439,7 +439,7 @@
 "sources": [
 {
 "payload_hash": "77292264f00a768a7da1d0a4374ac333d0abb966c56b003ffd1e9483a01ca28b",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/vercel/ai"
 }
@@ -467,7 +467,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://github.com/vercel/ai",
 "vendor": "Vercel"

@@ -28,9 +28,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "dfdc70462cbc6dbf5fd51bcb7996e71b1ad3bc662b68ff6cb7e282b734aec687",
+"payload_hash": "e0b5a6448888364f1505983a77221ac90ae09fb50817906b541e8556784f7d14",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:22Z",
+"retrieved_at": "2026-10-11T03:12:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "mcp-use/mcp-use"
 },
-"first_seen": "2026-10-11T01:43:40Z",
+"first_seen": "2026-10-11T03:01:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,7 +92,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:40Z",
+"last_seen": "2026-10-11T03:01:06Z",
 "license": "MIT",
 "name": "mcp-use",
 "news": [
@@ -122,12 +122,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:56Z",
+"checked_at": "2026-10-11T03:05:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:55Z",
+"checked_at": "2026-10-11T03:05:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -136,7 +136,7 @@
 "note": "named in the resource's own tags",
 "probe": {
 "card_url": "https://manufact.com/.well-known/mcp.json",
-"checked_at": "2026-10-11T01:48:56Z",
+"checked_at": "2026-10-11T03:05:58Z",
 "status": "invalid"
 },
 "source": "self_description",
@@ -160,8 +160,8 @@
 "slug": "mcp-use-mcp-use",
 "sources": [
 {
-"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
-"retrieved_at": "2026-10-11T01:43:40Z",
+"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
+"retrieved_at": "2026-10-11T03:01:06Z",
 "system": "github",
 "url": "https://github.com/mcp-use/mcp-use"
 }
@@ -194,7 +194,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://manufact.com",
 "vendor": "mcp-use"

@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "harvard-edge/cs249r_book"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,7 +64,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "Other",
 "name": "cs249r_book",
 "news": [
@@ -94,17 +94,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:03Z",
+"checked_at": "2026-10-11T03:06:04Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:02Z",
+"checked_at": "2026-10-11T03:06:03Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:04Z",
+"checked_at": "2026-10-11T03:06:04Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -114,7 +114,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:05:32Z",
+"checked_at": "2026-10-11T03:20:37Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -126,15 +126,15 @@
 "github_language": "Python",
 "github_open_issues": 10,
 "github_pushed_at": "2026-10-11T01:17:49Z",
-"github_stars": 28930,
+"github_stars": 28931,
 "github_topic": "ai-agents",
 "homepage": "https://mlsysbook.ai"
 },
 "slug": "harvard-edge-cs249r-book",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/harvard-edge/cs249r_book"
 }
@@ -165,7 +165,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://mlsysbook.ai",
 "vendor": "harvard-edge"

@@ -26,9 +26,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:44Z",
+"retrieved_at": "2026-10-11T03:08:10Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -58,7 +58,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:50:15Z",
+"retrieved_at": "2026-10-11T03:07:04Z",
 "review_reason": "vendor authorization for DoD Cloud Intelligent Enterprise – DD-CIE; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -79,7 +79,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 25.0,
+"governance": 12.5,
 "health": 19.0,
 "trust": 19.0
 },
@@ -87,12 +87,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "general",
-"rank": 56,
+"rank": 54,
 "recomputed": 89.3,
-"score": 82.8,
+"score": 82.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 54,
 "seed_score": 89.3,
@@ -100,32 +100,6 @@
 "unknown": []
 },
 "cybersecurity": {
-"components": {
-"adoption": 24.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 40.0,
-"health": 19.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0
-},
-"profile": "security",
-"rank": 37,
-"recomputed": 78.8,
-"score": 82.1,
-"score_version": "sar-score-2.0",
-"seed_rank": 70,
-"seed_score": 78.8,
-"source": "seed_xlsx",
-"unknown": []
-},
-"data": {
 "components": {
 "adoption": 24.0,
 "docs": 9.0,
@@ -139,10 +113,36 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
+},
+"profile": "security",
+"rank": 70,
+"recomputed": 78.8,
+"score": 80.1,
+"score_version": "sar-score-2.0",
+"seed_rank": 70,
+"seed_score": 78.8,
+"source": "seed_xlsx",
+"unknown": []
+},
+"data": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 10.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5
 },
 "profile": "data",
-"rank": 49,
+"rank": 33,
 "recomputed": 88.3,
 "score": 87.7,
 "score_version": "sar-score-2.0",
@@ -157,7 +157,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -165,12 +165,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 41,
+"rank": 80,
 "recomputed": 74.1,
-"score": 77.3,
+"score": 75.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 80,
 "seed_score": 74.1,
@@ -183,7 +183,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 60.0,
+"governance": 30.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -191,13 +191,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"fedramp": 1.0
+"csa_star": 0.5,
+"fedramp": 0.5
 },
 "profile": "regulated",
-"rank": 31,
+"rank": 27,
 "recomputed": 92.4,
-"score": 83.3,
+"score": 78.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 27,
 "seed_score": 92.4,
@@ -210,7 +210,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -218,12 +218,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 40,
+"rank": 72,
 "recomputed": 74.1,
-"score": 77.3,
+"score": 75.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 72,
 "seed_score": 74.1,
@@ -236,7 +236,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 16.7,
+"governance": 8.3,
 "health": 19.0,
 "trust": 19.0
 },
@@ -244,12 +244,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 44,
+"rank": 68,
 "recomputed": 74.1,
-"score": 76.8,
+"score": 75.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 68,
 "seed_score": 74.1,
@@ -262,7 +262,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -270,12 +270,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 41,
+"rank": 70,
 "recomputed": 74.1,
-"score": 77.3,
+"score": 75.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 70,
 "seed_score": 74.1,
@@ -288,7 +288,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -296,12 +296,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 41,
+"rank": 75,
 "recomputed": 74.1,
-"score": 77.3,
+"score": 75.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 75,
 "seed_score": 74.1,
@@ -314,7 +314,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -322,12 +322,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "commercial",
-"rank": 52,
+"rank": 88,
 "recomputed": 80.2,
-"score": 84.0,
+"score": 83.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 88,
 "seed_score": 80.2,
@@ -340,7 +340,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 25.0,
+"governance": 12.5,
 "health": 19.0,
 "trust": 19.0
 },
@@ -348,12 +348,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "operations",
-"rank": 48,
+"rank": 74,
 "recomputed": 78.0,
-"score": 85.2,
+"score": 84.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 74,
 "seed_score": 78.0,
@@ -366,7 +366,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -374,10 +374,10 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "technology",
-"rank": 64,
+"rank": 74,
 "recomputed": 91.1,
 "score": 86.7,
 "score_version": "sar-score-2.0",
@@ -388,7 +388,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -410,24 +410,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "SAP service",
 "name": "SAP Joule Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:35Z",
+"checked_at": "2026-10-11T03:06:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:31Z",
+"checked_at": "2026-10-11T03:06:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:37Z",
+"checked_at": "2026-10-11T03:06:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -437,7 +437,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:24Z",
+"checked_at": "2026-10-11T03:14:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -462,7 +462,7 @@
 "sources": [
 {
 "payload_hash": "752572dc1bca02c2f0b6ef9491aacc57c776240d8634163ea0a58998e22c8ff9",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html"
 }
@@ -474,7 +474,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html",
 "vendor": "SAP"

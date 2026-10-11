@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:aard.ai:docs:llms-txt"
 },
-"first_seen": "2026-10-11T01:46:17Z",
+"first_seen": "2026-10-11T03:03:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:46:17Z",
+"last_seen": "2026-10-11T03:03:26Z",
 "license": null,
 "name": "Aard llms.txt",
 "news": [],
@@ -101,7 +101,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:27Z",
+"checked_at": "2026-10-11T03:22:27Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -111,7 +111,7 @@
 "sources": [
 {
 "payload_hash": "26b7adf2db05c0b265b24969b5dd3012fd965fec2bebbaa8fbba3ce38ced8aae",
-"retrieved_at": "2026-10-11T01:46:17Z",
+"retrieved_at": "2026-10-11T03:03:26Z",
 "system": "ard",
 "url": "https://aard.ai/.well-known/ard.json"
 }
@@ -126,7 +126,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://aard.ai/llms.txt",
 "vendor": "aard.ai"

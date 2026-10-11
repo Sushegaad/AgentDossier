@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "7a2aa329e9499db2fd6a30d8b650dc240d95d8a95f846eb65d9a1d378e179106",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:11Z",
+"retrieved_at": "2026-10-11T03:11:09Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "7a2aa329e9499db2fd6a30d8b650dc240d95d8a95f846eb65d9a1d378e179106",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:11Z",
+"retrieved_at": "2026-10-11T03:11:09Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "7a2aa329e9499db2fd6a30d8b650dc240d95d8a95f846eb65d9a1d378e179106",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:11Z",
+"retrieved_at": "2026-10-11T03:11:09Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "9b74f3eddf133194f132099a5857603f27de2cf785c10a325bee6fb9bd9fe2b9",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:11Z",
+"retrieved_at": "2026-10-11T03:11:09Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -118,7 +118,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -126,13 +126,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso42001": 0.3,
-"soc2": 0.3
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "security",
-"rank": 64,
+"rank": 75,
 "recomputed": 78.2,
-"score": 77.4,
+"score": 76.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 75,
 "seed_score": 78.2,
@@ -140,33 +140,6 @@
 "unknown": []
 },
 "finance": {
-"components": {
-"adoption": 23.0,
-"docs": 9.0,
-"domain_fit": 96.0,
-"ecosystem": 12.0,
-"governance": 12.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"iso42001": 0.3,
-"soc2": 0.3
-},
-"profile": "regulated",
-"rank": 56,
-"recomputed": 91.3,
-"score": 74.0,
-"score_version": "sar-score-2.0",
-"seed_rank": 11,
-"seed_score": 91.3,
-"source": "seed_xlsx",
-"unknown": []
-},
-"government": {
 "components": {
 "adoption": 23.0,
 "docs": 9.0,
@@ -180,12 +153,39 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso42001": 0.3
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 63,
+"rank": 11,
 "recomputed": 91.3,
 "score": 73.1,
+"score_version": "sar-score-2.0",
+"seed_rank": 11,
+"seed_score": 91.3,
+"source": "seed_xlsx",
+"unknown": []
+},
+"government": {
+"components": {
+"adoption": 23.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 3.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"iso42001": 0.15
+},
+"profile": "regulated",
+"rank": 30,
+"recomputed": 91.3,
+"score": 72.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 30,
 "seed_score": 91.3,
@@ -198,7 +198,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -206,13 +206,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso42001": 0.3,
-"soc2": 0.3
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 57,
+"rank": 8,
 "recomputed": 91.3,
-"score": 74.0,
+"score": 73.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 8,
 "seed_score": 91.3,
@@ -225,7 +225,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 10.0,
+"governance": 5.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -233,13 +233,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso42001": 0.3,
-"soc2": 0.3
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 58,
+"rank": 76,
 "recomputed": 73.5,
-"score": 73.7,
+"score": 73.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 76,
 "seed_score": 73.5,
@@ -252,7 +252,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -260,13 +260,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso42001": 0.3,
-"soc2": 0.3
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 60,
+"rank": 78,
 "recomputed": 73.5,
-"score": 74.0,
+"score": 73.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 78,
 "seed_score": 73.5,
@@ -279,7 +279,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -287,13 +287,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso42001": 0.3,
-"soc2": 0.3
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 58,
+"rank": 13,
 "recomputed": 92.1,
-"score": 74.0,
+"score": 73.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 13,
 "seed_score": 92.1,
@@ -302,7 +302,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -324,24 +324,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Credo AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:54Z",
+"checked_at": "2026-10-11T03:05:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:53Z",
+"checked_at": "2026-10-11T03:04:58Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:55Z",
+"checked_at": "2026-10-11T03:05:00Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -351,7 +351,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:05Z",
+"checked_at": "2026-10-11T03:15:11Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -376,7 +376,7 @@
 "sources": [
 {
 "payload_hash": "9e814dabe4487c9b101ef8de7ad372db6ee9528e204a84fe461c86c86350bbc9",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.credo.ai/"
 }
@@ -388,7 +388,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://www.credo.ai/",
 "vendor": "Credo AI"

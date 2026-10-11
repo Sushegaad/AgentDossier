@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "065e65be6969b65c8833b3d61c42518bd8e5bf66d12bbdf274736f4b491dd7b6",
+"payload_hash": "1ecd9c1e98f87e2079f2d00144e7aada8eec665df8a10f3ca075a16a5441436c",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:45Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -70,7 +70,7 @@
 "external_ids": {
 "mcp_registry": "ai.aivikings/registrar"
 },
-"first_seen": "2026-10-11T01:36:24Z",
+"first_seen": "2026-10-11T02:55:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,7 +92,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:24Z",
+"last_seen": "2026-10-11T02:55:13Z",
 "license": null,
 "name": "AiVikings.ai",
 "news": [],
@@ -100,7 +100,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://aivikings.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-11T01:46:36Z",
+"checked_at": "2026-10-11T03:03:42Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "2025-11-25",
 "signed": false,
@@ -118,7 +118,7 @@
 "version": "0.1.0"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:32Z",
+"checked_at": "2026-10-11T03:03:39Z",
 "entries": 2,
 "parser_version": "ard-0.91",
 "sources": [
@@ -145,7 +145,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:01:44Z",
+"checked_at": "2026-10-11T03:17:02Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -163,7 +163,7 @@
 "sources": [
 {
 "payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
-"retrieved_at": "2026-10-11T01:36:24Z",
+"retrieved_at": "2026-10-11T02:55:13Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aivikings/registrar"
 }
@@ -175,7 +175,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://aivikings.ai",
 "vendor": "aivikings.ai"

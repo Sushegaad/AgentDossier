@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:47Z",
+"retrieved_at": "2026-10-11T03:08:13Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -50,7 +50,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2c02fc692e84143ddf63884d427b40d57a07438272f76af2335820939882a17f",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:50Z",
+"retrieved_at": "2026-10-11T03:12:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -76,7 +76,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "82549b1d174c7032cfb221b0a8c9b2511b5bc01241f13f0e25a3eac27fe24563",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:50Z",
+"retrieved_at": "2026-10-11T03:12:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -102,7 +102,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "8fa94638533ec1235f1642fd47ec7ee582445da70530418c15cb72ad1e38daef",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:50Z",
+"retrieved_at": "2026-10-11T03:12:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -128,7 +128,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2c02fc692e84143ddf63884d427b40d57a07438272f76af2335820939882a17f",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:50Z",
+"retrieved_at": "2026-10-11T03:12:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -154,7 +154,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "8fa94638533ec1235f1642fd47ec7ee582445da70530418c15cb72ad1e38daef",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:50Z",
+"retrieved_at": "2026-10-11T03:12:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -180,7 +180,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "8fa94638533ec1235f1642fd47ec7ee582445da70530418c15cb72ad1e38daef",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:50Z",
+"retrieved_at": "2026-10-11T03:12:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -206,7 +206,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2c02fc692e84143ddf63884d427b40d57a07438272f76af2335820939882a17f",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:50Z",
+"retrieved_at": "2026-10-11T03:12:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -232,7 +232,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "8fa94638533ec1235f1642fd47ec7ee582445da70530418c15cb72ad1e38daef",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:50Z",
+"retrieved_at": "2026-10-11T03:12:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -253,7 +253,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 47.5,
+"governance": 23.8,
 "health": 20.0,
 "trust": 19.0
 },
@@ -261,15 +261,15 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
+"csa_star": 0.5,
+"iso27001": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "general",
-"rank": 36,
+"rank": 73,
 "recomputed": 87.6,
-"score": 85.1,
+"score": 83.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 73,
 "seed_score": 87.6,
@@ -282,7 +282,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 44.0,
+"governance": 22.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -290,16 +290,16 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"gdpr": 0.3,
-"iso27701": 0.3,
-"iso42001": 0.3,
-"soc2": 0.3
+"csa_star": 0.5,
+"gdpr": 0.15,
+"iso27701": 0.15,
+"iso42001": 0.15,
+"soc2": 0.15
 },
 "profile": "commercial",
-"rank": 37,
+"rank": 11,
 "recomputed": 88.0,
-"score": 85.7,
+"score": 84.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 11,
 "seed_score": 88.0,
@@ -308,7 +308,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -330,24 +330,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Outreach AI Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:21Z",
+"checked_at": "2026-10-11T03:06:20Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:20Z",
+"checked_at": "2026-10-11T03:06:19Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:22Z",
+"checked_at": "2026-10-11T03:06:21Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -357,7 +357,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:38Z",
+"checked_at": "2026-10-11T03:14:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -382,7 +382,7 @@
 "sources": [
 {
 "payload_hash": "5af4c90a58d676828437454189313afb2cf3480d8eacb875157b60b5c2b0996f",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.outreach.io/"
 }
@@ -394,7 +394,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://www.outreach.io/",
 "vendor": "Outreach"

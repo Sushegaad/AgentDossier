@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "6e8e89af20f17f195a8fee2f8857805dd5aa88bef3d15fdc258f6f9719b7c765",
+"payload_hash": "453c20b954408539937eb46a24d9c713447084bdff0bc823f8c514dd7bd51cb2",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:57Z",
+"retrieved_at": "2026-10-11T03:10:56Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -49,7 +49,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -57,7 +57,7 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -72,7 +72,7 @@
 "external_ids": {
 "mcp_registry": "ai.capitalcompany/capital-company"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,19 +94,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "Capital Company",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:41Z",
+"checked_at": "2026-10-11T03:04:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:39Z",
+"checked_at": "2026-10-11T03:04:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -129,7 +129,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:52Z",
+"checked_at": "2026-10-11T03:19:04Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -146,8 +146,8 @@
 "slug": "capitalcompany-ai-capital-company",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.capitalcompany/capital-company"
 }
@@ -159,7 +159,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://capitalcompany.ai/assistants",
 "vendor": "capitalcompany.ai"

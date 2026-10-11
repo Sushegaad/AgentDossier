@@ -31,7 +31,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ee7335ddeda993d0741a165e89d83bfd627d70a122c91643137e7cff8847372b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:00Z",
+"retrieved_at": "2026-10-11T03:10:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,7 +57,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ee7335ddeda993d0741a165e89d83bfd627d70a122c91643137e7cff8847372b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:00Z",
+"retrieved_at": "2026-10-11T03:10:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,7 +83,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2839fddddf17ce522c116c7a8c147a671e2a875e09a668a2c8e63f5b512f8bf7",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:00Z",
+"retrieved_at": "2026-10-11T03:10:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -109,7 +109,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ee7335ddeda993d0741a165e89d83bfd627d70a122c91643137e7cff8847372b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:00Z",
+"retrieved_at": "2026-10-11T03:10:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -130,7 +130,7 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 9.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 16.0,
 "trust": 21.0
 },
@@ -138,7 +138,7 @@
 "confidence": 0.34,
 "evidence_coverage": 0.75,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "data",
 "rank": null,
@@ -155,7 +155,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 9.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 16.0,
 "trust": 21.0
 },
@@ -163,7 +163,7 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -179,7 +179,7 @@
 "github": "CerebriumAI/cerebrium-skills",
 "mcp_registry": "ai.cerebrium/docs"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -201,7 +201,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "Cerebrium Docs",
 "news": [
@@ -221,7 +221,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://cerebrium.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-11T01:47:43Z",
+"checked_at": "2026-10-11T03:04:49Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -232,7 +232,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:41Z",
+"checked_at": "2026-10-11T03:04:48Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -255,7 +255,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:58Z",
+"checked_at": "2026-10-11T03:19:10Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -272,8 +272,8 @@
 "slug": "cerebrium-ai-cerebrium-docs",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.cerebrium/docs"
 }
@@ -285,7 +285,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://cerebrium.ai/docs",
 "vendor": "cerebrium.ai"

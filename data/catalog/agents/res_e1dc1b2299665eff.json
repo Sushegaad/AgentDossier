@@ -29,9 +29,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "764a049aab4343cd96b5d500ff70f1012249aa87aa486c6b7cf1bbf41c7623a3",
+"payload_hash": "2933d5e6e5f4abb7deb2e3d22aea6cff37d81c706538c0313877296342c7f864",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:54Z",
+"retrieved_at": "2026-10-11T03:10:54Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -96,7 +96,7 @@
 "external_ids": {
 "mcp_registry": "ai.calfeed/calfeed"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,19 +118,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "Calfeed",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:39Z",
+"checked_at": "2026-10-11T03:04:44Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:37Z",
+"checked_at": "2026-10-11T03:04:43Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -163,8 +163,8 @@
 "slug": "calfeed-ai-calfeed",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.calfeed/calfeed"
 }
@@ -176,7 +176,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://calfeed.ai/mcp",
 "vendor": "calfeed.ai"

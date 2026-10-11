@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "052a6d94622deae45c410844db77e50e038f0a305933782fff4285b405f7ac35",
+"payload_hash": "780c42464973a0a8c75943c403b493f0a470ba8e914f1996964e4bc2b14bb70a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:16Z",
+"retrieved_at": "2026-10-11T03:13:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "052a6d94622deae45c410844db77e50e038f0a305933782fff4285b405f7ac35",
+"payload_hash": "780c42464973a0a8c75943c403b493f0a470ba8e914f1996964e4bc2b14bb70a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:16Z",
+"retrieved_at": "2026-10-11T03:13:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -66,7 +66,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 13.0,
-"governance": 7.5,
+"governance": 3.8,
 "health": 20.0,
 "trust": 19.0
 },
@@ -74,12 +74,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "general",
-"rank": 91,
+"rank": 100,
 "recomputed": 84.5,
-"score": 78.8,
+"score": 78.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 100,
 "seed_score": 84.5,
@@ -92,7 +92,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 13.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -100,13 +100,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"hipaa": 0.3,
-"soc2": 0.3
+"hipaa": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 72,
+"rank": 10,
 "recomputed": 90.5,
-"score": 70.4,
+"score": 69.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 10,
 "seed_score": 90.5,
@@ -115,7 +115,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -137,24 +137,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Suki Assistant",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:42Z",
+"checked_at": "2026-10-11T03:06:40Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:38Z",
+"checked_at": "2026-10-11T03:06:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:43Z",
+"checked_at": "2026-10-11T03:06:43Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -164,7 +164,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:04Z",
+"checked_at": "2026-10-11T03:15:10Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -189,7 +189,7 @@
 "sources": [
 {
 "payload_hash": "3256038dd8c2cb71d8ffe206c1f058d38b3292b345f92116039994eb50aea120",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.suki.ai/"
 }
@@ -201,7 +201,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://www.suki.ai/",
 "vendor": "Suki"

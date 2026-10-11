@@ -72,7 +72,7 @@
 "external_ids": {
 "mcp_registry": "ai.bringyour/bringyour"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "Bring Your AI",
 "news": [],
@@ -102,7 +102,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://bringyour.ai/.well-known/agent.json",
-"checked_at": "2026-10-11T01:47:30Z",
+"checked_at": "2026-10-11T03:04:35Z",
 "errors": [
 "missing 'version'"
 ],
@@ -111,7 +111,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:29Z",
+"checked_at": "2026-10-11T03:04:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -134,7 +134,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:38Z",
+"checked_at": "2026-10-11T03:18:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -151,8 +151,8 @@
 "slug": "bringyour-ai-bring-your-ai",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bringyour/bringyour"
 }
@@ -164,7 +164,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://bringyour.ai",
 "vendor": "bringyour.ai"

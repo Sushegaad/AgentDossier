@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "065e65be6969b65c8833b3d61c42518bd8e5bf66d12bbdf274736f4b491dd7b6",
+"payload_hash": "1ecd9c1e98f87e2079f2d00144e7aada8eec665df8a10f3ca075a16a5441436c",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:45Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "external_ids": {
 "ard": "urn:air:aivikings.ai:api:rest"
 },
-"first_seen": "2026-10-11T01:47:19Z",
+"first_seen": "2026-10-11T03:04:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,7 +93,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:19Z",
+"last_seen": "2026-10-11T03:04:27Z",
 "license": null,
 "name": "AIvikings REST API",
 "news": [],
@@ -124,7 +124,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:49Z",
+"checked_at": "2026-10-11T03:22:50Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -134,7 +134,7 @@
 "sources": [
 {
 "payload_hash": "8efb4598778de84fe87830c49dfcf5d261a0eb3bd139344c5194ad648d1cd03d",
-"retrieved_at": "2026-10-11T01:47:19Z",
+"retrieved_at": "2026-10-11T03:04:27Z",
 "system": "ard",
 "url": "https://aivikings.ai/.well-known/ai-catalog.json"
 }
@@ -146,7 +146,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://api.aivikings.ai/openapi.json",
 "vendor": "aivikings.ai"

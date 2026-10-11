@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "57b79f819f601e151170268342c759a9e0c1377e948777d60815fb0c6af9d0c8",
+"payload_hash": "3964195921da56887c1a6f061981d654d2f6448e140f00afba001e131f460c78",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:20Z",
+"retrieved_at": "2026-10-11T03:12:07Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "57b79f819f601e151170268342c759a9e0c1377e948777d60815fb0c6af9d0c8",
+"payload_hash": "3964195921da56887c1a6f061981d654d2f6448e140f00afba001e131f460c78",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:20Z",
+"retrieved_at": "2026-10-11T03:12:07Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,7 +75,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "general",
-"rank": 98,
+"rank": 41,
 "recomputed": 90.5,
 "score": 75.6,
 "score_version": "sar-score-2.0",
@@ -99,7 +99,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "security",
-"rank": 92,
+"rank": 32,
 "recomputed": 82.1,
 "score": 69.1,
 "score_version": "sar-score-2.0",
@@ -123,7 +123,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 88,
+"rank": 7,
 "recomputed": 92.1,
 "score": 80.9,
 "score_version": "sar-score-2.0",
@@ -147,7 +147,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 89,
+"rank": 53,
 "recomputed": 76.4,
 "score": 63.1,
 "score_version": "sar-score-2.0",
@@ -171,7 +171,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 88,
+"rank": 53,
 "recomputed": 76.4,
 "score": 63.1,
 "score_version": "sar-score-2.0",
@@ -195,7 +195,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 88,
+"rank": 44,
 "recomputed": 76.4,
 "score": 63.1,
 "score_version": "sar-score-2.0",
@@ -219,7 +219,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 88,
+"rank": 39,
 "recomputed": 76.4,
 "score": 63.1,
 "score_version": "sar-score-2.0",
@@ -243,7 +243,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 89,
+"rank": 1,
 "recomputed": 95.0,
 "score": 63.1,
 "score_version": "sar-score-2.0",
@@ -267,7 +267,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 88,
+"rank": 8,
 "recomputed": 94.2,
 "score": 63.1,
 "score_version": "sar-score-2.0",
@@ -291,7 +291,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "commercial",
-"rank": 91,
+"rank": 40,
 "recomputed": 83.8,
 "score": 75.9,
 "score_version": "sar-score-2.0",
@@ -315,7 +315,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "operations",
-"rank": 88,
+"rank": 35,
 "recomputed": 80.9,
 "score": 74.9,
 "score_version": "sar-score-2.0",
@@ -339,7 +339,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 92,
+"rank": 37,
 "recomputed": 93.8,
 "score": 82.0,
 "score_version": "sar-score-2.0",
@@ -350,7 +350,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -372,24 +372,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Thomson Reuters CoCounsel",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:52Z",
+"checked_at": "2026-10-11T03:05:53Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:50Z",
+"checked_at": "2026-10-11T03:05:52Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:52Z",
+"checked_at": "2026-10-11T03:05:54Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -399,7 +399,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:11Z",
+"checked_at": "2026-10-11T03:14:19Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -424,7 +424,7 @@
 "sources": [
 {
 "payload_hash": "115fd1f0798ac254e68e9bad4578218465083a8895fff738d115e2d4744c374d",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://legal.thomsonreuters.com/en/products/cocounsel"
 }
@@ -436,7 +436,8 @@
 "identity": 4,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://legal.thomsonreuters.com/en/products/cocounsel",
 "vendor": "Thomson Reuters"

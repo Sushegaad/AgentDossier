@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.anha/resolver"
 },
-"first_seen": "2026-10-11T01:36:24Z",
+"first_seen": "2026-10-11T02:55:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,19 +66,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:24Z",
+"last_seen": "2026-10-11T02:55:13Z",
 "license": null,
 "name": "ai.anha/resolver",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:42Z",
+"checked_at": "2026-10-11T03:03:48Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:39Z",
+"checked_at": "2026-10-11T03:03:46Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -101,7 +101,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:01:53Z",
+"checked_at": "2026-10-11T03:17:09Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -119,7 +119,7 @@
 "sources": [
 {
 "payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
-"retrieved_at": "2026-10-11T01:36:24Z",
+"retrieved_at": "2026-10-11T02:55:13Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.anha/resolver"
 }
@@ -131,7 +131,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://anha.ai/connect",
 "vendor": "anha.ai"

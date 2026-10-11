@@ -34,7 +34,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d3ceef3a59734d860389f6cb078c19b788b658343ee9fd307b13b43447e0219e",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:50Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -60,7 +60,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d3ceef3a59734d860389f6cb078c19b788b658343ee9fd307b13b43447e0219e",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:50Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -86,7 +86,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "640ddd96e77d51820ee6a0f83bdfc2c6cc5481f3b070b1a9157a74b97de882f5",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:50Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -112,7 +112,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "640ddd96e77d51820ee6a0f83bdfc2c6cc5481f3b070b1a9157a74b97de882f5",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:50Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -138,7 +138,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "640ddd96e77d51820ee6a0f83bdfc2c6cc5481f3b070b1a9157a74b97de882f5",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:50Z",
+"retrieved_at": "2026-10-11T03:11:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -220,7 +220,7 @@
 "external_ids": {
 "github": "maximhq/bifrost"
 },
-"first_seen": "2026-10-11T01:43:40Z",
+"first_seen": "2026-10-11T03:01:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -242,7 +242,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:40Z",
+"last_seen": "2026-10-11T03:01:06Z",
 "license": "Apache-2.0",
 "name": "bifrost",
 "news": [
@@ -272,12 +272,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:31Z",
+"checked_at": "2026-10-11T03:05:35Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:28Z",
+"checked_at": "2026-10-11T03:05:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -285,7 +285,7 @@
 "evidence_url": "https://www.getmaxim.ai/bifrost",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:48:32Z",
+"checked_at": "2026-10-11T03:05:36Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -309,8 +309,8 @@
 "slug": "maximhq-bifrost",
 "sources": [
 {
-"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
-"retrieved_at": "2026-10-11T01:43:40Z",
+"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
+"retrieved_at": "2026-10-11T03:01:06Z",
 "system": "github",
 "url": "https://github.com/maximhq/bifrost"
 }
@@ -339,7 +339,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://www.getmaxim.ai/bifrost",
 "vendor": "maximhq"

@@ -76,7 +76,7 @@
 "external_ids": {
 "ard": "urn:air:alpic.ai:cli:alpic"
 },
-"first_seen": "2026-10-11T01:47:19Z",
+"first_seen": "2026-10-11T03:04:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -98,7 +98,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:19Z",
+"last_seen": "2026-10-11T03:04:27Z",
 "license": null,
 "name": "Alpic CLI",
 "news": [],
@@ -131,7 +131,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:54Z",
+"checked_at": "2026-10-11T03:22:55Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -141,7 +141,7 @@
 "sources": [
 {
 "payload_hash": "9acabece63585b50c6d063866171f18c55c65864bdf4317877f4610275a25b84",
-"retrieved_at": "2026-10-11T01:47:19Z",
+"retrieved_at": "2026-10-11T03:04:27Z",
 "system": "ard",
 "url": "https://alpic.ai/.well-known/ai-catalog.json"
 }
@@ -153,7 +153,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://registry.npmjs.org/alpic/latest",
 "vendor": "alpic.ai"

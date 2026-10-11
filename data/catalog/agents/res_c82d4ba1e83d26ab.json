@@ -22,7 +22,7 @@
 "evidence_coverage": 0.944,
 "governance_credited": {},
 "profile": "general",
-"rank": 79,
+"rank": 75,
 "recomputed": 87.5,
 "score": 80.5,
 "score_version": "sar-score-2.0",
@@ -48,7 +48,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 66,
+"rank": 83,
 "recomputed": 90.2,
 "score": 86.3,
 "score_version": "sar-score-2.0",
@@ -63,7 +63,7 @@
 "external_ids": {
 "github": "continuedev/continue"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -146,7 +146,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Apache-2.0",
 "name": "Continue",
 "news": [
@@ -167,17 +167,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:51Z",
+"checked_at": "2026-10-11T03:04:58Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:50Z",
+"checked_at": "2026-10-11T03:04:57Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:51Z",
+"checked_at": "2026-10-11T03:04:58Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -187,7 +187,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:41Z",
+"checked_at": "2026-10-11T03:14:46Z",
 "cves": 1073,
 "source": "nvd",
 "tier": 1
@@ -228,7 +228,7 @@
 "sources": [
 {
 "payload_hash": "cfcd4010357ef805ce34e8df6c45461346b4f786d7882b0cd40dc5bbb86145e3",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/continuedev/continue"
 }
@@ -246,7 +246,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://github.com/continuedev/continue",
 "vendor": "Continue"

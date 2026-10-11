@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:apatero.ai:mcp:studio"
 },
-"first_seen": "2026-10-11T01:47:19Z",
+"first_seen": "2026-10-11T03:04:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:19Z",
+"last_seen": "2026-10-11T03:04:27Z",
 "license": null,
 "name": "Apatero Studio MCP server",
 "news": [],
@@ -101,7 +101,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:55Z",
+"checked_at": "2026-10-11T03:22:56Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -111,7 +111,7 @@
 "sources": [
 {
 "payload_hash": "c27b9d7a1093deb4bb5f55bdcb23aee5bac6726d5ab3ade86cd2afb0f274612c",
-"retrieved_at": "2026-10-11T01:47:19Z",
+"retrieved_at": "2026-10-11T03:04:27Z",
 "system": "ard",
 "url": "https://apatero.ai/.well-known/ai-catalog.json"
 }
@@ -123,7 +123,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://apatero.ai/.well-known/mcp/server-card.json",
 "vendor": "apatero.ai"

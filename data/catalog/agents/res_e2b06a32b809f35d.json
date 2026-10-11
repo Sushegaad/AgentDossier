@@ -22,7 +22,7 @@
 "evidence_coverage": 0.9,
 "governance_credited": {},
 "profile": "security",
-"rank": 89,
+"rank": 76,
 "recomputed": 78.2,
 "score": 69.8,
 "score_version": "sar-score-2.0",
@@ -48,7 +48,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 89,
+"rank": 82,
 "recomputed": 84.0,
 "score": 80.8,
 "score_version": "sar-score-2.0",
@@ -74,7 +74,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 92,
+"rank": 97,
 "recomputed": 72.8,
 "score": 62.0,
 "score_version": "sar-score-2.0",
@@ -100,7 +100,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 91,
+"rank": 93,
 "recomputed": 72.8,
 "score": 62.0,
 "score_version": "sar-score-2.0",
@@ -126,7 +126,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 90,
+"rank": 94,
 "recomputed": 72.8,
 "score": 62.0,
 "score_version": "sar-score-2.0",
@@ -178,7 +178,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 91,
+"rank": 90,
 "recomputed": 72.8,
 "score": 62.0,
 "score_version": "sar-score-2.0",
@@ -204,7 +204,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 91,
+"rank": 94,
 "recomputed": 72.8,
 "score": 62.0,
 "score_version": "sar-score-2.0",
@@ -230,7 +230,7 @@
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "commercial",
-"rank": 92,
+"rank": 72,
 "recomputed": 81.3,
 "score": 75.8,
 "score_version": "sar-score-2.0",
@@ -256,7 +256,7 @@
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "operations",
-"rank": 91,
+"rank": 66,
 "recomputed": 78.5,
 "score": 73.1,
 "score_version": "sar-score-2.0",
@@ -282,7 +282,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 88,
+"rank": 43,
 "recomputed": 93.3,
 "score": 83.6,
 "score_version": "sar-score-2.0",
@@ -297,7 +297,7 @@
 "external_ids": {
 "github": "cline/cline"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -319,7 +319,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Apache-2.0",
 "name": "Cline",
 "news": [
@@ -349,12 +349,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:46Z",
+"checked_at": "2026-10-11T03:04:53Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:45Z",
+"checked_at": "2026-10-11T03:04:51Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -362,7 +362,7 @@
 "evidence_url": "https://github.com/cline/cline",
 "note": "named in the resource's own description",
 "probe": {
-"checked_at": "2026-10-11T01:47:46Z",
+"checked_at": "2026-10-11T03:04:53Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -388,11 +388,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-07-06T07:28:10Z",
-"github_forks": 7632,
+"github_forks": 7633,
 "github_language": "TypeScript",
-"github_open_issues": 1650,
+"github_open_issues": 1652,
 "github_pushed_at": "2026-10-10T18:09:13Z",
-"github_stars": 70127,
+"github_stars": 70134,
 "homepage": "https://cline.bot",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -407,7 +407,7 @@
 "sources": [
 {
 "payload_hash": "4c51346ca84d9eeb4d3c23884e0717ab2cd01dd7731f1d167076fdf87d165c9d",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/cline/cline"
 }
@@ -419,7 +419,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://github.com/cline/cline",
 "vendor": "Cline"

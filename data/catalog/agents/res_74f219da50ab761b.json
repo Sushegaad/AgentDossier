@@ -32,9 +32,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "67bbe052a7d2ab8bb604a3577a7e51574e7e9b8ec401ccb867b18b8445392103",
+"payload_hash": "5aa8bbfb9afa19d0aa657cb88755f8bdec7ee04374aa69613f87420cb6e643ad",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:34Z",
+"retrieved_at": "2026-10-11T03:10:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -123,7 +123,7 @@
 "github": "uofuonye/bizmoon-plugins",
 "mcp_registry": "ai.bizmoon/regulatory"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -145,19 +145,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "ai.bizmoon/regulatory",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:26Z",
+"checked_at": "2026-10-11T03:04:29Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:21Z",
+"checked_at": "2026-10-11T03:04:28Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -180,7 +180,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:23Z",
+"checked_at": "2026-10-11T03:18:36Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -197,8 +197,8 @@
 "slug": "bizmoon-ai-ai-bizmoon-regulatory",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bizmoon/regulatory"
 }
@@ -210,7 +210,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://bizmoon.ai/mcp",
 "vendor": "bizmoon.ai"

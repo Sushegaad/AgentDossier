@@ -83,7 +83,7 @@
 "external_ids": {
 "ard": "urn:air:agent-bev.ai:bev-door"
 },
-"first_seen": "2026-10-11T01:46:22Z",
+"first_seen": "2026-10-11T03:03:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -105,7 +105,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:46:22Z",
+"last_seen": "2026-10-11T03:03:31Z",
 "license": null,
 "name": "agent-bev",
 "news": [],
@@ -135,7 +135,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:28Z",
+"checked_at": "2026-10-11T03:22:28Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -145,7 +145,7 @@
 "sources": [
 {
 "payload_hash": "0db1811a59ecd4a5f46b95ce38ab9fee1329a022c1667de2eb19cf2557d32d4d",
-"retrieved_at": "2026-10-11T01:46:22Z",
+"retrieved_at": "2026-10-11T03:03:31Z",
 "system": "ard",
 "url": "https://agent-bev.ai/.well-known/ai-catalog.json"
 }
@@ -157,7 +157,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://mcp.bev-buyer.ai/mcp",
 "vendor": "agent-bev.ai"

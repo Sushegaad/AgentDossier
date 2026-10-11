@@ -33,9 +33,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "961764edb26d5f2ed8e400c4356c78e94bc6a527714e1d1e0a31da08622e5782",
+"payload_hash": "cdd027ee66883a0b53f0bc69e3279866219a66efa02b652018c5d695bd8dc365",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:42Z",
+"retrieved_at": "2026-10-11T03:11:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -56,7 +56,7 @@
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 20.0
 },
@@ -64,7 +64,7 @@
 "confidence": 0.713,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "data",
 "rank": null,
@@ -79,7 +79,7 @@
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 20.0
 },
@@ -87,7 +87,7 @@
 "confidence": 0.81,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -100,7 +100,7 @@
 "external_ids": {
 "github": "firecrawl/firecrawl-mcp-server"
 },
-"first_seen": "2026-10-11T01:43:40Z",
+"first_seen": "2026-10-11T03:01:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -129,19 +129,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:40Z",
+"last_seen": "2026-10-11T03:01:06Z",
 "license": "MIT",
 "name": "firecrawl-mcp-server",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:25Z",
+"checked_at": "2026-10-11T03:05:28Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:24Z",
+"checked_at": "2026-10-11T03:05:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -150,7 +150,7 @@
 "note": "named in the resource's own tags",
 "probe": {
 "card_url": "https://www.firecrawl.dev/.well-known/mcp.json",
-"checked_at": "2026-10-11T01:48:26Z",
+"checked_at": "2026-10-11T03:05:28Z",
 "status": "invalid"
 },
 "source": "self_description",
@@ -162,7 +162,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:17Z",
+"checked_at": "2026-10-11T03:22:17Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -172,7 +172,7 @@
 "github_created_at": "2024-12-06T07:50:27Z",
 "github_forks": 903,
 "github_language": "JavaScript",
-"github_open_issues": 161,
+"github_open_issues": 162,
 "github_pushed_at": "2026-10-09T17:53:35Z",
 "github_stars": 7581,
 "github_topic": "mcp-server",
@@ -181,8 +181,8 @@
 "slug": "firecrawl-firecrawl-mcp-server",
 "sources": [
 {
-"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
-"retrieved_at": "2026-10-11T01:43:40Z",
+"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
+"retrieved_at": "2026-10-11T03:01:06Z",
 "system": "github",
 "url": "https://github.com/firecrawl/firecrawl-mcp-server"
 }
@@ -210,7 +210,8 @@
 "identity": 2,
 "issues": 3,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://firecrawl.dev",
 "vendor": "firecrawl"

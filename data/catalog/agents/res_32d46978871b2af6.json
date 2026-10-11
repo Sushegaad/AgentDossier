@@ -40,9 +40,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "cb3216334390d6b05750a25ca2f83de97f7a2b302de31662b8dc88517944aef4",
+"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:11Z",
+"retrieved_at": "2026-10-11T03:10:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -66,9 +66,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "e18fb6033e5ce4cd1cfa6b410b11beb9d7f9057f25578ee1e6f89804d9ce2de9",
+"payload_hash": "617252dbab3b887b2bd7fb64734b5a31b5f43fdec3a648e4dd6cf8ce2b2c86a8",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:11Z",
+"retrieved_at": "2026-10-11T03:10:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,9 +92,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "cb3216334390d6b05750a25ca2f83de97f7a2b302de31662b8dc88517944aef4",
+"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:11Z",
+"retrieved_at": "2026-10-11T03:10:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -118,9 +118,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "cb3216334390d6b05750a25ca2f83de97f7a2b302de31662b8dc88517944aef4",
+"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:11Z",
+"retrieved_at": "2026-10-11T03:10:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -187,7 +187,7 @@
 "external_ids": {
 "ard": "urn:ai:augmentev.com:paseo:khanoor"
 },
-"first_seen": "2026-10-11T01:47:19Z",
+"first_seen": "2026-10-11T03:04:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -207,7 +207,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:19Z",
+"last_seen": "2026-10-11T03:04:53Z",
 "license": null,
 "merged_ids": [
 "res_30a67f0df0c3d175",
@@ -250,7 +250,7 @@
 "sources": [
 {
 "payload_hash": "fd313c2108cda4d5a3766fb4db2183f338fc22c34105dffb521cee40b2dec225",
-"retrieved_at": "2026-10-11T01:47:19Z",
+"retrieved_at": "2026-10-11T03:04:53Z",
 "system": "ard",
 "url": "https://augmentev.com/.well-known/ai-catalog.json"
 }
@@ -262,7 +262,8 @@
 "identity": 5,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://augmentev.com/.well-known/paseo/paseo-mcp-card.json",
 "vendor": null

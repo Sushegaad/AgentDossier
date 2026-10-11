@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "82d16b24ae1df3dd8e65d2ba3a67b7669624f185f742e23f3a5b1a2b5a8c9fb1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:59Z",
+"retrieved_at": "2026-10-11T03:12:45Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -49,7 +49,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "general",
-"rank": 85,
+"rank": 56,
 "recomputed": 89.1,
 "score": 79.5,
 "score_version": "sar-score-2.0",
@@ -73,7 +73,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "security",
-"rank": 71,
+"rank": 74,
 "recomputed": 78.3,
 "score": 75.6,
 "score_version": "sar-score-2.0",
@@ -97,7 +97,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 70,
+"rank": 90,
 "recomputed": 73.4,
 "score": 71.7,
 "score_version": "sar-score-2.0",
@@ -121,7 +121,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 68,
+"rank": 76,
 "recomputed": 74.0,
 "score": 71.7,
 "score_version": "sar-score-2.0",
@@ -145,7 +145,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 68,
+"rank": 83,
 "recomputed": 73.4,
 "score": 71.7,
 "score_version": "sar-score-2.0",
@@ -169,7 +169,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 70,
+"rank": 80,
 "recomputed": 73.4,
 "score": 71.7,
 "score_version": "sar-score-2.0",
@@ -193,7 +193,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 70,
+"rank": 82,
 "recomputed": 73.4,
 "score": 71.7,
 "score_version": "sar-score-2.0",
@@ -217,7 +217,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 69,
+"rank": 85,
 "recomputed": 73.4,
 "score": 71.7,
 "score_version": "sar-score-2.0",
@@ -241,7 +241,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "commercial",
-"rank": 76,
+"rank": 92,
 "recomputed": 79.8,
 "score": 80.9,
 "score_version": "sar-score-2.0",
@@ -265,7 +265,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "operations",
-"rank": 67,
+"rank": 87,
 "recomputed": 77.4,
 "score": 81.7,
 "score_version": "sar-score-2.0",
@@ -289,7 +289,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 79,
+"rank": 76,
 "recomputed": 90.8,
 "score": 84.8,
 "score_version": "sar-score-2.0",
@@ -302,7 +302,7 @@
 "external_ids": {
 "github": "RasaHQ/rasa"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -324,24 +324,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Apache-2.0 core",
 "name": "Rasa Pro / CALM agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:28Z",
+"checked_at": "2026-10-11T03:06:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:27Z",
+"checked_at": "2026-10-11T03:06:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:29Z",
+"checked_at": "2026-10-11T03:06:28Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -351,7 +351,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:26Z",
+"checked_at": "2026-10-11T03:14:33Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -392,7 +392,7 @@
 "sources": [
 {
 "payload_hash": "8340b571a604bd4d6650d8a9069cf474c296b7756da0d4e6df246824955c4ef7",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/RasaHQ/rasa"
 }
@@ -425,7 +425,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://github.com/RasaHQ/rasa",
 "vendor": "Rasa"

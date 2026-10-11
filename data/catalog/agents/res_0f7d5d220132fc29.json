@@ -23,7 +23,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:50:10Z",
+"retrieved_at": "2026-10-11T03:07:00Z",
 "review_reason": "vendor authorization for Databricks on Azure Commercial; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -49,7 +49,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "5828adcffcf1f0a3f87a557e3fb42800d6bfbcaf065134426104f60b9c721311",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:14Z",
+"retrieved_at": "2026-10-11T03:11:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,7 +75,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "5828adcffcf1f0a3f87a557e3fb42800d6bfbcaf065134426104f60b9c721311",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:14Z",
+"retrieved_at": "2026-10-11T03:11:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -96,7 +96,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 7.5,
+"governance": 3.8,
 "health": 20.0,
 "trust": 19.0
 },
@@ -104,12 +104,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "general",
-"rank": 50,
+"rank": 29,
 "recomputed": 91.6,
-"score": 83.5,
+"score": 83.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 29,
 "seed_score": 91.6,
@@ -122,7 +122,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -130,12 +130,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "security",
-"rank": 53,
+"rank": 37,
 "recomputed": 81.5,
-"score": 80.0,
+"score": 79.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 37,
 "seed_score": 81.5,
@@ -148,7 +148,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -156,10 +156,10 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "data",
-"rank": 39,
+"rank": 2,
 "recomputed": 94.2,
 "score": 89.4,
 "score_version": "sar-score-2.0",
@@ -174,7 +174,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -182,12 +182,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 47,
+"rank": 46,
 "recomputed": 76.9,
-"score": 76.0,
+"score": 75.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 46,
 "seed_score": 76.9,
@@ -200,7 +200,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -208,12 +208,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"fedramp": 1.0
+"fedramp": 0.5
 },
 "profile": "regulated",
-"rank": 46,
+"rank": 43,
 "recomputed": 77.5,
-"score": 78.1,
+"score": 76.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 43,
 "seed_score": 77.5,
@@ -226,7 +226,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -234,12 +234,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 46,
+"rank": 38,
 "recomputed": 76.9,
-"score": 76.0,
+"score": 75.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 38,
 "seed_score": 76.9,
@@ -252,7 +252,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 5.0,
+"governance": 2.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -260,12 +260,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 47,
+"rank": 32,
 "recomputed": 76.9,
-"score": 75.9,
+"score": 75.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 32,
 "seed_score": 76.9,
@@ -278,7 +278,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -286,12 +286,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 48,
+"rank": 35,
 "recomputed": 76.9,
-"score": 76.0,
+"score": 75.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 35,
 "seed_score": 76.9,
@@ -304,7 +304,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -312,12 +312,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 47,
+"rank": 37,
 "recomputed": 77.5,
-"score": 76.0,
+"score": 75.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 37,
 "seed_score": 77.5,
@@ -330,7 +330,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -338,12 +338,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "commercial",
-"rank": 48,
+"rank": 59,
 "recomputed": 82.4,
-"score": 84.7,
+"score": 84.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 59,
 "seed_score": 82.4,
@@ -356,7 +356,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 7.5,
+"governance": 3.8,
 "health": 20.0,
 "trust": 19.0
 },
@@ -364,12 +364,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "operations",
-"rank": 46,
+"rank": 47,
 "recomputed": 80.0,
-"score": 85.5,
+"score": 85.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 47,
 "seed_score": 80.0,
@@ -382,7 +382,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -390,10 +390,10 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
-"rank": 38,
+"rank": 41,
 "recomputed": 93.4,
 "score": 88.6,
 "score_version": "sar-score-2.0",
@@ -404,7 +404,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -426,24 +426,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Databricks service",
 "name": "Databricks Mosaic AI Agent Framework",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:57Z",
+"checked_at": "2026-10-11T03:05:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:55Z",
+"checked_at": "2026-10-11T03:05:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:57Z",
+"checked_at": "2026-10-11T03:05:03Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -453,7 +453,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:01Z",
+"checked_at": "2026-10-11T03:14:05Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -478,7 +478,7 @@
 "sources": [
 {
 "payload_hash": "45049d4a6b61494a6591e6b2665fc53e3ec21b2bfcedee5922bb741b2fe87b86",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.databricks.com/product/machine-learning/ai-agents"
 }
@@ -490,7 +490,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://www.databricks.com/product/machine-learning/ai-agents",
 "vendor": "Databricks"

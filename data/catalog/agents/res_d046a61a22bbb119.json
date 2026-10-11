@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "VectifyAI/PageIndex"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -138,7 +138,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "MIT",
 "name": "PageIndex",
 "news": [
@@ -168,17 +168,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:21Z",
+"checked_at": "2026-10-11T03:06:21Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:20Z",
+"checked_at": "2026-10-11T03:06:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:21Z",
+"checked_at": "2026-10-11T03:06:21Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -188,7 +188,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:05:15Z",
+"checked_at": "2026-10-11T03:20:21Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -207,8 +207,8 @@
 "slug": "vectifyai-pageindex",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/VectifyAI/PageIndex"
 }
@@ -233,7 +233,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://pageindex.ai",
 "vendor": "VectifyAI"

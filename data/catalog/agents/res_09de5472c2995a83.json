@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "31f01f99406350362f0ba892c6865f2e84eeb1798d960da5742e6a2bdf2eff50",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:22Z",
+"retrieved_at": "2026-10-11T03:12:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "416ca2c064da9fb9453ff44b98b2ae41b2a93396b9ace809a448413b6343faf3",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:22Z",
+"retrieved_at": "2026-10-11T03:12:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ddd173fc20dcbe90222b831743b9bb64e01c70177fea082370986695d333fbe8",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:22Z",
+"retrieved_at": "2026-10-11T03:12:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ddd173fc20dcbe90222b831743b9bb64e01c70177fea082370986695d333fbe8",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:22Z",
+"retrieved_at": "2026-10-11T03:12:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -118,7 +118,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 15.0,
+"governance": 7.5,
 "health": 19.0,
 "trust": 19.0
 },
@@ -126,13 +126,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "general",
-"rank": 81,
+"rank": 91,
 "recomputed": 85.6,
-"score": 80.3,
+"score": 79.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 91,
 "seed_score": 85.6,
@@ -145,7 +145,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -153,13 +153,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 59,
+"rank": 8,
 "recomputed": 89.3,
-"score": 74.0,
+"score": 73.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 8,
 "seed_score": 89.3,
@@ -168,7 +168,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -203,24 +203,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Luminance",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:56Z",
+"checked_at": "2026-10-11T03:05:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:54Z",
+"checked_at": "2026-10-11T03:05:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:57Z",
+"checked_at": "2026-10-11T03:05:58Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -230,7 +230,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:56Z",
+"checked_at": "2026-10-11T03:15:01Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -255,7 +255,7 @@
 "sources": [
 {
 "payload_hash": "254cbe24536326b4ffcaca1c241dbc1ba75dfd1458216ee3b7c2c76583b9a76a",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.luminance.com/"
 }
@@ -267,7 +267,8 @@
 "identity": 2,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://www.luminance.com/",
 "vendor": "Luminance"

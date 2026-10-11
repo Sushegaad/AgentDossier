@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "5dc0669958a405ae4588f3e117ceff17dfbda33cfdb49829793b280ac44f4da9",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:41Z",
+"retrieved_at": "2026-10-11T03:11:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -73,7 +73,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 69,
+"rank": 92,
 "recomputed": 89.4,
 "score": 86.2,
 "score_version": "sar-score-2.0",
@@ -86,7 +86,7 @@
 "external_ids": {
 "github": "FlowiseAI/Flowise"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -108,7 +108,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Apache-2.0",
 "name": "Flowise",
 "news": [
@@ -127,17 +127,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:25Z",
+"checked_at": "2026-10-11T03:05:28Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:24Z",
+"checked_at": "2026-10-11T03:05:27Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:26Z",
+"checked_at": "2026-10-11T03:05:28Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -181,7 +181,7 @@
 "sources": [
 {
 "payload_hash": "22d2fd3d17ada4b8de8c299740d398cf2aa3c699a373618be770493d89809b38",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/FlowiseAI/Flowise"
 }
@@ -211,7 +211,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://github.com/FlowiseAI/Flowise",
 "vendor": "FlowiseAI"

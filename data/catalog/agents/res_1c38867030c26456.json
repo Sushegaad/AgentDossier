@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "xpzouying/xiaohongshu-mcp"
 },
-"first_seen": "2026-10-11T01:43:40Z",
+"first_seen": "2026-10-11T03:01:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,7 +64,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:40Z",
+"last_seen": "2026-10-11T03:01:06Z",
 "license": "Apache-2.0",
 "name": "xiaohongshu-mcp",
 "news": [
@@ -94,12 +94,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:37Z",
+"checked_at": "2026-10-11T03:05:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:35Z",
+"checked_at": "2026-10-11T03:05:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -107,7 +107,7 @@
 "evidence_url": "https://www.haha.ai/xiaohongshu-mcp",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:48:38Z",
+"checked_at": "2026-10-11T03:05:41Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -119,7 +119,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:06:11Z",
+"checked_at": "2026-10-11T03:21:14Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -131,15 +131,15 @@
 "github_language": "Go",
 "github_open_issues": 107,
 "github_pushed_at": "2026-10-09T02:31:58Z",
-"github_stars": 16193,
+"github_stars": 16194,
 "github_topic": "mcp-server",
 "homepage": "https://www.haha.ai/xiaohongshu-mcp"
 },
 "slug": "xpzouying-xiaohongshu-mcp",
 "sources": [
 {
-"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
-"retrieved_at": "2026-10-11T01:43:40Z",
+"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
+"retrieved_at": "2026-10-11T03:01:06Z",
 "system": "github",
 "url": "https://github.com/xpzouying/xiaohongshu-mcp"
 }
@@ -155,7 +155,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://www.haha.ai/xiaohongshu-mcp",
 "vendor": "xpzouying"

@@ -28,7 +28,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "7e5ac9c412ebcdcd6b5ff38b03d0ed2c98c90290e4b16af21a71fff8087e81d5",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:17Z",
+"retrieved_at": "2026-10-11T03:10:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -54,7 +54,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "45e365dc26cafd00a02a5630321e9d18b3b1d61d4dd94fd46673d5f727edbf27",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:17Z",
+"retrieved_at": "2026-10-11T03:10:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -80,7 +80,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f02fcf57134e0d6d31ee36d1676f4d29f9d54dcae1173f413cf1ac6df4d7f5b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:17Z",
+"retrieved_at": "2026-10-11T03:10:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -106,7 +106,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "45e365dc26cafd00a02a5630321e9d18b3b1d61d4dd94fd46673d5f727edbf27",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:17Z",
+"retrieved_at": "2026-10-11T03:10:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -132,7 +132,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f02fcf57134e0d6d31ee36d1676f4d29f9d54dcae1173f413cf1ac6df4d7f5b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:17Z",
+"retrieved_at": "2026-10-11T03:10:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -153,7 +153,7 @@
 "docs": 5.0,
 "domain_fit": 34.0,
 "ecosystem": 7.6,
-"governance": 12.0,
+"governance": 6.0,
 "health": null,
 "trust": 21.0
 },
@@ -161,8 +161,8 @@
 "confidence": 0.34,
 "evidence_coverage": 0.5,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -178,7 +178,7 @@
 "external_ids": {
 "ard": "urn:air:autorfp.ai:server:mcp"
 },
-"first_seen": "2026-10-11T01:47:33Z",
+"first_seen": "2026-10-11T03:04:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -200,7 +200,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:33Z",
+"last_seen": "2026-10-11T03:04:53Z",
 "license": null,
 "name": "AutoRFP.ai MCP server",
 "news": [],
@@ -233,7 +233,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:08:19Z",
+"checked_at": "2026-10-11T03:23:19Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -243,7 +243,7 @@
 "sources": [
 {
 "payload_hash": "a683c041c9a630a856791f6cd36174139590b4bf22deed5b1de11cf4464a9109",
-"retrieved_at": "2026-10-11T01:47:33Z",
+"retrieved_at": "2026-10-11T03:04:53Z",
 "system": "ard",
 "url": "https://autorfp.ai/.well-known/ai-catalog.json"
 }
@@ -255,7 +255,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://autorfp.ai/.well-known/mcp/server-card.json",
 "vendor": "autorfp.ai"

@@ -27,7 +27,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2025f53b8cc591a0e85ae6e021d914631a7fe28a2403dd0701cb58fb18d5b0bd",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:32Z",
+"retrieved_at": "2026-10-11T03:12:21Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -51,9 +51,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "a847abb56b10e0d07ff36611be77bfa44cb4e7f589b52ce3b9396b176f589532",
+"payload_hash": "02048e8113b4447efba593149fe53f4bac5323b6577fb34fafbd0101a27f02ec",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:32Z",
+"retrieved_at": "2026-10-11T03:12:21Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -79,7 +79,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2025f53b8cc591a0e85ae6e021d914631a7fe28a2403dd0701cb58fb18d5b0bd",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:32Z",
+"retrieved_at": "2026-10-11T03:12:21Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -119,7 +119,7 @@
 "external_ids": {
 "github": "n8n-io/self-hosted-ai-starter-kit"
 },
-"first_seen": "2026-10-11T01:38:56Z",
+"first_seen": "2026-10-11T02:56:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -141,24 +141,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:56Z",
+"last_seen": "2026-10-11T02:56:43Z",
 "license": "Apache-2.0",
 "name": "self-hosted-ai-starter-kit",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:05Z",
+"checked_at": "2026-10-11T03:06:07Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:04Z",
+"checked_at": "2026-10-11T03:06:06Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:06Z",
+"checked_at": "2026-10-11T03:06:07Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -168,7 +168,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:06:15Z",
+"checked_at": "2026-10-11T03:21:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -187,8 +187,8 @@
 "slug": "n8n-io-self-hosted-ai-starter-kit",
 "sources": [
 {
-"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
-"retrieved_at": "2026-10-11T01:38:56Z",
+"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
+"retrieved_at": "2026-10-11T02:56:43Z",
 "system": "github",
 "url": "https://github.com/n8n-io/self-hosted-ai-starter-kit"
 }
@@ -206,7 +206,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://n8n.io",
 "vendor": "n8n-io"

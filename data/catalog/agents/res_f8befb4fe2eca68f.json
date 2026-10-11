@@ -44,7 +44,7 @@
 "external_ids": {
 "github": "RightNow-AI/openfang"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -73,19 +73,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "Apache-2.0",
 "name": "openfang",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:18Z",
+"checked_at": "2026-10-11T03:06:18Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:17Z",
+"checked_at": "2026-10-11T03:06:17Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -93,7 +93,7 @@
 "evidence_url": "https://www.openfang.sh/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:49:19Z",
+"checked_at": "2026-10-11T03:06:19Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -105,7 +105,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:06:02Z",
+"checked_at": "2026-10-11T03:21:06Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -124,8 +124,8 @@
 "slug": "rightnow-ai-openfang",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/RightNow-AI/openfang"
 }
@@ -146,7 +146,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://www.openfang.sh/",
 "vendor": "RightNow-AI"

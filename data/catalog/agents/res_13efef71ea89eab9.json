@@ -125,7 +125,7 @@
 "external_ids": {
 "mcp_registry": "ai.aetherwealth/mcp"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -147,19 +147,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": null,
 "name": "Aether Wealth",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:18Z",
+"checked_at": "2026-10-11T03:03:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:17Z",
+"checked_at": "2026-10-11T03:03:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -184,7 +184,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:00:55Z",
+"checked_at": "2026-10-11T03:16:26Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -200,7 +200,7 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aetherwealth/mcp"
 }
@@ -212,7 +212,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://aetherwealth.ai/mcp",
 "vendor": "aetherwealth.ai"

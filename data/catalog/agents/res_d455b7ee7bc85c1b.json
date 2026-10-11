@@ -95,7 +95,7 @@
 "external_ids": {
 "github": "genspark-ai/genoffice"
 },
-"first_seen": "2026-10-11T01:41:37Z",
+"first_seen": "2026-10-11T02:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -124,7 +124,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:41:37Z",
+"last_seen": "2026-10-11T02:59:12Z",
 "license": "Apache-2.0",
 "name": "genoffice",
 "news": [
@@ -154,17 +154,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:28Z",
+"checked_at": "2026-10-11T03:05:31Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:27Z",
+"checked_at": "2026-10-11T03:05:30Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:28Z",
+"checked_at": "2026-10-11T03:05:32Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -174,7 +174,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:02Z",
+"checked_at": "2026-10-11T03:22:02Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-07-31T09:40:58Z",
-"github_forks": 1172,
+"github_forks": 1174,
 "github_language": "TypeScript",
-"github_open_issues": 56,
+"github_open_issues": 57,
 "github_pushed_at": "2026-10-10T09:40:11Z",
-"github_stars": 9217,
+"github_stars": 9221,
 "github_topic": "ai-agent",
 "homepage": "https://genoffice.ai/"
 },
 "slug": "genspark-ai-genoffice",
 "sources": [
 {
-"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
-"retrieved_at": "2026-10-11T01:41:37Z",
+"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
+"retrieved_at": "2026-10-11T02:59:12Z",
 "system": "github",
 "url": "https://github.com/genspark-ai/genoffice"
 }
@@ -227,7 +227,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://genoffice.ai/",
 "vendor": "genspark-ai"

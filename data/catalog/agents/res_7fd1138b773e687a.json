@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "491d2e88baaf3f929ac2790a9a0da8d63c65ed819fc4658f3049342d9987b54f",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:25Z",
+"retrieved_at": "2026-10-11T03:13:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f4201714be350f12b9387d46bc24b713d06ebe749044324dad9dc8017115ab20",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:25Z",
+"retrieved_at": "2026-10-11T03:13:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f4201714be350f12b9387d46bc24b713d06ebe749044324dad9dc8017115ab20",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:25Z",
+"retrieved_at": "2026-10-11T03:13:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,7 +92,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -100,11 +100,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "data",
-"rank": 59,
+"rank": 61,
 "recomputed": 85.7,
 "score": 86.1,
 "score_version": "sar-score-2.0",
@@ -119,7 +119,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -127,13 +127,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 54,
+"rank": 7,
 "recomputed": 89.6,
-"score": 74.5,
+"score": 73.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 7,
 "seed_score": 89.6,
@@ -146,7 +146,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 12.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -154,13 +154,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 53,
+"rank": 20,
 "recomputed": 89.0,
-"score": 74.5,
+"score": 73.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 20,
 "seed_score": 89.0,
@@ -169,7 +169,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -191,24 +191,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "vLex Vincent AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:51Z",
+"checked_at": "2026-10-11T03:06:47Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:49Z",
+"checked_at": "2026-10-11T03:06:46Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:51Z",
+"checked_at": "2026-10-11T03:06:48Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -218,7 +218,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:26Z",
+"checked_at": "2026-10-11T03:15:32Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -243,7 +243,7 @@
 "sources": [
 {
 "payload_hash": "0191dc24738229fedad8c7a19804e17566f7c63492b34279a593df7bc469bf3a",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://vlex.com/vincent-ai"
 }
@@ -255,7 +255,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://vlex.com/vincent-ai",
 "vendor": "vLex"

@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ade5239277240a029f857f5718cdecdc658c2b42fbf6acb7a4c3bdf6581a5080",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:01Z",
+"retrieved_at": "2026-10-11T03:12:46Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ade5239277240a029f857f5718cdecdc658c2b42fbf6acb7a4c3bdf6581a5080",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:01Z",
+"retrieved_at": "2026-10-11T03:12:46Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -66,7 +66,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 7.5,
+"governance": 3.8,
 "health": 20.0,
 "trust": 19.0
 },
@@ -74,12 +74,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "general",
-"rank": 59,
+"rank": 89,
 "recomputed": 85.6,
-"score": 82.7,
+"score": 82.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 89,
 "seed_score": 85.6,
@@ -92,7 +92,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -100,13 +100,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"gdpr": 0.3,
-"soc2": 0.3
+"gdpr": 0.15,
+"soc2": 0.15
 },
 "profile": "commercial",
-"rank": 49,
+"rank": 18,
 "recomputed": 86.2,
-"score": 84.3,
+"score": 84.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 18,
 "seed_score": 86.2,
@@ -115,7 +115,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -137,24 +137,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Relevance AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:30Z",
+"checked_at": "2026-10-11T03:06:29Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:29Z",
+"checked_at": "2026-10-11T03:06:28Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:30Z",
+"checked_at": "2026-10-11T03:06:29Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -164,7 +164,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:54Z",
+"checked_at": "2026-10-11T03:14:59Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -189,7 +189,7 @@
 "sources": [
 {
 "payload_hash": "6a5c8c2f56b6f9b6a3af9af25f3d5f5ba3742b9b2505d5575d01e9dc0daef8f0",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://relevanceai.com/"
 }
@@ -201,7 +201,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://relevanceai.com/",
 "vendor": "Relevance AI"

@@ -22,7 +22,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 98,
+"rank": 75,
 "recomputed": 84.5,
 "score": 78.1,
 "score_version": "sar-score-2.0",
@@ -37,7 +37,7 @@
 "external_ids": {
 "github": "SWE-agent/SWE-agent"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,24 +66,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "MIT",
 "name": "SWE-agent",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:39Z",
+"checked_at": "2026-10-11T03:06:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:38Z",
+"checked_at": "2026-10-11T03:06:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:40Z",
+"checked_at": "2026-10-11T03:06:38Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -93,7 +93,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:39Z",
+"checked_at": "2026-10-11T03:15:45Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -134,7 +134,7 @@
 "sources": [
 {
 "payload_hash": "6160c04a70a91dfc1cbd8092b4bc9982de0f2be136f43871a50fec9d6bdb37b6",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/SWE-agent/SWE-agent"
 }
@@ -154,7 +154,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://github.com/SWE-agent/SWE-agent",
 "vendor": "Princeton NLP"

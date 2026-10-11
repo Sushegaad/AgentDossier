@@ -98,7 +98,7 @@
 "external_ids": {
 "mcp_registry": "ai.botinfo/robot-market-data"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -120,19 +120,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "BotInfo — Advanced Robot Market Data",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:27Z",
+"checked_at": "2026-10-11T03:04:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:26Z",
+"checked_at": "2026-10-11T03:04:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -155,7 +155,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:34Z",
+"checked_at": "2026-10-11T03:18:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -172,8 +172,8 @@
 "slug": "botinfo-ai-botinfo-advanced-robot-market-data",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.botinfo/robot-market-data"
 }
@@ -185,7 +185,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://botinfo.ai",
 "vendor": "botinfo.ai"

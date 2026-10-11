@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ec62aadf4e64561a083c9dd6c993ec0ef2385ae91bddfa2af95577fc2e67d06e",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:17Z",
+"retrieved_at": "2026-10-11T03:10:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ec62aadf4e64561a083c9dd6c993ec0ef2385ae91bddfa2af95577fc2e67d06e",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:17Z",
+"retrieved_at": "2026-10-11T03:10:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -116,7 +116,7 @@
 "docs": 10.0,
 "domain_fit": 34.0,
 "ecosystem": 5.2,
-"governance": 6.0,
+"governance": 3.0,
 "health": null,
 "trust": 20.0
 },
@@ -124,11 +124,11 @@
 "confidence": 0.34,
 "evidence_coverage": 0.6,
 "governance_credited": {
-"gdpr": 0.3
+"gdpr": 0.15
 },
 "profile": "commercial",
 "rank": null,
-"score": 31.6,
+"score": 31.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -164,7 +164,7 @@
 "external_ids": {
 "ard": "urn:air:autoposter.ai:social:api"
 },
-"first_seen": "2026-10-11T01:47:33Z",
+"first_seen": "2026-10-11T03:04:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -186,7 +186,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:33Z",
+"last_seen": "2026-10-11T03:04:53Z",
 "license": null,
 "name": "AutoPoster AI Agent API",
 "news": [],
@@ -217,7 +217,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:08:18Z",
+"checked_at": "2026-10-11T03:23:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -227,7 +227,7 @@
 "sources": [
 {
 "payload_hash": "54ed30257e6d735950910dc3702785cfc621a5d273690f5b6722c9557b26229e",
-"retrieved_at": "2026-10-11T01:47:33Z",
+"retrieved_at": "2026-10-11T03:04:53Z",
 "system": "ard",
 "url": "https://autoposter.ai/.well-known/ard.json"
 }
@@ -244,7 +244,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://agent.autoposter.ai/openapi.json",
 "vendor": "autoposter.ai"

@@ -37,7 +37,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "dd98276be6dadcff410ac5009503ff6934ad678fe7b2f3a9707463030367c7ec",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:20Z",
+"retrieved_at": "2026-10-11T03:11:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -119,7 +119,7 @@
 "external_ids": {
 "github": "NirDiamant/agents-towards-production"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -141,19 +141,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "Other",
 "name": "agents-towards-production",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:04Z",
+"checked_at": "2026-10-11T03:05:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:03Z",
+"checked_at": "2026-10-11T03:05:08Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -161,7 +161,7 @@
 "evidence_url": "https://diamant-ai.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:48:04Z",
+"checked_at": "2026-10-11T03:05:11Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -173,7 +173,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:05:52Z",
+"checked_at": "2026-10-11T03:20:56Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -185,15 +185,15 @@
 "github_language": "Jupyter Notebook",
 "github_open_issues": 5,
 "github_pushed_at": "2026-09-21T10:54:17Z",
-"github_stars": 21609,
+"github_stars": 21612,
 "github_topic": "ai-agents",
 "homepage": "https://diamant-ai.com"
 },
 "slug": "nirdiamant-agents-towards-production",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/NirDiamant/agents-towards-production"
 }
@@ -225,7 +225,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://diamant-ai.com",
 "vendor": "NirDiamant"

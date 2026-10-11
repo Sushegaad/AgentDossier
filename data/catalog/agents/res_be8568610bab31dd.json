@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:agenticplug.ai:api:openapi"
 },
-"first_seen": "2026-10-11T01:46:24Z",
+"first_seen": "2026-10-11T03:03:32Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:46:24Z",
+"last_seen": "2026-10-11T03:03:32Z",
 "license": null,
 "name": "agenticplug.ai Public API",
 "news": [],
@@ -97,7 +97,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:43Z",
+"checked_at": "2026-10-11T03:22:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -107,7 +107,7 @@
 "sources": [
 {
 "payload_hash": "076470b8ee7ce7469f92fdaefeeb03f01921b05f793921c1c748e05ad9dabed2",
-"retrieved_at": "2026-10-11T01:46:24Z",
+"retrieved_at": "2026-10-11T03:03:32Z",
 "system": "ard",
 "url": "https://agenticplug.ai/.well-known/ai-catalog.json"
 }
@@ -119,7 +119,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://agenticplug.ai/openapi.json",
 "vendor": "agenticplug.ai"
