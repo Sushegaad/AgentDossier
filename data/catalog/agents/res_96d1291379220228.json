@@ -27,9 +27,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
+"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:07:59Z",
+"retrieved_at": "2026-10-11T17:40:53Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -63,9 +63,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
+"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:07:59Z",
+"retrieved_at": "2026-10-11T17:40:53Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -93,9 +93,9 @@
 "issuer": "Agency / 3PAO Schellman Compliance, LLC",
 "match_confidence": 0.913,
 "next_check": "2026-10-18",
-"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
+"payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:06:55Z",
+"retrieved_at": "2026-10-11T17:39:15Z",
 "review_reason": "entity 1.00, offering 0.81",
 "reviewer": null,
 "scope": "product",
@@ -129,9 +129,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
+"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:07:59Z",
+"retrieved_at": "2026-10-11T17:40:53Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -155,9 +155,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "4476e0e7f507c1df3e81e86c27d9ef3ca03f22fc8a6abb23e093606dd131ae5d",
+"payload_hash": "a8e7fe0d4b990f7526eaf039aaf66a6435f082cafd5699fc7027c956e4c7bb67",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:52Z",
+"retrieved_at": "2026-10-11T17:46:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -181,9 +181,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "4476e0e7f507c1df3e81e86c27d9ef3ca03f22fc8a6abb23e093606dd131ae5d",
+"payload_hash": "a8e7fe0d4b990f7526eaf039aaf66a6435f082cafd5699fc7027c956e4c7bb67",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:52Z",
+"retrieved_at": "2026-10-11T17:46:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -526,7 +526,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -567,7 +567,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Salesforce service",
 "name": "Salesforce Agentforce",
 "news": [
@@ -588,12 +588,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:32Z",
+"checked_at": "2026-10-11T17:38:49Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:29Z",
+"checked_at": "2026-10-11T17:38:47Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -603,7 +603,7 @@
 "evidence_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
 "note": "MCP Solutions (Agentforce developer guide)",
 "probe": {
-"checked_at": "2026-10-11T03:06:34Z",
+"checked_at": "2026-10-11T17:38:50Z",
 "status": "not_found"
 },
 "source": "curated_claim",
@@ -615,7 +615,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:13:21Z",
+"checked_at": "2026-10-11T17:46:39Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -640,19 +640,51 @@
 "sources": [
 {
 "payload_hash": "fb7513f6ee04b2e0ff0cf34bb13e2b2ed834467a73df7dda0f772ac39b0c7157",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://www.salesforce.com/agentforce/"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"checked_on": null,
+"date": "2025-09-25",
+"format": "report",
+"id": "tr_forcedleak_agentforce_2025",
+"kind": "red_team",
+"notes": null,
+"observed": {
+"actions": [
+"processed the poisoned lead when an employee asked about it",
+"queried CRM lead records",
+"emitted an image/link to an attacker-controlled domain that was still on the content security allowlist"
+],
+"approval": false,
+"egress": true,
+"entry": "indirect prompt injection via a public lead-capture form",
+"outcome": "Lead data exfiltrated; Salesforce enforced Trusted URL allowlists for Agentforce and Einstein AI and re-secured the expired domain",
+"refused": false,
+"secrets_touched": true
+},
+"reviewer": null,
+"scenario": "Instructions placed in a Web-to-Lead form field are later processed by an Agentforce agent, which queries lead records and sends them to an expired, re-registered Salesforce-allowlisted domain",
+"scope": "product",
+"source": "Noma Security; reported by The Hacker News",
+"tier": 2,
+"title": "ForcedLeak: indirect prompt injection through Web-to-Lead exfiltrates CRM data from Agentforce (CVSS 9.4)",
+"url": "https://thehackernews.com/2025/09/salesforce-patches-critical-forcedleak.html",
+"vendor_response": "Salesforce patch (Trusted URLs enforcement), September 2025"
+}
+],
 "trust": {
 "compliance": 1,
 "identity": 2,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 2,
 "vendor_compliance": 1
 },
 "url": "https://www.salesforce.com/agentforce/",

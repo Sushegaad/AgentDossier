@@ -85,7 +85,7 @@
 "external_ids": {
 "ard": "urn:air:agentmesh.ai:mcp:mesh"
 },
-"first_seen": "2026-10-11T03:04:27Z",
+"first_seen": "2026-10-11T17:36:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -107,7 +107,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:04:27Z",
+"last_seen": "2026-10-11T17:36:56Z",
 "license": null,
 "merged_ids": [
 "res_9e259e0b25ea44ce"
@@ -144,7 +144,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:45Z",
+"checked_at": "2026-10-11T17:54:45Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -154,7 +154,7 @@
 "sources": [
 {
 "payload_hash": "7439eec5a128ab7f793d57939c0530f2c65bb4f413e5e15c0d638232987ea3f9",
-"retrieved_at": "2026-10-11T03:04:27Z",
+"retrieved_at": "2026-10-11T17:36:56Z",
 "system": "ard",
 "url": "https://agentmesh.ai/.well-known/ai-catalog.json"
 }
@@ -169,12 +169,46 @@
 "mcp"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_241a66be9ad602b8_190e73ab",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_241a66be9ad602b8_190e73ab",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:e82a7acad19477dfd6aafb5c4219e7d2be0d372a387654a726711b0545e62ddc",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of AgentMesh's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_241a66be9ad602b8_190e73ab/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://dev.agentmesh.ai/mcp.html",

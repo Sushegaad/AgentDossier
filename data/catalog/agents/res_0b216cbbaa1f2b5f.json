@@ -15,7 +15,7 @@
 "external_ids": {
 "ard": "urn:air:aimentiontracker.ai:docs:llms"
 },
-"first_seen": "2026-10-11T03:04:27Z",
+"first_seen": "2026-10-11T17:36:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -37,7 +37,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:04:27Z",
+"last_seen": "2026-10-11T17:36:56Z",
 "license": null,
 "name": "AIMentionTracker llms.txt",
 "news": [],
@@ -67,7 +67,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:47Z",
+"checked_at": "2026-10-11T17:54:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -77,19 +77,53 @@
 "sources": [
 {
 "payload_hash": "44827fdb3b74be9a03a0c4f7c87e5f592010d77eec32c50fcf1e1ec92676701e",
-"retrieved_at": "2026-10-11T03:04:27Z",
+"retrieved_at": "2026-10-11T17:36:56Z",
 "system": "ard",
 "url": "https://aimentiontracker.ai/.well-known/ard.json"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_0b216cbbaa1f2b5f_e105e299",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_0b216cbbaa1f2b5f_e105e299",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:52e2a076d4287876e47de9ad0c9a08ac474357daa8a2bda4235d674d07b92661",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of AIMentionTracker llms.txt's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_0b216cbbaa1f2b5f_e105e299/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://aimentiontracker.ai/llms.txt",

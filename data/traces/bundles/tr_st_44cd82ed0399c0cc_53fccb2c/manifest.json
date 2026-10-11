@@ -1,0 +1,19 @@
+{
+ "agent": "res_44cd82ed0399c0cc",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_44cd82ed0399c0cc_53fccb2c",
+ "kind": "self_test",
+ "name": "Certificate Management",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:infisical.com:doc:platform/certificate-management",
+   "manifest_url": "https://infisical.com/.well-known/ard.json",
+   "media_type": "text/markdown",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "infisical-com-certificate-management"
+}

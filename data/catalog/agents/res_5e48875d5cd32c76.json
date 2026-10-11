@@ -323,7 +323,7 @@
 "external_ids": {
 "github": "NVIDIA/NeMo-Agent-Toolkit"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -352,7 +352,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Apache-2.0",
 "name": "NVIDIA NeMo Agent Toolkit",
 "news": [
@@ -371,17 +371,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:21Z",
+"checked_at": "2026-10-11T17:37:39Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:20Z",
+"checked_at": "2026-10-11T17:37:38Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:05:21Z",
+"checked_at": "2026-10-11T17:37:40Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -391,7 +391,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:14:56Z",
+"checked_at": "2026-10-11T17:47:45Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -412,9 +412,9 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-06T17:23:52Z",
-"github_forks": 781,
+"github_forks": 782,
 "github_language": "Python",
-"github_open_issues": 35,
+"github_open_issues": 36,
 "github_pushed_at": "2026-10-08T00:15:30Z",
 "github_stars": 2662,
 "homepage": "https://docs.nvidia.com/nemo/agent-toolkit/latest/",
@@ -431,19 +431,21 @@
 "sources": [
 {
 "payload_hash": "25bfff0bb35f4a187050c2efc201ba99843b0dc1f7cbe8bf47d83d0cfbd712b0",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit",

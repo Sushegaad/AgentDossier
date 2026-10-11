@@ -47,7 +47,7 @@
 "external_ids": {
 "github": "codewhale-hq/Codewhale"
 },
-"first_seen": "2026-10-11T02:59:12Z",
+"first_seen": "2026-10-11T17:31:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -130,7 +130,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "MIT",
 "name": "Codewhale",
 "news": [
@@ -160,12 +160,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:04:57Z",
+"checked_at": "2026-10-11T17:37:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:04:54Z",
+"checked_at": "2026-10-11T17:37:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -173,7 +173,7 @@
 "evidence_url": "https://codewhale.net/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:04:58Z",
+"checked_at": "2026-10-11T17:37:19Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -185,7 +185,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:20:18Z",
+"checked_at": "2026-10-11T17:52:33Z",
 "cves": 13,
 "source": "nvd",
 "tier": 1
@@ -193,19 +193,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-19T18:21:01Z",
-"github_forks": 3568,
+"github_forks": 3567,
 "github_language": "Rust",
-"github_open_issues": 215,
-"github_pushed_at": "2026-10-10T23:54:27Z",
-"github_stars": 41080,
+"github_open_issues": 216,
+"github_pushed_at": "2026-10-11T16:34:20Z",
+"github_stars": 41078,
 "github_topic": "ai-agent",
 "homepage": "https://codewhale.net/"
 },
 "slug": "codewhale-hq-codewhale",
 "sources": [
 {
-"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
-"retrieved_at": "2026-10-11T02:59:12Z",
+"payload_hash": "38ba1ea727a4b2a0fcd908d0387a63cb79f0edacac6ce13e16bf885f2d7a6b7b",
+"retrieved_at": "2026-10-11T17:31:54Z",
 "system": "github",
 "url": "https://github.com/codewhale-hq/Codewhale"
 }
@@ -227,12 +227,14 @@
 "tui"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://codewhale.net/",

@@ -29,9 +29,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "baa87e40cec6ca67e6511771b86904f59f4ddb2a4418c2a050183997cffd2088",
+"payload_hash": "ea6f2ca1e1487f4817153ce76efe230b94888f1a09823e6b1f27183e03a770bf",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:34Z",
+"retrieved_at": "2026-10-11T17:45:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -55,9 +55,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "29e290e583503acef940b369ff4ad0779c4ff7ad0a346bd6fddcd40d522e8f97",
+"payload_hash": "22ab23d0a19be41d74588fb60d07fa72d1e932c66e8692a55f466bbd94c1db5a",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:34Z",
+"retrieved_at": "2026-10-11T17:45:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -81,9 +81,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "baa87e40cec6ca67e6511771b86904f59f4ddb2a4418c2a050183997cffd2088",
+"payload_hash": "ea6f2ca1e1487f4817153ce76efe230b94888f1a09823e6b1f27183e03a770bf",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:34Z",
+"retrieved_at": "2026-10-11T17:45:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -107,9 +107,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "f6efa70d79bf481e2bb0d422c4f17c7dd5ba42e92febc295bcad701d65174c89",
+"payload_hash": "d23337580c99c4045e230a92d6f73cd749e594c834734589f97513d7d26033b8",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:34Z",
+"retrieved_at": "2026-10-11T17:45:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -133,9 +133,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "baa87e40cec6ca67e6511771b86904f59f4ddb2a4418c2a050183997cffd2088",
+"payload_hash": "ea6f2ca1e1487f4817153ce76efe230b94888f1a09823e6b1f27183e03a770bf",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:34Z",
+"retrieved_at": "2026-10-11T17:45:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -196,7 +196,7 @@
 "external_ids": {
 "github": "openstatusHQ/openstatus"
 },
-"first_seen": "2026-10-11T03:01:06Z",
+"first_seen": "2026-10-11T17:33:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -231,19 +231,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:01:06Z",
+"last_seen": "2026-10-11T17:33:43Z",
 "license": "AGPL-3.0",
 "name": "openstatus",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:19Z",
+"checked_at": "2026-10-11T17:38:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:17Z",
+"checked_at": "2026-10-11T17:38:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -252,7 +252,7 @@
 "note": "named in the resource's own tags",
 "probe": {
 "card_url": "https://www.openstatus.dev/.well-known/mcp.json",
-"checked_at": "2026-10-11T03:06:19Z",
+"checked_at": "2026-10-11T17:38:38Z",
 "status": "invalid"
 },
 "source": "self_description",
@@ -264,7 +264,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:04Z",
+"checked_at": "2026-10-11T17:54:10Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -275,16 +275,16 @@
 "github_forks": 788,
 "github_language": "TypeScript",
 "github_open_issues": 82,
-"github_pushed_at": "2026-10-10T19:36:53Z",
-"github_stars": 9178,
+"github_pushed_at": "2026-10-11T13:13:37Z",
+"github_stars": 9177,
 "github_topic": "mcp-server",
 "homepage": "https://openstatus.dev"
 },
 "slug": "openstatushq-openstatus",
 "sources": [
 {
-"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
-"retrieved_at": "2026-10-11T03:01:06Z",
+"payload_hash": "277122e690e54ef01141614efe2b9a0dbb58079565946bd71e01fbbd81427fd4",
+"retrieved_at": "2026-10-11T17:33:43Z",
 "system": "github",
 "url": "https://github.com/openstatusHQ/openstatus"
 }
@@ -311,12 +311,14 @@
 "uptime-monitor"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://openstatus.dev",

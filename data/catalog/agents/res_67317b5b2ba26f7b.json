@@ -72,7 +72,7 @@
 "github": "Boolsai-ai/mcp",
 "mcp_registry": "ai.boolsai/directory"
 },
-"first_seen": "2026-10-11T02:55:14Z",
+"first_seen": "2026-10-11T17:27:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:14Z",
+"last_seen": "2026-10-11T17:27:44Z",
 "license": null,
 "merged_ids": [
 "res_ba82c45f6d4ab709",
@@ -132,7 +132,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:18:45Z",
+"checked_at": "2026-10-11T17:51:11Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -149,38 +149,40 @@
 "slug": "boolsai-ai-boolsai-directory",
 "sources": [
 {
-"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
-"retrieved_at": "2026-10-11T02:55:14Z",
+"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
+"retrieved_at": "2026-10-11T17:27:44Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.boolsai/directory"
 },
 {
-"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
-"retrieved_at": "2026-10-11T02:55:14Z",
+"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
+"retrieved_at": "2026-10-11T17:27:44Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.boolsai/grep"
 },
 {
-"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
-"retrieved_at": "2026-10-11T02:55:14Z",
+"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
+"retrieved_at": "2026-10-11T17:27:44Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.boolsai/scan"
 },
 {
-"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
-"retrieved_at": "2026-10-11T02:55:14Z",
+"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
+"retrieved_at": "2026-10-11T17:27:44Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.boolsai/signals"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://github.com/Boolsai-ai/mcp",

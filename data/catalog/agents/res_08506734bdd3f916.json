@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "8d15921fb103999f17ef4140185495858ac2de79a94eb20c79c5021556b0678b",
+"payload_hash": "4182755185ae4e3709f1a1d402200e57b743defff8c4d4cb159e4ad15cae414b",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:31Z",
+"retrieved_at": "2026-10-11T17:43:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "f982483950e81a1e8da7ee7e958cd84ba9fc8dc6baf868c868d4217b564db90b",
+"payload_hash": "03d4ca2e47189ef0027cfd67edd46d31295fe52bd8642222cdc24c48a1bc6c31",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:31Z",
+"retrieved_at": "2026-10-11T17:43:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -78,9 +78,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "7b055debc6d04a1c3c64e9dbce8d6d1e82a0a88565deebb608201bd6f7af674c",
+"payload_hash": "763671f4c7d7fda56c4124a8097b388b21a514b3a055eb4099a74d88c0014b45",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:31Z",
+"retrieved_at": "2026-10-11T17:43:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -104,9 +104,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "3ca514d3b10def4e5352389591041aefc146a98504e5631a00322fe3a376e8d1",
+"payload_hash": "50b572b6184b44e32f8a1363a80ffa49f80a1fe7f50c992eac0cc64dade192f6",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:31Z",
+"retrieved_at": "2026-10-11T17:43:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -130,9 +130,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "7b055debc6d04a1c3c64e9dbce8d6d1e82a0a88565deebb608201bd6f7af674c",
+"payload_hash": "763671f4c7d7fda56c4124a8097b388b21a514b3a055eb4099a74d88c0014b45",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:31Z",
+"retrieved_at": "2026-10-11T17:43:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -156,9 +156,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "3ca514d3b10def4e5352389591041aefc146a98504e5631a00322fe3a376e8d1",
+"payload_hash": "50b572b6184b44e32f8a1363a80ffa49f80a1fe7f50c992eac0cc64dade192f6",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:31Z",
+"retrieved_at": "2026-10-11T17:43:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -204,7 +204,7 @@
 "external_ids": {
 "ard": "urn:air:beevr.ai:api:public"
 },
-"first_seen": "2026-10-11T03:04:53Z",
+"first_seen": "2026-10-11T17:37:05Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -226,7 +226,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:04:53Z",
+"last_seen": "2026-10-11T17:37:05Z",
 "license": null,
 "name": "BeevR public agent API",
 "news": [],
@@ -256,7 +256,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:23:25Z",
+"checked_at": "2026-10-11T17:55:25Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -266,19 +266,53 @@
 "sources": [
 {
 "payload_hash": "fdb86333ee694a9e2b89a2ed658683487687d70ef45d959cd30a96d55e83e030",
-"retrieved_at": "2026-10-11T03:04:53Z",
+"retrieved_at": "2026-10-11T17:37:05Z",
 "system": "ard",
 "url": "https://beevr.ai/.well-known/ai-catalog.json"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_08506734bdd3f916_a5a10fbf",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_08506734bdd3f916_a5a10fbf",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:d7579252d977a8a35d8c6c05f9121e3df11a1fab59a32b6a6d8b81801aee767e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of BeevR public agent API's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_08506734bdd3f916_a5a10fbf/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://beevr.ai/.well-known/api-catalog",

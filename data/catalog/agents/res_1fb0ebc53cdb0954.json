@@ -79,7 +79,7 @@
 "external_ids": {
 "ard": "urn:air:justidea.agency:api:website"
 },
-"first_seen": "2026-10-11T03:06:11Z",
+"first_seen": "2026-10-11T17:38:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,7 +101,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:06:11Z",
+"last_seen": "2026-10-11T17:38:26Z",
 "license": null,
 "name": "JustIdea Agency public REST API",
 "news": [],
@@ -131,7 +131,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:23:30Z",
+"checked_at": "2026-10-11T17:55:41Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -141,7 +141,7 @@
 "sources": [
 {
 "payload_hash": "862d187772fb67a31103d08b4cd3bce9560098ab4682710f53a2691cf9178448",
-"retrieved_at": "2026-10-11T03:06:11Z",
+"retrieved_at": "2026-10-11T17:38:26Z",
 "system": "ard",
 "url": "https://justidea.agency/.well-known/ard.json"
 }
@@ -152,12 +152,46 @@
 "read-only"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_1fb0ebc53cdb0954_ee6605bc",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_1fb0ebc53cdb0954_ee6605bc",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:89940c09572911396bd356cbdf0369f6f6b082e6d96ffafe456b01ec980d5fe1",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of JustIdea Agency public REST API's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_1fb0ebc53cdb0954_ee6605bc/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 1,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://justidea.agency/api/v1/openapi",

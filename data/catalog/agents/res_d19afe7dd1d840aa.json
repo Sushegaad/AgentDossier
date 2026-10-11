@@ -134,7 +134,7 @@
 "external_ids": {
 "ard": "urn:air:aard.ai:api:rest-v1"
 },
-"first_seen": "2026-10-11T03:03:26Z",
+"first_seen": "2026-10-11T17:35:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -156,7 +156,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:26Z",
+"last_seen": "2026-10-11T17:35:55Z",
 "license": null,
 "name": "Aard REST API",
 "news": [],
@@ -187,7 +187,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:20Z",
+"checked_at": "2026-10-11T17:54:25Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -197,7 +197,7 @@
 "sources": [
 {
 "payload_hash": "acbcf54addda7977b1f22e442de30f0364fa0307f3acbac36771ce8a5303e55e",
-"retrieved_at": "2026-10-11T03:03:26Z",
+"retrieved_at": "2026-10-11T17:35:55Z",
 "system": "ard",
 "url": "https://aard.ai/.well-known/ard.json"
 }
@@ -208,12 +208,46 @@
 "official-statistics"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_d19afe7dd1d840aa_85c526c1",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_d19afe7dd1d840aa_85c526c1",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:7f22425ba8a6ff7005b650c82a81fdfe988eb19b4922152f428bc2521ff65726",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Aard REST API's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_d19afe7dd1d840aa_85c526c1/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://aard.ai/.well-known/openapi-v1.json",

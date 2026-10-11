@@ -31,9 +31,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "309641feb4f5e05ada9ab3143fa2e6acd4729f2536978bcfd14fe4e0f2feb4b8",
+"payload_hash": "19fb431cf6426c3adf90a9e80f8dda19390e61a745d831a536ce92d3ec37cdf2",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:10Z",
+"retrieved_at": "2026-10-11T17:44:37Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,9 +57,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "5a4efa0227f10ea1c658943f5d6eb29fdc2345faa0efd06407d208c5349ac342",
+"payload_hash": "5f94ecddaec1aabceced67baeebc73ca585c42b85fba766de730a955d035c90c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:10Z",
+"retrieved_at": "2026-10-11T17:44:37Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,9 +83,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "133fa90ab9563bbf2a3a6aa079e76f29cacbd7091863d45dfdbe85070d02b2f1",
+"payload_hash": "3ac7d96408c8dc5fcf7c5361ce57ee0e8d8334a245704d57b526414ef0f6ae7c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:10Z",
+"retrieved_at": "2026-10-11T17:44:37Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -102,7 +102,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.89,
+"adoption": 25.9,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -123,7 +123,7 @@
 },
 "data": {
 "components": {
-"adoption": 25.89,
+"adoption": 25.9,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -144,7 +144,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.89,
+"adoption": 25.9,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -167,7 +167,7 @@
 "external_ids": {
 "github": "trycua/cua"
 },
-"first_seen": "2026-10-11T02:59:12Z",
+"first_seen": "2026-10-11T17:31:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -189,7 +189,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "MIT",
 "name": "cua",
 "news": [
@@ -219,17 +219,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:00Z",
+"checked_at": "2026-10-11T17:37:22Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:04:59Z",
+"checked_at": "2026-10-11T17:37:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:05:01Z",
+"checked_at": "2026-10-11T17:37:23Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -240,19 +240,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-01-31T15:02:49Z",
-"github_forks": 2077,
+"github_forks": 2082,
 "github_language": "Rust",
-"github_open_issues": 1164,
-"github_pushed_at": "2026-10-11T02:54:02Z",
-"github_stars": 29301,
+"github_open_issues": 1168,
+"github_pushed_at": "2026-10-11T17:26:48Z",
+"github_stars": 29370,
 "github_topic": "ai-agent",
 "homepage": "https://cua.ai"
 },
 "slug": "trycua-cua",
 "sources": [
 {
-"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
-"retrieved_at": "2026-10-11T02:59:12Z",
+"payload_hash": "38ba1ea727a4b2a0fcd908d0387a63cb79f0edacac6ce13e16bf885f2d7a6b7b",
+"retrieved_at": "2026-10-11T17:31:54Z",
 "system": "github",
 "url": "https://github.com/trycua/cua"
 }
@@ -278,12 +278,14 @@
 "windows-sandbox"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://cua.ai",

@@ -25,9 +25,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
+"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:08:08Z",
+"retrieved_at": "2026-10-11T17:41:06Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -55,9 +55,9 @@
 "issuer": "JAB / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
+"payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:07:02Z",
+"retrieved_at": "2026-10-11T17:39:26Z",
 "review_reason": "vendor authorization for AWS GovCloud; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -364,7 +364,7 @@
 "external_ids": {
 "github": "strands-agents/harness-sdk"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -417,7 +417,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:02:46Z",
+"last_seen": "2026-10-11T17:35:20Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_ab09f3e05ae8aff8"
@@ -463,12 +463,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:36Z",
+"checked_at": "2026-10-11T17:38:53Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:35Z",
+"checked_at": "2026-10-11T17:38:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -476,7 +476,7 @@
 "evidence_url": "https://github.com/strands-agents/sdk-python",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:06:36Z",
+"checked_at": "2026-10-11T17:38:54Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -488,7 +488,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:14:20Z",
+"checked_at": "2026-10-11T17:47:13Z",
 "cves": 5,
 "source": "nvd",
 "tier": 1
@@ -509,12 +509,12 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-14T19:59:51Z",
-"github_forks": 1353,
+"github_forks": 1354,
 "github_language": "Python",
-"github_open_issues": 1007,
+"github_open_issues": 1010,
 "github_pushed_at": "2026-10-10T01:01:49Z",
-"github_stars": 8762,
-"github_topic": "agentic",
+"github_stars": 8769,
+"github_topic": "ai-agents",
 "homepage": "http://strandsagents.com/",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -530,13 +530,13 @@
 "sources": [
 {
 "payload_hash": "3fbe1afa76461a06a6e3f8682f345dd261f46a3ae24033a857daf172381ff601",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/strands-agents/sdk-python"
 },
 {
-"payload_hash": "9fdbfdd6d39938ea94dd83695d9775d425b086b906a9a12882a7c89929f32be1",
-"retrieved_at": "2026-10-11T03:02:46Z",
+"payload_hash": "d22a387e11d59a9860a71e607b2fdbe4e0adc6dd011d59b18f943ab4e8bbf4fc",
+"retrieved_at": "2026-10-11T17:29:29Z",
 "system": "github",
 "url": "https://github.com/strands-agents/harness-sdk"
 }
@@ -564,12 +564,14 @@
 "typescript"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 1
 },
 "url": "https://github.com/strands-agents/sdk-python",

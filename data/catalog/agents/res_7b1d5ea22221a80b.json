@@ -73,7 +73,7 @@
 "github": "Chronary/chronary-mcp",
 "mcp_registry": "ai.chronary/mcp"
 },
-"first_seen": "2026-10-11T02:55:14Z",
+"first_seen": "2026-10-11T17:27:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -95,7 +95,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:14Z",
+"last_seen": "2026-10-11T17:27:44Z",
 "license": null,
 "name": "Chronary",
 "news": [
@@ -125,12 +125,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:17Z",
+"checked_at": "2026-10-11T17:37:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:16Z",
+"checked_at": "2026-10-11T17:37:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -161,7 +161,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:19:19Z",
+"checked_at": "2026-10-11T17:51:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -178,20 +178,22 @@
 "slug": "chronary-ai-chronary",
 "sources": [
 {
-"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
-"retrieved_at": "2026-10-11T02:55:14Z",
+"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
+"retrieved_at": "2026-10-11T17:27:44Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.chronary/mcp"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://docs.chronary.ai/mcp/overview",

@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "4b2b10ecaf6e05e3cf82acda40cc25eca9303a461bd6745d2d5b7a9d7a3259b2",
+"payload_hash": "bce2a503c1e32c2f1eddd5659ccc5fbccfdd6290c7cd5f1bc0802cf72ade4f8e",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:11Z",
+"retrieved_at": "2026-10-11T17:45:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -62,7 +62,7 @@
 "external_ids": {
 "github": "mastra-ai/mastra"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -84,7 +84,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Elastic-2.0",
 "name": "Mastra",
 "news": [
@@ -114,12 +114,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:58Z",
+"checked_at": "2026-10-11T17:38:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:57Z",
+"checked_at": "2026-10-11T17:38:16Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -127,7 +127,7 @@
 "evidence_url": "https://github.com/mastra-ai/mastra",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:05:59Z",
+"checked_at": "2026-10-11T17:38:18Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -153,11 +153,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-08-06T20:44:31Z",
-"github_forks": 2947,
+"github_forks": 2952,
 "github_language": "TypeScript",
-"github_open_issues": 517,
-"github_pushed_at": "2026-10-11T02:57:06Z",
-"github_stars": 28694,
+"github_open_issues": 516,
+"github_pushed_at": "2026-10-11T17:26:12Z",
+"github_stars": 28710,
 "homepage": "https://mastra.ai",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -173,7 +173,7 @@
 "sources": [
 {
 "payload_hash": "ed55274ab88591d562bd74fe65b633feaac631c779a3ca0ddfeb36eefd8ab326",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/mastra-ai/mastra"
 }
@@ -194,12 +194,14 @@
 "workflows"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://github.com/mastra-ai/mastra",

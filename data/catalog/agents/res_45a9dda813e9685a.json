@@ -48,7 +48,7 @@
 "external_ids": {
 "ard": "urn:air:alpic.ai:skill:use-alpic"
 },
-"first_seen": "2026-10-11T03:04:27Z",
+"first_seen": "2026-10-11T17:36:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -70,7 +70,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:04:27Z",
+"last_seen": "2026-10-11T17:36:56Z",
 "license": null,
 "name": "Use Alpic Cloud",
 "news": [],
@@ -103,7 +103,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:52Z",
+"checked_at": "2026-10-11T17:54:52Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -113,19 +113,53 @@
 "sources": [
 {
 "payload_hash": "6abfbe545b1c7e4c7511b593a5684fd34c626b86781c79bf119201e89f6961db",
-"retrieved_at": "2026-10-11T03:04:27Z",
+"retrieved_at": "2026-10-11T17:36:56Z",
 "system": "ard",
 "url": "https://alpic.ai/.well-known/ai-catalog.json"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_45a9dda813e9685a_eddbc995",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_45a9dda813e9685a_eddbc995",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:49de25ad221399bfb07cc5f2548f603465d789847256e48f5f39fc8ddfae477c",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Use Alpic Cloud's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_45a9dda813e9685a_eddbc995/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://raw.githubusercontent.com/alpic-ai/alpic-plugin/main/plugins/alpic/skills/use-alpic/SKILL.md",

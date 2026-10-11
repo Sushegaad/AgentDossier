@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:aard.ai:skill:guarding-derived-indicators"
 },
-"first_seen": "2026-10-11T03:03:26Z",
+"first_seen": "2026-10-11T17:35:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:26Z",
+"last_seen": "2026-10-11T17:35:55Z",
 "license": null,
 "name": "Guarding derived indicators (agent skill)",
 "news": [],
@@ -101,7 +101,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:25Z",
+"checked_at": "2026-10-11T17:54:29Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -111,7 +111,7 @@
 "sources": [
 {
 "payload_hash": "8bf1025fc7f52585673fc96010c7683a38e6948b206b807783d69c147f0c0cd1",
-"retrieved_at": "2026-10-11T03:03:26Z",
+"retrieved_at": "2026-10-11T17:35:55Z",
 "system": "ard",
 "url": "https://aard.ai/.well-known/ard.json"
 }
@@ -121,12 +121,46 @@
 "official-statistics"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_7e573c0ed94c137f_978c5c45",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_7e573c0ed94c137f_978c5c45",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:25242e7598f0f77fa6c7ee2f3cd2331dd4e286adbd6e51ba16095e287ae7205c",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Guarding derived indicators (agent skill)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_7e573c0ed94c137f_978c5c45/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://aard.ai/.well-known/agent-skills/guarding-derived-indicators.zip",

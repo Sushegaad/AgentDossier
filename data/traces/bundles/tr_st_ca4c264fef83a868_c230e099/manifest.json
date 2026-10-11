@@ -1,0 +1,19 @@
+{
+ "agent": "res_ca4c264fef83a868",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_ca4c264fef83a868_c230e099",
+ "kind": "self_test",
+ "name": "Infisical content, in one document",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:infisical.com:index:llms-full",
+   "manifest_url": "https://infisical.com/.well-known/ard.json",
+   "media_type": "text/markdown",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "infisical-com-infisical-content-in-one-document"
+}

@@ -32,9 +32,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "b9fe0e7c212a3ff7eb5bcdba548427604cd609053e3baba6a6cbc34110ccbe95",
+"payload_hash": "dd8ab23c59695b6134589bb25e6176aa796d89bca09f078aa0c83ac3bfe151b0",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:13:08Z",
+"retrieved_at": "2026-10-11T17:46:29Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -58,9 +58,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "b9fe0e7c212a3ff7eb5bcdba548427604cd609053e3baba6a6cbc34110ccbe95",
+"payload_hash": "dd8ab23c59695b6134589bb25e6176aa796d89bca09f078aa0c83ac3bfe151b0",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:13:08Z",
+"retrieved_at": "2026-10-11T17:46:29Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -121,7 +121,7 @@
 "external_ids": {
 "github": "VoltAgent/voltagent"
 },
-"first_seen": "2026-10-11T02:56:43Z",
+"first_seen": "2026-10-11T17:29:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -156,7 +156,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:56:43Z",
+"last_seen": "2026-10-11T17:29:29Z",
 "license": "MIT",
 "name": "voltagent",
 "news": [
@@ -186,12 +186,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:48Z",
+"checked_at": "2026-10-11T17:39:05Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:47Z",
+"checked_at": "2026-10-11T17:39:04Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -199,7 +199,7 @@
 "evidence_url": "https://voltagent.dev",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:06:48Z",
+"checked_at": "2026-10-11T17:39:05Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -211,7 +211,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:21:47Z",
+"checked_at": "2026-10-11T17:53:56Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -219,9 +219,9 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-16T15:41:18Z",
-"github_forks": 1162,
+"github_forks": 1163,
 "github_language": "TypeScript",
-"github_open_issues": 111,
+"github_open_issues": 112,
 "github_pushed_at": "2026-09-28T02:04:53Z",
 "github_stars": 10768,
 "github_topic": "ai-agents",
@@ -230,8 +230,8 @@
 "slug": "voltagent-voltagent",
 "sources": [
 {
-"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
-"retrieved_at": "2026-10-11T02:56:43Z",
+"payload_hash": "d22a387e11d59a9860a71e607b2fdbe4e0adc6dd011d59b18f943ab4e8bbf4fc",
+"retrieved_at": "2026-10-11T17:29:29Z",
 "system": "github",
 "url": "https://github.com/VoltAgent/voltagent"
 }
@@ -259,12 +259,14 @@
 "typescript"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://voltagent.dev",

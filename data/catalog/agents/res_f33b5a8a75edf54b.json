@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "astrid-runtime/astrid"
 },
-"first_seen": "2026-10-11T02:56:44Z",
+"first_seen": "2026-10-11T17:29:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,7 +92,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:56:44Z",
+"last_seen": "2026-10-11T17:29:29Z",
 "license": "Apache-2.0",
 "name": "astrid",
 "news": [
@@ -144,7 +144,7 @@
 "github_created_at": "2026-02-15T23:27:31Z",
 "github_forks": 142,
 "github_language": "Rust",
-"github_open_issues": 229,
+"github_open_issues": 230,
 "github_pushed_at": "2026-10-10T00:14:08Z",
 "github_stars": 10280,
 "github_topic": "ai-agents",
@@ -153,8 +153,8 @@
 "slug": "astrid-runtime-astrid",
 "sources": [
 {
-"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
-"retrieved_at": "2026-10-11T02:56:44Z",
+"payload_hash": "d22a387e11d59a9860a71e607b2fdbe4e0adc6dd011d59b18f943ab4e8bbf4fc",
+"retrieved_at": "2026-10-11T17:29:29Z",
 "system": "github",
 "url": "https://github.com/astrid-runtime/astrid"
 }
@@ -172,12 +172,14 @@
 "webassembly"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://github.com/astrid-runtime/astrid",

@@ -32,9 +32,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "f42107a8865bf2783d4393020587847e2dca25189fb984a05e25b2ea5db510ac",
+"payload_hash": "bf34667ae801f58bc72a92c077996afd3861385025c1712212849d8f2350f9b0",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:09:51Z",
+"retrieved_at": "2026-10-11T17:43:18Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -129,7 +129,7 @@
 "github": "anomalyarmor/agents",
 "mcp_registry": "ai.anomalyarmor/armor-mcp"
 },
-"first_seen": "2026-10-11T02:55:13Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -151,7 +151,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:13Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": null,
 "name": "AnomalyArmor",
 "news": [],
@@ -159,7 +159,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://www.anomalyarmor.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-11T03:03:49Z",
+"checked_at": "2026-10-11T17:36:16Z",
 "parser_version": "a2a-0.3+1.0",
 "signed": false,
 "skills": [
@@ -172,7 +172,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T03:03:47Z",
+"checked_at": "2026-10-11T17:36:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -203,7 +203,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:17:11Z",
+"checked_at": "2026-10-11T17:49:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -220,20 +220,54 @@
 "slug": "anomalyarmor-ai-anomalyarmor",
 "sources": [
 {
-"payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
-"retrieved_at": "2026-10-11T02:55:13Z",
+"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.anomalyarmor/armor-mcp"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_2a740dc49cfa94c7_1ce65f98",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_2a740dc49cfa94c7_1ce65f98",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (unsigned)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:d65cfb45fd28efcb263ec8d6bfb681b6897b391689c74e8763c4caba587c28a2",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of AnomalyArmor's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_2a740dc49cfa94c7_1ce65f98/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://www.anomalyarmor.ai",

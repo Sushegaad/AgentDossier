@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "3964195921da56887c1a6f061981d654d2f6448e140f00afba001e131f460c78",
+"payload_hash": "f0c319db8490f418cb99bd2c53ce70915702577effb5ed001eb98546331b814a",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:07Z",
+"retrieved_at": "2026-10-11T17:45:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "3964195921da56887c1a6f061981d654d2f6448e140f00afba001e131f460c78",
+"payload_hash": "f0c319db8490f418cb99bd2c53ce70915702577effb5ed001eb98546331b814a",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:07Z",
+"retrieved_at": "2026-10-11T17:45:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -350,7 +350,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -372,24 +372,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Commercial",
 "name": "Thomson Reuters CoCounsel",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:53Z",
+"checked_at": "2026-10-11T17:38:13Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:52Z",
+"checked_at": "2026-10-11T17:38:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:05:54Z",
+"checked_at": "2026-10-11T17:38:14Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -399,7 +399,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:14:19Z",
+"checked_at": "2026-10-11T17:47:12Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -424,19 +424,21 @@
 "sources": [
 {
 "payload_hash": "115fd1f0798ac254e68e9bad4578218465083a8895fff738d115e2d4744c374d",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://legal.thomsonreuters.com/en/products/cocounsel"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 4,
 "issues": 1,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://legal.thomsonreuters.com/en/products/cocounsel",

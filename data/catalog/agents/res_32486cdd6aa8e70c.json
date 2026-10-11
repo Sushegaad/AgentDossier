@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "diegosouzapw/OmniRoute"
 },
-"first_seen": "2026-10-11T02:56:39Z",
+"first_seen": "2026-10-11T17:29:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,7 +101,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:02:41Z",
+"last_seen": "2026-10-11T17:35:15Z",
 "license": "MIT",
 "merged_ids": [
 "res_32486cdd6aa8e70c"
@@ -137,14 +137,14 @@
 "evidence_url": "https://omniroute.online",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:06:13Z",
+"checked_at": "2026-10-11T17:38:32Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:12Z",
+"checked_at": "2026-10-11T17:38:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -152,7 +152,7 @@
 "evidence_url": "https://omniroute.online",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:06:14Z",
+"checked_at": "2026-10-11T17:38:32Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -164,7 +164,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:19:55Z",
+"checked_at": "2026-10-11T17:52:13Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -172,19 +172,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-13T12:38:31Z",
-"github_forks": 10838,
+"github_forks": 10861,
 "github_language": "TypeScript",
-"github_open_issues": 287,
-"github_pushed_at": "2026-10-11T02:09:01Z",
-"github_stars": 75002,
-"github_topic": "ai-agents",
+"github_open_issues": 333,
+"github_pushed_at": "2026-10-11T04:53:56Z",
+"github_stars": 75204,
+"github_topic": "a2a",
 "homepage": "https://omniroute.online"
 },
 "slug": "diegosouzapw-omniroute",
 "sources": [
 {
-"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
-"retrieved_at": "2026-10-11T02:56:39Z",
+"payload_hash": "564dd642aeebec9f48214964f1b584dc43be9dc7f13ed622e8908e811b74416e",
+"retrieved_at": "2026-10-11T17:35:15Z",
 "system": "github",
 "url": "https://github.com/diegosouzapw/OmniRoute"
 }
@@ -212,12 +212,14 @@
 "token-saver"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://omniroute.online",

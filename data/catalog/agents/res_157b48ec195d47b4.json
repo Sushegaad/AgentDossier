@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:aard.ai:docs:llms-txt"
 },
-"first_seen": "2026-10-11T03:03:26Z",
+"first_seen": "2026-10-11T17:35:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:26Z",
+"last_seen": "2026-10-11T17:35:55Z",
 "license": null,
 "name": "Aard llms.txt",
 "news": [],
@@ -101,7 +101,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:27Z",
+"checked_at": "2026-10-11T17:54:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -111,7 +111,7 @@
 "sources": [
 {
 "payload_hash": "26b7adf2db05c0b265b24969b5dd3012fd965fec2bebbaa8fbba3ce38ced8aae",
-"retrieved_at": "2026-10-11T03:03:26Z",
+"retrieved_at": "2026-10-11T17:35:55Z",
 "system": "ard",
 "url": "https://aard.ai/.well-known/ard.json"
 }
@@ -121,12 +121,46 @@
 "llms-txt"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_157b48ec195d47b4_e926164c",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_157b48ec195d47b4_e926164c",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:6a92215c3601e92b20a33162eb12bffe6818ca9a3e2c53f53619959f0af6ffd4",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Aard llms.txt's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_157b48ec195d47b4_e926164c/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://aard.ai/llms.txt",

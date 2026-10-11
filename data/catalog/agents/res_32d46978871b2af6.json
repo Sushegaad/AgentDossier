@@ -40,9 +40,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
+"payload_hash": "0bd0f5abea3092c47626cb6c3c20d5a4de4d547ae09a68c75f670d4aa3c813ad",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:15Z",
+"retrieved_at": "2026-10-11T17:43:39Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -66,9 +66,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "617252dbab3b887b2bd7fb64734b5a31b5f43fdec3a648e4dd6cf8ce2b2c86a8",
+"payload_hash": "9cf7db96567d4dec363024e2448e652e92e7d6a1c33b3de5480d4b97669315d8",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:15Z",
+"retrieved_at": "2026-10-11T17:43:39Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,9 +92,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
+"payload_hash": "0bd0f5abea3092c47626cb6c3c20d5a4de4d547ae09a68c75f670d4aa3c813ad",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:15Z",
+"retrieved_at": "2026-10-11T17:43:39Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -118,9 +118,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
+"payload_hash": "0bd0f5abea3092c47626cb6c3c20d5a4de4d547ae09a68c75f670d4aa3c813ad",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:10:15Z",
+"retrieved_at": "2026-10-11T17:43:39Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -187,7 +187,7 @@
 "external_ids": {
 "ard": "urn:ai:augmentev.com:paseo:khanoor"
 },
-"first_seen": "2026-10-11T03:04:53Z",
+"first_seen": "2026-10-11T17:36:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -207,7 +207,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:04:53Z",
+"last_seen": "2026-10-11T17:36:56Z",
 "license": null,
 "merged_ids": [
 "res_30a67f0df0c3d175",
@@ -250,19 +250,53 @@
 "sources": [
 {
 "payload_hash": "fd313c2108cda4d5a3766fb4db2183f338fc22c34105dffb521cee40b2dec225",
-"retrieved_at": "2026-10-11T03:04:53Z",
+"retrieved_at": "2026-10-11T17:36:56Z",
 "system": "ard",
 "url": "https://augmentev.com/.well-known/ai-catalog.json"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_32d46978871b2af6_a214af91",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_32d46978871b2af6_a214af91",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD invalid (1 validation error)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:2991045aab7fe08dd014ae3b7b2348ee278b00fb0d4c3ea20c704861d7019ae4",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Khanoor's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_32d46978871b2af6_a214af91/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 5,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://augmentev.com/.well-known/paseo/paseo-mcp-card.json",

@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "7fc4e66a619e0b9251accf3cce198215d3619afb8384fe65d5ca0d7a394900fa",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:42Z",
+"retrieved_at": "2026-10-11T17:46:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:42Z",
+"retrieved_at": "2026-10-11T17:46:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:42Z",
+"retrieved_at": "2026-10-11T17:46:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:42Z",
+"retrieved_at": "2026-10-11T17:46:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -403,7 +403,7 @@
 "external_ids": {
 "github": "pydantic/pydantic-ai"
 },
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -486,7 +486,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "MIT",
 "name": "Pydantic AI",
 "news": [
@@ -520,7 +520,7 @@
 "oauth2"
 ],
 "card_url": "https://pydantic.dev/.well-known/agent-card.json",
-"checked_at": "2026-10-11T03:06:25Z",
+"checked_at": "2026-10-11T17:38:44Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -536,7 +536,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:25Z",
+"checked_at": "2026-10-11T17:38:43Z",
 "entries": 4,
 "parser_version": "ard-0.91",
 "sources": [
@@ -546,7 +546,7 @@
 },
 "mcp": {
 "card_url": "https://pydantic.dev/.well-known/mcp.json",
-"checked_at": "2026-10-11T03:06:26Z",
+"checked_at": "2026-10-11T17:38:44Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid",
 "tools": [
@@ -609,7 +609,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:15:21Z",
+"checked_at": "2026-10-11T17:48:07Z",
 "cves": 16,
 "source": "nvd",
 "tier": 1
@@ -630,11 +630,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-06-21T15:55:04Z",
-"github_forks": 2900,
+"github_forks": 2902,
 "github_language": "Python",
 "github_open_issues": 1391,
-"github_pushed_at": "2026-10-10T14:10:41Z",
-"github_stars": 20536,
+"github_pushed_at": "2026-10-11T05:08:41Z",
+"github_stars": 20550,
 "homepage": "https://pydantic.dev/pydantic-ai",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -650,7 +650,7 @@
 "sources": [
 {
 "payload_hash": "eed9caccefb340e0fbf1f507da7b5452330843471ed14bc0c0caefc82217a2c9",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://github.com/pydantic/pydantic-ai"
 }
@@ -665,12 +665,48 @@
 "python"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_36273987eedd5e90_444cdb9b",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_36273987eedd5e90_444cdb9b",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document",
+"served Agentic Resource Discovery (ARD) document",
+"served Model Context Protocol (MCP) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (auth oauth2; unsigned); ARD verified; MCP invalid",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:c6a3edddbe47a4f16a37c679066cf51ce280e11350e80c2c5efc80b3fa42c3ff",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Pydantic AI's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_36273987eedd5e90_444cdb9b/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 3,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://github.com/pydantic/pydantic-ai",

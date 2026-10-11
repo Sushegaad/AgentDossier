@@ -74,7 +74,7 @@
 "external_ids": {
 "ard": "urn:air:aard.ai:skill:decomposing-data-questions"
 },
-"first_seen": "2026-10-11T03:03:26Z",
+"first_seen": "2026-10-11T17:35:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -96,7 +96,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:26Z",
+"last_seen": "2026-10-11T17:35:55Z",
 "license": null,
 "name": "Decomposing data questions (agent skill)",
 "news": [],
@@ -130,7 +130,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:24Z",
+"checked_at": "2026-10-11T17:54:28Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -140,7 +140,7 @@
 "sources": [
 {
 "payload_hash": "37006e48ce19874bd8f8c5c0cb0135336065673064ae41ba806241535866b3a0",
-"retrieved_at": "2026-10-11T03:03:26Z",
+"retrieved_at": "2026-10-11T17:35:55Z",
 "system": "ard",
 "url": "https://aard.ai/.well-known/ard.json"
 }
@@ -150,12 +150,46 @@
 "official-statistics"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_9b7282bffc02cc8d_fa67673f",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_9b7282bffc02cc8d_fa67673f",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:33f34e9c06faf9adbaffb11b4dc5e1fe66630414502052a052fa6efe51678067",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Decomposing data questions (agent skill)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_9b7282bffc02cc8d_fa67673f/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://aard.ai/.well-known/agent-skills/decomposing-data-questions.zip",

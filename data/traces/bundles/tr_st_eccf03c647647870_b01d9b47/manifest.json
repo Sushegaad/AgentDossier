@@ -1,0 +1,21 @@
+{
+ "agent": "res_eccf03c647647870",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_eccf03c647647870_b01d9b47",
+ "kind": "self_test",
+ "name": "infisical",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-11T17:38:05Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://infisical.com/.well-known/ard.json",
+    "https://infisical.com/.well-known/ard.json",
+    "https://infisical.com/.well-known/ard.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "infisical-infisical"
+}

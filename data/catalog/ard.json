@@ -1013,7 +1013,7 @@
    "displayName": "Apify Store search",
    "type": "application/json",
    "url": "https://api.apify.com/v2/store",
-   "description": "Search endpoint over the 84,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
+   "description": "Search endpoint over the 85,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
    "tags": [
     "search",
     "discovery",
@@ -1249,6 +1249,27 @@
    }
   },
   {
+   "identifier": "urn:air:autoblogging.ai:skills:article-writer",
+   "displayName": "Autoblogging.ai article writer",
+   "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+   "url": "https://autoblogging.ai/.well-known/agent-skills/autoblogging-article-writer.md",
+   "description": "Write researched, SEO-optimized blog articles in 38 languages with FAQs, key takeaways, AI images and SERP-based outlines, and optionally publish them to WordPress, through the Autoblogging.ai REST API (Starter plan and above).",
+   "tags": [
+    "seo",
+    "content",
+    "article-writing",
+    "wordpress",
+    "api"
+   ],
+   "representativeQueries": [
+    "Write an SEO article about a topic and publish it to my WordPress site",
+    "Generate a blog post with FAQs and AI images",
+    "Create a listicle article in Spanish for my blog"
+   ],
+   "version": "1.0",
+   "updatedAt": "2026-10-11T19:00:00Z"
+  },
+  {
    "identifier": "urn:air:autoposter.ai:social:mcp-server",
    "displayName": "AutoPoster AI MCP Server",
    "type": "application/mcp-server-card+json",
@@ -1412,6 +1433,243 @@
    "displayName": "Events.Aero event discovery",
    "type": "application/mcp-server-card+json",
    "url": "https://events.aero/mcp/events/server-card"
+  },
+  {
+   "identifier": "urn:air:infisical.com:server:mcp",
+   "displayName": "Infisical MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://infisical.com/.well-known/mcp/server-card.json",
+   "description": "Official MCP server. Runs locally over stdio via `npx -y @infisical/mcp` and authenticates as an Infisical machine identity.",
+   "capabilities": [
+    "list-projects",
+    "create-project",
+    "create-environment",
+    "create-folder",
+    "list-secrets",
+    "get-secret",
+    "create-secret",
+    "update-secret",
+    "delete-secret",
+    "invite-members-to-project"
+   ],
+   "representativeQueries": [
+    "read the DATABASE_URL secret from my staging environment",
+    "add an API key to the production environment of my Infisical project",
+    "list the projects in my Infisical organization"
+   ],
+   "tags": [
+    "mcp",
+    "secrets-management",
+    "api"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:api:rest",
+   "displayName": "Infisical REST API",
+   "type": "application/vnd.oai.openapi+json;version=3.0",
+   "url": "https://infisical.com/openapi.json",
+   "description": "OpenAPI 3.0 description of the full Infisical API: secrets, projects, identities, PKI, and PAM. Bearer authentication with a machine identity access token.",
+   "representativeQueries": [
+    "which Infisical API endpoint creates a machine identity",
+    "how do I issue a certificate through the Infisical API",
+    "what does the Infisical API return when a secret does not exist"
+   ],
+   "tags": [
+    "openapi",
+    "rest",
+    "api"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:index:llms-txt",
+   "displayName": "Infisical agent index",
+   "type": "text/plain",
+   "url": "https://infisical.com/llms.txt",
+   "description": "Index of every page on infisical.com available as markdown, with the conventions for requesting it.",
+   "representativeQueries": [
+    "what does Infisical do",
+    "which Infisical product solves which problem"
+   ],
+   "tags": [
+    "llms-txt",
+    "index"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:index:llms-full",
+   "displayName": "Infisical content, in one document",
+   "type": "text/markdown",
+   "url": "https://infisical.com/llms-full.txt",
+   "description": "Every page of infisical.com that has a markdown view, concatenated: the whole site in one fetch.",
+   "representativeQueries": [
+    "give me everything Infisical says about itself",
+    "what are all of Infisical's products and how do they fit together"
+   ],
+   "tags": [
+    "llms-txt",
+    "index"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:index:docs",
+   "displayName": "Infisical documentation index",
+   "type": "text/plain",
+   "url": "https://infisical.com/docs/llms.txt",
+   "description": "Index of the full product documentation, each page available as markdown by appending `.md` to its URL.",
+   "representativeQueries": [
+    "how do I install the Infisical CLI",
+    "how do I configure a Kubernetes operator to inject Infisical secrets",
+    "how do I set up dynamic secrets for PostgreSQL"
+   ],
+   "tags": [
+    "documentation",
+    "llms-txt"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:index",
+   "displayName": "Infisical",
+   "type": "text/markdown",
+   "url": "https://infisical.com/index.md",
+   "description": "What Infisical is, who it is for, which product solves which problem, pricing, customers, trust posture, and the full integration list.",
+   "representativeQueries": [
+    "what does Infisical do",
+    "is Infisical open source and can I self-host it",
+    "what is the best alternative to HashiCorp Vault"
+   ],
+   "tags": [
+    "documentation",
+    "start-here"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:ai-agents",
+   "displayName": "Infisical for AI agents",
+   "type": "text/markdown",
+   "url": "https://infisical.com/ai-agents.md",
+   "description": "What the platform does for agents rather than how to install it, covering Agent Vault for third-party credentials, brokered PAM sessions on your own infrastructure, and agent identity and audit.",
+   "representativeQueries": [
+    "how do I give an AI agent an API key without letting it see the key",
+    "how do I stop prompt injection from exfiltrating credentials",
+    "how do I give an AI agent scoped access to a production database"
+   ],
+   "tags": [
+    "documentation",
+    "start-here"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:platform/secrets-management",
+   "displayName": "Secrets Management",
+   "type": "text/markdown",
+   "url": "https://infisical.com/platform/secrets-management.md",
+   "description": "Deliver application credentials at runtime instead of from files, and when AI agents should use Agent Vault instead.",
+   "representativeQueries": [
+    "how do I stop keeping secrets in .env files",
+    "how do I fetch secrets at runtime in my application or CI pipeline",
+    "how do I rotate a database credential automatically"
+   ],
+   "tags": [
+    "documentation",
+    "products"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:platform/certificate-management",
+   "displayName": "Certificate Management",
+   "type": "text/markdown",
+   "url": "https://infisical.com/platform/certificate-management.md",
+   "description": "Run private CAs, issue over ACME, SCEP, and EST, and auto-renew X.509 certificates before they expire.",
+   "representativeQueries": [
+    "how do I run a private certificate authority",
+    "how do I stop internal TLS certificates from expiring in production",
+    "how do I issue certificates over ACME, SCEP, or EST"
+   ],
+   "tags": [
+    "documentation",
+    "products"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:platform/agent-vault",
+   "displayName": "Agent Vault",
+   "type": "text/markdown",
+   "url": "https://infisical.com/platform/agent-vault.md",
+   "description": "Give AI agents access to HTTP APIs and services without letting them read the credential, with time-bound sessions, scoped access bundles, per-agent identity, and session logs of every request, for Claude Code, Codex, OpenCode, Hermes, OpenClaw, and any HTTPS_PROXY client.",
+   "representativeQueries": [
+    "how do I give an AI agent access to an API without it reading the credential",
+    "how do I stop a prompt-injected agent from leaking secrets",
+    "how do I give an AI agent its own identity, scoped access, and an audit trail",
+    "how do I see which APIs my AI agent called",
+    "how do I use Claude Code or Codex without giving it my API keys"
+   ],
+   "tags": [
+    "documentation",
+    "products"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:platform/pam",
+   "displayName": "Privileged Access",
+   "type": "text/markdown",
+   "url": "https://infisical.com/platform/pam.md",
+   "description": "Time-bound, approved, recorded sessions on databases and servers, with the credential withheld from the user.",
+   "representativeQueries": [
+    "how do I give an engineer temporary access to a production database",
+    "how do I remove standing SSH and database access",
+    "how do I record and audit privileged sessions"
+   ],
+   "tags": [
+    "documentation",
+    "products"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:pricing",
+   "displayName": "Pricing",
+   "type": "text/markdown",
+   "url": "https://infisical.com/pricing.md",
+   "description": "Prices and plan contents for all three product lines, plus which features are gated by tier.",
+   "representativeQueries": [
+    "how much does Infisical cost",
+    "does Infisical have a free tier or a trial",
+    "which Infisical plan includes SSO, dynamic secrets, or audit log streaming"
+   ],
+   "tags": [
+    "documentation",
+    "pricing"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare",
+   "displayName": "Comparisons",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare.md",
+   "description": "Every head-to-head comparison between Infisical and another secrets management tool, with links to each one.",
+   "representativeQueries": [
+    "what are the alternatives to Infisical",
+    "how does Infisical compare to other secrets managers"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-beyondtrust-secrets-safe",
+   "displayName": "Infisical vs. BeyondTrust Secrets Safe",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-beyondtrust-secrets-safe.md",
+   "description": "How Infisical and BeyondTrust Secrets Safe differ on access control, rotation, dynamic secrets, workload authentication and self-hosting, and how to migrate.",
+   "representativeQueries": [
+    "is Infisical a good alternative to BeyondTrust Secrets Safe",
+    "does BeyondTrust Secrets Safe rotate secrets",
+    "can I self-host BeyondTrust Secrets Safe without Windows Server"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
   },
   {
    "identifier": "urn:air:justidea.agency:server:website",

@@ -51,7 +51,7 @@
 "external_ids": {
 "ard": "urn:air:aard.ai:skills:index"
 },
-"first_seen": "2026-10-11T03:03:26Z",
+"first_seen": "2026-10-11T17:35:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -73,7 +73,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:26Z",
+"last_seen": "2026-10-11T17:35:55Z",
 "license": null,
 "name": "Aard Agent Skills",
 "news": [],
@@ -104,7 +104,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:21Z",
+"checked_at": "2026-10-11T17:54:26Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -114,7 +114,7 @@
 "sources": [
 {
 "payload_hash": "269720d1af4af1557fbff173071bfd4748ab4632759e263bbc6b00892dbb0d23",
-"retrieved_at": "2026-10-11T03:03:26Z",
+"retrieved_at": "2026-10-11T17:35:55Z",
 "system": "ard",
 "url": "https://aard.ai/.well-known/ard.json"
 }
@@ -124,12 +124,46 @@
 "discovery"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_84d868d6f22d01d8_f4c11f14",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_84d868d6f22d01d8_f4c11f14",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:3afaf76b166569e026ad53ed348cf6fdf5542ab061fa249a900f1440de477f6f",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Aard Agent Skills's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_84d868d6f22d01d8_f4c11f14/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://aard.ai/.well-known/agent-skills/index.json",

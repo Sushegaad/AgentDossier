@@ -27,7 +27,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "af9464cca0db27b4f5c544d37173b0d8cf07067b25099fece3b677d2675f3abc",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:40Z",
+"retrieved_at": "2026-10-11T17:46:04Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -67,7 +67,7 @@
 "external_ids": {
 "github": "presenton/presenton"
 },
-"first_seen": "2026-10-11T02:59:12Z",
+"first_seen": "2026-10-11T17:31:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -102,7 +102,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:59:12Z",
+"last_seen": "2026-10-11T17:31:54Z",
 "license": "Apache-2.0",
 "name": "presenton",
 "news": [
@@ -132,17 +132,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:06:24Z",
+"checked_at": "2026-10-11T17:38:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:06:23Z",
+"checked_at": "2026-10-11T17:38:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:06:24Z",
+"checked_at": "2026-10-11T17:38:43Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -152,7 +152,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:21:43Z",
+"checked_at": "2026-10-11T17:53:51Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -160,19 +160,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-10T14:12:46Z",
-"github_forks": 1675,
+"github_forks": 1680,
 "github_language": "TypeScript",
-"github_open_issues": 31,
+"github_open_issues": 32,
 "github_pushed_at": "2026-10-09T11:31:34Z",
-"github_stars": 11034,
+"github_stars": 11046,
 "github_topic": "ai-agent",
 "homepage": "https://presenton.ai"
 },
 "slug": "presenton-presenton",
 "sources": [
 {
-"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
-"retrieved_at": "2026-10-11T02:59:12Z",
+"payload_hash": "38ba1ea727a4b2a0fcd908d0387a63cb79f0edacac6ce13e16bf885f2d7a6b7b",
+"retrieved_at": "2026-10-11T17:31:54Z",
 "system": "github",
 "url": "https://github.com/presenton/presenton"
 }
@@ -189,12 +189,14 @@
 "presentation-agent"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 3,
 "protocols": 5,
 "security": 1,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://presenton.ai",

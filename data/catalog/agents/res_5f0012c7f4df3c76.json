@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "browseros-ai/BrowserOS"
 },
-"first_seen": "2026-10-11T02:56:43Z",
+"first_seen": "2026-10-11T17:29:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,42 +91,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:56:43Z",
+"last_seen": "2026-10-11T17:29:29Z",
 "license": "AGPL-3.0",
 "name": "BrowserOS",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-09T22:12:15Z",
-"headline": "BrowserOS neo Extension - v0.2.34.0",
+"date": "2026-10-11T04:19:19Z",
+"headline": "BrowserOS neo Extension - v0.2.35.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "- feat(claw-app): Ultrafast mode waitlist (#2886) (b189e1ee3)\n- chore: bump browserclaw extension version to 0.2.33.0 (#2841) (f9914f0da)",
+"summary": "- feat(claw): Add setting to turn off human help (#2893) (a4ab56065)\n- chore: bump browserclaw extension version to 0.2.34.0 (#2888) (263640f9c)",
 "tag": "product_update",
-"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/ext-browserclaw/v0.2.34.0"
+"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/ext-browserclaw/v0.2.35.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-07T21:55:41Z",
-"headline": "BrowserOS: BrowserClaw Server - v0.0.68",
+"date": "2026-10-11T04:13:20Z",
+"headline": "BrowserOS: BrowserClaw Server - v0.0.69",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "- fix(release): resolve Claw source identity across rename (#2876) (9e4e99ba1)\n- fix(claw): reconcile integrations and honor Disconnect (#2874) (b0b25bce2)\n- fix: standardize MCP client tab group prefixes (#2875) (93c4c6b59)\n- refactor: ren",
+"summary": "- feat(claw): Add setting to turn off human help (#2893) (a4ab56065)\n- chore(release): update extension prod feeds (9d4eaf6ae)\n- chore: bump browserclaw extension version to 0.2.34.0 (#2888) (263640f9c)\n- chore(release): update extension al",
 "tag": "product_update",
-"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/claw-server/v0.0.68"
+"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/claw-server/v0.0.69"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:04:37Z",
+"checked_at": "2026-10-11T17:36:58Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:04:36Z",
+"checked_at": "2026-10-11T17:36:57Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -134,7 +134,7 @@
 "evidence_url": "https://BrowserOS.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T03:04:37Z",
+"checked_at": "2026-10-11T17:36:59Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -146,7 +146,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:21:26Z",
+"checked_at": "2026-10-11T17:53:36Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -156,17 +156,17 @@
 "github_created_at": "2025-05-18T16:23:54Z",
 "github_forks": 1486,
 "github_language": "TypeScript",
-"github_open_issues": 98,
-"github_pushed_at": "2026-10-10T17:11:35Z",
-"github_stars": 13868,
+"github_open_issues": 96,
+"github_pushed_at": "2026-10-11T14:31:12Z",
+"github_stars": 13873,
 "github_topic": "ai-agents",
 "homepage": "https://BrowserOS.com"
 },
 "slug": "browseros-ai-browseros",
 "sources": [
 {
-"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
-"retrieved_at": "2026-10-11T02:56:43Z",
+"payload_hash": "d22a387e11d59a9860a71e607b2fdbe4e0adc6dd011d59b18f943ab4e8bbf4fc",
+"retrieved_at": "2026-10-11T17:29:29Z",
 "system": "github",
 "url": "https://github.com/browseros-ai/BrowserOS"
 }
@@ -189,12 +189,14 @@
 "windows"
 ],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": 1,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://BrowserOS.com",

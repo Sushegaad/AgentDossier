@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "c9306ee1410c6eb8b0063513405fc40237b6b231afd46c2a2fdfa945423707fc",
+"payload_hash": "54b15a6f9867f766cff831cc35b82c259798a2405629e916c29ece140b9e639b",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:09Z",
+"retrieved_at": "2026-10-11T17:45:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "61fa9fb51a0589d7bf8012267becc48f5c8d4682233245d01d42070a7e203354",
+"payload_hash": "b56ff47deb50c290bff18e73505438aadc1e433577ec2c19c15cef0de1d1da93",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:09Z",
+"retrieved_at": "2026-10-11T17:45:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "c9306ee1410c6eb8b0063513405fc40237b6b231afd46c2a2fdfa945423707fc",
+"payload_hash": "54b15a6f9867f766cff831cc35b82c259798a2405629e916c29ece140b9e639b",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:09Z",
+"retrieved_at": "2026-10-11T17:45:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f8cd653d95fb13521652c671573ab8034b4f9d8392377bcab0505ba205507f7f",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:09Z",
+"retrieved_at": "2026-10-11T17:45:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -121,9 +121,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "c9306ee1410c6eb8b0063513405fc40237b6b231afd46c2a2fdfa945423707fc",
+"payload_hash": "54b15a6f9867f766cff831cc35b82c259798a2405629e916c29ece140b9e639b",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:12:09Z",
+"retrieved_at": "2026-10-11T17:45:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -167,7 +167,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T02:55:12Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -189,24 +189,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:12Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": "Commercial",
 "name": "Lindy",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:55Z",
+"checked_at": "2026-10-11T17:38:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:54Z",
+"checked_at": "2026-10-11T17:38:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T03:05:56Z",
+"checked_at": "2026-10-11T17:38:17Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -234,19 +234,21 @@
 "sources": [
 {
 "payload_hash": "fec522e1664b3dbd42cb6e8b13c2e0d502fead10c047785545458992d483e2d5",
-"retrieved_at": "2026-10-11T02:55:12Z",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "seed_xlsx",
 "url": "https://www.lindy.ai/"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": null,
+"traces": 5,
 "vendor_compliance": 4
 },
 "url": "https://www.lindy.ai/",

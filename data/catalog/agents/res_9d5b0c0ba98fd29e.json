@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:agentgates.ai:platform:mcp"
 },
-"first_seen": "2026-10-11T03:03:32Z",
+"first_seen": "2026-10-11T17:36:01Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:03:32Z",
+"last_seen": "2026-10-11T17:36:01Z",
 "license": null,
 "name": "Agentgates MCP server",
 "news": [],
@@ -100,7 +100,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:22:32Z",
+"checked_at": "2026-10-11T17:54:35Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -110,7 +110,7 @@
 "sources": [
 {
 "payload_hash": "78cab5162bb33dc804d9b0471abcc990575c0a8ce8c67cfbd63a64e886b543c2",
-"retrieved_at": "2026-10-11T03:03:32Z",
+"retrieved_at": "2026-10-11T17:36:01Z",
 "system": "ard",
 "url": "https://agentgates.ai/.well-known/ai-catalog.json"
 }
@@ -121,12 +121,46 @@
 "usdc"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_9d5b0c0ba98fd29e_c8b77e89",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_9d5b0c0ba98fd29e_c8b77e89",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:206c275e33a367dc9f19e836fcf9e860e5fef4ac8c0e2dc3ad45269987d8c0bf",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Agentgates MCP server's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_9d5b0c0ba98fd29e_c8b77e89/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 1,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://agentgates.ai/.well-known/mcp.json",

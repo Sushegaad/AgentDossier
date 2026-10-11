@@ -46,7 +46,7 @@
 "github": "signaltech-org/bolthub-sdk",
 "mcp_registry": "ai.bolthub/mcp"
 },
-"first_seen": "2026-10-11T02:55:14Z",
+"first_seen": "2026-10-11T17:27:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -68,19 +68,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:14Z",
+"last_seen": "2026-10-11T17:27:44Z",
 "license": null,
 "name": "bolthub",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T03:05:15Z",
+"checked_at": "2026-10-11T17:37:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:14Z",
+"checked_at": "2026-10-11T17:37:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -113,20 +113,22 @@
 "slug": "bolthub-ai-bolthub",
 "sources": [
 {
-"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
-"retrieved_at": "2026-10-11T02:55:14Z",
+"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
+"retrieved_at": "2026-10-11T17:27:44Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bolthub/mcp"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [],
 "trust": {
 "compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 5,
 "vendor_compliance": null
 },
 "url": "https://docs.bolthub.ai/docs/sdks/mcp",

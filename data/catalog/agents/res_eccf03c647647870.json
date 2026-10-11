@@ -1,0 +1,334 @@
+{
+"canonical_url": "infisical.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"cybersecurity": [
+"secrets",
+"security"
+],
+"data": [
+"postgres"
+],
+"technology": [
+"kubernetes"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-11)",
+"evidence_url": "https://infisical.com/",
+"framework": "hipaa",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-18",
+"payload_hash": "b39d9bfcbad40e1749f3d0f68828f8679cdcb5c50ab4184ae50494b3676c5501",
+"period_end": null,
+"retrieved_at": "2026-10-11T17:45:24Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
+"evidence_url": "https://infisical.com/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-18",
+"payload_hash": "b39d9bfcbad40e1749f3d0f68828f8679cdcb5c50ab4184ae50494b3676c5501",
+"period_end": null,
+"retrieved_at": "2026-10-11T17:45:24Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": "self-hosted",
+"description": "Infisical is the open-source platform for securing secrets, certificates, access, and AI Agents.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"cybersecurity": {
+"components": {
+"adoption": 25.92,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 7.0,
+"governance": 3.0,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"soc2": 0.15
+},
+"profile": "security",
+"rank": null,
+"score": 70.2,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": []
+},
+"data": {
+"components": {
+"adoption": 25.92,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 7.0,
+"governance": 3.0,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"soc2": 0.15
+},
+"profile": "data",
+"rank": null,
+"score": 74.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 25.92,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 7.0,
+"governance": 3.0,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"soc2": 0.15
+},
+"profile": "technology",
+"rank": null,
+"score": 76.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "Infisical/infisical"
+},
+"first_seen": "2026-10-11T17:29:25Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_eccf03c647647870",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-11T17:29:25Z",
+"license": "Other",
+"name": "infisical",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-08T21:26:59Z",
+"headline": "infisical release v0.166.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* feat(pki): add UltraDNS as an ACME DNS-01 provider by @carlosmonastyrski in https://github.com/Infisical/infisical/pull/7718\r\n* improvement: add pki usage posthog metrics by @sheensantoscapadngan in https://github.com/I",
+"tag": "product_update",
+"url": "https://github.com/Infisical/infisical/releases/tag/v0.166.3"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-07T04:13:34Z",
+"headline": "infisical release v0.166.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* improvement(ui): remove legacy page header after final consumers migrate by @andrewhuhh in https://github.com/Infisical/infisical/pull/8429\r\n* improvement(kms): migrate signing form controls to v3 by @andrewhuhh in http",
+"tag": "product_update",
+"url": "https://github.com/Infisical/infisical/releases/tag/v0.166.2"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-08T17:44:14Z",
+"discussion_url": "https://news.ycombinator.com/item?id=50009140",
+"engagement": 6,
+"headline": "Infisical Agent Vault",
+"kind": "community",
+"link_confidence": 0.95,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://infisical.com/docs/documentation/platform/agent-vault/overview"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-11T17:38:06Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-11T17:38:05Z",
+"entries": 42,
+"parser_version": "ard-0.91",
+"sources": [
+"https://infisical.com/.well-known/ard.json",
+"https://infisical.com/.well-known/ard.json",
+"https://infisical.com/.well-known/ard.json"
+],
+"status": "verified"
+},
+"mcp": {
+"checked_at": "2026-10-11T17:38:06Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "infisical.com",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-11T17:52:49Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2022-08-05T13:50:00Z",
+"github_forks": 2323,
+"github_language": "TypeScript",
+"github_open_issues": 807,
+"github_pushed_at": "2026-10-11T16:22:22Z",
+"github_stars": 29694,
+"github_topic": "ai-agents",
+"homepage": "https://infisical.com"
+},
+"slug": "infisical-infisical",
+"sources": [
+{
+"payload_hash": "a3ca83b8ced2cb995117d91da168ad7f0baebc61c647e647d733b664c47f5540",
+"retrieved_at": "2026-10-11T17:29:25Z",
+"system": "github",
+"url": "https://github.com/Infisical/infisical"
+}
+],
+"tags": [
+"acme",
+"agents",
+"ai-agents",
+"certificate-management",
+"devsecops",
+"environment-variables",
+"kubernetes",
+"open-source",
+"pam",
+"pki",
+"postgres",
+"private-ca",
+"privileged-access-management",
+"secret-management",
+"secret-manager",
+"secrets",
+"secrets-management",
+"security",
+"security-tools",
+"vault"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_eccf03c647647870_b01d9b47",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_eccf03c647647870_b01d9b47",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:39c3ca5dd9e58a1b77b6ad2c29d358a0fddd74b9719f566a7b8ca003ca51581e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of infisical's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_eccf03c647647870_b01d9b47/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": 4
+},
+"url": "https://infisical.com",
+"vendor": "Infisical"
+}

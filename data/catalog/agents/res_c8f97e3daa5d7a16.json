@@ -31,9 +31,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "de7d5e5d48616728b7da2685d042733896fb4af07f8a185b433baaac331ee280",
+"payload_hash": "9e9facf58256e3d4656842e7a0f74dfd608348693b6379d3b7c65fa9d208edd2",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:19Z",
+"retrieved_at": "2026-10-11T17:44:46Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,9 +57,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "26519708fb8c4b5bebfd4344288c95083802d9b26e46b7ec03e75d782c7a2930",
+"payload_hash": "5d75d5fe17a5c2601ac712b8a5cd85eb8a5610eb973adf0c16aa8adb346cd6a6",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:19Z",
+"retrieved_at": "2026-10-11T17:44:46Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,9 +83,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "26519708fb8c4b5bebfd4344288c95083802d9b26e46b7ec03e75d782c7a2930",
+"payload_hash": "5d75d5fe17a5c2601ac712b8a5cd85eb8a5610eb973adf0c16aa8adb346cd6a6",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:11:19Z",
+"retrieved_at": "2026-10-11T17:44:46Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -150,7 +150,7 @@
 "external_ids": {
 "mcp_registry": "ai.ankra/platform"
 },
-"first_seen": "2026-10-11T02:55:13Z",
+"first_seen": "2026-10-11T17:27:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -172,7 +172,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T02:55:13Z",
+"last_seen": "2026-10-11T17:27:43Z",
 "license": null,
 "name": "Ankra",
 "news": [],
@@ -180,7 +180,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://docs.ankra.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-11T03:05:12Z",
+"checked_at": "2026-10-11T17:37:33Z",
 "errors": [
 "missing 'description'"
 ],
@@ -194,7 +194,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T03:05:10Z",
+"checked_at": "2026-10-11T17:37:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -227,20 +227,54 @@
 "slug": "ankra-ai-ankra",
 "sources": [
 {
-"payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
-"retrieved_at": "2026-10-11T02:55:13Z",
+"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
+"retrieved_at": "2026-10-11T17:27:43Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ankra/platform"
 }
 ],
 "tags": [],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_c8f97e3daa5d7a16_19cbdc88",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_c8f97e3daa5d7a16_19cbdc88",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A invalid (unsigned; 1 validation error)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:768a78d23ec88ec1d4ccb2117917ef7bdc71062541c99671ea679580c9b439cd",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Ankra's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_c8f97e3daa5d7a16_19cbdc88/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 4,
 "issues": 1,
 "protocols": 3,
 "security": null,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://docs.ankra.ai/platform/mcp-server",

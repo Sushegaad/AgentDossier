@@ -107,7 +107,7 @@
 "external_ids": {
 "ard": "urn:air:justidea.agency:server:website"
 },
-"first_seen": "2026-10-11T03:06:11Z",
+"first_seen": "2026-10-11T17:38:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -129,7 +129,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:06:11Z",
+"last_seen": "2026-10-11T17:38:26Z",
 "license": null,
 "name": "JustIdea Agency website (MCP)",
 "news": [],
@@ -163,7 +163,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:23:29Z",
+"checked_at": "2026-10-11T17:55:40Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -173,7 +173,7 @@
 "sources": [
 {
 "payload_hash": "45ee744f05a7bc15f295edf7b5c4d4ba809c4a3d79b88eb1e36bde54c784dfc5",
-"retrieved_at": "2026-10-11T03:06:11Z",
+"retrieved_at": "2026-10-11T17:38:26Z",
 "system": "ard",
 "url": "https://justidea.agency/.well-known/ard.json"
 }
@@ -187,12 +187,46 @@
 "poland"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_941152bbd9b15baa_baef8ad3",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_941152bbd9b15baa_baef8ad3",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:1214a3c7e731e8b815827d9754b7f2893cdb283140bd4acb7ac5cad087614bfe",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of JustIdea Agency website (MCP)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_941152bbd9b15baa_baef8ad3/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 1,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://justidea.agency/.well-known/mcp/server-card.json",

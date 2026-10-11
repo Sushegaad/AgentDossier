@@ -31,9 +31,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "ad5daa95c24dc7d17a2ec05b2e034d3f66059ab127d32fcb8dadfec2909f0a7f",
+"payload_hash": "7419ab0f575e4ce322604671849fb7624b75ad2a8996cc2d93a0bda48bb8216c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:13:11Z",
+"retrieved_at": "2026-10-11T17:46:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,9 +57,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "67510feb8da1d904f0f2f14e587740a4edc79ec0dee676c0cda7cf30bef8951b",
+"payload_hash": "eb160755bfe3ebbceebfb68bf83cd4f9323c087dce3afe2777fd45a30b1870ca",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:13:11Z",
+"retrieved_at": "2026-10-11T17:46:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -85,7 +85,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "5b61ef8cf9830424cc8af20c2c1eb8855b0fc62118ed178afe26310b8c519ad4",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:13:11Z",
+"retrieved_at": "2026-10-11T17:46:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -109,9 +109,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "ad5daa95c24dc7d17a2ec05b2e034d3f66059ab127d32fcb8dadfec2909f0a7f",
+"payload_hash": "7419ab0f575e4ce322604671849fb7624b75ad2a8996cc2d93a0bda48bb8216c",
 "period_end": null,
-"retrieved_at": "2026-10-11T03:13:11Z",
+"retrieved_at": "2026-10-11T17:46:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -182,7 +182,7 @@
 "external_ids": {
 "ard": "urn:air:zapier.com:embed:powered-by-zapier"
 },
-"first_seen": "2026-10-11T03:06:54Z",
+"first_seen": "2026-10-11T17:39:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -204,7 +204,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T03:06:54Z",
+"last_seen": "2026-10-11T17:39:13Z",
 "license": null,
 "name": "Powered by Zapier (embedded MCP + Workflow API)",
 "news": [],
@@ -237,7 +237,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T03:23:57Z",
+"checked_at": "2026-10-11T17:56:37Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -247,7 +247,7 @@
 "sources": [
 {
 "payload_hash": "f0d91b92f1d91633171a47c599b4263be5ee4a95ae3a834505b30aaf74f61f94",
-"retrieved_at": "2026-10-11T03:06:54Z",
+"retrieved_at": "2026-10-11T17:39:13Z",
 "system": "ard",
 "url": "https://zapier.com/.well-known/ai-catalog.json"
 }
@@ -259,12 +259,46 @@
 "workflow-api"
 ],
 "tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_3962be91943ce43a_b7296d7d",
+"checked_on": null,
+"date": "2026-10-11",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_3962be91943ce43a_b7296d7d",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:564a3f11aadff12807afba09c97951ca10681f8baccd981a37b428721792994e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Powered by Zapier (embedded MCP + Workflow API)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_3962be91943ce43a_b7296d7d/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,
 "security": 1,
+"traces": 1,
 "vendor_compliance": 4
 },
 "url": "https://docs.zapier.com/powered-by-zapier/index.md",
