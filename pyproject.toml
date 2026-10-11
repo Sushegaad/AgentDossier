@@ -22,12 +22,12 @@ dependencies = []
 [project.optional-dependencies]
 connectors = ["openpyxl>=3.1.5", "feedparser>=6.0.14", "rapidfuzz>=3.14.6", "dnspython>=2.8.0"]
 server = [
-  "fastapi>=0.142.2", "uvicorn[standard]>=0.54.0", "pydantic>=2.13.5", "pydantic-settings>=2.15.0",
+  "fastapi>=0.142.4", "uvicorn[standard]>=0.54.0", "pydantic>=2.13.5", "pydantic-settings>=2.15.0",
   "authlib>=1.8.0", "apscheduler>=3.11.3", "itsdangerous>=2.2",
 ]
-mcp = ["mcp>=2.2.0"]
+mcp = ["mcp>=2.3.0"]
 dev = [
-  "pytest>=9.1.1", "pytest-cov>=7.1.0", "hypothesis>=6.168.3", "ruff>=0.16.10", "mypy>=2.4.0",
+  "pytest>=9.1.1", "pytest-cov>=7.1.0", "hypothesis>=6.168.5", "ruff>=0.16.10", "mypy>=2.4.0",
   "openpyxl>=3.1.5", "jsonschema>=4.26.0", "pyyaml>=6.0.3",
 ]
 
