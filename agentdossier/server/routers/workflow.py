@@ -67,6 +67,7 @@ def open_decision(request: Request, body: dict[str, Any] = Body(...)):
         owner=body.get("owner"),
         notes=body.get("notes"),
         verdict=verdict,
+        require_trace_tier=body.get("requireTraceTier"),
     )
     _decision_event(d, dec, "opened", a.subject)
     return dec

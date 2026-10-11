@@ -212,6 +212,24 @@ def cmd_enterprise(args: argparse.Namespace) -> int:
     from .enterprise import preflight, scanner, selftest
     from .enterprise.config import ConfigError, load
 
+    if args.action == "trace-selftest":
+        import sqlite3
+
+        from .enterprise.traces import best_tier, run_and_store
+        from .harness.mock import RefusingPipeline
+        from .storage.db import ensure_schema
+
+        db = sqlite3.connect(":memory:")
+        ensure_schema(db)
+        tid = run_and_store(db, RefusingPipeline(), "slack", "selftest-agent", "mock-refusing")
+        if not tid:
+            print("trace-selftest: harness produced no result (is the 'harness' extra installed?)")
+            return 1
+        print(
+            f"trace-selftest: stored {tid}; best tier for selftest-agent = {best_tier(db, 'selftest-agent')}"
+        )
+        return 0
+
     if args.action == "audit-verify":
         from .enterprise.audit import verify
 
@@ -420,7 +438,7 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("enterprise", help="authorized private-network scan (self-hosted edition)")
     p.add_argument(
         "action",
-        choices=["preflight", "plan", "scan", "selftest", "audit-verify"],
+        choices=["preflight", "plan", "scan", "selftest", "trace-selftest", "audit-verify"],
         help="preflight: check the config; plan: dry run (nothing fetched); scan: probe and build; selftest: loopback end-to-end check; audit-verify: re-check a scan's audit.jsonl chain",
     )
     p.add_argument(

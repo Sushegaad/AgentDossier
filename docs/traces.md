@@ -84,3 +84,14 @@ data/traces/
   transcript) and `trace-shows-exfiltration` (confirm the fix is in the deployed version; egress
   allowlist during the pilot).
 * Top 100 tables carry a Traces column; the homepage counts agents with a public trace.
+
+## Enterprise edition (private agents)
+
+A self-hosted tenant runs the same harness against agents the public registry never sees and
+keeps the results in its own database (`traces` table), not in `data/traces/`. Nothing leaves the
+tenant unless it chooses to publish a bundle back to the public store. A decision can carry a
+**trace gate**: set `require_trace_tier` (1–5) on the decision and approval is blocked until a
+trace of that tier or better exists for the agent — so "we approved it without ever watching it
+under attack" cannot happen by accident. `agentdossier enterprise trace-selftest` runs the gate
+and the harness end to end with the mock pipeline (no model, no network).
+

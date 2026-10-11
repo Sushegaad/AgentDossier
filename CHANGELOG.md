@@ -7,6 +7,11 @@ listed in `docs/methodology.md`.
 ## [Unreleased]
 
 ### Added — traces
+- **Enterprise trace gate (PR 5).** A self-hosted tenant runs the harness against private agents
+  and stores the results in its own database (`traces` table, never in the public store). A
+  decision can set `require_trace_tier`, and approval is blocked until a trace of that tier or
+  better exists for the agent (`agentdossier enterprise trace-selftest` exercises it with the
+  mock). Optional publish-back to the public store.
 - **Vendor-published traces (PR 4).** A vendor can serve a trace bundle and name it in its ARD
   manifest entry (`traces: [{url, format, sha256}]`); the build fetches it, checks the stated
   hash, and shows it on the dossier as `vendor_published` (tier 1 verified, tier 4 when only

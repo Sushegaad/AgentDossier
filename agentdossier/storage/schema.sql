@@ -33,6 +33,19 @@ CREATE TABLE IF NOT EXISTS feedback (
 CREATE INDEX IF NOT EXISTS ix_decisions_resource ON decisions(resource_id);
 CREATE INDEX IF NOT EXISTS ix_feedback_resource ON feedback(resource_id);
 
+-- traces: instance-local attack/defense evaluations of private or internal agents (PR 5). The
+-- public store lives in data/traces/; these rows never leave the tenant unless explicitly published.
+CREATE TABLE IF NOT EXISTS traces (
+  id TEXT PRIMARY KEY, resource_id TEXT NOT NULL, kind TEXT NOT NULL, tier INTEGER NOT NULL,
+  title TEXT, scenario TEXT, source TEXT, model TEXT, suite TEXT, attack TEXT,
+  injections_succeeded INTEGER, pairs INTEGER, record TEXT NOT NULL, created TEXT NOT NULL, published TEXT);
+CREATE INDEX IF NOT EXISTS ix_traces_resource ON traces(resource_id);
+
+-- an optional per-decision gate: approval is blocked until a trace of this tier or better exists
+-- for the resource (FR-34 extension). Separate table so the change is additive (no ALTER).
+CREATE TABLE IF NOT EXISTS decision_requirements (
+  decision_id INTEGER PRIMARY KEY, require_trace_tier INTEGER);
+
 -- SCIM 2.0 users (deprovisioning)
 CREATE TABLE IF NOT EXISTS scim_users (id TEXT PRIMARY KEY, external_id TEXT, user_name TEXT UNIQUE,
   display_name TEXT, email TEXT, active INTEGER NOT NULL DEFAULT 1, created TEXT, updated TEXT, raw TEXT);
