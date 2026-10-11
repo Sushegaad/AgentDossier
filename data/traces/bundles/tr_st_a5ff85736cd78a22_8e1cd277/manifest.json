@@ -1,0 +1,19 @@
+{
+ "agent": "res_a5ff85736cd78a22",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_a5ff85736cd78a22_8e1cd277",
+ "kind": "self_test",
+ "name": "Agentgates REST API (x402)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agentgates.ai:platform:api",
+   "manifest_url": "https://agentgates.ai/.well-known/ai-catalog.json",
+   "media_type": "application/openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "agentgates-ai-agentgates-rest-api-x402"
+}

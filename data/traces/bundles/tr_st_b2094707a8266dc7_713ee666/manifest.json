@@ -1,0 +1,23 @@
+{
+ "agent": "res_b2094707a8266dc7",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_b2094707a8266dc7_713ee666",
+ "kind": "self_test",
+ "name": "Bindu",
+ "protocols": {
+  "mcp": {
+   "card_url": "https://docs.getbindu.com/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:05:22Z",
+   "parser_version": "mcp-2025-06-18",
+   "remotes": [
+    {
+     "type": "http",
+     "url": "https://pebbling.main-kill-isr.mintlify.me/mcp"
+    }
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "getbindu-bindu"
+}

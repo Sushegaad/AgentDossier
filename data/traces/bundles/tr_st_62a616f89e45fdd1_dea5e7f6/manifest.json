@@ -1,0 +1,22 @@
+{
+ "agent": "res_62a616f89e45fdd1",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_62a616f89e45fdd1_dea5e7f6",
+ "kind": "self_test",
+ "name": "AssetLog MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:assetlog.ai:server:mcp",
+   "manifest_url": "https://assetlog.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "assetlog-ai-assetlog-mcp-server"
+}

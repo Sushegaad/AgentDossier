@@ -1,0 +1,22 @@
+{
+ "agent": "res_c451383b8131a8e9",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c451383b8131a8e9_a1248e57",
+ "kind": "self_test",
+ "name": "ai.agentrapay/agentra",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://api.agentrapay.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:49Z",
+   "errors": [
+    "missing 'version'",
+    "missing service endpoint ('url' or 'supportedInterfaces')"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "status": "invalid"
+  }
+ },
+ "slug": "agentrapay-ai-ai-agentrapay-agentra"
+}

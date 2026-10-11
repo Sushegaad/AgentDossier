@@ -1,0 +1,32 @@
+{
+ "agent": "res_bb3c12727d17ec4f",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_bb3c12727d17ec4f_3b46c792",
+ "kind": "self_test",
+ "name": "BeevR",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://beevr.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:26Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Find BeevR expertise",
+    "BeevR pricing"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:04:24Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://beevr.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "beevr-ai-beevr"
+}

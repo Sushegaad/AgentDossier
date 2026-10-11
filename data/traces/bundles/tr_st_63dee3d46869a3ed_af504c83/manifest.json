@@ -1,0 +1,35 @@
+{
+ "agent": "res_63dee3d46869a3ed",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_63dee3d46869a3ed_af504c83",
+ "kind": "self_test",
+ "name": "LangChain Deep Agents",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://docs.langchain.com/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:05:21Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "langchain"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "mcp": {
+   "card_url": "https://docs.langchain.com/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:05:21Z",
+   "parser_version": "mcp-2025-06-18",
+   "remotes": [
+    {
+     "type": "http",
+     "url": "https://langchain-5e9cc07a.main-kill-isr.mintlify.me/mcp"
+    }
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "langchain-langchain-deep-agents"
+}

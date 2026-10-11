@@ -1,0 +1,19 @@
+{
+ "agent": "res_b25b7f91663f53e7",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_b25b7f91663f53e7_1748d7cd",
+ "kind": "self_test",
+ "name": "AgentMesh",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-11T03:03:31Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://agentmesh.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "agentmesh-ai-agentmesh"
+}

@@ -1,0 +1,43 @@
+{
+ "agent": "res_ecae50de31b9fcd5",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_ecae50de31b9fcd5_17231ae6",
+ "kind": "self_test",
+ "name": "ai.augmentev/paseo",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "creditKey"
+   ],
+   "card_url": "https://augmentev.com/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:08Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Append a signed agent record",
+    "Append 100-1000 signed records",
+    "Get an offline-verifiable proof",
+    "Audit pack",
+    "Top up prepaid credit"
+   ],
+   "status": "verified",
+   "version": "2026-10-08"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:04:08Z",
+   "errors": [
+    "entries[0]: identifier is not a urn:air:<publisher>:<namespace>:<name> URN: urn:ai:augmentev.com:paseo:khanoor",
+    "entries[1]: identifier is not a urn:air:<publisher>:<namespace>:<name> URN: urn:ai:augmentev.com:paseo:resolve",
+    "entries[2]: identifier is not a urn:air:<publisher>:<namespace>:<name> URN: urn:ai:augmentev.com:paseo:docflow"
+   ],
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://augmentev.com/.well-known/ai-catalog.json"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "augmentev-ai-ai-augmentev-paseo"
+}

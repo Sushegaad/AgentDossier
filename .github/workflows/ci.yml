@@ -36,6 +36,8 @@ jobs:
         run: uv run pytest -q --cov=agentdossier --cov-report=term-missing
       - name: BRD traceability
         run: uv run python scripts/check_traceability.py
+      - name: Trace store chain (data/traces)
+        run: uv run python scripts/verify_traces.py
       - name: Enterprise self-test (loopback)
         run: uv run agentdossier enterprise selftest
 

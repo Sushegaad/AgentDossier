@@ -1,0 +1,22 @@
+{
+ "agent": "res_74d599cd8e801b43",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_74d599cd8e801b43_9a14cfce",
+ "kind": "self_test",
+ "name": "Alpic Platform API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:alpic.ai:api:platform",
+   "manifest_url": "https://alpic.ai/.well-known/ai-catalog.json",
+   "media_type": "application/vnd.oai.openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "alpic-ai-alpic-platform-api"
+}

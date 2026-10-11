@@ -1,0 +1,19 @@
+{
+ "agent": "res_136089b1a3fb62d4",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_136089b1a3fb62d4_019161f5",
+ "kind": "self_test",
+ "name": "World Monitor MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:worldmonitor.app:mcp:worldmonitor",
+   "manifest_url": "https://worldmonitor.app/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "worldmonitor-app-world-monitor-mcp-server"
+}

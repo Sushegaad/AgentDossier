@@ -1,0 +1,38 @@
+{
+ "agent": "res_0dc6c6cac3c377b0",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_0dc6c6cac3c377b0_8e1c601e",
+ "kind": "self_test",
+ "name": "BeeAI Framework",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://framework.beeai.dev/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:05:30Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "beeai"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  },
+  "mcp": {
+   "card_url": "https://framework.beeai.dev/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:05:31Z",
+   "parser_version": "mcp-2025-06-18",
+   "remotes": [
+    {
+     "type": "http",
+     "url": "https://beeai-framework.main-kill-isr.mintlify.me/mcp"
+    }
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "ibm-research-linux-foundation-ecosystem-beeai-framework"
+}

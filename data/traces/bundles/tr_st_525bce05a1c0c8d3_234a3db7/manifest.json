@@ -1,0 +1,24 @@
+{
+ "agent": "res_525bce05a1c0c8d3",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_525bce05a1c0c8d3_234a3db7",
+ "kind": "self_test",
+ "name": "AgentTrust — Identity & Trust for A2A Agents",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://agenttrust.ai/.well-known/agent.json",
+   "checked_at": "2026-10-11T03:03:34Z",
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "skills": [
+    "InjectionGuard",
+    "Issue TrustCode",
+    "Verify TrustCode"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "agenttrust-ai-agenttrust-identity-trust-for-a2a-agents"
+}

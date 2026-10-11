@@ -1,0 +1,19 @@
+{
+ "agent": "res_3d0b57233d90ee0f",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_3d0b57233d90ee0f_2ccefa49",
+ "kind": "self_test",
+ "name": "AIvikings REST API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aivikings.ai:api:rest",
+   "manifest_url": "https://aivikings.ai/.well-known/ai-catalog.json",
+   "media_type": "application/vnd.oai.openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aivikings-ai-aivikings-rest-api"
+}

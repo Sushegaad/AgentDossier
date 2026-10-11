@@ -1,0 +1,25 @@
+{
+ "agent": "res_2a740dc49cfa94c7",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_2a740dc49cfa94c7_1ce65f98",
+ "kind": "self_test",
+ "name": "AnomalyArmor",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://www.anomalyarmor.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:49Z",
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "skills": [
+    "Monitor data health",
+    "Investigate an incident",
+    "Set up monitoring",
+    "Manage alerts and destinations"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "anomalyarmor-ai-anomalyarmor"
+}

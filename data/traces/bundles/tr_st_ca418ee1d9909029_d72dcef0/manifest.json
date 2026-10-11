@@ -1,0 +1,19 @@
+{
+ "agent": "res_ca418ee1d9909029",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_ca418ee1d9909029_d72dcef0",
+ "kind": "self_test",
+ "name": "Apatero agent skills",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apatero.ai:skills:index",
+   "manifest_url": "https://apatero.ai/.well-known/ai-catalog.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "apatero-ai-apatero-agent-skills"
+}

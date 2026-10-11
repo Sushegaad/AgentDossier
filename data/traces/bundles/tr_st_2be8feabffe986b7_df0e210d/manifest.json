@@ -1,0 +1,19 @@
+{
+ "agent": "res_2be8feabffe986b7",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_2be8feabffe986b7_df0e210d",
+ "kind": "self_test",
+ "name": "Zapier Connectors",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:zapier.com:connectors:catalog",
+   "manifest_url": "https://zapier.com/.well-known/ai-catalog.json",
+   "media_type": "application/ai-catalog+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "zapier-com-zapier-connectors"
+}

@@ -1,0 +1,19 @@
+{
+ "agent": "res_e75c928d12341d1a",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_e75c928d12341d1a_2842389d",
+ "kind": "self_test",
+ "name": "Agent Ready Report",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agenticplug.ai:server:agent-ready-report",
+   "manifest_url": "https://agenticplug.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "agenticplug-ai-agent-ready-report"
+}

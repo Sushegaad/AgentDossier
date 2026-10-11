@@ -1,0 +1,22 @@
+{
+ "agent": "res_194539b1a82cf5d0",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_194539b1a82cf5d0_e35d567d",
+ "kind": "self_test",
+ "name": "superset-setup",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:superset.sh:skill:superset-setup",
+   "manifest_url": "https://superset.sh/.well-known/ai-catalog.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "superset-sh-superset-setup"
+}

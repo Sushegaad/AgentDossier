@@ -1,0 +1,19 @@
+{
+ "agent": "res_c3948f089e94f20a",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c3948f089e94f20a_a6cd28c0",
+ "kind": "self_test",
+ "name": "Apify Agent General Interface (AGI)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apify.com:payments:agi",
+   "manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+   "media_type": "text/markdown",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "apify-com-apify-agent-general-interface-agi"
+}

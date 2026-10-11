@@ -1,0 +1,19 @@
+{
+ "agent": "res_78d690fd4e3ba2e0",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_78d690fd4e3ba2e0_f1d9e807",
+ "kind": "self_test",
+ "name": "Apify API v2",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apify.com:api:rest",
+   "manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+   "media_type": "application/vnd.oai.openapi+json;version=3.1",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "apify-com-apify-api-v2"
+}

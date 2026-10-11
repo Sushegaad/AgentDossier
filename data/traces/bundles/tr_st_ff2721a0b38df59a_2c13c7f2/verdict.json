@@ -1,0 +1,12 @@
+{
+ "actions": [
+  "served Agent2Agent (A2A) document",
+  "served Model Context Protocol (MCP) document"
+ ],
+ "approval": null,
+ "egress": false,
+ "entry": "GET on the publisher's well-known discovery paths",
+ "outcome": "A2A invalid (unsigned; 1 validation error); MCP invalid",
+ "refused": null,
+ "secrets_touched": false
+}

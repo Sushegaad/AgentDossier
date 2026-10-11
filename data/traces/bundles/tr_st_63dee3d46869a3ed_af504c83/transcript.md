@@ -1,0 +1,19 @@
+# Probe transcript — LangChain Deep Agents
+
+Agent `res_63dee3d46869a3ed` · publisher domain `docs.langchain.com` · 2026-10-11 · harness probe-1.0
+
+## Agent2Agent (A2A)
+
+- requested `https://docs.langchain.com/.well-known/agent-card.json`
+- result: **verified**
+- declared version: 0.3 (card 1.0.0)
+- signed: no
+- skills advertised: langchain
+
+## Model Context Protocol (MCP)
+
+- requested `https://docs.langchain.com/.well-known/mcp.json`
+- result: **invalid**
+
+---
+Observation only: the registry fetched public well-known paths and validated the documents against the protocol specifications. No credentials, no message exchange beyond discovery, nothing written.

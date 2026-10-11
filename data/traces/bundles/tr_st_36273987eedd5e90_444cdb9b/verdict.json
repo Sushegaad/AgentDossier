@@ -1,0 +1,13 @@
+{
+ "actions": [
+  "served Agent2Agent (A2A) document",
+  "served Agentic Resource Discovery (ARD) document",
+  "served Model Context Protocol (MCP) document"
+ ],
+ "approval": null,
+ "egress": false,
+ "entry": "GET on the publisher's well-known discovery paths",
+ "outcome": "A2A verified (auth oauth2; unsigned); ARD verified; MCP invalid",
+ "refused": null,
+ "secrets_touched": false
+}

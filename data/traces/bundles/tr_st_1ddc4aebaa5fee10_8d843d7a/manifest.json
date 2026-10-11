@@ -1,0 +1,19 @@
+{
+ "agent": "res_1ddc4aebaa5fee10",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_1ddc4aebaa5fee10_8d843d7a",
+ "kind": "self_test",
+ "name": "Apify pricing",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apify.com:doc:pricing",
+   "manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+   "media_type": "text/markdown",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "apify-com-apify-pricing"
+}

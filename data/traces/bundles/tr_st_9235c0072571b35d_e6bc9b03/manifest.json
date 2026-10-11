@@ -1,0 +1,24 @@
+{
+ "agent": "res_9235c0072571b35d",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_9235c0072571b35d_e6bc9b03",
+ "kind": "self_test",
+ "name": "citepath",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://citepath.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:52Z",
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "skills": [
+    "check_ai_visibility",
+    "get_readiness",
+    "get_scan"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "citepath-ai-citepath"
+}

@@ -1,0 +1,28 @@
+{
+ "agent": "res_2939e12f47bd520e",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_2939e12f47bd520e_01a056d1",
+ "kind": "self_test",
+ "name": "Bureau public reader",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "BureauBearer"
+   ],
+   "card_url": "https://thebureauoflostcontext.agency/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:06:39Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "Read public context",
+    "Contribute to an existing Case",
+    "Resume from a saved cursor"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "thebureauoflostcontext-agency-bureau-public-reader"
+}

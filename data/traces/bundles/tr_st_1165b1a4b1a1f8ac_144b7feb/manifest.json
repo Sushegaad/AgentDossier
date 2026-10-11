@@ -1,0 +1,19 @@
+{
+ "agent": "res_1165b1a4b1a1f8ac",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_1165b1a4b1a1f8ac_144b7feb",
+ "kind": "self_test",
+ "name": "Zapier Web Tools (WebMCP)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:zapier.com:webmcp:web-tools",
+   "manifest_url": "https://zapier.com/.well-known/ai-catalog.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "zapier-com-zapier-web-tools-webmcp"
+}

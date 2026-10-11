@@ -1,0 +1,19 @@
+{
+ "agent": "res_d5fba525c33afd01",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_d5fba525c33afd01_2364f22e",
+ "kind": "self_test",
+ "name": "Zapier app catalog",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:zapier.com:content:apps",
+   "manifest_url": "https://zapier.com/.well-known/ai-catalog.json",
+   "media_type": "text/html",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "zapier-com-zapier-app-catalog"
+}

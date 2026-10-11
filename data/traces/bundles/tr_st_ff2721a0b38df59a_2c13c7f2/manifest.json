@@ -1,0 +1,38 @@
+{
+ "agent": "res_ff2721a0b38df59a",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_ff2721a0b38df59a_2c13c7f2",
+ "kind": "self_test",
+ "name": "CAMEL",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://docs.camel-ai.org/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:05:18Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "Eigentai"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  },
+  "mcp": {
+   "card_url": "https://docs.camel-ai.org/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:05:18Z",
+   "parser_version": "mcp-2025-06-18",
+   "remotes": [
+    {
+     "type": "http",
+     "url": "https://eigentai-f9fe77bb.main-kill-isr.mintlify.me/mcp"
+    }
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "camel-ai-camel"
+}

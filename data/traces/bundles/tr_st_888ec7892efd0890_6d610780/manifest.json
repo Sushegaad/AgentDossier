@@ -1,0 +1,22 @@
+{
+ "agent": "res_888ec7892efd0890",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_888ec7892efd0890_6d610780",
+ "kind": "self_test",
+ "name": "Alpic Plugin",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:alpic.ai:plugin:alpic",
+   "manifest_url": "https://alpic.ai/.well-known/ai-catalog.json",
+   "media_type": "application/agent-plugins+zip",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "alpic-ai-alpic-plugin"
+}

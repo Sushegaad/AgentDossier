@@ -1,0 +1,19 @@
+{
+ "agent": "res_cd4c243a3561c3b4",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_cd4c243a3561c3b4_ccda9883",
+ "kind": "self_test",
+ "name": "BeevR agent skills",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:beevr.ai:skills:index",
+   "manifest_url": "https://beevr.ai/.well-known/ai-catalog.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "beevr-ai-beevr-agent-skills"
+}

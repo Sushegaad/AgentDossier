@@ -1,0 +1,19 @@
+{
+ "agent": "res_d941e95fa8caed74",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_d941e95fa8caed74_20cd7300",
+ "kind": "self_test",
+ "name": "Pydantic Agent Skills",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:pydantic.dev:catalog:agent-skills",
+   "manifest_url": "https://pydantic.dev/.well-known/ard.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "pydantic-dev-pydantic-agent-skills"
+}

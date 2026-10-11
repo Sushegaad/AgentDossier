@@ -1,0 +1,22 @@
+{
+ "agent": "res_02bcfeea6e812098",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_02bcfeea6e812098_0478afb5",
+ "kind": "self_test",
+ "name": "Events.Aero event discovery",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:events.aero:mcp:events",
+   "manifest_url": "https://events.aero/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "events-aero-events-aero-event-discovery"
+}

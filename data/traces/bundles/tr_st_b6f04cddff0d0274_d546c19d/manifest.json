@@ -1,0 +1,19 @@
+{
+ "agent": "res_b6f04cddff0d0274",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_b6f04cddff0d0274_d546c19d",
+ "kind": "self_test",
+ "name": "Install Zapier (router)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:zapier.com:install:router",
+   "manifest_url": "https://zapier.com/.well-known/ai-catalog.json",
+   "media_type": "text/markdown",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "zapier-com-install-zapier-router"
+}

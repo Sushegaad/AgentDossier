@@ -1,0 +1,25 @@
+{
+ "agent": "res_6fb4a08108c9af30",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_6fb4a08108c9af30_c5e72d1d",
+ "kind": "self_test",
+ "name": "context7",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:context7.com:mcp:context7",
+   "manifest_url": "https://context7.com/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "context7-com-context7"
+}

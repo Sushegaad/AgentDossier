@@ -1,0 +1,22 @@
+{
+ "agent": "res_1bae2f7705112069",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_1bae2f7705112069_6365aadb",
+ "kind": "self_test",
+ "name": "CUVEE",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agent-bev.ai:bev-cuvee",
+   "manifest_url": "https://agent-bev.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "agent-bev-ai-cuvee"
+}

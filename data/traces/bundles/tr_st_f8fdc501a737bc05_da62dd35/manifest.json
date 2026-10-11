@@ -1,0 +1,26 @@
+{
+ "agent": "res_f8fdc501a737bc05",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f8fdc501a737bc05_da62dd35",
+ "kind": "self_test",
+ "name": "AFMR Discovery",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://afmr.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:27Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "Discover AFMR resources",
+    "Look up an AFMR failure mode",
+    "Discover the Reputation Attestation contract",
+    "Discover the Lift Evidence contract"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "afmr-ai-afmr-discovery"
+}

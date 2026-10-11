@@ -1,0 +1,19 @@
+{
+ "agent": "res_83e66a7b82df70cb",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_83e66a7b82df70cb_e13e8435",
+ "kind": "self_test",
+ "name": "AutoPoster AI Agent API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:autoposter.ai:social:api",
+   "manifest_url": "https://autoposter.ai/.well-known/ard.json",
+   "media_type": "application/openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "autoposter-ai-autoposter-ai-agent-api"
+}

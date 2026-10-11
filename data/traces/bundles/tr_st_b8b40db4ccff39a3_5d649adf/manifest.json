@@ -1,0 +1,38 @@
+{
+ "agent": "res_b8b40db4ccff39a3",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_b8b40db4ccff39a3_5d649adf",
+ "kind": "self_test",
+ "name": "BeeAI Platform",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://agentstack.beeai.dev/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:35Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "Ibm"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  },
+  "mcp": {
+   "card_url": "https://agentstack.beeai.dev/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:03:35Z",
+   "parser_version": "mcp-2025-06-18",
+   "remotes": [
+    {
+     "type": "http",
+     "url": "https://ibm-8c0b5b62.main-kill-isr.mintlify.me/mcp"
+    }
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "ibm-community-beeai-platform"
+}

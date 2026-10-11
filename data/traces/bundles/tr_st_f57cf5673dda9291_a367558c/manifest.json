@@ -1,0 +1,19 @@
+{
+ "agent": "res_f57cf5673dda9291",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f57cf5673dda9291_a367558c",
+ "kind": "self_test",
+ "name": "Apify MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apify.com:mcp:apify",
+   "manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "apify-com-apify-mcp-server"
+}

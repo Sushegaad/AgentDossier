@@ -1,0 +1,19 @@
+{
+ "agent": "res_0b216cbbaa1f2b5f",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_0b216cbbaa1f2b5f_e105e299",
+ "kind": "self_test",
+ "name": "AIMentionTracker llms.txt",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aimentiontracker.ai:docs:llms",
+   "manifest_url": "https://aimentiontracker.ai/.well-known/ard.json",
+   "media_type": "text/plain",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aimentiontracker-ai-aimentiontracker-llms-txt"
+}

@@ -1,0 +1,23 @@
+{
+ "agent": "res_edeece7815ec977e",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_edeece7815ec977e_b6fc3d2c",
+ "kind": "self_test",
+ "name": "Cactal",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://cactal.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:44Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "cactalinc"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "cactal-ai-cactal"
+}

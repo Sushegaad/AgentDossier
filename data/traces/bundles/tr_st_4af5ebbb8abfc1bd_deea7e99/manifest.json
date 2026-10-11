@@ -1,0 +1,22 @@
+{
+ "agent": "res_4af5ebbb8abfc1bd",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_4af5ebbb8abfc1bd_deea7e99",
+ "kind": "self_test",
+ "name": "Alcock Arena",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-11T03:03:42Z",
+   "errors": [
+    "entries[0]: missing required term 'displayName'"
+   ],
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://alcock.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "alcock-ai-alcock-arena"
+}

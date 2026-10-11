@@ -1,0 +1,38 @@
+{
+ "agent": "res_6a8386d8494bce8d",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_6a8386d8494bce8d_63050eca",
+ "kind": "self_test",
+ "name": "E2B",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://docs.e2b.dev/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:05:20Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "e2b"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  },
+  "mcp": {
+   "card_url": "https://docs.e2b.dev/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:05:20Z",
+   "parser_version": "mcp-2025-06-18",
+   "remotes": [
+    {
+     "type": "http",
+     "url": "https://e2b.main-kill-isr.mintlify.me/mcp"
+    }
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "e2b-e2b"
+}

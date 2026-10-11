@@ -1,0 +1,19 @@
+{
+ "agent": "res_4e2cee3879ebaa22",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_4e2cee3879ebaa22_81a46edb",
+ "kind": "self_test",
+ "name": "Apify Store search",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apify.com:api:store-search",
+   "manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "apify-com-apify-store-search"
+}

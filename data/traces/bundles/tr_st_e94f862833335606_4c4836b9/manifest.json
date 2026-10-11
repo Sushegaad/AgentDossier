@@ -1,0 +1,19 @@
+{
+ "agent": "res_e94f862833335606",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_e94f862833335606_4c4836b9",
+ "kind": "self_test",
+ "name": "AIvikings Domain Registrar MCP Server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aivikings.ai:server:domain-registrar",
+   "manifest_url": "https://aivikings.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aivikings-ai-aivikings-domain-registrar-mcp-server"
+}

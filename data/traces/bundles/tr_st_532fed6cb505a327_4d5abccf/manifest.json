@@ -1,0 +1,19 @@
+{
+ "agent": "res_532fed6cb505a327",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_532fed6cb505a327_4d5abccf",
+ "kind": "self_test",
+ "name": "Pydantic API Catalog",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:pydantic.dev:catalog:apis",
+   "manifest_url": "https://pydantic.dev/.well-known/ard.json",
+   "media_type": "application/linkset+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "pydantic-dev-pydantic-api-catalog"
+}

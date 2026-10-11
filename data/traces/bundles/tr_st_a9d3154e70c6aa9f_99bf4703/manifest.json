@@ -1,0 +1,19 @@
+{
+ "agent": "res_a9d3154e70c6aa9f",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_a9d3154e70c6aa9f_99bf4703",
+ "kind": "self_test",
+ "name": "Zapier MCP",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:zapier.com:mcp",
+   "manifest_url": "https://zapier.com/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "zapier-com-zapier-mcp"
+}

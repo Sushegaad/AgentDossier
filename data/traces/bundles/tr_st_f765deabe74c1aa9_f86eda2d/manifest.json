@@ -1,0 +1,19 @@
+{
+ "agent": "res_f765deabe74c1aa9",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f765deabe74c1aa9_f86eda2d",
+ "kind": "self_test",
+ "name": "AssetLog agent skills",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:assetlog.ai:skills:index",
+   "manifest_url": "https://assetlog.ai/.well-known/ai-catalog.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "assetlog-ai-assetlog-agent-skills"
+}

@@ -1,0 +1,34 @@
+{
+ "agent": "res_beed90ff85f9892b",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_beed90ff85f9892b_975db1e2",
+ "kind": "self_test",
+ "name": "Atako",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "apiKey"
+   ],
+   "card_url": "https://atako.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:07Z",
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "skills": [
+    "Agents",
+    "Messages & activity",
+    "Files",
+    "Integrations",
+    "Billing & platform",
+    "Projects",
+    "Organization",
+    "Dashboard & notifications",
+    "Webhooks & email",
+    "Public marketing data"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "atako-ai-atako"
+}

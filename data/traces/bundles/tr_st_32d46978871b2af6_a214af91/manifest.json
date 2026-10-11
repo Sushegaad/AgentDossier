@@ -1,0 +1,22 @@
+{
+ "agent": "res_32d46978871b2af6",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_32d46978871b2af6_a214af91",
+ "kind": "self_test",
+ "name": "Khanoor",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "identifier is not a urn:air:<publisher>:<namespace>:<name> URN: urn:ai:augmentev.com:paseo:khanoor"
+   ],
+   "identifier": "urn:ai:augmentev.com:paseo:khanoor",
+   "manifest_url": "https://augmentev.com/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "present-unverified"
+  }
+ },
+ "slug": "khanoor"
+}

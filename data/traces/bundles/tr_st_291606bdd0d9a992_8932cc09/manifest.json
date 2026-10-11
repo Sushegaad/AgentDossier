@@ -1,0 +1,22 @@
+{
+ "agent": "res_291606bdd0d9a992",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_291606bdd0d9a992_8932cc09",
+ "kind": "self_test",
+ "name": "Superset API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:superset.sh:api:superset",
+   "manifest_url": "https://superset.sh/.well-known/ai-catalog.json",
+   "media_type": "application/vnd.oai.openapi+json;version=3.1",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "superset-sh-superset-api"
+}

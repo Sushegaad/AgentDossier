@@ -1,0 +1,19 @@
+{
+ "agent": "res_f43b74ec46ab141d",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f43b74ec46ab141d_3f00dad2",
+ "kind": "self_test",
+ "name": "Pay-per-request inference (skill)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agentgates.ai:skills:inference",
+   "manifest_url": "https://agentgates.ai/.well-known/ai-catalog.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "agentgates-ai-pay-per-request-inference-skill"
+}

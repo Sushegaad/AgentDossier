@@ -1,0 +1,19 @@
+{
+ "agent": "res_83df08ed259e2417",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_83df08ed259e2417_1bf273a8",
+ "kind": "self_test",
+ "name": "AssetLog",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-11T03:04:02Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://assetlog.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "assetlog-ai-assetlog"
+}

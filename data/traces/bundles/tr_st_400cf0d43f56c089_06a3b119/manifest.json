@@ -1,0 +1,22 @@
+{
+ "agent": "res_400cf0d43f56c089",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_400cf0d43f56c089_06a3b119",
+ "kind": "self_test",
+ "name": "apify-ultimate-scraper",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apify.com:skill:apify-ultimate-scraper",
+   "manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "apify-com-apify-ultimate-scraper"
+}

@@ -1,0 +1,38 @@
+{
+ "agent": "res_6a28f426e9f6a8d4",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_6a28f426e9f6a8d4_e23af96b",
+ "kind": "self_test",
+ "name": "AutoRFP.ai",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "oauth2"
+   ],
+   "card_url": "https://autorfp.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:13Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "List agent resources",
+    "Open developer docs",
+    "Open pricing",
+    "Book a demo",
+    "List public skills"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:04:12Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://autorfp.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "autorfp-ai-autorfp-ai"
+}

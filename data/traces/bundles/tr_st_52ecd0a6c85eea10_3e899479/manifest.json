@@ -1,0 +1,19 @@
+{
+ "agent": "res_52ecd0a6c85eea10",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_52ecd0a6c85eea10_3e899479",
+ "kind": "self_test",
+ "name": "AutoPoster AI MCP Server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:autoposter.ai:social:mcp-server",
+   "manifest_url": "https://autoposter.ai/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "autoposter-ai-autoposter-ai-mcp-server"
+}

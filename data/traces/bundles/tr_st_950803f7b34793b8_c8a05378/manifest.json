@@ -1,0 +1,19 @@
+{
+ "agent": "res_950803f7b34793b8",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_950803f7b34793b8_c8a05378",
+ "kind": "self_test",
+ "name": "agenticplug.ai MCP Server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agenticplug.ai:server:mcp",
+   "manifest_url": "https://agenticplug.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "agenticplug-ai-agenticplug-ai-mcp-server"
+}

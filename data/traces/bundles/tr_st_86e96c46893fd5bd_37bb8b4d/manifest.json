@@ -1,0 +1,19 @@
+{
+ "agent": "res_86e96c46893fd5bd",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_86e96c46893fd5bd_37bb8b4d",
+ "kind": "self_test",
+ "name": "Web Content & URL Tools",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-11T03:03:50Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://apify.com/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "avaloncompany-ai-web-content-url-tools"
+}

@@ -1,0 +1,30 @@
+{
+ "agent": "res_fa5c57d8da998e5c",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_fa5c57d8da998e5c_98b2cb06",
+ "kind": "self_test",
+ "name": "AIﾉアカリ☆ Agent Trust Receipt",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "keymasterBearer"
+   ],
+   "card_url": "https://ai-akari.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:35Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "Get Secret",
+    "List Services",
+    "List Secrets",
+    "Health Check",
+    "Rotate Secret Instructions"
+   ],
+   "status": "verified",
+   "version": "1.0.3"
+  }
+ },
+ "slug": "ai-akari-ai-ai-agent-trust-receipt"
+}

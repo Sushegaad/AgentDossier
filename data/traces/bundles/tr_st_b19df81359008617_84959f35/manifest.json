@@ -1,0 +1,19 @@
+{
+ "agent": "res_b19df81359008617",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_b19df81359008617_84959f35",
+ "kind": "self_test",
+ "name": "AutoRFP.ai OpenAPI specification",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:autorfp.ai:api:openapi",
+   "manifest_url": "https://autorfp.ai/.well-known/ai-catalog.json",
+   "media_type": "application/openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "autorfp-ai-autorfp-ai-openapi-specification"
+}

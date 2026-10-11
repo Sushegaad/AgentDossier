@@ -1,0 +1,19 @@
+{
+ "agent": "res_9b7282bffc02cc8d",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_9b7282bffc02cc8d_fa67673f",
+ "kind": "self_test",
+ "name": "Decomposing data questions (agent skill)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aard.ai:skill:decomposing-data-questions",
+   "manifest_url": "https://aard.ai/.well-known/ard.json",
+   "media_type": "application/zip",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aard-ai-decomposing-data-questions-agent-skill"
+}

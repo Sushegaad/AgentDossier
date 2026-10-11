@@ -1,0 +1,22 @@
+{
+ "agent": "res_d969a6e4a141e50a",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_d969a6e4a141e50a_2d9f8dac",
+ "kind": "self_test",
+ "name": "agent-bev · Europe",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agent-bev.ai:eu-bev",
+   "manifest_url": "https://agent-bev.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "agent-bev-ai-agent-bev-europe"
+}

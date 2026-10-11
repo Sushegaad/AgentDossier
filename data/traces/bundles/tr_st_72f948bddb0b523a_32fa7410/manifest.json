@@ -1,0 +1,26 @@
+{
+ "agent": "res_72f948bddb0b523a",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_72f948bddb0b523a_32fa7410",
+ "kind": "self_test",
+ "name": "Autoposting",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://docs.autoposting.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:05:15Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "autoposting"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "autoposting-ai-autoposting"
+}

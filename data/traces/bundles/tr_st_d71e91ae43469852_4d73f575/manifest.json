@@ -1,0 +1,19 @@
+{
+ "agent": "res_d71e91ae43469852",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_d71e91ae43469852_4d73f575",
+ "kind": "self_test",
+ "name": "Events.Aero",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-11T03:05:23Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://events.aero/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "events-aero-events-aero"
+}

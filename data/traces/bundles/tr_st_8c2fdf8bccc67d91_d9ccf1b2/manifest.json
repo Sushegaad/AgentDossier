@@ -1,0 +1,34 @@
+{
+ "agent": "res_8c2fdf8bccc67d91",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_8c2fdf8bccc67d91_d9ccf1b2",
+ "kind": "self_test",
+ "name": "Agent Ready Report",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://agenticplug.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:32Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Search Knowledge Base",
+    "Get the A.G.E.N.T.I.C. Framework",
+    "List Services",
+    "List Blog Articles"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:03:30Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://agenticplug.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "agenticplug-ai-agent-ready-report"
+}

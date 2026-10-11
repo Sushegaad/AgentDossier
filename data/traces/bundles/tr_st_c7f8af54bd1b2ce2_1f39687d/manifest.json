@@ -1,0 +1,19 @@
+{
+ "agent": "res_c7f8af54bd1b2ce2",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c7f8af54bd1b2ce2_1f39687d",
+ "kind": "self_test",
+ "name": "Aard",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-11T03:03:21Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://aard.ai/.well-known/ard.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "aard-ai-aard"
+}

@@ -1,0 +1,19 @@
+{
+ "agent": "res_ece6eb1106f22c60",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_ece6eb1106f22c60_6e1989e5",
+ "kind": "self_test",
+ "name": "Apatero Studio A2A agent",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apatero.ai:a2a:studio",
+   "manifest_url": "https://apatero.ai/.well-known/ai-catalog.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "apatero-ai-apatero-studio-a2a-agent"
+}

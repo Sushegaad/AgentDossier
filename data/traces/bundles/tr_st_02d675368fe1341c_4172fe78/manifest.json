@@ -1,0 +1,29 @@
+{
+ "agent": "res_02d675368fe1341c",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_02d675368fe1341c_4172fe78",
+ "kind": "self_test",
+ "name": "reactive-resume",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://rxresu.me/.well-known/agent.json",
+   "checked_at": "2026-10-11T03:06:30Z",
+   "errors": [
+    "not valid JSON"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "status": "invalid"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:06:29Z",
+   "errors": [
+    "https://rxresu.me/.well-known/ard.json: not valid JSON",
+    "https://rxresu.me/.well-known/ai-catalog.json: not valid JSON"
+   ],
+   "parser_version": "ard-0.91",
+   "status": "invalid"
+  }
+ },
+ "slug": "reactive-resume-reactive-resume"
+}

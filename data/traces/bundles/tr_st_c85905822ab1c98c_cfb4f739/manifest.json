@@ -1,0 +1,22 @@
+{
+ "agent": "res_c85905822ab1c98c",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c85905822ab1c98c_cfb4f739",
+ "kind": "self_test",
+ "name": "agent-bev · audit",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agent-bev.ai:bev-audit",
+   "manifest_url": "https://agent-bev.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "agent-bev-ai-agent-bev-audit"
+}

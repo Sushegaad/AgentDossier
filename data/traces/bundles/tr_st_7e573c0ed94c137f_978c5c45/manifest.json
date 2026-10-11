@@ -1,0 +1,19 @@
+{
+ "agent": "res_7e573c0ed94c137f",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_7e573c0ed94c137f_978c5c45",
+ "kind": "self_test",
+ "name": "Guarding derived indicators (agent skill)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aard.ai:skill:guarding-derived-indicators",
+   "manifest_url": "https://aard.ai/.well-known/ard.json",
+   "media_type": "application/zip",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aard-ai-guarding-derived-indicators-agent-skill"
+}

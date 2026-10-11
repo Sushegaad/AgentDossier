@@ -1,0 +1,36 @@
+{
+ "agent": "res_fcea8c39bdfa7faf",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_fcea8c39bdfa7faf_c1c58472",
+ "kind": "self_test",
+ "name": "Apatero Studio",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "apiKey",
+    "oauth2"
+   ],
+   "card_url": "https://apatero.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:51Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "Generate an image",
+    "Generate a video"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:03:48Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://apatero.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "apatero-ai-apatero-studio"
+}

@@ -1,0 +1,23 @@
+{
+ "agent": "res_f3e91dfe497a4686",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f3e91dfe497a4686_d4135101",
+ "kind": "self_test",
+ "name": "AgentUtility Agentops",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://mcp.agentutility.ai/.well-known/agent.json",
+   "checked_at": "2026-10-11T03:06:00Z",
+   "errors": [
+    "missing 'name'",
+    "missing 'description'",
+    "missing 'version'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "status": "invalid"
+  }
+ },
+ "slug": "agentutility-ai-agentutility-agentops"
+}

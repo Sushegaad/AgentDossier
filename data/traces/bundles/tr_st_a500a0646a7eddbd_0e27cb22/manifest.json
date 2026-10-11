@@ -1,0 +1,19 @@
+{
+ "agent": "res_a500a0646a7eddbd",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_a500a0646a7eddbd_0e27cb22",
+ "kind": "self_test",
+ "name": "AIMentionTracker REST API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aimentiontracker.ai:api:v1",
+   "manifest_url": "https://aimentiontracker.ai/.well-known/ard.json",
+   "media_type": "application/vnd.oai.openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aimentiontracker-ai-aimentiontracker-rest-api"
+}

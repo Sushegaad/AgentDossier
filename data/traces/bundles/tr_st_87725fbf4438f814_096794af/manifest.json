@@ -1,0 +1,19 @@
+{
+ "agent": "res_87725fbf4438f814",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_87725fbf4438f814_096794af",
+ "kind": "self_test",
+ "name": "AIMentionTracker MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aimentiontracker.ai:mcp:aimentiontracker",
+   "manifest_url": "https://aimentiontracker.ai/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aimentiontracker-ai-aimentiontracker-mcp-server"
+}

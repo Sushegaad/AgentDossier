@@ -1,0 +1,19 @@
+{
+ "agent": "res_5d30e9d020d34cb0",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_5d30e9d020d34cb0_e1e71df2",
+ "kind": "self_test",
+ "name": "Zapier root map (llms.txt)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:zapier.com:content:llms-txt",
+   "manifest_url": "https://zapier.com/.well-known/ai-catalog.json",
+   "media_type": "text/plain",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "zapier-com-zapier-root-map-llms-txt"
+}

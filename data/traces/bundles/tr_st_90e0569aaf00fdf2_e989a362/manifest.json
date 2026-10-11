@@ -1,0 +1,19 @@
+{
+ "agent": "res_90e0569aaf00fdf2",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_90e0569aaf00fdf2_e989a362",
+ "kind": "self_test",
+ "name": "AutoRFP.ai llms.txt index",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:autorfp.ai:index:llms",
+   "manifest_url": "https://autorfp.ai/.well-known/ai-catalog.json",
+   "media_type": "text/plain",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "autorfp-ai-autorfp-ai-llms-txt-index"
+}

@@ -1,0 +1,19 @@
+{
+ "agent": "res_941152bbd9b15baa",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_941152bbd9b15baa_baef8ad3",
+ "kind": "self_test",
+ "name": "JustIdea Agency website (MCP)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:justidea.agency:server:website",
+   "manifest_url": "https://justidea.agency/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "justidea-agency-justidea-agency-website-mcp"
+}

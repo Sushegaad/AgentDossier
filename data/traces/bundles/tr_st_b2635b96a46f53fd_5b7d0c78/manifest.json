@@ -1,0 +1,19 @@
+{
+ "agent": "res_b2635b96a46f53fd",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_b2635b96a46f53fd_5b7d0c78",
+ "kind": "self_test",
+ "name": "Apify site index (llms.txt)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apify.com:catalog:llms-txt",
+   "manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+   "media_type": "text/plain",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "apify-com-apify-site-index-llms-txt"
+}

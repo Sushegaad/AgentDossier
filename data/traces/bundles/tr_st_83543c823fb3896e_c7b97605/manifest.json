@@ -1,0 +1,19 @@
+{
+ "agent": "res_83543c823fb3896e",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_83543c823fb3896e_c7b97605",
+ "kind": "self_test",
+ "name": "Pydantic Documentation Search API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:pydantic.dev:api:documentation-search",
+   "manifest_url": "https://pydantic.dev/.well-known/ard.json",
+   "media_type": "application/openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "pydantic-dev-pydantic-documentation-search-api"
+}

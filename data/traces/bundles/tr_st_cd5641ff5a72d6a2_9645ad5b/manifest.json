@@ -1,0 +1,23 @@
+{
+ "agent": "res_cd5641ff5a72d6a2",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_cd5641ff5a72d6a2_9645ad5b",
+ "kind": "self_test",
+ "name": "Cerebrium Docs",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://cerebrium.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:49Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "cerebrium"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "cerebrium-ai-cerebrium-docs"
+}

@@ -1,0 +1,19 @@
+{
+ "agent": "res_4fdc3aa76cd68f62",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_4fdc3aa76cd68f62_f5511d04",
+ "kind": "self_test",
+ "name": "Aard (agent skill)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aard.ai:skill:aard",
+   "manifest_url": "https://aard.ai/.well-known/ard.json",
+   "media_type": "text/markdown",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aard-ai-aard-agent-skill"
+}

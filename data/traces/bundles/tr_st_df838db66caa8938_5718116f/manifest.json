@@ -1,0 +1,30 @@
+{
+ "agent": "res_df838db66caa8938",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_df838db66caa8938_5718116f",
+ "kind": "self_test",
+ "name": "Aginera",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "oauth2"
+   ],
+   "card_url": "https://mcp.aginera.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:34Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Quantity takeoff",
+    "Measured routes",
+    "Schedules",
+    "PDF to CAD conversion",
+    "Export"
+   ],
+   "status": "verified",
+   "version": "1.1.0"
+  }
+ },
+ "slug": "aginera-ai-aginera"
+}

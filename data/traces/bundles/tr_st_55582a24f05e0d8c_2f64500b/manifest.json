@@ -1,0 +1,28 @@
+{
+ "agent": "res_55582a24f05e0d8c",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_55582a24f05e0d8c_2f64500b",
+ "kind": "self_test",
+ "name": "LangChain",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://docs.langchain.com/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:05:21Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "langchain"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "mcp": {
+   "card_url": "https://docs.langchain.com/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:05:21Z",
+   "status": "invalid"
+  }
+ },
+ "slug": "langchain-langchain"
+}

@@ -1,0 +1,25 @@
+{
+ "agent": "res_6fa281b09ae9be8d",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_6fa281b09ae9be8d_e235a668",
+ "kind": "self_test",
+ "name": "platform",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:alpic.ai:mcp:platform",
+   "manifest_url": "https://alpic.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "alpic-ai-platform"
+}

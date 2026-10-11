@@ -1,0 +1,19 @@
+{
+ "agent": "res_241a66be9ad602b8",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_241a66be9ad602b8_190e73ab",
+ "kind": "self_test",
+ "name": "AgentMesh",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agentmesh.ai:mcp:mesh",
+   "manifest_url": "https://agentmesh.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "agentmesh-ai-agentmesh"
+}

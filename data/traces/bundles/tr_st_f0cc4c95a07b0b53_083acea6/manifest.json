@@ -1,0 +1,29 @@
+{
+ "agent": "res_f0cc4c95a07b0b53",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f0cc4c95a07b0b53_083acea6",
+ "kind": "self_test",
+ "name": "Firecrawl",
+ "protocols": {
+  "mcp": {
+   "card_url": "https://www.firecrawl.dev/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:05:28Z",
+   "parser_version": "mcp-2025-06-18",
+   "status": "invalid",
+   "tools": [
+    "firecrawl_search",
+    "firecrawl_scrape",
+    "firecrawl_crawl",
+    "firecrawl_map",
+    "firecrawl_parse",
+    "firecrawl_agent",
+    "firecrawl_interact",
+    "firecrawl_research_*",
+    "firecrawl_developer_search",
+    "firecrawl_monitor_*"
+   ]
+  }
+ },
+ "slug": "firecrawl-firecrawl"
+}

@@ -1,0 +1,31 @@
+{
+ "agent": "res_37b4a2a761ce8d56",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_37b4a2a761ce8d56_a6ad9fc4",
+ "kind": "self_test",
+ "name": "ai.childadhd/library",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "platformJwt"
+   ],
+   "card_url": "https://childadhd.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:50Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "search_articles",
+    "list_articles",
+    "get_article",
+    "cite_article",
+    "get_microsite_info",
+    "get_crisis_resources"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "childadhd-ai-ai-childadhd-library"
+}

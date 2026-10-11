@@ -1,0 +1,25 @@
+{
+ "agent": "res_fc8b4516d65443c1",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_fc8b4516d65443c1_270e94be",
+ "kind": "self_test",
+ "name": "GPT Researcher",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://gptr.dev/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:05:39Z",
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "skills": [
+    "Deep research",
+    "Quick search",
+    "Write report",
+    "Get research sources"
+   ],
+   "status": "verified",
+   "version": "0.14.8"
+  }
+ },
+ "slug": "tavily-gpt-researcher"
+}

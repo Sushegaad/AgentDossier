@@ -1,0 +1,22 @@
+{
+ "agent": "res_9df573d40b49da64",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_9df573d40b49da64_3cf0c0e8",
+ "kind": "self_test",
+ "name": "apify-actor-development",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:apify.com:skill:apify-actor-development",
+   "manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "apify-com-apify-actor-development"
+}

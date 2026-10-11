@@ -1,0 +1,23 @@
+{
+ "agent": "res_c505b94a338c1845",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c505b94a338c1845_dfca2709",
+ "kind": "self_test",
+ "name": "Travel World",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "bearer"
+   ],
+   "card_url": "https://travel.augworlds.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:06:43Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "augworlds-ai-travel-world"
+}

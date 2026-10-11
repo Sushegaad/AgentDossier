@@ -1,0 +1,42 @@
+{
+ "agent": "res_cb9ca49f0dc34e12",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_cb9ca49f0dc34e12_3dab09fa",
+ "kind": "self_test",
+ "name": "agent-bev",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "none"
+   ],
+   "card_url": "https://agent-bev.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:28Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "search_drinks",
+    "get_record",
+    "find_producer",
+    "list_nodes",
+    "compare_drinks",
+    "get_order_route",
+    "create_order_intent",
+    "get_offers",
+    "accept_offer"
+   ],
+   "status": "verified",
+   "version": "0.2.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:03:27Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://agent-bev.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "agent-bev-ai-agent-bev"
+}

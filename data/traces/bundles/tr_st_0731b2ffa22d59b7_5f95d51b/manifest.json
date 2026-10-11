@@ -1,0 +1,43 @@
+{
+ "agent": "res_0731b2ffa22d59b7",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_0731b2ffa22d59b7_5f95d51b",
+ "kind": "self_test",
+ "name": "superset",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "oauth2"
+   ],
+   "card_url": "https://superset.sh/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:06:37Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Workspace orchestration",
+    "Coding-agent sessions",
+    "Scheduled automations",
+    "Task tracking"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:06:36Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://superset.sh/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  },
+  "mcp": {
+   "card_url": "https://superset.sh/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:06:38Z",
+   "parser_version": "mcp-2025-06-18",
+   "status": "invalid"
+  }
+ },
+ "slug": "superset-sh-superset"
+}

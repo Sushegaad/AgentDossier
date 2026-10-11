@@ -1,0 +1,38 @@
+{
+ "agent": "res_5faf2853e2864702",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_5faf2853e2864702_d0f3f701",
+ "kind": "self_test",
+ "name": "Vision-Agents",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://visionagents.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:06:48Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "Agent"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  },
+  "mcp": {
+   "card_url": "https://visionagents.ai/.well-known/mcp.json",
+   "checked_at": "2026-10-11T03:06:48Z",
+   "parser_version": "mcp-2025-06-18",
+   "remotes": [
+    {
+     "type": "http",
+     "url": "https://stream-52f5fdce.main-kill-isr.mintlify.me/mcp"
+    }
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "getstream-vision-agents"
+}

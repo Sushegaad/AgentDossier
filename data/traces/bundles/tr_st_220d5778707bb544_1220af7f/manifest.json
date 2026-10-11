@@ -1,0 +1,19 @@
+{
+ "agent": "res_220d5778707bb544",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_220d5778707bb544_1220af7f",
+ "kind": "self_test",
+ "name": "Zapier Partner API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:zapier.com:api:partner",
+   "manifest_url": "https://zapier.com/.well-known/ai-catalog.json",
+   "media_type": "application/vnd.oai.openapi",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "zapier-com-zapier-partner-api"
+}

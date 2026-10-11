@@ -1,0 +1,19 @@
+{
+ "agent": "res_08506734bdd3f916",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_08506734bdd3f916_a5a10fbf",
+ "kind": "self_test",
+ "name": "BeevR public agent API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:beevr.ai:api:public",
+   "manifest_url": "https://beevr.ai/.well-known/ai-catalog.json",
+   "media_type": "application/linkset+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "beevr-ai-beevr-public-agent-api"
+}

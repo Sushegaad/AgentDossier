@@ -1,0 +1,25 @@
+{
+ "agent": "res_e27b317e0e601da0",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_e27b317e0e601da0_79ecd0dc",
+ "kind": "self_test",
+ "name": "LobeChat",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://lobehub.com/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:05:55Z",
+   "errors": [
+    "missing service endpoint ('url' or 'supportedInterfaces')",
+    "skills[0] missing id/name",
+    "skills[1] missing id/name",
+    "skills[2] missing id/name"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "status": "invalid",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "lobehub-lobechat"
+}

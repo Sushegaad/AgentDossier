@@ -1,0 +1,19 @@
+{
+ "agent": "res_2b87a4f5a1d08a91",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_2b87a4f5a1d08a91_55189d41",
+ "kind": "self_test",
+ "name": "AirShelf Catalog",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-11T03:05:59Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://mcp.airshelf.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "airshelf-ai-airshelf-catalog"
+}

@@ -1,0 +1,79 @@
+---
+import Base from "../../layouts/Base.astro";
+import { loadIndex, loadTraceStore } from "../../lib/catalog";
+import { TRACE_KIND_WORD, TRACE_TIER_WORD } from "../../lib/labels";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const index = loadIndex();
+const records = index?.records ?? [];
+const total = records.length;
+const withTrace = records.filter((r) => (r.trust.traces ?? 5) < 5);
+const byTier: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0 };
+for (const r of withTrace) byTier[r.trust.traces as number] = (byTier[r.trust.traces as number] ?? 0) + 1;
+const store = loadTraceStore();
+const latest = [...store].reverse().slice(0, 50);
+const byId = new Map(records.map((r) => [r.id, r]));
+---
+
+<Base title="Traces" description="Public traces of AI agents under attack, in defence and in incidents — and the honest count of agents that have none.">
+  <div class="prose" style="max-width: 76ch">
+    <div class="eyebrow muted">Traces</div>
+    <h1 style="margin-top: 6px">Defenders can't learn from what they can't see.</h1>
+    <p class="body">
+      A <strong>trace</strong> is one observed run of an agent under adversarial or evaluative conditions: what reached it, what it did,
+      what came out. Every dossier on this site lists the public traces it can find and says plainly when there are none.
+      This page is the running count.
+    </p>
+    <div class="stats" style="margin: 20px 0">
+      <div class="stat"><div class="n">{withTrace.length}</div><div class="l">of {total} agents with a public trace</div></div>
+      <div class="stat"><div class="n">{total - withTrace.length}</div><div class="l">with none found</div></div>
+      <div class="stat"><div class="n">{store.length}</div><div class="l">bundles in this registry's store</div></div>
+    </div>
+    <h2>Tiers</h2>
+    <table>
+      <thead><tr><th>Tier</th><th>Meaning</th><th>Agents</th></tr></thead>
+      <tbody>
+        {([1, 2, 3, 4] as const).map((t) => (
+          <tr><td><span class="tierbox">T{t}</span></td><td>{TRACE_TIER_WORD[t]}{t === 1 ? " — artifacts public, replayable" : t === 2 ? " — transcript or proof of concept published" : t === 3 ? " — results only" : " — no artifacts"}</td><td>{byTier[t]}</td></tr>
+        ))}
+        <tr><td><span class="tierbox">none</span></td><td>nothing found in the sources checked; not a finding against the agent</td><td>{total - withTrace.length}</td></tr>
+      </tbody>
+    </table>
+    <h2>Kinds</h2>
+    <ul>
+      {Object.entries(TRACE_KIND_WORD).map(([k, w]) => (
+        <li><code>{k}</code> — {w}</li>
+      ))}
+    </ul>
+    <h2>Where traces come from</h2>
+    <ol>
+      <li><strong>Curated public sources</strong> — researcher write-ups, incident post-mortems, vendor reports (<code>data/curated/traces.yaml</code>, each row with a reviewer once checked).</li>
+      <li><strong>This registry's own probes</strong> — every refresh fetches each publisher's ARD manifest, A2A agent card and MCP server card and records the exchange as a <code>self_test</code> bundle when the observation changes. Reproducible by anyone with the URL.</li>
+      <li><strong>Vendor-published bundles</strong> at a well-known path (proposed; none yet).</li>
+      <li><strong>A sandbox harness</strong> that runs self-hostable agents against public prompt-injection and tool-abuse scenarios (planned).</li>
+    </ol>
+    <h2>The store</h2>
+    <p>
+      <code>data/traces/index.jsonl</code> is append-only and hash-chained: each line carries the hash of the line before it, so a trace
+      cannot be edited or removed without breaking every later line, and CI verifies the chain on every change. Bundles are small text
+      files under <code>data/traces/bundles/</code>; <code>git clone</code> is the mirror. Behaviour is published, never weapons: scenario
+      inputs and the agent's actions, no payloads against third-party systems. Secrets are redacted before a bundle is written.
+    </p>
+    {latest.length > 0 && (
+      <>
+        <h2>Latest bundles</h2>
+        <div class="ledger">
+          {latest.map((l) => (
+            <div class="ledger-row" style="grid-template-columns: 1fr auto">
+              <span>
+                <a href={`${base}/traces/${l.id}/`}>{l.record.title}</a>
+                <span class="muted small"> · {byId.get(l.agent)?.name ?? l.agent} · {TRACE_KIND_WORD[l.record.kind] ?? l.record.kind}</span>
+              </span>
+              <span class="tiny muted">{l.record.date}</span>
+            </div>
+          ))}
+        </div>
+      </>
+    )}
+  </div>
+</Base>

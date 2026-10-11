@@ -1,0 +1,19 @@
+{
+ "agent": "res_d19afe7dd1d840aa",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_d19afe7dd1d840aa_85c526c1",
+ "kind": "self_test",
+ "name": "Aard REST API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:aard.ai:api:rest-v1",
+   "manifest_url": "https://aard.ai/.well-known/ard.json",
+   "media_type": "application/vnd.oai.openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "aard-ai-aard-rest-api"
+}

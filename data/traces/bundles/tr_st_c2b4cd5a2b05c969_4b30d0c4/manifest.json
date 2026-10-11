@@ -1,0 +1,19 @@
+{
+ "agent": "res_c2b4cd5a2b05c969",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c2b4cd5a2b05c969_4b30d0c4",
+ "kind": "self_test",
+ "name": "Buy confidential compute (skill)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agentgates.ai:skills:compute",
+   "manifest_url": "https://agentgates.ai/.well-known/ai-catalog.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "agentgates-ai-buy-confidential-compute-skill"
+}

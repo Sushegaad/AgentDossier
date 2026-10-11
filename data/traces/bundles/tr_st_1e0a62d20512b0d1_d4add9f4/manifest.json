@@ -1,0 +1,30 @@
+{
+ "agent": "res_1e0a62d20512b0d1",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_1e0a62d20512b0d1_d4add9f4",
+ "kind": "self_test",
+ "name": "AgentMart",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "bearer",
+    "httpSignature"
+   ],
+   "card_url": "https://agentmart.ciphyr.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:03:32Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Browse the catalog",
+    "Top up a balance",
+    "Buy agent utilities",
+    "Buy starter kits"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "agentmart-ciphyr-ai-agentmart"
+}

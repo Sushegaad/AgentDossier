@@ -1,0 +1,29 @@
+{
+ "agent": "res_c7ed981882c010b1",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c7ed981882c010b1_142ea53d",
+ "kind": "self_test",
+ "name": "ai.autonomad/travel",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "agentWalletSignature"
+   ],
+   "card_url": "https://autonomad.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:11Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.2.0",
+   "signed": false,
+   "skills": [
+    "Coordination message",
+    "Staying on duty",
+    "Onboarding and certification",
+    "Connect Autonomad to an assistant"
+   ],
+   "status": "verified",
+   "version": "0.1.0"
+  }
+ },
+ "slug": "autonomad-ai-ai-autonomad-travel"
+}

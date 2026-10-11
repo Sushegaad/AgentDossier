@@ -1,0 +1,19 @@
+{
+ "agent": "res_1c02279a24f73e2e",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_1c02279a24f73e2e_bea44d0d",
+ "kind": "self_test",
+ "name": "AutoRFP.ai Agent Skills index",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:autorfp.ai:skills:index",
+   "manifest_url": "https://autorfp.ai/.well-known/ai-catalog.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "autorfp-ai-autorfp-ai-agent-skills-index"
+}

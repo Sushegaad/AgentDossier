@@ -1,0 +1,22 @@
+{
+ "agent": "res_8c253a3b828faad3",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_8c253a3b828faad3_737cf267",
+ "kind": "self_test",
+ "name": "Analytics Legends — SAP Analytics Intelligence",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://analyticslegends.ai/.well-known/agent.json",
+   "checked_at": "2026-10-11T03:03:46Z",
+   "errors": [
+    "missing service endpoint ('url' or 'supportedInterfaces')"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "status": "invalid",
+   "version": "1.84.0"
+  }
+ },
+ "slug": "analyticslegends-ai-analytics-legends-sap-analytics-intelligence"
+}

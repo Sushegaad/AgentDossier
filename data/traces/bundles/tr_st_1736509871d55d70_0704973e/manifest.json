@@ -1,0 +1,32 @@
+{
+ "agent": "res_1736509871d55d70",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_1736509871d55d70_0704973e",
+ "kind": "self_test",
+ "name": "worldmonitor",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://worldmonitor.app/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:06:50Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Capability discovery and tool routing",
+    "Data freshness probe"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-11T03:06:49Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://worldmonitor.app/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "koala73-worldmonitor"
+}

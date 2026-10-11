@@ -1,0 +1,21 @@
+{
+ "agent": "res_46f85625e119e703",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_46f85625e119e703_20a80326",
+ "kind": "self_test",
+ "name": "Bring Your AI",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://bringyour.ai/.well-known/agent.json",
+   "checked_at": "2026-10-11T03:04:35Z",
+   "errors": [
+    "missing 'version'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "status": "invalid"
+  }
+ },
+ "slug": "bringyour-ai-bring-your-ai"
+}

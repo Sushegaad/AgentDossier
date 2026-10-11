@@ -1,0 +1,31 @@
+{
+ "agent": "res_136d38e3660ea14f",
+ "date": "2026-10-11",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_136d38e3660ea14f_00b61872",
+ "kind": "self_test",
+ "name": "ai.childpsychiatry/library",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "platformJwt"
+   ],
+   "card_url": "https://childpsychiatry.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-11T03:04:51Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "search_articles",
+    "list_articles",
+    "get_article",
+    "cite_article",
+    "get_microsite_info",
+    "get_crisis_resources"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "childpsychiatry-ai-ai-childpsychiatry-library"
+}
