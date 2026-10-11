@@ -340,6 +340,20 @@ a:focus-visible,
 .nav a[aria-current="page"] {
   color: var(--accent-ink);
 }
+.nav a.nav-traces {
+  color: var(--accent-ink);
+  font-weight: 800;
+}
+.nav a.nav-traces::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: var(--accent-ink);
+  vertical-align: middle;
+}
 .nav .btn {
   padding: 0.5rem 0.9rem;
 }

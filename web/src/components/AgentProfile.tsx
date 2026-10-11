@@ -258,7 +258,11 @@ export default function AgentProfile({
                     </div>
                     <div>
                       <div>
-                        <a href={t.url} rel="noopener">{t.title}</a>
+                        {["self_test", "injection_eval", "vendor_published"].includes(t.kind) ? (
+                          <a href={`${BASE}/traces/bundle/${t.id}/`}>{t.title}</a>
+                        ) : (
+                          <a href={t.url} rel="noopener">{t.title}</a>
+                        )}
                       </div>
                       {t.scenario && <div className="small" style={{ marginTop: "2px" }}>{t.scenario}</div>}
                       <div className="tiny muted" style={{ marginTop: "4px" }}>

@@ -1,79 +1,94 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { loadIndex, loadTraceStore } from "../../lib/catalog";
-import { TRACE_KIND_WORD, TRACE_TIER_WORD } from "../../lib/labels";
+import { TACTIC_LABEL, incidentSlug, loadIncidents } from "../../lib/incidents";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const index = loadIndex();
 const records = index?.records ?? [];
 const total = records.length;
-const withTrace = records.filter((r) => (r.trust.traces ?? 5) < 5);
-const byTier: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0 };
-for (const r of withTrace) byTier[r.trust.traces as number] = (byTier[r.trust.traces as number] ?? 0) + 1;
+const withTrace = records.filter((r) => (r.trust.traces ?? 5) < 5).length;
 const store = loadTraceStore();
-const latest = [...store].reverse().slice(0, 50);
-const byId = new Map(records.map((r) => [r.id, r]));
+const asOf = index?.built_at ? index.built_at.slice(0, 10) : "the last build";
+
+const set = loadIncidents();
+const incidents = set?.incidents ?? [];
+const tacticsUsed = [...new Set(incidents.flatMap((i) => i.tactics ?? []))].sort();
 ---
 
-<Base title="Traces" description="Public traces of AI agents under attack, in defence and in incidents — and the honest count of agents that have none.">
-  <div class="prose" style="max-width: 76ch">
-    <div class="eyebrow muted">Traces</div>
-    <h1 style="margin-top: 6px">Defenders can't learn from what they can't see.</h1>
-    <p class="body">
-      A <strong>trace</strong> is one observed run of an agent under adversarial or evaluative conditions: what reached it, what it did,
-      what came out. Every dossier on this site lists the public traces it can find and says plainly when there are none.
-      This page is the running count.
+<Base title="Traces" description="Every public trace of an AI agent attacking or defending a system — an incident registry with tactics, timelines and sources.">
+  <div class="prose" style="max-width: 100%">
+    <div class="eyebrow muted" style="color: var(--accent-ink)">Public traces</div>
+    <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem); max-width: 18ch; line-height: 1.05">Agents attacking and defending, on record</h1>
+    <p class="body" style="max-width: 72ch">
+      Every public trace of an AI agent attacking or defending a system, compiled from post-mortems,
+      advisories, filings and the press. Each row is one incident — open it for the timeline, what
+      defenders can take from it, the tactics and the sources. "Defenders can't learn from what they
+      can't see," so this is the record, and
+      <a href={`${base}/methodology/`}>how it is collected</a>.
     </p>
-    <div class="stats" style="margin: 20px 0">
-      <div class="stat"><div class="n">{withTrace.length}</div><div class="l">of {total} agents with a public trace</div></div>
-      <div class="stat"><div class="n">{total - withTrace.length}</div><div class="l">with none found</div></div>
-      <div class="stat"><div class="n">{store.length}</div><div class="l">bundles in this registry's store</div></div>
+
+    <div class="row" style="gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 10px">
+      <span class="tiny muted">{incidents.length} incident{incidents.length === 1 ? "" : "s"} · {tacticsUsed.length} tactics · as of {set?.collected_on ?? asOf}</span>
+      <a class="btn small" href={`${base}/traces/export.json`} style="margin-left: auto">Export registry (JSON)</a>
     </div>
-    <h2>Tiers</h2>
-    <table>
-      <thead><tr><th>Tier</th><th>Meaning</th><th>Agents</th></tr></thead>
-      <tbody>
-        {([1, 2, 3, 4] as const).map((t) => (
-          <tr><td><span class="tierbox">T{t}</span></td><td>{TRACE_TIER_WORD[t]}{t === 1 ? " — artifacts public, replayable" : t === 2 ? " — transcript or proof of concept published" : t === 3 ? " — results only" : " — no artifacts"}</td><td>{byTier[t]}</td></tr>
-        ))}
-        <tr><td><span class="tierbox">none</span></td><td>nothing found in the sources checked; not a finding against the agent</td><td>{total - withTrace.length}</td></tr>
-      </tbody>
-    </table>
-    <h2>Kinds</h2>
-    <ul>
-      {Object.entries(TRACE_KIND_WORD).map(([k, w]) => (
-        <li><code>{k}</code> — {w}</li>
-      ))}
-    </ul>
-    <h2>Where traces come from</h2>
-    <ol>
-      <li><strong>Curated public sources</strong> — researcher write-ups, incident post-mortems, vendor reports (<code>data/curated/traces.yaml</code>, each row with a reviewer once checked).</li>
-      <li><strong>This registry's own probes</strong> — every refresh fetches each publisher's ARD manifest, A2A agent card and MCP server card and records the exchange as a <code>self_test</code> bundle when the observation changes. Reproducible by anyone with the URL.</li>
-      <li><strong>Vendor-published bundles</strong> — a vendor serves a bundle and names it in its ARD manifest; the build fetches and hash-checks it (<a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/traces-spec.md" rel="noopener">publishing spec</a>). None in the wild yet.</li>
-      <li><strong>A sandbox harness</strong> that runs self-hostable agents against public prompt-injection and tool-abuse scenarios (planned).</li>
-    </ol>
-    <h2>The store</h2>
-    <p>
-      <code>data/traces/index.jsonl</code> is append-only and hash-chained: each line carries the hash of the line before it, so a trace
-      cannot be edited or removed without breaking every later line, and CI verifies the chain on every change. Bundles are small text
-      files under <code>data/traces/bundles/</code>; <code>git clone</code> is the mirror. Behaviour is published, never weapons: scenario
-      inputs and the agent's actions, no payloads against third-party systems. Secrets are redacted before a bundle is written.
-    </p>
-    {latest.length > 0 && (
-      <>
-        <h2>Latest bundles</h2>
-        <div class="ledger">
-          {latest.map((l) => (
-            <div class="ledger-row" style="grid-template-columns: 1fr auto">
-              <span>
-                <a href={`${base}/traces/${l.id}/`}>{l.record.title}</a>
-                <span class="muted small"> · {byId.get(l.agent)?.name ?? l.agent} · {TRACE_KIND_WORD[l.record.kind] ?? l.record.kind}</span>
-              </span>
-              <span class="tiny muted">{l.record.date}</span>
-            </div>
+
+    <div class="scroll-x" tabindex="0">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Incident</th>
+            <th>AI role</th>
+            <th>Attacker</th>
+            <th>Defender</th>
+            <th>Tactics</th>
+            <th>Sources</th>
+          </tr>
+        </thead>
+        <tbody>
+          {incidents.map((inc) => (
+            <tr>
+              <td style="white-space: nowrap; font-weight: 800"><a href={`${base}/traces/${incidentSlug(inc.id)}/`} style="color: var(--ink)">{inc.id}</a><div class="tiny muted">{inc.date}</div></td>
+              <td>
+                <a href={`${base}/traces/${incidentSlug(inc.id)}/`} style="font-weight: 700; color: var(--ink)">{inc.title}</a>
+                {inc.window && <div class="tiny muted">{inc.window}</div>}
+              </td>
+              <td class="small">{inc.ai_role}</td>
+              <td class="small">{inc.attacker.description}</td>
+              <td class="small">{inc.defender.description}</td>
+              <td class="tiny" style="white-space: nowrap">{(inc.tactics ?? []).join(" · ") || "—"}</td>
+              <td class="small">{inc.sources.length}{inc.reviewer ? "" : <div class="tiny muted">unreviewed</div>}</td>
+            </tr>
           ))}
-        </div>
-      </>
-    )}
+        </tbody>
+      </table>
+    </div>
+    <p class="tiny muted" style="margin-top: 10px">
+      {tacticsUsed.map((t) => `${t} ${TACTIC_LABEL[t] ?? ""}`).join(" · ")} (MITRE ATT&CK). Compiled from the linked public sources, as reported — not attributions, findings of fault or legal conclusions. Rows marked <em>unreviewed</em> have not yet been checked against their sources by the maintainer.
+    </p>
+
+    <section style="border-top: 2px solid var(--rule); margin-top: 40px; padding-top: 20px; max-width: 76ch">
+      <h2>Across the catalog</h2>
+      <p class="body">
+        Beyond these incidents, every agent dossier says whether <em>anyone</em> has watched that
+        agent under attack — and for most the honest answer is "none found." That coverage is the
+        other half of the gap.
+      </p>
+      <div class="stats" style="margin: 16px 0">
+        <div class="stat"><div class="n">{withTrace}</div><div class="l">of {total} agents with a public trace</div></div>
+        <div class="stat"><div class="n">{total - withTrace}</div><div class="l">with none found</div></div>
+        <div class="stat"><div class="n">{store.length}</div><div class="l">probe & benchmark bundles in the store</div></div>
+      </div>
+      <h3>Where the record comes from</h3>
+      <ol>
+        <li><strong>This registry</strong> — the incidents above, curated from public reports (<code>data/curated/incidents.yaml</code>).</li>
+        <li><strong>Agent-level traces</strong> on each dossier — curated write-ups, the registry's own reproducible endpoint probes (hash-chained, <code>data/traces/</code>), and harness runs against the AgentDojo prompt-injection benchmark.</li>
+        <li><strong>Vendor-published bundles</strong> declared in an ARD manifest, fetched and hash-checked (<a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/traces-spec.md" rel="noopener">publishing spec</a>).</li>
+      </ol>
+      <p class="tiny muted">
+        The store (<code>data/traces/index.jsonl</code>) is append-only and hash-chained; CI verifies it on every change. Behaviour is published, never weapons: scenario inputs and the agent's actions, no payloads against third-party systems.
+      </p>
+    </section>
   </div>
 </Base>

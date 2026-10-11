@@ -6,6 +6,18 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Added — incident registry
+- **`/traces/` is now an incident registry** — one row per real, public event where an AI agent
+  attacked or defended a system (`data/curated/incidents.yaml`, `schema/incident_record.schema.json`).
+  Columns: ID, incident, AI role (attacker/defender/target), attacker, defender, **MITRE ATT&CK
+  tactics**, sources. Each incident has a detail page with a timeline (per-line evidence tier and
+  source), "what defenders can take from it," an "at a glance · as reported" panel, and **STIX 2.1
+  + JSON export**. Seeded with seven sourced incidents (ForcedLeak, EchoLeak, CamoLeak, Gemini CLI,
+  Amazon Q, AgentFlayer, the Claude Code espionage report). Dossiers cross-link to incidents that
+  name the agent; "Traces" is promoted in the nav and the hero now leads with trust and under-attack
+  behaviour. Everything stays "as reported," unreviewed until signed, with a correction link.
+  (Per-agent trace bundles moved to `/traces/bundle/<id>/`.)
+
 ### Added — traces
 - **Enterprise trace gate (PR 5).** A self-hosted tenant runs the harness against private agents
   and stores the results in its own database (`traces` table, never in the public store). A

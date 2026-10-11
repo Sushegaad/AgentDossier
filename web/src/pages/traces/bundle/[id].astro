@@ -1,0 +1,48 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { loadBundle, loadIndex, loadTraceStore } from "../../../lib/catalog";
+import { TRACE_KIND_WORD, TRACE_TIER_WORD } from "../../../lib/labels";
+
+export function getStaticPaths() {
+  const records = loadIndex()?.records ?? [];
+  const byId = new Map(records.map((r) => [r.id, r]));
+  return loadTraceStore().map((l) => ({ params: { id: l.id }, props: { line: l, agent: byId.get(l.agent) ?? null } }));
+}
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const { line, agent } = Astro.props;
+const rec = line.record;
+const bundle = rec.bundle ? loadBundle(rec.bundle) : {};
+const transcript = bundle["transcript.md"] ?? "";
+---
+
+<Base title={rec.title} description={rec.scenario ?? rec.title}>
+  <div class="prose" style="max-width: 80ch">
+    <div class="eyebrow muted">Trace · {TRACE_KIND_WORD[rec.kind] ?? rec.kind} · T{rec.tier} {TRACE_TIER_WORD[rec.tier]}</div>
+    <h1 style="margin-top: 6px; font-size: clamp(1.6rem, 3.5vw, 2.2rem)">{rec.title}</h1>
+    <p class="body">
+      {agent ? <a href={`${base}/agents/${agent.slug}/`}>{agent.name}</a> : line.agent} · {rec.date} · {rec.source}
+      {rec.harness_version && <> · harness <code>{rec.harness_version}</code></>}
+    </p>
+    {rec.scenario && <p><strong>Scenario.</strong> {rec.scenario}</p>}
+    <p><strong>Observed.</strong> {rec.observed.outcome}</p>
+    <table>
+      <tbody>
+        <tr><td>Entry</td><td>{rec.observed.entry ?? "—"}</td></tr>
+        <tr><td>Actions</td><td>{(rec.observed.actions ?? []).join("; ") || "—"}</td></tr>
+        <tr><td>Egress</td><td>{rec.observed.egress == null ? "—" : rec.observed.egress ? "yes" : "no"}</td></tr>
+        <tr><td>Human approval</td><td>{rec.observed.approval == null ? "—" : rec.observed.approval ? "yes" : "no"}</td></tr>
+        <tr><td>Secrets touched</td><td>{rec.observed.secrets_touched == null ? "—" : rec.observed.secrets_touched ? "yes" : "no"}</td></tr>
+        <tr><td>Bundle</td><td>{rec.bundle ? <><code>{rec.bundle}</code> · <code>{rec.sha256}</code> · <a href={`${base}/traces/bundle/${line.id}/bundle.json`}>download (JSON)</a></> : "—"}</td></tr>
+        <tr><td>Chain</td><td><code>{line.hash}</code><br /><span class="tiny muted">prev {line.prev}</span></td></tr>
+      </tbody>
+    </table>
+    {transcript && (
+      <>
+        <h2>Transcript</h2>
+        <pre tabindex="0" style="white-space: pre-wrap">{transcript}</pre>
+      </>
+    )}
+    {rec.notes && <p class="small muted">{rec.notes}</p>}
+    <p class="small muted">A trace describes one version on one date. It is evidence of behaviour, never a certification. Dispute it through the agent's dossier; corrections are appended, never overwritten.</p>
+  </div>
+</Base>

@@ -14,6 +14,7 @@ const path = Astro.url.pathname.replace(base, "") || "/";
 const nav = [
   ["/domains/", "Domains"],
   ["/search/", "Search"],
+  ["/traces/", "Traces"],
   ["/methodology/", "Trust methodology"],
   ["/enterprise/", "Enterprise edition"],
 ];
@@ -80,12 +81,12 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
           <span class="sq" aria-hidden="true"></span>
           <span>
             <b>AgentDossier <span>· AI Agent Registry</span></b>
-            <small>Discover agents. Inspect the evidence. Decide what fits — public or inside your enterprise.</small>
+            <small>Find agents you can trust — the evidence, the protocols, and how they behaved under attack. Public or inside your enterprise.</small>
           </span>
         </a>
         <nav class="nav" aria-label="Main">
           {nav.map(([href, label]) => (
-            <a href={`${base}${href}`} aria-current={current(href) ? "page" : undefined}>
+            <a href={`${base}${href}`} aria-current={current(href) ? "page" : undefined} class={label === "Traces" ? "nav-traces" : undefined}>
               {label}
             </a>
           ))}

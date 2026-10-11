@@ -199,6 +199,11 @@ tier 4 only.
 
 ## Traces
 
+The incident registry (`/traces/`) is one row per real, public event where an agent attacked or
+defended a system — tactics (MITRE ATT&CK), a timeline, what defenders can take from it, and
+sources — exportable as JSON and STIX 2.1. It is curated in `data/curated/incidents.yaml`; see
+[docs/incidents.md](incidents.md). Alongside it, each dossier carries agent-level trace evidence:
+
 Every dossier lists the public traces of the agent under attack, in defence or in an
 incident, with a tier (1 reproducible run · 2 third-party report with transcript · 3
 vendor report · 4 vendor claim · 5 none found) and says "none found" when nothing

@@ -1,48 +1,108 @@
 ---
 import Base from "../../../layouts/Base.astro";
-import { loadBundle, loadIndex, loadTraceStore } from "../../../lib/catalog";
-import { TRACE_KIND_WORD, TRACE_TIER_WORD } from "../../../lib/labels";
+import { loadIndex } from "../../../lib/catalog";
+import { AI_ROLE_WORD, TACTIC_LABEL, incidentSlug, loadIncidents } from "../../../lib/incidents";
 
 export function getStaticPaths() {
-  const records = loadIndex()?.records ?? [];
-  const byId = new Map(records.map((r) => [r.id, r]));
-  return loadTraceStore().map((l) => ({ params: { id: l.id }, props: { line: l, agent: byId.get(l.agent) ?? null } }));
+  return (loadIncidents()?.incidents ?? []).map((inc) => ({ params: { id: incidentSlug(inc.id) }, props: { inc } }));
 }
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-const { line, agent } = Astro.props;
-const rec = line.record;
-const bundle = rec.bundle ? loadBundle(rec.bundle) : {};
-const transcript = bundle["transcript.md"] ?? "";
+const { inc } = Astro.props;
+const records = loadIndex()?.records ?? [];
+const bySlug = new Map(records.map((r) => [r.slug, r]));
+const related = (inc.related_agents ?? []).map((s) => bySlug.get(s)).filter((r): r is NonNullable<typeof r> => !!r);
+const issueUrl = `https://github.com/Sushegaad/AgentDossier/issues/new?title=${encodeURIComponent(`Correction: ${inc.id} ${inc.title}`)}`;
 ---
 
-<Base title={rec.title} description={rec.scenario ?? rec.title}>
-  <div class="prose" style="max-width: 80ch">
-    <div class="eyebrow muted">Trace · {TRACE_KIND_WORD[rec.kind] ?? rec.kind} · T{rec.tier} {TRACE_TIER_WORD[rec.tier]}</div>
-    <h1 style="margin-top: 6px; font-size: clamp(1.6rem, 3.5vw, 2.2rem)">{rec.title}</h1>
-    <p class="body">
-      {agent ? <a href={`${base}/agents/${agent.slug}/`}>{agent.name}</a> : line.agent} · {rec.date} · {rec.source}
-      {rec.harness_version && <> · harness <code>{rec.harness_version}</code></>}
+<Base title={inc.title} description={inc.summary}>
+  <div class="prose" style="max-width: 82ch">
+    <p class="small muted"><a href={`${base}/traces/`}>Traces</a> / {inc.id}{inc.specimen ? " · specimen" : ""}</p>
+    <div class="eyebrow muted" style="color: var(--accent-ink)">
+      {AI_ROLE_WORD[inc.ai_role]} · {inc.category === "incident" ? "real-world incident" : "researcher disclosure"}{inc.reviewer ? "" : " · unreviewed"}
+    </div>
+    <h1 style="margin-top: 6px; font-size: clamp(1.7rem, 4vw, 2.4rem)">{inc.title}</h1>
+    <p class="body">{inc.summary}</p>
+    <div class="row" style="gap: 10px; flex-wrap: wrap; margin: 16px 0">
+      <a class="btn primary" href={`${base}/traces/${incidentSlug(inc.id)}/stix.json`}>Export STIX 2.1</a>
+      <a class="btn" href={`${base}/traces/${incidentSlug(inc.id)}.json`}>Export JSON</a>
+      <a class="btn" href={issueUrl} rel="noopener">Request a correction (GitHub issue)</a>
+    </div>
+
+    <div class="split" style="margin-top: 8px">
+      <div>
+        {inc.timeline && inc.timeline.length > 0 && (
+          <>
+            <h2>Timeline</h2>
+            <div class="ledger">
+              {inc.timeline.map((t) => (
+                <div class="ledger-row" style="grid-template-columns: 110px 1fr auto">
+                  <span style="font-weight: 800">{t.date}</span>
+                  <span>
+                    {t.text}
+                    {t.source && inc.sources[Number(t.source) - 1] && (
+                      <> · <a href={inc.sources[Number(t.source) - 1].url} rel="noopener">{inc.sources[Number(t.source) - 1].outlet ?? "source"}</a></>
+                    )}
+                  </span>
+                  <span class="tiny muted" style="text-align: right">{t.tier ? `T${t.tier}` : ""}</span>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        {inc.lessons && inc.lessons.length > 0 && (
+          <>
+            <h2>What defenders can take from it</h2>
+            <ol>{inc.lessons.map((l) => <li>{l}</li>)}</ol>
+            <p class="tiny muted">The maintainer's reading of the public reports, not advice specific to your deployment.</p>
+          </>
+        )}
+        <h2>Sources · {inc.sources.length}</h2>
+        <ul>
+          {inc.sources.map((s) => (
+            <li><a href={s.url} rel="noopener">{s.title}</a>{s.outlet ? ` — ${s.outlet}` : ""}{s.date ? `, ${s.date}` : ""}</li>
+          ))}
+        </ul>
+      </div>
+
+      <aside>
+        <div class="panel small">
+          <div class="label" style="margin-bottom: 8px">At a glance · as reported</div>
+          <table>
+            <tbody>
+              <tr><td>Window</td><td>{inc.window ?? inc.date}</td></tr>
+              <tr><td>Attacker</td><td>{inc.attacker.description}</td></tr>
+              {inc.scale && <tr><td>Scale</td><td>{inc.scale}</td></tr>}
+              {inc.impact && <tr><td>Impact</td><td>{inc.impact}</td></tr>}
+              <tr><td>Defender</td><td>{inc.defender.description}</td></tr>
+              {inc.vendor_response && <tr><td>Response</td><td>{inc.vendor_response}</td></tr>}
+            </tbody>
+          </table>
+        </div>
+        {inc.tactics && inc.tactics.length > 0 && (
+          <div class="panel small" style="margin-top: 12px">
+            <div class="label" style="margin-bottom: 8px">Tactics (MITRE ATT&CK)</div>
+            <ul style="margin: 0; padding-left: 1.1em">
+              {inc.tactics.map((t) => <li><code>{t}</code> {TACTIC_LABEL[t] ?? ""}</li>)}
+            </ul>
+            <p class="tiny muted" style="margin-top: 6px">Mapped by the maintainer from the reports.</p>
+          </div>
+        )}
+        {(inc.models_named?.length || related.length) ? (
+          <div class="panel small" style="margin-top: 12px">
+            <div class="label" style="margin-bottom: 8px">Models and agents named</div>
+            {inc.models_named?.map((m) => (
+              <div class="tiny"><b>{m.name}</b> — {m.role}{m.note ? ` · ${m.note}` : ""}</div>
+            ))}
+            {related.map((r) => (
+              <div class="tiny" style="margin-top: 4px"><a href={`${base}/agents/${r.slug}/`}>{r.name}</a> — in the catalog</div>
+            ))}
+          </div>
+        ) : null}
+      </aside>
+    </div>
+
+    <p class="small muted" style="border-top: 2px solid var(--rule); padding-top: 10px; margin-top: 28px">
+      Compiled from the public sources above, as reported. Not an attribution, a finding of fault or a legal conclusion; figures are those stated by the sources{inc.specimen ? "; this entry is an illustrative specimen, not a single real event" : ""}. One event, as of its sources' dates.
     </p>
-    {rec.scenario && <p><strong>Scenario.</strong> {rec.scenario}</p>}
-    <p><strong>Observed.</strong> {rec.observed.outcome}</p>
-    <table>
-      <tbody>
-        <tr><td>Entry</td><td>{rec.observed.entry ?? "—"}</td></tr>
-        <tr><td>Actions</td><td>{(rec.observed.actions ?? []).join("; ") || "—"}</td></tr>
-        <tr><td>Egress</td><td>{rec.observed.egress == null ? "—" : rec.observed.egress ? "yes" : "no"}</td></tr>
-        <tr><td>Human approval</td><td>{rec.observed.approval == null ? "—" : rec.observed.approval ? "yes" : "no"}</td></tr>
-        <tr><td>Secrets touched</td><td>{rec.observed.secrets_touched == null ? "—" : rec.observed.secrets_touched ? "yes" : "no"}</td></tr>
-        <tr><td>Bundle</td><td>{rec.bundle ? <><code>{rec.bundle}</code> · <code>{rec.sha256}</code> · <a href={`${base}/traces/${line.id}/bundle.json`}>download (JSON)</a></> : "—"}</td></tr>
-        <tr><td>Chain</td><td><code>{line.hash}</code><br /><span class="tiny muted">prev {line.prev}</span></td></tr>
-      </tbody>
-    </table>
-    {transcript && (
-      <>
-        <h2>Transcript</h2>
-        <pre tabindex="0" style="white-space: pre-wrap">{transcript}</pre>
-      </>
-    )}
-    {rec.notes && <p class="small muted">{rec.notes}</p>}
-    <p class="small muted">A trace describes one version on one date. It is evidence of behaviour, never a certification. Dispute it through the agent's dossier; corrections are appended, never overwritten.</p>
   </div>
 </Base>
