@@ -63,6 +63,7 @@ const showProtocols = d.ranked.length > 0 && withProtocol / d.ranked.length >= 0
           <th>Agent / product</th>
           <th>Trust profile</th>
           {showProtocols && <th>Protocols (MCP · A2A · ARD)</th>}
+          <th title="public traces of the agent under attack or in defence; T1 reproducible … T4 vendor claim">Traces</th>
           <th>License</th>
           {comps.map((c) => <th title={c}>{short[c]}</th>)}
           <th title="evidence-weighted score; the list is in curated order">Score</th>
@@ -81,6 +82,7 @@ const showProtocols = d.ranked.length > 0 && withProtocol / d.ranked.length >= 0
               <div class="tiny muted">{securityWord(null, r.trust.security)} · {r.trust.issues == null ? "issues –" : r.trust.issues === 1 ? "no issues" : "issues linked"}</div>
             </td>
             {showProtocols && <td style="white-space: nowrap">{g(r.protocols.mcp)} · {g(r.protocols.a2a)} · {g(r.protocols.ard)}</td>}
+            <td class="small">{(r.trust.traces ?? 5) < 5 ? `T${r.trust.traces}` : "none"}</td>
             <td class="small">{r.license ?? "—"}</td>
             {comps.map((c) => <td class="small muted">{r.components?.[c] == null ? "?" : Math.round(r.components[c] as number)}</td>)}
             <td style="font-weight: 800">{Math.round(r.score)}</td>

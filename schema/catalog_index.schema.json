@@ -138,6 +138,12 @@
                   "null"
                 ],
                 "description": "Best active tier among vendor-level (entity-scoped or inherited) records; null when none"
+              },
+              "traces": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
               }
             },
             "additionalProperties": false

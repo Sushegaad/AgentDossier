@@ -5,6 +5,8 @@ export type ProtocolStatus = "verified" | "claimed" | "unknown" | "failed";
 
 export interface TrustSummary {
   identity: Tier;
+  /** best public trace tier: 1 reproducible run … 4 vendor claim, 5 none found */
+  traces?: Tier | null;
   compliance: Tier;
   /** best vendor-level (inherited) tier, null when none */
   vendor_compliance?: Tier | null;
@@ -170,6 +172,7 @@ export interface Resource {
   identity: { tier: Tier; evidence: string[]; rules_version: string; verified_by?: string; verified_on?: string };
   protocols: Record<string, ProtocolBlock>;
   compliance: ComplianceRecord[];
+  traces?: TraceRecord[];
   security?: { tier: Tier; cves: number; advisories: number; checked_at: string; source?: string } | null;
   issues?: Issues;
   news?: NewsItem[];
@@ -216,4 +219,35 @@ export interface ChangelogEvent {
   source?: string;
   from?: { tier?: Tier; status?: string };
   to?: { tier?: Tier; status?: string };
+}
+
+/** One public observation of the agent under attack, in defence or in an incident (schema/trace_record.schema.json). */
+export interface TraceRecord {
+  id: string;
+  kind: "red_team" | "injection_eval" | "ctf" | "incident" | "self_test" | "vendor_published";
+  tier: Tier;
+  scope?: "product" | "platform" | "model";
+  title: string;
+  scenario?: string | null;
+  source: string;
+  url: string;
+  date: string;
+  format: "bundle" | "spans" | "transcript" | "report" | "advisory" | "paper";
+  observed: {
+    entry?: string | null;
+    actions?: string[];
+    egress?: boolean | null;
+    approval?: boolean | null;
+    secrets_touched?: boolean | null;
+    refused?: boolean | null;
+    outcome: string;
+  };
+  vendor_response?: string | null;
+  agent_version?: string | null;
+  harness_version?: string | null;
+  sha256?: string | null;
+  bundle?: string | null;
+  reviewer?: string | null;
+  checked_on?: string | null;
+  notes?: string | null;
 }

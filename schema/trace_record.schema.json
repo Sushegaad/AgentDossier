@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sushegaad.github.io/AgentDossier/schema/trace_record.schema.json",
+  "title": "TraceRecord",
+  "description": "One observed run of an agent under adversarial or evaluative conditions: who watched it, what it did, where the artifacts are. Defenders can't learn from what they can't see; a dossier lists every public trace it can find and says plainly when there is none.",
+  "type": "object",
+  "required": ["id", "kind", "tier", "title", "source", "url", "date", "format", "observed"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^tr_[a-z0-9_.-]{6,80}$" },
+    "kind": {
+      "type": "string",
+      "enum": ["red_team", "injection_eval", "ctf", "incident", "self_test", "vendor_published"],
+      "description": "red_team: the agent was attacked by a researcher · injection_eval: a published test of the agent under adversarial input · ctf: cyber-range or capture-the-flag run · incident: a real-world event with a post-mortem · self_test: this registry's own probe of the agent's public endpoints · vendor_published: a trace bundle the vendor serves at a well-known path"
+    },
+    "tier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "1 reproducible run with public artifacts · 2 third-party report with a transcript or proof of concept · 3 vendor-published evaluation with results only · 4 vendor claim ('we red-teamed it') · 5 nothing found"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["product", "platform", "model"],
+      "default": "product",
+      "description": "product: this agent · platform: a sibling product on the same platform (Copilot Chat for the Copilot coding agent) · model: the underlying model, not the agent"
+    },
+    "title": { "type": "string", "maxLength": 200 },
+    "scenario": { "type": ["string", "null"], "maxLength": 500, "description": "What was attempted, in one sentence" },
+    "source": { "type": "string", "maxLength": 120, "description": "Who published the trace" },
+    "url": { "type": "string", "pattern": "^https://" },
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "format": { "type": "string", "enum": ["bundle", "spans", "transcript", "report", "advisory", "paper"] },
+    "observed": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entry": { "type": ["string", "null"], "description": "How the adversarial input reached the agent" },
+        "actions": { "type": "array", "items": { "type": "string" }, "description": "What the agent did (tools called, files read, commands run)" },
+        "egress": { "type": ["boolean", "null"], "description": "Did data leave the environment?" },
+        "approval": { "type": ["boolean", "null"], "description": "Was a human asked before the consequential action?" },
+        "secrets_touched": { "type": ["boolean", "null"] },
+        "refused": { "type": ["boolean", "null"], "description": "Did the agent refuse or stop?" },
+        "outcome": { "type": "string", "maxLength": 300 }
+      },
+      "required": ["outcome"]
+    },
+    "vendor_response": { "type": ["string", "null"], "maxLength": 300, "description": "Fix, advisory or CVE, if any" },
+    "agent_version": { "type": ["string", "null"] },
+    "harness_version": { "type": ["string", "null"] },
+    "sha256": { "type": ["string", "null"], "pattern": "^(sha256:)?[0-9a-f]{64}$" },
+    "bundle": { "type": ["string", "null"], "description": "Path of the bundle under data/traces/bundles/, when this registry holds the artifacts" },
+    "reviewer": { "type": ["string", "null"], "description": "Who checked the source; null until a person signs it off" },
+    "checked_on": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "notes": { "type": ["string", "null"], "maxLength": 500 }
+  }
+}

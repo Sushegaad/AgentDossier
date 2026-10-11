@@ -103,6 +103,16 @@ export const IDENTITY_WORD: Record<Tier, string> = { 1: "confirmed", 2: "confirm
 /** The protocol tier (1 verified · 3 claimed · 5 none) as a word. */
 export const PROTOCOL_TIER_WORD: Record<number, string> = { 1: "verified", 3: "documented", 5: "none found" };
 
+export const TRACE_TIER_WORD: Record<Tier, string> = { 1: "reproducible run", 2: "third-party report", 3: "vendor report", 4: "vendor claim", 5: "none found" };
+export const TRACE_KIND_WORD: Record<string, string> = {
+  red_team: "attacked by a researcher",
+  injection_eval: "tested under adversarial input",
+  ctf: "cyber-range run",
+  incident: "real-world incident",
+  self_test: "registry probe",
+  vendor_published: "published by the vendor",
+};
+
 /** NVD result as a sentence; it is a keyword search, never a tier. */
 export function securityWord(sec: { cves?: number | null } | null | undefined, tier?: number | null): string {
   if (sec && sec.cves != null) return sec.cves === 0 ? "NVD: no CVE by keyword" : `NVD: ${sec.cves} CVE${sec.cves === 1 ? "" : "s"} by keyword`;

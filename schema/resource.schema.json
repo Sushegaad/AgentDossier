@@ -600,6 +600,13 @@
             "null"
           ],
           "description": "Best active tier among vendor-level (entity-scoped or inherited) records; null when none"
+        },
+        "traces": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Best trace tier: 1 reproducible run \u2026 4 vendor claim, 5 none found"
         }
       },
       "additionalProperties": false
@@ -708,6 +715,13 @@
       },
       "additionalProperties": false,
       "description": "Component values as stated in the seed workbook (sar-score-2.0 keeps them for audit; trust and governance are recomputed from evidence)."
+    },
+    "traces": {
+      "type": "array",
+      "description": "Public traces of this agent under attack, in defence or in an incident (schema/trace_record.schema.json); empty means none found",
+      "items": {
+        "$ref": "trace_record.schema.json"
+      }
     }
   },
   "additionalProperties": false

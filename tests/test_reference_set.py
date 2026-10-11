@@ -46,7 +46,14 @@ def test_deploy_rules_are_well_formed():
     ids = [r["id"] for r in rules]
     assert len(ids) == len(set(ids))
     for r in rules:
-        assert set(r["when"]) <= {"answer", "evidence_missing", "identity_tier_min", "protocol"}, r["id"]
+        assert set(r["when"]) <= {
+            "answer",
+            "evidence_missing",
+            "identity_tier_min",
+            "protocol",
+            "traces_tier_min",
+            "traces_egress",
+        }, r["id"]
         assert len(r["restriction"]) > 20
         for values in (r["when"].get("answer") or {}).values():
             assert set(values) <= VALUES

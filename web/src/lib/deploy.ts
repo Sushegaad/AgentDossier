@@ -31,6 +31,10 @@ interface Rule {
     evidence_missing?: string;
     identity_tier_min?: number;
     protocol?: Record<string, string[]>;
+    /** fires when the best public trace tier is this or worse (5 = none found) */
+    traces_tier_min?: number;
+    /** fires when any public trace observed data leaving the environment */
+    traces_egress?: boolean;
   };
   restriction: string;
 }
@@ -57,6 +61,11 @@ function ruleFires(rule: Rule, res: Resource, answers: Record<string, Answer> | 
       if (!s || !statuses.includes(s)) return false;
     }
   }
+  if (w.traces_tier_min != null) {
+    const best = Math.min(5, ...(res.traces ?? []).map((t) => t.tier));
+    if (best < w.traces_tier_min) return false;
+  }
+  if (w.traces_egress != null && !(res.traces ?? []).some((t) => t.observed?.egress === true) === w.traces_egress) return false;
   return true;
 }
 

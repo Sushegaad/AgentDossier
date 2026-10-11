@@ -34,6 +34,9 @@ from .dedup import dedup, load_decisions, resource_slug, write_review_file
 from .news import run as news_run
 from .protocol_claims import apply_claims, load_curated_protocols
 from .score import COMPONENTS_VERSION, ScoringConfig, components_from_signals, score_for_domain
+from .traces import TraceStore, apply_traces, trace_tier
+from .traces.selftest import record_probes
+from .traces.store import STORE_ROOT
 from .util import ROOT, Deadline, NetPolicy, domain_of, load_config, now_iso
 
 ALL_SOURCES = ("seed", "marketplaces", "mcp_registry", "huggingface", "github", "ard_web")
@@ -77,6 +80,8 @@ class BuildOptions:
     scope: str = "public"
     tenant: str | None = None
     site: str = SITE
+    traces_dir: Path = STORE_ROOT  # data/traces: append-only trace store (docs/traces.md)
+    record_traces: bool = True  # append self_test bundles for probes that found something
     registry_urn: str = REGISTRY_URN
     registry_name: str = "AgentDossier public demo registry"
     registry_description: str = (
@@ -252,6 +257,7 @@ def _trust_summary(res: dict[str, Any]) -> dict[str, int | None]:
         "security": res.get("security", {}).get("tier") if res.get("security") else None,
         "protocols": 1 if "verified" in protos else 3 if "claimed" in protos else 5,
         "issues": _issues_tier(res),
+        "traces": trace_tier(res),
     }
 
 
@@ -447,6 +453,19 @@ def enrich(
             }
         _score_domains(res, cfg, is_seed=is_seed)
     _rerank_seed_rows(resources)
+
+    # Traces: what anyone has publicly observed of the agent under attack or in defence. The
+    # registry's own probe transcripts are appended to the hash-chained store first (only when the
+    # observation changed), then curated and stored records are attached to every resource.
+    store_t = TraceStore(opts.traces_dir)
+    if opts.record_traces and not opts.offline:
+        reports["self_test_traces"] = {
+            "source": "self_test",
+            **record_probes(resources, store_t, site=opts.site, date=now_iso()[:10]),
+        }
+        _deadline.log("traces", f"{reports['self_test_traces']['appended']} new probe transcripts")
+    reports["traces"] = {"source": "traces", **apply_traces(resources, store_t)}
+
     for res in resources:
         res["trust"] = _trust_summary(res)
     return resources

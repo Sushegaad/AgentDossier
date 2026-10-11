@@ -1,7 +1,7 @@
 import type { TrustSummary } from "../lib/types";
 import { IDENTITY_WORD, PROTOCOL_TIER_WORD } from "../lib/labels";
 
-type StripKey = Exclude<keyof TrustSummary, "vendor_compliance">;
+type StripKey = Exclude<keyof TrustSummary, "vendor_compliance" | "traces">;
 
 const LABELS: Record<StripKey, string> = {
   identity: "Publisher",

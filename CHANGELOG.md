@@ -6,6 +6,17 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Added — traces
+- Every dossier now carries **Traces**: public observations of the agent under attack, in
+  defence or in an incident, tiered T1–T5 with "none found" said out loud. Seven curated
+  public traces to start (EchoLeak, ForcedLeak, CamoLeak, the Gemini CLI and Amazon Q
+  incidents, AgentFlayer, Anthropic's espionage-campaign report), each marked unreviewed
+  until the maintainer signs it. New rules: run your own sandbox trace when none is public;
+  egress allowlist when a trace shows data leaving. `/traces/` is the running count.
+- An append-only, hash-chained trace store in `data/traces/` (verified in CI), and
+  `self_test` bundles: every refresh records what each publisher's discovery endpoints
+  served, as a reproducible transcript, whenever the observation changes.
+
 ### Changed — trust and credibility (one PR)
 - **Scores (`sar-score-2.0`).** Trust and governance are recomputed from evidence for every
   row, including the curated Top 100; the workbook's values stay on the record

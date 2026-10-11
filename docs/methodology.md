@@ -197,6 +197,14 @@ above the ledger, that the publisher is unconfirmed and why; rows are not
 individually suffixed. The "confirm the publisher" pilot restriction fires at
 tier 4 only.
 
+## Traces
+
+Every dossier lists the public traces of the agent under attack, in defence or in an
+incident, with a tier (1 reproducible run · 2 third-party report with transcript · 3
+vendor report · 4 vendor claim · 5 none found) and says "none found" when nothing
+exists. Sources, the append-only store under `data/traces/` and the publication
+policy are in [docs/traces.md](traces.md).
+
 ## News and chatter (FR-43–FR-47)
 
 Sources: Hacker News (Algolia, stories with ≥ 5 points), GDELT DOC 2.0 (90

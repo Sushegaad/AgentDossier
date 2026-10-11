@@ -11,7 +11,7 @@ from referencing import Registry, Resource
 
 ROOT = Path(__file__).resolve().parent.parent
 out = Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / "data" / "catalog")
-names = ["resource", "compliance_record", "policy", "enterprise_config", "catalog_index"]
+names = ["resource", "compliance_record", "trace_record", "policy", "enterprise_config", "catalog_index"]
 schemas = {n: json.loads((ROOT / "schema" / f"{n}.schema.json").read_text()) for n in names}
 registry = Registry().with_resources([(s["$id"], Resource.from_contents(s)) for s in schemas.values()])
 problems = 0

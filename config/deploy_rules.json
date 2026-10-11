@@ -1,6 +1,6 @@
 {
   "version": "deploy-rules-1.1",
-  "_note": "Rule-driven 'Before you deploy' section. Each rule adds a pilot restriction when its condition holds. Conditions: answer (a reference-set question id with the values that trigger), evidence_missing (a framework with no active record; only when the framework is in the agent's domain preset), identity_tier_min, protocol (status per protocol). Restrictions are advice for a bounded pilot, never a verdict.",
+  "_note": "Rule-driven 'Before you deploy' section. Each rule adds a pilot restriction when its condition holds. Conditions: answer (a reference-set question id with the values that trigger), evidence_missing (a framework with no active record; only when the framework is in the agent's domain preset), identity_tier_min, protocol (status per protocol), traces_tier_min (no public trace at this tier or better). Restrictions are advice for a bounded pilot, never a verdict.",
   "rules": [
     {
       "id": "approval-gate",
@@ -145,6 +145,20 @@
         "evidence_missing": "hipaa"
       },
       "restriction": "No PHI in the pilot until a HIPAA BAA is in hand; no HIPAA evidence was found in the sources checked."
+    },
+    {
+      "id": "no-public-trace",
+      "when": {
+        "traces_tier_min": 5
+      },
+      "restriction": "No public trace of this agent under adversarial input was found. Run it in a sandbox against your own prompt-injection and tool-abuse scenarios before the pilot, and keep the transcript; the enterprise edition records one."
+    },
+    {
+      "id": "trace-shows-exfiltration",
+      "when": {
+        "traces_egress": true
+      },
+      "restriction": "A public trace shows data leaving the environment under adversarial input. Confirm the vendor's fix is in the version you deploy, and keep an egress allowlist around the agent during the pilot."
     }
   ]
 }

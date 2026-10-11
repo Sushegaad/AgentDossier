@@ -14,6 +14,7 @@ const sorted = [...domains].sort((a, b) => order.indexOf(a.domain) - order.index
 const profiles = (scoring as { domain_profiles: Record<string, string> }).domain_profiles;
 const frameworks = Object.keys(FRAMEWORKS).length;
 const withEvidence = index?.records.filter((r) => r.compliance_summary.some((c) => c.status === "active")).length ?? 0;
+const withTrace = index?.records.filter((r) => (r.trust.traces ?? 5) < 5).length ?? 0;
 const snapshot = index?.snapshot_date ?? "—";
 const asOf = index?.built_at ? index.built_at.slice(0, 10) : "—";
 // the specimen result: the real #1 for an example query, chosen so it carries evidence when the catalog has any
@@ -64,6 +65,7 @@ const tiers = [
   <div class="stats">
     <div class="stat"><div class="n">{index?.records.length ?? "—"}</div><div class="l">Agents in the catalog</div></div>
     <div class="stat"><div class="n">{withEvidence}</div><div class="l">With evidence on file</div></div>
+    <div class="stat"><div class="n">{withTrace}</div><div class="l"><a href={`${base}/traces/`} style="color: inherit">With a public trace under attack</a></div></div>
     <div class="stat"><div class="n">{frameworks}</div><div class="l">Frameworks tracked</div></div>
     <div class="stat"><div class="n">{domains.length || 12}</div><div class="l">Domains, Top 100 each</div></div>
   </div>
