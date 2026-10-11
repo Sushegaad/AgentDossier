@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BASE, fetchResourceByIdOrSlug } from "../lib/data";
 import { beforeYouDeploy, type BeforeYouDeploy } from "../lib/deploy";
 import { COMPONENT_LABELS, COMPONENT_MAX, DOMAIN_PROFILES, PROFILES, bestDomain, evidenceGroups, gdprPanel, protocolLines, provenance, tierCounts, tierRange, type EvidenceRow, type Mark } from "../lib/dossier";
-import { IDENTITY_EVIDENCE, IDENTITY_LABEL, NEWS_TAG_LABEL, RISK_TAGS, domainLabel, fmtDate, frameworkName, variantLabel } from "../lib/labels";
+import { IDENTITY_EVIDENCE, IDENTITY_LABEL, IDENTITY_WORD, NEWS_TAG_LABEL, RISK_TAGS, domainLabel, fmtDate, frameworkName, variantLabel } from "../lib/labels";
 import type { Resource } from "../lib/types";
 import ShortlistButton from "./ShortlistButton";
 
@@ -131,9 +131,9 @@ export default function AgentProfile({
             <span className="label">Trust profile</span>
             <span className="tiny muted">as of {asOf || "this build"}</span>
           </div>
-          <TrustRow k="Identity" v={<>T{res.identity.tier} · {IDENTITY_LABEL[res.identity.tier]}{res.identity.evidence.length > 0 && <span className="muted"> — {res.identity.evidence.map((e) => IDENTITY_EVIDENCE[e] ?? e).join("; ")}</span>}</>} t={`T${res.identity.tier}`} />
+          <TrustRow k="Publisher" v={<>{IDENTITY_WORD[res.identity.tier]} · {IDENTITY_LABEL[res.identity.tier]}{res.identity.evidence.length > 0 && <span className="muted"> — {res.identity.evidence.map((e) => IDENTITY_EVIDENCE[e] ?? e).join("; ")}</span>}</>} t={IDENTITY_WORD[res.identity.tier]} />
           <TrustRow k="Compliance" v={tierCounts(res)} t={tierRange(res)} />
-          <TrustRow k="Security" v={res.security ? `${res.security.cves === 0 ? "No CVE naming this product in NVD" : `${res.security.cves} CVE${res.security.cves === 1 ? "" : "s"} matching the product name in NVD`} · checked ${fmtDate(res.security.checked_at)}` : "Not checked in this build"} t={res.security ? `T${res.security.tier}` : "–"} />
+          <TrustRow k="Security" v={res.security ? `NVD keyword search for "${res.name}": ${res.security.cves === 0 ? "no CVE" : `${res.security.cves} result${res.security.cves === 1 ? "" : "s"} — may include unrelated products`} · checked ${fmtDate(res.security.checked_at)}` : "Not checked in this build"} t={res.security ? "keyword" : "–"} />
           <TrustRow
             k="Protocols"
             v={
@@ -157,7 +157,7 @@ export default function AgentProfile({
           <TrustRow k="Issues found" v={issues && checked ? `${issues.regulator_actions} regulator actions · ${issues.incidents} incidents · ${issues.withdrawn_certificates} withdrawn certificates · ${issues.cves} CVEs` : "Not checked in this build"} t="links only" last />
           {res.identity.tier > 2 && rows.some((r) => r.mark !== "missing") && (
             <p className="tiny muted" style={{ marginTop: "10px" }}>
-              Evidence is shown but not credited in the governance score until the publisher's identity reaches T2 (ARD manifest or A2A card on the vendor's domain, marketplace listing, or a maintainer-verified domain).
+              Publisher unconfirmed: the evidence below is shown but not counted in the governance score, because nothing yet ties this listing to {res.vendor ?? "the vendor"} beyond {res.identity.evidence.map((e) => IDENTITY_EVIDENCE[e] ?? e).join("; ") || "the name"}. A vendor-domain page, marketplace listing, ARD manifest or A2A card would confirm it.
             </p>
           )}
         </div>
@@ -183,6 +183,11 @@ export default function AgentProfile({
                 <LedgerRow key={r.framework + (r.variant ?? "") + r.mark} r={r} />
               ))}
             </div>
+            {groups.agent.some((r) => r.mark === "missing") && (
+              <p className="tiny muted" style={{ marginTop: "6px" }}>
+                "Unknown" means nothing was found in the sources checked — registries, marketplaces and the vendor's own pages. It is not a finding of non-compliance; ask the vendor.
+              </p>
+            )}
             {groups.vendor.length > 0 && (
               <>
                 <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", margin: "18px 0 8px" }}>
@@ -280,12 +285,12 @@ export default function AgentProfile({
           <section>
             <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", borderTop: "2px solid var(--rule)", paddingTop: "12px" }}>
               <h3 style={{ fontSize: "1.15rem" }}>{best ? `${domainLabel(best[0])} score` : "Domain score"}</h3>
-              <span style={{ fontWeight: 800, fontSize: "2rem", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{best?.[1].score?.toFixed(1) ?? "–"}</span>
+              <span style={{ fontWeight: 800, fontSize: "2rem", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{best?.[1].score != null ? Math.round(best[1].score) : "–"}</span>
             </div>
             <div className="tiny muted" style={{ margin: "4px 0 12px" }}>
-              {profileName} profile · {best?.[1].score_version ?? "sar-score-1.0"}
-              {best?.[1].evidence_coverage != null ? ` · evidence coverage ${Math.round(best[1].evidence_coverage * 100)}%` : ""}
+              {profileName} profile · {best?.[1].score_version ?? "sar-score-2.0"}
               {best?.[1].rank ? ` · rank #${best[1].rank} of 100` : " · unranked"}
+              {best?.[1].seed_rank && best[1].seed_rank !== best[1].rank ? ` (workbook order #${best[1].seed_rank})` : ""}
             </div>
             {comps ? (
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "0.85rem" }}>
@@ -301,7 +306,7 @@ export default function AgentProfile({
                           <span style={{ width: v == null ? "0%" : `${Math.min(100, (100 * v) / max)}%` }}></span>
                         </div>
                         <span className="muted" style={{ textAlign: "right", fontVariantNumeric: "tabular-nums" }}>
-                          {v == null ? "unknown" : `${v} / ${max}`}
+                          {v == null ? "unknown" : `${Math.round(v)} / ${max}`}
                         </span>
                       </div>
                     );
@@ -311,8 +316,7 @@ export default function AgentProfile({
               <p className="muted small">Not scored against the seed baseline.</p>
             )}
             <p className="tiny muted" style={{ marginTop: "12px" }}>
-              Raw component / maximum, then weighted by the {profileName} profile ({Object.entries(weights).map(([k, w]) => `${(COMPONENT_LABELS[k] ?? k).split(" ")[0].toLowerCase()} ${w}`).join(", ")}). Unknown components count as 0 and are never imputed.
-              {best?.[1].governance_evidence?.value != null && <> Evidence-based governance (sar-score-1.1): {best[1].governance_evidence.value.toFixed(0)} / 100.</>}
+              Raw component / maximum, then weighted by the {profileName} profile ({Object.entries(weights).map(([k, w]) => `${(COMPONENT_LABELS[k] ?? k).split(" ")[0].toLowerCase()} ${w}`).join(", ")}). Trust and governance are computed from the evidence on this page; the other components come from the curated workbook. Unknown components count as 0 and are never imputed.
             </p>
           </section>
 
@@ -384,9 +388,6 @@ export default function AgentProfile({
           </section>
         </div>
       </div>
-      <p className="tiny muted" style={{ borderTop: "2px solid var(--rule)", padding: "10px 0", marginTop: "32px" }}>
-        {res.disclaimer ?? "Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body."}
-      </p>
     </article>
   );
 }

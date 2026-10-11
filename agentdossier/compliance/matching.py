@@ -12,6 +12,9 @@ from __future__ import annotations
 import difflib
 import re
 from dataclasses import dataclass
+from functools import lru_cache
+
+from ..util import load_config
 
 AUTO_ACCEPT = 0.9
 REVIEW_MIN = 0.7
@@ -84,13 +87,43 @@ class Match:
 _VENDOR_SPLIT = re.compile(r"\s*(?:/|\||,|;|\(|\)|\bvia\b|\bby\b)\s*|\s+and\s+|\s+&\s+")
 
 
-def vendor_variants(vendor: str | None) -> list[str]:
-    """Every entity a compound vendor string names, longest first.
+@lru_cache(maxsize=1)
+def _aliases() -> tuple[dict[str, str], dict[str, list[str]], dict[str, list[str]]]:
+    """(normalized name → canonical, canonical → all names, canonical → domains) from config/vendor_aliases.json."""
+    try:
+        doc = load_config("vendor_aliases.json")
+    except FileNotFoundError:
+        return {}, {}, {}
+    lookup: dict[str, str] = {}
+    names: dict[str, list[str]] = {}
+    domains: dict[str, list[str]] = {}
+    for canonical, entry in (doc.get("entities") or {}).items():
+        all_names = [canonical, *(entry.get("aliases") or [])]
+        names[canonical] = all_names
+        domains[canonical] = [d.lower().removeprefix("www.") for d in entry.get("domains") or []]
+        for n in all_names:
+            lookup[normalize_entity(n)] = canonical
+    return lookup, names, domains
 
-    Catalog vendors are often written as "GitHub / Microsoft", "OpenAI (Microsoft)" or
-    "Salesforce, Inc. and MuleSoft". A registry lists one legal entity per row, so each
-    part is tried on its own, after the whole string.
-    """
+
+def canonical_entities(vendor: str | None) -> list[str]:
+    """Registry-spelled entities a vendor string names ("AWS" → ["Amazon"]; "GitHub / Microsoft" → both)."""
+    lookup = _aliases()[0]
+    out: list[str] = []
+    for part in _raw_variants(vendor):
+        c = lookup.get(normalize_entity(part))
+        if c and c not in out:
+            out.append(c)
+    return out
+
+
+def entity_domains(vendor: str | None) -> list[str]:
+    """Domains the alias table records as the vendor's own."""
+    domains = _aliases()[2]
+    return [d for c in canonical_entities(vendor) for d in domains.get(c, [])]
+
+
+def _raw_variants(vendor: str | None) -> list[str]:
     if not vendor:
         return []
     parts = [vendor.strip()]
@@ -98,6 +131,23 @@ def vendor_variants(vendor: str | None) -> list[str]:
         piece = (piece or "").strip()
         if len(normalize_entity(piece)) >= 3 and piece not in parts:
             parts.append(piece)
+    return parts
+
+
+def vendor_variants(vendor: str | None) -> list[str]:
+    """Every entity a compound vendor string names, longest first, plus registry spellings.
+
+    Catalog vendors are often written as "GitHub / Microsoft", "OpenAI (Microsoft)" or
+    "Salesforce, Inc. and MuleSoft". A registry lists one legal entity per row, so each
+    part is tried on its own, after the whole string. Parts the alias table knows
+    ("AWS") also try the registry's spelling ("Amazon") and every other alias.
+    """
+    parts = _raw_variants(vendor)
+    names = _aliases()[1]
+    for canonical in canonical_entities(vendor):
+        for n in names.get(canonical, []):
+            if n not in parts:
+                parts.append(n)
     return parts
 
 

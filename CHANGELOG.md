@@ -6,6 +6,35 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Changed — trust and credibility (one PR)
+- **Scores (`sar-score-2.0`).** Trust and governance are recomputed from evidence for every
+  row, including the curated Top 100, and each domain list is re-ordered by the result; the
+  workbook's values and order stay on the record (`seed_components`, `seed_rank`). The second
+  "evidence-based governance" figure is gone; scores are shown as integers.
+- **Publisher identity (`identity-1.1`).** A product page on the vendor's own domain confirms
+  the publisher (tier 2), so registry evidence for Agentforce, Bedrock and the like is credited.
+  `config/vendor_aliases.json` maps workbook names to registry spellings ("AWS" → "Amazon",
+  "Google Cloud" → "Google") for FedRAMP, CSA STAR, trust pages and identity. The "confirm the
+  publisher" restriction fires only when nothing beyond the name is known.
+- **One scale.** Only compliance evidence uses T1–T5. Publisher is confirmed / likely /
+  unconfirmed / unknown; protocols are verified / documented / none found; the NVD check is
+  shown as the keyword search it is, never as a tier. "Pending publisher verification" is gone;
+  a dossier says once, above its ledger, when evidence is shown but not credited and why.
+- **Say it once.** Ledger sentences no longer repeat the framework, source and date the row
+  already shows; "Before you deploy" items are one line each; the disclaimer appears once; the
+  "not non-compliance" note once per ledger.
+- **Catalog hygiene.** Demo, sample, deprecated, hackathon and archived projects and
+  repositories idle for a year are dropped from discovery (`connectors.hygiene`, counts in the
+  build report). Release headlines read "aider v0.86.1", not "langchain langchain==1.4.4".
+  Domain tables show the protocols column only when at least one row in ten has something in it.
+- **Trust pages.** Vendor compliance pages up to 6 MB are read (Google Cloud's is 2.3 MB and
+  was dropped as "too large").
+- **About page** (`/about/`): what the site is, who maintains it, what is automated and what is
+  reviewed by hand, how often it refreshes, how to report an error. Worked comparisons carry a
+  draft banner until the maintainer records a review. The analytics consent prompt is removed;
+  the public build sends cookieless aggregate pings only.
+- Search: the domain score adds at most 10 points so text relevance decides the order.
+
 ### Added
 - Refresh fills the gaps that left most ranked agents with an empty trust profile and
   blank protocol column: seed rows on GitHub are looked up once (`seed_enrich`) for

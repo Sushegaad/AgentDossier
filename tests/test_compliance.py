@@ -259,7 +259,9 @@ def test_finalize_dedupes_credits_and_flags_pending():
     assert all(r["credited"] for r in out)
     pending = engine.finalize(raw, identity_tier=4, now=NOW)
     assert not any(r["credited"] for r in pending)
-    assert all(r["display"].endswith("(pending publisher verification)") for r in pending)
+    assert not any(
+        "pending publisher verification" in r["display"] for r in pending
+    )  # said once per dossier, not per row
 
 
 def test_governance_from_evidence_uses_domain_preset_and_credit_weights():
@@ -336,8 +338,8 @@ def test_compound_vendor_matches_each_part():
     """ "GitHub / Microsoft" must find Microsoft's registry rows (FR-20)."""
     from agentdossier.compliance.matching import match, vendor_variants
 
-    assert vendor_variants("GitHub / Microsoft") == ["GitHub / Microsoft", "GitHub", "Microsoft"]
-    assert vendor_variants("OpenAI (Microsoft)")[1:] == ["OpenAI", "Microsoft"]
+    assert vendor_variants("GitHub / Microsoft")[:3] == ["GitHub / Microsoft", "GitHub", "Microsoft"]
+    assert vendor_variants("OpenAI (Microsoft)")[1:3] == ["OpenAI", "Microsoft"]
     assert vendor_variants(None) == []
     whole = match("GitHub / Microsoft", None, "Microsoft Corporation")
     assert whole.entity_score >= 0.85 and whole.decision == "accept"
@@ -456,3 +458,41 @@ def test_crawl_domain_reads_curated_pages_first(monkeypatch):
     found = {(c["framework"], c["variant"]) for c in crawl["claims"]}
     assert ("soc2", "SOC2_TYPE_II") in found and ("fedramp", None) in found and ("hipaa", None) in found
     assert len(crawl["pages"]) <= claims.MAX_PAGES + 1
+
+
+def test_vendor_aliases_reach_registry_spellings():
+    from agentdossier.compliance.matching import canonical_entities, entity_domains, vendor_variants
+
+    assert canonical_entities("AWS") == ["Amazon"] and "Amazon" in vendor_variants("AWS")
+    assert canonical_entities("GitHub / Microsoft") == ["Microsoft", "GitHub"]
+    assert "aws.amazon.com" in entity_domains("AWS") and entity_domains("Nobody Inc") == []
+    assert vendor_variants("Everlaw") == ["Everlaw"]  # unknown vendors are unchanged
+    # the alias table itself: every entity has aliases or domains and no alias is shared
+    import json
+    from pathlib import Path
+
+    doc = json.loads((Path(__file__).parent.parent / "config" / "vendor_aliases.json").read_text())
+    seen: dict[str, str] = {}
+    for canonical, entry in doc["entities"].items():
+        for n in [canonical, *entry.get("aliases", [])]:
+            assert n.lower() not in seen, f"{n} listed under {seen[n.lower()]} and {canonical}"
+            seen[n.lower()] = canonical
+
+
+def test_trust_pages_fall_back_to_alias_domains():
+    tp = claims.TrustPages({"aws.amazon.com": ["https://aws.amazon.com/compliance/programs/"]}, {})
+    assert tp.domain_for_vendor("AWS") == "aws.amazon.com"
+
+
+def test_claims_crawl_allows_heavy_vendor_pages(monkeypatch):
+    from agentdossier.util import FetchResult
+
+    seen = {}
+
+    def fake_fetch(url, **kw):
+        seen[url] = kw.get("max_bytes")
+        return FetchResult(url, 404, {}, b"")
+
+    monkeypatch.setattr(claims, "fetch", fake_fetch)
+    claims.crawl_domain("example.com")
+    assert all(v == claims.PAGE_MAX_BYTES for u, v in seen.items() if not u.endswith("robots.txt"))

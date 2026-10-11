@@ -30,7 +30,7 @@ def test_every_resource_has_provenance_and_profile(seed_import):
                 "data",
                 "operations",
             }
-            assert d["score_version"] == "sar-score-1.0"
+            assert d["score_version"] == "sar-score-2.0"
             assert d["confidence"] == 1.0
 
 

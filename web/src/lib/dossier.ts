@@ -78,6 +78,20 @@ export function presetFrameworks(res: Resource): string[] {
   return [...set];
 }
 
+/**
+ * The wording templates say "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10)". The ledger row
+ * already shows the framework, the variant, the source and the date on its own lines, so the sentence keeps only
+ * what is new: "FedRAMP Authorized".
+ */
+export function tidyDisplay(display: string | null | undefined, framework: string, variant: string | null): string {
+  let s = (display ?? "").trim();
+  if (!s) return s;
+  const heads = [frameworkName(framework), variant ? variantLabel(variant) : "", variant ? `${frameworkName(framework)} ${variantLabel(variant)}` : ""].filter(Boolean);
+  for (const h of heads) if (s.toLowerCase().startsWith(h.toLowerCase() + ":")) s = s.slice(h.length + 1).trim();
+  s = s.replace(/\s*\([^()]*\d{4}-\d{2}-\d{2}\)\s*$/, "").trim();
+  return s;
+}
+
 export function evidenceRows(res: Resource): EvidenceRow[] {
   const rows: EvidenceRow[] = [];
   const recs = [...(res.compliance ?? [])].sort((a, b) => a.tier - b.tier || a.framework.localeCompare(b.framework));
@@ -89,8 +103,8 @@ export function evidenceRows(res: Resource): EvidenceRow[] {
       aboutAgent: agentScoped(c),
       framework: c.framework,
       variant: c.variant,
-      tierLabel: `T${c.tier} ${TIER_WORD[c.tier]}${c.credited === false && active ? " · pending publisher verification" : ""}`,
-      status: c.display || `${frameworkName(c.framework)}: ${c.status}`,
+      tierLabel: `T${c.tier} ${TIER_WORD[c.tier]}`,
+      status: tidyDisplay(c.display, c.framework, c.variant) || `${frameworkName(c.framework)}: ${c.status}`,
       scope: `${c.scope}${c.covers_resource && c.covers_resource !== "unknown" ? ` · covers this resource: ${c.covers_resource}` : ""}`,
       source: sourceLabel(c.source),
       sourceUrl: c.evidence_url,
@@ -109,7 +123,7 @@ export function evidenceRows(res: Resource): EvidenceRow[] {
       framework: f,
       variant: null,
       tierLabel: "T5 Unknown",
-      status: `No evidence found in the sources checked. This is not non-compliance.`,
+      status: `Nothing found in the sources checked.`,
       scope: "—",
       source: f === "fedramp" ? "FedRAMP Marketplace" : f === "csa_star" ? "CSA STAR Registry" : "registries, marketplaces, vendor pages",
       sourceUrl: null,
@@ -162,7 +176,7 @@ export function checklist(res: Resource): string[] {
   if (has("fedramp")) out.push("Current FedRAMP status with the agency, if government use is intended");
   if (has("csa_star")) out.push("Whether the CSA STAR entry covers this product; Level 1 is a self-assessment, Level 2 a third-party attestation");
   if (has("gdpr") || has("uk_gdpr")) out.push("The transfer mechanism you will rely on; DPF covers EU-to-US transfers only");
-  if (res.identity.tier > 2) out.push(`That ${res.vendor ?? "the vendor"} actually publishes this agent: no marketplace listing or ARD/A2A card on the vendor domain was found`);
+  if (res.identity.tier > 3) out.push(`That ${res.vendor ?? "the vendor"} actually publishes this agent: nothing beyond the name ties the two together`);
   const missing = presetFrameworks(res).filter((f) => !has(f));
   if (missing.length) out.push(`Ask the vendor for ${missing.map((f) => frameworkName(f)).join(", ")} evidence; none was found in the sources checked`);
   const protos = Object.values(res.protocols ?? {});

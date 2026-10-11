@@ -98,9 +98,13 @@ def test_offline_build_writes_valid_outputs(tmp_path):
     jsonschema.Draft202012Validator(schema).validate(index)
     assert len(index["records"]) == 158 and index["disclaimer"].startswith("Reference implementation")
     ins = json.loads((tmp_path / "domains" / "insurance.json").read_text())
-    assert [r["rank"] for r in ins["ranked"]] == list(range(1, 101)) and ins["ranked"][0][
-        "name"
-    ] == "Agentforce Financial Services"
+    assert [r["rank"] for r in ins["ranked"]] == list(range(1, 101))
+    # sar-score-2.0: the workbook's order is kept as seed_rank; rank follows the recomputed score
+    assert sorted(r["seed_rank"] for r in ins["ranked"]) == list(range(1, 101))
+    assert next(r for r in ins["ranked"] if r["seed_rank"] == 1)["name"] == "Agentforce Financial Services"
+    scores = [r["score"] for r in ins["ranked"]]
+    assert scores == sorted(scores, reverse=True)
+    assert all(r["components"]["trust"] is not None for r in ins["ranked"])
     assert (tmp_path / "ard.json").exists() and (tmp_path / "agents-list" / "page-1.json").exists()
     agent = json.loads(next((tmp_path / "agents").glob("*.json")).read_text())
     assert "raw" not in agent and agent["identity"]["tier"] in (2, 3, 4)
@@ -114,7 +118,33 @@ def test_identity_rules_domain_match_and_curated():
     assert not _domain_matches_vendor("github.com", "Acme AI Labs")
     assert not _domain_matches_vendor("example.com", "The AI Inc")  # only stop-words / short tokens
     base = {"protocols": {}, "vendor": "Everlaw", "url": "https://www.everlaw.com/ai", "external_ids": {}}
-    assert _identity(base)["tier"] == 3 and _identity(base)["evidence"] == ["publisher_domain_matches_vendor"]
+    # identity-1.1: the resource's own URL on the vendor's domain confirms the publisher (tier 2)
+    assert _identity(base)["tier"] == 2 and _identity(base)["evidence"] == ["vendor_domain_product_page"]
+    aws = {
+        "protocols": {},
+        "vendor": "AWS",
+        "url": "https://aws.amazon.com/bedrock/agentcore/",
+        "external_ids": {},
+    }
+    assert _identity(aws)["tier"] == 2  # aws.amazon.com is AWS's own domain (config/vendor_aliases.json)
+    # a publisher domain inferred from repository metadata stays at tier 3
+    inferred = {
+        "protocols": {},
+        "vendor": "Everlaw",
+        "url": "https://github.com/everlaw/x",
+        "publisher_domain": "everlaw.com",
+        "external_ids": {},
+    }
+    assert _identity(inferred)["tier"] == 3 and _identity(inferred)["evidence"] == [
+        "publisher_domain_matches_vendor"
+    ]
+    pages = {
+        "protocols": {},
+        "vendor": "Microsoft",
+        "url": "https://microsoft.github.io/autogen/",
+        "external_ids": {},
+    }
+    assert _identity(pages)["tier"] in (3, 4)
     curated = {"everlaw.com": {"vendor": "Everlaw", "checked_by": "hemant.naik", "checked_on": "2026-09-27"}}
     ident = _identity(base, curated)
     assert ident["tier"] == 2 and ident["verified_by"] == "hemant.naik"

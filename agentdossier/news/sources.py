@@ -158,6 +158,22 @@ def gdelt(
 
 # --- GitHub releases (needs GITHUB_TOKEN; runs in Actions) -----------------------
 
+_PKG_TAG = re.compile(r"^(?:[\w.-]+[=@])?v?\d+(?:\.\d+)*(?:[-+.][\w.]+)?$")
+
+
+def release_headline(full_name: str, name: str | None, tag: str | None) -> str:
+    """ "Aider v0.86.1" or "OpenHands release 1.2.0", never "langchain langchain-core==1.6.9"."""
+    repo = full_name.split("/")[-1]
+    name = (name or "").strip()
+    tag = (tag or "").strip()
+    version = tag.split("==")[-1].split("@")[-1] if tag else ""
+    if name and not _PKG_TAG.match(name) and name.lower() != tag.lower():
+        return f"{repo}: {name}" if not name.lower().startswith(repo.lower()) else name
+    if tag and "==" in tag:  # monorepo package tags: say which package
+        pkg, _, ver = tag.partition("==")
+        return f"{repo} release {pkg} {ver}" if pkg.lower() != repo.lower() else f"{repo} release {ver}"
+    return f"{repo} release {version or name or 'untitled'}"
+
 
 def github_releases(
     full_name: str, *, token: str | None, store: SnapshotStore | None = None, policy: NetPolicy | None = None
@@ -175,10 +191,9 @@ def github_releases(
     for rel in data if isinstance(data, list) else []:
         if rel.get("draft"):
             continue
-        name = rel.get("name") or rel.get("tag_name") or "release"
         out.append(
             item(
-                f"{full_name.split('/')[-1]} {name}",
+                release_headline(full_name, rel.get("name"), rel.get("tag_name")),
                 rel.get("html_url", ""),
                 "GitHub releases",
                 rel.get("published_at", ""),

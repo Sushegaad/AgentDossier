@@ -124,7 +124,10 @@ export interface DomainEntry {
   evidence_coverage?: number;
   score_version?: string;
   source?: string;
-  governance_evidence?: { value: number | null; score?: number | null; version: string; credited: Record<string, number> };
+  seed_rank?: number | null;
+  seed_score?: number | null;
+  governance_credited?: Record<string, number>;
+  components?: Record<string, number | null>;
 }
 
 export interface ProtocolBlock {

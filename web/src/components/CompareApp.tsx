@@ -150,7 +150,7 @@ export default function CompareApp() {
                 <Row key={d} label={`${domainLabel(d)} rank`}>
                   {records.map((r) => {
                     const e = r.domains[d];
-                    return <td key={r.id}>{e ? `${e.rank ? `#${e.rank}` : "unranked"}${e.score != null ? ` (${e.score.toFixed(1)})` : ""}` : "—"}</td>;
+                    return <td key={r.id}>{e ? `${e.rank ? `#${e.rank}` : "unranked"}${e.score != null ? ` (${Math.round(e.score)})` : ""}` : "—"}</td>;
                   })}
                 </Row>
               ))}

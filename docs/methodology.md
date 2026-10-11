@@ -1,10 +1,18 @@
 # Methodology
 
-## Scores (`sar-score-1.0`)
+## Scores (`sar-score-2.0`)
 
 Seven components are normalized to 0-100 (adoption /30, trust /25, health
 /20, ecosystem /15, domain fit /100, governance /100, docs /10) and weighted
-by the domain's profile in `config/scoring.json`:
+by the domain's profile in `config/scoring.json`. Two of them are never taken
+from the curated workbook: **trust** is derived from the publisher identity
+tier and the protocol probes, and **governance** from credited compliance
+evidence (next section), for workbook and discovered rows alike. The
+workbook's five other values (adoption, health, ecosystem, fit, docs) are
+kept because nothing better is known for them, and its original values and
+order stay on every record as `seed_components` and `seed_rank`. Each
+domain's Top 100 is therefore the workbook's *list*, re-ordered on every
+build by the evidence.
 
 | Dimension | General | Technology | Regulated | Security | Commercial | Data | Operations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -17,9 +25,10 @@ by the domain's profile in `config/scoring.json`:
 | Docs | 5 | 5 | 5 | 5 | 5 | 5 | 5 |
 
 Weights are normalized by their sum. An unknown component contributes 0 and
-is flagged; it is never imputed. These profiles reproduce all 1,200 scores in
-the 25 Sep 2026 seed workbook within 0.1. Scores are comparative discovery
-signals, not certification.
+is flagged; it is never imputed. Applied to the workbook's own components,
+these profiles reproduce all 1,200 scores in the 25 Sep 2026 workbook within
+0.1 (the import check). Scores are shown as integers; they are comparative
+discovery signals, not certification.
 
 ## Evidence tiers
 
@@ -48,14 +57,15 @@ best tier, then freshness is applied from the framework's `expiry_rule`
 (`fixed_date`, `period_end_plus_months`, `recheck_months`, `mirror_registry`)
 and a `next_check` date is set from the source cadence.
 
-### Evidence-based governance (`sar-score-1.1`)
+### Governance from evidence
 
 For each domain a preset of frameworks applies (healthcare: HIPAA, HITRUST,
 SOC 2; government: FedRAMP, CSA STAR, ISO 27001; …) plus ISO 42001 and CSA
-STAR for every domain. The component is the mean over that preset of the best
-*credited, active* record's tier credit, scaled to 0–100. It is published as
-`governance_evidence` next to the workbook's `sar-score-1.0` governance value
-and is not blended into the rank yet; the two are meant to be compared.
+STAR for every domain. The governance component is the mean over that preset
+of the best *credited, active* record's tier credit, scaled to 0–100, and
+`governance_credited` on each domain entry lists what counted. Since
+`sar-score-2.0` this is the only governance figure; there is no separate
+workbook value to compare it with.
 
 ### Trust changelog
 
@@ -103,7 +113,7 @@ unknown:
 | Evidence type | `tier` | T1 registry match, T2 marketplace listing, T3 reviewed document, T4 vendor assertion, T5 nothing found |
 | Provenance | `issuer`, `source`, `evidence_url` | who issued it and the page or registry entry it was read from — every row links |
 | Timing | `issued`, `retrieved_at`, `valid_until` / `period_end` / `next_check` | the as-of date, the expiry where one exists, and when it is re-checked |
-| Limitations | the framework's wording template | what the row does not establish ("covers platform, not this agent", "pending publisher verification", "a DPA is a contract you still have to sign") |
+| Limitations | the framework's wording template | what the row does not establish ("covers platform, not this agent", "a DPA is a contract you still have to sign") |
 
 Agent-level versus vendor-level: a CSA STAR entry for "Microsoft" is real evidence that the
 organisation was assessed and says nothing about whether one product is inside that scope. The
@@ -165,21 +175,21 @@ A claim never outranks an observation. When a curated claim sits next to a `not_
 
 Vendor strings that name more than one entity ("GitHub / Microsoft", "OpenAI (Microsoft)") are matched against registries part by part and the best part wins, so a product sold under a subsidiary's name still finds the parent's FedRAMP and CSA STAR rows.
 
-## Identity tiers (`identity-1.0`)
+## Identity tiers (`identity-1.1`)
 
-| Tier | Evidence |
-| --- | --- |
-| 1 | ARD manifest with a `trustManifest.identity` that binds to the publisher domain |
-| 2 | Marketplace listing, ARD/A2A metadata served at the publisher's own domain, or a publisher domain the maintainer confirmed in `data/curated/identity.yaml` |
-| 3 | Repository or Hub account ownership (GitHub, Hugging Face), or a resource URL on a domain that carries the vendor's name |
-| 4 | Vendor name only |
-| 5 | Unknown |
+| Tier | Site wording | Evidence |
+| --- | --- | --- |
+| 1 | publisher confirmed | ARD manifest with a `trustManifest.identity` that binds to the publisher domain |
+| 2 | publisher confirmed | Marketplace listing; ARD/A2A metadata served at the publisher's own domain; the resource's own URL is a page on the vendor's domain (`salesforce.com/agentforce`; domains from `config/vendor_aliases.json` count as the vendor's); or a publisher domain the maintainer confirmed in `data/curated/identity.yaml` |
+| 3 | publisher likely | Repository or Hub account ownership (GitHub, Hugging Face), or a publisher domain inferred from repository metadata that carries the vendor's name |
+| 4 | publisher unconfirmed | Vendor name only |
+| 5 | publisher unknown | — |
 
 Certifications earn governance credit only once identity is tier 2 or better
-(FR-49); until then they show as "pending publisher verification". Most seed
-entries sit at tier 3 or 4 today, so their registry badges are visible but
-uncredited until the vendor publishes an ARD manifest or A2A card, or the
-maintainer records the domain check.
+(FR-49). Below that the ledger still shows every row, and the dossier says once,
+above the ledger, that the publisher is unconfirmed and why; rows are not
+individually suffixed. The "confirm the publisher" pilot restriction fires at
+tier 4 only.
 
 ## News and chatter (FR-43–FR-47)
 

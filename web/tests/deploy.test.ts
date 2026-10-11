@@ -29,11 +29,17 @@ describe("agent-level versus vendor-level evidence", () => {
 
 describe("before you deploy", () => {
   it("fires evidence, identity and protocol rules without the reference set", () => {
-    const r = res({ identity: { tier: 3, evidence: ["repository_ownership"], rules_version: "identity-1.0" }, protocols: { mcp: { status: "invalid" }, a2a: { status: "unknown" }, ard: { status: "unknown" } } });
+    const r = res({ identity: { tier: 4, evidence: ["vendor_name_only"], rules_version: "identity-1.1" }, protocols: { mcp: { status: "invalid" }, a2a: { status: "unknown" }, ard: { status: "unknown" } } });
     const b = beforeYouDeploy(r, null);
     expect(b.inReferenceSet).toBe(false);
     const keys = b.restrictions.map((x) => x.key);
     expect(keys).toContain("rule:publisher-unconfirmed");
+    // a repository-owned agent (tier 3) is "publisher likely": no procurement restriction
+    const likely = beforeYouDeploy(res({ identity: { tier: 3, evidence: ["repository_ownership"], rules_version: "identity-1.1" } }), null);
+    expect(likely.restrictions.map((x) => x.key)).not.toContain("rule:publisher-unconfirmed");
+    // supporting items are one short line each, never the full ledger sentence
+    const withEvidence = beforeYouDeploy(res({ compliance: [rec({ framework: "fedramp", variant: "FEDRAMP_HIGH", tier: 1, scope: "entity", covers_resource: "inherited", display: "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10)" })] }), null);
+    expect(withEvidence.supporting[0].text).toBe("FedRAMP High — registry-matched, vendor-level");
     expect(keys).toContain("rule:mcp-invalid");
     expect(keys).toContain("rule:soc2-missing"); // technology preset asks for SOC 2
     expect(keys).not.toContain("rule:hipaa-missing");
@@ -76,5 +82,15 @@ describe("reference set file", () => {
     expect(set.agents.length).toBeGreaterThanOrEqual(10);
     expect(() => parseReferenceSet(text.replace("reviewed_by: null", "reviewed_by: maintainer"))).toThrow(/reviewed_by/);
     expect(() => parseReferenceSet(text.replace("source: https://aider.chat/docs/usage.html", "source: see docs"))).toThrow(/source/);
+  });
+});
+
+describe("ledger sentences say each thing once", () => {
+  it("strips the framework prefix and the (source, date) suffix the row already shows", async () => {
+    const { tidyDisplay } = await import("../src/lib/dossier");
+    expect(tidyDisplay("FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10)", "fedramp", "FEDRAMP_HIGH")).toBe("FedRAMP Authorized");
+    expect(tidyDisplay("DPA available: Vendor-claimed (vendor page, 2026-10-10)", "gdpr", "DPA_AVAILABLE")).toBe("Vendor-claimed");
+    expect(tidyDisplay("Expired 2025-01-01", "soc2", null)).toBe("Expired 2025-01-01");
+    expect(tidyDisplay("", "soc2", null)).toBe("");
   });
 });

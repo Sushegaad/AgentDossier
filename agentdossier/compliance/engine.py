@@ -9,9 +9,9 @@ Takes raw compliance records from the connectors and:
 * sets ``next_check`` from the source cadence;
 * applies identity-first crediting: records on a resource whose identity
   tier is worse than 2 are kept but ``credited: false`` and shown as
-  "pending publisher verification";
+  uncredited (``credited: false``); the site explains why once per dossier;
 * computes the evidence-based governance component (0-100) from credited,
-  active records over the domain's preset frameworks (score ``sar-score-1.1``).
+  active records over the domain's preset frameworks (``sar-score-2.0``).
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ from typing import Any
 from ..util import CONFIG_DIR, load_json
 
 FRAMEWORKS_VERSION = "frameworks-1.1"  # 1.1: Phase-2 set (GovRAMP, BSI C5, IRAP, DORA)
-GOVERNANCE_VERSION = "sar-score-1.1"
+GOVERNANCE_VERSION = "sar-score-2.0"
 CREDIT_MAX_IDENTITY_TIER = 2
 DOMAIN_PRESETS: dict[str, list[str]] = {
     "healthcare": ["hipaa", "hitrust", "soc2"],
@@ -167,8 +167,8 @@ def render_display(rec: dict[str, Any]) -> str:
         and variant
     ):
         text = f"{variant_label}: {text}"
-    if status == "active" and rec.get("credited") is False:
-        text += " (pending publisher verification)"
+    # rec["credited"] is False when the publisher's identity is unconfirmed; the dossier says so
+    # once, above the ledger, rather than on every row
     return text
 
 

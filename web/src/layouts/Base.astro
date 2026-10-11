@@ -20,8 +20,8 @@ const nav = [
 const current = (href: string) => path.startsWith(href);
 // "as of" is the last catalog build (the weekly refresh); the seed ranking snapshot is shown on domain pages.
 const asOf = meta?.built_at ? meta.built_at.slice(0, 10) : "the last build";
-// Google Analytics 4 with Consent Mode v2. Nothing is stored on the visitor's device until they
-// opt in from the banner below; before that GA receives only cookieless, aggregate pings.
+// Google Analytics 4, cookieless only: consent for storage is denied and never asked for, so GA
+// receives aggregate, anonymised page pings and nothing is written to the visitor's device.
 // PUBLIC_GA_ID is set for the public demo build only (pages.yml); self-hosted instances leave it unset.
 const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
 ---
@@ -55,11 +55,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
             ad_user_data: "denied",
             ad_personalization: "denied",
             analytics_storage: "denied",
-            wait_for_update: 500,
           });
-          try {
-            if (localStorage.getItem("agentdossier.consent") === "granted") gtag("consent", "update", { analytics_storage: "granted" });
-          } catch (e) {}
           gtag("js", new Date());
           gtag("config", gaId, { anonymize_ip: true });
         </script>
@@ -71,7 +67,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
   <body>
     <div class="disclaimer-bar">
       <div class="container">
-        <span class="tag">Reference implementation</span>
+        <a class="tag" href={`${base}/about/`} style="text-decoration: none">Reference implementation</a>
         <span>
           Data compiled from public sources as of {asOf}. Not an assessment, certification or recommendation. Confirm
           current status with the vendor and the issuing body.
@@ -110,42 +106,10 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
         <a href={`${base}/compare/`}>Compare</a>
         <a href={`${base}/private/`}>Private catalog</a>
         <a href="https://github.com/Sushegaad/AgentDossier/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a>
-        <span>No accounts · {gaId ? "cookieless analytics unless you opt in" : "no analytics"} · no ads</span>
+        <a href={`${base}/about/`}>About</a>
+        <span>No accounts · {gaId ? "cookieless, aggregate analytics" : "no analytics"} · no ads</span>
       </div>
     </footer>
-    {gaId && (
-      <div id="consent" class="consent" hidden role="region" aria-label="Analytics consent">
-        <div class="container">
-          <span>
-            This site uses Google Analytics in cookieless mode: aggregate page counts only, nothing stored on your device.
-            Allow analytics cookies to help us understand which pages matter?
-          </span>
-          <span class="row">
-            <button type="button" class="btn small" data-consent="denied">Keep cookieless</button>
-            <button type="button" class="btn small primary" data-consent="granted">Allow cookies</button>
-          </span>
-        </div>
-      </div>
-      <script is:inline>
-        (function () {
-          var box = document.getElementById("consent");
-          if (!box) return;
-          var key = "agentdossier.consent";
-          var choice = null;
-          try { choice = localStorage.getItem(key); } catch (e) {}
-          if (choice) return;
-          box.hidden = false;
-          box.querySelectorAll("[data-consent]").forEach(function (b) {
-            b.addEventListener("click", function () {
-              var v = b.getAttribute("data-consent");
-              try { localStorage.setItem(key, v); } catch (e) {}
-              if (v === "granted" && window.gtag) window.gtag("consent", "update", { analytics_storage: "granted" });
-              box.hidden = true;
-            });
-          });
-        })();
-      </script>
-    )}
     <script>
       // code blocks and wide tables scroll horizontally; make them reachable by keyboard (axe: scrollable-region-focusable)
       for (const el of document.querySelectorAll("pre, .scroll-x")) if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "0");

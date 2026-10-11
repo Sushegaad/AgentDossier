@@ -329,6 +329,35 @@
               "string",
               "null"
             ]
+          },
+          "seed_rank": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "description": "Rank in the seed workbook before re-ranking by the recomputed score"
+          },
+          "seed_score": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "governance_credited": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "components": {
+            "type": "object",
+            "additionalProperties": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
           }
         },
         "additionalProperties": true
@@ -623,6 +652,55 @@
     },
     "news_checked": {
       "type": "boolean"
+    },
+    "seed_components": {
+      "type": "object",
+      "properties": {
+        "adoption": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "trust": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "health": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ecosystem": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "domain_fit": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "governance": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "docs": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "description": "Component values as stated in the seed workbook (sar-score-2.0 keeps them for audit; trust and governance are recomputed from evidence)."
     }
   },
   "additionalProperties": false

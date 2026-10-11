@@ -2,7 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import { loadDomains } from "../../lib/catalog";
 import { COMPONENT_MAX, DOMAIN_PROFILES, PROFILES } from "../../lib/dossier";
-import { badgeLabel } from "../../lib/labels";
+import { IDENTITY_WORD, badgeLabel, securityWord } from "../../lib/labels";
 
 export function getStaticPaths() {
   const all = loadDomains();
@@ -23,6 +23,10 @@ const short: Record<string, string> = { adoption: "Adopt", trust: "Trust", healt
 const g = (s: string | undefined) => (s === "verified" ? "✔" : s === "claimed" ? "○" : s === "unknown" || !s ? "?" : "–");
 const asOf = d.built_at ? d.built_at.slice(0, 10) : d.snapshot_date;
 const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.compliance}`;
+// the protocols column only earns its place when enough rows have something in it; otherwise one
+// honest line above the table says how many publish metadata, and the dossiers carry the detail
+const withProtocol = d.ranked.filter((r) => ["verified", "claimed"].includes(r.protocols.mcp) || ["verified", "claimed"].includes(r.protocols.a2a) || ["verified", "claimed"].includes(r.protocols.ard)).length;
+const showProtocols = d.ranked.length > 0 && withProtocol / d.ranked.length >= 0.1;
 ---
 
 <Base title={`${d.label} · Top 100`}>
@@ -36,13 +40,19 @@ const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.complian
   <div class="eyebrow muted">Domain {num} of {sorted.length} · {profile} profile</div>
   <h1 style="margin-top: 6px; font-size: clamp(2rem, 4.5vw, 3rem)">{d.label} · Top 100</h1>
   <p class="body" style="margin-top: 14px; max-width: 72ch">
-    Ranked by domain score under the <strong>{profile}</strong> profile: {wtext}. Every row exposes its components.
-    Scores are comparative discovery signals, not certification. Ranking snapshot {d.snapshot_date} (frozen seed baseline) · evidence as of {asOf} · {d.score_version}.
+    The Top 100 for this domain comes from the curated {d.snapshot_date} workbook; its order is recomputed on every build under the <strong>{profile}</strong> profile ({wtext}),
+    with the trust and governance components taken from the evidence ledger rather than the workbook. Every row exposes its components.
+    Scores are comparative discovery signals, not certification. Evidence as of {asOf} · {d.score_version}.
   </p>
   <div class="row" style="margin: 20px 0 12px; gap: 12px">
     <a class="btn" href={`${base}/search/?domain=${d.domain}`}>Search within {d.label.split(/[,&]/)[0].trim()}</a>
     <a class="btn" href={`${base}/catalog/domains/${d.domain}.json`}>Export JSON</a>
   </div>
+  {!showProtocols && d.ranked.length > 0 && (
+    <p class="small muted" style="margin: 0 0 10px">
+      Protocols: {withProtocol} of {d.ranked.length} ranked agents publish MCP, A2A or ARD metadata that the build could observe or the vendor documents; each dossier shows what was checked.
+    </p>
+  )}
   <div class="scroll-x" tabindex="0">
     <table>
       <thead>
@@ -50,7 +60,7 @@ const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.complian
           <th>#</th>
           <th>Agent / product</th>
           <th>Trust profile</th>
-          <th>Protocols (MCP · A2A · ARD)</th>
+          {showProtocols && <th>Protocols (MCP · A2A · ARD)</th>}
           <th>License</th>
           {comps.map((c) => <th title={c}>{short[c]}</th>)}
           <th>Score</th>
@@ -65,13 +75,13 @@ const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.complian
               <div class="tiny muted">{r.vendor} · {r.category}</div>
             </td>
             <td>
-              <div style="font-weight: 800">Identity T{r.trust.identity} · evidence {tierRange(r)}</div>
-              <div class="tiny muted">{r.trust.security ? `security T${r.trust.security}` : "security –"} · {r.trust.issues == null ? "issues –" : r.trust.issues === 1 ? "no issues" : "issues linked"}</div>
+              <div style="font-weight: 800">Publisher {IDENTITY_WORD[r.trust.identity as 1 | 2 | 3 | 4 | 5]} · evidence {tierRange(r)}</div>
+              <div class="tiny muted">{securityWord(null, r.trust.security)} · {r.trust.issues == null ? "issues –" : r.trust.issues === 1 ? "no issues" : "issues linked"}</div>
             </td>
-            <td style="white-space: nowrap">{g(r.protocols.mcp)} · {g(r.protocols.a2a)} · {g(r.protocols.ard)}</td>
+            {showProtocols && <td style="white-space: nowrap">{g(r.protocols.mcp)} · {g(r.protocols.a2a)} · {g(r.protocols.ard)}</td>}
             <td class="small">{r.license ?? "—"}</td>
-            {comps.map((c) => <td class="small muted">{r.components?.[c] ?? "?"}</td>)}
-            <td style="font-weight: 800">{r.score.toFixed(1)}</td>
+            {comps.map((c) => <td class="small muted">{r.components?.[c] == null ? "?" : Math.round(r.components[c] as number)}</td>)}
+            <td style="font-weight: 800">{Math.round(r.score)}</td>
           </tr>
         ))}
       </tbody>
@@ -87,11 +97,10 @@ const tierRange = (r: { trust: { compliance: number } }) => `T${r.trust.complian
         {d.discovered.map((r) => (
           <div class="ledger-row" style="grid-template-columns: 1fr auto">
             <span><a href={`${base}/agents/${r.slug}/`}>{r.name}</a> <span class="muted small">{r.vendor}</span></span>
-            <span class="tierbox">Identity T{r.trust.identity}</span>
+            <span class="tierbox">Publisher {IDENTITY_WORD[r.trust.identity as 1 | 2 | 3 | 4 | 5]}</span>
           </div>
         ))}
       </div>
     </section>
   )}
-  <p class="tiny muted" style="border-top: 2px solid var(--rule); padding: 10px 0; margin-top: 32px">{d.disclaimer}</p>
 </Base>
