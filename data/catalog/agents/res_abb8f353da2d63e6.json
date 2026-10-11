@@ -36,16 +36,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 71.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -64,16 +59,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 77.9,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -83,7 +73,7 @@
 "external_ids": {
 "github": "feder-cr/invisible_dots"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +84,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -105,7 +95,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:54:25Z",
+"last_seen": "2026-10-11T01:43:18Z",
 "license": "MIT",
 "merged_ids": [
 "res_abb8f353da2d63e6",
@@ -116,7 +106,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-09T23:55:33Z",
-"headline": "invisible_dots Article views",
+"headline": "invisible_dots: Article views",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -127,7 +117,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-07T09:00:03Z",
-"headline": "invisible_dots Golden image golden-b326f2a1d4fe",
+"headline": "invisible_dots: Golden image golden-b326f2a1d4fe",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -158,7 +148,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:18:12Z",
+"checked_at": "2026-10-11T02:05:30Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -166,19 +156,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-08-04T12:15:06Z",
-"github_forks": 4710,
+"github_forks": 4712,
 "github_language": "TypeScript",
-"github_open_issues": 0,
-"github_pushed_at": "2026-10-10T04:32:50Z",
-"github_stars": 31920,
+"github_open_issues": 2,
+"github_pushed_at": "2026-10-11T00:13:00Z",
+"github_stars": 31939,
 "github_topic": "ai-agents",
 "homepage": "https://github.com/feder-cr/invisible_dots/blob/main/docs/guide.md"
 },
 "slug": "feder-cr-invisible-dots",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/feder-cr/invisible_dots"
 }

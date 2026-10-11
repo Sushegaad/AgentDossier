@@ -21,16 +21,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/cloudflare, inc.",
 "framework": "csa_star",
 "issued": "2022-12-28",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:04:08Z",
+"retrieved_at": "2026-10-11T01:52:52Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -51,16 +51,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2000863987A",
 "framework": "fedramp",
 "issued": "2026-08-06",
 "issuer": "Agency / 3PAO Schellman Compliance, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:21Z",
+"retrieved_at": "2026-10-11T01:51:13Z",
 "review_reason": "vendor authorization for Cloudflare for Government - High; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -77,16 +77,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://blog.cloudflare.com/agentic-security-operations/",
 "framework": "fedramp",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "520277902cbc316675739772c8c83a6957afeb0c2fe699781ecedebc8f87d548",
+"next_check": "2026-10-18",
+"payload_hash": "67830ad8d0a8f5b3886579402be79fdf9fd0e6fce7e781492749fc4e4ea60c1d",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:05:48Z",
+"retrieved_at": "2026-10-11T01:54:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -103,16 +103,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://blog.cloudflare.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "7d461c4ee39fb1226ab5e99d5ab9142f19e237fa38e5f0f5e5e765b0b1154341",
+"next_check": "2026-10-18",
+"payload_hash": "554b6656748d8075cf13734905a01604c970246e6f16d293cc1f6714c6428e8e",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:05:48Z",
+"retrieved_at": "2026-10-11T01:54:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -129,16 +129,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://blog.cloudflare.com/agentic-security-operations/",
 "framework": "irap",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "520277902cbc316675739772c8c83a6957afeb0c2fe699781ecedebc8f87d548",
+"next_check": "2026-10-18",
+"payload_hash": "67830ad8d0a8f5b3886579402be79fdf9fd0e6fce7e781492749fc4e4ea60c1d",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:05:48Z",
+"retrieved_at": "2026-10-11T01:54:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -156,7 +156,7 @@
 "external_ids": {
 "github": "cloudflare/moltworker"
 },
-"first_seen": "2026-10-10T04:50:21Z",
+"first_seen": "2026-10-11T01:38:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -167,7 +167,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -178,24 +178,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:21Z",
+"last_seen": "2026-10-11T01:38:56Z",
 "license": "Apache-2.0",
 "name": "moltworker",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:06Z",
+"checked_at": "2026-10-11T01:47:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:05Z",
+"checked_at": "2026-10-11T01:47:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:58:07Z",
+"checked_at": "2026-10-11T01:47:24Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -205,7 +205,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:36Z",
+"checked_at": "2026-10-11T02:06:53Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -213,7 +213,7 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-27T11:09:39Z",
-"github_forks": 1715,
+"github_forks": 1716,
 "github_language": "TypeScript",
 "github_open_issues": 95,
 "github_pushed_at": "2026-05-09T02:37:13Z",
@@ -224,8 +224,8 @@
 "slug": "cloudflare-moltworker",
 "sources": [
 {
-"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
-"retrieved_at": "2026-10-10T04:50:21Z",
+"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
+"retrieved_at": "2026-10-11T01:38:56Z",
 "system": "github",
 "url": "https://github.com/cloudflare/moltworker"
 }
@@ -236,7 +236,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 1,
+"compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,

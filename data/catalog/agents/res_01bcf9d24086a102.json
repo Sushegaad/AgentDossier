@@ -11,16 +11,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://mem0.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "383cb0a2911647bdd881bb87d14944118b3991e857c42737e8c261dcd2cadfb6",
+"next_check": "2026-10-18",
+"payload_hash": "ebdd03d9c1fab956a877dbff393c7ee71d8e9a99bc6029a760462ce24a325cfb",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:31Z",
+"retrieved_at": "2026-10-11T01:56:28Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -37,16 +37,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://mem0.ai/privacy-policy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "8593c23f63bd73f2bcf8cc773ffbcfcea8117c43c9572b0d2b3e6219aa90b12f",
+"next_check": "2026-10-18",
+"payload_hash": "fbcc297eefd72a85ed053290aac7938eb28269da8a7bd83ca60149277ffb838a",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:31Z",
+"retrieved_at": "2026-10-11T01:56:28Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -63,16 +63,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-10) (pending publisher verification)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-11)",
 "evidence_url": "https://mem0.ai/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "383cb0a2911647bdd881bb87d14944118b3991e857c42737e8c261dcd2cadfb6",
+"next_check": "2026-10-18",
+"payload_hash": "ebdd03d9c1fab956a877dbff393c7ee71d8e9a99bc6029a760462ce24a325cfb",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:31Z",
+"retrieved_at": "2026-10-11T01:56:28Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -89,16 +89,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type I: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "SOC 2 Type I: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://mem0.ai/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "383cb0a2911647bdd881bb87d14944118b3991e857c42737e8c261dcd2cadfb6",
+"next_check": "2026-10-18",
+"payload_hash": "ebdd03d9c1fab956a877dbff393c7ee71d8e9a99bc6029a760462ce24a325cfb",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:31Z",
+"retrieved_at": "2026-10-11T01:56:28Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -109,88 +109,111 @@
 "variant": "SOC2_TYPE_I"
 }
 ],
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 99.0,
-"ecosystem": 15.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 21.0
-},
 "deployment": "GitHub; cloud",
 "description": "Popular long-term memory layer used across agent stacks.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "cybersecurity": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 82.0,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
-"rank": 96,
+"rank": 65,
 "recomputed": 76.9,
-"score": 76.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 96,
+"seed_score": 76.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.0,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "commercial",
-"rank": 96,
+"rank": 61,
 "recomputed": 79.6,
-"score": 79.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 96,
+"seed_score": 79.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.8,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "operations",
-"rank": 90,
+"rank": 56,
 "recomputed": 77.2,
-"score": 77.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 90,
+"seed_score": 77.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 91.2,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 71,
+"rank": 54,
 "recomputed": 91.2,
-"score": 91.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 87.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 71,
+"seed_score": 91.2,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {
 "github": "mem0ai/mem0"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -201,7 +224,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -212,7 +235,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_777ea3dd47ff968f"
@@ -222,7 +245,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-25T17:36:35Z",
-"headline": "mem0 Mem0 Node SDK (v3.3.1)",
+"headline": "Mem0 Node SDK (v3.3.1)",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -233,7 +256,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-25T17:35:20Z",
-"headline": "mem0 Mem0 Python SDK (v2.2.1)",
+"headline": "Mem0 Python SDK (v2.2.1)",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -245,17 +268,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:39Z",
+"checked_at": "2026-10-11T01:49:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:38Z",
+"checked_at": "2026-10-11T01:49:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:40Z",
+"checked_at": "2026-10-11T01:49:02Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -267,14 +290,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 21.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-06-20T08:58:36Z",
-"github_forks": 7869,
+"github_forks": 7873,
 "github_language": "Python",
-"github_open_issues": 811,
+"github_open_issues": 815,
 "github_pushed_at": "2026-10-09T06:17:43Z",
-"github_stars": 66917,
+"github_stars": 66957,
 "github_topic": "ai-agents",
 "homepage": "https://mem0.ai",
 "observed_popularity": "Not captured",
@@ -290,13 +322,13 @@
 "sources": [
 {
 "payload_hash": "160f718d0ba26d84a21aae4a403f3e70838c6fb797ab2eb9a2e2f5c63bfbc440",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/mem0ai/mem0"
 },
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/mem0ai/mem0"
 }
@@ -319,7 +351,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 4,
+"compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,

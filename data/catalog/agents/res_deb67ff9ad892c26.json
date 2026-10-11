@@ -14,7 +14,7 @@
 "external_ids": {
 "github": "nesquena/hermes-webui"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -25,7 +25,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -49,47 +49,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "MIT",
 "name": "hermes-webui",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-10T04:58:58Z",
-"headline": "hermes-webui exp-v0.52.452",
+"date": "2026-10-10T22:17:21Z",
+"headline": "hermes-webui release exp-v0.52.459",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* Release exp-v0.52.452: passkey enrollment works with security keys that send extensions (#8093) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8102\n* fix(auth): handle CBOR extensions during passkey",
+"summary": "## What's Changed\n* Release exp-v0.52.459: new chats keep the model's prompt cache (#8150) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8151\n* fix(chat): keep the session id out of the system prompt unless asked for",
 "tag": "product_update",
-"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.452"
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.459"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-10T03:04:36Z",
-"headline": "hermes-webui exp-v0.52.451",
+"date": "2026-10-10T15:04:06Z",
+"headline": "hermes-webui release exp-v0.52.458",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* Release exp-v0.52.451: Codex sign-in sends an explicit User-Agent (#8118) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8121\n\n\n**Full Changelog**: https://github.com/nesquena/hermes-webui/compare/e",
+"summary": "## What's Changed\n* Release exp-v0.52.458: refusing another profile's conversation no longer rewrites it first (#8142) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8144\n* fix(sessions): make profile ownership preflig",
 "tag": "product_update",
-"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.451"
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.458"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:09Z",
+"checked_at": "2026-10-11T01:48:28Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:09Z",
+"checked_at": "2026-10-11T01:48:28Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:10Z",
+"checked_at": "2026-10-11T01:48:29Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -99,7 +99,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:18:41Z",
+"checked_at": "2026-10-11T02:06:00Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -107,19 +107,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-30T21:50:12Z",
-"github_forks": 2701,
+"github_forks": 2706,
 "github_language": "Python",
-"github_open_issues": 928,
-"github_pushed_at": "2026-10-10T04:26:19Z",
-"github_stars": 18842,
+"github_open_issues": 929,
+"github_pushed_at": "2026-10-10T22:17:11Z",
+"github_stars": 18852,
 "github_topic": "ai-agents",
 "homepage": "https://get-hermes.ai/setup"
 },
 "slug": "nesquena-hermes-webui",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/nesquena/hermes-webui"
 }

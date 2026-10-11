@@ -1,8 +1,11 @@
 {
-"canonical_url": null,
+"canonical_url": "cchaha.ai",
 "category": "Open-source project",
 "classification": {
 "matched": {
+"business": [
+"teams"
+],
 "technology": [
 "code",
 "coding",
@@ -17,12 +20,35 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "Local-first cross-platform desktop workspace for Claude Code / agents: multi-agent, Git worktrees, code diffs, skill marketplace, multi-model, Computer Use, task-aware desktop pets, with WeChat, Feishu, DingTalk, Telegram, WhatsApp and H5 access.",
+"description": "本地优先的跨平台 Claude Code / AI Agent 桌面工作台：多 Agent 协作、Git Worktree、代码 Diff、技能市场、多模型、Computer Use、桌面宠物；支持微信、飞书、钉钉及 H5 等远程访问。 | Local-first Claude Code / AI Agent desktop workspace: multi-agent teams, Git worktrees, diffs, skills marketplace, multi-model, Computer Use, task-aware desktop pets; remote via WeChat, Feishu, DingTalk, Telegram, WhatsApp & H5.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
+"business": {
+"components": {
+"adoption": 24.2,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 66.7,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
 "technology": {
 "components": {
-"adoption": 24.19,
+"adoption": 24.2,
 "docs": 7.0,
 "domain_fit": 91.7,
 "ecosystem": 6.6,
@@ -33,16 +59,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.917,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 77.1,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -52,7 +73,7 @@
 "external_ids": {
 "github": "NanmiCoder/cc-haha"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -63,7 +84,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -74,14 +95,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "MIT",
 "name": "cc-haha",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-08T16:17:57Z",
-"headline": "cc-haha Claude Code Haha v0.7.0",
+"headline": "cc-haha: Claude Code Haha v0.7.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -92,7 +113,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-01T19:26:23Z",
-"headline": "cc-haha Claude Code Haha v0.6.8",
+"headline": "cc-haha: Claude Code Haha v0.6.8",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -104,39 +125,45 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "no_publisher_domain",
-"status": "unknown"
+"checked_at": "2026-10-11T01:47:42Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "no_publisher_domain",
-"status": "unknown"
+"checked_at": "2026-10-11T01:47:41Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"evidence_url": "cchaha.ai",
+"evidence_url": "https://cchaha.ai",
 "note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-11T01:47:43Z",
+"status": "not_found"
+},
 "source": "self_description",
 "status": "claimed"
 }
 },
-"publisher_domain": null,
+"publisher_domain": "cchaha.ai",
 "resource_type": "skill",
 "scope": "public",
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-31T17:30:14Z",
-"github_forks": 8602,
+"github_forks": 8603,
 "github_language": "TypeScript",
-"github_open_issues": 193,
-"github_pushed_at": "2026-10-09T19:59:31Z",
-"github_stars": 14938,
+"github_open_issues": 196,
+"github_pushed_at": "2026-10-10T19:51:14Z",
+"github_stars": 14950,
 "github_topic": "ai-agent",
-"homepage": "cchaha.ai"
+"homepage": "https://cchaha.ai"
 },
 "slug": "nanmicoder-cc-haha",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/NanmiCoder/cc-haha"
 }
@@ -165,6 +192,6 @@
 "protocols": 3,
 "security": null
 },
-"url": "cchaha.ai",
+"url": "https://cchaha.ai",
 "vendor": "NanmiCoder"
 }

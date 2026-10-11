@@ -6,20 +6,20 @@
 {
 "certificate_id": null,
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://www.norm.ai/privacy-policy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
+"next_check": "2026-10-18",
 "payload_hash": "f3b60d6e21aa5fd55f0c533fee6dd777f6de8a41bc59961751f6e60647461196",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:40Z",
+"retrieved_at": "2026-10-11T01:56:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -30,134 +30,181 @@
 "variant": null
 }
 ],
-"components": {
-"adoption": 24.0,
-"docs": 9.0,
-"domain_fit": 96.0,
-"ecosystem": 12.0,
-"governance": 94.0,
-"health": 20.0,
-"trust": 23.0
-},
 "deployment": "SaaS",
 "description": "AI agents focused on converting regulations/policies into compliance workflows.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "cybersecurity": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 80.9,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
-"rank": 93,
+"rank": 68,
 "recomputed": 77.5,
-"score": 77.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 76.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 93,
+"seed_score": 77.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 76.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 13,
+"rank": 64,
 "recomputed": 90.8,
-"score": 90.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 13,
+"seed_score": 90.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 76.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 81,
+"rank": 65,
 "recomputed": 73.7,
-"score": 73.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 81,
+"seed_score": 73.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 76.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 88,
+"rank": 64,
 "recomputed": 73.0,
-"score": 73.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 88,
+"seed_score": 73.0,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 76.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 85,
+"rank": 66,
 "recomputed": 73.0,
-"score": 73.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 85,
+"seed_score": 73.0,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 76.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 6,
+"rank": 66,
 "recomputed": 90.8,
-"score": 90.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 6,
+"seed_score": 90.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 76.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 14,
+"rank": 64,
 "recomputed": 91.6,
-"score": 91.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 14,
+"seed_score": 91.6,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -166,10 +213,10 @@
 "id": "res_ce7f4ff12b3dab7b",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -179,24 +226,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Commercial",
 "name": "Norm AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:49Z",
+"checked_at": "2026-10-11T01:49:10Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:47Z",
+"checked_at": "2026-10-11T01:49:09Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:49Z",
+"checked_at": "2026-10-11T01:49:11Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -208,6 +255,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 94.0,
+"health": 20.0,
+"trust": 23.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -215,7 +271,7 @@
 "sources": [
 {
 "payload_hash": "2de91dd0e07bae19c060c583e3bbda1fc7ad9e71ebd1b4367d0dc9fcdbc48b59",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://www.norm.ai/"
 }
@@ -223,8 +279,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 4,
-"identity": 3,
+"compliance": 5,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": null

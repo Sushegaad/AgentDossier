@@ -4,40 +4,41 @@
 "category": "General/personal agent",
 "commercial": true,
 "compliance": [],
-"components": {
-"adoption": 23.0,
-"docs": 8.0,
-"domain_fit": 99.0,
-"ecosystem": 13.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 20.0
-},
 "deployment": "GitHub",
 "description": "Fast-growing open agent project from Nous Research.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "data": {
+"components": {
+"adoption": 23.0,
+"docs": 8.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
-"rank": 45,
+"rank": 77,
 "recomputed": 87.0,
-"score": 87.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 45,
+"seed_score": 87.0,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "NousResearch/hermes-agent"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -48,12 +49,12 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
 "advisories": 0,
-"cves": 5,
+"cves": 6,
 "incidents": 0,
 "links": [
 {
@@ -85,12 +86,18 @@
 "kind": "cve",
 "title": "CVE-2026-71963",
 "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71963"
+},
+{
+"date": "2026-10-10",
+"kind": "cve",
+"title": "CVE-2026-108593",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108593"
 }
 ],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "Not captured",
 "merged_ids": [
 "res_eed7f21cc96f69fd",
@@ -101,7 +108,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-08T11:51:57Z",
-"headline": "hermes-agent Hermes Agent v0.21.6",
+"headline": "hermes-agent: Hermes Agent v0.21.6",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -112,7 +119,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-24T10:09:38Z",
-"headline": "hermes-agent Hermes Agent v0.21.5 (v2026.9.24)",
+"headline": "hermes-agent: Hermes Agent v0.21.5 (v2026.9.24)",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -137,17 +144,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:20Z",
+"checked_at": "2026-10-11T01:48:39Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:19Z",
+"checked_at": "2026-10-11T01:48:38Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:20Z",
+"checked_at": "2026-10-11T01:48:40Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -157,8 +164,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:11:01Z",
-"cves": 5,
+"checked_at": "2026-10-11T01:59:37Z",
+"cves": 6,
 "source": "nvd",
 "tier": 1
 },
@@ -166,15 +173,24 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 23.0,
+"docs": 8.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 20.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-22T22:22:28Z",
-"github_forks": 54510,
+"github_forks": 54604,
 "github_language": "Python",
-"github_open_issues": 47643,
-"github_pushed_at": "2026-10-10T04:49:44Z",
-"github_stars": 252326,
-"github_topic": "ai-agent",
+"github_open_issues": 47884,
+"github_pushed_at": "2026-10-11T01:25:32Z",
+"github_stars": 252560,
+"github_topic": "ai-agents",
 "homepage": "https://hermes-agent.nousresearch.com",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -189,13 +205,13 @@
 "sources": [
 {
 "payload_hash": "d17133e018b0a79c775de556a19108a53413105d57c4c66fd075f9247a347e27",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/NousResearch/hermes-agent"
 },
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/NousResearch/hermes-agent"
 }

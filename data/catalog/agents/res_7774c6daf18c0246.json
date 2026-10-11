@@ -4,200 +4,301 @@
 "category": "Coding agent",
 "commercial": false,
 "compliance": [],
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 35.0,
-"ecosystem": 14.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 23.0
-},
 "deployment": "GitHub; desktop/CLI",
 "description": "Open-source extensible developer agent backed by Block.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "cybersecurity": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.9,
+"governance_credited": {},
 "profile": "security",
-"rank": 77,
+"rank": 96,
 "recomputed": 78.2,
-"score": 78.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 67.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 77,
+"seed_score": 78.2,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "data": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": 97,
 "recomputed": 83.0,
-"score": 83.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 97,
+"seed_score": 83.0,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "finance": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 92,
+"rank": 96,
 "recomputed": 73.1,
-"score": 73.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 60.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 92,
+"seed_score": 73.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "government": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 89,
+"rank": 96,
 "recomputed": 73.1,
-"score": 73.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 60.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 89,
+"seed_score": 73.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "healthcare": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 87,
+"rank": 96,
 "recomputed": 73.1,
-"score": 73.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 60.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 87,
+"seed_score": 73.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "insurance": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 84,
+"rank": 96,
 "recomputed": 73.1,
-"score": 73.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 60.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 84,
+"seed_score": 73.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "legal": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 86,
+"rank": 96,
 "recomputed": 73.1,
-"score": 73.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 60.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 86,
+"seed_score": 73.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "regulatory": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 89,
+"rank": 96,
 "recomputed": 73.1,
-"score": 73.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 60.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 89,
+"seed_score": 73.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "sales": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "commercial",
-"rank": 86,
+"rank": 97,
 "recomputed": 80.2,
-"score": 80.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 73.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 86,
+"seed_score": 80.2,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "supply_chain": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "operations",
-"rank": 79,
+"rank": 96,
 "recomputed": 77.8,
-"score": 77.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 70.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 79,
+"seed_score": 77.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "technology": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 60,
+"rank": 96,
 "recomputed": 91.9,
-"score": 91.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 60,
+"seed_score": 91.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "aaif-goose/goose"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -208,7 +309,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -219,7 +320,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_b980b1e6cdce5cd2"
@@ -229,7 +330,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-08T18:44:54Z",
-"headline": "goose v1.54.0",
+"headline": "goose release v1.54.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -240,7 +341,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-02T18:44:11Z",
-"headline": "goose v1.53.0",
+"headline": "goose release v1.53.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -252,12 +353,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:14Z",
+"checked_at": "2026-10-11T01:48:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:13Z",
+"checked_at": "2026-10-11T01:48:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -265,7 +366,7 @@
 "evidence_url": "https://github.com/block/goose",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:14Z",
+"checked_at": "2026-10-11T01:48:33Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -279,14 +380,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 23.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-08-23T19:03:36Z",
-"github_forks": 6399,
+"github_forks": 6404,
 "github_language": "Rust",
-"github_open_issues": 484,
+"github_open_issues": 491,
 "github_pushed_at": "2026-10-09T23:52:36Z",
-"github_stars": 55115,
+"github_stars": 55141,
 "github_topic": "ai-agents",
 "homepage": "https://goose-docs.ai/",
 "observed_popularity": "Not captured",
@@ -303,13 +413,13 @@
 "sources": [
 {
 "payload_hash": "9641a1b2083edac4e20c647017e0f00883c2648d87ad44053410799eafd33f75",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/block/goose"
 },
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/aaif-goose/goose"
 }

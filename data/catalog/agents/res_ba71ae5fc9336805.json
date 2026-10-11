@@ -24,21 +24,16 @@
 "ecosystem": 3.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 47.0,
-"score_version": "sar-score-1.0",
+"score": 49.4,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -50,7 +45,7 @@
 "github": "ankimcp/anki-mcp-server-addon",
 "mcp_registry": "ai.ankimcp/anki-mcp-server-addon"
 },
-"first_seen": "2026-10-10T04:47:49Z",
+"first_seen": "2026-10-11T01:36:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -59,10 +54,10 @@
 "id": "res_ba71ae5fc9336805",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -72,42 +67,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:49Z",
+"last_seen": "2026-10-11T01:36:24Z",
 "license": null,
 "name": "AnkiMCP Server",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-10T20:38:04Z",
+"headline": "anki-mcp-server-addon release v0.32.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**Full Changelog**: https://github.com/ankimcp/anki-mcp-server-addon/compare/v0.32.0...v0.32.1",
+"tag": "product_update",
+"url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.32.1"
+},
+{
+"cluster_size": 1,
 "date": "2026-10-04T16:10:29Z",
-"headline": "anki-mcp-server-addon v0.32.0",
+"headline": "anki-mcp-server-addon release v0.32.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "**Full Changelog**: https://github.com/ankimcp/anki-mcp-server-addon/compare/v0.31.0...v0.32.0",
 "tag": "product_update",
 "url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.32.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-03T16:32:42Z",
-"headline": "anki-mcp-server-addon v0.31.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\n* fix: keep the tunnel alive when HTTP cannot start, and report the real state by @anatoly314 in https://github.com/ankimcp/anki-mcp-server-addon/pull/81\n* feat: declare MCP tool annotations (title, readOnlyHint, destructi",
-"tag": "product_update",
-"url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.31.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:57:26Z",
+"checked_at": "2026-10-11T01:46:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:57:25Z",
+"checked_at": "2026-10-11T01:46:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -115,7 +110,7 @@
 "parser_version": "mcp-2025-06-18",
 "server_name": "ai.ankimcp/anki-mcp-server-addon",
 "status": "claimed",
-"version": "0.32.0",
+"version": "0.32.1",
 "via": "mcp_registry"
 }
 },
@@ -124,23 +119,23 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:12:36Z",
+"checked_at": "2026-10-11T02:01:55Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-04T16:10:41.879623Z",
+"mcp_registry_published_at": "2026-10-10T20:38:14.516874Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-04T16:10:41.879623Z",
+"mcp_registry_updated_at": "2026-10-10T20:38:14.516874Z",
 "mcp_transports": []
 },
 "slug": "ankimcp-ai-ankimcp-server",
 "sources": [
 {
-"payload_hash": "b999bb0e34f85ab71018087a4bce331d23b8611eba29d5448a040ef267d00457",
-"retrieved_at": "2026-10-10T04:47:49Z",
+"payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
+"retrieved_at": "2026-10-11T01:36:24Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ankimcp/anki-mcp-server-addon"
 }
@@ -149,7 +144,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": 1

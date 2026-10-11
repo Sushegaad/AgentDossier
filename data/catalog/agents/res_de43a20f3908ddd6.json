@@ -40,16 +40,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 66.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -68,16 +63,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
 "score": 64.8,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -96,16 +86,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.85,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": null,
 "score": 50.6,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -124,16 +109,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 71.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -143,7 +123,7 @@
 "external_ids": {
 "github": "cft0808/edict"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -154,7 +134,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -165,24 +145,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "MIT",
 "name": "edict",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:55Z",
+"checked_at": "2026-10-11T01:49:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:54Z",
+"checked_at": "2026-10-11T01:49:16Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:55Z",
+"checked_at": "2026-10-11T01:49:17Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -193,19 +173,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-23T14:35:04Z",
-"github_forks": 1764,
+"github_forks": 1767,
 "github_language": "Python",
 "github_open_issues": 14,
 "github_pushed_at": "2026-09-28T02:33:22Z",
-"github_stars": 16979,
+"github_stars": 16987,
 "github_topic": "ai-agents",
 "homepage": "https://openclaw.ai"
 },
 "slug": "cft0808-edict",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/cft0808/edict"
 }

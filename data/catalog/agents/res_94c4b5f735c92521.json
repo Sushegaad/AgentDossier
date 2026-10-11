@@ -6,7 +6,7 @@
 {
 "certificate_id": "snowflake",
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
 "organization": "Snowflake",
@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/snowflake",
 "framework": "csa_star",
 "issued": "2022-11-01",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:41Z",
+"retrieved_at": "2026-10-11T01:51:41Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -37,7 +37,7 @@
 {
 "certificate_id": "FR2308159208",
 "covers_resource": "inherited",
-"credited": false,
+"credited": true,
 "detail": {
 "cso": "The Data Cloud on AWS GovCloud (High)",
 "csp": "Snowflake Inc.",
@@ -45,16 +45,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2308159208",
 "framework": "fedramp",
 "issued": "2023-12-08",
 "issuer": "Agency / 3PAO Fortreum, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:01:14Z",
+"retrieved_at": "2026-10-11T01:50:14Z",
 "review_reason": "vendor authorization for The Data Cloud on AWS GovCloud (High); entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -65,214 +65,326 @@
 "variant": "FEDRAMP_HIGH"
 }
 ],
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 14.0,
-"governance": 45.0,
-"health": 19.0,
-"trust": 25.0
-},
 "deployment": "Snowflake",
 "description": "Agentic data workflows close to governed enterprise Snowflake data.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 25.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.7,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "general",
-"rank": 45,
+"rank": 46,
 "recomputed": 90.2,
-"score": 90.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 45,
+"seed_score": 90.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "cybersecurity": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 40.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 84.8,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "security",
-"rank": 60,
+"rank": 33,
 "recomputed": 79.5,
-"score": 79.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 82.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 60,
+"seed_score": 79.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "data": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 93.3,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "data",
-"rank": 4,
+"rank": 45,
 "recomputed": 93.2,
-"score": 93.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 88.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 4,
+"seed_score": 93.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 80.8,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 72,
+"rank": 39,
 "recomputed": 74.6,
-"score": 74.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 72,
+"seed_score": 74.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 60.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 80.8,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0,
+"fedramp": 1.0
 },
 "profile": "regulated",
-"rank": 63,
+"rank": 29,
 "recomputed": 75.2,
-"score": 75.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 63,
+"seed_score": 75.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 80.8,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 66,
+"rank": 38,
 "recomputed": 74.6,
-"score": 74.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 66,
+"seed_score": 74.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 16.7,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 80.8,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 61,
+"rank": 41,
 "recomputed": 74.6,
-"score": 74.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 61,
+"seed_score": 74.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 80.8,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 62,
+"rank": 38,
 "recomputed": 74.6,
-"score": 74.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 62,
+"seed_score": 74.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 80.8,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 67,
+"rank": 38,
 "recomputed": 74.6,
-"score": 74.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 67,
+"seed_score": 74.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 88.6,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "commercial",
-"rank": 75,
+"rank": 46,
 "recomputed": 81.1,
-"score": 81.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 84.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 75,
+"seed_score": 81.1,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 25.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 89.4,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "operations",
-"rank": 64,
+"rank": 42,
 "recomputed": 78.7,
-"score": 78.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 64,
+"seed_score": 78.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 92.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "technology",
-"rank": 59,
+"rank": 49,
 "recomputed": 92.1,
-"score": 92.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 87.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 59,
+"seed_score": 92.1,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -281,10 +393,10 @@
 "id": "res_94c4b5f735c92521",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -294,24 +406,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Snowflake service",
 "name": "Snowflake Cortex Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:17Z",
+"checked_at": "2026-10-11T01:49:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:14Z",
+"checked_at": "2026-10-11T01:49:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T05:00:19Z",
+"checked_at": "2026-10-11T01:49:39Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -321,7 +433,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:09:32Z",
+"checked_at": "2026-10-11T01:58:14Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -330,6 +442,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 14.0,
+"governance": 45.0,
+"health": 19.0,
+"trust": 25.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -337,7 +458,7 @@
 "sources": [
 {
 "payload_hash": "46ccf65a7efbd54d98f622d88b60204ae9d5ded7140150d502d43cf17951150e",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://www.snowflake.com/en/product/features/cortex/"
 }
@@ -345,8 +466,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 1,
-"identity": 3,
+"compliance": 5,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": 1

@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.31,
+"adoption": 28.32,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -35,16 +35,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 72.1,
-"score_version": "sar-score-1.0",
+"score": 72.2,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -52,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.31,
+"adoption": 28.32,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -63,16 +58,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 79.3,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -82,7 +72,7 @@
 "external_ids": {
 "github": "ComposioHQ/awesome-claude-skills"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,7 +83,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -104,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": null,
 "name": "awesome-claude-skills",
 "news": [],
@@ -130,7 +120,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:17:29Z",
+"checked_at": "2026-10-11T02:04:46Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -138,19 +128,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-10-17T07:15:01Z",
-"github_forks": 9008,
+"github_forks": 9028,
 "github_language": "Python",
-"github_open_issues": 1676,
+"github_open_issues": 1682,
 "github_pushed_at": "2026-09-18T07:16:11Z",
-"github_stars": 76770,
+"github_stars": 76822,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "composiohq-awesome-claude-skills",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/ComposioHQ/awesome-claude-skills"
 }

@@ -21,16 +21,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://editor.pascal.app/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "c414c565e02fccedf14ce315ad56eba039338296e9c9e07efc85112952db8879",
+"next_check": "2026-10-18",
+"payload_hash": "21a7785678fd859179edd216c753d74bf4d634d790bbda621fc1de926c021fd0",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:06:45Z",
+"retrieved_at": "2026-10-11T01:55:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -47,27 +47,22 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.46,
+"adoption": 25.47,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
-"governance": 10.0,
+"governance": 0.0,
 "health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 76.3,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 76.3,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
 }
@@ -75,7 +70,7 @@
 "external_ids": {
 "github": "pascalorg/editor"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -86,7 +81,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -97,7 +92,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:54:44Z",
+"last_seen": "2026-10-11T01:43:40Z",
 "license": "MIT",
 "merged_ids": [
 "res_ded48ed46b9a45e7"
@@ -107,7 +102,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-24T16:38:26Z",
-"headline": "editor v1.0.3 — Export and visibility fixes",
+"headline": "editor: v1.0.3 — Export and visibility fixes",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -118,7 +113,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-24T16:33:34Z",
-"headline": "editor @pascal-app/cli@1.0.3",
+"headline": "editor release 1.0.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -130,12 +125,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:00Z",
+"checked_at": "2026-10-11T01:48:20Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:59Z",
+"checked_at": "2026-10-11T01:48:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -143,7 +138,7 @@
 "evidence_url": "https://editor.pascal.app",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:01Z",
+"checked_at": "2026-10-11T01:48:20Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -156,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-10-16T19:35:06Z",
-"github_forks": 3065,
+"github_forks": 3070,
 "github_language": "TypeScript",
-"github_open_issues": 53,
-"github_pushed_at": "2026-10-10T02:26:04Z",
-"github_stars": 24751,
+"github_open_issues": 54,
+"github_pushed_at": "2026-10-11T01:18:47Z",
+"github_stars": 24777,
 "github_topic": "ai-agents",
 "homepage": "https://editor.pascal.app"
 },
 "slug": "pascalorg-editor",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/pascalorg/editor"
 }
@@ -195,7 +190,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 4,
+"compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,

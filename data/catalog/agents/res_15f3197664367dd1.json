@@ -18,27 +18,22 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 22.73,
+"adoption": 22.74,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 1.8,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 66.5,
-"score_version": "sar-score-1.0",
+"score": 68.9,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -48,7 +43,7 @@
 "external_ids": {
 "github": "SWE-agent/mini-swe-agent"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -57,27 +52,34 @@
 "id": "res_15f3197664367dd1",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
-"cves": 0,
+"cves": 1,
 "incidents": 0,
-"links": [],
+"links": [
+{
+"date": "2026-10-10",
+"kind": "cve",
+"title": "CVE-2026-108592",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108592"
+}
+],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "MIT",
 "name": "mini-swe-agent",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-07-23T03:12:33Z",
-"headline": "mini-swe-agent v2.4.6",
+"headline": "mini-swe-agent release v2.4.6",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -89,17 +91,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:41Z",
+"checked_at": "2026-10-11T01:49:03Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:40Z",
+"checked_at": "2026-10-11T01:49:02Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:41Z",
+"checked_at": "2026-10-11T01:49:03Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -109,27 +111,27 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:51Z",
-"cves": 0,
+"checked_at": "2026-10-11T02:07:08Z",
+"cves": 1,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-28T20:18:15Z",
-"github_forks": 1139,
+"github_forks": 1141,
 "github_language": "Python",
 "github_open_issues": 90,
 "github_pushed_at": "2026-10-06T00:35:14Z",
-"github_stars": 8354,
+"github_stars": 8373,
 "github_topic": "ai-agent",
 "homepage": "https://mini-swe-agent.com"
 },
 "slug": "swe-agent-mini-swe-agent",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/SWE-agent/mini-swe-agent"
 }
@@ -145,8 +147,8 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
-"issues": 1,
+"identity": 2,
+"issues": 3,
 "protocols": 5,
 "security": 1
 },

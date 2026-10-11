@@ -36,16 +36,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.964,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 79.2,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -55,7 +50,7 @@
 "external_ids": {
 "github": "QwenLM/qwen-code"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,7 +61,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -77,7 +72,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:56:24Z",
+"last_seen": "2026-10-11T01:45:28Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_7c1d6b2c137ffb50"
@@ -86,36 +81,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-09T22:09:39Z",
-"headline": "qwen-code Release v0.25.0-nightly.20261009.085a44f336",
+"date": "2026-10-10T21:59:22Z",
+"headline": "qwen-code: Release v0.25.0-nightly.20261010.9763580b84",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.25.0-nightly.20261009.085a44f336 -->\n\n## What's Changed\n* fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in https://git",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.25.0-nightly.20261010.9763580b84 -->\n\n## What's Changed\n* fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in https://git",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0-nightly.20261009.085a44f336"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0-nightly.20261010.9763580b84"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-09T05:35:14Z",
-"headline": "qwen-code Release v0.25.1-preview.1",
+"date": "2026-10-10T18:14:33Z",
+"headline": "qwen-code: Release v0.25.1-preview.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.25.1-preview.1 -->\n\n## What's Changed\n* fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in https://github.com/QwenLM/qwe",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.25.1-preview.2 -->\n\n## What's Changed\n* fix(agents): replace selected remote Hosts without losing bindings by @yiliang114 in https://github.com/QwenLM/qwe",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1-preview.1"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1-preview.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:06Z",
+"checked_at": "2026-10-11T01:49:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:05Z",
+"checked_at": "2026-10-11T01:49:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -123,7 +118,7 @@
 "evidence_url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T05:00:07Z",
+"checked_at": "2026-10-11T01:49:28Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -135,7 +130,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:18:16Z",
+"checked_at": "2026-10-11T02:05:33Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -143,19 +138,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-26T01:37:46Z",
-"github_forks": 3176,
+"github_forks": 3184,
 "github_language": "TypeScript",
-"github_open_issues": 1791,
-"github_pushed_at": "2026-10-10T04:52:17Z",
-"github_stars": 28390,
+"github_open_issues": 1811,
+"github_pushed_at": "2026-10-11T01:38:52Z",
+"github_stars": 28409,
 "github_topic": "ai-agent",
 "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview"
 },
 "slug": "qwenlm-qwen-code",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/QwenLM/qwen-code"
 }

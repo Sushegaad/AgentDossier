@@ -27,21 +27,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 16.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.667,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 38.6,
-"score_version": "sar-score-1.0",
+"score": 41.3,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -56,21 +51,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 16.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 42.5,
-"score_version": "sar-score-1.0",
+"score": 44.9,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -82,7 +72,7 @@
 "github": "gallaghern51-art/calaf-mcp",
 "mcp_registry": "ai.calaf/calaf"
 },
-"first_seen": "2026-10-10T04:47:51Z",
+"first_seen": "2026-10-11T01:36:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,10 +81,10 @@
 "id": "res_9e96cf0a3e250478",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -104,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:51Z",
+"last_seen": "2026-10-11T01:36:25Z",
 "license": null,
 "merged_ids": [
 "res_16eefa37fe1a47dc"
@@ -114,12 +104,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:20Z",
+"checked_at": "2026-10-11T01:47:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:19Z",
+"checked_at": "2026-10-11T01:47:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -152,14 +142,14 @@
 "slug": "calaf-ai-calaf",
 "sources": [
 {
-"payload_hash": "9f9384f268d76eedaa84dbfc9873dd0ad340355eb1999a09acd6162512996a4f",
-"retrieved_at": "2026-10-10T04:47:51Z",
+"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
+"retrieved_at": "2026-10-11T01:36:25Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.calaf/calaf"
 },
 {
-"payload_hash": "9f9384f268d76eedaa84dbfc9873dd0ad340355eb1999a09acd6162512996a4f",
-"retrieved_at": "2026-10-10T04:47:51Z",
+"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
+"retrieved_at": "2026-10-11T01:36:25Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.calaf/seeds"
 }
@@ -168,7 +158,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": null

@@ -29,16 +29,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.6,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": null,
 "score": 32.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -50,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:agenticplug.ai:skill:agent-readiness-audit"
 },
-"first_seen": "2026-10-10T04:57:09Z",
+"first_seen": "2026-10-11T01:46:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -61,7 +56,7 @@
 "evidence": [
 "standards_metadata_at_publisher_domain"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 2
 },
 "issues": {
@@ -72,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:57:09Z",
+"last_seen": "2026-10-11T01:46:24Z",
 "license": null,
 "name": "Agent Readiness Audit Skill",
 "news": [],
@@ -103,7 +98,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:20:20Z",
+"checked_at": "2026-10-11T02:07:41Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -113,7 +108,7 @@
 "sources": [
 {
 "payload_hash": "bfe47e9aa8df475798e65debb3e656826c679d262411d5748ed9f5386b38c491",
-"retrieved_at": "2026-10-10T04:57:09Z",
+"retrieved_at": "2026-10-11T01:46:24Z",
 "system": "ard",
 "url": "https://agenticplug.ai/.well-known/ai-catalog.json"
 }

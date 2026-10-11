@@ -1,13 +1,12 @@
 {
 "canonical_url": "aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm",
-"capabilities": [],
 "category": "Healthcare revenue-cycle agents",
 "commercial": true,
 "compliance": [
 {
 "certificate_id": "automation anywhere",
 "covers_resource": "unknown",
-"credited": true,
+"credited": false,
 "detail": {
 "note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
 "organization": "Automation Anywhere",
@@ -18,16 +17,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-10",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/automation anywhere",
 "framework": "csa_star",
 "issued": "2021-06-03",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:47Z",
+"retrieved_at": "2026-10-11T01:51:51Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -40,7 +39,7 @@
 {
 "certificate_id": "automation anywhere",
 "covers_resource": "unknown",
-"credited": true,
+"credited": false,
 "detail": {
 "note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
 "organization": "Automation Anywhere",
@@ -51,16 +50,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-10",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/automation anywhere",
 "framework": "iso42001",
 "issued": "2021-06-03",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:47Z",
+"retrieved_at": "2026-10-11T01:51:51Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -71,81 +70,85 @@
 "variant": "ISO42001"
 }
 ],
-"components": {
-"adoption": 22.0,
-"docs": 9.0,
-"domain_fit": 96.0,
-"ecosystem": 13.0,
-"governance": 82.0,
-"health": 19.0,
-"trust": 24.0
-},
 "deployment": "AWS-hosted; EHR/payer integrations",
 "description": "Agents for prior authorization, eligibility, claims status and denials.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "finance": {
+"components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 19.0,
+"trust": 11.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
-},
-"score": 82.9,
-"value": 40.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 19,
+"rank": 86,
 "recomputed": 89.2,
-"score": 89.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 19,
+"seed_score": 89.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 19.0,
+"trust": 11.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
-},
-"score": 82.9,
-"value": 40.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 15,
+"rank": 85,
 "recomputed": 90.0,
-"score": 90.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 15,
+"seed_score": 90.0,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 19.0,
+"trust": 11.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
-},
-"score": 82.9,
-"value": 40.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 19,
+"rank": 85,
 "recomputed": 89.2,
-"score": 89.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 19,
+"seed_score": 89.2,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
-"external_ids": {
-"aws_marketplace": "https://aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm"
-},
-"first_seen": "2026-10-10T04:47:46Z",
+"external_ids": {},
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -154,10 +157,10 @@
 "id": "res_34cdd3eaec3f956c",
 "identity": {
 "evidence": [
-"marketplace_listing"
+"vendor_name_only"
 ],
-"rules_version": "identity-1.0",
-"tier": 2
+"rules_version": "identity-1.1",
+"tier": 4
 },
 "issues": {
 "advisories": 0,
@@ -167,27 +170,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Commercial",
-"merged_ids": [
-"res_dfa0e7fc6bed3ac7"
-],
 "name": "Automation Anywhere Healthcare RCM",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:57:54Z",
+"checked_at": "2026-10-11T01:47:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:57:53Z",
+"checked_at": "2026-10-11T01:47:10Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:57:54Z",
+"checked_at": "2026-10-11T01:47:11Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -197,7 +197,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:10:32Z",
+"checked_at": "2026-10-11T01:59:09Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -206,39 +206,32 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 13.0,
+"governance": 82.0,
+"health": 19.0,
+"trust": 24.0
+},
 "signals": {
-"curated_by": "seed workbook Source Catalog",
-"curated_domains": [
-"healthcare",
-"finance",
-"regulatory"
-],
-"curated_on": "2026-09-25",
-"marketplace": "aws_marketplace",
-"marketplace_compliance_fields": [],
-"marketplace_listing_url": "https://aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm",
 "observed_popularity": "Commercial"
 },
 "slug": "automation-anywhere-automation-anywhere-healthcare-rcm",
 "sources": [
 {
 "payload_hash": "4342af73f378a2dfc2dd1cafa85bb3c5cc004185d1ddd37f09e1f3a7e6667a1b",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
-"url": "https://aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm"
-},
-{
-"payload_hash": "d2df22162421b5fa34cabc9b4f27eec6e1799661559fba32fcb406e90b06eba8",
-"retrieved_at": "2026-10-10T04:47:46Z",
-"system": "aws_marketplace",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-lafvljcmzpesm"
 }
 ],
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 1,
-"identity": 2,
+"compliance": 5,
+"identity": 4,
 "issues": 1,
 "protocols": 5,
 "security": 1

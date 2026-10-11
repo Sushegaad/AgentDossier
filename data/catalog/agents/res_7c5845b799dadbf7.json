@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.73,
+"adoption": 25.74,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -28,16 +28,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 64.4,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -47,7 +42,7 @@
 "external_ids": {
 "github": "op7418/guizang-ppt-skill"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -58,7 +53,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -69,7 +64,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "AGPL-3.0",
 "name": "guizang-ppt-skill",
 "news": [],
@@ -93,7 +88,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:18:19Z",
+"checked_at": "2026-10-11T02:05:36Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -101,19 +96,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-23T13:23:07Z",
-"github_forks": 1903,
+"github_forks": 1907,
 "github_language": "HTML",
-"github_open_issues": 49,
+"github_open_issues": 50,
 "github_pushed_at": "2026-08-07T03:58:08Z",
-"github_stars": 27524,
+"github_stars": 27572,
 "github_topic": "ai-agent",
 "homepage": null
 },
 "slug": "op7418-guizang-ppt-skill",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/op7418/guizang-ppt-skill"
 }

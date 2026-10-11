@@ -24,16 +24,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR for AI: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR for AI: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:42Z",
+"retrieved_at": "2026-10-11T01:51:44Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -64,16 +64,16 @@
 "validaited-42001"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "csa_star",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:42Z",
+"retrieved_at": "2026-10-11T01:51:44Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -94,16 +94,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1824057433",
 "framework": "fedramp",
 "issued": "2024-12-26",
 "issuer": "Agency / 3PAO Kratos",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:01:15Z",
+"retrieved_at": "2026-10-11T01:50:16Z",
 "review_reason": "vendor authorization for Microsoft 365 Government Community Cloud-High ; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -134,16 +134,16 @@
 "validaited-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/microsoft",
 "framework": "iso42001",
 "issued": "2016-04-05",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:42Z",
+"retrieved_at": "2026-10-11T01:51:44Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -154,200 +154,279 @@
 "variant": "ISO42001"
 }
 ],
-"components": {
-"adoption": 25.0,
-"docs": 10.0,
-"domain_fit": 99.0,
-"ecosystem": 14.0,
-"governance": 45.0,
-"health": 18.0,
-"trust": 24.0
-},
 "deployment": "GitHub; Azure",
 "description": "Mature Microsoft SDK with strong .NET/Python integration; still important in existing stacks.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 86.4,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
-"rank": 60,
+"rank": 87,
 "recomputed": 88.9,
-"score": 88.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 79.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 60,
+"seed_score": 88.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "cybersecurity": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.3,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
-"rank": 78,
+"rank": 72,
 "recomputed": 78.2,
-"score": 78.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 75.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 78,
+"seed_score": 78.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.6,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 85,
+"rank": 71,
 "recomputed": 73.6,
-"score": 73.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 71.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 85,
+"seed_score": 73.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.6,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 29,
+"rank": 69,
 "recomputed": 91.3,
-"score": 91.3,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 71.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 29,
+"seed_score": 91.3,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.6,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 78,
+"rank": 69,
 "recomputed": 73.6,
-"score": 73.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 71.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 78,
+"seed_score": 73.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.6,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 74,
+"rank": 71,
 "recomputed": 73.6,
-"score": 73.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 71.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 74,
+"seed_score": 73.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.6,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 76,
+"rank": 71,
 "recomputed": 73.6,
-"score": 73.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 71.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 76,
+"seed_score": 73.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.6,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 80,
+"rank": 70,
 "recomputed": 73.6,
-"score": 73.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 71.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 80,
+"seed_score": 73.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.4,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "commercial",
-"rank": 90,
+"rank": 72,
 "recomputed": 80.0,
-"score": 80.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 81.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 90,
+"seed_score": 80.0,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 88.2,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "operations",
-"rank": 81,
+"rank": 65,
 "recomputed": 77.6,
-"score": 77.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 81.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 81,
+"seed_score": 77.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 18.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 91.1,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 75,
+"rank": 81,
 "recomputed": 90.8,
-"score": 90.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 84.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 75,
+"seed_score": 90.8,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {
 "github": "microsoft/semantic-kernel"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -358,7 +437,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -369,14 +448,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "MIT",
 "name": "Microsoft Semantic Kernel",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-06T16:34:47Z",
-"headline": "semantic-kernel dotnet-1.81.0",
+"headline": "semantic-kernel release dotnet-1.81.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -387,7 +466,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-06T12:54:47Z",
-"headline": "semantic-kernel python-1.45.0",
+"headline": "semantic-kernel release python-1.45.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -399,17 +478,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:57:19Z",
+"checked_at": "2026-10-11T01:46:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:57:18Z",
+"checked_at": "2026-10-11T01:46:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:57:20Z",
+"checked_at": "2026-10-11T01:46:35Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -419,7 +498,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:09:46Z",
+"checked_at": "2026-10-11T01:58:29Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -428,14 +507,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 25.0,
+"docs": 10.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 45.0,
+"health": 18.0,
+"trust": 24.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-02-27T17:39:42Z",
-"github_forks": 4818,
+"github_forks": 4819,
 "github_language": "C#",
-"github_open_issues": 349,
+"github_open_issues": 352,
 "github_pushed_at": "2026-10-09T18:14:43Z",
-"github_stars": 28638,
+"github_stars": 28640,
 "homepage": "https://aka.ms/semantic-kernel",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -451,7 +539,7 @@
 "sources": [
 {
 "payload_hash": "9bd356dfa1982357a82a8de936e112db2d293c42e54b069490494f68a9db59df",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/microsoft/semantic-kernel"
 }
@@ -465,7 +553,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 1,
+"compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,

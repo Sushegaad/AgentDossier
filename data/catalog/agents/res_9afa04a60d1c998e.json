@@ -35,16 +35,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.964,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 75.3,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -54,7 +49,7 @@
 "external_ids": {
 "github": "esengine/DeepSeek-Reasonix"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,7 +60,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -83,47 +78,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "MIT",
 "name": "DeepSeek-Reasonix",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-09T04:43:11Z",
-"headline": "DeepSeek-Reasonix Reasonix CLI v2.33.0",
+"date": "2026-10-10T15:03:04Z",
+"headline": "DeepSeek-Reasonix: Reasonix CLI v2.34.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "CLI archives built from the Studio release [studio-v2.33.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.33.0).",
+"summary": "CLI archives built from the Studio release [studio-v2.34.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.34.0).",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.33.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.34.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-09T04:41:09Z",
-"headline": "DeepSeek-Reasonix Reasonix Studio v2.33.0",
+"date": "2026-10-10T15:01:22Z",
+"headline": "DeepSeek-Reasonix: Reasonix Studio v2.34.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "本版把图标栏移到窗口最左侧并加入反馈入口与三档显示方式，新增模型选择器搜索与分组、HTML 文件页面预览和「视觉效果」节能档，补齐终端界面的多个按键，并修复队列编辑、回退重发、反馈截图和带天空主题包长时间占用显卡的问题。\n\n## 新增\n\n- 图标栏移到窗口最左边，底部新增带未读角标的「发送反馈」入口；外观页「图标栏」改为始终显示（默认）／仅侧栏折叠时显示／从不显示，立即生效 (#12428)\n- 输入框的模型选择器带搜索框（输入即过滤，回车选第一项，Esc 关闭），按服务商分",
+"summary": "本版让输入框可以直接切换工作区的本地分支，界面缩放改用统一范围并支持 Ctrl/Cmd +/-/0，电脑操作能判断每一步是否生效，并修复回退冲突、旧版会话导入、模型切换、GLM 思考参数和多处终端界面的问题。\n\n## 新增\n\n- 输入框的分支标签读取真实的 git 状态，并可直接把工作区切换到另一个本地分支；有进行中的回合、后台任务或未提交改动时会明确拒绝并说明原因 (#12092 by @XTLine, #12171 by @XTLine)\n- 界面缩放只有一个声明范围 0",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.33.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.34.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:08Z",
+"checked_at": "2026-10-11T01:49:29Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:07Z",
+"checked_at": "2026-10-11T01:49:28Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T05:00:09Z",
+"checked_at": "2026-10-11T01:49:30Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -133,7 +128,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:18:01Z",
+"checked_at": "2026-10-11T02:05:18Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -143,17 +138,17 @@
 "github_created_at": "2026-04-21T08:27:02Z",
 "github_forks": 2438,
 "github_language": "Go",
-"github_open_issues": 443,
-"github_pushed_at": "2026-10-10T04:42:47Z",
-"github_stars": 35751,
+"github_open_issues": 474,
+"github_pushed_at": "2026-10-11T01:40:52Z",
+"github_stars": 35761,
 "github_topic": "ai-agent",
 "homepage": "http://reasonix.io/"
 },
 "slug": "esengine-deepseek-reasonix",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/esengine/DeepSeek-Reasonix"
 }

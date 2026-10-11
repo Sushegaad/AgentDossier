@@ -30,21 +30,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.75,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 46.0,
-"score_version": "sar-score-1.0",
+"score": 48.4,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -59,21 +54,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "commercial",
 "rank": null,
-"score": 41.0,
-"score_version": "sar-score-1.0",
+"score": 43.4,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -88,21 +78,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 46.5,
-"score_version": "sar-score-1.0",
+"score": 48.9,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -114,7 +99,7 @@
 "github": "datadubai/dubai-real-estate-dld",
 "mcp_registry": "ae.datadubai/dubai-real-estate"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,10 +108,10 @@
 "id": "res_56ed32766cd853e0",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -136,19 +121,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": null,
 "name": "Dubai Data — Dubai real estate statistics",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:43Z",
+"checked_at": "2026-10-11T01:48:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:39Z",
+"checked_at": "2026-10-11T01:47:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -171,7 +156,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:11:19Z",
+"checked_at": "2026-10-11T01:59:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -189,7 +174,7 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ae.datadubai/dubai-real-estate"
 }
@@ -198,7 +183,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": 1

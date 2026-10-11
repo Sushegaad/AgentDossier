@@ -32,16 +32,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.875,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 77.4,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -51,7 +46,7 @@
 "external_ids": {
 "github": "1jehuang/jcode"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -62,7 +57,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -73,42 +68,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "MIT",
 "name": "jcode",
 "news": [
 {
 "cluster_size": 1,
+"date": "2026-10-10T13:19:02Z",
+"headline": "jcode release v0.94.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**Queued commands**\n\n### Highlights\n\n- Ctrl+Enter queues slash and ! commands to run after the current turn, and /clear drops anything still queued\n- Alt+G opens the project's git commit log, and diff cycling moves to /diff\n- Harness API cl",
+"tag": "product_update",
+"url": "https://github.com/1jehuang/jcode/releases/tag/v0.94.0"
+},
+{
+"cluster_size": 1,
 "date": "2026-10-09T06:46:05Z",
-"headline": "jcode v0.93.0",
+"headline": "jcode release v0.93.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "**Instant startup**\n\n### Highlights\n\n- New sessions paint their first frame in about 20ms instead of about 135ms, and the screen no longer shifts while connecting\n- Opening several sessions in quick succession is fast again, and resuming la",
 "tag": "product_update",
 "url": "https://github.com/1jehuang/jcode/releases/tag/v0.93.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-06T04:25:53Z",
-"headline": "jcode v0.91.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "**Google Calendar and speed tiers**\n\n### Highlights\n\n- Google login lets you pick which services to connect and adds a built-in calendar tool for viewing, creating, updating, and deleting events\n- Guided Google OAuth app setup that detects",
-"tag": "product_update",
-"url": "https://github.com/1jehuang/jcode/releases/tag/v0.91.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:27Z",
+"checked_at": "2026-10-11T01:48:47Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:26Z",
+"checked_at": "2026-10-11T01:48:46Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -116,7 +111,7 @@
 "evidence_url": "https://jcode.sh",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:28Z",
+"checked_at": "2026-10-11T01:48:48Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -129,19 +124,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-05T09:43:36Z",
-"github_forks": 2371,
+"github_forks": 2374,
 "github_language": "Rust",
-"github_open_issues": 712,
-"github_pushed_at": "2026-10-10T03:36:53Z",
-"github_stars": 20374,
+"github_open_issues": 689,
+"github_pushed_at": "2026-10-11T01:40:38Z",
+"github_stars": 20388,
 "github_topic": "ai-agent",
 "homepage": "https://jcode.sh"
 },
 "slug": "1jehuang-jcode",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/1jehuang/jcode"
 }

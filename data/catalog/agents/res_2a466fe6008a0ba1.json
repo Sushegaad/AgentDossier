@@ -29,16 +29,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 67.2,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -48,7 +43,7 @@
 "external_ids": {
 "github": "chatanywhere/GPT_API_free"
 },
-"first_seen": "2026-10-10T04:54:25Z",
+"first_seen": "2026-10-11T01:43:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -59,7 +54,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -70,24 +65,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:54:25Z",
+"last_seen": "2026-10-11T01:43:18Z",
 "license": "MIT",
 "name": "GPT_API_free",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:57:35Z",
+"checked_at": "2026-10-11T01:46:49Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:57:29Z",
+"checked_at": "2026-10-11T01:46:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:57:38Z",
+"checked_at": "2026-10-11T01:46:52Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -97,7 +92,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:17:51Z",
+"checked_at": "2026-10-11T02:05:08Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -105,19 +100,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-04-23T12:42:08Z",
-"github_forks": 2742,
+"github_forks": 2745,
 "github_language": null,
 "github_open_issues": 11,
 "github_pushed_at": "2026-09-07T17:19:11Z",
-"github_stars": 43905,
+"github_stars": 43970,
 "github_topic": "llm-agents",
 "homepage": "https://api.chatanywhere.tech"
 },
 "slug": "chatanywhere-gpt-api-free",
 "sources": [
 {
-"payload_hash": "edd8eefdb6265057b444408b8913241377d484a289d71941e9cd56a896817f70",
-"retrieved_at": "2026-10-10T04:54:25Z",
+"payload_hash": "b8738fb2ff532262373f9dd10f97deaf88f8d47d6407953f95664ddf3c6221a4",
+"retrieved_at": "2026-10-11T01:43:18Z",
 "system": "github",
 "url": "https://github.com/chatanywhere/GPT_API_free"
 }

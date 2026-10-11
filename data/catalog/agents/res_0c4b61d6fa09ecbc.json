@@ -11,16 +11,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://browser-use.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "028718a914059ae350e6425bbf94878081215550a8c4000a25d1c7407c50b421",
+"next_check": "2026-10-18",
+"payload_hash": "0c45ceb0e523e0f5d9135e842f16110d336080fe318d11bfc339d2f5cb55d804",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:05:56Z",
+"retrieved_at": "2026-10-11T01:54:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -37,16 +37,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://browser-use.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "028718a914059ae350e6425bbf94878081215550a8c4000a25d1c7407c50b421",
+"next_check": "2026-10-18",
+"payload_hash": "0c45ceb0e523e0f5d9135e842f16110d336080fe318d11bfc339d2f5cb55d804",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:05:56Z",
+"retrieved_at": "2026-10-11T01:54:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -63,16 +63,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://browser-use.com/security/soc2",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "7a56cbcddda82b7d1ae37d4364ae7c19827b15700e9ca5ca6c2a991c7e22f5f8",
+"next_check": "2026-10-18",
+"payload_hash": "a5a97e4322ce5e1ae214c70f8427f82486b3b969cebf0e9c2a85472afae5960c",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:05:56Z",
+"retrieved_at": "2026-10-11T01:54:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,152 +83,207 @@
 "variant": "SOC2_TYPE_II"
 }
 ],
-"components": {
-"adoption": 29.0,
-"docs": 9.0,
-"domain_fit": 35.0,
-"ecosystem": 14.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 20.0
-},
 "deployment": "GitHub; Browser Use Cloud",
 "description": "One of the largest browser-agent projects; active and widely integrated.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "cybersecurity": {
+"components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 73.4,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
-"rank": 82,
+"rank": 90,
 "recomputed": 77.9,
-"score": 77.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 69.4,
+"score_version": "sar-score-2.0",
+"seed_rank": 82,
+"seed_score": 77.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "data": {
+"components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.9,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
-"rank": 83,
+"rank": 90,
 "recomputed": 83.9,
-"score": 83.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 83,
+"seed_score": 83.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 65.3,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 100,
+"rank": 91,
 "recomputed": 72.1,
-"score": 72.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 61.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 100,
+"seed_score": 72.1,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 65.3,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 97,
+"rank": 91,
 "recomputed": 72.1,
-"score": 72.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 61.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 97,
+"seed_score": 72.1,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 65.3,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 98,
+"rank": 92,
 "recomputed": 72.1,
-"score": 72.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 61.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 98,
+"seed_score": 72.1,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 78.9,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "commercial",
-"rank": 73,
+"rank": 93,
 "recomputed": 81.2,
-"score": 81.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 75.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 73,
+"seed_score": 81.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 75.8,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "operations",
-"rank": 71,
+"rank": 92,
 "recomputed": 78.1,
-"score": 78.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 71,
+"seed_score": 78.1,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.0,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 40,
+"rank": 87,
 "recomputed": 93.5,
-"score": 93.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 40,
+"seed_score": 93.5,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {
 "github": "browser-use/browser-use"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -239,7 +294,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -311,7 +366,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "MIT",
 "merged_ids": [
 "res_51983adf77e4fc86"
@@ -321,7 +376,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-07T04:23:18Z",
-"headline": "browser-use 0.13.11",
+"headline": "browser-use release 0.13.11",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -344,17 +399,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:13Z",
+"checked_at": "2026-10-11T01:47:30Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:12Z",
+"checked_at": "2026-10-11T01:47:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:58:13Z",
+"checked_at": "2026-10-11T01:47:30Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -364,7 +419,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:10:49Z",
+"checked_at": "2026-10-11T01:59:25Z",
 "cves": 13,
 "source": "nvd",
 "tier": 1
@@ -373,14 +428,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 29.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 14.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 20.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-10-31T16:00:56Z",
-"github_forks": 12993,
+"github_forks": 13004,
 "github_language": "Python",
-"github_open_issues": 520,
+"github_open_issues": 523,
 "github_pushed_at": "2026-10-09T17:36:28Z",
-"github_stars": 117451,
+"github_stars": 117577,
 "github_topic": "ai-agents",
 "homepage": "https://browser-use.com",
 "observed_popularity": "116k",
@@ -396,13 +460,13 @@
 "sources": [
 {
 "payload_hash": "cfc3897a83e7452350e9cd74d90874dd4caaf29f1bd6eee9a0f1386b481ee075",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/browser-use/browser-use"
 },
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/browser-use/browser-use"
 }
@@ -418,7 +482,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 4,
+"compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 5,

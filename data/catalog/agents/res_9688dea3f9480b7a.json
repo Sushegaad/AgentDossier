@@ -28,16 +28,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-10)",
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-11)",
 "evidence_url": "https://pydantic.dev/logfire/agent-governance",
 "framework": "eu_ai_act",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
+"next_check": "2026-10-18",
 "payload_hash": "7fc4e66a619e0b9251accf3cce198215d3619afb8384fe65d5ca0d7a394900fa",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:59Z",
+"retrieved_at": "2026-10-11T01:56:56Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -54,16 +54,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://pydantic.dev/security",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
+"next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:59Z",
+"retrieved_at": "2026-10-11T01:56:56Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -80,16 +80,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-10)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-11)",
 "evidence_url": "https://pydantic.dev/security",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
+"next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:59Z",
+"retrieved_at": "2026-10-11T01:56:56Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -106,16 +106,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://pydantic.dev/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
+"next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:59Z",
+"retrieved_at": "2026-10-11T01:56:56Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -136,25 +136,20 @@
 "docs": 10.0,
 "domain_fit": 34.0,
 "ecosystem": 7.6,
-"governance": 30.0,
+"governance": 6.0,
 "health": null,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.55,
-"governance_evidence": {
-"credited": {
+"governance_credited": {
 "soc2": 0.3
-},
-"score": 34.5,
-"value": 6.0,
-"version": "sar-score-1.1"
 },
 "profile": "data",
 "rank": null,
 "score": 34.5,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -167,25 +162,20 @@
 "docs": 10.0,
 "domain_fit": 34.0,
 "ecosystem": 7.6,
-"governance": 30.0,
+"governance": 6.0,
 "health": null,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.5,
-"governance_evidence": {
-"credited": {
+"governance_credited": {
 "soc2": 0.3
-},
-"score": 32.8,
-"value": 6.0,
-"version": "sar-score-1.1"
 },
 "profile": "technology",
 "rank": null,
 "score": 32.8,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -196,7 +186,7 @@
 "external_ids": {
 "ard": "urn:air:pydantic.dev:server:logfire-mcp"
 },
-"first_seen": "2026-10-10T05:01:09Z",
+"first_seen": "2026-10-11T01:49:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -207,7 +197,7 @@
 "evidence": [
 "standards_metadata_at_publisher_domain"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 2
 },
 "issues": {
@@ -218,7 +208,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T05:01:09Z",
+"last_seen": "2026-10-11T01:49:30Z",
 "license": null,
 "name": "Pydantic Logfire MCP Server",
 "news": [],
@@ -252,7 +242,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:21:12Z",
+"checked_at": "2026-10-11T02:08:33Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -262,7 +252,7 @@
 "sources": [
 {
 "payload_hash": "12de84d0916bbe3f06b24e3d8697d2bd6af80119b461e69908e46eb0aba1b6f0",
-"retrieved_at": "2026-10-10T05:01:09Z",
+"retrieved_at": "2026-10-11T01:49:30Z",
 "system": "ard",
 "url": "https://pydantic.dev/.well-known/ard.json"
 }
@@ -270,7 +260,7 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 4,
+"compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,

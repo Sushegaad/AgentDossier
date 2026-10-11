@@ -33,21 +33,16 @@
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 17.0
+"trust": 20.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 66.8,
-"score_version": "sar-score-1.0",
+"score": 69.5,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -61,21 +56,16 @@
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 17.0
+"trust": 20.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 69.0,
-"score_version": "sar-score-1.0",
+"score": 71.4,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -89,21 +79,16 @@
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 17.0
+"trust": 20.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.85,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": null,
-"score": 53.8,
-"score_version": "sar-score-1.0",
+"score": 56.8,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -117,21 +102,16 @@
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 17.0
+"trust": 20.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 73.6,
-"score_version": "sar-score-1.0",
+"score": 76.0,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -141,7 +121,7 @@
 "external_ids": {
 "github": "open-metadata/OpenMetadata"
 },
-"first_seen": "2026-10-10T04:54:44Z",
+"first_seen": "2026-10-11T01:43:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -150,10 +130,10 @@
 "id": "res_3ef420992e6078bd",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -224,14 +204,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:54:44Z",
+"last_seen": "2026-10-11T01:43:40Z",
 "license": "Apache-2.0",
 "name": "OpenMetadata",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-08T12:24:34Z",
-"headline": "OpenMetadata 2.0.5-release",
+"headline": "OpenMetadata release 2.0.5-release",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -242,7 +222,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-06T06:19:28Z",
-"headline": "OpenMetadata 2.0.4-release",
+"headline": "OpenMetadata release 2.0.4-release",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -254,12 +234,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:54Z",
+"checked_at": "2026-10-11T01:49:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:53Z",
+"checked_at": "2026-10-11T01:49:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -267,7 +247,7 @@
 "evidence_url": "https://open-metadata.org",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:55Z",
+"checked_at": "2026-10-11T01:49:17Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -279,7 +259,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:18:56Z",
+"checked_at": "2026-10-11T02:06:14Z",
 "cves": 15,
 "source": "nvd",
 "tier": 1
@@ -287,19 +267,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2021-08-01T21:17:17Z",
-"github_forks": 2440,
+"github_forks": 2441,
 "github_language": "TypeScript",
-"github_open_issues": 1065,
-"github_pushed_at": "2026-10-10T04:49:33Z",
-"github_stars": 15431,
+"github_open_issues": 1021,
+"github_pushed_at": "2026-10-11T01:07:40Z",
+"github_stars": 15436,
 "github_topic": "mcp-server",
 "homepage": "https://open-metadata.org"
 },
 "slug": "open-metadata-openmetadata",
 "sources": [
 {
-"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
-"retrieved_at": "2026-10-10T04:54:44Z",
+"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
+"retrieved_at": "2026-10-11T01:43:40Z",
 "system": "github",
 "url": "https://github.com/open-metadata/OpenMetadata"
 }
@@ -329,7 +309,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 3,
 "protocols": 3,
 "security": 1

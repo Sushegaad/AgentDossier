@@ -37,16 +37,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 65.4,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -65,16 +60,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
 "score": 73.6,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -93,16 +83,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 69.3,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -112,7 +97,7 @@
 "external_ids": {
 "github": "VectifyAI/PageIndex"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,7 +108,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -153,14 +138,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "MIT",
 "name": "PageIndex",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-08T05:20:41Z",
-"headline": "PageIndex v0.2.22",
+"headline": "PageIndex release v0.2.22",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -171,7 +156,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-01T15:26:25Z",
-"headline": "PageIndex v0.2.21",
+"headline": "PageIndex release v0.2.21",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -183,17 +168,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:59Z",
+"checked_at": "2026-10-11T01:49:21Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:58Z",
+"checked_at": "2026-10-11T01:49:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T05:00:00Z",
+"checked_at": "2026-10-11T01:49:21Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -203,7 +188,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:17:58Z",
+"checked_at": "2026-10-11T02:05:15Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -211,19 +196,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-01T10:53:54Z",
-"github_forks": 3383,
+"github_forks": 3385,
 "github_language": "Python",
 "github_open_issues": 122,
-"github_pushed_at": "2026-10-08T05:18:34Z",
-"github_stars": 39027,
+"github_pushed_at": "2026-10-10T10:45:54Z",
+"github_stars": 39048,
 "github_topic": "ai-agents",
 "homepage": "https://pageindex.ai"
 },
 "slug": "vectifyai-pageindex",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/VectifyAI/PageIndex"
 }

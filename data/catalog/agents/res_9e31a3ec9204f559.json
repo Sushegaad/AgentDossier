@@ -6,7 +6,7 @@
 {
 "certificate_id": "logicgate",
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
 "organization": "LogicGate",
@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/logicgate",
 "framework": "csa_star",
 "issued": "2021-07-26",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:48Z",
+"retrieved_at": "2026-10-11T01:51:51Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -35,54 +35,65 @@
 "variant": "STAR_LEVEL_1"
 }
 ],
-"components": {
-"adoption": 22.0,
-"docs": 9.0,
-"domain_fit": 96.0,
-"ecosystem": 12.0,
-"governance": 82.0,
-"health": 19.0,
-"trust": 23.0
-},
 "deployment": "SaaS",
 "description": "Enterprise GRC automation and AI-assisted risk workflows.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "finance": {
+"components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 75.2,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 23,
+"rank": 54,
 "recomputed": 87.5,
-"score": 87.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 74.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 23,
+"seed_score": 87.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 20.0,
+"health": 19.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 75.2,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 22,
+"rank": 56,
 "recomputed": 88.3,
-"score": 88.3,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 74.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 22,
+"seed_score": 88.3,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,10 +102,10 @@
 "id": "res_9e31a3ec9204f559",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -104,24 +115,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Commercial",
 "name": "LogicGate Risk Cloud AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:33Z",
+"checked_at": "2026-10-11T01:48:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:32Z",
+"checked_at": "2026-10-11T01:48:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:33Z",
+"checked_at": "2026-10-11T01:48:54Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -131,7 +142,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:10:35Z",
+"checked_at": "2026-10-11T01:59:12Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -140,6 +151,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 12.0,
+"governance": 82.0,
+"health": 19.0,
+"trust": 23.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -147,7 +167,7 @@
 "sources": [
 {
 "payload_hash": "a44c0d85b38c33b2f93922d4a6d37421091d8aa3c1be6d6718b52a0f7d6f4fa9",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://www.logicgate.com/"
 }
@@ -155,8 +175,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 1,
-"identity": 3,
+"compliance": 5,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": 1

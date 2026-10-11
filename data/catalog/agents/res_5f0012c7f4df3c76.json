@@ -21,27 +21,22 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.0,
+"adoption": 24.01,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 17.0
+"trust": 20.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 66.6,
-"score_version": "sar-score-1.0",
+"score": 69.2,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -49,27 +44,22 @@
 },
 "technology": {
 "components": {
-"adoption": 24.0,
+"adoption": 24.01,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
-"trust": 17.0
+"trust": 20.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 73.3,
-"score_version": "sar-score-1.0",
+"score": 75.8,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -79,7 +69,7 @@
 "external_ids": {
 "github": "browseros-ai/BrowserOS"
 },
-"first_seen": "2026-10-10T04:50:21Z",
+"first_seen": "2026-10-11T01:38:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -88,10 +78,10 @@
 "id": "res_5f0012c7f4df3c76",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -101,14 +91,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:21Z",
+"last_seen": "2026-10-11T01:38:56Z",
 "license": "AGPL-3.0",
 "name": "BrowserOS",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-09T22:12:15Z",
-"headline": "BrowserOS BrowserOS neo Extension - v0.2.34.0",
+"headline": "BrowserOS neo Extension - v0.2.34.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -119,7 +109,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-07T21:55:41Z",
-"headline": "BrowserOS BrowserClaw Server - v0.0.68",
+"headline": "BrowserOS: BrowserClaw Server - v0.0.68",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -131,12 +121,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:13Z",
+"checked_at": "2026-10-11T01:47:31Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:12Z",
+"checked_at": "2026-10-11T01:47:30Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -144,7 +134,7 @@
 "evidence_url": "https://BrowserOS.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:58:14Z",
+"checked_at": "2026-10-11T01:47:31Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -156,7 +146,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:05Z",
+"checked_at": "2026-10-11T02:06:24Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -164,19 +154,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-18T16:23:54Z",
-"github_forks": 1483,
+"github_forks": 1486,
 "github_language": "TypeScript",
-"github_open_issues": 95,
-"github_pushed_at": "2026-10-09T22:18:10Z",
-"github_stars": 13856,
+"github_open_issues": 98,
+"github_pushed_at": "2026-10-10T17:11:35Z",
+"github_stars": 13867,
 "github_topic": "ai-agents",
 "homepage": "https://BrowserOS.com"
 },
 "slug": "browseros-ai-browseros",
 "sources": [
 {
-"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
-"retrieved_at": "2026-10-10T04:50:21Z",
+"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
+"retrieved_at": "2026-10-11T01:38:56Z",
 "system": "github",
 "url": "https://github.com/browseros-ai/BrowserOS"
 }
@@ -201,7 +191,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": 1

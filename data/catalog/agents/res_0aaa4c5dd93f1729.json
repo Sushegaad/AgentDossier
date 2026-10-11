@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.32,
+"adoption": 26.33,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -37,16 +37,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 68.7,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -54,7 +49,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.32,
+"adoption": 26.33,
 "docs": 7.0,
 "domain_fit": 94.5,
 "ecosystem": 6.6,
@@ -65,16 +60,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.945,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 79.5,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -84,7 +74,7 @@
 "external_ids": {
 "github": "can1357/oh-my-pi"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -95,7 +85,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -106,31 +96,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "MIT",
 "name": "oh-my-pi",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-09T13:45:03Z",
-"headline": "oh-my-pi v18.8.7",
+"date": "2026-10-10T17:15:16Z",
+"headline": "oh-my-pi release v18.8.9",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## @oh-my-pi/pi-ai\n\n### Added\n\n- Added routing-session cleanup for OpenAI Responses and Codex while preserving shared provider fallbacks ([#14334](https://github.com/can1357/oh-my-pi/pull/14334) by [@iliaal](https://github.com/iliaal)).\n\n##",
+"summary": "## @oh-my-pi/pi-ai\n\n### Changed\n\n- Updated state field rendering to trim trailing whitespace and normalize empty collection formatting for consistent prompt output\n\n## @oh-my-pi/pi-coding-agent\n\n### Added\n\n- Added capability-driven extensio",
 "tag": "product_update",
-"url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.8.7"
+"url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.8.9"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-08T19:05:03Z",
-"headline": "oh-my-pi v18.8.6",
+"date": "2026-10-10T15:02:52Z",
+"headline": "oh-my-pi release v18.8.8",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## @oh-my-pi/pi-agent-core\n\n### Added\n\n- Added support for warm-cache-aware conversation pruning, keeping pruned history within the model’s prompt-cache lookback window while preserving Anthropic prompt-cache efficiency.\n- Added `AgentLoopC",
+"summary": "## @oh-my-pi/pi-agent-core\n\n### Added\n\n- Added `Agent.setModelResolver()` to fit every model an agent adopts (via `setModel`, starting with the current one) before it is used ([#15048](https://github.com/can1357/oh-my-pi/pull/15048) by [@H4",
 "tag": "product_update",
-"url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.8.6"
+"url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.8.8"
 },
 {
 "cluster_size": 1,
@@ -175,12 +165,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:52Z",
+"checked_at": "2026-10-11T01:49:14Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:51Z",
+"checked_at": "2026-10-11T01:49:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -188,7 +178,7 @@
 "evidence_url": "https://omp.sh",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:52Z",
+"checked_at": "2026-10-11T01:49:14Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -200,7 +190,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:18:04Z",
+"checked_at": "2026-10-11T02:05:21Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -208,19 +198,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-31T14:01:28Z",
-"github_forks": 3789,
+"github_forks": 3798,
 "github_language": "TypeScript",
-"github_open_issues": 3645,
-"github_pushed_at": "2026-10-10T04:29:50Z",
-"github_stars": 34827,
+"github_open_issues": 3660,
+"github_pushed_at": "2026-10-11T01:29:17Z",
+"github_stars": 34938,
 "github_topic": "ai-agent",
 "homepage": "https://omp.sh"
 },
 "slug": "can1357-oh-my-pi",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/can1357/oh-my-pi"
 }

@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://aivikings.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "c6317c4604882fe209d328b80aa9c808a327420185f5deb808dc662354b3b694",
+"next_check": "2026-10-18",
+"payload_hash": "065e65be6969b65c8833b3d61c42518bd8e5bf66d12bbdf274736f4b491dd7b6",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:04:55Z",
+"retrieved_at": "2026-10-11T01:53:39Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -49,23 +49,18 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 13.6,
-"governance": 10.0,
+"governance": 0.0,
 "health": 20.0,
 "trust": 23.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": 61.1,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 61.1,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption"
@@ -75,7 +70,7 @@
 "external_ids": {
 "mcp_registry": "ai.aivikings/registrar"
 },
-"first_seen": "2026-10-10T04:47:49Z",
+"first_seen": "2026-10-11T01:36:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -86,7 +81,7 @@
 "evidence": [
 "standards_metadata_at_publisher_domain"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 2
 },
 "issues": {
@@ -97,7 +92,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:49Z",
+"last_seen": "2026-10-11T01:36:24Z",
 "license": null,
 "name": "AiVikings.ai",
 "news": [],
@@ -105,7 +100,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://aivikings.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-10T04:57:20Z",
+"checked_at": "2026-10-11T01:46:36Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "2025-11-25",
 "signed": false,
@@ -123,7 +118,7 @@
 "version": "0.1.0"
 },
 "ard": {
-"checked_at": "2026-10-10T04:57:17Z",
+"checked_at": "2026-10-11T01:46:32Z",
 "entries": 2,
 "parser_version": "ard-0.91",
 "sources": [
@@ -150,7 +145,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:12:25Z",
+"checked_at": "2026-10-11T02:01:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -167,8 +162,8 @@
 "slug": "aivikings-ai-aivikings-ai",
 "sources": [
 {
-"payload_hash": "b999bb0e34f85ab71018087a4bce331d23b8611eba29d5448a040ef267d00457",
-"retrieved_at": "2026-10-10T04:47:49Z",
+"payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
+"retrieved_at": "2026-10-11T01:36:24Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aivikings/registrar"
 }
@@ -176,7 +171,7 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 4,
+"compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 1,

@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/c3 ai",
 "framework": "csa_star",
 "issued": "2025-11-04",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:53Z",
+"retrieved_at": "2026-10-11T01:51:57Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -35,54 +35,61 @@
 "variant": "STAR_LEVEL_1"
 }
 ],
-"components": {
-"adoption": 23.0,
-"docs": 9.0,
-"domain_fit": 99.0,
-"ecosystem": 13.0,
-"governance": 45.0,
-"health": 19.0,
-"trust": 24.0
-},
 "deployment": "C3 AI platform",
 "description": "Enterprise AI applications for supply chain and operations.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "government": {
+"components": {
+"adoption": 23.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 19.0,
+"trust": 11.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 78.0,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 96,
+"rank": 85,
 "recomputed": 72.5,
-"score": 72.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 65.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 96,
+"seed_score": 72.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 23.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 19.0,
+"trust": 11.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 86.1,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "operations",
-"rank": 8,
+"rank": 85,
 "recomputed": 88.3,
-"score": 88.3,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 75.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 8,
+"seed_score": 88.3,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,7 +100,7 @@
 "evidence": [
 "vendor_name_only"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 4
 },
 "issues": {
@@ -104,24 +111,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Commercial",
 "name": "C3 AI Supply Chain",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:20Z",
+"checked_at": "2026-10-11T01:47:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:18Z",
+"checked_at": "2026-10-11T01:47:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:58:20Z",
+"checked_at": "2026-10-11T01:47:37Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -131,7 +138,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:11:08Z",
+"checked_at": "2026-10-11T01:59:43Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -140,6 +147,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 23.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": 45.0,
+"health": 19.0,
+"trust": 24.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -147,7 +163,7 @@
 "sources": [
 {
 "payload_hash": "80ee37d9c4d037e96c71e0a3e76f0726f8838f2b53230f7b925d9dd1efbe5e78",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://c3.ai/"
 }
@@ -155,7 +171,7 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 1,
+"compliance": 5,
 "identity": 4,
 "issues": 1,
 "protocols": 5,

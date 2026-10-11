@@ -34,21 +34,16 @@
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 62.6,
-"score_version": "sar-score-1.0",
+"score": 65.3,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -62,21 +57,16 @@
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 71.1,
-"score_version": "sar-score-1.0",
+"score": 73.5,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -90,21 +80,16 @@
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 70.0,
-"score_version": "sar-score-1.0",
+"score": 72.4,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -114,7 +99,7 @@
 "external_ids": {
 "github": "cocoindex-io/cocoindex"
 },
-"first_seen": "2026-10-10T04:50:21Z",
+"first_seen": "2026-10-11T01:38:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,10 +108,10 @@
 "id": "res_53664882bf5a8e83",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -143,14 +128,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:21Z",
+"last_seen": "2026-10-11T01:38:56Z",
 "license": "Apache-2.0",
 "name": "cocoindex",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-06T05:50:04Z",
-"headline": "cocoindex v1.0.25",
+"headline": "cocoindex release v1.0.25",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -173,17 +158,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:30Z",
+"checked_at": "2026-10-11T01:47:47Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:29Z",
+"checked_at": "2026-10-11T01:47:46Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:58:31Z",
+"checked_at": "2026-10-11T01:47:48Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -193,7 +178,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:17Z",
+"checked_at": "2026-10-11T02:06:35Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -201,19 +186,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-03T23:03:09Z",
-"github_forks": 911,
+"github_forks": 913,
 "github_language": "Rust",
-"github_open_issues": 99,
-"github_pushed_at": "2026-10-10T04:50:10Z",
-"github_stars": 11658,
+"github_open_issues": 104,
+"github_pushed_at": "2026-10-10T23:23:20Z",
+"github_stars": 11667,
 "github_topic": "ai-agents",
 "homepage": "https://cocoindex.io"
 },
 "slug": "cocoindex-io-cocoindex",
 "sources": [
 {
-"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
-"retrieved_at": "2026-10-10T04:50:21Z",
+"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
+"retrieved_at": "2026-10-11T01:38:56Z",
 "system": "github",
 "url": "https://github.com/cocoindex-io/cocoindex"
 }
@@ -243,7 +228,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 3,
 "protocols": 5,
 "security": 1

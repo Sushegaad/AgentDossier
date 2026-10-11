@@ -32,16 +32,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 0.5,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 36.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -53,7 +48,7 @@
 "external_ids": {
 "ard": "urn:air:alpic.ai:skill:use-alpic"
 },
-"first_seen": "2026-10-10T04:58:05Z",
+"first_seen": "2026-10-11T01:47:19Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,7 +59,7 @@
 "evidence": [
 "standards_metadata_at_publisher_domain"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 2
 },
 "issues": {
@@ -75,7 +70,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:58:05Z",
+"last_seen": "2026-10-11T01:47:19Z",
 "license": null,
 "name": "Use Alpic Cloud",
 "news": [],
@@ -108,7 +103,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:20:31Z",
+"checked_at": "2026-10-11T02:07:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -118,7 +113,7 @@
 "sources": [
 {
 "payload_hash": "6abfbe545b1c7e4c7511b593a5684fd34c626b86781c79bf119201e89f6961db",
-"retrieved_at": "2026-10-10T04:58:05Z",
+"retrieved_at": "2026-10-11T01:47:19Z",
 "system": "ard",
 "url": "https://alpic.ai/.well-known/ai-catalog.json"
 }
