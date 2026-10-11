@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "Fosowl/agenticSeek"
 },
-"first_seen": "2026-10-11T01:43:18Z",
+"first_seen": "2026-10-11T03:00:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -104,24 +104,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:18Z",
+"last_seen": "2026-10-11T03:00:46Z",
 "license": "GPL-3.0",
 "name": "agenticSeek",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:54Z",
+"checked_at": "2026-10-11T03:04:03Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:22Z",
+"checked_at": "2026-10-11T03:03:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:11Z",
+"checked_at": "2026-10-11T03:04:19Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -131,7 +131,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:05:37Z",
+"checked_at": "2026-10-11T03:20:42Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -150,8 +150,8 @@
 "slug": "fosowl-agenticseek",
 "sources": [
 {
-"payload_hash": "b8738fb2ff532262373f9dd10f97deaf88f8d47d6407953f95664ddf3c6221a4",
-"retrieved_at": "2026-10-11T01:43:18Z",
+"payload_hash": "b3a19fcb56536602b7ddc3ebbc2b7d5d97951f6292268ab711b5c347b735083e",
+"retrieved_at": "2026-10-11T03:00:46Z",
 "system": "github",
 "url": "https://github.com/Fosowl/agenticSeek"
 }
@@ -172,7 +172,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "http://agenticseek.tech",
 "vendor": "Fosowl"

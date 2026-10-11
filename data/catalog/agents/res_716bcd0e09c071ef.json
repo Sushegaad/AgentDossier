@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:45Z",
+"retrieved_at": "2026-10-11T03:08:12Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -50,7 +50,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "6de25503a872cbc6f650985bb55b2e6f3750bcc0e4b30fee9d5d6523f75ade13",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:08Z",
+"retrieved_at": "2026-10-11T03:11:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 25.0,
+"governance": 12.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -79,12 +79,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "general",
-"rank": 49,
+"rank": 67,
 "recomputed": 88.3,
-"score": 83.6,
+"score": 83.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 67,
 "seed_score": 88.3,
@@ -97,7 +97,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 40.0,
+"governance": 20.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -105,12 +105,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "security",
-"rank": 34,
+"rank": 91,
 "recomputed": 77.6,
-"score": 82.8,
+"score": 80.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 91,
 "seed_score": 77.6,
@@ -123,7 +123,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -131,12 +131,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 38,
+"rank": 15,
 "recomputed": 90.3,
-"score": 77.8,
+"score": 76.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 15,
 "seed_score": 90.3,
@@ -149,7 +149,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 40.0,
+"governance": 20.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -157,12 +157,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 35,
+"rank": 87,
 "recomputed": 73.2,
-"score": 80.8,
+"score": 77.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 87,
 "seed_score": 73.2,
@@ -175,7 +175,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -183,12 +183,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 37,
+"rank": 14,
 "recomputed": 90.3,
-"score": 77.8,
+"score": 76.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 14,
 "seed_score": 90.3,
@@ -201,7 +201,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 16.7,
+"governance": 8.3,
 "health": 20.0,
 "trust": 19.0
 },
@@ -209,12 +209,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 40,
+"rank": 7,
 "recomputed": 90.3,
-"score": 77.3,
+"score": 76.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 7,
 "seed_score": 90.3,
@@ -227,7 +227,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -235,12 +235,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 39,
+"rank": 93,
 "recomputed": 72.6,
-"score": 77.8,
+"score": 76.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 93,
 "seed_score": 72.6,
@@ -253,7 +253,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -261,12 +261,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 39,
+"rank": 97,
 "recomputed": 72.6,
-"score": 77.8,
+"score": 76.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 97,
 "seed_score": 72.6,
@@ -279,7 +279,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 26.0,
+"governance": 13.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -287,13 +287,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"gdpr": 0.3
+"csa_star": 0.5,
+"gdpr": 0.15
 },
 "profile": "commercial",
-"rank": 44,
+"rank": 8,
 "recomputed": 89.2,
-"score": 85.0,
+"score": 84.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 8,
 "seed_score": 89.2,
@@ -306,7 +306,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 25.0,
+"governance": 12.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -314,12 +314,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "operations",
-"rank": 41,
+"rank": 91,
 "recomputed": 77.2,
-"score": 86.0,
+"score": 85.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 91,
 "seed_score": 77.2,
@@ -332,7 +332,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -340,10 +340,10 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "technology",
-"rank": 53,
+"rank": 96,
 "recomputed": 88.7,
 "score": 87.7,
 "score_version": "sar-score-2.0",
@@ -354,7 +354,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -376,24 +376,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Cognigy AI Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:51Z",
+"checked_at": "2026-10-11T03:04:56Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:48Z",
+"checked_at": "2026-10-11T03:04:55Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:52Z",
+"checked_at": "2026-10-11T03:04:57Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -403,7 +403,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:35Z",
+"checked_at": "2026-10-11T03:14:41Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -428,7 +428,7 @@
 "sources": [
 {
 "payload_hash": "f63b3ac0987bfc4a1cde5a7c883316a87b19937ec5d98c6fa0eba59892ac51d6",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.cognigy.com/"
 }
@@ -440,7 +440,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://www.cognigy.com/",
 "vendor": "Cognigy"

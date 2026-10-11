@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:38Z",
+"retrieved_at": "2026-10-11T03:08:05Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -54,7 +54,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:50:11Z",
+"retrieved_at": "2026-10-11T03:07:01Z",
 "review_reason": "entity 1.00, offering 0.85",
 "reviewer": null,
 "scope": "product",
@@ -75,7 +75,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 25.0,
+"governance": 12.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -83,12 +83,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "general",
-"rank": 33,
+"rank": 30,
 "recomputed": 91.5,
-"score": 85.3,
+"score": 84.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 30,
 "seed_score": 91.5,
@@ -96,32 +96,6 @@
 "unknown": []
 },
 "cybersecurity": {
-"components": {
-"adoption": 26.0,
-"docs": 10.0,
-"domain_fit": 100.0,
-"ecosystem": 13.0,
-"governance": 40.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0
-},
-"profile": "security",
-"rank": 30,
-"recomputed": 90.5,
-"score": 84.0,
-"score_version": "sar-score-2.0",
-"seed_rank": 6,
-"seed_score": 90.5,
-"source": "seed_xlsx",
-"unknown": []
-},
-"data": {
 "components": {
 "adoption": 26.0,
 "docs": 10.0,
@@ -135,10 +109,36 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
+},
+"profile": "security",
+"rank": 6,
+"recomputed": 90.5,
+"score": 82.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 6,
+"seed_score": 90.5,
+"source": "seed_xlsx",
+"unknown": []
+},
+"data": {
+"components": {
+"adoption": 26.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 13.0,
+"governance": 10.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5
 },
 "profile": "data",
-"rank": 35,
+"rank": 81,
 "recomputed": 84.1,
 "score": 89.9,
 "score_version": "sar-score-2.0",
@@ -153,7 +153,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -161,12 +161,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 32,
+"rank": 58,
 "recomputed": 76.2,
-"score": 78.7,
+"score": 77.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 58,
 "seed_score": 76.2,
@@ -179,7 +179,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 60.0,
+"governance": 40.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -187,13 +187,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
+"csa_star": 0.5,
 "fedramp": 1.0
 },
 "profile": "regulated",
-"rank": 27,
+"rank": 48,
 "recomputed": 76.8,
-"score": 84.7,
+"score": 81.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 48,
 "seed_score": 76.8,
@@ -206,7 +206,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -214,12 +214,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 32,
+"rank": 49,
 "recomputed": 76.2,
-"score": 78.7,
+"score": 77.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 49,
 "seed_score": 76.2,
@@ -232,7 +232,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 16.7,
+"governance": 8.3,
 "health": 20.0,
 "trust": 19.0
 },
@@ -240,12 +240,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 38,
+"rank": 44,
 "recomputed": 76.2,
-"score": 78.2,
+"score": 76.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 44,
 "seed_score": 76.2,
@@ -258,7 +258,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -266,12 +266,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 34,
+"rank": 45,
 "recomputed": 76.2,
-"score": 78.7,
+"score": 77.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 45,
 "seed_score": 76.2,
@@ -284,7 +284,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -292,12 +292,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "regulated",
-"rank": 34,
+"rank": 5,
 "recomputed": 94.8,
-"score": 78.7,
+"score": 77.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 5,
 "seed_score": 94.8,
@@ -310,7 +310,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -318,12 +318,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "commercial",
-"rank": 36,
+"rank": 63,
 "recomputed": 82.0,
-"score": 85.9,
+"score": 85.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 63,
 "seed_score": 82.0,
@@ -336,7 +336,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 25.0,
+"governance": 12.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -344,12 +344,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0
+"csa_star": 0.5
 },
 "profile": "operations",
-"rank": 34,
+"rank": 52,
 "recomputed": 79.4,
-"score": 86.8,
+"score": 86.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 52,
 "seed_score": 79.4,
@@ -358,7 +358,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -380,24 +380,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Drata",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:17Z",
+"checked_at": "2026-10-11T03:05:22Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:16Z",
+"checked_at": "2026-10-11T03:05:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:18Z",
+"checked_at": "2026-10-11T03:05:22Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -425,7 +425,7 @@
 "sources": [
 {
 "payload_hash": "0959eb64efae0dabaa28b183244474d34b1520fe19bc942222208a2acc360035",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://drata.com/"
 }
@@ -437,7 +437,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": 1
 },
 "url": "https://drata.com/",
 "vendor": "Drata"

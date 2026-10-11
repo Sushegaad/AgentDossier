@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-11T02:09:10Z",
+ "built_at": "2026-10-11T03:24:05Z",
  "snapshot_date": "2026-09-25",
  "generator": "agentdossier 1.0.0",
  "score_version": "sar-score-2.0",
@@ -114,8 +114,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:36:23Z",
-   "finished": "2026-10-11T01:36:23Z"
+   "started": "2026-10-11T02:55:12Z",
+   "finished": "2026-10-11T02:55:12Z"
   },
   "mcp_registry": {
    "source": "mcp_registry",
@@ -124,8 +124,8 @@
    "skipped": 335,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:36:23Z",
-   "finished": "2026-10-11T01:38:47Z"
+   "started": "2026-10-11T02:55:12Z",
+   "finished": "2026-10-11T02:56:35Z"
   },
   "huggingface": {
    "source": "huggingface",
@@ -136,18 +136,18 @@
    "error_samples": [
     "https://huggingface.co/api/spaces?search=agentic&sort=likes&direction=-1&limit=500&full=true: response too large"
    ],
-   "started": "2026-10-11T01:38:47Z",
-   "finished": "2026-10-11T01:38:49Z"
+   "started": "2026-10-11T02:56:35Z",
+   "finished": "2026-10-11T02:56:37Z"
   },
   "github": {
    "source": "github",
    "fetched": 103,
-   "produced": 8730,
+   "produced": 8728,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:38:49Z",
-   "finished": "2026-10-11T01:45:41Z"
+   "started": "2026-10-11T02:56:37Z",
+   "finished": "2026-10-11T03:02:58Z"
   },
   "hygiene": {
    "source": "hygiene",
@@ -174,8 +174,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:45:42Z",
-   "finished": "2026-10-11T01:46:10Z"
+   "started": "2026-10-11T03:02:59Z",
+   "finished": "2026-10-11T03:03:19Z"
   },
   "ard_web": {
    "source": "ard_web",
@@ -184,8 +184,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:46:10Z",
-   "finished": "2026-10-11T01:50:01Z"
+   "started": "2026-10-11T03:03:19Z",
+   "finished": "2026-10-11T03:06:54Z"
   },
   "protocol_claims": {
    "source": "protocol_claims",
@@ -199,8 +199,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:50:01Z",
-   "finished": "2026-10-11T01:51:27Z",
+   "started": "2026-10-11T03:06:54Z",
+   "finished": "2026-10-11T03:07:57Z",
    "inherited": 52
   },
   "csa_star": {
@@ -210,8 +210,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:51:27Z",
-   "finished": "2026-10-11T01:53:08Z"
+   "started": "2026-10-11T03:07:57Z",
+   "finished": "2026-10-11T03:09:16Z"
   },
   "curated": {
    "source": "curated",
@@ -220,8 +220,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:53:08Z",
-   "finished": "2026-10-11T01:53:08Z"
+   "started": "2026-10-11T03:09:16Z",
+   "finished": "2026-10-11T03:09:16Z"
   },
   "vendor_claims": {
    "source": "vendor_trust_centers",
@@ -230,11 +230,11 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:53:08Z",
-   "finished": "2026-10-11T01:57:32Z"
+   "started": "2026-10-11T03:09:16Z",
+   "finished": "2026-10-11T03:13:13Z"
   },
   "compliance_review_added": {
-   "added": 36
+   "added": 0
   },
   "news": {
    "source": "news",
@@ -245,8 +245,8 @@
    "error_samples": [
     "gdelt: GDELT unavailable (HTTP 429); skipped for the rest of the run"
    ],
-   "started": "2026-10-11T01:57:33Z",
-   "finished": "2026-10-11T02:09:09Z"
+   "started": "2026-10-11T03:13:13Z",
+   "finished": "2026-10-11T03:24:04Z"
   },
   "nvd": {
    "source": "nvd",
@@ -255,12 +255,12 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T01:57:33Z",
-   "finished": "2026-10-11T02:09:09Z"
+   "started": "2026-10-11T03:13:13Z",
+   "finished": "2026-10-11T03:24:04Z"
   },
   "changelog": {
-   "events": 211,
-   "appended": 211
+   "events": 0,
+   "appended": 0
   }
  }
 }

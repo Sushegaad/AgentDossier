@@ -96,7 +96,7 @@
 "external_ids": {
 "github": "MemTensor/MemOS"
 },
-"first_seen": "2026-10-11T01:38:56Z",
+"first_seen": "2026-10-11T02:56:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,7 +118,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:56Z",
+"last_seen": "2026-10-11T02:56:43Z",
 "license": "Apache-2.0",
 "name": "MemOS",
 "news": [
@@ -148,12 +148,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:08Z",
+"checked_at": "2026-10-11T03:06:10Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:01Z",
+"checked_at": "2026-10-11T03:06:02Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -161,7 +161,7 @@
 "evidence_url": "https://memos.openmem.net",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:49:11Z",
+"checked_at": "2026-10-11T03:06:13Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -185,8 +185,8 @@
 "slug": "memtensor-memos",
 "sources": [
 {
-"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
-"retrieved_at": "2026-10-11T01:38:56Z",
+"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
+"retrieved_at": "2026-10-11T02:56:43Z",
 "system": "github",
 "url": "https://github.com/MemTensor/MemOS"
 }
@@ -218,7 +218,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://memos.openmem.net",
 "vendor": "MemTensor"

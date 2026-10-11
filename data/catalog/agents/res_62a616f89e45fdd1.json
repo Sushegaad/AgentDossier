@@ -29,9 +29,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "e87f6249efe77a4706d09530cdade303de6d1bb7508d3f9bfe5273818c7fbf5e",
+"payload_hash": "de1decac43ace4d8dafa6aeb7d2fdcad0bbdf05bdac6da666b6eab41a72f6c68",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:06Z",
+"retrieved_at": "2026-10-11T03:10:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -98,7 +98,7 @@
 "external_ids": {
 "ard": "urn:air:assetlog.ai:server:mcp"
 },
-"first_seen": "2026-10-11T01:47:19Z",
+"first_seen": "2026-10-11T03:04:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -120,7 +120,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:19Z",
+"last_seen": "2026-10-11T03:04:27Z",
 "license": null,
 "name": "AssetLog MCP server",
 "news": [],
@@ -159,7 +159,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:08:15Z",
+"checked_at": "2026-10-11T03:23:15Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -169,7 +169,7 @@
 "sources": [
 {
 "payload_hash": "3d7427570f66e614b69e6ee5a6dc1ed99217fcec893345c15e8293eb862ba87e",
-"retrieved_at": "2026-10-11T01:47:19Z",
+"retrieved_at": "2026-10-11T03:04:27Z",
 "system": "ard",
 "url": "https://assetlog.ai/.well-known/ai-catalog.json"
 }
@@ -181,7 +181,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://assetlog.ai/.well-known/mcp/server-card.json",
 "vendor": "assetlog.ai"

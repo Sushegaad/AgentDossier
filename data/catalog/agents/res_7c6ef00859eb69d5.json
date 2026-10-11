@@ -31,7 +31,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "2c5612c00589fae5fef173652bc12c622330f2d17a41c108722588aa1e8c296d",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:52Z",
+"retrieved_at": "2026-10-11T03:10:54Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "github": "BenchGecko/datasets",
 "mcp_registry": "ai.benchgecko/benchgecko"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,19 +119,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "BenchGecko",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:19Z",
+"checked_at": "2026-10-11T03:04:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:18Z",
+"checked_at": "2026-10-11T03:04:25Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -154,7 +154,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:11Z",
+"checked_at": "2026-10-11T03:18:26Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -171,8 +171,8 @@
 "slug": "benchgecko-ai-benchgecko",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.benchgecko/benchgecko"
 }
@@ -184,7 +184,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://benchgecko.ai/api-docs#mcp",
 "vendor": "benchgecko.ai"

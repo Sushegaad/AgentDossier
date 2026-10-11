@@ -15,7 +15,7 @@
 "external_ids": {
 "ard": "urn:air:agenticplug.ai:server:agent-ready-report"
 },
-"first_seen": "2026-10-11T01:46:24Z",
+"first_seen": "2026-10-11T03:03:32Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -37,7 +37,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:46:24Z",
+"last_seen": "2026-10-11T03:03:32Z",
 "license": null,
 "name": "Agent Ready Report",
 "news": [],
@@ -70,7 +70,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:39Z",
+"checked_at": "2026-10-11T03:22:41Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -80,7 +80,7 @@
 "sources": [
 {
 "payload_hash": "ab40d292055458abd20828dad54919bab7eded84bab17418da91ffba690013c6",
-"retrieved_at": "2026-10-11T01:46:24Z",
+"retrieved_at": "2026-10-11T03:03:32Z",
 "system": "ard",
 "url": "https://agenticplug.ai/.well-known/ai-catalog.json"
 }
@@ -92,7 +92,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://scan.agenticplug.ai/.well-known/mcp/server-card.json",
 "vendor": "agenticplug.ai"

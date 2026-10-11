@@ -22,7 +22,7 @@
 "evidence_coverage": 0.944,
 "governance_credited": {},
 "profile": "general",
-"rank": 43,
+"rank": 52,
 "recomputed": 89.4,
 "score": 84.2,
 "score_version": "sar-score-2.0",
@@ -48,7 +48,7 @@
 "evidence_coverage": 0.9,
 "governance_credited": {},
 "profile": "security",
-"rank": 56,
+"rank": 94,
 "recomputed": 77.2,
 "score": 79.5,
 "score_version": "sar-score-2.0",
@@ -74,7 +74,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 31,
+"rank": 95,
 "recomputed": 83.1,
 "score": 90.4,
 "score_version": "sar-score-2.0",
@@ -100,7 +100,7 @@
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "commercial",
-"rank": 41,
+"rank": 84,
 "recomputed": 80.3,
 "score": 85.4,
 "score_version": "sar-score-2.0",
@@ -126,7 +126,7 @@
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "operations",
-"rank": 43,
+"rank": 86,
 "recomputed": 77.4,
 "score": 85.8,
 "score_version": "sar-score-2.0",
@@ -152,7 +152,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 27,
+"rank": 53,
 "recomputed": 92.4,
 "score": 90.1,
 "score_version": "sar-score-2.0",
@@ -167,7 +167,7 @@
 "external_ids": {
 "github": "open-webui/open-webui"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -250,7 +250,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "BSD-3-Clause",
 "name": "Open WebUI",
 "news": [
@@ -280,12 +280,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:19Z",
+"checked_at": "2026-10-11T03:06:19Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:18Z",
+"checked_at": "2026-10-11T03:06:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -293,7 +293,7 @@
 "evidence_url": "https://github.com/open-webui/open-webui",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:49:20Z",
+"checked_at": "2026-10-11T03:06:20Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -305,7 +305,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:22Z",
+"checked_at": "2026-10-11T03:14:29Z",
 "cves": 145,
 "source": "nvd",
 "tier": 1
@@ -326,11 +326,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-10-06T22:08:27Z",
-"github_forks": 22562,
+"github_forks": 22564,
 "github_language": "Python",
 "github_open_issues": 164,
 "github_pushed_at": "2026-10-10T21:10:07Z",
-"github_stars": 154229,
+"github_stars": 154235,
 "homepage": "https://openwebui.com",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -346,7 +346,7 @@
 "sources": [
 {
 "payload_hash": "85ea5ffc878375e6afa26b15618c522e900b3a273e1ae7d210522c7d84104cf7",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/open-webui/open-webui"
 }
@@ -374,7 +374,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://github.com/open-webui/open-webui",
 "vendor": "Open WebUI"

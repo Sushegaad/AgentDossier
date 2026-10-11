@@ -29,9 +29,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "1c414842090ee9459d99f5e29e0ea018babc74918ccc82f9b1ecd2af42b8a38c",
+"payload_hash": "ca923184010ac5638162ab7729928bdfdc395cb940359c061a78c7fa8455068b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:53Z",
+"retrieved_at": "2026-10-11T03:12:39Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,7 +92,7 @@
 "external_ids": {
 "github": "emcie-co/parlant"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -114,24 +114,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "Apache-2.0",
 "name": "parlant",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:23Z",
+"checked_at": "2026-10-11T03:06:22Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:21Z",
+"checked_at": "2026-10-11T03:06:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:24Z",
+"checked_at": "2026-10-11T03:06:23Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -153,8 +153,8 @@
 "slug": "emcie-co-parlant",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/emcie-co/parlant"
 }
@@ -178,7 +178,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://www.parlant.io",
 "vendor": "emcie-co"

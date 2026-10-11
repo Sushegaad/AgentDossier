@@ -31,7 +31,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "baa87e40cec6ca67e6511771b86904f59f4ddb2a4418c2a050183997cffd2088",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:48Z",
+"retrieved_at": "2026-10-11T03:12:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -55,9 +55,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "42914ff3736e4e881efc59a2a2a727b50aac241378704fda249bfbf5a701d4fe",
+"payload_hash": "29e290e583503acef940b369ff4ad0779c4ff7ad0a346bd6fddcd40d522e8f97",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:48Z",
+"retrieved_at": "2026-10-11T03:12:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,7 +83,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "baa87e40cec6ca67e6511771b86904f59f4ddb2a4418c2a050183997cffd2088",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:48Z",
+"retrieved_at": "2026-10-11T03:12:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -107,9 +107,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d918353eb8232ff7a90d20b3a82cb4b08a2aebff964ce8a55a088fa174171e40",
+"payload_hash": "f6efa70d79bf481e2bb0d422c4f17c7dd5ba42e92febc295bcad701d65174c89",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:48Z",
+"retrieved_at": "2026-10-11T03:12:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -135,7 +135,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "baa87e40cec6ca67e6511771b86904f59f4ddb2a4418c2a050183997cffd2088",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:48Z",
+"retrieved_at": "2026-10-11T03:12:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -196,7 +196,7 @@
 "external_ids": {
 "github": "openstatusHQ/openstatus"
 },
-"first_seen": "2026-10-11T01:43:40Z",
+"first_seen": "2026-10-11T03:01:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -231,19 +231,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:40Z",
+"last_seen": "2026-10-11T03:01:06Z",
 "license": "AGPL-3.0",
 "name": "openstatus",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:19Z",
+"checked_at": "2026-10-11T03:06:19Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:17Z",
+"checked_at": "2026-10-11T03:06:17Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -252,7 +252,7 @@
 "note": "named in the resource's own tags",
 "probe": {
 "card_url": "https://www.openstatus.dev/.well-known/mcp.json",
-"checked_at": "2026-10-11T01:49:20Z",
+"checked_at": "2026-10-11T03:06:19Z",
 "status": "invalid"
 },
 "source": "self_description",
@@ -264,7 +264,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:03Z",
+"checked_at": "2026-10-11T03:22:04Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -283,8 +283,8 @@
 "slug": "openstatushq-openstatus",
 "sources": [
 {
-"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
-"retrieved_at": "2026-10-11T01:43:40Z",
+"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
+"retrieved_at": "2026-10-11T03:01:06Z",
 "system": "github",
 "url": "https://github.com/openstatusHQ/openstatus"
 }
@@ -316,7 +316,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://openstatus.dev",
 "vendor": "openstatusHQ"

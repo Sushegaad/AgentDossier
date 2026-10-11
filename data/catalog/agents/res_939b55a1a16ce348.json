@@ -29,9 +29,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "4e2d1428e94826845bdb93cce7e488bd590a41e5196d6e803ea9eef2b5f95303",
+"payload_hash": "c8e5a0a85d94932a70e41317a26af7f73f7757fc3936bd1af71b4d4468586f1c",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:57Z",
+"retrieved_at": "2026-10-11T03:10:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -55,9 +55,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "4e2d1428e94826845bdb93cce7e488bd590a41e5196d6e803ea9eef2b5f95303",
+"payload_hash": "c8e5a0a85d94932a70e41317a26af7f73f7757fc3936bd1af71b4d4468586f1c",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:57Z",
+"retrieved_at": "2026-10-11T03:10:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -122,7 +122,7 @@
 "external_ids": {
 "mcp_registry": "ai.brainattic/knowledge-base"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -144,19 +144,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "brainattic",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:51Z",
+"checked_at": "2026-10-11T03:03:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:47Z",
+"checked_at": "2026-10-11T03:03:52Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -179,7 +179,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:36Z",
+"checked_at": "2026-10-11T03:18:49Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -196,8 +196,8 @@
 "slug": "brainattic-ai-brainattic",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.brainattic/knowledge-base"
 }
@@ -209,7 +209,8 @@
 "identity": 4,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://app.brainattic.ai/api/mcp",
 "vendor": "brainattic.ai"

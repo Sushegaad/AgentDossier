@@ -39,9 +39,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "343c46e4f1d738a37dcc034120c9c3a375faf67b18cf403b1c14b7ce6e985070",
+"payload_hash": "f2dd041fb59c666d2787126f4d2f184518e0b7c9a88f51aab137f6a036003487",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:13Z",
+"retrieved_at": "2026-10-11T03:12:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -62,7 +62,7 @@
 "docs": 10.0,
 "domain_fit": 87.5,
 "ecosystem": 9.1,
-"governance": 6.0,
+"governance": 3.0,
 "health": null,
 "trust": 23.0
 },
@@ -70,7 +70,7 @@
 "confidence": 0.875,
 "evidence_coverage": 0.5,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -86,7 +86,7 @@
 "external_ids": {
 "ard": "urn:air:superset.sh:mcp:superset"
 },
-"first_seen": "2026-10-11T01:49:44Z",
+"first_seen": "2026-10-11T03:06:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -108,7 +108,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:49:44Z",
+"last_seen": "2026-10-11T03:06:44Z",
 "license": null,
 "name": "Superset MCP server",
 "news": [],
@@ -142,7 +142,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:08:37Z",
+"checked_at": "2026-10-11T03:23:36Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -152,7 +152,7 @@
 "sources": [
 {
 "payload_hash": "e75e695edfb600a69370b724f0a1a81dbe459a1374394b723a3f0be6c1d7da26",
-"retrieved_at": "2026-10-11T01:49:44Z",
+"retrieved_at": "2026-10-11T03:06:44Z",
 "system": "ard",
 "url": "https://superset.sh/.well-known/ai-catalog.json"
 }
@@ -170,7 +170,8 @@
 "identity": 1,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://superset.sh/.well-known/mcp/server-card.json",
 "vendor": "superset.sh"

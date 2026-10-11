@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "b90ce88971147e297c8af4c0e6f20ccf9db894c98cd9489096e77b6a1b96b5c9",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:09Z",
+"retrieved_at": "2026-10-11T03:11:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "b90ce88971147e297c8af4c0e6f20ccf9db894c98cd9489096e77b6a1b96b5c9",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:09Z",
+"retrieved_at": "2026-10-11T03:11:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "b90ce88971147e297c8af4c0e6f20ccf9db894c98cd9489096e77b6a1b96b5c9",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:09Z",
+"retrieved_at": "2026-10-11T03:11:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "b90ce88971147e297c8af4c0e6f20ccf9db894c98cd9489096e77b6a1b96b5c9",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:09Z",
+"retrieved_at": "2026-10-11T03:11:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -118,7 +118,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -126,11 +126,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "data",
-"rank": 63,
+"rank": 60,
 "recomputed": 85.7,
 "score": 85.9,
 "score_version": "sar-score-2.0",
@@ -145,7 +145,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 13.0,
-"governance": 18.0,
+"governance": 9.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -153,14 +153,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"hipaa": 0.3,
-"hitrust": 0.3,
-"soc2": 0.3
+"hipaa": 0.15,
+"hitrust": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 47,
+"rank": 12,
 "recomputed": 90.5,
-"score": 75.9,
+"score": 74.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 12,
 "seed_score": 90.5,
@@ -169,7 +169,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -191,24 +191,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Innovaccer Sara",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:44Z",
+"checked_at": "2026-10-11T03:05:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:42Z",
+"checked_at": "2026-10-11T03:05:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:44Z",
+"checked_at": "2026-10-11T03:05:46Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -218,7 +218,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:21Z",
+"checked_at": "2026-10-11T03:15:27Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -243,7 +243,7 @@
 "sources": [
 {
 "payload_hash": "f46410eab45bd9ebb27e8f4bcc178143c3551bf5bccc52b6428432f934f69f76",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://innovaccer.com/"
 }
@@ -255,7 +255,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://innovaccer.com/",
 "vendor": "Innovaccer"

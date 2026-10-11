@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "48d23f7e869443f1a1732ff4fe3ca6fa5bc07e725aad30c7a659fde6b335bbc1",
+"payload_hash": "aa7198b71dc3178bfa6405366ba5a07d8967a80f24c9e59f4d4d70a4efb5c66b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:21Z",
+"retrieved_at": "2026-10-11T03:13:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "48d23f7e869443f1a1732ff4fe3ca6fa5bc07e725aad30c7a659fde6b335bbc1",
+"payload_hash": "aa7198b71dc3178bfa6405366ba5a07d8967a80f24c9e59f4d4d70a4efb5c66b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:21Z",
+"retrieved_at": "2026-10-11T03:13:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "48d23f7e869443f1a1732ff4fe3ca6fa5bc07e725aad30c7a659fde6b335bbc1",
+"payload_hash": "aa7198b71dc3178bfa6405366ba5a07d8967a80f24c9e59f4d4d70a4efb5c66b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:21Z",
+"retrieved_at": "2026-10-11T03:13:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,7 +92,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 12.0,
-"governance": 10.0,
+"governance": 5.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -100,13 +100,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 53,
+"rank": 8,
 "recomputed": 89.3,
-"score": 74.5,
+"score": 73.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 8,
 "seed_score": 89.3,
@@ -115,7 +115,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -137,24 +137,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Tractable",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:46Z",
+"checked_at": "2026-10-11T03:06:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:41Z",
+"checked_at": "2026-10-11T03:06:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:49Z",
+"checked_at": "2026-10-11T03:06:46Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -164,7 +164,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:44Z",
+"checked_at": "2026-10-11T03:15:50Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -189,7 +189,7 @@
 "sources": [
 {
 "payload_hash": "cb4ea29fa405ee970bc481fafe814968d11dbec9f6bcedfd7c6e747c006d131c",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://tractable.ai/"
 }
@@ -201,7 +201,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://tractable.ai/",
 "vendor": "Tractable"

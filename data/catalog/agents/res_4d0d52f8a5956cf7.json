@@ -23,7 +23,7 @@
 "evidence_coverage": 0.944,
 "governance_credited": {},
 "profile": "general",
-"rank": 76,
+"rank": 62,
 "recomputed": 88.6,
 "score": 80.7,
 "score_version": "sar-score-2.0",
@@ -49,7 +49,7 @@
 "evidence_coverage": 0.9,
 "governance_credited": {},
 "profile": "security",
-"rank": 79,
+"rank": 56,
 "recomputed": 79.8,
 "score": 74.8,
 "score_version": "sar-score-2.0",
@@ -75,7 +75,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 64,
+"rank": 66,
 "recomputed": 85.2,
 "score": 85.9,
 "score_version": "sar-score-2.0",
@@ -101,7 +101,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 78,
+"rank": 77,
 "recomputed": 74.1,
 "score": 68.7,
 "score_version": "sar-score-2.0",
@@ -127,7 +127,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 75,
+"rank": 67,
 "recomputed": 74.7,
 "score": 68.7,
 "score_version": "sar-score-2.0",
@@ -153,7 +153,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 78,
+"rank": 69,
 "recomputed": 74.1,
 "score": 68.7,
 "score_version": "sar-score-2.0",
@@ -179,7 +179,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 78,
+"rank": 65,
 "recomputed": 74.1,
 "score": 68.7,
 "score_version": "sar-score-2.0",
@@ -205,7 +205,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 79,
+"rank": 67,
 "recomputed": 74.1,
 "score": 68.7,
 "score_version": "sar-score-2.0",
@@ -231,7 +231,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 77,
+"rank": 72,
 "recomputed": 74.1,
 "score": 68.7,
 "score_version": "sar-score-2.0",
@@ -257,7 +257,7 @@
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "commercial",
-"rank": 75,
+"rank": 57,
 "recomputed": 82.4,
 "score": 80.9,
 "score_version": "sar-score-2.0",
@@ -283,7 +283,7 @@
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "operations",
-"rank": 76,
+"rank": 51,
 "recomputed": 79.5,
 "score": 79.9,
 "score_version": "sar-score-2.0",
@@ -309,7 +309,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 58,
+"rank": 28,
 "recomputed": 94.5,
 "score": 87.0,
 "score_version": "sar-score-2.0",
@@ -324,7 +324,7 @@
 "external_ids": {
 "github": "crewAIInc/crewAI"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -346,7 +346,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "MIT",
 "merged_ids": [
 "res_bcb8d1284f57fc92"
@@ -379,17 +379,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:54Z",
+"checked_at": "2026-10-11T03:05:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:53Z",
+"checked_at": "2026-10-11T03:04:59Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:55Z",
+"checked_at": "2026-10-11T03:05:01Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -413,11 +413,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-10-27T03:26:59Z",
-"github_forks": 8684,
+"github_forks": 8685,
 "github_language": "Python",
 "github_open_issues": 623,
 "github_pushed_at": "2026-10-10T23:37:22Z",
-"github_stars": 59546,
+"github_stars": 59545,
 "github_topic": "ai-agents",
 "homepage": "https://crewai.com",
 "observed_popularity": "~50k+",
@@ -433,13 +433,13 @@
 "sources": [
 {
 "payload_hash": "119607801fe7263273ffea4762c7b5de21f86af9301727a015fafe20f084d02b",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/crewAIInc/crewAI"
 },
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/crewAIInc/crewAI"
 }
@@ -457,7 +457,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://github.com/crewAIInc/crewAI",
 "vendor": "CrewAI"

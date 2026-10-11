@@ -71,7 +71,7 @@
 "external_ids": {
 "mcp_registry": "ae.propick/propick"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,19 +93,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": null,
 "name": "Propick Integration MCP",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:27Z",
+"checked_at": "2026-10-11T03:06:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:24Z",
+"checked_at": "2026-10-11T03:06:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -128,7 +128,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:58Z",
+"checked_at": "2026-10-11T03:16:03Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -146,7 +146,7 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ae.propick/propick"
 }
@@ -158,7 +158,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://propick.ae",
 "vendor": "propick.ae"

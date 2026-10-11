@@ -29,7 +29,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ae3b1f80c9ef296025f103651656979387bd684211a7bdfd3a58ec291515bfcf",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:02Z",
+"retrieved_at": "2026-10-11T03:11:01Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -55,7 +55,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "84542096979a0ad46e76531b286f05605440a74c04e1638139239bdfe0b5e109",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:02Z",
+"retrieved_at": "2026-10-11T03:11:01Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -81,7 +81,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ae3b1f80c9ef296025f103651656979387bd684211a7bdfd3a58ec291515bfcf",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:02Z",
+"retrieved_at": "2026-10-11T03:11:01Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -107,7 +107,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "84542096979a0ad46e76531b286f05605440a74c04e1638139239bdfe0b5e109",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:02Z",
+"retrieved_at": "2026-10-11T03:11:01Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -133,7 +133,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "84542096979a0ad46e76531b286f05605440a74c04e1638139239bdfe0b5e109",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:02Z",
+"retrieved_at": "2026-10-11T03:11:01Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -154,7 +154,7 @@
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 16.0,
 "trust": 19.0
 },
@@ -162,7 +162,7 @@
 "confidence": 0.713,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -177,7 +177,7 @@
 "external_ids": {
 "mcp_registry": "ai.chipp/alchemist-cloud-tickets"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -199,19 +199,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "Alchemist Cloud Tickets",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:00Z",
+"checked_at": "2026-10-11T03:05:07Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:43Z",
+"checked_at": "2026-10-11T03:04:50Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -234,7 +234,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:04:07Z",
+"checked_at": "2026-10-11T03:19:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -251,8 +251,8 @@
 "slug": "chipp-ai-alchemist-cloud-tickets",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.chipp/alchemist-cloud-tickets"
 }
@@ -264,7 +264,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://chipp.ai/docs/guides/alchemist-mcp-server",
 "vendor": "chipp.ai"

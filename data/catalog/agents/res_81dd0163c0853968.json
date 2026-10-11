@@ -28,7 +28,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "572a421af4a101ad87db5826373a21a6238a26ba430d67899716d01a51d5c25d",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:58Z",
+"retrieved_at": "2026-10-11T03:10:57Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -70,7 +70,7 @@
 "external_ids": {
 "mcp_registry": "ai.caulo/caulo"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,19 +92,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "Caulo",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:41Z",
+"checked_at": "2026-10-11T03:04:48Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:39Z",
+"checked_at": "2026-10-11T03:04:47Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -137,8 +137,8 @@
 "slug": "caulo-ai-caulo",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.caulo/caulo"
 }
@@ -150,7 +150,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://caulo.ai/docs/mcp",
 "vendor": "caulo.ai"

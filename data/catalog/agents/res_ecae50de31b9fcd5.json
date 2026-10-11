@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "cb3216334390d6b05750a25ca2f83de97f7a2b302de31662b8dc88517944aef4",
+"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:11Z",
+"retrieved_at": "2026-10-11T03:10:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "e18fb6033e5ce4cd1cfa6b410b11beb9d7f9057f25578ee1e6f89804d9ce2de9",
+"payload_hash": "617252dbab3b887b2bd7fb64734b5a31b5f43fdec3a648e4dd6cf8ce2b2c86a8",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:11Z",
+"retrieved_at": "2026-10-11T03:10:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -78,9 +78,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "cb3216334390d6b05750a25ca2f83de97f7a2b302de31662b8dc88517944aef4",
+"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:11Z",
+"retrieved_at": "2026-10-11T03:10:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -104,9 +104,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "cb3216334390d6b05750a25ca2f83de97f7a2b302de31662b8dc88517944aef4",
+"payload_hash": "9b58606459f405e9622b81446fa71eebfe7d0b74fa5fa0ae742cd04b87adb7c4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:11Z",
+"retrieved_at": "2026-10-11T03:10:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -127,7 +127,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 9.6,
-"governance": 12.0,
+"governance": 6.0,
 "health": 16.0,
 "trust": 21.0
 },
@@ -135,8 +135,8 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -151,7 +151,7 @@
 "external_ids": {
 "mcp_registry": "ai.augmentev/paseo"
 },
-"first_seen": "2026-10-11T01:36:24Z",
+"first_seen": "2026-10-11T02:55:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -173,7 +173,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:24Z",
+"last_seen": "2026-10-11T02:55:13Z",
 "license": null,
 "name": "ai.augmentev/paseo",
 "news": [],
@@ -184,7 +184,7 @@
 "creditKey"
 ],
 "card_url": "https://augmentev.com/.well-known/agent-card.json",
-"checked_at": "2026-10-11T01:47:04Z",
+"checked_at": "2026-10-11T03:04:08Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -199,7 +199,7 @@
 "version": "2026-10-08"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:03Z",
+"checked_at": "2026-10-11T03:04:08Z",
 "entries": 3,
 "errors": [
 "entries[0]: identifier is not a urn:air:<publisher>:<namespace>:<name> URN: urn:ai:augmentev.com:paseo:khanoor",
@@ -231,7 +231,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:02:25Z",
+"checked_at": "2026-10-11T03:17:37Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -249,7 +249,7 @@
 "sources": [
 {
 "payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
-"retrieved_at": "2026-10-11T01:36:24Z",
+"retrieved_at": "2026-10-11T02:55:13Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.augmentev/paseo"
 }
@@ -261,7 +261,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://augmentev.com",
 "vendor": "augmentev.ai"

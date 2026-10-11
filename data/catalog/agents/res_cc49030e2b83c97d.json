@@ -31,7 +31,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3bec2b12b8356bc8a254109e68298a31050f19add5a00e111687d1491fbc7370",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:03Z",
+"retrieved_at": "2026-10-11T03:10:07Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -96,7 +96,7 @@
 "external_ids": {
 "mcp_registry": "ai.askmiles/catalog"
 },
-"first_seen": "2026-10-11T01:36:24Z",
+"first_seen": "2026-10-11T02:55:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,19 +118,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:24Z",
+"last_seen": "2026-10-11T02:55:13Z",
 "license": null,
 "name": "ai.askmiles/catalog",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:57Z",
+"checked_at": "2026-10-11T03:04:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:56Z",
+"checked_at": "2026-10-11T03:04:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -153,7 +153,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:02:10Z",
+"checked_at": "2026-10-11T03:17:25Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -171,7 +171,7 @@
 "sources": [
 {
 "payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
-"retrieved_at": "2026-10-11T01:36:24Z",
+"retrieved_at": "2026-10-11T02:55:13Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.askmiles/catalog"
 }
@@ -183,7 +183,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://askmiles.ai",
 "vendor": "askmiles.ai"

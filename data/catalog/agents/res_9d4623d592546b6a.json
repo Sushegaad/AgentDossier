@@ -71,7 +71,7 @@
 "external_ids": {
 "mcp_registry": "ai.agenticshelf/puroair"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,19 +93,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": null,
 "name": "PuroAir",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:30Z",
+"checked_at": "2026-10-11T03:05:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:29Z",
+"checked_at": "2026-10-11T03:05:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -139,7 +139,7 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agenticshelf/puroair"
 }
@@ -151,7 +151,8 @@
 "identity": 4,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://getpuroair.com",
 "vendor": "agenticshelf.ai"

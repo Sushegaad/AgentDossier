@@ -50,9 +50,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "18371181da313b54eff70107408e223ea356a8b950b4abfeaa9cb73c74017944",
+"payload_hash": "a380557a946d31bd7d77178628cb3a8fd9e1dda95e395d13863634ec751123cc",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:29Z",
+"retrieved_at": "2026-10-11T03:13:13Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -191,7 +191,7 @@
 "external_ids": {
 "ard": "urn:air:worldmonitor.app:mcp:worldmonitor"
 },
-"first_seen": "2026-10-11T01:50:01Z",
+"first_seen": "2026-10-11T03:06:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -213,7 +213,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:50:01Z",
+"last_seen": "2026-10-11T03:06:54Z",
 "license": null,
 "name": "World Monitor MCP server",
 "news": [],
@@ -248,7 +248,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:08:51Z",
+"checked_at": "2026-10-11T03:23:48Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -258,7 +258,7 @@
 "sources": [
 {
 "payload_hash": "14a0e03b9224298ab9444ebfa033cc6f5ff87ccfb894d960df319060f2818bc9",
-"retrieved_at": "2026-10-11T01:50:01Z",
+"retrieved_at": "2026-10-11T03:06:54Z",
 "system": "ard",
 "url": "https://worldmonitor.app/.well-known/ai-catalog.json"
 }
@@ -277,7 +277,8 @@
 "identity": 1,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://worldmonitor.app/.well-known/mcp/server-card.json",
 "vendor": "worldmonitor.app"

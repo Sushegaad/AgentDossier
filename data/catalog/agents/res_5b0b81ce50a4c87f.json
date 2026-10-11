@@ -34,7 +34,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d2eeb0f75d8c7b723db719db2269f487fd88616feb9bdf58c7e3a961d6ecfb7a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:49Z",
+"retrieved_at": "2026-10-11T03:11:40Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -60,7 +60,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d2eeb0f75d8c7b723db719db2269f487fd88616feb9bdf58c7e3a961d6ecfb7a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:49Z",
+"retrieved_at": "2026-10-11T03:11:40Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -86,7 +86,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d2eeb0f75d8c7b723db719db2269f487fd88616feb9bdf58c7e3a961d6ecfb7a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:49Z",
+"retrieved_at": "2026-10-11T03:11:40Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -112,7 +112,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d2eeb0f75d8c7b723db719db2269f487fd88616feb9bdf58c7e3a961d6ecfb7a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:49Z",
+"retrieved_at": "2026-10-11T03:11:40Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -133,7 +133,7 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.6,
-"governance": 15.0,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -141,12 +141,12 @@
 "confidence": 0.34,
 "evidence_coverage": 0.722,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "general",
 "rank": null,
-"score": 45.5,
+"score": 45.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -159,7 +159,7 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.6,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -167,12 +167,12 @@
 "confidence": 0.34,
 "evidence_coverage": 0.75,
 "governance_credited": {
-"gdpr": 0.3,
-"soc2": 0.3
+"gdpr": 0.15,
+"soc2": 0.15
 },
 "profile": "commercial",
 "rank": null,
-"score": 44.0,
+"score": 43.7,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -185,7 +185,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.6,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -193,8 +193,8 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -210,7 +210,7 @@
 "github": "Adgrowofficial/getlead-mcp",
 "mcp_registry": "ad.getle/leads"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -232,19 +232,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": null,
 "name": "Getlead",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:30Z",
+"checked_at": "2026-10-11T03:05:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:28Z",
+"checked_at": "2026-10-11T03:05:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -278,7 +278,7 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ad.getle/leads"
 }
@@ -290,7 +290,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://getle.ad/mcp",
 "vendor": "getle.ad"

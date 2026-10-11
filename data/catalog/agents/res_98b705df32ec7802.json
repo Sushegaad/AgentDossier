@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "aa467c09764dac3a79e7ce2e46297931d4694fd1156542e6d5d143b87f9334eb",
+"payload_hash": "82dfa60e73994d333b4927bfbc6fad700286bfd9f26286c5f80d12ddc5dc0e2a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:07Z",
+"retrieved_at": "2026-10-11T03:11:57Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "aa467c09764dac3a79e7ce2e46297931d4694fd1156542e6d5d143b87f9334eb",
+"payload_hash": "82dfa60e73994d333b4927bfbc6fad700286bfd9f26286c5f80d12ddc5dc0e2a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:07Z",
+"retrieved_at": "2026-10-11T03:11:57Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -69,9 +69,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "aa467c09764dac3a79e7ce2e46297931d4694fd1156542e6d5d143b87f9334eb",
+"payload_hash": "82dfa60e73994d333b4927bfbc6fad700286bfd9f26286c5f80d12ddc5dc0e2a",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:07Z",
+"retrieved_at": "2026-10-11T03:11:57Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,7 +92,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 15.0,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -100,13 +100,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "general",
-"rank": 20,
+"rank": 21,
 "recomputed": 92.6,
-"score": 87.4,
+"score": 86.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 21,
 "seed_score": 92.6,
@@ -119,7 +119,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -127,13 +127,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "security",
-"rank": 32,
+"rank": 43,
 "recomputed": 80.8,
-"score": 83.2,
+"score": 82.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 43,
 "seed_score": 80.8,
@@ -146,7 +146,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -154,11 +154,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "data",
-"rank": 14,
+"rank": 56,
 "recomputed": 86.0,
 "score": 92.5,
 "score_version": "sar-score-2.0",
@@ -173,7 +173,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -181,13 +181,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 28,
+"rank": 65,
 "recomputed": 75.1,
-"score": 79.1,
+"score": 78.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 65,
 "seed_score": 75.1,
@@ -200,7 +200,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -208,12 +208,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3
+"iso27001": 0.15
 },
 "profile": "regulated",
-"rank": 45,
+"rank": 64,
 "recomputed": 75.1,
-"score": 78.2,
+"score": 77.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 64,
 "seed_score": 75.1,
@@ -226,7 +226,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -234,12 +234,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 36,
+"rank": 57,
 "recomputed": 75.1,
-"score": 78.2,
+"score": 77.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 57,
 "seed_score": 75.1,
@@ -252,7 +252,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 10.0,
+"governance": 5.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -260,13 +260,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 31,
+"rank": 53,
 "recomputed": 75.1,
-"score": 78.8,
+"score": 78.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 53,
 "seed_score": 75.1,
@@ -279,7 +279,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -287,13 +287,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 30,
+"rank": 54,
 "recomputed": 75.1,
-"score": 79.1,
+"score": 78.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 54,
 "seed_score": 75.1,
@@ -306,7 +306,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -314,13 +314,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 30,
+"rank": 60,
 "recomputed": 75.1,
-"score": 79.1,
+"score": 78.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 60,
 "seed_score": 75.1,
@@ -333,7 +333,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -341,13 +341,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"gdpr": 0.3,
-"soc2": 0.3
+"gdpr": 0.15,
+"soc2": 0.15
 },
 "profile": "commercial",
-"rank": 22,
+"rank": 2,
 "recomputed": 93.0,
-"score": 88.1,
+"score": 87.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 2,
 "seed_score": 93.0,
@@ -360,7 +360,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 15.0,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -368,13 +368,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "operations",
-"rank": 23,
+"rank": 43,
 "recomputed": 80.3,
-"score": 88.6,
+"score": 88.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 43,
 "seed_score": 80.3,
@@ -387,7 +387,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 14.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -395,11 +395,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "technology",
-"rank": 14,
+"rank": 46,
 "recomputed": 93.2,
 "score": 92.2,
 "score_version": "sar-score-2.0",
@@ -410,7 +410,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -432,24 +432,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "HubSpot Breeze Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:43Z",
+"checked_at": "2026-10-11T03:05:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:40Z",
+"checked_at": "2026-10-11T03:05:42Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:45Z",
+"checked_at": "2026-10-11T03:05:47Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -459,7 +459,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:57:54Z",
+"checked_at": "2026-10-11T03:13:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -484,7 +484,7 @@
 "sources": [
 {
 "payload_hash": "6c9d1e49aa1cd2ee40a43a05a070a3e0a108650835935b06675a5638979d85dd",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.hubspot.com/products/artificial-intelligence"
 }
@@ -496,7 +496,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://www.hubspot.com/products/artificial-intelligence",
 "vendor": "HubSpot"

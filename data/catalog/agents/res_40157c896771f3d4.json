@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 22.51,
+"adoption": 22.52,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -47,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 22.51,
+"adoption": 22.52,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "Gentleman-Programming/gentle-ai"
 },
-"first_seen": "2026-10-11T01:38:56Z",
+"first_seen": "2026-10-11T02:56:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:56Z",
+"last_seen": "2026-10-11T02:56:44Z",
 "license": "MIT",
 "name": "gentle-ai",
 "news": [
@@ -124,12 +124,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:28Z",
+"checked_at": "2026-10-11T03:05:32Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:27Z",
+"checked_at": "2026-10-11T03:05:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -137,7 +137,7 @@
 "evidence_url": "https://gentle-ai.gentlemanprogramming.com/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:48:29Z",
+"checked_at": "2026-10-11T03:05:32Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -149,7 +149,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:15Z",
+"checked_at": "2026-10-11T03:22:15Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -161,15 +161,15 @@
 "github_language": "Go",
 "github_open_issues": 936,
 "github_pushed_at": "2026-10-10T17:08:38Z",
-"github_stars": 7665,
+"github_stars": 7667,
 "github_topic": "ai-agents",
 "homepage": "https://gentle-ai.gentlemanprogramming.com/"
 },
 "slug": "gentleman-programming-gentle-ai",
 "sources": [
 {
-"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
-"retrieved_at": "2026-10-11T01:38:56Z",
+"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
+"retrieved_at": "2026-10-11T02:56:44Z",
 "system": "github",
 "url": "https://github.com/Gentleman-Programming/gentle-ai"
 }
@@ -199,7 +199,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://gentle-ai.gentlemanprogramming.com/",
 "vendor": "Gentleman-Programming"

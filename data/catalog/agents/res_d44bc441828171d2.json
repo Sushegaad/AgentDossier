@@ -28,7 +28,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "0331d45430be519de8502d53e3901647caac3d07bf6129607ca3f24e9e66c0f3",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:38Z",
+"retrieved_at": "2026-10-11T03:10:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -70,7 +70,7 @@
 "external_ids": {
 "mcp_registry": "ai.bodenrichtwert/mcp"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,19 +92,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "bodenrichtwert.ai — Verlässliche Bodenrichtwerte für Mensch und KI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:26Z",
+"checked_at": "2026-10-11T03:04:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:25Z",
+"checked_at": "2026-10-11T03:04:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -127,7 +127,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:31Z",
+"checked_at": "2026-10-11T03:18:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -144,8 +144,8 @@
 "slug": "bodenrichtwert-ai-bodenrichtwert-ai-verl-ssliche-bodenrichtwerte-f-r-mensch-und-",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bodenrichtwert/mcp"
 }
@@ -157,7 +157,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://bodenrichtwert.ai",
 "vendor": "bodenrichtwert.ai"

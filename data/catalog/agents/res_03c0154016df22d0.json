@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:56Z",
+"retrieved_at": "2026-10-11T03:08:20Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -54,7 +54,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 95,
+"rank": 92,
 "recomputed": 83.2,
 "score": 78.4,
 "score_version": "sar-score-2.0",
@@ -67,7 +67,7 @@
 "external_ids": {
 "github": "QwenLM/Qwen-Agent"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -102,7 +102,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Apache-2.0",
 "name": "Qwen-Agent",
 "news": [],
@@ -126,7 +126,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:41Z",
+"checked_at": "2026-10-11T03:15:47Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -164,7 +164,7 @@
 "sources": [
 {
 "payload_hash": "a2d4143d51fae9a74890ecd59c0aa26efbc2720c8c52e9b330f3ad9c472920c1",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/QwenLM/Qwen-Agent"
 }
@@ -176,7 +176,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://github.com/QwenLM/Qwen-Agent",
 "vendor": "Alibaba / Qwen"

@@ -107,7 +107,7 @@
 "external_ids": {
 "ard": "urn:air:justidea.agency:server:website"
 },
-"first_seen": "2026-10-11T01:49:01Z",
+"first_seen": "2026-10-11T03:06:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -129,7 +129,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:49:01Z",
+"last_seen": "2026-10-11T03:06:11Z",
 "license": null,
 "name": "JustIdea Agency website (MCP)",
 "news": [],
@@ -163,7 +163,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:08:30Z",
+"checked_at": "2026-10-11T03:23:29Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -173,7 +173,7 @@
 "sources": [
 {
 "payload_hash": "45ee744f05a7bc15f295edf7b5c4d4ba809c4a3d79b88eb1e36bde54c784dfc5",
-"retrieved_at": "2026-10-11T01:49:01Z",
+"retrieved_at": "2026-10-11T03:06:11Z",
 "system": "ard",
 "url": "https://justidea.agency/.well-known/ard.json"
 }
@@ -192,7 +192,8 @@
 "identity": 1,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://justidea.agency/.well-known/mcp/server-card.json",
 "vendor": "justidea.agency"

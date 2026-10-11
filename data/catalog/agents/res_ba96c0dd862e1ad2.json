@@ -22,7 +22,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 95,
+"rank": 25,
 "recomputed": 86.8,
 "score": 60.7,
 "score_version": "sar-score-2.0",
@@ -48,7 +48,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 94,
+"rank": 17,
 "recomputed": 86.8,
 "score": 60.7,
 "score_version": "sar-score-2.0",
@@ -74,7 +74,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 94,
+"rank": 11,
 "recomputed": 86.8,
 "score": 60.7,
 "score_version": "sar-score-2.0",
@@ -100,7 +100,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 94,
+"rank": 23,
 "recomputed": 87.6,
 "score": 60.7,
 "score_version": "sar-score-2.0",
@@ -113,7 +113,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -135,24 +135,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "KrypC Comply",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:11Z",
+"checked_at": "2026-10-11T03:04:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:10Z",
+"checked_at": "2026-10-11T03:04:16Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:11Z",
+"checked_at": "2026-10-11T03:04:17Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -162,7 +162,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:13Z",
+"checked_at": "2026-10-11T03:15:19Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -187,7 +187,7 @@
 "sources": [
 {
 "payload_hash": "f80cc71dbb3bc2a5511e47c8bcdb2b56d47fb0d1118468e3130cf136ce3cf5cd",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-y6nmhwwpc4z4e"
 }
@@ -199,7 +199,8 @@
 "identity": 4,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://aws.amazon.com/marketplace/pp/prodview-y6nmhwwpc4z4e",
 "vendor": "KrypC"

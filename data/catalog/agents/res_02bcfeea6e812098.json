@@ -15,7 +15,7 @@
 "external_ids": {
 "ard": "urn:air:events.aero:mcp:events"
 },
-"first_seen": "2026-10-11T01:49:01Z",
+"first_seen": "2026-10-11T03:06:11Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -37,7 +37,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:49:01Z",
+"last_seen": "2026-10-11T03:06:11Z",
 "license": null,
 "name": "Events.Aero event discovery",
 "news": [],
@@ -69,7 +69,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:08:29Z",
+"checked_at": "2026-10-11T03:23:28Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -79,7 +79,7 @@
 "sources": [
 {
 "payload_hash": "d3ba96142b95f5f8ceb9a1c9c7a3922fd14b3cf28ae76df26b51bb5b75fff477",
-"retrieved_at": "2026-10-11T01:49:01Z",
+"retrieved_at": "2026-10-11T03:06:11Z",
 "system": "ard",
 "url": "https://events.aero/.well-known/ai-catalog.json"
 }
@@ -91,7 +91,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://events.aero/mcp/events/server-card",
 "vendor": "events.aero"

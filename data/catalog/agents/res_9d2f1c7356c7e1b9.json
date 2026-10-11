@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "229a35884c061acdb07b6ba0781db1511ec93299a7419a826b5176305c77e443",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:30Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a8e273a063e64e5c0df014a9d930a6ce3de5f568b12aca4ffebcccf60f258eba",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:30Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a8e273a063e64e5c0df014a9d930a6ce3de5f568b12aca4ffebcccf60f258eba",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:30Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a8e273a063e64e5c0df014a9d930a6ce3de5f568b12aca4ffebcccf60f258eba",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:30Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -123,7 +123,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a8e273a063e64e5c0df014a9d930a6ce3de5f568b12aca4ffebcccf60f258eba",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:30Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -149,7 +149,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a8e273a063e64e5c0df014a9d930a6ce3de5f568b12aca4ffebcccf60f258eba",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:30Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -170,7 +170,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 15.0,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -178,13 +178,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15
 },
 "profile": "general",
-"rank": 45,
+"rank": 58,
 "recomputed": 89.1,
-"score": 83.8,
+"score": 83.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 58,
 "seed_score": 89.1,
@@ -197,7 +197,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -205,13 +205,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15
 },
 "profile": "security",
-"rank": 49,
+"rank": 79,
 "recomputed": 78.2,
-"score": 80.7,
+"score": 80.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 79,
 "seed_score": 78.2,
@@ -224,7 +224,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -232,11 +232,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15
 },
 "profile": "data",
-"rank": 37,
+"rank": 86,
 "recomputed": 83.6,
 "score": 89.7,
 "score_version": "sar-score-2.0",
@@ -251,7 +251,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 18.0,
+"governance": 9.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -259,14 +259,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3,
-"pci_dss": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15,
+"pci_dss": 0.15
 },
 "profile": "regulated",
-"rank": 37,
+"rank": 12,
 "recomputed": 91.0,
-"score": 78.2,
+"score": 76.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 12,
 "seed_score": 91.0,
@@ -279,7 +279,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -287,13 +287,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15
 },
 "profile": "regulated",
-"rank": 51,
+"rank": 80,
 "recomputed": 73.8,
-"score": 77.3,
+"score": 76.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 80,
 "seed_score": 73.8,
@@ -306,7 +306,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -314,13 +314,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"hipaa": 0.3,
-"iso42001": 0.3
+"hipaa": 0.15,
+"iso42001": 0.15
 },
 "profile": "regulated",
-"rank": 42,
+"rank": 85,
 "recomputed": 73.2,
-"score": 77.3,
+"score": 76.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 85,
 "seed_score": 73.2,
@@ -333,7 +333,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 20.0,
+"governance": 10.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -341,15 +341,15 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"hipaa": 0.3,
-"iso27001": 0.3,
-"iso42001": 0.3,
-"pci_dss": 0.3
+"hipaa": 0.15,
+"iso27001": 0.15,
+"iso42001": 0.15,
+"pci_dss": 0.15
 },
 "profile": "regulated",
-"rank": 35,
+"rank": 82,
 "recomputed": 73.2,
-"score": 78.5,
+"score": 77.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 82,
 "seed_score": 73.2,
@@ -362,7 +362,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -370,13 +370,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15
 },
 "profile": "regulated",
-"rank": 42,
+"rank": 84,
 "recomputed": 73.2,
-"score": 77.3,
+"score": 76.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 84,
 "seed_score": 73.2,
@@ -389,7 +389,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -397,13 +397,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15
 },
 "profile": "regulated",
-"rank": 42,
+"rank": 87,
 "recomputed": 73.2,
-"score": 77.3,
+"score": 76.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 87,
 "seed_score": 73.2,
@@ -416,7 +416,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -424,13 +424,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"gdpr": 0.3,
-"iso42001": 0.3
+"gdpr": 0.15,
+"iso42001": 0.15
 },
 "profile": "commercial",
-"rank": 42,
+"rank": 82,
 "recomputed": 80.4,
-"score": 85.3,
+"score": 85.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 82,
 "seed_score": 80.4,
@@ -443,7 +443,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 15.0,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -451,13 +451,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15
 },
 "profile": "operations",
-"rank": 36,
+"rank": 70,
 "recomputed": 78.2,
-"score": 86.5,
+"score": 86.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 70,
 "seed_score": 78.2,
@@ -470,7 +470,7 @@
 "docs": 9.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 18.0,
+"governance": 9.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -478,11 +478,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"iso42001": 0.3
+"iso27001": 0.15,
+"iso42001": 0.15
 },
 "profile": "technology",
-"rank": 37,
+"rank": 64,
 "recomputed": 91.5,
 "score": 88.7,
 "score_version": "sar-score-2.0",
@@ -493,7 +493,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -515,24 +515,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Workato Agentic / AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:54Z",
+"checked_at": "2026-10-11T03:06:50Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:52Z",
+"checked_at": "2026-10-11T03:06:49Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:54Z",
+"checked_at": "2026-10-11T03:06:50Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -542,7 +542,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:28Z",
+"checked_at": "2026-10-11T03:14:35Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -567,7 +567,7 @@
 "sources": [
 {
 "payload_hash": "735d180abab2cce903074d6c50e7b66337fd488ccee5e30a96c26dc81dc3046f",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.workato.com/"
 }
@@ -579,7 +579,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://www.workato.com/",
 "vendor": "Workato"

@@ -47,7 +47,7 @@
 "external_ids": {
 "github": "codewhale-hq/Codewhale"
 },
-"first_seen": "2026-10-11T01:41:37Z",
+"first_seen": "2026-10-11T02:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -130,7 +130,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:41:37Z",
+"last_seen": "2026-10-11T02:59:12Z",
 "license": "MIT",
 "name": "Codewhale",
 "news": [
@@ -160,12 +160,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:51Z",
+"checked_at": "2026-10-11T03:04:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:47Z",
+"checked_at": "2026-10-11T03:04:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -173,7 +173,7 @@
 "evidence_url": "https://codewhale.net/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:47:52Z",
+"checked_at": "2026-10-11T03:04:58Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -185,7 +185,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:05:12Z",
+"checked_at": "2026-10-11T03:20:18Z",
 "cves": 13,
 "source": "nvd",
 "tier": 1
@@ -197,15 +197,15 @@
 "github_language": "Rust",
 "github_open_issues": 215,
 "github_pushed_at": "2026-10-10T23:54:27Z",
-"github_stars": 41079,
+"github_stars": 41080,
 "github_topic": "ai-agent",
 "homepage": "https://codewhale.net/"
 },
 "slug": "codewhale-hq-codewhale",
 "sources": [
 {
-"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
-"retrieved_at": "2026-10-11T01:41:37Z",
+"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
+"retrieved_at": "2026-10-11T02:59:12Z",
 "system": "github",
 "url": "https://github.com/codewhale-hq/Codewhale"
 }
@@ -232,7 +232,8 @@
 "identity": 2,
 "issues": 3,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://codewhale.net/",
 "vendor": "codewhale-hq"

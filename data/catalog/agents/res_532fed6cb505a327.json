@@ -31,7 +31,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "7fc4e66a619e0b9251accf3cce198215d3619afb8384fe65d5ca0d7a394900fa",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:56Z",
+"retrieved_at": "2026-10-11T03:12:42Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,7 +57,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:56Z",
+"retrieved_at": "2026-10-11T03:12:42Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,7 +83,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:56Z",
+"retrieved_at": "2026-10-11T03:12:42Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -109,7 +109,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:56Z",
+"retrieved_at": "2026-10-11T03:12:42Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -130,7 +130,7 @@
 "docs": 10.0,
 "domain_fit": 34.0,
 "ecosystem": 4.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": null,
 "trust": 20.0
 },
@@ -138,7 +138,7 @@
 "confidence": 0.34,
 "evidence_coverage": 0.5,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -154,7 +154,7 @@
 "external_ids": {
 "ard": "urn:air:pydantic.dev:catalog:apis"
 },
-"first_seen": "2026-10-11T01:49:30Z",
+"first_seen": "2026-10-11T03:06:32Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -176,7 +176,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:49:30Z",
+"last_seen": "2026-10-11T03:06:32Z",
 "license": null,
 "name": "Pydantic API Catalog",
 "news": [],
@@ -206,7 +206,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:08:36Z",
+"checked_at": "2026-10-11T03:23:35Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -216,7 +216,7 @@
 "sources": [
 {
 "payload_hash": "53003a33acff2b97b3c751aff8c35b1cde02985769cfc391c278c878268512be",
-"retrieved_at": "2026-10-11T01:49:30Z",
+"retrieved_at": "2026-10-11T03:06:32Z",
 "system": "ard",
 "url": "https://pydantic.dev/.well-known/ard.json"
 }
@@ -228,7 +228,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://pydantic.dev/.well-known/api-catalog",
 "vendor": "pydantic.dev"

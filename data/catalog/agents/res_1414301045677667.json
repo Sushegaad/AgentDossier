@@ -22,7 +22,7 @@
 "evidence_coverage": 0.944,
 "governance_credited": {},
 "profile": "general",
-"rank": 70,
+"rank": 68,
 "recomputed": 88.1,
 "score": 81.2,
 "score_version": "sar-score-2.0",
@@ -48,7 +48,7 @@
 "evidence_coverage": 0.9,
 "governance_credited": {},
 "profile": "security",
-"rank": 69,
+"rank": 55,
 "recomputed": 79.9,
 "score": 76.0,
 "score_version": "sar-score-2.0",
@@ -74,7 +74,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 60,
+"rank": 69,
 "recomputed": 84.9,
 "score": 86.0,
 "score_version": "sar-score-2.0",
@@ -126,7 +126,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 71,
+"rank": 72,
 "recomputed": 74.4,
 "score": 70.1,
 "score_version": "sar-score-2.0",
@@ -152,7 +152,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 74,
+"rank": 6,
 "recomputed": 93.0,
 "score": 70.1,
 "score_version": "sar-score-2.0",
@@ -178,7 +178,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 74,
+"rank": 63,
 "recomputed": 74.4,
 "score": 70.1,
 "score_version": "sar-score-2.0",
@@ -204,7 +204,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 75,
+"rank": 64,
 "recomputed": 74.4,
 "score": 70.1,
 "score_version": "sar-score-2.0",
@@ -230,7 +230,7 @@
 "evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 73,
+"rank": 69,
 "recomputed": 74.4,
 "score": 70.1,
 "score_version": "sar-score-2.0",
@@ -256,7 +256,7 @@
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "commercial",
-"rank": 71,
+"rank": 68,
 "recomputed": 81.7,
 "score": 81.0,
 "score_version": "sar-score-2.0",
@@ -282,7 +282,7 @@
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "operations",
-"rank": 73,
+"rank": 58,
 "recomputed": 79.0,
 "score": 80.1,
 "score_version": "sar-score-2.0",
@@ -308,7 +308,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 62,
+"rank": 65,
 "recomputed": 91.5,
 "score": 86.9,
 "score_version": "sar-score-2.0",
@@ -321,7 +321,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -343,24 +343,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Abridge",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:14Z",
+"checked_at": "2026-10-11T03:03:23Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:13Z",
+"checked_at": "2026-10-11T03:03:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:46:15Z",
+"checked_at": "2026-10-11T03:03:24Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -388,7 +388,7 @@
 "sources": [
 {
 "payload_hash": "e1ca6c1eb22871c87e6520612945b64544379bcf788ceef3a68d8e4cb7ea55c1",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.abridge.com/"
 }
@@ -400,7 +400,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://www.abridge.com/",
 "vendor": "Abridge"

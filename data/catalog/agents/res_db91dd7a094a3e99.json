@@ -99,7 +99,7 @@
 "external_ids": {
 "github": "kestra-io/kestra"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -121,7 +121,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "Apache-2.0",
 "name": "kestra",
 "news": [
@@ -151,17 +151,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:33Z",
+"checked_at": "2026-10-11T03:05:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:31Z",
+"checked_at": "2026-10-11T03:05:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:34Z",
+"checked_at": "2026-10-11T03:05:37Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -174,7 +174,7 @@
 "github_created_at": "2019-08-24T13:56:15Z",
 "github_forks": 3322,
 "github_language": "Java",
-"github_open_issues": 849,
+"github_open_issues": 850,
 "github_pushed_at": "2026-10-10T22:58:34Z",
 "github_stars": 29484,
 "github_topic": "ai-agents",
@@ -183,8 +183,8 @@
 "slug": "kestra-io-kestra",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/kestra-io/kestra"
 }
@@ -217,7 +217,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://go.kestra.io/home",
 "vendor": "kestra-io"

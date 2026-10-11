@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "EvoMap/evolver"
 },
-"first_seen": "2026-10-11T01:41:37Z",
+"first_seen": "2026-10-11T02:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:45:21Z",
+"last_seen": "2026-10-11T03:02:41Z",
 "license": "GPL-3.0",
 "merged_ids": [
 "res_e8afb83db046d96f"
@@ -130,14 +130,14 @@
 "evidence_url": "https://evomap.ai",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:48:22Z",
+"checked_at": "2026-10-11T03:05:25Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:21Z",
+"checked_at": "2026-10-11T03:05:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -145,7 +145,7 @@
 "evidence_url": "https://evomap.ai",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:48:22Z",
+"checked_at": "2026-10-11T03:05:26Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -169,8 +169,8 @@
 "slug": "evomap-evolver",
 "sources": [
 {
-"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
-"retrieved_at": "2026-10-11T01:41:37Z",
+"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
+"retrieved_at": "2026-10-11T02:59:12Z",
 "system": "github",
 "url": "https://github.com/EvoMap/evolver"
 }
@@ -203,7 +203,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://evomap.ai",
 "vendor": "EvoMap"

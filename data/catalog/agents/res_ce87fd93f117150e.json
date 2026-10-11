@@ -34,7 +34,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "c24d98fafdc9eb64bf86985943e8b08fede8751d483b75ee6a7a124dd62043e1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:31Z",
+"retrieved_at": "2026-10-11T03:09:37Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -60,7 +60,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "c24d98fafdc9eb64bf86985943e8b08fede8751d483b75ee6a7a124dd62043e1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:31Z",
+"retrieved_at": "2026-10-11T03:09:37Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -86,7 +86,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a655f580d643384eb95c603cf3884167dcddf761c11a7e9033685d77083b4010",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:31Z",
+"retrieved_at": "2026-10-11T03:09:37Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -112,7 +112,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "a655f580d643384eb95c603cf3884167dcddf761c11a7e9033685d77083b4010",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:31Z",
+"retrieved_at": "2026-10-11T03:09:37Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -133,7 +133,7 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.6,
-"governance": 7.5,
+"governance": 3.8,
 "health": 16.0,
 "trust": 19.0
 },
@@ -141,11 +141,11 @@
 "confidence": 0.34,
 "evidence_coverage": 0.722,
 "governance_credited": {
-"iso42001": 0.3
+"iso42001": 0.15
 },
 "profile": "general",
 "rank": null,
-"score": 41.7,
+"score": 41.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -158,7 +158,7 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 16.0,
 "trust": 19.0
 },
@@ -166,7 +166,7 @@
 "confidence": 0.34,
 "evidence_coverage": 0.75,
 "governance_credited": {
-"iso42001": 0.3
+"iso42001": 0.15
 },
 "profile": "data",
 "rank": null,
@@ -183,7 +183,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.6,
-"governance": 12.0,
+"governance": 6.0,
 "health": 16.0,
 "trust": 19.0
 },
@@ -191,7 +191,7 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"iso42001": 0.3
+"iso42001": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -206,7 +206,7 @@
 "external_ids": {
 "mcp_registry": "ai.ai-portal/ai-portal"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -228,19 +228,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": null,
 "name": "AI-Portal Enterprise GenAI Briefing",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:29Z",
+"checked_at": "2026-10-11T03:03:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:27Z",
+"checked_at": "2026-10-11T03:03:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -263,7 +263,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:01:38Z",
+"checked_at": "2026-10-11T03:16:56Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -281,7 +281,7 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ai-portal/ai-portal"
 }
@@ -293,7 +293,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://www.ai-portal.ai/developers",
 "vendor": "ai-portal.ai"

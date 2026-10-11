@@ -35,9 +35,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "85d9fa82f9d5b6c266fb9c96a7281c2e0c806653c35271a77070fde9dc3dbd75",
+"payload_hash": "51149d2c24d0ed907a583517d4cbd1151e30f664a999c6b9f20d7e96b88dcf12",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:11Z",
+"retrieved_at": "2026-10-11T03:12:55Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -119,7 +119,7 @@
 "external_ids": {
 "github": "superplanehq/superplane"
 },
-"first_seen": "2026-10-11T01:38:56Z",
+"first_seen": "2026-10-11T02:56:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -154,7 +154,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:56Z",
+"last_seen": "2026-10-11T02:56:44Z",
 "license": "Other",
 "name": "superplane",
 "news": [
@@ -184,17 +184,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:39Z",
+"checked_at": "2026-10-11T03:06:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:38Z",
+"checked_at": "2026-10-11T03:06:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:39Z",
+"checked_at": "2026-10-11T03:06:37Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -204,7 +204,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:07:14Z",
+"checked_at": "2026-10-11T03:22:15Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -223,8 +223,8 @@
 "slug": "superplanehq-superplane",
 "sources": [
 {
-"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
-"retrieved_at": "2026-10-11T01:38:56Z",
+"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
+"retrieved_at": "2026-10-11T02:56:44Z",
 "system": "github",
 "url": "https://github.com/superplanehq/superplane"
 }
@@ -248,7 +248,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://superplane.com",
 "vendor": "superplanehq"

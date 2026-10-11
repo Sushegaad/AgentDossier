@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:47Z",
+"retrieved_at": "2026-10-11T03:08:13Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -48,9 +48,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "2804fc2f90ba7f94b0ed96b40cd00dd206cd294e5cc32a26a523a2bb7371fb13",
+"payload_hash": "dabc06fc60fc252f8de79a6dc27136c03465e41706a547d63aa275326ead4aca",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:06Z",
+"retrieved_at": "2026-10-11T03:11:04Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -80,7 +80,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "general",
-"rank": 94,
+"rank": 77,
 "recomputed": 87.5,
 "score": 77.9,
 "score_version": "sar-score-2.0",
@@ -104,7 +104,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "security",
-"rank": 88,
+"rank": 27,
 "recomputed": 82.4,
 "score": 70.4,
 "score_version": "sar-score-2.0",
@@ -128,7 +128,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 84,
+"rank": 40,
 "recomputed": 87.6,
 "score": 81.7,
 "score_version": "sar-score-2.0",
@@ -152,7 +152,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 91,
+"rank": 51,
 "recomputed": 76.6,
 "score": 62.4,
 "score_version": "sar-score-2.0",
@@ -176,7 +176,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 90,
+"rank": 51,
 "recomputed": 76.6,
 "score": 62.4,
 "score_version": "sar-score-2.0",
@@ -200,7 +200,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 89,
+"rank": 43,
 "recomputed": 76.6,
 "score": 62.4,
 "score_version": "sar-score-2.0",
@@ -224,7 +224,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 89,
+"rank": 37,
 "recomputed": 76.6,
 "score": 62.4,
 "score_version": "sar-score-2.0",
@@ -248,7 +248,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 90,
+"rank": 40,
 "recomputed": 76.6,
 "score": 62.4,
 "score_version": "sar-score-2.0",
@@ -272,7 +272,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 90,
+"rank": 49,
 "recomputed": 76.6,
 "score": 62.4,
 "score_version": "sar-score-2.0",
@@ -296,7 +296,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "commercial",
-"rank": 88,
+"rank": 32,
 "recomputed": 84.9,
 "score": 76.7,
 "score_version": "sar-score-2.0",
@@ -320,7 +320,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "operations",
-"rank": 90,
+"rank": 29,
 "recomputed": 81.8,
 "score": 73.7,
 "score_version": "sar-score-2.0",
@@ -344,7 +344,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
-"rank": 82,
+"rank": 12,
 "recomputed": 97.2,
 "score": 84.6,
 "score_version": "sar-score-2.0",
@@ -357,7 +357,7 @@
 "external_ids": {
 "github": "anthropics/claude-code"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -440,7 +440,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Claude Code",
 "news": [
@@ -470,17 +470,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:48Z",
+"checked_at": "2026-10-11T03:04:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:47Z",
+"checked_at": "2026-10-11T03:04:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:49Z",
+"checked_at": "2026-10-11T03:04:55Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -490,7 +490,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:42Z",
+"checked_at": "2026-10-11T03:14:48Z",
 "cves": 47,
 "source": "nvd",
 "tier": 1
@@ -513,9 +513,9 @@
 "github_created_at": "2025-02-22T17:41:21Z",
 "github_forks": 26101,
 "github_language": "TypeScript",
-"github_open_issues": 14647,
+"github_open_issues": 14663,
 "github_pushed_at": "2026-10-10T22:23:41Z",
-"github_stars": 150074,
+"github_stars": 150080,
 "homepage": "https://code.claude.com/docs/en/overview",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -530,7 +530,7 @@
 "sources": [
 {
 "payload_hash": "13291d1010ed42eef8d3270f14df2950e6a747fdacf2e0272098aadeb0a1817c",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/anthropics/claude-code"
 }
@@ -542,7 +542,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://github.com/anthropics/claude-code",
 "vendor": "Anthropic"

@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "a2aproject/A2A"
 },
-"first_seen": "2026-10-11T01:45:21Z",
+"first_seen": "2026-10-11T03:02:41Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,7 +64,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:45:21Z",
+"last_seen": "2026-10-11T03:02:41Z",
 "license": "Apache-2.0",
 "name": "A2A",
 "news": [],
@@ -74,19 +74,19 @@
 "evidence_url": "https://a2a-protocol.org/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:46:13Z",
+"checked_at": "2026-10-11T03:03:22Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:12Z",
+"checked_at": "2026-10-11T03:03:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:46:14Z",
+"checked_at": "2026-10-11T03:03:22Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -108,8 +108,8 @@
 "slug": "a2aproject-a2a",
 "sources": [
 {
-"payload_hash": "7d840cfc7a8c6d2eb59ccd606d7ead03a39ad41a281e640b08650b993940f835",
-"retrieved_at": "2026-10-11T01:45:21Z",
+"payload_hash": "24a9d9fb62d2fb634bd2bc019e04113f0bad8937be6b563aac8623e24fbfeff9",
+"retrieved_at": "2026-10-11T03:02:41Z",
 "system": "github",
 "url": "https://github.com/a2aproject/A2A"
 }
@@ -129,7 +129,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://a2a-protocol.org/",
 "vendor": "a2aproject"

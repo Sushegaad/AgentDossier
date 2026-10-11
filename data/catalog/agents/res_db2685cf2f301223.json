@@ -27,7 +27,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "af9464cca0db27b4f5c544d37173b0d8cf07067b25099fece3b677d2675f3abc",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:55Z",
+"retrieved_at": "2026-10-11T03:12:40Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -67,7 +67,7 @@
 "external_ids": {
 "github": "presenton/presenton"
 },
-"first_seen": "2026-10-11T01:41:37Z",
+"first_seen": "2026-10-11T02:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -102,7 +102,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:41:37Z",
+"last_seen": "2026-10-11T02:59:12Z",
 "license": "Apache-2.0",
 "name": "presenton",
 "news": [
@@ -132,17 +132,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:25Z",
+"checked_at": "2026-10-11T03:06:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:23Z",
+"checked_at": "2026-10-11T03:06:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:25Z",
+"checked_at": "2026-10-11T03:06:24Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -152,7 +152,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:06:41Z",
+"checked_at": "2026-10-11T03:21:43Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -171,8 +171,8 @@
 "slug": "presenton-presenton",
 "sources": [
 {
-"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
-"retrieved_at": "2026-10-11T01:41:37Z",
+"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
+"retrieved_at": "2026-10-11T02:59:12Z",
 "system": "github",
 "url": "https://github.com/presenton/presenton"
 }
@@ -194,7 +194,8 @@
 "identity": 2,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://presenton.ai",
 "vendor": "presenton"

@@ -28,9 +28,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:52:52Z",
+"retrieved_at": "2026-10-11T03:09:03Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -60,7 +60,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:13Z",
+"retrieved_at": "2026-10-11T03:07:46Z",
 "review_reason": "vendor authorization for Cloudflare for Government - High; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -84,9 +84,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "67830ad8d0a8f5b3886579402be79fdf9fd0e6fce7e781492749fc4e4ea60c1d",
+"payload_hash": "d34fc50084fbd978b458f5e72506cd226b948c5dbed09d2e0ea7972caaab81d7",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:35Z",
+"retrieved_at": "2026-10-11T03:10:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -110,9 +110,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "554b6656748d8075cf13734905a01604c970246e6f16d293cc1f6714c6428e8e",
+"payload_hash": "7d461c4ee39fb1226ab5e99d5ab9142f19e237fa38e5f0f5e5e765b0b1154341",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:35Z",
+"retrieved_at": "2026-10-11T03:10:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -136,9 +136,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "67830ad8d0a8f5b3886579402be79fdf9fd0e6fce7e781492749fc4e4ea60c1d",
+"payload_hash": "d34fc50084fbd978b458f5e72506cd226b948c5dbed09d2e0ea7972caaab81d7",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:35Z",
+"retrieved_at": "2026-10-11T03:10:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -156,7 +156,7 @@
 "external_ids": {
 "github": "cloudflare/moltworker"
 },
-"first_seen": "2026-10-11T01:38:56Z",
+"first_seen": "2026-10-11T02:56:44Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -178,24 +178,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:56Z",
+"last_seen": "2026-10-11T02:56:44Z",
 "license": "Apache-2.0",
 "name": "moltworker",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:24Z",
+"checked_at": "2026-10-11T03:04:30Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:23Z",
+"checked_at": "2026-10-11T03:04:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:24Z",
+"checked_at": "2026-10-11T03:04:31Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -205,7 +205,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:06:53Z",
+"checked_at": "2026-10-11T03:21:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -217,15 +217,15 @@
 "github_language": "TypeScript",
 "github_open_issues": 95,
 "github_pushed_at": "2026-05-09T02:37:13Z",
-"github_stars": 9948,
+"github_stars": 9949,
 "github_topic": "ai-agents",
 "homepage": "https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/"
 },
 "slug": "cloudflare-moltworker",
 "sources": [
 {
-"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
-"retrieved_at": "2026-10-11T01:38:56Z",
+"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
+"retrieved_at": "2026-10-11T02:56:44Z",
 "system": "github",
 "url": "https://github.com/cloudflare/moltworker"
 }
@@ -240,7 +240,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/",
 "vendor": "cloudflare"

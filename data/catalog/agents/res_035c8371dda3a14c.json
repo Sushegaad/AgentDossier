@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "85739410a4803e1805327b93407e45d6577b97998901abccb80c7706b6e09f5d",
+"payload_hash": "b8318dd194d72d33c8c8f94fbcc962012e2c3be8b10754183566dd8f1a386036",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:55Z",
+"retrieved_at": "2026-10-11T03:10:55Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "89321a0147af8f3ae154b0a55c9679fba098f98d2015fcf43f5d44555ce27822",
+"payload_hash": "39b9c0fc30c4c406513a40cf4e267d4bf93ae450a3e02132a93d7802bd846bb7",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:55Z",
+"retrieved_at": "2026-10-11T03:10:55Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -96,7 +96,7 @@
 "external_ids": {
 "mcp_registry": "ai.candlefeed/candlefeed-mcp"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,19 +118,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "CandleFeed",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:39Z",
+"checked_at": "2026-10-11T03:04:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:37Z",
+"checked_at": "2026-10-11T03:04:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -155,7 +155,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:49Z",
+"checked_at": "2026-10-11T03:19:02Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -170,8 +170,8 @@
 "slug": "candlefeed-ai-candlefeed",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.candlefeed/candlefeed-mcp"
 }
@@ -183,7 +183,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://candlefeed.ai/docs/order-book",
 "vendor": "candlefeed.ai"

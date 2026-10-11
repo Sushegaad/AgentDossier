@@ -37,9 +37,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "00dd0b30e19436a6736a8ccb456c464332a08205f89682cebbe980c79b7e5dbf",
+"payload_hash": "64da30aa056f0a436e1dd910c0ee498b525180fcf9814f663482c583a4dc5a25",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:47Z",
+"retrieved_at": "2026-10-11T03:11:46Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -81,7 +81,7 @@
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 3.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -89,11 +89,11 @@
 "confidence": 0.875,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"pci_dss": 0.3
+"pci_dss": 0.15
 },
 "profile": "regulated",
 "rank": null,
-"score": 66.0,
+"score": 65.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
@@ -123,7 +123,7 @@
 "external_ids": {
 "github": "Fincept-Corporation/FinceptTerminal"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -145,7 +145,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "Other",
 "name": "FinceptTerminal",
 "news": [
@@ -175,17 +175,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:25Z",
+"checked_at": "2026-10-11T03:05:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:22Z",
+"checked_at": "2026-10-11T03:05:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:27Z",
+"checked_at": "2026-10-11T03:05:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -195,7 +195,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:05:28Z",
+"checked_at": "2026-10-11T03:20:33Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -203,7 +203,7 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-08-29T14:38:08Z",
-"github_forks": 4583,
+"github_forks": 4584,
 "github_language": "C++",
 "github_open_issues": 5,
 "github_pushed_at": "2026-10-01T08:59:02Z",
@@ -214,8 +214,8 @@
 "slug": "fincept-corporation-finceptterminal",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/Fincept-Corporation/FinceptTerminal"
 }
@@ -245,7 +245,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://fincept.in",
 "vendor": "Fincept-Corporation"

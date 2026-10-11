@@ -32,9 +32,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "343c46e4f1d738a37dcc034120c9c3a375faf67b18cf403b1c14b7ce6e985070",
+"payload_hash": "f2dd041fb59c666d2787126f4d2f184518e0b7c9a88f51aab137f6a036003487",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:13Z",
+"retrieved_at": "2026-10-11T03:12:58Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -55,7 +55,7 @@
 "docs": 7.0,
 "domain_fit": 94.5,
 "ecosystem": 12.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -63,7 +63,7 @@
 "confidence": 0.945,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -77,7 +77,7 @@
 "ard": "urn:air:superset.sh:agent:superset",
 "github": "superset-sh/superset"
 },
-"first_seen": "2026-10-11T01:38:56Z",
+"first_seen": "2026-10-11T02:56:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -160,7 +160,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:49:44Z",
+"last_seen": "2026-10-11T03:06:44Z",
 "license": "Other",
 "merged_ids": [
 "res_4938e20408c55db4"
@@ -169,12 +169,12 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-11T01:05:54Z",
+"date": "2026-10-11T03:07:22Z",
 "headline": "Superset Desktop Canary",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Internal Testing Build**\n\nThis is an automated canary build from `main` branch.\n\n- Commit: cc4fa0757c92e030d9bce2451671e892e6713409\n- Short SHA: cc4fa0757c\n- Built: 2026-10-11T00:23:34Z\n\n⚠️ This build is for internal testing only and may",
+"summary": "**Internal Testing Build**\n\nThis is an automated canary build from `main` branch.\n\n- Commit: 20bb58a9fe3cc3d6f59b4f1e43faf8969672ae08\n- Short SHA: 20bb58a9fe\n- Built: 2026-10-11T02:25:21Z\n\n⚠️ This build is for internal testing only and may",
 "tag": "product_update",
 "url": "https://github.com/superset-sh/superset/releases/tag/desktop-canary"
 },
@@ -223,7 +223,7 @@
 "oauth2"
 ],
 "card_url": "https://superset.sh/.well-known/agent-card.json",
-"checked_at": "2026-10-11T01:49:40Z",
+"checked_at": "2026-10-11T03:06:37Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -237,7 +237,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:38Z",
+"checked_at": "2026-10-11T03:06:36Z",
 "entries": 13,
 "parser_version": "ard-0.91",
 "sources": [
@@ -247,7 +247,7 @@
 },
 "mcp": {
 "card_url": "https://superset.sh/.well-known/mcp.json",
-"checked_at": "2026-10-11T01:49:41Z",
+"checked_at": "2026-10-11T03:06:38Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -257,7 +257,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:06:18Z",
+"checked_at": "2026-10-11T03:21:21Z",
 "cves": 79,
 "source": "nvd",
 "tier": 1
@@ -268,7 +268,7 @@
 "github_forks": 1344,
 "github_language": "TypeScript",
 "github_open_issues": 924,
-"github_pushed_at": "2026-10-11T01:37:52Z",
+"github_pushed_at": "2026-10-11T02:49:16Z",
 "github_stars": 15057,
 "github_topic": "ai-agents",
 "homepage": "https://superset.sh"
@@ -276,14 +276,14 @@
 "slug": "superset-sh-superset",
 "sources": [
 {
-"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
-"retrieved_at": "2026-10-11T01:38:56Z",
+"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
+"retrieved_at": "2026-10-11T02:56:43Z",
 "system": "github",
 "url": "https://github.com/superset-sh/superset"
 },
 {
 "payload_hash": "af267ef2618a69b41525f65692e648a8aeffb2c62bbe84c88feacddbb7568164",
-"retrieved_at": "2026-10-11T01:49:44Z",
+"retrieved_at": "2026-10-11T03:06:44Z",
 "system": "ard",
 "url": "https://superset.sh/.well-known/ai-catalog.json"
 }
@@ -317,7 +317,8 @@
 "identity": 2,
 "issues": 3,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://superset.sh",
 "vendor": "superset-sh"

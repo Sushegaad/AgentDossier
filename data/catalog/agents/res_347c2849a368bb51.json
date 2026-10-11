@@ -32,7 +32,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "6dbbb0145bfb757a5de1fdadf3dd2cd711ff1acb97343e621c803bf235bef216",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:01Z",
+"retrieved_at": "2026-10-11T03:10:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -58,7 +58,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "6dbbb0145bfb757a5de1fdadf3dd2cd711ff1acb97343e621c803bf235bef216",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:01Z",
+"retrieved_at": "2026-10-11T03:10:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -84,7 +84,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "9938858d40b4fbd5596b8aab43b21313147d9beca1be4db0afe811dbf750593b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:01Z",
+"retrieved_at": "2026-10-11T03:10:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -105,7 +105,7 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -113,11 +113,11 @@
 "confidence": 0.34,
 "evidence_coverage": 0.75,
 "governance_credited": {
-"gdpr": 0.3
+"gdpr": 0.15
 },
 "profile": "commercial",
 "rank": null,
-"score": 43.7,
+"score": 43.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -151,7 +151,7 @@
 "external_ids": {
 "mcp_registry": "ai.chatterlab/chatterlab"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -173,19 +173,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "ChatterLab",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:43Z",
+"checked_at": "2026-10-11T03:04:50Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:41Z",
+"checked_at": "2026-10-11T03:04:48Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -208,7 +208,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:04:00Z",
+"checked_at": "2026-10-11T03:19:12Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -225,8 +225,8 @@
 "slug": "chatterlab-ai-chatterlab",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.chatterlab/chatterlab"
 }
@@ -238,7 +238,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://chatterlab.ai/en/docs/developers/mcp",
 "vendor": "chatterlab.ai"

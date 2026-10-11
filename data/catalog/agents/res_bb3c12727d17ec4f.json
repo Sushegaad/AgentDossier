@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "f272ce0aed44e77d27a893e6abee24295bca7a62c5065fdc1ba7c122850db30e",
+"payload_hash": "8d15921fb103999f17ef4140185495858ac2de79a94eb20c79c5021556b0678b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:31Z",
+"retrieved_at": "2026-10-11T03:10:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "29c9ca18b37aeb903e34a6d6ec2c8d2ea0c6dc2e652f544010172c80a04cfb34",
+"payload_hash": "f982483950e81a1e8da7ee7e958cd84ba9fc8dc6baf868c868d4217b564db90b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:31Z",
+"retrieved_at": "2026-10-11T03:10:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -78,9 +78,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "af17d8e4447fdad957e9081e7cd24a554c1eebf4b84a219cf15b39e8a94e874d",
+"payload_hash": "7b055debc6d04a1c3c64e9dbce8d6d1e82a0a88565deebb608201bd6f7af674c",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:31Z",
+"retrieved_at": "2026-10-11T03:10:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -104,9 +104,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "5b4bc447aac43b6d28ced1a9d27c5bc29918be41edd41e964197637a92e8490c",
+"payload_hash": "3ca514d3b10def4e5352389591041aefc146a98504e5631a00322fe3a376e8d1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:31Z",
+"retrieved_at": "2026-10-11T03:10:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -130,9 +130,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "af17d8e4447fdad957e9081e7cd24a554c1eebf4b84a219cf15b39e8a94e874d",
+"payload_hash": "7b055debc6d04a1c3c64e9dbce8d6d1e82a0a88565deebb608201bd6f7af674c",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:31Z",
+"retrieved_at": "2026-10-11T03:10:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -156,9 +156,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "5b4bc447aac43b6d28ced1a9d27c5bc29918be41edd41e964197637a92e8490c",
+"payload_hash": "3ca514d3b10def4e5352389591041aefc146a98504e5631a00322fe3a376e8d1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:31Z",
+"retrieved_at": "2026-10-11T03:10:31Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -179,7 +179,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 13.6,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -187,8 +187,8 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"iso27001": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -204,7 +204,7 @@
 "ard": "urn:air:beevr.ai:agent:assistant",
 "mcp_registry": "ai.beevr/beevr"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -226,7 +226,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:47:33Z",
+"last_seen": "2026-10-11T03:04:53Z",
 "license": null,
 "merged_ids": [
 "res_cf924265de9583a9"
@@ -237,7 +237,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://beevr.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-11T01:47:21Z",
+"checked_at": "2026-10-11T03:04:26Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -249,7 +249,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:18Z",
+"checked_at": "2026-10-11T03:04:24Z",
 "entries": 4,
 "parser_version": "ard-0.91",
 "sources": [
@@ -286,14 +286,14 @@
 "slug": "beevr-ai-beevr",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.beevr/beevr"
 },
 {
 "payload_hash": "f548a727d139a5810c04a9b4d915c6c03c8a9055ca898e8cc23d7e2b5ff59135",
-"retrieved_at": "2026-10-11T01:47:33Z",
+"retrieved_at": "2026-10-11T03:04:53Z",
 "system": "ard",
 "url": "https://beevr.ai/.well-known/ai-catalog.json"
 }
@@ -305,7 +305,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://beevr.ai",
 "vendor": "beevr.ai"

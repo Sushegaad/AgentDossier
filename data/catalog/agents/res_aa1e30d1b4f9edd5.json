@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:49Z",
+"retrieved_at": "2026-10-11T03:08:15Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -50,7 +50,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f8ce46db85a28b1e8260cfcdf9c4cb8571bbb5932b76aae30cf99b56905b6148",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:18Z",
+"retrieved_at": "2026-10-11T03:12:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -76,7 +76,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f8ce46db85a28b1e8260cfcdf9c4cb8571bbb5932b76aae30cf99b56905b6148",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:18Z",
+"retrieved_at": "2026-10-11T03:12:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -102,7 +102,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f8ce46db85a28b1e8260cfcdf9c4cb8571bbb5932b76aae30cf99b56905b6148",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:18Z",
+"retrieved_at": "2026-10-11T03:12:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -128,7 +128,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f8ce46db85a28b1e8260cfcdf9c4cb8571bbb5932b76aae30cf99b56905b6148",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:18Z",
+"retrieved_at": "2026-10-11T03:12:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -154,7 +154,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f8ce46db85a28b1e8260cfcdf9c4cb8571bbb5932b76aae30cf99b56905b6148",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:18Z",
+"retrieved_at": "2026-10-11T03:12:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -180,7 +180,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "f8ce46db85a28b1e8260cfcdf9c4cb8571bbb5932b76aae30cf99b56905b6148",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:18Z",
+"retrieved_at": "2026-10-11T03:12:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -201,7 +201,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 13.0,
-"governance": 40.0,
+"governance": 20.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -209,14 +209,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3,
-"soc2": 0.3
+"csa_star": 0.5,
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "general",
-"rank": 78,
+"rank": 93,
 "recomputed": 85.4,
-"score": 80.6,
+"score": 79.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 93,
 "seed_score": 85.4,
@@ -224,89 +224,6 @@
 "unknown": []
 },
 "cybersecurity": {
-"components": {
-"adoption": 24.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 13.0,
-"governance": 52.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3,
-"soc2": 0.3
-},
-"profile": "security",
-"rank": 58,
-"recomputed": 77.9,
-"score": 79.2,
-"score_version": "sar-score-2.0",
-"seed_rank": 84,
-"seed_score": 77.9,
-"source": "seed_xlsx",
-"unknown": []
-},
-"finance": {
-"components": {
-"adoption": 24.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 13.0,
-"governance": 32.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3,
-"soc2": 0.3
-},
-"profile": "regulated",
-"rank": 60,
-"recomputed": 72.9,
-"score": 73.4,
-"score_version": "sar-score-2.0",
-"seed_rank": 95,
-"seed_score": 72.9,
-"source": "seed_xlsx",
-"unknown": []
-},
-"government": {
-"components": {
-"adoption": 24.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 13.0,
-"governance": 46.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3
-},
-"profile": "regulated",
-"rank": 54,
-"recomputed": 72.9,
-"score": 75.5,
-"score_version": "sar-score-2.0",
-"seed_rank": 91,
-"seed_score": 72.9,
-"source": "seed_xlsx",
-"unknown": []
-},
-"healthcare": {
 "components": {
 "adoption": 24.0,
 "docs": 9.0,
@@ -320,13 +237,96 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"soc2": 0.3
+"csa_star": 0.5,
+"iso27001": 0.15,
+"soc2": 0.15
+},
+"profile": "security",
+"rank": 84,
+"recomputed": 77.9,
+"score": 76.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 84,
+"seed_score": 77.9,
+"source": "seed_xlsx",
+"unknown": []
+},
+"finance": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 16.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 66,
+"rank": 95,
 "recomputed": 72.9,
-"score": 72.5,
+"score": 71.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 95,
+"seed_score": 72.9,
+"source": "seed_xlsx",
+"unknown": []
+},
+"government": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 23.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"iso27001": 0.15
+},
+"profile": "regulated",
+"rank": 91,
+"recomputed": 72.9,
+"score": 72.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 91,
+"seed_score": 72.9,
+"source": "seed_xlsx",
+"unknown": []
+},
+"healthcare": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 13.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"soc2": 0.15
+},
+"profile": "regulated",
+"rank": 91,
+"recomputed": 72.9,
+"score": 70.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 91,
 "seed_score": 72.9,
@@ -339,7 +339,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 13.0,
-"governance": 26.7,
+"governance": 13.3,
 "health": 20.0,
 "trust": 19.0
 },
@@ -347,14 +347,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3,
-"soc2": 0.3
+"csa_star": 0.5,
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 67,
+"rank": 88,
 "recomputed": 72.9,
-"score": 72.6,
+"score": 70.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 88,
 "seed_score": 72.9,
@@ -367,7 +367,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 13.0,
-"governance": 32.0,
+"governance": 16.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -375,14 +375,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3,
-"soc2": 0.3
+"csa_star": 0.5,
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 63,
+"rank": 88,
 "recomputed": 72.9,
-"score": 73.4,
+"score": 71.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 88,
 "seed_score": 72.9,
@@ -395,7 +395,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 13.0,
-"governance": 32.0,
+"governance": 16.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -403,14 +403,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3,
-"soc2": 0.3
+"csa_star": 0.5,
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 61,
+"rank": 92,
 "recomputed": 72.9,
-"score": 73.4,
+"score": 71.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 92,
 "seed_score": 72.9,
@@ -423,7 +423,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 13.0,
-"governance": 32.0,
+"governance": 16.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -431,14 +431,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"gdpr": 0.3,
-"soc2": 0.3
+"csa_star": 0.5,
+"gdpr": 0.15,
+"soc2": 0.15
 },
 "profile": "commercial",
-"rank": 79,
+"rank": 98,
 "recomputed": 79.2,
-"score": 80.1,
+"score": 79.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 98,
 "seed_score": 79.2,
@@ -451,7 +451,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 13.0,
-"governance": 40.0,
+"governance": 20.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -459,14 +459,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso27001": 0.3,
-"soc2": 0.3
+"csa_star": 0.5,
+"iso27001": 0.15,
+"soc2": 0.15
 },
 "profile": "operations",
-"rank": 72,
+"rank": 5,
 "recomputed": 90.0,
-"score": 80.1,
+"score": 79.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 5,
 "seed_score": 90.0,
@@ -475,7 +475,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -497,24 +497,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Kinaxis Maestro AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:51Z",
+"checked_at": "2026-10-11T03:05:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:47Z",
+"checked_at": "2026-10-11T03:05:48Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:55Z",
+"checked_at": "2026-10-11T03:05:58Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -524,7 +524,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:58Z",
+"checked_at": "2026-10-11T03:15:03Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -549,7 +549,7 @@
 "sources": [
 {
 "payload_hash": "85d263e00ce370937f1585e356f130cfc1bb67b49509e5a92d50d6c5420c50c9",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.kinaxis.com/"
 }
@@ -561,7 +561,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://www.kinaxis.com/",
 "vendor": "Kinaxis"

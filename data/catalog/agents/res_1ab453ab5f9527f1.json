@@ -30,7 +30,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "cadff4d17543fe781b52b63e88f8d89b049a93f91099ab05842b323f7723c0b4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:10Z",
+"retrieved_at": "2026-10-11T03:11:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -91,7 +91,7 @@
 "external_ids": {
 "github": "InsForge/InsForge"
 },
-"first_seen": "2026-10-11T01:38:56Z",
+"first_seen": "2026-10-11T02:56:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -113,7 +113,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:56Z",
+"last_seen": "2026-10-11T02:56:43Z",
 "license": "Apache-2.0",
 "name": "InsForge",
 "news": [
@@ -143,17 +143,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:45Z",
+"checked_at": "2026-10-11T03:05:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:43Z",
+"checked_at": "2026-10-11T03:05:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:45Z",
+"checked_at": "2026-10-11T03:05:47Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -163,7 +163,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:06:27Z",
+"checked_at": "2026-10-11T03:21:29Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -182,8 +182,8 @@
 "slug": "insforge-insforge",
 "sources": [
 {
-"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
-"retrieved_at": "2026-10-11T01:38:56Z",
+"payload_hash": "c45e12f370c3936fe92793870b13e733bd6cd20b917462e91e32c379c0566aa5",
+"retrieved_at": "2026-10-11T02:56:43Z",
 "system": "github",
 "url": "https://github.com/InsForge/InsForge"
 }
@@ -209,7 +209,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://insforge.dev",
 "vendor": "InsForge"

@@ -28,7 +28,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "374cd930d373ed30b77881b7760442987062125551f013264fb89bf7873a39bb",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:51Z",
+"retrieved_at": "2026-10-11T03:10:51Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "github": "MathAndMagic/bridgeapp-plugin",
 "mcp_registry": "ai.bridgeapp/bridgeapp"
 },
-"first_seen": "2026-10-11T01:36:25Z",
+"first_seen": "2026-10-11T02:55:14Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,19 +93,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:25Z",
+"last_seen": "2026-10-11T02:55:14Z",
 "license": null,
 "name": "ai.bridgeapp/bridgeapp",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:35Z",
+"checked_at": "2026-10-11T03:04:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:28Z",
+"checked_at": "2026-10-11T03:04:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -128,7 +128,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:03:37Z",
+"checked_at": "2026-10-11T03:18:50Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -145,8 +145,8 @@
 "slug": "bridgeapp-ai-ai-bridgeapp-bridgeapp",
 "sources": [
 {
-"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
-"retrieved_at": "2026-10-11T01:36:25Z",
+"payload_hash": "3bddc182eeb4c736995c6d0fb5edf8c3cb50cb4fa98155f2cdf02d088e6d1969",
+"retrieved_at": "2026-10-11T02:55:14Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bridgeapp/bridgeapp"
 }
@@ -158,7 +158,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://bridgeapp.ai",
 "vendor": "bridgeapp.ai"

@@ -31,9 +31,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "f8b225f06c3f34680d2642fe5c3028c8ec3ae0da17726105ec69435d9a13e505",
+"payload_hash": "309641feb4f5e05ada9ab3143fa2e6acd4729f2536978bcfd14fe4e0f2feb4b8",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:11Z",
+"retrieved_at": "2026-10-11T03:11:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,9 +57,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "88b79c85d70c62f272d2644959e1fbf97ab9fb30936570d29cc17c9e55b9d05f",
+"payload_hash": "5a4efa0227f10ea1c658943f5d6eb29fdc2345faa0efd06407d208c5349ac342",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:11Z",
+"retrieved_at": "2026-10-11T03:11:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,9 +83,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "e0b4c9c13a9f74a8063e65cf30825a8e7c7389c083840a469bf36aeeac66913a",
+"payload_hash": "133fa90ab9563bbf2a3a6aa079e76f29cacbd7091863d45dfdbe85070d02b2f1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:55:11Z",
+"retrieved_at": "2026-10-11T03:11:10Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -167,7 +167,7 @@
 "external_ids": {
 "github": "trycua/cua"
 },
-"first_seen": "2026-10-11T01:41:37Z",
+"first_seen": "2026-10-11T02:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -189,7 +189,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:41:37Z",
+"last_seen": "2026-10-11T02:59:12Z",
 "license": "MIT",
 "name": "cua",
 "news": [
@@ -219,17 +219,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:54Z",
+"checked_at": "2026-10-11T03:05:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:53Z",
+"checked_at": "2026-10-11T03:04:59Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:55Z",
+"checked_at": "2026-10-11T03:05:01Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -240,19 +240,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-01-31T15:02:49Z",
-"github_forks": 2075,
+"github_forks": 2077,
 "github_language": "Rust",
 "github_open_issues": 1164,
-"github_pushed_at": "2026-10-11T00:08:16Z",
-"github_stars": 29297,
+"github_pushed_at": "2026-10-11T02:54:02Z",
+"github_stars": 29301,
 "github_topic": "ai-agent",
 "homepage": "https://cua.ai"
 },
 "slug": "trycua-cua",
 "sources": [
 {
-"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
-"retrieved_at": "2026-10-11T01:41:37Z",
+"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
+"retrieved_at": "2026-10-11T02:59:12Z",
 "system": "github",
 "url": "https://github.com/trycua/cua"
 }
@@ -283,7 +283,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://cua.ai",
 "vendor": "trycua"

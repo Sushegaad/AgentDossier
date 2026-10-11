@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4f0a7c023f4ec845b7df8dc1d385412b1a46c433e3bb2eba8e84976e58530a62",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4f0a7c023f4ec845b7df8dc1d385412b1a46c433e3bb2eba8e84976e58530a62",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4f0a7c023f4ec845b7df8dc1d385412b1a46c433e3bb2eba8e84976e58530a62",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4f0a7c023f4ec845b7df8dc1d385412b1a46c433e3bb2eba8e84976e58530a62",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -123,7 +123,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4f0a7c023f4ec845b7df8dc1d385412b1a46c433e3bb2eba8e84976e58530a62",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -149,7 +149,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4f0a7c023f4ec845b7df8dc1d385412b1a46c433e3bb2eba8e84976e58530a62",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -175,7 +175,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4f0a7c023f4ec845b7df8dc1d385412b1a46c433e3bb2eba8e84976e58530a62",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:39Z",
+"retrieved_at": "2026-10-11T03:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -196,7 +196,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 11.0,
-"governance": 18.0,
+"governance": 9.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -204,14 +204,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"pci_dss": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"pci_dss": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 57,
+"rank": 24,
 "recomputed": 87.3,
-"score": 73.7,
+"score": 72.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 24,
 "seed_score": 87.3,
@@ -224,7 +224,7 @@
 "docs": 9.0,
 "domain_fit": 96.0,
 "ecosystem": 11.0,
-"governance": 15.0,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -232,14 +232,14 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"iso27001": 0.3,
-"pci_dss": 0.3,
-"soc2": 0.3
+"iso27001": 0.15,
+"pci_dss": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 60,
+"rank": 9,
 "recomputed": 88.1,
-"score": 73.3,
+"score": 72.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 9,
 "seed_score": 88.1,
@@ -248,7 +248,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -270,24 +270,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Akur8",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:36Z",
+"checked_at": "2026-10-11T03:03:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:35Z",
+"checked_at": "2026-10-11T03:03:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:46:37Z",
+"checked_at": "2026-10-11T03:03:43Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -315,7 +315,7 @@
 "sources": [
 {
 "payload_hash": "427f0aa0a26d9fdc44c16fc450f0c2203857d24d45204a6c527ef5911e2a52a1",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.akur8.com/"
 }
@@ -327,7 +327,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://www.akur8.com/",
 "vendor": "Akur8"

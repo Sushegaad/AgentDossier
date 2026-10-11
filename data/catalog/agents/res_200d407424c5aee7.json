@@ -45,7 +45,7 @@
 "external_ids": {
 "github": "upstash/context7"
 },
-"first_seen": "2026-10-11T01:43:40Z",
+"first_seen": "2026-10-11T03:01:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -74,7 +74,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:43:40Z",
+"last_seen": "2026-10-11T03:01:06Z",
 "license": "MIT",
 "name": "context7",
 "news": [
@@ -104,12 +104,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:50Z",
+"checked_at": "2026-10-11T03:04:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:49Z",
+"checked_at": "2026-10-11T03:04:56Z",
 "entries": 1,
 "errors": [
 "entries[0]: missing required term 'displayName'"
@@ -124,7 +124,7 @@
 "evidence_url": "https://context7.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T01:47:51Z",
+"checked_at": "2026-10-11T03:04:58Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -136,7 +136,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:04:55Z",
+"checked_at": "2026-10-11T03:20:03Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -146,17 +146,17 @@
 "github_created_at": "2025-03-26T23:40:39Z",
 "github_forks": 3062,
 "github_language": "TypeScript",
-"github_open_issues": 30,
+"github_open_issues": 31,
 "github_pushed_at": "2026-10-10T02:04:01Z",
-"github_stars": 62878,
+"github_stars": 62881,
 "github_topic": "mcp-server",
 "homepage": "https://context7.com"
 },
 "slug": "upstash-context7",
 "sources": [
 {
-"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
-"retrieved_at": "2026-10-11T01:43:40Z",
+"payload_hash": "50431d03d7eb3d1bfb20a7288277fd130253bdab03ea2543f5a048f03aecf1b6",
+"retrieved_at": "2026-10-11T03:01:06Z",
 "system": "github",
 "url": "https://github.com/upstash/context7"
 }
@@ -173,7 +173,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://context7.com",
 "vendor": "upstash"

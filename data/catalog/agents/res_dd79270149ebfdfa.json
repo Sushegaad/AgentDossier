@@ -47,7 +47,7 @@
 "external_ids": {
 "github": "herdrdev/herdr"
 },
-"first_seen": "2026-10-11T01:38:51Z",
+"first_seen": "2026-10-11T02:56:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -69,7 +69,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:38:51Z",
+"last_seen": "2026-10-11T02:56:39Z",
 "license": "Apache-2.0",
 "name": "herdr",
 "news": [
@@ -99,17 +99,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:39Z",
+"checked_at": "2026-10-11T03:05:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:48:38Z",
+"checked_at": "2026-10-11T03:05:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:39Z",
+"checked_at": "2026-10-11T03:05:42Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -120,19 +120,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-27T17:54:33Z",
-"github_forks": 3412,
+"github_forks": 3414,
 "github_language": "Rust",
-"github_open_issues": 334,
-"github_pushed_at": "2026-10-11T01:22:30Z",
-"github_stars": 43271,
+"github_open_issues": 336,
+"github_pushed_at": "2026-10-11T02:20:37Z",
+"github_stars": 43281,
 "github_topic": "ai-agents",
 "homepage": "https://herdr.dev"
 },
 "slug": "herdrdev-herdr",
 "sources": [
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/herdrdev/herdr"
 }
@@ -163,7 +163,8 @@
 "identity": 3,
 "issues": 1,
 "protocols": 5,
-"security": null
+"security": null,
+"vendor_compliance": null
 },
 "url": "https://herdr.dev",
 "vendor": "herdrdev"

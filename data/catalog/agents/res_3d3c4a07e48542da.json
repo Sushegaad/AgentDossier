@@ -23,7 +23,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
-"rank": 69,
+"rank": 22,
 "recomputed": 89.2,
 "score": 85.2,
 "score_version": "sar-score-2.0",
@@ -38,7 +38,7 @@
 "external_ids": {
 "github": "bytedance/deer-flow"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -79,7 +79,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:45:28Z",
+"last_seen": "2026-10-11T03:02:46Z",
 "license": "MIT",
 "merged_ids": [
 "res_7e43733404e9570a",
@@ -102,17 +102,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:48:01Z",
+"checked_at": "2026-10-11T03:05:06Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:57Z",
+"checked_at": "2026-10-11T03:05:03Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:48:03Z",
+"checked_at": "2026-10-11T03:05:08Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -122,7 +122,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:36Z",
+"checked_at": "2026-10-11T03:15:42Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -143,10 +143,10 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-07T02:50:19Z",
-"github_forks": 11636,
+"github_forks": 11637,
 "github_language": "Python",
-"github_open_issues": 907,
-"github_pushed_at": "2026-10-11T00:41:22Z",
+"github_open_issues": 905,
+"github_pushed_at": "2026-10-11T02:53:01Z",
 "github_stars": 83668,
 "github_topic": "ai-agents",
 "homepage": "https://deerflow.tech",
@@ -163,13 +163,13 @@
 "sources": [
 {
 "payload_hash": "93652c0d067470a375b5a744f40787c48a86845989caa835aeff052b536bdd33",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/bytedance/deer-flow"
 },
 {
-"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
-"retrieved_at": "2026-10-11T01:38:51Z",
+"payload_hash": "c1d0523d503e329186b2edf4a7c94306410755ae342965eedb6b29f43bf16222",
+"retrieved_at": "2026-10-11T02:56:39Z",
 "system": "github",
 "url": "https://github.com/bytedance/deer-flow"
 }
@@ -200,7 +200,8 @@
 "identity": 3,
 "issues": 3,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": null
 },
 "url": "https://github.com/bytedance/deer-flow",
 "vendor": "ByteDance"

@@ -24,7 +24,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ad5daa95c24dc7d17a2ec05b2e034d3f66059ab127d32fcb8dadfec2909f0a7f",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:31Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -48,9 +48,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "eb160755bfe3ebbceebfb68bf83cd4f9323c087dce3afe2777fd45a30b1870ca",
+"payload_hash": "67510feb8da1d904f0f2f14e587740a4edc79ec0dee676c0cda7cf30bef8951b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:31Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -76,7 +76,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "5b61ef8cf9830424cc8af20c2c1eb8855b0fc62118ed178afe26310b8c519ad4",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:31Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -102,7 +102,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "ad5daa95c24dc7d17a2ec05b2e034d3f66059ab127d32fcb8dadfec2909f0a7f",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:31Z",
+"retrieved_at": "2026-10-11T03:13:11Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -120,7 +120,7 @@
 "external_ids": {
 "ard": "urn:air:zapier.com:content:auth-md"
 },
-"first_seen": "2026-10-11T01:50:01Z",
+"first_seen": "2026-10-11T03:06:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -142,7 +142,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:50:01Z",
+"last_seen": "2026-10-11T03:06:54Z",
 "license": null,
 "name": "Agent auth guide (auth.md)",
 "news": [],
@@ -172,7 +172,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:09:07Z",
+"checked_at": "2026-10-11T03:24:02Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -182,7 +182,7 @@
 "sources": [
 {
 "payload_hash": "a14e212164e300d125c3bf14852157168d22daac775b13f0ed2f1a1ec203fffb",
-"retrieved_at": "2026-10-11T01:50:01Z",
+"retrieved_at": "2026-10-11T03:06:54Z",
 "system": "ard",
 "url": "https://zapier.com/.well-known/ai-catalog.json"
 }
@@ -198,7 +198,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://zapier.com/auth.md",
 "vendor": "zapier.com"

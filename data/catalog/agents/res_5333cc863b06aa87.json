@@ -30,9 +30,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "2970bdb963430b7eaaca1699e49332faf746a9d2a84bce366ed96f18e6474e3e",
+"payload_hash": "47d8a12dc88e44cde4f6056070e130dbc43653e2d439e94218e809bf87553290",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:44Z",
+"retrieved_at": "2026-10-11T03:10:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -56,9 +56,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "2970bdb963430b7eaaca1699e49332faf746a9d2a84bce366ed96f18e6474e3e",
+"payload_hash": "47d8a12dc88e44cde4f6056070e130dbc43653e2d439e94218e809bf87553290",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:44Z",
+"retrieved_at": "2026-10-11T03:10:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -79,7 +79,7 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
-"governance": 7.5,
+"governance": 3.8,
 "health": 20.0,
 "trust": 19.0
 },
@@ -87,11 +87,11 @@
 "confidence": 0.34,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "general",
 "rank": null,
-"score": 66.8,
+"score": 66.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
@@ -102,7 +102,7 @@
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -110,7 +110,7 @@
 "confidence": 0.713,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -123,7 +123,7 @@
 "external_ids": {
 "github": "browser-use/browser-harness"
 },
-"first_seen": "2026-10-11T01:41:37Z",
+"first_seen": "2026-10-11T02:59:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -145,7 +145,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:41:37Z",
+"last_seen": "2026-10-11T02:59:12Z",
 "license": "MIT",
 "name": "browser-harness",
 "news": [
@@ -188,17 +188,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:31Z",
+"checked_at": "2026-10-11T03:04:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:29Z",
+"checked_at": "2026-10-11T03:04:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:47:32Z",
+"checked_at": "2026-10-11T03:04:37Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -208,7 +208,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:06:01Z",
+"checked_at": "2026-10-11T03:21:05Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -216,7 +216,7 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-17T01:56:15Z",
-"github_forks": 1797,
+"github_forks": 1798,
 "github_language": "Python",
 "github_open_issues": 406,
 "github_pushed_at": "2026-10-09T06:16:16Z",
@@ -227,8 +227,8 @@
 "slug": "browser-use-browser-harness",
 "sources": [
 {
-"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
-"retrieved_at": "2026-10-11T01:41:37Z",
+"payload_hash": "51d36c8225598f49c39fd1fbad48c061d76021f83a78c2fe246c108ca01bc31e",
+"retrieved_at": "2026-10-11T02:59:12Z",
 "system": "github",
 "url": "https://github.com/browser-use/browser-harness"
 }
@@ -255,7 +255,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://browser-harness.com",
 "vendor": "browser-use"

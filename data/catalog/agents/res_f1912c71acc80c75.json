@@ -27,9 +27,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:46Z",
+"retrieved_at": "2026-10-11T03:08:12Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -63,9 +63,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:46Z",
+"retrieved_at": "2026-10-11T03:08:12Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -95,7 +95,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:50:18Z",
+"retrieved_at": "2026-10-11T03:07:06Z",
 "review_reason": "entity 1.00, offering 0.81",
 "reviewer": null,
 "scope": "product",
@@ -129,9 +129,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"payload_hash": "68a1e69c9a422bf6e4f03a5fc7e9a372b1dd0104504b81a168d3f7c67fcc32b1",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:51:46Z",
+"retrieved_at": "2026-10-11T03:08:12Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -155,9 +155,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "58843433d12f4fdb04af39aa6501e3c1950c67452b69f7b46db3807762e8f32a",
+"payload_hash": "4476e0e7f507c1df3e81e86c27d9ef3ca03f22fc8a6abb23e093606dd131ae5d",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:07Z",
+"retrieved_at": "2026-10-11T03:12:52Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -181,9 +181,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "58843433d12f4fdb04af39aa6501e3c1950c67452b69f7b46db3807762e8f32a",
+"payload_hash": "4476e0e7f507c1df3e81e86c27d9ef3ca03f22fc8a6abb23e093606dd131ae5d",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:57:07Z",
+"retrieved_at": "2026-10-11T03:12:52Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -204,7 +204,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 14.0,
-"governance": 50.0,
+"governance": 25.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -212,13 +212,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
+"csa_star": 0.5,
+"iso42001": 0.5
 },
 "profile": "general",
-"rank": 55,
+"rank": 69,
 "recomputed": 87.9,
-"score": 82.9,
+"score": 81.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 69,
 "seed_score": 87.9,
@@ -231,7 +231,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 14.0,
-"governance": 60.0,
+"governance": 30.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -239,13 +239,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
+"csa_star": 0.5,
+"iso42001": 0.5
 },
 "profile": "security",
-"rank": 44,
+"rank": 50,
 "recomputed": 80.2,
-"score": 81.3,
+"score": 78.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 50,
 "seed_score": 80.2,
@@ -258,7 +258,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 14.0,
-"governance": 40.0,
+"governance": 20.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -266,11 +266,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
+"csa_star": 0.5,
+"iso42001": 0.5
 },
 "profile": "data",
-"rank": 67,
+"rank": 73,
 "recomputed": 84.6,
 "score": 85.3,
 "score_version": "sar-score-2.0",
@@ -285,7 +285,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 14.0,
-"governance": 40.0,
+"governance": 20.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -293,13 +293,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
+"csa_star": 0.5,
+"iso42001": 0.5
 },
 "profile": "regulated",
-"rank": 48,
+"rank": 6,
 "recomputed": 93.4,
-"score": 75.7,
+"score": 72.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 6,
 "seed_score": 93.4,
@@ -307,170 +307,6 @@
 "unknown": []
 },
 "government": {
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 14.0,
-"governance": 80.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"fedramp": 1.0,
-"iso42001": 1.0
-},
-"profile": "regulated",
-"rank": 33,
-"recomputed": 75.1,
-"score": 81.7,
-"score_version": "sar-score-2.0",
-"seed_rank": 66,
-"seed_score": 75.1,
-"source": "seed_xlsx",
-"unknown": []
-},
-"healthcare": {
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 14.0,
-"governance": 40.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
-},
-"profile": "regulated",
-"rank": 49,
-"recomputed": 75.1,
-"score": 75.7,
-"score_version": "sar-score-2.0",
-"seed_rank": 60,
-"seed_score": 75.1,
-"source": "seed_xlsx",
-"unknown": []
-},
-"insurance": {
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 14.0,
-"governance": 33.3,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
-},
-"profile": "regulated",
-"rank": 52,
-"recomputed": 93.4,
-"score": 74.7,
-"score_version": "sar-score-2.0",
-"seed_rank": 4,
-"seed_score": 93.4,
-"source": "seed_xlsx",
-"unknown": []
-},
-"legal": {
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 14.0,
-"governance": 40.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
-},
-"profile": "regulated",
-"rank": 49,
-"recomputed": 75.1,
-"score": 75.7,
-"score_version": "sar-score-2.0",
-"seed_rank": 57,
-"seed_score": 75.1,
-"source": "seed_xlsx",
-"unknown": []
-},
-"regulatory": {
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 14.0,
-"governance": 40.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
-},
-"profile": "regulated",
-"rank": 48,
-"recomputed": 75.1,
-"score": 75.7,
-"score_version": "sar-score-2.0",
-"seed_rank": 63,
-"seed_score": 75.1,
-"source": "seed_xlsx",
-"unknown": []
-},
-"sales": {
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 14.0,
-"governance": 46.0,
-"health": 20.0,
-"trust": 19.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 1.0,
-"gdpr": 0.3,
-"iso42001": 1.0
-},
-"profile": "commercial",
-"rank": 65,
-"recomputed": 82.3,
-"score": 82.6,
-"score_version": "sar-score-2.0",
-"seed_rank": 60,
-"seed_score": 82.3,
-"source": "seed_xlsx",
-"unknown": []
-},
-"supply_chain": {
 "components": {
 "adoption": 25.0,
 "docs": 9.0,
@@ -484,13 +320,177 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
+"csa_star": 0.5,
+"fedramp": 1.0,
+"iso42001": 0.5
+},
+"profile": "regulated",
+"rank": 66,
+"recomputed": 75.1,
+"score": 77.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 66,
+"seed_score": 75.1,
+"source": "seed_xlsx",
+"unknown": []
+},
+"healthcare": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"iso42001": 0.5
+},
+"profile": "regulated",
+"rank": 60,
+"recomputed": 75.1,
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 60,
+"seed_score": 75.1,
+"source": "seed_xlsx",
+"unknown": []
+},
+"insurance": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 16.7,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"iso42001": 0.5
+},
+"profile": "regulated",
+"rank": 4,
+"recomputed": 93.4,
+"score": 72.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 4,
+"seed_score": 93.4,
+"source": "seed_xlsx",
+"unknown": []
+},
+"legal": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"iso42001": 0.5
+},
+"profile": "regulated",
+"rank": 57,
+"recomputed": 75.1,
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 57,
+"seed_score": 75.1,
+"source": "seed_xlsx",
+"unknown": []
+},
+"regulatory": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"iso42001": 0.5
+},
+"profile": "regulated",
+"rank": 63,
+"recomputed": 75.1,
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 63,
+"seed_score": 75.1,
+"source": "seed_xlsx",
+"unknown": []
+},
+"sales": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 23.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"gdpr": 0.15,
+"iso42001": 0.5
+},
+"profile": "commercial",
+"rank": 60,
+"recomputed": 82.3,
+"score": 81.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 60,
+"seed_score": 82.3,
+"source": "seed_xlsx",
+"unknown": []
+},
+"supply_chain": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 25.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"csa_star": 0.5,
+"iso42001": 0.5
 },
 "profile": "operations",
-"rank": 62,
+"rank": 53,
 "recomputed": 79.4,
-"score": 82.3,
+"score": 81.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 53,
 "seed_score": 79.4,
@@ -503,7 +503,7 @@
 "docs": 9.0,
 "domain_fit": 72.0,
 "ecosystem": 14.0,
-"governance": 60.0,
+"governance": 30.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -511,11 +511,11 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 1.0,
-"iso42001": 1.0
+"csa_star": 0.5,
+"iso42001": 0.5
 },
 "profile": "technology",
-"rank": 73,
+"rank": 69,
 "recomputed": 91.3,
 "score": 85.9,
 "score_version": "sar-score-2.0",
@@ -526,7 +526,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -548,24 +548,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "Commercial",
 "name": "Agentforce Insurance",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:49:35Z",
+"checked_at": "2026-10-11T03:06:32Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:30Z",
+"checked_at": "2026-10-11T03:06:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T01:49:36Z",
+"checked_at": "2026-10-11T03:06:34Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -575,7 +575,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:58:36Z",
+"checked_at": "2026-10-11T03:14:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -600,7 +600,7 @@
 "sources": [
 {
 "payload_hash": "46aff99a03186b39e13a739964e23ad3cb8628755bb2245efc9ab8b52d8a4547",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://www.salesforce.com/financial-services/insurance/"
 }
@@ -612,7 +612,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 5,
-"security": 1
+"security": 1,
+"vendor_compliance": 1
 },
 "url": "https://www.salesforce.com/financial-services/insurance/",
 "vendor": "Salesforce"

@@ -31,7 +31,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "cc8c1d05d4071604327c7f6a6585d0cb4092dff42bf566aa1d1ba846959cd943",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:28Z",
+"retrieved_at": "2026-10-11T03:09:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,7 +57,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3d368f2749f610fe78af02d3961ea1e8d6b2529ec146d5a8157f6eae600c58a7",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:28Z",
+"retrieved_at": "2026-10-11T03:09:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,7 +83,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "cc8c1d05d4071604327c7f6a6585d0cb4092dff42bf566aa1d1ba846959cd943",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:53:28Z",
+"retrieved_at": "2026-10-11T03:09:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -104,7 +104,7 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -112,7 +112,7 @@
 "confidence": 0.34,
 "evidence_coverage": 0.75,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "data",
 "rank": null,
@@ -129,7 +129,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -137,7 +137,7 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -152,7 +152,7 @@
 "external_ids": {
 "mcp_registry": "ai.agentui/apps"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -174,19 +174,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": null,
 "name": "AgentUI Apps",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:46:27Z",
+"checked_at": "2026-10-11T03:03:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:46:25Z",
+"checked_at": "2026-10-11T03:03:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -209,7 +209,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T02:01:29Z",
+"checked_at": "2026-10-11T03:16:49Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -227,7 +227,7 @@
 "sources": [
 {
 "payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentui/apps"
 }
@@ -239,7 +239,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://agentui.ai",
 "vendor": "agentui.ai"

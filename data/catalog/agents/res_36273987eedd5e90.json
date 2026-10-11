@@ -19,7 +19,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "7fc4e66a619e0b9251accf3cce198215d3619afb8384fe65d5ca0d7a394900fa",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:56Z",
+"retrieved_at": "2026-10-11T03:12:42Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:56Z",
+"retrieved_at": "2026-10-11T03:12:42Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:56Z",
+"retrieved_at": "2026-10-11T03:12:42Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4eaecbbb5c4886255c4934e46075bffbf8bd39e37dfff6f5f640314238fb8ffb",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:56:56Z",
+"retrieved_at": "2026-10-11T03:12:42Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -118,7 +118,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -126,12 +126,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "security",
-"rank": 80,
+"rank": 63,
 "recomputed": 79.1,
-"score": 74.2,
+"score": 73.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 63,
 "seed_score": 79.1,
@@ -144,7 +144,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -152,10 +152,10 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "data",
-"rank": 80,
+"rank": 90,
 "recomputed": 83.3,
 "score": 82.5,
 "score_version": "sar-score-2.0",
@@ -170,7 +170,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -178,12 +178,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 81,
+"rank": 82,
 "recomputed": 73.9,
-"score": 67.1,
+"score": 66.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 82,
 "seed_score": 73.9,
@@ -205,7 +205,7 @@
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "regulated",
-"rank": 82,
+"rank": 78,
 "recomputed": 73.9,
 "score": 66.2,
 "score_version": "sar-score-2.0",
@@ -220,7 +220,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -228,13 +228,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"hipaa": 0.3,
-"soc2": 0.3
+"hipaa": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 81,
+"rank": 75,
 "recomputed": 73.9,
-"score": 68.0,
+"score": 67.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 75,
 "seed_score": 73.9,
@@ -247,7 +247,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 10.0,
+"governance": 5.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -255,13 +255,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"hipaa": 0.3,
-"soc2": 0.3
+"hipaa": 0.15,
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 81,
+"rank": 71,
 "recomputed": 73.9,
-"score": 67.7,
+"score": 66.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 71,
 "seed_score": 73.9,
@@ -274,7 +274,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -282,12 +282,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 83,
+"rank": 73,
 "recomputed": 73.9,
-"score": 67.1,
+"score": 66.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 73,
 "seed_score": 73.9,
@@ -300,7 +300,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -308,12 +308,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "regulated",
-"rank": 80,
+"rank": 77,
 "recomputed": 73.9,
-"score": 67.1,
+"score": 66.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 77,
 "seed_score": 73.9,
@@ -326,7 +326,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 12.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -334,13 +334,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"gdpr": 0.3,
-"soc2": 0.3
+"gdpr": 0.15,
+"soc2": 0.15
 },
 "profile": "commercial",
-"rank": 85,
+"rank": 79,
 "recomputed": 80.5,
-"score": 78.1,
+"score": 77.8,
 "score_version": "sar-score-2.0",
 "seed_rank": 79,
 "seed_score": 80.5,
@@ -353,7 +353,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 7.5,
+"governance": 3.8,
 "health": 20.0,
 "trust": 23.0
 },
@@ -361,12 +361,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "operations",
-"rank": 87,
+"rank": 72,
 "recomputed": 78.1,
-"score": 75.4,
+"score": 75.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 72,
 "seed_score": 78.1,
@@ -379,7 +379,7 @@
 "docs": 10.0,
 "domain_fit": 35.0,
 "ecosystem": 13.0,
-"governance": 6.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 23.0
 },
@@ -387,10 +387,10 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
-"rank": 78,
+"rank": 58,
 "recomputed": 92.1,
 "score": 84.9,
 "score_version": "sar-score-2.0",
@@ -403,7 +403,7 @@
 "external_ids": {
 "github": "pydantic/pydantic-ai"
 },
-"first_seen": "2026-10-11T01:36:23Z",
+"first_seen": "2026-10-11T02:55:12Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -486,7 +486,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:23Z",
+"last_seen": "2026-10-11T02:55:12Z",
 "license": "MIT",
 "name": "Pydantic AI",
 "news": [
@@ -520,7 +520,7 @@
 "oauth2"
 ],
 "card_url": "https://pydantic.dev/.well-known/agent-card.json",
-"checked_at": "2026-10-11T01:49:26Z",
+"checked_at": "2026-10-11T03:06:25Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -536,7 +536,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T01:49:26Z",
+"checked_at": "2026-10-11T03:06:25Z",
 "entries": 4,
 "parser_version": "ard-0.91",
 "sources": [
@@ -546,7 +546,7 @@
 },
 "mcp": {
 "card_url": "https://pydantic.dev/.well-known/mcp.json",
-"checked_at": "2026-10-11T01:49:27Z",
+"checked_at": "2026-10-11T03:06:26Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid",
 "tools": [
@@ -609,7 +609,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T01:59:15Z",
+"checked_at": "2026-10-11T03:15:21Z",
 "cves": 16,
 "source": "nvd",
 "tier": 1
@@ -634,7 +634,7 @@
 "github_language": "Python",
 "github_open_issues": 1391,
 "github_pushed_at": "2026-10-10T14:10:41Z",
-"github_stars": 20535,
+"github_stars": 20536,
 "homepage": "https://pydantic.dev/pydantic-ai",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -650,7 +650,7 @@
 "sources": [
 {
 "payload_hash": "eed9caccefb340e0fbf1f507da7b5452330843471ed14bc0c0caefc82217a2c9",
-"retrieved_at": "2026-10-11T01:36:23Z",
+"retrieved_at": "2026-10-11T02:55:12Z",
 "system": "seed_xlsx",
 "url": "https://github.com/pydantic/pydantic-ai"
 }
@@ -670,7 +670,8 @@
 "identity": 2,
 "issues": 3,
 "protocols": 1,
-"security": 1
+"security": 1,
+"vendor_compliance": 4
 },
 "url": "https://github.com/pydantic/pydantic-ai",
 "vendor": "Pydantic"

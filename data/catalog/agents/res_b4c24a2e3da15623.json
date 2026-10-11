@@ -28,7 +28,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "51832ad3b23f3b643b459c8befcc3647aafbd6a78dcd0febcf1519bbe1b66ef3",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:18Z",
+"retrieved_at": "2026-10-11T03:10:21Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "0e56a7d27d9b6d1989f7437042290793067b0a97c38b1d50778d1172c9da157d",
+"payload_hash": "d4ca9a68cc27716083abf4e2f5046c5634c24b2b070680fe92f8b217d0cc711b",
 "period_end": null,
-"retrieved_at": "2026-10-11T01:54:18Z",
+"retrieved_at": "2026-10-11T03:10:21Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,7 +75,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.6,
-"governance": 6.0,
+"governance": 3.0,
 "health": 12.0,
 "trust": 19.0
 },
@@ -83,7 +83,7 @@
 "confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {
-"soc2": 0.3
+"soc2": 0.15
 },
 "profile": "technology",
 "rank": null,
@@ -99,7 +99,7 @@
 "github": "auxen-ai/auxen-mcp",
 "mcp_registry": "ai.auxen/auxen"
 },
-"first_seen": "2026-10-11T01:36:24Z",
+"first_seen": "2026-10-11T02:55:13Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -121,19 +121,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T01:36:24Z",
+"last_seen": "2026-10-11T02:55:13Z",
 "license": null,
 "name": "Auxen",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T01:47:09Z",
+"checked_at": "2026-10-11T03:04:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T01:47:08Z",
+"checked_at": "2026-10-11T03:04:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -167,7 +167,7 @@
 "sources": [
 {
 "payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
-"retrieved_at": "2026-10-11T01:36:24Z",
+"retrieved_at": "2026-10-11T02:55:13Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.auxen/auxen"
 }
@@ -179,7 +179,8 @@
 "identity": 2,
 "issues": 1,
 "protocols": 3,
-"security": null
+"security": null,
+"vendor_compliance": 4
 },
 "url": "https://auxen.ai",
 "vendor": "auxen.ai"
