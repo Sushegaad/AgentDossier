@@ -27,9 +27,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "3f673444b5e747502d98a923d29cc56889d8af0323beccd8f2724f82a40c82b4",
+"payload_hash": "dc879366d81d4c7b22ca967e040c8baadfe4b4f784d59f09d7db3f2a17d6dd27",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:42Z",
+"retrieved_at": "2026-10-11T19:24:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -72,7 +72,7 @@
 "github": "auten-ai/auten-mcp",
 "mcp_registry": "ai.auten/mcp"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "Auten",
 "news": [
@@ -113,12 +113,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:35Z",
+"checked_at": "2026-10-11T19:17:25Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:32Z",
+"checked_at": "2026-10-11T19:17:22Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -151,8 +151,8 @@
 "slug": "auten-ai-auten",
 "sources": [
 {
-"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"payload_hash": "d991c3aec3eab6427ebf70ba4dfd6b3cf7cd1434c81a2caaae671066cb3dce20",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.auten/mcp"
 }

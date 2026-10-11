@@ -27,9 +27,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "a4aefc90bfb32297ee074fd8c803670b4b402bff7a336a75d4b31fc3c6ddba7e",
+"payload_hash": "15f7fd2b93521eb93b082d68f4fc6fb289121c824e86b61e540facada64ddd15",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:46:20Z",
+"retrieved_at": "2026-10-11T19:27:18Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -74,7 +74,7 @@
 "external_ids": {
 "ard": "urn:air:superset.sh:skill:superset-setup"
 },
-"first_seen": "2026-10-11T17:38:56Z",
+"first_seen": "2026-10-11T19:19:47Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -96,7 +96,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:38:56Z",
+"last_seen": "2026-10-11T19:19:47Z",
 "license": null,
 "name": "superset-setup",
 "news": [],
@@ -129,7 +129,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:55:49Z",
+"checked_at": "2026-10-11T19:37:35Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -139,7 +139,7 @@
 "sources": [
 {
 "payload_hash": "8baf7d12e5d58e7258d562a85a77ea1a076e167214ea7d7fb7481320e99d5ee0",
-"retrieved_at": "2026-10-11T17:38:56Z",
+"retrieved_at": "2026-10-11T19:19:47Z",
 "system": "ard",
 "url": "https://superset.sh/.well-known/ai-catalog.json"
 }

@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "f9211122f72be0ca4eb4f9931db4f33b4487d36be5d555b2c7a0c2748ff3c678",
+"payload_hash": "4e2e2a2f3a82ab622af25b14d411b7372f27b6eedb95dbb245fa22bcceec1d54",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:28Z",
+"retrieved_at": "2026-10-11T19:24:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -70,7 +70,7 @@
 "external_ids": {
 "mcp_registry": "ai.archome/archome"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,19 +92,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "Archome AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:23Z",
+"checked_at": "2026-10-11T19:17:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:22Z",
+"checked_at": "2026-10-11T19:17:11Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -127,7 +127,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:49:58Z",
+"checked_at": "2026-10-11T19:31:05Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -144,8 +144,8 @@
 "slug": "archome-ai-archome-ai",
 "sources": [
 {
-"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"payload_hash": "d991c3aec3eab6427ebf70ba4dfd6b3cf7cd1434c81a2caaae671066cb3dce20",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.archome/archome"
 }

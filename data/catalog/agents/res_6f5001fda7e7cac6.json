@@ -29,9 +29,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "7ec07bbd525eb833069bd6e708ca30ed8b1e6c537868194bcdb4c79cc485f750",
+"payload_hash": "82fd95c6f7d1859241e21634063597a8a7cab4dc9df787714f1e19280905db11",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:42:50Z",
+"retrieved_at": "2026-10-11T19:23:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -98,7 +98,7 @@
 "external_ids": {
 "mcp_registry": "ai.1clickwebsite/mcp"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -120,19 +120,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "1ClickWebsite",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:35:51Z",
+"checked_at": "2026-10-11T19:16:39Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:35:49Z",
+"checked_at": "2026-10-11T19:16:37Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -155,7 +155,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:48:52Z",
+"checked_at": "2026-10-11T19:29:55Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -172,8 +172,8 @@
 "slug": "1clickwebsite-ai-1clickwebsite",
 "sources": [
 {
-"payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"payload_hash": "be6874a89f6d06fb5f5241d7ff6725b7ac54a94e992fc46012228271c954c300",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.1clickwebsite/mcp"
 }

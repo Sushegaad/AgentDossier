@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:07Z",
+"retrieved_at": "2026-10-11T19:21:57Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -54,7 +54,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:39:28Z",
+"retrieved_at": "2026-10-11T19:20:18Z",
 "review_reason": "vendor authorization for Atlassian Government Cloud; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -78,9 +78,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "8d3dea38eb82fe8633359d4ce88d4111875d5400b24a34b9d9eb369650c7dfb1",
+"payload_hash": "ceda67c2dcae7a0e28c580a8296dc9a7d6ce662082a32df6925919040b50576d",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:35Z",
+"retrieved_at": "2026-10-11T19:24:26Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -106,7 +106,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "204db9cad878609347ed3f94c1bbf2c88dbe085db32e87b5e34c8ef383a7973a",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:35Z",
+"retrieved_at": "2026-10-11T19:24:26Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -132,7 +132,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "204db9cad878609347ed3f94c1bbf2c88dbe085db32e87b5e34c8ef383a7973a",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:35Z",
+"retrieved_at": "2026-10-11T19:24:26Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -158,7 +158,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "204db9cad878609347ed3f94c1bbf2c88dbe085db32e87b5e34c8ef383a7973a",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:35Z",
+"retrieved_at": "2026-10-11T19:24:26Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -184,7 +184,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "204db9cad878609347ed3f94c1bbf2c88dbe085db32e87b5e34c8ef383a7973a",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:35Z",
+"retrieved_at": "2026-10-11T19:24:26Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -538,7 +538,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -560,7 +560,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:17Z",
 "license": "Atlassian service",
 "name": "Atlassian Rovo",
 "news": [
@@ -581,17 +581,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:31Z",
+"checked_at": "2026-10-11T19:17:20Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:29Z",
+"checked_at": "2026-10-11T19:17:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T17:36:31Z",
+"checked_at": "2026-10-11T19:17:32Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -601,7 +601,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:47:19Z",
+"checked_at": "2026-10-11T19:28:13Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -626,7 +626,7 @@
 "sources": [
 {
 "payload_hash": "d50e0c762e9606a9e537de7b81e479256b903323fe3d4ef9c344d542af44f601",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://www.atlassian.com/software/rovo"
 }

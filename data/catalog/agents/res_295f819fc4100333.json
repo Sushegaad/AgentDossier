@@ -29,9 +29,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:40:58Z",
+"retrieved_at": "2026-10-11T19:21:47Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -61,7 +61,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:39:20Z",
+"retrieved_at": "2026-10-11T19:20:10Z",
 "review_reason": "vendor authorization for Google Workspace; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -368,7 +368,7 @@
 "external_ids": {
 "github": "google-gemini/gemini-cli"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -415,7 +415,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:33:43Z",
+"last_seen": "2026-10-11T19:14:31Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_9c4c7cf821517a82",
@@ -462,12 +462,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:37:49Z",
+"checked_at": "2026-10-11T19:18:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:37:49Z",
+"checked_at": "2026-10-11T19:18:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -475,7 +475,7 @@
 "evidence_url": "https://github.com/google-gemini/gemini-cli",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T17:37:50Z",
+"checked_at": "2026-10-11T19:18:42Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -487,7 +487,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:46:50Z",
+"checked_at": "2026-10-11T19:27:47Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -512,7 +512,7 @@
 "github_language": "TypeScript",
 "github_open_issues": 760,
 "github_pushed_at": "2026-10-10T01:38:43Z",
-"github_stars": 107283,
+"github_stars": 107285,
 "github_topic": "ai-agents",
 "homepage": "https://geminicli.com",
 "observed_popularity": "Not captured",
@@ -528,13 +528,13 @@
 "sources": [
 {
 "payload_hash": "7a8e0f726b50746e9ab62edb1341f2b93cba74a0bf199906b9f59ba8c8b40a12",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://github.com/google-gemini/gemini-cli"
 },
 {
-"payload_hash": "a3ca83b8ced2cb995117d91da168ad7f0baebc61c647e647d733b664c47f5540",
-"retrieved_at": "2026-10-11T17:29:25Z",
+"payload_hash": "e5dfb00a509707319edb3776ae36dcf39dba80b19e17c72a227cce8c0ad80eea",
+"retrieved_at": "2026-10-11T19:10:14Z",
 "system": "github",
 "url": "https://github.com/google-gemini/gemini-cli"
 }

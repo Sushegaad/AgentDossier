@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:02Z",
+"retrieved_at": "2026-10-11T19:21:51Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -54,7 +54,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:39:23Z",
+"retrieved_at": "2026-10-11T19:20:13Z",
 "review_reason": "vendor authorization for ChatGPT Enterprise and API Platform; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -361,7 +361,7 @@
 "external_ids": {
 "github": "openai/openai-agents-python"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -383,7 +383,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:17Z",
 "license": "MIT",
 "name": "OpenAI Agents SDK (Python)",
 "news": [
@@ -430,7 +430,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:47:00Z",
+"checked_at": "2026-10-11T19:27:57Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -469,7 +469,7 @@
 "sources": [
 {
 "payload_hash": "98d58520362833ba8adb1cf10160e5256dd7c0510b9d5c0ac4bfb0418872ca53",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://github.com/openai/openai-agents-python"
 }

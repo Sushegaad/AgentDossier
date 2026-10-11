@@ -28,7 +28,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "8d10de45fbf0088eb55e56dd50c4847b2d39e3ac9ed55f667ee2843185111a6d",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:53Z",
+"retrieved_at": "2026-10-11T19:24:43Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -70,7 +70,7 @@
 "external_ids": {
 "mcp_registry": "ai.b77/chess-results"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,19 +92,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "Chess Results",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:42Z",
+"checked_at": "2026-10-11T19:17:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:40Z",
+"checked_at": "2026-10-11T19:17:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -127,7 +127,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:50:32Z",
+"checked_at": "2026-10-11T19:31:40Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -144,8 +144,8 @@
 "slug": "b77-ai-chess-results",
 "sources": [
 {
-"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"payload_hash": "d991c3aec3eab6427ebf70ba4dfd6b3cf7cd1434c81a2caaae671066cb3dce20",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.b77/chess-results"
 }

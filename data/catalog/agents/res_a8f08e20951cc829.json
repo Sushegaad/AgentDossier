@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "780c42464973a0a8c75943c403b493f0a470ba8e914f1996964e4bc2b14bb70a",
+"payload_hash": "052a6d94622deae45c410844db77e50e038f0a305933782fff4285b405f7ac35",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:46:18Z",
+"retrieved_at": "2026-10-11T19:27:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -43,9 +43,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "780c42464973a0a8c75943c403b493f0a470ba8e914f1996964e4bc2b14bb70a",
+"payload_hash": "052a6d94622deae45c410844db77e50e038f0a305933782fff4285b405f7ac35",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:46:18Z",
+"retrieved_at": "2026-10-11T19:27:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -115,7 +115,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -137,24 +137,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:17Z",
 "license": "Commercial",
 "name": "Suki Assistant",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:38:55Z",
+"checked_at": "2026-10-11T19:19:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:38:53Z",
+"checked_at": "2026-10-11T19:19:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T17:38:55Z",
+"checked_at": "2026-10-11T19:19:47Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -164,7 +164,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:47:57Z",
+"checked_at": "2026-10-11T19:28:52Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -189,7 +189,7 @@
 "sources": [
 {
 "payload_hash": "3256038dd8c2cb71d8ffe206c1f058d38b3292b345f92116039994eb50aea120",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://www.suki.ai/"
 }

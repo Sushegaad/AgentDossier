@@ -20,7 +20,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "97e28da23363c58084aa3842e213385cc0065a828f5b536714270860fb8351c9",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:42:52Z",
+"retrieved_at": "2026-10-11T19:23:40Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -87,7 +87,7 @@
 "external_ids": {
 "github": "activepieces/activepieces"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -158,7 +158,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:33:43Z",
+"last_seen": "2026-10-11T19:14:31Z",
 "license": "MIT",
 "merged_ids": [
 "res_32daeba988d6a301",
@@ -193,12 +193,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:35:53Z",
+"checked_at": "2026-10-11T19:16:40Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:35:52Z",
+"checked_at": "2026-10-11T19:16:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -206,7 +206,7 @@
 "evidence_url": "https://github.com/activepieces/activepieces",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T17:35:54Z",
+"checked_at": "2026-10-11T19:16:41Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -218,7 +218,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:47:48Z",
+"checked_at": "2026-10-11T19:28:42Z",
 "cves": 8,
 "source": "nvd",
 "tier": 1
@@ -241,8 +241,8 @@
 "github_created_at": "2022-12-03T02:52:46Z",
 "github_forks": 4323,
 "github_language": "TypeScript",
-"github_open_issues": 720,
-"github_pushed_at": "2026-10-11T17:29:05Z",
+"github_open_issues": 719,
+"github_pushed_at": "2026-10-11T19:09:54Z",
 "github_stars": 25000,
 "github_topic": "ai-agents",
 "homepage": "https://www.activepieces.com",
@@ -259,13 +259,13 @@
 "sources": [
 {
 "payload_hash": "1051f58c016b1d775401e9157ba1e773fcfc8c8b25f682da46a76182d507a674",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://github.com/activepieces/activepieces"
 },
 {
-"payload_hash": "a3ca83b8ced2cb995117d91da168ad7f0baebc61c647e647d733b664c47f5540",
-"retrieved_at": "2026-10-11T17:29:25Z",
+"payload_hash": "e5dfb00a509707319edb3776ae36dcf39dba80b19e17c72a227cce8c0ad80eea",
+"retrieved_at": "2026-10-11T19:10:14Z",
 "system": "github",
 "url": "https://github.com/activepieces/activepieces"
 }
