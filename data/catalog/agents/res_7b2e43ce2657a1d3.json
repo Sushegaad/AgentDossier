@@ -4,56 +4,67 @@
 "category": "Memory-first agent platform",
 "commercial": false,
 "compliance": [],
-"components": {
-"adoption": 22.0,
-"docs": 9.0,
-"domain_fit": 99.0,
-"ecosystem": 13.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 22.0
-},
 "deployment": "GitHub; Letta Cloud",
 "description": "Stateful memory-oriented agents with roots in MemGPT research.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.944,
+"governance_credited": {},
 "profile": "general",
-"rank": 98,
+"rank": 96,
 "recomputed": 84.7,
-"score": 84.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 76.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 98,
+"seed_score": 84.7,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "data": {
+"components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
-"rank": 77,
+"rank": 78,
 "recomputed": 84.2,
-"score": 84.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 77,
+"seed_score": 84.2,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "letta-ai/letta"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,7 +75,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -75,7 +86,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_131bb696ee5ba132"
@@ -85,17 +96,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:56Z",
+"checked_at": "2026-10-11T01:48:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:55Z",
+"checked_at": "2026-10-11T01:48:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:58:57Z",
+"checked_at": "2026-10-11T01:48:16Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -107,14 +118,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 22.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 22.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-10-11T07:38:37Z",
-"github_forks": 2642,
+"github_forks": 2643,
 "github_language": null,
 "github_open_issues": 0,
 "github_pushed_at": "2026-09-10T17:59:08Z",
-"github_stars": 25094,
+"github_stars": 25097,
 "github_topic": "ai-agents",
 "homepage": "https://docs.letta.com/",
 "observed_popularity": "Not captured",
@@ -130,13 +150,13 @@
 "sources": [
 {
 "payload_hash": "8845a0d8ac12a5490d064c89ea36c602d1077bc0885ac6458a4ebc31b03562aa",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/letta-ai/letta"
 },
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/letta-ai/letta"
 }

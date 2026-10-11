@@ -38,16 +38,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 62.6,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -66,16 +61,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.9,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
 "rank": null,
 "score": 57.3,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -94,16 +84,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
 "score": 64.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -122,16 +107,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 68.5,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -141,7 +121,7 @@
 "external_ids": {
 "github": "jo-inc/camofox-browser"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -152,7 +132,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -163,14 +143,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "MIT",
 "name": "camofox-browser",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-07T03:38:46Z",
-"headline": "camofox-browser Camoufox backup v156.0.1-beta.36",
+"headline": "camofox-browser: Camoufox backup v156.0.1-beta.36",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -181,7 +161,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-05T02:45:36Z",
-"headline": "camofox-browser v1.18.1 — VNC compatibility and MCP startup fix",
+"headline": "camofox-browser: v1.18.1 — VNC compatibility and MCP startup fix",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -210,7 +190,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:20Z",
+"checked_at": "2026-10-11T02:06:37Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -218,19 +198,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-26T07:31:13Z",
-"github_forks": 1148,
+"github_forks": 1152,
 "github_language": "JavaScript",
-"github_open_issues": 169,
+"github_open_issues": 175,
 "github_pushed_at": "2026-10-07T03:38:45Z",
-"github_stars": 11509,
+"github_stars": 11524,
 "github_topic": "ai-agent",
 "homepage": "https://github.com/jo-inc/camofox-browser#readme"
 },
 "slug": "jo-inc-camofox-browser",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/jo-inc/camofox-browser"
 }

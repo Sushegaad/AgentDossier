@@ -6,20 +6,20 @@
 {
 "certificate_id": null,
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://www.alpha-sense.com/security/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "acd86eefc082f15c4435099cf4ac859ad31916e7caca86109d5766135dcf9a20",
+"next_check": "2026-10-18",
+"payload_hash": "9b2c254d42afa1060e933a6428e9e1074c62385e5dc81097d066b1e04aff2184",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:04:57Z",
+"retrieved_at": "2026-10-11T01:53:41Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -32,20 +32,20 @@
 {
 "certificate_id": null,
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "pages_visited": 5
 },
-"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://www.alpha-sense.com/security/",
 "framework": "iso27001",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "acd86eefc082f15c4435099cf4ac859ad31916e7caca86109d5766135dcf9a20",
+"next_check": "2026-10-18",
+"payload_hash": "9b2c254d42afa1060e933a6428e9e1074c62385e5dc81097d066b1e04aff2184",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:04:57Z",
+"retrieved_at": "2026-10-11T01:53:41Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -58,20 +58,20 @@
 {
 "certificate_id": null,
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "pages_visited": 5
 },
-"display": "ISO 42001: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "ISO 42001: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://www.alpha-sense.com/security/",
 "framework": "iso42001",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "acd86eefc082f15c4435099cf4ac859ad31916e7caca86109d5766135dcf9a20",
+"next_check": "2026-10-18",
+"payload_hash": "9b2c254d42afa1060e933a6428e9e1074c62385e5dc81097d066b1e04aff2184",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:04:57Z",
+"retrieved_at": "2026-10-11T01:53:41Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -84,20 +84,20 @@
 {
 "certificate_id": null,
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://www.alpha-sense.com/security/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "acd86eefc082f15c4435099cf4ac859ad31916e7caca86109d5766135dcf9a20",
+"next_check": "2026-10-18",
+"payload_hash": "9b2c254d42afa1060e933a6428e9e1074c62385e5dc81097d066b1e04aff2184",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:04:57Z",
+"retrieved_at": "2026-10-11T01:53:41Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -108,214 +108,347 @@
 "variant": "SOC2_TYPE_II"
 }
 ],
-"components": {
-"adoption": 27.0,
-"docs": 10.0,
-"domain_fit": 100.0,
-"ecosystem": 12.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 23.0
-},
 "deployment": "SaaS; market intelligence",
 "description": "Widely used enterprise market-intelligence platform for financial/company research.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 22.5,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.7,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "general",
-"rank": 46,
+"rank": 32,
 "recomputed": 90.2,
-"score": 90.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.4,
+"score_version": "sar-score-2.0",
+"seed_rank": 46,
+"seed_score": 90.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "cybersecurity": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 18.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 84.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "security",
-"rank": 69,
+"rank": 41,
 "recomputed": 78.8,
-"score": 78.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 81.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 69,
+"seed_score": 78.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "data": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 18.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 92.9,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "data",
-"rank": 25,
+"rank": 36,
 "recomputed": 88.7,
-"score": 88.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 89.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 25,
+"seed_score": 88.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 18.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "regulated",
-"rank": 9,
+"rank": 36,
 "recomputed": 91.8,
-"score": 91.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 9,
+"seed_score": 91.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 12.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3
 },
 "profile": "regulated",
-"rank": 79,
+"rank": 50,
 "recomputed": 73.8,
-"score": 73.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 79,
+"seed_score": 73.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 12.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "regulated",
-"rank": 84,
+"rank": 41,
 "recomputed": 73.2,
-"score": 73.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 84,
+"seed_score": 73.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 15.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "regulated",
-"rank": 81,
+"rank": 39,
 "recomputed": 73.2,
-"score": 73.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 77.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 81,
+"seed_score": 73.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 18.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "regulated",
-"rank": 83,
+"rank": 37,
 "recomputed": 73.2,
-"score": 73.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 83,
+"seed_score": 73.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 18.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 79.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "regulated",
-"rank": 86,
+"rank": 37,
 "recomputed": 73.2,
-"score": 73.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 86,
+"seed_score": 73.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 18.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.9,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"gdpr": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "commercial",
-"rank": 81,
+"rank": 38,
 "recomputed": 80.4,
-"score": 80.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 81,
+"seed_score": 80.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 22.5,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 88.4,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "operations",
-"rank": 80,
+"rank": 38,
 "recomputed": 77.7,
-"score": 77.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 86.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 80,
+"seed_score": 77.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 24.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 92.4,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"iso27001": 0.3,
+"iso42001": 0.3,
+"soc2": 0.3
 },
 "profile": "technology",
-"rank": 85,
+"rank": 34,
 "recomputed": 90.2,
-"score": 90.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 89.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 85,
+"seed_score": 90.2,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -324,10 +457,10 @@
 "id": "res_29f00a9cd7d26567",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -337,24 +470,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Commercial",
 "name": "AlphaSense Generative Search / Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:57:22Z",
+"checked_at": "2026-10-11T01:46:39Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:57:21Z",
+"checked_at": "2026-10-11T01:46:37Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:57:23Z",
+"checked_at": "2026-10-11T01:46:39Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -364,7 +497,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:09:33Z",
+"checked_at": "2026-10-11T01:58:15Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -373,6 +506,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 27.0,
+"docs": 10.0,
+"domain_fit": 100.0,
+"ecosystem": 12.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 23.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -380,7 +522,7 @@
 "sources": [
 {
 "payload_hash": "0404131ac6718883aa92333d95d32fcf5b00c751bba2556359294111d77927ce",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://www.alpha-sense.com/"
 }
@@ -388,8 +530,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 4,
-"identity": 3,
+"compliance": 5,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": 1

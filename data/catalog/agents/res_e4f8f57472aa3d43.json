@@ -3,72 +3,93 @@
 "category": "Coding agent",
 "commercial": false,
 "compliance": [],
-"components": {
-"adoption": 26.0,
-"docs": 9.0,
-"domain_fit": 99.0,
-"ecosystem": 15.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 20.0
-},
 "deployment": "GitHub; VS Code",
 "description": "Fast-growing open-source coding agent and Cline-derived ecosystem.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "sales": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "commercial",
-"rank": 95,
+"rank": 55,
 "recomputed": 79.7,
-"score": 79.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 95,
+"seed_score": 79.7,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "supply_chain": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "operations",
-"rank": 93,
+"rank": 53,
 "recomputed": 77.1,
-"score": 77.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 84.4,
+"score_version": "sar-score-2.0",
+"seed_rank": 93,
+"seed_score": 77.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "technology": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 67,
+"rank": 43,
 "recomputed": 91.4,
-"score": 91.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 88.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 67,
+"seed_score": 91.4,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "RooCodeInc/Roo-Code"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -79,7 +100,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -151,24 +172,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Apache-2.0",
 "name": "Roo Code",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:10Z",
+"checked_at": "2026-10-11T01:49:31Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:09Z",
+"checked_at": "2026-10-11T01:49:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T05:00:10Z",
+"checked_at": "2026-10-11T01:49:31Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -178,7 +199,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:10:51Z",
+"checked_at": "2026-10-11T01:59:27Z",
 "cves": 18,
 "source": "nvd",
 "tier": 1
@@ -187,14 +208,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 15.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 20.0
+},
 "signals": {
 "github_archived": true,
 "github_created_at": "2024-10-31T17:56:50Z",
-"github_forks": 3424,
+"github_forks": 3425,
 "github_language": "TypeScript",
 "github_open_issues": 1033,
 "github_pushed_at": "2026-05-15T18:08:47Z",
-"github_stars": 24283,
+"github_stars": 24284,
 "homepage": "https://roocode.com",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -209,7 +239,7 @@
 "sources": [
 {
 "payload_hash": "c4275786703aa21da30324323702e8ada04eacd9ed53d06a290cba9d5630723f",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/RooCodeInc/Roo-Code"
 }

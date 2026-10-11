@@ -37,16 +37,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 71.7,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -65,16 +60,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.9,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
 "rank": null,
 "score": 64.6,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -93,16 +83,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 81.2,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -112,7 +97,7 @@
 "external_ids": {
 "github": "affaan-m/ECC"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,7 +108,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -134,14 +119,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "MIT",
 "name": "ECC",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-01T23:00:36Z",
-"headline": "ECC v2.2.3",
+"headline": "ECC release v2.2.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -152,7 +137,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-30T19:04:52Z",
-"headline": "ECC v2.2.2",
+"headline": "ECC release v2.2.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -164,12 +149,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:59Z",
+"checked_at": "2026-10-11T01:48:19Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:59Z",
+"checked_at": "2026-10-11T01:48:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -177,7 +162,7 @@
 "evidence_url": "https://ecc.tools",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:00Z",
+"checked_at": "2026-10-11T01:48:19Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -190,19 +175,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-18T00:51:51Z",
-"github_forks": 41189,
+"github_forks": 41242,
 "github_language": "JavaScript",
-"github_open_issues": 225,
-"github_pushed_at": "2026-10-10T01:41:12Z",
-"github_stars": 276066,
+"github_open_issues": 169,
+"github_pushed_at": "2026-10-11T01:15:29Z",
+"github_stars": 276556,
 "github_topic": "ai-agents",
 "homepage": "https://ecc.tools"
 },
 "slug": "affaan-m-ecc",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/affaan-m/ECC"
 }

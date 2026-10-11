@@ -32,16 +32,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/google",
 "framework": "csa_star",
 "issued": "2017-02-21",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:04:10Z",
+"retrieved_at": "2026-10-11T01:52:54Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -62,16 +62,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
 "evidence_url": "https://marketplace.fedramp.gov/products/F1206081364",
 "framework": "fedramp",
 "issued": "2021-10-28",
 "issuer": "JAB / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:22Z",
+"retrieved_at": "2026-10-11T01:51:15Z",
 "review_reason": "vendor authorization for Google Workspace; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -92,23 +92,18 @@
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 9.6,
-"governance": 66.7,
+"governance": 0.0,
 "health": 20.0,
 "trust": 18.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 78.5,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 78.5,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
 }
@@ -116,7 +111,7 @@
 "external_ids": {
 "github": "google/adk-go"
 },
-"first_seen": "2026-10-10T04:56:19Z",
+"first_seen": "2026-10-11T01:45:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -127,7 +122,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -138,14 +133,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:56:19Z",
+"last_seen": "2026-10-11T01:45:21Z",
 "license": "Apache-2.0",
 "name": "adk-go",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-05T06:51:06Z",
-"headline": "adk-go v1.8.0",
+"headline": "adk-go release v1.8.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -156,7 +151,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-30T17:22:10Z",
-"headline": "adk-go v2.5.0",
+"headline": "adk-go release v2.5.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -171,14 +166,14 @@
 "evidence_url": "https://google.github.io/adk-docs/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:14Z",
+"checked_at": "2026-10-11T01:48:32Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:13Z",
+"checked_at": "2026-10-11T01:48:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -186,7 +181,7 @@
 "evidence_url": "https://google.github.io/adk-docs/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:14Z",
+"checked_at": "2026-10-11T01:48:33Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -199,19 +194,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-05T17:16:26Z",
-"github_forks": 1025,
+"github_forks": 1027,
 "github_language": "Go",
-"github_open_issues": 189,
-"github_pushed_at": "2026-10-09T15:31:56Z",
-"github_stars": 8859,
+"github_open_issues": 205,
+"github_pushed_at": "2026-10-10T17:23:34Z",
+"github_stars": 8860,
 "github_topic": "a2a",
 "homepage": "https://google.github.io/adk-docs/"
 },
 "slug": "google-adk-go",
 "sources": [
 {
-"payload_hash": "c790f0fcb519627cd6015eb35357feebd0273b598dd2ca970180ffab06e84cf4",
-"retrieved_at": "2026-10-10T04:56:19Z",
+"payload_hash": "7d840cfc7a8c6d2eb59ccd606d7ead03a39ad41a281e640b08650b993940f835",
+"retrieved_at": "2026-10-11T01:45:21Z",
 "system": "github",
 "url": "https://github.com/google/adk-go"
 }
@@ -234,7 +229,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 1,
+"compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 3,

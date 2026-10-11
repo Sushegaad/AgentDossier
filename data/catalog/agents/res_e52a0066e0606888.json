@@ -40,16 +40,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 63.8,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -68,16 +63,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
 "score": 65.1,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -96,16 +86,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.85,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": null,
 "score": 50.7,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -124,16 +109,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.95,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "commercial",
 "rank": null,
 "score": 60.1,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -152,16 +132,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 67.6,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -171,7 +146,7 @@
 "external_ids": {
 "github": "elizaOS/eliza"
 },
-"first_seen": "2026-10-10T04:56:24Z",
+"first_seen": "2026-10-11T01:45:28Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -182,7 +157,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -193,24 +168,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:56:24Z",
+"last_seen": "2026-10-11T01:45:28Z",
 "license": "MIT",
 "name": "eliza",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:00Z",
+"checked_at": "2026-10-11T01:48:20Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:59Z",
+"checked_at": "2026-10-11T01:48:19Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:01Z",
+"checked_at": "2026-10-11T01:48:20Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -221,19 +196,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-07-09T07:55:40Z",
-"github_forks": 5788,
+"github_forks": 5792,
 "github_language": "TypeScript",
-"github_open_issues": 19,
-"github_pushed_at": "2026-10-10T04:54:51Z",
-"github_stars": 19564,
+"github_open_issues": 72,
+"github_pushed_at": "2026-10-11T01:43:03Z",
+"github_stars": 19567,
 "github_topic": "agentic",
 "homepage": "https://elizaresearch.ai/"
 },
 "slug": "elizaos-eliza",
 "sources": [
 {
-"payload_hash": "e9183efb7c3d6703efb0ffaaf433cad1073f34f1215bf3f4e7289a159e99115b",
-"retrieved_at": "2026-10-10T04:56:24Z",
+"payload_hash": "117d1ab92a9e314ca1d12811cf20d1dab08c7f351783b20a9abb6d721b9baffc",
+"retrieved_at": "2026-10-11T01:45:28Z",
 "system": "github",
 "url": "https://github.com/elizaOS/eliza"
 }

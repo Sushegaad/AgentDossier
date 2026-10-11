@@ -40,16 +40,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.5,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 30.8,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -61,7 +56,7 @@
 "external_ids": {
 "ard": "urn:air:aimentiontracker.ai:mcp:aimentiontracker"
 },
-"first_seen": "2026-10-10T04:58:05Z",
+"first_seen": "2026-10-11T01:47:19Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -72,7 +67,7 @@
 "evidence": [
 "standards_metadata_at_publisher_domain"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 2
 },
 "issues": {
@@ -83,7 +78,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:58:05Z",
+"last_seen": "2026-10-11T01:47:19Z",
 "license": null,
 "name": "AIMentionTracker MCP server",
 "news": [],
@@ -116,7 +111,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:20:24Z",
+"checked_at": "2026-10-11T02:07:45Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -126,7 +121,7 @@
 "sources": [
 {
 "payload_hash": "74c3f0316c87c619545b810b75d6569d50814f1e33fb5d82c65b016cd683c845",
-"retrieved_at": "2026-10-10T04:58:05Z",
+"retrieved_at": "2026-10-11T01:47:19Z",
 "system": "ard",
 "url": "https://aimentiontracker.ai/.well-known/ard.json"
 }

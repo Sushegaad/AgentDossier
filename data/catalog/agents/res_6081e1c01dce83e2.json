@@ -3,214 +3,325 @@
 "category": "Legal research agent",
 "commercial": true,
 "compliance": [],
-"components": {
-"adoption": 28.0,
-"docs": 10.0,
-"domain_fit": 35.0,
-"ecosystem": 13.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 25.0
-},
 "deployment": "LexisNexis ecosystem",
 "description": "Legal research and drafting AI integrated with LexisNexis content.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.944,
+"governance_credited": {},
 "profile": "general",
-"rank": 82,
+"rank": 92,
 "recomputed": 86.4,
-"score": 86.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 82,
+"seed_score": 86.4,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "cybersecurity": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.9,
+"governance_credited": {},
 "profile": "security",
-"rank": 33,
+"rank": 86,
 "recomputed": 82.1,
-"score": 82.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 71.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 33,
+"seed_score": 82.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "data": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
-"rank": 8,
+"rank": 82,
 "recomputed": 92.1,
-"score": 92.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 81.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 8,
+"seed_score": 92.1,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "finance": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 54,
+"rank": 87,
 "recomputed": 76.4,
-"score": 76.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 54,
+"seed_score": 76.4,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "government": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 54,
+"rank": 86,
 "recomputed": 76.4,
-"score": 76.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 54,
+"seed_score": 76.4,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "healthcare": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 45,
+"rank": 86,
 "recomputed": 76.4,
-"score": 76.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 45,
+"seed_score": 76.4,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "insurance": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 40,
+"rank": 85,
 "recomputed": 76.4,
-"score": 76.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 40,
+"seed_score": 76.4,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "legal": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 2,
+"rank": 87,
 "recomputed": 94.8,
-"score": 94.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 2,
+"seed_score": 94.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "regulatory": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 9,
+"rank": 86,
 "recomputed": 94.2,
-"score": 94.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 63.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 9,
+"seed_score": 94.2,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "sales": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "commercial",
-"rank": 41,
+"rank": 87,
 "recomputed": 83.8,
-"score": 83.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 76.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 41,
+"seed_score": 83.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "supply_chain": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "operations",
-"rank": 36,
+"rank": 89,
 "recomputed": 80.9,
-"score": 80.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 73.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 36,
+"seed_score": 80.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "technology": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 38,
+"rank": 80,
 "recomputed": 93.8,
-"score": 93.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 84.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 38,
+"seed_score": 93.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -219,10 +330,10 @@
 "id": "res_6081e1c01dce83e2",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -232,24 +343,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Commercial",
 "name": "Lexis+ AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:32Z",
+"checked_at": "2026-10-11T01:48:55Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:30Z",
+"checked_at": "2026-10-11T01:48:51Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:33Z",
+"checked_at": "2026-10-11T01:48:59Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -259,7 +370,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:10:07Z",
+"checked_at": "2026-10-11T01:58:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -268,6 +379,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 25.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -275,7 +395,7 @@
 "sources": [
 {
 "payload_hash": "77938df2f427f3fcf984101d6912284df159538cb19e9fa484fd173adf0c5936",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page"
 }
@@ -284,7 +404,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": 1

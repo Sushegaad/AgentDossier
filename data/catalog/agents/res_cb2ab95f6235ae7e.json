@@ -29,16 +29,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 70.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -48,7 +43,7 @@
 "external_ids": {
 "github": "tadata-org/fastapi_mcp"
 },
-"first_seen": "2026-10-10T04:54:44Z",
+"first_seen": "2026-10-11T01:43:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -59,7 +54,7 @@
 "evidence": [
 "standards_metadata_at_publisher_domain"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 2
 },
 "issues": {
@@ -70,7 +65,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:54:44Z",
+"last_seen": "2026-10-11T01:43:40Z",
 "license": "MIT",
 "name": "fastapi_mcp",
 "news": [],
@@ -78,7 +73,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://fastapi-mcp.tadata.com/.well-known/agent-card.json",
-"checked_at": "2026-10-10T04:59:06Z",
+"checked_at": "2026-10-11T01:48:23Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -86,7 +81,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:02Z",
+"checked_at": "2026-10-11T01:48:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -95,7 +90,7 @@
 "note": "named in the resource's own tags",
 "probe": {
 "card_url": "https://fastapi-mcp.tadata.com/.well-known/mcp.json",
-"checked_at": "2026-10-10T04:59:06Z",
+"checked_at": "2026-10-11T01:48:24Z",
 "status": "invalid"
 },
 "source": "self_description",
@@ -107,7 +102,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:15Z",
+"checked_at": "2026-10-11T02:06:32Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -126,8 +121,8 @@
 "slug": "tadata-org-fastapi-mcp",
 "sources": [
 {
-"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
-"retrieved_at": "2026-10-10T04:54:44Z",
+"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
+"retrieved_at": "2026-10-11T01:43:40Z",
 "system": "github",
 "url": "https://github.com/tadata-org/fastapi_mcp"
 }

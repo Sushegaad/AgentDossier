@@ -24,21 +24,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 46.5,
-"score_version": "sar-score-1.0",
+"score": 48.9,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -50,7 +45,7 @@
 "github": "colorcatalyst/catalyst-mcp",
 "mcp_registry": "ai.catalystproject/evidence-graph"
 },
-"first_seen": "2026-10-10T04:47:51Z",
+"first_seen": "2026-10-11T01:36:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -59,10 +54,10 @@
 "id": "res_cf3d815e138be5f8",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -72,14 +67,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:51Z",
+"last_seen": "2026-10-11T01:36:25Z",
 "license": null,
 "name": "Catalyst evidence graph",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-04T20:42:24Z",
-"headline": "catalyst-mcp v0.2.0 — evidence strength",
+"headline": "catalyst-mcp: v0.2.0 — evidence strength",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -90,7 +85,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-04T17:23:53Z",
-"headline": "catalyst-mcp v0.1.0",
+"headline": "catalyst-mcp release v0.1.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -102,12 +97,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:24Z",
+"checked_at": "2026-10-11T01:47:40Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:23Z",
+"checked_at": "2026-10-11T01:47:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -130,7 +125,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:14:28Z",
+"checked_at": "2026-10-11T02:03:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -147,8 +142,8 @@
 "slug": "catalystproject-ai-catalyst-evidence-graph",
 "sources": [
 {
-"payload_hash": "9f9384f268d76eedaa84dbfc9873dd0ad340355eb1999a09acd6162512996a4f",
-"retrieved_at": "2026-10-10T04:47:51Z",
+"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
+"retrieved_at": "2026-10-11T01:36:25Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.catalystproject/evidence-graph"
 }
@@ -157,7 +152,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": 1

@@ -21,16 +21,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://mobilerun.ai/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
+"next_check": "2026-10-18",
 "payload_hash": "013c71b1398ebac6f211641f5483cd6ad3ced527e814b69486efb3348e428f1a",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:33Z",
+"retrieved_at": "2026-10-11T01:56:30Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -51,23 +51,18 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
-"governance": 10.0,
+"governance": 0.0,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 61.0,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 61.6,
-"score_version": "sar-score-1.0",
+"score": 61.0,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
 },
@@ -77,23 +72,18 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
-"governance": 10.0,
+"governance": 0.0,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 64.3,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 64.3,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
 }
@@ -101,7 +91,7 @@
 "external_ids": {
 "github": "droidrun/mobilerun"
 },
-"first_seen": "2026-10-10T04:50:21Z",
+"first_seen": "2026-10-11T01:38:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -112,7 +102,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -123,14 +113,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:21Z",
+"last_seen": "2026-10-11T01:38:56Z",
 "license": "MIT",
 "name": "mobilerun",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-05T12:46:11Z",
-"headline": "mobilerun v0.6.22",
+"headline": "mobilerun release v0.6.22",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -141,7 +131,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-02T07:28:35Z",
-"headline": "mobilerun v0.6.21",
+"headline": "mobilerun release v0.6.21",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -153,17 +143,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:42Z",
+"checked_at": "2026-10-11T01:49:03Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:42Z",
+"checked_at": "2026-10-11T01:49:02Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:43Z",
+"checked_at": "2026-10-11T01:49:04Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -173,7 +163,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:40Z",
+"checked_at": "2026-10-11T02:06:57Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -181,19 +171,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-12T22:03:47Z",
-"github_forks": 1023,
+"github_forks": 1024,
 "github_language": "Python",
 "github_open_issues": 35,
 "github_pushed_at": "2026-10-09T19:57:54Z",
-"github_stars": 9600,
+"github_stars": 9608,
 "github_topic": "ai-agents",
 "homepage": "https://mobilerun.ai/framework"
 },
 "slug": "droidrun-mobilerun",
 "sources": [
 {
-"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
-"retrieved_at": "2026-10-10T04:50:21Z",
+"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
+"retrieved_at": "2026-10-11T01:38:56Z",
 "system": "github",
 "url": "https://github.com/droidrun/mobilerun"
 }
@@ -207,7 +197,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 4,
+"compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,

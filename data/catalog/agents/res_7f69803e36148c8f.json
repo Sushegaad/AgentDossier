@@ -10,16 +10,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://huggingface.co/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "c9d478536a203f478c3818538f637969a00599c477d851ff19a9a481563b3be4",
+"next_check": "2026-10-18",
+"payload_hash": "699cb563d0b223fb51c33c240eb93c7c16baded69618d8ab839c234ed46dc401",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:10Z",
+"retrieved_at": "2026-10-11T01:56:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -36,16 +36,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://huggingface.co/docs/hub/security",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "b1c4bad747ae0e03b5c8e63500c1eaa65984bcc883418cc27883041f52760a56",
+"next_check": "2026-10-18",
+"payload_hash": "d6252c3281020f0f69574e5482fffeb541b282104a2287d273c5e7f7275e70cd",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:10Z",
+"retrieved_at": "2026-10-11T01:56:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -62,16 +62,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://huggingface.co/docs/hub/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "b1c4bad747ae0e03b5c8e63500c1eaa65984bcc883418cc27883041f52760a56",
+"next_check": "2026-10-18",
+"payload_hash": "d6252c3281020f0f69574e5482fffeb541b282104a2287d273c5e7f7275e70cd",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:07:10Z",
+"retrieved_at": "2026-10-11T01:56:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -82,184 +82,255 @@
 "variant": "SOC2_TYPE_II"
 }
 ],
-"components": {
-"adoption": 24.0,
-"docs": 10.0,
-"domain_fit": 35.0,
-"ecosystem": 13.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 24.0
-},
 "deployment": "GitHub; Hugging Face Hub",
 "description": "Minimal agent library from Hugging Face with code-agent support and Hub integrations.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "cybersecurity": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 73.9,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
-"rank": 72,
+"rank": 99,
 "recomputed": 78.4,
-"score": 78.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 65.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 72,
+"seed_score": 78.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 66.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 88,
+"rank": 99,
 "recomputed": 73.4,
-"score": 73.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 58.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 88,
+"seed_score": 73.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 66.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 85,
+"rank": 99,
 "recomputed": 73.4,
-"score": 73.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 58.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 85,
+"seed_score": 73.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 66.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 81,
+"rank": 99,
 "recomputed": 73.4,
-"score": 73.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 58.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 81,
+"seed_score": 73.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 66.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 78,
+"rank": 99,
 "recomputed": 73.4,
-"score": 73.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 58.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 78,
+"seed_score": 73.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 66.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 80,
+"rank": 99,
 "recomputed": 73.4,
-"score": 73.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 58.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 80,
+"seed_score": 73.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 66.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 83,
+"rank": 99,
 "recomputed": 73.4,
-"score": 73.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 58.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 83,
+"seed_score": 73.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 77.5,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "commercial",
-"rank": 93,
+"rank": 100,
 "recomputed": 79.7,
-"score": 79.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 71.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 93,
+"seed_score": 79.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 75.2,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "operations",
-"rank": 83,
+"rank": 99,
 "recomputed": 77.5,
-"score": 77.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 83,
+"seed_score": 77.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 84.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 73,
+"rank": 99,
 "recomputed": 91.1,
-"score": 91.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 73,
+"seed_score": 91.1,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {
 "github": "huggingface/smolagents"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -270,7 +341,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -294,7 +365,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Apache-2.0",
 "name": "Hugging Face smolagents",
 "news": [],
@@ -318,7 +389,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:10:41Z",
+"checked_at": "2026-10-11T01:59:19Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -327,14 +398,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 24.0,
+"docs": 10.0,
+"domain_fit": 35.0,
+"ecosystem": 13.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 24.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-12-05T11:28:04Z",
-"github_forks": 3055,
+"github_forks": 3061,
 "github_language": "Python",
-"github_open_issues": 890,
+"github_open_issues": 904,
 "github_pushed_at": "2026-10-06T18:35:07Z",
-"github_stars": 29760,
+"github_stars": 29774,
 "observed_popularity": "29.5k",
 "seed_enrich": {
 "changed": [
@@ -347,7 +427,7 @@
 "sources": [
 {
 "payload_hash": "b96d27e86fea6156017cd3077c11e6037d0b5abbe195428a83b5960ccd077df9",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/huggingface/smolagents"
 }
@@ -355,7 +435,7 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 4,
+"compliance": 5,
 "identity": 3,
 "issues": 3,
 "protocols": 5,

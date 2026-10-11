@@ -36,16 +36,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 69.1,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -64,16 +59,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.85,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": null,
 "score": 55.1,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -92,16 +82,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 77.6,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -111,7 +96,7 @@
 "external_ids": {
 "github": "tinyhumansai/openhuman"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -122,7 +107,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -146,14 +131,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "GPL-3.0",
 "name": "openhuman",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-09T05:08:30Z",
-"headline": "openhuman OpenHuman v0.64.15",
+"headline": "OpenHuman v0.64.15",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -164,7 +149,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-08T22:05:56Z",
-"headline": "openhuman OpenHuman v0.64.14",
+"headline": "OpenHuman v0.64.14",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -176,12 +161,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:24Z",
+"checked_at": "2026-10-11T01:49:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:22Z",
+"checked_at": "2026-10-11T01:49:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -189,7 +174,7 @@
 "evidence_url": "https://tinyhumans.ai/openhuman",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T05:00:25Z",
+"checked_at": "2026-10-11T01:49:44Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -201,7 +186,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:17:52Z",
+"checked_at": "2026-10-11T02:05:09Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -209,19 +194,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-18T20:01:27Z",
-"github_forks": 4108,
+"github_forks": 4113,
 "github_language": "Rust",
-"github_open_issues": 276,
-"github_pushed_at": "2026-10-10T03:30:57Z",
-"github_stars": 41759,
+"github_open_issues": 271,
+"github_pushed_at": "2026-10-10T20:12:32Z",
+"github_stars": 41793,
 "github_topic": "ai-agents",
 "homepage": "https://tinyhumans.ai/openhuman"
 },
 "slug": "tinyhumansai-openhuman",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/tinyhumansai/openhuman"
 }

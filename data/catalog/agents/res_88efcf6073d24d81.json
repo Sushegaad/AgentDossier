@@ -6,7 +6,7 @@
 {
 "certificate_id": "servicenow",
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
 "organization": "ServiceNow",
@@ -19,16 +19,16 @@
 "eu-cloud-coc"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/servicenow",
 "framework": "csa_star",
 "issued": "2019-02-27",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:38Z",
+"retrieved_at": "2026-10-11T01:51:34Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -41,7 +41,7 @@
 {
 "certificate_id": "F1305072116",
 "covers_resource": "inherited",
-"credited": false,
+"credited": true,
 "detail": {
 "cso": "Government Community Cloud",
 "csp": "ServiceNow",
@@ -49,16 +49,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
 "evidence_url": "https://marketplace.fedramp.gov/products/F1305072116",
 "framework": "fedramp",
 "issued": "2019-08-12",
 "issuer": "JAB / 3PAO Kratos",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:01:12Z",
+"retrieved_at": "2026-10-11T01:50:07Z",
 "review_reason": "vendor authorization for Government Community Cloud; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -69,214 +69,326 @@
 "variant": "FEDRAMP_HIGH"
 }
 ],
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 100.0,
-"ecosystem": 15.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 25.0
-},
 "deployment": "ServiceNow Store/platform",
 "description": "Enterprise workflow agents integrated with ServiceNow business processes.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 25.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 91.1,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "general",
-"rank": 16,
+"rank": 22,
 "recomputed": 93.6,
-"score": 93.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 87.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 16,
+"seed_score": 93.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "cybersecurity": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 40.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "security",
-"rank": 29,
+"rank": 21,
 "recomputed": 82.2,
-"score": 82.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 29,
+"seed_score": 82.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "data": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 97.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "data",
-"rank": 43,
+"rank": 15,
 "recomputed": 87.2,
-"score": 87.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 92.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 43,
+"seed_score": 87.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 50,
+"rank": 24,
 "recomputed": 76.8,
-"score": 76.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 50,
+"seed_score": 76.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 60.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0,
+"fedramp": 1.0
 },
 "profile": "regulated",
-"rank": 14,
+"rank": 21,
 "recomputed": 95.1,
-"score": 95.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 86.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 14,
+"seed_score": 95.1,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 42,
+"rank": 23,
 "recomputed": 76.8,
-"score": 76.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 42,
+"seed_score": 76.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 16.7,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 36,
+"rank": 25,
 "recomputed": 76.8,
-"score": 76.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 79.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 36,
+"seed_score": 76.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 39,
+"rank": 24,
 "recomputed": 76.8,
-"score": 76.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 39,
+"seed_score": 76.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 48,
+"rank": 23,
 "recomputed": 76.8,
-"score": 76.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 48,
+"seed_score": 76.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 92.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "commercial",
-"rank": 36,
+"rank": 21,
 "recomputed": 84.5,
-"score": 84.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 88.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 36,
+"seed_score": 84.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 25.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 92.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "operations",
-"rank": 30,
+"rank": 19,
 "recomputed": 81.8,
-"score": 81.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 89.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 30,
+"seed_score": 81.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 96.5,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "technology",
-"rank": 19,
+"rank": 15,
 "recomputed": 96.1,
-"score": 96.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 91.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 19,
+"seed_score": 96.1,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -285,10 +397,10 @@
 "id": "res_88efcf6073d24d81",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -298,24 +410,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "ServiceNow service",
 "name": "ServiceNow AI Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:13Z",
+"checked_at": "2026-10-11T01:49:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:12Z",
+"checked_at": "2026-10-11T01:49:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T05:00:13Z",
+"checked_at": "2026-10-11T01:49:34Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -325,7 +437,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:09:08Z",
+"checked_at": "2026-10-11T01:57:49Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -334,6 +446,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 100.0,
+"ecosystem": 15.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 25.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -341,7 +462,7 @@
 "sources": [
 {
 "payload_hash": "9c62e2ee8567f99f925f569b140186958cf2ac5d9ffed4509317c4125fe8aee0",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://www.servicenow.com/products/ai-agents.html"
 }
@@ -349,8 +470,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 1,
-"identity": 3,
+"compliance": 5,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": 1

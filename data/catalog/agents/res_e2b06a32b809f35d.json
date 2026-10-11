@@ -3,200 +3,301 @@
 "category": "Coding agent",
 "commercial": false,
 "compliance": [],
-"components": {
-"adoption": 27.0,
-"docs": 9.0,
-"domain_fit": 35.0,
-"ecosystem": 15.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 21.0
-},
 "deployment": "GitHub; VS Code",
 "description": "Popular open-source IDE coding agent with tool use and MCP ecosystem.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "cybersecurity": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.9,
+"governance_credited": {},
 "profile": "security",
-"rank": 76,
+"rank": 89,
 "recomputed": 78.2,
-"score": 78.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 69.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 76,
+"seed_score": 78.2,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "data": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
-"rank": 82,
+"rank": 89,
 "recomputed": 84.0,
-"score": 84.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 82,
+"seed_score": 84.0,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "finance": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 97,
+"rank": 92,
 "recomputed": 72.8,
-"score": 72.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 62.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 97,
+"seed_score": 72.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "government": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 93,
+"rank": 91,
 "recomputed": 72.8,
-"score": 72.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 62.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 93,
+"seed_score": 72.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "healthcare": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 94,
+"rank": 90,
 "recomputed": 72.8,
-"score": 72.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 62.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 94,
+"seed_score": 72.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "insurance": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
 "rank": 90,
 "recomputed": 72.8,
-"score": 72.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 62.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 90,
+"seed_score": 72.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "legal": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 90,
+"rank": 91,
 "recomputed": 72.8,
-"score": 72.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 62.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 90,
+"seed_score": 72.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "regulatory": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 94,
+"rank": 91,
 "recomputed": 72.8,
-"score": 72.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 62.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 94,
+"seed_score": 72.8,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "sales": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "commercial",
-"rank": 72,
+"rank": 92,
 "recomputed": 81.3,
-"score": 81.3,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 75.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 72,
+"seed_score": 81.3,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "supply_chain": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "operations",
-"rank": 66,
+"rank": 91,
 "recomputed": 78.5,
-"score": 78.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 73.1,
+"score_version": "sar-score-2.0",
+"seed_rank": 66,
+"seed_score": 78.5,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "technology": {
+"components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 43,
+"rank": 88,
 "recomputed": 93.3,
-"score": 93.3,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 43,
+"seed_score": 93.3,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "cline/cline"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -207,7 +308,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -218,14 +319,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Apache-2.0",
 "name": "Cline",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-08T06:50:30Z",
-"headline": "cline Desktop v0.0.45",
+"headline": "cline: Desktop v0.0.45",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -236,7 +337,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-08T05:55:09Z",
-"headline": "cline CLI v3.0.70",
+"headline": "cline: CLI v3.0.70",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -248,12 +349,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:29Z",
+"checked_at": "2026-10-11T01:47:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:28Z",
+"checked_at": "2026-10-11T01:47:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -261,7 +362,7 @@
 "evidence_url": "https://github.com/cline/cline",
 "note": "named in the resource's own description",
 "probe": {
-"checked_at": "2026-10-10T04:58:29Z",
+"checked_at": "2026-10-11T01:47:46Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -275,14 +376,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 27.0,
+"docs": 9.0,
+"domain_fit": 35.0,
+"ecosystem": 15.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 21.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-07-06T07:28:10Z",
-"github_forks": 7628,
+"github_forks": 7632,
 "github_language": "TypeScript",
-"github_open_issues": 1649,
-"github_pushed_at": "2026-10-10T03:48:10Z",
-"github_stars": 70088,
+"github_open_issues": 1650,
+"github_pushed_at": "2026-10-10T18:09:13Z",
+"github_stars": 70127,
 "homepage": "https://cline.bot",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -297,7 +407,7 @@
 "sources": [
 {
 "payload_hash": "4c51346ca84d9eeb4d3c23884e0717ab2cd01dd7731f1d167076fdf87d165c9d",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/cline/cline"
 }

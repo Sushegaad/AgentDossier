@@ -3,217 +3,368 @@
 "capabilities": [],
 "category": "Agent SDK",
 "commercial": false,
-"compliance": [],
-"components": {
-"adoption": 24.0,
-"docs": 9.0,
-"domain_fit": 96.0,
-"ecosystem": 15.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 25.0
+"compliance": [
+{
+"certificate_id": "amazon",
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
+"organization": "Amazon",
+"terms": [
+"star_level_1",
+"star_level_2",
+"caiq",
+"certification"
+]
 },
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-11",
+"evidence_url": "https://cloudsecurityalliance.org/star/registry/amazon",
+"framework": "csa_star",
+"issued": "2020-11-06",
+"issuer": "Cloud Security Alliance",
+"match_confidence": 1.0,
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
+"period_end": null,
+"retrieved_at": "2026-10-11T01:51:41Z",
+"review_reason": "entity 1.00 (index card)",
+"reviewer": null,
+"scope": "entity",
+"source": "csa_star",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "STAR_LEVEL_2"
+},
+{
+"certificate_id": "F1603047866",
+"covers_resource": "inherited",
+"credited": false,
+"detail": {
+"cso": "AWS GovCloud",
+"csp": "Amazon",
+"deployment_model": "Government Community Cloud",
+"fedramp_status": "FedRAMP Authorized",
+"impact_level": "High"
+},
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
+"evidence_url": "https://marketplace.fedramp.gov/products/F1603047866",
+"framework": "fedramp",
+"issued": "2016-06-21",
+"issuer": "JAB / 3PAO Coalfire Systems, Inc.",
+"match_confidence": 1.0,
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
+"period_end": null,
+"retrieved_at": "2026-10-11T01:50:13Z",
+"review_reason": "vendor authorization for AWS GovCloud; entity 1.00",
+"reviewer": null,
+"scope": "entity",
+"source": "fedramp",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "FEDRAMP_HIGH"
+}
+],
 "deployment": "GitHub; AWS / Bedrock",
 "description": "AWS-backed open-source agent SDK designed for model/tool flexibility.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
-"rank": 43,
+"rank": 73,
 "recomputed": 90.4,
-"score": 90.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 43,
+"seed_score": 90.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "cybersecurity": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
-"rank": 48,
+"rank": 67,
 "recomputed": 80.2,
-"score": 80.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 76.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 48,
+"seed_score": 80.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "data": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
-"rank": 65,
+"rank": 51,
 "recomputed": 85.2,
-"score": 85.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 87.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 65,
+"seed_score": 85.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 64,
+"rank": 65,
 "recomputed": 75.2,
-"score": 75.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 64,
+"seed_score": 75.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 26,
+"rank": 64,
 "recomputed": 93.0,
-"score": 93.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 26,
+"seed_score": 93.0,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 56,
+"rank": 63,
 "recomputed": 75.2,
-"score": 75.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 56,
+"seed_score": 75.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 52,
+"rank": 65,
 "recomputed": 75.2,
-"score": 75.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 52,
+"seed_score": 75.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 53,
+"rank": 67,
 "recomputed": 75.2,
-"score": 75.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 53,
+"seed_score": 75.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 59,
+"rank": 65,
 "recomputed": 75.2,
-"score": 75.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 59,
+"seed_score": 75.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "commercial",
-"rank": 62,
+"rank": 66,
 "recomputed": 82.0,
-"score": 82.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 82.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 62,
+"seed_score": 82.0,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "operations",
-"rank": 48,
+"rank": 57,
 "recomputed": 79.8,
-"score": 79.8,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 48,
+"seed_score": 79.8,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 39,
+"rank": 63,
 "recomputed": 93.5,
-"score": 93.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 86.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 39,
+"seed_score": 93.5,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {
 "github": "strands-agents/harness-sdk"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -224,7 +375,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -266,7 +417,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:56:24Z",
+"last_seen": "2026-10-11T01:45:28Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_ab09f3e05ae8aff8"
@@ -276,7 +427,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-08T13:40:21Z",
-"headline": "harness-sdk harness-cli/v0.2.0",
+"headline": "harness-sdk release harness-cli/v0.2.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -287,7 +438,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-08T13:40:08Z",
-"headline": "harness-sdk harness-python/v0.2.0",
+"headline": "harness-sdk release harness-python/v0.2.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -312,12 +463,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:18Z",
+"checked_at": "2026-10-11T01:49:38Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:17Z",
+"checked_at": "2026-10-11T01:49:37Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -325,7 +476,7 @@
 "evidence_url": "https://github.com/strands-agents/sdk-python",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T05:00:18Z",
+"checked_at": "2026-10-11T01:49:39Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -337,7 +488,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:09:31Z",
+"checked_at": "2026-10-11T01:58:12Z",
 "cves": 5,
 "source": "nvd",
 "tier": 1
@@ -346,14 +497,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 96.0,
+"ecosystem": 15.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 25.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-14T19:59:51Z",
-"github_forks": 1350,
+"github_forks": 1353,
 "github_language": "Python",
-"github_open_issues": 1004,
+"github_open_issues": 1007,
 "github_pushed_at": "2026-10-10T01:01:49Z",
-"github_stars": 8751,
+"github_stars": 8760,
 "github_topic": "ai-agents",
 "homepage": "http://strandsagents.com/",
 "observed_popularity": "Not captured",
@@ -370,13 +530,13 @@
 "sources": [
 {
 "payload_hash": "3fbe1afa76461a06a6e3f8682f345dd261f46a3ae24033a857daf172381ff601",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/strands-agents/sdk-python"
 },
 {
-"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
-"retrieved_at": "2026-10-10T04:50:21Z",
+"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
+"retrieved_at": "2026-10-11T01:38:56Z",
 "system": "github",
 "url": "https://github.com/strands-agents/harness-sdk"
 }

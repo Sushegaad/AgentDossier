@@ -34,21 +34,16 @@
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.85,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": null,
-"score": 50.0,
-"score_version": "sar-score-1.0",
+"score": 53.0,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -62,21 +57,16 @@
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.964,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 72.3,
-"score_version": "sar-score-1.0",
+"score": 74.7,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -86,7 +76,7 @@
 "external_ids": {
 "github": "omnigent-ai/omnigent"
 },
-"first_seen": "2026-10-10T04:50:21Z",
+"first_seen": "2026-10-11T01:38:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -95,10 +85,10 @@
 "id": "res_b6eb963b5447b1ef",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -133,7 +123,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_b6eb963b5447b1ef"
@@ -143,7 +133,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-06T02:02:33Z",
-"headline": "omnigent v0.17.0",
+"headline": "omnigent release v0.17.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -154,7 +144,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-29T20:34:22Z",
-"headline": "omnigent v0.16.0",
+"headline": "omnigent release v0.16.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -166,17 +156,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:50Z",
+"checked_at": "2026-10-11T01:49:12Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:49Z",
+"checked_at": "2026-10-11T01:49:11Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:51Z",
+"checked_at": "2026-10-11T01:49:13Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -186,7 +176,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:31Z",
+"checked_at": "2026-10-11T02:06:48Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -194,19 +184,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-06-11T12:18:13Z",
-"github_forks": 1729,
+"github_forks": 1734,
 "github_language": "Python",
-"github_open_issues": 1809,
-"github_pushed_at": "2026-10-10T04:42:25Z",
-"github_stars": 10709,
+"github_open_issues": 1822,
+"github_pushed_at": "2026-10-11T01:29:28Z",
+"github_stars": 10736,
 "github_topic": "ai-agents",
 "homepage": "https://omnigent.ai"
 },
 "slug": "omnigent-ai-omnigent",
 "sources": [
 {
-"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
-"retrieved_at": "2026-10-10T04:50:21Z",
+"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
+"retrieved_at": "2026-10-11T01:38:56Z",
 "system": "github",
 "url": "https://github.com/omnigent-ai/omnigent"
 }
@@ -232,7 +222,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 3,
 "protocols": 5,
 "security": 1

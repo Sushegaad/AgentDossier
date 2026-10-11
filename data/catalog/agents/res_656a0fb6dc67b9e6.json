@@ -6,7 +6,7 @@
 {
 "certificate_id": "wiz",
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
 "organization": "Wiz",
@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/wiz",
 "framework": "csa_star",
 "issued": "2024-02-16",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:43Z",
+"retrieved_at": "2026-10-11T01:51:47Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -37,7 +37,7 @@
 {
 "certificate_id": "FR2308034636A",
 "covers_resource": "inherited",
-"credited": false,
+"credited": true,
 "detail": {
 "cso": "Wiz for U.S. Government",
 "csp": "Wiz, Inc.",
@@ -45,16 +45,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2308034636A",
 "framework": "fedramp",
 "issued": "2025-09-25",
 "issuer": "Agency / 3PAO Fortreum, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:01:16Z",
+"retrieved_at": "2026-10-11T01:50:18Z",
 "review_reason": "vendor authorization for Wiz for U.S. Government; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -65,214 +65,326 @@
 "variant": "FEDRAMP_HIGH"
 }
 ],
-"components": {
-"adoption": 26.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 13.0,
-"governance": 57.0,
-"health": 20.0,
-"trust": 24.0
-},
 "deployment": "Wiz cloud security",
 "description": "Cloud-security platform with AI-assisted risk analysis and remediation.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 25.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 84.7,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "general",
-"rank": 71,
+"rank": 67,
 "recomputed": 87.9,
-"score": 87.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 81.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 71,
+"seed_score": 87.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "cybersecurity": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 40.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 80.3,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "security",
-"rank": 7,
+"rank": 57,
 "recomputed": 90.2,
-"score": 90.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 79.3,
+"score_version": "sar-score-2.0",
+"seed_rank": 7,
+"seed_score": 90.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "data": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 89.2,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "data",
-"rank": 80,
+"rank": 70,
 "recomputed": 84.1,
-"score": 84.1,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 80,
+"seed_score": 84.1,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 74.6,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 60,
+"rank": 66,
 "recomputed": 75.7,
-"score": 75.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 60,
+"seed_score": 75.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 60.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 74.6,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0,
+"fedramp": 1.0
 },
 "profile": "regulated",
-"rank": 57,
+"rank": 43,
 "recomputed": 75.7,
-"score": 75.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 57,
+"seed_score": 75.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 74.6,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 52,
+"rank": 65,
 "recomputed": 75.7,
-"score": 75.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 52,
+"seed_score": 75.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 16.7,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 74.6,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 47,
+"rank": 69,
 "recomputed": 75.7,
-"score": 75.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.1,
+"score_version": "sar-score-2.0",
+"seed_rank": 47,
+"seed_score": 75.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 74.6,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 48,
+"rank": 68,
 "recomputed": 75.7,
-"score": 75.7,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 48,
+"seed_score": 75.7,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 74.6,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "regulated",
-"rank": 51,
+"rank": 66,
 "recomputed": 76.3,
-"score": 76.3,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 72.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 51,
+"seed_score": 76.3,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 84.2,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "commercial",
-"rank": 71,
+"rank": 69,
 "recomputed": 81.5,
-"score": 81.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 81.2,
+"score_version": "sar-score-2.0",
+"seed_rank": 71,
+"seed_score": 81.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 25.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.4,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "operations",
-"rank": 59,
+"rank": 70,
 "recomputed": 78.9,
-"score": 78.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 59,
+"seed_score": 78.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 89.9,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"csa_star": 1.0
 },
 "profile": "technology",
-"rank": 49,
+"rank": 72,
 "recomputed": 92.6,
-"score": 92.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 49,
+"seed_score": 92.6,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -281,10 +393,10 @@
 "id": "res_656a0fb6dc67b9e6",
 "identity": {
 "evidence": [
-"vendor_name_only"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 4
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -294,24 +406,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Commercial",
 "name": "Wiz AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:34Z",
+"checked_at": "2026-10-11T01:49:53Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:33Z",
+"checked_at": "2026-10-11T01:49:52Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T05:00:34Z",
+"checked_at": "2026-10-11T01:49:53Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -323,6 +435,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 26.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 57.0,
+"health": 20.0,
+"trust": 24.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -330,7 +451,7 @@
 "sources": [
 {
 "payload_hash": "b8632166626ef92869177c6602fc654f5fe0aa5760f50cb2cb109ca64b014961",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://www.wiz.io/"
 }
@@ -338,8 +459,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 1,
-"identity": 4,
+"compliance": 5,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": null

@@ -31,21 +31,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 16.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.667,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 38.6,
-"score_version": "sar-score-1.0",
+"score": 41.3,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -60,21 +55,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 16.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": null,
-"score": 37.4,
-"score_version": "sar-score-1.0",
+"score": 40.4,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -89,21 +79,16 @@
 "ecosystem": 4.6,
 "governance": null,
 "health": 16.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 44.0,
-"score_version": "sar-score-1.0",
+"score": 46.4,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -114,7 +99,7 @@
 "external_ids": {
 "mcp_registry": "ai.canivibe/status"
 },
-"first_seen": "2026-10-10T04:47:51Z",
+"first_seen": "2026-10-11T01:36:25Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,10 +108,10 @@
 "id": "res_e3ce19484a9ded92",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -136,19 +121,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:51Z",
+"last_seen": "2026-10-11T01:36:25Z",
 "license": null,
 "name": "Can I Vibe? — AI coding provider status",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:24Z",
+"checked_at": "2026-10-11T01:47:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:21Z",
+"checked_at": "2026-10-11T01:47:38Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -171,7 +156,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:14:25Z",
+"checked_at": "2026-10-11T02:03:50Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -188,8 +173,8 @@
 "slug": "canivibe-ai-can-i-vibe-ai-coding-provider-status",
 "sources": [
 {
-"payload_hash": "9f9384f268d76eedaa84dbfc9873dd0ad340355eb1999a09acd6162512996a4f",
-"retrieved_at": "2026-10-10T04:47:51Z",
+"payload_hash": "012570451ee9ef7fcc9ec8ed8b7e6a2ad5d63b28b70706f98752fd9806734c71",
+"retrieved_at": "2026-10-11T01:36:25Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.canivibe/status"
 }
@@ -198,7 +183,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": 1

@@ -6,7 +6,7 @@
 {
 "certificate_id": "FR2525247858",
 "covers_resource": "inherited",
-"credited": false,
+"credited": true,
 "detail": {
 "cso": "Databricks on Azure Commercial",
 "csp": "Databricks, Inc.",
@@ -14,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2525247858",
 "framework": "fedramp",
 "issued": "2026-01-16",
 "issuer": "Agency / 3PAO Fortreum, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:01:13Z",
+"retrieved_at": "2026-10-11T01:50:10Z",
 "review_reason": "vendor authorization for Databricks on Azure Commercial; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -36,20 +36,20 @@
 {
 "certificate_id": null,
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "pages_visited": 6
 },
-"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-10) (pending publisher verification)",
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-11)",
 "evidence_url": "https://www.databricks.com/trust/compliance",
 "framework": "eu_ai_act",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
+"next_check": "2026-10-18",
 "payload_hash": "5828adcffcf1f0a3f87a557e3fb42800d6bfbcaf065134426104f60b9c721311",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:06:27Z",
+"retrieved_at": "2026-10-11T01:55:14Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -62,20 +62,20 @@
 {
 "certificate_id": null,
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "pages_visited": 6
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://www.databricks.com/trust/compliance",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
+"next_check": "2026-10-18",
 "payload_hash": "5828adcffcf1f0a3f87a557e3fb42800d6bfbcaf065134426104f60b9c721311",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:06:27Z",
+"retrieved_at": "2026-10-11T01:55:14Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -86,214 +86,325 @@
 "variant": "SOC2_TYPE_II"
 }
 ],
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 99.0,
-"ecosystem": 14.0,
-"governance": 57.0,
-"health": 20.0,
-"trust": 25.0
-},
 "deployment": "Databricks",
 "description": "Agent framework integrated with enterprise data, evaluation and governance.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 7.5,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 88.4,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "general",
-"rank": 29,
+"rank": 50,
 "recomputed": 91.6,
-"score": 91.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 29,
+"seed_score": 91.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "cybersecurity": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 85.3,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "security",
-"rank": 37,
+"rank": 53,
 "recomputed": 81.5,
-"score": 81.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 37,
+"seed_score": 81.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "data": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 94.2,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "data",
-"rank": 2,
+"rank": 39,
 "recomputed": 94.2,
-"score": 94.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 89.4,
+"score_version": "sar-score-2.0",
+"seed_rank": 2,
+"seed_score": 94.2,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 81.1,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
+},
+"profile": "regulated",
+"rank": 47,
+"recomputed": 76.9,
+"score": 76.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 46,
+"seed_score": 76.9,
+"source": "seed_xlsx",
+"unknown": []
+},
+"government": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 20.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"fedramp": 1.0
+},
+"profile": "regulated",
+"rank": 46,
+"recomputed": 77.5,
+"score": 78.1,
+"score_version": "sar-score-2.0",
+"seed_rank": 43,
+"seed_score": 77.5,
+"source": "seed_xlsx",
+"unknown": []
+},
+"healthcare": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 1.0,
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "regulated",
 "rank": 46,
 "recomputed": 76.9,
-"score": 76.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
-},
-"government": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 81.1,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
-"profile": "regulated",
-"rank": 43,
-"recomputed": 77.5,
-"score": 77.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
-},
-"healthcare": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 81.1,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
-"profile": "regulated",
-"rank": 38,
-"recomputed": 76.9,
-"score": 76.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 76.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 38,
+"seed_score": 76.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 5.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 81.1,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "regulated",
-"rank": 32,
+"rank": 47,
 "recomputed": 76.9,
-"score": 76.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 75.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 32,
+"seed_score": 76.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 81.1,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "regulated",
-"rank": 35,
+"rank": 48,
 "recomputed": 76.9,
-"score": 76.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 76.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 35,
+"seed_score": 76.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 81.1,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "regulated",
-"rank": 37,
+"rank": 47,
 "recomputed": 77.5,
-"score": 77.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 76.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 37,
+"seed_score": 77.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 89.2,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "commercial",
-"rank": 59,
+"rank": 48,
 "recomputed": 82.4,
-"score": 82.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 84.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 59,
+"seed_score": 82.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 7.5,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 90.0,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "operations",
-"rank": 47,
+"rank": 46,
 "recomputed": 80.0,
-"score": 80.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 47,
+"seed_score": 80.0,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 6.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 93.4,
-"value": 0.0,
-"version": "sar-score-1.1"
+"governance_credited": {
+"soc2": 0.3
 },
 "profile": "technology",
-"rank": 41,
+"rank": 38,
 "recomputed": 93.4,
-"score": 93.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 88.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 41,
+"seed_score": 93.4,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -302,10 +413,10 @@
 "id": "res_0f7d5d220132fc29",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -315,24 +426,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Databricks service",
 "name": "Databricks Mosaic AI Agent Framework",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:39Z",
+"checked_at": "2026-10-11T01:47:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:39Z",
+"checked_at": "2026-10-11T01:47:55Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:58:40Z",
+"checked_at": "2026-10-11T01:47:57Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -342,7 +453,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:09:20Z",
+"checked_at": "2026-10-11T01:58:01Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -351,6 +462,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 14.0,
+"governance": 57.0,
+"health": 20.0,
+"trust": 25.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -358,7 +478,7 @@
 "sources": [
 {
 "payload_hash": "45049d4a6b61494a6591e6b2665fc53e3ec21b2bfcedee5922bb741b2fe87b86",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://www.databricks.com/product/machine-learning/ai-agents"
 }
@@ -366,8 +486,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 1,
-"identity": 3,
+"compliance": 5,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": 1

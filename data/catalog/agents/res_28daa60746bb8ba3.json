@@ -28,16 +28,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 69.6,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -47,7 +42,7 @@
 "external_ids": {
 "github": "yzfly/Awesome-MCP-ZH"
 },
-"first_seen": "2026-10-10T04:54:44Z",
+"first_seen": "2026-10-11T01:43:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -58,7 +53,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -69,7 +64,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:54:44Z",
+"last_seen": "2026-10-11T01:43:40Z",
 "license": "MIT",
 "name": "Awesome-MCP-ZH",
 "news": [],
@@ -95,7 +90,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:19:56Z",
+"checked_at": "2026-10-11T02:07:13Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -103,9 +98,9 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-03T00:38:51Z",
-"github_forks": 884,
+"github_forks": 890,
 "github_language": null,
-"github_open_issues": 108,
+"github_open_issues": 113,
 "github_pushed_at": "2026-09-20T14:59:14Z",
 "github_stars": 7717,
 "github_topic": "mcp-server",
@@ -114,8 +109,8 @@
 "slug": "yzfly-awesome-mcp-zh",
 "sources": [
 {
-"payload_hash": "ebe0b40d91fa5952173bd12d3193b8ccf7ad090f53293ef70b86ba5ac992520c",
-"retrieved_at": "2026-10-10T04:54:44Z",
+"payload_hash": "7bfd40ceaaa482986e6da1446dc170110e969020ac6476355aa6eae379b44c4e",
+"retrieved_at": "2026-10-11T01:43:40Z",
 "system": "github",
 "url": "https://github.com/yzfly/Awesome-MCP-ZH"
 }

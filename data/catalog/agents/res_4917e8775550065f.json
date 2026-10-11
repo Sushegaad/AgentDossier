@@ -3,198 +3,299 @@
 "category": "Supply-chain planning agents",
 "commercial": true,
 "compliance": [],
-"components": {
-"adoption": 24.0,
-"docs": 9.0,
-"domain_fit": 72.0,
-"ecosystem": 13.0,
-"governance": 45.0,
-"health": 20.0,
-"trust": 24.0
-},
 "deployment": "Blue Yonder platform",
 "description": "AI-driven supply-chain planning and execution platform.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.944,
+"governance_credited": {},
 "profile": "general",
-"rank": 94,
+"rank": 93,
 "recomputed": 85.4,
-"score": 85.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.4,
+"score_version": "sar-score-2.0",
+"seed_rank": 94,
+"seed_score": 85.4,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "cybersecurity": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.9,
+"governance_credited": {},
 "profile": "security",
-"rank": 85,
+"rank": 82,
 "recomputed": 77.9,
-"score": 77.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 74.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 85,
+"seed_score": 77.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "finance": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 96,
+"rank": 79,
 "recomputed": 72.9,
-"score": 72.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 96,
+"seed_score": 72.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "government": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 92,
+"rank": 76,
 "recomputed": 72.9,
-"score": 72.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 92,
+"seed_score": 72.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "healthcare": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 92,
+"rank": 79,
 "recomputed": 72.9,
-"score": 72.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 92,
+"seed_score": 72.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "insurance": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 89,
+"rank": 79,
 "recomputed": 72.9,
-"score": 72.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 89,
+"seed_score": 72.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "legal": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 89,
+"rank": 80,
 "recomputed": 72.9,
-"score": 72.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 89,
+"seed_score": 72.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "regulatory": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.85,
+"governance_credited": {},
 "profile": "regulated",
-"rank": 93,
+"rank": 78,
 "recomputed": 72.9,
-"score": 72.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.6,
+"score_version": "sar-score-2.0",
+"seed_rank": 93,
+"seed_score": 72.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "sales": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "commercial",
-"rank": 99,
+"rank": 84,
 "recomputed": 79.2,
-"score": 79.2,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.5,
+"score_version": "sar-score-2.0",
+"seed_rank": 99,
+"seed_score": 79.2,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "supply_chain": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.95,
+"governance_credited": {},
 "profile": "operations",
-"rank": 6,
+"rank": 81,
 "recomputed": 90.0,
-"score": 90.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.1,
+"score_version": "sar-score-2.0",
+"seed_rank": 6,
+"seed_score": 90.0,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "technology": {
+"components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 99,
+"rank": 86,
 "recomputed": 88.5,
-"score": 88.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 83.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 99,
+"seed_score": 88.5,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -203,10 +304,10 @@
 "id": "res_4917e8775550065f",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -216,24 +317,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "Commercial",
 "name": "Blue Yonder AI Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:09Z",
+"checked_at": "2026-10-11T01:47:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:07Z",
+"checked_at": "2026-10-11T01:47:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:58:10Z",
+"checked_at": "2026-10-11T01:47:27Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -243,7 +344,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:10:20Z",
+"checked_at": "2026-10-11T01:58:59Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -252,6 +353,15 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 24.0,
+"docs": 9.0,
+"domain_fit": 72.0,
+"ecosystem": 13.0,
+"governance": 45.0,
+"health": 20.0,
+"trust": 24.0
+},
 "signals": {
 "observed_popularity": "Commercial"
 },
@@ -259,7 +369,7 @@
 "sources": [
 {
 "payload_hash": "3661de32b7e6a159db1b3adcb302e47590c6992451af19cfb1ba79f760967ec4",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://blueyonder.com/"
 }
@@ -268,7 +378,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": 1

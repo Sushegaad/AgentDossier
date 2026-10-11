@@ -23,21 +23,16 @@
 "ecosystem": 1.5,
 "governance": null,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 65.5,
-"score_version": "sar-score-1.0",
+"score": 67.9,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -47,7 +42,7 @@
 "external_ids": {
 "github": "opensandbox-group/OpenSandbox"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -56,10 +51,10 @@
 "id": "res_c621e3d1b121e018",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -69,14 +64,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "Apache-2.0",
 "name": "OpenSandbox",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-09T15:09:23Z",
-"headline": "OpenSandbox OpenSandbox 1.1.1",
+"headline": "OpenSandbox 1.1.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -87,7 +82,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-28T08:21:29Z",
-"headline": "OpenSandbox OpenSandbox 1.1.1-rc.1",
+"headline": "OpenSandbox 1.1.1-rc.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -99,17 +94,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:59:54Z",
+"checked_at": "2026-10-11T01:49:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:53Z",
+"checked_at": "2026-10-11T01:49:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:59:55Z",
+"checked_at": "2026-10-11T01:49:16Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -119,7 +114,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:18:55Z",
+"checked_at": "2026-10-11T02:06:13Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -130,16 +125,16 @@
 "github_forks": 1451,
 "github_language": "Python",
 "github_open_issues": 124,
-"github_pushed_at": "2026-10-10T03:20:33Z",
-"github_stars": 15761,
+"github_pushed_at": "2026-10-11T00:18:16Z",
+"github_stars": 15776,
 "github_topic": "ai-agent",
 "homepage": "https://open-sandbox.ai"
 },
 "slug": "opensandbox-group-opensandbox",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/opensandbox-group/OpenSandbox"
 }
@@ -154,7 +149,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 5,
 "security": 1

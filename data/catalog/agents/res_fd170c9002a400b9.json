@@ -16,20 +16,20 @@
 {
 "certificate_id": null,
 "covers_resource": "unknown",
-"credited": false,
+"credited": true,
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-10) (pending publisher verification)",
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
 "evidence_url": "https://auten.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "f514116c84a9bd6f71273d8faf7d43ecc77664e796da64a9816cbadda96bd232",
+"next_check": "2026-10-18",
+"payload_hash": "334a66e98c2960b1aab68bb6b47fd38c949cd32f46f7df0629b17e111af3047a",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:05:29Z",
+"retrieved_at": "2026-10-11T01:54:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -50,23 +50,18 @@
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.6,
-"governance": 10.0,
+"governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": 48.0,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 48.0,
-"score_version": "sar-score-1.0",
+"score": 50.4,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption"
@@ -77,7 +72,7 @@
 "github": "auten-ai/auten-mcp",
 "mcp_registry": "ai.auten/mcp"
 },
-"first_seen": "2026-10-10T04:47:49Z",
+"first_seen": "2026-10-11T01:36:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -86,10 +81,10 @@
 "id": "res_fd170c9002a400b9",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -99,14 +94,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:49Z",
+"last_seen": "2026-10-11T01:36:24Z",
 "license": null,
 "name": "Auten",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-08T14:58:50Z",
-"headline": "auten-mcp v0.1.2",
+"headline": "auten-mcp release v0.1.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -118,12 +113,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:57:51Z",
+"checked_at": "2026-10-11T01:47:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:57:47Z",
+"checked_at": "2026-10-11T01:47:04Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -133,13 +128,13 @@
 "identifier": "@autenai/mcp",
 "registry": "npm",
 "transport": "stdio",
-"version": "0.1.2"
+"version": "0.1.4"
 }
 ],
 "parser_version": "mcp-2025-06-18",
 "server_name": "ai.auten/mcp",
 "status": "claimed",
-"version": "0.1.2",
+"version": "0.1.4",
 "via": "mcp_registry"
 }
 },
@@ -148,16 +143,16 @@
 "scope": "public",
 "signals": {
 "mcp_packages": 1,
-"mcp_registry_published_at": "2026-10-08T14:44:05.521193Z",
+"mcp_registry_published_at": "2026-10-10T08:22:07.211014Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-08T14:44:05.521193Z",
+"mcp_registry_updated_at": "2026-10-10T08:22:07.211014Z",
 "mcp_transports": []
 },
 "slug": "auten-ai-auten",
 "sources": [
 {
-"payload_hash": "b999bb0e34f85ab71018087a4bce331d23b8611eba29d5448a040ef267d00457",
-"retrieved_at": "2026-10-10T04:47:49Z",
+"payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
+"retrieved_at": "2026-10-11T01:36:24Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.auten/mcp"
 }
@@ -165,8 +160,8 @@
 "tags": [],
 "tenant": null,
 "trust": {
-"compliance": 4,
-"identity": 3,
+"compliance": 5,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": null

@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-10 (pending publisher verification)",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/openai",
 "framework": "csa_star",
 "issued": "2024-04-09",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "bbf88315476773005c3641a16ca38ed93d30887b0b200be617efc4df74d5f76c",
+"next_check": "2026-10-18",
+"payload_hash": "d8913e0981ad423b91bddc6fce99100d5e472a19bd9c6058732acbccf662f631",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:02:39Z",
+"retrieved_at": "2026-10-11T01:51:37Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -45,16 +45,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "20x Moderate"
 },
-"display": "FedRAMP 20x Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-10) (pending publisher verification)",
+"display": "FedRAMP 20x Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2533155773",
 "framework": "fedramp",
 "issued": "2026-01-09",
 "issuer": "Program / 3PAO Schellman Compliance, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-10-17",
-"payload_hash": "164d45c397ed996b13f26b95a9998459fab4b6d1f1842f9b96fd36ea3d585885",
+"next_check": "2026-10-18",
+"payload_hash": "d9dc22df1e806b293bbee21411d54d5816dd0ad0a59d796d5aad28f5de395279",
 "period_end": null,
-"retrieved_at": "2026-10-10T05:01:13Z",
+"retrieved_at": "2026-10-11T01:50:10Z",
 "review_reason": "vendor authorization for ChatGPT Enterprise and API Platform; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -65,216 +65,303 @@
 "variant": "FEDRAMP_20X"
 }
 ],
-"components": {
-"adoption": 28.0,
-"docs": 10.0,
-"domain_fit": 72.0,
-"ecosystem": 14.0,
-"governance": 57.0,
-"health": 20.0,
-"trust": 25.0
-},
 "deployment": "GitHub; OpenAI Platform",
 "description": "First-party OpenAI agent SDK; rapid releases, guardrails, tracing and handoffs.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 88.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
-"rank": 28,
+"rank": 74,
 "recomputed": 91.9,
-"score": 91.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 28,
+"seed_score": 91.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "cybersecurity": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 83.8,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "security",
-"rank": 13,
+"rank": 77,
 "recomputed": 84.0,
-"score": 84.0,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 74.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 13,
+"seed_score": 84.0,
+"source": "seed_xlsx",
+"unknown": []
 },
 "data": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 93.1,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
-"rank": 39,
+"rank": 61,
 "recomputed": 87.6,
-"score": 87.6,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 39,
+"seed_score": 87.6,
+"source": "seed_xlsx",
+"unknown": []
 },
 "finance": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 77.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 29,
+"rank": 76,
 "recomputed": 78.9,
-"score": 78.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 29,
+"seed_score": 78.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "government": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 77.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 38,
+"rank": 73,
 "recomputed": 78.9,
-"score": 78.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 38,
+"seed_score": 78.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "healthcare": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 77.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 20,
+"rank": 76,
 "recomputed": 78.9,
-"score": 78.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 20,
+"seed_score": 78.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "insurance": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 77.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 14,
+"rank": 76,
 "recomputed": 78.9,
-"score": 78.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 14,
+"seed_score": 78.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "legal": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 77.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 14,
+"rank": 77,
 "recomputed": 78.9,
-"score": 78.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 14,
+"seed_score": 78.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "regulatory": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 77.7,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "regulated",
-"rank": 27,
+"rank": 75,
 "recomputed": 78.9,
-"score": 78.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 68.7,
+"score_version": "sar-score-2.0",
+"seed_rank": 27,
+"seed_score": 78.9,
+"source": "seed_xlsx",
+"unknown": []
 },
 "sales": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 88.1,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "commercial",
-"rank": 26,
+"rank": 73,
 "recomputed": 85.4,
-"score": 85.4,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 80.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 26,
+"seed_score": 85.4,
+"source": "seed_xlsx",
+"unknown": []
 },
 "supply_chain": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 87.1,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "operations",
-"rank": 21,
+"rank": 74,
 "recomputed": 82.5,
-"score": 82.5,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 79.9,
+"score_version": "sar-score-2.0",
+"seed_rank": 21,
+"seed_score": 82.5,
+"source": "seed_xlsx",
+"unknown": []
 },
 "technology": {
+"components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 0.0,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": 94.2,
-"value": 0.0,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
-"rank": 15,
+"rank": 56,
 "recomputed": 96.9,
-"score": 96.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 87.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 15,
+"seed_score": 96.9,
+"source": "seed_xlsx",
+"unknown": []
 }
 },
 "external_ids": {
 "github": "openai/openai-agents-python"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -285,7 +372,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -296,14 +383,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:46Z",
+"last_seen": "2026-10-11T01:36:23Z",
 "license": "MIT",
 "name": "OpenAI Agents SDK (Python)",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-02T15:19:29Z",
-"headline": "openai-agents-python v0.23.1",
+"headline": "openai-agents-python release v0.23.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -314,7 +401,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-02T01:08:23Z",
-"headline": "openai-agents-python v0.23.0",
+"headline": "openai-agents-python release v0.23.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -343,7 +430,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:09:19Z",
+"checked_at": "2026-10-11T01:58:00Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -352,14 +439,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 28.0,
+"docs": 10.0,
+"domain_fit": 72.0,
+"ecosystem": 14.0,
+"governance": 57.0,
+"health": 20.0,
+"trust": 25.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-11T03:42:36Z",
-"github_forks": 4856,
+"github_forks": 4863,
 "github_language": "Python",
-"github_open_issues": 11,
+"github_open_issues": 15,
 "github_pushed_at": "2026-10-08T19:41:57Z",
-"github_stars": 29939,
+"github_stars": 29954,
 "observed_popularity": "29.7k",
 "seed_enrich": {
 "changed": [
@@ -373,7 +469,7 @@
 "sources": [
 {
 "payload_hash": "98d58520362833ba8adb1cf10160e5256dd7c0510b9d5c0ac4bfb0418872ca53",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/openai/openai-agents-python"
 }
@@ -389,7 +485,7 @@
 ],
 "tenant": null,
 "trust": {
-"compliance": 1,
+"compliance": 5,
 "identity": 3,
 "issues": 1,
 "protocols": 5,

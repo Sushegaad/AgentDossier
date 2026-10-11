@@ -18,7 +18,86 @@
 "taxonomy_version": "sar-taxonomy-1.0"
 },
 "commercial": false,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-11)",
+"evidence_url": "https://teable.ai/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-18",
+"payload_hash": "d047f5fdeef0c5038256a0981ddcfa121bb76a94da4a085a076e2ed5b24c5726",
+"period_end": null,
+"retrieved_at": "2026-10-11T01:57:13Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-11)",
+"evidence_url": "https://teable.ai/",
+"framework": "iso27001",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-18",
+"payload_hash": "d047f5fdeef0c5038256a0981ddcfa121bb76a94da4a085a076e2ed5b24c5726",
+"period_end": null,
+"retrieved_at": "2026-10-11T01:57:13Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ISO27001"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 5
+},
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-11)",
+"evidence_url": "https://teable.ai/",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-18",
+"payload_hash": "d047f5fdeef0c5038256a0981ddcfa121bb76a94da4a085a076e2ed5b24c5726",
+"period_end": null,
+"retrieved_at": "2026-10-11T01:57:13Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "SOC2_TYPE_II"
+}
+],
 "deployment": "self-hosted",
 "description": "✨ AI Spreadsheet for Business",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
@@ -29,27 +108,20 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
-"governance": null,
+"governance": 0.0,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
-"evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"evidence_coverage": 1.0,
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 64.1,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": [
-"governance"
-]
+"unknown": []
 },
 "data": {
 "components": {
@@ -57,27 +129,20 @@
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
-"governance": null,
+"governance": 0.0,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
 "score": 71.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": [
-"governance"
-]
+"unknown": []
 },
 "technology": {
 "components": {
@@ -85,33 +150,26 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
-"governance": null,
+"governance": 0.0,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 67.8,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": [
-"governance"
-]
+"unknown": []
 }
 },
 "external_ids": {
 "github": "teableio/teable"
 },
-"first_seen": "2026-10-10T04:52:51Z",
+"first_seen": "2026-10-11T01:41:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -122,7 +180,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -133,14 +191,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:52:51Z",
+"last_seen": "2026-10-11T01:41:37Z",
 "license": "Other",
 "name": "teable",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-02T06:57:04Z",
-"headline": "teable release.2026-10-02T04-02-20Z.3278",
+"headline": "teable release release.2026-10-02T04-02-20Z.3278",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -151,7 +209,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-30T13:12:41Z",
-"headline": "teable release.2026-09-30T04-47-05Z.3276",
+"headline": "teable release release.2026-09-30T04-47-05Z.3276",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -163,17 +221,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T05:00:20Z",
+"checked_at": "2026-10-11T01:49:40Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:19Z",
+"checked_at": "2026-10-11T01:49:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T05:00:21Z",
+"checked_at": "2026-10-11T01:49:41Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -187,16 +245,16 @@
 "github_forks": 1353,
 "github_language": "TypeScript",
 "github_open_issues": 143,
-"github_pushed_at": "2026-10-10T03:38:28Z",
-"github_stars": 21878,
+"github_pushed_at": "2026-10-10T06:13:45Z",
+"github_stars": 21877,
 "github_topic": "ai-agent",
 "homepage": "https://teable.ai"
 },
 "slug": "teableio-teable",
 "sources": [
 {
-"payload_hash": "41af1a822cccf35fdd0c60369deed4450ac241a9a9cb68b180dc0d9d1f37789b",
-"retrieved_at": "2026-10-10T04:52:51Z",
+"payload_hash": "819ec7992d4e445c0f3e4dec4eb852f620e6873a3aefce32134cd0334e79cd2d",
+"retrieved_at": "2026-10-11T01:41:37Z",
 "system": "github",
 "url": "https://github.com/teableio/teable"
 }

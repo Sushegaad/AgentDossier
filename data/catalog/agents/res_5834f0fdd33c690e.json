@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.2,
+"adoption": 24.31,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -35,16 +35,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 63.2,
-"score_version": "sar-score-1.0",
+"score": 63.3,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -52,7 +47,7 @@
 },
 "data": {
 "components": {
-"adoption": 24.2,
+"adoption": 24.31,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -63,16 +58,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 64.6,
-"score_version": "sar-score-1.0",
+"score": 64.7,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -80,7 +70,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.2,
+"adoption": 24.31,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -91,16 +81,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 69.1,
-"score_version": "sar-score-1.0",
+"score": 69.2,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -110,7 +95,7 @@
 "external_ids": {
 "github": "lexmount/moli"
 },
-"first_seen": "2026-10-10T04:50:21Z",
+"first_seen": "2026-10-11T01:38:56Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -121,7 +106,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -132,14 +117,14 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:21Z",
+"last_seen": "2026-10-11T01:38:56Z",
 "license": "Apache-2.0",
 "name": "moli",
 "news": [
 {
 "cluster_size": 1,
 "date": "2026-10-07T15:56:35Z",
-"headline": "moli Moli v1.1.15",
+"headline": "Moli v1.1.15",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -150,7 +135,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-05T16:55:38Z",
-"headline": "moli Moli v1.1.14",
+"headline": "Moli v1.1.14",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -162,17 +147,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:58:16Z",
+"checked_at": "2026-10-11T01:47:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:58:12Z",
+"checked_at": "2026-10-11T01:47:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:58:17Z",
+"checked_at": "2026-10-11T01:47:34Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -183,19 +168,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-08-10T13:20:30Z",
-"github_forks": 374,
+"github_forks": 380,
 "github_language": "Rust",
-"github_open_issues": 296,
-"github_pushed_at": "2026-10-10T04:30:19Z",
-"github_stars": 15002,
+"github_open_issues": 273,
+"github_pushed_at": "2026-10-11T01:30:13Z",
+"github_stars": 15653,
 "github_topic": "ai-agents",
 "homepage": "https://browser.lexmount.com"
 },
 "slug": "lexmount-moli",
 "sources": [
 {
-"payload_hash": "28521c681dbe406906bf2d39ed848de934dda76a270a7a9205d93ffaa8a37473",
-"retrieved_at": "2026-10-10T04:50:21Z",
+"payload_hash": "3efe3acd4fb7c3424c53418c35c295a7bbc4241e01b82a9e6c200100e70e9cf8",
+"retrieved_at": "2026-10-11T01:38:56Z",
 "system": "github",
 "url": "https://github.com/lexmount/moli"
 }

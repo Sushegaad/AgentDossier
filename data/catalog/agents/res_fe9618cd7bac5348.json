@@ -4,56 +4,67 @@
 "category": "Workspace agent/RAG app",
 "commercial": false,
 "compliance": [],
-"components": {
-"adoption": 25.0,
-"docs": 9.0,
-"domain_fit": 99.0,
-"ecosystem": 13.0,
-"governance": 45.0,
-"health": 19.0,
-"trust": 20.0
-},
 "deployment": "GitHub; desktop/self-hosted",
 "description": "Widely used self-hosted AI workspace with agent/tool capabilities.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
-"confidence": 1.0,
-"evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 19.0,
+"trust": 16.0
 },
+"components_version": "components-from-signals-1.0",
+"confidence": 1.0,
+"evidence_coverage": 0.944,
+"governance_credited": {},
 "profile": "general",
-"rank": 96,
+"rank": 90,
 "recomputed": 84.9,
-"score": 84.9,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 78.8,
+"score_version": "sar-score-2.0",
+"seed_rank": 96,
+"seed_score": 84.9,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 },
 "data": {
+"components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": null,
+"health": 19.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
-"rank": 32,
+"rank": 73,
 "recomputed": 88.3,
-"score": 88.3,
-"score_version": "sar-score-1.0",
-"source": "seed_xlsx"
+"score": 85.0,
+"score_version": "sar-score-2.0",
+"seed_rank": 32,
+"seed_score": 88.3,
+"source": "seed_xlsx",
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "Mintplex-Labs/anything-llm"
 },
-"first_seen": "2026-10-10T04:47:46Z",
+"first_seen": "2026-10-11T01:36:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,7 +75,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -136,7 +147,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:17Z",
+"last_seen": "2026-10-11T01:38:51Z",
 "license": "MIT",
 "merged_ids": [
 "res_5501dfa82f982555"
@@ -146,7 +157,7 @@
 {
 "cluster_size": 1,
 "date": "2026-10-01T22:17:40Z",
-"headline": "anything-llm AnythingLLM v1.17.0",
+"headline": "anything-llm: AnythingLLM v1.17.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -157,7 +168,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-22T19:06:03Z",
-"headline": "anything-llm AnythingLLM v1.16.2",
+"headline": "anything-llm: AnythingLLM v1.16.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -169,17 +180,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-10T04:57:28Z",
+"checked_at": "2026-10-11T01:46:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-10T04:57:27Z",
+"checked_at": "2026-10-11T01:46:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-10T04:57:28Z",
+"checked_at": "2026-10-11T01:46:43Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -189,7 +200,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:10:24Z",
+"checked_at": "2026-10-11T01:59:01Z",
 "cves": 25,
 "source": "nvd",
 "tier": 1
@@ -198,14 +209,23 @@
 "last_verified": "2026-09-25",
 "snapshot_date": "2026-09-25"
 },
+"seed_components": {
+"adoption": 25.0,
+"docs": 9.0,
+"domain_fit": 99.0,
+"ecosystem": 13.0,
+"governance": 45.0,
+"health": 19.0,
+"trust": 20.0
+},
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-06-04T02:29:14Z",
-"github_forks": 7463,
+"github_forks": 7467,
 "github_language": "JavaScript",
-"github_open_issues": 328,
+"github_open_issues": 332,
 "github_pushed_at": "2026-10-09T15:18:53Z",
-"github_stars": 66872,
+"github_stars": 66907,
 "github_topic": "ai-agents",
 "homepage": "https://anythingllm.com",
 "observed_popularity": "Not captured",
@@ -221,13 +241,13 @@
 "sources": [
 {
 "payload_hash": "8edac3990455ecf22a7860b53cba3a1fda1b055e53958ebcc26ab75c0f5faff3",
-"retrieved_at": "2026-10-10T04:47:46Z",
+"retrieved_at": "2026-10-11T01:36:23Z",
 "system": "seed_xlsx",
 "url": "https://github.com/Mintplex-Labs/anything-llm"
 },
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "c77ed43dbdb006a1aede2f24247351e4458d9ee6d924f68efd5558e81f7f2c21",
+"retrieved_at": "2026-10-11T01:38:51Z",
 "system": "github",
 "url": "https://github.com/Mintplex-Labs/anything-llm"
 }

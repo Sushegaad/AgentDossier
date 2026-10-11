@@ -15,7 +15,7 @@
 "external_ids": {
 "ard": "urn:air:alcock.ai:mcp:arena"
 },
-"first_seen": "2026-10-10T04:58:05Z",
+"first_seen": "2026-10-11T01:47:19Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -24,10 +24,10 @@
 "id": "res_007f42cd538e9c97",
 "identity": {
 "evidence": [
-"publisher_domain_matches_vendor"
+"vendor_domain_product_page"
 ],
-"rules_version": "identity-1.0",
-"tier": 3
+"rules_version": "identity-1.1",
+"tier": 2
 },
 "issues": {
 "advisories": 0,
@@ -37,7 +37,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:58:05Z",
+"last_seen": "2026-10-11T01:47:19Z",
 "license": null,
 "name": "arena",
 "news": [],
@@ -75,7 +75,7 @@
 "sources": [
 {
 "payload_hash": "7833b42343f1423a5f21e49177d7239da25736f7c398edf4312b089b00cbb30e",
-"retrieved_at": "2026-10-10T04:58:05Z",
+"retrieved_at": "2026-10-11T01:47:19Z",
 "system": "ard",
 "url": "https://alcock.ai/.well-known/ai-catalog.json"
 }
@@ -84,7 +84,7 @@
 "tenant": null,
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": null

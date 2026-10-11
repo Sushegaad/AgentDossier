@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.25,
+"adoption": 28.26,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 9.6,
@@ -35,16 +35,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 0.944,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 73.6,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -52,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.25,
+"adoption": 28.26,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 9.6,
@@ -63,16 +58,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.81,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 83.8,
-"score_version": "sar-score-1.0",
+"score": 83.9,
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -82,7 +72,7 @@
 "external_ids": {
 "github": "diegosouzapw/OmniRoute"
 },
-"first_seen": "2026-10-10T04:50:17Z",
+"first_seen": "2026-10-11T01:38:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,7 +83,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -111,7 +101,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:56:19Z",
+"last_seen": "2026-10-11T01:45:21Z",
 "license": "MIT",
 "merged_ids": [
 "res_32486cdd6aa8e70c"
@@ -121,7 +111,7 @@
 {
 "cluster_size": 1,
 "date": "2026-09-30T01:41:50Z",
-"headline": "OmniRoute v3.8.51",
+"headline": "OmniRoute release v3.8.51",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -132,7 +122,7 @@
 {
 "cluster_size": 1,
 "date": "2026-08-26T19:30:30Z",
-"headline": "OmniRoute v3.8.50",
+"headline": "OmniRoute release v3.8.50",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
@@ -147,14 +137,14 @@
 "evidence_url": "https://omniroute.online",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:51Z",
+"checked_at": "2026-10-11T01:49:13Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-10-10T04:59:50Z",
+"checked_at": "2026-10-11T01:49:12Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -162,7 +152,7 @@
 "evidence_url": "https://omniroute.online",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-10T04:59:51Z",
+"checked_at": "2026-10-11T01:49:14Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -174,7 +164,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:17:30Z",
+"checked_at": "2026-10-11T02:04:47Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -182,19 +172,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-13T12:38:31Z",
-"github_forks": 10783,
+"github_forks": 10836,
 "github_language": "TypeScript",
-"github_open_issues": 339,
-"github_pushed_at": "2026-10-10T04:31:45Z",
-"github_stars": 74717,
-"github_topic": "ai-agents",
+"github_open_issues": 286,
+"github_pushed_at": "2026-10-11T01:31:49Z",
+"github_stars": 74996,
+"github_topic": "a2a",
 "homepage": "https://omniroute.online"
 },
 "slug": "diegosouzapw-omniroute",
 "sources": [
 {
-"payload_hash": "32cbab57c233e810f36f964a4b6a375b93bd81d54c41bf94c19127aee89993c2",
-"retrieved_at": "2026-10-10T04:50:17Z",
+"payload_hash": "7d840cfc7a8c6d2eb59ccd606d7ead03a39ad41a281e640b08650b993940f835",
+"retrieved_at": "2026-10-11T01:45:21Z",
 "system": "github",
 "url": "https://github.com/diegosouzapw/OmniRoute"
 }

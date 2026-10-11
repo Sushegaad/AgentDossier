@@ -32,16 +32,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "data",
 "rank": null,
 "score": 48.1,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -60,16 +55,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
 "evidence_coverage": 1.0,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 45.2,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "governance"
@@ -79,7 +69,7 @@
 "external_ids": {
 "huggingface_space": "agent-collaborations/gemma-collab-lessons"
 },
-"first_seen": "2026-10-10T04:50:13Z",
+"first_seen": "2026-10-11T01:38:47Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -90,7 +80,7 @@
 "evidence": [
 "repository_ownership"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 3
 },
 "issues": {
@@ -101,7 +91,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:50:13Z",
+"last_seen": "2026-10-11T01:38:47Z",
 "license": null,
 "name": "The Gemma Challenge and the Case for Agent Collabs",
 "news": [],
@@ -125,7 +115,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:16:23Z",
+"checked_at": "2026-10-11T02:04:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -140,8 +130,8 @@
 "slug": "agent-collaborations-the-gemma-challenge-and-the-case-for-agent-collabs",
 "sources": [
 {
-"payload_hash": "8fcee39677289a12c4516a6529d5fac60799801b77b471ef18ded4b667460526",
-"retrieved_at": "2026-10-10T04:50:13Z",
+"payload_hash": "b1a021c3f3968c0d3cd6ded40e4e07c70a9486e532a6c53f9f44f234a67e709e",
+"retrieved_at": "2026-10-11T01:38:47Z",
 "system": "huggingface",
 "url": "https://huggingface.co/spaces/agent-collaborations/gemma-collab-lessons"
 }

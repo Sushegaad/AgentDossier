@@ -29,16 +29,11 @@
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
 "evidence_coverage": 0.7,
-"governance_evidence": {
-"credited": {},
-"score": null,
-"value": null,
-"version": "sar-score-1.1"
-},
+"governance_credited": {},
 "profile": "technology",
 "rank": null,
 "score": 53.0,
-"score_version": "sar-score-1.0",
+"score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
 "adoption",
@@ -49,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.augworlds/travel-world"
 },
-"first_seen": "2026-10-10T04:47:49Z",
+"first_seen": "2026-10-11T01:36:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -60,7 +55,7 @@
 "evidence": [
 "standards_metadata_at_publisher_domain"
 ],
-"rules_version": "identity-1.0",
+"rules_version": "identity-1.1",
 "tier": 2
 },
 "issues": {
@@ -71,7 +66,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-10T04:47:49Z",
+"last_seen": "2026-10-11T01:36:24Z",
 "license": null,
 "name": "Travel World",
 "news": [],
@@ -82,7 +77,7 @@
 "bearer"
 ],
 "card_url": "https://travel.augworlds.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-10T05:00:25Z",
+"checked_at": "2026-10-11T01:49:45Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "1.0",
 "signed": false,
@@ -90,7 +85,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-10T05:00:24Z",
+"checked_at": "2026-10-11T01:49:43Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -113,7 +108,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-10T05:13:04Z",
+"checked_at": "2026-10-11T02:02:26Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -130,8 +125,8 @@
 "slug": "augworlds-ai-travel-world",
 "sources": [
 {
-"payload_hash": "b999bb0e34f85ab71018087a4bce331d23b8611eba29d5448a040ef267d00457",
-"retrieved_at": "2026-10-10T04:47:49Z",
+"payload_hash": "54a652ebe214b7f76d60e554a4bbde7cf8cd166cc374333a41ef8094985c1610",
+"retrieved_at": "2026-10-11T01:36:24Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.augworlds/travel-world"
 }
