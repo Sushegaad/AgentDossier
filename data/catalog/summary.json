@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-11T17:56:44Z",
+ "built_at": "2026-10-11T19:37:57Z",
  "snapshot_date": "2026-09-25",
  "generator": "agentdossier 1.0.0",
  "score_version": "sar-score-2.0",
@@ -50,7 +50,7 @@
   },
   "finance": {
    "ranked": 100,
-   "discovered": 37
+   "discovered": 36
   },
   "healthcare": {
    "ranked": 100,
@@ -58,7 +58,7 @@
   },
   "regulatory": {
    "ranked": 100,
-   "discovered": 24
+   "discovered": 23
   },
   "technology": {
    "ranked": 100,
@@ -70,7 +70,7 @@
   },
   "sales": {
    "ranked": 100,
-   "discovered": 50
+   "discovered": 49
   },
   "legal": {
    "ranked": 100,
@@ -114,18 +114,18 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:27:43Z",
-   "finished": "2026-10-11T17:27:43Z"
+   "started": "2026-10-11T19:09:17Z",
+   "finished": "2026-10-11T19:09:17Z"
   },
   "mcp_registry": {
    "source": "mcp_registry",
    "fetched": 200,
-   "produced": 19665,
-   "skipped": 335,
+   "produced": 19667,
+   "skipped": 333,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:27:43Z",
-   "finished": "2026-10-11T17:29:21Z"
+   "started": "2026-10-11T19:09:17Z",
+   "finished": "2026-10-11T19:10:11Z"
   },
   "huggingface": {
    "source": "huggingface",
@@ -136,18 +136,18 @@
    "error_samples": [
     "https://huggingface.co/api/spaces?search=agentic&sort=likes&direction=-1&limit=500&full=true: response too large"
    ],
-   "started": "2026-10-11T17:29:21Z",
-   "finished": "2026-10-11T17:29:23Z"
+   "started": "2026-10-11T19:10:11Z",
+   "finished": "2026-10-11T19:10:12Z"
   },
   "github": {
    "source": "github",
    "fetched": 103,
-   "produced": 8741,
+   "produced": 8742,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:29:23Z",
-   "finished": "2026-10-11T17:35:31Z"
+   "started": "2026-10-11T19:10:12Z",
+   "finished": "2026-10-11T19:16:20Z"
   },
   "hygiene": {
    "source": "hygiene",
@@ -174,8 +174,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:35:32Z",
-   "finished": "2026-10-11T17:35:49Z"
+   "started": "2026-10-11T19:16:20Z",
+   "finished": "2026-10-11T19:16:37Z"
   },
   "ard_web": {
    "source": "ard_web",
@@ -184,8 +184,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:35:49Z",
-   "finished": "2026-10-11T17:39:13Z"
+   "started": "2026-10-11T19:16:37Z",
+   "finished": "2026-10-11T19:20:03Z"
   },
   "protocol_claims": {
    "source": "protocol_claims",
@@ -199,8 +199,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:39:13Z",
-   "finished": "2026-10-11T17:40:50Z",
+   "started": "2026-10-11T19:20:03Z",
+   "finished": "2026-10-11T19:21:40Z",
    "inherited": 52
   },
   "csa_star": {
@@ -210,8 +210,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:40:50Z",
-   "finished": "2026-10-11T17:42:46Z"
+   "started": "2026-10-11T19:21:40Z",
+   "finished": "2026-10-11T19:23:35Z"
   },
   "curated": {
    "source": "curated",
@@ -220,8 +220,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:42:46Z",
-   "finished": "2026-10-11T17:42:46Z"
+   "started": "2026-10-11T19:23:35Z",
+   "finished": "2026-10-11T19:23:35Z"
   },
   "vendor_claims": {
    "source": "vendor_trust_centers",
@@ -230,23 +230,23 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:42:46Z",
-   "finished": "2026-10-11T17:46:36Z"
+   "started": "2026-10-11T19:23:35Z",
+   "finished": "2026-10-11T19:27:33Z"
   },
   "compliance_review_added": {
-   "added": 3
+   "added": 1
   },
   "news": {
    "source": "news",
    "fetched": 802,
-   "produced": 452,
+   "produced": 451,
    "skipped": 0,
    "errors": 1,
    "error_samples": [
     "gdelt: GDELT unavailable (HTTP 429); skipped for the rest of the run"
    ],
-   "started": "2026-10-11T17:46:37Z",
-   "finished": "2026-10-11T17:56:43Z"
+   "started": "2026-10-11T19:27:34Z",
+   "finished": "2026-10-11T19:37:57Z"
   },
   "nvd": {
    "source": "nvd",
@@ -255,24 +255,31 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T17:46:37Z",
-   "finished": "2026-10-11T17:56:43Z"
+   "started": "2026-10-11T19:27:34Z",
+   "finished": "2026-10-11T19:37:57Z"
   },
   "self_test_traces": {
    "source": "self_test",
    "candidates": 194,
-   "appended": 17,
-   "unchanged": 177
+   "appended": 0,
+   "unchanged": 194
+  },
+  "vendor_traces": {
+   "source": "vendor_published",
+   "declared": 0,
+   "verified": 0,
+   "claimed": 0
   },
   "traces": {
    "source": "traces",
    "curated": 10,
    "stored": 195,
+   "model_level": 0,
    "agents_with_traces": 205
   },
   "changelog": {
-   "events": 34,
-   "appended": 34
+   "events": 2,
+   "appended": 2
   }
  }
 }

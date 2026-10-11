@@ -31,7 +31,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4409e3fa9b411c846d737645e71a3751163015fe0e494e5c51d1a304820bd7fd",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:42:51Z",
+"retrieved_at": "2026-10-11T19:23:41Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,7 +57,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "12c2ffc92f27efa3b6603a52165666455884666a115ffbfb3660bf6c3be94a78",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:42:51Z",
+"retrieved_at": "2026-10-11T19:23:41Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -126,7 +126,7 @@
 "external_ids": {
 "mcp_registry": "ai.adadvisor/mcp-server"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -148,19 +148,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "AdAdvisor MCP Server",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:35:53Z",
+"checked_at": "2026-10-11T19:16:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:35:52Z",
+"checked_at": "2026-10-11T19:16:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -183,7 +183,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:48:55Z",
+"checked_at": "2026-10-11T19:29:58Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -200,8 +200,8 @@
 "slug": "adadvisor-ai-adadvisor-mcp-server",
 "sources": [
 {
-"payload_hash": "7271fdfdb459f342fe29cef49747f4ece4603fdda4a31af33a14634e65650e8f",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"payload_hash": "be6874a89f6d06fb5f5241d7ff6725b7ac54a94e992fc46012228271c954c300",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.adadvisor/mcp-server"
 }

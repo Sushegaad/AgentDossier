@@ -45,7 +45,7 @@
 "github": "ankimcp/anki-mcp-server-addon",
 "mcp_registry": "ai.ankimcp/anki-mcp-server-addon"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,10 +67,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "AnkiMCP Server",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-11T18:29:01Z",
+"headline": "anki-mcp-server-addon release v0.40.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Breaking: one tool per action\n\nThe four multi-action tools `card_management`, `tag_management`, `filtered_deck` and `model_fields` are gone. Each action is now its own tool with its own schema and annotations, 24 in all:\n\n| Group | Tools",
+"tag": "product_update",
+"url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.40.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-10T20:38:04Z",
@@ -81,28 +92,17 @@
 "summary": "**Full Changelog**: https://github.com/ankimcp/anki-mcp-server-addon/compare/v0.32.0...v0.32.1",
 "tag": "product_update",
 "url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.32.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-04T16:10:29Z",
-"headline": "anki-mcp-server-addon release v0.32.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "**Full Changelog**: https://github.com/ankimcp/anki-mcp-server-addon/compare/v0.31.0...v0.32.0",
-"tag": "product_update",
-"url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.32.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:15Z",
+"checked_at": "2026-10-11T19:17:03Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:14Z",
+"checked_at": "2026-10-11T19:17:02Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -110,7 +110,7 @@
 "parser_version": "mcp-2025-06-18",
 "server_name": "ai.ankimcp/anki-mcp-server-addon",
 "status": "claimed",
-"version": "0.32.1",
+"version": "0.40.0",
 "via": "mcp_registry"
 }
 },
@@ -119,23 +119,23 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:49:50Z",
+"checked_at": "2026-10-11T19:30:56Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-10T20:38:14.516874Z",
+"mcp_registry_published_at": "2026-10-11T18:29:12.499147Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-10T20:38:14.516874Z",
+"mcp_registry_updated_at": "2026-10-11T18:29:12.499147Z",
 "mcp_transports": []
 },
 "slug": "ankimcp-ai-ankimcp-server",
 "sources": [
 {
-"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"payload_hash": "d991c3aec3eab6427ebf70ba4dfd6b3cf7cd1434c81a2caaae671066cb3dce20",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ankimcp/anki-mcp-server-addon"
 }

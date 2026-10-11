@@ -24,9 +24,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:16Z",
+"retrieved_at": "2026-10-11T19:22:06Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -57,9 +57,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:16Z",
+"retrieved_at": "2026-10-11T19:22:06Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -124,7 +124,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -146,24 +146,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:17Z",
 "license": "Commercial",
 "name": "Automation Anywhere Customer Onboarding for Financial Services",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:39Z",
+"checked_at": "2026-10-11T19:17:30Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:38Z",
+"checked_at": "2026-10-11T19:17:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T17:36:39Z",
+"checked_at": "2026-10-11T19:17:30Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -173,7 +173,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:47:59Z",
+"checked_at": "2026-10-11T19:28:53Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -198,7 +198,7 @@
 "sources": [
 {
 "payload_hash": "86f847e9be7fd679c316ae3f0f8f8347f83af7ade2468f6f160872da60da3b71",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-cnojvl7fd7igm"
 }

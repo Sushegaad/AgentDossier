@@ -34,7 +34,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "8fba5d1e067443d215a68745070a0df08bac62e48d6a084b49ec9651ca2b0be1",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:16Z",
+"retrieved_at": "2026-10-11T19:24:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -60,7 +60,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4a5b1ac747ae410618973701bba2681baab140fc929945fae330aa2a7704deda",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:16Z",
+"retrieved_at": "2026-10-11T19:24:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -86,7 +86,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "4a5b1ac747ae410618973701bba2681baab140fc929945fae330aa2a7704deda",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:16Z",
+"retrieved_at": "2026-10-11T19:24:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -175,7 +175,7 @@
 "github": "analyticslegends/analytics-legends-mcp",
 "mcp_registry": "ai.analyticslegends/sap-analytics"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -197,7 +197,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "Analytics Legends — SAP Analytics Intelligence",
 "news": [],
@@ -205,7 +205,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://analyticslegends.ai/.well-known/agent.json",
-"checked_at": "2026-10-11T17:36:14Z",
+"checked_at": "2026-10-11T19:17:02Z",
 "errors": [
 "missing service endpoint ('url' or 'supportedInterfaces')"
 ],
@@ -215,7 +215,7 @@
 "version": "1.84.0"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:13Z",
+"checked_at": "2026-10-11T19:17:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -238,7 +238,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:49:47Z",
+"checked_at": "2026-10-11T19:30:53Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -255,8 +255,8 @@
 "slug": "analyticslegends-ai-analytics-legends-sap-analytics-intelligence",
 "sources": [
 {
-"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"payload_hash": "d991c3aec3eab6427ebf70ba4dfd6b3cf7cd1434c81a2caaae671066cb3dce20",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.analyticslegends/sap-analytics"
 }

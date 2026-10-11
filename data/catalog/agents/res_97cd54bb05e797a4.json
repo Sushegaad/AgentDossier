@@ -22,9 +22,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:13Z",
+"retrieved_at": "2026-10-11T19:22:03Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -48,9 +48,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "9c1ef2bb907f6597de026866ad36df573bcd7ddc61669e4473be6ea480a07a1e",
+"payload_hash": "ec8d4dbaaa600ff975cebfa6f82e4cdd6cfb3866f7c129b76a271de8918a791f",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:44:31Z",
+"retrieved_at": "2026-10-11T19:25:24Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -357,7 +357,7 @@
 "external_ids": {
 "github": "anthropics/claude-code"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -440,7 +440,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:17Z",
 "license": "Commercial",
 "name": "Claude Code",
 "news": [
@@ -470,17 +470,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:37:15Z",
+"checked_at": "2026-10-11T19:18:06Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:37:13Z",
+"checked_at": "2026-10-11T19:18:05Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T17:37:15Z",
+"checked_at": "2026-10-11T19:18:07Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -490,7 +490,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:47:38Z",
+"checked_at": "2026-10-11T19:28:33Z",
 "cves": 47,
 "source": "nvd",
 "tier": 1
@@ -511,11 +511,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-02-22T17:41:21Z",
-"github_forks": 26204,
+"github_forks": 26206,
 "github_language": "TypeScript",
-"github_open_issues": 14719,
-"github_pushed_at": "2026-10-10T22:23:41Z",
-"github_stars": 150187,
+"github_open_issues": 14734,
+"github_pushed_at": "2026-10-11T19:07:17Z",
+"github_stars": 150194,
 "homepage": "https://code.claude.com/docs/en/overview",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -530,7 +530,7 @@
 "sources": [
 {
 "payload_hash": "13291d1010ed42eef8d3270f14df2950e6a747fdacf2e0272098aadeb0a1817c",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://github.com/anthropics/claude-code"
 }

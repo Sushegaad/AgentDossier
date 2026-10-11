@@ -34,7 +34,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "9f6838b6b40034441f14bf5a6adedcbfa6c6a0222481b36828edf29faa556e47",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:44:26Z",
+"retrieved_at": "2026-10-11T19:25:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -124,7 +124,7 @@
 "external_ids": {
 "mcp_registry": "ai.buzzsearch/mcp"
 },
-"first_seen": "2026-10-11T17:27:44Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -146,19 +146,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:44Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "BuzzSearch",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:37:06Z",
+"checked_at": "2026-10-11T19:17:59Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:37:03Z",
+"checked_at": "2026-10-11T19:17:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -181,7 +181,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:51:20Z",
+"checked_at": "2026-10-11T19:32:58Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -198,8 +198,8 @@
 "slug": "buzzsearch-ai-buzzsearch",
 "sources": [
 {
-"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
-"retrieved_at": "2026-10-11T17:27:44Z",
+"payload_hash": "8e4ae17ee26f6dfbdf52a48ec1da38c710a4f8fbb8ef5e3b2f09ab002be7a8c2",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.buzzsearch/mcp"
 }

@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "a76445a26d3d6f765b9b04eb237e6eae565bee54b46a6e2a98d47e76227d56f1",
+"payload_hash": "824cf528448db1f452ab0023311a67e5b203fe16b6d0c8f617380f2382d574ea",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:33Z",
+"retrieved_at": "2026-10-11T19:24:24Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "a76445a26d3d6f765b9b04eb237e6eae565bee54b46a6e2a98d47e76227d56f1",
+"payload_hash": "824cf528448db1f452ab0023311a67e5b203fe16b6d0c8f617380f2382d574ea",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:43:33Z",
+"retrieved_at": "2026-10-11T19:24:24Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "github": "arpi-ai/arpi-mcp",
 "mcp_registry": "ai.arpi/arpi-mcp"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,19 +119,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "ARPI MCP",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:27Z",
+"checked_at": "2026-10-11T19:17:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:24Z",
+"checked_at": "2026-10-11T19:17:12Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -154,7 +154,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:50:00Z",
+"checked_at": "2026-10-11T19:31:08Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -171,8 +171,8 @@
 "slug": "arpi-ai-arpi-mcp",
 "sources": [
 {
-"payload_hash": "6abff8d0564b04e4f64d0360cc3fc8ff7dbea14a4bd23034d600486d21797b16",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"payload_hash": "d991c3aec3eab6427ebf70ba4dfd6b3cf7cd1434c81a2caaae671066cb3dce20",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.arpi/arpi-mcp"
 }

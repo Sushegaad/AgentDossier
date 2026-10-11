@@ -17,9 +17,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "60fc6a4c628ef9ad1e99986e7905804a3fb7f2da89b3f5959e98b4307fde6f29",
+"payload_hash": "c6710205713fba0ce0930a9877540403b2e0d5c6d8057d8d1af229a61ee547d9",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:45:33Z",
+"retrieved_at": "2026-10-11T19:26:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -86,7 +86,7 @@
 "external_ids": {
 "github": "lobehub/lobehub"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -169,38 +169,38 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:17Z",
 "license": "Apache-2.0",
 "name": "LobeChat",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-11T01:19:32Z",
-"headline": "lobehub: PR Build v0.0.0-nightly.pr20467.34214",
+"date": "2026-10-11T18:58:15Z",
+"headline": "lobehub: PR Build v0.0.0-nightly.pr20458.34426",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## PR Build Information\n\n**Version**: `0.0.0-nightly.pr20467.34214`\n**Release Time**: `2026-10-11T01:19:31.325Z`\n**PR**: [#20467](https://github.com/lobehub/lobe-chat/pull/20467)\n\n\n## ⚠️ Important Notice\n\nThis is a **development build** sp",
+"summary": "## PR Build Information\n\n**Version**: `0.0.0-nightly.pr20458.34426`\n**Release Time**: `2026-10-11T18:58:14.270Z`\n**PR**: [#20458](https://github.com/lobehub/lobe-chat/pull/20458)\n\n\n## ⚠️ Important Notice\n\nThis is a **development build** sp",
 "tag": "product_update",
-"url": "https://github.com/lobehub/lobehub/releases/tag/v0.0.0-nightly.pr20467.34214"
+"url": "https://github.com/lobehub/lobehub/releases/tag/v0.0.0-nightly.pr20458.34426"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-11T01:04:06Z",
-"headline": "lobehub: PR Build v0.0.0-nightly.pr20458.34216",
+"date": "2026-10-11T18:55:14Z",
+"headline": "lobehub: PR Build v0.0.0-nightly.pr20467.34427",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## PR Build Information\n\n**Version**: `0.0.0-nightly.pr20458.34216`\n**Release Time**: `2026-10-11T01:04:05.916Z`\n**PR**: [#20458](https://github.com/lobehub/lobe-chat/pull/20458)\n\n\n## ⚠️ Important Notice\n\nThis is a **development build** sp",
+"summary": "## PR Build Information\n\n**Version**: `0.0.0-nightly.pr20467.34427`\n**Release Time**: `2026-10-11T18:55:14.018Z`\n**PR**: [#20467](https://github.com/lobehub/lobe-chat/pull/20467)\n\n\n## ⚠️ Important Notice\n\nThis is a **development build** sp",
 "tag": "product_update",
-"url": "https://github.com/lobehub/lobehub/releases/tag/v0.0.0-nightly.pr20458.34216"
+"url": "https://github.com/lobehub/lobehub/releases/tag/v0.0.0-nightly.pr20467.34427"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://lobehub.com/.well-known/agent-card.json",
-"checked_at": "2026-10-11T17:38:16Z",
+"checked_at": "2026-10-11T19:19:05Z",
 "errors": [
 "missing service endpoint ('url' or 'supportedInterfaces')",
 "skills[0] missing id/name",
@@ -213,7 +213,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T17:38:14Z",
+"checked_at": "2026-10-11T19:19:04Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -221,7 +221,7 @@
 "evidence_url": "https://github.com/lobehub/lobe-chat",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T17:38:16Z",
+"checked_at": "2026-10-11T19:19:05Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -233,7 +233,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:47:49Z",
+"checked_at": "2026-10-11T19:28:44Z",
 "cves": 10,
 "source": "nvd",
 "tier": 1
@@ -254,10 +254,10 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-05-21T07:19:12Z",
-"github_forks": 15976,
+"github_forks": 15975,
 "github_language": "TypeScript",
-"github_open_issues": 1052,
-"github_pushed_at": "2026-10-11T17:28:33Z",
+"github_open_issues": 1053,
+"github_pushed_at": "2026-10-11T19:07:19Z",
 "github_stars": 83145,
 "homepage": "https://lobehub.com",
 "observed_popularity": "Not captured",
@@ -274,7 +274,7 @@
 "sources": [
 {
 "payload_hash": "aafb49535b290bfbe39a9380449fc1265519ec0ae74ab3fa535c1038773b05d1",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://github.com/lobehub/lobe-chat"
 }

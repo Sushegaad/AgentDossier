@@ -26,9 +26,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "9bf730b9abb2bd0b036bac255c7fe0551aca52348284e0bc94a719b031f21390",
+"payload_hash": "026f064a379f21473c600dfeeecee9175ca951e0b0fa5815b71ecd8c877a4bac",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:44:26Z",
+"retrieved_at": "2026-10-11T19:25:18Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,9 +52,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "3d328c041c9f30b8337f011aa3e2b164a4363b699236cb547fa94dc3edebdf8d",
+"payload_hash": "b999f2499bcb72c69610d07e33605e50ade3d1ef47119f2903d48c4444608efe",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:44:26Z",
+"retrieved_at": "2026-10-11T19:25:18Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "github": "centralcity-ai-org/protocol",
 "mcp_registry": "ai.centralcity/central-city"
 },
-"first_seen": "2026-10-11T17:27:44Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,19 +119,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:44Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "Central City",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:37:10Z",
+"checked_at": "2026-10-11T19:18:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:37:09Z",
+"checked_at": "2026-10-11T19:18:01Z",
 "entries": 1,
 "errors": [
 "entries[0]: missing required term 'displayName'"
@@ -165,7 +165,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:51:32Z",
+"checked_at": "2026-10-11T19:33:17Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -182,8 +182,8 @@
 "slug": "centralcity-ai-central-city",
 "sources": [
 {
-"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
-"retrieved_at": "2026-10-11T17:27:44Z",
+"payload_hash": "8e4ae17ee26f6dfbdf52a48ec1da38c710a4f8fbb8ef5e3b2f09ab002be7a8c2",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.centralcity/central-city"
 }

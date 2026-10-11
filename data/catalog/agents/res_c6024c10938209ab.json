@@ -25,9 +25,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:06Z",
+"retrieved_at": "2026-10-11T19:21:55Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -57,7 +57,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:39:26Z",
+"retrieved_at": "2026-10-11T19:20:16Z",
 "review_reason": "vendor authorization for AWS GovCloud; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -364,7 +364,7 @@
 "external_ids": {
 "github": "strands-agents/harness-sdk"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -417,7 +417,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:35:20Z",
+"last_seen": "2026-10-11T19:16:09Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_ab09f3e05ae8aff8"
@@ -445,30 +445,17 @@
 "summary": "## harness-python/v0.2.0\n\n_Auto-drafted from commits in `harness-python/v0.1.2..harness-python/v0.2.0`, grouped by conventional-commit type. Edit on the release page after publish if you want a polished writeup; the canonical release notes",
 "tag": "product_update",
 "url": "https://github.com/strands-agents/harness-sdk/releases/tag/harness-python/v0.2.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-07-13T18:18:23Z",
-"discussion_url": "https://news.ycombinator.com/item?id=48896599",
-"engagement": 100,
-"headline": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
-"kind": "community",
-"link_confidence": 0.88,
-"outlet": "Hacker News",
-"summary": null,
-"tag": "news",
-"url": "https://github.com/morganwilliscloud/billai-bass"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:38:53Z",
+"checked_at": "2026-10-11T19:19:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:38:53Z",
+"checked_at": "2026-10-11T19:19:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -476,7 +463,7 @@
 "evidence_url": "https://github.com/strands-agents/sdk-python",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T17:38:54Z",
+"checked_at": "2026-10-11T19:19:45Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -488,7 +475,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:47:13Z",
+"checked_at": "2026-10-11T19:28:08Z",
 "cves": 5,
 "source": "nvd",
 "tier": 1
@@ -530,13 +517,13 @@
 "sources": [
 {
 "payload_hash": "3fbe1afa76461a06a6e3f8682f345dd261f46a3ae24033a857daf172381ff601",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://github.com/strands-agents/sdk-python"
 },
 {
-"payload_hash": "d22a387e11d59a9860a71e607b2fdbe4e0adc6dd011d59b18f943ab4e8bbf4fc",
-"retrieved_at": "2026-10-11T17:29:29Z",
+"payload_hash": "8203b0bdf8669bf151194e102b9a7e74afa66e5d521a1186cf87eac336138635",
+"retrieved_at": "2026-10-11T19:10:18Z",
 "system": "github",
 "url": "https://github.com/strands-agents/harness-sdk"
 }

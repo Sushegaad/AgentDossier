@@ -30,9 +30,9 @@
 "issuer": null,
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "b8553200b6318f899f79e85eac6f329cf3fd72b8631854177939be9dc6f45247",
+"payload_hash": "d0bae73b103d6713ecfcde350507245dd9da56353311a115b8342ec3a4865157",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:44:03Z",
+"retrieved_at": "2026-10-11T19:24:55Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "external_ids": {
 "mcp_registry": "ai.blopus/search"
 },
-"first_seen": "2026-10-11T17:27:44Z",
+"first_seen": "2026-10-11T19:09:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,19 +119,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:44Z",
+"last_seen": "2026-10-11T19:09:18Z",
 "license": null,
 "name": "Web Search API for all your agents and LLMs",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:52Z",
+"checked_at": "2026-10-11T19:17:44Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:51Z",
+"checked_at": "2026-10-11T19:17:43Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -154,7 +154,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:51:07Z",
+"checked_at": "2026-10-11T19:32:46Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -171,8 +171,8 @@
 "slug": "blopus-ai-web-search-api-for-all-your-agents-and-llms",
 "sources": [
 {
-"payload_hash": "48afd93e24f79fd519e8b27fe4b989e02c2437da5dd5b2c06234c27da86e8010",
-"retrieved_at": "2026-10-11T17:27:44Z",
+"payload_hash": "8e4ae17ee26f6dfbdf52a48ec1da38c710a4f8fbb8ef5e3b2f09ab002be7a8c2",
+"retrieved_at": "2026-10-11T19:09:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.blopus/search"
 }

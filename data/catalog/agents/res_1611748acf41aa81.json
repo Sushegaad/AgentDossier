@@ -31,9 +31,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:00Z",
+"retrieved_at": "2026-10-11T19:21:49Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -71,9 +71,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:00Z",
+"retrieved_at": "2026-10-11T19:21:49Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -103,7 +103,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:39:21Z",
+"retrieved_at": "2026-10-11T19:20:11Z",
 "review_reason": "vendor authorization for Microsoft 365 Government Community Cloud-High ; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -141,9 +141,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:41:00Z",
+"retrieved_at": "2026-10-11T19:21:49Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -450,7 +450,7 @@
 "external_ids": {
 "github": "microsoft/agent-framework"
 },
-"first_seen": "2026-10-11T17:27:43Z",
+"first_seen": "2026-10-11T19:09:17Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -472,7 +472,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:27:43Z",
+"last_seen": "2026-10-11T19:09:17Z",
 "license": "MIT",
 "name": "Microsoft Agent Framework",
 "news": [
@@ -515,17 +515,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T17:36:10Z",
+"checked_at": "2026-10-11T19:16:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T17:36:09Z",
+"checked_at": "2026-10-11T19:16:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T17:36:10Z",
+"checked_at": "2026-10-11T19:16:58Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -535,7 +535,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T17:46:54Z",
+"checked_at": "2026-10-11T19:27:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -556,11 +556,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-28T19:40:42Z",
-"github_forks": 2459,
+"github_forks": 2460,
 "github_language": "Python",
-"github_open_issues": 772,
+"github_open_issues": 773,
 "github_pushed_at": "2026-10-11T14:37:46Z",
-"github_stars": 14058,
+"github_stars": 14059,
 "homepage": "https://aka.ms/agent-framework",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -576,7 +576,7 @@
 "sources": [
 {
 "payload_hash": "ab764a8c58b92adbb7b1cf057a4b3eab7d0a883f8e2313fac35ddd208496373d",
-"retrieved_at": "2026-10-11T17:27:43Z",
+"retrieved_at": "2026-10-11T19:09:17Z",
 "system": "seed_xlsx",
 "url": "https://github.com/microsoft/agent-framework"
 }

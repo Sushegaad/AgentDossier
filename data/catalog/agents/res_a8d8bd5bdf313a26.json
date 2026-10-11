@@ -39,9 +39,9 @@
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
 "next_check": "2026-10-18",
-"payload_hash": "024065800763b7f0b8fa02bdaf38f50ded056dd9ee91388d05c60ca77ae3751c",
+"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:42:28Z",
+"retrieved_at": "2026-10-11T19:23:18Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "next_check": "2026-10-18",
 "payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
 "period_end": null,
-"retrieved_at": "2026-10-11T17:40:35Z",
+"retrieved_at": "2026-10-11T19:21:25Z",
 "review_reason": "vendor authorization for Google Workspace; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -111,7 +111,7 @@
 "external_ids": {
 "github": "google/adk-go"
 },
-"first_seen": "2026-10-11T17:35:15Z",
+"first_seen": "2026-10-11T19:16:04Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -133,7 +133,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T17:35:15Z",
+"last_seen": "2026-10-11T19:16:04Z",
 "license": "Apache-2.0",
 "name": "adk-go",
 "news": [
@@ -166,14 +166,14 @@
 "evidence_url": "https://google.github.io/adk-docs/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T17:37:55Z",
+"checked_at": "2026-10-11T19:18:47Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-10-11T17:37:55Z",
+"checked_at": "2026-10-11T19:18:47Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -181,7 +181,7 @@
 "evidence_url": "https://google.github.io/adk-docs/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T17:37:56Z",
+"checked_at": "2026-10-11T19:18:48Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -205,8 +205,8 @@
 "slug": "google-adk-go",
 "sources": [
 {
-"payload_hash": "564dd642aeebec9f48214964f1b584dc43be9dc7f13ed622e8908e811b74416e",
-"retrieved_at": "2026-10-11T17:35:15Z",
+"payload_hash": "5d8f047009ba4d35024586a77b1464e3a2ff1493dc152737fbf86140aa12e8c8",
+"retrieved_at": "2026-10-11T19:16:04Z",
 "system": "github",
 "url": "https://github.com/google/adk-go"
 }
