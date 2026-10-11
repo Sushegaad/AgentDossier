@@ -145,3 +145,91 @@ recommendation, and no vendor or issuing body has endorsed it. Evidence can
 expire or be withdrawn after it was collected; absence of evidence means only
 that none was found in the sources checked. Confirm current status with the
 vendor and the issuing body before relying on it.
+
+## Business use cases, features, and design
+
+### Who it is for and why
+
+AI agents are entering regulated workflows faster than the evidence to govern
+them. A buyer asked to approve one usually has a vendor's marketing page and
+little else, and "we red-teamed it" is taken on faith. AgentDossier exists to
+put the evidence — and the honest gaps — in front of the people who have to
+decide.
+
+- **Procurement and vendor risk.** Shortlist agents for a regulated use case
+  and see, per agent, which frameworks are backed by a registry or a document
+  versus only claimed on a vendor page, what is still unknown, and the
+  restrictions a bounded pilot should carry. The worked comparisons answer the
+  same deployment questions for a set of agents from their own documentation.
+- **Security and GRC teams.** Read the publisher-identity tier, the protocol
+  posture (verified / documented / none), the CVE keyword check, and — the part
+  the market lacks most — public **traces** of the agent under prompt injection
+  and tool abuse. "No public trace found" is stated plainly rather than hidden.
+- **Platform and enterprise architecture.** Run the same engine against your
+  own network to inventory the agents already deployed, qualify them against a
+  policy, and route them through a decision workflow whose approval can be
+  **gated on a trace** — an agent cannot be approved until it has actually been
+  watched under attack.
+- **Agent builders and vendors.** See how your agent appears to a careful
+  buyer, dispute or correct a dossier, and publish your own evaluation traces
+  through the open ARD extension so your evidence is machine-checkable.
+
+### Current features
+
+- **Evidence-first dossiers.** Compliance evidence tiered T1–T5 with issuer,
+  scope, date and freshness; agent-level versus vendor-level (inherited)
+  evidence kept separate so a vendor certificate never reads as a blanket
+  endorsement of every agent it offers.
+- **Publisher identity** (`identity-1.1`): confirmed / likely / unconfirmed /
+  unknown, with compliance credited only once the publisher is confirmed.
+- **Protocol posture** from live probes of ARD, A2A and MCP well-known
+  endpoints, plus curated and self-described claims.
+- **Traces — under attack, in defence, in incidents.** Curated public write-ups
+  and incident reports; the registry's own reproducible probe transcripts; a
+  sandbox **harness** that runs agents against the AgentDojo prompt-injection
+  benchmark and records whether each injection succeeded; and an ARD extension
+  for vendors to publish their own. Every bundle lives in an append-only,
+  hash-chained store.
+- **Discovery and curation.** A curated Top 100 per domain plus agents
+  discovered from GitHub, Hugging Face, the MCP registry, marketplaces and ARD
+  manifests, with demo, deprecated and abandoned projects filtered out.
+- **Scoring** (`sar-score-2.0`): seven weighted components per domain profile;
+  trust and governance recomputed from evidence on every build, shown beside
+  the curated rank rather than used to reorder it. Scores are discovery
+  signals, not certification.
+- **"Before you deploy"** restrictions derived from the evidence, reference-set
+  answers and rules — including *run your own sandbox trace when none is
+  public* and *keep an egress allowlist when a trace shows data leaving*.
+- **Self-hosted enterprise edition**: authorized private-network scanner, ARD
+  REST API, policy qualification, decision workflow with sign-offs and the
+  trace gate, hash-chained audit log, SCIM deprovisioning and integrations.
+
+### Technical design
+
+- **Static public core.** A Python pipeline (`agentdossier build`) compiles a
+  catalog of JSON records; an Astro + React site renders them as a fully static
+  site with no backend and no accounts. The weekly refresh runs in CI and opens
+  a reviewable pull request — the data is never edited in place.
+- **Provenance over assertion.** Every record carries its source, date and a
+  tier that says *how* it is known. Protocol and trace artifacts are fetched,
+  validated and hashed; a web page served where a JSON document was expected is
+  recorded as "not found", not as a broken artifact.
+- **Append-only, verifiable trace store.** `data/traces/` is a hash-chained
+  ledger (`index.jsonl`) plus text bundles; each line carries the hash of the
+  line before it, so an edited or removed trace breaks the chain, and CI
+  verifies it on every change. `git clone` is the mirror.
+- **Honest scales.** Compliance uses T1–T5; publisher identity, protocol status
+  and the security check each use plain words rather than borrowing that scale,
+  and "unknown / none found" is never rendered as a negative finding.
+- **Shared engine, two editions.** The same code powers the public catalog and
+  the self-hosted scanner; the enterprise edition adds a FastAPI server, a
+  SQLite instance database and fail-closed authentication, and keeps private
+  data inside the tenant unless it is explicitly published.
+- **Standards-based.** Agents are discovered and described through Agentic
+  Resource Discovery, Agent2Agent and the Model Context Protocol; the trace and
+  vendor-publishing conventions are documented in
+  [`docs/traces.md`](docs/traces.md) and [`docs/traces-spec.md`](docs/traces-spec.md).
+
+See [`docs/architecture.md`](docs/architecture.md) and
+[`docs/methodology.md`](docs/methodology.md) for the full design and grading
+rules.
