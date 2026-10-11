@@ -22,12 +22,12 @@ from . import SCORE_VERSION, __version__
 from .classify import Classifier
 from .compliance import run as compliance_run
 from .compliance.engine import (
-    GOVERNANCE_VERSION,
     append_changelog,
     changelog_events,
     governance_from_evidence,
 )
-from .connectors import ard_web, github, huggingface, marketplaces, mcp_registry, seed_enrich
+from .compliance.matching import entity_domains
+from .connectors import ard_web, github, huggingface, hygiene, marketplaces, mcp_registry, seed_enrich
 from .connectors.base import SnapshotStore
 from .connectors.seed_xlsx import import_seed
 from .dedup import dedup, load_decisions, resource_slug, write_review_file
@@ -59,6 +59,7 @@ class BuildOptions:
     # evidence and news stages inside the runner's time limit. --limit overrides all three.
     github_cap: int = 300
     seed_enrich: bool = True  # look up seed rows whose URL is a GitHub repository
+    hygiene: bool = True  # drop demo, deprecated and inactive discovered rows (connectors.hygiene)
     huggingface_cap: int = 150
     mcp_registry_cap: int = 300
     budget_minutes: float | None = 150.0  # wall-clock budget for the whole build (None = unlimited)
@@ -110,11 +111,30 @@ def _domain_matches_vendor(domain: str | None, vendor: str | None) -> bool:
     """everlaw.com <- "Everlaw"; salesforce.com <- "Salesforce, Inc."; needs a 4+ letter vendor token."""
     if not domain or not vendor:
         return False
-    label = domain.lower().removeprefix("www.").split(".")[0].replace("-", "")
+    d = domain.lower().removeprefix("www.")
+    if any(d == own or d.endswith("." + own) for own in entity_domains(vendor)):
+        return True  # config/vendor_aliases.json: aws.amazon.com is AWS's own domain
+    label = d.split(".")[0].replace("-", "")
     for tok in re.findall(r"[a-z0-9]+", vendor.lower()):
         if len(tok) >= 4 and tok not in _VENDOR_STOP and tok in label:
             return True
     return False
+
+
+_CODE_HOSTS = {"github.com", "gitlab.com", "huggingface.co", "pypi.org", "npmjs.com", "www.npmjs.com"}
+
+
+def _vendor_product_page(res: dict[str, Any]) -> bool:
+    """The resource's own URL is a page on the vendor's domain (salesforce.com/agentforce for Salesforce).
+
+    A product page the vendor serves from its own domain ties the product to the publisher at
+    least as firmly as a marketplace listing does, so it earns the same tier. Only the URL itself
+    counts: a publisher_domain inferred from a repository's homepage field stays at tier 3.
+    """
+    d = domain_of(res.get("url"))
+    if not d or d.lower().removeprefix("www.") in _CODE_HOSTS or d.lower().endswith(".github.io"):
+        return False
+    return _domain_matches_vendor(d, res.get("vendor"))
 
 
 def _identity(res: dict[str, Any], curated: dict[str, dict[str, Any]] | None = None) -> dict[str, Any]:
@@ -133,13 +153,15 @@ def _identity(res: dict[str, Any], curated: dict[str, dict[str, Any]] | None = N
         tier, evidence = 2, ["standards_metadata_at_publisher_domain"]
     elif cur and _domain_matches_vendor(domain, cur.get("vendor") or res.get("vendor")):
         tier, evidence = 2, ["maintainer_verified_publisher_domain"]
+    elif _vendor_product_page(res):
+        tier, evidence = 2, ["vendor_domain_product_page"]
     elif "github" in ext or "huggingface_space" in ext or "huggingface_model" in ext:
         tier, evidence = 3, ["repository_ownership"]
     elif _domain_matches_vendor(domain, res.get("vendor")):
         tier, evidence = 3, ["publisher_domain_matches_vendor"]
     elif res.get("vendor"):
         tier, evidence = 4, ["vendor_name_only"]
-    out: dict[str, Any] = {"tier": tier, "evidence": evidence, "rules_version": "identity-1.0"}
+    out: dict[str, Any] = {"tier": tier, "evidence": evidence, "rules_version": "identity-1.1"}
     if cur and tier == 2 and evidence == ["maintainer_verified_publisher_domain"]:
         out["verified_by"] = cur.get("checked_by", "maintainer")
         out["verified_on"] = cur.get("checked_on")
@@ -163,9 +185,60 @@ def load_curated_identity(path: Path | None = None) -> dict[str, dict[str, Any]]
     }
 
 
+def _score_domains(res: dict[str, Any], cfg: ScoringConfig, *, is_seed: bool) -> None:
+    """Score every domain entry of a resource (sar-score-2.0).
+
+    Workbook rows keep the workbook's adoption, health, ecosystem, domain-fit and docs values
+    (nothing better is known for them); ``trust`` and ``governance`` are recomputed from evidence
+    for every row, so the Top 100 tables and the dossier never show a trust number the evidence
+    ledger contradicts. The workbook's values stay on the record as ``seed_components``.
+    """
+    seed_comps = dict(res.get("components") or {}) if is_seed else {}
+    for d, entry in res["domains"].items():
+        conf = float(entry.get("confidence") or 1.0)
+        signal_comps = components_from_signals(res, conf, cfg)
+        comps = dict(seed_comps) if is_seed else dict(signal_comps)
+        comps["trust"] = signal_comps["trust"]
+        gov, detail = governance_from_evidence(res.get("compliance", []), d)
+        comps["governance"] = gov
+        sr = score_for_domain(comps, d, cfg)
+        if is_seed and "seed_rank" not in entry:
+            entry["seed_rank"] = entry.get("rank")
+            entry["seed_score"] = entry.get("score")
+        entry.update(
+            {
+                "score": sr.score,
+                "profile": sr.profile,
+                "score_version": sr.version,
+                "evidence_coverage": sr.evidence_coverage,
+                "components": comps,
+                "components_version": COMPONENTS_VERSION,
+                "unknown": list(sr.unknown),
+                "governance_credited": detail["credited"],
+            }
+        )
+    if is_seed:
+        res["seed_components"] = seed_comps
+    res.pop("components", None)
+
+
+def _rerank_seed_rows(resources: list[dict[str, Any]]) -> None:
+    """Order each domain's Top 100 by the recomputed score; the workbook's order is ``seed_rank``."""
+    by_domain: dict[str, list[dict[str, Any]]] = {}
+    for res in resources:
+        for d, entry in res["domains"].items():
+            if entry.get("seed_rank"):
+                by_domain.setdefault(d, []).append(entry)
+    for entries in by_domain.values():
+        entries.sort(key=lambda e: (-float(e["score"]), int(e["seed_rank"])))
+        for i, e in enumerate(entries, 1):
+            e["rank"] = i
+
+
 def _trust_summary(res: dict[str, Any]) -> dict[str, int | None]:
     comp = res.get("compliance") or []
-    active = [int(c["tier"]) for c in comp if c.get("status") == "active"]
+    # agent-scoped rows only, the same split the dossier makes (web/src/lib/dossier.ts agentScoped)
+    active = [int(c["tier"]) for c in comp if c.get("status") == "active" and _agent_scoped(c)]
     protos = [p.get("status") for p in res["protocols"].values()]
     return {
         "identity": int(res["identity"]["tier"]),
@@ -174,6 +247,14 @@ def _trust_summary(res: dict[str, Any]) -> dict[str, int | None]:
         "protocols": 1 if "verified" in protos else 3 if "claimed" in protos else 5,
         "issues": _issues_tier(res),
     }
+
+
+def _agent_scoped(c: dict[str, Any]) -> bool:
+    if c.get("covers_resource") == "yes":
+        return True
+    if c.get("covers_resource") == "inherited":
+        return False
+    return c.get("scope") != "entity"
 
 
 def _issues_tier(res: dict[str, Any]) -> int | None:
@@ -241,6 +322,16 @@ def collect(opts: BuildOptions) -> tuple[list[dict[str, Any]], dict[str, dict[st
             _deadline.log("github", f"{min(len(rs), opts.limit or opts.github_cap)} of {len(rs)} (by stars)")
         else:
             reports["github"] = {"source": "github", "skipped": "GITHUB_TOKEN not set"}
+    if opts.hygiene:
+        before = len(resources)
+        resources, dropped = hygiene.filter_discovered(resources)
+        reports["hygiene"] = {
+            "source": "hygiene",
+            "input": before,
+            "kept": len(resources),
+            "dropped": dropped,
+        }
+        _deadline.log("hygiene", f"{before - len(resources)} discovered rows dropped")
     return resources, reports
 
 
@@ -345,42 +436,12 @@ def enrich(
             for d in curated:
                 domains[d] = max(domains.get(d, 0.0), 0.9)
             res["classification"] = {"taxonomy_version": cls.taxonomy_version, "matched": cls.matched}
-            res["domains"] = {}
-            for d, conf in domains.items():
-                comps = components_from_signals(res, conf, cfg)
-                sr = score_for_domain(comps, d, cfg)
-                res["domains"][d] = {
-                    "rank": None,
-                    "score": sr.score,
-                    "profile": sr.profile,
-                    "score_version": sr.version,
-                    "evidence_coverage": sr.evidence_coverage,
-                    "confidence": conf,
-                    "source": "classifier",
-                    "components": comps,
-                    "components_version": COMPONENTS_VERSION,
-                    "unknown": list(sr.unknown),
-                }
-        # Evidence-based governance (sar-score-1.1) shown beside the sar-score-1.0 value (FR-25)
-        for d, entry in res["domains"].items():
-            gov, detail = governance_from_evidence(res.get("compliance", []), d)
-            comps = dict(res.get("components") or entry.get("components") or {})
-            if gov is not None and comps:
-                comps["governance"] = gov
-                alt = score_for_domain(comps, d, cfg)
-                entry["governance_evidence"] = {
-                    "value": gov,
-                    "score": alt.score,
-                    "version": GOVERNANCE_VERSION,
-                    "credited": detail["credited"],
-                }
-            else:
-                entry["governance_evidence"] = {
-                    "value": None,
-                    "score": None,
-                    "version": GOVERNANCE_VERSION,
-                    "credited": {},
-                }
+            res["domains"] = {
+                d: {"rank": None, "confidence": conf, "source": "classifier"} for d, conf in domains.items()
+            }
+        _score_domains(res, cfg, is_seed=is_seed)
+    _rerank_seed_rows(resources)
+    for res in resources:
         res["trust"] = _trust_summary(res)
     return resources
 
@@ -490,7 +551,8 @@ def write_outputs(
                 "score": d["score"],
                 "profile": d["profile"],
                 "evidence_coverage": d.get("evidence_coverage"),
-                "components": r.get("components") if d.get("rank") else d.get("components"),
+                "components": d.get("components"),
+                "seed_rank": d.get("seed_rank"),
                 "trust": r["trust"],
                 "protocols": {p: r["protocols"][p]["status"] for p in ("a2a", "mcp", "ard")},
                 "confidence": d.get("confidence"),
@@ -506,7 +568,7 @@ def write_outputs(
             "ranked": [row(r) for r in ranked],
             "discovered": [row(r) for r in discovered],
             "disclaimer": DISCLAIMER,
-            "note": "Ranked rows come from the seed workbook (frozen baseline). Discovered rows are scored with signal-derived components and are not ranked.",
+            "note": "Ranked rows are the seed workbook's Top 100, re-ordered by a score whose trust and governance components are recomputed from evidence on every build (seed_rank is the workbook's order). Discovered rows are scored from signals and are not ranked.",
         }
         (out / "domains" / f"{slug_}.json").write_text(
             json.dumps(doc, ensure_ascii=False, separators=(",", ":"))

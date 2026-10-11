@@ -1,5 +1,5 @@
 {
-  "score_version": "sar-score-1.0",
+  "score_version": "sar-score-2.0",
   "notes": "Component weights per domain. Reproduces the 2026-09-25 seed spreadsheet exactly (max error 0.07) and is applied unchanged to newly discovered resources so rankings stay comparable. Weights are normalized by their sum. Scores are comparative discovery signals, NOT security certification or regulatory approval.",
   "components": {
     "adoption":   {"label": "Adoption / usage",               "seed_max": 30},

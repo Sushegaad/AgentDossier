@@ -228,3 +228,20 @@ def test_short_names_still_get_releases_and_feeds_but_no_name_search(monkeypatch
     assert (
         rep["news"]["fetched"] == 2 and short["news_checked"] and short["news"][0]["headline"] == "aider v0.9"
     )
+
+
+def test_release_headlines_read_like_releases():
+    assert sources.release_headline("Aider-AI/aider", "Aider v0.86.1", "v0.86.1") == "Aider v0.86.1"
+    assert (
+        sources.release_headline("langchain-ai/langchain", "langchain-core==1.6.9", "langchain-core==1.6.9")
+        == "langchain release langchain-core 1.6.9"
+    )
+    assert (
+        sources.release_headline("langchain-ai/langchain", "langchain==1.4.4", "langchain==1.4.4")
+        == "langchain release 1.4.4"
+    )
+    assert sources.release_headline("All-Hands-AI/OpenHands", None, "1.2.0") == "OpenHands release 1.2.0"
+    assert (
+        sources.release_headline("x/y", "Spring cleanup and MCP support", "v2.0")
+        == "y: Spring cleanup and MCP support"
+    )

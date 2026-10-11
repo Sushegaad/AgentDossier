@@ -129,3 +129,35 @@ def test_seed_enrich_run_only_touches_seed_rows(monkeypatch):
     assert calls == ["https://api.github.com/repos/o/a"]
     assert rep.fetched == 1 and rep.produced == 1
     assert seed["publisher_domain"] == "x.example" and "publisher_domain" not in discovered
+
+
+# --- discovery hygiene ---------------------------------------------------------------------
+
+
+def test_hygiene_drops_demos_archived_and_inactive_but_never_seed_rows():
+    from agentdossier.connectors.hygiene import drop_reason, filter_discovered
+
+    ok = {
+        "name": "CrewAI",
+        "vendor": "crewAIInc",
+        "description": "x",
+        "signals": {"github_pushed_at": "2099-01-01T00:00:00Z"},
+        "sources": [{"system": "github"}],
+    }
+    assert drop_reason(ok) is None
+    assert "demo" in drop_reason({**ok, "name": "TEN Agent Demo"})
+    assert "deprecated" in drop_reason({**ok, "name": "(DEPRECIATED) Deepfake Detection"})
+    assert "hackathon" in drop_reason({**ok, "vendor": "Agents-MCP-Hackathon"})
+    assert "archived" in drop_reason({**ok, "signals": {"github_archived": True}})
+    assert "no activity" in drop_reason({**ok, "signals": {"github_pushed_at": "2020-01-01T00:00:00Z"}})
+    assert "no description" in drop_reason(
+        {"name": "agentflow", "vendor": "x", "signals": {}, "sources": [{"system": "huggingface"}]}
+    )
+    assert (
+        drop_reason({"name": "context7", "vendor": "x", "signals": {}, "sources": [{"system": "ard"}]})
+        is None
+    )
+    seed = {"name": "Demo Agent", "vendor": "Agents-MCP-Hackathon", "sources": [{"system": "seed_xlsx"}]}
+    kept, dropped = filter_discovered([seed, {**ok, "name": "Captioner Demo"}, ok])
+    assert [r["name"] for r in kept] == ["Demo Agent", "CrewAI"]
+    assert sum(dropped.values()) == 1

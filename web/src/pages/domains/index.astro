@@ -10,8 +10,9 @@ const domains = loadDomains().sort((a, b) => order.indexOf(a.domain) - order.ind
 <Base title="Domains">
   <h1 style="font-size: clamp(2rem, 4.5vw, 3rem)">Twelve domains. Every list is Top 100.</h1>
   <p class="body" style="margin-top: 14px; max-width: 72ch">
-    Ranked from the seed workbook (frozen baseline, <code>sar-score-1.0</code>) under the weight profile each domain
-    uses. Discovered resources are listed unranked beneath each table.
+    Each Top 100 is the curated workbook's list for that domain, re-ordered on every build by a published formula
+    (<code>sar-score-2.0</code>) whose trust and governance components come from the evidence ledger. Discovered
+    resources are listed unranked beneath each table.
   </p>
   {domains.length === 0 && <p class="notice warn" style="margin-top: 1rem">No catalog in this build.</p>}
   <div class="domain-grid" style="margin-top: 24px">

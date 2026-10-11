@@ -1,0 +1,70 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadIndex } from "../lib/catalog";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const index = loadIndex();
+const asOf = index?.built_at ? index.built_at.slice(0, 10) : "the last build";
+const total = index?.records.length ?? 0;
+---
+
+<Base title="About" description="What AgentDossier is, who maintains it, how it is refreshed, and what is automated versus reviewed by hand.">
+  <div class="prose" style="max-width: 72ch">
+    <div class="eyebrow muted">About this site</div>
+    <h1 style="margin-top: 6px">A reference implementation, not a product</h1>
+    <p class="body">
+      AgentDossier shows what can be <em>found</em> about an AI agent before anyone signs a contract: who publishes it,
+      which certifications the registries and the vendor's own pages name, which protocols it serves at its well-known
+      endpoints, and what has been written about it lately. It is a working demonstration of an evidence-first agent
+      registry, built and maintained by one person, and the code is open so that the method can be checked and reused.
+      It is not an assessment, a certification or a recommendation.
+    </p>
+
+    <h2>Who</h2>
+    <p>
+      Built and maintained by <a href="https://www.linkedin.com/in/tanaji-naik/" rel="noopener">Hemant Naik</a>
+      (<a href="mailto:hemant.naik@gmail.com">hemant.naik@gmail.com</a>). There is no company behind it and no vendor
+      pays to be listed. Curated entries that carry a <code>checked_by</code> name were checked by that person on the date shown.
+    </p>
+
+    <h2>How the data is produced</h2>
+    <table>
+      <thead><tr><th>Step</th><th>Automated or by hand</th></tr></thead>
+      <tbody>
+        <tr><td>The Top 100 lists per domain</td><td>A curated workbook (last compiled 2026-09-25) chooses <em>which</em> agents appear. Their order is recomputed on every build: trust and governance come from the evidence; adoption, health, ecosystem, fit and docs are the workbook's values.</td></tr>
+        <tr><td>Discovered agents ({total} records in total as of {asOf})</td><td>Automated: GitHub, Hugging Face, the MCP registry, marketplaces and ARD manifests, with demo, deprecated and inactive projects dropped.</td></tr>
+        <tr><td>Compliance evidence</td><td>Automated matching against the FedRAMP Marketplace and CSA STAR, plus a crawl of each vendor's trust pages (claims, tier 4). A small curated file holds records a person verified.</td></tr>
+        <tr><td>Publisher identity</td><td>Automated rules (ARD manifest, marketplace listing, vendor-domain page, repository ownership) plus a curated file of domains a person confirmed.</td></tr>
+        <tr><td>Protocols (MCP · A2A · ARD)</td><td>Automated probes of each publisher's well-known endpoints; curated claims from vendor documentation carry a reviewer's name.</td></tr>
+        <tr><td>Worked comparisons and the reference set</td><td>Answers are collected from vendor documentation with AI assistance; a comparison is marked <em>draft</em> until the maintainer records a review.</td></tr>
+        <tr><td>News and chatter</td><td>Automated: Hacker News, GDELT, GitHub releases, vendor feeds and NVD. News never changes a score.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How often</h2>
+    <p>
+      The catalog is rebuilt every Monday by a scheduled job and the date of the last build is shown in the banner on
+      every page. Each build appends to the <a href={`${base}/changelog/`}>trust changelog</a>, so a badge that appears,
+      changes or disappears leaves a record.
+    </p>
+
+    <h2>Reporting an error</h2>
+    <p>
+      Every dossier has a <em>Dispute or correct this dossier</em> link that opens a pre-filled GitHub issue. Corrections
+      with a source are applied in the next build; curated files record who checked what and when. The
+      <a href={`${base}/methodology/`}>methodology</a> page explains every tier, score and status on the site.
+    </p>
+
+    <h2>What this site does not do</h2>
+    <ul>
+      <li>It does not verify certificates with issuers. A registry match means the registry lists it; a vendor claim means the vendor says so.</li>
+      <li>It does not rank agents by safety. Scores are discovery signals under a published formula, and "unknown" never means non-compliant.</li>
+      <li>It does not track visitors. No accounts, no cookies, no ads; the public demo sends only aggregate, cookieless page counts.</li>
+    </ul>
+
+    <p class="small muted" style="margin-top: 24px">
+      Code: <a href="https://github.com/Sushegaad/AgentDossier" rel="noopener">github.com/Sushegaad/AgentDossier</a> (MIT) ·
+      catalog data CC BY 4.0 · self-hosted <a href={`${base}/enterprise/`}>enterprise edition</a> for private catalogs.
+    </p>
+  </div>
+</Base>

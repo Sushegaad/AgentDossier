@@ -7,6 +7,9 @@ import { domainLabel, frameworkName, variantLabel } from "./labels";
 import { intentIsEmpty, parseIntent, type Intent, type RequirementChip } from "./intent";
 import type { IndexRecord, SearchDoc } from "./types";
 
+/** points a perfect domain score adds when the query names a domain (an empty query lists by score alone) */
+const DOMAIN_SCORE_WEIGHT = 10;
+
 export interface Filters {
   domain?: string;
   resource_type?: string;
@@ -188,7 +191,9 @@ export class Catalog {
     const body = this.textOf(r.id);
     const empty = intentIsEmpty(intent);
 
-    // domain rank / score
+    // domain score: a tiebreak within the intent's domain, never a substitute for fit. sar-score-2.0
+    // recomputes trust and governance from evidence, so domain scores spread further apart than the
+    // workbook's did; a 10-point ceiling keeps that spread from outranking text relevance.
     const domains = intent.domain.length ? intent.domain.filter((d) => d in r.domains) : Object.keys(r.domains);
     let bestDomain: { id: string; score: number; rank: number | null } | null = null;
     for (const d of domains) {
@@ -197,10 +202,10 @@ export class Catalog {
     }
     if (intent.domain.length) {
       if (bestDomain) {
-        score += 40 * (bestDomain.score / 100);
+        score += DOMAIN_SCORE_WEIGHT * (bestDomain.score / 100);
         why.push(
           bestDomain.rank
-            ? `#${bestDomain.rank} in ${domainLabel(bestDomain.id)} (score ${bestDomain.score.toFixed(1)})`
+            ? `#${bestDomain.rank} in ${domainLabel(bestDomain.id)} (score ${Math.round(bestDomain.score)})`
             : `listed in ${domainLabel(bestDomain.id)} (unranked)`,
         );
       } else {
@@ -208,8 +213,8 @@ export class Catalog {
         why.push(`not listed in ${intent.domain.map(domainLabel).join(" / ")}`);
       }
     } else if (bestDomain) {
-      score += (empty ? 40 : 20) * (bestDomain.score / 100);
-      if (empty || text === 0) why.push(`#${bestDomain.rank ?? "–"} in ${domainLabel(bestDomain.id)} (score ${bestDomain.score.toFixed(1)})`);
+      score += (empty ? 40 : DOMAIN_SCORE_WEIGHT) * (bestDomain.score / 100);
+      if (empty || text === 0) why.push(`#${bestDomain.rank ?? "–"} in ${domainLabel(bestDomain.id)} (score ${Math.round(bestDomain.score)})`);
     }
 
     // text relevance

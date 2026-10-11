@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Any
 
 from ..util import NetPolicy, fetch, now_iso, sha256
+from .matching import entity_domains
 
 ROOT = Path(__file__).resolve().parents[2]
 TRUST_PAGES = ROOT / "data" / "curated" / "trust_pages.yaml"
@@ -28,6 +29,7 @@ SOURCE = "vendor_trust_centers"
 CANDIDATE_PATHS = ("/trust", "/security", "/compliance", "/trust-center", "/legal/security")
 LINK_WORDS = re.compile(r"trust|security|compliance|privacy", re.I)
 MAX_PAGES = 5
+PAGE_MAX_BYTES = 6_000_000
 
 # framework id, variant, pattern (case-insensitive), required context
 PATTERNS: list[tuple[str, str | None, re.Pattern[str]]] = [
@@ -142,6 +144,9 @@ class TrustPages:
             d = self.vendors.get(part.strip())
             if d:
                 return d
+        for own in entity_domains(vendor):  # config/vendor_aliases.json
+            if own in self.domains:
+                return own
         return None
 
 
@@ -185,7 +190,9 @@ def crawl_domain(
             robots[page_origin] = robots_disallows(page_origin, policy)
         if not allowed(u.path or "/", robots[page_origin]):
             return None
-        r = fetch(url, policy=policy, timeout=timeout, retries=0)
+        # vendor compliance pages are heavy (cloud.google.com/compliance is 2.3 MB of HTML); the
+        # discovery cap would drop them as "response too large" and the vendor would show no evidence
+        r = fetch(url, policy=policy, timeout=timeout, retries=0, max_bytes=PAGE_MAX_BYTES)
         visited.append(url)
         if not r.ok or "html" not in r.headers.get("Content-Type", r.headers.get("content-type", "")).lower():
             return None

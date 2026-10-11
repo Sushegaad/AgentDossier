@@ -1,0 +1,126 @@
+{
+  "version": "vendor-aliases-1.0",
+  "_note": "Legal entities as the registries spell them, with the names the seed workbook and vendor pages use for them. vendor_variants() expands a catalog vendor string through this table before matching FedRAMP, CSA STAR and curated trust pages, and identity rules treat the listed domains as the entity's own. Names are matched case-insensitively after normalize_entity(). Keep this to entities that actually appear in a registry under a different spelling; it is not a company directory.",
+  "entities": {
+    "Amazon": {
+      "aliases": ["AWS", "Amazon Web Services", "Amazon.com", "awslabs"],
+      "domains": ["aws.amazon.com", "amazon.com", "amazon.science"]
+    },
+    "Google": {
+      "aliases": ["Google Cloud", "Google LLC", "Alphabet", "Google DeepMind", "DeepMind"],
+      "domains": ["google.com", "cloud.google.com", "docs.cloud.google.com", "deepmind.google", "ai.google.dev", "developers.google.com"]
+    },
+    "Microsoft": {
+      "aliases": ["Microsoft Corporation", "Azure", "Microsoft Azure", "GitHub / Microsoft"],
+      "domains": ["microsoft.com", "azure.microsoft.com", "learn.microsoft.com", "microsoft.github.io"]
+    },
+    "GitHub": {
+      "aliases": ["GitHub, Inc."],
+      "domains": ["github.blog", "docs.github.com", "github.com/features"]
+    },
+    "Salesforce": {
+      "aliases": ["Salesforce, Inc.", "Salesforce.com", "Agentforce", "MuleSoft", "Slack Technologies", "Slack"],
+      "domains": ["salesforce.com", "slack.com", "mulesoft.com"]
+    },
+    "Oracle": {
+      "aliases": ["Oracle Corporation", "Oracle Cloud"],
+      "domains": ["oracle.com", "docs.oracle.com"]
+    },
+    "IBM": {
+      "aliases": ["International Business Machines", "IBM Research", "IBM / community", "watsonx"],
+      "domains": ["ibm.com", "research.ibm.com"]
+    },
+    "ServiceNow": {
+      "aliases": ["ServiceNow, Inc."],
+      "domains": ["servicenow.com"]
+    },
+    "Palantir Technologies": {
+      "aliases": ["Palantir", "Palantir Technologies Inc."],
+      "domains": ["palantir.com"]
+    },
+    "Databricks, Inc.": {
+      "aliases": ["Databricks"],
+      "domains": ["databricks.com"]
+    },
+    "Snowflake Inc.": {
+      "aliases": ["Snowflake"],
+      "domains": ["snowflake.com"]
+    },
+    "Workday Inc.": {
+      "aliases": ["Workday"],
+      "domains": ["workday.com"]
+    },
+    "UiPath": {
+      "aliases": ["UiPath, Inc."],
+      "domains": ["uipath.com"]
+    },
+    "SAP": {
+      "aliases": ["SAP SE", "SAP National Security Services Inc. (SAP NS2)", "SAP NS2"],
+      "domains": ["sap.com"]
+    },
+    "Adobe": {
+      "aliases": ["Adobe Inc."],
+      "domains": ["adobe.com"]
+    },
+    "Atlassian": {
+      "aliases": ["Atlassian Corporation"],
+      "domains": ["atlassian.com"]
+    },
+    "GitLab": {
+      "aliases": ["GitLab Inc."],
+      "domains": ["gitlab.com", "about.gitlab.com"]
+    },
+    "OpenAI": {
+      "aliases": ["OpenAI, L.L.C.", "OpenAI (Microsoft)"],
+      "domains": ["openai.com", "platform.openai.com"]
+    },
+    "Anthropic": {
+      "aliases": ["Anthropic PBC"],
+      "domains": ["anthropic.com", "claude.com", "docs.claude.com"]
+    },
+    "Zendesk": {
+      "aliases": ["Zendesk, Inc."],
+      "domains": ["zendesk.com"]
+    },
+    "Box Inc.": {
+      "aliases": ["Box"],
+      "domains": ["box.com"]
+    },
+    "Okta": {
+      "aliases": ["Okta, Inc."],
+      "domains": ["okta.com"]
+    },
+    "Datadog, Inc.": {
+      "aliases": ["Datadog"],
+      "domains": ["datadoghq.com"]
+    },
+    "CrowdStrike, Inc.": {
+      "aliases": ["CrowdStrike"],
+      "domains": ["crowdstrike.com"]
+    },
+    "Wiz, Inc.": {
+      "aliases": ["Wiz", "Wiz AI"],
+      "domains": ["wiz.io"]
+    },
+    "Drata": {
+      "aliases": ["Drata Inc."],
+      "domains": ["drata.com"]
+    },
+    "S&P Global": {
+      "aliases": ["Kensho", "Kensho / S&P Global", "S&P Global Inc."],
+      "domains": ["kensho.com", "spglobal.com"]
+    },
+    "Alibaba Cloud": {
+      "aliases": ["Alibaba", "Alibaba / Qwen", "Qwen", "Alibaba Group"],
+      "domains": ["alibabacloud.com", "aliyun.com", "qwen.ai"]
+    },
+    "NVIDIA": {
+      "aliases": ["NVIDIA Corporation"],
+      "domains": ["nvidia.com", "developer.nvidia.com"]
+    },
+    "Hugging Face": {
+      "aliases": ["Hugging Face, Inc.", "HuggingFace"],
+      "domains": ["huggingface.co"]
+    }
+  }
+}

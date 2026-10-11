@@ -7,7 +7,7 @@
 import { loadResource } from "../lib/catalog";
 import { evidenceGroups, evidenceRows, protocolLines, tierRange } from "../lib/dossier";
 import { loadReferenceSet, referenceFor } from "../lib/reference";
-import { IDENTITY_LABEL, badgeLabel, domainLabel } from "../lib/labels";
+import { IDENTITY_LABEL, IDENTITY_WORD, badgeLabel, domainLabel } from "../lib/labels";
 import type { HeroPick } from "../lib/search";
 
 interface Props {
@@ -34,11 +34,11 @@ const why = pick.hit.explanation.slice(0, 3).join(" · ");
   </div>
   <div class="row" style="justify-content: space-between; align-items: baseline; gap: 12px">
     <h3><a href={`${base}/agents/${r.slug}/`}>{r.name}</a></h3>
-    <div class="score"><span class="n">{pick.hit.score.toFixed(1)}</span><span class="tiny muted"> fit</span></div>
+    <div class="score"><span class="n">{Math.round(pick.hit.score)}</span><span class="tiny muted"> fit</span></div>
   </div>
   <div class="small muted">{r.vendor}{r.category ? ` · ${r.category}` : ""}</div>
   <div class="strip">
-    <span class="tierbox">Identity T{r.trust.identity}</span>
+    <span class="tierbox">Publisher {IDENTITY_WORD[r.trust.identity as 1 | 2 | 3 | 4 | 5]}</span>
     <span class="tierbox">Evidence {evidenceTier}</span>
     {protos.map((l) => <span class="tierbox">{l.key.toUpperCase()} {l.status === "verified" ? "✔" : "○"}</span>)}
   </div>

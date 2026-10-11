@@ -37,7 +37,12 @@ const unresolved = rows.map((r) => ({ r, n: counts(r.entry.answers).unknown + co
 ---
 
 <Base title={useCase.title} description={useCase.question}>
-  <div class="eyebrow muted">Worked comparison · reference set {set.version}</div>
+  <div class="eyebrow muted">Worked comparison · reference set {set.version}{set.reviewed_by ? "" : " · draft"}</div>
+  {!set.reviewed_by && (
+    <p class="notice warn" role="note" style="margin-top: 8px">
+      <b>Draft.</b> The answers below were collected from vendor documentation with AI assistance and have not yet been re-checked by the maintainer. Every cell links its source; treat the table as a reading list until the review is recorded.
+    </p>
+  )}
   <h1 style="margin-top: 6px; font-size: clamp(1.8rem, 4vw, 2.6rem); max-width: 24ch">{useCase.title}</h1>
   <p class="body" style="margin-top: 14px; max-width: 70ch"><b>{useCase.question}</b> {useCase.intro}</p>
   <p class="notice" role="note" style="margin-top: 12px">

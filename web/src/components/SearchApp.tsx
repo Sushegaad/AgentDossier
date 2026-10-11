@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { BASE, agentHref, fetchIndex, fetchSearchDocs } from "../lib/data";
-import { badgeLabel, domainLabel, frameworkName } from "../lib/labels";
+import { IDENTITY_WORD, badgeLabel, domainLabel, frameworkName, securityWord } from "../lib/labels";
 import type { RequirementChip } from "../lib/intent";
 import { Catalog, chipKey, isOpenSource, isSelfHostable, satisfies, type Filters, type Hit } from "../lib/search";
 import type { CatalogIndex, IndexRecord, SearchDoc } from "../lib/types";
@@ -289,15 +289,15 @@ export default function SearchApp(props: SearchAppProps) {
             )}
           </div>
           <div className="facet">
-            <span className="label">Minimum identity trust</span>
-            <div className="seg" role="group" aria-label="Minimum identity tier">
-              {[1, 2, 3, 4].map((t) => (
-                <button key={t} type="button" aria-pressed={(filters.identity_max_tier ?? 4) === t} onClick={() => setFilters({ ...filters, identity_max_tier: t === 4 ? undefined : t })} title={`${counts.identity[t]} at T${t} or better`}>
-                  T{t}
+            <span className="label">Publisher</span>
+            <div className="seg" role="group" aria-label="Minimum publisher confidence">
+              {[2, 3, 4].map((t) => (
+                <button key={t} type="button" aria-pressed={(filters.identity_max_tier ?? 4) === t} onClick={() => setFilters({ ...filters, identity_max_tier: t === 4 ? undefined : t })} title={`${counts.identity[t]} publisher ${IDENTITY_WORD[t as 2 | 3 | 4]} or better`}>
+                  {t === 4 ? "any" : IDENTITY_WORD[t as 2 | 3]}
                 </button>
               ))}
             </div>
-            <div className="tiny muted" style={{ marginTop: "6px" }}>Hard filter on identity tier (T4 = no filter)</div>
+            <div className="tiny muted" style={{ marginTop: "6px" }}>Hard filter on how firmly the publisher is identified</div>
           </div>
           <div className="facet">
             <span className="label">Protocol status</span>
@@ -437,9 +437,9 @@ function Result({ hit, domain, linkAgents, expanded, onToggle }: { hit: Hit; dom
             </div>
           </div>
           <div className="score">
-            <div className="n">{bigScore != null ? bigScore.toFixed(1) : hit.score.toFixed(1)}</div>
+            <div className="n">{bigScore != null ? Math.round(bigScore) : Math.round(hit.score)}</div>
             <div className="tiny muted" style={{ marginTop: "4px" }}>
-              {bigScore != null ? "domain score" : "fit"} · fit {hit.score.toFixed(1)}
+              {bigScore != null ? "domain score" : "fit"} · fit {Math.round(hit.score)}
             </div>
           </div>
         </div>
@@ -480,9 +480,9 @@ function Result({ hit, domain, linkAgents, expanded, onToggle }: { hit: Hit; dom
       </div>
       <div className="trust">
         <span className="label" style={{ marginBottom: "6px" }}>Trust profile</span>
-        <div className="line"><span>Identity</span><b>T{r.trust.identity}</b></div>
+        <div className="line"><span>Publisher</span><b>{IDENTITY_WORD[r.trust.identity as 1 | 2 | 3 | 4 | 5]}</b></div>
         <div className="line"><span>Compliance</span><b>{tierRange(r)}</b></div>
-        <div className="line"><span>Security</span><b>{r.trust.security ? `T${r.trust.security}` : "–"}</b></div>
+        <div className="line"><span>Security</span><b>{securityWord(null, r.trust.security)}</b></div>
         <div className="line"><span>Protocols</span><b>{protoGlyphs(r)}</b></div>
         <div className="line"><span>Issues linked</span><b>{r.trust.issues == null ? "–" : r.trust.issues === 1 ? "0" : "some"}</b></div>
         <div className="actions">

@@ -1,8 +1,13 @@
 """Domain scoring (BRD v3.2 §3.2, FR-08, FR-16, FR-25).
 
-Score version ``sar-score-1.0``: seven weight profiles reproduce every score
-in the 25 Sep 2026 seed workbook to within 0.07 points and apply unchanged
-to newly discovered resources.
+Score version ``sar-score-2.0``: seven weight profiles reproduce every score
+in the 25 Sep 2026 seed workbook to within 0.07 points (the import check) and
+apply unchanged to newly discovered resources. Two components are never taken
+from the workbook: ``trust`` is derived from the publisher identity and
+protocol probes, and ``governance`` from credited compliance evidence
+(:func:`agentdossier.compliance.engine.governance_from_evidence`), for seed
+and discovered rows alike. The workbook's own values are kept as
+``seed_components`` and its order as ``seed_rank`` so the change is auditable.
 
 Rules that never change without a new score version:
 
@@ -206,13 +211,9 @@ def components_from_signals(
     # domain fit /100 from classifier confidence
     domain_fit: float | None = round(100.0 * domain_confidence, 1) if domain_confidence else None
 
-    # governance /100: from compliance evidence tiers (credit-weighted); None until evidence exists
+    # governance /100: set per domain by the build from credited compliance evidence
+    # (compliance.engine.governance_from_evidence); None here means "not yet computed"
     governance: float | None = None
-    records = res.get("compliance") or []
-    if records:
-        credit = {1: 1.0, 2: 0.8, 3: 0.7, 4: 0.3, 5: 0.0}
-        active = [credit.get(int(r.get("tier", 5)), 0.0) for r in records if r.get("status") == "active"]
-        governance = round(min(100.0, 100.0 * sum(active) / max(3.0, len(active))), 1) if active else 0.0
 
     # docs /10: presence of description, homepage/readme, representative queries
     docs = 0.0

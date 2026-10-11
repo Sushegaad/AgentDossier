@@ -15,12 +15,12 @@ import { Content as Methodology } from "../../../docs/methodology.md";
         <tr><td><span class="tierbox">T3</span></td><td>Document-evidenced: the maintainer reviewed a certificate, letter or report</td><td>0.7</td></tr>
         <tr><td><span class="tierbox">T4</span></td><td>Vendor-claimed: the framework is named on the vendor's own trust or security page</td><td>0.3</td></tr>
         <tr><td><span class="tierbox">T5</span></td><td>Unknown: nothing found in the sources checked</td><td>0</td></tr>
-        <tr><td><span class="tierbox pending">T1</span></td><td>Dashed: evidence found but pending publisher verification (identity tier worse than 2), so not credited</td><td>0</td></tr>
+        <tr><td><span class="tierbox pending">T1</span></td><td>Dashed: evidence found but not credited, because the publisher is not yet confirmed (identity worse than tier 2); the dossier says so once above its ledger</td><td>0</td></tr>
       </tbody>
     </table>
     <p>
-      The trust strip on every result shows five tiers: <strong>Identity</strong> (who publishes the agent),
-      <strong>Evidence</strong> (best active compliance record), <strong>Security</strong> (CVE check done),
+      The trust strip on every result shows five facts, and only one of them is a T-scale: <strong>Publisher</strong> (confirmed, likely, unconfirmed or unknown — who publishes the agent),
+      <strong>Evidence</strong> (best active compliance record about the agent itself, T1–T5), <strong>Security</strong> (an NVD keyword search was run; the dossier shows what it matched),
       <strong>Protocols</strong> (A2A / MCP / ARD observed) and <strong>Issues</strong> (open incidents, CVEs or
       regulator actions). "–" means not checked in this build.
     </p>

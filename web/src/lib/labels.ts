@@ -91,17 +91,30 @@ export const TIER_SHORT: Record<Tier, string> = {
 
 export const IDENTITY_LABEL: Record<Tier, string> = {
   1: "ARD manifest bound to publisher domain",
-  2: "Marketplace listing or metadata at publisher domain",
-  3: "Repository ownership or publisher domain",
+  2: "Vendor-domain page, marketplace listing or metadata at publisher domain",
+  3: "Repository ownership or inferred publisher domain",
   4: "Vendor name only",
   5: "Unknown",
 };
+
+/** One word per identity tier for the site; the T-scale is reserved for compliance evidence. */
+export const IDENTITY_WORD: Record<Tier, string> = { 1: "confirmed", 2: "confirmed", 3: "likely", 4: "unconfirmed", 5: "unknown" };
+
+/** The protocol tier (1 verified · 3 claimed · 5 none) as a word. */
+export const PROTOCOL_TIER_WORD: Record<number, string> = { 1: "verified", 3: "documented", 5: "none found" };
+
+/** NVD result as a sentence; it is a keyword search, never a tier. */
+export function securityWord(sec: { cves?: number | null } | null | undefined, tier?: number | null): string {
+  if (sec && sec.cves != null) return sec.cves === 0 ? "NVD: no CVE by keyword" : `NVD: ${sec.cves} CVE${sec.cves === 1 ? "" : "s"} by keyword`;
+  return tier ? "NVD: checked" : "NVD: not checked";
+}
 
 export const IDENTITY_EVIDENCE: Record<string, string> = {
   ard_trust_manifest_binding: "ARD trust manifest binds the publisher domain",
   marketplace_listing: "listed on a cloud marketplace under the vendor's account",
   standards_metadata_at_publisher_domain: "ARD or A2A metadata served at the publisher's own domain",
   maintainer_verified_publisher_domain: "publisher domain confirmed by the maintainer",
+  vendor_domain_product_page: "product page served from the vendor's own domain",
   repository_ownership: "repository or Hub account ownership",
   publisher_domain_matches_vendor: "resource URL on a domain that carries the vendor's name",
   vendor_name_only: "only the vendor name is known",

@@ -3,7 +3,7 @@
 // config/deploy_rules.json — never hand-written per agent.
 import rulesFile from "../../../config/deploy_rules.json";
 import { agentScoped, checklist, evidenceRows, presetFrameworks } from "./dossier";
-import { frameworkName } from "./labels";
+import { frameworkName, variantLabel } from "./labels";
 import type { Answer, AnswerValue, ReferenceAgent, UseCase } from "./reference";
 import type { Resource } from "./types";
 
@@ -66,13 +66,17 @@ export function beforeYouDeploy(res: Resource, ref: { entry: ReferenceAgent; use
   const restrictions: DeployItem[] = [];
   const answers = ref?.entry.answers ?? null;
 
-  // evidence about this agent first, vendor-inherited after; vendor-claimed rows are support with a caveat
+  // one short line per ledger row: what it is and how firm it is; the ledger above carries the detail
   const rows = evidenceRows(res).filter((r) => r.mark !== "missing");
   for (const r of rows.filter((r) => r.mark !== "issue")) {
     const scoped = r.record ? agentScoped(r.record) : false;
+    const fw = frameworkName(r.framework);
+    const vl = r.variant ? variantLabel(r.variant) : "";
+    const name = vl ? (vl.toLowerCase().startsWith(fw.toLowerCase()) ? vl : `${fw} ${vl}`) : fw;
+    const firmness = r.mark === "claimed" ? "vendor-claimed" : "registry-matched";
     supporting.push({
       key: `evidence:${r.framework}:${r.variant ?? ""}`,
-      text: `${r.status}${scoped ? "" : " — covers the vendor, not this agent specifically"}${r.mark === "claimed" ? " (vendor-claimed, not yet verified)" : ""}`,
+      text: `${name} — ${firmness}${scoped ? "" : ", vendor-level"}`,
       source: r.sourceUrl,
     });
   }
