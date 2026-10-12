@@ -43,7 +43,9 @@ registry is at `/traces/export.json`.
 
 ## Where new entries come from
 
-- Curated from public reports (the current seven: ForcedLeak, EchoLeak, CamoLeak, the Gemini CLI
-  and Amazon Q cases, AgentFlayer, and the Claude Code espionage report).
+- Curated from public reports (currently thirteen: ForcedLeak, EchoLeak, CamoLeak, the Gemini CLI
+  and Amazon Q cases, AgentFlayer, the Claude Code espionage report, s1ngularity, the Replit
+  database deletion, ShadowLeak, CurXecute/MCPoison, the GitHub MCP toxic agent flow, and the
+  Gemini "Promptware" smart-home hijack).
 - Promoted from an agent-level trace when it rises to a named incident.
 - A harness `injection_eval` run can seed an entry for an agent that fails under benchmark attack.

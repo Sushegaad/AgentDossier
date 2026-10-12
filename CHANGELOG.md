@@ -12,8 +12,10 @@ listed in `docs/methodology.md`.
   Columns: ID, incident, AI role (attacker/defender/target), attacker, defender, **MITRE ATT&CK
   tactics**, sources. Each incident has a detail page with a timeline (per-line evidence tier and
   source), "what defenders can take from it," an "at a glance · as reported" panel, and **STIX 2.1
-  + JSON export**. Seeded with seven sourced incidents (ForcedLeak, EchoLeak, CamoLeak, Gemini CLI,
-  Amazon Q, AgentFlayer, the Claude Code espionage report). Dossiers cross-link to incidents that
+  + JSON export**. Seeded with thirteen sourced incidents (ForcedLeak, EchoLeak, CamoLeak, Gemini
+  CLI, Amazon Q, AgentFlayer, the Claude Code espionage report, s1ngularity, the Replit database
+  deletion, ShadowLeak, CurXecute/MCPoison, the GitHub MCP toxic agent flow, and the Gemini
+  "Promptware" smart-home hijack). Dossiers cross-link to incidents that
   name the agent; "Traces" is promoted in the nav and the hero now leads with trust and under-attack
   behaviour. Everything stays "as reported," unreviewed until signed, with a correction link.
   (Per-agent trace bundles moved to `/traces/bundle/<id>/`.)
