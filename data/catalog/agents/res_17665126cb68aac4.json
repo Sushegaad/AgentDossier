@@ -22,16 +22,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-11)",
+"display": "Vendor-claimed (vendor page, 2026-10-12)",
 "evidence_url": "https://www.parlant.io/privacy-policy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "5d82a88807d32212e965c7c19311e31820c634b71d44bd1989150fe52a940638",
+"next_check": "2026-10-19",
+"payload_hash": "a27deebfddf1bd236e65c84608c7600e91692d95138ff053f77b8b92da2bb0f1",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:27:00Z",
+"retrieved_at": "2026-10-12T14:40:36Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,7 +92,7 @@
 "external_ids": {
 "github": "emcie-co/parlant"
 },
-"first_seen": "2026-10-11T19:10:14Z",
+"first_seen": "2026-10-12T14:21:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -114,24 +114,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:10:14Z",
+"last_seen": "2026-10-12T14:21:36Z",
 "license": "Apache-2.0",
 "name": "parlant",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:19:32Z",
+"checked_at": "2026-10-12T14:32:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:19:31Z",
+"checked_at": "2026-10-12T14:32:09Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T19:19:32Z",
+"checked_at": "2026-10-12T14:32:12Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -146,15 +146,15 @@
 "github_language": "Python",
 "github_open_issues": 39,
 "github_pushed_at": "2026-07-12T19:40:55Z",
-"github_stars": 18297,
+"github_stars": 18298,
 "github_topic": "ai-agents",
 "homepage": "https://www.parlant.io"
 },
 "slug": "emcie-co-parlant",
 "sources": [
 {
-"payload_hash": "e5dfb00a509707319edb3776ae36dcf39dba80b19e17c72a227cce8c0ad80eea",
-"retrieved_at": "2026-10-11T19:10:14Z",
+"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
+"retrieved_at": "2026-10-12T14:21:36Z",
 "system": "github",
 "url": "https://github.com/emcie-co/parlant"
 }

@@ -1,0 +1,25 @@
+{
+ "agent": "res_1d3a09de74569615",
+ "date": "2026-10-12",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_1d3a09de74569615_e790785b",
+ "kind": "self_test",
+ "name": "kortix",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:kortix.com:mcp:kortix",
+   "manifest_url": "https://kortix.com/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "kortix-com-kortix"
+}

@@ -1,0 +1,25 @@
+{
+ "agent": "res_74c09a764102c302",
+ "date": "2026-10-12",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_74c09a764102c302_e268d904",
+ "kind": "self_test",
+ "name": "Advisors AI — Route a Store Need to a Service",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://advisorsai.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-12T14:28:57Z",
+   "errors": [
+    "missing 'version'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "skills": [
+    "Store readiness check",
+    "Service navigator"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "advisorsai-ai-advisors-ai-route-a-store-need-to-a-service"
+}

@@ -71,7 +71,7 @@
 "external_ids": {
 "github": "Yeachan-Heo/oh-my-claudecode"
 },
-"first_seen": "2026-10-11T19:10:14Z",
+"first_seen": "2026-10-12T14:21:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,10 +93,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:10:14Z",
+"last_seen": "2026-10-12T14:21:36Z",
 "license": "MIT",
 "name": "oh-my-claudecode",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-12T03:13:42Z",
+"headline": "oh-my-claudecode release v5.7.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# oh-my-claudecode v5.7.0: show Claude Code, tighten skill prose, rename shipyard glossary\n\n## Release Notes\n\nRelease with **4 new features**, **45 bug fixes**, **9 other changes** across **59 merged PRs**.\n\n### Highlights\n\n- **feat(hud): s",
+"tag": "product_update",
+"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.7.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-06T06:15:10Z",
@@ -107,33 +118,22 @@
 "summary": "# oh-my-claudecode v5.6.2: per-role reasoningEffort in, map-driven runs end, from-map --execute —\n\n## Release Notes\n\nRelease with **5 new features**, **13 bug fixes**, **7 other changes** across **29 merged PRs**.\n\n### Highlights\n\n- **feat(",
 "tag": "product_update",
 "url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.6.2"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-03T06:44:34Z",
-"headline": "oh-my-claudecode release v5.6.1",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "# oh-my-claudecode v5.6.1: Maintenance Release\n\n## Release Notes\n\nMaintenance release with internal improvements.\n\n### Stats\n\n- **1 PR merged** | **0 new features** | **0 bug fixes** | **0 security/hardening improvements** | **0 other chang",
-"tag": "product_update",
-"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.6.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:19:22Z",
+"checked_at": "2026-10-12T14:31:59Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:19:21Z",
+"checked_at": "2026-10-12T14:31:58Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T19:19:22Z",
+"checked_at": "2026-10-12T14:32:00Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -143,7 +143,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:34:23Z",
+"checked_at": "2026-10-12T14:48:17Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -151,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-09T03:36:29Z",
-"github_forks": 3564,
+"github_forks": 3566,
 "github_language": "TypeScript",
-"github_open_issues": 3,
-"github_pushed_at": "2026-10-11T18:46:22Z",
-"github_stars": 39793,
+"github_open_issues": 1,
+"github_pushed_at": "2026-10-12T04:20:00Z",
+"github_stars": 39820,
 "github_topic": "ai-agents",
 "homepage": "https://oh-my-claudecode.dev"
 },
 "slug": "yeachan-heo-oh-my-claudecode",
 "sources": [
 {
-"payload_hash": "e5dfb00a509707319edb3776ae36dcf39dba80b19e17c72a227cce8c0ad80eea",
-"retrieved_at": "2026-10-11T19:10:14Z",
+"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
+"retrieved_at": "2026-10-12T14:21:36Z",
 "system": "github",
 "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
 }

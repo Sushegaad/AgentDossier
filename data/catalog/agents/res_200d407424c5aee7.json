@@ -45,7 +45,7 @@
 "external_ids": {
 "github": "upstash/context7"
 },
-"first_seen": "2026-10-11T19:14:31Z",
+"first_seen": "2026-10-12T14:26:24Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -74,7 +74,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:14:31Z",
+"last_seen": "2026-10-12T14:26:24Z",
 "license": "MIT",
 "name": "context7",
 "news": [
@@ -104,12 +104,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:18:09Z",
+"checked_at": "2026-10-12T14:30:32Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:08Z",
+"checked_at": "2026-10-12T14:30:31Z",
 "entries": 1,
 "errors": [
 "entries[0]: missing required term 'displayName'"
@@ -124,7 +124,7 @@
 "evidence_url": "https://context7.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T19:18:09Z",
+"checked_at": "2026-10-12T14:30:32Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -136,7 +136,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:34:08Z",
+"checked_at": "2026-10-12T14:47:59Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -144,19 +144,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-26T23:40:39Z",
-"github_forks": 3064,
+"github_forks": 3068,
 "github_language": "TypeScript",
-"github_open_issues": 31,
-"github_pushed_at": "2026-10-10T02:04:01Z",
-"github_stars": 62907,
+"github_open_issues": 33,
+"github_pushed_at": "2026-10-12T13:51:06Z",
+"github_stars": 62930,
 "github_topic": "mcp-server",
 "homepage": "https://context7.com"
 },
 "slug": "upstash-context7",
 "sources": [
 {
-"payload_hash": "677d800f556e3bbd63d0c4d6eb6e31a3b396483938211d406a2b2ba51705fefd",
-"retrieved_at": "2026-10-11T19:14:31Z",
+"payload_hash": "82a1228fef40c9a773d287f98ea93d4446186457925ee772285b08e3e022f6a6",
+"retrieved_at": "2026-10-12T14:26:24Z",
 "system": "github",
 "url": "https://github.com/upstash/context7"
 }

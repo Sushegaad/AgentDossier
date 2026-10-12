@@ -1,0 +1,308 @@
+{
+"canonical_url": "paperclip.ing",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"automation",
+"workflow"
+],
+"regulatory": [
+"governance"
+],
+"technology": [
+"code",
+"llm",
+"mcp",
+"orchestration"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [
+{
+"certificate_id": "paperclip",
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
+"organization": "Paperclip",
+"terms": [
+"star_level_1",
+"caiq"
+]
+},
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-12",
+"evidence_url": "https://cloudsecurityalliance.org/star/registry/paperclip",
+"framework": "csa_star",
+"issued": "2022-10-13",
+"issuer": "Cloud Security Alliance",
+"match_confidence": 0.9,
+"next_check": "2026-10-19",
+"payload_hash": "d7ca4e8f60bf907fde263c125465dcd74f125e4faed6be2a768f31c179f3466d",
+"period_end": null,
+"retrieved_at": "2026-10-12T14:35:50Z",
+"review_reason": "entity 0.90 (index card)",
+"reviewer": null,
+"scope": "entity",
+"source": "csa_star",
+"status": "active",
+"tier": 1,
+"valid_until": null,
+"variant": "STAR_LEVEL_1"
+}
+],
+"deployment": "self-hosted",
+"description": "The open-source app everyone uses to manage agents at work",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 29.0,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 6.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 73.7,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": []
+},
+"regulatory": {
+"components": {
+"adoption": 29.0,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 6.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 56.2,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": []
+},
+"technology": {
+"components": {
+"adoption": 29.0,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 6.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 80.8,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": []
+}
+},
+"external_ids": {
+"github": "paperclipai/paperclip"
+},
+"first_seen": "2026-10-12T14:21:36Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d6e154bafc078423",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 5,
+"incidents": 0,
+"links": [
+{
+"date": "2015-07-10",
+"kind": "cve",
+"title": "CVE-2015-2963",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2015-2963"
+},
+{
+"date": "2017-11-13",
+"kind": "cve",
+"title": "CVE-2017-0889",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2017-0889"
+},
+{
+"date": "2026-04-23",
+"kind": "cve",
+"title": "CVE-2026-41208",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41208"
+},
+{
+"date": "2026-04-23",
+"kind": "cve",
+"title": "CVE-2026-41679",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41679"
+},
+{
+"date": "2026-08-21",
+"kind": "cve",
+"title": "CVE-2026-77087",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77087"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-12T14:21:36Z",
+"license": "MIT",
+"name": "paperclip",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-06T16:40:49Z",
+"headline": "paperclip release v2026.1005.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# Paperclip v2026.1005.0\n\n> Released: 2026-10-05\n\nPaperclip v2026.1005.0 carries 179 commits, promoted from `2026.1002.0-beta.0`. The headline is agents that carry more with them: Grok Build runs on the native runner, agents keep their own",
+"tag": "product_update",
+"url": "https://github.com/paperclipai/paperclip/releases/tag/v2026.1005.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-02T01:54:00Z",
+"headline": "paperclip release v2026.1001.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# Paperclip v2026.1001.0\n\n> Released: 2026-10-01\n\nPaperclip v2026.1001.0 carries 77 commits, promoted from `2026.921.0-beta.1`. The headline is reliability: a deep hardening pass over the native runner and chat recovery — approval and Stop",
+"tag": "product_update",
+"url": "https://github.com/paperclipai/paperclip/releases/tag/v2026.1001.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-08-08T17:39:16Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49223981",
+"engagement": 11,
+"headline": "Show HN: Clippy for macOS – retro floating paperclip with computer use",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://github.com/Ar9av/clippy"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-12T14:32:09Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-12T14:32:08Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://paperclip.ing",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-12T14:32:09Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "paperclip.ing",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-12T14:47:41Z",
+"cves": 5,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-03-02T15:01:51Z",
+"github_forks": 16947,
+"github_language": "TypeScript",
+"github_open_issues": 5957,
+"github_pushed_at": "2026-10-12T14:13:43Z",
+"github_stars": 100722,
+"github_topic": "ai-agents",
+"homepage": "https://paperclip.ing"
+},
+"slug": "paperclipai-paperclip",
+"sources": [
+{
+"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
+"retrieved_at": "2026-10-12T14:21:36Z",
+"system": "github",
+"url": "https://github.com/paperclipai/paperclip"
+}
+],
+"tags": [
+"acpx",
+"agent-orchestration",
+"agent-skills",
+"agentic-ai",
+"ai-agents",
+"ai-engineering",
+"ai-governance",
+"ai-tools",
+"autonomous-agents",
+"claude",
+"claude-code",
+"claude-skills",
+"codex",
+"hermes",
+"llm",
+"mcp",
+"multi-agent",
+"openclaw",
+"project-management",
+"workflow-automation"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": 1
+},
+"url": "https://paperclip.ing",
+"vendor": "paperclipai"
+}

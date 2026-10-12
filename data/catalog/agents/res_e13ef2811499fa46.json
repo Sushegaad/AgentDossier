@@ -64,7 +64,7 @@
 "external_ids": {
 "github": "ComposioHQ/composio"
 },
-"first_seen": "2026-10-11T19:09:17Z",
+"first_seen": "2026-10-12T14:20:02Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -147,7 +147,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:10:14Z",
+"last_seen": "2026-10-12T14:21:36Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_46affc1a027cd9da"
@@ -155,37 +155,37 @@
 "name": "Composio",
 "news": [
 {
-"cluster_size": 1,
-"date": "2026-10-08T17:52:32Z",
-"headline": "composio: CLI Beta @composio/cli@0.4.3-beta.418",
+"cluster_size": 3,
+"date": "2026-10-12T12:33:08Z",
+"headline": "composio release 0.1.7",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* docs: simplify the Instant Tools walkthrough by @palash-c in https://github.com/ComposioHQ/composio/pull/4784\n* fix(core): keep every constraint when widening strict parameters to null by @jkomyno in https://github.com/C",
+"summary": "### Patch Changes\n\n- Updated dependencies [67e80e3]\n- Updated dependencies [a7b4943]\n- Updated dependencies [077ceb3]\n- Updated dependencies [e3999c4]\n- Updated dependencies [55ed9e2]\n- Updated dependencies [ec55dd1]\n- Updated dependencies",
 "tag": "product_update",
-"url": "https://github.com/ComposioHQ/composio/releases/tag/%40composio/cli%400.4.3-beta.418"
+"url": "https://github.com/ComposioHQ/composio/releases/tag/versioning-example%400.1.7"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-08T11:05:49Z",
-"headline": "composio: CLI Beta @composio/cli@0.4.3-beta.417",
+"date": "2026-10-12T12:33:05Z",
+"headline": "composio release 0.1.16",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* fix(deps): clear the npm and Python audit gates by @jkomyno in https://github.com/ComposioHQ/composio/pull/4785\n\n\n**Full Changelog**: https://github.com/ComposioHQ/composio/compare/@composio/cli@0.4.3-beta.416...@composi",
+"summary": "### Patch Changes\n\n- Updated dependencies [67e80e3]\n- Updated dependencies [a7b4943]\n- Updated dependencies [077ceb3]\n- Updated dependencies [e3999c4]\n- Updated dependencies [55ed9e2]\n- Updated dependencies [ec55dd1]\n- Updated dependencies",
 "tag": "product_update",
-"url": "https://github.com/ComposioHQ/composio/releases/tag/%40composio/cli%400.4.3-beta.417"
+"url": "https://github.com/ComposioHQ/composio/releases/tag/vercel-example%400.1.16"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:18:28Z",
+"checked_at": "2026-10-12T14:31:01Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:27Z",
+"checked_at": "2026-10-12T14:30:55Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -193,7 +193,7 @@
 "evidence_url": "https://github.com/ComposioHQ/composio",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T19:18:28Z",
+"checked_at": "2026-10-12T14:31:02Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -205,7 +205,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:29:12Z",
+"checked_at": "2026-10-12T14:43:20Z",
 "cves": 11,
 "source": "nvd",
 "tier": 1
@@ -228,9 +228,9 @@
 "github_created_at": "2024-02-23T13:58:27Z",
 "github_forks": 4850,
 "github_language": "TypeScript",
-"github_open_issues": 131,
-"github_pushed_at": "2026-10-11T18:33:46Z",
-"github_stars": 30501,
+"github_open_issues": 122,
+"github_pushed_at": "2026-10-12T14:07:23Z",
+"github_stars": 30505,
 "github_topic": "ai-agents",
 "homepage": "https://docs.composio.dev",
 "observed_popularity": "Not captured",
@@ -246,13 +246,13 @@
 "sources": [
 {
 "payload_hash": "437a4f7602ed2d97d35fbf01e0d776a176d1df76e8b63ac0c3134989f55866ef",
-"retrieved_at": "2026-10-11T19:09:17Z",
+"retrieved_at": "2026-10-12T14:20:02Z",
 "system": "seed_xlsx",
 "url": "https://github.com/ComposioHQ/composio"
 },
 {
-"payload_hash": "e5dfb00a509707319edb3776ae36dcf39dba80b19e17c72a227cce8c0ad80eea",
-"retrieved_at": "2026-10-11T19:10:14Z",
+"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
+"retrieved_at": "2026-10-12T14:21:36Z",
 "system": "github",
 "url": "https://github.com/ComposioHQ/composio"
 }

@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.5,
+"adoption": 23.51,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -49,7 +49,7 @@
 },
 "data": {
 "components": {
-"adoption": 23.5,
+"adoption": 23.51,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -72,7 +72,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.5,
+"adoption": 23.51,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "EKKOLearnAI/ekko-studio"
 },
-"first_seen": "2026-10-11T19:12:42Z",
+"first_seen": "2026-10-12T14:24:19Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,47 +119,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:12:42Z",
+"last_seen": "2026-10-12T14:24:19Z",
 "license": "Other",
 "name": "ekko-studio",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-10T02:45:50Z",
-"headline": "ekko-studio: Ekko Studio v0.7.33",
+"date": "2026-10-12T13:37:41Z",
+"headline": "ekko-studio: Ekko Studio v0.7.34",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## 更新重点\n\n- 新建聊天改为响应式页面，使用 Agent 卡片选择助手，并复用聊天输入框与会话设置 (#3333)\n- 新建聊天记住上次使用的模型、工作目录、启动方式和推理选项，方便连续创建会话 (#3333)\n- Agent 卡片新增金色边框与玉色流光，并统一各平台卡片内部动画的速度 (#3336、#3344)\n- 修复 Agent 卡片循环切换时的缩放跳变，以及鼠标在列表外释放后仍会拖动的问题 (#3335、#3340)\n- 修复长数字、符号或空白文本导致 Toke",
+"summary": "## 更新重点\n\n- 编程 Agent 支持在聊天、群聊和工作流中选择原生模型与推理强度，并记住已选配置 (#3354、#3360)\n- 统一模型选择弹窗，按服务商和模型分栏浏览，改善搜索、滚动与小屏显示 (#3355)\n- 用量概览新增账号和 Profile 筛选，展示模型与 Agent 用量分布，并改善移动端布局 (#3363)\n- 修复费用、Token 和百分比显示精度，以及滚动时间范围内趋势图与汇总数值不一致的问题 (#3373)\n- 桌面端新增远程服务器模式，可连接",
 "tag": "product_update",
-"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.33"
+"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.34"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-08T11:33:43Z",
-"headline": "ekko-studio: Ekko Studio v0.7.32",
+"date": "2026-10-12T12:19:22Z",
+"headline": "ekko-studio: Ekko Studio Android v1.0.7",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## 更新重点\n\n- 桌面端聊天和群聊新增区域截图与标注工具，支持自定义全局快捷键，并适配 Windows、macOS 和 Linux 截图方式 (#3312)\n- 修复截图遮罩异常后聊天窗口无法恢复的问题，截图结束或失败时恢复原有窗口状态 (#3318)\n- 新建聊天记住上次选择的 Agent，刷新后也能恢复选择 (#3320)\n- 收藏和最近使用的工作区目录按账号保存，可在不同浏览器中继续使用 (#3317)\n- 修复编程 Agent 使用 vLLM 等 Chat Com",
+"summary": "Ekko Studio Android v1.0.7\n\n- 版本：1.0.7\n- 版本号（versionCode）：159\n- 构建类型：云端加固版（cloud）\n- 包名：com.ekkostudio.ai\n- 架构：arm64-v8a\n- 安装包：EkkoStudio.apk\n- 文件大小：39,952,969 bytes\n- SHA-256：`35315b2e97388aed19b3e607916b047f90b96e9e189c1624eccc3aba6fa00355",
 "tag": "product_update",
-"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.7.32"
+"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v1.0.7"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:18:41Z",
+"checked_at": "2026-10-12T14:31:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:33Z",
+"checked_at": "2026-10-12T14:31:05Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T19:18:45Z",
+"checked_at": "2026-10-12T14:31:09Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -169,7 +169,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:35:37Z",
+"checked_at": "2026-10-12T14:49:48Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -177,19 +177,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-11T07:38:18Z",
-"github_forks": 1398,
+"github_forks": 1400,
 "github_language": "TypeScript",
-"github_open_issues": 487,
-"github_pushed_at": "2026-10-11T10:45:54Z",
-"github_stars": 11358,
+"github_open_issues": 489,
+"github_pushed_at": "2026-10-12T14:22:19Z",
+"github_stars": 11375,
 "github_topic": "ai-agent",
 "homepage": "https://ekkostudio.xyz"
 },
 "slug": "ekkolearnai-ekko-studio",
 "sources": [
 {
-"payload_hash": "05658e203bfc1aa415c4191d0e3e645f769c67f01d2388fdd49f710f23bb2381",
-"retrieved_at": "2026-10-11T19:12:42Z",
+"payload_hash": "2b33965400f55befc71206869806920cfaca673ee02d4a4bd73d06ad2494bb5e",
+"retrieved_at": "2026-10-12T14:24:19Z",
 "system": "github",
 "url": "https://github.com/EKKOLearnAI/ekko-studio"
 }

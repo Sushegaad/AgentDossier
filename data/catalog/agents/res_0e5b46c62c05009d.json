@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-12",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/openai",
 "framework": "csa_star",
 "issued": "2024-04-09",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
+"next_check": "2026-10-19",
+"payload_hash": "d7ca4e8f60bf907fde263c125465dcd74f125e4faed6be2a768f31c179f3466d",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:21:51Z",
+"retrieved_at": "2026-10-12T14:34:48Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -45,16 +45,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "20x Moderate"
 },
-"display": "FedRAMP 20x Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-11)",
+"display": "FedRAMP 20x Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-12)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2533155773",
 "framework": "fedramp",
 "issued": "2026-01-09",
 "issuer": "Program / 3PAO Schellman Compliance, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "3fd99849abe7b04db7cc30a300fe6ecc8900945bb901a16422fd1da56b094043",
+"next_check": "2026-10-19",
+"payload_hash": "9d13d56fb460f4af0aff38328682d7b3005394095ed1f3f7d5b0aa6b4f2dad7b",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:20:13Z",
+"retrieved_at": "2026-10-12T14:33:10Z",
 "review_reason": "vendor authorization for ChatGPT Enterprise and API Platform; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -361,7 +361,7 @@
 "external_ids": {
 "github": "openai/openai-agents-python"
 },
-"first_seen": "2026-10-11T19:09:17Z",
+"first_seen": "2026-10-12T14:20:02Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -383,7 +383,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:09:17Z",
+"last_seen": "2026-10-12T14:20:02Z",
 "license": "MIT",
 "name": "OpenAI Agents SDK (Python)",
 "news": [
@@ -430,7 +430,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:27:57Z",
+"checked_at": "2026-10-12T14:41:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -451,11 +451,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-11T03:42:36Z",
-"github_forks": 4866,
+"github_forks": 4870,
 "github_language": "Python",
-"github_open_issues": 18,
+"github_open_issues": 21,
 "github_pushed_at": "2026-10-08T19:41:57Z",
-"github_stars": 29968,
+"github_stars": 29985,
 "observed_popularity": "29.7k",
 "seed_enrich": {
 "changed": [
@@ -469,7 +469,7 @@
 "sources": [
 {
 "payload_hash": "98d58520362833ba8adb1cf10160e5256dd7c0510b9d5c0ac4bfb0418872ca53",
-"retrieved_at": "2026-10-11T19:09:17Z",
+"retrieved_at": "2026-10-12T14:20:02Z",
 "system": "seed_xlsx",
 "url": "https://github.com/openai/openai-agents-python"
 }
