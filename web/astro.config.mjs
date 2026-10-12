@@ -12,6 +12,10 @@ export default defineConfig({
   base,
   trailingSlash: "ignore",
   integrations: [react()],
-  build: { format: "directory" },
+  // Inline the stylesheet into every page. The site is served from a CDN that caches HTML for
+  // ten minutes: with an external, content-hashed CSS file, every deploy that changes the CSS leaves
+  // cached pages pointing at a hash that no longer exists, and they render unstyled until the cache
+  // expires. One 15 KB sheet inlined per page costs little and removes that failure entirely.
+  build: { format: "directory", inlineStylesheets: "always" },
   vite: { server: { fs: { allow: [".."] } } },
 });
