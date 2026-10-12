@@ -1,0 +1,1044 @@
+# Candidate incidents found by the weekly scout (agentdossier incidents scout). Each row is a public
+# item that mentioned both an AI agent and an attack, exactly as the source described it: a lead for
+# the maintainer, never an incident. Promote one with `agentdossier incidents draft <id>` (it
+# scaffolds a placeholder record in incidents.yaml for you to complete) or set its status to
+# `dismissed` so it does not come back. Feeds and keywords: config/trace_sources.json.
+version: incident-candidates-1.0
+scouted_on: '2026-10-11'
+sources_checked: 12
+sources_failed: []
+candidates:
+- id: cand-19a080c4b1
+  status: new
+  title: Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes
+  url: https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html
+  date: '2026-10-07'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - chatbot
+  - chatgpt
+  - claude
+  - credential
+  - gemini
+  - phishing
+  score: 10
+  snippet: Cybersecurity researchers have disclosed details of a "human-operated phishing platform" that impersonates
+    advertising products for artificial intelligence (AI) chatbots like Google Gemini, Anthropic Claude, OpenAI
+    ChatGPT, Perplexity, Meta Muse, and Manus. The products, which c…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-a51aedcbc1
+  status: new
+  title: JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack
+  url: https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack
+  date: '2026-09-28'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - agentic
+  - attack
+  - compromis
+  - credential
+  - destructive
+  score: 8
+  snippet: The "agentic threat actor" may have used exposed credentials to access resources and delete cloud-based
+    storage, applications, and databases.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-a19b8b3a76
+  status: new
+  title: CVE-2026-50510 GitHub Copilot Remote Code Execution Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50510
+  date: '2026-07-14'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - remote code execution
+  - vulnerabilit
+  score: 7
+  snippet: Improper restriction of names for files and other resources in Github Copilot allows an unauthorized
+    attacker to execute code locally.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-603eea829d
+  status: new
+  title: CVE-2026-50517 Microsoft M365 Copilot Remote Code Execution Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50517
+  date: '2026-07-23'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - remote code execution
+  - vulnerabilit
+  score: 7
+  snippet: Deserialization of untrusted data in M365 Copilot allows an authorized attacker to execute code over
+    a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-841b5aa214
+  status: new
+  title: CVE-2026-47282 GitHub Copilot and Visual Studio Code Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47282
+  date: '2026-07-14'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - credential
+  - vulnerabilit
+  score: 6
+  snippet: Insufficiently protected credentials in GitHub Copilot and Visual Studio Code allows an unauthorized
+    attacker to disclose information over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-b6d6a0d06c
+  status: new
+  title: How I tricked Claude into leaking your deepest, darkest secrets
+  url: https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/
+  date: '2026-07-15'
+  outlet: Simon Willison (prompt injection)
+  source_id: simonwillison-pi
+  kind: researcher
+  matched:
+  - attack
+  - claude
+  - exfiltrat
+  - secrets
+  score: 6
+  snippet: 'How I tricked Claude into leaking your deepest, darkest secrets I''ve been impressed by the way the
+    Claude web_fetch tool is designed to avoid data exfiltration attacks. Ayush Paul found a hole in that design.
+    To recap: regular Claude chat is at risk of lethal trifecta attacks, b…'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-cd40077d0a
+  status: new
+  title: From Indirect Prompt Injection to DNS Exfiltration in macOS Terminal
+  url: https://embracethered.com/blog/posts/2026/macos-terminal-dillma-dns-exfil-ansi-escape-code-fix/
+  date: '2026-07-16'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - exfiltrat
+  - indirect prompt injection
+  - prompt injection
+  score: 6
+  snippet: 'This is a follow-up to my previous Terminal DiLLMa research , and there is a positive outcome: Apple
+    fixed a macOS Terminal behavior that enabled a DNS-based data exfiltration technique. DNS Requests via ANSI
+    Escape Codes David Leadbeater originally discovered an interesting beh…'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-a284ba16d6
+  status: new
+  title: CVE-2026-48561 Microsoft Edge Copilot Remote Code Execution Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48561
+  date: '2026-07-24'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - copilot
+  - remote code execution
+  - vulnerabilit
+  score: 6
+  snippet: Corrected the CVE description and title. This is an informational change only.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-be680142a6
+  status: new
+  title: Inside 90 days of attacks on AI infrastructure
+  url: https://www.wiz.io/blog/ai-infrastructure-honeypot
+  date: '2026-08-27'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - attack
+  - credential
+  - mcp
+  - prompt injection
+  - rce
+  score: 6
+  snippet: Wiz honeypots uncover active campaigns targeting LiteLLM, MCP servers, and AI frameworks through RCE,
+    blind prompt injection, and memory credential theft.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-4795e6e321
+  status: new
+  title: 'An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation'
+  url: https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/
+  date: '2026-09-02'
+  outlet: Palo Alto Networks Unit 42
+  source_id: unit42
+  kind: researcher
+  matched:
+  - agentic
+  - ai agent
+  - ai agents
+  - attack
+  - breach
+  score: 6
+  snippet: 'Using autonomous AI agents, an attacker breached an enterprise network in a matter of hours. Understand
+    how to address and defend against agentic attacks. The post An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation
+    appeared first on Unit 42 .'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-cb9fdbb6aa
+  status: new
+  title: CVE-2026-81381 GitHub Copilot and Visual Studio Code Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81381
+  date: '2026-09-08'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - credential
+  - vulnerabilit
+  score: 6
+  snippet: Insufficiently protected credentials in GitHub Copilot and Visual Studio Code allows an unauthorized
+    attacker to disclose information over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-552142e8ce
+  status: new
+  title: Wikimedia Says OpenAI Agents Tried to Compromise Etherpad and Use Wiki Tools as Proxies
+  url: https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html
+  date: '2026-10-06'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - compromis
+  score: 6
+  snippet: The Wikimedia Foundation, which hosts Wikipedia, has confirmed that it has discovered activity by rogue
+    OpenAI agents on its platforms, including unsuccessful efforts to compromise Etherpad, a public note-taking
+    tool, and edit Wikipedia pages. "The unauthorized bot activities in…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-8e351f024f
+  status: new
+  title: 'Social Engineering AI Agents: The New BEC for 2026'
+  url: https://www.darkreading.com/cybersecurity-operations/social-engineering-ai-agents-bec-2026
+  date: '2026-10-09'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - attack
+  - compromis
+  score: 6
+  snippet: As AI agents gain authority over business systems, attackers can manipulate them like business email
+    compromise (BEC) victims.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-8e7f813921
+  status: new
+  title: 'MCP Auto-Execution: From Git Clone to Cloud Compromise in Amazon Q VS Code Extension'
+  url: https://www.wiz.io/blog/amazon-q-vulnerability
+  date: '2026-06-26'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - attack
+  - compromis
+  - mcp
+  score: 5
+  snippet: By automatically loading MCP servers from workspace files, Amazon Q enabled attackers to execute code
+    and access sensitive cloud environments.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-41212d102a
+  status: new
+  title: CVE-2026-41109 GitHub Copilot and Visual Studio Code Security Feature Bypass Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41109
+  date: '2026-07-14'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Improper neutralization of special elements in output used by a downstream component ('injection') in
+    GitHub Copilot and Visual Studio allows an unauthorized attacker to bypass a security feature over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-97b4c9a578
+  status: new
+  title: CVE-2026-58617 M365 Copilot for iOS Elevation of Privilege Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58617
+  date: '2026-07-14'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges
+    over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-fe91dd6df5
+  status: new
+  title: CVE-2026-55145 Outlook Copilot Tampering Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55145
+  date: '2026-07-14'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Improper neutralization of special elements used in a command ('command injection') in Outlook Copilot
+    allows an authorized attacker to perform tampering over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-0762796502
+  status: new
+  title: 'Atlas: Wiz''s autonomous AI Agent for vulnerability research, ranked #1 on CyberGym'
+  url: https://www.wiz.io/blog/atlas-ai-vulnerability-researcher
+  date: '2026-07-27'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - ai agent
+  - exploit
+  - vulnerabilit
+  score: 5
+  snippet: See how Wiz built Atlas, an autonomous AI system for vulnerability research that validates every finding
+    with a real, working exploit.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-be0aff069e
+  status: new
+  title: CVE-2026-69855 Microsoft Copilot in Azure Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69855
+  date: '2026-08-20'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Server-side request forgery (ssrf) in Microsoft Copilot in Azure allows an authorized attacker to disclose
+    information over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-7050d48610
+  status: new
+  title: Breaking Claude Code Opus 5 Auto Mode
+  url: https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/
+  date: '2026-08-27'
+  outlet: Simon Willison (prompt injection)
+  source_id: simonwillison-pi
+  kind: researcher
+  matched:
+  - attack
+  - claude
+  - coding agent
+  - prompt injection
+  score: 5
+  snippet: Breaking Claude Code Opus 5 Auto Mode Anthropic are putting a great deal of faith in Claude Code's auto
+    mode for protecting their coding agent users against prompt injection attacks. They recently made that the default
+    and have made bold claims about its effectiveness. Johann Re…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-74506ba003
+  status: new
+  title: CVE-2026-58616 Copilot Chat (Microsoft Edge) Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58616
+  date: '2026-08-28'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Concurrent execution using shared resource with improper synchronization ('race condition') in Copilot
+    Chat (Microsoft Edge) allows an authorized attacker to disclose information over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-c076aa0069
+  status: new
+  title: Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America
+  url: https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/
+  date: '2026-09-03'
+  outlet: Palo Alto Networks Unit 42
+  source_id: unit42
+  kind: researcher
+  matched:
+  - attack
+  - exfiltrat
+  - tool use
+  score: 5
+  snippet: Explore how attackers targeting Latin American entities use AI for data exfiltration and how basic OpSec
+    errors allow defenders to disrupt operations. The post Attackers Expose Ongoing AI Tool Use Targeting Organizations
+    in Latin America appeared first on Unit 42 .
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-1c0714aca4
+  status: new
+  title: CVE-2026-80098 Copilot Studio Elevation of Privilege Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80098
+  date: '2026-09-08'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Improper verification of cryptographic signature in Copilot Studio allows an unauthorized attacker to
+    elevate privileges over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-ee5668c0e6
+  status: new
+  title: CVE-2026-81380 GitHub Copilot and Visual Studio Code Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81380
+  date: '2026-09-08'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Improper neutralization of special elements used in a command ('command injection') in GitHub Copilot
+    and Visual Studio Code allows an unauthorized attacker to disclose information over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-62561d884e
+  status: new
+  title: CVE-2026-55946 Microsoft Copilot Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55946
+  date: '2026-09-17'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot
+    allows an unauthorized attacker to disclose information over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-6b45984108
+  status: new
+  title: CVE-2026-85887 M365 Copilot Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85887
+  date: '2026-09-17'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Incorrect permission assignment for critical resource in M365 Copilot allows an authorized attacker to
+    disclose information over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-d773424c6d
+  status: new
+  title: CVE-2026-85885 Microsoft 365 Copilot Elevation of Privilege Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85885
+  date: '2026-09-17'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - copilot
+  - vulnerabilit
+  score: 5
+  snippet: Improper neutralization of special elements used in a command ('command injection') in M365 Copilot allows
+    an authorized attacker to elevate privileges over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-74b0a89a50
+  status: new
+  title: Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely
+  url: https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html
+  date: '2026-10-07'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - attack
+  - large language model
+  - llm
+  - vulnerabilit
+  score: 5
+  snippet: A critical vulnerability in LMCache, open-source software that speeds up large language model (LLM) servers
+    such as vLLM, lets an attacker run code on the cache server without logging in, and no fixed version is available.
+    The flaw is in LMCache's multiprocess mode, where the ca…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-cff632d3c6
+  status: new
+  title: How to keep AI agents within their permissions
+  url: https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/
+  date: '2026-10-09'
+  outlet: BleepingComputer
+  source_id: bleepingcomputer
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - credential
+  score: 5
+  snippet: AI agents can use valid credentials to perform actions beyond their assigned permissions, creating risks
+    that traditional access controls may not prevent. Token Security explains how organizations can enforce agent-specific
+    policies without sacrificing autonomy. [...]
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-6b1c0c7d89
+  status: new
+  title: 'Computer-Use and TOCTOU: What You Click Is Not What You Get!'
+  url: https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/
+  date: '2026-06-25'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - attack
+  - chatgpt
+  - exploit
+  - vulnerabilit
+  score: 4
+  snippet: Last year, Jun Kokatsu disclosed an interesting vulnerability with ChatGPT Operator by exploiting a race
+    condition. I was wondering if I could reproduce this attack chain, and this post describes the results of that
+    research. I had this post drafted for months, and yesterday at…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-620eba12f8
+  status: new
+  title: 'Autonomous AI Intrusions Are Here: Lessons from the Hugging Face Compromise'
+  url: https://embracethered.com/blog/posts/2026/ai-intrusion-are-now-real/
+  date: '2026-07-19'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - ai agent
+  - compromis
+  - ransom
+  score: 4
+  snippet: Hugging Face disclosed an intrusion that, according to them, was driven end to end by an autonomous AI
+    agent system. Along similar lines, Sysdig recently published a blog on JADEPUFFER , which it assesses to be
+    an agent-driven ransomware capable of adapting in real time. The rep…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-69cce761dd
+  status: new
+  title: 'LLM Heist: Hijacking LiteLLM for Traffic Interception, Key Theft, and Tool-Call Injection'
+  url: https://embracethered.com/blog/posts/2026/hijacking-litellm-for-fun-and-profit/
+  date: '2026-08-03'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - hijack
+  - llm
+  score: 4
+  snippet: LiteLLM is a popular AI gateway. It provides a unified interface to LLMs and simplifies governance. It
+    also has access to the backend LLM provider keys. All of that makes it a high-value target. Not only for IP
+    and data theft, but also for response modification and tool invocati…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-2e6b2e97c0
+  status: new
+  title: CVE-2026-59118 Copilot Cowork Elevation of Privilege Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59118
+  date: '2026-08-11'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - copilot
+  - vulnerabilit
+  score: 4
+  snippet: Corrected CVE title. This is an informational change only.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-17d736092c
+  status: new
+  title: CVE-2026-24301 Microsoft Copilot Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24301
+  date: '2026-08-25'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - copilot
+  - vulnerabilit
+  score: 4
+  snippet: Acknowledgement Updated
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-964039d525
+  status: new
+  title: Breaking Claude Code Opus 5 Auto Mode
+  url: https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/
+  date: '2026-08-26'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - attack
+  - claude
+  - hijack
+  score: 4
+  snippet: In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode
+    and achieves code execution with 60-80% attack success rate using a small sample size. This is interesting because
+    a third-party evaluation commissioned by Anthropic showed a 0.…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-a2726b4272
+  status: new
+  title: CVE-2026-70331 Microsoft Edge for iOS Spoofing Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70331
+  date: '2026-08-28'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - attack
+  - llm
+  - vulnerabilit
+  score: 4
+  snippet: Improper neutralization of input used for llm prompting in Microsoft Edge for iOS allows an unauthorized
+    attacker to perform spoofing over a network.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-3e3df6c3a2
+  status: new
+  title: CVE-2026-70335 GitHub Copilot and Visual Studio Code Elevation of Privilege Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70335
+  date: '2026-09-02'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - copilot
+  - vulnerabilit
+  score: 4
+  snippet: Affected software updated with new package information.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-094b1cd313
+  status: new
+  title: 'Off Guard: Breaking LiteLLM from authentication bypass to cloud compromise'
+  url: https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise
+  date: '2026-09-09'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - compromis
+  - mcp
+  - remote code execution
+  score: 4
+  snippet: How default keys, unauthenticated MCP sessions, and custom code guardrails expose cloud AI infrastructure
+    to root-level remote code execution and IAM theft.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-40f0b019e8
+  status: new
+  title: CVE-2026-65675 CoPilot Chat Security Feature Bypass Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65675
+  date: '2026-09-24'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - copilot
+  - vulnerabilit
+  score: 4
+  snippet: Updated the fixed version information and download link. The fix was previously believed to be included
+    in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in
+    Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.00…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-9c43878ab8
+  status: new
+  title: Malicious Custom GPTs Turn ChatGPT Into RAT Delivery Lure
+  url: https://www.darkreading.com/cyberattacks-data-breaches/malicious-custom-gpts-chatgpt-rat-delivery-lure
+  date: '2026-09-30'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - chatgpt
+  - malicious
+  score: 4
+  snippet: In yet another ClickFix-style campaign, threat actors abuse legitimate domains from OpenAI and Google
+    to fool unsuspecting users.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-732fb30cd1
+  status: new
+  title: CVE-2026-78501 Microsoft 365 Copilot Business Chat Information Disclosure Vulnerability
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78501
+  date: '2026-10-06'
+  outlet: Microsoft Security Response Center (update guide)
+  source_id: msrc
+  kind: vendor
+  matched:
+  - copilot
+  - vulnerabilit
+  score: 4
+  snippet: Updated an acknowledgement. This is an informational change only.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-1836f36c20
+  status: new
+  title: What Is Agentic Pentesting? What It Proves, and Where It Stops.
+  url: https://thehackernews.com/2026/10/what-is-agentic-pentesting-what-it.html
+  date: '2026-10-07'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - agentic
+  - attack
+  - exploit
+  score: 4
+  snippet: 'If you’re evaluating an agentic pentesting solution right now, you’ve probably heard the same pitch
+    more than once: point it at a target, and it discovers, validates, and exploits attack paths autonomously, the
+    way a real attacker would. That promise is worth taking seriously. I…'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-af57db5913
+  status: new
+  title: ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms
+  url: https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html
+  date: '2026-10-08'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - attack
+  - tool use
+  score: 4
+  snippet: Cybersecurity researchers have disclosed details of a targeted campaign aimed at South Korean financial
+    organizations that used an artificial intelligence (AI) pen testing tool named ARTEX to carry out the attacks.
+    The activity, per CrowdStrike Intelligence, was active from late…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-14550b499a
+  status: new
+  title: Hackers abuse Google Ads, Bing redirects to push Claude ClickFix attacks
+  url: https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/
+  date: '2026-10-09'
+  outlet: BleepingComputer
+  source_id: bleepingcomputer
+  kind: press
+  matched:
+  - attack
+  - claude
+  score: 4
+  snippet: Hackers are abusing legitimate Bing search-result redirects as click URLs in Google search ads to direct
+    users to fake Claude installers that deliver ClickFix attacks. [...]
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-4f0f6d54a6
+  status: new
+  title: Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws
+  url: https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html
+  date: '2026-10-10'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - claude
+  - exploit
+  score: 4
+  snippet: Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following
+    the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior
+    and targeted real websites. The AI company said it identified f…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-63378e89b8
+  status: new
+  title: ARTEX AI, Claude agents used in cyberattacks on South Korean banks
+  url: https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/
+  date: '2026-10-10'
+  outlet: BleepingComputer
+  source_id: bleepingcomputer
+  kind: press
+  matched:
+  - attack
+  - claude
+  score: 4
+  snippet: The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese
+    hacker using the ARTEX AI penetration testing suite and Claude agents. [...]
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-979a5bb77e
+  status: new
+  title: What happened after 2,000 people tried to hack my AI assistant
+  url: https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant/
+  date: '2026-06-26'
+  outlet: Simon Willison (prompt injection)
+  source_id: simonwillison-pi
+  kind: researcher
+  matched:
+  - ai assistant
+  - secrets
+  score: 3
+  snippet: What happened after 2,000 people tried to hack my AI assistant Fernando Irarrázaval ran a challenge on
+    hackmyclaw.com to see if anyone could leak secrets held by his OpenClaw test instance by sending it email. Surprisingly,
+    after 6,000 attempts (and $500 in token spend and a Goo…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-59e390c515
+  status: new
+  title: Wiz Red Agent Finds Its Way Into Snowflake’s Internal Jira Through a Flaw in a GitHub Copilot–Assisted
+    PR
+  url: https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug
+  date: '2026-08-17'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - copilot
+  - exploit
+  score: 3
+  snippet: Wiz Red Agent independently discovered and exploited a GitHub Actions injection missed by GitHub’s Advanced
+    Security, validated access to sensitive data in Snowflake’s internal Jira, and assessed the blast radius—all
+    without human intervention, five days after the flaw became li…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-32ee688454
+  status: new
+  title: 'A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity'
+  url: https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/
+  date: '2026-09-18'
+  outlet: Palo Alto Networks Unit 42
+  source_id: unit42
+  kind: researcher
+  matched:
+  - credential
+  - exfiltrat
+  - prompt injection
+  score: 3
+  snippet: 'Analysis of how default configurations in AWS AgentCore Harness allow prompt injection to exfiltrate
+    credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space
+    Between AgentCore Harness and Identity appeared first on Unit 42 .'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-ef1100ea09
+  status: new
+  title: From SELECT to SYSADMIN with SQL Copilot (CVE-2026-65669)
+  url: https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia/
+  date: '2026-09-30'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - copilot
+  - vulnerabilit
+  score: 3
+  snippet: Two weeks back I presented at BlueHat Asia 2026 about my research on Microsoft’s Copilot in SSMS, the
+    SQL Server Management Studio. This post is a write up about the talk, which covered CVE-2026-65669 , a SQL Server
+    Elevation of Privilege Vulnerability rated critical by Microsof…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-65a4731596
+  status: new
+  title: Google's PageBreak AI Agent Finds 500 Flaws in Its Web Apps
+  url: https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps
+  date: '2026-10-06'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - ai agent
+  - exploit
+  score: 3
+  snippet: The situation illustrates a trend toward using AI and deterministic validation to identify flaws and
+    exploitability, and provide a risk assessment.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-f10957e4a6
+  status: new
+  title: '''AgentCorruption'' Puts AWS Environments at Risk With Single Prompt'
+  url: https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt
+  date: '2026-10-08'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - attack
+  - chatbot
+  - vulnerabilit
+  score: 3
+  snippet: A now-patched vulnerability in AWS Bedrock AgentCore could have allowed an attacker to use one AI chatbot
+    to take over an organization's entire fleet.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-2b77d92549
+  status: new
+  title: Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects
+  url: https://thehackernews.com/2026/10/anthropic-launches-free-ai.html
+  date: '2026-10-09'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - claude
+  - vulnerabilit
+  score: 3
+  snippet: Anthropic on Thursday unveiled OSS Scanner as an opt-in vulnerability scanner to help secure the open-source
+    ecosystem using artificial intelligence (AI). "It's an opt-in service informed by our experience using Claude
+    to find vulnerabilities during Project Glasswing," Anthropic…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-15424000ae
+  status: new
+  title: Prompt Injection as Role Confusion
+  url: https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/
+  date: '2026-06-22'
+  outlet: Simon Willison (prompt injection)
+  source_id: simonwillison-pi
+  kind: researcher
+  matched:
+  - prompt injection
+  score: 2
+  snippet: 'Prompt Injection as Role Confusion First, I absolutely love this: This is a blog-style writeup of the
+    paper. I wish every paper would come with one of these. Academic writing is pretty dry - the impact of a paper
+    can be so much higher if you publish a readable version to accompa…'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-598e9e4d2d
+  status: new
+  title: AI Worming through Word
+  url: https://simonwillison.net/2026/Jul/29/ai-worming-through-word/
+  date: '2026-07-29'
+  outlet: Simon Willison (prompt injection)
+  source_id: simonwillison-pi
+  kind: researcher
+  matched:
+  - attack
+  - prompt injection
+  score: 2
+  snippet: 'AI Worming through Word Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade
+    prompt injection attacks against Microsoft Word to full self-replicating worms: An attacker places hidden instructions
+    in a document that is later used as source material in Copi…'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-b9857c7ad0
+  status: new
+  title: Escaping Linux Sandboxes via PipeWire (CVE-2026-5674)
+  url: https://embracethered.com/blog/posts/2026/pipewire-flatpak-linux-sandbox-escape-cve-2026-5674/
+  date: '2026-07-30'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - claude
+  - vulnerabilit
+  score: 2
+  snippet: This post walks through a sandbox escape from a Flatpak application via PipeWire. The vulnerability was
+    discovered using my automated research pipeline with Claude Code and Opus 4.6 back in April 2026. It was an
+    exciting find, as this was the first bug I submitted to Red Hat. Cl…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-30f335981c
+  status: new
+  title: Building an AI Detection Engine That Understands Agent Intent
+  url: https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent
+  date: '2026-09-17'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - ai agent
+  - malicious
+  score: 2
+  snippet: Analyzing model input and output logs in an AI-native detection pipeline to understand and uncover malicious
+    AI agent behavior
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-74774c6212
+  status: new
+  title: Self-generated prompt injections in compaction summaries
+  url: https://simonwillison.net/2026/Sep/17/compaction-summaries/
+  date: '2026-09-17'
+  outlet: Simon Willison (prompt injection)
+  source_id: simonwillison-pi
+  kind: researcher
+  matched:
+  - prompt injection
+  score: 2
+  snippet: 'Self-generated prompt injections in compaction summaries In Our framework for reporting model misalignment
+    OpenAI provide "six reports on unexpected or concerning model behavior we’ve observed in the last six months".
+    This one here is my favorite: they caught some of their model…'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-d67334d1d5
+  status: new
+  title: Australian Gov't Weighs Mandatory AI Incident Reporting
+  url: https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting
+  date: '2026-10-07'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - agentic
+  - attack
+  score: 2
+  snippet: In the wake of an agentic attack against its own Medicare systems, Australia's government is feeling
+    out what regulations might look like for frontier AI companies.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+- id: cand-20de4e7204
+  status: new
+  title: 'GPT-Red: Unlocking Self-Improvement for Robustness'
+  url: https://openai.com/index/unlocking-self-improvement-gpt-red
+  date: '2026-07-15'
+  outlet: OpenAI news
+  source_id: openai-news
+  kind: vendor
+  matched:
+  - prompt injection
+  score: 1
+  snippet: Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment,
+    and prompt injection robustness.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'

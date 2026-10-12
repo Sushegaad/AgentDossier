@@ -6,6 +6,20 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Added — incident scout (the registry grows weekly)
+- **`agentdossier incidents scout`** runs in the weekly refresh: reads twelve public feeds
+  (`config/trace_sources.json` — The Hacker News, BleepingComputer, Dark Reading, SecurityWeek,
+  Simon Willison's prompt-injection tag, Embrace The Red, Wiz, Unit 42, Trail of Bits, MSRC's
+  update guide, Google Security Blog, OpenAI news; RSS/Atom via the standard library, no new
+  dependency), keeps items that name both an *agent* and an *attack* (two keyword axes, whole-word
+  matching for short terms), drops anything already cited by an incident, and merges the rest into
+  `data/curated/incident_candidates.yaml` with stable ids and statuses (new / promoted / dismissed).
+  Candidates are leads for the maintainer, never incidents: `incidents draft <id>` scaffolds a
+  schema-valid `status: placeholder` record in `incidents.yaml` (appended, the hand-written file is
+  not rewritten) and `incidents dismiss <id>` retires one. The refresh PR body lists the week's
+  finds; `/traces/` shows the count awaiting review. First run over today's feeds: 6,643 items →
+  60 candidates. Feed failures are reported, never fatal; `--offline <dir>` runs on saved feeds.
+
 ### Added — incident registry
 - **`/traces/` is now an incident registry** — one row per real, public event where an AI agent
   attacked or defended a system (`data/curated/incidents.yaml`, `schema/incident_record.schema.json`).

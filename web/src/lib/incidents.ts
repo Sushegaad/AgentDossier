@@ -95,6 +95,40 @@ export function loadIncidents(): IncidentSet | null {
   return cached;
 }
 
+/** The scout's candidates file (data/curated/incident_candidates.yaml): leads awaiting a maintainer,
+ *  never incidents. The site shows only the count and the scout date. */
+export interface CandidateSummary {
+  awaiting: number;
+  scoutedOn: string | null;
+  sourcesChecked: number;
+  sourcesFailed: string[];
+}
+
+let cachedCandidates: CandidateSummary | null | undefined;
+
+export function loadCandidates(): CandidateSummary | null {
+  if (cachedCandidates !== undefined) return cachedCandidates;
+  const path = resolve(process.env.INCIDENT_CANDIDATES ?? "../data/curated/incident_candidates.yaml");
+  try {
+    const doc = yamlLoad(readFileSync(path, "utf8")) as {
+      scouted_on?: string | null;
+      sources_checked?: number;
+      sources_failed?: string[];
+      candidates?: Array<{ status?: string }>;
+    };
+    cachedCandidates = {
+      awaiting: (doc.candidates ?? []).filter((c) => c.status === "new").length,
+      scoutedOn: doc.scouted_on ? String(doc.scouted_on) : null,
+      sourcesChecked: doc.sources_checked ?? 0,
+      sourcesFailed: doc.sources_failed ?? [],
+    };
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code === "ENOENT") cachedCandidates = null;
+    else throw e;
+  }
+  return cachedCandidates;
+}
+
 export function incidentSlug(id: string): string {
   return id.toLowerCase();
 }

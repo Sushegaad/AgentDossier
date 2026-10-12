@@ -1,0 +1,145 @@
+{
+  "version": "trace-sources-1.0",
+  "note": "Feeds the weekly scout reads for candidate incidents (agentdossier incidents scout). An item becomes a candidate only when it matches at least one `agent` term AND one `attack` term; short terms match whole words only. Adding a source is a reviewed pull request. A failing feed is reported in the run, never fatal.",
+  "since_days": 120,
+  "sources": [
+    {
+      "id": "thehackernews",
+      "name": "The Hacker News",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "kind": "press"
+    },
+    {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "kind": "press"
+    },
+    {
+      "id": "darkreading",
+      "name": "Dark Reading",
+      "url": "https://www.darkreading.com/rss.xml",
+      "kind": "press"
+    },
+    {
+      "id": "securityweek",
+      "name": "SecurityWeek",
+      "url": "https://feeds.feedburner.com/securityweek",
+      "kind": "press"
+    },
+    {
+      "id": "simonwillison-pi",
+      "name": "Simon Willison (prompt injection)",
+      "url": "https://simonwillison.net/tags/prompt-injection.atom",
+      "kind": "researcher"
+    },
+    {
+      "id": "embracethered",
+      "name": "Embrace The Red",
+      "url": "https://embracethered.com/blog/index.xml",
+      "kind": "researcher"
+    },
+    {
+      "id": "wiz",
+      "name": "Wiz Research",
+      "url": "https://www.wiz.io/feed/rss.xml",
+      "kind": "researcher"
+    },
+    {
+      "id": "unit42",
+      "name": "Palo Alto Networks Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/feed/",
+      "kind": "researcher"
+    },
+    {
+      "id": "trailofbits",
+      "name": "Trail of Bits",
+      "url": "https://blog.trailofbits.com/feed/",
+      "kind": "researcher"
+    },
+    {
+      "id": "msrc",
+      "name": "Microsoft Security Response Center (update guide)",
+      "url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "kind": "vendor"
+    },
+    {
+      "id": "google-security",
+      "name": "Google Security Blog",
+      "url": "https://security.googleblog.com/feeds/posts/default",
+      "kind": "vendor"
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI news",
+      "url": "https://openai.com/news/rss.xml",
+      "kind": "vendor"
+    }
+  ],
+  "keywords": {
+    "agent": [
+      "ai agent",
+      "ai agents",
+      "agentic",
+      "autonomous agent",
+      "coding agent",
+      "llm agent",
+      "agent framework",
+      "copilot",
+      "mcp",
+      "model context protocol",
+      "a2a",
+      "agent2agent",
+      "prompt injection",
+      "chatgpt",
+      "claude",
+      "gemini",
+      "gpt-",
+      "llm",
+      "large language model",
+      "chatbot",
+      "ai assistant",
+      "coding assistant",
+      "agentforce",
+      "cursor",
+      "deep research",
+      "computer use",
+      "browser agent",
+      "rag",
+      "retrieval-augmented",
+      "tool use",
+      "function calling"
+    ],
+    "attack": [
+      "prompt injection",
+      "indirect prompt injection",
+      "exfiltrat",
+      "data leak",
+      "leaked",
+      "zero-click",
+      "zero click",
+      "remote code execution",
+      "rce",
+      "cve-",
+      "vulnerabilit",
+      "jailbreak",
+      "hijack",
+      "malicious",
+      "supply chain",
+      "backdoor",
+      "compromis",
+      "breach",
+      "wiper",
+      "deleted",
+      "destructive",
+      "attack",
+      "exploit",
+      "credential",
+      "secrets",
+      "ransom",
+      "phishing",
+      "poison",
+      "espionage"
+    ]
+  }
+}
