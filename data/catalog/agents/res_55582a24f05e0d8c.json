@@ -16,16 +16,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-11",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-12",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/langchain, inc.",
 "framework": "csa_star",
 "issued": "2025-11-25",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "a4c63000f23747ff30e64add833eec1d84771a7095cdbed4791263f403e3e57b",
+"next_check": "2026-10-19",
+"payload_hash": "d7ca4e8f60bf907fde263c125465dcd74f125e4faed6be2a768f31c179f3466d",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:21:43Z",
+"retrieved_at": "2026-10-12T14:34:40Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -42,16 +42,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-11)",
+"display": "Vendor-claimed (vendor page, 2026-10-12)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "8d8e1beff7d305e0849ce7b76edb267bd540ad2ce65d4aa5d28bcf4f13154fd2",
+"next_check": "2026-10-19",
+"payload_hash": "ae10aa98af37a05ec9bc378ec40bfbc7f714015fd08d6778d77e5b838c3a6af3",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:25:46Z",
+"retrieved_at": "2026-10-12T14:39:14Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -68,16 +68,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-11)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-12)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "8d8e1beff7d305e0849ce7b76edb267bd540ad2ce65d4aa5d28bcf4f13154fd2",
+"next_check": "2026-10-19",
+"payload_hash": "ae10aa98af37a05ec9bc378ec40bfbc7f714015fd08d6778d77e5b838c3a6af3",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:25:46Z",
+"retrieved_at": "2026-10-12T14:39:14Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -94,16 +94,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-11)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-12)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "8d8e1beff7d305e0849ce7b76edb267bd540ad2ce65d4aa5d28bcf4f13154fd2",
+"next_check": "2026-10-19",
+"payload_hash": "ae10aa98af37a05ec9bc378ec40bfbc7f714015fd08d6778d77e5b838c3a6af3",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:25:46Z",
+"retrieved_at": "2026-10-12T14:39:14Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -448,7 +448,7 @@
 "external_ids": {
 "github": "langchain-ai/langchain"
 },
-"first_seen": "2026-10-11T19:09:17Z",
+"first_seen": "2026-10-12T14:20:02Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -531,7 +531,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:10:14Z",
+"last_seen": "2026-10-12T14:21:36Z",
 "license": "MIT",
 "merged_ids": [
 "res_8d4b18cd3300a582"
@@ -540,32 +540,32 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-08T22:14:22Z",
-"headline": "langchain release 1.4.4",
+"date": "2026-10-12T14:40:14Z",
+"headline": "langchain release langchain-anthropic 1.7.6",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Changes since langchain==1.4.3\n\nrelease(langchain): 1.4.4 (#41163)\nfix(langchain): (SummarizationMiddleware) retry summary step on context overflow (#41159)\nchore(deps): bump fsspec from 2026.6.0 to 2026.9.0 in /libs/langchain_v1 (#41097)\nc",
+"summary": "Changes since langchain-anthropic==1.7.5\n\nrelease(anthropic): 1.7.6 (#41221)\nchore(model-profiles): refresh model profile data (#41145)\nfeat(core,anthropic,openai): declare mid-conversation support in model profiles (#41180)\nchore(deps): bu",
 "tag": "product_update",
-"url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.4"
+"url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.6"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-08T20:11:32Z",
-"headline": "langchain release langchain-core 1.6.9",
+"date": "2026-10-12T14:33:09Z",
+"headline": "langchain release langchain-openai 1.7.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Changes since langchain-core==1.6.8\n\nrelease(core): 1.6.9 (#41160)\nfeat(core): accept a callable in with_retry (#41158)",
+"summary": "Changes since langchain-openai==1.7.0\n\nrelease(openai): 1.7.1 (#41222)\nfeat(core,anthropic,openai): declare mid-conversation support in model profiles (#41180)",
 "tag": "product_update",
-"url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.9"
+"url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://docs.langchain.com/.well-known/agent-card.json",
-"checked_at": "2026-10-11T19:18:29Z",
+"checked_at": "2026-10-12T14:31:04Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -576,7 +576,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:28Z",
+"checked_at": "2026-10-12T14:31:02Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -587,7 +587,7 @@
 "note": "langchain-mcp-adapters (official LangChain organisation)",
 "probe": {
 "card_url": "https://docs.langchain.com/.well-known/mcp.json",
-"checked_at": "2026-10-11T19:18:30Z",
+"checked_at": "2026-10-12T14:31:04Z",
 "status": "invalid"
 },
 "source": "curated_claim",
@@ -599,7 +599,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:27:38Z",
+"checked_at": "2026-10-12T14:41:24Z",
 "cves": 77,
 "source": "nvd",
 "tier": 1
@@ -620,11 +620,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-10-17T02:58:36Z",
-"github_forks": 24760,
+"github_forks": 24769,
 "github_language": "Python",
-"github_open_issues": 647,
-"github_pushed_at": "2026-10-11T09:01:17Z",
-"github_stars": 147619,
+"github_open_issues": 642,
+"github_pushed_at": "2026-10-12T14:14:03Z",
+"github_stars": 147686,
 "github_topic": "ai-agents",
 "homepage": "https://docs.langchain.com/langchain/",
 "observed_popularity": "147k",
@@ -640,13 +640,13 @@
 "sources": [
 {
 "payload_hash": "2ba5e920e3f35c488931b46722904b7e32f4bf48398d33d45719d407d187480e",
-"retrieved_at": "2026-10-11T19:09:17Z",
+"retrieved_at": "2026-10-12T14:20:02Z",
 "system": "seed_xlsx",
 "url": "https://github.com/langchain-ai/langchain"
 },
 {
-"payload_hash": "e5dfb00a509707319edb3776ae36dcf39dba80b19e17c72a227cce8c0ad80eea",
-"retrieved_at": "2026-10-11T19:10:14Z",
+"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
+"retrieved_at": "2026-10-12T14:21:36Z",
 "system": "github",
 "url": "https://github.com/langchain-ai/langchain"
 }

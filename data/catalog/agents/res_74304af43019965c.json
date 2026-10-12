@@ -29,7 +29,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.53,
+"adoption": 23.54,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -52,7 +52,7 @@
 },
 "regulatory": {
 "components": {
-"adoption": 23.53,
+"adoption": 23.54,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -75,7 +75,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.53,
+"adoption": 23.54,
 "docs": 7.0,
 "domain_fit": 94.5,
 "ecosystem": 6.6,
@@ -100,7 +100,7 @@
 "external_ids": {
 "github": "cobusgreyling/loop-engineering"
 },
-"first_seen": "2026-10-11T19:10:18Z",
+"first_seen": "2026-10-12T14:21:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -122,10 +122,23 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:10:18Z",
+"last_seen": "2026-10-12T14:21:40Z",
 "license": "MIT",
 "name": "loop-engineering",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-11T15:01:17Z",
+"discussion_url": "https://news.ycombinator.com/item?id=50044028",
+"engagement": 22,
+"headline": "Loop Engineering: Optimizing Code Generation and Verification",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://bradleygibbs.dev/posts/loop-optimization/"
+},
 {
 "cluster_size": 1,
 "date": "2026-07-20T18:42:38Z",
@@ -162,30 +175,17 @@
 "summary": null,
 "tag": "news",
 "url": "https://brittany-ellich.offprint.app/a/3mrjj34puva23-108-prs-in-eight-days-accidentally-discovering-loop-engineering"
-},
-{
-"cluster_size": 1,
-"date": "2026-07-21T18:01:06Z",
-"discussion_url": "https://news.ycombinator.com/item?id=48995842",
-"engagement": 5,
-"headline": "Loop Engineering, Graph Engineering, and Layers That Matters",
-"kind": "community",
-"link_confidence": 0.88,
-"outlet": "Hacker News",
-"summary": null,
-"tag": "news",
-"url": "https://iii.dev/blog/loops-graphs-and-the-layer-that-matters/"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:18:05Z",
+"checked_at": "2026-10-12T14:30:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:04Z",
+"checked_at": "2026-10-12T14:30:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -193,7 +193,7 @@
 "evidence_url": "https://cobusgreyling.github.io/loop-engineering/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-11T19:18:06Z",
+"checked_at": "2026-10-12T14:30:28Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -205,7 +205,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:35:36Z",
+"checked_at": "2026-10-12T14:49:46Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -213,19 +213,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-06-09T06:28:20Z",
-"github_forks": 1547,
+"github_forks": 1552,
 "github_language": "TypeScript",
-"github_open_issues": 10,
-"github_pushed_at": "2026-10-11T15:46:54Z",
-"github_stars": 11496,
+"github_open_issues": 12,
+"github_pushed_at": "2026-10-12T08:16:10Z",
+"github_stars": 11509,
 "github_topic": "ai-agents",
 "homepage": "https://cobusgreyling.github.io/loop-engineering/"
 },
 "slug": "cobusgreyling-loop-engineering",
 "sources": [
 {
-"payload_hash": "8203b0bdf8669bf151194e102b9a7e74afa66e5d521a1186cf87eac336138635",
-"retrieved_at": "2026-10-11T19:10:18Z",
+"payload_hash": "f9447ec0dbe965d248a0ffa35c95305c9401a92f3da6b8699bb18299b5081a54",
+"retrieved_at": "2026-10-12T14:21:40Z",
 "system": "github",
 "url": "https://github.com/cobusgreyling/loop-engineering"
 }

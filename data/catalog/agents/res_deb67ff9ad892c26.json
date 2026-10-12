@@ -14,7 +14,7 @@
 "external_ids": {
 "github": "nesquena/hermes-webui"
 },
-"first_seen": "2026-10-11T19:10:14Z",
+"first_seen": "2026-10-12T14:21:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -49,47 +49,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:10:14Z",
+"last_seen": "2026-10-12T14:21:36Z",
 "license": "MIT",
 "name": "hermes-webui",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-10T22:17:21Z",
-"headline": "hermes-webui release exp-v0.52.459",
+"date": "2026-10-12T11:50:42Z",
+"headline": "hermes-webui release exp-v0.52.462",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* Release exp-v0.52.459: new chats keep the model's prompt cache (#8150) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8151\n* fix(chat): keep the session id out of the system prompt unless asked for",
+"summary": "## What's Changed\n* Release exp-v0.52.462: the models cache's freshness clock is its build time, not the file's mtime (#7932) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8169\n* fix(models): persist and validate _bui",
 "tag": "product_update",
-"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.459"
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.462"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-10T15:04:06Z",
-"headline": "hermes-webui release exp-v0.52.458",
+"date": "2026-10-12T09:48:41Z",
+"headline": "hermes-webui release exp-v0.52.461",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* Release exp-v0.52.458: refusing another profile's conversation no longer rewrites it first (#8142) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8144\n* fix(sessions): make profile ownership preflig",
+"summary": "## What's Changed\n* Release exp-v0.52.461: a saved-state update just before a restart is no longer lost (#7859) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8167\n* fix(recovery): restore journaled state-saved side ef",
 "tag": "product_update",
-"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.458"
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.461"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:18:43Z",
+"checked_at": "2026-10-12T14:31:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:42Z",
+"checked_at": "2026-10-12T14:31:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T19:18:43Z",
+"checked_at": "2026-10-12T14:31:16Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -99,7 +99,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:35:04Z",
+"checked_at": "2026-10-12T14:49:05Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -107,19 +107,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-30T21:50:12Z",
-"github_forks": 2706,
+"github_forks": 2713,
 "github_language": "Python",
-"github_open_issues": 934,
-"github_pushed_at": "2026-10-11T06:00:46Z",
-"github_stars": 18860,
+"github_open_issues": 938,
+"github_pushed_at": "2026-10-12T11:50:30Z",
+"github_stars": 18874,
 "github_topic": "ai-agents",
 "homepage": "https://get-hermes.ai/setup"
 },
 "slug": "nesquena-hermes-webui",
 "sources": [
 {
-"payload_hash": "e5dfb00a509707319edb3776ae36dcf39dba80b19e17c72a227cce8c0ad80eea",
-"retrieved_at": "2026-10-11T19:10:14Z",
+"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
+"retrieved_at": "2026-10-12T14:21:36Z",
 "system": "github",
 "url": "https://github.com/nesquena/hermes-webui"
 }

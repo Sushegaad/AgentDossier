@@ -15,16 +15,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-11)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-12)",
 "evidence_url": "https://centralcity.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "026f064a379f21473c600dfeeecee9175ca951e0b0fa5815b71ecd8c877a4bac",
+"next_check": "2026-10-19",
+"payload_hash": "38585f022b738ac8e1ccb41278769118889fd223660953f649721e95668e8386",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:25:18Z",
+"retrieved_at": "2026-10-12T14:38:40Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -41,16 +41,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-10-11)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-12)",
 "evidence_url": "https://centralcity.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-18",
-"payload_hash": "b999f2499bcb72c69610d07e33605e50ade3d1ef47119f2903d48c4444608efe",
+"next_check": "2026-10-19",
+"payload_hash": "3d171db97b4e5291166bd49fd53e06bee675e8818e4cfa1f84ee60b4fe5607de",
 "period_end": null,
-"retrieved_at": "2026-10-11T19:25:18Z",
+"retrieved_at": "2026-10-12T14:38:40Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -68,7 +68,7 @@
 "external_ids": {
 "ard": "urn:air:centralcity.ai:mcp:central-city"
 },
-"first_seen": "2026-10-11T19:18:02Z",
+"first_seen": "2026-10-12T14:30:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -90,7 +90,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:18:02Z",
+"last_seen": "2026-10-12T14:30:55Z",
 "license": null,
 "name": "central-city",
 "news": [],
@@ -125,7 +125,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:37:12Z",
+"checked_at": "2026-10-12T14:51:40Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -135,7 +135,7 @@
 "sources": [
 {
 "payload_hash": "97cff763a651f0aa0016eb5411d20c6de83b39250b5a13a40b8d032542b73e0e",
-"retrieved_at": "2026-10-11T19:18:02Z",
+"retrieved_at": "2026-10-12T14:30:55Z",
 "system": "ard",
 "url": "https://centralcity.ai/.well-known/ai-catalog.json"
 }

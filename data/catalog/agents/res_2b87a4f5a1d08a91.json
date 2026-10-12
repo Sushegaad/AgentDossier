@@ -72,7 +72,7 @@
 "ard": "urn:air:airshelf:mcp:generic-catalog",
 "mcp_registry": "ai.airshelf/catalog"
 },
-"first_seen": "2026-10-11T19:09:18Z",
+"first_seen": "2026-10-12T14:20:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:19:24Z",
+"last_seen": "2026-10-12T14:31:56Z",
 "license": null,
 "merged_ids": [
 "res_f793879ff61c9869"
@@ -104,12 +104,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:19:09Z",
+"checked_at": "2026-10-12T14:31:48Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:19:08Z",
+"checked_at": "2026-10-12T14:31:47Z",
 "entries": 1,
 "parser_version": "ard-0.91",
 "sources": [
@@ -136,7 +136,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:30:46Z",
+"checked_at": "2026-10-12T14:44:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -153,14 +153,14 @@
 "slug": "airshelf-ai-airshelf-catalog",
 "sources": [
 {
-"payload_hash": "d991c3aec3eab6427ebf70ba4dfd6b3cf7cd1434c81a2caaae671066cb3dce20",
-"retrieved_at": "2026-10-11T19:09:18Z",
+"payload_hash": "0e08d5f96cd7c36df84b839267cd735c44122d414ae86fffd593ed9ed2a6d5be",
+"retrieved_at": "2026-10-12T14:20:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.airshelf/catalog"
 },
 {
 "payload_hash": "33b75fed4da119c3b0893c5e9c80d1324dad201c3af7a1f2fc844717f5366e17",
-"retrieved_at": "2026-10-11T19:19:24Z",
+"retrieved_at": "2026-10-12T14:31:56Z",
 "system": "ard",
 "url": "https://mcp.airshelf.ai/.well-known/ai-catalog.json"
 }

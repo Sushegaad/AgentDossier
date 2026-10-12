@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.0,
+"adoption": 23.03,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -47,7 +47,7 @@
 },
 "data": {
 "components": {
-"adoption": 23.0,
+"adoption": 23.03,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -70,7 +70,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.0,
+"adoption": 23.03,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -84,7 +84,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 67.9,
+"score": 68.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -95,7 +95,7 @@
 "external_ids": {
 "github": "genspark-ai/genoffice"
 },
-"first_seen": "2026-10-11T19:12:42Z",
+"first_seen": "2026-10-12T14:24:19Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -124,7 +124,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:12:42Z",
+"last_seen": "2026-10-12T14:24:19Z",
 "license": "Apache-2.0",
 "name": "genoffice",
 "news": [
@@ -154,17 +154,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:18:42Z",
+"checked_at": "2026-10-12T14:31:14Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:41Z",
+"checked_at": "2026-10-12T14:31:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T19:18:42Z",
+"checked_at": "2026-10-12T14:31:14Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -174,7 +174,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-11T19:35:56Z",
+"checked_at": "2026-10-12T14:50:09Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-07-31T09:40:58Z",
-"github_forks": 1186,
+"github_forks": 1203,
 "github_language": "TypeScript",
-"github_open_issues": 69,
-"github_pushed_at": "2026-10-11T15:52:02Z",
-"github_stars": 9302,
+"github_open_issues": 53,
+"github_pushed_at": "2026-10-12T13:37:00Z",
+"github_stars": 9412,
 "github_topic": "ai-agent",
 "homepage": "https://genoffice.ai/"
 },
 "slug": "genspark-ai-genoffice",
 "sources": [
 {
-"payload_hash": "05658e203bfc1aa415c4191d0e3e645f769c67f01d2388fdd49f710f23bb2381",
-"retrieved_at": "2026-10-11T19:12:42Z",
+"payload_hash": "2b33965400f55befc71206869806920cfaca673ee02d4a4bd73d06ad2494bb5e",
+"retrieved_at": "2026-10-12T14:24:19Z",
 "system": "github",
 "url": "https://github.com/genspark-ai/genoffice"
 }

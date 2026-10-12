@@ -38,7 +38,7 @@
 "external_ids": {
 "github": "agno-agi/agno"
 },
-"first_seen": "2026-10-11T19:09:17Z",
+"first_seen": "2026-10-12T14:20:02Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -60,13 +60,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:10:14Z",
+"last_seen": "2026-10-12T14:21:36Z",
 "license": "MPL-2.0",
 "merged_ids": [
 "res_55baacd5bb4179bd"
 ],
 "name": "Agno",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-12T11:22:21Z",
+"headline": "agno release v3.1.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# Changelog\r\n\r\n## New Features:\r\n\r\n- **Durable External Agent Sessions**: `ClaudeAgent` sessions now resume on any replica. The Claude SDK session id is stored on the Agno session (#10903), and with a database that supports transcript stora",
+"tag": "product_update",
+"url": "https://github.com/agno-agi/agno/releases/tag/v3.1.3"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-08T19:52:42Z",
@@ -77,33 +88,22 @@
 "summary": "# Changelog\r\n\r\n## New Features:\r\n\r\n- **Conversation Compaction**: `Agent(compaction=True)` keeps long sessions inside the context window by folding older turns into a summary. Stored messages are never rewritten: a `CompactionRecord` in the",
 "tag": "product_update",
 "url": "https://github.com/agno-agi/agno/releases/tag/v3.1.2"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-02T12:38:20Z",
-"headline": "agno release v3.1.1",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "# Changelog\r\n\r\n## New Features\r\n\r\n- Live progress & cancellation for page sync: `Knowledge.stream_sync_pages()` / `astream_sync_pages()` yield typed `PageSyncProgress` snapshots plus one terminal `SyncReport`, and `sync_pages` / `async_sync",
-"tag": "product_update",
-"url": "https://github.com/agno-agi/agno/releases/tag/v3.1.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:18:23Z",
+"checked_at": "2026-10-12T14:30:49Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:22Z",
+"checked_at": "2026-10-12T14:30:48Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T19:18:23Z",
+"checked_at": "2026-10-12T14:30:50Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -127,11 +127,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-05-04T15:23:02Z",
-"github_forks": 6116,
+"github_forks": 6121,
 "github_language": "Python",
-"github_open_issues": 1874,
-"github_pushed_at": "2026-10-11T18:37:14Z",
-"github_stars": 42668,
+"github_open_issues": 1887,
+"github_pushed_at": "2026-10-12T12:57:07Z",
+"github_stars": 42685,
 "github_topic": "ai-agents",
 "homepage": "https://docs.agno.com",
 "observed_popularity": "~40k",
@@ -147,13 +147,13 @@
 "sources": [
 {
 "payload_hash": "f534faf6baf0dc11fae764e01c1782b1b0f5037827eee3a99dd3b47b11dc8bc9",
-"retrieved_at": "2026-10-11T19:09:17Z",
+"retrieved_at": "2026-10-12T14:20:02Z",
 "system": "seed_xlsx",
 "url": "https://github.com/agno-agi/agno"
 },
 {
-"payload_hash": "e5dfb00a509707319edb3776ae36dcf39dba80b19e17c72a227cce8c0ad80eea",
-"retrieved_at": "2026-10-11T19:10:14Z",
+"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
+"retrieved_at": "2026-10-12T14:21:36Z",
 "system": "github",
 "url": "https://github.com/agno-agi/agno"
 }

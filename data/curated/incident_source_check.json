@@ -1,13 +1,13 @@
 {
   "version": "incident-source-check-1.0",
-  "checked_on": "2026-10-11",
+  "checked_on": "2026-10-12",
   "incidents_checked": 13,
   "sources_checked": 18,
   "summary": {
-    "ok": 15,
+    "ok": 13,
     "moved": 0,
     "gone": 0,
-    "unverified": 3,
+    "unverified": 5,
     "error": 0
   },
   "needs_attention": [],
@@ -59,8 +59,7 @@
       {
         "url": "https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf",
         "status": "ok",
-        "http": 200,
-        "final_url": "https://www-cdn.anthropic.com/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf"
+        "http": 200
       }
     ],
     "TR-2026-008": [
@@ -83,8 +82,9 @@
       },
       {
         "url": "https://www.eweek.com/news/replit-ai-coding-assistant-failure/",
-        "status": "ok",
-        "http": 200
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
       }
     ],
     "TR-2026-010": [
@@ -102,8 +102,9 @@
     "TR-2026-011": [
       {
         "url": "https://www.securityweek.com/several-vulnerabilities-patched-in-ai-code-editor-cursor/",
-        "status": "ok",
-        "http": 200
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
       },
       {
         "url": "https://www.scworld.com/news/cursor-flaw-risks-rce-from-prompt-injections-on-mcp-server-researchers-say",

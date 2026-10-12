@@ -1,14 +1,14 @@
 {
- "built_at": "2026-10-11T19:37:57Z",
+ "built_at": "2026-10-12T14:52:35Z",
  "snapshot_date": "2026-09-25",
  "generator": "agentdossier 1.0.0",
  "score_version": "sar-score-2.0",
- "resources": 802,
+ "resources": 801,
  "by_source": {
   "ard": 132,
   "github": 256,
   "huggingface": 18,
-  "mcp_registry": 268,
+  "mcp_registry": 267,
   "seed_xlsx": 158
  },
  "by_type": {
@@ -17,28 +17,28 @@
   "api": 10,
   "framework": 55,
   "marketplace": 4,
-  "mcp_server": 346,
+  "mcp_server": 344,
   "platform": 17,
-  "skill": 60,
+  "skill": 61,
   "tool": 2
  },
  "protocols": {
   "a2a": {
    "unknown": 216,
-   "not_found": 532,
+   "not_found": 530,
    "verified": 33,
-   "invalid": 14,
+   "invalid": 15,
    "claimed": 7
   },
   "mcp": {
-   "claimed": 432,
+   "claimed": 431,
    "not_found": 230,
    "invalid": 12,
    "unknown": 128
   },
   "ard": {
    "unknown": 90,
-   "not_found": 555,
+   "not_found": 554,
    "verified": 143,
    "invalid": 14
   }
@@ -46,7 +46,7 @@
  "domains": {
   "business": {
    "ranked": 100,
-   "discovered": 156
+   "discovered": 157
   },
   "finance": {
    "ranked": 100,
@@ -58,11 +58,11 @@
   },
   "regulatory": {
    "ranked": 100,
-   "discovered": 23
+   "discovered": 24
   },
   "technology": {
    "ranked": 100,
-   "discovered": 566
+   "discovered": 565
   },
   "cybersecurity": {
    "ranked": 100,
@@ -70,7 +70,7 @@
   },
   "sales": {
    "ranked": 100,
-   "discovered": 49
+   "discovered": 48
   },
   "legal": {
    "ranked": 100,
@@ -78,7 +78,7 @@
   },
   "data": {
    "ranked": 100,
-   "discovered": 152
+   "discovered": 151
   },
   "supply_chain": {
    "ranked": 100,
@@ -95,9 +95,9 @@
  },
  "identity_tiers": {
   "T1": 39,
-  "T2": 411,
-  "T3": 290,
-  "T4": 61,
+  "T2": 410,
+  "T3": 291,
+  "T4": 60,
   "T5": 1
  },
  "reports": {
@@ -114,49 +114,51 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:09:17Z",
-   "finished": "2026-10-11T19:09:17Z"
+   "started": "2026-10-12T14:20:02Z",
+   "finished": "2026-10-12T14:20:02Z"
   },
   "mcp_registry": {
    "source": "mcp_registry",
-   "fetched": 200,
-   "produced": 19667,
-   "skipped": 333,
-   "errors": 0,
-   "error_samples": [],
-   "started": "2026-10-11T19:09:17Z",
-   "finished": "2026-10-11T19:10:11Z"
+   "fetched": 10,
+   "produced": 890,
+   "skipped": 10,
+   "errors": 1,
+   "error_samples": [
+    "https://registry.modelcontextprotocol.io/v0/servers?limit=100&version=latest&cursor=ai.mangii/manga%3A1.4.0: TimeoutError: The read operation timed out"
+   ],
+   "started": "2026-10-12T14:20:02Z",
+   "finished": "2026-10-12T14:21:31Z"
   },
   "huggingface": {
    "source": "huggingface",
    "fetched": 5,
-   "produced": 837,
-   "skipped": 804,
+   "produced": 840,
+   "skipped": 801,
    "errors": 1,
    "error_samples": [
     "https://huggingface.co/api/spaces?search=agentic&sort=likes&direction=-1&limit=500&full=true: response too large"
    ],
-   "started": "2026-10-11T19:10:11Z",
-   "finished": "2026-10-11T19:10:12Z"
+   "started": "2026-10-12T14:21:31Z",
+   "finished": "2026-10-12T14:21:33Z"
   },
   "github": {
    "source": "github",
    "fetched": 103,
-   "produced": 8742,
+   "produced": 8762,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:10:12Z",
-   "finished": "2026-10-11T19:16:20Z"
+   "started": "2026-10-12T14:21:33Z",
+   "finished": "2026-10-12T14:28:26Z"
   },
   "hygiene": {
    "source": "hygiene",
    "input": 915,
    "kept": 770,
    "dropped": {
-    "no description, license or homepage": 19,
-    "name marks it as a demo, sample, test or deprecated project": 15,
-    "no activity": 40,
+    "no description, license or homepage": 18,
+    "name marks it as a demo, sample, test or deprecated project": 14,
+    "no activity": 42,
     "published by a hackathon, contest or course account": 71
    }
   },
@@ -174,18 +176,18 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:16:20Z",
-   "finished": "2026-10-11T19:16:37Z"
+   "started": "2026-10-12T14:28:27Z",
+   "finished": "2026-10-12T14:28:49Z"
   },
   "ard_web": {
    "source": "ard_web",
-   "fetched": 538,
+   "fetched": 539,
    "produced": 135,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:16:37Z",
-   "finished": "2026-10-11T19:20:03Z"
+   "started": "2026-10-12T14:28:49Z",
+   "finished": "2026-10-12T14:32:59Z"
   },
   "protocol_claims": {
    "source": "protocol_claims",
@@ -199,19 +201,19 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:20:03Z",
-   "finished": "2026-10-11T19:21:40Z",
+   "started": "2026-10-12T14:32:59Z",
+   "finished": "2026-10-12T14:34:37Z",
    "inherited": 52
   },
   "csa_star": {
    "source": "csa_star",
    "fetched": 1,
-   "produced": 76,
+   "produced": 77,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:21:40Z",
-   "finished": "2026-10-11T19:23:35Z"
+   "started": "2026-10-12T14:34:37Z",
+   "finished": "2026-10-12T14:36:33Z"
   },
   "curated": {
    "source": "curated",
@@ -220,49 +222,49 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:23:35Z",
-   "finished": "2026-10-11T19:23:35Z"
+   "started": "2026-10-12T14:36:33Z",
+   "finished": "2026-10-12T14:36:33Z"
   },
   "vendor_claims": {
    "source": "vendor_trust_centers",
-   "fetched": 539,
+   "fetched": 540,
    "produced": 699,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:23:35Z",
-   "finished": "2026-10-11T19:27:33Z"
+   "started": "2026-10-12T14:36:33Z",
+   "finished": "2026-10-12T14:41:18Z"
   },
   "compliance_review_added": {
-   "added": 1
+   "added": 0
   },
   "news": {
    "source": "news",
-   "fetched": 802,
-   "produced": 451,
+   "fetched": 801,
+   "produced": 453,
    "skipped": 0,
    "errors": 1,
    "error_samples": [
     "gdelt: GDELT unavailable (HTTP 429); skipped for the rest of the run"
    ],
-   "started": "2026-10-11T19:27:34Z",
-   "finished": "2026-10-11T19:37:57Z"
+   "started": "2026-10-12T14:41:18Z",
+   "finished": "2026-10-12T14:52:34Z"
   },
   "nvd": {
    "source": "nvd",
-   "fetched": 647,
-   "produced": 647,
+   "fetched": 645,
+   "produced": 645,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-11T19:27:34Z",
-   "finished": "2026-10-11T19:37:57Z"
+   "started": "2026-10-12T14:41:18Z",
+   "finished": "2026-10-12T14:52:34Z"
   },
   "self_test_traces": {
    "source": "self_test",
-   "candidates": 194,
-   "appended": 0,
-   "unchanged": 194
+   "candidates": 195,
+   "appended": 2,
+   "unchanged": 193
   },
   "vendor_traces": {
    "source": "vendor_published",
@@ -278,8 +280,8 @@
    "agents_with_traces": 205
   },
   "changelog": {
-   "events": 2,
-   "appended": 2
+   "events": 10,
+   "appended": 10
   }
  }
 }

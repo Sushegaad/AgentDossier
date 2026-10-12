@@ -43,7 +43,7 @@
 "external_ids": {
 "github": "Companion-Inc/feynman"
 },
-"first_seen": "2026-10-11T19:12:42Z",
+"first_seen": "2026-10-12T14:24:19Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,47 +65,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-11T19:12:42Z",
+"last_seen": "2026-10-12T14:24:19Z",
 "license": "MIT",
 "name": "feynman",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-10T04:44:23Z",
-"headline": "feynman release v0.5.34",
+"date": "2026-10-12T09:44:34Z",
+"headline": "feynman release v0.5.38",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## v0.5.34 - 2026-10-09\n\n- **OpenAlex lookups that miss now say why.** Looking up a name or title where OpenAlex expects an ID (for example `openalex_get_work:Attention is all you need` or `author: Geoffrey Hinton`), or an ID that does not",
+"summary": "## v0.5.38 - 2026-10-12\n\n- **`/deepresearch` no longer waits for a \"yes\" after its plan.** About 1 in 5 people who started it never answered the approval question, so the research never ran. It now writes the plan, summarizes it, and contin",
 "tag": "product_update",
-"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.34"
+"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.38"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-09T22:27:04Z",
-"headline": "feynman release v0.5.33",
+"date": "2026-10-12T08:37:50Z",
+"headline": "feynman release v0.5.37",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## v0.5.33 - 2026-10-09\n\n- **pi-web-access 0.38.0.**\n  - Web searches with no API key (Parallel) no longer fail with \"free-tier rate limit\".\n  - On a ChatGPT subscription, OpenAI web search now uses the newer, much cheaper `gpt-6-luna`, so",
+"summary": "## v0.5.37 - 2026-10-12\n\n- **A sign-in that came back without a code says what to do.** When the browser returned to `feynman model login` or `feynman setup` without an authorization code (seen mostly on Windows), Feynman printed only \"Miss",
 "tag": "product_update",
-"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.33"
+"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.37"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-11T19:18:38Z",
+"checked_at": "2026-10-12T14:31:09Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-11T19:18:37Z",
+"checked_at": "2026-10-12T14:31:08Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-11T19:18:38Z",
+"checked_at": "2026-10-12T14:31:10Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -118,17 +118,17 @@
 "github_created_at": "2026-03-19T18:53:05Z",
 "github_forks": 1097,
 "github_language": "TypeScript",
-"github_open_issues": 1,
-"github_pushed_at": "2026-10-10T04:44:23Z",
-"github_stars": 9933,
+"github_open_issues": 0,
+"github_pushed_at": "2026-10-12T09:44:34Z",
+"github_stars": 9945,
 "github_topic": "ai-agent",
 "homepage": "https://feynman.is"
 },
 "slug": "companion-inc-feynman",
 "sources": [
 {
-"payload_hash": "05658e203bfc1aa415c4191d0e3e645f769c67f01d2388fdd49f710f23bb2381",
-"retrieved_at": "2026-10-11T19:12:42Z",
+"payload_hash": "2b33965400f55befc71206869806920cfaca673ee02d4a4bd73d06ad2494bb5e",
+"retrieved_at": "2026-10-12T14:24:19Z",
 "system": "github",
 "url": "https://github.com/Companion-Inc/feynman"
 }
