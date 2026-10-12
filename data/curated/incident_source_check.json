@@ -1,0 +1,136 @@
+{
+  "version": "incident-source-check-1.0",
+  "checked_on": "2026-10-11",
+  "incidents_checked": 13,
+  "sources_checked": 18,
+  "summary": {
+    "ok": 15,
+    "moved": 0,
+    "gone": 0,
+    "unverified": 3,
+    "error": 0
+  },
+  "needs_attention": [],
+  "incidents": {
+    "TR-2026-001": [
+      {
+        "url": "https://thehackernews.com/2025/09/salesforce-patches-critical-forcedleak.html",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-002": [
+      {
+        "url": "https://darkreading.com/application-security/researchers-detail-zero-click-copilot-exploit-echoleak",
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
+      }
+    ],
+    "TR-2026-003": [
+      {
+        "url": "https://legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-004": [
+      {
+        "url": "https://tracebit.com/blog/code-exec-deception-gemini-ai-cli-hijack",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-005": [
+      {
+        "url": "https://www.zenity.io/research/agentflayer-vulnerabilities",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-006": [
+      {
+        "url": "https://bleepingcomputer.com/news/security/amazon-ai-coding-agent-hacked-to-inject-data-wiping-commands",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-007": [
+      {
+        "url": "https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf",
+        "status": "ok",
+        "http": 200,
+        "final_url": "https://www-cdn.anthropic.com/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf"
+      }
+    ],
+    "TR-2026-008": [
+      {
+        "url": "https://www.wiz.io/blog/s1ngularity-supply-chain-attack",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.okta.com/blog/threat-intelligence/the-s1ngularity-attack--when-attackers-prompt-your-ai-agents-to/",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-009": [
+      {
+        "url": "https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.eweek.com/news/replit-ai-coding-assistant-failure/",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-010": [
+      {
+        "url": "https://thehackernews.com/2025/09/shadowleak-zero-click-flaw-leaks-gmail.html",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.radware.com/blog/threat-intelligence/shadowleak/",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-011": [
+      {
+        "url": "https://www.securityweek.com/several-vulnerabilities-patched-in-ai-code-editor-cursor/",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.scworld.com/news/cursor-flaw-risks-rce-from-prompt-injections-on-mcp-server-researchers-say",
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
+      }
+    ],
+    "TR-2026-012": [
+      {
+        "url": "https://invariantlabs.ai/blog/mcp-github-vulnerability",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-013": [
+      {
+        "url": "https://the-decoder.com/attackers-can-hijack-google-gemini-with-a-simple-prompt-hidden-in-a-calendar-invite/",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.techrepublic.com/article/news-google-gemini-indirect-prompt-injection-attack/",
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
+      }
+    ]
+  }
+}

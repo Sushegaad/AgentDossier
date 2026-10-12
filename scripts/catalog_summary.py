@@ -59,3 +59,22 @@ if cands.exists():
         )
     if len(fresh) > 15:
         print(f"- … and {len(fresh) - 15} more in `data/curated/incident_candidates.yaml`")
+
+# source re-check: which incident links still answer
+check = Path("data/curated/incident_source_check.json")
+if check.exists():
+    rdoc = json.loads(check.read_text())
+    sm = rdoc.get("summary", {})
+    print(
+        f"\n### Incident sources re-checked ({rdoc.get('checked_on')})\n\n"
+        f"{rdoc.get('sources_checked', 0)} links across {rdoc.get('incidents_checked', 0)} incidents — "
+        f"ok {sm.get('ok', 0)}, moved {sm.get('moved', 0)}, gone {sm.get('gone', 0)}, "
+        f"unverified (bot wall) {sm.get('unverified', 0)}, error {sm.get('error', 0)}."
+    )
+    for iid in rdoc.get("needs_attention") or []:
+        for line in rdoc["incidents"].get(iid, []):
+            if line["status"] in ("gone", "moved", "error"):
+                where = f" → {line['final_url']}" if line.get("final_url") else ""
+                print(f"- [ ] {iid}: **{line['status']}** (HTTP {line['http']}) {line['url']}{where}")
+    if not rdoc.get("needs_attention"):
+        print("\nNothing needs attention.")

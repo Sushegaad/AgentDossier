@@ -1,7 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
 import { loadIndex } from "../../../lib/catalog";
-import { AI_ROLE_WORD, TACTIC_LABEL, incidentSlug, loadIncidents } from "../../../lib/incidents";
+import { AI_ROLE_WORD, SOURCE_STATUS_WORD, TACTIC_LABEL, incidentSlug, loadIncidents, loadSourceCheck, sourceStatus } from "../../../lib/incidents";
 
 export function getStaticPaths() {
   return (loadIncidents()?.incidents ?? []).map((inc) => ({ params: { id: incidentSlug(inc.id) }, props: { inc } }));
@@ -12,6 +12,11 @@ const records = loadIndex()?.records ?? [];
 const bySlug = new Map(records.map((r) => [r.slug, r]));
 const related = (inc.related_agents ?? []).map((s) => bySlug.get(s)).filter((r): r is NonNullable<typeof r> => !!r);
 const issueUrl = `https://github.com/Sushegaad/AgentDossier/issues/new?title=${encodeURIComponent(`Correction: ${inc.id} ${inc.title}`)}`;
+const check = loadSourceCheck();
+const flagged = (s: { url: string }) => {
+  const line = sourceStatus(inc.id, s.url);
+  return line && line.status !== "ok" ? line : null;
+};
 ---
 
 <Base title={inc.title} description={inc.summary}>
@@ -58,10 +63,21 @@ const issueUrl = `https://github.com/Sushegaad/AgentDossier/issues/new?title=${e
         )}
         <h2>Sources · {inc.sources.length}</h2>
         <ul>
-          {inc.sources.map((s) => (
-            <li><a href={s.url} rel="noopener">{s.title}</a>{s.outlet ? ` — ${s.outlet}` : ""}{s.date ? `, ${s.date}` : ""}</li>
-          ))}
+          {inc.sources.map((s) => {
+            const f = flagged(s);
+            return (
+              <li>
+                <a href={s.url} rel="noopener">{s.title}</a>{s.outlet ? ` — ${s.outlet}` : ""}{s.date ? `, ${s.date}` : ""}
+                {f && (
+                  <span class="tiny" style={`display: block; color: ${f.status === "unverified" ? "var(--muted)" : "var(--danger)"}`}>
+                    {f.status === "unverified" ? "○" : "⚠"} On {check?.checked_on}, this link {SOURCE_STATUS_WORD[f.status]}{f.final_url ? <> — now at <a href={f.final_url} rel="noopener">{f.final_url}</a></> : ""}.
+                  </span>
+                )}
+              </li>
+            );
+          })}
         </ul>
+        {check && <p class="tiny muted">Links re-checked {check.checked_on} by the weekly refresh. A link that moved or stopped answering is flagged above; it is not a change to the record.</p>}
       </div>
 
       <aside>

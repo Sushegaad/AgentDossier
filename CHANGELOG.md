@@ -20,6 +20,16 @@ listed in `docs/methodology.md`.
   finds; `/traces/` shows the count awaiting review. First run over today's feeds: 6,643 items →
   60 candidates. Feed failures are reported, never fatal; `--offline <dir>` runs on saved feeds.
 
+### Added — weekly source re-check
+- **`agentdossier incidents recheck`** runs in the weekly refresh: re-fetches every published
+  incident's source links (HEAD, then a capped GET) and records `ok` / `moved` / `gone` /
+  `unverified` / `error` per link in `data/curated/incident_source_check.json`. Same-site redirects
+  (CDNs) stay `ok`; a 200 from a bot-protection challenge page counts as `unverified`, not `ok`;
+  only a cross-site redirect is `moved`. The refresh PR lists links needing attention, `/traces/`
+  shows the re-check date and flags affected rows, and each incident page notes the status beside
+  the link. Never edits an incident; never sets `checked_on`. First run: 18 links, 15 answer, 3
+  bot-walled, 0 gone — after it caught a truncated Okta URL on TR-2026-008, now fixed.
+
 ### Added — incident registry
 - **`/traces/` is now an incident registry** — one row per real, public event where an AI agent
   attacked or defended a system (`data/curated/incidents.yaml`, `schema/incident_record.schema.json`).
