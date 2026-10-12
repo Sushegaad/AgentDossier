@@ -489,3 +489,401 @@ incidents:
       - { title: "Google Gemini vulnerable to calendar-based hack", url: "https://www.techrepublic.com/article/news-google-gemini-indirect-prompt-injection-attack/", outlet: "TechRepublic", date: "2025-08" }
     reviewer: null
     checked_on: null
+
+  - id: TR-2026-014
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "Autonomous AI Intrusions Are Here: Lessons from the Hugging Face Compromise"
+    date: 2026-07-19
+    window: null
+    ai_role: attacker
+    category: incident
+    summary: >-
+      TODO (as reported). Candidate cand-620eba12f8 from Embrace The Red: Hugging Face disclosed an intrusion that, according to them, was driven end to end by an autonomous AI agent system. Along similar lines, Sysdig recently published a blog on JADEPUFFER , which it assesses to be an agent-driven ransomware capable of adapting in real time. The rep…
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-07-19", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "Autonomous AI Intrusions Are Here: Lessons from the Hugging Face Compromise", url: "https://embracethered.com/blog/posts/2026/ai-intrusion-are-now-real/", outlet: "Embrace The Red", date: "2026-07-19" }
+      - { title: "Security incident disclosure — July 2026", url: "https://huggingface.co/blog/security-incident-july-2026", outlet: "Hugging Face", date: "2026-07-16" }
+      - { title: "Hugging Face model evaluation security incident", url: "https://openai.com/blog/hugging-face-model-evaluation-security-incident", outlet: "OpenAI", date: "2026-07-21" }
+      - { title: "Hugging Face breach: autonomous AI agent system accessed internal datasets, credentials", url: "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/", outlet: "BleepingComputer", date: "2026-07-20" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-015
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack"
+    date: 2026-09-28
+    window: null
+    ai_role: attacker
+    category: incident
+    summary: >-
+      TODO (as reported). Candidate cand-a51aedcbc1 from Dark Reading: The "agentic threat actor" may have used exposed credentials to access resources and delete cloud-based storage, applications, and databases.
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-09-28", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack", url: "https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack", outlet: "Dark Reading", date: "2026-09-28" }
+      - { title: "Storm-3168: agentic-driven cloud attacks using compromised service principals", url: "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/", outlet: "Microsoft Security", date: "2026-09-25" }
+      - { title: "JADEPUFFER: agentic ransomware for automated database extortion", url: "https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion", outlet: "Sysdig", date: "2026-07" }
+      - { title: "This AI agent autonomously hacked a network, adapted on the fly, and demanded a ransom", url: "https://www.csoonline.com/article/4193195/this-ai-agent-autonomously-hacked-a-network-adapted-on-the-fly-and-demanded-a-ransom.html", outlet: "CSO Online", date: "2026-07-06" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-016
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation"
+    date: 2026-09-02
+    window: null
+    ai_role: attacker
+    category: incident
+    summary: >-
+      TODO (as reported). Candidate cand-4795e6e321 from Palo Alto Networks Unit 42: Using autonomous AI agents, an attacker breached an enterprise network in a matter of hours. Understand how to address and defend against agentic attacks. The post An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation appeared first on Unit 42 .
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-09-02", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation", url: "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/", outlet: "Palo Alto Networks Unit 42", date: "2026-09-02" }
+      - { title: "AI agents helped breach an enterprise network in under 10 hours", url: "https://www.esecurityplanet.com/cybersecurity/news-ai-agents-enterprise-network-breach-10-hours/", outlet: "eSecurity Planet", date: "2026-09" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-017
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "Wikimedia Says OpenAI Agents Tried to Compromise Etherpad and Use Wiki Tools as Proxies"
+    date: 2026-10-06
+    window: null
+    ai_role: attacker
+    category: incident
+    summary: >-
+      TODO (as reported). Candidate cand-552142e8ce from The Hacker News: The Wikimedia Foundation, which hosts Wikipedia, has confirmed that it has discovered activity by rogue OpenAI agents on its platforms, including unsuccessful efforts to compromise Etherpad, a public note-taking tool, and edit Wikipedia pages. "The unauthorized bot activities in…
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-10-06", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "Wikimedia Says OpenAI Agents Tried to Compromise Etherpad and Use Wiki Tools as Proxies", url: "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html", outlet: "The Hacker News", date: "2026-10-06" }
+      - { title: "OpenAI rogue agent activities found on Wikimedia projects", url: "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/", outlet: "Wikimedia Foundation", date: "2026-10-05" }
+      - { title: "Rogue OpenAI agents behind potentially malicious Wikipedia edits", url: "https://www.bleepingcomputer.com/news/security/rogue-openai-agents-behind-potentially-malicious-wikipedia-edits", outlet: "BleepingComputer", date: "2026-10-06" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-018
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws"
+    date: 2026-10-10
+    window: null
+    ai_role: attacker
+    category: incident
+    summary: >-
+      TODO (as reported). Candidate cand-4f0f6d54a6 from The Hacker News: Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites. The AI company said it identified f…
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-10-10", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws", url: "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html", outlet: "The Hacker News", date: "2026-10-10" }
+      - { title: "Investigating incidents in our cybersecurity evaluations", url: "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals", outlet: "Anthropic", date: "2026-07-30" }
+      - { title: "Anthropic says Claude models accessed real systems in tests", url: "https://securitybrief.news/story/anthropic-says-claude-models-accessed-real-systems-in-tests", outlet: "SecurityBrief", date: "2026-08-03" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-019
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "ARTEX AI, Claude agents used in cyberattacks on South Korean banks"
+    date: 2026-10-10
+    window: null
+    ai_role: attacker
+    category: incident
+    summary: >-
+      TODO (as reported). Candidate cand-63378e89b8 from BleepingComputer: The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese hacker using the ARTEX AI penetration testing suite and Claude agents. [...]
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-10-10", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "ARTEX AI, Claude agents used in cyberattacks on South Korean banks", url: "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/", outlet: "BleepingComputer", date: "2026-10-10" }
+      - { title: "CrowdStrike: how a cyber attacker hit South Korean banks", url: "https://cybermagazine.com/news/crowdstrike-on-south-korea-bank-ai-cyber-attack", outlet: "Cyber Magazine", date: "2026-10-08" }
+      - { title: "ARTEX AI pentesting tool used in data theft attacks on South Korean financial firms", url: "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html", outlet: "The Hacker News", date: "2026-10-08" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-020
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "MCP Auto-Execution: From Git Clone to Cloud Compromise in Amazon Q VS Code Extension"
+    date: 2026-06-26
+    window: null
+    ai_role: target  # TODO: attacker | defender | target
+    category: red_team  # TODO: red_team | injection_eval | incident | ctf
+    summary: >-
+      TODO (as reported). Candidate cand-8e7f813921 from Wiz Research: By automatically loading MCP servers from workspace files, Amazon Q enabled attackers to execute code and access sensitive cloud environments.
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-06-26", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "MCP Auto-Execution: From Git Clone to Cloud Compromise in Amazon Q VS Code Extension", url: "https://www.wiz.io/blog/amazon-q-vulnerability", outlet: "Wiz Research", date: "2026-06-26" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-021
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "Wiz Red Agent Finds Its Way Into Snowflake’s Internal Jira Through a Flaw in a GitHub Copilot–Assisted PR"
+    date: 2026-08-17
+    window: null
+    ai_role: attacker
+    category: red_team
+    summary: >-
+      TODO (as reported). Candidate cand-59e390c515 from Wiz Research: Wiz Red Agent independently discovered and exploited a GitHub Actions injection missed by GitHub’s Advanced Security, validated access to sensitive data in Snowflake’s internal Jira, and assessed the blast radius—all without human intervention, five days after the flaw became li…
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-08-17", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "Wiz Red Agent Finds Its Way Into Snowflake’s Internal Jira Through a Flaw in a GitHub Copilot–Assisted PR", url: "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug", outlet: "Wiz Research", date: "2026-08-17" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-022
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "Google's PageBreak AI Agent Finds 500 Flaws in Its Web Apps"
+    date: 2026-10-06
+    window: null
+    ai_role: defender
+    category: red_team
+    summary: >-
+      TODO (as reported). Candidate cand-65a4731596 from Dark Reading: The situation illustrates a trend toward using AI and deterministic validation to identify flaws and exploitability, and provide a risk assessment.
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-10-06", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "Google's PageBreak AI Agent Finds 500 Flaws in Its Web Apps", url: "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps", outlet: "Dark Reading", date: "2026-10-06" }
+      - { title: "Agentic hacks, real proofs: inside Google's PageBreak project", url: "https://blog.google/security/agentic-hacks-real-proofs-inside-googles-pagebreak-project/", outlet: "Google", date: "2026-09" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-023
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "'AgentCorruption' Puts AWS Environments at Risk With Single Prompt"
+    date: 2026-10-08
+    window: null
+    ai_role: target  # TODO: attacker | defender | target
+    category: red_team  # TODO: red_team | injection_eval | incident | ctf
+    summary: >-
+      TODO (as reported). Candidate cand-f10957e4a6 from Dark Reading: A now-patched vulnerability in AWS Bedrock AgentCore could have allowed an attacker to use one AI chatbot to take over an organization's entire fleet.
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-10-08", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "'AgentCorruption' Puts AWS Environments at Risk With Single Prompt", url: "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt", outlet: "Dark Reading", date: "2026-10-08" }
+      - { title: "One prompt let researchers take over every AWS AgentCore agent in a region", url: "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents", outlet: "The Next Web", date: "2026-10-08" }
+      - { title: "AgentCorruption: how a single prompt collapsed the entire cloud security model", url: "https://labs.zenity.io/post/agentcorruption-how-a-single-prompt-collapsed-the-entire-cloud-security-model", outlet: "Zenity Labs", date: "2026-10-08" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-024
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "How I tricked Claude into leaking your deepest, darkest secrets"
+    date: 2026-07-15
+    window: null
+    ai_role: target  # TODO: attacker | defender | target
+    category: red_team  # TODO: red_team | injection_eval | incident | ctf
+    summary: >-
+      TODO (as reported). Candidate cand-b6d6a0d06c from Simon Willison (prompt injection): How I tricked Claude into leaking your deepest, darkest secrets I've been impressed by the way the Claude web_fetch tool is designed to avoid data exfiltration attacks. Ayush Paul found a hole in that design. To recap: regular Claude chat is at risk of lethal trifecta attacks, b…
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-07-15", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "How I tricked Claude into leaking your deepest, darkest secrets", url: "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/", outlet: "Simon Willison (prompt injection)", date: "2026-07-15" }
+      - { title: "The memory heist", url: "https://www.ayush.digital/blog/the-memory-heist", outlet: "Ayush Paul", date: "2026-07" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-025
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "Breaking Claude Code Opus 5 Auto Mode"
+    date: 2026-08-26
+    window: null
+    ai_role: target  # TODO: attacker | defender | target
+    category: red_team  # TODO: red_team | injection_eval | incident | ctf
+    summary: >-
+      TODO (as reported). Candidate cand-964039d525 from Embrace The Red: In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success rate using a small sample size. This is interesting because a third-party evaluation commissioned by Anthropic showed a 0.…
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-08-26", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "Breaking Claude Code Opus 5 Auto Mode", url: "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/", outlet: "Embrace The Red", date: "2026-08-26" }
+      - { title: "Breaking Claude Code Opus 5 Auto Mode", url: "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/", outlet: "Simon Willison", date: "2026-08-27" }
+      - { title: "Simple website summary request hijacks Claude Code Opus 5 Auto Mode", url: "https://cybersecuritynews.com/claude-code-opus-5-auto-mode-hijacked/", outlet: "Cyber Security News", date: "2026-08-28" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-026
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "Inside 90 days of attacks on AI infrastructure"
+    date: 2026-08-27
+    window: null
+    ai_role: target
+    category: incident
+    summary: >-
+      TODO (as reported). Candidate cand-be680142a6 from Wiz Research: Wiz honeypots uncover active campaigns targeting LiteLLM, MCP servers, and AI frameworks through RCE, blind prompt injection, and memory credential theft.
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-08-27", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "Inside 90 days of attacks on AI infrastructure", url: "https://www.wiz.io/blog/ai-infrastructure-honeypot", outlet: "Wiz Research", date: "2026-08-27" }
+    reviewer: null
+    checked_on: null
+
+  - id: TR-2026-027
+    status: placeholder  # TODO: complete the record, then set to published
+    title: "From SELECT to SYSADMIN with SQL Copilot (CVE-2026-65669)"
+    date: 2026-09-30
+    window: null
+    ai_role: target  # TODO: attacker | defender | target
+    category: red_team  # TODO: red_team | injection_eval | incident | ctf
+    summary: >-
+      TODO (as reported). Candidate cand-ef1100ea09 from Embrace The Red: Two weeks back I presented at BlueHat Asia 2026 about my research on Microsoft’s Copilot in SSMS, the SQL Server Management Studio. This post is a write up about the talk, which covered CVE-2026-65669 , a SQL Server Elevation of Privilege Vulnerability rated critical by Microsof…
+    attacker:
+      description: "TODO"
+    defender:
+      description: "TODO"
+    scale: null
+    impact: null
+    tactics: []  # TODO: MITRE ATT&CK tactic ids, e.g. [TA0001, TA0010]
+    timeline:
+      - { date: "2026-09-30", text: "TODO", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: null
+    sources:
+      - { title: "From SELECT to SYSADMIN with SQL Copilot (CVE-2026-65669)", url: "https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia/", outlet: "Embrace The Red", date: "2026-09-30" }
+      - { title: "CVE-2026-65669 — Microsoft SQL Server elevation of privilege vulnerability", url: "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65669", outlet: "Microsoft Security Response Center", date: "2026" }
+    reviewer: null
+    checked_on: null

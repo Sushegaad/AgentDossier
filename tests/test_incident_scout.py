@@ -171,8 +171,9 @@ def test_promote_appends_a_schema_valid_placeholder_and_dismiss_marks(tmp_path: 
     before = len(yaml.safe_load(incidents.read_text())["incidents"])
     cid = next(c["id"] for c in doc["candidates"] if "MCP" in c["title"])
 
+    expected = sc.next_incident_id(incidents, TODAY.year)  # one past the highest TR-2026-NNN in the file
     new_id = sc.promote(cid, candidates_path=cands, incidents_path=incidents, today=TODAY)
-    assert new_id == "TR-2026-014"  # next after the thirteen shipped rows
+    assert new_id == expected and expected > "TR-2026-013"
     rows = yaml.safe_load(incidents.read_text())["incidents"]
     assert len(rows) == before + 1
     rec = rows[-1]
