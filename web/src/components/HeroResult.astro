@@ -7,7 +7,7 @@
 import { loadResource } from "../lib/catalog";
 import { evidenceGroups, evidenceRows, protocolLines, tierRange } from "../lib/dossier";
 import { loadReferenceSet, referenceFor } from "../lib/reference";
-import { IDENTITY_LABEL, IDENTITY_WORD, badgeLabel, domainLabel } from "../lib/labels";
+import { IDENTITY_LABEL, IDENTITY_WORD, TRACE_KIND_WORD, TRACE_TIER_WORD, badgeLabel, domainLabel } from "../lib/labels";
 import type { HeroPick } from "../lib/search";
 
 interface Props {
@@ -25,7 +25,15 @@ const protos = res ? protocolLines(res).filter((l) => ["verified", "claimed"].in
 const domainEntry = Object.entries(r.domains).sort((a, b) => (a[1].rank ?? 999) - (b[1].rank ?? 999))[0];
 const evidenceTier = res ? tierRange(res) : "T5";
 const ref = referenceFor(r.slug, loadReferenceSet());
-const why = pick.hit.explanation.slice(0, 3).join(" · ");
+// the traces: what this agent did under attack. Best (lowest) tier first, then newest; the home
+// specimen shows the attack/defence traces, not the registry's own endpoint probes.
+const traces = [...(res?.traces ?? [])].sort((a, b) => a.tier - b.tier || b.date.localeCompare(a.date));
+const shown = traces.filter((t) => t.kind !== "self_test").slice(0, 2);
+const inDefence = traces.filter((t) => t.observed?.refused).length;
+const bundleKinds = ["self_test", "injection_eval", "vendor_published"];
+const traceHref = (t: (typeof traces)[number]) => (bundleKinds.includes(t.kind) ? `${base}/traces/bundle/${t.id}/` : t.url);
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const why = [...pick.hit.explanation.slice(0, 3), ...(traces.length ? [`${traces.length === 1 ? "one" : traces.length} public trace${traces.length === 1 ? "" : "s"} on record`] : [])].join(" · ");
 ---
 
 <aside class="hero-result" aria-label="Example result">
@@ -41,6 +49,7 @@ const why = pick.hit.explanation.slice(0, 3).join(" · ");
     <span class="tierbox">Publisher {IDENTITY_WORD[r.trust.identity as 1 | 2 | 3 | 4 | 5]}</span>
     <span class="tierbox">Evidence {evidenceTier}</span>
     {protos.map((l) => <span class="tierbox">{l.key.toUpperCase()} {l.status === "verified" ? "✔" : "○"}</span>)}
+    {traces.length > 0 && <span class="tierbox trace-chip">⚠ {traces.length} trace{traces.length === 1 ? "" : "s"}</span>}
   </div>
   {rows.length > 0 ? (
     <ul class="evidence">
@@ -55,9 +64,37 @@ const why = pick.hit.explanation.slice(0, 3).join(" · ");
     <p class="small muted">No compliance evidence found in the sources checked — shown as unknown, never as non-compliant.</p>
   )}
   {gaps.length > 0 && <p class="small"><span class="muted">Not yet verified:</span> {gaps.join(", ")} — ask the vendor.</p>}
+  <div class="traces">
+    <div class="row" style="justify-content: space-between; align-items: baseline">
+      <b>Traces</b>
+      <span class="tiny muted">{traces.length ? `${traces.length} public · ${inDefence} in defence` : "none public"}</span>
+    </div>
+    {shown.length > 0 ? (
+      <ul class="trace-list">
+        {shown.map((t) => (
+          <li>
+            <span class={`mark ${t.observed?.egress ? "egress" : ""}`} aria-hidden="true">{t.observed?.egress ? "⚠" : "●"}</span>
+            <span>
+              <a href={traceHref(t)} rel="noopener" style="font-weight: 800">{cap(TRACE_KIND_WORD[t.kind] ?? t.kind)}: {t.title}</a>
+              <span class="tiny muted" style="display: block; margin-top: 3px">
+                {t.observed?.egress ? "Data left the environment" : t.observed?.refused ? "Refused the instruction" : cap(t.observed.outcome)}
+                {t.observed?.approval != null && <> · human approval: {t.observed.approval ? "yes" : "no"}</>}
+                {t.vendor_response && <> · vendor response: {t.vendor_response}</>}
+                {" "}· T{t.tier} {TRACE_TIER_WORD[t.tier]} · {t.source}, {t.date}
+              </span>
+            </span>
+          </li>
+        ))}
+      </ul>
+    ) : traces.length > 0 ? (
+      <p class="tiny muted" style="margin: 6px 0 0">Only the registry's own endpoint probes so far — no published attack or defence trace.</p>
+    ) : (
+      <p class="tiny muted" style="margin: 6px 0 0">No public trace found. Nobody has published what this agent does under attack.</p>
+    )}
+  </div>
   {why && <p class="small why"><span class="muted">Why #1:</span> {why}.</p>}
-  <p class="small"><a href={ref ? `${base}/compare/${ref.useCase.id}/` : `${base}/compare/coding-agents-private-repo/`} style="font-weight: 800">See a worked comparison: {ref ? ref.useCase.title : "three ways to let a coding agent into a private repository"} →</a></p>
-  <p class="tiny muted">Live specimen, recomputed on every catalog build · identity {IDENTITY_LABEL[r.trust.identity]?.toLowerCase()}</p>
+  <p class="small"><a href={`${base}/agents/${r.slug}/`} style="font-weight: 800">Open the full dossier, traces first →</a>{ref && <> · <a href={`${base}/compare/${ref.useCase.id}/`}>worked comparison</a></>}</p>
+  <p class="tiny muted">Live specimen, recomputed on every catalog build · identity {IDENTITY_LABEL[r.trust.identity]?.toLowerCase()} · traces from the public record and the registry's own probes, never user-submitted</p>
 </aside>
 
 <style>
@@ -115,5 +152,35 @@ const why = pick.hit.explanation.slice(0, 3).join(" · ");
   .hero-result .why {
     border-top: 1px solid var(--rule);
     padding-top: 10px;
+  }
+  .hero-result .trace-chip {
+    border-color: var(--accent-ink);
+    color: var(--accent-ink);
+  }
+  .hero-result .traces {
+    border-top: 1px solid var(--rule);
+    padding-top: 10px;
+    font-size: 0.875rem;
+  }
+  .hero-result .trace-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .hero-result .trace-list li {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 8px;
+    align-items: baseline;
+  }
+  .hero-result .trace-list .mark {
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .hero-result .trace-list .mark.egress {
+    color: var(--danger);
   }
 </style>

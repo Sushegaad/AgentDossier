@@ -299,6 +299,7 @@ a:focus-visible,
 }
 .brand {
   margin-right: auto;
+  min-width: 0; /* shrink before wrapping, so the nav stays on the right */
   display: flex;
   align-items: center;
   gap: 12px;
@@ -331,6 +332,7 @@ a:focus-visible,
   flex-wrap: wrap;
   align-items: center;
   font-size: 0.925rem;
+  margin-left: auto; /* right-aligned, as in the design */
 }
 .nav a {
   color: var(--ink);
@@ -455,6 +457,46 @@ main {
 }
 .ledger-row b {
   font-weight: 800;
+}
+/* the home-page trace index: one incident per ruled row, the whole row a link */
+.trace-index .ledger-row {
+  grid-template-columns: 110px minmax(0, 1fr) 220px 220px auto;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 12px 0;
+}
+.trace-index .ledger-row:hover {
+  background: var(--bg-2);
+}
+.trace-index .id {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.trace-index .title {
+  font-weight: 800;
+}
+.trace-index .clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.trace-index .role {
+  justify-self: end;
+  white-space: nowrap;
+  font-size: 0.72rem;
+}
+@media (max-width: 900px) {
+  .trace-index .ledger-row {
+    grid-template-columns: 1fr auto;
+  }
+  .trace-index .title {
+    grid-column: 1 / -1;
+  }
+  .trace-index .clamp {
+    grid-column: 1 / -1;
+  }
 }
 .tierbox {
   display: inline-block;

@@ -4,6 +4,7 @@ import HeroResult from "../components/HeroResult.astro";
 import { loadDomains, loadIndex, loadSearchDocs } from "../lib/catalog";
 import { FRAMEWORKS, domainLabel } from "../lib/labels";
 import { Catalog, HERO_QUERIES, heroPick } from "../lib/search";
+import { incidentSlug, loadIncidents } from "../lib/incidents";
 import scoring from "../../../config/scoring.json";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
@@ -19,6 +20,10 @@ const snapshot = index?.snapshot_date ?? "—";
 const asOf = index?.built_at ? index.built_at.slice(0, 10) : "—";
 // the specimen result: the real #1 for an example query, chosen so it carries evidence when the catalog has any
 const pick = index ? heroPick(new Catalog(index.records, loadSearchDocs())) : null;
+// the trace index on the home page: the newest incidents from the registry, every one a real sourced event
+const incidentSet = loadIncidents();
+const recentIncidents = [...(incidentSet?.incidents ?? [])].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
+const ROLE_CHIP: Record<string, string> = { attacker: "agent attacked", defender: "agent defended", target: "agent targeted" };
 const tiers = [
   ["T1", "Registry-matched", "found in a named authoritative registry (FedRAMP Marketplace, CSA STAR)"],
   ["T2", "Marketplace-listed", "stated in a cloud marketplace compliance field"],
@@ -45,7 +50,7 @@ const tiers = [
       </p>
       <form class="searchbox hero-search" role="search" action={`${base}/search/`} method="get">
         <label class="sr-only" for="hero-q">Describe the agent you need</label>
-        <input id="hero-q" name="q" type="search" placeholder="e.g. HIPAA-compliant claims intake agent" autocomplete="off" />
+        <input id="hero-q" name="q" type="search" placeholder="e.g. HIPAA-compliant claims intake agent with no exfiltration traces" autocomplete="off" />
         <button class="btn primary" type="submit">Search</button>
       </form>
       <div class="row examples" aria-label="Example searches">
@@ -53,9 +58,11 @@ const tiers = [
         {HERO_QUERIES.map((q) => (
           <a class="chip hint" href={`${base}/search/?q=${encodeURIComponent(q)}`}>{q}</a>
         ))}
+        <a class="chip must" href={`${base}/traces/`}>Agents with a public attack trace</a>
       </div>
-      <p class="small" style="margin-top: 18px">
-        <a href={`${base}/domains/`}>Or browse a domain Top 100 →</a>
+      <p class="small row" style="margin-top: 18px; gap: 24px; flex-wrap: wrap">
+        <a href={`${base}/domains/`} style="font-weight: 800">Or browse a domain Top 100 →</a>
+        <a href={`${base}/traces/`} style="font-weight: 800">Browse all traces →</a>
       </p>
     </div>
     {pick ? <HeroResult pick={pick} /> : <p class="notice warn">No catalog is bundled with this build.</p>}
@@ -88,6 +95,34 @@ const tiers = [
         ))}
       </div>
     )}
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Every public trace of an agent attacking or defending, in one place</h2>
+      <a class="small" href={`${base}/traces/`} style="font-weight: 800; white-space: nowrap">All traces →</a>
+    </div>
+    <p class="body" style="max-width: 70ch; margin: 0 0 20px">
+      Curated from post-mortems, advisories, researcher disclosures and the press — timeline, tactics, lessons and sources on every one. Defenders can't learn from what they can't see.
+    </p>
+    {recentIncidents.length === 0 ? (
+      <p class="notice warn">No incident registry is bundled with this build.</p>
+    ) : (
+      <div class="ledger trace-index">
+        {recentIncidents.map((inc) => (
+          <a class="ledger-row" href={`${base}/traces/${incidentSlug(inc.id)}/`}>
+            <span class="id">{inc.id}</span>
+            <span class="title">{inc.title}</span>
+            <span class="tiny muted clamp">Attacker: {inc.attacker.description}</span>
+            <span class="tiny muted clamp">Defender: {inc.defender.description}</span>
+            <span class="badge role">{ROLE_CHIP[inc.ai_role] ?? inc.ai_role}</span>
+          </a>
+        ))}
+      </div>
+    )}
+    <p class="tiny muted" style="margin-top: 10px">
+      {incidentSet?.incidents.length ?? 0} incidents in the registry, as reported · not attributions, findings of fault or legal conclusions.
+    </p>
   </section>
 
   <section class="section">
