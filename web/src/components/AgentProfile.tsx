@@ -173,6 +173,57 @@ export default function AgentProfile({
 
       <div className="split" style={{ marginTop: "24px" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
+          <section className="traces" style={{ borderTop: "3px solid var(--accent)", paddingTop: "18px" }}>
+            <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", marginBottom: "12px" }}>
+              <h2 style={{ fontSize: "1.5rem" }}>Traces — under attack, in defence, in incidents</h2>
+              <span className="tiny muted">{traces.length ? `${traces.length} public` : "none public"} · <a href={`${BASE}/traces/`}>what a trace is</a></span>
+            </div>
+            {traces.length === 0 ? (
+              <p className="notice" role="note">
+                <b>No public trace found.</b> Nobody has published what {res.name} does when its inputs carry instructions it should not follow, when a tool asks for credentials, or when a task invites a destructive command. Defenders can't learn from what they can't see: run it in a sandbox before the pilot and keep the transcript, or ask the vendor to publish one.
+              </p>
+            ) : (
+              <div className="ledger">
+                {traces.map((t) => (
+                  <div key={t.id} className="ledger-row" style={{ gridTemplateColumns: "22px 150px 1fr 150px" }}>
+                    <span style={{ fontWeight: 800, color: t.observed?.egress ? "var(--danger)" : t.observed?.refused ? "var(--ok)" : "var(--ink)" }} aria-label={t.observed?.egress ? "data left" : "observed"}>
+                      {t.observed?.egress ? "⚠" : t.kind === "self_test" ? "◎" : "●"}
+                    </span>
+                    <div>
+                      <div style={{ fontWeight: 800 }}>{TRACE_KIND_WORD[t.kind] ?? t.kind}</div>
+                      <div className="tiny muted">T{t.tier} {TRACE_TIER_WORD[t.tier]}{t.scope && t.scope !== "product" ? ` · ${t.scope}-level` : ""}{t.reviewer ? "" : " · unreviewed"}</div>
+                    </div>
+                    <div>
+                      <div>
+                        {["self_test", "injection_eval", "vendor_published"].includes(t.kind) ? (
+                          <a href={`${BASE}/traces/bundle/${t.id}/`}>{t.title}</a>
+                        ) : (
+                          <a href={t.url} rel="noopener">{t.title}</a>
+                        )}
+                      </div>
+                      {t.scenario && <div className="small" style={{ marginTop: "2px" }}>{t.scenario}</div>}
+                      <div className="tiny muted" style={{ marginTop: "4px" }}>
+                        Observed: {t.observed.outcome}
+                        {t.observed.egress != null && <> · egress: {t.observed.egress ? "yes" : "no"}</>}
+                        {t.observed.approval != null && <> · human approval: {t.observed.approval ? "yes" : "no"}</>}
+                        {t.observed.refused != null && <> · refused: {t.observed.refused ? "yes" : "no"}</>}
+                      </div>
+                      {t.vendor_response && <div className="tiny muted">Vendor response: {t.vendor_response}</div>}
+                    </div>
+                    <div className="tiny muted" style={{ textAlign: "right" }}>
+                      {t.source}
+                      <br />
+                      {t.date}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            <p className="tiny muted" style={{ marginTop: "8px" }}>
+              ● third-party or vendor report · ◎ this registry's own probe transcript · ⚠ data left the environment. A trace describes one version on one date; it is evidence of behaviour, never a certification. Rows marked unreviewed have not yet been checked against their source by the maintainer.
+            </p>
+          </section>
+
           <section>
             <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", marginBottom: "12px" }}>
               <h2 style={{ fontSize: "1.5rem" }}>Compliance evidence</h2>
@@ -234,57 +285,6 @@ export default function AgentProfile({
                 </div>
               ))}
             </div>
-          </section>
-
-          <section className="traces">
-            <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", marginBottom: "12px" }}>
-              <h2 style={{ fontSize: "1.5rem" }}>Traces — under attack, in defence, in incidents</h2>
-              <span className="tiny muted">{traces.length ? `${traces.length} public` : "none public"} · <a href={`${BASE}/traces/`}>what a trace is</a></span>
-            </div>
-            {traces.length === 0 ? (
-              <p className="notice" role="note">
-                <b>No public trace found.</b> Nobody has published what {res.name} does when its inputs carry instructions it should not follow, when a tool asks for credentials, or when a task invites a destructive command. Defenders can't learn from what they can't see: run it in a sandbox before the pilot and keep the transcript, or ask the vendor to publish one.
-              </p>
-            ) : (
-              <div className="ledger">
-                {traces.map((t) => (
-                  <div key={t.id} className="ledger-row" style={{ gridTemplateColumns: "22px 150px 1fr 150px" }}>
-                    <span style={{ fontWeight: 800, color: t.observed?.egress ? "var(--danger)" : t.observed?.refused ? "var(--ok)" : "var(--ink)" }} aria-label={t.observed?.egress ? "data left" : "observed"}>
-                      {t.observed?.egress ? "⚠" : t.kind === "self_test" ? "◎" : "●"}
-                    </span>
-                    <div>
-                      <div style={{ fontWeight: 800 }}>{TRACE_KIND_WORD[t.kind] ?? t.kind}</div>
-                      <div className="tiny muted">T{t.tier} {TRACE_TIER_WORD[t.tier]}{t.scope && t.scope !== "product" ? ` · ${t.scope}-level` : ""}{t.reviewer ? "" : " · unreviewed"}</div>
-                    </div>
-                    <div>
-                      <div>
-                        {["self_test", "injection_eval", "vendor_published"].includes(t.kind) ? (
-                          <a href={`${BASE}/traces/bundle/${t.id}/`}>{t.title}</a>
-                        ) : (
-                          <a href={t.url} rel="noopener">{t.title}</a>
-                        )}
-                      </div>
-                      {t.scenario && <div className="small" style={{ marginTop: "2px" }}>{t.scenario}</div>}
-                      <div className="tiny muted" style={{ marginTop: "4px" }}>
-                        Observed: {t.observed.outcome}
-                        {t.observed.egress != null && <> · egress: {t.observed.egress ? "yes" : "no"}</>}
-                        {t.observed.approval != null && <> · human approval: {t.observed.approval ? "yes" : "no"}</>}
-                        {t.observed.refused != null && <> · refused: {t.observed.refused ? "yes" : "no"}</>}
-                      </div>
-                      {t.vendor_response && <div className="tiny muted">Vendor response: {t.vendor_response}</div>}
-                    </div>
-                    <div className="tiny muted" style={{ textAlign: "right" }}>
-                      {t.source}
-                      <br />
-                      {t.date}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-            <p className="tiny muted" style={{ marginTop: "8px" }}>
-              ● third-party or vendor report · ◎ this registry's own probe transcript · ⚠ data left the environment. A trace describes one version on one date; it is evidence of behaviour, never a certification. Rows marked unreviewed have not yet been checked against their source by the maintainer.
-            </p>
           </section>
 
           <section>
