@@ -129,6 +129,52 @@ export function loadCandidates(): CandidateSummary | null {
   return cachedCandidates;
 }
 
+/** The weekly source re-check (data/curated/incident_source_check.json): whether each incident's
+ *  source links still answer. Informational — it never changes an incident. */
+export type SourceStatus = "ok" | "moved" | "gone" | "unverified" | "error";
+export interface SourceCheckLine {
+  url: string;
+  status: SourceStatus;
+  http: number;
+  final_url?: string;
+  error?: string;
+}
+export interface SourceCheck {
+  checked_on: string;
+  incidents_checked: number;
+  sources_checked: number;
+  summary: Record<SourceStatus, number>;
+  needs_attention: string[];
+  incidents: Record<string, SourceCheckLine[]>;
+}
+
+let cachedCheck: SourceCheck | null | undefined;
+
+export function loadSourceCheck(): SourceCheck | null {
+  if (cachedCheck !== undefined) return cachedCheck;
+  const path = resolve(process.env.INCIDENT_SOURCE_CHECK ?? "../data/curated/incident_source_check.json");
+  try {
+    cachedCheck = JSON.parse(readFileSync(path, "utf8")) as SourceCheck;
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code === "ENOENT") cachedCheck = null;
+    else throw e;
+  }
+  return cachedCheck;
+}
+
+/** The re-check line for one source URL of one incident, if the report has it. */
+export function sourceStatus(incidentId: string, url: string): SourceCheckLine | null {
+  return loadSourceCheck()?.incidents[incidentId]?.find((l) => l.url === url) ?? null;
+}
+
+export const SOURCE_STATUS_WORD: Record<SourceStatus, string> = {
+  ok: "answers",
+  moved: "moved to another site",
+  gone: "no longer there (404)",
+  unverified: "could not be verified (bot wall)",
+  error: "did not answer",
+};
+
 export function incidentSlug(id: string): string {
   return id.toLowerCase();
 }

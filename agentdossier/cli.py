@@ -404,6 +404,26 @@ def cmd_incidents(args: argparse.Namespace) -> int:
             return 2
         print(f"dismissed {args.id}")
         return 0
+    if args.action == "recheck":
+        from .incidents import recheck as rc  # noqa: PLC0415
+
+        incidents = rc.load_incidents(Path(args.incidents))
+        result = rc.recheck(incidents)
+        rc.write_report(result, Path(args.report))
+        s = result["summary"]
+        for iid in result["needs_attention"]:
+            for line in result["incidents"][iid]:
+                if line["status"] in ("gone", "moved", "error"):
+                    extra = (
+                        f" → {line['final_url']}" if line.get("final_url") else f" ({line.get('error', '')})"
+                    )
+                    print(f"  {iid} {line['status']:10} HTTP {line['http']:3} {line['url']}{extra}")
+        print(
+            f"incidents recheck: {result['incidents_checked']} incidents, {result['sources_checked']} sources — "
+            f"ok {s['ok']}, moved {s['moved']}, gone {s['gone']}, unverified {s['unverified']}, error {s['error']} "
+            f"→ {args.report}"
+        )
+        return 0
     return 2
 
 
@@ -533,8 +553,8 @@ def main(argv: list[str] | None = None) -> int:
     )
     p.add_argument(
         "action",
-        choices=["scout", "draft", "dismiss"],
-        help="scout: read the feeds and update the candidates file; draft: scaffold a placeholder incident from a candidate; dismiss: drop a candidate for good",
+        choices=["scout", "draft", "dismiss", "recheck"],
+        help="scout: read the feeds and update the candidates file; draft: scaffold a placeholder incident from a candidate; dismiss: drop a candidate for good; recheck: re-fetch every published incident's sources and record which still answer",
     )
     p.add_argument("id", nargs="?", help="candidate id (draft, dismiss)")
     p.add_argument("--sources", default=str(CONFIG_DIR / "trace_sources.json"))
@@ -546,6 +566,11 @@ def main(argv: list[str] | None = None) -> int:
     )
     p.add_argument("--as-id", help="draft: the incident id to assign (default: next TR-<year>-NNN)")
     p.add_argument("--note", help="dismiss: why (kept in the candidates file)")
+    p.add_argument(
+        "--report",
+        default=str(ROOT / "data" / "curated" / "incident_source_check.json"),
+        help="recheck: where to write the report",
+    )
     p.set_defaults(func=cmd_incidents)
 
     args = parser.parse_args(argv)

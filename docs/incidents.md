@@ -70,6 +70,19 @@ waiting. For each one:
 - Candidates nobody touches age out after 180 days; promoted and dismissed rows are kept for a
   year so the same item does not resurface.
 
+### Sources re-checked weekly
+
+Every row stands on its linked sources, so the refresh also runs `agentdossier incidents recheck`:
+it re-fetches each published incident's source URLs (HEAD, then a capped GET when a site refuses
+HEAD) and writes `data/curated/incident_source_check.json` — per link, `ok`, `moved` (answered from
+another site), `gone` (404/410), `unverified` (a 401/403/429 or a bot-protection challenge page;
+not evidence it is gone) or `error` (no answer). A same-site redirect (a CDN, a trailing slash) is
+still `ok`, with the final URL recorded. The PR body lists links that moved or vanished; `/traces/`
+shows the re-check date and flags those rows; each incident page notes the status beside the link.
+The re-check never edits an incident and never sets `checked_on` — that field means a *person*
+checked the entry against its sources. The first run found one dead link (a truncated Okta URL on
+TR-2026-008), which was corrected.
+
 Adding or removing a feed, or tuning the keyword axes, is a reviewed pull request to
 `config/trace_sources.json`. A feed that fails is reported in the run and the PR body, never fatal.
 `agentdossier incidents scout --offline <dir>` runs against saved `<source_id>.xml` files (tests,

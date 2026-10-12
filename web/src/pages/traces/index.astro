@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { loadIndex, loadTraceStore } from "../../lib/catalog";
-import { TACTIC_LABEL, incidentSlug, loadCandidates, loadIncidents } from "../../lib/incidents";
+import { TACTIC_LABEL, incidentSlug, loadCandidates, loadIncidents, loadSourceCheck } from "../../lib/incidents";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const index = loadIndex();
@@ -16,6 +16,8 @@ const incidents = set?.incidents ?? [];
 const tacticsUsed = [...new Set(incidents.flatMap((i) => i.tactics ?? []))].sort();
 const cands = loadCandidates();
 const candidatesUrl = "https://github.com/Sushegaad/AgentDossier/blob/main/data/curated/incident_candidates.yaml";
+const check = loadSourceCheck();
+const attention = new Set(check?.needs_attention ?? []);
 ---
 
 <Base title="Traces" description="Every public trace of an AI agent attacking or defending a system — an incident registry with tactics, timelines and sources.">
@@ -36,6 +38,7 @@ const candidatesUrl = "https://github.com/Sushegaad/AgentDossier/blob/main/data/
         {cands && cands.scoutedOn && (
           <> · <a href={candidatesUrl} rel="noopener">{cands.awaiting} candidate{cands.awaiting === 1 ? "" : "s"} awaiting review</a> (scouted {cands.scoutedOn} from {cands.sourcesChecked} feeds)</>
         )}
+        {check && <> · sources re-checked {check.checked_on}: {check.summary.ok} of {check.sources_checked} links answer{attention.size ? `, ${attention.size} need${attention.size === 1 ? "s" : ""} attention` : ""}</>}
       </span>
       <a class="btn small" href={`${base}/traces/export.json`} style="margin-left: auto">Export registry (JSON)</a>
     </div>
@@ -65,7 +68,7 @@ const candidatesUrl = "https://github.com/Sushegaad/AgentDossier/blob/main/data/
               <td class="small">{inc.attacker.description}</td>
               <td class="small">{inc.defender.description}</td>
               <td class="tiny" style="white-space: nowrap">{(inc.tactics ?? []).join(" · ") || "—"}</td>
-              <td class="small">{inc.sources.length}{inc.reviewer ? "" : <div class="tiny muted">unreviewed</div>}</td>
+              <td class="small">{inc.sources.length}{inc.reviewer ? "" : <div class="tiny muted">unreviewed</div>}{attention.has(inc.id) && <div class="tiny" style="color: var(--danger)" title="a source link moved or no longer answers">⚠ source link</div>}</td>
             </tr>
           ))}
         </tbody>

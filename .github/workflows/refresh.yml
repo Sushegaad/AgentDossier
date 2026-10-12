@@ -56,6 +56,10 @@ jobs:
         # Candidates are leads for the maintainer (promote with `agentdossier incidents draft <id>`);
         # nothing here writes an incident. A failing feed is reported in the run, never fatal.
         run: uv run agentdossier incidents scout
+      - name: Re-check every published incident's sources
+        # Records which source links still answer (data/curated/incident_source_check.json). Never edits
+        # an incident; the PR body and /traces/ flag links a person should look at.
+        run: uv run agentdossier incidents recheck
       - name: Summarize for the PR body
         id: summary
         run: |
@@ -75,4 +79,5 @@ jobs:
             data/changelog/**
             data/traces/**
             data/curated/incident_candidates.yaml
+            data/curated/incident_source_check.json
           delete-branch: true
