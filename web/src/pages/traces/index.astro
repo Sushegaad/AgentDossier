@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { loadIndex, loadTraceStore } from "../../lib/catalog";
-import { TACTIC_LABEL, incidentSlug, loadIncidents } from "../../lib/incidents";
+import { TACTIC_LABEL, incidentSlug, loadCandidates, loadIncidents } from "../../lib/incidents";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const index = loadIndex();
@@ -14,6 +14,8 @@ const asOf = index?.built_at ? index.built_at.slice(0, 10) : "the last build";
 const set = loadIncidents();
 const incidents = set?.incidents ?? [];
 const tacticsUsed = [...new Set(incidents.flatMap((i) => i.tactics ?? []))].sort();
+const cands = loadCandidates();
+const candidatesUrl = "https://github.com/Sushegaad/AgentDossier/blob/main/data/curated/incident_candidates.yaml";
 ---
 
 <Base title="Traces" description="Every public trace of an AI agent attacking or defending a system — an incident registry with tactics, timelines and sources.">
@@ -29,7 +31,12 @@ const tacticsUsed = [...new Set(incidents.flatMap((i) => i.tactics ?? []))].sort
     </p>
 
     <div class="row" style="gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 10px">
-      <span class="tiny muted">{incidents.length} incident{incidents.length === 1 ? "" : "s"} · {tacticsUsed.length} tactics · as of {set?.collected_on ?? asOf}</span>
+      <span class="tiny muted">
+        {incidents.length} incident{incidents.length === 1 ? "" : "s"} · {tacticsUsed.length} tactics · as of {set?.collected_on ?? asOf}
+        {cands && cands.scoutedOn && (
+          <> · <a href={candidatesUrl} rel="noopener">{cands.awaiting} candidate{cands.awaiting === 1 ? "" : "s"} awaiting review</a> (scouted {cands.scoutedOn} from {cands.sourcesChecked} feeds)</>
+        )}
+      </span>
       <a class="btn small" href={`${base}/traces/export.json`} style="margin-left: auto">Export registry (JSON)</a>
     </div>
 
@@ -82,7 +89,7 @@ const tacticsUsed = [...new Set(incidents.flatMap((i) => i.tactics ?? []))].sort
       </div>
       <h3>Where the record comes from</h3>
       <ol>
-        <li><strong>This registry</strong> — the incidents above, curated from public reports (<code>data/curated/incidents.yaml</code>).</li>
+        <li><strong>This registry</strong> — the incidents above, curated from public reports (<code>data/curated/incidents.yaml</code>). A weekly <strong>scout</strong> reads {cands?.sourcesChecked || "a list of"} public feeds (press, researcher labs, vendor advisories) and files anything that names both an agent and an attack as a <a href={candidatesUrl} rel="noopener">candidate</a>; a maintainer promotes or dismisses each one. Candidates are leads, never incidents.</li>
         <li><strong>Agent-level traces</strong> on each dossier — curated write-ups, the registry's own reproducible endpoint probes (hash-chained, <code>data/traces/</code>), and harness runs against the AgentDojo prompt-injection benchmark.</li>
         <li><strong>Vendor-published bundles</strong> declared in an ARD manifest, fetched and hash-checked (<a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/traces-spec.md" rel="noopener">publishing spec</a>).</li>
       </ol>

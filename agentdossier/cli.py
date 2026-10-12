@@ -348,6 +348,65 @@ def cmd_mcp(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_incidents(args: argparse.Namespace) -> int:
+    """Weekly upkeep of the incident registry: scout feeds for candidates, promote or dismiss one."""
+    from pathlib import Path  # noqa: PLC0415
+
+    from .incidents import scout as sc  # noqa: PLC0415
+
+    cand_path = Path(args.candidates)
+    if args.action == "scout":
+        config = sc.load_sources(Path(args.sources))
+        if args.since_days is not None:
+            config["since_days"] = args.since_days
+        # --offline: a directory of <source_id>.xml files stands in for the network (tests, dry runs)
+        fetcher = sc.offline_fetcher(Path(args.offline), config) if args.offline else None
+        doc, report = sc.scout(
+            config,
+            sc.read_candidates(cand_path),
+            fetcher=fetcher,
+            known_urls=sc.incident_source_urls(Path(args.incidents)),
+        )
+        sc.write_candidates(doc, cand_path)
+        new = sum(1 for c in doc["candidates"] if c.get("status") == "new")
+        for sid, rep in report.sources.items():
+            flag = f"  ERROR {rep['error']}" if rep.get("error") else ""
+            print(f"  {sid:18} items {rep['items']:4}  matched {rep['matched']:3}{flag}")
+        print(
+            f"incidents scout: {report.items} items, {report.matched} matched, {report.added} new candidates, "
+            f"{report.kept} seen again, {report.already_incident} already incidents, {report.pruned} pruned "
+            f"→ {new} awaiting review in {cand_path}"
+        )
+        return 0
+    if args.action == "draft":
+        if not args.id:
+            print("draft needs a candidate id (see the candidates file)", file=sys.stderr)
+            return 2
+        try:
+            new_id = sc.promote(
+                args.id, candidates_path=cand_path, incidents_path=Path(args.incidents), new_id=args.as_id
+            )
+        except KeyError:
+            print(f"no candidate {args.id}", file=sys.stderr)
+            return 2
+        print(
+            f"drafted {new_id} as a placeholder in {args.incidents} — complete it, then set status: published"
+        )
+        return 0
+    if args.action == "dismiss":
+        if not args.id:
+            print("dismiss needs a candidate id", file=sys.stderr)
+            return 2
+        try:
+            sc.dismiss(args.id, args.note, candidates_path=cand_path)
+        except KeyError:
+            print(f"no candidate {args.id}", file=sys.stderr)
+            return 2
+        print(f"dismissed {args.id}")
+        return 0
+    return 2
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="agentdossier", description="AgentDossier: an evidence dossier for every AI agent."
@@ -468,6 +527,26 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("mcp", help="expose the registry to agents over MCP (stdio)")
     p.add_argument("--catalog", default=str(ROOT / "data" / "catalog"))
     p.set_defaults(func=cmd_mcp)
+
+    p = sub.add_parser(
+        "incidents", help="weekly upkeep of the incident registry (candidates from public feeds)"
+    )
+    p.add_argument(
+        "action",
+        choices=["scout", "draft", "dismiss"],
+        help="scout: read the feeds and update the candidates file; draft: scaffold a placeholder incident from a candidate; dismiss: drop a candidate for good",
+    )
+    p.add_argument("id", nargs="?", help="candidate id (draft, dismiss)")
+    p.add_argument("--sources", default=str(CONFIG_DIR / "trace_sources.json"))
+    p.add_argument("--candidates", default=str(ROOT / "data" / "curated" / "incident_candidates.yaml"))
+    p.add_argument("--incidents", default=str(ROOT / "data" / "curated" / "incidents.yaml"))
+    p.add_argument("--since-days", type=int, default=None, help="scout: ignore items older than this")
+    p.add_argument(
+        "--offline", help="scout: read <source_id>.xml files from this directory instead of the network"
+    )
+    p.add_argument("--as-id", help="draft: the incident id to assign (default: next TR-<year>-NNN)")
+    p.add_argument("--note", help="dismiss: why (kept in the candidates file)")
+    p.set_defaults(func=cmd_incidents)
 
     args = parser.parse_args(argv)
     return int(args.func(args))

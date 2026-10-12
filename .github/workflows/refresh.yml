@@ -51,6 +51,11 @@ jobs:
             ${LIMIT:+--limit $LIMIT} ${NEWS_LIMIT:+--news-limit $NEWS_LIMIT}
       - name: Validate outputs
         run: uv run python scripts/validate_catalog.py data/catalog
+      - name: Scout the public record for candidate incidents
+        # Reads the feeds in config/trace_sources.json and updates data/curated/incident_candidates.yaml.
+        # Candidates are leads for the maintainer (promote with `agentdossier incidents draft <id>`);
+        # nothing here writes an incident. A failing feed is reported in the run, never fatal.
+        run: uv run agentdossier incidents scout
       - name: Summarize for the PR body
         id: summary
         run: |
@@ -69,4 +74,5 @@ jobs:
             data/review/**
             data/changelog/**
             data/traces/**
+            data/curated/incident_candidates.yaml
           delete-branch: true

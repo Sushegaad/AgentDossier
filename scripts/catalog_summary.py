@@ -35,3 +35,27 @@ if badges:
 else:
     print("\nNo compliance badges yet (Phase 1b).")
 print("\nReview `data/review/matches.yaml` for new near-duplicate candidates before merging.")
+
+# incident candidates from the scout (leads for the maintainer, never incidents)
+cands = Path("data/curated/incident_candidates.yaml")
+if cands.exists():
+    try:
+        import yaml  # noqa: PLC0415
+
+        cdoc = yaml.safe_load(cands.read_text()) or {}
+    except ImportError:  # pragma: no cover
+        cdoc = {}
+    new = [c for c in cdoc.get("candidates") or [] if c.get("status") == "new"]
+    fresh = [c for c in new if c.get("first_seen") == cdoc.get("scouted_on")]
+    print(
+        f"\n### Incident candidates (scout)\n\n{len(new)} awaiting review, {len(fresh)} found this run, "
+        f"{cdoc.get('sources_checked', 0)} feeds checked"
+        + (f", failed: {', '.join(cdoc['sources_failed'])}" if cdoc.get("sources_failed") else "")
+        + ". Promote with `agentdossier incidents draft <id>`, or set `status: dismissed`.\n"
+    )
+    for c in fresh[:15]:
+        print(
+            f"- `{c['id']}` [{c['title']}]({c['url']}) — {c.get('outlet', '')}, {c.get('date') or 'undated'}"
+        )
+    if len(fresh) > 15:
+        print(f"- … and {len(fresh) - 15} more in `data/curated/incident_candidates.yaml`")
