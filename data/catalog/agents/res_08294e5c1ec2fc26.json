@@ -1,0 +1,169 @@
+{
+"canonical_url": "tasteskill.dev",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"code",
+"coding"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 28.96,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 73.9,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "Leonxlnx/taste-skill"
+},
+"first_seen": "2026-10-19T12:02:47Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_08294e5c1ec2fc26",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-19T12:02:47Z",
+"license": "MIT",
+"name": "taste-skill",
+"news": [
+{
+"cluster_size": 2,
+"date": "2026-10-19T05:47:12Z",
+"headline": "taste-skill: tasteskill v2.1.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Fixes [#151](https://github.com/Leonxlnx/taste-skill/issues/151): `design-taste-frontend` did not load in Claude Code. The skill description added in 2.1.0 contained an unquoted `: `, so its YAML frontmatter failed to parse and the skill wa",
+"tag": "product_update",
+"url": "https://github.com/Leonxlnx/taste-skill/releases/tag/v2.1.2"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-18T23:13:35Z",
+"headline": "taste-skill: tasteskill v2.1.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "One skill to reach for. Installing taste-skill no longer means an agent might pick an older skill for the job.\n\n## Install or upgrade\n\n```bash\nnpx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"\n```\n\n## Wh",
+"tag": "product_update",
+"url": "https://github.com/Leonxlnx/taste-skill/releases/tag/v2.1.1"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-19T12:14:05Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-19T12:14:03Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-10-19T12:14:06Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "tasteskill.dev",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-19T12:28:23Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-02-19T21:44:05Z",
+"github_forks": 6741,
+"github_language": "JavaScript",
+"github_open_issues": 2,
+"github_pushed_at": "2026-10-19T05:47:12Z",
+"github_stars": 99135,
+"github_topic": "ai-agents",
+"homepage": "https://tasteskill.dev"
+},
+"slug": "leonxlnx-taste-skill",
+"sources": [
+{
+"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
+"retrieved_at": "2026-10-19T12:02:47Z",
+"system": "github",
+"url": "https://github.com/Leonxlnx/taste-skill"
+}
+],
+"tags": [
+"agent-skills",
+"ai-agents",
+"anti-slop",
+"claude-code",
+"codex",
+"cursor",
+"design-system",
+"frontend",
+"landing-page",
+"ui-design",
+"web-design"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://tasteskill.dev",
+"vendor": "Leonxlnx"
+}

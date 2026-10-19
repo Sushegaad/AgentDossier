@@ -1,0 +1,141 @@
+{
+"canonical_url": "agenlify.ai/developers/mcp",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Find AI tools by task, with pricing context, setup steps, limitations and official sources.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 48.9,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.agenlify/catalog"
+},
+"first_seen": "2026-10-19T12:00:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_3f5822850bf2cc92",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-19T12:00:37Z",
+"license": null,
+"name": "Agenlify AI Agent Directory",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-19T12:10:35Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-19T12:10:33Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://agenlify.ai/mcp"
+}
+],
+"server_name": "ai.agenlify/catalog",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "agenlify.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-19T12:24:58Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-10-13T16:09:56.551448Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-10-13T16:09:56.551448Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "agenlify-ai-agenlify-ai-agent-directory",
+"sources": [
+{
+"payload_hash": "5eba65649528763029f6f69b3636c7304c0ebcb06a8830e0845c74ee09a169f2",
+"retrieved_at": "2026-10-19T12:00:37Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agenlify/catalog"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://agenlify.ai/developers/mcp/",
+"vendor": "agenlify.ai"
+}

@@ -21,7 +21,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.59,
+"adoption": 26.05,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -35,7 +35,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 64.5,
+"score": 64.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -44,7 +44,7 @@
 },
 "cybersecurity": {
 "components": {
-"adoption": 25.59,
+"adoption": 26.05,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -58,7 +58,7 @@
 "governance_credited": {},
 "profile": "security",
 "rank": null,
-"score": 62.0,
+"score": 62.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "vxcontrol/pentagi"
 },
-"first_seen": "2026-10-12T14:21:36Z",
+"first_seen": "2026-10-19T12:02:47Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,7 +91,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:21:36Z",
+"last_seen": "2026-10-19T12:02:47Z",
 "license": "MIT",
 "name": "pentagi",
 "news": [
@@ -110,17 +110,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:12Z",
+"checked_at": "2026-10-19T12:13:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:09Z",
+"checked_at": "2026-10-19T12:13:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:13Z",
+"checked_at": "2026-10-19T12:13:48Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -131,19 +131,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-01-06T22:22:48Z",
-"github_forks": 3460,
+"github_forks": 4926,
 "github_language": "Go",
-"github_open_issues": 20,
-"github_pushed_at": "2026-10-09T20:54:31Z",
-"github_stars": 25976,
+"github_open_issues": 45,
+"github_pushed_at": "2026-10-17T02:30:47Z",
+"github_stars": 31247,
 "github_topic": "ai-agents",
 "homepage": "https://pentagi.com"
 },
 "slug": "vxcontrol-pentagi",
 "sources": [
 {
-"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
-"retrieved_at": "2026-10-12T14:21:36Z",
+"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
+"retrieved_at": "2026-10-19T12:02:47Z",
 "system": "github",
 "url": "https://github.com/vxcontrol/pentagi"
 }

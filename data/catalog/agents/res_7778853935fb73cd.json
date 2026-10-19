@@ -245,7 +245,7 @@
 "external_ids": {
 "github": "stanfordnlp/dspy"
 },
-"first_seen": "2026-10-12T14:20:02Z",
+"first_seen": "2026-10-19T12:00:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -267,10 +267,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:20:02Z",
+"last_seen": "2026-10-19T12:00:37Z",
 "license": "MIT",
 "name": "DSPy",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-12T23:12:32Z",
+"headline": "dspy release 3.4.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# DSPy 3.4.1\r\n\r\nDSPy 3.4.1 makes GEPA's structured `InstructionProposer` the default instruction proposer and lets `dspy.RLM` build DSPy sub-agents from inside its REPL. It also adds Python 3.15 support, fixes a 3.4.0 import crash, and incl",
+"tag": "product_update",
+"url": "https://github.com/stanfordnlp/dspy/releases/tag/3.4.1"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-25T04:06:22Z",
@@ -281,33 +292,22 @@
 "summary": "# DSPy 3.4.0\r\n\r\nDSPy 3.4 introduces **Jev integration through TypeSafe**, with three experimental decision types—`Noul`, `Choice`, and `Score`—that bring probability evidence into ordinary DSPy signatures. ReAnchor calibrates those decision",
 "tag": "product_update",
 "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.4.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-11T22:24:51Z",
-"headline": "dspy release 3.4.0b1",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "# DSPy 3.4.0 Beta 1\r\n\r\nDSPy 3.4.0b1 is the first beta of 3.4. It moves language-model execution to a shared engine interface, adds a local CPython interpreter for trusted code, and brings async execution to ReActV2. It also adds custom Flex",
-"tag": "product_update",
-"url": "https://github.com/stanfordnlp/dspy/releases/tag/3.4.0b1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:31:05Z",
+"checked_at": "2026-10-19T12:12:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:31:04Z",
+"checked_at": "2026-10-19T12:12:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:31:06Z",
+"checked_at": "2026-10-19T12:12:35Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -331,11 +331,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-01-09T21:01:51Z",
-"github_forks": 3413,
+"github_forks": 3436,
 "github_language": "Python",
-"github_open_issues": 810,
-"github_pushed_at": "2026-10-12T14:22:34Z",
-"github_stars": 38599,
+"github_open_issues": 811,
+"github_pushed_at": "2026-10-19T11:45:24Z",
+"github_stars": 38692,
 "homepage": "https://dspy.ai",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -350,7 +350,7 @@
 "sources": [
 {
 "payload_hash": "6eead369465418f9427c4c77162a78fd281aac1f3eb7bc4b7ae2716d0240fb2e",
-"retrieved_at": "2026-10-12T14:20:02Z",
+"retrieved_at": "2026-10-19T12:00:37Z",
 "system": "seed_xlsx",
 "url": "https://github.com/stanfordnlp/dspy"
 }

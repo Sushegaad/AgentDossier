@@ -1,0 +1,30 @@
+{
+ "agent": "res_e5fbd7554b932967",
+ "date": "2026-10-19",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_e5fbd7554b932967_a6307c68",
+ "kind": "self_test",
+ "name": "Amdahl",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "apiKey",
+    "oauth2"
+   ],
+   "card_url": "https://docs.amdahl.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-19T12:12:24Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.2.0",
+   "signed": false,
+   "skills": [
+    "Optimize outbound messages",
+    "Grade GTM outputs",
+    "Search buyer data",
+    "Retrieve business context"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "amdahl-ai-amdahl"
+}

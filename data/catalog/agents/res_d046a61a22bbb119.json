@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.61,
+"adoption": 26.63,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -49,7 +49,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.61,
+"adoption": 26.63,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.0,
@@ -72,7 +72,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.61,
+"adoption": 26.63,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "VectifyAI/PageIndex"
 },
-"first_seen": "2026-10-12T14:21:36Z",
+"first_seen": "2026-10-19T12:02:47Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -138,47 +138,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:21:36Z",
+"last_seen": "2026-10-19T12:02:47Z",
 "license": "MIT",
 "name": "PageIndex",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-08T05:20:41Z",
-"headline": "PageIndex release v0.2.22",
+"date": "2026-10-19T06:01:51Z",
+"headline": "PageIndex 0.4.4 — cheaper than vector index; also runs on your Claude subscription",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "- The **PageIndex SDK**, **local** or **cloud** — vectorless, reasoning-based RAG, end to end.\n- **Much faster indexing** — the **PageIndex Flash** engine gets the tree from layout stats: no LLM involved for the structure generation itself,",
+"summary": "- **Unified** SDK: vectorless RAG. **Local** or **cloud**. Index or chat.\n- **Faster**: trees are created from layout stats.\n- **Cheaper** than **vector index**: LLMs only write node summaries.\n- Runs on your **Claude subscription**.\n\nIndex",
 "tag": "product_update",
-"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.2.22"
+"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.4.4"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-01T15:26:25Z",
-"headline": "PageIndex release v0.2.21",
+"date": "2026-10-18T19:17:09Z",
+"headline": "PageIndex 0.4.3 — cheaper than vector index; also runs on your Claude subscription",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "- The **PageIndex SDK**, **local** or **cloud** — vectorless, reasoning-based RAG, end to end.\n- **Much faster indexing** — the **PageIndex Flash** engine gets the tree from layout stats: no LLM involved for the structure generation itself,",
+"summary": "- **Unified** SDK: vectorless RAG. **Local** or **cloud**. Index or chat.\n- **Faster**: trees are derived from layout stats.\n- **Cheaper than Vector Index**: LLMs only write node summaries.\n- Runs on your **Claude subscription**.\n\nIndex, to",
 "tag": "product_update",
-"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.2.21"
+"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.4.3"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:09Z",
+"checked_at": "2026-10-19T12:13:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:08Z",
+"checked_at": "2026-10-19T12:13:42Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:09Z",
+"checked_at": "2026-10-19T12:13:43Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -188,7 +188,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:48:19Z",
+"checked_at": "2026-10-19T12:28:58Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -196,19 +196,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-01T10:53:54Z",
-"github_forks": 3389,
+"github_forks": 3414,
 "github_language": "Python",
-"github_open_issues": 130,
-"github_pushed_at": "2026-10-12T13:50:05Z",
-"github_stars": 39075,
+"github_open_issues": 145,
+"github_pushed_at": "2026-10-19T10:51:42Z",
+"github_stars": 39282,
 "github_topic": "ai-agents",
 "homepage": "https://pageindex.ai"
 },
 "slug": "vectifyai-pageindex",
 "sources": [
 {
-"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
-"retrieved_at": "2026-10-12T14:21:36Z",
+"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
+"retrieved_at": "2026-10-19T12:02:47Z",
 "system": "github",
 "url": "https://github.com/VectifyAI/PageIndex"
 }

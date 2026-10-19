@@ -24,7 +24,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 26.39,
+"adoption": 26.4,
 "docs": 7.0,
 "domain_fit": 96.4,
 "ecosystem": 3.0,
@@ -49,7 +49,7 @@
 "external_ids": {
 "github": "esengine/DeepSeek-Reasonix"
 },
-"first_seen": "2026-10-12T14:24:19Z",
+"first_seen": "2026-10-19T12:05:48Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -78,47 +78,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:24:19Z",
+"last_seen": "2026-10-19T12:05:48Z",
 "license": "MIT",
 "name": "DeepSeek-Reasonix",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-12T02:31:08Z",
-"headline": "DeepSeek-Reasonix: Reasonix CLI v2.37.0",
+"date": "2026-10-19T02:11:45Z",
+"headline": "DeepSeek-Reasonix: Reasonix CLI v2.45.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "CLI archives built from the Studio release [studio-v2.37.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.37.0).",
+"summary": "CLI archives built from the Studio release [studio-v2.45.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.45.0).",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.37.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.45.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-12T02:29:04Z",
-"headline": "DeepSeek-Reasonix: Reasonix Studio v2.37.0",
+"date": "2026-10-19T02:09:00Z",
+"headline": "DeepSeek-Reasonix: Reasonix Studio v2.45.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "本版加入常用服务预设库和主题包删除，并修复严格网关回放无参数工具调用时的 HTTP 400、卡住的外壳探测拖住内核等问题。\n\n## 新增\n\n- 添加模型服务时可以从内核维护的常用预设开始：可搜索、按域名分组，选中后整条预设（模型目录、识图模型、窗口、思考档）原样写入，名称重复由内核判断 (#12645)\n- 外观里可以删除已安装的主题包，需要点两次确认，内置主题没有删除入口 (#12623)\n\n## 变更\n\n- 删除模型服务时会说明哪些角色改用了其他服务、哪些被清空，并从 `",
+"summary": "本版新增定时任务、会话排序与跨项目移动、手机提醒、WSL 远程、Git 面板、反馈贡献榜、规则目录与按名称关闭工具，推理强度可在进行中的回合里切换，并修复内置浏览器页面缩放、终端卡顿、子代理识图等一批问题。\n\n## 新增\n\n- `reasonix schedule add|list|tick` 等命令，在终端确认后按时间只读地运行任务；需用系统计划任务调用 `schedule tick`。关联 #11406。\n- Studio 打开且可见（窗口或托盘图标）时，会按计划自动运行",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.37.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.45.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:18Z",
+"checked_at": "2026-10-19T12:13:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:17Z",
+"checked_at": "2026-10-19T12:13:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:19Z",
+"checked_at": "2026-10-19T12:13:55Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -128,7 +128,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:48:22Z",
+"checked_at": "2026-10-19T12:29:05Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -136,19 +136,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-21T08:27:02Z",
-"github_forks": 2444,
+"github_forks": 2461,
 "github_language": "Go",
-"github_open_issues": 416,
-"github_pushed_at": "2026-10-12T14:14:01Z",
-"github_stars": 35772,
+"github_open_issues": 397,
+"github_pushed_at": "2026-10-19T11:26:18Z",
+"github_stars": 35863,
 "github_topic": "ai-agent",
 "homepage": "http://reasonix.io/"
 },
 "slug": "esengine-deepseek-reasonix",
 "sources": [
 {
-"payload_hash": "2b33965400f55befc71206869806920cfaca673ee02d4a4bd73d06ad2494bb5e",
-"retrieved_at": "2026-10-12T14:24:19Z",
+"payload_hash": "54544b55b3f9ec1308d102af5291e607b50d660712b8a9671285bd4b3aae4fe8",
+"retrieved_at": "2026-10-19T12:05:48Z",
 "system": "github",
 "url": "https://github.com/esengine/DeepSeek-Reasonix"
 }

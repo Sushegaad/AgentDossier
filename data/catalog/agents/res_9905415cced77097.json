@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-10-12)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-19)",
 "evidence_url": "https://www.n8n-mcp.com/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "ba5b63e2aae14c13ea8873c99b08f1a1e7f477ef925ff2bd1209ec238c8080fe",
+"next_check": "2026-10-26",
+"payload_hash": "565fa03e0644575a17471e9c5a8b6b60038279b5f5d0addedd6c512b29af61b2",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:40:17Z",
+"retrieved_at": "2026-10-19T12:20:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -68,7 +68,7 @@
 "external_ids": {
 "github": "czlonkowski/n8n-mcp"
 },
-"first_seen": "2026-10-12T14:26:24Z",
+"first_seen": "2026-10-19T12:07:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -90,42 +90,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:26:24Z",
+"last_seen": "2026-10-19T12:07:55Z",
 "license": "MIT",
 "name": "n8n-mcp",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-06T12:06:06Z",
-"headline": "n8n-mcp: Release v2.92.1",
+"date": "2026-10-19T06:18:26Z",
+"headline": "n8n-mcp: Release v2.94.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Release v2.92.1\n\nGenerating release notes from v2.92.0 to HEAD\n### 📝 Other Changes\n\n- Merge commit from fork (347cf93)\n\n---\n\n**Release Statistics:**\n- 1 commit\n- 1 contributor\n- Contributors: Romuald Członkowski\n\n---\n\n## Installation\n\n###",
+"summary": "# Release v2.94.3\n\nGenerating release notes from v2.94.2 to HEAD\n### 📝 Other Changes\n\n- security: remove more free-text fields from workflow telemetry (2.94.3) (#1164) (19b09f5)\n\n---\n\n**Release Statistics:**\n- 1 commit\n- 1 contributor\n- Con",
 "tag": "product_update",
-"url": "https://github.com/czlonkowski/n8n-mcp/releases/tag/v2.92.1"
+"url": "https://github.com/czlonkowski/n8n-mcp/releases/tag/v2.94.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-06T11:17:15Z",
-"headline": "n8n-mcp: Release v2.92.0",
+"date": "2026-10-18T09:32:35Z",
+"headline": "n8n-mcp: Release v2.94.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Release v2.92.0\n\nGenerating release notes from v2.91.0 to HEAD\n### ✨ Features\n\n- Add a switch to turn off MCP Apps result cards (2.92.0) (#1153) (502b317)\n\n---\n\n**Release Statistics:**\n- 1 commit\n- 1 contributor\n- Contributors: Romuald Cz",
+"summary": "# Release v2.94.2\n\nGenerating release notes from v2.94.1 to HEAD\n### 📝 Other Changes\n\n- Merge commit from fork (26d79a4)\n\n---\n\n**Release Statistics:**\n- 1 commit\n- 1 contributor\n- Contributors: Romuald Członkowski\n\n---\n\n## Installation\n\n###",
 "tag": "product_update",
-"url": "https://github.com/czlonkowski/n8n-mcp/releases/tag/v2.92.0"
+"url": "https://github.com/czlonkowski/n8n-mcp/releases/tag/v2.94.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:31:53Z",
+"checked_at": "2026-10-19T12:13:29Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:31:51Z",
+"checked_at": "2026-10-19T12:13:25Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -133,7 +133,7 @@
 "evidence_url": "https://www.n8n-mcp.com/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-12T14:31:54Z",
+"checked_at": "2026-10-19T12:13:30Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -146,19 +146,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-07T12:15:57Z",
-"github_forks": 3659,
+"github_forks": 3669,
 "github_language": "TypeScript",
-"github_open_issues": 69,
-"github_pushed_at": "2026-10-06T13:22:38Z",
-"github_stars": 23053,
+"github_open_issues": 73,
+"github_pushed_at": "2026-10-19T10:07:26Z",
+"github_stars": 23103,
 "github_topic": "mcp-server",
 "homepage": "https://www.n8n-mcp.com/"
 },
 "slug": "czlonkowski-n8n-mcp",
 "sources": [
 {
-"payload_hash": "82a1228fef40c9a773d287f98ea93d4446186457925ee772285b08e3e022f6a6",
-"retrieved_at": "2026-10-12T14:26:24Z",
+"payload_hash": "84984ae814d3b610c9c5f1dd87f0472ee06a8fd644fe2550e47b4e8ad31fd3b5",
+"retrieved_at": "2026-10-19T12:07:55Z",
 "system": "github",
 "url": "https://github.com/czlonkowski/n8n-mcp"
 }

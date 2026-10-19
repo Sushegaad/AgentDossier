@@ -1,5 +1,5 @@
 {
-"canonical_url": "github.com/xbtlin/ai-berkshire",
+"canonical_url": "xbtlin.github.io/ai-berkshire",
 "category": "Open-source project",
 "classification": {
 "matched": {
@@ -26,7 +26,7 @@
 "domains": {
 "finance": {
 "components": {
-"adoption": 24.48,
+"adoption": 24.49,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -49,7 +49,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.48,
+"adoption": 24.49,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -74,7 +74,7 @@
 "external_ids": {
 "github": "xbtlin/ai-berkshire"
 },
-"first_seen": "2026-10-12T14:24:19Z",
+"first_seen": "2026-10-19T12:05:48Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -96,33 +96,39 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:24:19Z",
+"last_seen": "2026-10-19T12:05:48Z",
 "license": "MIT",
 "name": "ai-berkshire",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-19T12:14:19Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
 },
 "ard": {
-"not_checked": "code_host",
-"status": "unknown"
+"checked_at": "2026-10-19T12:14:18Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
 },
 "mcp": {
-"evidence_url": "https://github.com/xbtlin/ai-berkshire#readme",
+"evidence_url": "https://xbtlin.github.io/ai-berkshire/",
 "note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-19T12:14:19Z",
+"status": "not_found"
+},
 "source": "self_description",
 "status": "claimed"
 }
 },
-"publisher_domain": "github.com",
+"publisher_domain": "xbtlin.github.io",
 "resource_type": "framework",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:49:15Z",
+"checked_at": "2026-10-19T12:29:54Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -130,19 +136,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-07T11:19:51Z",
-"github_forks": 2487,
+"github_forks": 2617,
 "github_language": "HTML",
-"github_open_issues": 31,
-"github_pushed_at": "2026-10-12T03:52:07Z",
-"github_stars": 16720,
+"github_open_issues": 36,
+"github_pushed_at": "2026-10-19T11:32:56Z",
+"github_stars": 16799,
 "github_topic": "ai-agent",
-"homepage": "https://github.com/xbtlin/ai-berkshire#readme"
+"homepage": "https://xbtlin.github.io/ai-berkshire/"
 },
 "slug": "xbtlin-ai-berkshire",
 "sources": [
 {
-"payload_hash": "2b33965400f55befc71206869806920cfaca673ee02d4a4bd73d06ad2494bb5e",
-"retrieved_at": "2026-10-12T14:24:19Z",
+"payload_hash": "54544b55b3f9ec1308d102af5291e607b50d660712b8a9671285bd4b3aae4fe8",
+"retrieved_at": "2026-10-19T12:05:48Z",
 "system": "github",
 "url": "https://github.com/xbtlin/ai-berkshire"
 }
@@ -180,6 +186,6 @@
 "traces": 5,
 "vendor_compliance": null
 },
-"url": "https://github.com/xbtlin/ai-berkshire#readme",
+"url": "https://xbtlin.github.io/ai-berkshire/",
 "vendor": "xbtlin"
 }

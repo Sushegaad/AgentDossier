@@ -14,7 +14,7 @@
 "external_ids": {
 "github": "earthtojake/text-to-cad"
 },
-"first_seen": "2026-10-12T14:21:36Z",
+"first_seen": "2026-10-19T12:02:47Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -36,60 +36,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:21:36Z",
+"last_seen": "2026-10-19T12:02:47Z",
 "license": "MIT",
 "name": "text-to-cad",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-11T15:14:48Z",
-"headline": "text-to-cad release v0.7.21",
+"date": "2026-10-18T20:34:40Z",
+"headline": "text-to-cad release v0.7.24",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at v0.7.21 -->\n\n## What's Changed\n### Other Changes\n* Release 0.7.21: STEP tail crash, first-snapshot browser race, Windows worker console windows (#597), crash noise b",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at v0.7.24 -->\n\n## What's Changed\n### Other Changes\n* Release 0.7.24: the viewer in five languages, part-coloured Clip caps, the home's navbar, placed parts keep their",
 "tag": "product_update",
-"url": "https://github.com/earthtojake/text-to-cad/releases/tag/v0.7.21"
+"url": "https://github.com/earthtojake/text-to-cad/releases/tag/v0.7.24"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-10T06:36:59Z",
-"headline": "text-to-cad release v0.7.20",
+"date": "2026-10-18T17:59:15Z",
+"headline": "text-to-cad release v0.7.23",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at v0.7.20 -->\n\n## What's Changed\n### Other Changes\n* Telemetry round 2: why builds fail, a resent batch counts once, channel for every process, crash noise dropped, si",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at v0.7.23 -->\n\n## What's Changed\n### Other Changes\n* Release 0.7.23: URDF mesh errors, copied multi-face refs, Windows font guard, SDF/video validation fixes, Pyrefly",
 "tag": "product_update",
-"url": "https://github.com/earthtojake/text-to-cad/releases/tag/v0.7.20"
-},
-{
-"cluster_size": 1,
-"date": "2026-07-15T22:29:08Z",
-"discussion_url": "https://news.ycombinator.com/item?id=48927987",
-"engagement": 6,
-"headline": "Hardware Builders Need More Than Text-to-CAD",
-"kind": "community",
-"link_confidence": 0.88,
-"outlet": "Hacker News",
-"summary": null,
-"tag": "news",
-"url": "https://opuslabs.substack.com/p/hardware-needs-its-vibe-coding-moment"
+"url": "https://github.com/earthtojake/text-to-cad/releases/tag/v0.7.23"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:30Z",
+"checked_at": "2026-10-19T12:14:07Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:28Z",
+"checked_at": "2026-10-19T12:14:05Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:30Z",
+"checked_at": "2026-10-19T12:14:07Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -99,7 +86,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:49:04Z",
+"checked_at": "2026-10-19T12:29:37Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -107,19 +94,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-22T01:09:45Z",
-"github_forks": 1919,
+"github_forks": 2129,
 "github_language": "Python",
-"github_open_issues": 31,
-"github_pushed_at": "2026-10-12T02:51:45Z",
-"github_stars": 19512,
+"github_open_issues": 28,
+"github_pushed_at": "2026-10-19T06:42:50Z",
+"github_stars": 21591,
 "github_topic": "ai-agents",
 "homepage": "https://www.texttocad.dev"
 },
 "slug": "earthtojake-text-to-cad",
 "sources": [
 {
-"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
-"retrieved_at": "2026-10-12T14:21:36Z",
+"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
+"retrieved_at": "2026-10-19T12:02:47Z",
 "system": "github",
 "url": "https://github.com/earthtojake/text-to-cad"
 }

@@ -1,13 +1,15 @@
 {
-"canonical_url": "onorca.dev",
+"canonical_url": "orca.dev",
 "category": "Open-source project",
 "classification": {
 "matched": {
+"business": [
+"automation"
+],
 "supply_chain": [
 "fleet"
 ],
 "technology": [
-"cli",
 "code",
 "coding",
 "ide",
@@ -20,12 +22,35 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+"description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
+"business": {
+"components": {
+"adoption": 28.92,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 67.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
 "supply_chain": {
 "components": {
-"adoption": 28.72,
+"adoption": 28.92,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -39,7 +64,7 @@
 "governance_credited": {},
 "profile": "operations",
 "rank": null,
-"score": 60.2,
+"score": 60.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -48,21 +73,21 @@
 },
 "technology": {
 "components": {
-"adoption": 28.72,
+"adoption": 28.92,
 "docs": 7.0,
-"domain_fit": 91.7,
+"domain_fit": 87.5,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.917,
+"confidence": 0.875,
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 77.2,
+"score": 77.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -73,7 +98,7 @@
 "external_ids": {
 "github": "stablyai/orca"
 },
-"first_seen": "2026-10-12T14:21:36Z",
+"first_seen": "2026-10-19T12:02:47Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -95,70 +120,70 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:21:36Z",
+"last_seen": "2026-10-19T12:02:47Z",
 "license": "MIT",
 "name": "orca",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-10T04:30:28Z",
-"headline": "orca release v1.4.224",
+"date": "2026-10-19T06:30:00Z",
+"headline": "orca release v1.4.230",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Thank you so much for using Orca and for your continued support! ❤️\n\n## The short version\n\n- **Automations can now set the agent's model and effort for each run.** In the automation editor, open Advanced and fill in **Extra agent arguments*",
+"summary": "Thank you so much for using Orca and for your continued support! ❤️\n\n## The short version\n\n- **Native chat (experimental):** Use Antigravity in chat, choose which agents open as chats, and install a missing agent from the chat itself. Paste",
 "tag": "product_update",
-"url": "https://github.com/stablyai/orca/releases/tag/v1.4.224"
+"url": "https://github.com/stablyai/orca/releases/tag/v1.4.230"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-08T22:09:53Z",
-"headline": "orca release v1.4.223",
+"date": "2026-10-17T06:54:05Z",
+"headline": "orca release v1.4.229",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Thank you so much for using Orca and for your continued support! ❤️\n\nOrca Server 2.0 is coming soon, with improvements to make remote work more reliable. The current Remote Server remains experimental and may have bugs.\n\n## The short versio",
+"summary": "Thank you so much for using Orca and for your continued support! ❤️\n\n## The short version\n\n- **Native chat (experimental):** Review turn-by-turn edits inline, expand diagrams to pan and zoom, share chat visuals with a click, and see Claude",
 "tag": "product_update",
-"url": "https://github.com/stablyai/orca/releases/tag/v1.4.223"
+"url": "https://github.com/stablyai/orca/releases/tag/v1.4.229"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:02Z",
+"checked_at": "2026-10-19T12:13:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:00Z",
+"checked_at": "2026-10-19T12:13:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:03Z",
+"checked_at": "2026-10-19T12:13:45Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
 },
-"publisher_domain": "onorca.dev",
+"publisher_domain": "orca.dev",
 "resource_type": "agent",
 "scope": "public",
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-17T03:28:57Z",
-"github_forks": 5777,
+"github_forks": 6218,
 "github_language": "TypeScript",
-"github_open_issues": 8218,
-"github_pushed_at": "2026-10-12T14:20:31Z",
-"github_stars": 90382,
+"github_open_issues": 8561,
+"github_pushed_at": "2026-10-19T12:02:21Z",
+"github_stars": 97507,
 "github_topic": "ai-agents",
-"homepage": "https://onOrca.dev"
+"homepage": "https://orca.dev"
 },
 "slug": "stablyai-orca",
 "sources": [
 {
-"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
-"retrieved_at": "2026-10-12T14:21:36Z",
+"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
+"retrieved_at": "2026-10-19T12:02:47Z",
 "system": "github",
 "url": "https://github.com/stablyai/orca"
 }
@@ -167,18 +192,20 @@
 "ade",
 "agent-ide",
 "ai-agents",
+"automation",
+"bot",
 "claude-code",
-"cli",
 "codex",
-"cursor-agent",
-"devtools",
 "ghostty",
-"ide",
+"grok-bot",
+"hermes-agent",
 "mobile-app",
+"muse",
+"openclaw",
 "opencode",
 "orchestration",
-"parallel-agents",
 "pi",
+"runtime",
 "terminal",
 "worktrees",
 "yc-backed"
@@ -194,6 +221,6 @@
 "traces": 5,
 "vendor_compliance": null
 },
-"url": "https://onOrca.dev",
+"url": "https://orca.dev",
 "vendor": "stablyai"
 }

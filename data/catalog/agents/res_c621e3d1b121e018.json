@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.33,
+"adoption": 24.36,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
@@ -31,7 +31,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 67.9,
+"score": 68.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "opensandbox-group/OpenSandbox"
 },
-"first_seen": "2026-10-12T14:24:19Z",
+"first_seen": "2026-10-19T12:05:48Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,10 +64,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:24:19Z",
+"last_seen": "2026-10-19T12:05:48Z",
 "license": "Apache-2.0",
 "name": "OpenSandbox",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-15T09:20:43Z",
+"headline": "OpenSandbox 1.2.0-rc.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "First release candidate on the `1.2.0` line, carrying everything merged since `release-1.1.1` — the headline is OSEP-0024: auto-pause and wake-on-access for fast sandboxes, landing end to end. Images publish now; SDK/CLI packages ship at th",
+"tag": "product_update",
+"url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.2.0-rc.1"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-09T15:09:23Z",
@@ -78,33 +89,22 @@
 "summary": "Stable cut of the `1.1.1` patch line: fixes the broken `1.1.0` server wheel — hatchling's VCS-exclude filtering silently dropped the committed FastPath gRPC stubs from the PyPI package, so every `1.1.0` install of `opensandbox-server` faile",
 "tag": "product_update",
 "url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.1.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-28T08:21:29Z",
-"headline": "OpenSandbox 1.1.1-rc.1",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "First release candidate on the 1.1.1 patch line, cut to fix the broken `1.1.0` server wheel: hatchling's VCS-exclude filtering silently dropped the committed FastPath gRPC stubs from the PyPI package, so every `1.1.0` install of `opensandbo",
-"tag": "product_update",
-"url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.1.1-rc.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:04Z",
+"checked_at": "2026-10-19T12:13:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:03Z",
+"checked_at": "2026-10-19T12:13:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:04Z",
+"checked_at": "2026-10-19T12:13:37Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -114,7 +114,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:49:19Z",
+"checked_at": "2026-10-19T12:29:58Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -122,19 +122,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-17T08:41:09Z",
-"github_forks": 1455,
+"github_forks": 1483,
 "github_language": "Python",
-"github_open_issues": 128,
-"github_pushed_at": "2026-10-12T09:15:53Z",
-"github_stars": 15799,
+"github_open_issues": 136,
+"github_pushed_at": "2026-10-19T11:04:29Z",
+"github_stars": 15969,
 "github_topic": "ai-agent",
 "homepage": "https://open-sandbox.ai"
 },
 "slug": "opensandbox-group-opensandbox",
 "sources": [
 {
-"payload_hash": "2b33965400f55befc71206869806920cfaca673ee02d4a4bd73d06ad2494bb5e",
-"retrieved_at": "2026-10-12T14:24:19Z",
+"payload_hash": "54544b55b3f9ec1308d102af5291e607b50d660712b8a9671285bd4b3aae4fe8",
+"retrieved_at": "2026-10-19T12:05:48Z",
 "system": "github",
 "url": "https://github.com/opensandbox-group/OpenSandbox"
 }

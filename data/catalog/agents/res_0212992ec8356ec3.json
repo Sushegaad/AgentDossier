@@ -167,7 +167,7 @@
 "external_ids": {
 "github": "open-webui/open-webui"
 },
-"first_seen": "2026-10-12T14:20:02Z",
+"first_seen": "2026-10-19T12:00:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -183,7 +183,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 145,
+"cves": 164,
 "incidents": 0,
 "links": [
 {
@@ -250,42 +250,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:20:02Z",
+"last_seen": "2026-10-19T12:00:37Z",
 "license": "BSD-3-Clause",
 "name": "Open WebUI",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-10T21:13:24Z",
-"headline": "open-webui release v0.12.0",
+"date": "2026-10-16T11:46:21Z",
+"headline": "open-webui release v0.12.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Added\r\n\r\n- ☎️ **Realtime voice calls.** Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice model (gpt-realtime-2.1-mini wi",
+"summary": "### Added\n\n- 🔐 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel menu, the other members see \"Encrypted chat in progr",
 "tag": "product_update",
-"url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.0"
+"url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-21T19:25:21Z",
-"headline": "open-webui release v0.11.4",
+"date": "2026-10-14T21:07:29Z",
+"headline": "open-webui release v0.12.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Added\n\n- 📉 **Far smaller slim image.** A slim build now comes down at around 175 MB, near enough 89% smaller than the last release, the local models, the packages around them and the tools that installed them all gone from it; what tha",
+"summary": "### Added\n\n- 📑 **MinerU 4.x servers.** The MinerU document engine now works with self-hosted MinerU 4.x servers, where every document failed with a 404 because 4.x removed the old parsing interface; 3.x servers work as before, 4.x servers",
 "tag": "product_update",
-"url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4"
+"url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:07Z",
+"checked_at": "2026-10-19T12:13:40Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:05Z",
+"checked_at": "2026-10-19T12:13:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -293,7 +293,7 @@
 "evidence_url": "https://github.com/open-webui/open-webui",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-12T14:32:08Z",
+"checked_at": "2026-10-19T12:13:41Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -305,8 +305,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:42:09Z",
-"cves": 145,
+"checked_at": "2026-10-19T12:22:47Z",
+"cves": 164,
 "source": "nvd",
 "tier": 1
 },
@@ -326,11 +326,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-10-06T22:08:27Z",
-"github_forks": 22619,
+"github_forks": 22725,
 "github_language": "Python",
-"github_open_issues": 170,
-"github_pushed_at": "2026-10-12T14:23:52Z",
-"github_stars": 154544,
+"github_open_issues": 330,
+"github_pushed_at": "2026-10-18T20:02:00Z",
+"github_stars": 156145,
 "homepage": "https://openwebui.com",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -346,7 +346,7 @@
 "sources": [
 {
 "payload_hash": "85ea5ffc878375e6afa26b15618c522e900b3a273e1ae7d210522c7d84104cf7",
-"retrieved_at": "2026-10-12T14:20:02Z",
+"retrieved_at": "2026-10-19T12:00:37Z",
 "system": "seed_xlsx",
 "url": "https://github.com/open-webui/open-webui"
 }

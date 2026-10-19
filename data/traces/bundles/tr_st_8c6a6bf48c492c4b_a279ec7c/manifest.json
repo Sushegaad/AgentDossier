@@ -1,0 +1,25 @@
+{
+ "agent": "res_8c6a6bf48c492c4b",
+ "date": "2026-10-19",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_8c6a6bf48c492c4b_a279ec7c",
+ "kind": "self_test",
+ "name": "agentic",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:aunoo.ai:mcp:agentic",
+   "manifest_url": "https://agentic.aunoo.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "aunoo-ai-agentic"
+}

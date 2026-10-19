@@ -11,16 +11,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-12)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-19)",
 "evidence_url": "https://n8n.io/legal/security/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "15a7a46fe1210e5339002ae92876c49b5676458ea5f4f0b70ac549d67a5ac018",
+"next_check": "2026-10-26",
+"payload_hash": "36d1f5c1e675031d003fc28cdba9f67be8c8c400f430cd0f81ad4777efc4ca7e",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:40:17Z",
+"retrieved_at": "2026-10-19T12:20:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -37,16 +37,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-10-12)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-19)",
 "evidence_url": "https://n8n.io/legal/privacy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "bf8fe13c4b32896e0934fb8d4365bd37f5a170acc287a44918896c4528ce5884",
+"next_check": "2026-10-26",
+"payload_hash": "c4c7b4b68ce3441b59151d4639e819bdebff8482d98c0679876cd98f8c5c5ba7",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:40:17Z",
+"retrieved_at": "2026-10-19T12:20:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -63,16 +63,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-12)",
+"display": "Vendor-claimed (vendor page, 2026-10-19)",
 "evidence_url": "https://n8n.io/legal/security/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "15a7a46fe1210e5339002ae92876c49b5676458ea5f4f0b70ac549d67a5ac018",
+"next_check": "2026-10-26",
+"payload_hash": "36d1f5c1e675031d003fc28cdba9f67be8c8c400f430cd0f81ad4777efc4ca7e",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:40:17Z",
+"retrieved_at": "2026-10-19T12:20:50Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -379,7 +379,7 @@
 "external_ids": {
 "github": "n8n-io/n8n"
 },
-"first_seen": "2026-10-12T14:20:02Z",
+"first_seen": "2026-10-19T12:00:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -401,7 +401,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:26:24Z",
+"last_seen": "2026-10-19T12:07:55Z",
 "license": "Sustainable Use License",
 "merged_ids": [
 "res_47005ed1f60c52a2"
@@ -410,36 +410,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-12T07:34:46Z",
-"headline": "n8n release stable",
+"date": "2026-10-19T07:23:54Z",
+"headline": "n8n release beta",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [2.42.7](https://github.com/n8n-io/n8n/compare/n8n@2.42.6...n8n@2.42.7) (2026-10-12)\n\n\n### Bug Fixes\n\n* **core:** Keep concurrent credential tests from sharing one node type registry ([#40783](https://github.com/n8n-io/n8n/issues/40783))",
+"summary": "## [2.44.4](https://github.com/n8n-io/n8n/compare/n8n@2.44.3...n8n@2.44.4) (2026-10-19)\n\n\n### Bug Fixes\n\n* **core:** Reuse connections in the log streaming webhook destination ([#41281](https://github.com/n8n-io/n8n/issues/41281)) ([b79afe2",
 "tag": "product_update",
-"url": "https://github.com/n8n-io/n8n/releases/tag/stable"
+"url": "https://github.com/n8n-io/n8n/releases/tag/beta"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-12T07:34:44Z",
-"headline": "n8n release 2.42.7",
+"date": "2026-10-19T07:23:52Z",
+"headline": "n8n release 2.44.4",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [2.42.7](https://github.com/n8n-io/n8n/compare/n8n@2.42.6...n8n@2.42.7) (2026-10-12)\n\n\n### Bug Fixes\n\n* **core:** Keep concurrent credential tests from sharing one node type registry ([#40783](https://github.com/n8n-io/n8n/issues/40783))",
+"summary": "## [2.44.4](https://github.com/n8n-io/n8n/compare/n8n@2.44.3...n8n@2.44.4) (2026-10-19)\n\n\n### Bug Fixes\n\n* **core:** Reuse connections in the log streaming webhook destination ([#41281](https://github.com/n8n-io/n8n/issues/41281)) ([b79afe2",
 "tag": "product_update",
-"url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.7"
+"url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.4"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:31:52Z",
+"checked_at": "2026-10-19T12:13:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:31:51Z",
+"checked_at": "2026-10-19T12:13:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -447,7 +447,7 @@
 "evidence_url": "https://github.com/n8n-io/n8n",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-12T14:31:53Z",
+"checked_at": "2026-10-19T12:13:27Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -473,11 +473,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-06-22T09:24:21Z",
-"github_forks": 61093,
+"github_forks": 61185,
 "github_language": "TypeScript",
-"github_open_issues": 1155,
-"github_pushed_at": "2026-10-12T14:23:19Z",
-"github_stars": 207091,
+"github_open_issues": 1213,
+"github_pushed_at": "2026-10-19T12:06:28Z",
+"github_stars": 207986,
 "github_topic": "mcp-server",
 "homepage": "https://n8n.io",
 "observed_popularity": "Not captured",
@@ -493,13 +493,13 @@
 "sources": [
 {
 "payload_hash": "f66978e4dc5b7493ea7428565e21fc901be928f1321fcad855512200c631f88a",
-"retrieved_at": "2026-10-12T14:20:02Z",
+"retrieved_at": "2026-10-19T12:00:37Z",
 "system": "seed_xlsx",
 "url": "https://github.com/n8n-io/n8n"
 },
 {
-"payload_hash": "82a1228fef40c9a773d287f98ea93d4446186457925ee772285b08e3e022f6a6",
-"retrieved_at": "2026-10-12T14:26:24Z",
+"payload_hash": "84984ae814d3b610c9c5f1dd87f0472ee06a8fd644fe2550e47b4e8ad31fd3b5",
+"retrieved_at": "2026-10-19T12:07:55Z",
 "system": "github",
 "url": "https://github.com/n8n-io/n8n"
 }

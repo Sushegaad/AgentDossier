@@ -1,0 +1,25 @@
+{
+ "agent": "res_ae1b9c1fca314a1b",
+ "date": "2026-10-19",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_ae1b9c1fca314a1b_954e5d20",
+ "kind": "self_test",
+ "name": "ask",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:arcreport.ai:mcp:ask",
+   "manifest_url": "https://www.arcreport.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "arcreport-ai-ask"
+}
