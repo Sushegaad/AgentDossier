@@ -32,16 +32,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-12)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-19)",
 "evidence_url": "https://graphify.com/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "2fc213c6db74cf0c4913cb44b3902d0ca17351aaec21163e9213bd18d216bed4",
+"next_check": "2026-10-26",
+"payload_hash": "bd0f78925c764b4619facdd63ef6440f2c4692bddf990dd820b3af1564c2e511",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:39:39Z",
+"retrieved_at": "2026-10-19T12:20:12Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -58,16 +58,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-12)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-19)",
 "evidence_url": "https://graphify.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "e7bc5d08c772d5f420a2a12fd4fdbbfa41b9f1bf697182845e8c1435eac19268",
+"next_check": "2026-10-26",
+"payload_hash": "9441459444861745aa166cc6f6b645d0a3a137d89d5b7cc4d89b160284ca6717",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:39:39Z",
+"retrieved_at": "2026-10-19T12:20:12Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -84,7 +84,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 29.56,
+"adoption": 29.62,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -107,7 +107,7 @@
 },
 "data": {
 "components": {
-"adoption": 29.56,
+"adoption": 29.62,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -130,7 +130,7 @@
 },
 "technology": {
 "components": {
-"adoption": 29.56,
+"adoption": 29.62,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -146,7 +146,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 84.4,
+"score": 84.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
@@ -155,7 +155,7 @@
 "external_ids": {
 "github": "Graphify-Labs/graphify"
 },
-"first_seen": "2026-10-12T14:21:36Z",
+"first_seen": "2026-10-19T12:02:47Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -184,31 +184,44 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:21:36Z",
+"last_seen": "2026-10-19T12:02:47Z",
 "license": "Apache-2.0",
 "name": "graphify",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-12T14:16:07Z",
-"headline": "graphify release v0.9.87",
+"date": "2026-10-16T17:57:21Z",
+"headline": "graphify release v0.9.92",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## 0.9.87 (2026-10-12)\n\nEighteen community pull requests: language-extraction fixes (PHP, C#, Python, TypeScript, Julia), retrieval and watch hardening, and skill/benchmark correctness.\n\n- Fix: **PHP** a `Class::method()` static call now re",
+"summary": "Twenty-three community pull requests: call-resolution and id-collision fixes across JS/TS, Python, Go, Rust and Solidity; graph round-trip, dedup and confidence-folding fixes; skill code-only-update and dispatch fixes; and LLM/Ollama and de",
 "tag": "product_update",
-"url": "https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.87"
+"url": "https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.92"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-11T20:22:14Z",
-"headline": "graphify release v0.9.86",
+"date": "2026-10-14T22:17:45Z",
+"headline": "graphify release v0.9.91",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Eighteen community pull requests: language-extraction fixes, safety and determinism hardening, and CLI/query ergonomics.\n\n- Safety: `graphify uninstall --purge` now refuses to delete the project (or home, or a filesystem root) when `GRAPHI",
+"summary": "Eight community pull requests: a Windows MCP-stdio hang fix, Rust/JS/TS/extract call-resolution and id-collision fixes, an Ollama context-size fix, and a clustering label-retention fix. The AST cache schema is bumped, so the first build aft",
 "tag": "product_update",
-"url": "https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.86"
+"url": "https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.91"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-14T15:00:41Z",
+"discussion_url": "https://news.ycombinator.com/item?id=50088713",
+"engagement": 60,
+"headline": "Show HN: Graphicle, a Rust port of Graphify with memory for coding agents",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://github.com/graphicle-ai/graphicle"
 },
 {
 "cluster_size": 1,
@@ -240,12 +253,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:31:24Z",
+"checked_at": "2026-10-19T12:12:51Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:31:23Z",
+"checked_at": "2026-10-19T12:12:49Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -253,7 +266,7 @@
 "evidence_url": "https://www.graphify.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-12T14:31:24Z",
+"checked_at": "2026-10-19T12:12:51Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -265,7 +278,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:47:39Z",
+"checked_at": "2026-10-19T12:28:19Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -273,19 +286,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-03T15:49:07Z",
-"github_forks": 12139,
+"github_forks": 12410,
 "github_language": "Python",
-"github_open_issues": 1539,
-"github_pushed_at": "2026-10-12T14:16:06Z",
-"github_stars": 125752,
+"github_open_issues": 1555,
+"github_pushed_at": "2026-10-16T17:57:21Z",
+"github_stars": 128759,
 "github_topic": "ai-agents",
 "homepage": "https://www.graphify.com"
 },
 "slug": "graphify-labs-graphify",
 "sources": [
 {
-"payload_hash": "9d2d16ab3cd6db9ee6b5ecf9887be16e264fa7f7d35d0dd73c969983c4f3839f",
-"retrieved_at": "2026-10-12T14:21:36Z",
+"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
+"retrieved_at": "2026-10-19T12:02:47Z",
 "system": "github",
 "url": "https://github.com/Graphify-Labs/graphify"
 }

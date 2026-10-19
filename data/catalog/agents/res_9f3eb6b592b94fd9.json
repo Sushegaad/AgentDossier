@@ -1,0 +1,193 @@
+{
+"canonical_url": "next-ai-drawio.jiang.jp",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"cli",
+"code",
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 26.43,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 78.2,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "DayuanJiang/next-ai-draw-io"
+},
+"first_seen": "2026-10-19T12:07:55Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9f3eb6b592b94fd9",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 4,
+"incidents": 0,
+"links": [
+{
+"date": "2026-07-21",
+"kind": "cve",
+"title": "CVE-2026-50755",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50755"
+},
+{
+"date": "2026-07-21",
+"kind": "cve",
+"title": "CVE-2026-50756",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50756"
+},
+{
+"date": "2026-07-21",
+"kind": "cve",
+"title": "CVE-2026-50757",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50757"
+},
+{
+"date": "2026-07-21",
+"kind": "cve",
+"title": "CVE-2026-50758",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50758"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-19T12:07:55Z",
+"license": "Apache-2.0",
+"name": "next-ai-draw-io",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-10T03:06:27Z",
+"headline": "next-ai-draw-io release v0.5.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's New in v0.5.0\n\nThe first release since May. The web UI is rebuilt around the canvas, draw.io is bundled with the app, the settings dialog is redone, and the MCP server reaches feature parity with the web app. Desktop users get eve",
+"tag": "product_update",
+"url": "https://github.com/DayuanJiang/next-ai-draw-io/releases/tag/v0.5.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-19T12:13:32Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-19T12:13:29Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://next-ai-drawio.jiang.jp/",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-19T12:13:33Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "next-ai-drawio.jiang.jp",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-19T12:29:01Z",
+"cves": 4,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-03-23T15:03:48Z",
+"github_forks": 3849,
+"github_language": "TypeScript",
+"github_open_issues": 37,
+"github_pushed_at": "2026-10-19T08:59:56Z",
+"github_stars": 36321,
+"github_topic": "mcp-server",
+"homepage": "https://next-ai-drawio.jiang.jp/"
+},
+"slug": "dayuanjiang-next-ai-draw-io",
+"sources": [
+{
+"payload_hash": "84984ae814d3b610c9c5f1dd87f0472ee06a8fd644fe2550e47b4e8ad31fd3b5",
+"retrieved_at": "2026-10-19T12:07:55Z",
+"system": "github",
+"url": "https://github.com/DayuanJiang/next-ai-draw-io"
+}
+],
+"tags": [
+"ai",
+"architecture-diagram",
+"claude-code",
+"diagram-generator",
+"diagrams",
+"draw-io",
+"drawio",
+"electron",
+"flowchart",
+"gemini-cli-extension",
+"llm",
+"mcp",
+"mcp-server",
+"nextjs"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://next-ai-drawio.jiang.jp/",
+"vendor": "DayuanJiang"
+}

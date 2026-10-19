@@ -17,7 +17,34 @@
 "taxonomy_version": "sar-taxonomy-1.0"
 },
 "commercial": null,
-"compliance": [],
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-10-19)",
+"evidence_url": "https://bizmoon.ai/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-10-26",
+"payload_hash": "f138706cfa1101dda5d8f880a5063f3d02c11c620f8c1d4354c5203fd85ef9df",
+"period_end": null,
+"retrieved_at": "2026-10-19T12:18:52Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
 "deployment": null,
 "description": "Live US federal and state regulatory changes and grant programs, every result cited.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
@@ -28,13 +55,13 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.6,
-"governance": null,
+"governance": 0.0,
 "health": 16.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
-"evidence_coverage": 0.7,
+"evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
 "rank": null,
@@ -42,8 +69,7 @@
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
-"adoption",
-"governance"
+"adoption"
 ]
 },
 "regulatory": {
@@ -52,13 +78,13 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.6,
-"governance": null,
+"governance": 0.0,
 "health": 16.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
-"evidence_coverage": 0.7,
+"evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
 "rank": null,
@@ -66,8 +92,7 @@
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
-"adoption",
-"governance"
+"adoption"
 ]
 },
 "technology": {
@@ -76,7 +101,7 @@
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.6,
-"governance": null,
+"governance": 0.0,
 "health": 16.0,
 "trust": 19.0
 },
@@ -90,8 +115,7 @@
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
-"adoption",
-"governance"
+"adoption"
 ]
 }
 },
@@ -99,7 +123,7 @@
 "github": "uofuonye/bizmoon-plugins",
 "mcp_registry": "ai.bizmoon/regulatory"
 },
-"first_seen": "2026-10-12T14:20:38Z",
+"first_seen": "2026-10-19T12:00:39Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -121,19 +145,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:20:38Z",
+"last_seen": "2026-10-19T12:00:39Z",
 "license": null,
 "name": "ai.bizmoon/regulatory",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:30:31Z",
+"checked_at": "2026-10-19T12:11:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:29:58Z",
+"checked_at": "2026-10-19T12:11:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -156,7 +180,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:46:29Z",
+"checked_at": "2026-10-19T12:27:28Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -173,8 +197,8 @@
 "slug": "bizmoon-ai-ai-bizmoon-regulatory",
 "sources": [
 {
-"payload_hash": "859d4fa259eb0eb261b301bd611d0cad6dee1af6873e5a4d82e79d5d533b593c",
-"retrieved_at": "2026-10-12T14:20:38Z",
+"payload_hash": "172326a5bb7379239aa89944c38bfe55270204578feb48065c98a0a43cc0094d",
+"retrieved_at": "2026-10-19T12:00:39Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bizmoon/regulatory"
 }
@@ -189,7 +213,7 @@
 "protocols": 3,
 "security": 1,
 "traces": 5,
-"vendor_compliance": null
+"vendor_compliance": 4
 },
 "url": "https://bizmoon.ai/mcp",
 "vendor": "bizmoon.ai"

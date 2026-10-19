@@ -4,11 +4,66 @@
 # scaffolds a placeholder record in incidents.yaml for you to complete) or set its status to
 # `dismissed` so it does not come back. Feeds and keywords: config/trace_sources.json.
 version: incident-candidates-1.0
-scouted_on: '2026-10-12'
+scouted_on: '2026-10-19'
 sources_checked: 12
 sources_failed:
 - securityweek
 candidates:
+- id: cand-13b09143f8
+  status: new
+  title: Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic
+  url: https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html
+  date: '2026-10-19'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - backdoor
+  - claude
+  - gemini
+  - hijack
+  - malicious
+  score: 8
+  snippet: A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS
+    systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits
+    for Anthropic Claude and Google Gemini, coding tools, and securi…
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-19'
+- id: cand-10ddb37ccc
+  status: new
+  title: When AI Agents Commit Breaches, Humans May Not Be Held Liable
+  url: https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable
+  date: '2026-10-16'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - breach
+  score: 6
+  snippet: As agents escape containment and access external systems, responsibility remains human. Accountability,
+    however, is much less settled.
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-19'
+- id: cand-317dd945be
+  status: new
+  title: Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk
+  url: https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk
+  date: '2026-10-16'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - attack
+  - chatgpt
+  - claude
+  score: 6
+  snippet: Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics
+    to target unsuspecting enterprise employees.
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-19'
 - id: cand-c076aa0069
   status: new
   title: Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America
@@ -27,6 +82,95 @@ candidates:
     in Latin America appeared first on Unit 42 .
   first_seen: '2026-10-11'
   last_seen: '2026-10-12'
+- id: cand-4c8854c5ed
+  status: new
+  title: Visual Studio Copilot and SSMS Remote Code Execution (CVE-2026-103572)
+  url: https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/
+  date: '2026-10-13'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - copilot
+  - remote code execution
+  - vulnerabilit
+  score: 5
+  snippet: A . is all you need! Today Microsoft shipped the patch for a vulnerability in Visual Studio Copilot that
+    I reported in August. Microsoft classified it as Important severity Remote Code Execution vulnerability. At
+    the root cause it allows Copilot in Visual Studio or SQL Server Ma…
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-19'
+- id: cand-87c92b9431
+  status: new
+  title: Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days
+  url: https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html
+  date: '2026-10-14'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - attack
+  - exploit
+  score: 5
+  snippet: A team at security firm XBOW chained three then-unknown Google Chrome bugs into a single attack that
+    runs code on a Windows computer when the user only loads a web page, the company said. Its researchers built
+    the attack in six days by directing AI agents running OpenAI's public…
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-19'
+- id: cand-b856ddccec
+  status: new
+  title: Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts
+  url: https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html
+  date: '2026-10-15'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - agentic
+  - exploit
+  - rce
+  score: 5
+  snippet: Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian.
+    Langflow is an open-source platform that allows developers to build artificial intelligence (AI) applications
+    and agentic workflows. In February 2025, DataStax, the parent co…
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-19'
+- id: cand-bb342c3df0
+  status: new
+  title: Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat
+  url: https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat
+  date: '2026-10-14'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - claude
+  - credential
+  - zero-click
+  score: 4
+  snippet: A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers,
+    including SSH private keys, AWS credentials, and Claude 0Auth tokens.
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-19'
+- id: cand-c8156fc699
+  status: new
+  title: An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part.
+  url: https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html
+  date: '2026-10-14'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - attack
+  score: 4
+  snippet: 'The bug was simple: the login let you choose where your sign-in code went. Proving it on a live website
+    was the hard part. TL;DR During an authorized assessment, an AI pentesting agent found a critical authentication
+    bypass on a major insurer''s production website, on its own. On…'
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-19'
 - id: cand-32ee688454
   status: new
   title: 'A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity'
@@ -44,7 +188,7 @@ candidates:
     credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space
     Between AgentCore Harness and Identity appeared first on Unit 42 .'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
 - id: cand-a51aedcbc1
   status: promoted
   title: JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack
@@ -368,7 +512,7 @@ candidates:
   snippet: Deserialization of untrusted data in M365 Copilot allows an authorized attacker to execute code over
     a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-841b5aa214
@@ -408,7 +552,7 @@ candidates:
     fixed a macOS Terminal behavior that enabled a DNS-based data exfiltration technique. DNS Requests via ANSI
     Escape Codes David Leadbeater originally discovered an interesting beh…'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Terminal DNS-exfiltration technique (Apple fix); tool-level research, not an agent incident.
 - id: cand-a284ba16d6
   status: dismissed
@@ -425,7 +569,7 @@ candidates:
   score: 6
   snippet: Corrected the CVE description and title. This is an informational change only.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-cb9fdbb6aa
@@ -445,7 +589,7 @@ candidates:
   snippet: Insufficiently protected credentials in GitHub Copilot and Visual Studio Code allows an unauthorized
     attacker to disclose information over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-8e351f024f
@@ -465,7 +609,7 @@ candidates:
   snippet: As AI agents gain authority over business systems, attackers can manipulate them like business email
     compromise (BEC) victims.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Trend piece on social-engineering agents; no specific incident.
 - id: cand-41212d102a
   status: dismissed
@@ -540,7 +684,7 @@ candidates:
   snippet: See how Wiz built Atlas, an autonomous AI system for vulnerability research that validates every finding
     with a real, working exploit.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Product post (Wiz Atlas benchmark ranking); no incident.
 - id: cand-be0aff069e
   status: dismissed
@@ -558,7 +702,7 @@ candidates:
   snippet: Server-side request forgery (ssrf) in Microsoft Copilot in Azure allows an authorized attacker to disclose
     information over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-7050d48610
@@ -598,7 +742,7 @@ candidates:
   snippet: Concurrent execution using shared resource with improper synchronization ('race condition') in Copilot
     Chat (Microsoft Edge) allows an authorized attacker to disclose information over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-1c0714aca4
@@ -617,7 +761,7 @@ candidates:
   snippet: Improper verification of cryptographic signature in Copilot Studio allows an unauthorized attacker to
     elevate privileges over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-ee5668c0e6
@@ -636,7 +780,7 @@ candidates:
   snippet: Improper neutralization of special elements used in a command ('command injection') in GitHub Copilot
     and Visual Studio Code allows an unauthorized attacker to disclose information over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-62561d884e
@@ -655,7 +799,7 @@ candidates:
   snippet: Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot
     allows an unauthorized attacker to disclose information over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-6b45984108
@@ -674,7 +818,7 @@ candidates:
   snippet: Incorrect permission assignment for critical resource in M365 Copilot allows an authorized attacker to
     disclose information over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-d773424c6d
@@ -693,7 +837,7 @@ candidates:
   snippet: Improper neutralization of special elements used in a command ('command injection') in M365 Copilot allows
     an authorized attacker to elevate privileges over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-74b0a89a50
@@ -753,7 +897,7 @@ candidates:
     condition. I was wondering if I could reproduce this attack chain, and this post describes the results of that
     research. I had this post drafted for months, and yesterday at…
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Reproduction of a computer-use TOCTOU technique; research note without a specific product disclosure.
 - id: cand-69cce761dd
   status: dismissed
@@ -771,7 +915,7 @@ candidates:
     also has access to the backend LLM provider keys. All of that makes it a high-value target. Not only for IP
     and data theft, but also for response modification and tool invocati…
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: LiteLLM gateway hijack research; serving infrastructure, not agent behaviour. Out of scope.
 - id: cand-2e6b2e97c0
   status: dismissed
@@ -787,7 +931,7 @@ candidates:
   score: 4
   snippet: Corrected CVE title. This is an informational change only.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-17d736092c
@@ -804,7 +948,7 @@ candidates:
   score: 4
   snippet: Acknowledgement Updated
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-a2726b4272
@@ -823,7 +967,7 @@ candidates:
   snippet: Improper neutralization of input used for llm prompting in Microsoft Edge for iOS allows an unauthorized
     attacker to perform spoofing over a network.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-3e3df6c3a2
@@ -840,7 +984,7 @@ candidates:
   score: 4
   snippet: Affected software updated with new package information.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-094b1cd313
@@ -859,7 +1003,7 @@ candidates:
   snippet: How default keys, unauthenticated MCP sessions, and custom code guardrails expose cloud AI infrastructure
     to root-level remote code execution and IAM theft.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: LiteLLM gateway auth bypass; serving infrastructure, not agent behaviour. Out of scope.
 - id: cand-40f0b019e8
   status: dismissed
@@ -877,7 +1021,7 @@ candidates:
     in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in
     Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.00…
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-9c43878ab8
@@ -911,7 +1055,7 @@ candidates:
   score: 4
   snippet: Updated an acknowledgement. This is an informational change only.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
 - id: cand-1836f36c20
@@ -984,7 +1128,7 @@ candidates:
     hackmyclaw.com to see if anyone could leak secrets held by his OpenClaw test instance by sending it email. Surprisingly,
     after 6,000 attempts (and $500 in token spend and a Goo…
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Community challenge write-up (hackmyclaw); interesting but not a product incident; revisit if a formal report
     appears.
 - id: cand-2b77d92549
@@ -1020,7 +1164,7 @@ candidates:
     paper. I wish every paper would come with one of these. Academic writing is pretty dry - the impact of a paper
     can be so much higher if you publish a readable version to accompa…'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Academic paper discussion (prompt injection as role confusion); analysis, not an incident.
 - id: cand-598e9e4d2d
   status: dismissed
@@ -1038,7 +1182,7 @@ candidates:
     prompt injection attacks against Microsoft Word to full self-replicating worms: An attacker places hidden instructions
     in a document that is later used as source material in Copi…'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Prompt-injection worm concept via Word; technique demo without a product disclosure record.
 - id: cand-b9857c7ad0
   status: dismissed
@@ -1056,7 +1200,7 @@ candidates:
     discovered using my automated research pipeline with Claude Code and Opus 4.6 back in April 2026. It was an
     exciting find, as this was the first bug I submitted to Red Hat. Cl…
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Linux sandbox escape found with an automated research pipeline; a tooling note, not an agent attack/defence
     trace.
 - id: cand-30f335981c
@@ -1074,7 +1218,7 @@ candidates:
   snippet: Analyzing model input and output logs in an AI-native detection pipeline to understand and uncover malicious
     AI agent behavior
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Product/engineering post (Wiz detection engine); no incident.
 - id: cand-74774c6212
   status: dismissed
@@ -1091,7 +1235,7 @@ candidates:
     OpenAI provide "six reports on unexpected or concerning model behavior we’ve observed in the last six months".
     This one here is my favorite: they caught some of their model…'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Commentary on OpenAI's misalignment reports (self-generated injections); analysis, not an attack/defence
     event.
 - id: cand-d67334d1d5
@@ -1109,7 +1253,7 @@ candidates:
   snippet: In the wake of an agentic attack against its own Medicare systems, Australia's government is feeling
     out what regulations might look like for frontier AI companies.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Policy coverage of Australian AI incident-reporting rules; the underlying Medicare breach is tracked separately.
 - id: cand-20de4e7204
   status: dismissed
@@ -1125,5 +1269,5 @@ candidates:
   snippet: Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment,
     and prompt injection robustness.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-12'
+  last_seen: '2026-10-19'
   note: Product post (OpenAI GPT-Red automated red teaming); no incident.

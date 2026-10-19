@@ -1,0 +1,19 @@
+{
+ "agent": "res_241c2df7ff3b78b7",
+ "date": "2026-10-19",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_241c2df7ff3b78b7_50bd8651",
+ "kind": "self_test",
+ "name": "Annsa API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:annsa.ai:api:rest",
+   "manifest_url": "https://annsa.ai/.well-known/ai-catalog.json",
+   "media_type": "application/openapi",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "annsa-ai-annsa-api"
+}

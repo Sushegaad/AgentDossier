@@ -4,6 +4,9 @@
 "category": "MCP server",
 "classification": {
 "matched": {
+"supply_chain": [
+"planning"
+],
 "technology": [
 "api",
 "mcp"
@@ -14,9 +17,33 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Gold Coast and Brisbane property intelligence and due diligence for AI agents, renters and buyers.",
+"description": "Gold Coast & Brisbane, Australia property report: flood, planning, schools. Free check; x402 A$1.39",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
+"supply_chain": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 9.6,
+"governance": null,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_credited": {},
+"profile": "operations",
+"rank": null,
+"score": 51.7,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+},
 "technology": {
 "components": {
 "adoption": null,
@@ -45,7 +72,7 @@
 "external_ids": {
 "mcp_registry": "ai.alphaquantlabs/propertycheck"
 },
-"first_seen": "2026-10-12T14:20:20Z",
+"first_seen": "2026-10-19T12:00:38Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,9 +94,9 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:20:20Z",
+"last_seen": "2026-10-19T12:00:38Z",
 "license": null,
-"name": "AQL PropertyCheck — Gold Coast & Brisbane Property Intelligence API",
+"name": "AQL PropertyCheck — Property Intelligence & Due Diligence Report API, Gold Coast & Brisbane City",
 "news": [],
 "news_checked": true,
 "protocols": {
@@ -78,18 +105,18 @@
 "bearer"
 ],
 "card_url": "https://agents.alphaquantlabs.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-12T14:29:02Z",
+"checked_at": "2026-10-19T12:10:41Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
 "skills": [
-"Gold Coast and Brisbane address intelligence for property decisions"
+"Physical check of one Gold Coast or Brisbane address"
 ],
 "status": "verified",
-"version": "1.14.0"
+"version": "1.15.1"
 },
 "ard": {
-"checked_at": "2026-10-12T14:29:01Z",
+"checked_at": "2026-10-19T12:10:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -103,7 +130,7 @@
 ],
 "server_name": "ai.alphaquantlabs/propertycheck",
 "status": "claimed",
-"version": "1.12.1",
+"version": "1.15.1",
 "via": "mcp_registry"
 }
 },
@@ -112,25 +139,25 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:45:01Z",
+"checked_at": "2026-10-19T12:25:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-09T04:27:27.229335Z",
+"mcp_registry_published_at": "2026-10-15T22:38:36.500979Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-09T04:27:27.229335Z",
+"mcp_registry_updated_at": "2026-10-15T22:38:36.500979Z",
 "mcp_transports": [
 "streamable-http"
 ]
 },
-"slug": "alphaquantlabs-ai-aql-propertycheck-gold-coast-brisbane-property-intelligence-ap",
+"slug": "alphaquantlabs-ai-aql-propertycheck-property-intelligence-due-diligence-report-a",
 "sources": [
 {
-"payload_hash": "0e08d5f96cd7c36df84b839267cd735c44122d414ae86fffd593ed9ed2a6d5be",
-"retrieved_at": "2026-10-12T14:20:20Z",
+"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
+"retrieved_at": "2026-10-19T12:00:38Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.alphaquantlabs/propertycheck"
 }
@@ -167,6 +194,37 @@
 "tier": 1,
 "title": "Registry probe of AQL PropertyCheck — Gold Coast & Brisbane Property Intelligence API's discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_647007905a2a0090_8044b9e7/",
+"vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_647007905a2a0090_017f2d8b",
+"checked_on": null,
+"date": "2026-10-19",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_647007905a2a0090_017f2d8b",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (auth bearer; unsigned)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:69f6a39d8e5b1ac04af64de07c244bb9ca35e664b37df6a28abda315362eb09f",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of AQL PropertyCheck — Property Intelligence & Due Diligence Report API, Gold Coast & Brisbane City's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_647007905a2a0090_017f2d8b/",
 "vendor_response": null
 }
 ],

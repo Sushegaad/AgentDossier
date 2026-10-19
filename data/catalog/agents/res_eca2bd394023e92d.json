@@ -6,9 +6,10 @@
 "business": [
 "automation"
 ],
+"data": [
+"scraping"
+],
 "technology": [
-"api",
-"llm",
 "playwright"
 ]
 },
@@ -17,12 +18,12 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator.",
+"description": "Open-source AI agent for web automation. Use your real, logged-in browser to automate daily tasks.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": 24.04,
+"adoption": 24.05,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -43,23 +44,46 @@
 "governance"
 ]
 },
-"technology": {
+"data": {
 "components": {
-"adoption": 24.04,
+"adoption": 24.05,
 "docs": 7.0,
-"domain_fit": 71.3,
+"domain_fit": 34.0,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.713,
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 66.8,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 24.05,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 72.9,
+"score": 69.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +94,7 @@
 "external_ids": {
 "github": "nanobrowser/nanobrowser"
 },
-"first_seen": "2026-10-12T14:21:40Z",
+"first_seen": "2026-10-19T12:02:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,10 +116,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:21:40Z",
+"last_seen": "2026-10-19T12:02:52Z",
 "license": "Apache-2.0",
 "name": "nanobrowser",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-15T15:44:39Z",
+"headline": "Nanobrowser v0.3.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# Nanobrowser v0.3.0\r\n\r\nNanobrowser 0.3 is rebuilt from the ground up: one agent in the side panel, on top of a new browser control layer that clicks the right element, acts like a real user and reports what really happened.\r\n\r\n## What's ne",
+"tag": "product_update",
+"url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.3.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-02T13:51:46Z",
@@ -111,17 +146,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:31:55Z",
+"checked_at": "2026-10-19T12:13:28Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:31:53Z",
+"checked_at": "2026-10-19T12:13:27Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:31:55Z",
+"checked_at": "2026-10-19T12:13:29Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -131,7 +166,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:49:30Z",
+"checked_at": "2026-10-19T12:30:08Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -139,44 +174,44 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-12-31T08:11:27Z",
-"github_forks": 1489,
+"github_forks": 1664,
 "github_language": "TypeScript",
-"github_open_issues": 83,
-"github_pushed_at": "2026-10-02T14:46:19Z",
-"github_stars": 14074,
+"github_open_issues": 68,
+"github_pushed_at": "2026-10-15T15:44:39Z",
+"github_stars": 14125,
 "github_topic": "ai-agents",
 "homepage": "https://nanobrowser.ai"
 },
 "slug": "nanobrowser-nanobrowser",
 "sources": [
 {
-"payload_hash": "f9447ec0dbe965d248a0ffa35c95305c9401a92f3da6b8699bb18299b5081a54",
-"retrieved_at": "2026-10-12T14:21:40Z",
+"payload_hash": "6e3a9dccd37aff7e2c126b6e28eb78936685ed0ed4244b38abb99aa6fbd6ba6f",
+"retrieved_at": "2026-10-19T12:02:52Z",
 "system": "github",
 "url": "https://github.com/nanobrowser/nanobrowser"
 }
 ],
 "tags": [
 "agent",
-"ai",
 "ai-agents",
 "ai-tools",
 "automation",
 "browser",
+"browser-agent",
 "browser-automation",
 "browser-use",
+"cdp",
+"chrome-agent",
 "chrome-extension",
-"comet",
 "dia",
-"extension",
 "manus",
-"mariner",
-"multi-agent",
+"muse",
 "n8n",
-"nano",
-"opensource",
 "playwright",
-"web-automation"
+"puppeteer",
+"web-agent",
+"web-automation",
+"web-scraping"
 ],
 "tenant": null,
 "traces": [],

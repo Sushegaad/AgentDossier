@@ -1,0 +1,19 @@
+{
+ "agent": "res_bae5df22e46202f9",
+ "date": "2026-10-19",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_bae5df22e46202f9_8d657510",
+ "kind": "self_test",
+ "name": "Annsa",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:annsa.ai:server:annsa",
+   "manifest_url": "https://annsa.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "annsa-ai-annsa"
+}

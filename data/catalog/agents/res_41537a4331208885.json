@@ -219,7 +219,7 @@
 "external_ids": {
 "github": "OpenHands/OpenHands"
 },
-"first_seen": "2026-10-12T14:20:02Z",
+"first_seen": "2026-10-19T12:00:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -254,47 +254,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:20:02Z",
+"last_seen": "2026-10-19T12:00:37Z",
 "license": "MIT",
 "name": "OpenHands",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-08T20:36:10Z",
-"headline": "OpenHands release v1.26.0",
+"date": "2026-10-12T19:33:56Z",
+"headline": "OpenHands release v1.27.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## 1.26.0 (2026-10-08)\n\n<!-- Release notes generated using configuration in .github/release.yml at main -->\n\n## What's Changed\n### Features\n* feat(apps): add authenticated backend view helper by @neubig in https://github.com/OpenHands/OpenH",
+"summary": "## 1.27.1 (2026-10-12)\n\n<!-- Release notes generated using configuration in .github/release.yml at main -->\n\n## What's Changed\n### Bug Fixes\n* fix(docker): copy MARS web bridge modules into the image by @VascoSch92 in https://github.com/Ope",
 "tag": "product_update",
-"url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.26.0"
+"url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.27.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-06T00:56:53Z",
-"headline": "OpenHands release v1.25.0",
+"date": "2026-10-12T15:06:15Z",
+"headline": "OpenHands release v1.27.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## 1.25.0 (2026-10-06)\n\n<!-- Release notes generated using configuration in .github/release.yml at main -->\n\n## What's Changed\n### Features\n* feat: outline the back navigation control on settings sub-pages by @errmakov in https://github.com",
+"summary": "## 1.27.0 (2026-10-12)\n\n<!-- Release notes generated using configuration in .github/release.yml at main -->\n\n## What's Changed\n### Features\n* feat(verify-openhands): drive the mock-LLM e2e behaviors on DeepSeek and map the gaps by @enyst in",
 "tag": "product_update",
-"url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.25.0"
+"url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.27.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:06Z",
+"checked_at": "2026-10-19T12:13:40Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:05Z",
+"checked_at": "2026-10-19T12:13:38Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:07Z",
+"checked_at": "2026-10-19T12:13:41Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -304,7 +304,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:42:38Z",
+"checked_at": "2026-10-19T12:23:15Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -325,11 +325,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-03-13T03:33:31Z",
-"github_forks": 12009,
+"github_forks": 12114,
 "github_language": "TypeScript",
-"github_open_issues": 959,
-"github_pushed_at": "2026-10-12T14:28:32Z",
-"github_stars": 90701,
+"github_open_issues": 1069,
+"github_pushed_at": "2026-10-19T11:10:27Z",
+"github_stars": 91257,
 "homepage": "https://openhands.dev",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -345,7 +345,7 @@
 "sources": [
 {
 "payload_hash": "4e4ae080d9ceca692db3eae58af51bccea407c8a204f6ad8b9aa56fce1301484",
-"retrieved_at": "2026-10-12T14:20:02Z",
+"retrieved_at": "2026-10-19T12:00:37Z",
 "system": "seed_xlsx",
 "url": "https://github.com/All-Hands-AI/OpenHands"
 }

@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "zeroclaw-labs/zeroclaw"
 },
-"first_seen": "2026-10-12T14:28:12Z",
+"first_seen": "2026-10-19T12:09:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -98,10 +98,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:28:12Z",
+"last_seen": "2026-10-19T12:09:46Z",
 "license": "Apache-2.0",
 "name": "zeroclaw",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-18T06:15:47Z",
+"headline": "zeroclaw release v0.8.6",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# ZeroClaw v0.8.6\n\nZeroClaw v0.8.6 is a plugin, identity, and runtime-ownership release spanning **573 commits** from **74 contributors**. The seven 64-bit CLI release archives now carry the WebAssembly plugin host, and the plugin registry",
+"tag": "product_update",
+"url": "https://github.com/zeroclaw-labs/zeroclaw/releases/tag/v0.8.6"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-08T00:00:00+00:00",
@@ -112,33 +123,22 @@
 "summary": "ZeroClaw v0.8.5 adds ZeroRelay, ZeroRouter, multi-chat dashboards, and image uploads, with tighter plugin, skill, sandbox, and webhook security.",
 "tag": "product_update",
 "url": "https://www.zeroclaw.com/blog/v085-relay-router-and-harder-boundaries"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-05T07:31:19Z",
-"headline": "zeroclaw release v0.8.5",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "# ZeroClaw v0.8.5\n\nZeroClaw v0.8.5 is a security, connectivity, and operator-experience release spanning **454 commits** from **73 contributors**. It introduces ZeroRelay and ZeroRouter, expands live chat and provider capabilities, hardens",
-"tag": "product_update",
-"url": "https://github.com/zeroclaw-labs/zeroclaw/releases/tag/v0.8.5"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:45Z",
+"checked_at": "2026-10-19T12:14:22Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:43Z",
+"checked_at": "2026-10-19T12:14:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:47Z",
+"checked_at": "2026-10-19T12:14:23Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -148,7 +148,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:48:30Z",
+"checked_at": "2026-10-19T12:29:10Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -156,19 +156,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-13T08:56:04Z",
-"github_forks": 4966,
+"github_forks": 4980,
 "github_language": "Rust",
 "github_open_issues": 960,
-"github_pushed_at": "2026-10-12T09:07:10Z",
-"github_stars": 32963,
+"github_pushed_at": "2026-10-19T11:17:31Z",
+"github_stars": 32998,
 "github_topic": "agentic",
 "homepage": "https://www.zeroclaw.com/"
 },
 "slug": "zeroclaw-labs-zeroclaw",
 "sources": [
 {
-"payload_hash": "315089c08399c97992f17ded532e95d6d1338303a4546c602f47083022c1dcf4",
-"retrieved_at": "2026-10-12T14:28:12Z",
+"payload_hash": "35fa8d1f3eefb123466a5dcb61793d49249f2dac39537f9b72dbcac875f9a711",
+"retrieved_at": "2026-10-19T12:09:46Z",
 "system": "github",
 "url": "https://github.com/zeroclaw-labs/zeroclaw"
 }

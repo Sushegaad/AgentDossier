@@ -1,0 +1,22 @@
+{
+ "agent": "res_cbde3c2d558e7224",
+ "date": "2026-10-19",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_cbde3c2d558e7224_323e87cd",
+ "kind": "self_test",
+ "name": "AgentsIndex",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-19T12:10:41Z",
+   "errors": [
+    "entries[0]: missing required term 'displayName'"
+   ],
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://agentsindex.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "agentsindex-ai-agentsindex"
+}

@@ -17,16 +17,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-12",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-19",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/automation anywhere",
 "framework": "csa_star",
 "issued": "2021-06-03",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "d7ca4e8f60bf907fde263c125465dcd74f125e4faed6be2a768f31c179f3466d",
+"next_check": "2026-10-26",
+"payload_hash": "cba6335aeaf5aca421457b6b5cefac764eecfadbacf8cb0d2668856e0bcc1ae6",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:35:03Z",
+"retrieved_at": "2026-10-19T12:16:18Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -50,16 +50,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-12",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-19",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/automation anywhere",
 "framework": "iso42001",
 "issued": "2021-06-03",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "d7ca4e8f60bf907fde263c125465dcd74f125e4faed6be2a768f31c179f3466d",
+"next_check": "2026-10-26",
+"payload_hash": "cba6335aeaf5aca421457b6b5cefac764eecfadbacf8cb0d2668856e0bcc1ae6",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:35:03Z",
+"retrieved_at": "2026-10-19T12:16:18Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -124,7 +124,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-12T14:20:02Z",
+"first_seen": "2026-10-19T12:00:37Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -146,24 +146,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:20:02Z",
+"last_seen": "2026-10-19T12:00:37Z",
 "license": "Commercial",
 "name": "Automation Anywhere Customer Onboarding for Financial Services",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:29:47Z",
+"checked_at": "2026-10-19T12:11:32Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:29:46Z",
+"checked_at": "2026-10-19T12:11:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:29:48Z",
+"checked_at": "2026-10-19T12:11:33Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -173,7 +173,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:42:56Z",
+"checked_at": "2026-10-19T12:23:34Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -198,7 +198,7 @@
 "sources": [
 {
 "payload_hash": "86f847e9be7fd679c316ae3f0f8f8347f83af7ade2468f6f160872da60da3b71",
-"retrieved_at": "2026-10-12T14:20:02Z",
+"retrieved_at": "2026-10-19T12:00:37Z",
 "system": "seed_xlsx",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-cnojvl7fd7igm"
 }

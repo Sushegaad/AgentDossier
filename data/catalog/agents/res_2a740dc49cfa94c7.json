@@ -25,16 +25,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-12)",
+"display": "Vendor-claimed (vendor page, 2026-10-19)",
 "evidence_url": "https://www.anomalyarmor.ai/legal/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-19",
-"payload_hash": "8e769086da0c285839c1d9ccb2f920339e98afcdd0cbd9cdd168ed1e8d2b28bd",
+"next_check": "2026-10-26",
+"payload_hash": "72644bdb183f8f479b8dac458f366016ae8ec820125ba5976e4a4c0df8395a7a",
 "period_end": null,
-"retrieved_at": "2026-10-12T14:37:18Z",
+"retrieved_at": "2026-10-19T12:17:56Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -56,7 +56,7 @@
 "domain_fit": 34.0,
 "ecosystem": 9.6,
 "governance": 3.8,
-"health": 12.0,
+"health": 8.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
@@ -67,7 +67,7 @@
 },
 "profile": "general",
 "rank": null,
-"score": 43.7,
+"score": 40.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -81,7 +81,7 @@
 "domain_fit": 34.0,
 "ecosystem": 9.6,
 "governance": 3.0,
-"health": 12.0,
+"health": 8.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
@@ -92,7 +92,7 @@
 },
 "profile": "data",
 "rank": null,
-"score": 47.0,
+"score": 43.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -106,7 +106,7 @@
 "domain_fit": 56.4,
 "ecosystem": 9.6,
 "governance": 3.0,
-"health": 12.0,
+"health": 8.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
@@ -117,7 +117,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 47.5,
+"score": 43.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -129,7 +129,7 @@
 "github": "anomalyarmor/agents",
 "mcp_registry": "ai.anomalyarmor/armor-mcp"
 },
-"first_seen": "2026-10-12T14:20:20Z",
+"first_seen": "2026-10-19T12:00:38Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -151,7 +151,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:20:20Z",
+"last_seen": "2026-10-19T12:00:38Z",
 "license": null,
 "name": "AnomalyArmor",
 "news": [],
@@ -159,7 +159,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://www.anomalyarmor.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-12T14:29:21Z",
+"checked_at": "2026-10-19T12:11:01Z",
 "parser_version": "a2a-0.3+1.0",
 "signed": false,
 "skills": [
@@ -172,7 +172,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-12T14:29:18Z",
+"checked_at": "2026-10-19T12:10:59Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -203,7 +203,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-12T14:45:06Z",
+"checked_at": "2026-10-19T12:25:52Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -220,8 +220,8 @@
 "slug": "anomalyarmor-ai-anomalyarmor",
 "sources": [
 {
-"payload_hash": "0e08d5f96cd7c36df84b839267cd735c44122d414ae86fffd593ed9ed2a6d5be",
-"retrieved_at": "2026-10-12T14:20:20Z",
+"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
+"retrieved_at": "2026-10-19T12:00:38Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.anomalyarmor/armor-mcp"
 }

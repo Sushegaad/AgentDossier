@@ -28,7 +28,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.22,
+"adoption": 26.32,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -51,7 +51,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.22,
+"adoption": 26.32,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -65,7 +65,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 71.8,
+"score": 71.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -74,7 +74,7 @@
 },
 "sales": {
 "components": {
-"adoption": 26.22,
+"adoption": 26.32,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -88,7 +88,7 @@
 "governance_credited": {},
 "profile": "commercial",
 "rank": null,
-"score": 61.2,
+"score": 61.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -97,7 +97,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.22,
+"adoption": 26.32,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -111,7 +111,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 68.9,
+"score": 69.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -122,7 +122,7 @@
 "external_ids": {
 "github": "Tencent/WeKnora"
 },
-"first_seen": "2026-10-12T14:28:12Z",
+"first_seen": "2026-10-19T12:09:46Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -144,10 +144,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-12T14:28:12Z",
+"last_seen": "2026-10-19T12:09:46Z",
 "license": "Other",
 "name": "WeKnora",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-14T07:53:24Z",
+"headline": "WeKnora release v0.8.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* fix(website-docs): serve everything but the homepage from /docs/ by @lyingbug in https://github.com/Tencent/WeKnora/pull/3664\r\n* test(website-docs): update integration test for the v0.8.2 header and release gallery by @",
+"tag": "product_update",
+"url": "https://github.com/Tencent/WeKnora/releases/tag/v0.8.3"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-24T06:43:43Z",
@@ -158,33 +169,22 @@
 "summary": "## What's Changed\r\n* feat(session): show owner badge for API sessions in sidebar by @FincherYuan in https://github.com/Tencent/WeKnora/pull/3024\r\n* fix(agent): web_fetch 兼容 LLM 双重序列化的 items 参数 by @asmh1989 in https://github.com/Tencent/WeKn",
 "tag": "product_update",
 "url": "https://github.com/Tencent/WeKnora/releases/tag/v0.8.2"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-03T07:03:36Z",
-"headline": "WeKnora release v0.8.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\r\n* fix(tenant): clear stale home tenant after member removal by @jiahao6635 in https://github.com/Tencent/WeKnora/pull/2589\r\n* Feat/issue 2401 auto tag by @Syt3s in https://github.com/Tencent/WeKnora/pull/2548\r\n* fix(knowl",
-"tag": "product_update",
-"url": "https://github.com/Tencent/WeKnora/releases/tag/v0.8.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-12T14:32:43Z",
+"checked_at": "2026-10-19T12:14:19Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-12T14:32:40Z",
+"checked_at": "2026-10-19T12:14:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-12T14:32:44Z",
+"checked_at": "2026-10-19T12:14:20Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -195,19 +195,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-22T08:01:23Z",
-"github_forks": 4456,
+"github_forks": 4620,
 "github_language": "Go",
-"github_open_issues": 574,
-"github_pushed_at": "2026-10-12T13:05:02Z",
-"github_stars": 33464,
+"github_open_issues": 702,
+"github_pushed_at": "2026-10-19T11:20:47Z",
+"github_stars": 34702,
 "github_topic": "agentic",
 "homepage": "https://weknora.weixin.qq.com"
 },
 "slug": "tencent-weknora",
 "sources": [
 {
-"payload_hash": "315089c08399c97992f17ded532e95d6d1338303a4546c602f47083022c1dcf4",
-"retrieved_at": "2026-10-12T14:28:12Z",
+"payload_hash": "35fa8d1f3eefb123466a5dcb61793d49249f2dac39537f9b72dbcac875f9a711",
+"retrieved_at": "2026-10-19T12:09:46Z",
 "system": "github",
 "url": "https://github.com/Tencent/WeKnora"
 }

@@ -401,6 +401,11 @@
    }
   },
   {
+   "identifier": "urn:air:aunoo.ai:mcp:agentic",
+   "type": "application/mcp-server-card+json",
+   "url": "https://agentic.aunoo.ai/mcp/server-card"
+  },
+  {
    "identifier": "urn:air:agenticplug.ai:server:mcp",
    "displayName": "agenticplug.ai MCP Server",
    "type": "application/mcp-server-card+json",
@@ -485,57 +490,9 @@
    ]
   },
   {
-   "identifier": "urn:air:aimentiontracker.ai:mcp:aimentiontracker",
-   "displayName": "AIMentionTracker MCP server",
+   "identifier": "urn:air:agentsindex.ai:mcp:mcp",
    "type": "application/mcp-server-card+json",
-   "capabilities": [
-    "get_me",
-    "list_brands",
-    "get_visibility",
-    "list_answers",
-    "list_sources",
-    "get_current_date",
-    "get_sentiment",
-    "get_share_of_voice",
-    "list_competitors",
-    "list_alerts"
-   ],
-   "url": "https://aimentiontracker.ai/.well-known/mcp/server-card.json",
-   "representativeQueries": [
-    "How often does ChatGPT name my brand?",
-    "Which competitors do AI assistants recommend instead of us?",
-    "Which sites do AI engines cite when they answer about my category?"
-   ]
-  },
-  {
-   "identifier": "urn:air:aimentiontracker.ai:api:v1",
-   "displayName": "AIMentionTracker REST API",
-   "type": "application/vnd.oai.openapi+json",
-   "url": "https://app.aimentiontracker.ai/api/v1/openapi.json",
-   "representativeQueries": [
-    "Get AI visibility per engine for a brand",
-    "List the AI answers that mentioned a brand"
-   ]
-  },
-  {
-   "identifier": "urn:air:aimentiontracker.ai:docs:llms",
-   "displayName": "AIMentionTracker llms.txt",
-   "type": "text/plain",
-   "url": "https://aimentiontracker.ai/llms.txt",
-   "representativeQueries": [
-    "What is AIMentionTracker?",
-    "Which AI engines does AIMentionTracker track?"
-   ]
-  },
-  {
-   "identifier": "urn:air:aimentiontracker.ai:skill:aimentiontracker",
-   "displayName": "AIMentionTracker agent skill",
-   "type": "text/markdown",
-   "url": "https://aimentiontracker.ai/.well-known/agent-skills/aimentiontracker/SKILL.md",
-   "representativeQueries": [
-    "How should an agent read AI visibility numbers?",
-    "How do I connect an agent to AIMentionTracker?"
-   ]
+   "url": "https://agentsindex.ai/mcp/server-card"
   },
   {
    "identifier": "urn:air:aivikings.ai:server:domain-registrar",
@@ -564,6 +521,11 @@
    "identifier": "urn:air:alcock.ai:mcp:arena",
    "type": "application/mcp-server-card+json",
    "url": "https://alcock.ai/api/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:alphabazaar.ai:mcp:arena",
+   "type": "application/mcp-server-card+json",
+   "url": "https://api.alphabazaar.ai/mcp/server-card"
   },
   {
    "identifier": "urn:air:alpic.ai:mcp:platform",
@@ -636,6 +598,56 @@
     "displayName": "Alpic",
     "identityType": "did"
    }
+  },
+  {
+   "identifier": "urn:air:annsa.ai:server:annsa",
+   "displayName": "Annsa",
+   "type": "application/mcp-server-card+json",
+   "url": "https://annsa.ai/.well-known/mcp/server-card.json",
+   "description": "AI agent management for busy product builders. The source of direction for your agents: choose what to build, direct every agent and learn as you go. One remote MCP server: Streamable HTTP, OAuth with PKCE, nothing to install.",
+   "capabilities": [
+    "annsa.priorities",
+    "annsa.spec",
+    "annsa.ask",
+    "annsa.work",
+    "annsa.file",
+    "annsa.decide",
+    "annsa.board",
+    "annsa.share"
+   ],
+   "tags": [
+    "product-direction",
+    "agents",
+    "mcp",
+    "prioritization",
+    "specs",
+    "customer-feedback"
+   ],
+   "representativeQueries": [
+    "what should we build next",
+    "why is this priority ranked above that one",
+    "give me the spec for this priority",
+    "what are customers saying about the export being slow",
+    "did what we shipped actually resolve it"
+   ]
+  },
+  {
+   "identifier": "urn:air:annsa.ai:api:rest",
+   "displayName": "Annsa API",
+   "type": "application/openapi",
+   "url": "https://annsa.ai/openapi.json",
+   "description": "Send customer feedback and call transcripts into Annsa. OpenAPI 3.1, typed request and response schemas, one typed error shape. Reading priorities and specs is done over MCP rather than REST.",
+   "tags": [
+    "api",
+    "openapi",
+    "ingest",
+    "feedback"
+   ],
+   "representativeQueries": [
+    "send customer feedback to annsa programmatically",
+    "upload a call transcript to annsa",
+    "annsa api authentication"
+   ]
   },
   {
    "identifier": "urn:air:apatero.ai:mcp:studio",
@@ -1013,7 +1025,7 @@
    "displayName": "Apify Store search",
    "type": "application/json",
    "url": "https://api.apify.com/v2/store",
-   "description": "Search endpoint over the 85,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
+   "description": "Search endpoint over the 91,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
    "tags": [
     "search",
     "discovery",
@@ -1179,6 +1191,16 @@
      }
     ]
    }
+  },
+  {
+   "identifier": "urn:air:arcreport.ai:mcp:ask",
+   "type": "application/mcp-server-card+json",
+   "url": "https://www.arcreport.ai/api/ask/server-card"
+  },
+  {
+   "identifier": "urn:air:arcreport.ai:mcp:scan",
+   "type": "application/mcp-server-card+json",
+   "url": "https://www.arcreport.ai/api/mcp/server-card"
   },
   {
    "identifier": "urn:air:assetlog.ai:server:mcp",
@@ -1417,11 +1439,6 @@
     "How to research BeevR for a user",
     "Estimate an MVP with BeevR packages"
    ]
-  },
-  {
-   "identifier": "urn:air:centralcity.ai:mcp:central-city",
-   "type": "application/mcp-server-card+json",
-   "url": "https://centralcity.ai/mcp/server-card"
   },
   {
    "identifier": "urn:air:context7.com:mcp:context7",
@@ -2062,7 +2079,7 @@
    "displayName": "World Monitor MCP server",
    "type": "application/mcp-server-card+json",
    "url": "https://worldmonitor.app/.well-known/mcp/server-card.json",
-   "description": "Live global-intelligence MCP server: real-time markets, conflict events, aviation, maritime, energy, climate, health, displacement, supply chain, and AI-generated regional briefs.",
+   "description": "Live global-intelligence MCP server with real-time data and AI-generated briefs in these domains: markets, commodities and macro; energy; conflicts, country risk, sanctions, cyber threats and chokepoints; maritime, aviation and supply chains; climate and natural disasters; health signals; displacement and humanitarian crises; AI briefs, forecasts and intel history; tariffs and trade policy.",
    "tags": [
     "news-and-intelligence",
     "news",
@@ -2082,7 +2099,7 @@
     "get_chokepoint_status",
     "get_supply_chain_data",
     "analyze_situation",
-    "generate_forecasts"
+    "get_forecast_predictions"
    ],
    "representativeQueries": [
     "what is happening in the Red Sea right now",
