@@ -89,6 +89,10 @@ def _cpe_key(vendor: str, product: str) -> str:
     return f"{vendor.lower()}:{product.lower()}"
 
 
+# Vocabulary hits that mark a record as a protocol implementation when no listed product matches.
+_PROTOCOL_TERMS = {"model context protocol", "mcp server", "mcp client", "agent2agent", "a2a protocol"}
+
+
 def product_match(rec: dict[str, Any], config: dict[str, Any]) -> list[tuple[dict[str, Any], str, str]]:
     """(product entry, test, term) for every listed product this record affects."""
     hits: list[tuple[dict[str, Any], str, str]] = []
@@ -107,7 +111,9 @@ def product_match(rec: dict[str, Any], config: dict[str, Any]) -> list[tuple[dic
                 break
         if matched:
             continue
-        for name in [prod["name"], *(prod.get("names") or [])]:
+        # Only the explicit `names` — never the display name, which can be an ordinary word
+        # ("Continue", "Cursor") and would list every record that uses it.
+        for name in prod.get("names") or []:
             if len(name) >= 4 and _phrase_re(name).search(text):
                 hits.append((prod, "A:name", name))
                 break
@@ -163,10 +169,17 @@ def classify(rec: dict[str, Any], config: dict[str, Any]) -> dict[str, Any] | No
         return None
     out = dict(rec)
     out["match"] = {"tests": tests, "terms": terms}
-    # category: the listed product's, else unclassified (a Test-B-only record)
+    # category: the listed product's; else "protocol" when the record is about an MCP/A2A
+    # implementation by its own words (a third-party MCP server is a protocol implementation even
+    # though it is not a listed product); else unclassified (a Test-B-only record).
     cats = [prod["category"] for prod, _, _ in products]
     rank = ["product", "framework", "protocol", "infrastructure"]
-    out["category"] = sorted(cats, key=rank.index)[0] if cats else "unclassified"
+    if cats:
+        out["category"] = sorted(cats, key=rank.index)[0]
+    elif any(t in _PROTOCOL_TERMS for t in vocab):
+        out["category"] = "protocol"
+    else:
+        out["category"] = "unclassified"
     out["surface"] = surface_tags(rec)
     # mark which listed product each affected-product row belongs to, and the agents it maps to
     by_cpe = {pat.lower(): prod for prod, test, pat in products if test == "A:cpe"}

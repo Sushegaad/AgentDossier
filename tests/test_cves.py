@@ -210,9 +210,9 @@ def test_classify_applies_both_tests_and_exclusions():
         and "tool_execution" in c["surface"]
         and "code_execution" in c["surface"]
     )
-    assert (
-        "A:name" in c["match"]["tests"] and c["category"] == "protocol"
-    )  # "MCP server" names the protocol product
+    # "MCP server" is vocabulary, not a listed product's name: a third-party server is a protocol
+    # implementation by its own words, with no product link.
+    assert "A:name" not in c["match"]["tests"] and c["category"] == "protocol" and not c["related_agents"]
     assert (
         m.classify(recs["CVE-2026-33333"], CONFIG) is None
     )  # Windows: excluded vendor, and "assistant" alone is not enough
@@ -363,3 +363,20 @@ def test_shipped_config_slugs_exist_in_the_catalog():
         for s in prod.get("agents") or []:
             assert s in slugs, f"{prod['id']}: {s} not in catalog"
     assert len({p["id"] for p in CONFIG["products"]}) == len(CONFIG["products"])
+
+
+def test_display_name_never_matches_and_ordinary_words_do_not_list():
+    """ "Continue" and "Cursor" are products and ordinary words: only their specific names count."""
+    rec = {
+        "id": "CVE-2026-55555",
+        "description": "TypeBot lets a request continue past the SSRF validator and read local files.",
+        "products": [],
+        "cwe": [],
+        "references": [],
+    }
+    assert m.classify(rec, CONFIG) is None
+    rec["description"] = (
+        "Cursor IDE for macOS allows an agent run to execute commands via a prompt injection."
+    )
+    out = m.classify(rec, CONFIG)
+    assert out and out["category"] == "product" and out["products"][0]["product_id"] == "cursor"
