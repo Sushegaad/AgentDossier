@@ -6,6 +6,22 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Added — CVE registry on the site (PR 2 of 3)
+- A **CVEs** tab (`/cves/`) between Traces and Trust methodology: every listed CVE in one
+  filterable table — KEV, reviewed, severity, attack surface, category, product, year, fix status;
+  word search; sort by published / last modified / CVSS / id; CSV export of the visible rows;
+  every filtered view is a link (`/cves/?surface=prompt_injection&kev=1`) — over a slim
+  `/cves/list.json`, with `/cves/export.json` for the whole registry.
+- A page and JSON per CVE (`/cves/<id>/`): the official record (description, CVSS with vector and
+  scorer, CWE, NVD status, CNA), affected products with fixed-in versions, KEV details, references
+  (deduplicated, never exploit-tagged), links to dossiers and traces, and *why it is listed here*
+  (the tests and terms, the reviewer or "not yet checked by a person"). Buttons to CVE.org, NVD,
+  JSON and "Report a wrong listing".
+- `/methodology/#cves` states the two tests and what is and is not the registry's; `/about/`
+  names the source; README gains a screenshot of the tab; the axe/Lighthouse audit covers
+  `/traces/`, `/cves/` and one CVE page. Unlisted products are shown by their tidied CPE name.
+- `web/tests/cves.test.ts` pins the filter model, URL round-trip, CSV, the loader and cross-links.
+
 ### Added — CVE registry (data stage, PR 1 of 3)
 - **`agentdossier cves update`** runs in the weekly refresh: reads official records from NVD API
   2.0 (the CVE.org record plus CVSS, CWE, CPE) and the CISA KEV catalog, keeps a CVE when a listed

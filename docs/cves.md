@@ -73,14 +73,33 @@ advisories) to this registry instead of filing them as incident candidates.
 ## Rules
 
 - A row exists only because CVE.org has the ID. No GHSA-only advisories, no researcher findings
-  without a CVE — those belong to traces and the incident registry. The list page shows how many
-  GHSA-only advisories were set aside, so the gap is visible.
+  without a CVE — those belong to traces and the incident registry. The list page says so;
+  counting the GHSA-only advisories set aside is an open item.
 - Never an exploit: no proof-of-concept code, payloads or reproduction steps.
 - Never a score: counts and severities do not enter `sar-score`. "No linked CVE" reads "none linked
   in the sources checked", never as a finding.
 - Errors in the record go to the CNA or NVD (their dispute process is linked); errors in our
   classification or links are ours (a GitHub issue; corrections are logged in the trust changelog).
 - Attribution to CVE.org, NVD and CISA on the list page and in `THIRD_PARTY_NOTICES.md`.
+
+## On the site
+
+- `/cves/` — the list: a React island over `/cves/list.json` (one slim row per CVE, ~0.9 MB
+  uncompressed; the full 3.5 MB index is `/cves/export.json`). Facets: KEV, reviewed, severity,
+  attack surface, category, product, year, fix status; word search over id, products, CWE and
+  description; sort by published, last modified, CVSS score or id; CSV export of the visible rows.
+  Filters live in the query string (`/cves/?surface=prompt_injection&kev=1`), so a view is a link.
+  Facet counts are computed against the *other* filters, so a count says what choosing it gives.
+- `/cves/<id>/` and `/cves/<id>.json` — one record: the official description, CVSS (version,
+  score, vector, who scored it), CWE, NVD status, CNA, affected products with fixed-in versions,
+  KEV details, deduplicated references, links to dossiers and traces, and *why it is listed here*
+  (the tests and terms that matched, the reviewer or "not yet checked by a person", the note).
+  Buttons: the CVE.org record, NVD, JSON, "Report a wrong listing" (a GitHub issue).
+- Nav tab **CVEs** between Traces and Trust methodology; `/methodology/#cves` has the rules;
+  `/about/` names the source. Pages are in the axe/Lighthouse audit (`npm run audit`).
+- Code: `web/src/lib/cve-filter.ts` (browser-safe model, filters, URL sync, CSV — tested in
+  `web/tests/cves.test.ts`), `web/src/lib/cves.ts` (build-time loader, rows, cross-links),
+  `web/src/components/CveApp.tsx`, `web/src/pages/cves/`.
 
 ## Offline and tests
 

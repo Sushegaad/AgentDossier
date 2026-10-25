@@ -46,6 +46,13 @@ the agent:
 
 [![Gemini Enterprise agents dossier: identity T4, FedRAMP 20x registry match, protocol cards found but invalid](docs/screenshots/dossier-gemini.png)](https://sushegaad.github.io/AgentDossier/agents/google-gemini-enterprise-agents/)
 
+Every official CVE that touches an agent — product, framework, protocol implementation
+or the infrastructure agents call through — is one filterable list, with the official
+severity and this registry's attack-surface tags, exploited-in-the-wild flag and links
+to dossiers and traces:
+
+[![The CVE registry filtered to prompt-injection CVEs of critical and high severity: facets on the left, one row per CVE with severity, products, the official description and surface tags](docs/screenshots/cves-prompt-injection.png)](https://sushegaad.github.io/AgentDossier/cves/)
+
 ## Example use case
 
 An insurer's platform team is asked to pick a claims-intake agent and prove
@@ -207,7 +214,10 @@ decide.
   protocol implementation or the infrastructure agents call through — from NVD
   and CISA KEV, classified by category and attack surface, cross-linked to
   dossiers and incidents, with a maintainer's include/exclude layer — rebuilt
-  every Monday (`data/cves/`, [`docs/cves.md`](docs/cves.md)). A CVE count never
+  every Monday (`data/cves/`, [`docs/cves.md`](docs/cves.md)). On the site:
+  [`/cves/`](https://sushegaad.github.io/AgentDossier/cves/) — filter by severity,
+  attack surface, category, product, year and KEV; search; a page and JSON per
+  CVE; CSV and JSON export; every filtered view is a link. A CVE count never
   changes a score.
 - **Discovery and curation.** A curated Top 100 per domain plus agents
   discovered from GitHub, Hugging Face, the MCP registry, marketplaces and ARD
