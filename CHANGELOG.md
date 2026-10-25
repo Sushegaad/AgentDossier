@@ -6,6 +6,27 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Changed — the incident registry publishes by default (machine review, no human in the loop)
+- `agentdossier incidents review` runs in the weekly refresh after the scout: it fetches each new
+  candidate's article (and any placeholder's sources), asks a model (`ANTHROPIC_API_KEY`;
+  `claude-sonnet-5-5` by default) one structured question against that text only, validates the
+  JSON reply field by field, and **publishes** the record when it is a specific, real event with
+  confidence ≥ 0.8 from a non-aggregator source — `reviewer: "model: … (automated review)"`,
+  `checked_on` the run date — or **dismisses** the candidate with the reason on file. Placeholders
+  that fail are removed in place; unreadable pages wait a week. The model is told never to invent,
+  never to reproduce prompts or payloads, never to name a private individual.
+- The refresh PR now **merges itself** once the gates pass (drift check, trace chain, the incident,
+  review and CVE tests run in the job) and dispatches the Pages deploy, since a PR opened with
+  `GITHUB_TOKEN` triggers neither `ci` nor `pages`. The PR body lists every decision.
+- `/traces/` no longer shows "candidates awaiting review"; its header reads feeds scouted ·
+  machine-reviewed date · rows published by the weekly review, rows are marked *machine-reviewed*,
+  and the re-check becomes a footnote. The incident page says when the review published a row.
+  `/methodology/#traces`, `/about/`, README and `docs/incidents.md` describe the bar; the docs no
+  longer quote a fixed incident count (the drift check now forbids one).
+- `tests/test_incident_review.py` (5): verdict parsing and the bar, article stripping, an offline
+  end-to-end run (publish, dismiss, placeholder rewrite and removal, idempotence), dry run, and the
+  API call shape.
+
 ### Added — CVE cross-links (PR 3 of 3)
 - Every dossier's **Security** row now says what the CVE registry links to the agent ("36 CVEs
   linked · 27 critical/high · newest 2026-09-17", or "No CVE linked … none linked in the products

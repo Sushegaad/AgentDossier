@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -404,6 +405,48 @@ def cmd_incidents(args: argparse.Namespace) -> int:
             return 2
         print(f"dismissed {args.id}")
         return 0
+    if args.action == "review":
+        import json  # noqa: PLC0415
+
+        from .incidents import review as rv  # noqa: PLC0415
+
+        model = args.model or rv.DEFAULT_MODEL
+        if args.offline:
+            completer = rv.offline_completer(Path(args.offline))
+            fetcher = rv.offline_fetcher(Path(args.offline))
+        else:
+            key = os.environ.get("ANTHROPIC_API_KEY")
+            if not key:
+                print("incidents review: ANTHROPIC_API_KEY is not set — nothing reviewed", file=sys.stderr)
+                return 0 if args.allow_missing_key else 2
+            completer = rv.anthropic_completer(key, model)
+            fetcher = None
+        rr = rv.review(
+            completer=completer,
+            fetcher=fetcher,
+            model=model,
+            candidates_path=cand_path,
+            incidents_path=Path(args.incidents),
+            catalog_dir=Path(args.catalog) if args.catalog else None,
+            limit=args.limit,
+            dry_run=args.dry_run,
+        )
+        for row in rr.published:
+            print(f"  published {row['id']}: {row['title']}")
+        for row in rr.dismissed:
+            print(f"  dismissed {row['id']}: {row['why']}")
+        for row in rr.unreadable:
+            print(f"  unreadable {row['id']}: {row['why']}")
+        for err in rr.errors:
+            print(f"  error {err}", file=sys.stderr)
+        if args.review_report:
+            Path(args.review_report).write_text(json.dumps(rr.as_dict(), indent=1) + "\n")
+        print(
+            f"incidents review ({model}): {rr.candidates_reviewed} candidates + {rr.placeholders_reviewed} placeholders → "
+            f"{len(rr.published)} published, {len(rr.dismissed)} dismissed, {len(rr.unreadable)} unreadable, "
+            f"{len(rr.errors)} errors{' (dry run)' if args.dry_run else ''}"
+        )
+        return 1 if rr.errors and not rr.published and not rr.dismissed else 0
     if args.action == "recheck":
         from .incidents import recheck as rc  # noqa: PLC0415
 
@@ -642,8 +685,8 @@ def main(argv: list[str] | None = None) -> int:
     )
     p.add_argument(
         "action",
-        choices=["scout", "draft", "dismiss", "recheck"],
-        help="scout: read the feeds and update the candidates file; draft: scaffold a placeholder incident from a candidate; dismiss: drop a candidate for good; recheck: re-fetch every published incident's sources and record which still answer",
+        choices=["scout", "review", "draft", "dismiss", "recheck"],
+        help="scout: read the feeds and update the candidates file; review: read every new candidate's source with a model and publish or dismiss it (ANTHROPIC_API_KEY); draft: scaffold a placeholder incident from a candidate by hand; dismiss: drop a candidate (or retract) for good; recheck: re-fetch every published incident's sources and record which still answer",
     )
     p.add_argument("id", nargs="?", help="candidate id (draft, dismiss)")
     p.add_argument("--sources", default=str(CONFIG_DIR / "trace_sources.json"))
@@ -651,7 +694,20 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--incidents", default=str(ROOT / "data" / "curated" / "incidents.yaml"))
     p.add_argument("--since-days", type=int, default=None, help="scout: ignore items older than this")
     p.add_argument(
-        "--offline", help="scout: read <source_id>.xml files from this directory instead of the network"
+        "--offline",
+        help="scout: read <source_id>.xml files from this directory instead of the network; review: replay saved pages and verdicts.json from it",
+    )
+    p.add_argument("--model", help="review: the model (default INCIDENT_REVIEW_MODEL or claude-sonnet-5-5)")
+    p.add_argument(
+        "--catalog",
+        default=str(ROOT / "data" / "catalog"),
+        help="review: built catalog, for agent cross-links",
+    )
+    p.add_argument("--limit", type=int, default=None, help="review: review at most this many items")
+    p.add_argument("--dry-run", action="store_true", help="review: decide but write nothing")
+    p.add_argument("--review-report", help="review: write the decisions as JSON here (the PR body reads it)")
+    p.add_argument(
+        "--allow-missing-key", action="store_true", help="review: exit 0 when ANTHROPIC_API_KEY is unset"
     )
     p.add_argument("--as-id", help="draft: the incident id to assign (default: next TR-<year>-NNN)")
     p.add_argument("--note", help="dismiss: why (kept in the candidates file)")

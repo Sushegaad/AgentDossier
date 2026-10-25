@@ -37,12 +37,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       <li><strong>The incident registry</strong> (<a href={`${base}/traces/`}>/traces/</a>) — one row per real, sourced event
         where an AI agent attacked, defended or was the target, curated from post-mortems, advisories, researcher
         disclosures and the press. Every row is "as reported": figures are the sources' own, MITRE ATT&amp;CK tactics are the
-        maintainer's reading, and a row shows <em>unreviewed</em> until a person has checked it against its sources. Each
-        has a timeline, lessons for defenders, and STIX 2.1 / JSON export.</li>
+        reviewer's reading, and each row says who reviewed it — a person, or the weekly machine review (marked
+        <em>machine-reviewed</em>). Each has a timeline, lessons for defenders, and STIX 2.1 / JSON export.</li>
       <li><strong>The weekly scout</strong> — the Monday refresh reads a curated list of public feeds (press, researcher
         labs, vendor advisories) and keeps any item that names both an agent and an attack as a <em>candidate</em>: title,
-        link, date, outlet, snippet. Candidates are leads for the maintainer to promote or dismiss, never incidents; the
-        registry page shows how many are waiting.</li>
+        link, date, outlet, snippet. A candidate is a lead, never an incident.</li>
+      <li><strong>The weekly machine review — publish by default.</strong> The same run fetches each candidate's article
+        and asks a model one structured question against that text only: is this a specific, real event in which an AI
+        agent attacked, defended or was the target? The reply (date, role, category, an "as reported" summary, the two
+        sides as the source describes them, tactics, models and agents named, a timeline) is validated field by field; a
+        field the article does not state stays empty. It is published when the verdict is an incident with confidence of
+        at least 0.8 from a source that is not an aggregator; otherwise it is dismissed with the reason kept on the
+        candidate. The model is told never to invent a fact, never to reproduce prompts, payloads or commands, and never to
+        name a private individual. Every decision is listed in the refresh's pull request, which merges itself once the
+        gates pass; a wrong row can be retracted by hand. Nobody waits on a person, and no row is "pending".</li>
       <li><strong>The weekly re-check</strong> — every published incident's source links are re-fetched and the result
         recorded (answers · moved · gone · bot-walled). A link that stops answering is flagged on the incident page; the
         record itself is never changed by the check.</li>
@@ -54,7 +62,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         and until then no public harness trace exists.</li>
     </ol>
     <p class="small muted">
-      The full rules, the candidate workflow and the schema are in
+      The full rules, the review bar and the schema are in
       <a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/incidents.md" rel="noopener">docs/incidents.md</a> and
       <a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/traces.md" rel="noopener">docs/traces.md</a>.
       Behaviour is published, never weapons: scenario inputs and the agent's actions, no payloads against third-party systems.

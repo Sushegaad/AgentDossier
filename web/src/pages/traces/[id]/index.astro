@@ -3,7 +3,7 @@ import Base from "../../../layouts/Base.astro";
 import { loadIndex } from "../../../lib/catalog";
 import { SEVERITY_WORD } from "../../../lib/cve-filter";
 import { cveById, cvesForIncident } from "../../../lib/cves";
-import { AI_ROLE_WORD, SOURCE_STATUS_WORD, TACTIC_LABEL, incidentSlug, loadIncidents, loadSourceCheck, sourceStatus } from "../../../lib/incidents";
+import { AI_ROLE_WORD, SOURCE_STATUS_WORD, TACTIC_LABEL, incidentSlug, loadIncidents, loadSourceCheck, machineReviewed, sourceStatus } from "../../../lib/incidents";
 
 export function getStaticPaths() {
   return (loadIncidents()?.incidents ?? []).map((inc) => ({ params: { id: incidentSlug(inc.id) }, props: { inc } }));
@@ -29,7 +29,7 @@ const flagged = (s: { url: string }) => {
   <div class="prose" style="max-width: 82ch">
     <p class="small muted"><a href={`${base}/traces/`}>Traces</a> / {inc.id}{inc.specimen ? " · specimen" : ""}</p>
     <div class="eyebrow muted" style="color: var(--accent-ink)">
-      {AI_ROLE_WORD[inc.ai_role]} · {inc.category === "incident" ? "real-world incident" : "researcher disclosure"}{inc.reviewer ? "" : " · unreviewed"}
+      {AI_ROLE_WORD[inc.ai_role]} · {inc.category === "incident" ? "real-world incident" : "researcher disclosure"}{machineReviewed(inc) ? " · machine-reviewed" : inc.reviewer ? "" : " · unreviewed"}
     </div>
     <h1 style="margin-top: 6px; font-size: clamp(1.7rem, 4vw, 2.4rem)">{inc.title}</h1>
     <p class="body">{inc.summary}</p>
@@ -136,7 +136,7 @@ const flagged = (s: { url: string }) => {
     </div>
 
     <p class="small muted" style="border-top: 2px solid var(--rule); padding-top: 10px; margin-top: 28px">
-      Compiled from the public sources above, as reported. Not an attribution, a finding of fault or a legal conclusion; figures are those stated by the sources{inc.specimen ? "; this entry is an illustrative specimen, not a single real event" : ""}. One event, as of its sources' dates.
+      {machineReviewed(inc) && <>Published by the weekly machine review ({inc.reviewer?.replace(/^model:\s*/i, "")}) from the sources above on {inc.checked_on}: every field is as the sources state it, or empty. </>}Compiled from the public sources above, as reported. Not an attribution, a finding of fault or a legal conclusion; figures are those stated by the sources{inc.specimen ? "; this entry is an illustrative specimen, not a single real event" : ""}. One event, as of its sources' dates.
     </p>
   </div>
 </Base>

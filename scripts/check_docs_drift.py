@@ -91,23 +91,12 @@ def check_docs_list(problems: list[str]) -> None:
 
 
 def check_incident_count(problems: list[str]) -> None:
+    """docs/incidents.md must not quote a fixed incident count: the machine review changes it weekly."""
     if not INCIDENTS.exists() or not INCIDENTS_DOC.exists():
         return
-    published = len(re.findall(r"^    status: published\s*$", _read(INCIDENTS), re.M))
-    placeholders = len(re.findall(r"^    status: placeholder\b", _read(INCIDENTS), re.M))
     doc = _read(INCIDENTS_DOC)
-    m = re.search(r"\*\*(\d+)\s+published\*\*", doc)
-    if not m:
-        problems.append("docs/incidents.md: expected a '**N published**' count (Where new entries come from)")
-    elif int(m.group(1)) != published:
-        problems.append(
-            f"docs/incidents.md says {m.group(1)} published incidents; incidents.yaml has {published}"
-        )
-    p = re.search(r"\*\*(\d+)\s+placeholders?\*\*", doc)
-    if p and int(p.group(1)) != placeholders:
-        problems.append(
-            f"docs/incidents.md says {p.group(1)} placeholders; incidents.yaml has {placeholders}"
-        )
+    if re.search(r"\*\*\d+\s+(published|placeholders?)\*\*", doc):
+        problems.append("docs/incidents.md quotes a fixed incident count; the count lives on /traces/ now")
 
 
 def check_cve_products(problems: list[str]) -> None:

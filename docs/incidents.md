@@ -44,15 +44,11 @@ registry is at `/traces/export.json`.
 
 ## Where new entries come from
 
-- Curated from public reports — **13 published** (ForcedLeak, EchoLeak, CamoLeak, the Gemini CLI
+- Curated from public reports — the first thirteen (ForcedLeak, EchoLeak, CamoLeak, the Gemini CLI
   and Amazon Q cases, AgentFlayer, the Claude Code espionage report, s1ngularity, the Replit
   database deletion, ShadowLeak, CurXecute/MCPoison, the GitHub MCP toxic agent flow, and the
-  Gemini "Promptware" smart-home hijack) and **14 placeholders** drafted from the scout's first
-  run (TR-2026-014 → 027: the Hugging Face intrusion OpenAI attributed to its own models,
-  JADEPUFFER / Storm-3168, Unit 42's under-ten-hour agent-run breach, rogue OpenAI agents on
-  Wikimedia, Anthropic's evaluation incidents, the ARTEX campaign against South Korean banks, and
-  eight sourced disclosures) that a person still has to complete and publish. These counts are
-  checked against `incidents.yaml` by `scripts/check_docs_drift.py`.
+  Gemini "Promptware" smart-home hijack) were written by hand; everything after them is published
+  by the weekly machine review below. The live counts are on `/traces/`.
 - **The weekly scout.** The refresh workflow runs `agentdossier incidents scout`, which reads the
   feeds in `config/trace_sources.json` (press, researcher labs, vendor advisories; RSS and Atom,
   parsed with the standard library) and keeps any item whose title or summary names both an
@@ -63,18 +59,40 @@ registry is at `/traces/export.json`.
 - Promoted from an agent-level trace when it rises to a named incident.
 - A harness `injection_eval` run can seed an entry for an agent that fails under benchmark attack.
 
-### Reviewing candidates
+### Machine review — publish by default
 
-A candidate is a lead for the maintainer, never an incident; the site shows only how many are
-waiting. For each one:
+Nobody reads candidates by hand. The refresh runs `agentdossier incidents review` after the
+scout: for every `status: new` candidate (and any `status: placeholder` record still waiting) it
+fetches the article through the guarded client, strips it to text, and asks a model
+(`ANTHROPIC_API_KEY`; `claude-sonnet-5-5` by default, `INCIDENT_REVIEW_MODEL` to change) one
+structured question against that text only: is this a specific, real event in which an AI agent
+attacked, defended or was the target? The reply is JSON — date, AI role, category, an "as
+reported" summary, attacker and defender as the source describes them, scale and impact as
+stated, MITRE ATT&CK tactics, models and agents named, a timeline — validated field by field in
+`agentdossier/incidents/review.py`; a field the article does not state stays null.
 
-- `agentdossier incidents draft <cand-id>` appends a `status: placeholder` record to
-  `incidents.yaml` with the title, link, date and outlet filled in and `TODO` where a person must
-  write (summary, attacker, defender, tactics, timeline, lessons). Complete it from the sources,
-  then set `status: published`. Placeholders validate against the schema but are never rendered.
-- `agentdossier incidents dismiss <cand-id> --note "why"` marks it dismissed; it will not come back.
-- Candidates nobody touches age out after 180 days; promoted and dismissed rows are kept for a
-  year so the same item does not resurface.
+- **The bar.** Published when the verdict is an incident, confidence ≥ 0.8, the source is not an
+  aggregator, and the record's required fields are all stated. The record is appended to
+  `incidents.yaml` as `status: published` with `reviewer: "model: <name> (automated review)"` and
+  `checked_on` set to the run date, so every row says who reviewed it; the site marks these rows
+  *machine-reviewed*. Agents named are cross-linked only by exact catalog name.
+- **Everything else is dismissed** with the model's reason kept on the candidate (`note:`), so the
+  same item does not come back and the decision is on record. A placeholder that fails the bar is
+  removed from `incidents.yaml` in place. A page that cannot be read (bot wall, dead link) is left
+  `new` for next week.
+- **Rules the model is given:** answer only from the article; never invent a fact; summarise,
+  never reproduce prompts, payloads, commands or exploit details; name organisations, products
+  and models, never private individuals; describe each side as the article does, without
+  attribution or blame. Opinion pieces, announcements, surveys and benchmark papers without a
+  concrete run are not incidents.
+- **Retraction.** `agentdossier incidents dismiss <cand-id> --note "why"` on the candidate, and
+  delete the row; or edit the row — the file is yours. `incidents draft <cand-id>` still scaffolds
+  a placeholder for a record you would rather write by hand.
+- The refresh PR body lists every decision (published, dismissed with reason, unreadable), the
+  PR merges itself once the gates pass, and the site redeploys. Candidates nobody can read age out
+  after 180 days; promoted and dismissed rows are kept for a year.
+- `--offline <dir>` replays saved pages and a `verdicts.json`; `tests/test_incident_review.py`
+  covers parsing, the bar, in-place placeholder rewrites, dismissals and the API call shape.
 
 ### Sources re-checked weekly
 
@@ -85,8 +103,8 @@ another site), `gone` (404/410), `unverified` (a 401/403/429 or a bot-protection
 not evidence it is gone) or `error` (no answer). A same-site redirect (a CDN, a trailing slash) is
 still `ok`, with the final URL recorded. The PR body lists links that moved or vanished; `/traces/`
 shows the re-check date and flags those rows; each incident page notes the status beside the link.
-The re-check never edits an incident and never sets `checked_on` — that field means a *person*
-checked the entry against its sources. The first run found one dead link (a truncated Okta URL on
+The re-check never edits an incident and never sets `checked_on` — that field is set by whoever
+reviewed the entry against its sources, a person or the model. The first run found one dead link (a truncated Okta URL on
 TR-2026-008), which was corrected.
 
 Adding or removing a feed, or tuning the keyword axes, is a reviewed pull request to

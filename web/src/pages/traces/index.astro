@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { loadIndex, loadTraceStore } from "../../lib/catalog";
-import { TACTIC_LABEL, incidentSlug, loadCandidates, loadIncidents, loadSourceCheck } from "../../lib/incidents";
+import { TACTIC_LABEL, incidentSlug, loadCandidates, loadIncidents, loadSourceCheck, machineReviewed } from "../../lib/incidents";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const index = loadIndex();
@@ -18,6 +18,7 @@ const cands = loadCandidates();
 const candidatesUrl = "https://github.com/Sushegaad/AgentDossier/blob/main/data/curated/incident_candidates.yaml";
 const check = loadSourceCheck();
 const attention = new Set(check?.needs_attention ?? []);
+const machine = incidents.filter(machineReviewed).length;
 ---
 
 <Base title="Traces" description="Public traces of AI agents attacking or defending systems — an incident registry with tactics, timelines and sources.">
@@ -35,10 +36,9 @@ const attention = new Set(check?.needs_attention ?? []);
     <div class="row" style="gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 10px">
       <span class="tiny muted">
         {incidents.length} incident{incidents.length === 1 ? "" : "s"} · {tacticsUsed.length} tactics · as of {set?.collected_on ?? asOf}
-        {cands && cands.scoutedOn && (
-          <> · <a href={candidatesUrl} rel="noopener">{cands.awaiting} candidate{cands.awaiting === 1 ? "" : "s"} awaiting review</a> (scouted {cands.scoutedOn} from {cands.sourcesChecked} feeds)</>
-        )}
-        {check && <> · sources re-checked {check.checked_on}: {check.summary.ok} of {check.sources_checked} links answer{attention.size ? `, ${attention.size} need${attention.size === 1 ? "s" : ""} attention` : ""}</>}
+        {cands && cands.scoutedOn && <> · {cands.sourcesChecked} feeds scouted {cands.scoutedOn}</>}
+        {cands?.reviewedOn && <> · machine-reviewed {cands.reviewedOn}</>}
+        {machine > 0 && <> · {machine} of {incidents.length} rows published by the weekly review</>}
       </span>
       <a class="btn small" href={`${base}/traces/export.json`} style="margin-left: auto">Export registry (JSON)</a>
     </div>
@@ -68,14 +68,14 @@ const attention = new Set(check?.needs_attention ?? []);
               <td class="small">{inc.attacker.description}</td>
               <td class="small">{inc.defender.description}</td>
               <td class="tiny" style="white-space: nowrap">{(inc.tactics ?? []).join(" · ") || "—"}</td>
-              <td class="small">{inc.sources.length}{inc.reviewer ? "" : <div class="tiny muted">unreviewed</div>}{attention.has(inc.id) && <div class="tiny" style="color: var(--danger)" title="a source link moved or no longer answers">⚠ source link</div>}</td>
+              <td class="small">{inc.sources.length}{machineReviewed(inc) ? <div class="tiny muted">machine-reviewed</div> : inc.reviewer ? "" : <div class="tiny muted">unreviewed</div>}{attention.has(inc.id) && <div class="tiny" style="color: var(--danger)" title="a source link moved or no longer answers">⚠ source link</div>}</td>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
     <p class="tiny muted" style="margin-top: 10px">
-      {tacticsUsed.map((t) => `${t} ${TACTIC_LABEL[t] ?? ""}`).join(" · ")} (MITRE ATT&CK). Compiled from the linked public sources, as reported — not attributions, findings of fault or legal conclusions. Rows marked <em>unreviewed</em> have not yet been checked against their sources by the maintainer.
+      {tacticsUsed.map((t) => `${t} ${TACTIC_LABEL[t] ?? ""}`).join(" · ")} (MITRE ATT&CK). Compiled from the linked public sources, as reported — not attributions, findings of fault or legal conclusions. Rows marked <em>machine-reviewed</em> were read and published by the weekly review ({cands?.reviewedBy ?? "a model"}) from their sources, with every decision on record; the first rows were written by hand.{check && <> Source links re-checked {check.checked_on}: {check.summary.ok} of {check.sources_checked} answer{attention.size ? `; ${attention.size} flagged below` : ""}.</>}
     </p>
 
     <section style="border-top: 2px solid var(--rule); margin-top: 40px; padding-top: 20px; max-width: 76ch">
@@ -92,7 +92,7 @@ const attention = new Set(check?.needs_attention ?? []);
       </div>
       <h3>Where the record comes from</h3>
       <ol>
-        <li><strong>This registry</strong> — the incidents above, curated from public reports (<code>data/curated/incidents.yaml</code>). A weekly <strong>scout</strong> reads {cands?.sourcesChecked || "a list of"} public feeds (press, researcher labs, vendor advisories) and files anything that names both an agent and an attack as a <a href={candidatesUrl} rel="noopener">candidate</a>; a maintainer promotes or dismisses each one. Candidates are leads, never incidents.</li>
+        <li><strong>This registry</strong> — the incidents above, curated from public reports (<code>data/curated/incidents.yaml</code>). A weekly <strong>scout</strong> reads {cands?.sourcesChecked || "a list of"} public feeds (press, researcher labs, vendor advisories) and keeps anything that names both an agent and an attack as a <a href={candidatesUrl} rel="noopener">candidate</a>; a weekly <strong>machine review</strong> then reads each candidate's source and publishes it when it describes a specific, real event — or dismisses it with the reason on file. No one waits on a person; <a href={`${base}/methodology/#traces`}>the bar it has to clear</a>.</li>
         <li><strong>Agent-level traces</strong> on each dossier — curated write-ups, the registry's own reproducible endpoint probes (hash-chained, <code>data/traces/</code>), and harness runs against the AgentDojo prompt-injection benchmark.</li>
         <li><strong>Vendor-published bundles</strong> declared in an ARD manifest, fetched and hash-checked (<a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/traces-spec.md" rel="noopener">publishing spec</a>).</li>
       </ol>

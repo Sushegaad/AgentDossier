@@ -105,9 +105,10 @@ the GitHub connector and release feeds and `NVD_API_KEY` lifts the NVD rate
 limit. Hand-verified evidence, publisher-domain checks and documented
 protocol support live in `data/curated/`. The public catalog is rebuilt every
 Monday by `.github/workflows/refresh.yml` — which also updates the CVE registry,
-scouts public feeds for candidate incidents and re-checks every incident's
-source links — and the
-result is opened as a reviewable pull request, then published through GitHub
+scouts public feeds for candidate incidents, reads and publishes them with a
+model (`ANTHROPIC_API_KEY`), and re-checks every incident's source links — and
+the result is opened as a pull request that merges itself once the gates pass,
+then published through GitHub
 Pages.
 
 ## Self-hosted edition
@@ -201,9 +202,11 @@ decide.
   registry** (`/traces/`): one row per real, sourced event where an AI agent
   attacked, defended or was the target, with a timeline, MITRE ATT&CK tactics,
   what defenders can take from it, and STIX 2.1 / JSON export. A weekly
-  **scout** reads public feeds and files candidates for a maintainer to promote
-  or dismiss, and a weekly **re-check** records whether every source link still
-  answers. Per agent: curated write-ups, the registry's own reproducible probe
+  **scout** reads public feeds for candidates, a weekly **machine review** reads
+  each candidate's source and publishes it when it describes a real event (or
+  dismisses it with the reason on file — no human in the loop, every row says
+  who reviewed it), and a weekly **re-check** records whether every source link
+  still answers. Per agent: curated write-ups, the registry's own reproducible probe
   transcripts, and an ARD extension for vendors to publish their own; every
   bundle lives in an append-only, hash-chained store. A sandbox **harness** that
   runs agents against the AgentDojo prompt-injection benchmark is wired in and

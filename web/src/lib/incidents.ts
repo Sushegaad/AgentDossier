@@ -97,13 +97,17 @@ export function loadIncidents(): IncidentSet | null {
   return cached;
 }
 
-/** The scout's candidates file (data/curated/incident_candidates.yaml): leads awaiting a maintainer,
- *  never incidents. The site shows only the count and the scout date. */
+/** The scout's candidates file (data/curated/incident_candidates.yaml): what the weekly scout found and
+ *  what the machine review did with it. The site shows the scout and review dates. */
 export interface CandidateSummary {
+  /** candidates not yet read (the page could not be fetched); retried next week */
   awaiting: number;
   scoutedOn: string | null;
   sourcesChecked: number;
   sourcesFailed: string[];
+  /** the last machine review: date and model */
+  reviewedOn: string | null;
+  reviewedBy: string | null;
 }
 
 let cachedCandidates: CandidateSummary | null | undefined;
@@ -116,6 +120,8 @@ export function loadCandidates(): CandidateSummary | null {
       scouted_on?: string | null;
       sources_checked?: number;
       sources_failed?: string[];
+      reviewed_on?: string | null;
+      reviewed_by?: string | null;
       candidates?: Array<{ status?: string }>;
     };
     cachedCandidates = {
@@ -123,6 +129,8 @@ export function loadCandidates(): CandidateSummary | null {
       scoutedOn: doc.scouted_on ? String(doc.scouted_on) : null,
       sourcesChecked: doc.sources_checked ?? 0,
       sourcesFailed: doc.sources_failed ?? [],
+      reviewedOn: doc.reviewed_on ? String(doc.reviewed_on) : null,
+      reviewedBy: doc.reviewed_by ? String(doc.reviewed_by).replace(/^model:\s*/, "") : null,
     };
   } catch (e) {
     if ((e as NodeJS.ErrnoException).code === "ENOENT") cachedCandidates = null;
@@ -176,6 +184,11 @@ export const SOURCE_STATUS_WORD: Record<SourceStatus, string> = {
   unverified: "could not be verified (bot wall)",
   error: "did not answer",
 };
+
+/** True when the row was published by the weekly machine review rather than a person. */
+export function machineReviewed(inc: Incident): boolean {
+  return !!inc.reviewer && /^model:/i.test(inc.reviewer);
+}
 
 export function incidentSlug(id: string): string {
   return id.toLowerCase();

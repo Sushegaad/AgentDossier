@@ -36,8 +36,9 @@ else:
     print("\nNo compliance badges yet (Phase 1b).")
 print("\nReview `data/review/matches.yaml` for new near-duplicate candidates before merging.")
 
-# incident candidates from the scout (leads for the maintainer, never incidents)
+# incident candidates from the scout, and what the machine review did with them
 cands = Path("data/curated/incident_candidates.yaml")
+review = Path("build/incident_review.json")
 if cands.exists():
     try:
         import yaml  # noqa: PLC0415
@@ -46,19 +47,37 @@ if cands.exists():
     except ImportError:  # pragma: no cover
         cdoc = {}
     new = [c for c in cdoc.get("candidates") or [] if c.get("status") == "new"]
-    fresh = [c for c in new if c.get("first_seen") == cdoc.get("scouted_on")]
+    fresh = [c for c in (cdoc.get("candidates") or []) if c.get("first_seen") == cdoc.get("scouted_on")]
     print(
-        f"\n### Incident candidates (scout)\n\n{len(new)} awaiting review, {len(fresh)} found this run, "
-        f"{cdoc.get('sources_checked', 0)} feeds checked"
-        + (f", failed: {', '.join(cdoc['sources_failed'])}" if cdoc.get("sources_failed") else "")
-        + ". Promote with `agentdossier incidents draft <id>`, or set `status: dismissed`.\n"
+        f"\n### Incident scout\n\n{len(fresh)} candidate(s) found this run from "
+        f"{cdoc.get('sources_checked', 0)} feeds"
+        + (f" (failed: {', '.join(cdoc['sources_failed'])})" if cdoc.get("sources_failed") else "")
+        + f"; {len(new)} left unread (page could not be fetched; retried next week).\n"
     )
     for c in fresh[:15]:
         print(
-            f"- `{c['id']}` [{c['title']}]({c['url']}) — {c.get('outlet', '')}, {c.get('date') or 'undated'}"
+            f"- `{c['id']}` [{c['title']}]({c['url']}) — {c.get('outlet', '')}, {c.get('date') or 'undated'}: **{c.get('status')}**"
         )
     if len(fresh) > 15:
         print(f"- … and {len(fresh) - 15} more in `data/curated/incident_candidates.yaml`")
+if review.exists():
+    rdoc = json.loads(review.read_text())
+    print(
+        f"\n### Machine review ({rdoc.get('model')}, {rdoc.get('reviewed_on')})\n\n"
+        f"{rdoc.get('candidates_reviewed', 0)} candidates and {rdoc.get('placeholders_reviewed', 0)} placeholders read → "
+        f"**{len(rdoc.get('published') or [])} published**, {len(rdoc.get('dismissed') or [])} dismissed, "
+        f"{len(rdoc.get('unreadable') or [])} unreadable, {len(rdoc.get('errors') or [])} errors. "
+        "Published rows carry `reviewer: model: … (automated review)`; retract one with "
+        "`agentdossier incidents dismiss <cand-id> --note` and delete the row.\n"
+    )
+    for r in rdoc.get("published") or []:
+        print(f"- published **{r['id']}** {r['title']} — {r['why']}")
+    for r in (rdoc.get("dismissed") or [])[:20]:
+        print(f"- dismissed `{r['id']}` {r['title']} — {r['why']}")
+    for r in rdoc.get("unreadable") or []:
+        print(f"- unreadable `{r['id']}` — {r['why']}")
+    for e in rdoc.get("errors") or []:
+        print(f"- error: {e}")
 
 # source re-check: which incident links still answer
 check = Path("data/curated/incident_source_check.json")

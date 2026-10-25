@@ -22,8 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 180   # NVD allows 5 requests / 30 s without NVD_API_KEY
     permissions:
-      contents: write        # push the refresh branch
-      pull-requests: write   # open the catalog PR
+      contents: write        # push the refresh branch and merge the PR
+      pull-requests: write   # open and merge the catalog PR
+      actions: write         # dispatch the pages workflow after the merge
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
       - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e  # v10.3.2
@@ -62,6 +63,13 @@ jobs:
         # Candidates are leads for the maintainer (promote with `agentdossier incidents draft <id>`);
         # nothing here writes an incident. A failing feed is reported in the run, never fatal.
         run: uv run agentdossier incidents scout
+      - name: Review the candidates with a model and publish what clears the bar
+        # Reads each new candidate's article (and any placeholder's sources), asks the model one
+        # structured question against that text, and appends a published record or dismisses the
+        # candidate with the reason on file. No human in the loop; every decision is in the PR body.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: uv run agentdossier incidents review --allow-missing-key --review-report build/incident_review.json
       - name: Re-check every published incident's sources
         # Records which source links still answer (data/curated/incident_source_check.json). Never edits
         # an incident; the PR body and /traces/ flag links a person should look at.
@@ -71,7 +79,13 @@ jobs:
         run: |
           uv run python scripts/catalog_summary.py data/catalog > /tmp/pr-body.md
           echo "body<<EOF" >> "$GITHUB_OUTPUT"; cat /tmp/pr-body.md >> "$GITHUB_OUTPUT"; echo "EOF" >> "$GITHUB_OUTPUT"
+      - name: Gates the merge depends on (the PR is merged by this job, so they run here)
+        run: |
+          uv run python scripts/check_docs_drift.py
+          uv run python scripts/verify_traces.py
+          uv run python -m pytest -q tests/test_incidents.py tests/test_incident_review.py tests/test_cves.py
       - name: Open pull request
+        id: pr
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1  # v8.1.1
         with:
           branch: refresh/catalog
@@ -85,6 +99,16 @@ jobs:
             data/changelog/**
             data/traces/**
             data/curated/incident_candidates.yaml
+            data/curated/incidents.yaml
             data/curated/incident_source_check.json
             data/cves/**
           delete-branch: true
+      - name: Merge the refresh and redeploy the site
+        # The gates above passed on exactly this tree. A PR opened with GITHUB_TOKEN never triggers the
+        # ci or pages workflows, so the job merges it itself and dispatches pages explicitly.
+        if: steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch
+          gh workflow run pages.yml --ref main
