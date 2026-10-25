@@ -6,6 +6,13 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Fixed — documentation drift after the machine review shipped
+- The review stamps the registry's `collected_on` on every publish, so `/traces/` "as of" moves
+  with the data (it showed 2026-10-11 under rows published 2026-10-25). CONTRIBUTING, README's
+  technical design, `docs/traces.md`, `docs/architecture.md` (now describes both registries and the
+  self-merging refresh), `docs/cves.md` and `/methodology/#cves` no longer describe a person
+  promoting candidates or an "unreviewed" CVE list.
+
 ### Changed — the incident registry publishes by default (machine review, no human in the loop)
 - `agentdossier incidents review` runs in the weekly refresh after the scout: it fetches each new
   candidate's article (and any placeholder's sources), asks a model (`ANTHROPIC_API_KEY`;

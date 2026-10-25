@@ -243,7 +243,8 @@ decide.
 - **Static public core.** A Python pipeline (`agentdossier build`) compiles a
   catalog of JSON records; an Astro + React site renders them as a fully static
   site with no backend and no accounts. The weekly refresh runs in CI and opens
-  a reviewable pull request — the data is never edited in place.
+  a pull request that merges itself once the gates pass — the data is never
+  edited in place, and every change is a commit.
 - **Provenance over assertion.** Every record carries its source, date and a
   tier that says *how* it is known. Protocol and trace artifacts are fetched,
   validated and hashed; a web page served where a JSON document was expected is

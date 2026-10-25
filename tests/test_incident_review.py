@@ -236,6 +236,7 @@ def test_review_publishes_dismisses_and_rewrites_placeholders(world: dict[str, P
     assert incs["TR-2026-003"]["title"] == "Lab disclosure" and incs["TR-2026-003"]["status"] == "published"
     assert incs["TR-2026-001"]["reviewer"] == "Hemant Naik"  # untouched
     assert world["incs"].read_text().startswith("# header comment\n")
+    assert str(doc["collected_on"]) == "2026-10-26"  # the "as of" date moves with every publish
 
     cdoc = sc.read_candidates(world["cands"])
     by = {c["id"]: c for c in cdoc["candidates"]}

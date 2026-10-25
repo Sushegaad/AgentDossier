@@ -555,6 +555,11 @@ def review(
     if len(ids) != len(set(ids)):
         raise RuntimeError("review produced duplicate incident ids; nothing written")
     if not dry_run:
+        if report.published or report.dismissed:
+            # the header's collected_on is the registry's "as of" date on the site
+            text = re.sub(
+                r"^collected_on: .*$", f"collected_on: {today.isoformat()}", text, count=1, flags=re.M
+            )
         incidents_path.write_text(text if text.endswith("\n") else text + "\n")
         doc["reviewed_on"] = today.isoformat()
         doc["reviewed_by"] = f"model: {model}"

@@ -55,7 +55,7 @@ links advisories and records, never exploit write-ups. A rejected CVE disappears
 3. **Overrides** — `data/curated/cve_overrides.yaml`, the human layer: per CVE a `status`
    (`included` · `excluded`), `note`, `reviewer`, `checked_on`, and corrections to category, surface
    or links; plus `exclude_products`. `agentdossier cves include|exclude <id> --note "…" --reviewer
-   "Name"` edits it for you. Until a person decides, a record is a `candidate` and shows *unreviewed*.
+   "Name"` edits it for you. Until a person decides, a record is a `candidate`; the list does not show review state, and a CVE page names the reviewer once there is one.
 4. **Link** — `related_agents` from the product list (only slugs that exist in the catalog);
    `related_incidents` from the incident registry (an explicit `cves:` list on the record, else CVE
    ids in its text).
