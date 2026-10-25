@@ -22,7 +22,7 @@ dependencies = []
 [project.optional-dependencies]
 connectors = ["openpyxl>=3.1.5", "feedparser>=6.0.14", "rapidfuzz>=3.14.6", "dnspython>=2.9.0"]
 server = [
-  "fastapi>=0.143.1", "uvicorn[standard]>=0.54.0", "pydantic>=2.14.1", "pydantic-settings>=2.16.0",
+  "fastapi>=0.159.1", "uvicorn[standard]>=0.54.0", "pydantic>=2.14.1", "pydantic-settings>=2.16.1",
   "authlib>=1.9.1", "apscheduler>=3.11.3", "itsdangerous>=2.2",
 ]
 mcp = ["mcp>=2.3.0"]
@@ -30,7 +30,7 @@ mcp = ["mcp>=2.3.0"]
 # and the success check; we run the agent against them and record the trace. Heavy and optional.
 harness = ["agentdojo>=0.1.35"]
 dev = [
-  "pytest>=9.1.1", "pytest-cov>=7.1.0", "hypothesis>=6.169.3", "ruff>=0.17.0", "mypy>=2.4.0",
+  "pytest>=9.1.1", "pytest-cov>=7.1.0", "hypothesis>=6.170.5", "ruff>=0.17.1", "mypy>=2.4.0",
   "openpyxl>=3.1.5", "jsonschema>=4.26.0", "pyyaml>=6.0.3",
 ]
 
