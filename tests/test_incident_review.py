@@ -287,3 +287,4 @@ def test_anthropic_completer_posts_and_reads_text():
     assert out == '{"incident": false}' and seen["url"] == rv.API_URL
     body = json.loads(seen["data"])  # type: ignore[arg-type]
     assert body["model"] == "m" and body["system"] == "sys" and seen["headers"]["x-api-key"] == "k"  # type: ignore[index]
+    assert "temperature" not in body  # the API rejects it for current models
