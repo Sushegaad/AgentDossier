@@ -11,7 +11,6 @@ const asOf = idx?.built_at ? idx.built_at.slice(0, 10) : "the last build";
 const names = productNames();
 const listed = Object.keys(names).length;
 const kev = records.filter((r) => r.kev).length;
-const reviewed = records.filter((r) => r.reviewer).length;
 const byCategory = Object.fromEntries(CATEGORY_ORDER.map((c) => [c, records.filter((r) => r.category === c).length]));
 const years = [...new Set(records.map((r) => r.published.slice(0, 4)))].sort();
 const span = years.length ? `${years[0]}–${years[years.length - 1]}` : "";
@@ -36,10 +35,9 @@ const docsUrl = "https://github.com/Sushegaad/AgentDossier/blob/main/docs/cves.m
       <div class="stat"><div class="n">{records.length.toLocaleString()}</div><div class="l">CVEs listed, {span}</div></div>
       <div class="stat"><div class="n">{kev}</div><div class="l">in CISA's Known Exploited Vulnerabilities</div></div>
       <div class="stat"><div class="n">{idx?.products_matched.length ?? 0}</div><div class="l">of {listed} listed products with a CVE</div></div>
-      <div class="stat"><div class="n">{reviewed}</div><div class="l">reviewed by the maintainer</div></div>
     </div>
     <p class="tiny muted" style="margin: 0 0 18px">
-      {CATEGORY_ORDER.map((c) => `${byCategory[c]} ${CATEGORY_LABEL[c].toLowerCase()}`).join(" · ")} · as of {asOf}. Rows marked <em>unreviewed</em> are listed by the matching rules alone and have not yet been checked by a person; a wrong listing is fixed with a one-line override, never by editing the record.
+      {CATEGORY_ORDER.map((c) => `${byCategory[c]} ${CATEGORY_LABEL[c].toLowerCase()}`).join(" · ")} · as of {asOf}. Rows are listed by the matching rules; a wrong listing is fixed with a one-line override, never by editing the record.
     </p>
 
     <CveApp client:load productNames={names} />

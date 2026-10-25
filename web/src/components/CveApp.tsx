@@ -149,13 +149,6 @@ export default function CveApp(props: CveAppProps) {
               </span>
               <span className="count">{counts?.kev}</span>
             </label>
-            <label>
-              <span>
-                <input type="checkbox" checked={filters.reviewed} onChange={(e) => setFilters({ ...filters, reviewed: e.target.checked })} />
-                Reviewed by the maintainer
-              </span>
-              <span className="count">{counts?.reviewed}</span>
-            </label>
           </div>
           <div className="facet">
             <span className="label">Severity (CVSS, official)</span>
@@ -280,7 +273,6 @@ export default function CveApp(props: CveAppProps) {
                       <td className="small">{r.products.length ? r.products.slice(0, 3).join(", ") + (r.products.length > 3 ? ` +${r.products.length - 3}` : "") : <span className="muted">—</span>}</td>
                       <td className="small">
                         {r.summary}
-                        {!r.reviewed && <div className="tiny muted">unreviewed</div>}
                       </td>
                       <td className="tiny" style={{ minWidth: "9rem" }}>
                         {r.surface.map((s) => SURFACE_LABEL[s]).join(" · ") || "—"}

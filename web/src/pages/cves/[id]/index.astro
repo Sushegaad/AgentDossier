@@ -29,7 +29,7 @@ const title = products.length ? `${rec.id} · ${[...new Set(products.map((x) => 
   <div class="prose" style="max-width: 82ch">
     <p class="small muted"><a href={`${base}/cves/`}>CVEs</a> / {rec.id}</p>
     <div class="eyebrow muted" style="color: var(--accent-ink)">
-      {CATEGORY_LABEL[rec.category]}{rec.kev ? " · exploited in the wild (CISA KEV)" : ""}{rec.reviewer ? "" : " · unreviewed"}
+      {CATEGORY_LABEL[rec.category]}{rec.kev ? " · exploited in the wild (CISA KEV)" : ""}
     </div>
     <h1 style="margin-top: 6px; font-size: clamp(1.7rem, 4vw, 2.4rem)">{rec.id}</h1>
     <div class="row" style="gap: 8px; flex-wrap: wrap; align-items: center; margin: 4px 0 12px">
