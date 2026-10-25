@@ -47,7 +47,8 @@ DEFAULT_MODEL = os.environ.get("INCIDENT_REVIEW_MODEL", "claude-sonnet-5-5")
 API_URL = "https://api.anthropic.com/v1/messages"
 ARTICLE_CHARS = 14_000
 PUBLISH_CONFIDENCE = 0.8
-TACTIC_RE = re.compile(r"^TA00\d{2}$")
+# the 14 MITRE ATT&CK Enterprise tactics: the only ids a record may carry (the site has a label for each)
+TACTICS = frozenset(f"TA00{n:02d}" for n in [*range(1, 12), 40, 42, 43])
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 AI_ROLES = ("attacker", "defender", "target")
 CATEGORIES = ("red_team", "injection_eval", "incident", "ctf")
@@ -155,7 +156,7 @@ def parse_verdict(text: str) -> Verdict:
     except (TypeError, ValueError):
         conf = 0.0
     date = _str(raw.get("date"))
-    tactics = [t for t in (raw.get("tactics") or []) if isinstance(t, str) and TACTIC_RE.match(t)]
+    tactics = [t for t in (raw.get("tactics") or []) if isinstance(t, str) and t in TACTICS]
     models = [
         {"name": str(x["name"]).strip(), "role": x["role"]}
         for x in (raw.get("models_named") or [])

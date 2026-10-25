@@ -42,7 +42,7 @@ GOOD = {
     "defender": "Acme (build infrastructure)",
     "scale": "one build cluster",
     "impact": "signing keys exfiltrated, then rotated",
-    "tactics": ["TA0001", "TA0010", "bogus"],
+    "tactics": ["TA0001", "TA0010", "bogus", "TA0099"],
     "models_named": [{"name": "Langflow", "role": "attacker"}, {"name": "x", "role": "nope"}],
     "agents_named": ["Langflow"],
     "vendor_response": "keys rotated; post-mortem published",

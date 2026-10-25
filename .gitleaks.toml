@@ -1,0 +1,15 @@
+# gitleaks: the catalog is scraped public data. ARD manifests describe how an agent's API
+# authenticates ("apiAuthentication": "Ed25519-signed requests …"), which the generic-api-key rule
+# mistakes for a key. Nothing under data/ is a secret of ours.
+title = "AgentDossier"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "scraped catalog data and official CVE records, never credentials"
+paths = [
+  '^data/catalog/',
+  '^data/cves/',
+  '^web/public/catalog/',
+]
