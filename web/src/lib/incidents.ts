@@ -60,6 +60,7 @@ export interface IncidentSet {
 /** MITRE ATT&CK tactic ids → short labels, for the ones the registry uses. */
 export const TACTIC_LABEL: Record<string, string> = {
   TA0043: "Reconnaissance",
+  TA0042: "Resource Development",
   TA0001: "Initial Access",
   TA0002: "Execution",
   TA0003: "Persistence",
