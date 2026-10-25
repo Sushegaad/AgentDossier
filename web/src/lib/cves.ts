@@ -4,6 +4,7 @@
 // incident cross-links (PR 3) and the exports. Never a score of ours, never an exploit.
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { type AgentCveSummary } from "./cve-summary";
 import { type CveCategory, type CveRow, type CveStatus, type CveSurface, type FixStatus, type Severity, cveSlug } from "./cve-filter";
 
 export interface CveProduct {
@@ -158,3 +159,65 @@ export const MATCH_TEST_WORD: Record<string, string> = {
   "B:cwe": "CWE-1427 (improper neutralization of generative-AI prompts)",
   "B:vocabulary": "agent vocabulary in the official description",
 };
+
+/** What a dossier shows about one linked CVE: enough for the Security row and the CVE band. */
+export interface CveLink {
+  id: string;
+  published: string;
+  severity: Severity | null;
+  score: number | null;
+  surface: CveSurface[];
+  kev: boolean;
+  fix: FixStatus;
+  reviewed: boolean;
+  summary: string;
+}
+
+/** The CVEs linked to a catalog agent, newest first (the dossier's Security row and CVE band). */
+export function cveLinksForAgent(agentSlug: string): CveLink[] {
+  const names = productNames();
+  return cvesForAgent(agentSlug)
+    .map((r) => {
+      const row = toRow(r, names);
+      return { id: r.id, published: r.published, severity: row.severity, score: row.score, surface: r.surface, kev: row.kev, fix: row.fix, reviewed: row.reviewed, summary: row.summary };
+    })
+    .sort((a, b) => b.published.localeCompare(a.published) || a.id.localeCompare(b.id));
+}
+
+interface ProductAgents {
+  products: Array<{ id: string; agents?: string[] }>;
+}
+let cachedAgentProducts: Record<string, string[]> | undefined;
+
+/** Catalog slug → listed-product ids (config/cve_products.json), for the "all CVEs" link on a dossier. */
+export function productIdsForAgent(agentSlug: string): string[] {
+  if (!cachedAgentProducts) {
+    const path = resolve(process.env.CVE_PRODUCTS ?? "../config/cve_products.json");
+    cachedAgentProducts = {};
+    try {
+      const cfg = JSON.parse(readFileSync(path, "utf8")) as ProductAgents;
+      for (const p of cfg.products) for (const a of p.agents ?? []) (cachedAgentProducts[a] ??= []).push(p.id);
+    } catch (e) {
+      if ((e as NodeJS.ErrnoException).code !== "ENOENT") throw e;
+    }
+  }
+  return cachedAgentProducts[agentSlug] ?? [];
+}
+
+/** Per catalog slug: how many CVEs link to it, how many are in KEV or critical/high, and the newest
+ *  date — the search result's mark (/cves/agents.json), small enough to fetch once. */
+export type { AgentCveSummary };
+
+export function agentCveSummary(): Record<string, AgentCveSummary> {
+  const out: Record<string, AgentCveSummary> = {};
+  for (const r of loadCves()?.records ?? []) {
+    for (const slug of r.related_agents ?? []) {
+      const s = (out[slug] ??= { n: 0, kev: 0, severe: 0, newest: "" });
+      s.n += 1;
+      if (r.kev) s.kev += 1;
+      if (r.cvss?.severity === "CRITICAL" || r.cvss?.severity === "HIGH") s.severe += 1;
+      if (r.published > s.newest) s.newest = r.published;
+    }
+  }
+  return out;
+}

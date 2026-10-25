@@ -21,7 +21,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
     </table>
     <p>
       The trust strip on every result shows five facts, and only one of them is a T-scale: <strong>Publisher</strong> (confirmed, likely, unconfirmed or unknown — who publishes the agent),
-      <strong>Evidence</strong> (best active compliance record about the agent itself, T1–T5), <strong>Security</strong> (an NVD keyword search was run; the dossier shows what it matched),
+      <strong>Evidence</strong> (best active compliance record about the agent itself, T1–T5), <strong>Security</strong> (an NVD keyword search was run for the score; the dossier shows the CVEs the <a href={`${base}/cves/`}>CVE registry</a> links to the agent, never a count of ours),
       <strong>Protocols</strong> (A2A / MCP / ARD observed) and <strong>Issues</strong> (open incidents, CVEs or
       regulator actions). "–" means not checked in this build.
     </p>
@@ -82,7 +82,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       description) and the links to agent dossiers and public traces are this registry's classification. CISA's Known
       Exploited Vulnerabilities catalog is the only exploitation signal carried. A row is <em>unreviewed</em> until a person
       checks it; a wrong listing is excluded with a one-line, noted override that survives every rebuild, and the record
-      is never edited. No score of ours is derived from a CVE; the dossier's security row links to the CVEs and stops there.
+      is never edited. No score of ours is derived from a CVE; the dossier's Security row and its CVE band show the
+      registry's links to the agent (by listed product) and stop there — "no CVE linked" reads "none linked in the
+      products checked", never as a finding. A search result shows the same count; an incident page lists the CVE ids
+      its sources name, and a CVE page the incidents and dossiers that name it.
       Advisories without a CVE id (GitHub-only GHSAs) are not listed. The rules in full:
       <a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/cves.md" rel="noopener">docs/cves.md</a>.
     </p>

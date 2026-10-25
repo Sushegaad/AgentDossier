@@ -4,6 +4,7 @@ import AgentProfile from "../../components/AgentProfile";
 import { loadResources } from "../../lib/catalog";
 import { beforeYouDeploy } from "../../lib/deploy";
 import { referenceFor } from "../../lib/reference";
+import { cveLinksForAgent, productIdsForAgent } from "../../lib/cves";
 import { incidentSlug, incidentsForAgent } from "../../lib/incidents";
 
 export function getStaticPaths() {
@@ -16,11 +17,13 @@ const ref = referenceFor(res.slug);
 const deploy = beforeYouDeploy(res, ref);
 const comparison = ref ? { href: `${base}/compare/${ref.useCase.id}/`, title: ref.useCase.title } : null;
 const incidents = incidentsForAgent(res.slug);
+const cves = cveLinksForAgent(res.slug);
+const cveProducts = productIdsForAgent(res.slug);
 ---
 
 <Base title={res.name} description={res.description ?? undefined}>
   {/* rendered at build time with no client-side React: the dossier is static HTML */}
-  <AgentProfile resource={res} shortlist="static" deploy={deploy} comparison={comparison} />
+  <AgentProfile resource={res} shortlist="static" deploy={deploy} comparison={comparison} cves={cves} cveProducts={cveProducts} />
   {incidents.length > 0 && (
     <section class="container" style="max-width: 82ch; margin: 0 auto 40px; border-top: 2px solid var(--accent); padding-top: 12px">
       <h2 style="font-size: 1.25rem">Appears in the incident registry</h2>

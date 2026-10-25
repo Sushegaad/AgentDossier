@@ -3,6 +3,8 @@ import { BASE, fetchResourceByIdOrSlug } from "../lib/data";
 import { beforeYouDeploy, type BeforeYouDeploy } from "../lib/deploy";
 import { COMPONENT_LABELS, COMPONENT_MAX, DOMAIN_PROFILES, PROFILES, bestDomain, evidenceGroups, gdprPanel, protocolLines, provenance, tierCounts, tierRange, type EvidenceRow, type Mark } from "../lib/dossier";
 import { IDENTITY_EVIDENCE, IDENTITY_LABEL, IDENTITY_WORD, NEWS_TAG_LABEL, TRACE_KIND_WORD, TRACE_TIER_WORD, RISK_TAGS, domainLabel, fmtDate, frameworkName, variantLabel } from "../lib/labels";
+import { SEVERITY_WORD, SURFACE_LABEL } from "../lib/cve-filter";
+import type { CveLink } from "../lib/cves";
 import type { Resource } from "../lib/types";
 import ShortlistButton from "./ShortlistButton";
 
@@ -21,6 +23,8 @@ export default function AgentProfile({
   shortlist = "island",
   deploy,
   comparison,
+  cves,
+  cveProducts = [],
 }: {
   resource?: Resource;
   id?: string;
@@ -29,6 +33,10 @@ export default function AgentProfile({
   deploy?: BeforeYouDeploy;
   /** link to the worked comparison this agent appears in */
   comparison?: { href: string; title: string } | null;
+  /** the CVE registry's links to this agent, newest first (build time); undefined when the registry is not available */
+  cves?: CveLink[];
+  /** listed-product ids behind those links, for the "all CVEs" link */
+  cveProducts?: string[];
 }) {
   const [res, setRes] = useState<Resource | null | undefined>(resource);
   useEffect(() => {
@@ -61,6 +69,8 @@ export default function AgentProfile({
   const news = res.news ?? [];
   const issues = res.issues;
   const traces = [...(res.traces ?? [])].sort((a, b) => a.tier - b.tier || b.date.localeCompare(a.date));
+  const cveKev = (cves ?? []).filter((c) => c.kev).length;
+  const cveSevere = (cves ?? []).filter((c) => c.severity === "CRITICAL" || c.severity === "HIGH").length;
   const traceTier = (traces.length ? Math.min(...traces.map((t) => t.tier)) : 5) as 1 | 2 | 3 | 4 | 5;
   const checked = !!(res.news_checked || res.security);
   const link = res.url ? (/^https?:/.test(res.url) ? res.url : `https://${res.url}`) : null;
@@ -135,7 +145,19 @@ export default function AgentProfile({
           </div>
           <TrustRow k="Publisher" v={<>{IDENTITY_WORD[res.identity.tier]} · {IDENTITY_LABEL[res.identity.tier]}{res.identity.evidence.length > 0 && <span className="muted"> — {res.identity.evidence.map((e) => IDENTITY_EVIDENCE[e] ?? e).join("; ")}</span>}</>} t={IDENTITY_WORD[res.identity.tier]} />
           <TrustRow k="Compliance" v={tierCounts(res)} t={tierRange(res)} />
-          <TrustRow k="Security" v={res.security ? `NVD keyword search for "${res.name}": ${res.security.cves === 0 ? "no CVE" : `${res.security.cves} result${res.security.cves === 1 ? "" : "s"} — may include unrelated products`} · checked ${fmtDate(res.security.checked_at)}` : "Not checked in this build"} t={res.security ? "keyword" : "–"} />
+          <TrustRow
+            k="Security"
+            v={
+              cves
+                ? cves.length === 0
+                  ? <>No CVE linked to this agent in the <a href={`${BASE}/cves/`}>CVE registry</a> — none linked in the products checked, not a finding</>
+                  : <><a href="#cves">{cves.length} CVE{cves.length === 1 ? "" : "s"} linked</a> in the registry{cveKev ? ` · ${cveKev} exploited in the wild (KEV)` : ""}{cveSevere ? ` · ${cveSevere} critical/high` : ""} · newest {cves[0].published}</>
+                : res.security
+                  ? `NVD keyword search for "${res.name}": ${res.security.cves === 0 ? "no CVE" : `${res.security.cves} result${res.security.cves === 1 ? "" : "s"} — may include unrelated products`} · checked ${fmtDate(res.security.checked_at)}`
+                  : "Not checked in this build"
+            }
+            t={cves ? (cves.length ? (cveKev ? "KEV" : "linked") : "none") : res.security ? "keyword" : "–"}
+          />
           <TrustRow
             k="Protocols"
             v={
@@ -157,7 +179,7 @@ export default function AgentProfile({
             t={protoCount}
           />
           <TrustRow k="Traces" v={traces.length ? `${traces.length} public trace${traces.length === 1 ? "" : "s"} · best: ${TRACE_TIER_WORD[traceTier]}${traces.some((t) => t.observed?.egress) ? " · data left the environment in at least one" : ""}` : "None found — nobody has published what this agent does under attack"} t={traceTier === 5 ? "none" : `T${traceTier}`} />
-          <TrustRow k="Issues found" v={issues && checked ? `${issues.regulator_actions} regulator actions · ${issues.incidents} incidents · ${issues.withdrawn_certificates} withdrawn certificates · ${issues.cves} CVEs` : "Not checked in this build"} t="links only" last />
+          <TrustRow k="Issues found" v={issues && checked ? `${issues.regulator_actions} regulator actions · ${issues.incidents} incidents · ${issues.withdrawn_certificates} withdrawn certificates${cves ? " · CVEs: see Security" : ` · ${issues.cves} CVEs`}` : "Not checked in this build"} t="links only" last />
           {res.identity.tier > 2 && rows.some((r) => r.mark !== "missing") && (
             <p className="tiny muted" style={{ marginTop: "10px" }}>
               Publisher unconfirmed: the evidence below is shown but not counted in the governance score, because nothing yet ties this listing to {res.vendor ?? "the vendor"} beyond {res.identity.evidence.map((e) => IDENTITY_EVIDENCE[e] ?? e).join("; ") || "the name"}. A vendor-domain page, marketplace listing, ARD manifest or A2A card would confirm it.
@@ -223,6 +245,44 @@ export default function AgentProfile({
               ● third-party or vendor report · ◎ this registry's own probe transcript · ⚠ data left the environment. A trace describes one version on one date; it is evidence of behaviour, never a certification. Rows marked unreviewed have not yet been checked against their source by the maintainer.
             </p>
           </section>
+          {cves !== undefined && (
+            <section id="cves" style={{ borderTop: "2px solid var(--rule)", paddingTop: "12px" }}>
+              <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", marginBottom: "8px" }}>
+                <h2 style={{ fontSize: "1.25rem" }}>CVEs — on the official record</h2>
+                <span className="tiny muted">
+                  {cves.length ? `${cves.length} linked` : "none linked"} · <a href={`${BASE}/cves/`}>the registry</a>
+                </span>
+              </div>
+              {cves.length === 0 ? (
+                <p className="tiny muted">
+                  No CVE in the registry names this agent or its listed product. That reads "none linked in the products checked", never as a finding: a product that is not on the registry's list, or a record that names it differently, is not seen. The vendor's own advisories remain the source of truth.
+                </p>
+              ) : (
+                <>
+                  <div className="ledger">
+                    {cves.slice(0, 8).map((c) => (
+                      <div key={c.id} className="ledger-row" style={{ gridTemplateColumns: "150px 1fr auto" }}>
+                        <span style={{ fontWeight: 800 }}>
+                          <a href={`${BASE}/cves/${c.id.toLowerCase()}/`} style={{ color: "var(--ink)" }}>{c.id}</a>
+                          <div className="tiny muted">{c.published}{c.kev ? <span style={{ color: "var(--danger)", fontWeight: 700 }}> · KEV</span> : ""}</div>
+                        </span>
+                        <span className="small">
+                          {c.summary}
+                          <div className="tiny muted">{c.surface.map((x) => SURFACE_LABEL[x]).join(" · ") || "—"}{c.fix === "fixed" ? " · fix known" : ""}{c.reviewed ? "" : " · unreviewed"}</div>
+                        </span>
+                        <span className="tiny" style={{ textAlign: "right", whiteSpace: "nowrap" }}>{c.severity ? `${SEVERITY_WORD[c.severity]}${c.score !== null ? ` ${c.score.toFixed(1)}` : ""}` : "unscored"}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="tiny muted" style={{ marginTop: "8px" }}>
+                    {cves.length > 8 ? `${cves.length - 8} more · ` : ""}
+                    <a href={`${BASE}/cves/${cveProducts.length ? `?product=${cveProducts.join(",")}` : ""}`}>All {cves.length} in the registry →</a>
+                    {" "}Severity is the official record's; nothing here enters the score. Links are by listed product, so a CVE that names a different component of the same platform may be missing.
+                  </p>
+                </>
+              )}
+            </section>
+          )}
 
           <section>
             <div className="row" style={{ justifyContent: "space-between", alignItems: "baseline", marginBottom: "12px" }}>

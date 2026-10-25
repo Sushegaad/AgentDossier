@@ -42,6 +42,8 @@ export interface Incident {
   lessons?: string[];
   models_named?: NamedModel[];
   related_agents?: string[];
+  /** Official CVE ids the incident concerns (schema `cves`). */
+  cves?: string[];
   vendor_response?: string | null;
   sources: IncidentSource[];
   reviewer?: string | null;

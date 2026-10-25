@@ -111,3 +111,30 @@ describe("CVE registry (data/cves/index.json)", () => {
     expect(cvesForAgent("langflow-langflow").length).toBeGreaterThan(0);
   });
 });
+
+describe("CVE cross-links on dossiers, search results and incidents", () => {
+  it("lists an agent's CVEs newest first with the product ids behind them", async () => {
+    const { cveLinksForAgent, productIdsForAgent, agentCveSummary } = await import("../src/lib/cves");
+    const links = cveLinksForAgent("langflow-langflow");
+    expect(links.length).toBeGreaterThan(10);
+    for (let i = 1; i < links.length; i++) expect(links[i - 1].published >= links[i].published).toBe(true);
+    expect(productIdsForAgent("langflow-langflow")).toEqual(["langflow"]);
+    expect(productIdsForAgent("no-such-agent")).toEqual([]);
+    const summary = agentCveSummary();
+    expect(summary["langflow-langflow"].n).toBe(links.length);
+    expect(summary["langflow-langflow"].newest).toBe(links[0].published);
+  });
+
+  it("words the summary line for none, one and several", async () => {
+    const { cveSummaryLine } = await import("../src/lib/cve-summary");
+    expect(cveSummaryLine(undefined)).toBe("No CVE linked in the registry");
+    expect(cveSummaryLine({ n: 1, kev: 0, severe: 0, newest: "2026-01-01" })).toBe("1 CVE linked · newest 2026-01-01");
+    expect(cveSummaryLine({ n: 3, kev: 1, severe: 2, newest: "2026-10-05" })).toBe("3 CVEs linked · 1 in KEV · 2 critical/high · newest 2026-10-05");
+  });
+
+  it("an incident's cves: field resolves to registry records", async () => {
+    const { incidentById } = await import("../src/lib/incidents");
+    expect(incidentById("tr-2026-002")?.cves).toEqual(["CVE-2025-32711"]);
+    expect(incidentById("tr-2026-011")?.cves).toEqual(["CVE-2025-54135", "CVE-2025-54136"]);
+  });
+});

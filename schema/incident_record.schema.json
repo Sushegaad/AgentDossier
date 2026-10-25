@@ -69,6 +69,7 @@
       }
     },
     "related_agents": { "type": "array", "items": { "type": "string" }, "description": "Catalog slugs this incident involves; cross-links to dossiers" },
+    "cves": { "type": "array", "items": { "type": "string", "pattern": "^CVE-[0-9]{4}-[0-9]{4,}$" }, "description": "Official CVE ids the incident concerns; the CVE registry links to the incident and the incident page to the CVE" },
     "vendor_response": { "type": ["string", "null"] },
     "sources": {
       "type": "array",
