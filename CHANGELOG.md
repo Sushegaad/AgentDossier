@@ -6,6 +6,22 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Added — CVE registry on the site (PR 2 of 3)
+- A **CVEs** tab (`/cves/`) between Traces and Trust methodology: every listed CVE in one
+  filterable table — KEV, reviewed, severity, attack surface, category, product, year, fix status;
+  word search; sort by published / last modified / CVSS / id; CSV export of the visible rows;
+  every filtered view is a link (`/cves/?surface=prompt_injection&kev=1`) — over a slim
+  `/cves/list.json`, with `/cves/export.json` for the whole registry.
+- A page and JSON per CVE (`/cves/<id>/`): the official record (description, CVSS with vector and
+  scorer, CWE, NVD status, CNA), affected products with fixed-in versions, KEV details, references
+  (deduplicated, never exploit-tagged), links to dossiers and traces, and *why it is listed here*
+  (the tests and terms, the reviewer or "not yet checked by a person"). Buttons to CVE.org, NVD,
+  JSON and "Report a wrong listing".
+- `/methodology/#cves` states the two tests and what is and is not the registry's; `/about/`
+  names the source; README gains a screenshot of the tab; the axe/Lighthouse audit covers
+  `/traces/`, `/cves/` and one CVE page. Unlisted products are shown by their tidied CPE name.
+- `web/tests/cves.test.ts` pins the filter model, URL round-trip, CSV, the loader and cross-links.
+
 ### Added — CVE registry (data stage, PR 1 of 3)
 - **`agentdossier cves update`** runs in the weekly refresh: reads official records from NVD API
   2.0 (the CVE.org record plus CVSS, CWE, CPE) and the CISA KEV catalog, keeps a CVE when a listed
@@ -16,7 +32,7 @@ listed in `docs/methodology.md`.
   retired products), and writes `data/cves/index.json` validated against
   `schema/cve_record.schema.json`. Deterministic; `--offline <dir>` replays saved responses;
   `cves plan|show|include|exclude|spot-check`. First backfill (2023 onward, 35 targeted queries):
-  2,149 fetched → 1,741 listed across 33 products, 10 in KEV. Exploit-tagged references are never
+  2,149 fetched → 1,738 listed across 29 products, 10 in KEV. A product's display name is never matched (only its specific `names`), so "Continue" and "Cursor" do not list every record using those words; a record about a third-party MCP or A2A implementation is categorised `protocol` without a product link. Exploit-tagged references are never
   stored; nothing here enters a score. The scout now hands bare advisory URLs to this registry
   instead of filing them as incident candidates. The refresh PR body lists new CVEs, KEV additions
   and a 50-row precision spot-check. `docs/cves.md`; the site tab follows in PR 2.

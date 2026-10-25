@@ -1,0 +1,134 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { loadIndex } from "../../../lib/catalog";
+import { CATEGORY_LABEL, SEVERITY_WORD, SURFACE_LABEL, cveSlug } from "../../../lib/cve-filter";
+import { MATCH_TEST_WORD, loadCves, productLabel, productNames } from "../../../lib/cves";
+import { incidentSlug, loadIncidents } from "../../../lib/incidents";
+
+export function getStaticPaths() {
+  return (loadCves()?.records ?? []).map((rec) => ({ params: { id: cveSlug(rec.id) }, props: { rec } }));
+}
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const { rec } = Astro.props;
+const names = productNames();
+const records = loadIndex()?.records ?? [];
+const bySlug = new Map(records.map((r) => [r.slug, r]));
+const agents = (rec.related_agents ?? []).map((s) => bySlug.get(s)).filter((r): r is NonNullable<typeof r> => !!r);
+const incidents = loadIncidents()?.incidents.filter((i) => (rec.related_incidents ?? []).includes(i.id)) ?? [];
+const sev = rec.cvss?.severity ? SEVERITY_WORD[rec.cvss.severity] : null;
+const sevStyle = rec.cvss?.severity === "CRITICAL" ? "badge danger" : rec.cvss?.severity === "HIGH" ? "badge warn" : "badge";
+const issueUrl = `https://github.com/Sushegaad/AgentDossier/issues/new?title=${encodeURIComponent(`CVE registry: ${rec.id} is listed wrongly`)}`;
+const officialUrl = `https://www.cve.org/CVERecord?id=${rec.id}`;
+const nvdUrl = `https://nvd.nist.gov/vuln/detail/${rec.id}`;
+const refs = [...new Map(rec.references.map((r) => [r.url, r])).values()];
+const products = rec.products.map((p) => ({ label: productLabel(p, names), p }));
+const title = products.length ? `${rec.id} · ${[...new Set(products.map((x) => x.label))].slice(0, 2).join(", ")}` : rec.id;
+---
+
+<Base title={title} description={rec.description.slice(0, 160)}>
+  <div class="prose" style="max-width: 82ch">
+    <p class="small muted"><a href={`${base}/cves/`}>CVEs</a> / {rec.id}</p>
+    <div class="eyebrow muted" style="color: var(--accent-ink)">
+      {CATEGORY_LABEL[rec.category]}{rec.kev ? " · exploited in the wild (CISA KEV)" : ""}{rec.reviewer ? "" : " · unreviewed"}
+    </div>
+    <h1 style="margin-top: 6px; font-size: clamp(1.7rem, 4vw, 2.4rem)">{rec.id}</h1>
+    <div class="row" style="gap: 8px; flex-wrap: wrap; align-items: center; margin: 4px 0 12px">
+      {sev ? <span class={sevStyle}>{sev}{rec.cvss?.score !== undefined ? ` · CVSS ${rec.cvss?.version} ${rec.cvss?.score.toFixed(1)}` : ""}</span> : <span class="badge">Unscored</span>}
+      {rec.surface.map((s) => <span class="badge">{SURFACE_LABEL[s]}</span>)}
+      {rec.fix?.status === "fixed" && <span class="badge ok">Fix known{rec.fix.version ? ` · ${rec.fix.version}` : ""}</span>}
+    </div>
+    <p class="body">{rec.description}</p>
+    <div class="row" style="gap: 10px; flex-wrap: wrap; margin: 16px 0">
+      <a class="btn primary" href={officialUrl} rel="noopener">Official record (CVE.org)</a>
+      <a class="btn" href={nvdUrl} rel="noopener">NVD</a>
+      <a class="btn" href={`${base}/cves/${cveSlug(rec.id)}.json`}>Export JSON</a>
+      <a class="btn" href={issueUrl} rel="noopener">Report a wrong listing</a>
+    </div>
+
+    <div class="split" style="margin-top: 8px">
+      <div>
+        <h2>Affected products · {products.length}</h2>
+        {products.length ? (
+          <table>
+            <thead><tr><th>Product</th><th>Versions affected</th><th>Fixed in</th></tr></thead>
+            <tbody>
+              {products.map(({ label, p }) => (
+                <tr>
+                  <td>{p.product_id && bySlug.has(p.product_id) ? <a href={`${base}/agents/${p.product_id}/`}>{label}</a> : label}</td>
+                  <td class="small">{p.versions_affected ?? <span class="muted">not stated by CPE</span>}</td>
+                  <td class="small">{p.fixed_in ?? <span class="muted">—</span>}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <p class="small muted">The record names no product by CPE; see the description and the references.</p>
+        )}
+        <p class="tiny muted">Versions as NVD's CPE configuration states them; "—" means the record gives no fixed version, not that none exists. Check the vendor's advisory in the references.</p>
+
+        {(agents.length > 0 || incidents.length > 0) && (
+          <>
+            <h2>In this registry</h2>
+            <ul>
+              {agents.map((a) => <li><a href={`${base}/agents/${a.slug}/`}>{a.name}</a> — agent dossier</li>)}
+              {incidents.map((i) => <li><a href={`${base}/traces/${incidentSlug(i.id)}/`}>{i.id} {i.title}</a> — a public trace that names this CVE</li>)}
+            </ul>
+          </>
+        )}
+
+        <h2>References · {refs.length}</h2>
+        <ul>
+          {refs.map((r) => (
+            <li style="word-break: break-all"><a href={r.url} rel="noopener">{r.url.replace(/^https?:\/\//, "").slice(0, 90)}</a>{r.tags && r.tags.length ? <span class="tiny muted"> — {r.tags.join(", ")}</span> : ""}</li>
+          ))}
+        </ul>
+        <p class="tiny muted">The official record's references, as NVD lists them, minus any tagged <em>Exploit</em>. Nothing here is an exploit or a proof of concept.</p>
+      </div>
+
+      <aside>
+        <div class="panel small">
+          <div class="label" style="margin-bottom: 8px">Official record</div>
+          <table>
+            <tbody>
+              <tr><td>Published</td><td>{rec.published}</td></tr>
+              <tr><td>Last modified</td><td>{rec.last_modified}</td></tr>
+              {rec.vuln_status && <tr><td>NVD status</td><td>{rec.vuln_status}</td></tr>}
+              {rec.cna && <tr><td>Assigned by</td><td style="word-break: break-all">{rec.cna}</td></tr>}
+              {rec.cvss && <tr><td>CVSS {rec.cvss.version}</td><td>{rec.cvss.score.toFixed(1)} {sev}{rec.cvss.source ? <div class="tiny muted">scored by {rec.cvss.source}</div> : ""}</td></tr>}
+              {rec.cvss?.vector && <tr><td>Vector</td><td class="tiny" style="word-break: break-all">{rec.cvss.vector}</td></tr>}
+              {rec.cwe && rec.cwe.length > 0 && <tr><td>Weakness</td><td>{rec.cwe.map((c) => <div><a href={`https://cwe.mitre.org/data/definitions/${c.replace("CWE-", "")}.html`} rel="noopener">{c}</a></div>)}</td></tr>}
+            </tbody>
+          </table>
+        </div>
+        {rec.kev && (
+          <div class="panel small" style="margin-top: 12px; border-left: 3px solid var(--danger)">
+            <div class="label" style="margin-bottom: 8px">CISA Known Exploited Vulnerabilities</div>
+            <table>
+              <tbody>
+                <tr><td>Added</td><td>{rec.kev.added}</td></tr>
+                {rec.kev.due && <tr><td>Federal due date</td><td>{rec.kev.due}</td></tr>}
+                {rec.kev.ransomware && <tr><td>Ransomware use</td><td>{rec.kev.ransomware}</td></tr>}
+              </tbody>
+            </table>
+            <p class="tiny muted" style="margin-top: 6px">Exploitation in the wild has been observed, per CISA. This is the only exploitation signal the registry carries.</p>
+          </div>
+        )}
+        <div class="panel small" style="margin-top: 12px">
+          <div class="label" style="margin-bottom: 8px">Why it is listed here</div>
+          <ul style="margin: 0; padding-left: 1.1em">
+            {rec.match.tests.map((t) => <li>{MATCH_TEST_WORD[t] ?? t}</li>)}
+          </ul>
+          {rec.match.terms.length > 0 && <p class="tiny muted" style="margin: 6px 0 0">Matched: {rec.match.terms.slice(0, 8).join(", ")}</p>}
+          <p class="tiny" style="margin: 8px 0 0">
+            {rec.reviewer ? <>Reviewed by {rec.reviewer}{rec.checked_on ? ` on ${rec.checked_on}` : ""}.</> : <>Listed by the matching rules; not yet checked by a person.</>}
+            {rec.note && <> {rec.note}</>}
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <p class="small muted" style="border-top: 2px solid var(--rule); padding-top: 10px; margin-top: 28px">
+      Description, scores, versions and references are the official CVE record's own, retrieved {rec.retrieved_on} from NVD. Category, attack surface and cross-links are this registry's classification and can be wrong — use the button above. Not a severity assessment for your deployment.
+    </p>
+  </div>
+</Base>

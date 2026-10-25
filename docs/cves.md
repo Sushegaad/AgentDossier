@@ -12,7 +12,7 @@ A CVE is listed when either test passes:
 - **Test A — the affected product is on the list.** `config/cve_products.json` names
   **41 products**, each with a category (`product` · `framework` · `protocol` ·
   `infrastructure`), its CPE `vendor:product` keys, the exact names it is known by, and the catalog
-  agents it maps to. A CPE match or the product's exact name in the official description counts.
+  agents it maps to. A CPE match or one of its listed `names` (whole-word, in the official description) counts; the display name itself is never matched, since it can be an ordinary word ("Continue", "Cursor"), and a name must be specific to the product ("MCP Inspector", not "MCP server").
 - **Test B — the weakness is agent-specific.** The record cites **CWE-1427** (*Improper
   Neutralization of Input Used for LLM Prompting*) or its description matches the vocabulary: one
   *strong* phrase (prompt injection, MCP server, tool call, AI agent…) or two distinct *weak* ones
@@ -48,7 +48,9 @@ links advisories and records, never exploit write-ups. A rejected CVE disappears
    windows. The KEV catalog is read every run.
 2. **Match** — Tests A and B, category, surface tags (`prompt_injection`, `tool_execution`,
    `code_execution`, `exfiltration`, `credential_access`, `auth_bypass`, `supply_chain`,
-   `privilege_escalation`, `ssrf`, `path_traversal`, `dos`) from CWE and description. Prior records
+   `privilege_escalation`, `ssrf`, `path_traversal`, `dos`) from CWE and description. The category
+   is the listed product's; with no product, `protocol` when the description itself names MCP or
+   A2A (a third-party MCP server is a protocol implementation), else `unclassified`. Prior records
    are re-classified with today's config, so a config change applies to the whole list.
 3. **Overrides** — `data/curated/cve_overrides.yaml`, the human layer: per CVE a `status`
    (`included` · `excluded`), `note`, `reviewer`, `checked_on`, and corrections to category, surface
@@ -71,8 +73,8 @@ advisories) to this registry instead of filing them as incident candidates.
 ## Rules
 
 - A row exists only because CVE.org has the ID. No GHSA-only advisories, no researcher findings
-  without a CVE — those belong to traces and the incident registry. The list page shows how many
-  GHSA-only advisories were set aside, so the gap is visible.
+  without a CVE — those belong to traces and the incident registry. The list page says so;
+  counting the GHSA-only advisories set aside is an open item.
 - Never an exploit: no proof-of-concept code, payloads or reproduction steps.
 - Never a score: counts and severities do not enter `sar-score`. "No linked CVE" reads "none linked
   in the sources checked", never as a finding.
@@ -80,10 +82,29 @@ advisories) to this registry instead of filing them as incident candidates.
   classification or links are ours (a GitHub issue; corrections are logged in the trust changelog).
 - Attribution to CVE.org, NVD and CISA on the list page and in `THIRD_PARTY_NOTICES.md`.
 
+## On the site
+
+- `/cves/` — the list: a React island over `/cves/list.json` (one slim row per CVE, ~0.9 MB
+  uncompressed; the full 3.5 MB index is `/cves/export.json`). Facets: KEV, reviewed, severity,
+  attack surface, category, product, year, fix status; word search over id, products, CWE and
+  description; sort by published, last modified, CVSS score or id; CSV export of the visible rows.
+  Filters live in the query string (`/cves/?surface=prompt_injection&kev=1`), so a view is a link.
+  Facet counts are computed against the *other* filters, so a count says what choosing it gives.
+- `/cves/<id>/` and `/cves/<id>.json` — one record: the official description, CVSS (version,
+  score, vector, who scored it), CWE, NVD status, CNA, affected products with fixed-in versions,
+  KEV details, deduplicated references, links to dossiers and traces, and *why it is listed here*
+  (the tests and terms that matched, the reviewer or "not yet checked by a person", the note).
+  Buttons: the CVE.org record, NVD, JSON, "Report a wrong listing" (a GitHub issue).
+- Nav tab **CVEs** between Traces and Trust methodology; `/methodology/#cves` has the rules;
+  `/about/` names the source. Pages are in the axe/Lighthouse audit (`npm run audit`).
+- Code: `web/src/lib/cve-filter.ts` (browser-safe model, filters, URL sync, CSV — tested in
+  `web/tests/cves.test.ts`), `web/src/lib/cves.ts` (build-time loader, rows, cross-links),
+  `web/src/components/CveApp.tsx`, `web/src/pages/cves/`.
+
 ## Offline and tests
 
 `agentdossier cves update --backfill --offline <dir>` replays saved responses (`kev.json`,
 `queries.json` mapping query → file, and the NVD `*.json` files); the first backfill (2026-10-25)
-was produced this way from 35 queries fetched out-of-band: 2,149 records fetched, 1,741 listed. The
+was produced this way from 35 queries fetched out-of-band: 2,149 records fetched, 1,738 listed. The
 parser, both tests, overrides, links and determinism are covered by `tests/test_cves.py` with
 inline fixtures and no network.

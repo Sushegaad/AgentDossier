@@ -1,0 +1,59 @@
+---
+import CveApp from "../../components/CveApp";
+import Base from "../../layouts/Base.astro";
+import { CATEGORY_LABEL, CATEGORY_ORDER } from "../../lib/cve-filter";
+import { loadCves, productNames } from "../../lib/cves";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const idx = loadCves();
+const records = idx?.records ?? [];
+const asOf = idx?.built_at ? idx.built_at.slice(0, 10) : "the last build";
+const names = productNames();
+const listed = Object.keys(names).length;
+const kev = records.filter((r) => r.kev).length;
+const reviewed = records.filter((r) => r.reviewer).length;
+const byCategory = Object.fromEntries(CATEGORY_ORDER.map((c) => [c, records.filter((r) => r.category === c).length]));
+const years = [...new Set(records.map((r) => r.published.slice(0, 4)))].sort();
+const span = years.length ? `${years[0]}–${years[years.length - 1]}` : "";
+const configUrl = "https://github.com/Sushegaad/AgentDossier/blob/main/config/cve_products.json";
+const docsUrl = "https://github.com/Sushegaad/AgentDossier/blob/main/docs/cves.md";
+---
+
+<Base title="CVEs" description="Every official CVE related to AI agents — products, frameworks, protocol implementations and the infrastructure agents call through — filterable by severity, attack surface, product and exploitation status." wide>
+  <div class="prose" style="max-width: 100%">
+    <div class="eyebrow muted" style="color: var(--accent-ink)">Official CVEs</div>
+    <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem); max-width: 20ch; line-height: 1.05">The CVEs behind agents, in one list</h1>
+    <p class="body" style="max-width: 72ch">
+      Every CVE on the official record (<a href="https://www.cve.org/" rel="noopener">CVE.org</a>, enriched by NVD) that is
+      about an AI agent product, an agent framework, a protocol implementation such as an MCP server or client, or the
+      infrastructure agents call through. Severity, descriptions and affected versions are the official record's own; the
+      category, attack surface and links to agents and traces are this registry's, and
+      <a href={`${base}/methodology/#cves`}>how each CVE qualifies</a> is written down. Rebuilt every Monday; no score of
+      ours, no exploit details, ever.
+    </p>
+
+    <div class="stats" style="margin: 18px 0 6px">
+      <div class="stat"><div class="n">{records.length.toLocaleString()}</div><div class="l">CVEs listed, {span}</div></div>
+      <div class="stat"><div class="n">{kev}</div><div class="l">in CISA's Known Exploited Vulnerabilities</div></div>
+      <div class="stat"><div class="n">{idx?.products_matched.length ?? 0}</div><div class="l">of {listed} listed products with a CVE</div></div>
+      <div class="stat"><div class="n">{reviewed}</div><div class="l">reviewed by the maintainer</div></div>
+    </div>
+    <p class="tiny muted" style="margin: 0 0 18px">
+      {CATEGORY_ORDER.map((c) => `${byCategory[c]} ${CATEGORY_LABEL[c].toLowerCase()}`).join(" · ")} · as of {asOf}. Rows marked <em>unreviewed</em> are listed by the matching rules alone and have not yet been checked by a person; a wrong listing is fixed with a one-line override, never by editing the record.
+    </p>
+
+    <CveApp client:load productNames={names} />
+
+    <section style="border-top: 2px solid var(--rule); margin-top: 40px; padding-top: 20px; max-width: 76ch">
+      <h2>How a CVE gets on this list</h2>
+      <ol>
+        <li><strong>It names a listed product</strong> — one of the <a href={configUrl} rel="noopener">{listed} agent products, frameworks, protocol implementations and runtimes</a> this registry tracks, matched by the record's CPE or exact product name. General-purpose platforms with an AI feature are deliberately not listed, because listing a product lists every CVE it has.</li>
+        <li><strong>Or the record itself is about agents</strong> — it carries <a href="https://cwe.mitre.org/data/definitions/1427.html" rel="noopener">CWE-1427</a> (improper neutralization of generative-AI prompts), or its official description uses the agent vocabulary (tool calling, MCP server, prompt injection, agent framework …) in a way the rules spell out.</li>
+        <li><strong>A person can override either way.</strong> <code>agentdossier cves exclude</code> removes a false positive with a note; <code>include</code> marks a row reviewed. Overrides live in one file in the repository, so every decision is on record and survives the weekly rebuild. <a href={docsUrl} rel="noopener">The maintainer's guide.</a></li>
+      </ol>
+      <p class="tiny muted">
+        Sources: CVE Program (CVE.org) records via the NVD API 2.0, CVSS and CWE as NVD publishes them (NVD's score first, then the CNA's), and the CISA Known Exploited Vulnerabilities catalog. A CVE in GitHub's advisory database that has no CVE id is not listed. References tagged <em>Exploit</em> by NVD are dropped. This list is a finding aid, not a vulnerability-management feed: confirm against the official record before acting.
+      </p>
+    </section>
+  </div>
+</Base>

@@ -59,6 +59,33 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       <a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/traces.md" rel="noopener">docs/traces.md</a>.
       Behaviour is published, never weapons: scenario inputs and the agent's actions, no payloads against third-party systems.
     </p>
+
+    <h2 id="cves">How the CVE registry is compiled</h2>
+    <p>
+      The <a href={`${base}/cves/`}>CVE list</a> is every record on the official CVE Program's list (via the NVD API 2.0,
+      with CVSS, CWE and CPE as NVD publishes them) that passes one of two tests, rebuilt every Monday since 2023-01-01:
+    </p>
+    <ol>
+      <li><strong>Test A — it names a listed product.</strong> The record's CPE vendor:product, or its exact product name,
+        matches one of the products in <code>config/cve_products.json</code>: agent products, agent frameworks, protocol
+        implementations (MCP and A2A servers, clients and SDKs) and the inference and orchestration runtimes agents call
+        through. A product is listed only if it is agentic by design; a general-purpose platform with an AI feature is not,
+        because listing it would list every CVE it has.</li>
+      <li><strong>Test B — the record is about agents.</strong> It carries CWE-1427 (improper neutralization of
+        generative-AI prompts), or its official description uses one strong agent phrase (<em>prompt injection</em>,
+        <em>MCP server</em>, <em>tool calling</em> …) or two distinct weaker ones. Every row keeps the test and the terms
+        that listed it, shown on its page.</li>
+    </ol>
+    <p>
+      Severity, description, affected versions and references are the official record's (NVD's score first, then the
+      CNA's; references NVD tags <em>Exploit</em> are dropped). The category, the attack-surface tags (from the CWE and the
+      description) and the links to agent dossiers and public traces are this registry's classification. CISA's Known
+      Exploited Vulnerabilities catalog is the only exploitation signal carried. A row is <em>unreviewed</em> until a person
+      checks it; a wrong listing is excluded with a one-line, noted override that survives every rebuild, and the record
+      is never edited. No score of ours is derived from a CVE; the dossier's security row links to the CVEs and stops there.
+      Advisories without a CVE id (GitHub-only GHSAs) are not listed. The rules in full:
+      <a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/cves.md" rel="noopener">docs/cves.md</a>.
+    </p>
   </div>
   <script>
     // wide markdown tables scroll horizontally; make the scroll region reachable by keyboard (axe: scrollable-region-focusable)
