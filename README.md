@@ -217,8 +217,10 @@ decide.
   every Monday (`data/cves/`, [`docs/cves.md`](docs/cves.md)). On the site:
   [`/cves/`](https://sushegaad.github.io/AgentDossier/cves/) — filter by severity,
   attack surface, category, product, year and KEV; search; a page and JSON per
-  CVE; CSV and JSON export; every filtered view is a link. A CVE count never
-  changes a score.
+  CVE; CSV and JSON export; every filtered view is a link. Each dossier's
+  Security row and a CVE band show what the registry links to that agent;
+  incident pages list the CVEs their sources name. A CVE count never changes
+  a score.
 - **Discovery and curation.** A curated Top 100 per domain plus agents
   discovered from GitHub, Hugging Face, the MCP registry, marketplaces and ARD
   manifests, with demo, deprecated and abandoned projects filtered out.

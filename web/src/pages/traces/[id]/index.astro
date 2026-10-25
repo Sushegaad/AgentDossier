@@ -1,6 +1,8 @@
 ---
 import Base from "../../../layouts/Base.astro";
 import { loadIndex } from "../../../lib/catalog";
+import { SEVERITY_WORD } from "../../../lib/cve-filter";
+import { cveById, cvesForIncident } from "../../../lib/cves";
 import { AI_ROLE_WORD, SOURCE_STATUS_WORD, TACTIC_LABEL, incidentSlug, loadIncidents, loadSourceCheck, sourceStatus } from "../../../lib/incidents";
 
 export function getStaticPaths() {
@@ -13,6 +15,10 @@ const bySlug = new Map(records.map((r) => [r.slug, r]));
 const related = (inc.related_agents ?? []).map((s) => bySlug.get(s)).filter((r): r is NonNullable<typeof r> => !!r);
 const issueUrl = `https://github.com/Sushegaad/AgentDossier/issues/new?title=${encodeURIComponent(`Correction: ${inc.id} ${inc.title}`)}`;
 const check = loadSourceCheck();
+// CVEs on record: the incident's own `cves:` list first, then any registry record that names it; each
+// links to the registry page when the CVE is listed there, else to the official record.
+const cveIds = [...new Set([...(inc.cves ?? []), ...cvesForIncident(inc.id).map((r) => r.id)])];
+const cves = cveIds.map((id) => ({ id, rec: cveById(id.toLowerCase()) }));
 const flagged = (s: { url: string }) => {
   const line = sourceStatus(inc.id, s.url);
   return line && line.status !== "ok" ? line : null;
@@ -101,6 +107,18 @@ const flagged = (s: { url: string }) => {
               {inc.tactics.map((t) => <li><code>{t}</code> {TACTIC_LABEL[t] ?? ""}</li>)}
             </ul>
             <p class="tiny muted" style="margin-top: 6px">Mapped by the maintainer from the reports.</p>
+          </div>
+        )}
+        {cves.length > 0 && (
+          <div class="panel small" style="margin-top: 12px">
+            <div class="label" style="margin-bottom: 8px">CVEs on record</div>
+            {cves.map(({ id, rec }) => (
+              <div class="tiny" style="margin-top: 4px">
+                {rec ? <a href={`${base}/cves/${id.toLowerCase()}/`}><b>{id}</b></a> : <a href={`https://www.cve.org/CVERecord?id=${id}`} rel="noopener"><b>{id}</b></a>}
+                {rec?.cvss ? ` — ${SEVERITY_WORD[rec.cvss.severity]} ${rec.cvss.score.toFixed(1)}` : ""}{rec?.kev ? " · KEV" : ""}{rec ? "" : " — official record (not in this registry's list)"}
+              </div>
+            ))}
+            <p class="tiny muted" style="margin: 6px 0 0">Official ids the sources name. Severity is the record's own.</p>
           </div>
         )}
         {(inc.models_named?.length || related.length) ? (

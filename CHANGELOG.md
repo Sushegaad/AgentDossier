@@ -6,6 +6,18 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Added — CVE cross-links (PR 3 of 3)
+- Every dossier's **Security** row now says what the CVE registry links to the agent ("36 CVEs
+  linked · 27 critical/high · newest 2026-09-17", or "No CVE linked … none linked in the products
+  checked, not a finding"), and a **CVEs — on the official record** band after Traces lists the
+  newest eight with severity, surface and fix status, linking to the filtered registry. The NVD
+  keyword count is retired from the dossier (the Issues row points to Security); no score changes.
+- Search results carry the same line (`/cves/agents.json`); an incident page lists the **CVEs on
+  record** (the new `cves:` field in `schema/incident_record.schema.json`, set on TR-2026-002,
+  TR-2026-011 and the TR-2026-027 placeholder, plus any registry record naming the incident);
+  a CVE page lists the dossiers and incidents that name it. `/methodology/` says how the links
+  are made and read. README dossier screenshots re-shot.
+
 ### Added — CVE registry on the site (PR 2 of 3)
 - A **CVEs** tab (`/cves/`) between Traces and Trust methodology: every listed CVE in one
   filterable table — KEV, reviewed, severity, attack surface, category, product, year, fix status;

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { BASE, agentHref, fetchIndex, fetchSearchDocs } from "../lib/data";
+import { cveSummaryLine, type AgentCveSummary } from "../lib/cve-summary";
 import { IDENTITY_WORD, badgeLabel, domainLabel, frameworkName, securityWord } from "../lib/labels";
 import type { RequirementChip } from "../lib/intent";
 import { Catalog, chipKey, isOpenSource, isSelfHostable, satisfies, type Filters, type Hit } from "../lib/search";
@@ -39,6 +40,14 @@ const SOURCE_NAMES: Record<string, string> = { aws_marketplace: "AWS Marketplace
 export default function SearchApp(props: SearchAppProps) {
   const [index, setIndex] = useState<CatalogIndex | null | undefined>(props.index);
   const [docs, setDocs] = useState<SearchDoc[]>(props.docs ?? []);
+  // The CVE registry's per-agent counts (small); undefined until fetched, null when the registry is not published.
+  const [cveSummary, setCveSummary] = useState<Record<string, AgentCveSummary> | null | undefined>(undefined);
+  useEffect(() => {
+    fetch(`${BASE}/cves/agents.json`)
+      .then((r) => (r.ok ? (r.json() as Promise<Record<string, AgentCveSummary>>) : null))
+      .then(setCveSummary)
+      .catch(() => setCveSummary(null));
+  }, []);
   const [q, setQ] = useState(props.initialQuery ?? "");
   const [submitted, setSubmitted] = useState(props.initialQuery ?? "");
   const [filters, setFilters] = useState<Filters>({ strict: true });
@@ -374,7 +383,7 @@ export default function SearchApp(props: SearchAppProps) {
 
         <div className="results">
           {result?.hits.slice(0, limit).map((h) => (
-            <Result key={h.record.id} hit={h} domain={domainForScore} linkAgents={linkAgents} expanded={expanded === h.record.id} onToggle={() => setExpanded(expanded === h.record.id ? null : h.record.id)} />
+            <Result key={h.record.id} hit={h} domain={domainForScore} linkAgents={linkAgents} expanded={expanded === h.record.id} onToggle={() => setExpanded(expanded === h.record.id ? null : h.record.id)} cveSummary={cveSummary} />
           ))}
           {result && result.hits.length === 0 && <p className="muted">Nothing matches. Remove a chip or loosen a filter.</p>}
           {result && result.hits.length > limit && (
@@ -406,7 +415,7 @@ function protoGlyphs(r: IndexRecord): string {
   return `MCP ${g(r.protocols.mcp)} A2A ${g(r.protocols.a2a)} ARD ${g(r.protocols.ard)}`;
 }
 
-function Result({ hit, domain, linkAgents, expanded, onToggle }: { hit: Hit; domain: string | null; linkAgents: boolean; expanded: boolean; onToggle: () => void }) {
+function Result({ hit, domain, linkAgents, expanded, onToggle, cveSummary }: { hit: Hit; domain: string | null; linkAgents: boolean; expanded: boolean; onToggle: () => void; cveSummary?: Record<string, AgentCveSummary> | null }) {
   const r = hit.record;
   const entry = domain ? r.domains[domain] : null;
   const best = !entry
@@ -482,7 +491,7 @@ function Result({ hit, domain, linkAgents, expanded, onToggle }: { hit: Hit; dom
         <span className="label" style={{ marginBottom: "6px" }}>Trust profile</span>
         <div className="line"><span>Publisher</span><b>{IDENTITY_WORD[r.trust.identity as 1 | 2 | 3 | 4 | 5]}</b></div>
         <div className="line"><span>Compliance</span><b>{tierRange(r)}</b></div>
-        <div className="line"><span>Security</span><b>{securityWord(null, r.trust.security)}</b></div>
+        <div className="line"><span>Security</span><b>{cveSummary ? cveSummaryLine(cveSummary[r.slug]) : securityWord(null, r.trust.security)}</b></div>
         <div className="line"><span>Protocols</span><b>{protoGlyphs(r)}</b></div>
         <div className="line"><span>Issues linked</span><b>{r.trust.issues == null ? "–" : r.trust.issues === 1 ? "0" : "some"}</b></div>
         <div className="actions">

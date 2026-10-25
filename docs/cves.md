@@ -97,6 +97,17 @@ advisories) to this registry instead of filing them as incident candidates.
   Buttons: the CVE.org record, NVD, JSON, "Report a wrong listing" (a GitHub issue).
 - Nav tab **CVEs** between Traces and Trust methodology; `/methodology/#cves` has the rules;
   `/about/` names the source. Pages are in the axe/Lighthouse audit (`npm run audit`).
+- **Dossiers.** The Security row says what the registry links to the agent — "N CVEs linked ·
+  K exploited in the wild (KEV) · M critical/high · newest date", or "No CVE linked … none linked in
+  the products checked, not a finding" — and a *CVEs — on the official record* band after Traces
+  lists the newest eight with severity, surface tags and fix status, linking to "all N" on `/cves/`
+  filtered by the agent's listed products. The old NVD keyword count is no longer shown (the Issues
+  row points to Security); the score is untouched, since the keyword check never entered it either.
+  Links are by listed product (`config/cve_products.json` → `agents`), so a CVE that names a
+  different component of the same platform may be missing — the band says so.
+- **Search results** show the same line from `/cves/agents.json` (per-slug counts, ~2 KB).
+- **Incident pages** list *CVEs on record*: the incident's own `cves:` field plus any registry
+  record that names the incident, each linking to the registry page or the official record.
 - Code: `web/src/lib/cve-filter.ts` (browser-safe model, filters, URL sync, CSV — tested in
   `web/tests/cves.test.ts`), `web/src/lib/cves.ts` (build-time loader, rows, cross-links),
   `web/src/components/CveApp.tsx`, `web/src/pages/cves/`.

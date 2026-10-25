@@ -22,6 +22,7 @@ what to take from it, and sources.
 | `timeline` | dated lines, each with an evidence tier and a source index |
 | `lessons` | what a defender can take from it (the maintainer's reading) |
 | `related_agents` | catalog slugs; the registry and the dossier cross-link both ways |
+| `cves` | official CVE ids the sources name (`CVE-YYYY-NNNN`); the incident page links each to its registry page (or the official record when it is not listed there), and the CVE registry links back (`related_incidents`) |
 | `sources` | at least one public https source with a date |
 | `reviewer` / `checked_on` | null until a person has checked the entry |
 | `specimen` | true if an illustrative composite, shown labelled as such |
