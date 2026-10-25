@@ -44,16 +44,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-19)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://www.worldmonitor.app/docs/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "6e991cdb4acd54671f6ec488859641df3f61cd3713d1df374b6ca09b6cfcdbbe",
+"next_check": "2026-11-01",
+"payload_hash": "7bf39258036f9ad8e475b08061b9e5c19297cc0556003dabe1c036a91e2ad0ee",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:21:54Z",
+"retrieved_at": "2026-10-25T18:12:25Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -192,7 +192,7 @@
 "external_ids": {
 "ard": "urn:air:worldmonitor.app:mcp:worldmonitor"
 },
-"first_seen": "2026-10-19T12:15:00Z",
+"first_seen": "2026-10-25T18:06:22Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -214,7 +214,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:15:00Z",
+"last_seen": "2026-10-25T18:06:22Z",
 "license": null,
 "name": "World Monitor MCP server",
 "news": [],
@@ -249,7 +249,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:32:51Z",
+"checked_at": "2026-10-25T18:23:59Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -259,7 +259,7 @@
 "sources": [
 {
 "payload_hash": "36c8c7d4d4a8bd592496bfd2391be0b98f71edd40278042700cbe2dc91e96391",
-"retrieved_at": "2026-10-19T12:15:00Z",
+"retrieved_at": "2026-10-25T18:06:22Z",
 "system": "ard",
 "url": "https://worldmonitor.app/.well-known/ai-catalog.json"
 }

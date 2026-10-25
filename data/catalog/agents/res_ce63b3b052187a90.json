@@ -38,7 +38,7 @@
 "external_ids": {
 "github": "agno-agi/agno"
 },
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -60,7 +60,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:47Z",
+"last_seen": "2026-10-25T17:55:30Z",
 "license": "MPL-2.0",
 "merged_ids": [
 "res_55baacd5bb4179bd"
@@ -69,41 +69,41 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-19T11:53:23Z",
-"headline": "agno release v3.1.5",
+"date": "2026-10-23T13:10:30Z",
+"headline": "agno release v3.1.10",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Changelog\r\n\r\n## New Features:\r\n\r\n- **Repositories for Sandboxed Agents**: A sandboxed `ClaudeAgent` or `CodexAgent` takes `repository=Repository(url, branch=\"main\")` and starts every session in that repository at `/workspace/repository`.",
+"summary": "# Changelog\r\n\r\n## Bug Fixes:\r\n\r\n- **CodexAgent**: Now signs in automatically with `OPENAI_API_KEY`, and keeps an existing ChatGPT or other login.\r\n- **OS Manager**: OS Manager now lists and runs external agents such as `ClaudeAgent` and `Co",
 "tag": "product_update",
-"url": "https://github.com/agno-agi/agno/releases/tag/v3.1.5"
+"url": "https://github.com/agno-agi/agno/releases/tag/v3.1.10"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-16T13:35:06Z",
-"headline": "agno release v3.1.4",
+"date": "2026-10-22T16:50:03Z",
+"headline": "agno release v3.1.9",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Changelog\r\n\r\n## New Features:\r\n\r\n- **Sandboxed Harness Agents**: `ClaudeAgent` and `CodexAgent` take a `sandbox=` parameter and run the whole harness process inside an isolated, per-session computer instead of on the host, with session st",
+"summary": "# Changelog\r\n\r\n## New Features:\r\n\r\n- **MCP Tool Runner**: `POST /mcp/server/tools/{tool_name}/run` runs any tool listed on the AgentOS Server Card over HTTP and returns its result, so a tool can be tested without an MCP client. Turn it off",
 "tag": "product_update",
-"url": "https://github.com/agno-agi/agno/releases/tag/v3.1.4"
+"url": "https://github.com/agno-agi/agno/releases/tag/v3.1.9"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:24Z",
+"checked_at": "2026-10-25T18:04:35Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:23Z",
+"checked_at": "2026-10-25T18:04:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:12:25Z",
+"checked_at": "2026-10-25T18:04:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -127,11 +127,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-05-04T15:23:02Z",
-"github_forks": 6162,
+"github_forks": 6181,
 "github_language": "Python",
-"github_open_issues": 1908,
-"github_pushed_at": "2026-10-19T11:57:12Z",
-"github_stars": 42806,
+"github_open_issues": 1937,
+"github_pushed_at": "2026-10-25T16:25:50Z",
+"github_stars": 42886,
 "github_topic": "ai-agents",
 "homepage": "https://docs.agno.com",
 "observed_popularity": "~40k",
@@ -147,13 +147,13 @@
 "sources": [
 {
 "payload_hash": "f534faf6baf0dc11fae764e01c1782b1b0f5037827eee3a99dd3b47b11dc8bc9",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "seed_xlsx",
 "url": "https://github.com/agno-agi/agno"
 },
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/agno-agi/agno"
 }

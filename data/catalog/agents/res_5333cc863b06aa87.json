@@ -24,16 +24,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-19)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://browser-use.com/browser-harness",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "174326d6c47569b1559f70aa9acb496cf19ad09c9d49198476137d9a57af4190",
+"next_check": "2026-11-01",
+"payload_hash": "45a141c8281d4cbf1cef5ca374f987c25142d3f7bf67899a7814fd3996e39c92",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:19:01Z",
+"retrieved_at": "2026-10-25T18:10:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -50,16 +50,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-19)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-25)",
 "evidence_url": "https://browser-use.com/browser-harness",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "174326d6c47569b1559f70aa9acb496cf19ad09c9d49198476137d9a57af4190",
+"next_check": "2026-11-01",
+"payload_hash": "45a141c8281d4cbf1cef5ca374f987c25142d3f7bf67899a7814fd3996e39c92",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:19:01Z",
+"retrieved_at": "2026-10-25T18:10:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -76,16 +76,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-19)",
+"display": "Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://browser-use.com/browser-harness",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "174326d6c47569b1559f70aa9acb496cf19ad09c9d49198476137d9a57af4190",
+"next_check": "2026-11-01",
+"payload_hash": "45a141c8281d4cbf1cef5ca374f987c25142d3f7bf67899a7814fd3996e39c92",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:19:01Z",
+"retrieved_at": "2026-10-25T18:10:08Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -102,7 +102,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.73,
+"adoption": 24.75,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -125,7 +125,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.73,
+"adoption": 24.75,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -141,7 +141,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 78.9,
+"score": 79.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
@@ -150,7 +150,7 @@
 "external_ids": {
 "github": "browser-use/browser-harness"
 },
-"first_seen": "2026-10-19T12:05:48Z",
+"first_seen": "2026-10-25T17:58:15Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -172,7 +172,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:05:48Z",
+"last_seen": "2026-10-25T17:58:15Z",
 "license": "MIT",
 "name": "browser-harness",
 "news": [
@@ -197,30 +197,17 @@
 "summary": "## What's Changed\n* fix: discover Brave Origin profiles on macOS by @MagMueller in https://github.com/browser-use/browser-harness/pull/728\n* Keep one Chrome approval pending per daemon by @MagMueller in https://github.com/browser-use/browse",
 "tag": "product_update",
 "url": "https://github.com/browser-use/browser-harness/releases/tag/v0.1.12"
-},
-{
-"cluster_size": 1,
-"date": "2026-07-21T21:01:57Z",
-"discussion_url": "https://news.ycombinator.com/item?id=48998262",
-"engagement": 17,
-"headline": "Show HN: Browser Tools SDK – an optimal browser harness for agents",
-"kind": "community",
-"link_confidence": 0.88,
-"outlet": "Hacker News",
-"summary": null,
-"tag": "news",
-"url": "https://libretto.sh/browser-tools"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:11:55Z",
+"checked_at": "2026-10-25T18:04:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:11:52Z",
+"checked_at": "2026-10-25T18:04:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -228,7 +215,7 @@
 "evidence_url": "https://browser-harness.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:11:56Z",
+"checked_at": "2026-10-25T18:04:18Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -240,7 +227,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:29:46Z",
+"checked_at": "2026-10-25T18:20:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -248,19 +235,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-17T01:56:15Z",
-"github_forks": 1934,
+"github_forks": 1841,
 "github_language": "Python",
-"github_open_issues": 412,
-"github_pushed_at": "2026-10-17T17:59:01Z",
-"github_stars": 18496,
+"github_open_issues": 424,
+"github_pushed_at": "2026-10-25T03:12:39Z",
+"github_stars": 18610,
 "github_topic": "ai-agent",
 "homepage": "https://browser-harness.com"
 },
 "slug": "browser-use-browser-harness",
 "sources": [
 {
-"payload_hash": "54544b55b3f9ec1308d102af5291e607b50d660712b8a9671285bd4b3aae4fe8",
-"retrieved_at": "2026-10-19T12:05:48Z",
+"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
+"retrieved_at": "2026-10-25T17:58:15Z",
 "system": "github",
 "url": "https://github.com/browser-use/browser-harness"
 }

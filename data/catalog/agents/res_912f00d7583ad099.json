@@ -72,7 +72,7 @@
 "github": "modelcontextprotocol/registry",
 "mcp_registry": "agency.ottobot/business-contact-finder"
 },
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:37Z",
+"last_seen": "2026-10-25T17:51:18Z",
 "license": null,
 "merged_ids": [
 "res_a66f73376e049ced",
@@ -104,14 +104,25 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-08-06T23:35:18Z",
-"headline": "registry release v1.8.1",
+"date": "2026-10-23T20:34:14Z",
+"headline": "registry release v1.8.4",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\r\n* deploy: update prod to v1.8.0 by @rdimitrov in https://github.com/modelcontextprotocol/registry/pull/1443\r\n* build(deps): bump cloud.google.com/go/kms from 1.31.0 to 1.32.0 by @dependabot[bot] in https://github.com/mode",
+"summary": "## What's Changed\r\n* chore(deploy): promote production to 1.8.3 by @rdimitrov in https://github.com/modelcontextprotocol/registry/pull/1731\r\n* fix(publish): validate registries outside the transaction and time the pool wait by @rdimitrov in",
 "tag": "product_update",
-"url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.1"
+"url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.4"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-23T19:02:42Z",
+"headline": "registry release v1.8.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* chore(deploy): promote production to 1.8.2 by @rdimitrov in https://github.com/modelcontextprotocol/registry/pull/1729\r\n* fix(publish): correct misleading org-namespace guidance in 403 and docs by @rdimitrov in https://",
+"tag": "product_update",
+"url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.3"
 }
 ],
 "news_checked": true,
@@ -143,7 +154,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:24:39Z",
+"checked_at": "2026-10-25T18:15:29Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -160,20 +171,20 @@
 "slug": "ottobot-agency-business-contact-finder",
 "sources": [
 {
-"payload_hash": "5eba65649528763029f6f69b3636c7304c0ebcb06a8830e0845c74ee09a169f2",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"payload_hash": "1458bf0517d90b63110fa72d499e033746fdac26009ab99763772b93dd9a9575",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.ottobot/business-contact-finder"
 },
 {
-"payload_hash": "5eba65649528763029f6f69b3636c7304c0ebcb06a8830e0845c74ee09a169f2",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"payload_hash": "1458bf0517d90b63110fa72d499e033746fdac26009ab99763772b93dd9a9575",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.ottobot/contractor-license-changes"
 },
 {
-"payload_hash": "5eba65649528763029f6f69b3636c7304c0ebcb06a8830e0845c74ee09a169f2",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"payload_hash": "1458bf0517d90b63110fa72d499e033746fdac26009ab99763772b93dd9a9575",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.ottobot/licensed-house-painters"
 }

@@ -29,7 +29,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.56,
+"adoption": 25.57,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -43,7 +43,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 64.4,
+"score": 64.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -52,7 +52,7 @@
 },
 "data": {
 "components": {
-"adoption": 25.56,
+"adoption": 25.57,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -75,7 +75,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.56,
+"adoption": 25.57,
 "docs": 7.0,
 "domain_fit": 91.7,
 "ecosystem": 3.0,
@@ -100,7 +100,7 @@
 "external_ids": {
 "github": "browserbase/stagehand"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T17:55:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -129,10 +129,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:47Z",
+"last_seen": "2026-10-25T17:55:30Z",
 "license": "MIT",
 "name": "stagehand",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-23T18:09:00Z",
+"headline": "stagehand/server-v3 v3.7.7",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* fix(v3): set additionalProperties false on nullable act action schema by @miguelg719 in https://github.com/browserbase/stagehand/pull/3150\n* fix(v3): honor CAPTCHA awareness options for local attachments by @miguelg719 i",
+"tag": "product_update",
+"url": "https://github.com/browserbase/stagehand/releases/tag/stagehand-server-v3/v3.7.7"
+},
 {
 "cluster_size": 1,
 "date": "2026-08-28T14:46:59Z",
@@ -143,33 +154,22 @@
 "summary": "### Patch Changes\n\n-   [#2842](https://github.com/browserbase/stagehand/pull/2842) [`f86e609`](https://github.com/browserbase/stagehand/commit/f86e609b934d3f8ae625f5399104df2df9ade7a5) Thanks [@seanmcguire12](https://github.com/seanmcguire1",
 "tag": "product_update",
 "url": "https://github.com/browserbase/stagehand/releases/tag/%40browserbasehq/stagehand%403.7.3"
-},
-{
-"cluster_size": 1,
-"date": "2026-08-28T14:22:50Z",
-"headline": "stagehand/server-v3 v3.7.6",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\n* Version Packages by @github-actions[bot] in https://github.com/browserbase/stagehand/pull/2778\n* [V3]: rm docs pkg by @seanmcguire12 in https://github.com/browserbase/stagehand/pull/2830\n* [V3]: fix xpath building logic",
-"tag": "product_update",
-"url": "https://github.com/browserbase/stagehand/releases/tag/stagehand-server-v3/v3.7.6"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:14:03Z",
+"checked_at": "2026-10-25T18:06:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:14:01Z",
+"checked_at": "2026-10-25T18:06:00Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:14:04Z",
+"checked_at": "2026-10-25T18:06:02Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -179,7 +179,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:29:30Z",
+"checked_at": "2026-10-25T18:20:24Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -187,19 +187,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-03-24T19:19:44Z",
-"github_forks": 1767,
+"github_forks": 1782,
 "github_language": "TypeScript",
-"github_open_issues": 404,
-"github_pushed_at": "2026-10-18T20:33:58Z",
-"github_stars": 25734,
+"github_open_issues": 385,
+"github_pushed_at": "2026-10-23T23:57:42Z",
+"github_stars": 25806,
 "github_topic": "ai-agents",
 "homepage": "https://stagehand.dev"
 },
 "slug": "browserbase-stagehand",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/browserbase/stagehand"
 }

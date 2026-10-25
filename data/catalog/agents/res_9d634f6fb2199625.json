@@ -1,0 +1,199 @@
+{
+"canonical_url": "booqer.ai/.well-known/mcp/server-card.json",
+"capabilities": [
+"search_businesses",
+"get_business",
+"resolve_business",
+"check_availability",
+"request_booking",
+"get_booking_status",
+"request_service",
+"submit_service_request",
+"quote",
+"availability",
+"book"
+],
+"category": null,
+"classification": {
+"matched": {
+"business": [
+"business"
+],
+"data": [
+"search"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Verified Booqer shops. For the shops listed on Booqer, a keyless booking on an open slot is confirmed when it is booked. The confirmation includes a cancel link. It is a free consult. The public tools list is search_businesses, get_business, resolve_business, check_availability, request_booking, get_booking_status, request_service, and submit_service_request. request_service is public and does not confirm a booking. quote, availability, and book require a registered client key.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 7.6,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 33.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 7.6,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 34.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:booqer.ai:mcp:directory"
+},
+"first_seen": "2026-10-25T18:04:21Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9d634f6fb2199625",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-25T18:04:21Z",
+"license": null,
+"name": "Booqer",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:booqer.ai:mcp:directory",
+"manifest_url": "https://booqer.ai/.well-known/ard.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"server_card_url": "https://booqer.ai/.well-known/mcp/server-card.json",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "booqer.ai",
+"representative_queries": [
+"Which verified Booqer shops are listed?",
+"Open the booking page for Florida Pole Barn",
+"What is the booking URL for Florida Security Concepts?",
+"Resolve the business at floridapolebarn.com",
+"Read the booking status for a request"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {},
+"slug": "booqer-ai-booqer",
+"sources": [
+{
+"payload_hash": "fd47bd68341f9052493180b60ae8314a7b14fc09b90343369a0821f1ada9f3e6",
+"retrieved_at": "2026-10-25T18:04:21Z",
+"system": "ard",
+"url": "https://booqer.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_9d634f6fb2199625_43e158af",
+"checked_on": null,
+"date": "2026-10-25",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_9d634f6fb2199625_43e158af",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:1ea54803adac4e4544b2388392d7bb55905a79b3b7d87589a1ac42d74c317dee",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Booqer's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_9d634f6fb2199625_43e158af/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": null,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://booqer.ai/.well-known/mcp/server-card.json",
+"vendor": "booqer.ai"
+}

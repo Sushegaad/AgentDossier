@@ -26,16 +26,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-19)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://www.lona.agency/en/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "5ebebfec55fc598d9ed3dd35803a547fcda79cd3a7c106025dc975c463d5ed4b",
+"next_check": "2026-11-01",
+"payload_hash": "86d3df72467634caa25e929b2b458b9c6e2efd18b3597a18ba3f044285e8a93a",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:20:39Z",
+"retrieved_at": "2026-10-25T18:11:19Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -124,7 +124,7 @@
 "github": "mindsightventures/lona",
 "mcp_registry": "agency.lona/trading"
 },
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -146,19 +146,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:37Z",
+"last_seen": "2026-10-25T17:51:18Z",
 "license": null,
 "name": "agency.lona/trading",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:13:16Z",
+"checked_at": "2026-10-25T18:05:20Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:13:14Z",
+"checked_at": "2026-10-25T18:05:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -181,7 +181,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:24:38Z",
+"checked_at": "2026-10-25T18:15:28Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -198,8 +198,8 @@
 "slug": "lona-agency-agency-lona-trading",
 "sources": [
 {
-"payload_hash": "5eba65649528763029f6f69b3636c7304c0ebcb06a8830e0845c74ee09a169f2",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"payload_hash": "1458bf0517d90b63110fa72d499e033746fdac26009ab99763772b93dd9a9575",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.lona/trading"
 }

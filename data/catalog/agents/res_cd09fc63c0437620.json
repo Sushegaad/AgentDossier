@@ -20,7 +20,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 26.78,
+"adoption": 26.84,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.7,
@@ -34,7 +34,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 66.4,
+"score": 66.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -43,7 +43,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.78,
+"adoption": 26.84,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.7,
@@ -68,7 +68,7 @@
 "external_ids": {
 "github": "HKUDS/DeepTutor"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T17:55:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -133,7 +133,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:47Z",
+"last_seen": "2026-10-25T17:55:30Z",
 "license": "Apache-2.0",
 "name": "DeepTutor",
 "news": [
@@ -163,17 +163,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:11:16Z",
+"checked_at": "2026-10-25T18:03:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:11:14Z",
+"checked_at": "2026-10-25T18:03:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:11:17Z",
+"checked_at": "2026-10-25T18:03:37Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -183,7 +183,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:28:54Z",
+"checked_at": "2026-10-25T18:19:46Z",
 "cves": 7,
 "source": "nvd",
 "tier": 1
@@ -191,19 +191,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-28T15:35:54Z",
-"github_forks": 5271,
+"github_forks": 5414,
 "github_language": "Python",
-"github_open_issues": 148,
-"github_pushed_at": "2026-10-18T20:13:22Z",
-"github_stars": 41726,
+"github_open_issues": 200,
+"github_pushed_at": "2026-10-19T18:51:54Z",
+"github_stars": 42666,
 "github_topic": "ai-agents",
 "homepage": "http://arxiv.org/abs/2604.26962"
 },
 "slug": "hkuds-deeptutor",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/HKUDS/DeepTutor"
 }

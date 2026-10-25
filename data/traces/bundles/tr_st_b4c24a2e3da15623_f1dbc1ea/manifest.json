@@ -1,0 +1,28 @@
+{
+ "agent": "res_b4c24a2e3da15623",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_b4c24a2e3da15623_f1dbc1ea",
+ "kind": "self_test",
+ "name": "Auxen",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "auxenKey"
+   ],
+   "card_url": "https://auxen.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-25T18:03:50Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "Hire a worker",
+    "Message a worker",
+    "Check or stop a worker"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "auxen-ai-auxen"
+}

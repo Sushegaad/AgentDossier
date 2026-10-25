@@ -1,0 +1,21 @@
+{
+ "agent": "res_f736108b18c06bee",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f736108b18c06bee_4366fd76",
+ "kind": "self_test",
+ "name": "Achromat MOM",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-25T18:05:26Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://mom.achromat.ai/.well-known/ard.json",
+    "https://mom.achromat.ai/.well-known/ard.json",
+    "https://mom.achromat.ai/.well-known/ard.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "achromat-ai-achromat-mom"
+}

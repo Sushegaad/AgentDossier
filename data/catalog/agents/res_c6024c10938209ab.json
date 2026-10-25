@@ -18,16 +18,16 @@
 "certification"
 ]
 },
-"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-19",
+"display": "STAR Level 2: found in CSA STAR Registry on 2026-10-25",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/amazon",
 "framework": "csa_star",
 "issued": "2020-11-06",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "cba6335aeaf5aca421457b6b5cefac764eecfadbacf8cb0d2668856e0bcc1ae6",
+"next_check": "2026-11-01",
+"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:16:12Z",
+"retrieved_at": "2026-10-25T18:07:24Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -48,16 +48,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-19)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-25)",
 "evidence_url": "https://marketplace.fedramp.gov/products/F1603047866",
 "framework": "fedramp",
 "issued": "2016-06-21",
 "issuer": "JAB / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "9dc6bce0af4614cfd434353a493074b133ed9a6dbc2ac6c5f49fbfa172d26d72",
+"next_check": "2026-11-01",
+"payload_hash": "832799f0b1a76cc8258420e803526d573b3b9ee96b732a870ceabecda7b21e98",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:15:08Z",
+"retrieved_at": "2026-10-25T18:06:31Z",
 "review_reason": "vendor authorization for AWS GovCloud; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -364,7 +364,7 @@
 "external_ids": {
 "github": "strands-agents/harness-sdk"
 },
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -380,7 +380,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 5,
+"cves": 6,
 "incidents": 0,
 "links": [
 {
@@ -412,12 +412,18 @@
 "kind": "cve",
 "title": "CVE-2026-78379",
 "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78379"
+},
+{
+"date": "2026-10-22",
+"kind": "cve",
+"title": "CVE-2026-115419",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115419"
 }
 ],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:09:46Z",
+"last_seen": "2026-10-25T18:02:08Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_ab09f3e05ae8aff8"
@@ -426,36 +432,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-15T20:25:38Z",
-"headline": "harness-sdk release python/v1.61.1",
+"date": "2026-10-22T18:49:37Z",
+"headline": "harness-sdk release harness-cli/v0.2.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## python/v1.61.1\n\n_Auto-drafted from commits in `python/v1.61.0..python/v1.61.1`, grouped by conventional-commit type. Edit on the release page after publish if you want a polished writeup; the canonical release notes live on the website._",
+"summary": "## harness-cli/v0.2.2\n\n_Auto-drafted from commits in `harness-cli/v0.2.1..harness-cli/v0.2.2`, grouped by conventional-commit type. Edit on the release page after publish if you want a polished writeup; the canonical release notes live on t",
 "tag": "product_update",
-"url": "https://github.com/strands-agents/harness-sdk/releases/tag/python/v1.61.1"
+"url": "https://github.com/strands-agents/harness-sdk/releases/tag/harness-cli/v0.2.2"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-15T19:56:51Z",
-"headline": "harness-sdk release harness-python/v0.3.1",
+"date": "2026-10-22T18:48:57Z",
+"headline": "harness-sdk release harness-python/v0.3.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## harness-python/v0.3.1\n\n_Auto-drafted from commits in `harness-python/v0.3.0..harness-python/v0.3.1`, grouped by conventional-commit type. Edit on the release page after publish if you want a polished writeup; the canonical release notes",
+"summary": "## harness-python/v0.3.2\n\n_Auto-drafted from commits in `harness-python/v0.3.1..harness-python/v0.3.2`, grouped by conventional-commit type. Edit on the release page after publish if you want a polished writeup; the canonical release notes",
 "tag": "product_update",
-"url": "https://github.com/strands-agents/harness-sdk/releases/tag/harness-python/v0.3.1"
+"url": "https://github.com/strands-agents/harness-sdk/releases/tag/harness-python/v0.3.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:14:02Z",
+"checked_at": "2026-10-25T18:06:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:14:01Z",
+"checked_at": "2026-10-25T18:06:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -463,7 +469,7 @@
 "evidence_url": "https://github.com/strands-agents/sdk-python",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:14:03Z",
+"checked_at": "2026-10-25T18:06:02Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -475,8 +481,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:22:37Z",
-"cves": 5,
+"checked_at": "2026-10-25T18:13:12Z",
+"cves": 6,
 "source": "nvd",
 "tier": 1
 },
@@ -496,11 +502,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-14T19:59:51Z",
-"github_forks": 1399,
+"github_forks": 1428,
 "github_language": "Python",
-"github_open_issues": 1028,
-"github_pushed_at": "2026-10-19T08:02:06Z",
-"github_stars": 8864,
+"github_open_issues": 1061,
+"github_pushed_at": "2026-10-25T01:50:50Z",
+"github_stars": 8948,
 "github_topic": "ai-agents",
 "homepage": "http://strandsagents.com/",
 "observed_popularity": "Not captured",
@@ -517,13 +523,13 @@
 "sources": [
 {
 "payload_hash": "3fbe1afa76461a06a6e3f8682f345dd261f46a3ae24033a857daf172381ff601",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "seed_xlsx",
 "url": "https://github.com/strands-agents/sdk-python"
 },
 {
-"payload_hash": "6e3a9dccd37aff7e2c126b6e28eb78936685ed0ed4244b38abb99aa6fbd6ba6f",
-"retrieved_at": "2026-10-19T12:02:52Z",
+"payload_hash": "4babe8d415355525c4fb607e8164bd107cfd26b5a482c55e1a527b129ce10a4e",
+"retrieved_at": "2026-10-25T17:55:35Z",
 "system": "github",
 "url": "https://github.com/strands-agents/harness-sdk"
 }

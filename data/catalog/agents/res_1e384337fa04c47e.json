@@ -18,7 +18,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 23.18,
+"adoption": 23.19,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 1.8,
@@ -43,7 +43,7 @@
 "external_ids": {
 "github": "Companion-Inc/feynman"
 },
-"first_seen": "2026-10-19T12:05:48Z",
+"first_seen": "2026-10-25T17:58:15Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,47 +65,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:05:48Z",
+"last_seen": "2026-10-25T17:58:15Z",
 "license": "MIT",
 "name": "feynman",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-19T09:39:56Z",
-"headline": "feynman release v0.5.51",
+"date": "2026-10-24T05:02:51Z",
+"headline": "feynman release v0.5.57",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## v0.5.51 - 2026-10-19\n\n- **A damaged `auth.json` says so.** When `~/.feynman/agent/auth.json` isn't valid JSON, for example after a hand edit, every command used to print only `Expected property name or '}' in JSON`. Feynman now names the",
+"summary": "## v0.5.57 - 2026-10-24\n\n- **Security updates from advisories published Oct 23.**\n  - `undici` 8.12.3, now a direct dependency, so a fresh install no longer gives every package the pinned 8.10.2 below ([GHSA-xjj6-f33q-929c](https://github.c",
 "tag": "product_update",
-"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.51"
+"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.57"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-18T13:56:41Z",
-"headline": "feynman release v0.5.50",
+"date": "2026-10-23T14:19:48Z",
+"headline": "feynman release v0.5.56",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## v0.5.50 - 2026-10-18\n\n- **pi-subagents 0.79.1.**\n  - Sessions that have not delegated yet no longer send the `bg_wait` and `subagent_supervisor` tool definitions with every request, about 1,500 characters saved per request.\n  - When a wo",
+"summary": "## v0.5.56 - 2026-10-23\n\n- **pi-subagents 0.81.0.**\n  - A research subagent asked for structured output that forgets to return it gets one more turn to do so, instead of failing and losing its work.\n  - The main session can tell subagent co",
 "tag": "product_update",
-"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.50"
+"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.56"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:40Z",
+"checked_at": "2026-10-25T18:04:49Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:38Z",
+"checked_at": "2026-10-25T18:04:48Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:12:40Z",
+"checked_at": "2026-10-25T18:04:50Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -116,19 +116,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-19T18:53:05Z",
-"github_forks": 1112,
+"github_forks": 1106,
 "github_language": "TypeScript",
-"github_open_issues": 0,
-"github_pushed_at": "2026-10-19T09:39:56Z",
-"github_stars": 9986,
+"github_open_issues": 1,
+"github_pushed_at": "2026-10-24T05:02:51Z",
+"github_stars": 10021,
 "github_topic": "ai-agent",
 "homepage": "https://feynman.is"
 },
 "slug": "companion-inc-feynman",
 "sources": [
 {
-"payload_hash": "54544b55b3f9ec1308d102af5291e607b50d660712b8a9671285bd4b3aae4fe8",
-"retrieved_at": "2026-10-19T12:05:48Z",
+"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
+"retrieved_at": "2026-10-25T17:58:15Z",
 "system": "github",
 "url": "https://github.com/Companion-Inc/feynman"
 }

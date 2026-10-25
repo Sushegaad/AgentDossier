@@ -1,0 +1,25 @@
+{
+ "agent": "res_2f7256db8d0da4a6",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_2f7256db8d0da4a6_aa8202b8",
+ "kind": "self_test",
+ "name": "agent-hub",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:bankrolled.ai:mcp:agent-hub",
+   "manifest_url": "https://bankrolled.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "bankrolled-ai-agent-hub"
+}

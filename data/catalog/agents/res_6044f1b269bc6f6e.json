@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 23.41,
+"adoption": 23.43,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 5.7,
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "xinnan-tech/xiaozhi-esp32-server"
 },
-"first_seen": "2026-10-19T12:07:55Z",
+"first_seen": "2026-10-25T18:00:16Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -58,7 +58,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 3,
+"cves": 4,
 "incidents": 0,
 "links": [
 {
@@ -78,15 +78,32 @@
 "kind": "cve",
 "title": "CVE-2026-111623",
 "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111623"
+},
+{
+"date": "2026-10-24",
+"kind": "cve",
+"title": "CVE-2026-116017",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116017"
 }
 ],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:07:55Z",
+"last_seen": "2026-10-25T18:00:16Z",
 "license": "MIT",
 "name": "xiaozhi-esp32-server",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-23T10:54:47Z",
+"headline": "xiaozhi-esp32-server release v0.9.8",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "- 修复通讯录越权：读取、改别名、授权、解绑一律先校验设备归属，不属于当前用户的设备一律按查不到处理\r\n- 修复 edge-tts 自 2026 年 10 月起被微软返回 403 造成的失声问题\r\n- 修复已登录状态下仍能进入登录、注册等白名单页面的问题，路由守卫改为反向匹配\r\n- 根治火山双流 TTS 的 4 个会话协议与监听竞态问题：会话等待 SessionStarted 确认、监听任务隔离跨连接、二进制协议解析四处修正、句尾替换词残留提前下发\r\n- 修复 TTS 分句在",
+"tag": "product_update",
+"url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases/tag/v0.9.8"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-29T02:04:44Z",
@@ -97,28 +114,17 @@
 "summary": "- 快照对话框新增代码对比视图，支持 `v-code-diff` 斜体样式兼容与窄屏适配\r\n- 阿里百炼 TTS 支持 workspace endpoints 与流式字幕同步\r\n- 参数管理按命名空间聚合展示，支持分页拉全量并重置空态全选\r\n- 豆包模型更新为 `doubao-seed-2-0-lite-260215`，DeepSeek 改为 `deepseek-v4-flash` 并关闭思考模式\r\n- 合并 HA 设备控制插件为 `hass_state` 模块，修复模块级插",
 "tag": "product_update",
 "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases/tag/v0.9.7"
-},
-{
-"cluster_size": 1,
-"date": "2026-07-24T03:41:18Z",
-"headline": "xiaozhi-esp32-server release v0.9.6",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "- 在服务端增加了AEC（声学回声消除）功能，从此以后，单麦设备在编译环节开启了服务端AEC，也能实时打断了。消除了以往只有双麦设备才能实时打断的局限\r\n- 增加智能体快照的历史记录功能，害怕提示词丢失的问题，得到缓解\r\n- 解决了设备在跨时区使用时的时间显示和在线状态不一致的问题\r\n- 优化了声纹称呼的提示词和注入逻辑，减少了模型每次回答都带说话人信息的情况",
-"tag": "product_update",
-"url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases/tag/v0.9.6"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:14:20Z",
+"checked_at": "2026-10-25T18:06:19Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:14:18Z",
+"checked_at": "2026-10-25T18:06:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -126,7 +132,7 @@
 "evidence_url": "http://xiaozhi.biz",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:14:20Z",
+"checked_at": "2026-10-25T18:06:20Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -138,27 +144,27 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:30:35Z",
-"cves": 3,
+"checked_at": "2026-10-25T18:21:32Z",
+"cves": 4,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-02-02T14:25:16Z",
-"github_forks": 3714,
+"github_forks": 3745,
 "github_language": "JavaScript",
-"github_open_issues": 732,
-"github_pushed_at": "2026-10-19T09:52:28Z",
-"github_stars": 10920,
+"github_open_issues": 737,
+"github_pushed_at": "2026-10-24T08:19:18Z",
+"github_stars": 11030,
 "github_topic": "mcp-server",
 "homepage": "http://xiaozhi.biz"
 },
 "slug": "xinnan-tech-xiaozhi-esp32-server",
 "sources": [
 {
-"payload_hash": "84984ae814d3b610c9c5f1dd87f0472ee06a8fd644fe2550e47b4e8ad31fd3b5",
-"retrieved_at": "2026-10-19T12:07:55Z",
+"payload_hash": "1d7f7007fb39231e0b8ff403eb22651bd23d59d9a555ef84147419f910f7c1a1",
+"retrieved_at": "2026-10-25T18:00:16Z",
 "system": "github",
 "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server"
 }

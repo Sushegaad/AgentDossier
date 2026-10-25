@@ -1,0 +1,19 @@
+{
+ "agent": "res_241586d37e9bbe46",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_241586d37e9bbe46_eaa0cc50",
+ "kind": "self_test",
+ "name": "Achromat Machine Operational Memory for industrial IoT",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom-industrial-iot",
+   "manifest_url": "https://mom.achromat.ai/.well-known/ard.json",
+   "media_type": "application/agent-skills+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "mom-achromat-ai-achromat-machine-operational-memory-for-industrial-iot"
+}

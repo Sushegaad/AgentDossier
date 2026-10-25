@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.43,
+"adoption": 24.45,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.5,
@@ -31,7 +31,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 69.4,
+"score": 69.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "xpzouying/xiaohongshu-mcp"
 },
-"first_seen": "2026-10-19T12:07:55Z",
+"first_seen": "2026-10-25T18:00:16Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,7 +64,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:07:55Z",
+"last_seen": "2026-10-25T18:00:16Z",
 "license": "Apache-2.0",
 "name": "xiaohongshu-mcp",
 "news": [
@@ -94,12 +94,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:53Z",
+"checked_at": "2026-10-25T18:05:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:51Z",
+"checked_at": "2026-10-25T18:04:58Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -107,7 +107,7 @@
 "evidence_url": "https://www.haha.ai/xiaohongshu-mcp",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:12:54Z",
+"checked_at": "2026-10-25T18:05:01Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -119,7 +119,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:29:56Z",
+"checked_at": "2026-10-25T18:20:50Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -127,19 +127,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-08-03T09:08:45Z",
-"github_forks": 2554,
+"github_forks": 2426,
 "github_language": "Go",
-"github_open_issues": 113,
+"github_open_issues": 120,
 "github_pushed_at": "2026-10-19T04:45:17Z",
-"github_stars": 16377,
+"github_stars": 16559,
 "github_topic": "mcp-server",
 "homepage": "https://www.haha.ai/xiaohongshu-mcp"
 },
 "slug": "xpzouying-xiaohongshu-mcp",
 "sources": [
 {
-"payload_hash": "84984ae814d3b610c9c5f1dd87f0472ee06a8fd644fe2550e47b4e8ad31fd3b5",
-"retrieved_at": "2026-10-19T12:07:55Z",
+"payload_hash": "1d7f7007fb39231e0b8ff403eb22651bd23d59d9a555ef84147419f910f7c1a1",
+"retrieved_at": "2026-10-25T18:00:16Z",
 "system": "github",
 "url": "https://github.com/xpzouying/xiaohongshu-mcp"
 }

@@ -1,16 +1,18 @@
 {
   "version": "incident-source-check-1.0",
-  "checked_on": "2026-10-19",
-  "incidents_checked": 13,
-  "sources_checked": 18,
+  "checked_on": "2026-10-25",
+  "incidents_checked": 22,
+  "sources_checked": 37,
   "summary": {
-    "ok": 13,
+    "ok": 28,
     "moved": 0,
-    "gone": 0,
-    "unverified": 5,
+    "gone": 1,
+    "unverified": 8,
     "error": 0
   },
-  "needs_attention": [],
+  "needs_attention": [
+    "TR-2026-023"
+  ],
   "incidents": {
     "TR-2026-001": [
       {
@@ -131,6 +133,123 @@
         "status": "unverified",
         "http": 403,
         "error": "HTTP 403"
+      }
+    ],
+    "TR-2026-015": [
+      {
+        "url": "https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack",
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
+      },
+      {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.csoonline.com/article/4193195/this-ai-agent-autonomously-hacked-a-network-adapted-on-the-fly-and-demanded-a-ransom.html",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-018": [
+      {
+        "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://securitybrief.news/story/anthropic-says-claude-models-accessed-real-systems-in-tests",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-021": [
+      {
+        "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-023": [
+      {
+        "url": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
+      },
+      {
+        "url": "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents",
+        "status": "gone",
+        "http": 404,
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://labs.zenity.io/post/agentcorruption-how-a-single-prompt-collapsed-the-entire-cloud-security-model",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-024": [
+      {
+        "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://www.ayush.digital/blog/the-memory-heist",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-025": [
+      {
+        "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+        "status": "ok",
+        "http": 200
+      },
+      {
+        "url": "https://cybersecuritynews.com/claude-code-opus-5-auto-mode-hijacked/",
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
+      }
+    ],
+    "TR-2026-026": [
+      {
+        "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-027": [
+      {
+        "url": "https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-028": [
+      {
+        "url": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+        "status": "ok",
+        "http": 200
       }
     ]
   }

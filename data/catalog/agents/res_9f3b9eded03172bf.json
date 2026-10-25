@@ -1,0 +1,193 @@
+{
+"canonical_url": "aistlabs.ai",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
+"evidence_url": "https://aistlabs.ai/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-01",
+"payload_hash": "c47d0be693db7118d02c592482c2627da0cfdd48530bac1aea02df3b5525b867",
+"period_end": null,
+"retrieved_at": "2026-10-25T18:08:48Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-25)",
+"evidence_url": "https://aistlabs.ai/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-01",
+"payload_hash": "c47d0be693db7118d02c592482c2627da0cfdd48530bac1aea02df3b5525b867",
+"period_end": null,
+"retrieved_at": "2026-10-25T18:08:48Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPF_ACTIVE"
+}
+],
+"deployment": null,
+"description": "Video, image and audio generation on top AI models for agents, with an AI director built in.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 48.9,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.aistlabs/aistlabs"
+},
+"first_seen": "2026-10-25T17:51:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9f3b9eded03172bf",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-25T17:51:20Z",
+"license": null,
+"name": "AISTLabs",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-10-25T18:03:10Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-10-25T18:03:09Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://aistlabs.ai/mcp"
+}
+],
+"server_name": "ai.aistlabs/aistlabs",
+"status": "claimed",
+"version": "1.43.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "aistlabs.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-25T18:16:36Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-10-23T15:12:36.437461Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-10-23T15:12:36.437461Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "aistlabs-ai-aistlabs",
+"sources": [
+{
+"payload_hash": "c97714e3ffc17439374669fe39eb1abe867b3c0299313ce4254e475c4c799ba2",
+"retrieved_at": "2026-10-25T17:51:20Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aistlabs/aistlabs"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": 4
+},
+"url": "https://aistlabs.ai",
+"vendor": "aistlabs.ai"
+}

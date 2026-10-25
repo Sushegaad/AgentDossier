@@ -1,0 +1,22 @@
+{
+ "agent": "res_54eafdbd37f3e20f",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_54eafdbd37f3e20f_be2c825a",
+ "kind": "self_test",
+ "name": "Pascal Editor API catalog",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:editor.pascal.app:catalog:api-catalog",
+   "manifest_url": "https://editor.pascal.app/.well-known/ard.json",
+   "media_type": "application/linkset+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "editor-pascal-app-pascal-editor-api-catalog"
+}

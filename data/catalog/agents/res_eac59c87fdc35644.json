@@ -20,16 +20,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "STAR for AI: found in CSA STAR Registry on 2026-10-19",
+"display": "STAR for AI: found in CSA STAR Registry on 2026-10-25",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/salesforce.com, inc.",
 "framework": "csa_star",
 "issued": "2016-03-13",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "cba6335aeaf5aca421457b6b5cefac764eecfadbacf8cb0d2668856e0bcc1ae6",
+"next_check": "2026-11-01",
+"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:16:13Z",
+"retrieved_at": "2026-10-25T18:07:25Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -56,16 +56,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-19",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-25",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/salesforce.com, inc.",
 "framework": "csa_star",
 "issued": "2016-03-13",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "cba6335aeaf5aca421457b6b5cefac764eecfadbacf8cb0d2668856e0bcc1ae6",
+"next_check": "2026-11-01",
+"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:16:13Z",
+"retrieved_at": "2026-10-25T18:07:25Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -86,16 +86,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "Moderate"
 },
-"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-19)",
+"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-25)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1818161169",
 "framework": "fedramp",
 "issued": "2019-07-31",
 "issuer": "Agency / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 0.933,
-"next_check": "2026-10-26",
-"payload_hash": "9dc6bce0af4614cfd434353a493074b133ed9a6dbc2ac6c5f49fbfa172d26d72",
+"next_check": "2026-11-01",
+"payload_hash": "832799f0b1a76cc8258420e803526d573b3b9ee96b732a870ceabecda7b21e98",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:15:09Z",
+"retrieved_at": "2026-10-25T18:06:32Z",
 "review_reason": "entity 1.00, offering 0.85",
 "reviewer": null,
 "scope": "product",
@@ -122,16 +122,16 @@
 "iso-iec-42001"
 ]
 },
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-19",
+"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-25",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/salesforce.com, inc.",
 "framework": "iso42001",
 "issued": "2016-03-13",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "cba6335aeaf5aca421457b6b5cefac764eecfadbacf8cb0d2668856e0bcc1ae6",
+"next_check": "2026-11-01",
+"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:16:13Z",
+"retrieved_at": "2026-10-25T18:07:25Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -148,16 +148,42 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-19)",
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-25)",
+"evidence_url": "https://www.salesforce.com/company/legal/compliance/?bc=HL",
+"framework": "eu_ai_act",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-01",
+"payload_hash": "c75c9fb7ce7c89631fae98419d67558bc1e52cde428946ef68458569100a1106",
+"period_end": null,
+"retrieved_at": "2026-10-25T18:12:02Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ART50_STATEMENT"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 6
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://www.salesforce.com/company/legal/privacy/?bc=HL",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "5137c259665b72c660d451a5a6784ead186fea633ce3a4838ecc3dec0c6bf1eb",
+"next_check": "2026-11-01",
+"payload_hash": "251447e05d37bdaa56d839cb2c1e610f7ff97d2037f12c910aac7b3362367b59",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:21:32Z",
+"retrieved_at": "2026-10-25T18:12:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -174,16 +200,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-10-19)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://www.salesforce.com/company/legal/privacy/?bc=HL",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "5137c259665b72c660d451a5a6784ead186fea633ce3a4838ecc3dec0c6bf1eb",
+"next_check": "2026-11-01",
+"payload_hash": "251447e05d37bdaa56d839cb2c1e610f7ff97d2037f12c910aac7b3362367b59",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:21:32Z",
+"retrieved_at": "2026-10-25T18:12:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -526,7 +552,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -548,24 +574,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:37Z",
+"last_seen": "2026-10-25T17:51:18Z",
 "license": "Commercial",
 "name": "Salesforce Government Cloud / Agentforce",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:13:58Z",
+"checked_at": "2026-10-25T18:05:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:13:55Z",
+"checked_at": "2026-10-25T18:05:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:14:00Z",
+"checked_at": "2026-10-25T18:05:59Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -575,7 +601,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:22:41Z",
+"checked_at": "2026-10-25T18:13:17Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -600,7 +626,7 @@
 "sources": [
 {
 "payload_hash": "21e631796cf67b4821a3da36438a09e6f81fa5659eb7a37fa9929e25c6800ce0",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "seed_xlsx",
 "url": "https://www.salesforce.com/government/"
 }

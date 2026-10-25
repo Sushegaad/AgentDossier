@@ -1,0 +1,19 @@
+{
+ "agent": "res_8aede90a1b8e87fe",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_8aede90a1b8e87fe_aaf21e8c",
+ "kind": "self_test",
+ "name": "Pascal Editor MCP",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:editor.pascal.app:server:editor",
+   "manifest_url": "https://editor.pascal.app/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "editor-pascal-app-pascal-editor-mcp"
+}

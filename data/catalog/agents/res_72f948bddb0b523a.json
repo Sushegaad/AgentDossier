@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.autoposting/autoposting"
 },
-"first_seen": "2026-10-19T12:00:38Z",
+"first_seen": "2026-10-25T17:51:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,7 +66,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:38Z",
+"last_seen": "2026-10-25T17:51:20Z",
 "license": null,
 "name": "Autoposting",
 "news": [],
@@ -74,7 +74,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://docs.autoposting.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-19T12:12:29Z",
+"checked_at": "2026-10-25T18:04:40Z",
 "errors": [
 "missing 'description'"
 ],
@@ -88,7 +88,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:27Z",
+"checked_at": "2026-10-25T18:04:37Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -111,7 +111,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:26:39Z",
+"checked_at": "2026-10-25T18:17:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -128,8 +128,8 @@
 "slug": "autoposting-ai-autoposting",
 "sources": [
 {
-"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
-"retrieved_at": "2026-10-19T12:00:38Z",
+"payload_hash": "b3e2595dce4d160e038b04b1efe6c0b4b1a8de2d2610bb771c42a3069cf42128",
+"retrieved_at": "2026-10-25T17:51:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.autoposting/autoposting"
 }

@@ -45,7 +45,7 @@
 "github": "kneelinghorse/reasonbook",
 "mcp_registry": "ai.aquex/reasonbook"
 },
-"first_seen": "2026-10-19T12:00:38Z",
+"first_seen": "2026-10-25T17:51:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,33 +67,10 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:38Z",
+"last_seen": "2026-10-25T17:51:20Z",
 "license": null,
 "name": "Reasonbook",
-"news": [
-{
-"cluster_size": 1,
-"date": "2026-10-10T21:25:19Z",
-"headline": "reasonbook: 3.4.0 — Daily-use workflows",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "- Retrieval follows explicit stored decision citations and uses measured ranking defaults.\n  First-prompt recall requires a minimum number of keyword matches, reducing unrelated output; the sealed\n  acceptance gate reports retrieval quality",
-"tag": "product_update",
-"url": "https://github.com/kneelinghorse/reasonbook/releases/tag/v3.4.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-09T08:00:57Z",
-"headline": "reasonbook: 3.3.0 — Approvals and portable hooks",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "This stable release includes the CLI, Claude Code plugin, digest, recall, feedback and local\nmeasurements described in the development candidate below, plus proposal approvals and the\nportable adapters listed here.\n\n### Added\n\n- **Portable",
-"tag": "product_update",
-"url": "https://github.com/kneelinghorse/reasonbook/releases/tag/v3.3.0"
-}
-],
+"news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
@@ -125,7 +102,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:26:01Z",
+"checked_at": "2026-10-25T18:16:57Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -140,8 +117,8 @@
 "slug": "aquex-ai-reasonbook",
 "sources": [
 {
-"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
-"retrieved_at": "2026-10-19T12:00:38Z",
+"payload_hash": "c97714e3ffc17439374669fe39eb1abe867b3c0299313ce4254e475c4c799ba2",
+"retrieved_at": "2026-10-25T17:51:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aquex/reasonbook"
 }

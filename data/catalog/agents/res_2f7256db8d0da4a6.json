@@ -1,0 +1,187 @@
+{
+"canonical_url": "bankrolled.ai/.well-known/mcp/server-card.json",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"finance": [
+"payment"
+],
+"insurance": [
+"insurance"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Free, sourced deposit-insurance, savings and retirement limits (US, UK, CA, AU, NZ). No key, no payment.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"finance": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.6,
+"governance": null,
+"health": null,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 31.7,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"insurance": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.6,
+"governance": null,
+"health": null,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 31.7,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:bankrolled.ai:mcp:agent-hub"
+},
+"first_seen": "2026-10-25T18:04:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_2f7256db8d0da4a6",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-25T18:04:20Z",
+"license": null,
+"name": "agent-hub",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"errors": [
+"missing required term 'displayName'"
+],
+"identifier": "urn:air:bankrolled.ai:mcp:agent-hub",
+"manifest_url": "https://bankrolled.ai/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "invalid",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"server_card_url": "https://bankrolled.ai/.well-known/mcp/server-card.json",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "bankrolled.ai",
+"representative_queries": [],
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {},
+"slug": "bankrolled-ai-agent-hub",
+"sources": [
+{
+"payload_hash": "0efc89e65fcecb76532f5149042e85ff7f1ebf8146ebcba57e13dc7c45987db1",
+"retrieved_at": "2026-10-25T18:04:20Z",
+"system": "ard",
+"url": "https://bankrolled.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_2f7256db8d0da4a6_aa8202b8",
+"checked_on": null,
+"date": "2026-10-25",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_2f7256db8d0da4a6_aa8202b8",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD invalid (1 validation error)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:d159275d533ccd250eeb4ef89b8de3d953cec8870639adeb5e278f6eda1f2865",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of agent-hub's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_2f7256db8d0da4a6_aa8202b8/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": null,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://bankrolled.ai/.well-known/mcp/server-card.json",
+"vendor": "bankrolled.ai"
+}

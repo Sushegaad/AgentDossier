@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "dapr/dapr"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T17:55:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,47 +92,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:47Z",
+"last_seen": "2026-10-25T17:55:30Z",
 "license": "Apache-2.0",
 "name": "dapr",
 "news": [
 {
-"cluster_size": 1,
-"date": "2026-10-16T22:32:22Z",
-"headline": "Dapr Runtime v1.19.0-rc.4",
+"cluster_size": 4,
+"date": "2026-10-22T13:54:07Z",
+"headline": "Dapr Runtime v1.19.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "This is the release candidate 1.19.0-rc.4\r\n\r\n## What's Changed\r\n* [Backport release-1.19] actors: evict the app actor instance before each activation by @dapr-bot in https://github.com/dapr/dapr/pull/10798\r\n* [Backport release-1.19] sentry,",
+"summary": "# Dapr 1.19\r\n\r\nWe're excited to announce the release of Dapr 1.19!\r\n\r\nThe main changes in this release:\r\n\r\n- **Faster workflows, jobs and reminders.** In the nightly performance tests against 1.18.0, workflow throughput is up to 40% higher.",
 "tag": "product_update",
-"url": "https://github.com/dapr/dapr/releases/tag/v1.19.0-rc.4"
+"url": "https://github.com/dapr/dapr/releases/tag/v1.19.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-15T16:46:26Z",
-"headline": "Dapr Runtime v1.19.0-rc.3",
+"date": "2026-10-21T23:25:49Z",
+"headline": "Dapr Runtime v1.18.9",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "This is the release candidate 1.19.0-rc.3\r\n\r\n## What's Changed\r\n* [Backport release-1.19] Apply max-body-size to pluggable component responses by @dapr-bot in https://github.com/dapr/dapr/pull/10725\r\n* [Backport release-1.19] charts: only p",
+"summary": "# Dapr 1.18.9\r\n\r\nThis update contains the following security fix:\r\n- [Security: Operator disclosed resources and secrets scoped to other apps](#security-operator-disclosed-resources-and-secrets-scoped-to-other-apps)\r\n\r\n## Security: Operator",
 "tag": "product_update",
-"url": "https://github.com/dapr/dapr/releases/tag/v1.19.0-rc.3"
+"url": "https://github.com/dapr/dapr/releases/tag/v1.18.9"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:17Z",
+"checked_at": "2026-10-25T18:04:28Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:14Z",
+"checked_at": "2026-10-25T18:04:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:12:18Z",
+"checked_at": "2026-10-25T18:04:29Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -143,19 +143,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-06-19T00:49:06Z",
-"github_forks": 2166,
+"github_forks": 2170,
 "github_language": "Go",
-"github_open_issues": 458,
-"github_pushed_at": "2026-10-19T11:39:55Z",
-"github_stars": 26155,
+"github_open_issues": 451,
+"github_pushed_at": "2026-10-22T13:42:04Z",
+"github_stars": 26154,
 "github_topic": "ai-agents",
 "homepage": "https://dapr.io"
 },
 "slug": "dapr-dapr",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/dapr/dapr"
 }
@@ -173,7 +173,7 @@
 "serverless",
 "sidecar",
 "state-management",
-"worflow-engine",
+"workflow-engine",
 "workflows"
 ],
 "tenant": null,

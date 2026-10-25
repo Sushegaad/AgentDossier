@@ -1,0 +1,227 @@
+{
+"canonical_url": "omniroute.online",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"copilot"
+],
+"technology": [
+"code",
+"coding",
+"llm",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 900+ contributors",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 28.45,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 9.6,
+"governance": null,
+"health": 20.0,
+"trust": 18.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.944,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 73.8,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 28.45,
+"docs": 7.0,
+"domain_fit": 81.0,
+"ecosystem": 9.6,
+"governance": null,
+"health": 20.0,
+"trust": 18.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 84.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "cheaper-inference/OmniRoute"
+},
+"first_seen": "2026-10-25T17:55:30Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_446442540ccca8ee",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2026-09-10",
+"kind": "cve",
+"title": "CVE-2026-88062",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88062"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-25T18:02:02Z",
+"license": "MIT",
+"merged_ids": [
+"res_446442540ccca8ee"
+],
+"name": "OmniRoute",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-19T20:02:45Z",
+"headline": "OmniRoute release v3.8.52",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# OmniRoute v3.8.52\n\n**1,442 documented changes** — 135 features, 1,112 fixes and 195 maintenance entries from 1,386 commits in the cycle, with **306 external contributors**. Thank you all.\n\n📄 **Complete release notes** (every entry, full d",
+"tag": "product_update",
+"url": "https://github.com/cheaper-inference/OmniRoute/releases/tag/v3.8.52"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-30T01:41:50Z",
+"headline": "OmniRoute release v3.8.51",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# OmniRoute v3.8.51\n\n**2,022 documented changes** — 235 features, 1,454 fixes and 333 maintenance entries from 1,973 commits in the cycle, with **301 external contributors**. Thank you all.\n\n📄 **Complete release notes** (every entry, full d",
+"tag": "product_update",
+"url": "https://github.com/cheaper-inference/OmniRoute/releases/tag/v3.8.51"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"evidence_url": "https://omniroute.online",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-25T18:05:37Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+},
+"ard": {
+"checked_at": "2026-10-25T18:05:35Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://omniroute.online",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-10-25T18:05:37Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "omniroute.online",
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-25T18:19:18Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-02-13T12:38:31Z",
+"github_forks": 11869,
+"github_language": "TypeScript",
+"github_open_issues": 585,
+"github_pushed_at": "2026-10-25T11:47:06Z",
+"github_stars": 81048,
+"github_topic": "a2a",
+"homepage": "https://omniroute.online"
+},
+"slug": "cheaper-inference-omniroute",
+"sources": [
+{
+"payload_hash": "28ab79159c0f2d680e449c88530c47873e42e60849d968a487928889f69a0c59",
+"retrieved_at": "2026-10-25T18:02:02Z",
+"system": "github",
+"url": "https://github.com/cheaper-inference/OmniRoute"
+}
+],
+"tags": [
+"a2a",
+"ai-agents",
+"ai-gateway",
+"anthropic",
+"claude",
+"claude-code",
+"cline",
+"codex",
+"copilot",
+"cursor",
+"deepseek",
+"free-ai",
+"gemini",
+"kimi",
+"llm-gateway",
+"mcp",
+"openai",
+"openai-proxy",
+"qwen",
+"token-saver"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 3,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://omniroute.online",
+"vendor": "cheaper-inference"
+}

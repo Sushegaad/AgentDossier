@@ -28,7 +28,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 22.99,
+"adoption": 23.0,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -51,7 +51,7 @@
 },
 "sales": {
 "components": {
-"adoption": 22.99,
+"adoption": 23.0,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -74,7 +74,7 @@
 },
 "supply_chain": {
 "components": {
-"adoption": 22.99,
+"adoption": 23.0,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -97,7 +97,7 @@
 },
 "technology": {
 "components": {
-"adoption": 22.99,
+"adoption": 23.0,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -122,7 +122,7 @@
 "external_ids": {
 "github": "MervinPraison/PraisonAI"
 },
-"first_seen": "2026-10-19T12:02:52Z",
+"first_seen": "2026-10-25T17:55:35Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -138,7 +138,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 167,
+"cves": 183,
 "incidents": 0,
 "links": [
 {
@@ -205,10 +205,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:52Z",
+"last_seen": "2026-10-25T17:55:35Z",
 "license": "MIT",
 "name": "PraisonAI",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-23T07:43:35Z",
+"headline": "PraisonAI v4.7.17",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Release v4.7.17",
+"tag": "product_update",
+"url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.7.17"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-19T11:54:53Z",
@@ -219,33 +230,22 @@
 "summary": "Release v4.7.16",
 "tag": "product_update",
 "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.7.16"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-16T11:01:25Z",
-"headline": "PraisonAI v4.7.15",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "Release v4.7.15",
-"tag": "product_update",
-"url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.7.15"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:13:50Z",
+"checked_at": "2026-10-25T18:05:51Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:13:46Z",
+"checked_at": "2026-10-25T18:05:47Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:13:52Z",
+"checked_at": "2026-10-25T18:05:53Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -255,27 +255,27 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:30:51Z",
-"cves": 167,
+"checked_at": "2026-10-25T18:21:46Z",
+"cves": 183,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-03-19T16:45:25Z",
-"github_forks": 1483,
+"github_forks": 1486,
 "github_language": "Python",
-"github_open_issues": 132,
-"github_pushed_at": "2026-10-19T11:54:51Z",
-"github_stars": 9270,
+"github_open_issues": 160,
+"github_pushed_at": "2026-10-25T10:19:25Z",
+"github_stars": 9291,
 "github_topic": "ai-agents",
 "homepage": "https://praison.ai/docs"
 },
 "slug": "mervinpraison-praisonai",
 "sources": [
 {
-"payload_hash": "6e3a9dccd37aff7e2c126b6e28eb78936685ed0ed4244b38abb99aa6fbd6ba6f",
-"retrieved_at": "2026-10-19T12:02:52Z",
+"payload_hash": "4babe8d415355525c4fb607e8164bd107cfd26b5a482c55e1a527b129ce10a4e",
+"retrieved_at": "2026-10-25T17:55:35Z",
 "system": "github",
 "url": "https://github.com/MervinPraison/PraisonAI"
 }

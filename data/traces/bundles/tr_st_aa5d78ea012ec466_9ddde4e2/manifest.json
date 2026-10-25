@@ -1,0 +1,25 @@
+{
+ "agent": "res_aa5d78ea012ec466",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_aa5d78ea012ec466_9ddde4e2",
+ "kind": "self_test",
+ "name": "mcp",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:fibalo.de:mcp:mcp",
+   "manifest_url": "https://fibalo.de/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "fibalo-de-mcp"
+}

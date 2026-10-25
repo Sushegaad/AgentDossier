@@ -21,16 +21,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-19)",
+"display": "Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://mobilerun.ai/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
+"next_check": "2026-11-01",
 "payload_hash": "04f5a0c963077b75319f4edea529affeeb5a6941e6fb03c3e3d53e422224dfba",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:20:47Z",
+"retrieved_at": "2026-10-25T18:11:26Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -47,7 +47,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.11,
+"adoption": 23.13,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
@@ -68,7 +68,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.11,
+"adoption": 23.13,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
@@ -91,7 +91,7 @@
 "external_ids": {
 "github": "droidrun/mobilerun"
 },
-"first_seen": "2026-10-19T12:02:52Z",
+"first_seen": "2026-10-25T17:55:35Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -113,47 +113,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:52Z",
+"last_seen": "2026-10-25T17:55:35Z",
 "license": "MIT",
 "name": "mobilerun",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-14T19:27:52Z",
-"headline": "mobilerun release v0.7.0",
+"date": "2026-10-25T02:04:37Z",
+"headline": "mobilerun release v0.7.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Behavior changes\n- **Device selection:** `mobilerun run` uses `-d`, then `ANDROID_SERIAL`, then the only online device. With several devices attached and none selected, it now stops with an error instead of using the first device in `adb",
+"summary": "## Highlights\n\n- **Native tool calling** in FastAgent for OpenAI, xAI and DeepSeek models. Tools go through the provider's function-calling API instead of XML in the reply text. This fixes models such as gpt-6-luna and grok-4.7 that replied",
 "tag": "product_update",
-"url": "https://github.com/droidrun/mobilerun/releases/tag/v0.7.0"
+"url": "https://github.com/droidrun/mobilerun/releases/tag/v0.7.2"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-05T12:46:11Z",
-"headline": "mobilerun release v0.6.22",
+"date": "2026-10-23T09:25:03Z",
+"headline": "mobilerun release v0.7.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Breaking change: app card folders\n\nApp cards are now read from one folder per platform: `<app_cards_dir>/android/app_cards.json` and `<app_cards_dir>/ios/app_cards.json`. A single `app_cards.json` directly in `app_cards_dir` is no longer",
+"summary": "## What's Changed\n* docs(readme): add platform support table and ecosystem section by @RasulOs in https://github.com/droidrun/mobilerun/pull/496\n* Fix dependency vulnerabilities and isolate Phoenix server by @RasulOs in https://github.com/d",
 "tag": "product_update",
-"url": "https://github.com/droidrun/mobilerun/releases/tag/v0.6.22"
+"url": "https://github.com/droidrun/mobilerun/releases/tag/v0.7.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:13:25Z",
+"checked_at": "2026-10-25T18:05:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:13:24Z",
+"checked_at": "2026-10-25T18:05:25Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:13:26Z",
+"checked_at": "2026-10-25T18:05:26Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -163,7 +163,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:30:47Z",
+"checked_at": "2026-10-25T18:21:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -171,19 +171,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-12T22:03:47Z",
-"github_forks": 1032,
+"github_forks": 1039,
 "github_language": "Python",
-"github_open_issues": 28,
-"github_pushed_at": "2026-10-16T22:27:17Z",
-"github_stars": 9697,
+"github_open_issues": 29,
+"github_pushed_at": "2026-10-25T02:02:15Z",
+"github_stars": 9795,
 "github_topic": "ai-agents",
 "homepage": "https://mobilerun.ai/framework"
 },
 "slug": "droidrun-mobilerun",
 "sources": [
 {
-"payload_hash": "6e3a9dccd37aff7e2c126b6e28eb78936685ed0ed4244b38abb99aa6fbd6ba6f",
-"retrieved_at": "2026-10-19T12:02:52Z",
+"payload_hash": "4babe8d415355525c4fb607e8164bd107cfd26b5a482c55e1a527b129ce10a4e",
+"retrieved_at": "2026-10-25T17:55:35Z",
 "system": "github",
 "url": "https://github.com/droidrun/mobilerun"
 }

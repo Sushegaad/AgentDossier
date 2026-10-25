@@ -1,0 +1,193 @@
+{
+"canonical_url": "github.com/ai-job-search-dev/ai-job-search",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"technology": [
+"code",
+"framework"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": 27.92,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 67.7,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 27.92,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 72.9,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "ai-job-search-dev/ai-job-search"
+},
+"first_seen": "2026-10-25T17:55:30Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_7148ef268047b0b1",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-25T17:55:30Z",
+"license": "MIT",
+"name": "ai-job-search",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-19T16:42:35Z",
+"headline": "ai-job-search: v1.7.3 - Least privilege, postings checked before use, and fifty-eight fixes",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "A patch release in two halves. **The security model now does what the docs said it did:** skills and agents get only the tools they need, the permission file ships rules that hold even in bypass mode, and every job posting is checked for hi",
+"tag": "product_update",
+"url": "https://github.com/ai-job-search-dev/ai-job-search/releases/tag/v1.7.3"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-29T18:32:55Z",
+"headline": "ai-job-search: v1.7.2 - Measured PDFs, CLIs that stop trusting the digits, tools that survive non-ASCII",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "A patch release with one theme: **the checks the workflow documented now actually run, and the tools stop breaking on anything that is not ASCII.** Compiled PDFs get measured instead of eyeballed, the portal CLIs stop trusting the digits in",
+"tag": "product_update",
+"url": "https://github.com/ai-job-search-dev/ai-job-search/releases/tag/v1.7.2"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"not_checked": "code_host",
+"status": "unknown"
+},
+"ard": {
+"not_checked": "code_host",
+"status": "unknown"
+},
+"mcp": {
+"not_checked": "code_host",
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "framework",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-25T18:19:33Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-03-18T14:33:04Z",
+"github_forks": 20526,
+"github_language": "Python",
+"github_open_issues": 66,
+"github_pushed_at": "2026-10-21T05:29:11Z",
+"github_stars": 65567,
+"github_topic": "ai-agents",
+"homepage": null
+},
+"slug": "ai-job-search-dev-ai-job-search",
+"sources": [
+{
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
+"system": "github",
+"url": "https://github.com/ai-job-search-dev/ai-job-search"
+}
+],
+"tags": [
+"ai",
+"ai-agents",
+"career",
+"claude-code",
+"cover-letter",
+"cv",
+"interview-preparation",
+"job-application",
+"job-hunting",
+"job-search",
+"latex",
+"resume"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://github.com/ai-job-search-dev/ai-job-search",
+"vendor": "ai-job-search-dev"
+}

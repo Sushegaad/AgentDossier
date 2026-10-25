@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-19)",
+"display": "Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://bowmark.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "feb17000300455816e5bf11f91ed07acb25ce409ed69485aae8773fa151c4023",
+"next_check": "2026-11-01",
+"payload_hash": "23297f4d26e692509c4bab6b38d0f204c66322a43ad809ef55ec96d54b6f6eb7",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:18:57Z",
+"retrieved_at": "2026-10-25T18:10:05Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "github": "bowmark-ai/skill",
 "mcp_registry": "ai.bowmark/bowmark"
 },
-"first_seen": "2026-10-19T12:00:39Z",
+"first_seen": "2026-10-25T17:51:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,19 +93,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:39Z",
+"last_seen": "2026-10-25T17:51:27Z",
 "license": null,
 "name": "Bowmark",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:11:52Z",
+"checked_at": "2026-10-25T18:04:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:11:50Z",
+"checked_at": "2026-10-25T18:04:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -133,7 +133,7 @@
 ],
 "server_name": "ai.bowmark/bowmark",
 "status": "claimed",
-"version": "8.182.29",
+"version": "8.191.1",
 "via": "mcp_registry"
 }
 },
@@ -142,9 +142,9 @@
 "scope": "public",
 "signals": {
 "mcp_packages": 2,
-"mcp_registry_published_at": "2026-10-19T11:20:04.812741Z",
+"mcp_registry_published_at": "2026-10-25T17:46:53.838927Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-19T11:20:04.812741Z",
+"mcp_registry_updated_at": "2026-10-25T17:46:53.838927Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -152,8 +152,8 @@
 "slug": "bowmark-ai-bowmark",
 "sources": [
 {
-"payload_hash": "172326a5bb7379239aa89944c38bfe55270204578feb48065c98a0a43cc0094d",
-"retrieved_at": "2026-10-19T12:00:39Z",
+"payload_hash": "f963d6f5a26ccf2077d694cbb2dbf2d0a64115b9037817a2b917d3fcefbbba4b",
+"retrieved_at": "2026-10-25T17:51:27Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bowmark/bowmark"
 }

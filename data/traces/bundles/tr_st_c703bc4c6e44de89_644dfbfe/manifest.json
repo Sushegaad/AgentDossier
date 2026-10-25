@@ -1,0 +1,32 @@
+{
+ "agent": "res_c703bc4c6e44de89",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c703bc4c6e44de89_644dfbfe",
+ "kind": "self_test",
+ "name": "Booqer",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://booqer.ai/.well-known/agent-card.json",
+   "checked_at": "2026-10-25T18:04:12Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "List verified shops",
+    "Open a shop booking page"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-25T18:04:11Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://booqer.ai/.well-known/ard.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "booqer-ai-booqer"
+}
