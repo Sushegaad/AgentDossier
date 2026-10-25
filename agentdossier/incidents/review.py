@@ -204,7 +204,6 @@ def anthropic_completer(
             {
                 "model": model,
                 "max_tokens": 1800,
-                "temperature": 0,
                 "system": system,
                 "messages": [{"role": "user", "content": user}],
             }
@@ -432,7 +431,12 @@ def review(
 ) -> ReviewReport:
     """Review every new candidate and every placeholder; publish or dismiss each; write both files."""
     today = today or dt.date.today()
-    get = fetcher or (lambda url: fetch(url, timeout=20.0))
+    # a browser-like Accept header: several publishers answer 403 to a client that asks for JSON first
+    get = fetcher or (
+        lambda url: fetch(
+            url, timeout=20.0, headers={"Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8"}
+        )
+    )
     report = ReviewReport(model=model, reviewed_on=today.isoformat())
     catalog = catalog_names(catalog_dir) if catalog_dir else {}
     doc = read_candidates(candidates_path)
