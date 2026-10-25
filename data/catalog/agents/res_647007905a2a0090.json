@@ -4,11 +4,7 @@
 "category": "MCP server",
 "classification": {
 "matched": {
-"supply_chain": [
-"planning"
-],
 "technology": [
-"api",
 "mcp"
 ]
 },
@@ -17,50 +13,26 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Gold Coast & Brisbane, Australia property report: flood, planning, schools. Free check; x402 A$1.39",
+"description": "Gold Coast & Brisbane: the building, the street at its door and the everyday context around it.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
-"supply_chain": {
-"components": {
-"adoption": null,
-"docs": 7.0,
-"domain_fit": 34.0,
-"ecosystem": 9.6,
-"governance": null,
-"health": 20.0,
-"trust": 21.0
-},
-"components_version": "components-from-signals-1.0",
-"confidence": 0.34,
-"evidence_coverage": 0.75,
-"governance_credited": {},
-"profile": "operations",
-"rank": null,
-"score": 51.7,
-"score_version": "sar-score-2.0",
-"source": "classifier",
-"unknown": [
-"adoption",
-"governance"
-]
-},
 "technology": {
 "components": {
 "adoption": null,
 "docs": 7.0,
-"domain_fit": 71.3,
+"domain_fit": 56.4,
 "ecosystem": 9.6,
 "governance": null,
 "health": 20.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.713,
+"confidence": 0.564,
 "evidence_coverage": 0.7,
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 57.0,
+"score": 55.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -72,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.alphaquantlabs/propertycheck"
 },
-"first_seen": "2026-10-19T12:00:38Z",
+"first_seen": "2026-10-25T17:51:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,9 +66,9 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:38Z",
+"last_seen": "2026-10-25T17:51:20Z",
 "license": null,
-"name": "AQL PropertyCheck — Property Intelligence & Due Diligence Report API, Gold Coast & Brisbane City",
+"name": "AQL PropertyCheck — Physical check of one exact address",
 "news": [],
 "news_checked": true,
 "protocols": {
@@ -105,7 +77,7 @@
 "bearer"
 ],
 "card_url": "https://agents.alphaquantlabs.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-19T12:10:41Z",
+"checked_at": "2026-10-25T18:03:01Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -113,10 +85,10 @@
 "Physical check of one Gold Coast or Brisbane address"
 ],
 "status": "verified",
-"version": "1.15.1"
+"version": "1.15.2"
 },
 "ard": {
-"checked_at": "2026-10-19T12:10:40Z",
+"checked_at": "2026-10-25T18:03:00Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -130,7 +102,7 @@
 ],
 "server_name": "ai.alphaquantlabs/propertycheck",
 "status": "claimed",
-"version": "1.15.1",
+"version": "1.15.2",
 "via": "mcp_registry"
 }
 },
@@ -139,25 +111,25 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:25:47Z",
+"checked_at": "2026-10-25T18:16:43Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-15T22:38:36.500979Z",
+"mcp_registry_published_at": "2026-10-21T23:26:44.019163Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-15T22:38:36.500979Z",
+"mcp_registry_updated_at": "2026-10-21T23:26:44.019163Z",
 "mcp_transports": [
 "streamable-http"
 ]
 },
-"slug": "alphaquantlabs-ai-aql-propertycheck-property-intelligence-due-diligence-report-a",
+"slug": "alphaquantlabs-ai-aql-propertycheck-physical-check-of-one-exact-address",
 "sources": [
 {
-"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
-"retrieved_at": "2026-10-19T12:00:38Z",
+"payload_hash": "c97714e3ffc17439374669fe39eb1abe867b3c0299313ce4254e475c4c799ba2",
+"retrieved_at": "2026-10-25T17:51:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.alphaquantlabs/propertycheck"
 }

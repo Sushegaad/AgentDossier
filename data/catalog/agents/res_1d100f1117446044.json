@@ -71,7 +71,7 @@
 "external_ids": {
 "github": "dolthub/dolt"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T17:55:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,47 +93,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:47Z",
+"last_seen": "2026-10-25T17:55:30Z",
 "license": "Apache-2.0",
 "name": "dolt",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-17T01:02:42Z",
-"headline": "dolt release v2.5.0",
+"date": "2026-10-23T04:08:12Z",
+"headline": "dolt release v2.6.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "This is a minor release because it contains backwards incompatible behavioral changes:\r\n\r\n* It is now possible to commit changes on more than one branch in the same SQL transaction. Previously, such transactions would fail with an error mes",
+"summary": "# Minor Version Bump\r\n\r\nThis change introduces changes to the `dolt_merge()` operation which will alter the merge behavior for long running branches\r\nwhich have multiple merges. The previous behavior would incorrectly choose merge results w",
 "tag": "product_update",
-"url": "https://github.com/dolthub/dolt/releases/tag/v2.5.0"
+"url": "https://github.com/dolthub/dolt/releases/tag/v2.6.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-06T16:33:49Z",
-"headline": "dolt release v2.4.2",
+"date": "2026-10-20T19:23:39Z",
+"headline": "dolt release v2.5.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Merged PRs\n\n## dolt\n\n* [12025](https://github.com/dolthub/dolt/pull/12025): Fixed foreign keys referencing a renamed index\n  This fixes the issue presented in:\n  * https://github.com/dolthub/doltgresql/issues/3517\n  This moves the index r",
+"summary": "# Merged PRs\n\n## dolt\n\n* [12152](https://github.com/dolthub/dolt/pull/12152): Fix schema merge conflicts for checks on mixed-case columns\n  Resolve CHECK column references case-insensitively during schema merges, preventing false deleted-co",
 "tag": "product_update",
-"url": "https://github.com/dolthub/dolt/releases/tag/v2.4.2"
+"url": "https://github.com/dolthub/dolt/releases/tag/v2.5.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:35Z",
+"checked_at": "2026-10-25T18:04:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:32Z",
+"checked_at": "2026-10-25T18:04:43Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:12:36Z",
+"checked_at": "2026-10-25T18:04:46Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -144,19 +144,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-07-24T17:46:25Z",
-"github_forks": 900,
+"github_forks": 902,
 "github_language": "Go",
-"github_open_issues": 592,
-"github_pushed_at": "2026-10-18T08:12:18Z",
-"github_stars": 24681,
+"github_open_issues": 606,
+"github_pushed_at": "2026-10-24T04:05:18Z",
+"github_stars": 24731,
 "github_topic": "ai-agents",
 "homepage": "https://www.dolthub.com"
 },
 "slug": "dolthub-dolt",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/dolthub/dolt"
 }

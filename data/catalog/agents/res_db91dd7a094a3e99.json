@@ -5,6 +5,7 @@
 "matched": {
 "business": [
 "automation",
+"business",
 "workflow"
 ],
 "data": [
@@ -14,6 +15,7 @@
 "technology": [
 "code",
 "devops",
+"git",
 "infrastructure",
 "orchestration"
 ]
@@ -23,26 +25,26 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "Event Driven Orchestration & Scheduling Platform for Mission Critical Applications",
+"description": "Orchestrate everything, everywhere. The open-source control plane for workflows across data, infrastructure, business processes and AI agents. Declarative YAML, event-driven, any language, Git-versioned, scalable to millions of executions.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": 25.94,
+"adoption": 25.95,
 "docs": 7.0,
-"domain_fit": 56.4,
+"domain_fit": 71.3,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.564,
+"confidence": 0.713,
 "evidence_coverage": 0.944,
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 67.3,
+"score": 69.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -51,7 +53,7 @@
 },
 "data": {
 "components": {
-"adoption": 25.94,
+"adoption": 25.95,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -74,21 +76,21 @@
 },
 "technology": {
 "components": {
-"adoption": 25.94,
+"adoption": 25.95,
 "docs": 7.0,
-"domain_fit": 81.0,
+"domain_fit": 87.5,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.81,
+"confidence": 0.875,
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 73.3,
+"score": 74.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -99,7 +101,7 @@
 "external_ids": {
 "github": "kestra-io/kestra"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T17:55:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -121,47 +123,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:47Z",
+"last_seen": "2026-10-25T17:55:30Z",
 "license": "Apache-2.0",
 "name": "kestra",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-13T14:44:28Z",
-"headline": "kestra release v1.3.43",
+"date": "2026-10-20T15:13:45Z",
+"headline": "kestra release v1.3.44",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\n\n### 📘 Subtasks\n**version**\n- b531f5c update to version '1.3.43'\n\n### 🐛 Bug Fixes\n**core**\n- db82eb4 keep the value timezone in the date filter, closes #11129\n- b5caed0 stop retry race from duplicating task runs and ending exec",
+"summary": "## Changelog\n\n### 🚀 Features\n**execution**\n- 458f859 add execution and taskrun state inside OTEL spans\n\n**traces**\n- 9808693 add taskId inside OTEL spans\n\n### 📘 Subtasks\n**core**\n- bf2979f generate ui translations through vertex ai (#21004)",
 "tag": "product_update",
-"url": "https://github.com/kestra-io/kestra/releases/tag/v1.3.43"
+"url": "https://github.com/kestra-io/kestra/releases/tag/v1.3.44"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-13T14:25:11Z",
-"headline": "kestra release v2.0.6",
+"date": "2026-10-20T14:07:27Z",
+"headline": "kestra release v2.0.7",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\n\n### 📘 Subtasks\n**version**\n- b59444f update to version '2.0.6'\n\n### 🐛 Bug Fixes\n**core**\n- 019fb8e neutralize formula characters in CSV exports\n- 043f765 keep the value timezone in the date filter, closes #11129\n- 264562d stop",
+"summary": "## Changelog\r\n\r\n### 🚀 Features\r\n**execution**\r\n- daa30bf add execution and taskrun state inside OTEL spans\r\n\r\n**traces**\r\n- 4e9be71 add taskId inside OTEL spans\r\n\r\n### 📘 Subtasks\r\n**core**\r\n- 7b605c3 generate ui translations through vertex",
 "tag": "product_update",
-"url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.6"
+"url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.7"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:49Z",
+"checked_at": "2026-10-25T18:04:57Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:47Z",
+"checked_at": "2026-10-25T18:04:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:12:49Z",
+"checked_at": "2026-10-25T18:04:58Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -172,19 +174,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-08-24T13:56:15Z",
-"github_forks": 3449,
+"github_forks": 3476,
 "github_language": "Java",
-"github_open_issues": 983,
-"github_pushed_at": "2026-10-19T11:51:56Z",
-"github_stars": 29860,
+"github_open_issues": 870,
+"github_pushed_at": "2026-10-25T14:50:05Z",
+"github_stars": 29994,
 "github_topic": "ai-agents",
 "homepage": "https://go.kestra.io/home"
 },
 "slug": "kestra-io-kestra",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/kestra-io/kestra"
 }

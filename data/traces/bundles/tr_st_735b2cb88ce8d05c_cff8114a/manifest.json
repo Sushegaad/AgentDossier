@@ -1,0 +1,20 @@
+{
+ "agent": "res_735b2cb88ce8d05c",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_735b2cb88ce8d05c_cff8114a",
+ "kind": "self_test",
+ "name": "APIANT",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-25T18:03:23Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://apiant.ai/.well-known/ard.json",
+    "https://apiant.ai/.well-known/ard.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "apiant-ai-apiant"
+}

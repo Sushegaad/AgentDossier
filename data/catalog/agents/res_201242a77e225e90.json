@@ -19,12 +19,12 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
+"description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,750+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "supply_chain": {
 "components": {
-"adoption": 27.13,
+"adoption": 27.16,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -47,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 27.13,
+"adoption": 27.16,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "sickn33/agentic-awesome-skills"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T17:55:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,42 +94,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:47Z",
+"last_seen": "2026-10-25T17:55:30Z",
 "license": "MIT",
 "name": "agentic-awesome-skills",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-19T08:31:15Z",
-"headline": "agentic-awesome-skills release v19.11.0",
+"date": "2026-10-24T09:04:01Z",
+"headline": "agentic-awesome-skills: v20.0.0 — The Full-Catalog Review",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [19.11.0] - 2026-10-19 - \"Three Reviewed Additions And A Continuity Checker\"\n\n> Installable skill library update for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and related AI coding assistants. Adds **3** catalog skills and",
+"summary": "## [20.0.0] - 2026-10-24 - \"The Full-Catalog Review\"\n\n> Our most significant catalog quality milestone yet: **2,750 skill entrypoints**, a completed individual-review inventory, and corrections across more than **2,000 skill bundles**. AAS",
 "tag": "product_update",
-"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v19.11.0"
+"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v20.0.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-18T22:26:45Z",
-"headline": "agentic-awesome-skills: Catalog 2026.10.19",
+"date": "2026-10-22T14:17:14Z",
+"headline": "agentic-awesome-skills: v19.14.0 \"One New Skill And Reliable Fork Evidence\"",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Independent catalog revision for compatible AAS runtimes. Exact integrity and compatibility are in catalog-release.json.",
+"summary": "## [19.14.0] - 2026-10-22 - \"One New Skill And Reliable Fork Evidence\"\r\n\r\n> Adds **1** catalog skill, ships **2,738 skills**, and removes the false SkillSpector timeout on legitimate fork pull requests.\r\n\r\n### Added\r\n\r\n- **us-watchlist-aler",
 "tag": "product_update",
-"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/catalog-v2026.10.19"
+"url": "https://github.com/sickn33/agentic-awesome-skills/releases/tag/v19.14.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:10:27Z",
+"checked_at": "2026-10-25T18:02:49Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:10:26Z",
+"checked_at": "2026-10-25T18:02:48Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -137,7 +137,7 @@
 "evidence_url": "https://aaskills.tech/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:10:28Z",
+"checked_at": "2026-10-25T18:02:49Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -149,7 +149,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:28:47Z",
+"checked_at": "2026-10-25T18:19:40Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -157,19 +157,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-14T17:48:09Z",
-"github_forks": 7003,
+"github_forks": 7050,
 "github_language": "Python",
-"github_open_issues": 1,
-"github_pushed_at": "2026-10-19T11:19:51Z",
-"github_stars": 47933,
+"github_open_issues": 4,
+"github_pushed_at": "2026-10-24T21:31:58Z",
+"github_stars": 48497,
 "github_topic": "ai-agents",
 "homepage": "https://aaskills.tech/"
 },
 "slug": "sickn33-agentic-awesome-skills",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/sickn33/agentic-awesome-skills"
 }

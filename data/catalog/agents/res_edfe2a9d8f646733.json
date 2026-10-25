@@ -22,16 +22,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-19)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://baseray.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "94e5e84bdc4762a1527ab6cd0fd47d6760bc2f08cb76a854ca52da356303d5a8",
+"next_check": "2026-11-01",
+"payload_hash": "9e53d243a9f8b5d0d74b8d1e845cd9891ec38937b901d5f017513a31081a3bb9",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:18:40Z",
+"retrieved_at": "2026-10-25T18:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -48,16 +48,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-10-19)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://baseray.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "94e5e84bdc4762a1527ab6cd0fd47d6760bc2f08cb76a854ca52da356303d5a8",
+"next_check": "2026-11-01",
+"payload_hash": "9e53d243a9f8b5d0d74b8d1e845cd9891ec38937b901d5f017513a31081a3bb9",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:18:40Z",
+"retrieved_at": "2026-10-25T18:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -74,16 +74,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-19)",
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://baseray.ai/legal/security",
 "framework": "iso27001",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "5fbde2ef147ad32df857876e7b3bcb9fec922069d2be32642f53fa4ef2433bf2",
+"next_check": "2026-11-01",
+"payload_hash": "e1fc05c99306c71af6a40881b5d2b69f7998b3c877e585afa51cab6ea3bb7148",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:18:40Z",
+"retrieved_at": "2026-10-25T18:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -100,16 +100,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-19)",
+"display": "Vendor-claimed (vendor page, 2026-10-25)",
 "evidence_url": "https://baseray.ai/legal/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "5fbde2ef147ad32df857876e7b3bcb9fec922069d2be32642f53fa4ef2433bf2",
+"next_check": "2026-11-01",
+"payload_hash": "e1fc05c99306c71af6a40881b5d2b69f7998b3c877e585afa51cab6ea3bb7148",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:18:40Z",
+"retrieved_at": "2026-10-25T18:09:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -180,7 +180,7 @@
 "external_ids": {
 "mcp_registry": "ai.baseray/baseray"
 },
-"first_seen": "2026-10-19T12:00:39Z",
+"first_seen": "2026-10-25T17:51:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -202,19 +202,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:39Z",
+"last_seen": "2026-10-25T17:51:20Z",
 "license": null,
 "name": "baseray",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:11:39Z",
+"checked_at": "2026-10-25T18:03:59Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:11:38Z",
+"checked_at": "2026-10-25T18:03:58Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -247,8 +247,8 @@
 "slug": "baseray-ai-baseray",
 "sources": [
 {
-"payload_hash": "172326a5bb7379239aa89944c38bfe55270204578feb48065c98a0a43cc0094d",
-"retrieved_at": "2026-10-19T12:00:39Z",
+"payload_hash": "b3e2595dce4d160e038b04b1efe6c0b4b1a8de2d2610bb771c42a3069cf42128",
+"retrieved_at": "2026-10-25T17:51:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.baseray/baseray"
 }

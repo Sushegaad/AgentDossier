@@ -17,7 +17,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.47,
+"adoption": 24.49,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "ag-ui-protocol/ag-ui"
 },
-"first_seen": "2026-10-19T12:02:52Z",
+"first_seen": "2026-10-25T17:55:35Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,10 +64,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:52Z",
+"last_seen": "2026-10-25T17:55:35Z",
 "license": "MIT",
 "name": "ag-ui",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-21T07:06:21Z",
+"headline": "ag-ui: Release 2026-10-21",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Packages Published\n### TypeScript (npm) - published at 07:06:20 UTC\n| Package | Version | Install |\n|---------|---------|--------|\n| @ag-ui/claude-agent-sdk | 0.0.8 | `npm install @ag-ui/claude-agent-sdk@0.0.8` |\n| @ag-ui/claude-managed-",
+"tag": "product_update",
+"url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-10-21"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-19T11:31:24Z",
@@ -78,24 +89,13 @@
 "summary": "## Packages Published\n### TypeScript (npm) - published at 11:31:23 UTC\n| Package | Version | Install |\n|---------|---------|--------|\n| @ag-ui/aws-strands | 1.0.1 | `npm install @ag-ui/aws-strands@1.0.1` |\n| @ag-ui/a2ui-middleware | 0.0.13",
 "tag": "product_update",
 "url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-10-19"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-18T06:31:39Z",
-"headline": "ag-ui: Release 2026-10-18",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## Packages Published\n### Python (PyPI) - published at 06:31:38 UTC\n| Package | Version | Install |\n|---------|---------|--------|\n| ag_ui_adk | 0.10.0 | `pip install ag_ui_adk==0.10.0` |\n\n#### ag_ui_adk@0.10.0\n\n- Added support for Python 3",
-"tag": "product_update",
-"url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-10-18"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://docs.ag-ui.com/.well-known/agent-card.json",
-"checked_at": "2026-10-19T12:10:36Z",
+"checked_at": "2026-10-25T18:02:56Z",
 "errors": [
 "missing 'description'"
 ],
@@ -109,18 +109,18 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-19T12:10:33Z",
+"checked_at": "2026-10-25T18:02:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
 "card_url": "https://docs.ag-ui.com/.well-known/mcp.json",
-"checked_at": "2026-10-19T12:10:37Z",
+"checked_at": "2026-10-25T18:02:57Z",
 "parser_version": "mcp-2025-06-18",
 "remotes": [
 {
 "type": "http",
-"url": "https://tawkitai.main-vite.mintlify.me/mcp"
+"url": "https://docs.ag-ui.com/mcp"
 }
 ],
 "status": "invalid"
@@ -132,19 +132,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-07T12:49:37Z",
-"github_forks": 1674,
+"github_forks": 1533,
 "github_language": "TypeScript",
-"github_open_issues": 487,
-"github_pushed_at": "2026-10-19T11:31:24Z",
-"github_stars": 16685,
+"github_open_issues": 518,
+"github_pushed_at": "2026-10-25T15:04:45Z",
+"github_stars": 16809,
 "github_topic": "ai-agents",
 "homepage": "https://ag-ui.com"
 },
 "slug": "ag-ui-protocol-ag-ui",
 "sources": [
 {
-"payload_hash": "6e3a9dccd37aff7e2c126b6e28eb78936685ed0ed4244b38abb99aa6fbd6ba6f",
-"retrieved_at": "2026-10-19T12:02:52Z",
+"payload_hash": "4babe8d415355525c4fb607e8164bd107cfd26b5a482c55e1a527b129ce10a4e",
+"retrieved_at": "2026-10-25T17:55:35Z",
 "system": "github",
 "url": "https://github.com/ag-ui-protocol/ag-ui"
 }

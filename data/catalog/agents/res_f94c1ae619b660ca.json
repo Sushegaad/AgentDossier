@@ -1,0 +1,131 @@
+{
+"canonical_url": "apiant.ai/llms.txt",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "What APIANT.ai is, when to use it and when not to, and links to the main pages, their Markdown versions and the documentation.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:apiant.ai:docs:llms-txt"
+},
+"first_seen": "2026-10-25T18:03:55Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f94c1ae619b660ca",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-25T18:03:55Z",
+"license": null,
+"name": "APIANT.ai llms.txt",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:apiant.ai:docs:llms-txt",
+"manifest_url": "https://apiant.ai/.well-known/ard.json",
+"media_type": "text/markdown",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "apiant.ai",
+"representative_queries": [
+"what is APIANT.ai",
+"when should I use APIANT for an integration"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-25T18:22:36Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "apiant-ai-apiant-ai-llms-txt",
+"sources": [
+{
+"payload_hash": "7882803fd19c3b77f392c9891c4a69b114c19aa7fc20f81c488de3f01da1aadf",
+"retrieved_at": "2026-10-25T18:03:55Z",
+"system": "ard",
+"url": "https://apiant.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_f94c1ae619b660ca_28cd19de",
+"checked_on": null,
+"date": "2026-10-25",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_f94c1ae619b660ca_28cd19de",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:1f390aa81897b2b73d325cd16e4d2b73f415b31808283b7040f93d2998a01c6c",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of APIANT.ai llms.txt's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_f94c1ae619b660ca_28cd19de/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://apiant.ai/llms.txt",
+"vendor": "apiant.ai"
+}

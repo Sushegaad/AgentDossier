@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-19",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-25",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/openai",
 "framework": "csa_star",
 "issued": "2024-04-09",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "cba6335aeaf5aca421457b6b5cefac764eecfadbacf8cb0d2668856e0bcc1ae6",
+"next_check": "2026-11-01",
+"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:16:10Z",
+"retrieved_at": "2026-10-25T18:07:23Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -45,16 +45,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "20x Moderate"
 },
-"display": "FedRAMP 20x Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-19)",
+"display": "FedRAMP 20x Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-25)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2533155773",
 "framework": "fedramp",
 "issued": "2026-01-09",
 "issuer": "Program / 3PAO Schellman Compliance, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-10-26",
-"payload_hash": "9dc6bce0af4614cfd434353a493074b133ed9a6dbc2ac6c5f49fbfa172d26d72",
+"next_check": "2026-11-01",
+"payload_hash": "832799f0b1a76cc8258420e803526d573b3b9ee96b732a870ceabecda7b21e98",
 "period_end": null,
-"retrieved_at": "2026-10-19T12:15:07Z",
+"retrieved_at": "2026-10-25T18:06:30Z",
 "review_reason": "vendor authorization for ChatGPT Enterprise and API Platform; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -361,7 +361,7 @@
 "external_ids": {
 "github": "openai/codex"
 },
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -408,7 +408,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:37Z",
+"last_seen": "2026-10-25T17:51:18Z",
 "license": "Apache-2.0",
 "name": "OpenAI Codex CLI",
 "news": [],
@@ -432,7 +432,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:22:28Z",
+"checked_at": "2026-10-25T18:13:02Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -453,11 +453,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-13T05:37:54Z",
-"github_forks": 20455,
+"github_forks": 20659,
 "github_language": "Rust",
-"github_open_issues": 23481,
-"github_pushed_at": "2026-10-19T11:51:19Z",
-"github_stars": 129886,
+"github_open_issues": 24720,
+"github_pushed_at": "2026-10-23T18:51:12Z",
+"github_stars": 130875,
 "observed_popularity": "Not captured",
 "seed_enrich": {
 "changed": [
@@ -470,7 +470,7 @@
 "sources": [
 {
 "payload_hash": "3be2ca6758be8903b5db54f2d787b571160a295b5d137aec588ef3f6c55069fd",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "seed_xlsx",
 "url": "https://github.com/openai/codex"
 }

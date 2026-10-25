@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.19,
+"adoption": 23.38,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -38,7 +38,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 62.2,
+"score": 62.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -47,7 +47,7 @@
 },
 "data": {
 "components": {
-"adoption": 23.19,
+"adoption": 23.38,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -61,7 +61,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 63.7,
+"score": 63.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.19,
+"adoption": 23.38,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -84,7 +84,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 68.1,
+"score": 68.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -95,7 +95,7 @@
 "external_ids": {
 "github": "genspark-ai/genoffice"
 },
-"first_seen": "2026-10-19T12:05:48Z",
+"first_seen": "2026-10-25T17:58:15Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -124,47 +124,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:05:48Z",
+"last_seen": "2026-10-25T17:58:15Z",
 "license": "Apache-2.0",
 "name": "genoffice",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-15T12:38:48Z",
-"headline": "GenOffice v0.11.829",
+"date": "2026-10-22T14:11:54Z",
+"headline": "GenOffice v0.12.29",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "GenOffice v0.11.829 stable desktop installers.\n\n## What's New\n\n- **Docs:** a Convert menu on the Home tab and in the File menu; a picture inserted into a table cell stays in the cell (reported by @cchamm); Home > Borders formats every selec",
+"summary": "GenOffice v0.12.29 stable desktop installers.\n\n## What's New\n\n- **Docs:** page breaks land where Word puts them across a 50-document production sample (headings stay with their table, rows split at legal cuts, contextual spacing crosses tab",
 "tag": "product_update",
-"url": "https://github.com/genspark-ai/genoffice/releases/tag/v0.11.829"
+"url": "https://github.com/genspark-ai/genoffice/releases/tag/v0.12.29"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-13T15:10:18Z",
-"headline": "GenOffice v0.11.727",
+"date": "2026-10-19T14:47:19Z",
+"headline": "GenOffice v0.11.919",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "GenOffice v0.11.727 stable desktop installers.\n\n## What's New\n\n- **Docs:** Export as Markdown from the File menu, with pictures written to a `<file>_files` folder (requested by @pow5007-blip); exported PDFs keep table-of-contents entries an",
+"summary": "GenOffice v0.11.919 stable desktop installers.\n\n## What's New\n\n- **Docs:** drag a table row's bottom border to set its height and the corner handle to resize the whole table like Word; a table selected via the move handle highlights every c",
 "tag": "product_update",
-"url": "https://github.com/genspark-ai/genoffice/releases/tag/v0.11.727"
+"url": "https://github.com/genspark-ai/genoffice/releases/tag/v0.11.919"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:43Z",
+"checked_at": "2026-10-25T18:04:53Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:42Z",
+"checked_at": "2026-10-25T18:04:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:12:44Z",
+"checked_at": "2026-10-25T18:04:54Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -174,7 +174,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:30:43Z",
+"checked_at": "2026-10-25T18:21:34Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-07-31T09:40:58Z",
-"github_forks": 1273,
+"github_forks": 1466,
 "github_language": "TypeScript",
-"github_open_issues": 68,
-"github_pushed_at": "2026-10-19T10:07:07Z",
-"github_stars": 10007,
+"github_open_issues": 116,
+"github_pushed_at": "2026-10-24T07:21:51Z",
+"github_stars": 10812,
 "github_topic": "ai-agent",
 "homepage": "https://genoffice.ai/"
 },
 "slug": "genspark-ai-genoffice",
 "sources": [
 {
-"payload_hash": "54544b55b3f9ec1308d102af5291e607b50d660712b8a9671285bd4b3aae4fe8",
-"retrieved_at": "2026-10-19T12:05:48Z",
+"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
+"retrieved_at": "2026-10-25T17:58:15Z",
 "system": "github",
 "url": "https://github.com/genspark-ai/genoffice"
 }

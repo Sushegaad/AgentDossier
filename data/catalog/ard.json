@@ -708,6 +708,63 @@
    ]
   },
   {
+   "identifier": "urn:air:apiant.ai:mcp:apiant",
+   "displayName": "APIANT",
+   "type": "application/mcp-server-card+json",
+   "description": "Remote MCP server for APIANT.ai, a hosted integration and automation platform operated by AI agents. Connect apps, build connectors from API documentation, build and test automations, and read execution history from your AI client. OAuth sign-in with PKCE; scopes mcp:tools and mcp:automation_builder.",
+   "representativeQueries": [
+    "connect HubSpot to Slack and test the automation before it runs",
+    "build a connector for an app from its API documentation",
+    "find out why my automation failed today and retry it",
+    "keep contacts in sync between two apps in both directions"
+   ],
+   "tags": [
+    "integration",
+    "automation",
+    "mcp",
+    "connectors"
+   ],
+   "updatedAt": "2026-10-24T00:00:00Z",
+   "data": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+    "name": "ai.apiant/apiant",
+    "title": "APIANT",
+    "version": "v0.0.1",
+    "description": "Build, test and run integrations and automations across your apps from your AI client.",
+    "websiteUrl": "https://apiant.ai/mcp",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://mcp.apiant.ai"
+     }
+    ]
+   }
+  },
+  {
+   "identifier": "urn:air:apiant.ai:docs:llms-txt",
+   "displayName": "APIANT.ai llms.txt",
+   "type": "text/markdown",
+   "url": "https://apiant.ai/llms.txt",
+   "description": "What APIANT.ai is, when to use it and when not to, and links to the main pages, their Markdown versions and the documentation.",
+   "representativeQueries": [
+    "what is APIANT.ai",
+    "when should I use APIANT for an integration"
+   ],
+   "updatedAt": "2026-10-24T00:00:00Z"
+  },
+  {
+   "identifier": "urn:air:apiant.ai:docs:agents-md",
+   "displayName": "APIANT.ai agents.md",
+   "type": "text/markdown",
+   "url": "https://apiant.ai/agents.md",
+   "description": "How an AI agent connects to APIANT.ai: the remote MCP server, OAuth with PKCE and its scopes, what to read, and the Markdown version of every page.",
+   "representativeQueries": [
+    "how do I connect my AI client to APIANT",
+    "which OAuth scopes does the APIANT MCP server use"
+   ],
+   "updatedAt": "2026-10-24T00:00:00Z"
+  },
+  {
    "identifier": "urn:air:apify.com:mcp:apify",
    "displayName": "Apify MCP server",
    "type": "application/mcp-server-card+json",
@@ -1025,7 +1082,7 @@
    "displayName": "Apify Store search",
    "type": "application/json",
    "url": "https://api.apify.com/v2/store",
-   "description": "Search endpoint over the 91,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
+   "description": "Search endpoint over the 98,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
    "tags": [
     "search",
     "discovery",
@@ -1229,48 +1286,6 @@
    ]
   },
   {
-   "identifier": "urn:ai:augmentev.com:paseo:khanoor",
-   "displayName": "Khanoor",
-   "type": "application/mcp-server-card+json",
-   "url": "https://augmentev.com/.well-known/paseo/paseo-mcp-card.json",
-   "capabilities": [
-    "SecurityLogTriage",
-    "AlertCorrelation",
-    "TriageQueue"
-   ],
-   "description": "Security log triage — corroborated multi-signal alerting plus a ranked triage queue. Available on Standard, with a post-quantum-signed Proof-of-Task-Execution (ML-DSA-65), and on Confidential, which adds attested Intel TDX isolation. REST + MCP at api.augmentev.ai.",
-   "representativeQueries": [
-    "triage and rank these security alerts",
-    "correlate multi-signal security events into a queue",
-    "confidential security log triage with a verifiable proof"
-   ],
-   "trustManifest": {
-    "identity": "did:web:augmentev.com",
-    "identityType": "did",
-    "provenance": [
-     {
-      "relation": "publishedFrom",
-      "sourceId": "urn:ai:augmentev.com:paseo:engine"
-     }
-    ],
-    "attestations": [
-     {
-      "type": "PQC-MLDSA65",
-      "uri": "https://augmentev.com/.well-known/paseo/pqc-attestation.json",
-      "mediaType": "application/json",
-      "digest": "sha256-b6a0826291fe13ff8e8fd445dea1116e0d7e95ae6ad535b99800536f9b7df200"
-     },
-     {
-      "type": "Phala-TDX",
-      "uri": "https://augmentev.com/.well-known/paseo/phala-attestation.json",
-      "mediaType": "application/json",
-      "digest": "sha256-0de69d8e050318589ac951f2e28faf376cea77d86af49927fe9e51990edc37f8"
-     }
-    ],
-    "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6InBhc2VvLWVkMjU1MTktdGVlLTcyNGRhNzY4NDM1MSJ9..b8uE-BiUlrbNIjlirhao8izWqxBzSX_HrVwtWaMwRZ5zj4N30AFo9k1GFtZC67KJ2HxAftXZgoApaTGcmzMdCg"
-   }
-  },
-  {
    "identifier": "urn:air:autoblogging.ai:skills:article-writer",
    "displayName": "Autoblogging.ai article writer",
    "type": "text/markdown; profile=\"urn:air:agent-skills\"",
@@ -1410,6 +1425,13 @@
    ]
   },
   {
+   "identifier": "urn:air:bankrolled.ai:mcp:agent-hub",
+   "type": "application/mcp-server-card+json",
+   "url": "https://bankrolled.ai/.well-known/mcp/server-card.json",
+   "name": "Bankrolled.ai Agent Hub",
+   "description": "Free, sourced deposit-insurance, savings and retirement limits (US, UK, CA, AU, NZ). No key, no payment."
+  },
+  {
    "identifier": "urn:air:beevr.ai:server:beevr",
    "displayName": "BeevR MCP server",
    "type": "application/mcp-server-card+json",
@@ -1441,15 +1463,238 @@
    ]
   },
   {
+   "identifier": "urn:air:booqer.ai:mcp:directory",
+   "displayName": "Booqer",
+   "type": "application/mcp-server-card+json",
+   "url": "https://booqer.ai/.well-known/mcp/server-card.json",
+   "description": "Verified Booqer shops. For the shops listed on Booqer, a keyless booking on an open slot is confirmed when it is booked. The confirmation includes a cancel link. It is a free consult. The public tools list is search_businesses, get_business, resolve_business, check_availability, request_booking, get_booking_status, request_service, and submit_service_request. request_service is public and does not confirm a booking. quote, availability, and book require a registered client key.",
+   "representativeQueries": [
+    "Which verified Booqer shops are listed?",
+    "Open the booking page for Florida Pole Barn",
+    "What is the booking URL for Florida Security Concepts?",
+    "Resolve the business at floridapolebarn.com",
+    "Read the booking status for a request"
+   ],
+   "capabilities": [
+    "search_businesses",
+    "get_business",
+    "resolve_business",
+    "check_availability",
+    "request_booking",
+    "get_booking_status",
+    "request_service",
+    "submit_service_request",
+    "quote",
+    "availability",
+    "book"
+   ],
+   "metadata": {
+    "privacyPolicyUrl": "https://booqer.ai/privacy",
+    "termsOfServiceUrl": "https://booqer.ai/terms",
+    "supportUrl": "https://booqer.ai/support"
+   }
+  },
+  {
    "identifier": "urn:air:context7.com:mcp:context7",
    "type": "application/mcp-server-card+json",
    "url": "https://mcp.context7.com/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:editor.pascal.app:server:editor",
+   "displayName": "Pascal Editor MCP",
+   "type": "application/mcp-server-card+json",
+   "url": "https://editor.pascal.app/.well-known/mcp/server-card.json",
+   "version": "1.0.4",
+   "description": "Hosted MCP server to create, inspect, edit, validate and save editable 3D building scenes in Pascal projects.",
+   "capabilities": [
+    "get_scene",
+    "validate_design",
+    "place_design",
+    "measure_stair",
+    "fit_stair",
+    "find_by_type",
+    "list_levels",
+    "get_node",
+    "get_level_summary",
+    "get_walls",
+    "get_zones",
+    "duplicate_level",
+    "set_ground_level",
+    "verify_scene",
+    "set_checkpoint",
+    "design_brief",
+    "add_wall",
+    "add_fence",
+    "add_corner_window",
+    "merge_windows",
+    "add_level",
+    "create_stair",
+    "create_roof",
+    "move_roofs_to_roof_level",
+    "place_items",
+    "delete_node",
+    "create_room",
+    "furnish_room",
+    "paint",
+    "place_in_room",
+    "get_site",
+    "place_building",
+    "search_assets",
+    "view_assets",
+    "search_materials",
+    "cut_floor_opening",
+    "remove_floor_opening",
+    "set_floor_foundation",
+    "set_room_floor_construction",
+    "rebase_floor_reference",
+    "create_mezzanine",
+    "move_zone",
+    "duplicate_zone",
+    "rotate_zone",
+    "lock_outside_faces",
+    "set_zone_intent",
+    "divide_zone",
+    "merge_zones",
+    "delete_zone",
+    "run_batch",
+    "list_collections",
+    "edit_collection",
+    "add_column",
+    "add_object",
+    "author_scene",
+    "get_source",
+    "measure",
+    "view_scene",
+    "create_story_shell",
+    "add_door",
+    "add_window",
+    "apply_patch",
+    "clear_scene",
+    "create_unit",
+    "set_unit_members",
+    "list_units",
+    "set_zone",
+    "undo",
+    "redo",
+    "export_json",
+    "export_glb",
+    "check_collisions",
+    "list_templates",
+    "create_from_template",
+    "create_house_from_brief",
+    "create_project",
+    "get_project_status",
+    "save_scene",
+    "load_scene",
+    "list_scenes",
+    "delete_scene",
+    "rename_scene",
+    "generate_variants",
+    "photo_to_scene",
+    "analyze_floorplan_image",
+    "analyze_room_photo",
+    "list_pascal_services",
+    "pull_site_data",
+    "get_site_pull",
+    "generate_studio_media",
+    "get_studio_generation",
+    "get_project_assets",
+    "get_project_file",
+    "upload_project_file",
+    "rename_project_file",
+    "delete_project_file",
+    "list_captures",
+    "get_capture",
+    "open_capture_as_project",
+    "add_project_asset",
+    "collect_matterport_evidence",
+    "read_project_asset",
+    "search_project_chats",
+    "read_project_chat",
+    "list_project_members",
+    "ask_architect",
+    "get_architect_turn",
+    "cancel_architect_turn"
+   ],
+   "representativeQueries": [
+    "design a small house with three bedrooms and a garage",
+    "add a window to the north wall of the living room",
+    "list the rooms in my Pascal project with their areas",
+    "validate and save this building model and give me the editor link"
+   ],
+   "tags": [
+    "3d",
+    "architecture",
+    "floor-plan",
+    "bim",
+    "interior-design"
+   ]
+  },
+  {
+   "identifier": "urn:air:editor.pascal.app:api:scene-api",
+   "displayName": "Pascal Editor Scene API",
+   "type": "application/openapi+json",
+   "url": "https://editor.pascal.app/api/openapi.json",
+   "description": "REST and server-sent events for Pascal projects and scene graphs, plus the Pascal API (v1) in the OpenAI formats.",
+   "representativeQueries": [
+    "read the scene graph of a Pascal project over REST",
+    "stream live edits to a Pascal scene"
+   ]
+  },
+  {
+   "identifier": "urn:air:editor.pascal.app:skill:furniture-fit",
+   "displayName": "furniture-fit",
+   "type": "application/agent-skills+md",
+   "url": "https://editor.pascal.app/.well-known/agent-skills/furniture-fit/SKILL.md",
+   "description": "Assess whether furniture fits in a measured Pascal room or layout. Use this skill for sofa, table, bed, cabinet, appliance, staging, placement, collision, clearance, or rotated-footprint questions. Produce a tool-backed spatial report that distinguishes footprint fit from unsupported height, door-swing, assembly, and delivery-route claims, and return insufficient evidence when dimensions or scale are missing.",
+   "representativeQueries": [
+    "will a 240 cm sofa fit in my living room",
+    "check the clearance around this bed in the bedroom",
+    "does this dining table fit with chairs pulled out"
+   ]
+  },
+  {
+   "identifier": "urn:air:editor.pascal.app:skill:pascal-3d",
+   "displayName": "pascal-3d",
+   "type": "application/agent-skills+md",
+   "url": "https://editor.pascal.app/.well-known/agent-skills/pascal-3d/SKILL.md",
+   "description": "Connect to Pascal and use its MCP tools to create, inspect, edit, validate, save, or hand off editable 3D building scenes. Use this skill whenever a user asks an agent to work in Pascal, make a room or building model, inspect a Pascal project, perform spatial edits, connect Pascal MCP, or return a verified Pascal editor link. It also governs safe local, existing-account, and explicitly authorized autonomous setup.",
+   "representativeQueries": [
+    "build a 3D model of a two-bedroom apartment I can edit",
+    "open my Pascal project and move the kitchen wall",
+    "turn this floor plan into an editable 3D house"
+   ]
+  },
+  {
+   "identifier": "urn:air:editor.pascal.app:catalog:api-catalog",
+   "displayName": "Pascal Editor API catalog",
+   "type": "application/linkset+json",
+   "url": "https://editor.pascal.app/.well-known/api-catalog",
+   "description": "RFC 9727 catalog of every Pascal Editor interface and its documentation."
   },
   {
    "identifier": "urn:air:events.aero:mcp:events",
    "displayName": "Events.Aero event discovery",
    "type": "application/mcp-server-card+json",
    "url": "https://events.aero/mcp/events/server-card"
+  },
+  {
+   "identifier": "urn:air:fibalo.de:mcp:mcp",
+   "type": "application/mcp-server-card+json",
+   "data": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+    "name": "de.fibalo/mcp",
+    "version": "2.4.0",
+    "title": "Fibalo",
+    "description": "German bookkeeping: E-Rechnung invoices, DATEV export, BWA, UStVA, Belege and bank data.",
+    "websiteUrl": "https://fibalo.de",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://mcp.fibalo.de/mcp"
+     }
+    ]
+   }
   },
   {
    "identifier": "urn:air:infisical.com:server:mcp",
@@ -1662,7 +1907,7 @@
    "displayName": "Comparisons",
    "type": "text/markdown",
    "url": "https://infisical.com/compare.md",
-   "description": "Every head-to-head comparison between Infisical and another secrets management tool, with links to each one.",
+   "description": "Every head-to-head comparison between Infisical and another secrets or certificate management tool, with links to each one.",
    "representativeQueries": [
     "what are the alternatives to Infisical",
     "how does Infisical compare to other secrets managers"
@@ -1677,11 +1922,91 @@
    "displayName": "Infisical vs. BeyondTrust Secrets Safe",
    "type": "text/markdown",
    "url": "https://infisical.com/compare/infisical-vs-beyondtrust-secrets-safe.md",
-   "description": "How Infisical and BeyondTrust Secrets Safe differ on access control, rotation, dynamic secrets, workload authentication and self-hosting, and how to migrate.",
+   "description": "How Infisical and BeyondTrust Secrets Safe differ on access control, rotation, dynamic secrets, workload authentication, and self-hosting, and how to migrate.",
    "representativeQueries": [
     "is Infisical a good alternative to BeyondTrust Secrets Safe",
     "does BeyondTrust Secrets Safe rotate secrets",
     "can I self-host BeyondTrust Secrets Safe without Windows Server"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-keyfactor",
+   "displayName": "Infisical vs. Keyfactor",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-keyfactor.md",
+   "description": "How Infisical compares with Keyfactor Command, EJBCA and Signum: issuance, lifecycle management, and code signing, plus ACME, EST, and SCEP, deployment effort, and how to migrate.",
+   "representativeQueries": [
+    "is Infisical a good alternative to Keyfactor",
+    "what is the best open-source alternative to Keyfactor",
+    "does Keyfactor support ACME"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-microsoft-adcs",
+   "displayName": "Infisical vs. Microsoft AD CS",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-microsoft-adcs.md",
+   "description": "How Infisical and Microsoft Active Directory Certificate Services differ on ACME, Linux and Kubernetes, expiry alerts, and delivery, how to run Infisical in front of AD CS, and how to migrate.",
+   "representativeQueries": [
+    "is Infisical a good alternative to Microsoft AD CS",
+    "does AD CS support ACME",
+    "how do I add ACME to AD CS"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-google-cloud-certificate-manager",
+   "displayName": "Infisical vs. Google Cloud Certificate Manager",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-google-cloud-certificate-manager.md",
+   "description": "How Infisical and Google Cloud Certificate Manager differ inside and outside Google Cloud, what Certificate Manager and CA Service cost, how expiry alerts and renewal work, and how Infisical syncs certificates into Certificate Manager.",
+   "representativeQueries": [
+    "how much does Google Cloud Certificate Manager cost",
+    "can Google Cloud Certificate Manager issue private certificates",
+    "does Google Cloud Certificate Manager alert before certificates expire"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-venafi",
+   "displayName": "Infisical vs. Venafi",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-venafi.md",
+   "description": "How Infisical compares with Venafi, now CyberArk Certificate Manager: deployment, drivers, renewal and delivery, what the CyberArk and Palo Alto acquisitions mean, and how to move off Venafi gradually.",
+   "representativeQueries": [
+    "is Infisical a good alternative to Venafi",
+    "what is Venafi called now",
+    "how do I migrate from Venafi"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-hashicorp-vault",
+   "displayName": "Infisical vs. HashiCorp Vault",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-hashicorp-vault.md",
+   "description": "How Infisical and HashiCorp Vault differ on secrets, rotation, syncs, access requests, certificates with Vault PKI, encryption, and running the cluster, and how to migrate from Vault.",
+   "representativeQueries": [
+    "is Infisical a good alternative to HashiCorp Vault",
+    "what is the best open-source alternative to HashiCorp Vault",
+    "how do I migrate from HashiCorp Vault to Infisical"
    ],
    "tags": [
     "documentation",
@@ -1793,6 +2118,245 @@
    "url": "https://kortix.com/mcp/server-card"
   },
   {
+   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom",
+   "displayName": "Achromat Machine Operational Memory",
+   "type": "application/agent-skills+md",
+   "url": "https://mom.achromat.ai/skill.md",
+   "description": "Verified memory of blocked agent actions and their compliant fixes. Register an agent identity, recall the compliant version of a tool call before acting, and calibrate against live policy when nothing is recalled.",
+   "capabilities": [
+    "RecallCompliantArguments",
+    "CalibratePolicy"
+   ],
+   "representativeQueries": [
+    "check whether a tool call will be blocked by policy before running it",
+    "find the compliant version of a blocked wire transfer",
+    "learn from earlier policy blocks so my agent gets the call right the first time",
+    "get verified safe arguments for an industrial robot command"
+   ],
+   "tags": [
+    "agent-memory",
+    "policy",
+    "compliance",
+    "fintech",
+    "industrial-iot",
+    "devsecops"
+   ],
+   "metadata": {
+    "apiBaseUrl": "https://mom.achromat.ai/api/v1",
+    "apiAuthentication": "Ed25519-signed requests (skill document, section 3)",
+    "publicHealth": "GET /api/v1/health",
+    "publicFeed": "GET /api/v1/feed",
+    "publicChallenge": "GET /api/v1/agents/challenge",
+    "publicRegister": "POST /api/v1/agents/register",
+    "signedRecall": "POST /api/v1/recall",
+    "signedCalibrate": "POST /api/v1/calibrate",
+    "signedIdentity": "GET /api/v1/agents/me"
+   },
+   "trustManifest": {
+    "identity": "did:web:mom.achromat.ai",
+    "identityType": "did",
+    "trustSchema": {
+     "identifier": "https://www.w3.org/TR/did-core/",
+     "version": "1.0",
+     "verificationMethods": [
+      "did"
+     ]
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom-fintech",
+   "displayName": "Achromat Machine Operational Memory for fintech",
+   "type": "application/agent-skills+md",
+   "url": "https://mom.achromat.ai/fintech.md",
+   "description": "Tool schemas and placeholders for fintech agents: wire transfers and credit adverse action notices. Recall the verified compliant version of a payment or notice call before acting, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
+   "capabilities": [
+    "RecallCompliantArguments",
+    "CalibratePolicy"
+   ],
+   "representativeQueries": [
+    "find the compliant version of a blocked wire transfer",
+    "what arguments does a domestic wire need to pass dual control and sanctions screening",
+    "check an adverse action notice call against policy before sending it"
+   ],
+   "tags": [
+    "agent-memory",
+    "policy",
+    "compliance",
+    "fintech",
+    "payments"
+   ],
+   "metadata": {
+    "domain": "fintech",
+    "tools": "dispatch_wire, issue_credit_adverse_action",
+    "coreProtocol": "https://mom.achromat.ai/skill.md"
+   },
+   "trustManifest": {
+    "identity": "did:web:mom.achromat.ai",
+    "identityType": "did",
+    "trustSchema": {
+     "identifier": "https://www.w3.org/TR/did-core/",
+     "version": "1.0",
+     "verificationMethods": [
+      "did"
+     ]
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom-industrial-iot",
+   "displayName": "Achromat Machine Operational Memory for industrial IoT",
+   "type": "application/agent-skills+md",
+   "url": "https://mom.achromat.ai/industrial_iot.md",
+   "description": "Tool schemas and safety interlock placeholders for industrial IoT and robotics agents: manipulation and actuation commands. Recall verified compliant arguments before moving equipment, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
+   "capabilities": [
+    "RecallCompliantArguments",
+    "CalibratePolicy"
+   ],
+   "representativeQueries": [
+    "get verified safe arguments for an industrial robot command",
+    "check a manipulator motion command against safety policy before sending it",
+    "what speed and interlock evidence does a collaborative robot move need to pass policy"
+   ],
+   "tags": [
+    "agent-memory",
+    "policy",
+    "compliance",
+    "industrial-iot",
+    "robotics",
+    "safety"
+   ],
+   "metadata": {
+    "domain": "industrial_iot",
+    "tools": "dispatch_manipulation",
+    "coreProtocol": "https://mom.achromat.ai/skill.md"
+   },
+   "trustManifest": {
+    "identity": "did:web:mom.achromat.ai",
+    "identityType": "did",
+    "trustSchema": {
+     "identifier": "https://www.w3.org/TR/did-core/",
+     "version": "1.0",
+     "verificationMethods": [
+      "did"
+     ]
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom-devsecops",
+   "displayName": "Achromat Machine Operational Memory for DevSecOps",
+   "type": "application/agent-skills+md",
+   "url": "https://mom.achromat.ai/devsecops.md",
+   "description": "Expected tool shapes and environment and authorization placeholders for DevSecOps agents: commands, deployments and access grants. Recall verified compliant arguments before running a pipeline or operations action, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
+   "capabilities": [
+    "RecallCompliantArguments",
+    "CalibratePolicy"
+   ],
+   "representativeQueries": [
+    "check a production deployment call against policy before running it",
+    "find the compliant version of a blocked shell command in a pipeline",
+    "what approval evidence does an access grant need to pass policy"
+   ],
+   "tags": [
+    "agent-memory",
+    "policy",
+    "compliance",
+    "devsecops",
+    "ci-cd"
+   ],
+   "metadata": {
+    "domain": "devsecops",
+    "tools": "execute_command, deploy_release, grant_access",
+    "coreProtocol": "https://mom.achromat.ai/skill.md"
+   },
+   "trustManifest": {
+    "identity": "did:web:mom.achromat.ai",
+    "identityType": "did",
+    "trustSchema": {
+     "identifier": "https://www.w3.org/TR/did-core/",
+     "version": "1.0",
+     "verificationMethods": [
+      "did"
+     ]
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:mom.achromat.ai:server:achromat-mom-mcp",
+   "displayName": "Achromat Machine Operational Memory MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://mom.achromat.ai/.well-known/mcp/server-card.json",
+   "version": "0.1.2",
+   "description": "Achromat Machine Operational Memory over MCP. A public Streamable HTTP sandbox at /mcp (no authentication) returns sample verified lessons through achromat_recall; the full npm server (stdio) gives any MCP host recall and calibrate tools.",
+   "capabilities": [
+    "RecallCompliantArguments",
+    "CalibratePolicy",
+    "RegisterIdentity",
+    "RecallSampleLessons"
+   ],
+   "representativeQueries": [
+    "add policy-checked memory of blocked tool calls to my MCP host",
+    "install an MCP server that recalls the compliant version of a tool call",
+    "check an agent tool call against live policy from Claude Desktop",
+    "try a remote MCP server with sample compliance lessons without installing anything"
+   ],
+   "tags": [
+    "mcp",
+    "agent-memory",
+    "policy",
+    "compliance",
+    "npm",
+    "stdio",
+    "streamable-http",
+    "remote"
+   ],
+   "metadata": {
+    "npmPackage": "@achromat-ai/mcp-server",
+    "packageRegistry": "npm",
+    "packageTransport": "stdio",
+    "command": "npx -y @achromat-ai/mcp-server",
+    "remoteUrl": "https://mom.achromat.ai/mcp",
+    "remoteTransport": "streamable-http",
+    "remoteAuthentication": "none",
+    "remoteScope": "sandbox: sample approved lessons through achromat_recall only",
+    "coreProtocol": "https://mom.achromat.ai/skill.md"
+   },
+   "trustManifest": {
+    "identity": "did:web:mom.achromat.ai",
+    "identityType": "did",
+    "trustSchema": {
+     "identifier": "https://www.w3.org/TR/did-core/",
+     "version": "1.0",
+     "verificationMethods": [
+      "did"
+     ]
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:mom.achromat.ai:feed:approved-lessons",
+   "displayName": "Achromat Machine Operational Memory approved lessons",
+   "type": "application/json",
+   "url": "https://mom.achromat.ai/api/v1/feed",
+   "description": "The newest approved lessons: each pairs a policy-blocked tool call with the compliant fix that was then allowed.",
+   "representativeQueries": [
+    "show verified examples of blocked agent tool calls and their fixes",
+    "browse approved compliance lessons for agent tool use"
+   ],
+   "trustManifest": {
+    "identity": "did:web:mom.achromat.ai",
+    "identityType": "did",
+    "trustSchema": {
+     "identifier": "https://www.w3.org/TR/did-core/",
+     "version": "1.0",
+     "verificationMethods": [
+      "did"
+     ]
+    }
+   }
+  },
+  {
    "@context": "https://agenticresourcediscovery.org/context/v1",
    "identifier": "urn:air:pydantic.dev:server:logfire-mcp",
    "displayName": "Pydantic Logfire MCP Server",
@@ -1870,7 +2434,7 @@
    "displayName": "Superset MCP server",
    "type": "application/mcp-server-card+json",
    "url": "https://superset.sh/.well-known/mcp/server-card.json",
-   "description": "Create Git-worktree workspaces, launch coding-agent sessions, open terminals, schedule automations, and manage tasks on behalf of a Superset user. OAuth 2.1 + PKCE or API key.",
+   "description": "Create Git-worktree workspaces, launch coding-agent sessions, open terminals, set up automations, and manage tasks on behalf of a Superset user. OAuth 2.1 + PKCE or API key.",
    "tags": [
     "coding-agents",
     "workspaces",
@@ -2107,6 +2671,22 @@
     "global markets and conflict overview this morning",
     "which shipping chokepoints are disrupted",
     "forecast the impact of a Strait of Hormuz closure"
+   ],
+   "trustManifest": {
+    "identity": "did:web:worldmonitor.app",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:worldmonitor.app:mcp:worldmonitor-docs",
+   "displayName": "World Monitor Docs MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://www.worldmonitor.app/.well-known/mcp/docs-server-card.json",
+   "description": "Public, anonymous MCP server for searching and reading the World Monitor developer docs, API references and guides. Use it for how-to questions; use the World Monitor MCP server for live data.",
+   "tags": [
+    "docs",
+    "search",
+    "mcp"
    ],
    "trustManifest": {
     "identity": "did:web:worldmonitor.app",

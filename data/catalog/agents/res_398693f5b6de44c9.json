@@ -26,7 +26,7 @@
 "domain_fit": 34.0,
 "ecosystem": 4.6,
 "governance": null,
-"health": 16.0,
+"health": 12.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
@@ -35,7 +35,7 @@
 "governance_credited": {},
 "profile": "operations",
 "rank": null,
-"score": 42.1,
+"score": 39.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -50,7 +50,7 @@
 "domain_fit": 71.3,
 "ecosystem": 4.6,
 "governance": null,
-"health": 16.0,
+"health": 12.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 46.4,
+"score": 42.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -71,7 +71,7 @@
 "external_ids": {
 "mcp_registry": "ai.atlasverified/atlas-mcp"
 },
-"first_seen": "2026-10-19T12:00:38Z",
+"first_seen": "2026-10-25T17:51:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,19 +93,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:38Z",
+"last_seen": "2026-10-25T17:51:20Z",
 "license": null,
 "name": "ai.atlasverified/atlas-mcp",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:11:22Z",
+"checked_at": "2026-10-25T18:03:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:11:20Z",
+"checked_at": "2026-10-25T18:03:38Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -128,7 +128,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:26:22Z",
+"checked_at": "2026-10-25T18:17:23Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -145,8 +145,8 @@
 "slug": "atlasverified-ai-ai-atlasverified-atlas-mcp",
 "sources": [
 {
-"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
-"retrieved_at": "2026-10-19T12:00:38Z",
+"payload_hash": "c97714e3ffc17439374669fe39eb1abe867b3c0299313ce4254e475c4c799ba2",
+"retrieved_at": "2026-10-25T17:51:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.atlasverified/atlas-mcp"
 }

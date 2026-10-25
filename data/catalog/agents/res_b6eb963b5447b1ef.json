@@ -28,7 +28,7 @@
 "domains": {
 "regulatory": {
 "components": {
-"adoption": 23.4,
+"adoption": 23.43,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -51,7 +51,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.4,
+"adoption": 23.43,
 "docs": 7.0,
 "domain_fit": 96.4,
 "ecosystem": 3.0,
@@ -65,7 +65,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 74.7,
+"score": 74.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -76,7 +76,7 @@
 "external_ids": {
 "github": "omnigent-ai/omnigent"
 },
-"first_seen": "2026-10-19T12:02:52Z",
+"first_seen": "2026-10-25T17:55:35Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -129,7 +129,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:05:48Z",
+"last_seen": "2026-10-25T17:58:15Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_b6eb963b5447b1ef"
@@ -138,41 +138,41 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-13T08:34:10Z",
-"headline": "omnigent release v0.18.0",
+"date": "2026-10-21T23:52:25Z",
+"headline": "omnigent release v0.19.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Major new features\r\n\r\n- 🔀 Review GitLab merge requests and Azure DevOps pull requests alongside GitHub in the session panel, with checks, comments, diffs, and automatic tracking of requests created or updated by agents ([#8916](https://g",
+"summary": "We have updated our dependencies to mitigate the impact from the recent [eMudhra Intermediate CA Compromise](https://emudhra.we-have-a-problem.com/).\r\n\r\nFull Changelog: https://github.com/omnigent-ai/omnigent/blob/main/CHANGELOG.md",
 "tag": "product_update",
-"url": "https://github.com/omnigent-ai/omnigent/releases/tag/v0.18.0"
+"url": "https://github.com/omnigent-ai/omnigent/releases/tag/v0.19.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-06T02:02:33Z",
-"headline": "omnigent release v0.17.0",
+"date": "2026-10-20T17:40:48Z",
+"headline": "omnigent release v0.19.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Major new features\r\n\r\n- 🔐 Sign in to OIDC servers through your system browser from the desktop app, with silent renewal, public PKCE clients and explicit provider endpoints, plus operator-set server names shown next to each host ([#8897]",
+"summary": "## Major new features\r\n\r\n- 🔌 MCP registry and gateway: on servers configured with an MCP registry, connect managed MCP accounts in Settings, pick their tools for local hosts or sandboxes through a server gateway with shared policy checks  (",
 "tag": "product_update",
-"url": "https://github.com/omnigent-ai/omnigent/releases/tag/v0.17.0"
+"url": "https://github.com/omnigent-ai/omnigent/releases/tag/v0.19.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:13:34Z",
+"checked_at": "2026-10-25T18:05:35Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:13:33Z",
+"checked_at": "2026-10-25T18:05:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:13:35Z",
+"checked_at": "2026-10-25T18:05:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -182,7 +182,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:30:37Z",
+"checked_at": "2026-10-25T18:21:31Z",
 "cves": 5,
 "source": "nvd",
 "tier": 1
@@ -190,19 +190,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-06-11T12:18:13Z",
-"github_forks": 1768,
+"github_forks": 1806,
 "github_language": "Python",
-"github_open_issues": 2232,
-"github_pushed_at": "2026-10-19T11:55:28Z",
-"github_stars": 10899,
-"github_topic": "ai-agents",
+"github_open_issues": 2404,
+"github_pushed_at": "2026-10-25T17:49:17Z",
+"github_stars": 11042,
+"github_topic": "ai-agent",
 "homepage": "https://omnigent.ai"
 },
 "slug": "omnigent-ai-omnigent",
 "sources": [
 {
-"payload_hash": "6e3a9dccd37aff7e2c126b6e28eb78936685ed0ed4244b38abb99aa6fbd6ba6f",
-"retrieved_at": "2026-10-19T12:02:52Z",
+"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
+"retrieved_at": "2026-10-25T17:58:15Z",
 "system": "github",
 "url": "https://github.com/omnigent-ai/omnigent"
 }

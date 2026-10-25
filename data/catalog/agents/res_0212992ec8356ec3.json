@@ -167,7 +167,7 @@
 "external_ids": {
 "github": "open-webui/open-webui"
 },
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -250,10 +250,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:37Z",
+"last_seen": "2026-10-25T17:51:18Z",
 "license": "BSD-3-Clause",
 "name": "Open WebUI",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-25T08:07:13Z",
+"headline": "open-webui release v0.12.4",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Added\n\n- 🎯 **Load selected skills on demand.** Administrators can turn on \"Load selected skills on demand\" under Admin Settings > General or set \"ENABLE_SKILL_LAZY_LOADING\", so skills selected in the chat or attached to a model are onl",
+"tag": "product_update",
+"url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.4"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-16T11:46:21Z",
@@ -264,28 +275,17 @@
 "summary": "### Added\n\n- 🔐 **End-to-end encrypted chats.** Direct messages and private group channels can now hold a temporary end-to-end encrypted chat: a member picks Encrypted Chat in the channel menu, the other members see \"Encrypted chat in progr",
 "tag": "product_update",
 "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.3"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-14T21:07:29Z",
-"headline": "open-webui release v0.12.2",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "### Added\n\n- 📑 **MinerU 4.x servers.** The MinerU document engine now works with self-hosted MinerU 4.x servers, where every document failed with a 404 because 4.x removed the old parsing interface; 3.x servers work as before, 4.x servers",
-"tag": "product_update",
-"url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:13:40Z",
+"checked_at": "2026-10-25T18:05:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:13:39Z",
+"checked_at": "2026-10-25T18:05:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -293,7 +293,7 @@
 "evidence_url": "https://github.com/open-webui/open-webui",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:13:41Z",
+"checked_at": "2026-10-25T18:05:41Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -305,7 +305,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:22:47Z",
+"checked_at": "2026-10-25T18:13:23Z",
 "cves": 164,
 "source": "nvd",
 "tier": 1
@@ -326,11 +326,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-10-06T22:08:27Z",
-"github_forks": 22725,
+"github_forks": 22818,
 "github_language": "Python",
-"github_open_issues": 330,
-"github_pushed_at": "2026-10-18T20:02:00Z",
-"github_stars": 156145,
+"github_open_issues": 170,
+"github_pushed_at": "2026-10-25T08:07:12Z",
+"github_stars": 156726,
 "homepage": "https://openwebui.com",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -346,7 +346,7 @@
 "sources": [
 {
 "payload_hash": "85ea5ffc878375e6afa26b15618c522e900b3a273e1ae7d210522c7d84104cf7",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "seed_xlsx",
 "url": "https://github.com/open-webui/open-webui"
 }

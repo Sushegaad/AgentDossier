@@ -1,0 +1,31 @@
+{
+ "agent": "res_e447f9aeeb8ebad3",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_e447f9aeeb8ebad3_590a9fb4",
+ "kind": "self_test",
+ "name": "Fabric Verify",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "creditKey"
+   ],
+   "card_url": "https://augmentev.com/.well-known/agent-card.json",
+   "checked_at": "2026-10-25T18:03:44Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Append a signed agent record",
+    "Append 100-1000 signed records",
+    "Get an offline-verifiable proof",
+    "Audit pack",
+    "Buy prepaid credit",
+    "Connect over MCP"
+   ],
+   "status": "verified",
+   "version": "2026-10-23"
+  }
+ },
+ "slug": "augmentev-ai-fabric-verify"
+}

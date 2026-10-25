@@ -21,7 +21,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.03,
+"adoption": 24.05,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -35,7 +35,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 69.2,
+"score": 69.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -44,7 +44,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.03,
+"adoption": 24.05,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "browseros-ai/BrowserOS"
 },
-"first_seen": "2026-10-19T12:02:52Z",
+"first_seen": "2026-10-25T17:55:35Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,42 +91,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:52Z",
+"last_seen": "2026-10-25T17:55:35Z",
 "license": "AGPL-3.0",
 "name": "BrowserOS",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-16T19:43:04Z",
-"headline": "BrowserOS: BrowserClaw Server - v0.0.75",
+"date": "2026-10-24T01:28:36Z",
+"headline": "BrowserOS neo v0.51.2.4 (Windows)",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "- feat(server): a new pursue tool (#2926) (6fe358300)\n- chore(release): prepare Neo 0.51.1.4 arm64 test build (#2920) (b768a3f68)\n- feat(claw): use the original Default profile when a task has no target (#2919) (b5ddc31cb)\n- feat(claw): gat",
+"summary": "### ✨ What's new\n\n- **The new onboarding experience, now on Windows.** Neo walks you through setup in a short conversation. Pick your browser profile, choose the supported data to bring over, and follow the import into your cockpit.\n\n- **Wa",
 "tag": "product_update",
-"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/claw-server/v0.0.75"
+"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/browserclaw/v0.51.2.4"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-16T19:29:20Z",
-"headline": "BrowserOS neo Extension - v0.2.40.0",
+"date": "2026-10-23T21:55:41Z",
+"headline": "BrowserOS neo - v0.51.2.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "- feat(server): a new pursue tool (#2926) (6fe358300)\n- chore: bump browserclaw extension version to 0.2.37.0 (#2912) (093e1b803)",
+"summary": "### ✨ What's new\r\n\r\n- **A brand-new onboarding experience.** Neo now walks you through setup in a short conversation. Pick your browser profile, choose what to bring over, and follow the import progress before heading into your cockpit.",
 "tag": "product_update",
-"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/ext-browserclaw/v0.2.40.0"
+"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/browserclaw/v0.51.2.3"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:11:55Z",
+"checked_at": "2026-10-25T18:04:17Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:11:54Z",
+"checked_at": "2026-10-25T18:04:16Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -134,7 +134,7 @@
 "evidence_url": "https://BrowserOS.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:11:56Z",
+"checked_at": "2026-10-25T18:04:17Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -146,7 +146,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:30:09Z",
+"checked_at": "2026-10-25T18:21:03Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -154,19 +154,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-18T16:23:54Z",
-"github_forks": 1500,
+"github_forks": 1510,
 "github_language": "TypeScript",
-"github_open_issues": 97,
-"github_pushed_at": "2026-10-19T04:07:35Z",
-"github_stars": 13988,
+"github_open_issues": 100,
+"github_pushed_at": "2026-10-25T07:30:03Z",
+"github_stars": 14094,
 "github_topic": "ai-agents",
 "homepage": "https://BrowserOS.com"
 },
 "slug": "browseros-ai-browseros",
 "sources": [
 {
-"payload_hash": "6e3a9dccd37aff7e2c126b6e28eb78936685ed0ed4244b38abb99aa6fbd6ba6f",
-"retrieved_at": "2026-10-19T12:02:52Z",
+"payload_hash": "4babe8d415355525c4fb607e8164bd107cfd26b5a482c55e1a527b129ce10a4e",
+"retrieved_at": "2026-10-25T17:55:35Z",
 "system": "github",
 "url": "https://github.com/browseros-ai/BrowserOS"
 }

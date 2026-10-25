@@ -27,7 +27,7 @@
 "domain_fit": 34.0,
 "ecosystem": 4.6,
 "governance": null,
-"health": 16.0,
+"health": 12.0,
 "trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
@@ -36,7 +36,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 34.2,
+"score": 30.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -51,7 +51,7 @@
 "domain_fit": 71.3,
 "ecosystem": 4.6,
 "governance": null,
-"health": 16.0,
+"health": 12.0,
 "trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
@@ -60,7 +60,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 40.0,
+"score": 36.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -72,7 +72,7 @@
 "external_ids": {
 "mcp_registry": "ac.inference.sh/mcp"
 },
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,19 +94,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:37Z",
+"last_seen": "2026-10-25T17:51:18Z",
 "license": null,
 "name": "inference.sh",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:11:06Z",
+"checked_at": "2026-10-25T18:03:25Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:11:03Z",
+"checked_at": "2026-10-25T18:03:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -129,7 +129,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:24:18Z",
+"checked_at": "2026-10-25T18:14:52Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -146,8 +146,8 @@
 "slug": "sh-inference-ac-inference-sh",
 "sources": [
 {
-"payload_hash": "5eba65649528763029f6f69b3636c7304c0ebcb06a8830e0845c74ee09a169f2",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"payload_hash": "1458bf0517d90b63110fa72d499e033746fdac26009ab99763772b93dd9a9575",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ac.inference.sh/mcp"
 }

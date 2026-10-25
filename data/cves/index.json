@@ -3,16 +3,15 @@
  "built_at": "2026-10-25",
  "config_version": "cve-products-1.0",
  "counts": {
-  "total": 1738,
+  "total": 1753,
   "included": 0,
-  "candidate": 1738,
+  "candidate": 1753,
   "excluded": 0,
   "kev": 10,
   "unscored": 1
  },
  "products_matched": [
   "aider",
-  "amazon-q",
   "anythingllm",
   "autogen",
   "bedrock-agentcore",
@@ -22,7 +21,6 @@
   "cursor",
   "dify",
   "flowise",
-  "gemini-cli",
   "github-copilot",
   "langchain",
   "langflow",
@@ -32,10 +30,8 @@
   "lmcache",
   "m365-copilot",
   "mastra",
-  "mcp-sdk",
   "ollama",
   "open-webui",
-  "openhands",
   "semantic-kernel",
   "smolagents",
   "vllm",
@@ -896,10 +892,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -1092,11 +1088,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "litellm:LiteLLM",
+     "litellm:berriai:litellm",
      "language model",
      "large language model"
     ]
@@ -1220,6 +1216,68 @@
     ],
     "terms": [
      "ai agent"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-99042",
+   "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/net: populate CONNECT filter fields for 24-byte sockaddr_in6\n\nio_connect_bpf_populate() fills connect.port and connect.v6_addr for\nAF_INET6 only when addr_len >= sizeof(struct sockaddr_in6), i.e. 28\nbytes.\n\nThe IPv6 connect paths accept SIN6_LEN_RFC2133 (24 bytes), which\nalready holds sin6_port and sin6_addr. io_connect() passes addr_len to\nthe socket layer unchanged.\n\nAt addr_len 24 the filter sees family AF_INET6 with port and address\nzero, while the kernel connects to the real destination. A filter that\ndenies an IPv6 port or address is bypassed. Denying connect.port == P\nrejects [::1]:P with -EACCES at addr_len 28 but connects at addr_len 24.\n\nUse SIN6_LEN_RFC2133 as the threshold. sin6_scope_id stays zero when\nabsent.\n\nThe threshold mismatch was found by an AI coding assistant (Claude Code)\ncomparing this hook against the net/ipv6 length checks on my\ninstructions; it also drafted the reproducer and this patch. I verified\nthe bypass and the fix in a VM on 7.3-rc6 and that 7.2 has the same\ncode.",
+   "published": "2026-10-23",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Received",
+   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.4,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+    "source": "416baaa9-dc9f-4396-8d5f-8c081fb06d67"
+   },
+   "cwe": [],
+   "products": [
+    {
+     "vendor": "Anthropic",
+     "product": "Claude Code",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "claude-code"
+    }
+   ],
+   "category": "product",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://git.kernel.org/stable/c/596a955d2d01b7e29d9fed60ebcf7c4ba518b8e5",
+     "source": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+     "tags": []
+    },
+    {
+     "url": "https://git.kernel.org/stable/c/aa5d5f8e502318e783545ba5d04bb40130b83e20",
+     "source": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "anthropic-claude-code"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "claude-code:Claude Code"
     ]
    },
    "status": "candidate",
@@ -1354,12 +1412,12 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langchain:LangChain",
-     "llamaindex:LlamaIndex",
+     "langchain:langchain:langchain",
+     "llamaindex:llamaindex:llamaindex",
      "llm",
      "retrieval-augmented"
     ]
@@ -1471,10 +1529,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -1536,10 +1594,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -1600,10 +1658,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -1664,10 +1722,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -1729,10 +1787,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -1799,10 +1857,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -1863,10 +1921,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -1927,10 +1985,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -2171,10 +2229,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "crewai:CrewAI"
+     "crewai:crewai:crewai"
     ]
    },
    "status": "candidate",
@@ -2232,10 +2290,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -2329,7 +2387,7 @@
      "product": "Model Context Protocol SDKs and reference servers",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "mcp-sdk"
+     "product_id": null
     }
    ],
    "category": "protocol",
@@ -2611,11 +2669,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langchain:LangChain",
+     "langchain:langchain:langchain",
      "tool call"
     ]
    },
@@ -2754,11 +2812,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "crewai:CrewAI",
+     "crewai:crewai:crewai",
      "prompt injection"
     ]
    },
@@ -2964,10 +3022,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -3130,7 +3188,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -3691,10 +3749,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -3727,7 +3785,7 @@
      "product": "Model Context Protocol SDKs and reference servers",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "mcp-sdk"
+     "product_id": null
     }
    ],
    "category": "protocol",
@@ -4365,7 +4423,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -4569,10 +4627,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -4604,7 +4662,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -4676,7 +4734,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -4742,7 +4800,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -4813,7 +4871,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -4883,7 +4941,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -4954,7 +5012,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5023,7 +5081,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5090,7 +5148,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5159,7 +5217,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5223,7 +5281,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5309,7 +5367,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5382,7 +5440,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5448,7 +5506,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5527,7 +5585,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5559,10 +5617,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
+     "A:cpe",
      "A:name"
     ],
     "terms": [
-     "ollama:Ollama",
+     "ollama:ollama:ollama",
      "open-webui:Open WebUI"
     ]
    },
@@ -5596,7 +5655,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5668,7 +5727,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5745,7 +5804,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5816,7 +5875,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -5917,10 +5976,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -5952,7 +6011,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -6347,10 +6406,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -6429,10 +6488,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -6516,10 +6575,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -7660,10 +7719,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -8004,7 +8063,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -8233,10 +8292,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "lmcache:LMCache"
+     "lmcache:lmcache:lmcache"
     ]
    },
    "status": "candidate",
@@ -8318,10 +8377,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "lmcache:LMCache"
+     "lmcache:lmcache:lmcache"
     ]
    },
    "status": "candidate",
@@ -8397,10 +8456,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "lmcache:LMCache"
+     "lmcache:lmcache:lmcache"
     ]
    },
    "status": "candidate",
@@ -8487,10 +8546,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "lmcache:LMCache"
+     "lmcache:lmcache:lmcache"
     ]
    },
    "status": "candidate",
@@ -8572,10 +8631,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "lmcache:LMCache"
+     "lmcache:lmcache:lmcache"
     ]
    },
    "status": "candidate",
@@ -9863,7 +9922,7 @@
      "product": "Model Context Protocol SDKs and reference servers",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "mcp-sdk"
+     "product_id": null
     }
    ],
    "category": "protocol",
@@ -9991,10 +10050,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -10074,10 +10133,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -10149,10 +10208,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -10184,7 +10243,7 @@
      "product": "Amazon Q Developer",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "amazon-q"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -10393,10 +10452,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -10496,11 +10555,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langflow:Langflow",
+     "langflow:langflow:langflow",
      "mcp server"
     ]
    },
@@ -10581,10 +10640,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -10667,10 +10726,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -10754,11 +10813,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langflow:Langflow",
+     "langflow:langflow:langflow",
      "mcp server"
     ]
    },
@@ -10841,11 +10900,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langflow:Langflow",
+     "langflow:langflow:langflow",
      "mcp client",
      "model context protocol"
     ]
@@ -11717,11 +11776,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "dify:Dify",
+     "dify:langgenius:dify",
      "llm",
      "mcp server"
     ]
@@ -12073,10 +12132,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -12145,10 +12204,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -12217,10 +12276,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -12288,10 +12347,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -12354,10 +12413,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -12497,7 +12556,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -12851,11 +12910,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "ollama:Ollama",
+     "ollama:ollama:ollama",
      "prompt injection"
     ]
    },
@@ -12986,11 +13045,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain",
-     "langflow:Langflow"
+     "langchain:langchain:langchain",
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -13169,10 +13228,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -13578,7 +13637,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -13681,10 +13740,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -13752,10 +13811,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -13824,10 +13883,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -13896,10 +13955,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -13968,10 +14027,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -14040,10 +14099,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -14977,11 +15036,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "litellm:LiteLLM",
+     "litellm:berriai:litellm",
      "agentic",
      "tool call"
     ]
@@ -15131,11 +15190,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langchain:LangChain",
+     "langchain:langchain:langchain",
      "agentic"
     ]
    },
@@ -15275,11 +15334,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM",
-     "ollama:Ollama"
+     "vllm:vllm:vllm",
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -15478,10 +15537,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -17941,11 +18000,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "ollama:Ollama",
+     "ollama:ollama:ollama",
      "retrieval-augmented"
     ]
    },
@@ -20880,10 +20939,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -21258,10 +21317,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -21341,10 +21400,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -22807,10 +22866,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -22874,10 +22933,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -22940,10 +22999,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -23011,10 +23070,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -23083,11 +23142,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "flowise:Flowise",
+     "flowise:flowiseai:flowise",
      "mcp server"
     ]
    },
@@ -23151,10 +23210,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -23217,10 +23276,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -23285,10 +23344,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -23357,10 +23416,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -23423,10 +23482,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -23489,10 +23548,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -23607,11 +23666,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langflow:Langflow",
+     "langflow:langflow:langflow",
      "mcp server"
     ]
    },
@@ -23671,10 +23730,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -23732,10 +23791,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -23794,10 +23853,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -23857,10 +23916,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -23918,10 +23977,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -24090,11 +24149,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain",
-     "langgraph:LangGraph"
+     "langchain:langchain:langchain",
+     "langgraph:langchain:langgraph"
     ]
    },
    "status": "candidate",
@@ -24401,10 +24460,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -24475,10 +24534,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "crewai:CrewAI"
+     "crewai:crewai:crewai"
     ]
    },
    "status": "candidate",
@@ -25103,10 +25162,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "autogen:AutoGen"
+     "autogen:microsoft:autogen"
     ]
    },
    "status": "candidate",
@@ -25139,7 +25198,7 @@
      "product": "Gemini CLI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "gemini-cli"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -26633,7 +26692,7 @@
      "product": "AnythingLLM",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "anythingllm"
+     "product_id": null
     }
    ],
    "category": "framework",
@@ -28383,10 +28442,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -29551,10 +29610,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -30093,10 +30152,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -30190,10 +30249,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -30265,10 +30324,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -30365,10 +30424,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -32043,10 +32102,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -32168,10 +32227,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "crewai:CrewAI"
+     "crewai:crewai:crewai"
     ]
    },
    "status": "candidate",
@@ -32232,10 +32291,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "crewai:CrewAI"
+     "crewai:crewai:crewai"
     ]
    },
    "status": "candidate",
@@ -34312,10 +34371,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -35478,7 +35537,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -36057,7 +36116,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -37968,6 +38027,75 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-72768",
+   "description": "n8n versions before 2.32.1 contain a server-side request forgery protection bypass vulnerability in the MCP Client node that allows authenticated users to bypass SSRF protections. Attackers can craft workflows that send requests to internal or blocked hosts without routing through SSRF protection, exposing internal services and reading responses back through the workflow.",
+   "published": "2026-08-11",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Analyzed",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.4,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:H/SI:H/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "n8n",
+     "product": "n8n",
+     "versions_affected": ">= 2.31.0 < 2.31.5",
+     "fixed_in": "2.31.5",
+     "product_id": null
+    }
+   ],
+   "category": "protocol",
+   "surface": [
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "fixed",
+    "version": "2.31.5",
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-vhf8-cg2h-cg3p",
+     "source": "disclosure@vulncheck.com",
+     "tags": [
+      "Mitigation",
+      "Vendor Advisory"
+     ]
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/n8n-before-ssrf-protection-bypass-via-mcp-client",
+     "source": "disclosure@vulncheck.com",
+     "tags": [
+      "Third Party Advisory"
+     ]
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp client"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
    "id": "CVE-2026-73032",
    "description": "PapersGPT for Zotero 0.6.1 contains a remote code execution vulnerability that allows attackers to execute arbitrary JavaScript by returning malicious code from an LLM endpoint that is passed unsanitized to window.eval() in views.ts. Attackers can exploit this through prompt injection in PDFs, MITM interception of API requests, or a malicious custom LLM endpoint to execute arbitrary code in Zotero's chrome-privileged context, enabling file read/write, process execution, and access to all Zotero data.",
    "published": "2026-08-11",
@@ -38162,10 +38290,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "cursor:Cursor IDE"
+     "cursor:anysphere:cursor"
     ]
    },
    "status": "candidate",
@@ -38221,10 +38349,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "cursor:Cursor IDE"
+     "cursor:anysphere:cursor"
     ]
    },
    "status": "candidate",
@@ -38590,10 +38718,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -39006,7 +39134,7 @@
      "product": "OpenHands",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "openhands"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -41094,6 +41222,144 @@
     ],
     "terms": [
      "langflow:langflow:langflow"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-18830",
+   "description": "Insufficient input validation in Amazon Bedrock AgentCore harness might allow an authenticated remote user to execute configured tools bypassing model invocation and security controls via crafted content blocks in conversation messages. AWS has addressed this issue. No customer action is required.",
+   "published": "2026-08-04",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.6,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5"
+   },
+   "cwe": [
+    "CWE-1287"
+   ],
+   "products": [
+    {
+     "vendor": "AWS",
+     "product": "Amazon Bedrock AgentCore",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "bedrock-agentcore"
+    }
+   ],
+   "category": "product",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://aws.amazon.com/security/security-bulletins/2026-073-aws/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "aws-amazon-bedrock-agents-agentcore"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "bedrock-agentcore:Bedrock AgentCore"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-48121",
+   "description": "@langchain/langgraph-checkpoint-mongodb provides a LangGraph.js CheckpointSaver implementation that uses MongoDB for storage. Versions 1.3.0 and below are vulnerable to NoSQL injection: checkpoint identifiers (thread_id, checkpoint_ns, checkpoint_id) from config.configurable are passed into MongoDB find() queries in MongoDBSaver.getTuple() without type enforcement. If an attacker supplies an object payload (such as MongoDB operators $gt or $ne) instead of a string, it can be interpreted as a query operator, bypassing thread scoping and leaking checkpoints, including pending writes, across tenants. Applications are at risk if they forward untrusted input into config.configurable without coercing it to strings or validating it against a schema, particularly in multi-tenant or user-isolated setups. Apps that only use server-issued, string-typed identifiers with schema validation rejecting non-string fields are not affected. This issue has been fixed in version 1.3.1.",
+   "published": "2026-08-04",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.7,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-943"
+   ],
+   "products": [
+    {
+     "vendor": "LangChain",
+     "product": "LangChain",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "langchain"
+    },
+    {
+     "vendor": "LangChain",
+     "product": "LangGraph",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "langgraph"
+    }
+   ],
+   "category": "framework",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/langchain-ai/langgraphjs/commit/284226c7ca164b3c81fe2d9e32b10f1fc6b99a3c",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/langchain-ai/langgraphjs/issues/2351",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/langchain-ai/langgraphjs/security/advisories/GHSA-98xf-r82g-9mhx",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "langchain-langchain",
+    "langchain-langchain-deep-agents",
+    "langchain-langgraph"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "langchain:LangChain",
+     "langgraph:LangGraph"
     ]
    },
    "status": "candidate",
@@ -44290,10 +44556,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -44589,7 +44855,7 @@
      "product": "Gemini CLI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "gemini-cli"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -45140,6 +45406,58 @@
     ],
     "terms": [
      "llm",
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-18236",
+   "description": "A vulnerability in the Agent Development Kit (ADK) allows for continuation forgery in tool confirmations. An attacker who is able to manipulate or inject events into the session history can execute unauthorized tools by forging a tool confirmation response. This is possible because the framework did not verify if the target tool was registered to the executing agent, did not validate if the tool actually required confirmation, and did not match the confirmation arguments against the original tool call event in the history.",
+   "published": "2026-07-29",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "cve-coordination@google.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cve-coordination@google.com"
+   },
+   "cwe": [
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "tool_execution",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/google/adk-python/commit/c03f333769feaeaa9fe8910fbe95cb9f2d513f54",
+     "source": "cve-coordination@google.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
      "tool call"
     ]
    },
@@ -46148,6 +46466,77 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-16796",
+   "description": "Improper neutralization of argument delimiters in the install_packages() method in AWS Bedrock AgentCore Python SDK before 1.18.1 might allow a remote authenticated user to execute arbitrary commands within the Code Interpreter sandbox via crafted package name arguments.\n\n\n\nTo mitigate this issue, users should upgrade to the patched version 1.18.1.",
+   "published": "2026-07-23",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.4,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5"
+   },
+   "cwe": [
+    "CWE-88"
+   ],
+   "products": [
+    {
+     "vendor": "AWS",
+     "product": "Amazon Bedrock AgentCore",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "bedrock-agentcore"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://aws.amazon.com/security/security-bulletins/2026-065-aws/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/aws/bedrock-agentcore-sdk-python/security/advisories/GHSA-j6g5-3hh3-pgw8",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://pypi.org/project/bedrock-agentcore/1.18.1/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "aws-amazon-bedrock-agents-agentcore"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "bedrock-agentcore:Bedrock AgentCore"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
    "id": "CVE-2026-47769",
    "description": "APIFold reads an OpenAPI 3.x or Swagger 2.x specification and generates a live, production-ready MCP server endpoint. Prior to commit 7f19b52280f414f57af2b79a95333d1c8fbeece5, the `/webhooks/:serverSlug/:eventName` endpoint accepts arbitrary unauthenticated JSON and stores it in Redis and the `webhook_events` PostgreSQL table without any signature check or authentication requirement. The root cause is that `createWebhookRouter` is called at `server.ts:188` without a `validators` map, so `receivers.ts:80`'s optional-chaining guard evaluates to `undefined` and the signature-validation block (`receiver.ts:81–95`) is unconditionally skipped. Any unauthenticated network client that knows a valid server slug can inject arbitrary payloads, which are subsequently served as trusted resource state to legitimate MCP clients. Commit 7f19b52280f414f57af2b79a95333d1c8fbeece5 patches the issue.",
    "published": "2026-07-23",
@@ -46463,6 +46852,73 @@
     ],
     "terms": [
      "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-47397",
+   "description": "PraisonAI is a multi-agent teams system. Prior to version 4.6.40, hidden metadata in a webpage causes PraisonAI agents to write attacker-controlled content to arbitrary paths. `write_file` skips path validation when `workspace=None` (always `None` in production). Version 4.6.40 fixes the issue.",
+   "published": "2026-07-21",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Deferred",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-22"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/MervinPraison/PraisonAI/commit/b0d8f777528f3253a0cfb0a3ef65455da6ae32f6",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/MervinPraison/PraisonAI/pull/1684",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-hvhp-v2gc-268q",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-hvhp-v2gc-268q",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
     ]
    },
    "status": "candidate",
@@ -46986,7 +47442,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -47637,6 +48093,67 @@
      "agentic",
      "ai agent",
      "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-63093",
+   "description": "Cursor for Windows version 3.2.16 contains a binary planting vulnerability that allows remote attackers to achieve arbitrary code execution by placing a malicious git.exe file in the repository root directory. When a developer clones and opens a crafted repository, Cursor automatically resolves and executes the workspace-resident git.exe during IDE startup and on a recurring timed cadence without any user interaction, running the malicious binary under the privileges of the current user.",
+   "published": "2026-07-17",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Analyzed",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-426"
+   ],
+   "products": [
+    {
+     "vendor": "anysphere",
+     "product": "cursor",
+     "versions_affected": "<= 3.2.16",
+     "fixed_in": null,
+     "product_id": "cursor"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://cursor.com/",
+     "source": "disclosure@vulncheck.com",
+     "tags": [
+      "Product"
+     ]
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:cpe"
+    ],
+    "terms": [
+     "cursor:anysphere:cursor"
     ]
    },
    "status": "candidate",
@@ -49313,11 +49830,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "litellm:LiteLLM",
+     "litellm:berriai:litellm",
      "mcp server"
     ]
    },
@@ -49878,6 +50395,161 @@
     "terms": [
      "mcp-sdk:MCP Python SDK",
      "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-61736",
+   "description": "LightRAG provides simple and fast retrieval-augmented generation. Prior to 1.5.4, the server defaults to CORS_ORIGINS=* combined with allow_credentials=True in lightrag/api/lightrag_server.py, causing Starlette CORSMiddleware to effectively whitelist every origin for credentialed cross-origin requests. Any malicious website visited by an authenticated LightRAG user can silently make authenticated API requests, exfiltrating documents and knowledge graph data or performing destructive actions such as deleting the document store. This vulnerability is fixed in 1.5.4.",
+   "published": "2026-07-15",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Deferred",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-942"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "exfiltration",
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/HKUDS/LightRAG/commit/09567a4c983f580050db63569dd477122c058c3d",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/commit/df68d75f9dc29dd340ffb6794b48f48c4fdc9a2d",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/commit/ebba6548639c0f2e8919100eff76b401f1222252",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/pull/3317",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/releases/tag/v1.5.4",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/security/advisories/GHSA-6x6h-qqr7-855w",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/security/advisories/GHSA-6x6h-qqr7-855w",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "retrieval-augmented"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-61740",
+   "description": "LightRAG provides simple and fast retrieval-augmented generation. Prior to 1.5.4, when LightRAG is deployed with LIGHTRAG_API_KEY set but AUTH_ACCOUNTS unset, X-API-Key protection can be bypassed because lightrag/api/auth.py falls back to a hardcoded DEFAULT_TOKEN_SECRET, /auth-status and /login can mint guest JWTs, and combined_dependency in lightrag/api/utils_api.py accepts a valid guest token before checking the API key. A remote unauthenticated attacker can call endpoints guarded by combined_auth, including document read, upload, deletion, graph mutation, and query endpoints. This vulnerability is fixed in 1.5.4.",
+   "published": "2026-07-15",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Deferred",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-287",
+    "CWE-798"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "credential_access",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/HKUDS/LightRAG/commit/f7819aa3a49a9d8d92eed8251d82d6ebcafa8cba",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/pull/3319",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/releases/tag/v1.5.4",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/security/advisories/GHSA-f4vv-55c2-5789",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/HKUDS/LightRAG/security/advisories/GHSA-f4vv-55c2-5789",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "retrieval-augmented"
     ]
    },
    "status": "candidate",
@@ -50549,6 +51221,69 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-62328",
+   "description": "9Router through version 0.4.41 contain an unauthenticated information disclosure vulnerability that allows remote attackers to access sensitive user data by sending requests to unprotected API endpoints. Attackers can enumerate paginated request logs and retrieve complete AI conversation histories including system prompts, user messages, assistant responses, tool calls, and user email addresses by querying the request-logs and request-details API routes which lack authentication middleware.",
+   "published": "2026-07-13",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-359",
+    "CWE-862"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "exfiltration",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/decolua/9router/security/advisories/GHSA-vjc7-jrh9-9j86",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/9router-unauthenticated-information-disclosure-via-api-usage-endpoints",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/decolua/9router/security/advisories/GHSA-vjc7-jrh9-9j86",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
    "id": "CVE-2026-56271",
    "description": "Flowise before 3.1.0 (affected versions 3.0.13 and earlier) uses weak hardcoded default JWT secrets ('auth_token', 'refresh_token') and default audience and issuer values ('AUDIENCE', 'ISSUER') in the enterprise passport authentication middleware (packages/server/src/enterprise/middleware/passport/index.ts). When the corresponding environment variables (JWT_AUTH_TOKEN_SECRET, JWT_REFRESH_TOKEN_SECRET, JWT_AUDIENCE, JWT_ISSUER) are not set, the application silently falls back to these publicly known defaults, allowing an attacker to forge valid JWTs and impersonate any user, including administrators, resulting in authentication bypass.",
    "published": "2026-07-12",
@@ -50611,6 +51346,67 @@
     ],
     "terms": [
      "flowise:flowiseai:flowise"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-61428",
+   "description": "PraisonAI AgentMail versions before 4.6.78 lack signature verification in webhook mode, allowing unauthenticated attackers to inject messages with spoofed sender addresses. Attackers can POST crafted message.received events to the webhook endpoint to inject arbitrary content into the agent and trigger replies to attacker-controlled addresses, bypassing sender allow/block lists.",
+   "published": "2026-07-11",
+   "last_modified": "2026-10-25",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-290"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qj9c-59p6-8cgx",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/praisonai-agentmail-before-message-injection-via-webhook",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qj9c-59p6-8cgx",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent"
     ]
    },
    "status": "candidate",
@@ -51078,10 +51874,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -51144,6 +51940,86 @@
     "terms": [
      "llm",
      "prompt injection"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-57476",
+   "description": "Deloitte AI Assist for Customer exposed unauthenticated API endpoints that allowed an attacker with knowledge of additional parameters to read from or inject content into the retrieval-augmented generation (RAG) corpus. On 2026-03-25, AI Assist for Customer restricted network access and enforced authentication for the previously exposed endpoints.",
+   "published": "2026-07-10",
+   "last_modified": "2026-10-25",
+   "vuln_status": "Undergoing Analysis",
+   "cna": "9119a7d8-5eab-497f-8521-727c672e3725",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "9119a7d8-5eab-497f-8521-727c672e3725"
+   },
+   "cwe": [
+    "CWE-306"
+   ],
+   "products": [
+    {
+     "vendor": "deloitte",
+     "product": "ai_assist_for_customer",
+     "versions_affected": "< 2026-03-25",
+     "fixed_in": "2026-03-25",
+     "product_id": null
+    }
+   ],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "fixed",
+    "version": "2026-03-25",
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-191-01.json",
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "tags": [
+      "Technical Description"
+     ]
+    },
+    {
+     "url": "https://www.cve.org/CVERecord?id=CVE-2026-57476",
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "tags": []
+    },
+    {
+     "url": "https://zerotolerance.me/advisories/assets/VU487875-deloitte-ascend-advisory.pdf",
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "tags": [
+      "Third Party Advisory"
+     ]
+    },
+    {
+     "url": "https://zerotolerance.me/advisories/deloitte-aiassist-ascend-2026-vu487875/",
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "tags": [
+      "Third Party Advisory"
+     ]
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "retrieval-augmented"
     ]
    },
    "status": "candidate",
@@ -51390,7 +52266,7 @@
    "id": "CVE-2026-55604",
    "description": "DeepSeek MCP Server is an MCP server for DeepSeek V4. Starting in version 1.4.2 and prior to version 1.7.0, the process-global `SessionStore` accepts caller-supplied `session_id` values without binding them to any authenticated principal or transport session. An attacker can enumerate active session IDs via `deepseek_sessions`, then reuse a victim-controlled `session_id` in `deepseek_chat` to retrieve and continue the victim's conversation context. Version 1.7.0 contains a patch.",
    "published": "2026-07-09",
-   "last_modified": "2026-07-10",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -51451,7 +52327,7 @@
    "id": "CVE-2026-55605",
    "description": "DeepSeek MCP Server is an MCP server for DeepSeek V4. Starting in version 1.4.2 and prior to version 1.8.0, the self-hosted HTTP transport of `@arikusi/deepseek-mcp-server` exposes `POST /mcp` without any authentication: `createMcpExpressApp` is called without an `authProvider` and no middleware guards the route, so any network-reachable client can issue an unauthenticated `initialize` request and obtain a valid MCP session identifier. In reproduced testing against commit `5e1302171e99`, an unauthenticated client was able to initialize a session, enumerate tools, and invoke the local `deepseek_sessions` tool with no credentials. The same unauthenticated session also exposes `deepseek_chat`, whose handler uses the server-side `DEEPSEEK_API_KEY` when self-hosted deployments configure one. This issue applies to self-hosted HTTP mode, not the separately documented hosted BYOK endpoint in `README.md`, which expects an `Authorization: Bearer ...` header. Upstream self-hosted container assets enable HTTP mode by default (`Dockerfile`) and publish port `3000` (`docker-compose.yml`). Version 1.8.0 contains a patch for this issue.",
    "published": "2026-07-09",
-   "last_modified": "2026-07-10",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -51519,7 +52395,7 @@
    "id": "CVE-2026-59207",
    "description": "n8n is an open source workflow automation platform. Prior to 2.27.4 and 2.28.1, the AI Agents feature did not enforce the Allowed HTTP Request Domains restriction configured on credentials when an MCP tool was pointed at an arbitrary URL, allowing a member-level user with use-only access to a shared credential to send its secret to an external server they control. This issue is fixed in versions 2.27.4 and 2.28.1.",
    "published": "2026-07-09",
-   "last_modified": "2026-07-09",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -52975,7 +53851,7 @@
    "id": "CVE-2026-59726",
    "description": "Ruflo is an agent meta-harness for Claude Code and Codex. Prior to 3.16.3, ruflo's default docker-compose deployment exposed the MCP bridge POST /mcp and POST /mcp/:group endpoints without authentication, allowing an unauthenticated network attacker to invoke tools/call to terminal_execute, obtain a shell in the bridge container, read provider API keys, and poison AgentDB learning-store patterns. This issue is fixed in version 3.16.3.",
    "published": "2026-07-09",
-   "last_modified": "2026-07-10",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -53112,10 +53988,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -53128,7 +54004,7 @@
    "id": "CVE-2026-59807",
    "description": "Composio SDK before 0.2.32-beta.283 contains a path validation bypass vulnerability that allows attackers to read and exfiltrate sensitive files by exploiting a missing assertSafeFileUploadPath check in the readFileFromDisk function within tool-file-uploads.ts. Attackers can exploit prompt injection to manipulate file_uploadable parameters to reference sensitive paths such as SSH private keys, causing the CLI to upload credential files to attacker-controlled storage.",
    "published": "2026-07-08",
-   "last_modified": "2026-10-08",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -53206,7 +54082,7 @@
    "id": "CVE-2026-59819",
    "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.10-stable, LiteLLM's /health/test_connection endpoint resolved request-supplied environment and OIDC file references in litellm_params, allowing a proxy administrator or another privileged caller with permission to test model connections to read files from the local filesystem via an oidc/file/ reference. This issue is fixed in version 1.83.10-stable.",
    "published": "2026-07-08",
-   "last_modified": "2026-07-13",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -53283,7 +54159,7 @@
    "id": "CVE-2026-59820",
    "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.7-stable, LiteLLM Skills archive extraction did not sufficiently validate file paths from uploaded skill ZIP archives, allowing an authenticated user with access to LiteLLM LLM API routes or a key whose allowed_routes includes /v1/skills, anthropic_routes, or llm_api_routes to upload a crafted skill archive containing path traversal entries that could be written outside the intended extraction or staging directory. This issue is fixed in version 1.83.7-stable.",
    "published": "2026-07-08",
-   "last_modified": "2026-07-13",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -53369,7 +54245,7 @@
    "id": "CVE-2026-59821",
    "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.82.0-stable, LiteLLM's Custom Code Guardrails production create and update paths did not apply the same sandboxing and validation used by the test endpoint, allowing a privileged user with access to create or update guardrails to submit custom Python code that executed in the LiteLLM proxy environment and could expose secrets available to the process. This issue is fixed in version 1.82.0-stable.",
    "published": "2026-07-08",
-   "last_modified": "2026-07-13",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -53448,7 +54324,7 @@
    "id": "CVE-2026-59822",
    "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.84.0, LiteLLM's MCP Streamable HTTP endpoint allowed an unauthenticated attacker to use a fabricated Authorization header to trigger an OAuth2 passthrough fallback path that replaced failed LiteLLM key validation with an empty UserAPIKeyAuth() object, allowing requests to reach MCP tooling without a valid LiteLLM key. This issue is fixed in version 1.84.0.",
    "published": "2026-07-08",
-   "last_modified": "2026-09-03",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -53618,10 +54494,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -54150,6 +55026,104 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-14630",
+   "description": "A vulnerability has been found in ForceInjection AI-fundermentals 2.0/3.0. Affected by this vulnerability is the function get_conversation_history of the file 08_agentic_system/memory/langchain/code/smart_customer_service.py of the component Memory Recall Handler. The manipulation leads to use of weak hash. Remote exploitation of the attack is possible. A high degree of complexity is needed for the attack. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The identifier of the patch is f57277fdd9ba373ace72d83c272023ec67f720d6. It is suggested to install a patch to address this issue. The project confirms (translated from Chinese): \"We now require session ownership verification in methods such as `username`, `sessionowner`, etc., and we've chat()changed the generation of `sessionowner` to include verified user identity and security context metadata.\"",
+   "published": "2026-07-04",
+   "last_modified": "2026-10-25",
+   "vuln_status": "Deferred",
+   "cna": "cna@vuldb.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 1.3,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cna@vuldb.com"
+   },
+   "cwe": [
+    "CWE-327",
+    "CWE-328"
+   ],
+   "products": [
+    {
+     "vendor": "LangChain",
+     "product": "LangChain",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "langchain"
+    }
+   ],
+   "category": "framework",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/ForceInjection/AI-fundamentals/commit/f57277fdd9ba373ace72d83c272023ec67f720d6",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ForceInjection/AI-fundamentals/issues/17",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ForceInjection/AI-fundamentals/pull/18",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/cve/CVE-2026-14630",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/845672",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/376146",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/376146/cti",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/845672",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "langchain-langchain",
+    "langchain-langchain-deep-agents"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name",
+     "B:vocabulary"
+    ],
+    "terms": [
+     "langchain:LangChain",
+     "agentic"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
    "id": "CVE-2026-13341",
    "description": "A vulnerability exists in the Kong Konnect Model Context Protocol (MCP) server prior to version 1.0.0, which could allow a remote attacker to perform an indirect prompt injection attack and execute unintended API requests.",
    "published": "2026-07-03",
@@ -54332,7 +55306,7 @@
    "id": "CVE-2026-13323",
    "description": "In Open VSX Registry before 1.0.2, the /vscode/unpkg/ endpoint serves user-supplied HTML files with Content-Type: text/html and without a Content-Security-Policy or Content-Disposition: attachment response header. An unauthenticated attacker can register a publisher account, upload a VSIX containing a crafted HTML payload, and induce an authenticated user to visit the resulting URL. The browser renders the file inline in the open-vsx.org origin context, enabling session token exfiltration, persistent Personal Access Token (PAT) generation, and unauthorized publication of malicious extension versions. Because Open VSX extensions are distributed to VS Code, VSCodium, Cursor, Windsurf, and compatible editors, a compromised extension update constitutes a supply chain attack against all downstream users.",
    "published": "2026-07-01",
-   "last_modified": "2026-07-06",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "emo@eclipse.org",
    "cvss": {
@@ -54950,7 +55924,7 @@
      "product": "Open WebUI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "open-webui"
+     "product_id": null
     }
    ],
    "category": "infrastructure",
@@ -55606,7 +56580,7 @@
    "id": "CVE-2026-58057",
    "description": "Flowise before 3.1.3 validates Custom MCP stdio environment variables against a denylist using a case-sensitive comparison, so on Windows, where environment names are case-insensitive, supplying 'node_options' bypasses the NODE_OPTIONS denylist entry. An authenticated user who can configure a Custom MCP node can thereby inject NODE_OPTIONS --require and execute arbitrary code in the Flowise server context.",
    "published": "2026-06-28",
-   "last_modified": "2026-07-06",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -55732,7 +56706,7 @@
    "id": "CVE-2026-48529",
    "description": "GitHub MCP Server is GitHub's official MCP Server. From 0.22.0 until 1.1.2, when running in HTTP mode with --lockdown-mode enabled, the RepoAccessCache is implemented as a process-global singleton initialized with the first authenticated user's GraphQL client. All subsequent requests from different users share this singleton and their lockdown-related GraphQL queries are executed using the first user's credentials. The singleton is never updated to reflect later users' tokens. This vulnerability is fixed in 1.1.2.",
    "published": "2026-06-26",
-   "last_modified": "2026-06-27",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -55790,7 +56764,7 @@
    "id": "CVE-2026-5757",
    "description": "Unauthenticated remote information disclosure vulnerability in Ollama's model quantization engine allows an attacker to read and exfiltrate the server's heap memory, potentially leading to sensitive data exposure, further compromise, and stealthy persistence.",
    "published": "2026-06-26",
-   "last_modified": "2026-06-29",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cret@cert.org",
    "cvss": {
@@ -57223,7 +58197,7 @@
      "product": "AnythingLLM",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "anythingllm"
+     "product_id": null
     }
    ],
    "category": "framework",
@@ -57459,7 +58433,7 @@
      "product": "AnythingLLM",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "anythingllm"
+     "product_id": null
     }
    ],
    "category": "framework",
@@ -59906,10 +60880,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -61913,11 +62887,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "flowise:Flowise",
+     "flowise:flowiseai:flowise",
      "prompt injection"
     ]
    },
@@ -62109,10 +63083,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -62180,10 +63154,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -63062,13 +64036,79 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "vllm:vLLM",
+     "vllm:vllm:vllm",
      "language model",
      "large language model"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-12530",
+   "description": "Improper neutralization of argument delimiters in the install_packages() method in AWS Bedrock AgentCore Python SDK versions >= 1.1.3 and < 1.6.1 might allow a remote authenticated user to execute arbitrary commands within the Code Interpreter sandbox via crafted package name arguments.\n\n\n\nTo mitigate this issue, users should upgrade to version 1.6.1.",
+   "published": "2026-06-17",
+   "last_modified": "2026-10-24",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.4,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5"
+   },
+   "cwe": [
+    "CWE-88"
+   ],
+   "products": [
+    {
+     "vendor": "AWS",
+     "product": "Amazon Bedrock AgentCore",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "bedrock-agentcore"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://aws.amazon.com/security/security-bulletins/2026-044-aws/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://pypi.org/project/bedrock-agentcore/1.6.1/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "aws-amazon-bedrock-agents-agentcore"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "bedrock-agentcore:Bedrock AgentCore"
     ]
    },
    "status": "candidate",
@@ -65158,11 +66198,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM",
-     "lmcache:LMCache"
+     "vllm:vllm:vllm",
+     "lmcache:lmcache:lmcache"
     ]
    },
    "status": "candidate",
@@ -65594,10 +66634,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -65678,10 +66718,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -65765,10 +66805,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -65850,10 +66890,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -65941,10 +66981,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -66978,10 +68018,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -67040,10 +68080,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -67513,10 +68553,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -75778,10 +76818,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -75869,10 +76909,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -75955,10 +76995,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -76041,10 +77081,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -76616,10 +77656,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -76708,10 +77748,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -77368,10 +78408,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -77544,10 +78584,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -79829,10 +80869,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -79906,10 +80946,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -79983,10 +81023,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -80058,11 +81098,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langflow:Langflow",
+     "langflow:langflow:langflow",
      "model context protocol"
     ]
    },
@@ -80137,10 +81177,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -80213,10 +81253,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -80289,10 +81329,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -80366,10 +81406,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -80849,11 +81889,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "windsurf:Windsurf",
+     "windsurf:codeium:windsurf",
      "prompt injection"
     ]
    },
@@ -80914,11 +81954,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langchain:LangChain",
+     "langchain:langchain:langchain",
      "mcp server"
     ]
    },
@@ -83810,10 +84850,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -85649,11 +86689,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "crewai:CrewAI",
+     "crewai:crewai:crewai",
      "function calling"
     ]
    },
@@ -86055,10 +87095,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -93531,7 +94571,7 @@
      "product": "Semantic Kernel",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "semantic-kernel"
+     "product_id": null
     }
    ],
    "category": "framework",
@@ -94940,11 +95980,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "ollama:Ollama",
+     "ollama:ollama:ollama",
      "mcp server"
     ]
    },
@@ -96875,10 +97915,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "autogen:AutoGen"
+     "autogen:microsoft:autogen"
     ]
    },
    "status": "candidate",
@@ -100150,10 +101190,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -101588,10 +102628,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -101733,11 +102773,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain",
-     "langgraph:LangGraph"
+     "langchain:langchain:langchain",
+     "langgraph:langchain:langgraph"
     ]
    },
    "status": "candidate",
@@ -102057,11 +103097,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "windsurf:Windsurf",
+     "windsurf:codeium:windsurf",
      "prompt injection"
     ]
    },
@@ -102245,11 +103285,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "windsurf:Windsurf",
+     "windsurf:codeium:windsurf",
      "prompt injection"
     ]
    },
@@ -102647,10 +103687,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -103029,10 +104069,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -103619,11 +104659,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "mastra:Mastra",
+     "mastra:mastra:mastra",
      "ai agent",
      "ai agents"
     ]
@@ -104100,11 +105140,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "flowise:Flowise",
+     "flowise:flowiseai:flowise",
      "language model",
      "large language model"
     ]
@@ -104774,10 +105814,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -105128,7 +106168,7 @@
      "product": "Model Context Protocol SDKs and reference servers",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "mcp-sdk"
+     "product_id": null
     }
    ],
    "category": "protocol",
@@ -105275,7 +106315,7 @@
      "product": "GitHub Copilot",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "github-copilot"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -105488,10 +106528,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -105523,7 +106563,7 @@
      "product": "smolagents",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "smolagents"
+     "product_id": null
     }
    ],
    "category": "framework",
@@ -105811,7 +106851,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -107115,7 +108155,7 @@
      "product": "Amazon Q Developer",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "amazon-q"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -107229,11 +108269,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langchain:LangChain",
+     "langchain:langchain:langchain",
      "prompt injection"
     ]
    },
@@ -107886,7 +108926,7 @@
      "product": "Model Context Protocol SDKs and reference servers",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "mcp-sdk"
+     "product_id": null
     }
    ],
    "category": "protocol",
@@ -107958,7 +108998,7 @@
      "product": "Model Context Protocol SDKs and reference servers",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "mcp-sdk"
+     "product_id": null
     }
    ],
    "category": "protocol",
@@ -108908,7 +109948,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     },
     {
      "vendor": "Codeium",
@@ -108942,11 +109982,12 @@
    "match": {
     "tests": [
      "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
      "claude-code:Claude Code",
-     "windsurf:Windsurf",
+     "windsurf:codeium:windsurf",
      "agentic"
     ]
    },
@@ -109219,7 +110260,7 @@
      "product": "Model Context Protocol SDKs and reference servers",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "mcp-sdk"
+     "product_id": null
     }
    ],
    "category": "protocol",
@@ -112072,10 +113113,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -112203,10 +113244,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -113229,10 +114270,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -113738,10 +114779,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -115538,10 +116579,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -115602,11 +116643,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "vllm:vLLM",
+     "vllm:vllm:vllm",
      "llm",
      "llm-based"
     ]
@@ -117797,11 +118838,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "llamaindex:llama_index",
+     "llamaindex:llamaindex:llamaindex",
      "prompt injection"
     ]
    },

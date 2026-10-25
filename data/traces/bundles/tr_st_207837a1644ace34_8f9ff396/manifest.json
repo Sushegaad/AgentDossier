@@ -1,0 +1,22 @@
+{
+ "agent": "res_207837a1644ace34",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_207837a1644ace34_8f9ff396",
+ "kind": "self_test",
+ "name": "Bankrolled.ai Agent Hub",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-10-25T18:03:56Z",
+   "errors": [
+    "entries[0]: missing required term 'displayName'"
+   ],
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://bankrolled.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "bankrolled-ai-bankrolled-ai-agent-hub"
+}

@@ -17,7 +17,7 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "Open-source Rust agent engine and terminal client for Codewhale, with provider choice, tools, approvals and receipts.",
+"description": "Open-source agent for the terminal written in Rust. Use any provider or model. Issues & PRs always welcome",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
@@ -47,7 +47,7 @@
 "external_ids": {
 "github": "codewhale-hq/Codewhale"
 },
-"first_seen": "2026-10-19T12:05:48Z",
+"first_seen": "2026-10-25T17:58:15Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -130,10 +130,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:05:48Z",
+"last_seen": "2026-10-25T17:58:15Z",
 "license": "MIT",
 "name": "Codewhale",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-24T17:31:14Z",
+"headline": "Codewhale v0.10.2",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's in v0.10.2\n\n\nCodewhale v0.10.2 adds an animated pet view (`/pet on`), a live Terminal work\ndock, per-chat composer colors (`/color`) and a one-time note on the first\nstart after an update that says what changed. It closes three se",
+"tag": "product_update",
+"url": "https://github.com/codewhale-hq/Codewhale/releases/tag/v0.10.2"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-08T01:47:44Z",
@@ -144,28 +155,17 @@
 "summary": "> **Codewhale** is the public product from Shannon Labs. The `codewhale`\n> command, npm package, and release-asset names remain lowercase technical\n> identifiers. The legacy npm package `deepseek-tui` is deprecated and\n> receives no further",
 "tag": "product_update",
 "url": "https://github.com/codewhale-hq/Codewhale/releases/tag/v0.10.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-22T17:28:34Z",
-"headline": "Codewhale release v0.10.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "> **Codewhale** is the public product from Shannon Labs. The `codewhale`\n> command, npm package, and release-asset names remain lowercase technical\n> identifiers. The legacy npm package `deepseek-tui` is deprecated and\n> receives no further",
-"tag": "product_update",
-"url": "https://github.com/codewhale-hq/Codewhale/releases/tag/v0.10.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:13Z",
+"checked_at": "2026-10-25T18:04:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:08Z",
+"checked_at": "2026-10-25T18:04:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -173,7 +173,7 @@
 "evidence_url": "https://codewhale.net/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:12:13Z",
+"checked_at": "2026-10-25T18:04:24Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -185,7 +185,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:28:55Z",
+"checked_at": "2026-10-25T18:19:48Z",
 "cves": 13,
 "source": "nvd",
 "tier": 1
@@ -193,19 +193,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-19T18:21:01Z",
-"github_forks": 3569,
+"github_forks": 3565,
 "github_language": "Rust",
-"github_open_issues": 201,
-"github_pushed_at": "2026-10-19T10:40:22Z",
-"github_stars": 41100,
+"github_open_issues": 63,
+"github_pushed_at": "2026-10-25T17:01:20Z",
+"github_stars": 41116,
 "github_topic": "ai-agent",
 "homepage": "https://codewhale.net/"
 },
 "slug": "codewhale-hq-codewhale",
 "sources": [
 {
-"payload_hash": "54544b55b3f9ec1308d102af5291e607b50d660712b8a9671285bd4b3aae4fe8",
-"retrieved_at": "2026-10-19T12:05:48Z",
+"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
+"retrieved_at": "2026-10-25T17:58:15Z",
 "system": "github",
 "url": "https://github.com/codewhale-hq/Codewhale"
 }

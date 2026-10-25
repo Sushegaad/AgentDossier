@@ -1,0 +1,19 @@
+{
+ "agent": "res_9d634f6fb2199625",
+ "date": "2026-10-25",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_9d634f6fb2199625_43e158af",
+ "kind": "self_test",
+ "name": "Booqer",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:booqer.ai:mcp:directory",
+   "manifest_url": "https://booqer.ai/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "booqer-ai-booqer"
+}

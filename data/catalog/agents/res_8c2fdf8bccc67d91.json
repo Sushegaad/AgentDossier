@@ -72,7 +72,7 @@
 "ard": "urn:air:agenticplug.ai:agent:a2a",
 "mcp_registry": "ai.agenticplug/agent-ready-report"
 },
-"first_seen": "2026-10-19T12:00:37Z",
+"first_seen": "2026-10-25T17:51:18Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:10:42Z",
+"last_seen": "2026-10-25T18:03:02Z",
 "license": null,
 "merged_ids": [
 "res_98af53da4edbb125"
@@ -105,7 +105,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://agenticplug.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-19T12:10:39Z",
+"checked_at": "2026-10-25T18:02:59Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -119,7 +119,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-19T12:10:38Z",
+"checked_at": "2026-10-25T18:02:58Z",
 "entries": 6,
 "parser_version": "ard-0.91",
 "sources": [
@@ -146,7 +146,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:25:12Z",
+"checked_at": "2026-10-25T18:16:05Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -163,14 +163,14 @@
 "slug": "agenticplug-ai-agent-ready-report",
 "sources": [
 {
-"payload_hash": "5eba65649528763029f6f69b3636c7304c0ebcb06a8830e0845c74ee09a169f2",
-"retrieved_at": "2026-10-19T12:00:37Z",
+"payload_hash": "1458bf0517d90b63110fa72d499e033746fdac26009ab99763772b93dd9a9575",
+"retrieved_at": "2026-10-25T17:51:18Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agenticplug/agent-ready-report"
 },
 {
 "payload_hash": "e719a42dc225442369aa040ded191ca9165be4fb5dc0557211538865264d1751",
-"retrieved_at": "2026-10-19T12:10:42Z",
+"retrieved_at": "2026-10-25T18:03:02Z",
 "system": "ard",
 "url": "https://agenticplug.ai/.well-known/ai-catalog.json"
 }

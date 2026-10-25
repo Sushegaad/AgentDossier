@@ -45,7 +45,7 @@
 "github": "AudiopodAI/audiopod-mcp",
 "mcp_registry": "ai.audiopod/audiopod"
 },
-"first_seen": "2026-10-19T12:00:38Z",
+"first_seen": "2026-10-25T17:51:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:38Z",
+"last_seen": "2026-10-25T17:51:20Z",
 "license": null,
 "merged_ids": [
 "res_ba2566d5745bc46b"
@@ -78,7 +78,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://docs.audiopod.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-19T12:12:27Z",
+"checked_at": "2026-10-25T18:04:39Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -89,7 +89,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:25Z",
+"checked_at": "2026-10-25T18:04:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -112,7 +112,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:26:26Z",
+"checked_at": "2026-10-25T18:17:29Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -129,14 +129,14 @@
 "slug": "audiopod-ai-audiopod-ai",
 "sources": [
 {
-"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
-"retrieved_at": "2026-10-19T12:00:38Z",
+"payload_hash": "c97714e3ffc17439374669fe39eb1abe867b3c0299313ce4254e475c4c799ba2",
+"retrieved_at": "2026-10-25T17:51:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.audiopod/audiopod"
 },
 {
-"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
-"retrieved_at": "2026-10-19T12:00:38Z",
+"payload_hash": "c97714e3ffc17439374669fe39eb1abe867b3c0299313ce4254e475c4c799ba2",
+"retrieved_at": "2026-10-25T17:51:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.audiopod/audiopod-core"
 }

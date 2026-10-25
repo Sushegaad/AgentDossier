@@ -71,7 +71,7 @@
 "external_ids": {
 "mcp_registry": "ai.athenahq/mcp"
 },
-"first_seen": "2026-10-19T12:00:38Z",
+"first_seen": "2026-10-25T17:51:20Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,7 +93,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:00:38Z",
+"last_seen": "2026-10-25T17:51:20Z",
 "license": null,
 "name": "AthenaHQ",
 "news": [],
@@ -101,7 +101,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://docs.athenahq.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-19T12:12:27Z",
+"checked_at": "2026-10-25T18:04:38Z",
 "errors": [
 "missing 'description'"
 ],
@@ -115,7 +115,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:25Z",
+"checked_at": "2026-10-25T18:04:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -138,7 +138,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:26:20Z",
+"checked_at": "2026-10-25T18:17:21Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -155,8 +155,8 @@
 "slug": "athenahq-ai-athenahq",
 "sources": [
 {
-"payload_hash": "b93f27e7b18716ccd65812c9a14bbbb6870eeaf487de0d3308197ce82b750306",
-"retrieved_at": "2026-10-19T12:00:38Z",
+"payload_hash": "c97714e3ffc17439374669fe39eb1abe867b3c0299313ce4254e475c4c799ba2",
+"retrieved_at": "2026-10-25T17:51:20Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.athenahq/mcp"
 }

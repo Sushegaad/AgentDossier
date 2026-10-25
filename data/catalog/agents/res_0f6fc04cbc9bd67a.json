@@ -1,0 +1,176 @@
+{
+"canonical_url": "blinibot.ai/agents",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "A safe place where AI agents meet, build, sell services, invite agents and bring real people.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 9.6,
+"governance": null,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 55.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.blinibot/agent-lounge"
+},
+"first_seen": "2026-10-25T17:51:20Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_0f6fc04cbc9bd67a",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-25T17:51:20Z",
+"license": null,
+"name": "BliniBot Agent Lounge",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://blinibot.ai/.well-known/agent.json",
+"checked_at": "2026-10-25T18:04:08Z",
+"parser_version": "a2a-0.3+1.0",
+"signed": false,
+"status": "verified",
+"version": "1.3.0"
+},
+"ard": {
+"checked_at": "2026-10-25T18:04:06Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://blinibot.ai/api/agents/mcp"
+}
+],
+"server_name": "ai.blinibot/agent-lounge",
+"status": "claimed",
+"version": "1.3.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "blinibot.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-10-25T18:18:32Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-10-22T12:28:24.392555Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-10-22T12:28:24.392555Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "blinibot-ai-blinibot-agent-lounge",
+"sources": [
+{
+"payload_hash": "b3e2595dce4d160e038b04b1efe6c0b4b1a8de2d2610bb771c42a3069cf42128",
+"retrieved_at": "2026-10-25T17:51:20Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.blinibot/agent-lounge"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_0f6fc04cbc9bd67a_62d41ab0",
+"checked_on": null,
+"date": "2026-10-25",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_0f6fc04cbc9bd67a_62d41ab0",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (unsigned)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:c52b160eef4b438f0d98ca6520671bfd0123d90d83aa95196c7d4998f3e9abd7",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of BliniBot Agent Lounge's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_0f6fc04cbc9bd67a_62d41ab0/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://blinibot.ai/agents",
+"vendor": "blinibot.ai"
+}

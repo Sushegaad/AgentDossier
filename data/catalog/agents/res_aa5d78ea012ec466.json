@@ -1,0 +1,158 @@
+{
+"canonical_url": "fibalo.de/.well-known/ai-catalog.json",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": null,
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 3.0,
+"domain_fit": 34.0,
+"ecosystem": 3.6,
+"governance": null,
+"health": null,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 23.7,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:fibalo.de:mcp:mcp"
+},
+"first_seen": "2026-10-25T18:04:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_aa5d78ea012ec466",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-10-25T18:04:54Z",
+"license": null,
+"name": "mcp",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"errors": [
+"missing required term 'displayName'"
+],
+"identifier": "urn:air:fibalo.de:mcp:mcp",
+"manifest_url": "https://fibalo.de/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "invalid",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "fibalo.de",
+"representative_queries": [],
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {},
+"slug": "fibalo-de-mcp",
+"sources": [
+{
+"payload_hash": "ae916449753010c8dcebea7754cf4568bac099b826e715b5b0c7533975047bc9",
+"retrieved_at": "2026-10-25T18:04:54Z",
+"system": "ard",
+"url": "https://fibalo.de/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_aa5d78ea012ec466_9ddde4e2",
+"checked_on": null,
+"date": "2026-10-25",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_aa5d78ea012ec466_9ddde4e2",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD invalid (1 validation error)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:727759139e0c56f531cfdf4a9f8c2e6c7c916133c66154f2961ce3d23122ee5a",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of mcp's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_aa5d78ea012ec466_9ddde4e2/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": null,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://fibalo.de/.well-known/ai-catalog.json",
+"vendor": "fibalo.de"
+}

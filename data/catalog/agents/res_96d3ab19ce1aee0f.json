@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.73,
+"adoption": 25.74,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -49,7 +49,7 @@
 },
 "supply_chain": {
 "components": {
-"adoption": 25.73,
+"adoption": 25.74,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -72,7 +72,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.73,
+"adoption": 25.74,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.0,
@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "OthmanAdi/planning-with-files"
 },
-"first_seen": "2026-10-19T12:07:34Z",
+"first_seen": "2026-10-25T17:59:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,47 +119,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:07:34Z",
+"last_seen": "2026-10-25T17:59:54Z",
 "license": "MIT",
 "name": "planning-with-files",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-17T21:51:13Z",
-"headline": "planning-with-files: v3.24.3 - Pi snapshot attestation",
+"date": "2026-10-24T17:24:40Z",
+"headline": "planning-with-files: v3.25.2 - trackable plan creation and harness fixes",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Pi extension 1.2.8 now verifies the same raw plan snapshot used for injected text and phase counts. Replacing the live file between reading and checking can no longer make a different snapshot pass attestation. Missing or unreadable selecte",
+"summary": "Plan creation now requires the bundled initializer and explicit native format validation. `check-complete.sh --validate` and PowerShell `-Validate` reject plans with no recognized phases or missing/ambiguous native phase statuses. `plan-doc",
 "tag": "product_update",
-"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.24.3"
+"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.25.2"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-17T16:01:22Z",
-"headline": "planning-with-files: v3.24.2 - Suppress unchanged Pi plan reminders",
+"date": "2026-10-23T18:03:11Z",
+"headline": "planning-with-files: v3.25.1 - status validity and optional eval",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Pi parity mode now suppresses unchanged pre-tool plan views after confirmed turn-start context insertion. A visible plan edit queues one refresh, while selection changes, recovery events and failed or aborted runs invalidate delivery state.",
+"summary": "OpenCode status now distinguishes an existing attestation marker from a valid digest for the current plan. `attested` keeps its presence-only meaning; `attestationValid` requires a digest check. Root and named legacy plans with oversized, u",
 "tag": "product_update",
-"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.24.2"
+"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.25.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:47Z",
+"checked_at": "2026-10-25T18:04:55Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:46Z",
+"checked_at": "2026-10-25T18:04:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:12:47Z",
+"checked_at": "2026-10-25T18:04:56Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -169,7 +169,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:29:23Z",
+"checked_at": "2026-10-25T18:20:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -177,19 +177,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-03T07:37:28Z",
-"github_forks": 2291,
+"github_forks": 2298,
 "github_language": "Python",
-"github_open_issues": 6,
-"github_pushed_at": "2026-10-17T21:51:12Z",
-"github_stars": 27529,
+"github_open_issues": 10,
+"github_pushed_at": "2026-10-24T17:24:38Z",
+"github_stars": 27637,
 "github_topic": "llm-agents",
 "homepage": "https://gilded-laurel-c7nj.here.now/"
 },
 "slug": "othmanadi-planning-with-files",
 "sources": [
 {
-"payload_hash": "2ec5c62985ecc389f477714aef16047e7c24a1dde737faff1e15e7ea23e62d7e",
-"retrieved_at": "2026-10-19T12:07:34Z",
+"payload_hash": "ac6c62e3bdfd1408a34150bad5fa8bdeea026e710a518759d6c796e811b7748c",
+"retrieved_at": "2026-10-25T17:59:54Z",
 "system": "github",
 "url": "https://github.com/OthmanAdi/planning-with-files"
 }

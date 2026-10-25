@@ -27,7 +27,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.4,
+"adoption": 26.42,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -50,7 +50,7 @@
 },
 "sales": {
 "components": {
-"adoption": 26.4,
+"adoption": 26.42,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -73,7 +73,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.4,
+"adoption": 26.42,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -98,7 +98,7 @@
 "external_ids": {
 "github": "agentscope-ai/QwenPaw"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T17:55:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -120,13 +120,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:05:48Z",
+"last_seen": "2026-10-25T17:58:15Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_db1c9d4b45930704"
 ],
 "name": "QwenPaw",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-22T11:49:43Z",
+"headline": "QwenPaw release v2.2.2.post1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* chore: bump the version to v2.2.2post1 by @cuiyuebing in https://github.com/agentscope-ai/QwenPaw/pull/8369\r\n* fix(security): remediate emSign CA trust across dependencies, installers, and builds by @qbc2016 in https://",
+"tag": "product_update",
+"url": "https://github.com/agentscope-ai/QwenPaw/releases/tag/v2.2.2.post1"
+},
 {
 "cluster_size": 3,
 "date": "2026-10-15T07:10:45Z",
@@ -137,28 +148,17 @@
 "summary": "## What's Changed\r\n\r\n## ✨ Added\r\n\r\n**Console & Workspaces**\r\n\r\n- Add six theme palettes and custom colors and corner radii, with live preview and saved preferences ([#7741](https://github.com/agentscope-ai/QwenPaw/pull/7741))\r\n- Add an auth",
 "tag": "product_update",
 "url": "https://github.com/agentscope-ai/QwenPaw/releases/tag/v2.2.2"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-30T08:35:51Z",
-"headline": "QwenPaw release v2.2.2-beta.4",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\r\n* feat: add reranker UI config panel to ReMeLightMemoryCard by @lecheng2018 in https://github.com/agentscope-ai/QwenPaw/pull/6399\r\n* chore: bump the version to 2.2.2b4 by @cuiyuebing in https://github.com/agentscope-ai/Qw",
-"tag": "product_update",
-"url": "https://github.com/agentscope-ai/QwenPaw/releases/tag/v2.2.2-beta.4"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:13:53Z",
+"checked_at": "2026-10-25T18:05:51Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:13:52Z",
+"checked_at": "2026-10-25T18:05:50Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -166,7 +166,7 @@
 "evidence_url": "http://qwenpaw.agentscope.io/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:13:53Z",
+"checked_at": "2026-10-25T18:05:52Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -179,19 +179,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-24T03:42:56Z",
-"github_forks": 3191,
-"github_language": "TypeScript",
-"github_open_issues": 1115,
-"github_pushed_at": "2026-10-19T10:08:58Z",
-"github_stars": 35854,
+"github_forks": 3209,
+"github_language": "Python",
+"github_open_issues": 1141,
+"github_pushed_at": "2026-10-23T11:08:34Z",
+"github_stars": 36173,
 "github_topic": "ai-agents",
 "homepage": "http://qwenpaw.agentscope.io/"
 },
 "slug": "agentscope-ai-qwenpaw",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/agentscope-ai/QwenPaw"
 }

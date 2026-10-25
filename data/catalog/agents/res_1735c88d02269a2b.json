@@ -23,7 +23,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.68,
+"adoption": 26.69,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -46,7 +46,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.68,
+"adoption": 26.69,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -71,7 +71,7 @@
 "external_ids": {
 "github": "Yeachan-Heo/oh-my-claudecode"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T17:55:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,47 +93,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:02:47Z",
+"last_seen": "2026-10-25T17:55:30Z",
 "license": "MIT",
 "name": "oh-my-claudecode",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-18T07:02:02Z",
-"headline": "oh-my-claudecode release v5.7.5",
+"date": "2026-10-24T22:06:45Z",
+"headline": "oh-my-claudecode release v5.7.14",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# oh-my-claudecode v5.7.5: stricter frontmatter and config parsing, team startup fixes, merge-readiness MCP tools removed\n\n## Highlights\n\n- **feat(installer): add `claudeMdEnabled` opt-out for the global CLAUDE.md** (#4383)\n- **fix: remove",
+"summary": "# oh-my-claudecode v5.7.14: More reliable Stop hooks and leaner team handling\n\n## Release Notes\n\nThis release fixes Stop-hook shadow resolver cleanup and removes the unwired team-dispatch implementation. Thanks to @iyoda for #4581 and to @r",
 "tag": "product_update",
-"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.7.5"
+"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.7.14"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-17T06:39:33Z",
-"headline": "oh-my-claudecode release v5.7.4",
+"date": "2026-10-24T16:52:54Z",
+"headline": "oh-my-claudecode release v5.7.13",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# oh-my-claudecode v5.7.4: More reliable hooks, team workflows, HUD, and Jev planning\n\n## Release Notes\n\nRelease with **1 new feature**, **4 bug fixes**, **1 performance improvement**, and **3 test improvements** across **9 merged PRs**.\n\n#",
+"summary": "# oh-my-claudecode v5.7.13: More reliable keyword prompts and team handling\n\n## Release Notes\n\nThis release preserves explicit keyword invocations in reference prompts, keeps help requests informational across more prompt shapes, and correc",
 "tag": "product_update",
-"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.7.4"
+"url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v5.7.13"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:13:34Z",
+"checked_at": "2026-10-25T18:05:35Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:13:33Z",
+"checked_at": "2026-10-25T18:05:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-19T12:13:35Z",
+"checked_at": "2026-10-25T18:05:36Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -143,7 +143,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:28:56Z",
+"checked_at": "2026-10-25T18:19:50Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -151,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-09T03:36:29Z",
-"github_forks": 3593,
+"github_forks": 3597,
 "github_language": "TypeScript",
-"github_open_issues": 7,
-"github_pushed_at": "2026-10-19T06:30:27Z",
-"github_stars": 40061,
+"github_open_issues": 13,
+"github_pushed_at": "2026-10-25T16:51:11Z",
+"github_stars": 40258,
 "github_topic": "ai-agents",
 "homepage": "https://oh-my-claudecode.dev"
 },
 "slug": "yeachan-heo-oh-my-claudecode",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
+"retrieved_at": "2026-10-25T17:55:30Z",
 "system": "github",
 "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
 }

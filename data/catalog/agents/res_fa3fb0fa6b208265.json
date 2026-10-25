@@ -1,6 +1,5 @@
 {
 "canonical_url": "douyin.wtf",
-"capabilities": [],
 "category": "Open-source project",
 "classification": {
 "matched": {
@@ -20,12 +19,12 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "🚀 自托管的抖音、TikTok 数据采集与无水印视频下载 API，支持 AI agent 通过 MCP 调用与离线语音转文字，Docker 一键部署。| Self-hosted TikTok & Douyin scraper and no-watermark video downloader — async REST API, MCP server for AI agents, CLI and web console, plus offline speech-to-text for downloaded videos. Self-healing identity pool, PostgreSQL archive, one docker compose up.",
+"description": "🚀 自托管的抖音、TikTok、B 站数据采集与无水印视频下载 API，支持 AI agent 通过 MCP 调用与离线语音转文字，Docker 一键部署。| Self-hosted TikTok, Douyin & Bilibili scraper and no-watermark video downloader — async REST API, MCP server for AI agents, CLI and web console, plus offline speech-to-text for downloaded videos. Self-healing identity pool, PostgreSQL archive, one docker compose up.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "data": {
 "components": {
-"adoption": 25.03,
+"adoption": 25.04,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -48,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.03,
+"adoption": 25.04,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -73,7 +72,7 @@
 "external_ids": {
 "github": "Evil0ctal/Douyin_TikTok_Download_API"
 },
-"first_seen": "2026-10-19T12:02:47Z",
+"first_seen": "2026-10-25T18:00:16Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -102,45 +101,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-19T12:07:55Z",
+"last_seen": "2026-10-25T18:00:16Z",
 "license": "Apache-2.0",
-"merged_ids": [
-"res_fa3fb0fa6b208265"
-],
 "name": "Douyin_TikTok_Download_API",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-18T10:47:06Z",
-"headline": "Douyin_TikTok_Download_API release v5.1.5",
+"date": "2026-10-21T11:08:06Z",
+"headline": "Douyin_TikTok_Download_API release v5.1.7",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's new\n\n**A security fix for instances with more than one account.** A signed-in\n`viewer` could read the cookie jar stored with an operator's explained request,\nread what an operator's requests through a named identity returned, and",
+"summary": "## What's new\n\n**Ten new ways to read the platforms, and an upgrade that follows the\nrelease.** Beside a post and its author you can now ask for the posts\nrecommended next to it, a sound and the posts that use it, a hashtag, keyword\nsearch,",
 "tag": "product_update",
-"url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API/releases/tag/v5.1.5"
+"url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API/releases/tag/v5.1.7"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-18T10:22:54Z",
-"headline": "Douyin_TikTok_Download_API release v5.1.4",
+"date": "2026-10-20T23:43:21Z",
+"headline": "Douyin_TikTok_Download_API release v5.1.6",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's new\n\n**Offline transcription.** dtk can now turn a video it has downloaded into text\non your own machine, with FunASR models and no audio leaving the host -\ncontributed by [@163lico](https://github.com/163lico) in\n[#786](https://g",
+"summary": "## What's new\n\n**Bilibili is back.** v4 had it and the v5 rewrite left it out, because it\nshares neither the signing nor the identity machinery with Douyin and TikTok.\nThis release brings it back with both: Bilibili's WBI signature in pure",
 "tag": "product_update",
-"url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API/releases/tag/v5.1.4"
+"url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API/releases/tag/v5.1.6"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-19T12:12:34Z",
+"checked_at": "2026-10-25T18:04:44Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-19T12:12:32Z",
+"checked_at": "2026-10-25T18:04:43Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -148,7 +144,7 @@
 "evidence_url": "https://douyin.wtf",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-19T12:12:34Z",
+"checked_at": "2026-10-25T18:04:45Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -160,7 +156,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-19T12:29:43Z",
+"checked_at": "2026-10-25T18:20:36Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -168,25 +164,25 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2021-11-07T01:35:09Z",
-"github_forks": 3058,
+"github_forks": 2903,
 "github_language": "Python",
-"github_open_issues": 2,
-"github_pushed_at": "2026-10-18T10:47:08Z",
-"github_stars": 20783,
-"github_topic": "ai-agents",
+"github_open_issues": 4,
+"github_pushed_at": "2026-10-21T11:34:05Z",
+"github_stars": 20894,
+"github_topic": "mcp-server",
 "homepage": "https://douyin.wtf"
 },
 "slug": "evil0ctal-douyin-tiktok-download-api",
 "sources": [
 {
-"payload_hash": "9a897733a2eed09f60bc68695e27e2c9fd116975406a9f6b2d626f3e21c5ed68",
-"retrieved_at": "2026-10-19T12:02:47Z",
+"payload_hash": "1d7f7007fb39231e0b8ff403eb22651bd23d59d9a555ef84147419f910f7c1a1",
+"retrieved_at": "2026-10-25T18:00:16Z",
 "system": "github",
 "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API"
 }
 ],
 "tags": [
-"ai-agents",
+"bilibili",
 "crawler",
 "data-collection",
 "douyin",
