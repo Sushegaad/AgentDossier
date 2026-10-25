@@ -6,6 +6,27 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Fixed — documentation drift, and a guard against it
+- Eleven PRs had shipped without updating the documents that describe them. Corrected: README
+  (the incident registry, weekly scout and re-check in the Traces feature; the harness described
+  honestly as producing tier-1 traces only once a provider key is set; test count; analytics
+  wording; docs index now lists `traces.md`, `traces-spec.md`, `incidents.md`; screenshots
+  re-shot from the current build), `/methodology/#traces` (how traces and the registry are
+  collected — the target of the `/traces/` "how it is collected" link, which previously pointed at
+  a page that said nothing about traces), `/about/` (a registry row, the weekly scout and re-check),
+  `/enterprise/` (the decision workflow and trace gate are built, not "the next phase"), the hero
+  copy ("the public traces … on record" rather than "every public trace"), `docs/incidents.md`
+  (13 published + 14 placeholders), `docs/enterprise-runbook.md` (the trace gate), and
+  `CONTRIBUTING.md` (the candidate workflow and the docs rule).
+- `deploy/Dockerfile` back to `python:3.13-slim` / `node:22-alpine` — the versions CI tests;
+  Dependabot had moved it to Python 3.14 / Node 26, which nothing tests. Dependabot may now bump
+  image digests and patch releases only.
+- **`scripts/check_docs_drift.py`**, run by CI (lint job) and by `pytest`
+  (`tests/test_docs_drift.py`): the README test count, Python and Node versions across README, CI
+  matrix, Dockerfile and `pyproject`, the README docs index, and the incident counts in
+  `docs/incidents.md` are verified against the repository on every change. A PR template carries
+  the documentation checklist. Two `[Unreleased]` headings merged into one.
+
 ### Added — incident scout (the registry grows weekly)
 - **`agentdossier incidents scout`** runs in the weekly refresh: reads twelve public feeds
   (`config/trace_sources.json` — The Hacker News, BleepingComputer, Dark Reading, SecurityWeek,
@@ -137,8 +158,6 @@ listed in `docs/methodology.md`.
   `storage/schema.sql`; app-level exception handlers. `itsdangerous` declared (OIDC).
 - Curated protocol claims require a named reviewer; enterprise CA bundle rides on the
   scan's network policy instead of the process environment.
-
-## [Unreleased]
 
 ### Evidence-first dossiers
 - The promise is narrowed to what the data supports: "Discover AI agents. Inspect the evidence.

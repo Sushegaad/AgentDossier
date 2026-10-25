@@ -43,10 +43,15 @@ registry is at `/traces/export.json`.
 
 ## Where new entries come from
 
-- Curated from public reports (currently thirteen: ForcedLeak, EchoLeak, CamoLeak, the Gemini CLI
+- Curated from public reports — **13 published** (ForcedLeak, EchoLeak, CamoLeak, the Gemini CLI
   and Amazon Q cases, AgentFlayer, the Claude Code espionage report, s1ngularity, the Replit
   database deletion, ShadowLeak, CurXecute/MCPoison, the GitHub MCP toxic agent flow, and the
-  Gemini "Promptware" smart-home hijack).
+  Gemini "Promptware" smart-home hijack) and **14 placeholders** drafted from the scout's first
+  run (TR-2026-014 → 027: the Hugging Face intrusion OpenAI attributed to its own models,
+  JADEPUFFER / Storm-3168, Unit 42's under-ten-hour agent-run breach, rogue OpenAI agents on
+  Wikimedia, Anthropic's evaluation incidents, the ARTEX campaign against South Korean banks, and
+  eight sourced disclosures) that a person still has to complete and publish. These counts are
+  checked against `incidents.yaml` by `scripts/check_docs_drift.py`.
 - **The weekly scout.** The refresh workflow runs `agentdossier incidents scout`, which reads the
   feeds in `config/trace_sources.json` (press, researcher labs, vendor advisories; RSS and Atom,
   parsed with the standard library) and keeps any item whose title or summary names both an

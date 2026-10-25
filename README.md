@@ -11,12 +11,12 @@ standards they publish (Agentic Resource Discovery, Agent2Agent, Model Context
 Protocol) as well as public registries and marketplaces, and the same engine
 can scan an enterprise's own network for the agents already running there.
 
-[![AgentDossier homepage: search first, with example queries](docs/screenshots/home-search.png)](https://sushegaad.github.io/AgentDossier/)
+[![AgentDossier homepage: find agents you can trust, check the evidence, see how they behaved under attack — search, a live dossier specimen with its trace, and the newest incidents](docs/screenshots/home-search.png)](https://sushegaad.github.io/AgentDossier/)
 
-- **Public demo:** https://sushegaad.github.io/AgentDossier/ — static, no accounts, cookieless analytics unless you opt in
+- **Public demo:** https://sushegaad.github.io/AgentDossier/ — static, no accounts, no cookies; the demo build sends only aggregate, cookieless page counts
 - **Self-hosted edition:** the same MIT codebase as one container with an authorized private-network scanner, ARD REST API, policy qualification, decision workflow and integrations
 - **Worked comparison:** [three ways to let a coding agent into a private repository](https://sushegaad.github.io/AgentDossier/compare/coding-agents-private-repo/) — the same five deployment questions answered for six agents from their own documentation
-- **Docs:** [`docs/methodology.md`](docs/methodology.md) (how evidence is graded), [`docs/enterprise-runbook.md`](docs/enterprise-runbook.md) (run your own), [`docs/architecture.md`](docs/architecture.md), [`docs/brd-traceability.md`](docs/brd-traceability.md), [`CHANGELOG.md`](CHANGELOG.md)
+- **Docs:** [`docs/methodology.md`](docs/methodology.md) (how evidence is graded), [`docs/traces.md`](docs/traces.md) and [`docs/traces-spec.md`](docs/traces-spec.md) (traces and vendor publishing), [`docs/incidents.md`](docs/incidents.md) (the incident registry and its weekly upkeep), [`docs/enterprise-runbook.md`](docs/enterprise-runbook.md) (run your own), [`docs/architecture.md`](docs/architecture.md), [`docs/brd-traceability.md`](docs/brd-traceability.md), [`CHANGELOG.md`](CHANGELOG.md)
 
 ### How it grades evidence
 
@@ -42,7 +42,7 @@ Every dossier opens with the trust profile and the line *Evidence available — 
 safety certification*; evidence about the vendor is kept apart from evidence about
 the agent:
 
-[![GitHub Copilot coding agent dossier: trust profile, evidence banner, compliance ledger](docs/screenshots/dossier-copilot.png)](https://sushegaad.github.io/AgentDossier/agents/github-microsoft-github-copilot-coding-agent/)
+[![GitHub Copilot coding agent dossier: trust profile, evidence banner, traces first, then the compliance ledger](docs/screenshots/dossier-copilot.png)](https://sushegaad.github.io/AgentDossier/agents/github-microsoft-github-copilot-coding-agent/)
 
 [![Gemini Enterprise agents dossier: identity T4, FedRAMP 20x registry match, protocol cards found but invalid](docs/screenshots/dossier-gemini.png)](https://sushegaad.github.io/AgentDossier/agents/google-gemini-enterprise-agents/)
 
@@ -58,7 +58,9 @@ to risk and legal that the choice was defensible.
 2. **Read the dossier.** Open the top result. The evidence ledger lists each
    framework with its issuer, scope, as-of date and a link to the source; the
    gaps line says what is still unverified; the protocol row says whether the
-   agent can be wired in over MCP or A2A.
+   agent can be wired in over MCP or A2A; the **Traces** section leads the
+   dossier with what the agent did under attack — or says plainly that nobody
+   has published that yet.
 3. **Shortlist and compare.** Add three candidates to the shortlist, compare
    their score breakdowns side by side, and export CSV or JSON with the
    sources attached for the risk review.
@@ -78,7 +80,7 @@ Requirements: Python 3.11+, [uv](https://docs.astral.sh/uv/), Node 22 (for the s
 ```bash
 git clone https://github.com/Sushegaad/AgentDossier && cd AgentDossier
 uv sync --extra dev
-uv run pytest -q                                   # ~150 tests, all offline
+uv run pytest -q                                   # ~200 tests, all offline (includes the docs-drift check)
 
 # build a catalog from the seed workbook only (no network)
 uv run agentdossier build --sources seed --offline --out /tmp/catalog
@@ -95,7 +97,10 @@ cd web && npm ci && CATALOG_DIR=/tmp/catalog npm run dev
 the GitHub connector and release feeds and `NVD_API_KEY` lifts the NVD rate
 limit. Hand-verified evidence, publisher-domain checks and documented
 protocol support live in `data/curated/`. The public catalog is rebuilt every
-Monday by `.github/workflows/refresh.yml` and published through GitHub Pages.
+Monday by `.github/workflows/refresh.yml` — which also scouts public feeds for
+candidate incidents and re-checks every incident's source links — and the
+result is opened as a reviewable pull request, then published through GitHub
+Pages.
 
 ## Self-hosted edition
 
@@ -184,12 +189,19 @@ decide.
   unknown, with compliance credited only once the publisher is confirmed.
 - **Protocol posture** from live probes of ARD, A2A and MCP well-known
   endpoints, plus curated and self-described claims.
-- **Traces — under attack, in defence, in incidents.** Curated public write-ups
-  and incident reports; the registry's own reproducible probe transcripts; a
-  sandbox **harness** that runs agents against the AgentDojo prompt-injection
-  benchmark and records whether each injection succeeded; and an ARD extension
-  for vendors to publish their own. Every bundle lives in an append-only,
-  hash-chained store.
+- **Traces — under attack, in defence, in incidents.** An **incident
+  registry** (`/traces/`): one row per real, sourced event where an AI agent
+  attacked, defended or was the target, with a timeline, MITRE ATT&CK tactics,
+  what defenders can take from it, and STIX 2.1 / JSON export. A weekly
+  **scout** reads public feeds and files candidates for a maintainer to promote
+  or dismiss, and a weekly **re-check** records whether every source link still
+  answers. Per agent: curated write-ups, the registry's own reproducible probe
+  transcripts, and an ARD extension for vendors to publish their own; every
+  bundle lives in an append-only, hash-chained store. A sandbox **harness** that
+  runs agents against the AgentDojo prompt-injection benchmark is wired in and
+  tested, and produces tier-1 traces once a model-provider key is configured —
+  until then no public harness trace exists, and the site says so.
+  See [`docs/incidents.md`](docs/incidents.md).
 - **Discovery and curation.** A curated Top 100 per domain plus agents
   discovered from GitHub, Hugging Face, the MCP registry, marketplaces and ARD
   manifests, with demo, deprecated and abandoned projects filtered out.
@@ -229,6 +241,11 @@ decide.
   Resource Discovery, Agent2Agent and the Model Context Protocol; the trace and
   vendor-publishing conventions are documented in
   [`docs/traces.md`](docs/traces.md) and [`docs/traces-spec.md`](docs/traces-spec.md).
+
+- **Docs that cannot silently go stale.** `scripts/check_docs_drift.py` runs in
+  CI and under `pytest`: the test count, Python and Node versions across the
+  README, CI matrix and Dockerfile, the docs index, and the incident counts are
+  verified against the repository on every change.
 
 See [`docs/architecture.md`](docs/architecture.md) and
 [`docs/methodology.md`](docs/methodology.md) for the full design and grading

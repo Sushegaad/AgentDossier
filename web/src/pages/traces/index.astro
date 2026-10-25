@@ -20,16 +20,16 @@ const check = loadSourceCheck();
 const attention = new Set(check?.needs_attention ?? []);
 ---
 
-<Base title="Traces" description="Every public trace of an AI agent attacking or defending a system — an incident registry with tactics, timelines and sources.">
+<Base title="Traces" description="Public traces of AI agents attacking or defending systems — an incident registry with tactics, timelines and sources.">
   <div class="prose" style="max-width: 100%">
     <div class="eyebrow muted" style="color: var(--accent-ink)">Public traces</div>
     <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem); max-width: 18ch; line-height: 1.05">Agents attacking and defending, on record</h1>
     <p class="body" style="max-width: 72ch">
-      Every public trace of an AI agent attacking or defending a system, compiled from post-mortems,
-      advisories, filings and the press. Each row is one incident — open it for the timeline, what
-      defenders can take from it, the tactics and the sources. "Defenders can't learn from what they
-      can't see," so this is the record, and
-      <a href={`${base}/methodology/`}>how it is collected</a>.
+      The public traces of AI agents attacking or defending systems that this registry has found and
+      curated from post-mortems, advisories, filings and the press. Each row is one incident — open it
+      for the timeline, what defenders can take from it, the tactics and the sources. "Defenders can't
+      learn from what they can't see," so this is the record so far, and
+      <a href={`${base}/methodology/#traces`}>how it is collected</a>.
     </p>
 
     <div class="row" style="gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 10px">

@@ -18,3 +18,10 @@ updates:
   - package-ecosystem: docker
     directory: /deploy
     schedule: { interval: weekly }
+    # Base images must stay on versions CI tests; Dependabot may refresh digests and patch releases
+    # only. A major/minor bump is a deliberate change that also updates ci.yml and README.md.
+    ignore:
+      - dependency-name: python
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+      - dependency-name: node
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
