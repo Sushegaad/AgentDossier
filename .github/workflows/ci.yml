@@ -28,6 +28,8 @@ jobs:
         run: uv run ruff check . && uv run ruff format --check .
       - name: Types
         run: uv run mypy agentdossier
+      - name: Documentation drift (README, CI, Dockerfile, docs index, incident counts agree)
+        run: uv run python scripts/check_docs_drift.py
       - name: Config and schema check
         run: uv run agentdossier config-check
       - name: Seed fidelity (FR-16)

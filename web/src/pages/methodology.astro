@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { Content as Methodology } from "../../../docs/methodology.md";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <Base title="Methodology">
@@ -23,6 +24,40 @@ import { Content as Methodology } from "../../../docs/methodology.md";
       <strong>Evidence</strong> (best active compliance record about the agent itself, T1–T5), <strong>Security</strong> (an NVD keyword search was run; the dossier shows what it matched),
       <strong>Protocols</strong> (A2A / MCP / ARD observed) and <strong>Issues</strong> (open incidents, CVEs or
       regulator actions). "–" means not checked in this build.
+    </p>
+
+    <h2 id="traces">How traces and the incident registry are collected</h2>
+    <p>
+      A <strong>trace</strong> is evidence of what an agent did under attack, in defence or in an incident. It has its own
+      five-step scale, kept apart from compliance tiers: T1 a reproducible run with public artifacts · T2 a third-party
+      report with a transcript · T3 a vendor report · T4 a vendor claim · T5 none found. "None found" is never a finding
+      against the agent — it means nobody has published what the agent does under attack, and the dossier says so.
+    </p>
+    <ol>
+      <li><strong>The incident registry</strong> (<a href={`${base}/traces/`}>/traces/</a>) — one row per real, sourced event
+        where an AI agent attacked, defended or was the target, curated from post-mortems, advisories, researcher
+        disclosures and the press. Every row is "as reported": figures are the sources' own, MITRE ATT&amp;CK tactics are the
+        maintainer's reading, and a row shows <em>unreviewed</em> until a person has checked it against its sources. Each
+        has a timeline, lessons for defenders, and STIX 2.1 / JSON export.</li>
+      <li><strong>The weekly scout</strong> — the Monday refresh reads a curated list of public feeds (press, researcher
+        labs, vendor advisories) and keeps any item that names both an agent and an attack as a <em>candidate</em>: title,
+        link, date, outlet, snippet. Candidates are leads for the maintainer to promote or dismiss, never incidents; the
+        registry page shows how many are waiting.</li>
+      <li><strong>The weekly re-check</strong> — every published incident's source links are re-fetched and the result
+        recorded (answers · moved · gone · bot-walled). A link that stops answering is flagged on the incident page; the
+        record itself is never changed by the check.</li>
+      <li><strong>Per-agent traces</strong> on each dossier — curated write-ups, the registry's own endpoint probes
+        (every refresh records each publisher's ARD/A2A/MCP exchange), and vendor-published bundles declared in an ARD
+        manifest and hash-checked. All live in an append-only, hash-chained store that CI verifies.</li>
+      <li><strong>The harness</strong> — runs an agent against the AgentDojo prompt-injection benchmark and records a
+        tier-1 bundle. It is built and tested; it produces public traces only when a model-provider key is configured,
+        and until then no public harness trace exists.</li>
+    </ol>
+    <p class="small muted">
+      The full rules, the candidate workflow and the schema are in
+      <a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/incidents.md" rel="noopener">docs/incidents.md</a> and
+      <a href="https://github.com/Sushegaad/AgentDossier/blob/main/docs/traces.md" rel="noopener">docs/traces.md</a>.
+      Behaviour is published, never weapons: scenario inputs and the agent's actions, no payloads against third-party systems.
     </p>
   </div>
   <script>

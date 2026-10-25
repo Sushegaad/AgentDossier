@@ -317,3 +317,23 @@ the standards' well-known documents and pages linked from them. It respects
 (`limits.requests_per_host_per_sec`) and stops at `limits.concurrency` parallel
 hosts. Everything it fetched is listed in `scan-report.json` with the outcome
 per origin, so the report is reviewable by whoever signed the ticket.
+
+## Private traces and the trace gate
+
+A self-hosted instance can require that an agent has been watched under attack before it is
+approved. Two pieces:
+
+- **Private traces.** `agentdossier enterprise trace-selftest` exercises the path end to end with
+  the mock pipeline. In production, the harness runs against your private agents and stores each
+  result in the instance database (`traces` table, `agentdossier/enterprise/traces.py`) — never in
+  the public store unless you explicitly publish it back. `best_tier(agent)` is the agent's best
+  trace tier inside your tenant.
+- **The gate.** A decision can carry `require_trace_tier` (1 = reproducible run … 4 = vendor
+  claim). While it is set, the workflow refuses to move the decision to `approved` until a trace of
+  that tier or better exists for the agent — the refusal names the tier it found. Set it on the
+  decision, or in the policy template so every decision inherits it. The gate is enforced in
+  `agentdossier/server/workflow.py` and covered by `tests/test_enterprise_traces.py`.
+
+Public traces (the registry's probes, curated write-ups and the incident registry) satisfy the gate
+only at their own tier; a tier-4 vendor claim never satisfies `require_trace_tier: 2`.
+

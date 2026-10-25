@@ -37,14 +37,15 @@ const total = index?.records.length ?? 0;
         <tr><td>Publisher identity</td><td>Automated rules (ARD manifest, marketplace listing, vendor-domain page, repository ownership) plus a curated file of domains a person confirmed.</td></tr>
         <tr><td>Protocols (MCP · A2A · ARD)</td><td>Automated probes of each publisher's well-known endpoints; curated claims from vendor documentation carry a reviewer's name.</td></tr>
         <tr><td>Worked comparisons and the reference set</td><td>Answers are collected from vendor documentation with AI assistance; a comparison is marked <em>draft</em> until the maintainer records a review.</td></tr>
+        <tr><td>Traces and the incident registry</td><td>Curated: one row per real, sourced event where an AI agent attacked, defended or was the target, "as reported" and marked <em>unreviewed</em> until a person checks it. A weekly scout reads public feeds and files candidates for the maintainer; a weekly re-check records whether every source link still answers. Per agent: the registry's own endpoint probes and vendor-published bundles in a hash-chained store. The harness produces tier-1 traces only once a model key is configured.</td></tr>
         <tr><td>News and chatter</td><td>Automated: Hacker News, GDELT, GitHub releases, vendor feeds and NVD. News never changes a score.</td></tr>
       </tbody>
     </table>
 
     <h2>How often</h2>
     <p>
-      The catalog is rebuilt every Monday by a scheduled job and the date of the last build is shown in the banner on
-      every page. Each build appends to the <a href={`${base}/changelog/`}>trust changelog</a>, so a badge that appears,
+      The catalog is rebuilt every Monday by a scheduled job — the same run scouts public feeds for candidate incidents
+      and re-checks every incident's source links — and the date of the last build is shown in the banner on every page. Each build appends to the <a href={`${base}/changelog/`}>trust changelog</a>, so a badge that appears,
       changes or disappears leaves a record.
     </p>
 

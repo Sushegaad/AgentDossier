@@ -109,7 +109,7 @@ const config = `{
     <h2><span style="display:block">From discovered</span><span style="display:block">to approved and monitored.</span></h2>
     <div>
       <p style="font-size: 1.1rem; line-height: 1.55">
-        Policy templates mark every result Eligible, Needs review, Disallowed or Unknown with the rule-by-rule reason, on the page and through <code>POST /qualify</code> for your orchestrators. Templates ship for healthcare, bank, insurer, startup and government. Scheduled scans, scan history and an audit trail are built in; workspaces, approvals and alerts are the next phase.
+        Policy templates mark every result Eligible, Needs review, Disallowed or Unknown with the rule-by-rule reason, on the page and through <code>POST /qualify</code> for your orchestrators. Templates ship for healthcare, bank, insurer, startup and government. Scheduled scans, scan history, a hash-chained audit trail, and a decision workflow with per-role sign-offs are built in — and a decision can carry <code>require_trace_tier</code>, so an agent cannot be approved until it has actually been watched under attack, in your tenant or in the public record.
       </p>
       <div class="row" style="margin-top: 24px; gap: 12px">
         <a class="btn dark" href={`${repo}/blob/main/docs/enterprise-runbook.md`}>Read the runbook →</a>
