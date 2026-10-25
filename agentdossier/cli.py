@@ -374,7 +374,7 @@ def cmd_incidents(args: argparse.Namespace) -> int:
             print(f"  {sid:18} items {rep['items']:4}  matched {rep['matched']:3}{flag}")
         print(
             f"incidents scout: {report.items} items, {report.matched} matched, {report.added} new candidates, "
-            f"{report.kept} seen again, {report.already_incident} already incidents, {report.pruned} pruned "
+            f"{report.kept} seen again, {report.already_incident} already incidents, {report.cve_advisories} CVE advisories (→ cves), {report.pruned} pruned "
             f"→ {new} awaiting review in {cand_path}"
         )
         return 0
@@ -423,6 +423,95 @@ def cmd_incidents(args: argparse.Namespace) -> int:
             f"ok {s['ok']}, moved {s['moved']}, gone {s['gone']}, unverified {s['unverified']}, error {s['error']} "
             f"→ {args.report}"
         )
+        return 0
+    return 2
+
+
+def cmd_cves(args: argparse.Namespace) -> int:
+    """The CVE registry: update from the official records, or record a person's decision."""
+    import datetime as dt  # noqa: PLC0415
+    import os  # noqa: PLC0415
+    import random  # noqa: PLC0415
+    from pathlib import Path  # noqa: PLC0415
+
+    from .cves import build as cb  # noqa: PLC0415
+    from .cves import nvd  # noqa: PLC0415
+
+    if args.action == "plan":
+        cfg = cb.load_config(Path(args.config))
+        for u in nvd.backfill_queries(cfg):
+            print(u)
+        return 0
+    if args.action == "update":
+        cfg = cb.load_config(Path(args.config))
+        fetcher = nvd.offline_fetcher(Path(args.offline)) if args.offline else None
+        slugs: set[str] | None = None
+        cat = Path(args.catalog) / "index.json"
+        if cat.exists():
+            slugs = {r["slug"] for r in json.loads(cat.read_text()).get("records", [])}
+        doc, state, report = cb.update(
+            config=cfg,
+            fetcher=fetcher,
+            api_key=os.environ.get("NVD_API_KEY"),
+            backfill=args.backfill,
+            catalog_slugs=slugs,
+            existing=cb.read_index(Path(args.out) / "index.json"),
+            state={} if args.backfill else cb.read_state(Path(args.out) / "state.json"),
+        )
+        problems = cb.validate(doc["records"])
+        for pr in problems[:20]:
+            print("  schema:", pr)
+        if problems:
+            print(f"cves update: {len(problems)} schema problem(s); nothing written", file=sys.stderr)
+            return 1
+        cb.write(doc, state, out_dir=Path(args.out))
+        c = doc["counts"]
+        for e in report["errors"][:10]:
+            print("  error:", e)
+        print(
+            f"cves update ({report['mode']}): {report['queries']} queries, {report['fetched']} records fetched, "
+            f"{len(report['new'])} new, {report['changed']} changed, {len(report['kev_new'])} newly in KEV, "
+            f"{len(report['rejected'])} rejected → {c['total']} listed ({c['included']} included, {c['candidate']} candidates, "
+            f"{c['excluded']} excluded, {c['kev']} in KEV, {c['unscored']} unscored) in {args.out}/index.json"
+        )
+        return 0
+    if args.action == "show":
+        if not args.id:
+            print("show needs a CVE id", file=sys.stderr)
+            return 2
+        rec = next(
+            (r for r in cb.read_index(Path(args.out) / "index.json")["records"] if r["id"] == args.id), None
+        )
+        if not rec:
+            print(f"{args.id} is not in the registry", file=sys.stderr)
+            return 2
+        print(json.dumps(rec, indent=1))
+        return 0
+    if args.action in ("include", "exclude"):
+        if not args.id:
+            print(f"{args.action} needs a CVE id", file=sys.stderr)
+            return 2
+        cb.set_status(
+            args.id,
+            "included" if args.action == "include" else "excluded",
+            args.note,
+            reviewer=args.reviewer,
+            today=dt.date.today(),
+        )
+        print(
+            f"{args.id}: {args.action}d in {cb.OVERRIDES} — re-run `cves update --offline`/the refresh to apply"
+        )
+        return 0
+    if args.action == "spot-check":
+        recs = [
+            r for r in cb.read_index(Path(args.out) / "index.json")["records"] if r["status"] != "excluded"
+        ]
+        random.seed(dt.date.today().isoformat())
+        for r in random.sample(recs, min(args.sample, len(recs))):
+            sev = f"{r['cvss']['severity']} {r['cvss']['score']}" if r.get("cvss") else "unscored"
+            print(
+                f"- [ ] {r['id']} · {sev} · {r['category']} · {', '.join(r['match']['tests'])} · {r['description'][:90]}"
+            )
         return 0
     return 2
 
@@ -572,6 +661,33 @@ def main(argv: list[str] | None = None) -> int:
         help="recheck: where to write the report",
     )
     p.set_defaults(func=cmd_incidents)
+
+    p = sub.add_parser("cves", help="the CVE registry: official CVEs related to AI agents (data/cves/)")
+    p.add_argument(
+        "action",
+        choices=["update", "plan", "show", "include", "exclude", "spot-check"],
+        help="update: read NVD/KEV and rebuild the index; plan: print the backfill queries; show: one record; include/exclude: record a decision in the overrides file; spot-check: a random sample to review",
+    )
+    p.add_argument("id", nargs="?", help="CVE id (show, include, exclude)")
+    p.add_argument("--config", default=str(CONFIG_DIR / "cve_products.json"))
+    p.add_argument("--out", default=str(ROOT / "data" / "cves"))
+    p.add_argument(
+        "--catalog",
+        default=str(ROOT / "data" / "catalog"),
+        help="catalog dir, to keep only agent slugs that exist",
+    )
+    p.add_argument(
+        "--backfill",
+        action="store_true",
+        help="update: run the targeted backfill queries instead of the window since the last run",
+    )
+    p.add_argument(
+        "--offline", help="update: replay saved responses from this directory (kev.json + NVD *.json)"
+    )
+    p.add_argument("--note", help="include/exclude: why")
+    p.add_argument("--reviewer", help="include/exclude: your name; also sets checked_on")
+    p.add_argument("--sample", type=int, default=50, help="spot-check: how many")
+    p.set_defaults(func=cmd_cves)
 
     args = parser.parse_args(argv)
     return int(args.func(args))

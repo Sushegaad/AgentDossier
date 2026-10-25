@@ -1,0 +1,66 @@
+{
+  "version": "cve-products-1.0",
+  "note": "What the CVE registry treats as agent-related (docs/cves.md). General-purpose platforms with an AI feature (n8n, say) are deliberately not listed: listing a product lists every CVE it has, and Test B still catches the agent-specific ones. Test A: a CVE whose affected product (CPE vendor:product, or an exact product name in the description) is listed here. Test B: the CVE cites an agent-specific weakness (CWE in `cwe_agent`) or its description matches the vocabulary. Each product carries one category, the catalog agents it maps to, and the NVD queries the backfill runs for it. Changing this file is a reviewed pull request.",
+  "categories": {
+    "product": "A shipped agent or agent platform a buyer deploys",
+    "framework": "Code agents are built with (frameworks, SDKs, low-code builders)",
+    "protocol": "MCP and A2A servers, SDKs, clients and inspectors",
+    "infrastructure": "Gateways, routers and serving layers agents call through"
+  },
+  "products": [
+    { "id": "github-copilot", "name": "GitHub Copilot", "vendor": "GitHub / Microsoft", "category": "product", "cpe": ["github:copilot", "microsoft:github_copilot", "microsoft:copilot"], "names": ["GitHub Copilot", "Copilot Chat", "Copilot for VS Code", "Copilot CLI", "Copilot coding agent"], "agents": ["github-microsoft-github-copilot-coding-agent"] },
+    { "id": "m365-copilot", "name": "Microsoft 365 Copilot", "vendor": "Microsoft", "category": "product", "cpe": ["microsoft:365_copilot", "microsoft:microsoft_365_copilot", "microsoft:m365_copilot"], "names": ["Microsoft 365 Copilot", "M365 Copilot", "Copilot for Microsoft 365", "Outlook Copilot", "Copilot in Azure", "Copilot Cowork", "Copilot Business Chat"], "agents": ["microsoft-microsoft-365-copilot-for-government"] },
+    { "id": "copilot-studio", "name": "Microsoft Copilot Studio", "vendor": "Microsoft", "category": "product", "cpe": ["microsoft:copilot_studio"], "names": ["Copilot Studio"], "agents": ["microsoft-microsoft-copilot-studio"] },
+    { "id": "sql-copilot", "name": "Copilot in SQL Server Management Studio", "vendor": "Microsoft", "category": "product", "cpe": ["microsoft:sql_server_management_studio"], "names": ["SQL Copilot", "Copilot in SSMS"], "agents": [] },
+    { "id": "amazon-q", "name": "Amazon Q Developer", "vendor": "AWS", "category": "product", "cpe": ["amazon:q_developer", "amazon:amazon_q", "amazon:aws_toolkit"], "names": ["Amazon Q Developer", "Amazon Q"], "agents": ["aws-amazon-q-developer"] },
+    { "id": "bedrock-agentcore", "name": "Amazon Bedrock AgentCore", "vendor": "AWS", "category": "product", "cpe": ["amazon:bedrock_agentcore", "amazon:bedrock"], "names": ["Bedrock AgentCore", "AgentCore"], "agents": ["aws-amazon-bedrock-agents-agentcore"] },
+    { "id": "claude-code", "name": "Claude Code", "vendor": "Anthropic", "category": "product", "cpe": ["anthropic:claude_code"], "names": ["Claude Code"], "agents": ["anthropic-claude-code"] },
+    { "id": "gemini-cli", "name": "Gemini CLI", "vendor": "Google", "category": "product", "cpe": ["google:gemini_cli"], "names": ["Gemini CLI"], "agents": ["google-gemini-cli"] },
+    { "id": "agentforce", "name": "Salesforce Agentforce", "vendor": "Salesforce", "category": "product", "cpe": ["salesforce:agentforce"], "names": ["Agentforce"], "agents": ["salesforce-salesforce-agentforce", "salesforce-agentforce-financial-services", "salesforce-agentforce-insurance", "salesforce-salesforce-government-cloud-agentforce"] },
+    { "id": "cursor", "name": "Cursor", "vendor": "Anysphere", "category": "product", "cpe": ["anysphere:cursor", "cursor:cursor"], "names": ["Cursor IDE", "Cursor AI code editor", "Cursor editor"], "agents": [] },
+    { "id": "windsurf", "name": "Windsurf", "vendor": "Codeium", "category": "product", "cpe": ["codeium:windsurf"], "names": ["Windsurf"], "agents": [] },
+    { "id": "continue", "name": "Continue", "vendor": "Continue", "category": "product", "cpe": ["continue:continue"], "names": ["Continue.dev"], "agents": ["continue-continue"] },
+    { "id": "aider", "name": "Aider", "vendor": "Aider", "category": "product", "cpe": ["aider:aider"], "names": ["Aider"], "agents": ["aider-ai-aider"] },
+    { "id": "openhands", "name": "OpenHands", "vendor": "All Hands AI", "category": "product", "cpe": ["all-hands:openhands", "all_hands:openhands"], "names": ["OpenHands", "OpenDevin"], "agents": ["all-hands-ai-openhands"] },
+    { "id": "goose", "name": "Goose", "vendor": "Block", "category": "product", "cpe": ["block:goose"], "names": ["Block Goose", "goose agent"], "agents": ["block-goose"] },
+    { "id": "chatgpt-agent", "name": "ChatGPT agents and connectors", "vendor": "OpenAI", "category": "product", "cpe": ["openai:chatgpt"], "names": ["ChatGPT Operator", "ChatGPT agent", "Deep Research", "ChatGPT connectors"], "agents": [] },
+    { "id": "langchain", "name": "LangChain", "vendor": "LangChain", "category": "framework", "cpe": ["langchain:langchain"], "names": ["LangChain"], "agents": ["langchain-langchain", "langchain-langchain-deep-agents"] },
+    { "id": "langgraph", "name": "LangGraph", "vendor": "LangChain", "category": "framework", "cpe": ["langchain:langgraph"], "names": ["LangGraph"], "agents": ["langchain-langgraph"] },
+    { "id": "llamaindex", "name": "LlamaIndex", "vendor": "LlamaIndex", "category": "framework", "cpe": ["llamaindex:llamaindex", "llamaindex:llama_index"], "names": ["LlamaIndex", "llama_index", "llama-index"], "agents": ["llamaindex-llamaindex"] },
+    { "id": "autogen", "name": "AutoGen", "vendor": "Microsoft", "category": "framework", "cpe": ["microsoft:autogen"], "names": ["AutoGen"], "agents": ["microsoft-microsoft-autogen", "microsoft-autogen-studio"] },
+    { "id": "semantic-kernel", "name": "Semantic Kernel", "vendor": "Microsoft", "category": "framework", "cpe": ["microsoft:semantic_kernel"], "names": ["Semantic Kernel"], "agents": ["microsoft-microsoft-semantic-kernel"] },
+    { "id": "crewai", "name": "CrewAI", "vendor": "CrewAI", "category": "framework", "cpe": ["crewai:crewai"], "names": ["CrewAI"], "agents": ["crewai-crewai"] },
+    { "id": "openai-agents-sdk", "name": "OpenAI Agents SDK", "vendor": "OpenAI", "category": "framework", "cpe": ["openai:agents_sdk", "openai:openai-agents"], "names": ["OpenAI Agents SDK", "openai-agents"], "agents": ["openai-openai-agents-sdk-python"] },
+    { "id": "pydantic-ai", "name": "Pydantic AI", "vendor": "Pydantic", "category": "framework", "cpe": ["pydantic:pydantic_ai"], "names": ["Pydantic AI", "pydantic-ai"], "agents": ["pydantic-pydantic-ai"] },
+    { "id": "smolagents", "name": "smolagents", "vendor": "Hugging Face", "category": "framework", "cpe": ["huggingface:smolagents"], "names": ["smolagents"], "agents": ["hugging-face-hugging-face-smolagents"] },
+    { "id": "haystack", "name": "Haystack", "vendor": "deepset", "category": "framework", "cpe": ["deepset:haystack"], "names": ["deepset Haystack", "Haystack AI"], "agents": ["deepset-haystack"] },
+    { "id": "letta", "name": "Letta", "vendor": "Letta", "category": "framework", "cpe": ["letta:letta"], "names": ["Letta", "MemGPT"], "agents": ["letta-letta"] },
+    { "id": "agno", "name": "Agno", "vendor": "Agno", "category": "framework", "cpe": ["agno:agno"], "names": ["Agno agent framework", "phidata"], "agents": ["agno-agno"] },
+    { "id": "mastra", "name": "Mastra", "vendor": "Mastra", "category": "framework", "cpe": ["mastra:mastra"], "names": ["Mastra"], "agents": ["mastra-mastra"] },
+    { "id": "dify", "name": "Dify", "vendor": "LangGenius", "category": "framework", "cpe": ["langgenius:dify", "dify:dify"], "names": ["Dify"], "agents": ["langgenius-dify"] },
+    { "id": "flowise", "name": "Flowise", "vendor": "FlowiseAI", "category": "framework", "cpe": ["flowiseai:flowise"], "names": ["Flowise"], "agents": ["flowiseai-flowise"] },
+    { "id": "langflow", "name": "Langflow", "vendor": "Langflow", "category": "framework", "cpe": ["langflow:langflow"], "names": ["Langflow"], "agents": ["langflow-langflow"] },
+    { "id": "anythingllm", "name": "AnythingLLM", "vendor": "Mintplex Labs", "category": "framework", "cpe": ["mintplexlabs:anythingllm", "mintplex_labs:anythingllm"], "names": ["AnythingLLM"], "agents": [] },
+    { "id": "copilotkit", "name": "CopilotKit", "vendor": "CopilotKit", "category": "framework", "cpe": ["copilotkit:copilotkit"], "names": ["CopilotKit"], "agents": ["copilotkit-copilotkit"] },
+    { "id": "mcp-sdk", "name": "Model Context Protocol SDKs and reference servers", "vendor": "Anthropic / MCP project", "category": "protocol", "cpe": ["modelcontextprotocol:", "anthropic:model_context_protocol", "anthropic:mcp"], "names": ["Model Context Protocol", "MCP Inspector", "MCP server", "MCP SDK", "mcp-server"], "agents": ["modelcontextprotocol-python-sdk", "modelcontextprotocol-typescript-sdk"] },
+    { "id": "a2a", "name": "Agent2Agent protocol SDKs", "vendor": "Google / A2A project", "category": "protocol", "cpe": ["google:a2a", "a2aproject:"], "names": ["Agent2Agent", "A2A protocol", "a2a-sdk"], "agents": [] },
+    { "id": "litellm", "name": "LiteLLM", "vendor": "BerriAI", "category": "infrastructure", "cpe": ["litellm:litellm", "berriai:litellm"], "names": ["LiteLLM"], "agents": [] },
+    { "id": "vllm", "name": "vLLM", "vendor": "vLLM", "category": "infrastructure", "cpe": ["vllm:vllm", "vllm-project:vllm"], "names": ["vLLM"], "agents": [] },
+    { "id": "ollama", "name": "Ollama", "vendor": "Ollama", "category": "infrastructure", "cpe": ["ollama:ollama"], "names": ["Ollama"], "agents": [] },
+    { "id": "open-webui", "name": "Open WebUI", "vendor": "Open WebUI", "category": "infrastructure", "cpe": ["openwebui:open_webui", "open-webui:open-webui"], "names": ["Open WebUI"], "agents": ["open-webui-open-webui"] },
+    { "id": "lmcache", "name": "LMCache", "vendor": "LMCache", "category": "infrastructure", "cpe": ["lmcache:lmcache"], "names": ["LMCache"], "agents": [] }
+  ],
+  "cwe_agent": ["CWE-1427"],
+  "vocabulary": {
+    "strong": ["prompt injection", "llm prompting", "model context protocol", "mcp server", "mcp client", "ai agent", "ai agents", "agentic", "tool call", "tool calling", "function calling", "llm-based", "llm application", "llm agent", "autonomous agent", "coding agent", "agent framework", "retrieval-augmented", "rag pipeline"],
+    "weak": ["large language model", "language model", "llm", "chatbot", "ai assistant", "copilot", "generative ai"]
+  },
+  "exclude_products": [
+    { "cpe": "microsoft:windows", "why": "Program Compatibility Assistant and other Windows components matched the word 'assistant' on the first scout run" }
+  ],
+  "backfill": {
+    "since": "2023-01-01",
+    "keyword_queries": ["prompt injection", "large language model", "LLM", "AI agent", "agentic", "model context protocol", "MCP server", "chatbot", "copilot", "LangChain", "LlamaIndex", "AutoGen", "Semantic Kernel", "CrewAI", "Dify", "Flowise", "Langflow", "AnythingLLM", "LiteLLM", "vLLM", "Ollama", "Open WebUI", "LMCache", "Amazon Q", "Gemini CLI", "Claude Code", "Agentforce", "Cursor IDE", "Windsurf", "OpenHands", "Aider", "Copilot Studio", "GitHub Copilot", "Microsoft 365 Copilot"],
+    "cwe_queries": ["CWE-1427"]
+  }
+}

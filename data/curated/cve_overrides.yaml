@@ -1,0 +1,11 @@
+# The curated layer of the CVE registry (docs/cves.md). The pipeline writes data/cves/index.json;
+# a person records decisions here and they are applied on every run:
+#   cves:
+#     CVE-2026-12957: { status: included, reviewer: "Name", checked_on: 2026-10-25, note: "..." }
+#     CVE-2026-00001: { status: excluded, note: "a Windows component, not an agent" }
+#     Optional per-CVE overrides: category, surface (list), related_agents (list), related_incidents.
+#   exclude_products:            # CPE vendor:product prefixes never to list again
+#     - { cpe: "microsoft:windows", why: "..." }
+# `agentdossier cves include|exclude <id> --note` edits this file for you.
+cves: {}
+exclude_products: []

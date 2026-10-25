@@ -15,3 +15,15 @@ Source terms for every connector are recorded in `config/sources.json`.
 ## Archivo (web font)
 
 The public site self-hosts the Archivo typeface (latin subset, `web/public/fonts/archivo-latin.woff2`), by Omnibus-Type, licensed under the SIL Open Font License 1.1. https://github.com/Omnibus-Type/Archivo
+
+## CVE registry data
+
+- CVE records (ids, descriptions, references, affected products) are from the CVE Program
+  (CVE.org, operated by MITRE for CISA) and are used under the CVE Terms of Use with attribution.
+- CVSS scores, CWE mappings and CPE applicability are from the National Vulnerability Database
+  (NIST), a US government work in the public domain.
+- Known-exploited status is from CISA's Known Exploited Vulnerabilities catalog, public domain.
+
+The registry's classification (category, surface tags, links, status) is its own and is CC BY 4.0
+like the rest of the compiled catalog data.
+
