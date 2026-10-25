@@ -110,9 +110,30 @@ def check_incident_count(problems: list[str]) -> None:
         )
 
 
+def check_cve_products(problems: list[str]) -> None:
+    cfg = ROOT / "config" / "cve_products.json"
+    doc = ROOT / "docs" / "cves.md"
+    if not cfg.exists() or not doc.exists():
+        return
+    import json  # noqa: PLC0415
+
+    n = len(json.loads(_read(cfg)).get("products") or [])
+    m = re.search(r"\*\*(\d+)\s+products\*\*", _read(doc))
+    if not m:
+        problems.append("docs/cves.md: expected a '**N products**' count (What counts)")
+    elif int(m.group(1)) != n:
+        problems.append(f"docs/cves.md says {m.group(1)} products; config/cve_products.json lists {n}")
+
+
 def run() -> list[str]:
     problems: list[str] = []
-    for check in (check_test_count, check_versions, check_docs_list, check_incident_count):
+    for check in (
+        check_test_count,
+        check_versions,
+        check_docs_list,
+        check_incident_count,
+        check_cve_products,
+    ):
         check(problems)
     return problems
 

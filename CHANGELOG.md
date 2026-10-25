@@ -6,6 +6,21 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Added — CVE registry (data stage, PR 1 of 3)
+- **`agentdossier cves update`** runs in the weekly refresh: reads official records from NVD API
+  2.0 (the CVE.org record plus CVSS, CWE, CPE) and the CISA KEV catalog, keeps a CVE when a listed
+  agent product/framework/protocol/infrastructure is affected (Test A: CPE or exact name, 41
+  products in `config/cve_products.json`) or the weakness is agent-specific (Test B: CWE-1427 or
+  the vocabulary), assigns a category and attack-surface tags, links catalog agents and incidents,
+  applies the maintainer's `data/curated/cve_overrides.yaml` (include/exclude/notes/signatures,
+  retired products), and writes `data/cves/index.json` validated against
+  `schema/cve_record.schema.json`. Deterministic; `--offline <dir>` replays saved responses;
+  `cves plan|show|include|exclude|spot-check`. First backfill (2023 onward, 35 targeted queries):
+  2,149 fetched → 1,741 listed across 33 products, 10 in KEV. Exploit-tagged references are never
+  stored; nothing here enters a score. The scout now hands bare advisory URLs to this registry
+  instead of filing them as incident candidates. The refresh PR body lists new CVEs, KEV additions
+  and a 50-row precision spot-check. `docs/cves.md`; the site tab follows in PR 2.
+
 ### Fixed — documentation drift, and a guard against it
 - Eleven PRs had shipped without updating the documents that describe them. Corrected: README
   (the incident registry, weekly scout and re-check in the Traces feature; the harness described

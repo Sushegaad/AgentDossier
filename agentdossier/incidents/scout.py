@@ -66,6 +66,7 @@ class ScoutReport:
     kept: int = 0
     pruned: int = 0
     already_incident: int = 0
+    cve_advisories: int = 0  # advisory URLs handed to the CVE registry instead of filed here
 
     def as_dict(self) -> dict[str, Any]:
         return {
@@ -76,6 +77,7 @@ class ScoutReport:
             "kept": self.kept,
             "pruned": self.pruned,
             "already_incident": self.already_incident,
+            "cve_advisories": self.cve_advisories,
         }
 
 
@@ -179,6 +181,21 @@ def normalize_url(url: str) -> str:
     )
     path = re.sub(r"/+$", "", p.path) or ""
     return f"{host}{path}" + (f"?{query}" if query else "")
+
+
+_ADVISORY_HOSTS = (
+    "msrc.microsoft.com/update-guide",
+    "nvd.nist.gov/vuln",
+    "cve.org/cverecord",
+    "cve.mitre.org",
+    "github.com/advisories",
+)
+
+
+def is_cve_advisory(url: str) -> bool:
+    """A link that is itself a CVE record or vendor advisory page (not a write-up about an event)."""
+    low = normalize_url(url)
+    return any(low.startswith(h) for h in _ADVISORY_HOSTS)
 
 
 def candidate_id(url: str) -> str:
@@ -323,6 +340,11 @@ def scout(
             key = normalize_url(it.url)
             if key in known_urls:
                 report.already_incident += 1
+                continue
+            if is_cve_advisory(it.url):
+                # a bare advisory is a vulnerability record, not an incident: the CVE registry lists
+                # it (agentdossier cves update reads NVD, which carries every CNA advisory)
+                report.cve_advisories += 1
                 continue
             cid = candidate_id(it.url)
             if cid in seen_this_run:

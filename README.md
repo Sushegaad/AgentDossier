@@ -16,7 +16,7 @@ can scan an enterprise's own network for the agents already running there.
 - **Public demo:** https://sushegaad.github.io/AgentDossier/ — static, no accounts, no cookies; the demo build sends only aggregate, cookieless page counts
 - **Self-hosted edition:** the same MIT codebase as one container with an authorized private-network scanner, ARD REST API, policy qualification, decision workflow and integrations
 - **Worked comparison:** [three ways to let a coding agent into a private repository](https://sushegaad.github.io/AgentDossier/compare/coding-agents-private-repo/) — the same five deployment questions answered for six agents from their own documentation
-- **Docs:** [`docs/methodology.md`](docs/methodology.md) (how evidence is graded), [`docs/traces.md`](docs/traces.md) and [`docs/traces-spec.md`](docs/traces-spec.md) (traces and vendor publishing), [`docs/incidents.md`](docs/incidents.md) (the incident registry and its weekly upkeep), [`docs/enterprise-runbook.md`](docs/enterprise-runbook.md) (run your own), [`docs/architecture.md`](docs/architecture.md), [`docs/brd-traceability.md`](docs/brd-traceability.md), [`CHANGELOG.md`](CHANGELOG.md)
+- **Docs:** [`docs/methodology.md`](docs/methodology.md) (how evidence is graded), [`docs/traces.md`](docs/traces.md) and [`docs/traces-spec.md`](docs/traces-spec.md) (traces and vendor publishing), [`docs/incidents.md`](docs/incidents.md) (the incident registry and its weekly upkeep), [`docs/cves.md`](docs/cves.md) (the CVE registry), [`docs/enterprise-runbook.md`](docs/enterprise-runbook.md) (run your own), [`docs/architecture.md`](docs/architecture.md), [`docs/brd-traceability.md`](docs/brd-traceability.md), [`CHANGELOG.md`](CHANGELOG.md)
 
 ### How it grades evidence
 
@@ -97,8 +97,9 @@ cd web && npm ci && CATALOG_DIR=/tmp/catalog npm run dev
 the GitHub connector and release feeds and `NVD_API_KEY` lifts the NVD rate
 limit. Hand-verified evidence, publisher-domain checks and documented
 protocol support live in `data/curated/`. The public catalog is rebuilt every
-Monday by `.github/workflows/refresh.yml` — which also scouts public feeds for
-candidate incidents and re-checks every incident's source links — and the
+Monday by `.github/workflows/refresh.yml` — which also updates the CVE registry,
+scouts public feeds for candidate incidents and re-checks every incident's
+source links — and the
 result is opened as a reviewable pull request, then published through GitHub
 Pages.
 
@@ -202,6 +203,12 @@ decide.
   tested, and produces tier-1 traces once a model-provider key is configured —
   until then no public harness trace exists, and the site says so.
   See [`docs/incidents.md`](docs/incidents.md).
+- **CVE registry.** Every official CVE that touches an agent product, framework,
+  protocol implementation or the infrastructure agents call through — from NVD
+  and CISA KEV, classified by category and attack surface, cross-linked to
+  dossiers and incidents, with a maintainer's include/exclude layer — rebuilt
+  every Monday (`data/cves/`, [`docs/cves.md`](docs/cves.md)). A CVE count never
+  changes a score.
 - **Discovery and curation.** A curated Top 100 per domain plus agents
   discovered from GitHub, Hugging Face, the MCP registry, marketplaces and ARD
   manifests, with demo, deprecated and abandoned projects filtered out.

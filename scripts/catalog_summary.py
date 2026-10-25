@@ -78,3 +78,35 @@ if check.exists():
                 print(f"- [ ] {iid}: **{line['status']}** (HTTP {line['http']}) {line['url']}{where}")
     if not rdoc.get("needs_attention"):
         print("\nNothing needs attention.")
+
+# the CVE registry: what changed this week, and a sample to spot-check for precision
+cve_index = Path("data/cves/index.json")
+if cve_index.exists():
+    cdoc = json.loads(cve_index.read_text())
+    recs = cdoc.get("records") or []
+    cc = cdoc.get("counts") or {}
+    built = cdoc.get("built_at")
+    fresh = [r for r in recs if r.get("retrieved_on") == built and r.get("status") == "candidate"]
+    kev = [r for r in recs if r.get("kev")]
+    print(
+        f"\n### CVE registry\n\n{cc.get('total', 0)} CVEs listed ({cc.get('included', 0)} included, "
+        f"{cc.get('candidate', 0)} candidates, {cc.get('kev', 0)} in CISA KEV, {cc.get('unscored', 0)} unscored) "
+        f"across {len(cdoc.get('products_matched') or [])} listed products, as of {built}. "
+        "Decide with `agentdossier cves include|exclude <id> --note`.\n"
+    )
+    for r in sorted(fresh, key=lambda r: r.get("published") or "", reverse=True)[:15]:
+        sev = f"{r['cvss']['severity']} {r['cvss']['score']}" if r.get("cvss") else "unscored"
+        prod = ", ".join(
+            sorted({p.get("product_id") or p["product"] for p in r.get("products") or []})
+        ) or r.get("category")
+        print(f"- `{r['id']}` {sev} · {prod} · {', '.join(r['match']['tests'])}: {r['description'][:110]}")
+    if len(fresh) > 15:
+        print(f"- … and {len(fresh) - 15} more candidates in `data/cves/index.json`")
+    pool = [r for r in recs if r.get("status") != "excluded"]
+    if pool:
+        random.seed(str(built))
+        print(
+            "\n#### CVE spot-check (tick when the CVE is genuinely about an agent product, framework, protocol or infrastructure)\n"
+        )
+        for r in random.sample(pool, min(50, len(pool))):
+            print(f"- [ ] {r['id']} · {r['category']} · {', '.join(r['match']['tests'])}")

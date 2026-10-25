@@ -51,6 +51,12 @@ jobs:
             ${LIMIT:+--limit $LIMIT} ${NEWS_LIMIT:+--news-limit $NEWS_LIMIT}
       - name: Validate outputs
         run: uv run python scripts/validate_catalog.py data/catalog
+      - name: Update the CVE registry (official CVEs related to agents)
+        # NVD API 2.0 + CISA KEV → data/cves/index.json. A window since the last run; the overrides
+        # file carries the maintainer's decisions. Never a score, never an exploit.
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+        run: uv run agentdossier cves update
       - name: Scout the public record for candidate incidents
         # Reads the feeds in config/trace_sources.json and updates data/curated/incident_candidates.yaml.
         # Candidates are leads for the maintainer (promote with `agentdossier incidents draft <id>`);
@@ -80,4 +86,5 @@ jobs:
             data/traces/**
             data/curated/incident_candidates.yaml
             data/curated/incident_source_check.json
+            data/cves/**
           delete-branch: true
