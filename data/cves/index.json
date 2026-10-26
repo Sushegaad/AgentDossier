@@ -1,11 +1,11 @@
 {
  "version": "cves-1.0",
- "built_at": "2026-10-25",
+ "built_at": "2026-10-26",
  "config_version": "cve-products-1.0",
  "counts": {
-  "total": 1753,
+  "total": 1762,
   "included": 0,
-  "candidate": 1753,
+  "candidate": 1762,
   "excluded": 0,
   "kev": 10,
   "unscored": 1
@@ -38,6 +38,74 @@
   "windsurf"
  ],
  "records": [
+  {
+   "id": "CVE-2026-116109",
+   "description": "A vulnerability has been found in continuedev Continue 2.0.0. This vulnerability affects the function MCPManagerSingleton.setConnections of the file core/config/ConfigHandler.ts of the component MCP Server Transport. Such manipulation leads to os command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+   "published": "2026-10-26",
+   "last_modified": "2026-10-26",
+   "vuln_status": "Received",
+   "cna": "cna@vuldb.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cna@vuldb.com"
+   },
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "code_execution",
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://vuldb.com/cve/CVE-2026-116109",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/1003288",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/426177",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/426177/cti",
+     "source": "cna@vuldb.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
+  },
   {
    "id": "CVE-2026-116172",
    "description": "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers to bypass max_logprobs limits via CandidateTokens.top_n. Attackers can send Generate or GenerateStream requests with oversized or integer-wrapping top_n values to trigger torch.topk failures that terminate EngineCore.",
@@ -98,7 +166,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116173",
@@ -162,7 +230,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116174",
@@ -224,7 +292,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116175",
@@ -286,7 +354,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116176",
@@ -350,7 +418,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116177",
@@ -415,7 +483,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116178",
@@ -479,7 +547,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116179",
@@ -543,7 +611,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116180",
@@ -607,7 +675,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-116181",
@@ -669,7 +737,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-115477",
@@ -1284,7 +1352,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-111079",
@@ -34224,7 +34292,7 @@
    "id": "CVE-2026-72846",
    "description": "Lightdash stores the webhook URL supplied with a scheduled delivery and later posts to it from sendWebhook in packages/backend/src/clients/GoogleChat/GoogleChatClient.ts and in packages/backend/src/clients/MicrosoftTeams/MicrosoftTeamsClient.ts. In affected versions both call fetch on the stored URL directly. The validatePublicHttpUrl helper in packages/backend/src/utils/ssrfProtection.ts, used for MCP server URLs, is not applied on either path, and the webhook fields carry no server-side URL constraint. A user able to create or trigger a scheduled delivery can therefore direct the server to issue POST requests to private, loopback and link-local addresses, including cloud metadata endpoints, and can distinguish reachable internal services from unreachable ones through the resulting errors. The upstream response is never returned to the requester; on a failure status its body is written to the server log instead. Version 1.146.4 routes both clients through postSchedulerWebhook from packages/backend/src/utils/schedulerWebhookValidation rather than calling fetch directly.",
    "published": "2026-08-20",
-   "last_modified": "2026-10-08",
+   "last_modified": "2026-10-26",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -34299,7 +34367,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-72848",
@@ -34574,7 +34642,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-76832",
@@ -36029,7 +36097,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-49857",
@@ -36091,7 +36159,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59714",
@@ -36303,7 +36371,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73484",
@@ -36366,7 +36434,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73485",
@@ -36430,7 +36498,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73486",
@@ -36493,7 +36561,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73487",
@@ -36562,7 +36630,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73488",
@@ -36626,7 +36694,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73555",
@@ -37127,7 +37195,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73602",
@@ -37198,7 +37266,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73603",
@@ -37262,7 +37330,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73604",
@@ -37326,7 +37394,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73614",
@@ -37397,7 +37465,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73654",
@@ -37833,7 +37901,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-27765",
@@ -37959,7 +38027,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70335",
@@ -38024,7 +38092,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-72768",
@@ -38093,7 +38161,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73032",
@@ -38171,7 +38239,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-73068",
@@ -38439,7 +38507,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-71962",
@@ -38510,7 +38578,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-72718",
@@ -38578,7 +38646,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-72917",
@@ -38643,7 +38711,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-19334",
@@ -38913,7 +38981,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48039",
@@ -39046,7 +39114,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61808",
@@ -39108,7 +39176,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-19022",
@@ -39411,7 +39479,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-67621",
@@ -39481,7 +39549,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-67622",
@@ -39552,7 +39620,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70636",
@@ -39623,7 +39691,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-10128",
@@ -40337,7 +40405,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7657",
@@ -40463,7 +40531,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7869",
@@ -40526,7 +40594,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8182",
@@ -40590,7 +40658,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8183",
@@ -40653,7 +40721,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8446",
@@ -40718,7 +40786,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8470",
@@ -40781,7 +40849,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8478",
@@ -40844,7 +40912,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9077",
@@ -40972,7 +41040,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9130",
@@ -41037,7 +41105,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9196",
@@ -41104,7 +41172,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9201",
@@ -41167,7 +41235,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9205",
@@ -41228,7 +41296,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-18830",
@@ -41287,7 +41355,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48121",
@@ -41366,7 +41434,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54020",
@@ -41904,7 +41972,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-69256",
@@ -41986,7 +42054,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-69257",
@@ -42069,7 +42137,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-69258",
@@ -42152,7 +42220,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-69259",
@@ -42235,7 +42303,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-69262",
@@ -42317,7 +42385,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-69263",
@@ -42400,7 +42468,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-69264",
@@ -42481,7 +42549,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70470",
@@ -42561,7 +42629,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70471",
@@ -42638,7 +42706,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70472",
@@ -42735,7 +42803,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70473",
@@ -42820,7 +42888,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70474",
@@ -42888,7 +42956,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70475",
@@ -42984,7 +43052,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70476",
@@ -43066,7 +43134,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70477",
@@ -43164,7 +43232,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70478",
@@ -43238,7 +43306,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-70479",
@@ -45465,7 +45533,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-18266",
@@ -45526,7 +45594,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-63118",
@@ -45594,7 +45662,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-63119",
@@ -45661,7 +45729,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-67430",
@@ -45728,7 +45796,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-67431",
@@ -45795,7 +45863,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-67432",
@@ -45862,7 +45930,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-13442",
@@ -46002,7 +46070,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9680",
@@ -46053,7 +46121,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-17534",
@@ -46120,7 +46188,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-17433",
@@ -46198,7 +46266,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-50517",
@@ -46261,7 +46329,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-66004",
@@ -46329,7 +46397,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-66027",
@@ -46401,7 +46469,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-16584",
@@ -46463,7 +46531,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-16796",
@@ -46534,7 +46602,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47769",
@@ -46596,7 +46664,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-65698",
@@ -46655,7 +46723,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-44192",
@@ -46715,7 +46783,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-65015",
@@ -46788,7 +46856,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-65594",
@@ -46858,7 +46926,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47397",
@@ -46925,7 +46993,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47708",
@@ -46992,7 +47060,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-65056",
@@ -47061,7 +47129,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-65315",
@@ -47128,7 +47196,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-46555",
@@ -47212,7 +47280,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47128",
@@ -47269,7 +47337,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47255",
@@ -47417,7 +47485,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-57495",
@@ -47547,7 +47615,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-13446",
@@ -47610,7 +47678,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-13448",
@@ -47678,7 +47746,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-14499",
@@ -47741,7 +47809,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-14501",
@@ -47872,7 +47940,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-15995",
@@ -47932,7 +48000,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-57860",
@@ -48010,7 +48078,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-58195",
@@ -48099,7 +48167,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-63093",
@@ -48160,7 +48228,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7667",
@@ -48223,7 +48291,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7754",
@@ -48286,7 +48354,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7755",
@@ -48353,7 +48421,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7872",
@@ -48416,7 +48484,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8056",
@@ -48479,7 +48547,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8476",
@@ -48542,7 +48610,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8481",
@@ -48605,7 +48673,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8505",
@@ -48670,7 +48738,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8635",
@@ -48734,7 +48802,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-8859",
@@ -48797,7 +48865,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9103",
@@ -48860,7 +48928,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9135",
@@ -48925,7 +48993,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9198",
@@ -49000,7 +49068,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-9202",
@@ -49063,7 +49131,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-11371",
@@ -49189,7 +49257,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-44968",
@@ -49266,7 +49334,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-44969",
@@ -49343,7 +49411,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-44970",
@@ -49418,7 +49486,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-46341",
@@ -49491,7 +49559,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47751",
@@ -49573,7 +49641,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59864",
@@ -49651,7 +49719,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-15583",
@@ -49704,7 +49772,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-15746",
@@ -49770,7 +49838,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-30623",
@@ -49911,7 +49979,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-52869",
@@ -50014,7 +50082,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-52870",
@@ -50102,7 +50170,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54052",
@@ -50174,7 +50242,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55608",
@@ -50253,7 +50321,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-56398",
@@ -50401,7 +50469,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61736",
@@ -50483,7 +50551,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61740",
@@ -50556,7 +50624,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-15643",
@@ -50616,7 +50684,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47282",
@@ -50682,7 +50750,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48561",
@@ -50812,7 +50880,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55145",
@@ -50878,7 +50946,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-58617",
@@ -50943,7 +51011,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-15574",
@@ -51018,7 +51086,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-15685",
@@ -51140,7 +51208,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-62240",
@@ -51218,7 +51286,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-62328",
@@ -51281,7 +51349,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-56271",
@@ -51352,7 +51420,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61428",
@@ -51413,7 +51481,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61439",
@@ -51474,7 +51542,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61445",
@@ -51537,7 +51605,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61447",
@@ -51602,7 +51670,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-13236",
@@ -51664,7 +51732,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-13237",
@@ -51726,7 +51794,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-50181",
@@ -52026,7 +52094,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-60086",
@@ -52087,7 +52155,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61459",
@@ -52170,7 +52238,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-61461",
@@ -52260,7 +52328,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55604",
@@ -52321,7 +52389,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55605",
@@ -52389,7 +52457,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59207",
@@ -52466,7 +52534,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59212",
@@ -53925,7 +53993,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-56273",
@@ -54076,7 +54144,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59819",
@@ -54153,7 +54221,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59820",
@@ -54239,7 +54307,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59821",
@@ -54318,7 +54386,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59822",
@@ -54423,7 +54491,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-59706",
@@ -54510,7 +54578,7 @@
    "id": "CVE-2026-14898",
    "description": "The OpenAI Codex desktop app for macOS rendered remote images from Markdown in model responses. An attacker who could place an indirect prompt injection in content processed by Codex, such as a connected-tool result or another untrusted source, could induce the model to construct a remote image URL containing sensitive data. The app automatically fetched that URL when rendering the response, sending the embedded data to an attacker-controlled server without a separate user click. Successful exploitation could exfiltrate secrets and other information accessible in the Codex session, including API keys, source code, and data returned by connected tools. No direct integrity or availability impact was demonstrated, and there is no known exploitation in the wild.",
    "published": "2026-07-06",
-   "last_modified": "2026-07-07",
+   "last_modified": "2026-10-25",
    "vuln_status": "Awaiting Analysis",
    "cna": "8f4f43ab-ba69-4d92-aa1d-d772184d6fb7",
    "cvss": {
@@ -54557,7 +54625,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-44934",
@@ -54610,13 +54678,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54234",
    "description": "vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. Prior to 0.24.0, a frontend-legal multi-request speculative decoding workload can cause the rejection sampler to produce a recovered token equal to the model vocabulary size boundary value, which is then converted to negative one when the engine selects the next live token for a request and is written back into the drafter's input ids; that out-of-vocabulary value is later consumed by the model's embedding and attention path and crashes the engine worker with a GPU device-side assertion. The same triggering request sequence is reachable through the public gRPC Generate and Abort endpoints, so a remote client that can send generation requests can crash the shared engine worker, aborting concurrent requests and causing a service-wide denial of service for other clients of the deployment until the worker is restarted. This issue is fixed in version 0.24.0.",
    "published": "2026-07-06",
-   "last_modified": "2026-07-07",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -54680,13 +54748,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55514",
    "description": "vLLM is a library for LLM inference and serving. From 0.12.0 to before 0.24.0, sending a pure prompt embeds payload in a /v1/completions request with a model using M-RoPE causes EngineCore to fail an assertion and fatally crash, shutting down the entire server application. Any remote user who is authorized to make a /v1/completions request can make such a request and induce a crash. This issue is fixed in version 0.24.0.",
    "published": "2026-07-06",
-   "last_modified": "2026-07-07",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -54761,13 +54829,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55574",
    "description": "vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. Prior to 0.24.0, the structured_outputs.regex API parameter passes a user-supplied regular expression string directly to the grammar compiler backends with no compilation timeout; in the xgrammar backend the string reaches the regex compiler with no guard, and in the outlines backend the validation step blocks structural issues such as lookarounds and backreferences but performs no complexity analysis, so a pattern with nested quantifiers passes all checks and causes exponential state-space expansion, allowing a single request containing an adversarial regex to hang an inference worker indefinitely and deny service. This issue is fixed in version 0.24.0.",
    "published": "2026-07-06",
-   "last_modified": "2026-07-07",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -54836,13 +54904,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55646",
    "description": "vLLM is an inference and serving engine for large language models. From 0.22.0 to 0.23.0, the /v1/audio/transcriptions and /v1/audio/translations routes call request.file.read() to fully materialize an uploaded audio file into memory before vLLM checks the documented VLLM_MAX_AUDIO_CLIP_FILESIZE_MB compressed upload size limit (default 25 MB) later in the speech-to-text preprocessing step, so an API caller who can reach those routes can submit an oversized multipart upload and cause vLLM to allocate memory proportional to the uploaded file size before the request is rejected as too large, creating memory pressure or terminating the process depending on deployment resource limits. This issue is fixed in version 0.24.0.",
    "published": "2026-07-06",
-   "last_modified": "2026-07-07",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -54923,7 +54991,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-14742",
@@ -55023,7 +55091,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-14630",
@@ -55121,13 +55189,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-13341",
    "description": "A vulnerability exists in the Kong Konnect Model Context Protocol (MCP) server prior to version 1.0.0, which could allow a remote attacker to perform an indirect prompt injection attack and execute unintended API requests.",
    "published": "2026-07-03",
-   "last_modified": "2026-07-06",
+   "last_modified": "2026-10-25",
    "vuln_status": "Awaiting Analysis",
    "cna": "02762ae7-200e-4b20-9b2b-a77d5b8fc4cb",
    "cvss": {
@@ -55174,13 +55242,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-41106",
    "description": "Url redirection to untrusted site ('open redirect') in M365 Copilot allows an unauthorized attacker to elevate privileges over a network.",
    "published": "2026-07-02",
-   "last_modified": "2026-07-07",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "secure@microsoft.com",
    "cvss": {
@@ -55237,13 +55305,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-52830",
    "description": "fast-mcp-telegram is a Telegram MCP Server. Prior to 0.19.1, fast-mcp-telegram validates HTTP Bearer tokens by joining the raw token string into a session-file path. The verifier rejects the exact reserved token telegram, but it does not reject path separators or normalize the path before checking whether the session file exists. A remote HTTP client can therefore authenticate as the default legacy session with a token such as ../fast-mcp-telegram/telegram when the documented default session file ~/.config/fast-mcp-telegram/telegram.session exists. This bypasses the reserved session name control that is intended to prevent HTTP multi-user sessions from colliding with the default stdio or legacy account. With account-prefixed MCP tools enabled, the attacker still sees and calls the prefixed tools for the default account, so the prefix middleware does not stop the session selection bypass. This vulnerability is fixed in 0.19.1.",
    "published": "2026-07-02",
-   "last_modified": "2026-07-06",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -55300,7 +55368,73 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
+  },
+  {
+   "id": "CVE-2026-59098",
+   "description": "LobeChat through 2.2.9 contains a broken access control vulnerability in the retrieval-augmented-generation semantic search functionality that allows authenticated attackers to access other users' data by exploiting missing user-identifier predicates in the chunk model semanticSearch method. Attackers can supply arbitrary victim file or knowledge-base identifiers through the chunk retrieval and chat knowledge-base paths to retrieve text content, file names, and metadata belonging to other users.",
+   "published": "2026-07-02",
+   "last_modified": "2026-10-25",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-639"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/lobehub/lobehub/commit/4a7931a4e66832947dba11afdffae2918a56b6a0",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/lobehub/lobehub/issues/16535",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/lobehub/lobehub/pull/16594",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/lobechat-cross-user-document-disclosure-via-unscoped-rag-semantic-search",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "retrieval-augmented"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-13323",
@@ -55365,13 +55499,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-10129",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.3 contains a Server-Side Request Forgery (SSRF) protection bypass vulnerability in the API Request component. An authenticated attacker with low-level privileges (flow author role) can bypass SSRF protections by enabling the follow_redirects parameter and supplying a public URL that redirects to internal/localhost addresses. The vulnerability exists because the application validates only the initial URL but does not re-validate redirect destinations. This allows attackers to access internal HTTP services, localhost endpoints, cloud metadata services, and private network resources that should be unreachable when SSRF protection is enabled. Successful exploitation can lead to disclosure of sensitive information including credentials, tokens, internal API responses, and administrative panel data.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -55430,13 +55564,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-10134",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.3 allows an attacker to read every secret available to the Langflow process, read and modify every flow, conversation, message, file upload, and saved component in the Langflow database, can connect to internal services, abuse cloud metadata endpoints, laterally move to other tenants on the same Langflow instance, and Establish persistence by modifying the public flow's `tool_code` so normal `/api/v1/build/...` calls by any user re-execute attacker code at each build.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -55494,13 +55628,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-10140",
    "description": "IBM Langflow OSS 1.0.0 through 1.10.0 voice mode contains improper shared-state handling that allows reuse of API clients across tenant boundaries. An authenticated attacker can manipulate cache state to cause requests from other users to be processed using incorrect upstream API credentials, leading to cross-tenant billing and accountability misattribution.",
    "published": "2026-06-30",
-   "last_modified": "2026-08-11",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -55558,13 +55692,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-10546",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.3 contains a Server-Side Request Forgery (SSRF) vulnerability in the URL component ( src/lfx/src/lfx/components/data_source/url.py ) due to a Time-of-Check/Time-of-Use (TOCTOU) race condition that can be exploited via DNS rebinding.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -55621,13 +55755,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-10560",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.6 contains a missing authentication vulnerability in /api/v1/build_public_tmp/ endpoints that allows an unauthenticated attacker to read build event data or cancel jobs using a valid job identifier, resulting in information disclosure and denial of service.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -55687,13 +55821,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-10564",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.6 contains a Server-Side Request Forgery (SSRF). The legacy RSSReaderComponent in rss.py and SearXNG component in searxng.py make unvalidated HTTP requests to user-controlled URLs, bypassing SSRF protections introduced in version 1.9.3. An authenticated attacker can exploit this to access internal resources including cloud metadata services (AWS/Azure/GCP IMDS), potentially exfiltrating IAM credentials and enumerating internal networks. The vulnerability can also be triggered through prompt injection in agentic workflows due to tool_mode=True exposure.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -55756,7 +55890,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-56277",
@@ -56061,7 +56195,7 @@
    "id": "CVE-2026-7663",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations due to improper authorization enforcement in the Streamable MCP transport endpoint.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -56119,13 +56253,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7803",
    "description": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow arbitrary code execution due to improper validation of flow nodes with missing or empty component type fields.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -56183,13 +56317,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7871",
    "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows users with Redis access to execute arbitrary code with full application privileges, compromising all secrets, data, and system integrity.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -56247,13 +56381,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7873",
    "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows authenticated attackers to execute arbitrary OS commands and read sensitive files including credentials, enabling complete system compromise and lateral movement.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -56311,13 +56445,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7874",
    "description": "IBM Langflow OSS 1.0.0 through 1.10.0 Langflow could allow disclosure of all stored credentials due to the use of a weak and reversible key derivation mechanism for encryption at rest.",
    "published": "2026-06-30",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -56374,13 +56508,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-13437",
    "description": "Insertion of sensitive information into sent data in the AI Agent job API in Devolutions PowerShell Universal 2026.2.0 allows an authenticated user with AI Agent read access to obtain reusable, potentially higher-privileged authentication tokens via App Tokens serialized in plaintext in job API responses.",
    "published": "2026-06-29",
-   "last_modified": "2026-07-02",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security@devolutions.net",
    "cvss": {
@@ -56436,13 +56570,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-46406",
    "description": "Claude Code is an agentic coding tool.  From 2.1.59 until 2.1.128, the Claude Code /copy command wrote responses to a hardcoded, predictable path (/tmp/claude/response.md) without UID isolation, randomness, or symlink protection. The file was created world-readable (0644) in a world-traversable directory (0755), allowing any local user to read a privileged user's Claude response, which could contain secrets or credentials. Additionally, because the path was static and predictable, a local attacker could pre-create the directory and plant a symlink at the expected file path, causing the privileged process to follow the symlink and overwrite an attacker-chosen file with the response text. Exploiting this required a local unprivileged user on the same system and a privileged user to run the /copy command. This vulnerability is fixed in 2.1.128.",
    "published": "2026-06-29",
-   "last_modified": "2026-06-30",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -56504,13 +56638,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55607",
    "description": "Claude Code is an agentic coding tool.  From 2.1.38 until 2.1.163, Claude Code's worktree handling allowed creation of worktrees named \".git\" and navigation to worktrees outside the sandbox context, enabling git directory confusion attacks. By exploiting symlink manipulation and git fsmonitor execution during worktree operations, an attacker could overwrite files in the user's home directory (such as .zshenv), leading to code execution outside of seatbelt sandbox restrictions. Reliably exploiting this required the user to clone a malicious repository containing prompt injection content and run Claude Code against it. This vulnerability is fixed in 2.1.163.",
    "published": "2026-06-29",
-   "last_modified": "2026-06-30",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -56574,7 +56708,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-58057",
@@ -56638,7 +56772,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-4339",
@@ -56758,7 +56892,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-5757",
@@ -56836,7 +56970,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2025-71324",
@@ -57375,7 +57509,7 @@
    "id": "CVE-2026-54030",
    "description": "LibreChat is an enhanced ChatGPT clone that supports multiple AI providers. Prior to 0.8.5, LibreChat's MCP OAuth implementation does not validate that the resource parameter from OAuth Protected Resource metadata (RFC 9728) matches the configured MCP server URL, allowing a malicious MCP server to steal access tokens intended for a legitimate server. This vulnerability is fixed in 0.8.5.",
    "published": "2026-06-25",
-   "last_modified": "2026-06-29",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -57422,7 +57556,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55411",
@@ -57544,7 +57678,7 @@
    "id": "CVE-2026-55413",
    "description": "ToolJet is the open-source foundation am AI-native platform for building and deploying internal tools, workflows and AI agents. Prior to 3.20.178-lts, any authenticated user with builder role (free tier) can overwrite a globally-shared marketplace plugin with arbitrary JavaScript that executes server-side with full Node.js access (require, process). The malicious code runs whenever any user on the instance triggers a query using that plugin — achieving both RCE and supply-chain compromise of the entire ToolJet deployment. This vulnerability is fixed in 3.20.178-lts.",
    "published": "2026-06-25",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -57595,7 +57729,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2025-71332",
@@ -57736,7 +57870,7 @@
    "id": "CVE-2026-48703",
    "description": "Warp is an agentic development environment. From 0.2025.04.09.08.11.stable_00 until 0.2026.05.06.15.42.stable_01, Warp contains a command execution policy bypass in Agent code search tools. The affected Grep and FileGlob actions are authorized as read/search operations, but their implementations build shell command strings from Agent-controlled inputs (search text, paths, glob patterns) and execute them in the active terminal session. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -57786,13 +57920,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48704",
    "description": "Warp is an agentic development environment. From 0.2023.10.24.08.03.stable_00 until 0.2026.05.06.15.42.stable_01, Warp may open executable local files through the operating system default file handler. A malicious Markdown document or project can contain a local-file link that appears as normal rendered content. If a user opens the Markdown in Warp and clicks the link, affected builds may route the resolved local file to a platform file opener instead of limiting the action to safe viewer/editor targets. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -57840,13 +57974,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48719",
    "description": "Warp is an agentic development environment. From 0.2025.08.06.08.12.stable_00 until 0.2026.05.06.15.42.stable_01, Warp contains a command injection in the prompt branch selector. A user who can publish a branch to a Git repository opened in Warp can cause a crafted branch name to be interpreted by the victim's shell if the victim selects that branch from the UI. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -57896,13 +58030,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48720",
    "description": "Warp is an agentic development environment. From 0.2025.03.05.08.02.stable_00 until 0.2026.05.06.15.42.stable_01, Warp accepts non-inline `OSC 1337;File` payloads from terminal output and materialize the decoded payload as a local file without an additional confirmation step. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -57951,13 +58085,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48721",
    "description": "Warp is an agentic development environment. From 0.2025.10.08.08.12.stable_00 until 0.2026.05.06.15.42.stable_01, Warp contains a command execution permission-check bypass in the default unsandboxed CLI agent profile. The CLI profile is non-interactive and relies on a command denylist as a safety boundary for commands that should require confirmation. Because command strings were checked before canonicalizing leading environment-variable assignments, an attacker who can influence the agent's command output may cause denylisted commands to be treated as non-denylisted. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58006,13 +58140,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48725",
    "description": "Warp is an agentic development environment. From 0.2021.04.25.23.05.stable_00 until 0.2026.05.06.15.42.stable_01, Warp allows terminal output to request access to the local system clipboard. A malicious remote host, remote program, or other attacker-controlled terminal output source can trigger clipboard reads or writes without a separate confirmation step. This crosses the trust boundary between untrusted terminal output and the user's local desktop clipboard. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58060,13 +58194,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48731",
    "description": "Warp is an agentic development environment. From 0.2024.02.20.08.01.stable_01 until 0.2026.05.06.15.42.stable_01, Warp contains a command injection issue in the Linux external editor launcher. Warp expanded freedesktop .desktop Exec templates for affected editor integrations and executed the expanded command through a shell. A user who opens an attacker-controlled local file path through an affected external editor or system-default editor route can cause shell syntax embedded in that path to execute as the local user. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58116,13 +58250,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48732",
    "description": "Warp is an agentic development environment. From 0.2023.03.21.08.02.stable_00 until 0.2026.05.06.15.42.stable_01, Warp contains a command injection issue in the legacy SSH background command path. Warp used the remote working directory reported by the session when building helper commands for SSH-backed metadata collection. A remote host, repository, or directory name controlled by an attacker could cause that helper command to execute additional shell syntax on the remote host as the victim's authenticated SSH account. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58172,13 +58306,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48789",
    "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. Prior to 1.13.0, on Windows, the document folder listing route can accept an encoded absolute Windows path that resolves outside the intended documents directory. The shared path containment helper rejects POSIX-style \"../\" traversal but does not reject Windows-style parent paths returned by path.relative(), such as \"..\". This vulnerability is fixed in 1.13.0.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58197,7 +58331,7 @@
      "product": "AnythingLLM",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": null
+     "product_id": "anythingllm"
     }
    ],
    "category": "framework",
@@ -58231,13 +58365,119 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
+  },
+  {
+   "id": "CVE-2026-53765",
+   "description": "Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent control and inspect a live Chrome browser. From 0.20.0 until 1.1.0, The chrome-devtools-mcp daemon writes its PID file with fs.writeFileSync() to a deterministic runtime path. On typical macOS environments, and on Linux sessions where $XDG_RUNTIME_DIR is unset, that runtime path falls back to /tmp/chrome-devtools-mcp-<uid>/daemon.pid. Because the write does not use O_NOFOLLOW, a local low-privilege user on the same POSIX host can pre-create /tmp/chrome-devtools-mcp-<victim_uid>/daemon.pid as a symlink to a file writable by the victim. When the victim later starts daemon mode, fs.writeFileSync() follows the symlink and truncates the target file to the daemon PID string. This vulnerability is fixed in  1.1.0.",
+   "published": "2026-06-24",
+   "last_modified": "2026-10-25",
+   "vuln_status": "Analyzed",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-59"
+   ],
+   "products": [
+    {
+     "vendor": "google",
+     "product": "chrome-devtools-mcp",
+     "versions_affected": ">= 0.20.0 < 1.1.0",
+     "fixed_in": "1.1.0",
+     "product_id": null
+    }
+   ],
+   "category": "unclassified",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "fixed",
+    "version": "1.1.0",
+    "url": null
+   },
+   "references": [],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "coding agent"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
+  },
+  {
+   "id": "CVE-2026-53766",
+   "description": "Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent control and inspect a live Chrome browser. From 0.24.0 until 1.1.0, McpContext.validatePath() enforces workspace roots by checking whether path.resolve(filePath) textually falls under one of the configured root paths. path.resolve() does not canonicalize symbolic links. As a result, a symlink inside a configured workspace root can point to a file outside that root, pass validation, and then be followed by downstream file read/write operations. This bypass applies even when the MCP client correctly declares the roots capability with a non-empty list. It is separate from the documented legacy behavior where missing roots capability allows all paths. The practical impact is a workspace-boundary bypass. In the write direction, filePath-writing tools can overwrite out-of-root files through an in-root symlink. In the read direction, upload_file can read through the symlink and send the file to the currently selected web page. This vulnerability is fixed in 1.1.0.",
+   "published": "2026-06-24",
+   "last_modified": "2026-10-25",
+   "vuln_status": "Analyzed",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-22",
+    "CWE-59"
+   ],
+   "products": [
+    {
+     "vendor": "google",
+     "product": "chrome-devtools-mcp",
+     "versions_affected": ">= 0.24.0 < 1.1.0",
+     "fixed_in": "1.1.0",
+     "product_id": null
+    }
+   ],
+   "category": "protocol",
+   "surface": [
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "fixed",
+    "version": "1.1.0",
+    "url": null
+   },
+   "references": [],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "coding agent",
+     "mcp client"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54686",
    "description": "Warp is an agentic development environment. From 0.2021.04.25.23.05.stable_00 until 0.2026.05.06.15.42.stable_01, Warp accepted certain state-mutating terminal lifecycle hooks from the PTY stream without verifying that the hooks were emitted by Warp's shell integration for the active session. An attacker who could cause a victim to view attacker-controlled terminal output in Warp could spoof selected lifecycle metadata, including the current working directory reported for the active block or SSH session transport metadata. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58293,13 +58533,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54699",
    "description": "Warp is an agentic development environment. From 0.2024.03.12.08.02.stable_01 until 0.2026.05.06.15.42.stable_01, Warp contains an OS command injection vulnerability in the WSL URL-opening fallback. When Warp is running under WSL and cannot open a URL through wslview, it falls back to a Windows command processor path. A URL controlled through terminal output can reach that fallback when the user opens the link. This vulnerability is fixed in 0.2026.05.06.15.42.stable_01.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58350,13 +58590,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55583",
    "description": "Twenty is an open-source CRM (customer relationship management) platform. Prior to 2.9.0, Twenty was vulnerable to a cross-workspace insecure direct object reference (IDOR) in the AI agent monitor's AgentTurnResolver, in packages/twenty-server/src/engine/metadata-modules/ai/ai-agent-monitor/reso lvers/agent-turn.resolver.ts. The agentTurns(agentId) query and the evaluateAgentTurn(turnId) mutation looked up rows by agentId or id only; although AgentTurnEntity has a workspaceId column, it was not included in the WHERE clause, and the class-level guards only checked that the caller was authenticated in some workspace rather than that the requested object belonged to it, with the same flaw present in agent-turn-grader.service.ts.  As a result, any authenticated user with the AI settings flag, a workspace owner by default, could target any other workspace on the same instance given the victim's agentId or turnId: agentTurns returned the victim's full  chat history including message parts such as raw chat text, tool calls, and tool outputs, while evaluateAgentTurn inserted an agentTurnEvaluation row with the victim's workspaceId and fed the victim's turn into the default LLM. The agentId and turnId are non-guessable UUIDs but are exposed  in the URL of the settings page. This issue is fixed in version 2.9.0.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58408,13 +58648,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55611",
    "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. From 1.11.1 until 1.14.1, userId/workspaceId scoping to the parsed-files read/delete paths was added. However, the POST /api/workspace/:slug/embed-parsed-file/:fileId flow still deletes the target file by primary key only, with no ownership check, inside two finally{} blocks that run even when the ownership-checked read fails. As a result a manager or admin (multi-user mode) can delete any other user's parsed file in any workspace — including workspaces they are not a member of — by enumerating integer fileIds. The server even returns \"File not found\" while still deleting the file. This vulnerability is fixed in 1.14.1.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58433,7 +58673,7 @@
      "product": "AnythingLLM",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": null
+     "product_id": "anythingllm"
     }
    ],
    "category": "framework",
@@ -58482,13 +58722,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-56269",
    "description": "Flowise before 3.1.0 (npm package flowise, versions 3.0.13 and earlier) uses a weak hardcoded default value 'Secre$t' for the TOKEN_HASH_SECRET environment variable in packages/server/src/enterprise/utils/tempTokenUtils.ts when the variable is not configured. This secret derives the AES-256-CBC key used to encrypt user IDs and workspace IDs in the 'meta' field of JWT tokens. An attacker who knows the default secret can decrypt this metadata to extract internal user and workspace identifiers, and re-encrypt manipulated values such as altered user or workspace IDs. Because the JWT signature is validated separately, decrypting or tampering with this metadata does not by itself grant access, but the disclosure of internal identifiers and possible metadata manipulation could aid privilege escalation or unauthorized data access.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -58554,7 +58794,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-56270",
@@ -58624,7 +58864,7 @@
    "id": "CVE-2026-56272",
    "description": "Flowise before 3.0.13 uses bcrypt with default salt rounds of 5, providing only 32 iterations instead of the OWASP-recommended minimum of 10 rounds. Attackers can crack password hashes approximately 30 times faster with modern GPU hardware, potentially compromising all user accounts in a database breach scenario.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -58687,13 +58927,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-57300",
    "description": "A missing permission check in Jenkins MCP Server Plugin 0.177.v629fdb_2557fe and earlier allows attackers with Item/Read permission to read the Pipeline replay scripts of jobs they can access.",
    "published": "2026-06-24",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "jenkinsci-cert@googlegroups.com",
    "cvss": {
@@ -58748,7 +58988,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2025-71337",
@@ -58815,7 +59055,7 @@
    "id": "CVE-2026-12112",
    "description": "A flaw was found in the foreman-mcp-server. A session management vulnerability in the MCP Server allows unauthenticated attackers to hijack active administrative sessions due to an improper cache of authenticated client connections, by trusting a non-secret session ID without re-validating authentication tokens and by logging all newly created session IDs to standard logs. This issue can result in privilege escalation and infrastructure-wide code execution.",
    "published": "2026-06-23",
-   "last_modified": "2026-07-16",
+   "last_modified": "2026-10-25",
    "vuln_status": "Modified",
    "cna": "secalert@redhat.com",
    "cvss": {
@@ -58933,13 +59173,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-33760",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.0, Langflow's /api/v1/monitor router exposes 7 endpoints that perform read, write, and delete operations on user-owned resources — messages, sessions, build artifacts, and LLM transaction logs — without verifying that the authenticated requester owns the targeted resource. Any authenticated user can read, modify, rename, or permanently delete another user's data by supplying the target's resource ID or flow_id. This is a classic IDOR/BOLA vulnerability. Notably, the same source file (monitor.py) contains one correctly-implemented endpoint that uses an ownership check, demonstrating the correct pattern was known but inconsistently applied. This vulnerability is fixed in 1.9.0.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -58988,13 +59228,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-42867",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.0, Langflow is vulnerable to Path Traversal in the Knowledge Bases API (POST /api/v1/knowledge_bases). This occurs because user-supplied knowledge base names are used directly to create file paths without proper sanitization or containment checks. An authenticated attacker can exploit this flaw to create directories and write files anywhere on the server's filesystem. This vulnerability is fixed in 1.9.0.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -59052,13 +59292,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48519",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.2, the \"Shareable Playground\" (or \"Public Flows\" in code) contains a critical RCE vulnerability. Shareable Playground feature works by enabling the execution of workflows by unauthenticated users, by accessing a link. Specifically, it enables the route /api/v1/build_public_tmp to execute any public flow, given a public flow ID. When the route executes the flow, it allows for providing arbitrary custom Python code as the nodes code, inside the JSON payload. The vulnerable field is data.nodes[X].data.node.template.code.value. This vulnerability is fixed in 1.9.2.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -59108,13 +59348,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48520",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.10.0, the \"Shareable Playground\" (or \"Public Flows\" in code) contains a potential arbitrary file-read vulnerability, depending on the exact flow configuration used. By making a flow public, public execution of the flow is allowed. The execution request can contain a list of files that gets read by Langflow and fed into the LLM. The files path can be any path supported by the storage - it can be either a local file or S3 path if supported by the local configuration This vulnerability is fixed in 1.10.0.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -59161,7 +59401,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54006",
@@ -60009,7 +60249,7 @@
    "id": "CVE-2026-54316",
    "description": "Claude Code is an agentic coding tool.  From 0.2.54 until 2.1.163, because the hostname huggingface.co was pre-approved as a bare hostname for the WebFetch tool, any path on that domain—including attacker-controlled model repositories—was auto-approved without a permission prompt or being subject to --allowedTools restrictions. An attacker able to inject untrusted content into a Claude Code context could direct it to issue WebFetch requests against attacker-controlled repository files (e.g. /resolve/main/config.json), which HuggingFace counts as downloads server-side, creating a covert out-of-band channel for encoding and exfiltrating data Claude can access such as files, environment variables, or command output. Reliably exploiting this required the ability to add untrusted content into a Claude Code context window. This vulnerability is fixed in 2.1.163.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-29",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -60070,13 +60310,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55249",
    "description": "@rtk-ai/rtk-rewrite transparently rewrites shell commands executed via OpenClaw's exec tool to their RTK equivalents. In 1.0.0, the @rtk-ai/rtk-rewrite OpenClaw plugin passes attacker-controlled input directly into a shell-backed execSync() template string without shell-safe escaping. JSON.stringify() wraps the value in double quotes and escapes inner double-quotes and backslashes, but leaves $() and backtick shell metacharacters untouched. Because execSync delegates execution to /bin/sh -c, the shell expands $(...) substitutions even inside double-quoted strings, causing the injected subcommand to execute before rtk is invoked. An attacker who can influence the exec tool's command parameter (e.g., via an LLM agent prompt or gateway/tool-call input) achieves arbitrary OS command execution with the privileges of the plugin/gateway process.",
    "published": "2026-06-23",
-   "last_modified": "2026-07-01",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -60124,13 +60364,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55255",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.1, an Insecure Direct Object Reference (IDOR) vulnerability in /api/v1/responses endpoint allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request. This vulnerability is fixed in 1.9.1.",
    "published": "2026-06-23",
-   "last_modified": "2026-10-07",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -60213,13 +60453,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55423",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.7.0, the logout button does not clear the session. The previous user stays logged in unless another user explicitly logs in. This vulnerability is fixed in 1.7.0.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -60275,13 +60515,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55446",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.0.19, an attacker can send a /api/v1/files/upload/ request without any authentication token/cookies and abuse a very long multipart form boundary to make the langflow app unusable for all users for an indefinite amount of time. This vulnerability is fixed in 1.0.19.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -60339,13 +60579,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55447",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.2, by controlling a files that are digested into the RAG, an attacker can direct the node to read any file on the file-system by absolute path. All components based on BaseFileComponent are vulnerable to the vulnerability. This includes Docling (DoclingInlineComponent), Docling Serve, DoclingRemoteComponent), Read File (FileComponent), NVIDIA Retriever Extraction (NvidiaIngestComponent), Video File (VideoFileComponent), and Unstructured API (UnstructuredComponent). This vulnerability is fixed in 1.9.2.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -60404,13 +60644,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55450",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.1, unauthenticated users can upload any amount of data to the server without any limitations. No need for any prior knowledge, only network access to Langflow. This can lead to space exhaustion on the server. In addition, in the response, the absolute path of the uploaded file is reported to the attacker, which is an information leak that can assist in chaining other primitives. This vulnerability is fixed in 1.9.1.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -60472,7 +60712,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-56274",
@@ -60544,7 +60784,7 @@
    "id": "CVE-2026-56275",
    "description": "Flowise before 3.1.0 contains a server-side request forgery vulnerability in the Execute Flow node that allows attackers to bypass security validation by providing intranet addresses through the base URL field. Attackers can initiate HTTP requests to internal network addresses, access cloud metadata, and enumerate internal services by exploiting the missing secureFetch verification in httpSecurity.ts.",
    "published": "2026-06-23",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -60601,7 +60841,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2025-66336",
@@ -60751,7 +60991,7 @@
    "id": "CVE-2026-10561",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.3 has an vulnerability due to an improper isolation of Python execution combined with an authentication bypass that allows an unauthenticated attacker to execute arbitrary code on the host system, resulting in complete compromise",
    "published": "2026-06-22",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -60809,13 +61049,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12821",
    "description": "A vulnerability was determined in FlowiseAI Flowise up to 3.1.2. The impacted element is an unknown function of the file packages/components/nodes/documentloaders/S3/S3.ts of the component S3 Document Loader. Executing a manipulation can lead to path traversal. It is possible to launch the attack remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-22",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -60880,23 +61120,23 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:cpe"
+     "A:name"
     ],
     "terms": [
-     "flowise:flowiseai:flowise"
+     "flowise:Flowise"
     ]
    },
    "status": "candidate",
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12822",
    "description": "A vulnerability was identified in langflow-ai langflow up to 1.9.3. This affects an unknown function of the component Bundle URL Loader. The manipulation leads to code injection. The attack needs to be performed locally. The vendor was contacted early about this disclosure but did not respond in any way.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -60979,13 +61219,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-41523",
    "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.22.0, an assert-based security check in vLLM's activation function loading allows any unauthenticated attacker to achieve arbitrary code execution on the server by publishing a malicious HuggingFace model, when vLLM runs in Python optimized mode (python -O or PYTHONOPTIMIZE=1). This vulnerability is fixed in 0.22.0.",
    "published": "2026-06-22",
-   "last_modified": "2026-09-04",
+   "last_modified": "2026-10-25",
    "vuln_status": "Modified",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61137,13 +61377,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47155",
    "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.22.0, vLLM's revision pinning controls do not consistently apply to all artifacts loaded for a model. A deployment that supplies --revision or --code-revision can still load dynamic code, GGUF files, image processors, retrieval side weights, or same-repository subfolder weights/config from an unpinned/default revision. This is a supply-chain integrity issue for pinned vLLM deployments. Operators can believe they are serving a reviewed model revision while vLLM resolves behavior-affecting nested or sibling artifacts outside that reviewed revision. This vulnerability is fixed in 0.22.0.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61220,13 +61460,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48746",
    "description": "vLLM is an inference and serving engine for large language models (LLMs). From 0.3.0 until 0.22.0, a vulnerability in ASGI web servers and starlette's trust on those web servers enables an authentication bypass of the OpenAI API AuthenticationMiddleware. It allows to use the API without providing the configured VLLM_API_KEY or --api-key. This vulnerability is fixed in 0.22.0.",
    "published": "2026-06-22",
-   "last_modified": "2026-09-16",
+   "last_modified": "2026-10-25",
    "vuln_status": "Modified",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61371,13 +61611,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-49468",
    "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.84.0, a Host-header parsing flaw in the LiteLLM proxy could, under specific conditions, allow unauthenticated access to protected management routes. The auth layer derived the effective route from request.url.path in litellm/proxy/auth/auth_utils.py::get_request_route(), which Starlette reconstructs from the Host header. A crafted Host could therefore make the auth gate evaluate a different route from the one FastAPI dispatched. This vulnerability is fixed in 1.84.0.",
    "published": "2026-06-22",
-   "last_modified": "2026-07-15",
+   "last_modified": "2026-10-25",
    "vuln_status": "Modified",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61457,13 +61697,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-53923",
    "description": "vLLM is an inference and serving engine for large language models (LLMs). From 0.5.5 until 0.23.1rc0, integer truncation of tensor dimensions in vLLM's GGUF dequantize kernels (csrc/quantization/gguf/gguf_kernel.cu) causes partial tensor processing. The output tensor is allocated at full size via torch::empty (uninitialized memory), but the dequantize CUDA kernel processes only a truncated number of elements. The unfilled portion of the output tensor retains whatever was previously in GPU memory. In multi-tenant inference deployments, this residual GPU memory may contain tensor data from other users' inference requests, constituting information disclosure. This vulnerability is fixed in 0.23.1rc0.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61536,13 +61776,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54232",
    "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.22.1, the vLLM Dockerfile is vulnerable to a dependency confusion attack through the flashinfer-jit-cache package. The package is installed from a custom index (flashinfer.ai/whl/) using --extra-index-url, but the package name was not registered on PyPI, and UV_INDEX_STRATEGY=\"unsafe-best-match\" is set globally. An attacker who registers flashinfer-jit-cache on PyPI with version 0.6.11.post2 can execute arbitrary code as root during the Docker build and backdoor every resulting container image, enabling exfiltration of all user prompts, API credentials, and model data from production vLLM deployments This vulnerability is fixed in 0.22.1.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61595,13 +61835,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54233",
    "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.23.1rc0, vLLM's /v1/audio/transcriptions endpoint limits compressed upload size but not decoded PCM output. A 25MB OPUS file expands to ~14.9GB of float32 PCM at decode time. This vulnerability is fixed in 0.23.1rc0.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61665,13 +61905,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54235",
    "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.23.1rc0, ll temperature validation gates use comparison operators (<, >), which silently evaluate to False for NaN and for positive Infinity in Python's IEEE 754 float semantics. Both values pass every guard and propagate to GPU sampling kernels, where they produce undefined behavior or CUDA errors that can crash the inference worker. This vulnerability is fixed in 0.23.1rc0.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61734,13 +61974,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54236",
    "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.23.1rc0, the fix for CVE-2026-22778, which introduced a sanitize_message helper that strips object-repr memory addresses from error messages before they reach the client, is incomplete: several response paths echo str(exc) directly to clients without calling sanitize_message. The unsanitized sites include the Anthropic API router in vllm/entrypoints/anthropic/api_router.py (the POST /v1/messages and POST /v1/messages/count_tokens handlers), the Server-Sent Events streaming converter in vllm/entrypoints/anthropic/serving.py, and the realtime speech-to-text WebSocket in vllm/entrypoints/speech_to_text/realtime/connection.py. These paths catch the exception inside the route coroutine and construct the JSONResponse themselves, bypassing the sanitizing global FastAPI exception handler, and WebSocket frames do not traverse that handler chain at all. Using the same primitive as the parent issue, an unauthenticated attacker can send malformed image bytes through the Anthropic Messages API image content parts so that PIL.Image.open raises an UnidentifiedImageError whose message contains the BytesIO object repr, leaking the heap memory address verbatim in the error.message field of the response body. This vulnerability is fixed in 0.23.1rc0.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -61806,7 +62046,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-55443",
@@ -61884,7 +62124,7 @@
    "id": "CVE-2026-56268",
    "description": "Flowise before 3.1.2 contains an information disclosure vulnerability in the /api/v1/chatflows/apikey/:apikey endpoint. When the keyonly query parameter is omitted (the default), the endpoint returns not only the chatflows bound to the supplied API key but also all chatflows across every workspace that have no API key assigned, because the underlying query lacks any workspace filter. An attacker with a valid API key for one workspace can therefore retrieve the full ChatFlow configuration (including flowData with system prompts and node configurations, chatbotConfig, apiConfig, and credential IDs) of unprotected chatflows belonging to other workspaces.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -61943,13 +62183,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7664",
    "description": "IBM Langflow OSS 1.0.0 through 1.8.4 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations due to improper authorization enforcement in the Streamable MCP transport endpoint.",
    "published": "2026-06-22",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -62007,13 +62247,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12770",
    "description": "A vulnerability was determined in BerriAI litellm up to 1.63.1. The impacted element is an unknown function of the file litellm/proxy/management_endpoints/key_management_endpoints.py of the component Admin Key Handler. This manipulation causes improper authorization. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized. Patch name: 23781. It is recommended to apply a patch to fix this issue. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62102,13 +62342,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12771",
    "description": "A vulnerability was identified in BerriAI litellm up to 1.82.2. This affects an unknown function of the file litellm/proxy/auth/user_api_key_auth.py of the component M2M JWT Handler. Such manipulation leads to improper authorization. The attack can be launched remotely. A high complexity level is associated with this attack. The exploitability is reported as difficult. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62182,13 +62422,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12772",
    "description": "A security flaw has been discovered in BerriAI litellm up to 1.82.2. This impacts the function authenticate_user of the file litellm/proxy/auth/login_utils.py of the component PROXY_ADMIN database API Key Generator. Performing a manipulation results in session expiration. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62260,13 +62500,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12773",
    "description": "A weakness has been identified in BerriAI litellm up to 1.59.8. Affected is the function UserAPIKeyAuth of the file litellm/proxy/_experimental/mcp_server/auth/user_api_key_auth_mcp.py of the component MCP Proxy. Executing a manipulation can lead to improper authentication. The attack may be launched remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-07-15",
+   "last_modified": "2026-10-25",
    "vuln_status": "Modified",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62354,13 +62594,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12774",
    "description": "A security vulnerability has been detected in BerriAI litellm up to 1.82.2. Affected by this vulnerability is the function _execute_with_mcp_client of the file litellm/proxy/_experimental/mcp_server/rest_endpoints.py of the component MCP Server Connection Testing. The manipulation leads to server-side request forgery. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62435,13 +62675,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12795",
    "description": "A vulnerability was determined in BerriAI litellm up to 1.82.2. This affects the function json.dumps of the file litellm/proxy/management_endpoints/ui_sso.py of the component SSO Debug Flow. Executing a manipulation can lead to missing authentication. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62514,13 +62754,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12796",
    "description": "A vulnerability was identified in BerriAI litellm up to 1.82.2. This impacts the function get_redirect_response_from_openid of the file litellm/proxy/management_endpoints/ui_sso.py of the component SSO Authentication Flow. The manipulation leads to session expiration. The attack is possible to be carried out remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62590,13 +62830,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12797",
    "description": "A security flaw has been discovered in BerriAI litellm up to 1.82.5. Affected is the function async_pre_call_hook of the file enterprise/enterprise_hooks/banned_keywords.py of the component Completions Interface. The manipulation of the argument prompt results in incorrect authorization. The attack may be performed from remote. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62669,13 +62909,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12798",
    "description": "A weakness has been identified in BerriAI litellm up to 1.82.2. Affected by this vulnerability is the function load_openapi_spec_async of the file litellm/proxy/_experimental/mcp_server/openapi_to_mcp_generator.py of the component MCP OpenAPI Spec Loader. This manipulation of the argument spec_path causes server-side request forgery. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62747,13 +62987,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-12799",
    "description": "A security vulnerability has been detected in BerriAI litellm up to 1.82.2. Affected by this issue is the function ui_view_users of the file litellm/proxy/management_endpoints/internal_user_endpoints.py of the component Incomplete Fix CVE-2025-0628. Such manipulation leads to improper authorization. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
    "published": "2026-06-21",
-   "last_modified": "2026-06-24",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -62827,7 +63067,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2024-58351",
@@ -63255,7 +63495,7 @@
    "id": "CVE-2026-12045",
    "description": "Read-only transaction bypass in the pgAdmin 4 AI Assistant allows an attacker who can influence database content that the assistant reads to execute arbitrary SQL with the privileges of the pgAdmin user's database role.\n\nThe AI Assistant's execute_sql_query tool runs LLM-generated SQL inside a BEGIN TRANSACTION READ ONLY wrapper to prevent data modification. The LLM-supplied query was forwarded to the database driver without restriction to a single statement or to read-only verbs, so a multi-statement payload beginning with COMMIT, END, ROLLBACK, or ABORT terminated the read-only transaction and ran subsequent statements in autocommit mode. The trailing ROLLBACK then had no effect.\n\nDelivery is via prompt injection: an attacker who can write content into any object the AI Assistant may inspect (a row, a column value, a comment) can cause the LLM to emit the multi-statement payload as a tool call. With ordinary write privileges on the pgAdmin user's role the attacker can perform unauthorised data modification. When the pgAdmin user's role is a PostgreSQL superuser or holds pg_execute_server_program, the chain extends to remote code execution on the database server host via COPY ... TO PROGRAM.\n\nFix validates the LLM-supplied query up front: it must parse to exactly one non-empty / non-comment statement whose leading real token (after stripping whitespace, comments, and punctuation) is one of SELECT, WITH, EXPLAIN, SHOW, VALUES, or TABLE. Transaction-control verbs, DML, DDL, CALL, COPY, DO, SET/RESET, and everything else are rejected before any database work happens. PostgreSQL's READ ONLY mode continues to backstop data-modifying CTEs, EXPLAIN ANALYZE on writes, and volatile side effects.\n\nThis issue affects pgAdmin 4: from 9.13 before 9.16.",
    "published": "2026-06-19",
-   "last_modified": "2026-07-01",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "f86ef6dc-4d3a-42ad-8f28-e6d5547a5007",
    "cvss": {
@@ -63325,13 +63565,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-42895",
    "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to perform tampering over a network.",
    "published": "2026-06-19",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "secure@microsoft.com",
    "cvss": {
@@ -63388,13 +63628,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47645",
    "description": "Url redirection to untrusted site ('open redirect') in Microsoft 365 Copilot's Business Chat allows an unauthorized attacker to elevate privileges over a network.",
    "published": "2026-06-19",
-   "last_modified": "2026-06-26",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "secure@microsoft.com",
    "cvss": {
@@ -63451,13 +63691,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-50519",
    "description": "Initialization of a resource with an insecure default in GitHub Copilot and Visual Studio Code allows an unauthorized attacker to disclose information over a network.",
    "published": "2026-06-19",
-   "last_modified": "2026-08-17",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "secure@microsoft.com",
    "cvss": {
@@ -63514,13 +63754,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-22551",
    "description": "In Eclipse Theia versions prior to 1.71.0, the AI chat rendered Markdown image tags from AI responses, triggering HTTP requests to arbitrary external URLs without restriction. Combined with prompt injection in a malicious workspace, an attacker could induce the AI agent to construct image URLs encoding sensitive information from the workspace or conversation context, exfiltrating it to attacker-controlled servers. The workspace trust enforcement introduced in v1.71.0 mitigates the documented attack chain by disabling AI features in untrusted workspaces.",
    "published": "2026-06-18",
-   "last_modified": "2026-06-22",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "emo@eclipse.org",
    "cvss": {
@@ -63580,13 +63820,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-44688",
    "description": "In Eclipse Theia versions prior to 1.71.0, the AI chat agent processed workspace file and directory names as part of its prompt context without distinguishing them from system instructions. An attacker could craft a malicious repository with adversarial directory or file names that, when analyzed by the AI agent, would cause the agent to follow attacker-controlled instructions (indirect prompt injection). Combined with other AI chat features available in untrusted workspaces, this enabled attack chains leading to data exfiltration via Markdown image rendering or arbitrary command execution via task definitions.",
    "published": "2026-06-18",
-   "last_modified": "2026-06-22",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "emo@eclipse.org",
    "cvss": {
@@ -63645,13 +63885,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-46580",
    "description": "In Eclipse Theia versions prior to 1.71.0, files matching the pattern .prompts/*.prompttemplate in a workspace were automatically loaded and could override or extend the AI agent's system prompts. An attacker could craft a malicious repository containing prompt template files that, when the workspace was opened in Theia, replaced the AI's system instructions with attacker-controlled content (indirect prompt injection). Combined with other AI chat features available in untrusted workspaces, this enabled attack chains leading to data exfiltration via Markdown image rendering or arbitrary command execution via task definitions.",
    "published": "2026-06-18",
-   "last_modified": "2026-06-22",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "emo@eclipse.org",
    "cvss": {
@@ -63710,13 +63950,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-49257",
    "description": "mcp-pinot is a Python-based Model Context Protocol (MCP) server for interacting with Apache Pinot. In versions 3.0.1 and below, mcp-pinot defaults to running an HTTP MCP server bound to 0.0.0.0:8080 with no authentication enabled. All MCP tools, including SQL query execution, schema creation, and table-config mutation, are reachable by any network-adjacent caller. The server proxies these calls using server-side Pinot credentials, producing a confused-deputy condition that yields full read/write access to the configured Pinot cluster. This issue has been fixed in version 3.1.0",
    "published": "2026-06-18",
-   "last_modified": "2026-06-23",
+   "last_modified": "2026-10-26",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -63784,7 +64024,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-54017",
@@ -63864,7 +64104,7 @@
    "id": "CVE-2026-54130",
    "description": "Missing authentication for critical function in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
    "published": "2026-06-18",
-   "last_modified": "2026-06-25",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "secure@microsoft.com",
    "cvss": {
@@ -63922,7 +64162,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-56075",
@@ -64115,13 +64355,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-20265",
    "description": "In Splunk AI Toolkit versions below 5.7.4, a low-privileged user that does not hold the \"admin\" or \"power\" Splunk roles could cause the Splunk AI Toolkit to make outbound requests over HTTP to a server that an attacker controls, which could allow for data exfiltration.  \n\nThe vulnerability exists because of an insecure default domain allowlist in the Splunk AI Toolkit, which does not restrict outbound AI agent  requests to approved external domains.",
    "published": "2026-06-17",
-   "last_modified": "2026-06-22",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "psirt@cisco.com",
    "cvss": {
@@ -64177,7 +64417,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48797",
@@ -64242,7 +64482,7 @@
    "id": "CVE-2026-48814",
    "description": "Network-AI is a TypeScript/Node.js multi-agent orchestrator. In versions 5.7.1 and earlier, the MCP SSE server allows unauthenticated cross-origin MCP tool invocation due to an empty default secret. This issue was partially addressed by CVE-2026-46701 in version 5.4.5 by closing the CORS flaw (with Access-Control-Allow-Origin now set only for localhost origins), but the empty-default-secret flaw described in the title remained: the SSE MCP server still defaulted to an empty secret, _isAuthorized() still returned true when the secret was empty, and a non-loopback bind only produced a warning. As a result, the server still ran fully unauthenticated by default. Any non-browser caller (for example, curl, SSRF, or a 0.0.0.0 bind) could invoke all 22 MCP tools (config_set, agent_spawn, blackboard_write, token_*) with no credentials. This issue was fixed in version 5.7.2.",
    "published": "2026-06-17",
-   "last_modified": "2026-06-23",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -64305,13 +64545,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-48989",
    "description": "Windows-MCP is an open-source project that integrates AI agents with Windows. In versions prior to 0.7.5, certain HTTP modes exposed the MCP control plane without authentication while enabling wildcard CORS (allow_origins=*, allow_methods=*, allow_headers=*). Because the same server also exposed a PowerShell tool that executes caller-controlled commands as the Windows user running Windows-MCP, attackers could reach the control plane from arbitrary origins or non-browser clients and achieve arbitrary PowerShell execution. This issue was fixed in version 0.7.5.",
    "published": "2026-06-17",
-   "last_modified": "2026-06-23",
+   "last_modified": "2026-10-26",
    "vuln_status": "Awaiting Analysis",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -64362,7 +64602,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-53840",
@@ -64549,7 +64789,7 @@
    "id": "CVE-2026-3341",
    "description": "IBM Langflow Desktop 1.0.0 through 1.9.2 IBM Langflow is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
    "published": "2026-06-11",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -64606,13 +64846,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-46519",
    "description": "mcp-server-kubernetes is a Model Context Protocol server for Kubernetes cluster management. Prior to version 3.6.0, mcp-server-kubernetes exposes three environment variables (ALLOW_ONLY_READONLY_TOOLS, ALLOW_ONLY_NON_DESTRUCTIVE_TOOLS, ALLOWED_TOOLS) documented as access controls for restricting which Kubernetes operations are available. These controls are enforced at the tool discovery layer (tools/list) but not at the execution layer (tools/call). Any client that knows a tool name can invoke it directly regardless of the configured restriction mode. The access control was effectively cosmetic. This issue has been patched in version 3.6.0.",
    "published": "2026-06-11",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -64668,13 +64908,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-47250",
    "description": "mcp-server-kubernetes is a Model Context Protocol server for Kubernetes cluster management. Prior to version 3.7.0, the kubectl_generic tool in mcp-server-kubernetes passes user-supplied flags directly to kubectl without any allowlist, enabling a privilege escalation attack within Kubernetes environments. An attacker who already has limited cluster or codebase access, for example, a developer with pod-deployment permissions but not cluster-admin credentials, can plant a single structured JSON line in an application's log output. When an operator with a privileged kubeconfig uses the MCP server to read those logs and their AI agent follows the injected instruction, kubectl_generic is called with --server=https://attacker.example.com and --insecure-skip-tls-verify=true. kubectl sends all API requests, including the Authorization: Bearer <token> header from the operator's kubeconfig to the attacker's endpoint. The captured token can then be replayed directly against the real Kubernetes API server, granting the attacker the full RBAC permissions of the operator's service account. This issue has been patched in version 3.7.0.",
    "published": "2026-06-11",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -64732,13 +64972,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-5497",
    "description": "vLLM versions 0.8.0 and later are vulnerable to an Out-of-Memory (OOM) Denial of Service (DoS) attack due to unbounded frame count processing in the `VideoMediaIO.load_base64()` method. When processing `video/jpeg` data URLs, the method splits the base64 data string on commas to extract individual JPEG frames without enforcing a frame count limit. An attacker can exploit this by crafting a single API request containing thousands of comma-separated base64-encoded JPEG frames in a data URL, causing the server to decode all frames into memory and crash due to excessive memory consumption. This vulnerability is reachable via the OpenAI-compatible chat completions API and does not require authentication.",
    "published": "2026-06-11",
-   "last_modified": "2026-07-22",
+   "last_modified": "2026-10-26",
    "vuln_status": "Modified",
    "cna": "security@huntr.dev",
    "cvss": {
@@ -64809,13 +65049,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7787",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.1 could allow an authenticated user to read or modify sensitive information by bypassing authentication using insecure direct object references.",
    "published": "2026-06-11",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -64873,7 +65113,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-46432",
@@ -67780,6 +68020,67 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-45310",
+   "description": "CodeWhale is a DeepSeek + MiMo coding agent in terminal. Prior to 0.8.22, the fetch_url tool validates the initial URL's resolved IP address against a restricted-IP blocklist (is_restricted_ip()) to prevent SSRF attacks against internal services (cloud metadata endpoints, localhost, private networks). However, the HTTP client (reqwest) is configured to automatically follow up to 5 redirects (reqwest::redirect::Policy::limited(5)) without re-validating the redirect target against the same SSRF protections. This vulnerability is fixed in 0.8.22.",
+   "published": "2026-05-28",
+   "last_modified": "2026-10-25",
+   "vuln_status": "Deferred",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.4,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-918"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/Hmbown/CodeWhale/security/advisories/GHSA-96ff-gc8g-wpvg",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Hmbown/DeepSeek-TUI/releases/tag/v0.8.22",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Hmbown/CodeWhale/security/advisories/GHSA-96ff-gc8g-wpvg",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "coding agent"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
+  },
+  {
    "id": "CVE-2026-45403",
    "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. Prior to 1.13.0, the AnythingLLM agent filesystem copy tool validates only the top-level source and destination paths. The recursive copy helper then descends into child entries using fs.stat() and copies files with fs.copyFile() without validating each child or rejecting symlinks. Because both APIs follow symlinks, a symlink nested inside an allowed source directory can point outside the allowed filesystem root and cause outside file contents to be copied into an allowed destination as a regular file. This vulnerability is fixed in 1.13.0.",
    "published": "2026-05-28",
@@ -68031,10 +68332,59 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-45046",
+   "description": "Gryph provides a security layer for AI coding agents. Prior to 0.7.0, Gryph implements logging levels that determine what content is logged to a local sqlite database. The README incorrectly mentions that the default log level is minimal while it is standard. Source code review shows sensitive file-write content remains in the stored payload as ContentPreview, OldString, or NewString at the default standard logging level and at full. This leads to logging of potentially sensitive file content in the local sqlite database, violating Gryphs sensitive file filter and log level contracts. This vulnerability is fixed in 0.7.0.",
+   "published": "2026-05-27",
+   "last_modified": "2026-10-26",
+   "vuln_status": "Deferred",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-212"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/safedep/gryph/security/advisories/GHSA-f3jg-756w-gm35",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "coding agent"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
+  },
+  {
    "id": "CVE-2026-45134",
    "description": "LangSmith Client SDKs provide SDK's for interacting with the LangSmith platform. Prior to LangSmith SDK Python 0.8.0 and JS/TS 0.6.0, the LangSmith SDK's prompt pull methods (pull_prompt / pull_prompt_commit in Python, pullPrompt / pullPromptCommit in JS/TS) fetch and deserialize prompt manifests from the LangSmith Hub. These manifests may contain serialized LangChain objects and model configuration that affect runtime behavior. When pulling a public prompt by owner/name identifier, the manifest content is controlled by an external party, but prior versions of the SDK did not distinguish this from pulling a prompt within the caller's own organization. This vulnerability is fixed in LangSmith SDK Python 0.8.0 and JS/TS 0.6.0.",
    "published": "2026-05-27",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Awaiting Analysis",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -68080,17 +68430,17 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:cpe"
+     "A:name"
     ],
     "terms": [
-     "langchain:langchain:langchain"
+     "langchain:LangChain"
     ]
    },
    "status": "candidate",
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-45136",
@@ -68174,10 +68524,71 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-48064",
+   "description": "pam_usb provides hardware authentication for Linux using ordinary removable media. Prior to 0.9.1, when a PAM service is configured with deny_remote=false in pam_usb (commonly done for display managers such as gdm-password or lightdm to bypass process/TTY heuristics for local sessions), the PAM_RHOST check in pusb_do_auth() is also skipped. PAM_RHOST is set by remote daemons (sshd, XDMCP servers) to identify the remote client address. Because the check is gated inside if (opts.deny_remote), a genuine remote XDMCP connection reaches the USB device authentication step instead of being rejected. This vulnerability is fixed in 0.9.1.",
+   "published": "2026-05-27",
+   "last_modified": "2026-10-26",
+   "vuln_status": "Deferred",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/mcdope/pam_usb/issues/348",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mcdope/pam_usb/security/advisories/GHSA-w38v-cw9r-x9p6",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mcdope/pam_usb/issues/348",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
+  },
+  {
    "id": "CVE-2026-7524",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.1 could allow remote code execution due to improper validation of symbolic links during archive extraction.",
    "published": "2026-05-27",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -68235,13 +68646,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-7528",
    "description": "IBM Langflow OSS 1.0.0 through 1.9.0 could allow a denial of service due to uncontrolled resource consumption.",
    "published": "2026-05-27",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -68298,7 +68709,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-44450",
@@ -73853,6 +74264,83 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-42831",
+   "description": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code locally.",
+   "published": "2026-05-12",
+   "last_modified": "2026-10-26",
+   "vuln_status": "Analyzed",
+   "cna": "secure@microsoft.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.8,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "source": "secure@microsoft.com"
+   },
+   "cwe": [
+    "CWE-122"
+   ],
+   "products": [
+    {
+     "vendor": "microsoft",
+     "product": "365_copilot",
+     "versions_affected": "< 16.0.19822.20190",
+     "fixed_in": "16.0.19822.20190",
+     "product_id": "m365-copilot"
+    },
+    {
+     "vendor": "microsoft",
+     "product": "office",
+     "versions_affected": "2024",
+     "fixed_in": null,
+     "product_id": null
+    },
+    {
+     "vendor": "microsoft",
+     "product": "office_long_term_servicing_channel",
+     "versions_affected": "2021",
+     "fixed_in": null,
+     "product_id": null
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "fixed",
+    "version": "16.0.19822.20190",
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42831",
+     "source": "secure@microsoft.com",
+     "tags": [
+      "Vendor Advisory"
+     ]
+    }
+   ],
+   "related_agents": [
+    "microsoft-microsoft-365-copilot-for-government"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:cpe"
+    ],
+    "terms": [
+     "m365-copilot:microsoft:365_copilot"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
+  },
+  {
    "id": "CVE-2026-42893",
    "description": "Improper neutralization of special elements used in a command ('command injection') in M365 Copilot allows an unauthorized attacker to perform tampering over a network.",
    "published": "2026-05-12",
@@ -77281,7 +77769,7 @@
    "id": "CVE-2026-42078",
    "description": "PPTAgent is an agentic framework for reflective PowerPoint generation. Prior to commit 418491a, PPTAgent is vulnerable to arbitrary file write and directory creation via markdown_table_to_image. This issue has been patched via commit 418491a.",
    "published": "2026-05-04",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -77331,7 +77819,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-42079",
@@ -80146,7 +80634,7 @@
    "id": "CVE-2026-41679",
    "description": "Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution on any network-accessible Paperclip instance running in `authenticated` mode with default configuration. No user interaction, no credentials, just the target's address. The chain consists of six API calls. The attack is fully automated, requires no user interaction, and works against the default deployment configuration. Version 2026.416.0 patches the issue.",
    "published": "2026-04-23",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -80205,7 +80693,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-31504",
@@ -80744,7 +81232,7 @@
    "id": "CVE-2026-34082",
    "description": "Dify is an open-source LLM app development platform. Prior to 1.13.1, the method `DELETE /console/api/installed-apps/<appId>/conversations/<conversationId>` has poor authorization checking and allows any Dify-authenticated user to delete someone else's chat history. Version 1.13.1 patches the issue.",
    "published": "2026-04-20",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-26",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -80802,7 +81290,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-6596",
@@ -81116,7 +81604,7 @@
    "id": "CVE-2026-6600",
    "description": "A flaw has been found in langflow-ai langflow up to 1.8.3. This affects an unknown function of the file src/frontend/src/modals/IOModal/components/chatView/chatMessage/components/edit-message.tsx of the component Frontend React Component Rendering. Executing a manipulation can lead to cross site scripting. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
    "published": "2026-04-20",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-25",
    "vuln_status": "Deferred",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -81177,17 +81665,17 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:cpe"
+     "A:name"
     ],
     "terms": [
-     "langflow:langflow:langflow"
+     "langflow:Langflow"
     ]
    },
    "status": "candidate",
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-6617",
@@ -83164,7 +83652,7 @@
    "id": "CVE-2026-40087",
    "description": "LangChain is a framework for building agents and LLM-powered applications. Prior to 0.3.84 and 1.2.28, LangChain's f-string prompt-template validation was incomplete in two respects. First, some prompt template classes accepted f-string templates and formatted them without enforcing the same attribute-access validation as PromptTemplate. In particular, DictPromptTemplate and ImagePromptTemplate could accept templates containing attribute access or indexing expressions and subsequently evaluate those expressions during formatting. Second, f-string validation based on parsed top-level field names did not reject nested replacement fields inside format specifiers. In this pattern, the nested replacement field appears in the format specifier rather than in the top-level field name. As a result, earlier validation based on parsed field names did not reject the template even though Python formatting would still attempt to resolve the nested expression at runtime. This vulnerability is fixed in 0.3.84 and 1.2.28.",
    "published": "2026-04-09",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -83269,13 +83757,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-40088",
    "description": "PraisonAI is a multi-agent teams system. Prior to 4.5.121, the execute_command function and workflow shell execution are exposed to user-controlled input via agent workflows, YAML definitions, and LLM-generated tool calls, allowing attackers to inject arbitrary shell commands through shell metacharacters. This vulnerability is fixed in 4.5.121.",
    "published": "2026-04-09",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -83332,7 +83820,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-40111",
@@ -83986,7 +84474,7 @@
    "id": "CVE-2026-35487",
    "description": "text-generation-webui is an open-source web interface for running Large Language Models. Prior to 4.3, an unauthenticated path traversal vulnerability in load_prompt() allows reading any .txt file on the server filesystem. The file content is returned verbatim in the API response. This vulnerability is fixed in 4.3.",
    "published": "2026-04-07",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-10-25",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -84043,7 +84531,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-35568",
@@ -84679,7 +85167,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-35050",
@@ -88230,6 +88718,69 @@
    "reviewer": null,
    "checked_on": null,
    "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-5022",
+   "description": "The '/api/v1/files/images/{flow_id}/{file_name}' endpoint does not enforce any authentication or authorization checks, allowing any unauthenticated user to download images belonging to any flow by knowing (or guessing) the flow ID and file name.",
+   "published": "2026-03-27",
+   "last_modified": "2026-10-26",
+   "vuln_status": "Analyzed",
+   "cna": "vulnreport@tenable.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "vulnreport@tenable.com"
+   },
+   "cwe": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "langflow",
+     "product": "langflow",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "langflow"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://www.tenable.com/security/research/tra-2026-23",
+     "source": "vulnreport@tenable.com",
+     "tags": [
+      "Vendor Advisory"
+     ]
+    }
+   ],
+   "related_agents": [
+    "langflow-langflow"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:cpe"
+    ],
+    "terms": [
+     "langflow:langflow:langflow"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-10-26"
   },
   {
    "id": "CVE-2026-33619",

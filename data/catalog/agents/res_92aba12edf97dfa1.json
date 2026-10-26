@@ -11,16 +11,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://n8n.io/legal/security/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "680195eeba700f9ec6a21fa9217157294dfb73c51f5d3ccb7b5dbae5c94cc124",
+"next_check": "2026-11-02",
+"payload_hash": "21539a0b7db409cac4308fa74a5592a062f2ac1b986951c0b1af4934b7fa7840",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:11:30Z",
+"retrieved_at": "2026-10-26T12:30:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -37,16 +37,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-10-25)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://n8n.io/legal/privacy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "e5936a6602865a05a9d3b0ff06357aab755419e17d832f3d93bace654dff8817",
+"next_check": "2026-11-02",
+"payload_hash": "896b848c787719e5ad37af0a7dc06da5e1e7d21d6fefaee68df0e3572e42d7c8",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:11:30Z",
+"retrieved_at": "2026-10-26T12:30:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -63,16 +63,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-25)",
+"display": "Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://n8n.io/legal/security/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "680195eeba700f9ec6a21fa9217157294dfb73c51f5d3ccb7b5dbae5c94cc124",
+"next_check": "2026-11-02",
+"payload_hash": "21539a0b7db409cac4308fa74a5592a062f2ac1b986951c0b1af4934b7fa7840",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:11:30Z",
+"retrieved_at": "2026-10-26T12:30:15Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -379,7 +379,7 @@
 "external_ids": {
 "github": "n8n-io/n8n"
 },
-"first_seen": "2026-10-25T17:51:18Z",
+"first_seen": "2026-10-26T12:11:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -401,7 +401,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:00:15Z",
+"last_seen": "2026-10-26T12:17:57Z",
 "license": "Sustainable Use License",
 "merged_ids": [
 "res_47005ed1f60c52a2"
@@ -410,23 +410,23 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-23T07:51:27Z",
-"headline": "n8n release 1.123.87",
+"date": "2026-10-26T06:49:08Z",
+"headline": "n8n release 1.123.88",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [1.123.87](https://github.com/n8n-io/n8n/compare/n8n@1.123.86...n8n@1.123.87) (2026-10-23)\n\n<!-- This is an auto-generated description by cubic. -->\n<a href=\"https://cubic.dev/pr/n8n-io/n8n/pull/41902?utm_source=github\" target=\"_blank\" r",
+"summary": "## [1.123.88](https://github.com/n8n-io/n8n/compare/n8n@1.123.87...n8n@1.123.88) (2026-10-26)\n\n\n### Bug Fixes\n\n* **core:** Release the SQLite write lock when the write connection fails to open ([#41918](https://github.com/n8n-io/n8n/issues/",
 "tag": "product_update",
-"url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.87"
+"url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.88"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-23T07:25:18Z",
+"date": "2026-10-26T06:24:44Z",
 "headline": "n8n release beta",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [2.45.3](https://github.com/n8n-io/n8n/compare/n8n@2.45.2...n8n@2.45.3) (2026-10-23)\n\n\n### Bug Fixes\n\n* **editor:** Increase light-mode text contrast ([#41807](https://github.com/n8n-io/n8n/issues/41807)) ([9f41c0f](https://github.com/n8",
+"summary": "## [2.45.4](https://github.com/n8n-io/n8n/compare/n8n@2.45.3...n8n@2.45.4) (2026-10-26)\n\n\n### Bug Fixes\n\n* **core:** Recreate removed n8n-sandbox sandboxes and rerun workspace setup ([#41919](https://github.com/n8n-io/n8n/issues/41919)) ([1",
 "tag": "product_update",
 "url": "https://github.com/n8n-io/n8n/releases/tag/beta"
 }
@@ -434,12 +434,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:05:29Z",
+"checked_at": "2026-10-26T12:23:22Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:05:28Z",
+"checked_at": "2026-10-26T12:23:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -447,7 +447,7 @@
 "evidence_url": "https://github.com/n8n-io/n8n",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:05:29Z",
+"checked_at": "2026-10-26T12:23:22Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -473,11 +473,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-06-22T09:24:21Z",
-"github_forks": 61250,
+"github_forks": 61252,
 "github_language": "TypeScript",
-"github_open_issues": 1249,
-"github_pushed_at": "2026-10-25T17:58:39Z",
-"github_stars": 208564,
+"github_open_issues": 1250,
+"github_pushed_at": "2026-10-26T12:17:07Z",
+"github_stars": 208630,
 "github_topic": "mcp-server",
 "homepage": "https://n8n.io",
 "observed_popularity": "Not captured",
@@ -493,13 +493,13 @@
 "sources": [
 {
 "payload_hash": "f66978e4dc5b7493ea7428565e21fc901be928f1321fcad855512200c631f88a",
-"retrieved_at": "2026-10-25T17:51:18Z",
+"retrieved_at": "2026-10-26T12:11:40Z",
 "system": "seed_xlsx",
 "url": "https://github.com/n8n-io/n8n"
 },
 {
-"payload_hash": "1d7f7007fb39231e0b8ff403eb22651bd23d59d9a555ef84147419f910f7c1a1",
-"retrieved_at": "2026-10-25T18:00:15Z",
+"payload_hash": "d76eaa058aa288670383231a55e62e110c4f50ce7a03b7a667b6108f224db189",
+"retrieved_at": "2026-10-26T12:17:57Z",
 "system": "github",
 "url": "https://github.com/n8n-io/n8n"
 }

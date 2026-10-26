@@ -19,7 +19,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 26.84,
+"adoption": 26.92,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -44,7 +44,7 @@
 "external_ids": {
 "github": "Ebony-Vinyl/dsh-our-free-model"
 },
-"first_seen": "2026-10-25T17:55:30Z",
+"first_seen": "2026-10-26T12:12:45Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,10 +66,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:55:30Z",
+"last_seen": "2026-10-26T12:12:45Z",
 "license": "MIT",
 "name": "dsh-our-free-model",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-26T05:02:50Z",
+"headline": "dsh-our-free-model: v2.7.2：修复旧版插件升级路径",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# v2.7.2 插件发布\r\n\r\n本次只发布插件，桌面安装包和独立产品版本保持原状。\r\n\r\n## 修复旧版升级路径\r\n\r\n此前旧升级器最多接受 80 个文件、每个文件最多 4 MiB，而 2.7.1 清单有 93 个文件，并包含约 65 MiB 的引擎。无论换哪个下载源，旧用户都会在读取清单时失败。\r\n\r\n2.7.2 基于最新主线，将省 Token 模块合并为生成文件，引擎 gzip 压缩后拆成 9 个不超过 4 MiB 的分片。插件清单共 79 个文件，旧版可直接升级，无需",
+"tag": "product_update",
+"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.7.2"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-25T08:52:00Z",
@@ -80,17 +91,6 @@
 "summary": "## v2.7.1\n\n本版本专门收紧渠道排除：**WorkBuddy 国内版、WorkBuddy 国际版、华为云**这三个渠道在插件端与桌面端都不可用，也不存在任何指向它们的代码路径。\n\n### 补齐了此前漏掉的两个别名\n\n上一版的排除名单只覆盖 `workbuddy`、`workbuddy-ai`、`huaweicloud` 三个 id，实际存在两个漏洞：\n\n- **WorkBuddy 国内版在社区插件里常以 CodeBuddy 之名出现**，`codebuddy` / `",
 "tag": "product_update",
 "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.7.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-25T07:31:46Z",
-"headline": "dsh-our-free-model: v2.7.0 桌面端接入同款模型工作台",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## v2.7.0\n\n### 桌面端接入同款模型工作台\n\n桌面控制台新增「模型工作台」页，内嵌与插件端**完全相同**的 magpie 引擎：\n\n- 同一套渠道与账号管理界面、同一份模型清单、同一主题跟随（明暗与配色实时同步）、同一全屏与设置工具栏。\n- 工作台启动后，它提供的模型并入聚合清单，与订阅车道一起出现在模型选择器里；页面内改动会自动刷新目录。\n- 渠道排除策略两端一致：**不提供 WorkBuddy（含 `workbuddy-ai`）与华为云 Huawei Clo",
-"tag": "product_update",
-"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.7.0"
 }
 ],
 "news_checked": true,
@@ -113,7 +113,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:19:45Z",
+"checked_at": "2026-10-26T12:40:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -121,19 +121,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-09-24T16:17:19Z",
-"github_forks": 1213,
+"github_forks": 1241,
 "github_language": "JavaScript",
-"github_open_issues": 334,
-"github_pushed_at": "2026-10-25T14:13:09Z",
-"github_stars": 42784,
+"github_open_issues": 345,
+"github_pushed_at": "2026-10-26T07:54:25Z",
+"github_stars": 44142,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "ebony-vinyl-dsh-our-free-model",
 "sources": [
 {
-"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
-"retrieved_at": "2026-10-25T17:55:30Z",
+"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
+"retrieved_at": "2026-10-26T12:12:45Z",
 "system": "github",
 "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model"
 }

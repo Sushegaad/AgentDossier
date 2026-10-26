@@ -17,34 +17,7 @@
 "taxonomy_version": "sar-taxonomy-1.0"
 },
 "commercial": false,
-"compliance": [
-{
-"certificate_id": null,
-"covers_resource": "unknown",
-"credited": true,
-"detail": {
-"pages_visited": 5
-},
-"display": "Vendor-claimed (vendor page, 2026-10-25)",
-"evidence_url": "https://evomap.ai/privacy",
-"framework": "gdpr",
-"issued": null,
-"issuer": null,
-"match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "8e9746bcf656f8af7b573f8669387eeaf7c99de801c22d919eb1452f0524a968",
-"period_end": null,
-"retrieved_at": "2026-10-25T18:10:41Z",
-"review_reason": "framework named on the vendor's own page",
-"reviewer": null,
-"scope": "entity",
-"source": "vendor_trust_centers",
-"status": "active",
-"tier": 4,
-"valid_until": null,
-"variant": null
-}
-],
+"compliance": [],
 "deployment": "self-hosted",
 "description": "The GEP-powered self-evolving engine for AI agents. Auditable evolution with Genes, Capsules, and Events. | evomap.ai",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
@@ -55,20 +28,22 @@
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 9.6,
-"governance": 0.0,
+"governance": null,
 "health": 20.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
-"evidence_coverage": 1.0,
+"evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
 "rank": null,
 "score": 59.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": []
+"unknown": [
+"governance"
+]
 },
 "technology": {
 "components": {
@@ -76,7 +51,7 @@
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 9.6,
-"governance": 0.0,
+"governance": null,
 "health": 20.0,
 "trust": 21.0
 },
@@ -89,13 +64,15 @@
 "score": 80.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": []
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "EvoMap/evolver"
 },
-"first_seen": "2026-10-25T17:58:15Z",
+"first_seen": "2026-10-26T12:15:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -117,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:02:02Z",
+"last_seen": "2026-10-26T12:19:43Z",
 "license": "GPL-3.0",
 "merged_ids": [
 "res_e8afb83db046d96f"
@@ -153,14 +130,14 @@
 "evidence_url": "https://evomap.ai",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:04:48Z",
+"checked_at": "2026-10-26T12:22:40Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-10-25T18:04:47Z",
+"checked_at": "2026-10-26T12:22:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -168,7 +145,7 @@
 "evidence_url": "https://evomap.ai",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:04:48Z",
+"checked_at": "2026-10-26T12:22:41Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -185,15 +162,15 @@
 "github_language": "JavaScript",
 "github_open_issues": 34,
 "github_pushed_at": "2026-10-24T06:20:42Z",
-"github_stars": 8702,
+"github_stars": 8701,
 "github_topic": "ai-agent",
 "homepage": "https://evomap.ai"
 },
 "slug": "evomap-evolver",
 "sources": [
 {
-"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
-"retrieved_at": "2026-10-25T17:58:15Z",
+"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
+"retrieved_at": "2026-10-26T12:15:43Z",
 "system": "github",
 "url": "https://github.com/EvoMap/evolver"
 }
@@ -229,7 +206,7 @@
 "protocols": 3,
 "security": null,
 "traces": 5,
-"vendor_compliance": 4
+"vendor_compliance": null
 },
 "url": "https://evomap.ai",
 "vendor": "EvoMap"

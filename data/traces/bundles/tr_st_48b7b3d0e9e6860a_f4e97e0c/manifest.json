@@ -1,0 +1,26 @@
+{
+ "agent": "res_48b7b3d0e9e6860a",
+ "date": "2026-10-26",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_48b7b3d0e9e6860a_f4e97e0c",
+ "kind": "self_test",
+ "name": "hyperframes",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://hyperframes.heygen.com/.well-known/agent-card.json",
+   "checked_at": "2026-10-26T12:23:02Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "hyperframes"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "heygen-com-hyperframes"
+}

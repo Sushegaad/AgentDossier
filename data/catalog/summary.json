@@ -1,25 +1,25 @@
 {
- "built_at": "2026-10-25T18:24:17Z",
+ "built_at": "2026-10-26T12:45:45Z",
  "snapshot_date": "2026-09-25",
  "generator": "agentdossier 1.0.0",
  "score_version": "sar-score-2.0",
- "resources": 822,
+ "resources": 823,
  "by_source": {
   "ard": 156,
-  "github": 255,
+  "github": 256,
   "huggingface": 19,
   "mcp_registry": 264,
   "seed_xlsx": 158
  },
  "by_type": {
   "a2a_agent": 1,
-  "agent": 319,
+  "agent": 320,
   "api": 10,
   "framework": 54,
   "marketplace": 4,
-  "mcp_server": 351,
+  "mcp_server": 352,
   "platform": 17,
-  "skill": 64,
+  "skill": 63,
   "tool": 2
  },
  "protocols": {
@@ -27,18 +27,18 @@
    "unknown": 233,
    "not_found": 533,
    "verified": 35,
-   "invalid": 14,
+   "invalid": 15,
    "claimed": 7
   },
   "mcp": {
-   "claimed": 442,
+   "claimed": 443,
    "not_found": 229,
    "invalid": 12,
    "unknown": 139
   },
   "ard": {
    "unknown": 83,
-   "not_found": 550,
+   "not_found": 551,
    "verified": 166,
    "invalid": 23
   }
@@ -62,7 +62,7 @@
   },
   "technology": {
    "ranked": 100,
-   "discovered": 572
+   "discovered": 573
   },
   "cybersecurity": {
    "ranked": 100,
@@ -95,7 +95,7 @@
  },
  "identity_tiers": {
   "T1": 46,
-  "T2": 425,
+  "T2": 426,
   "T3": 289,
   "T4": 62
  },
@@ -113,18 +113,18 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T17:51:18Z",
-   "finished": "2026-10-25T17:51:18Z"
+   "started": "2026-10-26T12:11:40Z",
+   "finished": "2026-10-26T12:11:40Z"
   },
   "mcp_registry": {
    "source": "mcp_registry",
    "fetched": 200,
-   "produced": 19643,
-   "skipped": 357,
+   "produced": 19647,
+   "skipped": 353,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T17:51:18Z",
-   "finished": "2026-10-25T17:55:26Z"
+   "started": "2026-10-26T12:11:40Z",
+   "finished": "2026-10-26T12:12:40Z"
   },
   "huggingface": {
    "source": "huggingface",
@@ -135,18 +135,18 @@
    "error_samples": [
     "https://huggingface.co/api/spaces?search=agentic&sort=likes&direction=-1&limit=500&full=true: response too large"
    ],
-   "started": "2026-10-25T17:55:26Z",
-   "finished": "2026-10-25T17:55:27Z"
+   "started": "2026-10-26T12:12:40Z",
+   "finished": "2026-10-26T12:12:43Z"
   },
   "github": {
    "source": "github",
    "fetched": 104,
-   "produced": 9075,
+   "produced": 9099,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T17:55:27Z",
-   "finished": "2026-10-25T18:02:21Z"
+   "started": "2026-10-26T12:12:43Z",
+   "finished": "2026-10-26T12:20:05Z"
   },
   "hygiene": {
    "source": "hygiene",
@@ -155,14 +155,14 @@
    "dropped": {
     "no description, license or homepage": 18,
     "name marks it as a demo, sample, test or deprecated project": 14,
-    "no activity": 41,
-    "published by a hackathon, contest or course account": 71
+    "no activity": 42,
+    "published by a hackathon, contest or course account": 70
    }
   },
   "dedup": {
    "input": 771,
-   "output": 676,
-   "merged": 95,
+   "output": 677,
+   "merged": 94,
    "review_candidates": 7,
    "review_added": 0
   },
@@ -173,23 +173,23 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T18:02:22Z",
-   "finished": "2026-10-25T18:02:46Z"
+   "started": "2026-10-26T12:20:05Z",
+   "finished": "2026-10-26T12:20:32Z"
   },
   "ard_web": {
    "source": "ard_web",
-   "fetched": 543,
+   "fetched": 544,
    "produced": 161,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T18:02:46Z",
-   "finished": "2026-10-25T18:06:24Z"
+   "started": "2026-10-26T12:20:32Z",
+   "finished": "2026-10-26T12:24:24Z"
   },
   "protocol_claims": {
    "source": "protocol_claims",
    "curated": 4,
-   "self_description": 141
+   "self_description": 142
   },
   "fedramp": {
    "source": "fedramp",
@@ -198,8 +198,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T18:06:24Z",
-   "finished": "2026-10-25T18:07:15Z",
+   "started": "2026-10-26T12:24:24Z",
+   "finished": "2026-10-26T12:25:30Z",
    "inherited": 52
   },
   "csa_star": {
@@ -209,8 +209,8 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T18:07:15Z",
-   "finished": "2026-10-25T18:08:19Z"
+   "started": "2026-10-26T12:25:30Z",
+   "finished": "2026-10-26T12:26:56Z"
   },
   "curated": {
    "source": "curated",
@@ -219,49 +219,49 @@
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T18:08:19Z",
-   "finished": "2026-10-25T18:08:19Z"
+   "started": "2026-10-26T12:26:56Z",
+   "finished": "2026-10-26T12:26:56Z"
   },
   "vendor_claims": {
    "source": "vendor_trust_centers",
-   "fetched": 545,
-   "produced": 714,
+   "fetched": 546,
+   "produced": 712,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T18:08:19Z",
-   "finished": "2026-10-25T18:12:31Z"
+   "started": "2026-10-26T12:26:56Z",
+   "finished": "2026-10-26T12:31:25Z"
   },
   "compliance_review_added": {
-   "added": 33
+   "added": 2
   },
   "news": {
    "source": "news",
-   "fetched": 822,
-   "produced": 444,
+   "fetched": 823,
+   "produced": 446,
    "skipped": 0,
    "errors": 1,
    "error_samples": [
     "gdelt: GDELT unavailable (HTTP 429); skipped for the rest of the run"
    ],
-   "started": "2026-10-25T18:12:31Z",
-   "finished": "2026-10-25T18:24:17Z"
+   "started": "2026-10-26T12:31:25Z",
+   "finished": "2026-10-26T12:45:44Z"
   },
   "nvd": {
    "source": "nvd",
-   "fetched": 656,
-   "produced": 656,
+   "fetched": 655,
+   "produced": 655,
    "skipped": 0,
    "errors": 0,
    "error_samples": [],
-   "started": "2026-10-25T18:12:31Z",
-   "finished": "2026-10-25T18:24:17Z"
+   "started": "2026-10-26T12:31:25Z",
+   "finished": "2026-10-26T12:45:44Z"
   },
   "self_test_traces": {
    "source": "self_test",
-   "candidates": 228,
-   "appended": 36,
-   "unchanged": 192
+   "candidates": 229,
+   "appended": 14,
+   "unchanged": 215
   },
   "vendor_traces": {
    "source": "vendor_published",
@@ -274,11 +274,11 @@
    "curated": 10,
    "stored": 233,
    "model_level": 0,
-   "agents_with_traces": 240
+   "agents_with_traces": 241
   },
   "changelog": {
-   "events": 83,
-   "appended": 83
+   "events": 22,
+   "appended": 22
   }
  }
 }

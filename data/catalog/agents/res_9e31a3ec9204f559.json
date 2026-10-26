@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-25",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/logicgate",
 "framework": "csa_star",
 "issued": "2021-07-26",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
+"next_check": "2026-11-02",
+"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:07:30Z",
+"retrieved_at": "2026-10-26T12:25:51Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -93,7 +93,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-25T17:51:18Z",
+"first_seen": "2026-10-26T12:11:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -115,24 +115,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:51:18Z",
+"last_seen": "2026-10-26T12:11:40Z",
 "license": "Commercial",
 "name": "LogicGate Risk Cloud AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:05:19Z",
+"checked_at": "2026-10-26T12:23:12Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:05:18Z",
+"checked_at": "2026-10-26T12:23:12Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-25T18:05:19Z",
+"checked_at": "2026-10-26T12:23:13Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -142,7 +142,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:14:13Z",
+"checked_at": "2026-10-26T12:33:19Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -167,7 +167,7 @@
 "sources": [
 {
 "payload_hash": "a44c0d85b38c33b2f93922d4a6d37421091d8aa3c1be6d6718b52a0f7d6f4fa9",
-"retrieved_at": "2026-10-25T17:51:18Z",
+"retrieved_at": "2026-10-26T12:11:40Z",
 "system": "seed_xlsx",
 "url": "https://www.logicgate.com/"
 }

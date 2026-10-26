@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.45,
+"adoption": 28.46,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 9.6,
@@ -47,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.45,
+"adoption": 28.46,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 9.6,
@@ -61,7 +61,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 84.0,
+"score": 84.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "cheaper-inference/OmniRoute"
 },
-"first_seen": "2026-10-25T17:55:30Z",
+"first_seen": "2026-10-26T12:12:45Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,7 +101,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:02:02Z",
+"last_seen": "2026-10-26T12:19:43Z",
 "license": "MIT",
 "merged_ids": [
 "res_446442540ccca8ee"
@@ -137,14 +137,14 @@
 "evidence_url": "https://omniroute.online",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:05:37Z",
+"checked_at": "2026-10-26T12:23:30Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-10-25T18:05:35Z",
+"checked_at": "2026-10-26T12:23:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -152,7 +152,7 @@
 "evidence_url": "https://omniroute.online",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:05:37Z",
+"checked_at": "2026-10-26T12:23:31Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -164,7 +164,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:19:18Z",
+"checked_at": "2026-10-26T12:40:15Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -172,19 +172,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-13T12:38:31Z",
-"github_forks": 11869,
+"github_forks": 11929,
 "github_language": "TypeScript",
-"github_open_issues": 585,
-"github_pushed_at": "2026-10-25T11:47:06Z",
-"github_stars": 81048,
+"github_open_issues": 480,
+"github_pushed_at": "2026-10-26T11:55:37Z",
+"github_stars": 81321,
 "github_topic": "a2a",
 "homepage": "https://omniroute.online"
 },
 "slug": "cheaper-inference-omniroute",
 "sources": [
 {
-"payload_hash": "28ab79159c0f2d680e449c88530c47873e42e60849d968a487928889f69a0c59",
-"retrieved_at": "2026-10-25T18:02:02Z",
+"payload_hash": "be930caac64337017c9e15a9621e8240a8e2ea0363c2a03a57fb2f85a39b98a5",
+"retrieved_at": "2026-10-26T12:19:43Z",
 "system": "github",
 "url": "https://github.com/cheaper-inference/OmniRoute"
 }

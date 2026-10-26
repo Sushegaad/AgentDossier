@@ -14,7 +14,7 @@
 "external_ids": {
 "github": "Narcooo/inkos"
 },
-"first_seen": "2026-10-25T17:58:15Z",
+"first_seen": "2026-10-26T12:15:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -36,7 +36,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:58:15Z",
+"last_seen": "2026-10-26T12:15:43Z",
 "license": "AGPL-3.0",
 "name": "inkos",
 "news": [
@@ -50,17 +50,6 @@
 "summary": "- fix(core): normalize persisted paths across platforms (52075bb9)\n- fix(build): keep overrides compatible with pnpm 9 (de4e9fa5)\n- chore(release): prepare v1.8.0 documentation (b673c500)\n- fix(ci): align test matrix with node requirements",
 "tag": "product_update",
 "url": "https://github.com/Narcooo/inkos/releases/tag/v1.8.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-07-28T09:30:49Z",
-"headline": "inkos release v1.7.2",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "- chore(release): prepare v1.7.2 (c7851b94)\n- refactor(skills): replace legacy capability system (6e4ce005)\n- docs: document AgentSkills compatibility (d674c214)\n- feat(studio): import external skill folders (41a1138f)\n- feat(core): add int",
-"tag": "product_update",
-"url": "https://github.com/Narcooo/inkos/releases/tag/v1.7.2"
 }
 ],
 "news_checked": true,
@@ -84,19 +73,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-12T02:12:54Z",
-"github_forks": 1971,
+"github_forks": 1974,
 "github_language": "TypeScript",
 "github_open_issues": 246,
 "github_pushed_at": "2026-10-24T05:30:14Z",
-"github_stars": 10783,
+"github_stars": 10835,
 "github_topic": "ai-agent",
 "homepage": null
 },
 "slug": "narcooo-inkos",
 "sources": [
 {
-"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
-"retrieved_at": "2026-10-25T17:58:15Z",
+"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
+"retrieved_at": "2026-10-26T12:15:43Z",
 "system": "github",
 "url": "https://github.com/Narcooo/inkos"
 }

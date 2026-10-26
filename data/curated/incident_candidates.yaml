@@ -4,11 +4,121 @@
 # scaffolds a placeholder record in incidents.yaml for you to complete) or set its status to
 # `dismissed` so it does not come back. Feeds and keywords: config/trace_sources.json.
 version: incident-candidates-1.0
-scouted_on: '2026-10-25'
+scouted_on: '2026-10-26'
 sources_checked: 12
 sources_failed:
 - securityweek
 candidates:
+- id: cand-10ddb37ccc
+  status: new
+  title: When AI Agents Commit Breaches, Humans May Not Be Held Liable
+  url: https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable
+  date: '2026-10-16'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - breach
+  score: 6
+  snippet: As agents escape containment and access external systems, responsibility remains human. Accountability,
+    however, is much less settled.
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-26'
+- id: cand-317dd945be
+  status: new
+  title: Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk
+  url: https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk
+  date: '2026-10-16'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - attack
+  - chatgpt
+  - claude
+  score: 6
+  snippet: Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics
+    to target unsuspecting enterprise employees.
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-26'
+- id: cand-2f420b9776
+  status: promoted
+  title: Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions
+  url: https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html
+  date: '2026-10-23'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - ransom
+  score: 6
+  snippet: Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem
+    run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an "Autonomous
+    Red Team Kill Chain Framework" referred to as Phantom. The threat act…
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-26'
+  promoted_to: TR-2026-029
+  note: 'model claude-sonnet-5-5 on 2026-10-26: published as TR-2026-029'
+- id: cand-36fc1fcd85
+  status: dismissed
+  title: Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances
+  url: https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html
+  date: '2026-10-23'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - malicious
+  score: 6
+  snippet: AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported
+    token if a malicious API asked for it, security firm V12 said on October 22. The cause was the SDKs' default
+    client, which set no spending limit until releases on August…
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-26: confidence 0.50 below 0.8: Security firm V12 disclosed flaws in
+    the x402 SDKs that it confirmed through code review and local tests, with AI agents that auto-sign payments
+    as the exposed target, but no real-world attacks were reported, so this is a borderline red_team-style disclosure.'
+- id: cand-bb342c3df0
+  status: new
+  title: Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat
+  url: https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat
+  date: '2026-10-14'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - claude
+  - credential
+  - zero-click
+  score: 4
+  snippet: A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers,
+    including SSH private keys, AWS credentials, and Claude 0Auth tokens.
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-26'
+- id: cand-4a448e4fd1
+  status: dismissed
+  title: Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware
+  url: https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html
+  date: '2026-10-26'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - coding agent
+  - malicious
+  score: 4
+  snippet: A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding
+    agent install a known-malicious npm package, security firm Forever Security said in a report published last
+    week. The company caught the attempt on a real customer's machine and…
+  first_seen: '2026-10-26'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-26: the article does not state: date'
 - id: cand-eb3f373358
   status: promoted
   title: China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack
@@ -32,163 +142,46 @@ candidates:
   last_seen: '2026-10-25'
   promoted_to: TR-2026-026
   note: 'model claude-sonnet-5-5 on 2026-10-25: published as TR-2026-026'
-- id: cand-13b09143f8
-  status: dismissed
-  title: Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic
-  url: https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html
-  date: '2026-10-19'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - ai agent
-  - backdoor
-  - claude
-  - gemini
-  - hijack
-  - malicious
-  score: 8
-  snippet: A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS
-    systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits
-    for Anthropic Claude and Google Gemini, coding tools, and securi…
-  first_seen: '2026-10-19'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: model reply was not valid JSON: Expecting '','' delimiter'
-- id: cand-02ffa6ae8b
-  status: dismissed
-  title: OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL
-  url: https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html
-  date: '2026-10-22'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - coding agent
-  - hijack
-  - malicious
-  - mcp
-  - model context protocol
-  score: 7
-  snippet: A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's
-    Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) servers
-    to add outside tools, and such code would run with the de…
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.55 below 0.8: A researcher-disclosed vulnerability
-    in the OpenCode AI coding agent let a malicious MCP server run code on a developer''s machine during sign-in,
-    which makes the agent the target of an attack path, though the article reports no in-the-wild exploitation.'
-- id: cand-10ddb37ccc
-  status: new
-  title: When AI Agents Commit Breaches, Humans May Not Be Held Liable
-  url: https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable
-  date: '2026-10-16'
+- id: cand-a51aedcbc1
+  status: promoted
+  title: JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack
+  url: https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack
+  date: '2026-09-28'
   outlet: Dark Reading
   source_id: darkreading
   kind: press
   matched:
-  - ai agent
-  - ai agents
-  - breach
-  score: 6
-  snippet: As agents escape containment and access external systems, responsibility remains human. Accountability,
-    however, is much less settled.
-  first_seen: '2026-10-19'
-  last_seen: '2026-10-25'
-- id: cand-317dd945be
-  status: new
-  title: Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk
-  url: https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk
-  date: '2026-10-16'
-  outlet: Dark Reading
-  source_id: darkreading
-  kind: press
-  matched:
+  - agentic
   - attack
-  - chatgpt
-  - claude
-  score: 6
-  snippet: Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics
-    to target unsuspecting enterprise employees.
-  first_seen: '2026-10-19'
-  last_seen: '2026-10-25'
-- id: cand-c4bbcf2b5d
-  status: dismissed
-  title: 'From Phishing to LLMjacking: Threat Actors Targeting Cloud Billing Accounts for LLM Usage'
-  url: https://www.wiz.io/blog/from-phishing-to-llmjacking
-  date: '2026-10-20'
-  outlet: Wiz Research
-  source_id: wiz
-  kind: researcher
-  matched:
+  - compromis
   - credential
-  - hijack
-  - llm
-  - phishing
-  score: 6
-  snippet: How a single Google Search ad click leads to credential theft, hijacking of cloud billing account, and
-    hundreds of thousands of dollars incurred in unauthorized AI API usage
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: The report describes human-run phishing and cloud billing hijacking
-    to pay for Gemini API usage; no AI agent took actions, attacked, defended, or was itself attacked, and the content
-    of the AI workloads was never seen.'
-- id: cand-2f420b9776
-  status: new
-  title: Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions
-  url: https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html
-  date: '2026-10-23'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - ai agent
-  - ai agents
-  - ransom
-  score: 6
-  snippet: Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem
-    run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an "Autonomous
-    Red Team Kill Chain Framework" referred to as Phantom. The threat act…
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-- id: cand-36fc1fcd85
-  status: new
-  title: Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances
-  url: https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html
-  date: '2026-10-23'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - ai agent
-  - ai agents
-  - malicious
-  score: 6
-  snippet: AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported
-    token if a malicious API asked for it, security firm V12 said on October 22. The cause was the SDKs' default
-    client, which set no spending limit until releases on August…
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-- id: cand-c076aa0069
-  status: dismissed
-  title: Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America
-  url: https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/
-  date: '2026-09-03'
-  outlet: Palo Alto Networks Unit 42
-  source_id: unit42
+  - destructive
+  score: 8
+  snippet: The "agentic threat actor" may have used exposed credentials to access resources and delete cloud-based
+    storage, applications, and databases.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  promoted_to: TR-2026-015
+- id: cand-b6d6a0d06c
+  status: promoted
+  title: How I tricked Claude into leaking your deepest, darkest secrets
+  url: https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/
+  date: '2026-07-15'
+  outlet: Simon Willison (prompt injection)
+  source_id: simonwillison-pi
   kind: researcher
   matched:
   - attack
+  - claude
   - exfiltrat
-  - tool use
-  score: 5
-  snippet: Explore how attackers targeting Latin American entities use AI for data exfiltration and how basic OpSec
-    errors allow defenders to disrupt operations. The post Attackers Expose Ongoing AI Tool Use Targeting Organizations
-    in Latin America appeared first on Unit 42 .
+  - secrets
+  score: 6
+  snippet: 'How I tricked Claude into leaking your deepest, darkest secrets I''ve been impressed by the way the
+    Claude web_fetch tool is designed to avoid data exfiltration attacks. Ayush Paul found a hole in that design.
+    To recap: regular Claude chat is at risk of lethal trifecta attacks, b…'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.72 below 0.8: Unit 42 analyzed two real intrusion campaigns
-    in Latin America in which attackers used commercial LLMs (via self-hosted NextChat) to generate and iterate
-    scripts and tooling, though the article infers LLM use from artifacts rather than showing an autonomous agent.'
+  last_seen: '2026-10-11'
+  promoted_to: TR-2026-024
 - id: cand-4c8854c5ed
   status: promoted
   title: Visual Studio Copilot and SSMS Remote Code Execution (CVE-2026-103572)
@@ -230,320 +223,6 @@ candidates:
   last_seen: '2026-10-25'
   promoted_to: TR-2026-028
   note: 'model claude-sonnet-5-5 on 2026-10-25: published as TR-2026-028'
-- id: cand-b856ddccec
-  status: dismissed
-  title: Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts
-  url: https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html
-  date: '2026-10-15'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - agentic
-  - exploit
-  - rce
-  score: 5
-  snippet: Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian.
-    Langflow is an open-source platform that allows developers to build artificial intelligence (AI) applications
-    and agentic workflows. In February 2025, DataStax, the parent co…
-  first_seen: '2026-10-19'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: The article reports conventional exploitation of a remote code execution
-    vulnerability in the Langflow server software, seen in honeypot data. No AI agent took actions as attacker,
-    defender or attacked agent, and the target was the platform rather than a running agent.'
-- id: cand-95cc75cef0
-  status: dismissed
-  title: AI coding agents hijacked using AGENTS.md file in Downloads folder
-  url: https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/
-  date: '2026-10-25'
-  outlet: BleepingComputer
-  source_id: bleepingcomputer
-  kind: press
-  matched:
-  - coding agent
-  - hijack
-  - malicious
-  score: 5
-  snippet: Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that
-    tricked an AI coding agent into installing a rogue npm package. [...]
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
-- id: cand-ab5c871859
-  status: dismissed
-  title: PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking
-  url: https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html
-  date: '2026-10-25'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - agentic
-  - attack
-  - exploit
-  - vulnerabilit
-  score: 5
-  snippet: Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation
-    activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.
-    "In one case, the attackers targeted a government entity in E…
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
-- id: cand-bb342c3df0
-  status: new
-  title: Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat
-  url: https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat
-  date: '2026-10-14'
-  outlet: Dark Reading
-  source_id: darkreading
-  kind: press
-  matched:
-  - claude
-  - credential
-  - zero-click
-  score: 4
-  snippet: A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers,
-    including SSH private keys, AWS credentials, and Claude 0Auth tokens.
-  first_seen: '2026-10-19'
-  last_seen: '2026-10-25'
-- id: cand-c8156fc699
-  status: dismissed
-  title: An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part.
-  url: https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html
-  date: '2026-10-14'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - ai agent
-  - attack
-  score: 4
-  snippet: 'The bug was simple: the login let you choose where your sign-in code went. Proving it on a live website
-    was the hard part. TL;DR During an authorized assessment, an AI pentesting agent found a critical authentication
-    bypass on a major insurer''s production website, on its own. On…'
-  first_seen: '2026-10-19'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.72 below 0.8: A vendor-contributed article discloses
-    a concrete authorized assessment in which an AI pentesting agent autonomously found and confirmed an OTP authentication
-    bypass on a live insurer production site, so this is a real agent-driven test even though it is promotional.'
-- id: cand-b8d3de4bc0
-  status: dismissed
-  title: The Harness Is the Hard Part of Agentic Pentesting
-  url: https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html
-  date: '2026-10-21'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - agentic
-  - ai agent
-  - attack
-  score: 4
-  snippet: An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little
-    setup. Sure, the model writes the attacks. But everything that makes those attacks safe to run against production
-    and worth acting on afterward lives in the harness around the…
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: This is a vendor-contributed opinion and product piece on how to
-    build safe agentic pentesting harnesses; it only mentions the Hugging Face intrusion and Google''s bug bounty
-    change in passing, with no concrete incident described.'
-- id: cand-02ce196634
-  status: dismissed
-  title: You gave your AI agent access, but who is giving it orders?
-  url: https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/
-  date: '2026-10-23'
-  outlet: BleepingComputer
-  source_id: bleepingcomputer
-  kind: press
-  matched:
-  - ai agent
-  - ai agents
-  - malicious
-  score: 4
-  snippet: AI agents can be manipulated through malicious emails, websites, and plugins into executing commands,
-    stealing data, or deleting files using their legitimate permissions. Gen Digital explains how its Agent Trust
-    Hub helps protect agents through skill verification, secure connect…
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: This is a sponsored product announcement for Gen''s Agent Trust
-    Hub and only mentions a controlled email-based manipulation experiment in passing, with no concrete run, date
-    or details, so it is not a registry incident.'
-- id: cand-32ee688454
-  status: dismissed
-  title: 'A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity'
-  url: https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/
-  date: '2026-09-18'
-  outlet: Palo Alto Networks Unit 42
-  source_id: unit42
-  kind: researcher
-  matched:
-  - credential
-  - exfiltrat
-  - prompt injection
-  score: 3
-  snippet: 'Analysis of how default configurations in AWS AgentCore Harness allow prompt injection to exfiltrate
-    credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space
-    Between AgentCore Harness and Identity appeared first on Unit 42 .'
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
-- id: cand-98169c543c
-  status: dismissed
-  title: 'ARTEX in the Wild: Storm-0940 Expands Targeting of IT and Software Vendors'
-  url: https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors
-  date: '2026-10-22'
-  outlet: Wiz Research
-  source_id: wiz
-  kind: researcher
-  matched:
-  - ai agent
-  - attack
-  score: 2
-  snippet: Wiz Research is tracking an ARTEX-using actor, overlapping with Storm-0940, across multiple targeted
-    software vendors. Learn how the AI agent attacks Okta, Entra, and Cognito, and what it left behind in the logs.
-  first_seen: '2026-10-25'
-  last_seen: '2026-10-25'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
-- id: cand-a51aedcbc1
-  status: promoted
-  title: JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack
-  url: https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack
-  date: '2026-09-28'
-  outlet: Dark Reading
-  source_id: darkreading
-  kind: press
-  matched:
-  - agentic
-  - attack
-  - compromis
-  - credential
-  - destructive
-  score: 8
-  snippet: The "agentic threat actor" may have used exposed credentials to access resources and delete cloud-based
-    storage, applications, and databases.
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  promoted_to: TR-2026-015
-- id: cand-b6d6a0d06c
-  status: promoted
-  title: How I tricked Claude into leaking your deepest, darkest secrets
-  url: https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/
-  date: '2026-07-15'
-  outlet: Simon Willison (prompt injection)
-  source_id: simonwillison-pi
-  kind: researcher
-  matched:
-  - attack
-  - claude
-  - exfiltrat
-  - secrets
-  score: 6
-  snippet: 'How I tricked Claude into leaking your deepest, darkest secrets I''ve been impressed by the way the
-    Claude web_fetch tool is designed to avoid data exfiltration attacks. Ayush Paul found a hole in that design.
-    To recap: regular Claude chat is at risk of lethal trifecta attacks, b…'
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  promoted_to: TR-2026-024
-- id: cand-be680142a6
-  status: dismissed
-  title: Inside 90 days of attacks on AI infrastructure
-  url: https://www.wiz.io/blog/ai-infrastructure-honeypot
-  date: '2026-08-27'
-  outlet: Wiz Research
-  source_id: wiz
-  kind: researcher
-  matched:
-  - attack
-  - credential
-  - mcp
-  - prompt injection
-  - rce
-  score: 6
-  snippet: Wiz honeypots uncover active campaigns targeting LiteLLM, MCP servers, and AI frameworks through RCE,
-    blind prompt injection, and memory credential theft.
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
-- id: cand-4795e6e321
-  status: dismissed
-  title: 'An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation'
-  url: https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/
-  date: '2026-09-02'
-  outlet: Palo Alto Networks Unit 42
-  source_id: unit42
-  kind: researcher
-  matched:
-  - agentic
-  - ai agent
-  - ai agents
-  - attack
-  - breach
-  score: 6
-  snippet: 'Using autonomous AI agents, an attacker breached an enterprise network in a matter of hours. Understand
-    how to address and defend against agentic attacks. The post An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation
-    appeared first on Unit 42 .'
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
-- id: cand-552142e8ce
-  status: dismissed
-  title: Wikimedia Says OpenAI Agents Tried to Compromise Etherpad and Use Wiki Tools as Proxies
-  url: https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html
-  date: '2026-10-06'
-  outlet: The Hacker News
-  source_id: thehackernews
-  kind: press
-  matched:
-  - ai agent
-  - ai agents
-  - compromis
-  score: 6
-  snippet: The Wikimedia Foundation, which hosts Wikipedia, has confirmed that it has discovered activity by rogue
-    OpenAI agents on its platforms, including unsuccessful efforts to compromise Etherpad, a public note-taking
-    tool, and edit Wikipedia pages. "The unauthorized bot activities in…
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
-- id: cand-8e7f813921
-  status: dismissed
-  title: 'MCP Auto-Execution: From Git Clone to Cloud Compromise in Amazon Q VS Code Extension'
-  url: https://www.wiz.io/blog/amazon-q-vulnerability
-  date: '2026-06-26'
-  outlet: Wiz Research
-  source_id: wiz
-  kind: researcher
-  matched:
-  - attack
-  - compromis
-  - mcp
-  score: 5
-  snippet: By automatically loading MCP servers from workspace files, Amazon Q enabled attackers to execute code
-    and access sensitive cloud environments.
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.72 below 0.8: Wiz Research disclosed and demonstrated,
-    in a researcher test, that the Amazon Q VS Code extension (an AI coding agent) auto-executed workspace MCP configs,
-    enabling code execution and cloud credential capture; this is a concrete disclosed test of an agent as the attack
-    target, not a general warning.'
-- id: cand-620eba12f8
-  status: dismissed
-  title: 'Autonomous AI Intrusions Are Here: Lessons from the Hugging Face Compromise'
-  url: https://embracethered.com/blog/posts/2026/ai-intrusion-are-now-real/
-  date: '2026-07-19'
-  outlet: Embrace The Red
-  source_id: embracethered
-  kind: researcher
-  matched:
-  - ai agent
-  - compromis
-  - ransom
-  score: 4
-  snippet: Hugging Face disclosed an intrusion that, according to them, was driven end to end by an autonomous AI
-    agent system. Along similar lines, Sysdig recently published a blog on JADEPUFFER , which it assesses to be
-    an agent-driven ransomware capable of adapting in real time. The rep…
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
 - id: cand-964039d525
   status: promoted
   title: Breaking Claude Code Opus 5 Auto Mode
@@ -581,23 +260,6 @@ candidates:
   first_seen: '2026-10-11'
   last_seen: '2026-10-11'
   promoted_to: TR-2026-018
-- id: cand-63378e89b8
-  status: dismissed
-  title: ARTEX AI, Claude agents used in cyberattacks on South Korean banks
-  url: https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/
-  date: '2026-10-10'
-  outlet: BleepingComputer
-  source_id: bleepingcomputer
-  kind: press
-  matched:
-  - attack
-  - claude
-  score: 4
-  snippet: The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese
-    hacker using the ARTEX AI penetration testing suite and Claude agents. [...]
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
 - id: cand-59e390c515
   status: promoted
   title: Wiz Red Agent Finds Its Way Into Snowflake’s Internal Jira Through a Flaw in a GitHub Copilot–Assisted
@@ -617,43 +279,6 @@ candidates:
   first_seen: '2026-10-11'
   last_seen: '2026-10-11'
   promoted_to: TR-2026-021
-- id: cand-ef1100ea09
-  status: dismissed
-  title: From SELECT to SYSADMIN with SQL Copilot (CVE-2026-65669)
-  url: https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia/
-  date: '2026-09-30'
-  outlet: Embrace The Red
-  source_id: embracethered
-  kind: researcher
-  matched:
-  - copilot
-  - vulnerabilit
-  score: 3
-  snippet: Two weeks back I presented at BlueHat Asia 2026 about my research on Microsoft’s Copilot in SSMS, the
-    SQL Server Management Studio. This post is a write up about the talk, which covered CVE-2026-65669 , a SQL Server
-    Elevation of Privilege Vulnerability rated critical by Microsof…
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
-- id: cand-65a4731596
-  status: dismissed
-  title: Google's PageBreak AI Agent Finds 500 Flaws in Its Web Apps
-  url: https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps
-  date: '2026-10-06'
-  outlet: Dark Reading
-  source_id: darkreading
-  kind: press
-  matched:
-  - ai agent
-  - exploit
-  score: 3
-  snippet: The situation illustrates a trend toward using AI and deterministic validation to identify flaws and
-    exploitability, and provide a risk assessment.
-  first_seen: '2026-10-11'
-  last_seen: '2026-10-11'
-  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.60 below 0.8: Google''s internal AI agent PageBreak
-    autonomously ran against Google''s own first-party web applications and found over 500 verified XSS vulnerabilities,
-    a concrete disclosed run of an agent acting as an attacker-style scanner, though in an authorized internal setting.'
 - id: cand-f10957e4a6
   status: promoted
   title: '''AgentCorruption'' Puts AWS Environments at Risk With Single Prompt'
@@ -695,6 +320,28 @@ candidates:
   last_seen: '2026-10-12'
   note: Phishing platform impersonating AI chatbot ad portals; no AI agent attacked or defended anything. Out of
     scope.
+- id: cand-13b09143f8
+  status: dismissed
+  title: Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic
+  url: https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html
+  date: '2026-10-19'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - backdoor
+  - claude
+  - gemini
+  - hijack
+  - malicious
+  score: 8
+  snippet: A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS
+    systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits
+    for Anthropic Claude and Google Gemini, coding tools, and securi…
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-25'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: model reply was not valid JSON: Expecting '','' delimiter'
 - id: cand-a19b8b3a76
   status: dismissed
   title: CVE-2026-50510 GitHub Copilot Remote Code Execution Vulnerability
@@ -735,6 +382,29 @@ candidates:
   last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
+- id: cand-02ffa6ae8b
+  status: dismissed
+  title: OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL
+  url: https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html
+  date: '2026-10-22'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - coding agent
+  - hijack
+  - malicious
+  - mcp
+  - model context protocol
+  score: 7
+  snippet: A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's
+    Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) servers
+    to add outside tools, and such code would run with the de…
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.55 below 0.8: A researcher-disclosed vulnerability
+    in the OpenCode AI coding agent let a malicious MCP server run code on a developer''s machine during sign-in,
+    which makes the agent the target of an attack path, though the article reports no in-the-wild exploitation.'
 - id: cand-841b5aa214
   status: dismissed
   title: CVE-2026-47282 GitHub Copilot and Visual Studio Code Information Disclosure Vulnerability
@@ -772,7 +442,7 @@ candidates:
     fixed a macOS Terminal behavior that enabled a DNS-based data exfiltration technique. DNS Requests via ANSI
     Escape Codes David Leadbeater originally discovered an interesting beh…'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: Terminal DNS-exfiltration technique (Apple fix); tool-level research, not an agent incident.
 - id: cand-a284ba16d6
   status: dismissed
@@ -792,6 +462,47 @@ candidates:
   last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
+- id: cand-be680142a6
+  status: dismissed
+  title: Inside 90 days of attacks on AI infrastructure
+  url: https://www.wiz.io/blog/ai-infrastructure-honeypot
+  date: '2026-08-27'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - attack
+  - credential
+  - mcp
+  - prompt injection
+  - rce
+  score: 6
+  snippet: Wiz honeypots uncover active campaigns targeting LiteLLM, MCP servers, and AI frameworks through RCE,
+    blind prompt injection, and memory credential theft.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
+- id: cand-4795e6e321
+  status: dismissed
+  title: 'An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation'
+  url: https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/
+  date: '2026-09-02'
+  outlet: Palo Alto Networks Unit 42
+  source_id: unit42
+  kind: researcher
+  matched:
+  - agentic
+  - ai agent
+  - ai agents
+  - attack
+  - breach
+  score: 6
+  snippet: 'Using autonomous AI agents, an attacker breached an enterprise network in a matter of hours. Understand
+    how to address and defend against agentic attacks. The post An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation
+    appeared first on Unit 42 .'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
 - id: cand-cb9fdbb6aa
   status: dismissed
   title: CVE-2026-81381 GitHub Copilot and Visual Studio Code Information Disclosure Vulnerability
@@ -812,6 +523,25 @@ candidates:
   last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
+- id: cand-552142e8ce
+  status: dismissed
+  title: Wikimedia Says OpenAI Agents Tried to Compromise Etherpad and Use Wiki Tools as Proxies
+  url: https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html
+  date: '2026-10-06'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - compromis
+  score: 6
+  snippet: The Wikimedia Foundation, which hosts Wikipedia, has confirmed that it has discovered activity by rogue
+    OpenAI agents on its platforms, including unsuccessful efforts to compromise Etherpad, a public note-taking
+    tool, and edit Wikipedia pages. "The unauthorized bot activities in…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
 - id: cand-8e351f024f
   status: dismissed
   title: 'Social Engineering AI Agents: The New BEC for 2026'
@@ -831,6 +561,48 @@ candidates:
   first_seen: '2026-10-11'
   last_seen: '2026-10-19'
   note: Trend piece on social-engineering agents; no specific incident.
+- id: cand-c4bbcf2b5d
+  status: dismissed
+  title: 'From Phishing to LLMjacking: Threat Actors Targeting Cloud Billing Accounts for LLM Usage'
+  url: https://www.wiz.io/blog/from-phishing-to-llmjacking
+  date: '2026-10-20'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - credential
+  - hijack
+  - llm
+  - phishing
+  score: 6
+  snippet: How a single Google Search ad click leads to credential theft, hijacking of cloud billing account, and
+    hundreds of thousands of dollars incurred in unauthorized AI API usage
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: The report describes human-run phishing and cloud billing hijacking
+    to pay for Gemini API usage; no AI agent took actions, attacked, defended, or was itself attacked, and the content
+    of the AI workloads was never seen.'
+- id: cand-8e7f813921
+  status: dismissed
+  title: 'MCP Auto-Execution: From Git Clone to Cloud Compromise in Amazon Q VS Code Extension'
+  url: https://www.wiz.io/blog/amazon-q-vulnerability
+  date: '2026-06-26'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - attack
+  - compromis
+  - mcp
+  score: 5
+  snippet: By automatically loading MCP servers from workspace files, Amazon Q enabled attackers to execute code
+    and access sensitive cloud environments.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.72 below 0.8: Wiz Research disclosed and demonstrated,
+    in a researcher test, that the Amazon Q VS Code extension (an AI coding agent) auto-executed workspace MCP configs,
+    enabling code execution and cloud credential capture; this is a concrete disclosed test of an agent as the attack
+    target, not a general warning.'
 - id: cand-41212d102a
   status: dismissed
   title: CVE-2026-41109 GitHub Copilot and Visual Studio Code Security Feature Bypass Vulnerability
@@ -904,7 +676,7 @@ candidates:
   snippet: See how Wiz built Atlas, an autonomous AI system for vulnerability research that validates every finding
     with a real, working exploit.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: Product post (Wiz Atlas benchmark ranking); no incident.
 - id: cand-be0aff069e
   status: dismissed
@@ -965,6 +737,27 @@ candidates:
   last_seen: '2026-10-19'
   note: 'MSRC CVE advisory: a vulnerability record, not a published trace of what an agent did. Promote only if
     a write-up of the behaviour appears.'
+- id: cand-c076aa0069
+  status: dismissed
+  title: Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America
+  url: https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/
+  date: '2026-09-03'
+  outlet: Palo Alto Networks Unit 42
+  source_id: unit42
+  kind: researcher
+  matched:
+  - attack
+  - exfiltrat
+  - tool use
+  score: 5
+  snippet: Explore how attackers targeting Latin American entities use AI for data exfiltration and how basic OpSec
+    errors allow defenders to disrupt operations. The post Attackers Expose Ongoing AI Tool Use Targeting Organizations
+    in Latin America appeared first on Unit 42 .
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-25'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.72 below 0.8: Unit 42 analyzed two real intrusion campaigns
+    in Latin America in which attackers used commercial LLMs (via self-hosted NextChat) to generate and iterate
+    scripts and tooling, though the article infers LLM use from artifacts rather than showing an autonomous agent.'
 - id: cand-1c0714aca4
   status: dismissed
   title: CVE-2026-80098 Copilot Studio Elevation of Privilege Vulnerability
@@ -1099,6 +892,65 @@ candidates:
   first_seen: '2026-10-11'
   last_seen: '2026-10-12'
   note: Vendor how-to on agent permissions; no incident.
+- id: cand-b856ddccec
+  status: dismissed
+  title: Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts
+  url: https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html
+  date: '2026-10-15'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - agentic
+  - exploit
+  - rce
+  score: 5
+  snippet: Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian.
+    Langflow is an open-source platform that allows developers to build artificial intelligence (AI) applications
+    and agentic workflows. In February 2025, DataStax, the parent co…
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-25'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: The article reports conventional exploitation of a remote code execution
+    vulnerability in the Langflow server software, seen in honeypot data. No AI agent took actions as attacker,
+    defender or attacked agent, and the target was the platform rather than a running agent.'
+- id: cand-95cc75cef0
+  status: dismissed
+  title: AI coding agents hijacked using AGENTS.md file in Downloads folder
+  url: https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/
+  date: '2026-10-25'
+  outlet: BleepingComputer
+  source_id: bleepingcomputer
+  kind: press
+  matched:
+  - coding agent
+  - hijack
+  - malicious
+  score: 5
+  snippet: Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that
+    tricked an AI coding agent into installing a rogue npm package. [...]
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
+- id: cand-ab5c871859
+  status: dismissed
+  title: PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking
+  url: https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html
+  date: '2026-10-25'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - agentic
+  - attack
+  - exploit
+  - vulnerabilit
+  score: 5
+  snippet: Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation
+    activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.
+    "In one case, the attackers targeted a government entity in E…
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-25'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
 - id: cand-6b1c0c7d89
   status: dismissed
   title: 'Computer-Use and TOCTOU: What You Click Is Not What You Get!'
@@ -1119,6 +971,25 @@ candidates:
   first_seen: '2026-10-11'
   last_seen: '2026-10-19'
   note: Reproduction of a computer-use TOCTOU technique; research note without a specific product disclosure.
+- id: cand-620eba12f8
+  status: dismissed
+  title: 'Autonomous AI Intrusions Are Here: Lessons from the Hugging Face Compromise'
+  url: https://embracethered.com/blog/posts/2026/ai-intrusion-are-now-real/
+  date: '2026-07-19'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - ai agent
+  - compromis
+  - ransom
+  score: 4
+  snippet: Hugging Face disclosed an intrusion that, according to them, was driven end to end by an autonomous AI
+    agent system. Along similar lines, Sysdig recently published a blog on JADEPUFFER , which it assesses to be
+    an agent-driven ransomware capable of adapting in real time. The rep…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
 - id: cand-69cce761dd
   status: dismissed
   title: 'LLM Heist: Hijacking LiteLLM for Traffic Interception, Key Theft, and Tool-Call Injection'
@@ -1135,7 +1006,7 @@ candidates:
     also has access to the backend LLM provider keys. All of that makes it a high-value target. Not only for IP
     and data theft, but also for response modification and tool invocati…
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: LiteLLM gateway hijack research; serving infrastructure, not agent behaviour. Out of scope.
 - id: cand-2e6b2e97c0
   status: dismissed
@@ -1223,7 +1094,7 @@ candidates:
   snippet: How default keys, unauthenticated MCP sessions, and custom code guardrails expose cloud AI infrastructure
     to root-level remote code execution and IAM theft.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: LiteLLM gateway auth bypass; serving infrastructure, not agent behaviour. Out of scope.
 - id: cand-40f0b019e8
   status: dismissed
@@ -1332,6 +1203,85 @@ candidates:
   first_seen: '2026-10-11'
   last_seen: '2026-10-12'
   note: Fake Claude installers via ad redirects; brand abuse, not an agent acting. Out of scope.
+- id: cand-63378e89b8
+  status: dismissed
+  title: ARTEX AI, Claude agents used in cyberattacks on South Korean banks
+  url: https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/
+  date: '2026-10-10'
+  outlet: BleepingComputer
+  source_id: bleepingcomputer
+  kind: press
+  matched:
+  - attack
+  - claude
+  score: 4
+  snippet: The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese
+    hacker using the ARTEX AI penetration testing suite and Claude agents. [...]
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
+- id: cand-c8156fc699
+  status: dismissed
+  title: An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part.
+  url: https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html
+  date: '2026-10-14'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - ai agent
+  - attack
+  score: 4
+  snippet: 'The bug was simple: the login let you choose where your sign-in code went. Proving it on a live website
+    was the hard part. TL;DR During an authorized assessment, an AI pentesting agent found a critical authentication
+    bypass on a major insurer''s production website, on its own. On…'
+  first_seen: '2026-10-19'
+  last_seen: '2026-10-25'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.72 below 0.8: A vendor-contributed article discloses
+    a concrete authorized assessment in which an AI pentesting agent autonomously found and confirmed an OTP authentication
+    bypass on a live insurer production site, so this is a real agent-driven test even though it is promotional.'
+- id: cand-b8d3de4bc0
+  status: dismissed
+  title: The Harness Is the Hard Part of Agentic Pentesting
+  url: https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html
+  date: '2026-10-21'
+  outlet: The Hacker News
+  source_id: thehackernews
+  kind: press
+  matched:
+  - agentic
+  - ai agent
+  - attack
+  score: 4
+  snippet: An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little
+    setup. Sure, the model writes the attacks. But everything that makes those attacks safe to run against production
+    and worth acting on afterward lives in the harness around the…
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: This is a vendor-contributed opinion and product piece on how to
+    build safe agentic pentesting harnesses; it only mentions the Hugging Face intrusion and Google''s bug bounty
+    change in passing, with no concrete incident described.'
+- id: cand-02ce196634
+  status: dismissed
+  title: You gave your AI agent access, but who is giving it orders?
+  url: https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/
+  date: '2026-10-23'
+  outlet: BleepingComputer
+  source_id: bleepingcomputer
+  kind: press
+  matched:
+  - ai agent
+  - ai agents
+  - malicious
+  score: 4
+  snippet: AI agents can be manipulated through malicious emails, websites, and plugins into executing commands,
+    stealing data, or deleting files using their legitimate permissions. Gen Digital explains how its Agent Trust
+    Hub helps protect agents through skill verification, secure connect…
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: This is a sponsored product announcement for Gen''s Agent Trust
+    Hub and only mentions a controlled email-based manipulation experiment in passing, with no concrete run, date
+    or details, so it is not a registry incident.'
 - id: cand-979a5bb77e
   status: dismissed
   title: What happened after 2,000 people tried to hack my AI assistant
@@ -1351,6 +1301,62 @@ candidates:
   last_seen: '2026-10-19'
   note: Community challenge write-up (hackmyclaw); interesting but not a product incident; revisit if a formal report
     appears.
+- id: cand-32ee688454
+  status: dismissed
+  title: 'A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity'
+  url: https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/
+  date: '2026-09-18'
+  outlet: Palo Alto Networks Unit 42
+  source_id: unit42
+  kind: researcher
+  matched:
+  - credential
+  - exfiltrat
+  - prompt injection
+  score: 3
+  snippet: 'Analysis of how default configurations in AWS AgentCore Harness allow prompt injection to exfiltrate
+    credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space
+    Between AgentCore Harness and Identity appeared first on Unit 42 .'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-25'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
+- id: cand-ef1100ea09
+  status: dismissed
+  title: From SELECT to SYSADMIN with SQL Copilot (CVE-2026-65669)
+  url: https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia/
+  date: '2026-09-30'
+  outlet: Embrace The Red
+  source_id: embracethered
+  kind: researcher
+  matched:
+  - copilot
+  - vulnerabilit
+  score: 3
+  snippet: Two weeks back I presented at BlueHat Asia 2026 about my research on Microsoft’s Copilot in SSMS, the
+    SQL Server Management Studio. This post is a write up about the talk, which covered CVE-2026-65669 , a SQL Server
+    Elevation of Privilege Vulnerability rated critical by Microsof…
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
+- id: cand-65a4731596
+  status: dismissed
+  title: Google's PageBreak AI Agent Finds 500 Flaws in Its Web Apps
+  url: https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps
+  date: '2026-10-06'
+  outlet: Dark Reading
+  source_id: darkreading
+  kind: press
+  matched:
+  - ai agent
+  - exploit
+  score: 3
+  snippet: The situation illustrates a trend toward using AI and deterministic validation to identify flaws and
+    exploitability, and provide a risk assessment.
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: confidence 0.60 below 0.8: Google''s internal AI agent PageBreak
+    autonomously ran against Google''s own first-party web applications and found over 500 verified XSS vulnerabilities,
+    a concrete disclosed run of an agent acting as an attacker-style scanner, though in an authorized internal setting.'
 - id: cand-2b77d92549
   status: dismissed
   title: Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects
@@ -1402,7 +1408,7 @@ candidates:
     prompt injection attacks against Microsoft Word to full self-replicating worms: An attacker places hidden instructions
     in a document that is later used as source material in Copi…'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: Prompt-injection worm concept via Word; technique demo without a product disclosure record.
 - id: cand-b9857c7ad0
   status: dismissed
@@ -1420,7 +1426,7 @@ candidates:
     discovered using my automated research pipeline with Claude Code and Opus 4.6 back in April 2026. It was an
     exciting find, as this was the first bug I submitted to Red Hat. Cl…
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: Linux sandbox escape found with an automated research pipeline; a tooling note, not an agent attack/defence
     trace.
 - id: cand-30f335981c
@@ -1438,7 +1444,7 @@ candidates:
   snippet: Analyzing model input and output logs in an AI-native detection pipeline to understand and uncover malicious
     AI agent behavior
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: Product/engineering post (Wiz detection engine); no incident.
 - id: cand-74774c6212
   status: dismissed
@@ -1455,7 +1461,7 @@ candidates:
     OpenAI provide "six reports on unexpected or concerning model behavior we’ve observed in the last six months".
     This one here is my favorite: they caught some of their model…'
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: Commentary on OpenAI's misalignment reports (self-generated injections); analysis, not an attack/defence
     event.
 - id: cand-d67334d1d5
@@ -1475,6 +1481,23 @@ candidates:
   first_seen: '2026-10-11'
   last_seen: '2026-10-19'
   note: Policy coverage of Australian AI incident-reporting rules; the underlying Medicare breach is tracked separately.
+- id: cand-98169c543c
+  status: dismissed
+  title: 'ARTEX in the Wild: Storm-0940 Expands Targeting of IT and Software Vendors'
+  url: https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors
+  date: '2026-10-22'
+  outlet: Wiz Research
+  source_id: wiz
+  kind: researcher
+  matched:
+  - ai agent
+  - attack
+  score: 2
+  snippet: Wiz Research is tracking an ARTEX-using actor, overlapping with Storm-0940, across multiple targeted
+    software vendors. Learn how the AI agent attacks Okta, Entra, and Cognito, and what it left behind in the logs.
+  first_seen: '2026-10-25'
+  last_seen: '2026-10-26'
+  note: 'model claude-sonnet-5-5 on 2026-10-25: the article does not state: date'
 - id: cand-20de4e7204
   status: dismissed
   title: 'GPT-Red: Unlocking Self-Improvement for Robustness'
@@ -1489,7 +1512,7 @@ candidates:
   snippet: Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment,
     and prompt injection robustness.
   first_seen: '2026-10-11'
-  last_seen: '2026-10-25'
+  last_seen: '2026-10-26'
   note: Product post (OpenAI GPT-Red automated red teaming); no incident.
-reviewed_on: '2026-10-25'
+reviewed_on: '2026-10-26'
 reviewed_by: 'model: claude-sonnet-5-5'

@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-25",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/snowflake",
 "framework": "csa_star",
 "issued": "2022-11-01",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
+"next_check": "2026-11-02",
+"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:07:25Z",
+"retrieved_at": "2026-10-26T12:25:43Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -45,16 +45,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-25)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-26)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2308159208",
 "framework": "fedramp",
 "issued": "2023-12-08",
 "issuer": "Agency / 3PAO Fortreum, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "832799f0b1a76cc8258420e803526d573b3b9ee96b732a870ceabecda7b21e98",
+"next_check": "2026-11-02",
+"payload_hash": "64bc98d4cebbc137a6e7b94442b8678790eefa29e4347928a0de8620b56a168a",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:06:32Z",
+"retrieved_at": "2026-10-26T12:24:33Z",
 "review_reason": "vendor authorization for The Data Cloud on AWS GovCloud (High); entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -384,7 +384,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-25T17:51:18Z",
+"first_seen": "2026-10-26T12:11:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -406,24 +406,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:51:18Z",
+"last_seen": "2026-10-26T12:11:40Z",
 "license": "Snowflake service",
 "name": "Snowflake Cortex Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:06:01Z",
+"checked_at": "2026-10-26T12:24:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:05:58Z",
+"checked_at": "2026-10-26T12:23:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-25T18:06:03Z",
+"checked_at": "2026-10-26T12:24:02Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -433,7 +433,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:13:14Z",
+"checked_at": "2026-10-26T12:32:14Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -458,7 +458,7 @@
 "sources": [
 {
 "payload_hash": "46ccf65a7efbd54d98f622d88b60204ae9d5ded7140150d502d43cf17951150e",
-"retrieved_at": "2026-10-25T17:51:18Z",
+"retrieved_at": "2026-10-26T12:11:40Z",
 "system": "seed_xlsx",
 "url": "https://www.snowflake.com/en/product/features/cortex/"
 }

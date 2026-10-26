@@ -1,0 +1,43 @@
+{
+ "agent": "res_870c83d642b3c6e8",
+ "date": "2026-10-26",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_870c83d642b3c6e8_916dec89",
+ "kind": "self_test",
+ "name": "Paradev",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "oauth2"
+   ],
+   "card_url": "https://paradev.com/.well-known/agent-card.json",
+   "checked_at": "2026-10-26T12:23:42Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Workspace orchestration",
+    "Coding-agent sessions",
+    "Automations",
+    "Task tracking"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-10-26T12:23:40Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://paradev.com/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  },
+  "mcp": {
+   "card_url": "https://paradev.com/.well-known/mcp.json",
+   "checked_at": "2026-10-26T12:23:42Z",
+   "parser_version": "mcp-2025-06-18",
+   "status": "invalid"
+  }
+ },
+ "slug": "paradevai-paradev"
+}

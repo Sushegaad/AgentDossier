@@ -16,16 +16,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-25",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/deepset gmbh",
 "framework": "csa_star",
 "issued": "2024-06-03",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
+"next_check": "2026-11-02",
+"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:07:29Z",
+"retrieved_at": "2026-10-26T12:25:49Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -332,7 +332,7 @@
 "external_ids": {
 "github": "deepset-ai/haystack"
 },
-"first_seen": "2026-10-25T17:51:18Z",
+"first_seen": "2026-10-26T12:11:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -379,7 +379,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:55:30Z",
+"last_seen": "2026-10-26T12:12:45Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_bdefb76beabab4e3"
@@ -412,12 +412,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:05:01Z",
+"checked_at": "2026-10-26T12:22:55Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:05:00Z",
+"checked_at": "2026-10-26T12:22:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -425,7 +425,7 @@
 "evidence_url": "https://github.com/deepset-ai/haystack",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:05:02Z",
+"checked_at": "2026-10-26T12:22:55Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -437,7 +437,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:13:53Z",
+"checked_at": "2026-10-26T12:32:56Z",
 "cves": 4,
 "source": "nvd",
 "tier": 1
@@ -458,11 +458,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-11-14T09:05:28Z",
-"github_forks": 3338,
+"github_forks": 3343,
 "github_language": "Python",
-"github_open_issues": 179,
-"github_pushed_at": "2026-10-24T10:46:55Z",
-"github_stars": 26841,
+"github_open_issues": 186,
+"github_pushed_at": "2026-10-26T11:37:10Z",
+"github_stars": 26846,
 "github_topic": "ai-agents",
 "homepage": "https://haystack.deepset.ai",
 "observed_popularity": "~20k",
@@ -478,13 +478,13 @@
 "sources": [
 {
 "payload_hash": "176974c4048667f68fd4ee0fae501f18d36cf33541e01459cc006df95319e54f",
-"retrieved_at": "2026-10-25T17:51:18Z",
+"retrieved_at": "2026-10-26T12:11:40Z",
 "system": "seed_xlsx",
 "url": "https://github.com/deepset-ai/haystack"
 },
 {
-"payload_hash": "4f68625e4f0fa65e8931c3f7df84ef1d060fea67caf90e74492c804eae2400c8",
-"retrieved_at": "2026-10-25T17:55:30Z",
+"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
+"retrieved_at": "2026-10-26T12:12:45Z",
 "system": "github",
 "url": "https://github.com/deepset-ai/haystack"
 }

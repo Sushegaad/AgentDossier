@@ -36,16 +36,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-25)",
+"display": "Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://autoposter.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "cf6b79e2effc7e0ee547638fe82c26a205c01b68a957ac2b72e5320e10b055ba",
+"next_check": "2026-11-02",
+"payload_hash": "c412416c9946b8bab184627855a7a9539a61b6900644037910395df902707cf3",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:09:37Z",
+"retrieved_at": "2026-10-26T12:28:18Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -62,16 +62,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-25)",
+"display": "Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://autoposter.ai/privacy",
 "framework": "pci_dss",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "cf6b79e2effc7e0ee547638fe82c26a205c01b68a957ac2b72e5320e10b055ba",
+"next_check": "2026-11-02",
+"payload_hash": "c412416c9946b8bab184627855a7a9539a61b6900644037910395df902707cf3",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:09:37Z",
+"retrieved_at": "2026-10-26T12:28:18Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -164,7 +164,7 @@
 "external_ids": {
 "ard": "urn:air:autoposter.ai:social:api"
 },
-"first_seen": "2026-10-25T18:04:20Z",
+"first_seen": "2026-10-26T12:21:59Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -186,7 +186,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:04:20Z",
+"last_seen": "2026-10-26T12:21:59Z",
 "license": null,
 "name": "AutoPoster AI Agent API",
 "news": [],
@@ -217,7 +217,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:22:57Z",
+"checked_at": "2026-10-26T12:44:17Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -227,7 +227,7 @@
 "sources": [
 {
 "payload_hash": "54ed30257e6d735950910dc3702785cfc621a5d273690f5b6722c9557b26229e",
-"retrieved_at": "2026-10-25T18:04:20Z",
+"retrieved_at": "2026-10-26T12:21:59Z",
 "system": "ard",
 "url": "https://autoposter.ai/.well-known/ard.json"
 }
