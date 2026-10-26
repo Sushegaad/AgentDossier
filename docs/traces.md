@@ -19,7 +19,7 @@ when nothing exists. The absence is the point: it is the number this project exi
 | `scope` | `product` (this agent) · `platform` (a sibling product on the same platform; tiered one step lower) · `model` (the underlying model, not the agent) |
 | `observed` | `entry` (how the adversarial input reached the agent), `actions`, `egress`, `approval`, `secrets_touched`, `refused`, `outcome` |
 | `source`, `url`, `date`, `format` | who published it, where, when, as what |
-| `reviewer`, `checked_on` | null until a person checked the row against its source; the site shows "unreviewed" until then |
+| `reviewer`, `checked_on` | who checked the row against its source and when — a person, or `model: … (automated review)` for a row the weekly machine review published; the site shows "unreviewed" while both are null |
 
 ## Sources, in order of effort
 

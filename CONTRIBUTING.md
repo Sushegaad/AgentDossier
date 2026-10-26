@@ -21,17 +21,21 @@ or position.
 
 ## Incident candidates and the registry
 
-The weekly refresh files candidate incidents in `data/curated/incident_candidates.yaml` (see
-`docs/incidents.md`). To act on one:
+The weekly refresh files candidate incidents in `data/curated/incident_candidates.yaml` and then
+**reviews them with a model** (`agentdossier incidents review`, `ANTHROPIC_API_KEY`): each
+candidate's article is read, and the record is published when it describes a specific, real event
+with confidence ≥ 0.8 from a non-aggregator source, or dismissed with the reason on file (see
+`docs/incidents.md`). Nobody has to act on a candidate. If you want to:
 
-- `uv run agentdossier incidents draft <cand-id>` scaffolds a `status: placeholder` record in
-  `data/curated/incidents.yaml`; complete the `TODO` fields from the sources, then set
-  `status: published`.
-- `uv run agentdossier incidents dismiss <cand-id> --note "why"` retires one.
+- `uv run agentdossier incidents dismiss <cand-id> --note "why"` retracts a decision — delete the
+  published row too if there is one.
+- `uv run agentdossier incidents draft <cand-id>` scaffolds a `status: placeholder` record for one
+  you would rather write by hand; the next review will read its sources and publish or remove it
+  unless you publish it first.
 
-A record is "as reported": figures are the sources' own, MITRE tactics are your reading of them, and
-nothing is published about a private individual. Set `reviewer` and `checked_on` once you have
-checked every line against its sources.
+A record is "as reported": figures are the sources' own, MITRE tactics are the reviewer's reading,
+and nothing is published about a private individual. A row you check yourself gets your name in
+`reviewer` and the date in `checked_on`; a row the model published says so.
 
 ## Keeping the docs true
 

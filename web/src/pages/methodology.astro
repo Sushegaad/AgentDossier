@@ -88,8 +88,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       Severity, description, affected versions and references are the official record's (NVD's score first, then the
       CNA's; references NVD tags <em>Exploit</em> are dropped). The category, the attack-surface tags (from the CWE and the
       description) and the links to agent dossiers and public traces are this registry's classification. CISA's Known
-      Exploited Vulnerabilities catalog is the only exploitation signal carried. A row is <em>unreviewed</em> until a person
-      checks it; a wrong listing is excluded with a one-line, noted override that survives every rebuild, and the record
+      Exploited Vulnerabilities catalog is the only exploitation signal carried. A row is a candidate until a person
+      includes or excludes it (its page says who did); a wrong listing is excluded with a one-line, noted override that survives every rebuild, and the record
       is never edited. No score of ours is derived from a CVE; the dossier's Security row and its CVE band show the
       registry's links to the agent (by listed product) and stop there — "no CVE linked" reads "none linked in the
       products checked", never as a finding. A search result shows the same count; an incident page lists the CVE ids
