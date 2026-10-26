@@ -31,16 +31,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-25)",
+"display": "Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://annsa.ai/security",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "af325f6b840d363c9c07737fd3f04ad7edbcb5198a79779d4563d759a4cf3a29",
+"next_check": "2026-11-02",
+"payload_hash": "2bd8bd07c89d51cf09b4305633e2382da39d24fa81f8ab46007c1b3d59d84edb",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:08:57Z",
+"retrieved_at": "2026-10-26T12:27:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -57,16 +57,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://annsa.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "da9108804d4930618525ff532a71c09bd31a599888cddbd9ce4cde71d5d61722",
+"next_check": "2026-11-02",
+"payload_hash": "465e5ecc95e5c990f2f4726c44a5342690d129608bba4ecc532ff604d5125f43",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:08:57Z",
+"retrieved_at": "2026-10-26T12:27:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -83,16 +83,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-25)",
+"display": "Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://annsa.ai/privacy",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "da9108804d4930618525ff532a71c09bd31a599888cddbd9ce4cde71d5d61722",
+"next_check": "2026-11-02",
+"payload_hash": "465e5ecc95e5c990f2f4726c44a5342690d129608bba4ecc532ff604d5125f43",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:08:57Z",
+"retrieved_at": "2026-10-26T12:27:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -164,7 +164,7 @@
 "external_ids": {
 "ard": "urn:air:annsa.ai:server:annsa"
 },
-"first_seen": "2026-10-25T18:03:55Z",
+"first_seen": "2026-10-26T12:21:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -186,7 +186,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:03:55Z",
+"last_seen": "2026-10-26T12:21:43Z",
 "license": null,
 "name": "Annsa",
 "news": [],
@@ -224,7 +224,7 @@
 "sources": [
 {
 "payload_hash": "1b4a5a1bcc1215d24582d0ce0061a9a8ec0132b566471597a377dabcd74af5c7",
-"retrieved_at": "2026-10-25T18:03:55Z",
+"retrieved_at": "2026-10-26T12:21:43Z",
 "system": "ard",
 "url": "https://annsa.ai/.well-known/ai-catalog.json"
 }

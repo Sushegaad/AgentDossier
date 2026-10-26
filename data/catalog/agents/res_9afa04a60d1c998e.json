@@ -49,7 +49,7 @@
 "external_ids": {
 "github": "esengine/DeepSeek-Reasonix"
 },
-"first_seen": "2026-10-25T17:58:15Z",
+"first_seen": "2026-10-26T12:15:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -78,47 +78,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:58:15Z",
+"last_seen": "2026-10-26T12:15:43Z",
 "license": "MIT",
 "name": "DeepSeek-Reasonix",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-24T22:06:05Z",
-"headline": "DeepSeek-Reasonix: Reasonix CLI v2.51.0",
+"date": "2026-10-26T00:35:05Z",
+"headline": "DeepSeek-Reasonix: Reasonix CLI v2.52.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "CLI archives built from the Studio release [studio-v2.51.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.51.0).",
+"summary": "CLI archives built from the Studio release [studio-v2.52.0](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.52.0).",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.51.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.52.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-24T22:03:02Z",
-"headline": "DeepSeek-Reasonix: Reasonix Studio v2.51.0",
+"date": "2026-10-26T00:30:58Z",
+"headline": "DeepSeek-Reasonix: Reasonix Studio v2.52.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "本版新增视频壁纸、查找框的大小写与正则开关、快捷键一览和长对话分页加载，正文栏可拖得更窄，并修复多处保存、粘贴与显示问题。\n\n## 新增\n\n- 壁纸可以选 MP4 或 WebM 视频，作为静音循环的动态壁纸；窗口隐藏或失焦、系统减弱动效或精简效果下停在第一帧。关联 #14357。\n- 对话里的查找框多了两个开关：区分大小写，以及把查询当作正则表达式。关联 #14198 by @imcreazy。\n- 设置的外观页增加「快捷键」一栏，列出窗口里所有可用按键，可以搜「快捷键」「C",
+"summary": "本版新增 Wallpaper Engine 场景壁纸、主题包的五个代码配色标记和历史竖带的展开，移除正文拖动把手与顶栏沙盒按钮，并修复压缩卡死、没有文件夹无法开会话等多处问题。\n\n## 新增\n\n- 壁纸可以导入 Wallpaper Engine 场景文件夹：提取主图和全部音轨循环播放，支持 DXT1/DXT3/DXT5 压缩主图，提供音量、静音和鼠标视差。关联 #14407 by @EMEEEEMMMM、#14478 by @EMEEEEMMMM。\n- 主题包可以给注释、类型",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.51.0"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.52.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:05:53Z",
+"checked_at": "2026-10-26T12:23:51Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:05:52Z",
+"checked_at": "2026-10-26T12:23:49Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-25T18:05:53Z",
+"checked_at": "2026-10-26T12:23:51Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -128,7 +128,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:20:00Z",
+"checked_at": "2026-10-26T12:41:02Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -136,19 +136,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-21T08:27:02Z",
-"github_forks": 2479,
+"github_forks": 2482,
 "github_language": "Go",
-"github_open_issues": 515,
-"github_pushed_at": "2026-10-25T17:53:15Z",
-"github_stars": 35961,
+"github_open_issues": 534,
+"github_pushed_at": "2026-10-26T12:08:14Z",
+"github_stars": 35966,
 "github_topic": "ai-agent",
 "homepage": "http://reasonix.io/"
 },
 "slug": "esengine-deepseek-reasonix",
 "sources": [
 {
-"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
-"retrieved_at": "2026-10-25T17:58:15Z",
+"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
+"retrieved_at": "2026-10-26T12:15:43Z",
 "system": "github",
 "url": "https://github.com/esengine/DeepSeek-Reasonix"
 }

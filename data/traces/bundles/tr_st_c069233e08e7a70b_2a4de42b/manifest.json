@@ -1,0 +1,22 @@
+{
+ "agent": "res_c069233e08e7a70b",
+ "date": "2026-10-26",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c069233e08e7a70b_2a4de42b",
+ "kind": "self_test",
+ "name": "superset-mcp",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:paradev.com:skill:superset-mcp",
+   "manifest_url": "https://paradev.com/.well-known/ai-catalog.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "paradev-com-superset-mcp"
+}

@@ -1,10 +1,10 @@
 {
   "version": "incident-source-check-1.0",
-  "checked_on": "2026-10-25",
-  "incidents_checked": 22,
-  "sources_checked": 37,
+  "checked_on": "2026-10-26",
+  "incidents_checked": 23,
+  "sources_checked": 38,
   "summary": {
-    "ok": 28,
+    "ok": 29,
     "moved": 0,
     "gone": 1,
     "unverified": 8,
@@ -248,6 +248,13 @@
     "TR-2026-028": [
       {
         "url": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-029": [
+      {
+        "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
         "status": "ok",
         "http": 200
       }

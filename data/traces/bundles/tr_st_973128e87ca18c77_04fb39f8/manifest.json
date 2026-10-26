@@ -1,0 +1,19 @@
+{
+ "agent": "res_973128e87ca18c77",
+ "date": "2026-10-26",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_973128e87ca18c77_04fb39f8",
+ "kind": "self_test",
+ "name": "Paradev docs MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:paradev.com:mcp:docs",
+   "manifest_url": "https://paradev.com/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "paradev-com-paradev-docs-mcp-server"
+}

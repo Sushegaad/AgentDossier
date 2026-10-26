@@ -24,7 +24,7 @@
 "domains": {
 "finance": {
 "components": {
-"adoption": 26.45,
+"adoption": 26.46,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -47,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.45,
+"adoption": 26.46,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "HKUDS/Vibe-Trading"
 },
-"first_seen": "2026-10-25T17:58:15Z",
+"first_seen": "2026-10-26T12:15:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -137,7 +137,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:58:15Z",
+"last_seen": "2026-10-26T12:15:43Z",
 "license": "MIT",
 "name": "Vibe-Trading",
 "news": [
@@ -167,12 +167,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:06:14Z",
+"checked_at": "2026-10-26T12:24:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:06:13Z",
+"checked_at": "2026-10-26T12:24:10Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -180,7 +180,7 @@
 "evidence_url": "https://vibetrading.wiki/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:06:14Z",
+"checked_at": "2026-10-26T12:24:12Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -192,7 +192,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:19:55Z",
+"checked_at": "2026-10-26T12:40:55Z",
 "cves": 7,
 "source": "nvd",
 "tier": 1
@@ -200,19 +200,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-01T09:52:20Z",
-"github_forks": 5925,
+"github_forks": 5934,
 "github_language": "Python",
-"github_open_issues": 20,
-"github_pushed_at": "2026-10-25T14:27:19Z",
-"github_stars": 36668,
+"github_open_issues": 26,
+"github_pushed_at": "2026-10-26T12:04:53Z",
+"github_stars": 36717,
 "github_topic": "ai-agent",
 "homepage": "https://vibetrading.wiki/"
 },
 "slug": "hkuds-vibe-trading",
 "sources": [
 {
-"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
-"retrieved_at": "2026-10-25T17:58:15Z",
+"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
+"retrieved_at": "2026-10-26T12:15:43Z",
 "system": "github",
 "url": "https://github.com/HKUDS/Vibe-Trading"
 }

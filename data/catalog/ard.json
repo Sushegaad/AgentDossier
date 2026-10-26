@@ -1082,7 +1082,7 @@
    "displayName": "Apify Store search",
    "type": "application/json",
    "url": "https://api.apify.com/v2/store",
-   "description": "Search endpoint over the 98,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
+   "description": "Search endpoint over the 99,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
    "tags": [
     "search",
     "discovery",
@@ -2357,6 +2357,215 @@
    }
   },
   {
+   "identifier": "urn:air:paradev.com:mcp:superset",
+   "displayName": "Paradev MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://paradev.com/.well-known/mcp/server-card.json",
+   "description": "Create Git-worktree workspaces, launch coding-agent sessions, open terminals, set up automations, and manage tasks on behalf of a Paradev user. OAuth 2.1 + PKCE or API key.",
+   "tags": [
+    "coding-agents",
+    "workspaces",
+    "orchestration",
+    "automations",
+    "mcp"
+   ],
+   "capabilities": [
+    "tasks",
+    "workspaces",
+    "agents",
+    "terminals",
+    "automations",
+    "projects",
+    "hosts",
+    "organization"
+   ],
+   "representativeQueries": [
+    "create a workspace on a new branch and start Claude Code on it",
+    "list my open Paradev tasks",
+    "schedule a nightly agent run that audits the repo",
+    "show what my coding agents are doing right now"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:mcp:docs",
+   "displayName": "Paradev docs MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://docs.paradev.com/.well-known/mcp/server-card.json",
+   "description": "Read-only search and retrieval over the Paradev documentation. No authentication.",
+   "tags": [
+    "documentation",
+    "search",
+    "mcp"
+   ],
+   "capabilities": [
+    "docs_search",
+    "docs_read"
+   ],
+   "representativeQueries": [
+    "how do I install the Paradev CLI",
+    "what does a Paradev automation do"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:api:superset",
+   "displayName": "Paradev API",
+   "type": "application/vnd.oai.openapi+json;version=3.1",
+   "url": "https://api.superset.sh/openapi.json",
+   "description": "OpenAPI 3.1 description of the Paradev HTTP surface: the MCP endpoint, OAuth 2.1 endpoints, and discovery metadata.",
+   "tags": [
+    "api",
+    "openapi",
+    "oauth"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-orchestrate",
+   "displayName": "superset-orchestrate",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-orchestrate/SKILL.md",
+   "description": "Agent skill: orchestrate with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-setup",
+   "displayName": "superset-setup",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-setup/SKILL.md",
+   "description": "Agent skill: setup with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-automate",
+   "displayName": "superset-automate",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-automate/SKILL.md",
+   "description": "Agent skill: automate with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-standup",
+   "displayName": "superset-standup",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-standup/SKILL.md",
+   "description": "Agent skill: standup with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-doctor",
+   "displayName": "superset-doctor",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-doctor/SKILL.md",
+   "description": "Agent skill: doctor with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-feedback",
+   "displayName": "superset-feedback",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-feedback/SKILL.md",
+   "description": "Agent skill: feedback with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-10x",
+   "displayName": "superset-10x",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-10x/SKILL.md",
+   "description": "Agent skill: 10x with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-contribute",
+   "displayName": "superset-contribute",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-contribute/SKILL.md",
+   "description": "Agent skill: contribute with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:paradev.com:skill:superset-mcp",
+   "displayName": "superset-mcp",
+   "type": "application/ai-skill+md",
+   "url": "https://paradev.com/.well-known/agent-skills/superset-mcp/SKILL.md",
+   "description": "Agent skill: mcp with the Paradev CLI and MCP server.",
+   "tags": [
+    "skill",
+    "superset"
+   ],
+   "trustManifest": {
+    "identity": "did:web:paradev.com",
+    "identityType": "did"
+   }
+  },
+  {
    "@context": "https://agenticresourcediscovery.org/context/v1",
    "identifier": "urn:air:pydantic.dev:server:logfire-mcp",
    "displayName": "Pydantic Logfire MCP Server",
@@ -2428,215 +2637,6 @@
     "discover the public Pydantic and Logfire APIs",
     "find the OpenAPI schema for my Logfire region"
    ]
-  },
-  {
-   "identifier": "urn:air:superset.sh:mcp:superset",
-   "displayName": "Superset MCP server",
-   "type": "application/mcp-server-card+json",
-   "url": "https://superset.sh/.well-known/mcp/server-card.json",
-   "description": "Create Git-worktree workspaces, launch coding-agent sessions, open terminals, set up automations, and manage tasks on behalf of a Superset user. OAuth 2.1 + PKCE or API key.",
-   "tags": [
-    "coding-agents",
-    "workspaces",
-    "orchestration",
-    "automations",
-    "mcp"
-   ],
-   "capabilities": [
-    "tasks",
-    "workspaces",
-    "agents",
-    "terminals",
-    "automations",
-    "projects",
-    "hosts",
-    "organization"
-   ],
-   "representativeQueries": [
-    "create a workspace on a new branch and start Claude Code on it",
-    "list my open Superset tasks",
-    "schedule a nightly agent run that audits the repo",
-    "show what my coding agents are doing right now"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:mcp:docs",
-   "displayName": "Superset docs MCP server",
-   "type": "application/mcp-server-card+json",
-   "url": "https://docs.superset.sh/.well-known/mcp/server-card.json",
-   "description": "Read-only search and retrieval over the Superset documentation. No authentication.",
-   "tags": [
-    "documentation",
-    "search",
-    "mcp"
-   ],
-   "capabilities": [
-    "docs_search",
-    "docs_read"
-   ],
-   "representativeQueries": [
-    "how do I install the Superset CLI",
-    "what does a Superset automation do"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:api:superset",
-   "displayName": "Superset API",
-   "type": "application/vnd.oai.openapi+json;version=3.1",
-   "url": "https://api.superset.sh/openapi.json",
-   "description": "OpenAPI 3.1 description of the Superset HTTP surface: the MCP endpoint, OAuth 2.1 endpoints, and discovery metadata.",
-   "tags": [
-    "api",
-    "openapi",
-    "oauth"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-orchestrate",
-   "displayName": "superset-orchestrate",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-orchestrate/SKILL.md",
-   "description": "Agent skill: orchestrate with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-setup",
-   "displayName": "superset-setup",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-setup/SKILL.md",
-   "description": "Agent skill: setup with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-automate",
-   "displayName": "superset-automate",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-automate/SKILL.md",
-   "description": "Agent skill: automate with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-standup",
-   "displayName": "superset-standup",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-standup/SKILL.md",
-   "description": "Agent skill: standup with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-doctor",
-   "displayName": "superset-doctor",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-doctor/SKILL.md",
-   "description": "Agent skill: doctor with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-feedback",
-   "displayName": "superset-feedback",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-feedback/SKILL.md",
-   "description": "Agent skill: feedback with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-10x",
-   "displayName": "superset-10x",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-10x/SKILL.md",
-   "description": "Agent skill: 10x with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-contribute",
-   "displayName": "superset-contribute",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-contribute/SKILL.md",
-   "description": "Agent skill: contribute with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
-  },
-  {
-   "identifier": "urn:air:superset.sh:skill:superset-mcp",
-   "displayName": "superset-mcp",
-   "type": "application/ai-skill+md",
-   "url": "https://superset.sh/.well-known/agent-skills/superset-mcp/SKILL.md",
-   "description": "Agent skill: mcp with the Superset CLI and MCP server.",
-   "tags": [
-    "skill",
-    "superset"
-   ],
-   "trustManifest": {
-    "identity": "did:web:superset.sh",
-    "identityType": "did"
-   }
   },
   {
    "identifier": "urn:air:worldmonitor.app:mcp:worldmonitor",

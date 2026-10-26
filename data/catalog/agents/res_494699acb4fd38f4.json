@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://agentdm.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
+"next_check": "2026-11-02",
 "payload_hash": "76f8f6043b2f6c91ae40b031cd5ca1212eacbc0dfc2c772d159285b9501961cb",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:08:34Z",
+"retrieved_at": "2026-10-26T12:27:13Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "github": "agentdmai/agentdm",
 "mcp_registry": "ai.agentdm/agentdm"
 },
-"first_seen": "2026-10-25T17:51:18Z",
+"first_seen": "2026-10-26T12:11:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,19 +93,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:51:18Z",
+"last_seen": "2026-10-26T12:11:40Z",
 "license": null,
 "name": "AgentDM: Agent to Agent Communication Platform",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:02:59Z",
+"checked_at": "2026-10-26T12:20:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:02:56Z",
+"checked_at": "2026-10-26T12:20:43Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -128,7 +128,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:15:57Z",
+"checked_at": "2026-10-26T12:36:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -145,8 +145,8 @@
 "slug": "agentdm-ai-agentdm-agent-to-agent-communication-platform",
 "sources": [
 {
-"payload_hash": "1458bf0517d90b63110fa72d499e033746fdac26009ab99763772b93dd9a9575",
-"retrieved_at": "2026-10-25T17:51:18Z",
+"payload_hash": "ab9d16b0e0e4532739b43af38e969d9de85bf93355a77178a6879904d8ecf41f",
+"retrieved_at": "2026-10-26T12:11:40Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentdm/agentdm"
 }

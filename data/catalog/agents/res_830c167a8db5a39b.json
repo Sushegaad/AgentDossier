@@ -23,16 +23,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-25)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://2kw.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "9eb3fa051c866f95deccd99075af7ea2489f1c75fb17e2973984b96f12cdf8f0",
+"next_check": "2026-11-02",
+"payload_hash": "3f33ca8c807519705c88240f7c2533fdad18626edc247bf6534818e7fb847d5d",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:08:23Z",
+"retrieved_at": "2026-10-26T12:27:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -49,16 +49,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-25)",
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://2kw.ai/security",
 "framework": "iso27001",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "3cec4c84d8b0b6408e4fbe57ef9aba955d7174909db78bdd2855a1158111df4b",
+"next_check": "2026-11-02",
+"payload_hash": "28c55c3337b774be30be8a483b7d6698602a850050c7294ef0f388627e8bd782",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:08:23Z",
+"retrieved_at": "2026-10-26T12:27:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,16 +75,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-25)",
+"display": "Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://2kw.ai/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "3cec4c84d8b0b6408e4fbe57ef9aba955d7174909db78bdd2855a1158111df4b",
+"next_check": "2026-11-02",
+"payload_hash": "28c55c3337b774be30be8a483b7d6698602a850050c7294ef0f388627e8bd782",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:08:23Z",
+"retrieved_at": "2026-10-26T12:27:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -149,7 +149,7 @@
 "external_ids": {
 "mcp_registry": "ai.2kw/mcp-server"
 },
-"first_seen": "2026-10-25T17:51:18Z",
+"first_seen": "2026-10-26T12:11:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -171,19 +171,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:51:18Z",
+"last_seen": "2026-10-26T12:11:40Z",
 "license": null,
 "name": "2kw.ai",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:02:49Z",
+"checked_at": "2026-10-26T12:20:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:02:46Z",
+"checked_at": "2026-10-26T12:20:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -193,13 +193,13 @@
 "identifier": "@2kw/ai-mcp-server",
 "registry": "npm",
 "transport": "stdio",
-"version": "7.3.2"
+"version": "8.0.3"
 }
 ],
 "parser_version": "mcp-2025-06-18",
 "server_name": "ai.2kw/mcp-server",
 "status": "claimed",
-"version": "7.3.2",
+"version": "8.0.3",
 "via": "mcp_registry"
 }
 },
@@ -208,16 +208,16 @@
 "scope": "public",
 "signals": {
 "mcp_packages": 1,
-"mcp_registry_published_at": "2026-10-19T09:23:26.329508Z",
+"mcp_registry_published_at": "2026-10-25T22:46:43.86716Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-19T09:23:26.329508Z",
+"mcp_registry_updated_at": "2026-10-25T22:46:43.86716Z",
 "mcp_transports": []
 },
 "slug": "2kw-ai-2kw-ai",
 "sources": [
 {
-"payload_hash": "1458bf0517d90b63110fa72d499e033746fdac26009ab99763772b93dd9a9575",
-"retrieved_at": "2026-10-25T17:51:18Z",
+"payload_hash": "ab9d16b0e0e4532739b43af38e969d9de85bf93355a77178a6879904d8ecf41f",
+"retrieved_at": "2026-10-26T12:11:40Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.2kw/mcp-server"
 }

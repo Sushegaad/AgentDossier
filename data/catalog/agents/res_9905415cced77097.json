@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-10-25)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://www.n8n-mcp.com/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
+"next_check": "2026-11-02",
 "payload_hash": "289539d027ac0bcd37692ec5dee9ec6460e6654f1d5f4a1ebf1277c22138360f",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:11:31Z",
+"retrieved_at": "2026-10-26T12:30:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,7 +45,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.29,
+"adoption": 25.3,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.8,
@@ -68,7 +68,7 @@
 "external_ids": {
 "github": "czlonkowski/n8n-mcp"
 },
-"first_seen": "2026-10-25T18:00:16Z",
+"first_seen": "2026-10-26T12:17:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -90,7 +90,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:00:16Z",
+"last_seen": "2026-10-26T12:17:57Z",
 "license": "MIT",
 "name": "n8n-mcp",
 "news": [
@@ -120,12 +120,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:05:30Z",
+"checked_at": "2026-10-26T12:23:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:05:27Z",
+"checked_at": "2026-10-26T12:23:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -133,7 +133,7 @@
 "evidence_url": "https://www.n8n-mcp.com/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:05:31Z",
+"checked_at": "2026-10-26T12:23:25Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -146,19 +146,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-07T12:15:57Z",
-"github_forks": 3675,
+"github_forks": 3674,
 "github_language": "TypeScript",
 "github_open_issues": 75,
-"github_pushed_at": "2026-10-25T07:35:36Z",
-"github_stars": 23133,
+"github_pushed_at": "2026-10-26T09:53:32Z",
+"github_stars": 23140,
 "github_topic": "mcp-server",
 "homepage": "https://www.n8n-mcp.com/"
 },
 "slug": "czlonkowski-n8n-mcp",
 "sources": [
 {
-"payload_hash": "1d7f7007fb39231e0b8ff403eb22651bd23d59d9a555ef84147419f910f7c1a1",
-"retrieved_at": "2026-10-25T18:00:16Z",
+"payload_hash": "d76eaa058aa288670383231a55e62e110c4f50ce7a03b7a667b6108f224db189",
+"retrieved_at": "2026-10-26T12:17:57Z",
 "system": "github",
 "url": "https://github.com/czlonkowski/n8n-mcp"
 }

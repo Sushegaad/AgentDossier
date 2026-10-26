@@ -15,16 +15,16 @@
 "caiq"
 ]
 },
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-25",
+"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
 "evidence_url": "https://cloudsecurityalliance.org/star/registry/langchain, inc.",
 "framework": "csa_star",
 "issued": "2025-11-25",
 "issuer": "Cloud Security Alliance",
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "f8b023b578a7a87c5cb8595b8cb98c7cfd8419197edd4eea26487100277275ae",
+"next_check": "2026-11-02",
+"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:07:32Z",
+"retrieved_at": "2026-10-26T12:25:53Z",
 "review_reason": "entity 1.00 (index card)",
 "reviewer": null,
 "scope": "entity",
@@ -41,16 +41,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-25)",
+"display": "Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "e01927eb6cf2bbdf55ebf23169f2ca94cf1fafad89ce4b03247d2db8369debf8",
+"next_check": "2026-11-02",
+"payload_hash": "0802aaf09bf73613263a7ca394bf4c3c7c583455f741af8bf31a0b698353f51a",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:10:36Z",
+"retrieved_at": "2026-10-26T12:29:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -67,16 +67,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-25)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-10-26)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "e01927eb6cf2bbdf55ebf23169f2ca94cf1fafad89ce4b03247d2db8369debf8",
+"next_check": "2026-11-02",
+"payload_hash": "0802aaf09bf73613263a7ca394bf4c3c7c583455f741af8bf31a0b698353f51a",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:10:36Z",
+"retrieved_at": "2026-10-26T12:29:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -93,16 +93,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-25)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-26)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "e01927eb6cf2bbdf55ebf23169f2ca94cf1fafad89ce4b03247d2db8369debf8",
+"next_check": "2026-11-02",
+"payload_hash": "0802aaf09bf73613263a7ca394bf4c3c7c583455f741af8bf31a0b698353f51a",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:10:36Z",
+"retrieved_at": "2026-10-26T12:29:23Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -230,7 +230,7 @@
 "external_ids": {
 "github": "langchain-ai/deepagents"
 },
-"first_seen": "2026-10-25T17:51:18Z",
+"first_seen": "2026-10-26T12:11:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -252,7 +252,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T17:51:18Z",
+"last_seen": "2026-10-26T12:11:40Z",
 "license": "MIT",
 "name": "LangChain Deep Agents",
 "news": [
@@ -283,7 +283,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://docs.langchain.com/.well-known/agent-card.json",
-"checked_at": "2026-10-25T18:04:42Z",
+"checked_at": "2026-10-26T12:22:35Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -294,13 +294,13 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-25T18:04:41Z",
+"checked_at": "2026-10-26T12:22:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
 "card_url": "https://docs.langchain.com/.well-known/mcp.json",
-"checked_at": "2026-10-25T18:04:43Z",
+"checked_at": "2026-10-26T12:22:35Z",
 "parser_version": "mcp-2025-06-18",
 "remotes": [
 {
@@ -316,7 +316,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:14:32Z",
+"checked_at": "2026-10-26T12:34:13Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -339,9 +339,9 @@
 "github_created_at": "2025-07-27T23:07:53Z",
 "github_forks": 4308,
 "github_language": "Python",
-"github_open_issues": 191,
-"github_pushed_at": "2026-10-25T15:24:20Z",
-"github_stars": 30575,
+"github_open_issues": 199,
+"github_pushed_at": "2026-10-26T09:22:02Z",
+"github_stars": 30603,
 "homepage": "https://docs.langchain.com/deepagents",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -357,7 +357,7 @@
 "sources": [
 {
 "payload_hash": "2111c58d553f4b75295ced22ecd6fda83433ce35cb0e1fc471650ff4bdaf9351",
-"retrieved_at": "2026-10-25T17:51:18Z",
+"retrieved_at": "2026-10-26T12:11:40Z",
 "system": "seed_xlsx",
 "url": "https://github.com/langchain-ai/deepagents"
 }

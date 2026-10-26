@@ -1,5 +1,5 @@
 {
-"canonical_url": "superset.sh/.well-known/agent-skills/superset-feedback/skill.md",
+"canonical_url": "paradev.com/.well-known/agent-skills/superset-setup/skill.md",
 "capabilities": [],
 "category": null,
 "classification": {
@@ -20,16 +20,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-25)",
-"evidence_url": "https://superset.sh/",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-26)",
+"evidence_url": "https://paradev.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "c5fef29c9cb28789c942348ae34e3776ba117e5add23700d1747c119153ac698",
+"next_check": "2026-11-02",
+"payload_hash": "05d806787805d7383230bbd0f339ff29a96dafbef4795065e3529ea429ffdee1",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:12:09Z",
+"retrieved_at": "2026-10-26T12:30:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -41,7 +41,7 @@
 }
 ],
 "deployment": null,
-"description": "Agent skill: feedback with the Superset CLI and MCP server.",
+"description": "Agent skill: setup with the Paradev CLI and MCP server.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
@@ -72,15 +72,15 @@
 }
 },
 "external_ids": {
-"ard": "urn:air:superset.sh:skill:superset-feedback"
+"ard": "urn:air:paradev.com:skill:superset-setup"
 },
-"first_seen": "2026-10-25T18:06:09Z",
+"first_seen": "2026-10-26T12:23:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
 "evidence_urls": []
 },
-"id": "res_da352fd315b66629",
+"id": "res_751c66123ea4c53b",
 "identity": {
 "evidence": [
 "ard_trust_manifest_binding"
@@ -96,9 +96,9 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:06:09Z",
+"last_seen": "2026-10-26T12:23:53Z",
 "license": null,
-"name": "superset-feedback",
+"name": "superset-setup",
 "news": [],
 "news_checked": true,
 "protocols": {
@@ -106,8 +106,8 @@
 "status": "unknown"
 },
 "ard": {
-"identifier": "urn:air:superset.sh:skill:superset-feedback",
-"manifest_url": "https://superset.sh/.well-known/ai-catalog.json",
+"identifier": "urn:air:paradev.com:skill:superset-setup",
+"manifest_url": "https://paradev.com/.well-known/ai-catalog.json",
 "media_type": "application/ai-skill+md",
 "parser_version": "ard-0.91",
 "status": "verified",
@@ -117,31 +117,31 @@
 ]
 },
 "mcp": {
-"evidence_url": "https://superset.sh/.well-known/agent-skills/superset-feedback/SKILL.md",
+"evidence_url": "https://paradev.com/.well-known/agent-skills/superset-setup/SKILL.md",
 "note": "named in the resource's own description",
 "source": "self_description",
 "status": "claimed"
 }
 },
-"publisher_domain": "superset.sh",
+"publisher_domain": "paradev.com",
 "representative_queries": [],
 "resource_type": "skill",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:23:54Z",
+"checked_at": "2026-10-26T12:45:11Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {},
-"slug": "superset-sh-superset-feedback",
+"slug": "paradev-com-superset-setup",
 "sources": [
 {
-"payload_hash": "17279b82b3ed39e82daad600405c6a42077ca8a0a09dd9d45ddd043c4ec37f4a",
-"retrieved_at": "2026-10-25T18:06:09Z",
+"payload_hash": "18fec69c92a4bf3a57945310ec84e7c634fbea953d3a4e262b8dde4d77d1ea9a",
+"retrieved_at": "2026-10-26T12:23:53Z",
 "system": "ard",
-"url": "https://superset.sh/.well-known/ai-catalog.json"
+"url": "https://paradev.com/.well-known/ai-catalog.json"
 }
 ],
 "tags": [
@@ -152,12 +152,12 @@
 "traces": [
 {
 "agent_version": null,
-"bundle": "bundles/tr_st_da352fd315b66629_9bbff2f4",
+"bundle": "bundles/tr_st_751c66123ea4c53b_01641ea4",
 "checked_on": null,
-"date": "2026-10-11",
+"date": "2026-10-26",
 "format": "bundle",
 "harness_version": "probe-1.0",
-"id": "tr_st_da352fd315b66629_9bbff2f4",
+"id": "tr_st_751c66123ea4c53b_01641ea4",
 "kind": "self_test",
 "notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
 "observed": {
@@ -174,11 +174,11 @@
 "reviewer": null,
 "scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
 "scope": "product",
-"sha256": "sha256:9c06cad20f64b258e1f254752afa2b23de73d858d8a63dfa28f94d9383deeeb1",
+"sha256": "sha256:7724839132f22a7e4fc427f45ba46a0ce921ef469eba75471c60a8bcb3acfca9",
 "source": "AgentDossier refresh",
 "tier": 1,
-"title": "Registry probe of superset-feedback's discovery endpoints",
-"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_da352fd315b66629_9bbff2f4/",
+"title": "Registry probe of superset-setup's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_751c66123ea4c53b_01641ea4/",
 "vendor_response": null
 }
 ],
@@ -191,6 +191,6 @@
 "traces": 1,
 "vendor_compliance": 4
 },
-"url": "https://superset.sh/.well-known/agent-skills/superset-feedback/SKILL.md",
-"vendor": "superset.sh"
+"url": "https://paradev.com/.well-known/agent-skills/superset-setup/SKILL.md",
+"vendor": "paradev.com"
 }

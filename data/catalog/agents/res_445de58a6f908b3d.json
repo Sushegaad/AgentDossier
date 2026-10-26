@@ -1,11 +1,11 @@
 {
-"canonical_url": "superset.sh/.well-known/agent-skills/superset-orchestrate/skill.md",
+"canonical_url": "api.superset.sh/openapi.json",
 "capabilities": [],
 "category": null,
 "classification": {
 "matched": {
 "technology": [
-"cli",
+"api",
 "mcp"
 ]
 },
@@ -20,16 +20,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-25)",
-"evidence_url": "https://superset.sh/",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-26)",
+"evidence_url": "https://paradev.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-01",
-"payload_hash": "c5fef29c9cb28789c942348ae34e3776ba117e5add23700d1747c119153ac698",
+"next_check": "2026-11-02",
+"payload_hash": "05d806787805d7383230bbd0f339ff29a96dafbef4795065e3529ea429ffdee1",
 "period_end": null,
-"retrieved_at": "2026-10-25T18:12:09Z",
+"retrieved_at": "2026-10-26T12:30:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -41,7 +41,7 @@
 }
 ],
 "deployment": null,
-"description": "Agent skill: orchestrate with the Superset CLI and MCP server.",
+"description": "OpenAPI 3.1 description of the Paradev HTTP surface: the MCP endpoint, OAuth 2.1 endpoints, and discovery metadata.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
@@ -49,7 +49,7 @@
 "adoption": null,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 8.2,
+"ecosystem": 8.5,
 "governance": 3.0,
 "health": null,
 "trust": 23.0
@@ -62,7 +62,7 @@
 },
 "profile": "technology",
 "rank": null,
-"score": 35.7,
+"score": 36.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -72,15 +72,15 @@
 }
 },
 "external_ids": {
-"ard": "urn:air:superset.sh:skill:superset-orchestrate"
+"ard": "urn:air:paradev.com:api:superset"
 },
-"first_seen": "2026-10-25T18:06:09Z",
+"first_seen": "2026-10-26T12:23:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
 "evidence_urls": []
 },
-"id": "res_66d4b99ba1264e6e",
+"id": "res_445de58a6f908b3d",
 "identity": {
 "evidence": [
 "ard_trust_manifest_binding"
@@ -96,9 +96,9 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:06:09Z",
+"last_seen": "2026-10-26T12:23:53Z",
 "license": null,
-"name": "superset-orchestrate",
+"name": "Paradev API",
 "news": [],
 "news_checked": true,
 "protocols": {
@@ -106,9 +106,9 @@
 "status": "unknown"
 },
 "ard": {
-"identifier": "urn:air:superset.sh:skill:superset-orchestrate",
-"manifest_url": "https://superset.sh/.well-known/ai-catalog.json",
-"media_type": "application/ai-skill+md",
+"identifier": "urn:air:paradev.com:api:superset",
+"manifest_url": "https://paradev.com/.well-known/ai-catalog.json",
+"media_type": "application/vnd.oai.openapi+json;version=3.1",
 "parser_version": "ard-0.91",
 "status": "verified",
 "trust_manifest": "present-binding-ok",
@@ -117,47 +117,48 @@
 ]
 },
 "mcp": {
-"evidence_url": "https://superset.sh/.well-known/agent-skills/superset-orchestrate/SKILL.md",
+"evidence_url": "https://api.superset.sh/openapi.json",
 "note": "named in the resource's own description",
 "source": "self_description",
 "status": "claimed"
 }
 },
-"publisher_domain": "superset.sh",
+"publisher_domain": "paradev.com",
 "representative_queries": [],
-"resource_type": "skill",
+"resource_type": "agent",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:23:49Z",
+"checked_at": "2026-10-26T12:45:08Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {},
-"slug": "superset-sh-superset-orchestrate",
+"slug": "paradev-com-paradev-api",
 "sources": [
 {
-"payload_hash": "49c9e91784338802b064b54ce5767fa53699a2e5e6a19ac84f9d9139b1e5f74f",
-"retrieved_at": "2026-10-25T18:06:09Z",
+"payload_hash": "788c38c969c9a81cd8ef981d2d9feb6837061e0143c3d34f8d9a1f8489ea4d9d",
+"retrieved_at": "2026-10-26T12:23:53Z",
 "system": "ard",
-"url": "https://superset.sh/.well-known/ai-catalog.json"
+"url": "https://paradev.com/.well-known/ai-catalog.json"
 }
 ],
 "tags": [
-"skill",
-"superset"
+"api",
+"openapi",
+"oauth"
 ],
 "tenant": null,
 "traces": [
 {
 "agent_version": null,
-"bundle": "bundles/tr_st_66d4b99ba1264e6e_b6968c48",
+"bundle": "bundles/tr_st_445de58a6f908b3d_e6050a47",
 "checked_on": null,
-"date": "2026-10-11",
+"date": "2026-10-26",
 "format": "bundle",
 "harness_version": "probe-1.0",
-"id": "tr_st_66d4b99ba1264e6e_b6968c48",
+"id": "tr_st_445de58a6f908b3d_e6050a47",
 "kind": "self_test",
 "notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
 "observed": {
@@ -174,11 +175,11 @@
 "reviewer": null,
 "scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
 "scope": "product",
-"sha256": "sha256:2ff1acfadec87a95195f19c1480262e4b2eee8e5a2fdcc2bb62abd0536024ab2",
+"sha256": "sha256:f87d66a12e14ffcd85b58c2b8c988ddcd7edf5c530492b9a7b9126a6efe8dc86",
 "source": "AgentDossier refresh",
 "tier": 1,
-"title": "Registry probe of superset-orchestrate's discovery endpoints",
-"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_66d4b99ba1264e6e_b6968c48/",
+"title": "Registry probe of Paradev API's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_445de58a6f908b3d_e6050a47/",
 "vendor_response": null
 }
 ],
@@ -191,6 +192,6 @@
 "traces": 1,
 "vendor_compliance": 4
 },
-"url": "https://superset.sh/.well-known/agent-skills/superset-orchestrate/SKILL.md",
-"vendor": "superset.sh"
+"url": "https://api.superset.sh/openapi.json",
+"vendor": "paradev.com"
 }

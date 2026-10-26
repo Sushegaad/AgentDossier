@@ -50,7 +50,7 @@
 "external_ids": {
 "github": "QwenLM/qwen-code"
 },
-"first_seen": "2026-10-25T17:58:15Z",
+"first_seen": "2026-10-26T12:15:43Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -72,7 +72,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-25T18:02:08Z",
+"last_seen": "2026-10-26T12:19:50Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_7c1d6b2c137ffb50"
@@ -80,37 +80,37 @@
 "name": "qwen-code",
 "news": [
 {
-"cluster_size": 1,
-"date": "2026-10-24T17:06:46Z",
-"headline": "qwen-code: Qwen Code Desktop v0.26.1",
+"cluster_size": 2,
+"date": "2026-10-25T23:20:17Z",
+"headline": "qwen-code: Release v0.26.1-nightly.20261025.8e28d5380c",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at b475278c4a300acebe6cfc990a9e1b1d18819bfc -->\n\n## What's Changed\n* feat(serve): add daemon token persistence by @wenshao in https://github.com/QwenLM/qwen-code/pull/1",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.26.1-nightly.20261025.8e28d5380c -->\n\n## What's Changed\n* feat(managed): add session permission rules and Auto approval by @doudouOUC in https://github.co",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.26.1"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1-nightly.20261025.8e28d5380c"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-24T15:47:58Z",
-"headline": "qwen-code: Release v0.26.1",
+"date": "2026-10-26T04:43:39Z",
+"headline": "qwen-code: SDK TypeScript Release v0.1.23",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- qwen-release-notes:v1 -->\n\n## Highlights\n\n_See the complete change list below._\n\n## Breaking Changes\n\n- fix(qqbot)!: restore per-group session isolation under thread scope ([#13882](https://github.com/QwenLM/qwen-code/pull/13882)) by @",
+"summary": "## Bundled CLI Version\n\nThis SDK release bundles CLI version: 0.26.1\n\nSource: CLI built from source (same branch/ref as SDK)\n\n---\n\n## Bundled CLI Version\n\nThis SDK release bundles CLI version: 0.26.0\n\nSource: CLI built from source (same bra",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.23"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-25T18:05:51Z",
+"checked_at": "2026-10-26T12:23:48Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-25T18:05:50Z",
+"checked_at": "2026-10-26T12:23:47Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -118,7 +118,7 @@
 "evidence_url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-25T18:05:51Z",
+"checked_at": "2026-10-26T12:23:49Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -130,7 +130,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-25T18:20:14Z",
+"checked_at": "2026-10-26T12:41:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -138,19 +138,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-26T01:37:46Z",
-"github_forks": 3262,
+"github_forks": 3263,
 "github_language": "TypeScript",
-"github_open_issues": 2027,
-"github_pushed_at": "2026-10-25T17:56:06Z",
-"github_stars": 28713,
+"github_open_issues": 2056,
+"github_pushed_at": "2026-10-26T11:58:42Z",
+"github_stars": 28726,
 "github_topic": "ai-agent",
 "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview"
 },
 "slug": "qwenlm-qwen-code",
 "sources": [
 {
-"payload_hash": "c3093485fa9b30934195e4931981e16bd0d7fbc2fd7e723396e88a7c69c1d34b",
-"retrieved_at": "2026-10-25T17:58:15Z",
+"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
+"retrieved_at": "2026-10-26T12:15:43Z",
 "system": "github",
 "url": "https://github.com/QwenLM/qwen-code"
 }

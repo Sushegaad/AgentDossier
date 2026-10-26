@@ -1,0 +1,22 @@
+{
+ "agent": "res_519ccd5c8d3a37b2",
+ "date": "2026-10-26",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_519ccd5c8d3a37b2_babed31d",
+ "kind": "self_test",
+ "name": "superset-contribute",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:paradev.com:skill:superset-contribute",
+   "manifest_url": "https://paradev.com/.well-known/ai-catalog.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "paradev-com-superset-contribute"
+}

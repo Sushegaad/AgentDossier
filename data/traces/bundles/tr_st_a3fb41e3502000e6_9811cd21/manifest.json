@@ -1,0 +1,22 @@
+{
+ "agent": "res_a3fb41e3502000e6",
+ "date": "2026-10-26",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_a3fb41e3502000e6_9811cd21",
+ "kind": "self_test",
+ "name": "superset-orchestrate",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:paradev.com:skill:superset-orchestrate",
+   "manifest_url": "https://paradev.com/.well-known/ai-catalog.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "paradev-com-superset-orchestrate"
+}
