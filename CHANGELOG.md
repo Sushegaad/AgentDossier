@@ -6,6 +6,13 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Changed — analytics on the public demo now reports
+- Google Analytics ran with `analytics_storage` denied and no way to grant it, so every hit was a
+  cookieless ping that GA4 never surfaces in reports: months of collection, nothing to read.
+  Analytics storage is now granted on the demo build (first-party `_ga` cookie, anonymised IP);
+  advertising storage, ad data and personalisation stay denied. Footer, `/about/`, README and
+  `docs/architecture.md` say so instead of "cookieless". Self-hosted builds still have no tag.
+
 ### Fixed — documentation drift after the machine review shipped
 - The review stamps the registry's `collected_on` on every publish, so `/traces/` "as of" moves
   with the data (it showed 2026-10-11 under rows published 2026-10-25). CONTRIBUTING, README's

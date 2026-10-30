@@ -22,8 +22,10 @@ const nav = [
 const current = (href: string) => path.startsWith(href);
 // "as of" is the last catalog build (the weekly refresh); the seed ranking snapshot is shown on domain pages.
 const asOf = meta?.built_at ? meta.built_at.slice(0, 10) : "the last build";
-// Google Analytics 4, cookieless only: consent for storage is denied and never asked for, so GA
-// receives aggregate, anonymised page pings and nothing is written to the visitor's device.
+// Google Analytics 4 on the public demo: analytics storage (first-party _ga cookies) is granted so
+// page views reach the reports; advertising storage, ad data and personalisation stay denied, and
+// IPs are anonymised. (Denying analytics storage sent only cookieless pings, which GA4 never shows
+// in reports without behavioural modelling — the site collected for months and reported nothing.)
 // PUBLIC_GA_ID is set for the public demo build only (pages.yml); self-hosted instances leave it unset.
 const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
 ---
@@ -56,7 +58,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
             ad_storage: "denied",
             ad_user_data: "denied",
             ad_personalization: "denied",
-            analytics_storage: "denied",
+            analytics_storage: "granted",
           });
           gtag("js", new Date());
           gtag("config", gaId, { anonymize_ip: true });
@@ -109,7 +111,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
         <a href={`${base}/private/`}>Private catalog</a>
         <a href="https://github.com/Sushegaad/AgentDossier/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a>
         <a href={`${base}/about/`}>About</a>
-        <span>No accounts · {gaId ? "cookieless, aggregate analytics" : "no analytics"} · no ads</span>
+        <span>No accounts · {gaId ? "aggregate analytics (Google Analytics, no ads)" : "no analytics"} · no ads</span>
       </div>
     </footer>
     <script>

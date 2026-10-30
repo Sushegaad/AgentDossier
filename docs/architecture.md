@@ -4,7 +4,7 @@ One Python engine plus one TypeScript front end, built twice:
 
 - **Public demo:** GitHub Actions runs `agentdossier build` weekly, opens a
   pull request with the catalog, merges it once the gates pass, and deploys a
-  static Astro site to GitHub Pages. No server, no accounts; analytics only on the public demo, cookieless until the visitor opts in.
+  static Astro site to GitHub Pages. No server, no accounts; Google Analytics on the public demo only (page counts; ad storage denied, IP anonymised).
 - **Enterprise edition:** the `agentdossier[server]` extra in one self-hosted
   container: private-network scanner, ARD registry API, application service
   (workspaces, policy profiles, approvals, alerts), SQLite or PostgreSQL.

@@ -13,7 +13,7 @@ can scan an enterprise's own network for the agents already running there.
 
 [![AgentDossier homepage: find agents you can trust, check the evidence, see how they behaved under attack — search, a live dossier specimen with its trace, and the newest incidents](docs/screenshots/home-search.png)](https://sushegaad.github.io/AgentDossier/)
 
-- **Public demo:** https://sushegaad.github.io/AgentDossier/ — static, no accounts, no cookies; the demo build sends only aggregate, cookieless page counts
+- **Public demo:** https://sushegaad.github.io/AgentDossier/ — static, no accounts, no ads; the demo build runs Google Analytics for aggregate page counts (analytics cookie only, anonymised IP)
 - **Self-hosted edition:** the same MIT codebase as one container with an authorized private-network scanner, ARD REST API, policy qualification, decision workflow and integrations
 - **Worked comparison:** [three ways to let a coding agent into a private repository](https://sushegaad.github.io/AgentDossier/compare/coding-agents-private-repo/) — the same five deployment questions answered for six agents from their own documentation
 - **Docs:** [`docs/methodology.md`](docs/methodology.md) (how evidence is graded), [`docs/traces.md`](docs/traces.md) and [`docs/traces-spec.md`](docs/traces-spec.md) (traces and vendor publishing), [`docs/incidents.md`](docs/incidents.md) (the incident registry and its weekly upkeep), [`docs/cves.md`](docs/cves.md) (the CVE registry), [`docs/enterprise-runbook.md`](docs/enterprise-runbook.md) (run your own), [`docs/architecture.md`](docs/architecture.md), [`docs/brd-traceability.md`](docs/brd-traceability.md), [`CHANGELOG.md`](CHANGELOG.md)
