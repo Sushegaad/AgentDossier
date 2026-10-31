@@ -459,6 +459,9 @@ main {
   font-weight: 800;
 }
 /* the home-page trace index: one incident per ruled row, the whole row a link */
+.cve-index .ledger-row {
+  grid-template-columns: 150px minmax(0, 1fr) 160px 200px auto;
+}
 .trace-index .ledger-row {
   grid-template-columns: 110px minmax(0, 1fr) 220px 220px auto;
   color: var(--ink);

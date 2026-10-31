@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { EMPTY_FILTERS, applyFilters, facetCounts, filtersFromParams, filtersToParams, rowsToCsv, sortRows, type CveRow } from "../src/lib/cve-filter";
+import { DEFAULT_FILTERS, EMPTY_FILTERS, applyFilters, facetCounts, filtersFromParams, filtersToParams, rowsToCsv, sortRows, type CveRow } from "../src/lib/cve-filter";
 import { allRows, cveById, cvesForAgent, cvesForIncident, loadCves, toRow } from "../src/lib/cves";
 
 const row = (over: Partial<CveRow>): CveRow => ({
@@ -65,7 +65,11 @@ describe("CVE filters", () => {
     const f = { ...EMPTY_FILTERS, q: "mcp", surface: ["prompt_injection" as const, "ssrf" as const], kev: true, year: "2025", sort: "score" as const, product: ["mcp-remote"] };
     const back = filtersFromParams(new URLSearchParams(filtersToParams(f).toString()));
     expect(back).toEqual(f);
-    expect(filtersToParams(EMPTY_FILTERS).toString()).toBe("");
+    expect(filtersToParams(EMPTY_FILTERS).toString()).toBe("all=1");
+    expect(filtersFromParams(new URLSearchParams(""))).toEqual(DEFAULT_FILTERS);
+    expect(filtersFromParams(new URLSearchParams("all=1")).severity).toEqual([]);
+    expect(filtersFromParams(new URLSearchParams("kev=1")).severity).toEqual(["CRITICAL"]);
+    expect(filtersFromParams(new URLSearchParams("severity=HIGH")).severity).toEqual(["HIGH"]);
     const junk = filtersFromParams(new URLSearchParams("surface=bogus,dos&sort=evil&year=20x&product=../x,aider"));
     expect(junk.surface).toEqual(["dos"]);
     expect(junk.sort).toBe("published");

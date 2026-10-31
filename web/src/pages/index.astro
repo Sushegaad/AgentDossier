@@ -5,6 +5,8 @@ import { loadDomains, loadIndex, loadSearchDocs } from "../lib/catalog";
 import { FRAMEWORKS, domainLabel } from "../lib/labels";
 import { Catalog, HERO_QUERIES, heroPick } from "../lib/search";
 import { incidentSlug, loadIncidents } from "../lib/incidents";
+import { SURFACE_LABEL } from "../lib/cve-filter";
+import { allRows, loadCves } from "../lib/cves";
 import scoring from "../../../config/scoring.json";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
@@ -22,7 +24,11 @@ const asOf = index?.built_at ? index.built_at.slice(0, 10) : "—";
 const pick = index ? heroPick(new Catalog(index.records, loadSearchDocs())) : null;
 // the trace index on the home page: the newest incidents from the registry, every one a real sourced event
 const incidentSet = loadIncidents();
-const recentIncidents = [...(incidentSet?.incidents ?? [])].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
+const recentIncidents = [...(incidentSet?.incidents ?? [])].sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 6);
+// the newest critical CVEs (official CVSS severity), as /cves/ opens on them
+const cveIndex = loadCves();
+const criticalRows = allRows().filter((r) => r.severity === "CRITICAL");
+const recentCritical = [...criticalRows].sort((a, b) => b.published.localeCompare(a.published) || a.id.localeCompare(b.id)).slice(0, 6);
 const ROLE_CHIP: Record<string, string> = { attacker: "agent attacked", defender: "agent defended", target: "agent targeted" };
 const tiers = [
   ["T1", "Registry-matched", "found in a named authoritative registry (FedRAMP Marketplace, CSA STAR)"],
@@ -122,6 +128,34 @@ const tiers = [
     )}
     <p class="tiny muted" style="margin-top: 10px">
       {incidentSet?.incidents.length ?? 0} incidents in the registry, as reported · not attributions, findings of fault or legal conclusions.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Critical CVEs behind agents, as they land</h2>
+      <a class="small" href={`${base}/cves/`} style="font-weight: 800; white-space: nowrap">All CVEs →</a>
+    </div>
+    <p class="body" style="max-width: 70ch; margin: 0 0 20px">
+      Every official CVE that names an agent product, framework, protocol implementation or the infrastructure agents call through — here, the newest rated <em>critical</em> on the official record. Severity is CVE.org's and NVD's, never ours.
+    </p>
+    {cveIndex === null ? (
+      <p class="notice warn">No CVE registry is bundled with this build.</p>
+    ) : (
+      <div class="ledger trace-index cve-index">
+        {recentCritical.map((r) => (
+          <a class="ledger-row" href={`${base}/cves/${r.id.toLowerCase()}/`}>
+            <span class="id">{r.id}<span class="tiny muted" style="display: block; font-weight: 400">{r.published}{r.kev ? " · KEV" : ""}</span></span>
+            <span class="title clamp" style="font-weight: 400">{r.summary}</span>
+            <span class="tiny muted clamp">{r.products.slice(0, 2).join(", ") || "—"}</span>
+            <span class="tiny muted clamp">{r.surface.map((s) => SURFACE_LABEL[s]).join(" · ") || "—"}</span>
+            <span class="badge danger role">Critical{r.score !== null ? ` ${r.score.toFixed(1)}` : ""}</span>
+          </a>
+        ))}
+      </div>
+    )}
+    <p class="tiny muted" style="margin-top: 10px">
+      {criticalRows.length} critical of {cveIndex?.records.length ?? 0} CVEs in the registry{cveIndex?.counts.kev ? ` · ${cveIndex.counts.kev} in CISA KEV` : ""} · rebuilt every Monday from NVD and CISA · no exploit details, ever.
     </p>
   </section>
 

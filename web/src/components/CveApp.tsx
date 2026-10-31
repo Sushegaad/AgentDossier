@@ -3,6 +3,7 @@ import { BASE } from "../lib/data";
 import {
   CATEGORY_LABEL,
   CATEGORY_ORDER,
+  DEFAULT_FILTERS,
   EMPTY_FILTERS,
   SEVERITY_ORDER,
   SEVERITY_WORD,
@@ -53,7 +54,7 @@ function download(name: string, body: string, type: string) {
 
 export default function CveApp(props: CveAppProps) {
   const [rows, setRows] = useState<CveRow[] | null | undefined>(props.rows);
-  const [filters, setFilters] = useState<CveFilters>(EMPTY_FILTERS);
+  const [filters, setFilters] = useState<CveFilters>(DEFAULT_FILTERS);
   const [limit, setLimit] = useState(props.pageSize ?? 50);
   const [showAllProducts, setShowAllProducts] = useState(false);
   const syncUrl = props.syncUrl ?? true;
@@ -72,14 +73,16 @@ export default function CveApp(props: CveAppProps) {
     if (!syncUrl || rows === undefined) return;
     const p = filtersToParams(filters).toString();
     const next = `${window.location.pathname}${p ? `?${p}` : ""}`;
-    if (next !== `${window.location.pathname}${window.location.search}`) window.history.replaceState(null, "", next);
+    const isDefault = p === filtersToParams(DEFAULT_FILTERS).toString();
+    const clean = isDefault ? window.location.pathname : next;
+    if (clean !== `${window.location.pathname}${window.location.search}`) window.history.replaceState(null, "", clean);
   }, [filters, rows, syncUrl]);
 
   useEffect(() => setLimit(pageSize), [filters, pageSize]);
 
   const visible = useMemo(() => (rows ? applyFilters(rows, filters) : []), [rows, filters]);
   const counts = useMemo(() => (rows ? facetCounts(rows, filters) : null), [rows, filters]);
-  const active = useMemo(() => filtersToParams({ ...filters, sort: "published" }).toString().length > 0, [filters]);
+  const active = useMemo(() => filtersToParams({ ...filters, sort: "published" }).toString() !== filtersToParams({ ...EMPTY_FILTERS, sort: "published" }).toString(), [filters]);
 
   const toggle = <K extends "category" | "surface" | "severity" | "product">(key: K, value: CveFilters[K][number]) =>
     setFilters((f) => {
@@ -113,7 +116,7 @@ export default function CveApp(props: CveAppProps) {
         </label>
         <input id="cve-q" type="search" value={filters.q} placeholder="Search by CVE id, product, CWE or words in the description" onChange={(e) => setFilters({ ...filters, q: e.target.value })} autoComplete="off" />
         <button type="button" className="btn" onClick={() => setFilters({ ...EMPTY_FILTERS, sort: filters.sort })} disabled={!active}>
-          Clear filters
+          Show all severities
         </button>
       </form>
 
