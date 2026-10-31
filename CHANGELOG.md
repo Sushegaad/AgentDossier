@@ -13,6 +13,10 @@ listed in `docs/methodology.md`.
   advertising storage, ad data and personalisation stay denied. Footer, `/about/`, README and
   `docs/architecture.md` say so instead of "cookieless". Self-hosted builds still have no tag.
 
+### Changed — traces listed newest first
+- The incident registry loads sorted by date, newest first (ties by id), so `/traces/`, the
+  dossier's incident list and the JSON export lead with the latest event; `/cves/` already did.
+
 ### Fixed — documentation drift after the machine review shipped
 - The review stamps the registry's `collected_on` on every publish, so `/traces/` "as of" moves
   with the data (it showed 2026-10-11 under rows published 2026-10-25). CONTRIBUTING, README's

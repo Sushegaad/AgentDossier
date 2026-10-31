@@ -14,6 +14,11 @@ describe("incident registry", () => {
     }
   });
 
+  it("lists newest first", () => {
+    const incs = loadIncidents()!.incidents;
+    for (let i = 1; i < incs.length; i++) expect(String(incs[i - 1].date) >= String(incs[i].date)).toBe(true);
+  });
+
   it("cross-links to agents and resolves by slug", () => {
     const forAgentforce = incidentsForAgent("salesforce-salesforce-agentforce");
     expect(forAgentforce.map((i) => i.id)).toContain("TR-2026-001");

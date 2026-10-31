@@ -89,7 +89,8 @@ export function loadIncidents(): IncidentSet | null {
   try {
     const doc = yamlLoad(readFileSync(path, "utf8")) as IncidentSet;
     doc.incidents = (doc.incidents ?? []).filter((i) => i.status === "published");
-    doc.incidents.sort((a, b) => a.id.localeCompare(b.id));
+    // newest first everywhere the registry is listed; ids break ties (dates may load as Date objects)
+    doc.incidents.sort((a, b) => String(b.date).localeCompare(String(a.date)) || b.id.localeCompare(a.id));
     cached = doc;
   } catch (e) {
     if ((e as NodeJS.ErrnoException).code === "ENOENT") cached = null;
