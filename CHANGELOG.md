@@ -6,6 +6,13 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Changed — analytics on the public demo now reports
+- Google Analytics ran with `analytics_storage` denied and no way to grant it, so every hit was a
+  cookieless ping that GA4 never surfaces in reports: months of collection, nothing to read.
+  Analytics storage is now granted on the demo build (first-party `_ga` cookie, anonymised IP);
+  advertising storage, ad data and personalisation stay denied. Footer, `/about/`, README and
+  `docs/architecture.md` say so instead of "cookieless". Self-hosted builds still have no tag.
+
 ### Changed — traces listed newest first
 - The incident registry loads sorted by date, newest first (ties by id), so `/traces/`, the
   dossier's incident list and the JSON export lead with the latest event; `/cves/` already did.
