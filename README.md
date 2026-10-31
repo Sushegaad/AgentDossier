@@ -218,7 +218,8 @@ decide.
   and CISA KEV, classified by category and attack surface, cross-linked to
   dossiers and incidents, with a maintainer's include/exclude layer — rebuilt
   every Monday (`data/cves/`, [`docs/cves.md`](docs/cves.md)). On the site:
-  [`/cves/`](https://sushegaad.github.io/AgentDossier/cves/) — filter by severity,
+  [`/cves/`](https://sushegaad.github.io/AgentDossier/cves/) — opens on the critical
+  rows; filter by severity,
   attack surface, category, product, year and KEV; search; a page and JSON per
   CVE; CSV and JSON export; every filtered view is a link. Each dossier's
   Security row and a CVE band show what the registry links to that agent;

@@ -6,6 +6,11 @@ listed in `docs/methodology.md`.
 
 ## [Unreleased]
 
+### Changed — critical CVEs first
+- `/cves/` opens on rows rated *critical* (official CVSS); "Show all severities" lifts that, and the
+  choice survives a reload (`?all=1`). The home page gains a "Critical CVEs behind agents" section:
+  the six newest critical rows with products, surface tags and score, linking to the tab.
+
 ### Changed — analytics on the public demo now reports
 - Google Analytics ran with `analytics_storage` denied and no way to grant it, so every hit was a
   cookieless ping that GA4 never surfaces in reports: months of collection, nothing to read.

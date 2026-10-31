@@ -89,6 +89,9 @@ advisories) to this registry instead of filing them as incident candidates.
   attack surface, category, product, year, fix status; word search over id, products, CWE and
   description; sort by published, last modified, CVSS score or id; CSV export of the visible rows.
   Filters live in the query string (`/cves/?surface=prompt_injection&kev=1`), so a view is a link.
+  With no query string the page opens on **critical** rows (`DEFAULT_FILTERS`); "Show all
+  severities" clears that and is written as `?all=1` so a reload keeps it. The home page shows the
+  six newest critical CVEs with a link to the tab.
   Facet counts are computed against the *other* filters, so a count says what choosing it gives.
 - `/cves/<id>/` and `/cves/<id>.json` — one record: the official description, CVSS (version,
   score, vector, who scored it), CWE, NVD status, CNA, affected products with fixed-in versions,
