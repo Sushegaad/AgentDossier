@@ -1,0 +1,22 @@
+{
+ "agent": "res_8e0287eb6a5c8127",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_8e0287eb6a5c8127_1aa28699",
+ "kind": "self_test",
+ "name": "AgentMash",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-11-02T14:49:35Z",
+   "errors": [
+    "entries[0]: missing required term 'displayName'"
+   ],
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://agentmash.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "agentmash-ai-agentmash"
+}

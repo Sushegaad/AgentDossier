@@ -1,0 +1,19 @@
+{
+ "agent": "res_bb404d9aff3381fc",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_bb404d9aff3381fc_8e4ca3b8",
+ "kind": "self_test",
+ "name": "Agentgates compute MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agentgates.ai:server:compute",
+   "manifest_url": "https://agentgates.ai/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "agentgates-ai-agentgates-compute-mcp-server"
+}

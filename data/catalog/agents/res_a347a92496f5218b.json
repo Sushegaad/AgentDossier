@@ -5,20 +5,22 @@
 "classification": {
 "matched": {
 "business": [
-"assistant",
 "business",
-"erp"
+"erp",
+"workflow"
 ],
 "data": [
 "dashboard"
 ],
+"regulatory": [
+"governance"
+],
 "sales": [
-"crm",
-"salesforce"
+"crm"
 ],
 "technology": [
 "code",
-"infrastructure"
+"coding"
 ]
 },
 "taxonomy_version": "sar-taxonomy-1.0"
@@ -26,18 +28,18 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "NocoBase is an open-source AI + no-code platform for building business systems fast. Instead of generating everything from scratch, AI works on top of production-proven infrastructure and a WYSIWYG no-code interface, so you get both speed and reliability.",
+"description": "NocoBase is the open-source platform for building, running, and evolving business systems with AI. Agents write the code and do the work, NocoBase provides the foundation and governance, and people make the decisions.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": 25.46,
+"adoption": 25.47,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 19.0
+"trust": 18.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
@@ -45,7 +47,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 71.2,
+"score": 70.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -54,13 +56,13 @@
 },
 "data": {
 "components": {
-"adoption": 25.46,
+"adoption": 25.47,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 19.0
+"trust": 18.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -68,7 +70,30 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 68.0,
+"score": 67.2,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"regulatory": {
+"components": {
+"adoption": 25.47,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 18.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.85,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 53.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -77,21 +102,21 @@
 },
 "sales": {
 "components": {
-"adoption": 25.46,
+"adoption": 25.47,
 "docs": 7.0,
-"domain_fit": 56.4,
+"domain_fit": 34.0,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 19.0
+"trust": 18.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.564,
+"confidence": 0.34,
 "evidence_coverage": 0.95,
 "governance_credited": {},
 "profile": "commercial",
 "rank": null,
-"score": 66.4,
+"score": 62.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -100,13 +125,13 @@
 },
 "technology": {
 "components": {
-"adoption": 25.46,
+"adoption": 25.47,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 19.0
+"trust": 18.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -114,7 +139,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 72.8,
+"score": 72.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -125,7 +150,7 @@
 "external_ids": {
 "github": "nocobase/nocobase"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -208,8 +233,8 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:15:43Z",
-"license": "Other",
+"last_seen": "2026-11-02T14:44:31Z",
+"license": null,
 "merged_ids": [
 "res_a347a92496f5218b"
 ],
@@ -217,51 +242,51 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-26T05:52:20Z",
-"headline": "nocobase: 2026-10-26.2",
+"date": "2026-11-02T08:18:37Z",
+"headline": "NocoBase v3 Beta · 2026-11-02.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Beta release `2026-10-26.2` published 2 packages.\n\n| Package | Version |\n| --- | --- |\n| `@nocobase/app-installer` | `0.1.0-beta.10` |\n| `@nocobase/app-plugin-foundation` | `0.1.0-beta.8` |\n\n## `@nocobase/app-installer@0.1.0-beta.10`\n\n### P",
+"summary": "### 🚀 Improvements\n\n- **[Agents]** Applications can order conversation-linked work by its latest update without additional requests. ([#11283](https://github.com/nocobase/nocobase/pull/11283)) by @2013xile\n- **[Users]** Invited users can ch",
 "tag": "product_update",
-"url": "https://github.com/nocobase/nocobase/releases/tag/release-beta/2026-10-26.2"
+"url": "https://github.com/nocobase/nocobase/releases/tag/nocobase-v3-beta/2026-11-02.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-26T03:25:02Z",
-"headline": "nocobase: 2026-10-26.1",
+"date": "2026-10-31T14:31:11Z",
+"headline": "NocoBase v3 Beta · 2026-10-31.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Beta release `2026-10-26.1` published 1 package.\n\n| Package | Version |\n| --- | --- |\n| `@nocobase/app-plugin-demo-mode` | `0.2.0-beta.2` |\n\n## `@nocobase/app-plugin-demo-mode@0.2.0-beta.2`\n\n### Patch Changes\n\n- 14e042c: Automatically use s",
+"summary": "### 🎉 New Features\n\n- **[Realtime updates]** Redis-backed realtime now requires explicit registration of the commercial broker plugin, while single-instance applications retain the built-in Memory broker. ([#11258](https://github.com/nocoba",
 "tag": "product_update",
-"url": "https://github.com/nocobase/nocobase/releases/tag/release-beta/2026-10-26.1"
+"url": "https://github.com/nocobase/nocobase/releases/tag/nocobase-v3-beta/2026-10-31.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:23:32Z",
+"checked_at": "2026-11-02T14:52:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:23:25Z",
+"checked_at": "2026-11-02T14:52:08Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:23:35Z",
+"checked_at": "2026-11-02T14:52:19Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
 },
 "publisher_domain": "nocobase.com",
-"resource_type": "agent",
+"resource_type": "skill",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:41:30Z",
+"checked_at": "2026-11-02T15:06:08Z",
 "cves": 15,
 "source": "nvd",
 "tier": 1
@@ -269,42 +294,43 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2020-10-24T07:27:48Z",
-"github_forks": 2934,
+"github_forks": 2948,
 "github_language": "TypeScript",
-"github_open_issues": 342,
-"github_pushed_at": "2026-10-26T11:43:18Z",
-"github_stars": 24717,
-"github_topic": "ai-agents",
+"github_open_issues": 346,
+"github_pushed_at": "2026-11-02T12:17:20Z",
+"github_stars": 24822,
+"github_topic": "ai-agent",
 "homepage": "https://www.nocobase.com"
 },
 "slug": "nocobase-nocobase",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
+"retrieved_at": "2026-11-02T14:44:31Z",
 "system": "github",
 "url": "https://github.com/nocobase/nocobase"
 }
 ],
 "tags": [
 "admin-dashboard",
+"agent-skills",
+"agentic-ai",
 "ai-agent",
 "ai-agents",
-"ai-assistant",
-"ai-tools",
+"ai-governance",
+"claude-code",
+"codex",
 "crm",
 "crud",
-"dsh-plugin",
 "erp",
-"internal-tool",
 "internal-tools",
 "low-code",
-"lowcode",
 "no-code",
-"nocode",
-"project-management",
-"salesforce",
+"opencode",
+"rbac",
 "self-hosted",
+"vibe-coding",
+"workflow-engine",
 "workflows"
 ],
 "tenant": null,

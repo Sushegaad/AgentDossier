@@ -20,7 +20,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 28.17,
+"adoption": 28.34,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -34,7 +34,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 80.0,
+"score": 80.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,7 +45,7 @@
 "external_ids": {
 "github": "heygen-com/hyperframes"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,38 +67,38 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:12:45Z",
+"last_seen": "2026-11-02T14:41:31Z",
 "license": "Apache-2.0",
 "name": "hyperframes",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-26T11:30:11Z",
-"headline": "hyperframes release v0.8.203",
+"date": "2026-11-02T12:31:19Z",
+"headline": "hyperframes release v0.9.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# HyperFrames v0.8.203\n\nReleased on 2026-10-26.\n\nCloud workers no longer pay extra CPU for overlapped capture. Studio preview copies also show progress, can retry, and remember their quality.\n\n## Features\n\n- **CLI:** Check-review inspect at",
+"summary": "# HyperFrames v0.9.3\n\nReleased on 2026-11-02.\n\nStamping a project's ids no longer holds up the Studio host, and long media clips no longer leave it unanswered. A preview reload writes the composition as it is now. Measure and diff say why t",
 "tag": "product_update",
-"url": "https://github.com/heygen-com/hyperframes/releases/tag/v0.8.203"
+"url": "https://github.com/heygen-com/hyperframes/releases/tag/v0.9.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-26T08:25:13Z",
-"headline": "hyperframes release v0.8.202",
+"date": "2026-11-02T09:10:24Z",
+"headline": "hyperframes release v0.9.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# HyperFrames v0.8.202\n\nReleased on 2026-10-26.\n\nCuts in the preview no longer click: audio fades now play as smooth ramps. Studio finds and makes video copies by their content, one process at a time.\n\n## Features\n\n- **CLI:** Opt-in check f",
+"summary": "# HyperFrames v0.9.2\n\nReleased on 2026-11-02.\n\nA scene that has ended now gives up its WebGL context, so the next scene is not slowed. A heavy clip's lighter copy can be made ahead of time. Apps that host Studio can ask which action holds a",
 "tag": "product_update",
-"url": "https://github.com/heygen-com/hyperframes/releases/tag/v0.8.202"
+"url": "https://github.com/heygen-com/hyperframes/releases/tag/v0.9.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://hyperframes.heygen.com/.well-known/agent-card.json",
-"checked_at": "2026-10-26T12:23:02Z",
+"checked_at": "2026-11-02T14:51:45Z",
 "errors": [
 "missing 'description'"
 ],
@@ -112,7 +112,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-26T12:23:00Z",
+"checked_at": "2026-11-02T14:51:43Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -121,7 +121,7 @@
 "note": "named in the resource's own tags",
 "probe": {
 "card_url": "https://hyperframes.heygen.com/.well-known/mcp.json",
-"checked_at": "2026-10-26T12:23:03Z",
+"checked_at": "2026-11-02T14:51:46Z",
 "status": "invalid"
 },
 "source": "self_description",
@@ -133,7 +133,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:40:23Z",
+"checked_at": "2026-11-02T15:05:04Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -141,19 +141,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-10T01:51:06Z",
-"github_forks": 6562,
+"github_forks": 7105,
 "github_language": "TypeScript",
-"github_open_issues": 207,
-"github_pushed_at": "2026-10-26T11:37:40Z",
-"github_stars": 72620,
+"github_open_issues": 225,
+"github_pushed_at": "2026-11-02T14:40:31Z",
+"github_stars": 77499,
 "github_topic": "ai-agents",
 "homepage": "https://hyperframes.heygen.com"
 },
 "slug": "heygen-com-hyperframes",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/heygen-com/hyperframes"
 }

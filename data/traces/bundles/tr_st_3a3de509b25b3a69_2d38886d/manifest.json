@@ -1,0 +1,26 @@
+{
+ "agent": "res_3a3de509b25b3a69",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_3a3de509b25b3a69_2d38886d",
+ "kind": "self_test",
+ "name": "Assistable",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://docs.assistable.ai/.well-known/agent-card.json",
+   "checked_at": "2026-11-02T14:51:18Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "assistable"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "assistable-ai-assistable"
+}

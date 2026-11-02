@@ -23,7 +23,7 @@
 "domain_fit": 56.4,
 "ecosystem": 13.6,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 23.0
 },
 "components_version": "components-from-signals-1.0",
@@ -32,7 +32,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 61.1,
+"score": 57.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,7 +45,7 @@
 "github": "agent-bev/bev-door",
 "mcp_registry": "ai.agent-bev/bev-door"
 },
-"first_seen": "2026-10-26T12:11:40Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:40Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": null,
 "name": "agent-bev",
 "news": [],
@@ -78,7 +78,7 @@
 "none"
 ],
 "card_url": "https://agent-bev.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-26T12:20:43Z",
+"checked_at": "2026-11-02T14:49:31Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -97,7 +97,7 @@
 "version": "0.2.0"
 },
 "ard": {
-"checked_at": "2026-10-26T12:20:42Z",
+"checked_at": "2026-11-02T14:49:30Z",
 "entries": 5,
 "parser_version": "ard-0.91",
 "sources": [
@@ -132,7 +132,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:36:40Z",
+"checked_at": "2026-11-02T15:02:01Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -149,8 +149,8 @@
 "slug": "agent-bev-ai-agent-bev",
 "sources": [
 {
-"payload_hash": "ab9d16b0e0e4532739b43af38e969d9de85bf93355a77178a6879904d8ecf41f",
-"retrieved_at": "2026-10-26T12:11:40Z",
+"payload_hash": "cac24c56c010784b24aa0da2a1951dd5a38c302cafc7306ff6914f99299fe02f",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agent-bev/bev-door"
 }

@@ -1,0 +1,190 @@
+{
+"canonical_url": "agents.avasis.ai/agents.md",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Free MCP tools: Solana token safety and Polymarket kit samples, x402 quotes, verdict grading rubric",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 9.6,
+"governance": null,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 57.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.avasis.agents/avasis"
+},
+"first_seen": "2026-11-02T14:40:36Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_228352133e4beca9",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:40:36Z",
+"license": null,
+"name": "Avasis Agent Platform",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://agents.avasis.ai/.well-known/agent-card.json",
+"checked_at": "2026-11-02T14:49:37Z",
+"parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3.0",
+"signed": false,
+"skills": [
+"Solana rug check complete kit ($0.02): is this token safe? verdict + holders + Jupiter + RugCheck + Dexscreener",
+"Solana token verdict: SAFE / WARN / DANGER + share card + receipt",
+"Polymarket odds complete kit ($0.02): event + books + history + checks in one call",
+"Polymarket markets: live odds, volume, liquidity, search",
+"Web page reader: any URL to clean markdown + metadata",
+"Base tx precheck ($0.02): simulate an unsigned transaction before signing: revert, gas USD, transfers, wallet PnL, approval risk, counterpar",
+"EVM gas ops kit ($0.05): Ethereum gas + Base gas fee tiers, next base fee, USD cost per tx, pick",
+"Solana rug check lite: authorities, Token-2022 traps, top-10, curve",
+"Solana holders + authority pack: top 20, holder count, extensions",
+"Solana token dossier: facts pack + grounded research brief + card ($0.50)",
+"Free MCP tools: catalog, real samples, x402 quotes, verdict rubric"
+],
+"status": "verified",
+"version": "0.1.0"
+},
+"ard": {
+"checked_at": "2026-11-02T14:49:36Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://agents.avasis.ai/mcp"
+}
+],
+"server_name": "ai.avasis.agents/avasis",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "agents.avasis.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-02T15:03:49Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-10-31T12:12:03.190758Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-10-31T12:12:03.190758Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "agents-avasis-ai-avasis-agent-platform",
+"sources": [
+{
+"payload_hash": "5da7ad45de818a88e4ab496fce8ebe4346777f70a256a30a804b09a3bd937bb0",
+"retrieved_at": "2026-11-02T14:40:36Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.avasis.agents/avasis"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_228352133e4beca9_e0b3c0e4",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_228352133e4beca9_e0b3c0e4",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (unsigned)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:e3501313a7fecafbe0d626c70273c763d58a2d80ed649121751149564745c540",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Avasis Agent Platform's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_228352133e4beca9_e0b3c0e4/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agents.avasis.ai/agents.md",
+"vendor": "agents.avasis.ai"
+}

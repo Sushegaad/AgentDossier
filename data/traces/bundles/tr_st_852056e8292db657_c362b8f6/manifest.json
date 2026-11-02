@@ -1,0 +1,19 @@
+{
+ "agent": "res_852056e8292db657",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_852056e8292db657_c362b8f6",
+ "kind": "self_test",
+ "name": "Annsa",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-11-02T14:49:56Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://annsa.ai/.well-known/ard.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "annsa-ai-annsa"
+}

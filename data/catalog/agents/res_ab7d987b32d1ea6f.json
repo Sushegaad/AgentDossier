@@ -1,0 +1,205 @@
+{
+"canonical_url": "agents.alphaquantlabs.ai/.well-known/agent-card.json",
+"capabilities": [
+"check_address",
+"get_full_report"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"finance": [
+"payment"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Check one Gold Coast or Brisbane City address for free, then request paid Agent JSON with conditional whole-building, neighbouring-site, street and journey data. Brisbane may include timetabled routed journeys; Gold Coast may include Council carriageway and building-outline measurements. Items show verification status and sources/dates where supplied. Coverage is checked before payment; unsupported addresses are refused, and unknown is not safe.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 36.3,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"finance": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 9.4,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 39.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:alphaquantlabs.ai:propertycheck:agent-card"
+},
+"first_seen": "2026-11-02T14:52:33Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_ab7d987b32d1ea6f",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:52:33Z",
+"license": null,
+"name": "AQL PropertyCheck - Physical check of one exact address",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://agents.alphaquantlabs.ai/.well-known/agent-card.json",
+"status": "claimed",
+"via": "ard-entry"
+},
+"ard": {
+"identifier": "urn:air:alphaquantlabs.ai:propertycheck:agent-card",
+"manifest_url": "https://property.alphaquantlabs.ai/.well-known/ard.json",
+"media_type": "application/a2a-agent-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "alphaquantlabs.ai",
+"representative_queries": [
+"check 9 Hamilton Avenue, Surfers Paradise QLD 4217 before renting",
+"check 26 Lomandra Place, Chapel Hill QLD 4069 before buying",
+"what buildings and roads are next to this Gold Coast apartment",
+"how long is the bus, train or ferry trip from this Brisbane address to the CBD or a university"
+],
+"resource_type": "a2a_agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-02T15:09:34Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "alphaquantlabs-ai-aql-propertycheck-physical-check-of-one-exact-address",
+"sources": [
+{
+"payload_hash": "e1a9a349c4b89532ce34d4a693465d8b3630722effd93e0ef2dc4ac44e5aa44a",
+"retrieved_at": "2026-11-02T14:52:33Z",
+"system": "ard",
+"url": "https://property.alphaquantlabs.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"property",
+"real-estate",
+"due-diligence",
+"property-check",
+"building-context",
+"street-access",
+"gold-coast",
+"brisbane"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_ab7d987b32d1ea6f_0a59dbc5",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_ab7d987b32d1ea6f_0a59dbc5",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:fd2d07ef79bd262a255e8ad6ccb1ad6de73bbdb6852b26bf3b371665057c6dcb",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of AQL PropertyCheck - Physical check of one exact address's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_ab7d987b32d1ea6f_0a59dbc5/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agents.alphaquantlabs.ai/.well-known/agent-card.json",
+"vendor": "alphaquantlabs.ai"
+}

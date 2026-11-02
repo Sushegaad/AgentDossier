@@ -21,7 +21,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 27.94,
+"adoption": 28.04,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -35,7 +35,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 67.7,
+"score": 67.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -44,7 +44,7 @@
 },
 "technology": {
 "components": {
-"adoption": 27.94,
+"adoption": 28.04,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -58,7 +58,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 72.9,
+"score": 73.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "ai-job-search-dev/ai-job-search"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,10 +91,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:12:45Z",
+"last_seen": "2026-11-02T14:41:31Z",
 "license": "MIT",
 "name": "ai-job-search",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-02T06:04:24Z",
+"headline": "ai-job-search release v1.7.4",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\n* fix(freehire-search): reject detail URLs on other hosts instead of asking the API for their last segment (#622) by @ayobamiseun in https://github.com/ai-job-search-dev/ai-job-search/pull/623\n* fix(freehire-search): rejec",
+"tag": "product_update",
+"url": "https://github.com/ai-job-search-dev/ai-job-search/releases/tag/v1.7.4"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-19T16:42:35Z",
@@ -105,17 +116,6 @@
 "summary": "A patch release in two halves. **The security model now does what the docs said it did:** skills and agents get only the tools they need, the permission file ships rules that hold even in bypass mode, and every job posting is checked for hi",
 "tag": "product_update",
 "url": "https://github.com/ai-job-search-dev/ai-job-search/releases/tag/v1.7.3"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-29T18:32:55Z",
-"headline": "ai-job-search: v1.7.2 - Measured PDFs, CLIs that stop trusting the digits, tools that survive non-ASCII",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "A patch release with one theme: **the checks the workflow documented now actually run, and the tools stop breaking on anything that is not ASCII.** Compiled PDFs get measured instead of eyeballed, the portal CLIs stop trusting the digits in",
-"tag": "product_update",
-"url": "https://github.com/ai-job-search-dev/ai-job-search/releases/tag/v1.7.2"
 }
 ],
 "news_checked": true,
@@ -138,7 +138,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:40:30Z",
+"checked_at": "2026-11-02T15:05:10Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -146,19 +146,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-18T14:33:04Z",
-"github_forks": 20739,
+"github_forks": 22030,
 "github_language": "Python",
-"github_open_issues": 66,
-"github_pushed_at": "2026-10-21T05:29:11Z",
-"github_stars": 66042,
+"github_open_issues": 87,
+"github_pushed_at": "2026-11-02T06:04:24Z",
+"github_stars": 68958,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "ai-job-search-dev-ai-job-search",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/ai-job-search-dev/ai-job-search"
 }

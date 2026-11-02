@@ -4,37 +4,6 @@
 "commercial": true,
 "compliance": [
 {
-"certificate_id": "workiva",
-"covers_resource": "unknown",
-"credited": true,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "Workiva",
-"terms": [
-"star_level_1",
-"caiq"
-]
-},
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/workiva",
-"framework": "csa_star",
-"issued": "2024-07-01",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:25:42Z",
-"review_reason": "entity 1.00 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "STAR_LEVEL_1"
-},
-{
 "certificate_id": "FR1726564822",
 "covers_resource": "yes",
 "credited": true,
@@ -45,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "Moderate"
 },
-"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-26)",
+"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-02)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1726564822",
 "framework": "fedramp",
 "issued": "2019-10-09",
 "issuer": "Agency / 3PAO Fortreum, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "64bc98d4cebbc137a6e7b94442b8678790eefa29e4347928a0de8620b56a168a",
+"next_check": "2026-11-09",
+"payload_hash": "e4757f48dde02868071f3202de67f230d7dd2f74ef1409bfb1cd46aebbbb1526",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:24:32Z",
+"retrieved_at": "2026-11-02T14:53:18Z",
 "review_reason": "entity 1.00, offering 1.00",
 "reviewer": null,
 "scope": "product",
@@ -75,20 +44,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 12.5,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "general",
 "rank": 39,
 "recomputed": 90.6,
-"score": 82.8,
+"score": 82.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 39,
 "seed_score": 90.6,
@@ -101,20 +68,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 20.0,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "security",
 "rank": 47,
 "recomputed": 80.5,
-"score": 80.4,
+"score": 78.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 47,
 "seed_score": 80.5,
@@ -127,16 +92,14 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 10.0,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "data",
 "rank": 94,
 "recomputed": 83.1,
@@ -153,20 +116,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 10.0,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": 4,
 "recomputed": 94.8,
-"score": 76.0,
+"score": 74.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 4,
 "seed_score": 94.8,
@@ -179,7 +140,7 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 40.0,
+"governance": 20.0,
 "health": 19.0,
 "trust": 19.0
 },
@@ -187,13 +148,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "fedramp": 1.0
 },
 "profile": "regulated",
 "rank": 49,
 "recomputed": 76.8,
-"score": 80.5,
+"score": 77.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 49,
 "seed_score": 76.8,
@@ -206,20 +166,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 10.0,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": 50,
 "recomputed": 76.2,
-"score": 76.0,
+"score": 74.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 50,
 "seed_score": 76.2,
@@ -232,20 +190,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 8.3,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": 45,
 "recomputed": 76.2,
-"score": 75.7,
+"score": 74.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 45,
 "seed_score": 76.2,
@@ -258,20 +214,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 10.0,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": 46,
 "recomputed": 76.2,
-"score": 76.0,
+"score": 74.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 46,
 "seed_score": 76.2,
@@ -284,20 +238,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 10.0,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": 6,
 "recomputed": 94.8,
-"score": 76.0,
+"score": 74.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 6,
 "seed_score": 94.8,
@@ -310,20 +262,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 10.0,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "commercial",
 "rank": 74,
 "recomputed": 81.2,
-"score": 83.6,
+"score": 83.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 74,
 "seed_score": 81.2,
@@ -336,20 +286,18 @@
 "docs": 10.0,
 "domain_fit": 99.0,
 "ecosystem": 13.0,
-"governance": 12.5,
+"governance": 0.0,
 "health": 19.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "operations",
 "rank": 61,
 "recomputed": 78.8,
-"score": 84.5,
+"score": 83.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 61,
 "seed_score": 78.8,
@@ -358,7 +306,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-26T12:11:40Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -380,24 +328,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:40Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": "Commercial",
 "name": "Workiva AI",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:24:15Z",
+"checked_at": "2026-11-02T14:52:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:24:14Z",
+"checked_at": "2026-11-02T14:52:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:24:15Z",
+"checked_at": "2026-11-02T14:52:54Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -407,7 +355,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:32:08Z",
+"checked_at": "2026-11-02T14:59:22Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -432,7 +380,7 @@
 "sources": [
 {
 "payload_hash": "b9ccffea0c847d582164e4a330caf5d7edbf3ec237743c7c9f0898c2e198d990",
-"retrieved_at": "2026-10-26T12:11:40Z",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "seed_xlsx",
 "url": "https://www.workiva.com/"
 }
@@ -447,7 +395,7 @@
 "protocols": 5,
 "security": 1,
 "traces": 5,
-"vendor_compliance": 1
+"vendor_compliance": null
 },
 "url": "https://www.workiva.com/",
 "vendor": "Workiva"

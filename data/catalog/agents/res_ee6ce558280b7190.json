@@ -21,7 +21,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.37,
+"adoption": 24.38,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -46,7 +46,7 @@
 "external_ids": {
 "github": "budtmo/docker-android"
 },
-"first_seen": "2026-10-26T12:15:43Z",
+"first_seen": "2026-11-02T14:44:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -68,13 +68,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:17:57Z",
+"last_seen": "2026-11-02T14:46:44Z",
 "license": "Other",
 "merged_ids": [
 "res_ee6ce558280b7190"
 ],
 "name": "docker-android",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-27T13:19:08Z",
+"headline": "docker-android release v3.9.0-p1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**Changes:**\r\n\r\n- Using the latest base image [v3.9.0-p1](https://github.com/appium/appium-docker-android/releases/tag/v3.9.0-p1)\r\n- Bump coverage to version 7.17.0\r\n- Bump fastmcp to version 4.1.3\r\n- Bump python to version 3.15.0\r\n- Bump s",
+"tag": "product_update",
+"url": "https://github.com/budtmo/docker-android/releases/tag/v3.9.0-p1"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-09T08:13:55Z",
@@ -85,17 +96,6 @@
 "summary": "**Changes:**\r\n\r\n- Using the latest base image [v3.8.0-p0](https://github.com/appium/appium-docker-android/releases/tag/v3.8.0-p0)\r\n- Restructured the docker-folder for dependabot\r\n- Bump fastmcp to version 4.0.11\r\n- Bump coverage to version",
 "tag": "product_update",
 "url": "https://github.com/budtmo/docker-android/releases/tag/v3.8.0-p1"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-18T07:12:31Z",
-"headline": "docker-android release v3.7.0-p1",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "**Changes:**\r\n\r\n- Using the latest base image [v3.7.0-p0](https://github.com/appium/appium-docker-android/releases/tag/v3.7.0-p0)\r\n- Fix: preserve spaces (issue #430 ), credits @Iams4kura\r\n- Bump coverage to version 7.16.1",
-"tag": "product_update",
-"url": "https://github.com/budtmo/docker-android/releases/tag/v3.7.0-p1"
 }
 ],
 "news_checked": true,
@@ -120,7 +120,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:42:00Z",
+"checked_at": "2026-11-02T15:06:33Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -128,19 +128,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2016-12-22T13:02:48Z",
-"github_forks": 1777,
+"github_forks": 1783,
 "github_language": "Python",
-"github_open_issues": 162,
-"github_pushed_at": "2026-10-26T08:45:22Z",
-"github_stars": 16037,
+"github_open_issues": 159,
+"github_pushed_at": "2026-11-02T04:00:57Z",
+"github_stars": 16083,
 "github_topic": "ai-agent",
 "homepage": null
 },
 "slug": "budtmo-docker-android",
 "sources": [
 {
-"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
-"retrieved_at": "2026-10-26T12:15:43Z",
+"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
+"retrieved_at": "2026-11-02T14:44:31Z",
 "system": "github",
 "url": "https://github.com/budtmo/docker-android"
 }

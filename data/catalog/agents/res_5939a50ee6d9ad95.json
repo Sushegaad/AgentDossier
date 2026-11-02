@@ -22,7 +22,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.01,
+"adoption": 28.03,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -45,7 +45,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.01,
+"adoption": 28.03,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 74.4,
+"score": 74.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "shanraisshan/claude-code-best-practice"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,24 +92,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:12:45Z",
+"last_seen": "2026-11-02T14:41:31Z",
 "license": "MIT",
 "name": "claude-code-best-practice",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:23:11Z",
+"checked_at": "2026-11-02T14:51:54Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:23:10Z",
+"checked_at": "2026-11-02T14:51:52Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:23:12Z",
+"checked_at": "2026-11-02T14:51:54Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -119,7 +119,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:40:28Z",
+"checked_at": "2026-11-02T15:05:11Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -127,19 +127,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-10-31T14:15:28Z",
-"github_forks": 6777,
+"github_forks": 6815,
 "github_language": "HTML",
-"github_open_issues": 31,
-"github_pushed_at": "2026-10-26T06:34:23Z",
-"github_stars": 68134,
+"github_open_issues": 38,
+"github_pushed_at": "2026-11-02T06:34:08Z",
+"github_stars": 68461,
 "github_topic": "ai-agents",
 "homepage": "https://linkedin.com/in/shanraisshan"
 },
 "slug": "shanraisshan-claude-code-best-practice",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/shanraisshan/claude-code-best-practice"
 }

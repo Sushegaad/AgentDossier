@@ -1,0 +1,19 @@
+{
+ "agent": "res_7b2db2338cc61fec",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_7b2db2338cc61fec_7b34334f",
+ "kind": "self_test",
+ "name": "Reactive Resume MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:rxresu.me:mcp:reactive-resume",
+   "manifest_url": "https://rxresu.me/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "rxresu-me-reactive-resume-mcp-server"
+}

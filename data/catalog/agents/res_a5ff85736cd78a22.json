@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:agentgates.ai:platform:api"
 },
-"first_seen": "2026-10-26T12:20:48Z",
+"first_seen": "2026-11-02T14:49:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:20:48Z",
+"last_seen": "2026-11-02T14:49:36Z",
 "license": null,
 "name": "Agentgates REST API (x402)",
 "news": [],
@@ -78,7 +78,7 @@
 },
 "ard": {
 "identifier": "urn:air:agentgates.ai:platform:api",
-"manifest_url": "https://agentgates.ai/.well-known/ai-catalog.json",
+"manifest_url": "https://agentgates.ai/.well-known/ard.json",
 "media_type": "application/openapi+json",
 "parser_version": "ard-0.91",
 "status": "verified",
@@ -99,7 +99,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:43:26Z",
+"checked_at": "2026-11-02T15:07:45Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -109,9 +109,9 @@
 "sources": [
 {
 "payload_hash": "7eb9106e22b699ef467e617d17305433ff691a3cc0286bb3d442d515e686a289",
-"retrieved_at": "2026-10-26T12:20:48Z",
+"retrieved_at": "2026-11-02T14:49:36Z",
 "system": "ard",
-"url": "https://agentgates.ai/.well-known/ai-catalog.json"
+"url": "https://agentgates.ai/.well-known/ard.json"
 }
 ],
 "tags": [
@@ -152,6 +152,37 @@
 "tier": 1,
 "title": "Registry probe of Agentgates REST API (x402)'s discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_a5ff85736cd78a22_8e1cd277/",
+"vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_a5ff85736cd78a22_b86a8f37",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_a5ff85736cd78a22_b86a8f37",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:d4ab724afc3c6cd04a1b2ae36c3d98c76910f31d45754c5c7a4942b80bd4b844",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Agentgates REST API (x402)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_a5ff85736cd78a22_b86a8f37/",
 "vendor_response": null
 }
 ],

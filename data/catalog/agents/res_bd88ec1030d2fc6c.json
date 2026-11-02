@@ -4,37 +4,6 @@
 "commercial": true,
 "compliance": [
 {
-"certificate_id": "atlassian",
-"covers_resource": "unknown",
-"credited": true,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "Atlassian",
-"terms": [
-"star_level_1",
-"caiq"
-]
-},
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/atlassian",
-"framework": "csa_star",
-"issued": "2018-03-19",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:25:44Z",
-"review_reason": "entity 1.00 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "STAR_LEVEL_1"
-},
-{
 "certificate_id": "FR2412062433",
 "covers_resource": "inherited",
 "credited": true,
@@ -45,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "Moderate"
 },
-"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-26)",
+"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-02)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR2412062433",
 "framework": "fedramp",
 "issued": "2025-03-14",
 "issuer": "Agency / 3PAO Schellman Compliance, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "64bc98d4cebbc137a6e7b94442b8678790eefa29e4347928a0de8620b56a168a",
+"next_check": "2026-11-09",
+"payload_hash": "e4757f48dde02868071f3202de67f230d7dd2f74ef1409bfb1cd46aebbbb1526",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:24:34Z",
+"retrieved_at": "2026-11-02T14:53:20Z",
 "review_reason": "vendor authorization for Atlassian Government Cloud; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -71,16 +40,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-26)",
+"display": "Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://www.atlassian.com/",
 "framework": "fedramp",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "856980eb3b6fb3c2ac7122be823caea9e6cfd106c31089700693936ba158b835",
+"next_check": "2026-11-09",
+"payload_hash": "05b345a4c3683a5bde60c94ef4679a7b6c852403e151d9f0bf504106a6f5e7a7",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:28:03Z",
+"retrieved_at": "2026-11-02T14:55:53Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,16 +66,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-26)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://www.atlassian.com/trust/ai",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "580cfc9e4eaa2b157524d8cc5ada0f446e77c633f0800a6c37b23aa91869c965",
+"next_check": "2026-11-09",
+"payload_hash": "0963d56bdf543e358e6b7822837a24e440051aab578c84b3314063310eeab319",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:28:03Z",
+"retrieved_at": "2026-11-02T14:55:53Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -123,16 +92,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-26)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-02)",
 "evidence_url": "https://www.atlassian.com/trust/ai",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "580cfc9e4eaa2b157524d8cc5ada0f446e77c633f0800a6c37b23aa91869c965",
+"next_check": "2026-11-09",
+"payload_hash": "0963d56bdf543e358e6b7822837a24e440051aab578c84b3314063310eeab319",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:28:03Z",
+"retrieved_at": "2026-11-02T14:55:53Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -149,16 +118,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "ISO 27001: Vendor-claimed (vendor page, 2026-10-26)",
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://www.atlassian.com/trust/ai",
 "framework": "iso27001",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "580cfc9e4eaa2b157524d8cc5ada0f446e77c633f0800a6c37b23aa91869c965",
+"next_check": "2026-11-09",
+"payload_hash": "0963d56bdf543e358e6b7822837a24e440051aab578c84b3314063310eeab319",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:28:03Z",
+"retrieved_at": "2026-11-02T14:55:53Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -175,16 +144,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-26)",
+"display": "Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://www.atlassian.com/trust/ai",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "580cfc9e4eaa2b157524d8cc5ada0f446e77c633f0800a6c37b23aa91869c965",
+"next_check": "2026-11-09",
+"payload_hash": "0963d56bdf543e358e6b7822837a24e440051aab578c84b3314063310eeab319",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:28:03Z",
+"retrieved_at": "2026-11-02T14:55:53Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -205,7 +174,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -213,14 +182,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "iso27001": 0.15,
 "soc2": 0.15
 },
 "profile": "general",
 "rank": 49,
 "recomputed": 90.0,
-"score": 84.2,
+"score": 83.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 49,
 "seed_score": 90.0,
@@ -233,7 +201,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 26.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -241,14 +209,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "iso27001": 0.15,
 "soc2": 0.15
 },
 "profile": "security",
 "rank": 62,
 "recomputed": 79.2,
-"score": 82.0,
+"score": 80.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 62,
 "seed_score": 79.2,
@@ -261,7 +228,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -269,7 +236,6 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "iso27001": 0.15,
 "soc2": 0.15
 },
@@ -289,7 +255,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -297,14 +263,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "iso27001": 0.15,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 78,
 "recomputed": 74.1,
-"score": 77.5,
+"score": 76.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 78,
 "seed_score": 74.1,
@@ -317,7 +282,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 33.0,
+"governance": 13.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -325,14 +290,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "fedramp": 0.5,
 "iso27001": 0.15
 },
 "profile": "regulated",
 "rank": 68,
 "recomputed": 74.7,
-"score": 80.1,
+"score": 77.1,
 "score_version": "sar-score-2.0",
 "seed_rank": 68,
 "seed_score": 74.7,
@@ -345,7 +309,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -353,14 +317,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "hipaa": 0.15,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 70,
 "recomputed": 74.1,
-"score": 77.5,
+"score": 76.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 70,
 "seed_score": 74.1,
@@ -373,7 +336,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 15.8,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -381,7 +344,6 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "hipaa": 0.15,
 "iso27001": 0.15,
 "soc2": 0.15
@@ -389,7 +351,7 @@
 "profile": "regulated",
 "rank": 66,
 "recomputed": 74.1,
-"score": 77.5,
+"score": 76.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 66,
 "seed_score": 74.1,
@@ -402,7 +364,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -410,14 +372,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "iso27001": 0.15,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 68,
 "recomputed": 74.1,
-"score": 77.5,
+"score": 76.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 68,
 "seed_score": 74.1,
@@ -430,7 +391,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -438,14 +399,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "iso27001": 0.15,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 73,
 "recomputed": 74.1,
-"score": 77.5,
+"score": 76.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 73,
 "seed_score": 74.1,
@@ -458,7 +418,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -466,14 +426,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "gdpr": 0.15,
 "soc2": 0.15
 },
 "profile": "commercial",
 "rank": 76,
 "recomputed": 81.0,
-"score": 85.2,
+"score": 84.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 76,
 "seed_score": 81.0,
@@ -486,7 +445,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 20.0,
+"governance": 7.5,
 "health": 20.0,
 "trust": 19.0
 },
@@ -494,14 +453,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "iso27001": 0.15,
 "soc2": 0.15
 },
 "profile": "operations",
 "rank": 65,
 "recomputed": 78.6,
-"score": 86.2,
+"score": 85.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 65,
 "seed_score": 78.6,
@@ -514,7 +472,7 @@
 "docs": 9.0,
 "domain_fit": 99.0,
 "ecosystem": 14.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 19.0
 },
@@ -522,7 +480,6 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "iso27001": 0.15,
 "soc2": 0.15
 },
@@ -538,7 +495,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-26T12:11:40Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -560,7 +517,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:40Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": "Atlassian service",
 "name": "Atlassian Rovo",
 "news": [
@@ -581,17 +538,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:21:27Z",
+"checked_at": "2026-11-02T14:50:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:21:26Z",
+"checked_at": "2026-11-02T14:50:16Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:21:28Z",
+"checked_at": "2026-11-02T14:50:26Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -601,7 +558,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:32:18Z",
+"checked_at": "2026-11-02T14:59:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -626,7 +583,7 @@
 "sources": [
 {
 "payload_hash": "d50e0c762e9606a9e537de7b81e479256b903323fe3d4ef9c344d542af44f601",
-"retrieved_at": "2026-10-26T12:11:40Z",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "seed_xlsx",
 "url": "https://www.atlassian.com/software/rovo"
 }

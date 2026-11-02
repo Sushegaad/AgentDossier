@@ -1,0 +1,204 @@
+{
+"canonical_url": "docs.artil.ai/openapi.json",
+"capabilities": [
+"email",
+"sms",
+"telegram",
+"messaging"
+],
+"category": null,
+"classification": {
+"matched": {
+"business": [
+"email"
+],
+"technology": [
+"api"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Give AI agents their own email inbox, SMS number and workspace accounts to work directly with customers, teammates and other agents through the HTTP API.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 6.1,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 33.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 6.1,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 32.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:artil.ai:api:artil"
+},
+"first_seen": "2026-11-02T14:50:30Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_17285b75a4e4c057",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:50:30Z",
+"license": null,
+"name": "Artil HTTP API",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:artil.ai:api:artil",
+"manifest_url": "https://artil.ai/.well-known/ard.json",
+"media_type": "application/vnd.oai.openapi+json;version=3.1.0",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "artil.ai",
+"representative_queries": [
+"email inbox for my AI agent",
+"SMS number for my AI agent",
+"send an email from my AI agent in a script",
+"how can my agent reply to customer emails?"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-02T15:08:34Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "artil-ai-artil-http-api",
+"sources": [
+{
+"payload_hash": "f32fe335e5f63ff84f7e90475624ee4bcaeb911c308a833512cc129a607cae8e",
+"retrieved_at": "2026-11-02T14:50:30Z",
+"system": "ard",
+"url": "https://artil.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"email",
+"email inbox",
+"inbox",
+"sms",
+"telegram",
+"messaging",
+"workspace"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_17285b75a4e4c057_34600d40",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_17285b75a4e4c057_34600d40",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:0af9d13efc4a3329c076d8e56ececd82a34db41b09588073d3c909a58e60051c",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Artil HTTP API's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_17285b75a4e4c057_34600d40/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://docs.artil.ai/openapi.json",
+"vendor": "artil.ai"
+}

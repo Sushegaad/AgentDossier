@@ -13,7 +13,7 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Free, sourced money facts and scheme lookups for US/UK/CA/AU/NZ. Answers cite bankrolled.com.",
+"description": "Free, sourced money limits: money_fact, scheme_lookup, cross_border_check. US/UK/CA/AU/NZ. No key.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
@@ -42,9 +42,10 @@
 }
 },
 "external_ids": {
+"github": "Bankrolled/bankrolled-ai-mcp",
 "mcp_registry": "ai.bankrolled/agent-hub"
 },
-"first_seen": "2026-10-26T12:11:41Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,19 +67,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:41Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": null,
 "name": "Bankrolled.ai Agent Hub",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:21:46Z",
+"checked_at": "2026-11-02T14:50:37Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:21:44Z",
+"checked_at": "2026-11-02T14:50:35Z",
 "entries": 1,
 "errors": [
 "entries[0]: missing required term 'displayName'"
@@ -99,7 +100,7 @@
 ],
 "server_name": "ai.bankrolled/agent-hub",
 "status": "claimed",
-"version": "1.3.0",
+"version": "1.5.7",
 "via": "mcp_registry"
 }
 },
@@ -108,16 +109,16 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:39:06Z",
+"checked_at": "2026-11-02T15:04:12Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-09-27T15:13:27.579538Z",
+"mcp_registry_published_at": "2026-10-29T09:16:17.656709Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-09-27T15:13:27.579538Z",
+"mcp_registry_updated_at": "2026-10-29T09:16:17.656709Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -125,8 +126,8 @@
 "slug": "bankrolled-ai-bankrolled-ai-agent-hub",
 "sources": [
 {
-"payload_hash": "bc09c9e035e8448485c44d9437669f2b42b3cd97de9aeb1a405d93a5f81707a8",
-"retrieved_at": "2026-10-26T12:11:41Z",
+"payload_hash": "5da7ad45de818a88e4ab496fce8ebe4346777f70a256a30a804b09a3bd937bb0",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bankrolled/agent-hub"
 }

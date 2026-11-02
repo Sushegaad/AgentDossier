@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-26)",
+"display": "Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://adtest.ai/privacy-policy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "090a7fe5bd01205a65290adaf7771511c3c3ea982d90e3f2c295dc631af3c897",
+"next_check": "2026-11-09",
+"payload_hash": "25649df7ae99b05c44c9cb2cff8c8f5dc55f4d37a61e3c490478f1c1d91fcdb4",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:27:10Z",
+"retrieved_at": "2026-11-02T14:55:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,16 +45,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-26)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-02)",
 "evidence_url": "https://adtest.ai/privacy-policy/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "090a7fe5bd01205a65290adaf7771511c3c3ea982d90e3f2c295dc631af3c897",
+"next_check": "2026-11-09",
+"payload_hash": "25649df7ae99b05c44c9cb2cff8c8f5dc55f4d37a61e3c490478f1c1d91fcdb4",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:27:10Z",
+"retrieved_at": "2026-11-02T14:55:02Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "github": "menaker/adtest-mcp",
 "mcp_registry": "ai.adtest/adtest-mcp"
 },
-"first_seen": "2026-10-26T12:11:40Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,7 +119,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:40Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": null,
 "name": "ai.adtest/adtest-mcp",
 "news": [
@@ -138,12 +138,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:20:43Z",
+"checked_at": "2026-11-02T14:49:29Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:20:39Z",
+"checked_at": "2026-11-02T14:49:25Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -168,7 +168,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:36:31Z",
+"checked_at": "2026-11-02T15:01:52Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -183,8 +183,8 @@
 "slug": "adtest-ai-ai-adtest-adtest-mcp",
 "sources": [
 {
-"payload_hash": "ab9d16b0e0e4532739b43af38e969d9de85bf93355a77178a6879904d8ecf41f",
-"retrieved_at": "2026-10-26T12:11:40Z",
+"payload_hash": "cac24c56c010784b24aa0da2a1951dd5a38c302cafc7306ff6914f99299fe02f",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.adtest/adtest-mcp"
 }

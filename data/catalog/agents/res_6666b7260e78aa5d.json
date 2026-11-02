@@ -97,9 +97,10 @@
 }
 },
 "external_ids": {
+"github": "Antcolombo/beliefstate-agent-integrations",
 "mcp_registry": "ai.beliefstate/investor-research"
 },
-"first_seen": "2026-10-26T12:11:41Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -121,7 +122,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:41Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": null,
 "name": "BeliefState",
 "news": [],
@@ -129,7 +130,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://docs.beliefstate.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-26T12:22:37Z",
+"checked_at": "2026-11-02T14:51:19Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -140,7 +141,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-26T12:22:28Z",
+"checked_at": "2026-11-02T14:51:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -158,7 +159,7 @@
 ],
 "server_name": "ai.beliefstate/investor-research",
 "status": "claimed",
-"version": "1.0.2",
+"version": "1.0.3",
 "via": "mcp_registry"
 }
 },
@@ -167,16 +168,16 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:39:13Z",
+"checked_at": "2026-11-02T15:04:19Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-25T01:17:57.015334Z",
+"mcp_registry_published_at": "2026-10-27T22:38:44.911304Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-25T01:17:57.015334Z",
+"mcp_registry_updated_at": "2026-10-27T22:38:44.911304Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -184,8 +185,8 @@
 "slug": "beliefstate-ai-beliefstate",
 "sources": [
 {
-"payload_hash": "bc09c9e035e8448485c44d9437669f2b42b3cd97de9aeb1a405d93a5f81707a8",
-"retrieved_at": "2026-10-26T12:11:41Z",
+"payload_hash": "5da7ad45de818a88e4ab496fce8ebe4346777f70a256a30a804b09a3bd937bb0",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.beliefstate/investor-research"
 }

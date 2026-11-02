@@ -23,7 +23,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 25.95,
+"adoption": 25.98,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 2.7,
@@ -46,7 +46,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.95,
+"adoption": 25.98,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 2.7,
@@ -71,7 +71,7 @@
 "external_ids": {
 "github": "TencentCloud/TencentDB-Agent-Memory"
 },
-"first_seen": "2026-10-26T12:15:43Z",
+"first_seen": "2026-11-02T14:44:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,10 +93,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:15:43Z",
+"last_seen": "2026-11-02T14:44:31Z",
 "license": "Other",
 "name": "TencentDB-Agent-Memory",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-10-26T14:09:03Z",
+"headline": "TencentDB-Agent-Memory release v2.0.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## [2.0.3] - 2026-10-26\r\n\r\nv2.0.3 发布，相比 v2.0.3-beta.1 新增会话默认绑定与 Wiki 富文档，并把未单独配置超时的上游等待时间从 10 分钟改为 1 小时。同时修复 DeepSeek Harness 辅助接口、历史记忆时间格式、安装脚本、面板交互、Knowledge 启动，以及代理在 Redis 中断后不能自行恢复的问题。\r\n\r\n> **产品定位**：让 Agent 的经验、文档、代码沉淀成可复用资产，让下一位 Agent",
+"tag": "product_update",
+"url": "https://github.com/TencentCloud/TencentDB-Agent-Memory/releases/tag/v2.0.3"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-13T10:43:52Z",
@@ -107,33 +118,22 @@
 "summary": "## [2.0.3-beta.1] - 2026-10-13\r\n\r\nv2.0.3-beta.1 发布，相比 v2.0.2 新增可插拔的决策服务、技能按需选择与会话轨迹\r\n记录能力，并补齐代码知识库的 SSH 克隆与可观测性信息。以上新能力均默认关闭，\r\n旧配置无需修改、行为与之前保持一致。\r\n\r\n> **产品定位**：让 Agent 的经验、文档、代码沉淀成可复用资产，让下一位 Agent\r\n> 直接读档。详见 [README_CN.md](./README_CN.md)。",
 "tag": "product_update",
 "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory/releases/tag/v2.0.3-beta.1"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-09T11:19:45Z",
-"headline": "TencentDB-Agent-Memory release v2.0.2",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## [2.0.2] - 2026-10-09\r\n\r\n> **产品定位**：让 Agent 的经验、文档、代码沉淀成可复用资产，让下一位 Agent\r\n> 直接读档。详见 [README_CN.md](./README_CN.md)。\r\n\r\n### 🗄️ 存储后端可扩展 · 支持 MongoDB\r\n\r\n团队记忆不再绑定单一数据底座，MongoDB 后端能力进一步补全：\r\n\r\n- 新增 memory-prompt 与 generation-ref 两类存储，覆盖更多记忆数据结构",
-"tag": "product_update",
-"url": "https://github.com/TencentCloud/TencentDB-Agent-Memory/releases/tag/v2.0.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:24:02Z",
+"checked_at": "2026-11-02T14:52:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:24:01Z",
+"checked_at": "2026-11-02T14:52:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:24:02Z",
+"checked_at": "2026-11-02T14:52:41Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -143,7 +143,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:41:15Z",
+"checked_at": "2026-11-02T15:05:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -151,19 +151,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-07T06:34:26Z",
-"github_forks": 2911,
+"github_forks": 2946,
 "github_language": "TypeScript",
-"github_open_issues": 897,
-"github_pushed_at": "2026-10-26T07:03:10Z",
-"github_stars": 29967,
+"github_open_issues": 891,
+"github_pushed_at": "2026-10-28T14:33:21Z",
+"github_stars": 30351,
 "github_topic": "ai-agent",
 "homepage": "https://tencentcloud.github.io/TencentDB-Agent-Memory/"
 },
 "slug": "tencentcloud-tencentdb-agent-memory",
 "sources": [
 {
-"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
-"retrieved_at": "2026-10-26T12:15:43Z",
+"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
+"retrieved_at": "2026-11-02T14:44:31Z",
 "system": "github",
 "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory"
 }

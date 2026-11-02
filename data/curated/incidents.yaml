@@ -17,7 +17,7 @@
 #   * No fabricated incidents and no incident about a private individual. Correct or withdraw an
 #     entry by editing this file; changes are recorded in the trace changelog.
 version: incidents-1.1
-collected_on: 2026-10-26
+collected_on: 2026-11-02
 collected_by: claude (assistant) with the maintainer
 
 # MITRE ATT&CK tactic labels used below (reference only; the registry renders these):
@@ -881,3 +881,37 @@ incidents:
       - { title: "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions", url: "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html", outlet: "The Hacker News", date: "2026-10-23" }
     reviewer: "model: claude-sonnet-5-5 (automated review)"
     checked_on: 2026-10-26
+
+  - id: TR-2026-030
+    status: published  # machine-reviewed 2026-11-02 from candidate cand-3ab38aed12
+    title: "Chainalysis discloses data breach from \"offensive agentic techniques\""
+    date: 2026-10-30
+    window: "October 2026"
+    ai_role: attacker
+    category: incident
+    summary: >-
+      Chainalysis said it detected an external actor using "offensive agentic techniques" to gain
+      unauthorized access to its internal systems and tools earlier in the month. Some customer
+      information was accessed, including user IDs, full names, email addresses and organizational
+      role labels. The company has not shared technical details, and the article says it is unclear
+      whether existing agentic frameworks or custom-built AI agents were used. Chainalysis said it
+      found no evidence that investigation content, authentication credentials or session tokens were
+      accessed.
+    attacker:
+      description: "An external actor using what Chainalysis described as \"offensive agentic techniques\"; identity unknown"
+    defender:
+      description: "Chainalysis, a blockchain intelligence firm whose analytics tools are used by law enforcement, government agencies, crypto exchanges and financial institutions"
+    scale: "Records covered user IDs, names, emails and role labels for users provisioned on the platform; the breakdown of affected records per organization was still being determined."
+    impact: "Some customer information was accessed; the company said there was no evidence that investigation content, authentication credentials or session tokens were exposed."
+    tactics: [TA0001, TA0009]
+    timeline:
+      - { date: "2026-10", text: "Chainalysis detected an external actor using offensive agentic techniques to access its systems and internal tools earlier in the month.", tier: null, source: "1" }
+      - { date: "2026-10-30", text: "Chainalysis published a security incident disclosure and the text of the email sent to affected customers.", tier: null, source: "1" }
+    lessons: []
+    models_named: []
+    related_agents: []
+    vendor_response: "Chainalysis published a disclosure and emailed affected customers. It has been patching vulnerabilities and hardening its systems, is working with external cybersecurity experts, and is using LLMs to support a broader security review. It advised customers to enable 2FA and watch for unexpected password reset requests, authentication prompts and impersonation scams. It said it would share further updates."
+    sources:
+      - { title: "Chainalysis discloses data breach from \"offensive agentic techniques\"", url: "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/", outlet: "BleepingComputer", date: "2026-10-31" }
+    reviewer: "model: claude-sonnet-5-5 (automated review)"
+    checked_on: 2026-11-02

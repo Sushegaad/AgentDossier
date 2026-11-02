@@ -1,0 +1,33 @@
+{
+ "agent": "res_228352133e4beca9",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_228352133e4beca9_e0b3c0e4",
+ "kind": "self_test",
+ "name": "Avasis Agent Platform",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://agents.avasis.ai/.well-known/agent-card.json",
+   "checked_at": "2026-11-02T14:49:37Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Solana rug check complete kit ($0.02): is this token safe? verdict + holders + Jupiter + RugCheck + Dexscreener",
+    "Solana token verdict: SAFE / WARN / DANGER + share card + receipt",
+    "Polymarket odds complete kit ($0.02): event + books + history + checks in one call",
+    "Polymarket markets: live odds, volume, liquidity, search",
+    "Web page reader: any URL to clean markdown + metadata",
+    "Base tx precheck ($0.02): simulate an unsigned transaction before signing: revert, gas USD, transfers, wallet PnL, approval risk, counterpar",
+    "EVM gas ops kit ($0.05): Ethereum gas + Base gas fee tiers, next base fee, USD cost per tx, pick",
+    "Solana rug check lite: authorities, Token-2022 traps, top-10, curve",
+    "Solana holders + authority pack: top 20, holder count, extensions",
+    "Solana token dossier: facts pack + grounded research brief + card ($0.50)",
+    "Free MCP tools: catalog, real samples, x402 quotes, verdict rubric"
+   ],
+   "status": "verified",
+   "version": "0.1.0"
+  }
+ },
+ "slug": "agents-avasis-ai-avasis-agent-platform"
+}

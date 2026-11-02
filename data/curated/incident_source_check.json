@@ -1,13 +1,13 @@
 {
   "version": "incident-source-check-1.0",
-  "checked_on": "2026-10-26",
-  "incidents_checked": 23,
-  "sources_checked": 38,
+  "checked_on": "2026-11-02",
+  "incidents_checked": 24,
+  "sources_checked": 39,
   "summary": {
-    "ok": 29,
+    "ok": 31,
     "moved": 0,
     "gone": 1,
-    "unverified": 8,
+    "unverified": 7,
     "error": 0
   },
   "needs_attention": [
@@ -226,9 +226,8 @@
       },
       {
         "url": "https://cybersecuritynews.com/claude-code-opus-5-auto-mode-hijacked/",
-        "status": "unverified",
-        "http": 403,
-        "error": "HTTP 403"
+        "status": "ok",
+        "http": 202
       }
     ],
     "TR-2026-026": [
@@ -255,6 +254,13 @@
     "TR-2026-029": [
       {
         "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-030": [
+      {
+        "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
         "status": "ok",
         "http": 200
       }

@@ -72,7 +72,7 @@
 "github": "abab7575/arc-mcp",
 "mcp_registry": "ai.arcreport/ask"
 },
-"first_seen": "2026-10-26T12:11:41Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:41Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": null,
 "merged_ids": [
 "res_93703c9da9c1c10b"
@@ -105,12 +105,13 @@
 "protocols": {
 "a2a": {
 "card_url": "https://www.arcreport.ai/.well-known/agent-card.json",
-"checked_at": "2026-10-26T12:21:19Z",
+"checked_at": "2026-11-02T14:50:08Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "1.0",
 "signed": false,
 "skills": [
 "precheck",
+"precheck_bulk",
 "find_agent_ready_stores",
 "can_agent_checkout",
 "ask_arc",
@@ -125,13 +126,14 @@
 "submit_leaderboard_run",
 "submit_store",
 "store_card",
-"validate_ucp_profile"
+"validate_ucp_profile",
+"get_benchmark"
 ],
 "status": "verified",
 "version": "1.1.0"
 },
 "ard": {
-"checked_at": "2026-10-26T12:21:17Z",
+"checked_at": "2026-11-02T14:50:07Z",
 "entries": 2,
 "errors": [
 "entries[0]: missing required term 'displayName'",
@@ -162,7 +164,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:37:52Z",
+"checked_at": "2026-11-02T15:03:11Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -179,14 +181,14 @@
 "slug": "arcreport-ai-arc-arcreport-ai-can-an-agent-reach-checkout",
 "sources": [
 {
-"payload_hash": "c42b66f73a46608b65024355ba501e108ba6d1f1bce21f490cc18a0fb717896c",
-"retrieved_at": "2026-10-26T12:11:41Z",
+"payload_hash": "67804d8ddfe839ee1bfb929edb81f67c534139cebc85b54ac7840d44dc82efae",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.arcreport/ask"
 },
 {
-"payload_hash": "c42b66f73a46608b65024355ba501e108ba6d1f1bce21f490cc18a0fb717896c",
-"retrieved_at": "2026-10-26T12:11:41Z",
+"payload_hash": "67804d8ddfe839ee1bfb929edb81f67c534139cebc85b54ac7840d44dc82efae",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.arcreport/mcp"
 }
@@ -224,6 +226,38 @@
 "tier": 1,
 "title": "Registry probe of ARC (arcreport.ai): can an agent reach checkout?'s discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_a2ffb923b0b3bbe3_00725e28/",
+"vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_a2ffb923b0b3bbe3_b4cc157d",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_a2ffb923b0b3bbe3_b4cc157d",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document",
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (unsigned); ARD invalid (2 validation errors)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:3a38a216bf9edcade7230cf0c02e987738f906504d964305f1b605a21843e765",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of ARC (arcreport.ai): can an agent reach checkout?'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_a2ffb923b0b3bbe3_b4cc157d/",
 "vendor_response": null
 }
 ],

@@ -1,0 +1,23 @@
+{
+ "agent": "res_17665126cb68aac4",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_17665126cb68aac4_f17815ae",
+ "kind": "self_test",
+ "name": "parlant",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "platformJwt"
+   ],
+   "card_url": "https://www.parlant.io/.well-known/agent-card.json",
+   "checked_at": "2026-11-02T14:52:24Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "emcie-co-parlant"
+}
