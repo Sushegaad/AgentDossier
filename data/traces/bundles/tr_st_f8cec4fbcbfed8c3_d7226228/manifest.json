@@ -1,0 +1,19 @@
+{
+ "agent": "res_f8cec4fbcbfed8c3",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f8cec4fbcbfed8c3_d7226228",
+ "kind": "self_test",
+ "name": "Place a phone call (skill)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agentgates.ai:skills:phone",
+   "manifest_url": "https://agentgates.ai/.well-known/ard.json",
+   "media_type": "application/agent-skills+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "agentgates-ai-place-a-phone-call-skill"
+}

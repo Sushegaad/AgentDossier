@@ -1,0 +1,201 @@
+{
+"canonical_url": "agentgates.ai/skills/agentgates-cli/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"business": [
+"email"
+],
+"technology": [
+"cli",
+"mcp",
+"terminal"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Give your agent an account in one command: twelve words that sign every call, hold a prepaid USDC balance and lock the vault, then compute, inference, phone, email and calls from the terminal or as MCP tools.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 9.1,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 36.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 71.3,
+"ecosystem": 9.1,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 39.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:agentgates.ai:skills:cli"
+},
+"first_seen": "2026-11-02T14:49:36Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_a841bfb9a8c0e830",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:49:36Z",
+"license": null,
+"name": "An account in one command (skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agentgates.ai:skills:cli",
+"manifest_url": "https://agentgates.ai/.well-known/ard.json",
+"media_type": "application/agent-skills+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"evidence_url": "https://agentgates.ai/skills/agentgates-cli/SKILL.md",
+"note": "named in the resource's own tags",
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "agentgates.ai",
+"representative_queries": [
+"give my AI agent its own account and balance",
+"CLI for an agent to pay for services in USDC",
+"agent account with no signup"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-02T15:07:54Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agentgates-ai-an-account-in-one-command-skill",
+"sources": [
+{
+"payload_hash": "8ff6e12debb73fba6d64aaea3929cb75715b674367ba34908bef2ed1ad10074e",
+"retrieved_at": "2026-11-02T14:49:36Z",
+"system": "ard",
+"url": "https://agentgates.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"skill",
+"cli",
+"account",
+"mcp",
+"usdc"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_a841bfb9a8c0e830_df318bb6",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_a841bfb9a8c0e830_df318bb6",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:fb5d52d0d1c9fab864c9f5ea075767af89f09e4e8d2b83f0eb216b95b3faa31d",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of An account in one command (skill)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_a841bfb9a8c0e830_df318bb6/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agentgates.ai/skills/agentgates-cli/SKILL.md",
+"vendor": "agentgates.ai"
+}

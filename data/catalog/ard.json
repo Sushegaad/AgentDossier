@@ -292,6 +292,37 @@
    }
   },
   {
+   "identifier": "urn:air:agentgates.ai:server:compute",
+   "displayName": "Agentgates compute MCP server",
+   "type": "application/mcp-server-card+json",
+   "data": {
+    "name": "ai.agentgates/compute",
+    "title": "Agentgates Compute",
+    "description": "Confidential VMs by the hour: the plans with live prices, the exact x402 quote for one machine, and the docs. No sign-in.",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://mcp.agentgates.ai/compute"
+     }
+    ]
+   },
+   "description": "MCP tools with no sign-in: compute_plans, compute_quote and compute_docs for confidential VMs paid in USDC over x402.",
+   "tags": [
+    "mcp",
+    "compute",
+    "tee",
+    "x402"
+   ],
+   "representativeQueries": [
+    "MCP server to rent a confidential VM",
+    "price a TEE virtual machine from my agent over MCP"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
    "identifier": "urn:air:agentgates.ai:platform:api",
    "displayName": "Agentgates REST API (x402)",
    "type": "application/openapi+json",
@@ -340,20 +371,22 @@
    }
   },
   {
-   "identifier": "urn:air:agentgates.ai:skills:directory",
-   "displayName": "Find and review paid APIs (skill)",
-   "type": "application/ai-skill+md",
-   "url": "https://agentgates.ai/skills/agentgates-directory/SKILL.md",
-   "description": "Step-by-step skill: search the x402 directory, list your own service free, and turn a settle you already made into a verified review.",
+   "identifier": "urn:air:agentgates.ai:skills:compute",
+   "displayName": "Buy confidential compute (skill)",
+   "type": "application/agent-skills+md",
+   "url": "https://agentgates.ai/skills/agentgates-compute/SKILL.md",
+   "description": "Rent a confidential VM (Intel TDX) by the hour with USDC over x402 and run a Docker workload on it. No signup; the paying wallet owns the machine.",
    "tags": [
     "skill",
-    "directory",
+    "compute",
     "x402",
-    "reviews"
+    "usdc",
+    "tee"
    ],
    "representativeQueries": [
-    "how do I find a paid API my agent can call",
-    "how do I prove I paid and leave a review"
+    "rent a confidential VM with USDC, no signup",
+    "run docker on a TEE machine my agent pays for",
+    "buy compute with crypto over plain HTTP"
    ],
    "trustManifest": {
     "identity": "https://agentgates.ai",
@@ -361,19 +394,22 @@
    }
   },
   {
-   "identifier": "urn:air:agentgates.ai:skills:compute",
-   "displayName": "Buy confidential compute (skill)",
-   "type": "application/ai-skill+md",
-   "url": "https://agentgates.ai/skills/agentgates-compute/SKILL.md",
-   "description": "Step-by-step skill: buy a confidential VM by the hour with x402 USDC and run a Docker workload.",
+   "identifier": "urn:air:agentgates.ai:skills:directory",
+   "displayName": "Find a paid API and read what buyers said (skill)",
+   "type": "application/agent-skills+md",
+   "url": "https://agentgates.ai/skills/agentgates-directory/SKILL.md",
+   "description": "Search every x402 service that exists, list your own for a flat fee (from a wallet or your account balance), and turn a settle you already made into a verified review that carries its receipt.",
    "tags": [
     "skill",
-    "compute",
-    "x402"
+    "directory",
+    "discovery",
+    "x402",
+    "reviews"
    ],
    "representativeQueries": [
-    "how do I buy a confidential VM with USDC",
-    "run docker on a TEE machine my agent pays for"
+    "how do I find a paid API my agent can call",
+    "which x402 service is good, with proof someone paid",
+    "list my x402 endpoint so agents can find it"
    ],
    "trustManifest": {
     "identity": "https://agentgates.ai",
@@ -383,17 +419,134 @@
   {
    "identifier": "urn:air:agentgates.ai:skills:inference",
    "displayName": "Pay-per-request inference (skill)",
-   "type": "application/ai-skill+md",
+   "type": "application/agent-skills+md",
    "url": "https://agentgates.ai/skills/agentgates-inference/SKILL.md",
-   "description": "Step-by-step skill: ask open models on attested GPUs, one request one x402 payment, or prepay a balance and mint bearer keys.",
+   "description": "Ask confidential or open models in the standard chat format, one request one x402 USDC payment, priced before the model runs; prepaid balances and bearer keys for volume.",
    "tags": [
     "skill",
     "inference",
+    "llm",
+    "x402",
+    "usdc"
+   ],
+   "representativeQueries": [
+    "pay per request LLM inference over x402",
+    "inference API with no signup that takes USDC",
+    "confidential LLM inference on attested GPUs"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:skills:phone",
+   "displayName": "Place a phone call (skill)",
+   "type": "application/agent-skills+md",
+   "url": "https://agentgates.ai/skills/agentgates-phone/SKILL.md",
+   "description": "Place a real phone call paid in USDC over x402. The payphone needs no account: buy minutes, name the number, and stream your own voice over a websocket. Plans lease a number that also receives texts.",
+   "tags": [
+    "skill",
+    "phone",
+    "calls",
+    "sms",
     "x402"
    ],
    "representativeQueries": [
-    "cheapest way for an agent to pay for LLM inference per request",
-    "inference API with no signup that takes USDC"
+    "AI agent make a phone call paid per minute in USDC",
+    "phone number for an AI agent with no account",
+    "payphone API over x402"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:skills:email",
+   "displayName": "An email inbox for the agent (skill)",
+   "type": "application/agent-skills+md",
+   "url": "https://agentgates.ai/skills/agentgates-email/SKILL.md",
+   "description": "An email inbox your agent owns with its own key: free to hold on a funded balance, receiving free, sends priced per message, and wait-code hands back the verification code a sign-up emails.",
+   "tags": [
+    "skill",
+    "email",
+    "inbox",
+    "verification-code",
+    "usdc"
+   ],
+   "representativeQueries": [
+    "email address for an AI agent",
+    "receive a verification code by email in my agent",
+    "agent inbox paid in USDC"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:skills:voice",
+   "displayName": "An AI operator on a phone call (skill)",
+   "type": "application/agent-skills+md",
+   "url": "https://agentgates.ai/skills/agentgates-voice/SKILL.md",
+   "description": "An AI operator places a real phone call for your agent: a number and a task in words, then the transcript, the recording and the outcome. Billed per minute from a prepaid balance, or at the payphone for one x402 payment.",
+   "tags": [
+    "skill",
+    "voice",
+    "phone",
+    "operator",
+    "transcript"
+   ],
+   "representativeQueries": [
+    "AI that calls a business for my agent and reports back",
+    "phone call with a transcript and outcome via API",
+    "book an appointment by phone from an agent"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:skills:cli",
+   "displayName": "An account in one command (skill)",
+   "type": "application/agent-skills+md",
+   "url": "https://agentgates.ai/skills/agentgates-cli/SKILL.md",
+   "description": "Give your agent an account in one command: twelve words that sign every call, hold a prepaid USDC balance and lock the vault, then compute, inference, phone, email and calls from the terminal or as MCP tools.",
+   "tags": [
+    "skill",
+    "cli",
+    "account",
+    "mcp",
+    "usdc"
+   ],
+   "representativeQueries": [
+    "give my AI agent its own account and balance",
+    "CLI for an agent to pay for services in USDC",
+    "agent account with no signup"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
+  },
+  {
+   "identifier": "urn:air:agentgates.ai:skills:wallet",
+   "displayName": "Agentgates wallet over MCP (skill)",
+   "type": "application/agent-skills+md",
+   "url": "https://agentgates.ai/skills/agentgates-wallet/SKILL.md",
+   "description": "Pair an Agentgates wallet over MCP (OAuth) and act under owner-approved grants: read balances, propose sends, swaps and earn moves; the owner approves every money move.",
+   "tags": [
+    "skill",
+    "wallet",
+    "mcp",
+    "oauth"
+   ],
+   "representativeQueries": [
+    "MCP server that can hold a wallet and pay in USDC",
+    "agent wallet with owner-approved spending",
+    "pair my agent with a crypto wallet over MCP"
    ],
    "trustManifest": {
     "identity": "https://agentgates.ai",
@@ -459,6 +612,11 @@
     "what public API endpoints does agenticplug.ai expose",
     "how do I request a consultation programmatically"
    ]
+  },
+  {
+   "identifier": "urn:air:agentmash.ai:mcp:agentmash",
+   "type": "application/mcp-server-card+json",
+   "url": "https://agentmash.ai/mcp/server-card"
   },
   {
    "identifier": "urn:air:agentmesh.ai:mcp:mesh",
@@ -604,7 +762,7 @@
    "displayName": "Annsa",
    "type": "application/mcp-server-card+json",
    "url": "https://annsa.ai/.well-known/mcp/server-card.json",
-   "description": "AI agent management for busy product builders. The source of direction for your agents: choose what to build, direct every agent and learn as you go. One remote MCP server: Streamable HTTP, OAuth with PKCE, nothing to install.",
+   "description": "Project management and customer feedback software for founders and small teams working with AI agents. Choose what to build from your goals and customer feedback, give every agent one shared plan, and learn from what ships. One remote MCP server: Streamable HTTP, OAuth with PKCE, nothing to install.",
    "capabilities": [
     "annsa.priorities",
     "annsa.spec",
@@ -629,7 +787,12 @@
     "give me the spec for this priority",
     "what are customers saying about the export being slow",
     "did what we shipped actually resolve it"
-   ]
+   ],
+   "trustManifest": {
+    "identity": "did:web:annsa.ai",
+    "privacyPolicyUrl": "https://annsa.ai/privacy",
+    "termsOfServiceUrl": "https://annsa.ai/terms"
+   }
   },
   {
    "identifier": "urn:air:annsa.ai:api:rest",
@@ -647,7 +810,12 @@
     "send customer feedback to annsa programmatically",
     "upload a call transcript to annsa",
     "annsa api authentication"
-   ]
+   ],
+   "trustManifest": {
+    "identity": "did:web:annsa.ai",
+    "privacyPolicyUrl": "https://annsa.ai/privacy",
+    "termsOfServiceUrl": "https://annsa.ai/terms"
+   }
   },
   {
    "identifier": "urn:air:apatero.ai:mcp:studio",
@@ -1082,7 +1250,7 @@
    "displayName": "Apify Store search",
    "type": "application/json",
    "url": "https://api.apify.com/v2/store",
-   "description": "Search endpoint over the 99,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
+   "description": "Search endpoint over the 107,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
    "tags": [
     "search",
     "discovery",
@@ -1250,6 +1418,25 @@
    }
   },
   {
+   "identifier": "urn:air:appdeploy.ai:mcp:deploy-app",
+   "type": "application/mcp-server-card+json",
+   "url": "https://api-v2.appdeploy.ai/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:appdeploy.ai:skill:appdeploy-claude-code",
+   "displayName": "AppDeploy for Claude Code",
+   "type": "text/markdown",
+   "url": "https://appdeploy.ai/.well-known/agent-skills/appdeploy-claude-code/27010b129dccdd66c7f2c1a2e24cdb8c65bff378c974e8a194d36cf6cf78b0ab/SKILL.md",
+   "digest": "sha256:27010b129dccdd66c7f2c1a2e24cdb8c65bff378c974e8a194d36cf6cf78b0ab"
+  },
+  {
+   "identifier": "urn:air:appdeploy.ai:skill:appdeploy-codex",
+   "displayName": "AppDeploy for Codex",
+   "type": "text/markdown",
+   "url": "https://appdeploy.ai/.well-known/agent-skills/appdeploy-codex/479f9c52991823da67dba5f23691affc75043beaa36194fef7c3619db7f20e27/SKILL.md",
+   "digest": "sha256:479f9c52991823da67dba5f23691affc75043beaa36194fef7c3619db7f20e27"
+  },
+  {
    "identifier": "urn:air:arcreport.ai:mcp:ask",
    "type": "application/mcp-server-card+json",
    "url": "https://www.arcreport.ai/api/ask/server-card"
@@ -1258,6 +1445,132 @@
    "identifier": "urn:air:arcreport.ai:mcp:scan",
    "type": "application/mcp-server-card+json",
    "url": "https://www.arcreport.ai/api/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:artil.ai:mcp:artil",
+   "displayName": "Artil MCP server",
+   "type": "application/mcp-server-card+json",
+   "description": "Give AI agents their own email inbox, SMS number and workspace accounts to work directly with customers, teammates and other agents over MCP.",
+   "representativeQueries": [
+    "email inbox for my AI agent",
+    "SMS number for my AI agent",
+    "how can my agent reply to customer emails?",
+    "how can my agent message my teammates?",
+    "connect Claude or ChatGPT to my agent's email over MCP"
+   ],
+   "capabilities": [
+    "email",
+    "sms",
+    "telegram",
+    "messaging"
+   ],
+   "data": {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+    "name": "ai.artil/artil",
+    "title": "Artil",
+    "description": "Email, SMS numbers and workspace accounts for AI agents to work with people and other agents.",
+    "version": "1.0.0",
+    "websiteUrl": "https://docs.artil.ai/mcp-server",
+    "icons": [
+     {
+      "src": "https://artil.ai/logo.png",
+      "mimeType": "image/png",
+      "sizes": [
+       "512x512"
+      ]
+     },
+     {
+      "src": "https://artil.ai/logo.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+       "any"
+      ]
+     }
+    ],
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://mcp.artil.ai/mcp"
+     }
+    ]
+   },
+   "trustManifest": {
+    "identity": "https://artil.ai",
+    "identityType": "https"
+   },
+   "tags": [
+    "email",
+    "email inbox",
+    "inbox",
+    "sms",
+    "telegram",
+    "messaging",
+    "workspace"
+   ]
+  },
+  {
+   "identifier": "urn:air:artil.ai:skill:artil",
+   "displayName": "Artil CLI skill",
+   "type": "application/agent-skills+md",
+   "url": "https://artil.ai/.well-known/agent-skills/artil/SKILL.md",
+   "description": "Give AI agents their own email inbox, SMS number and workspace accounts to work directly with customers, teammates and other agents through the Artil CLI.",
+   "representativeQueries": [
+    "email inbox for my AI agent",
+    "SMS number for my AI agent",
+    "let Claude Code or Codex read and send my agent's email from the terminal",
+    "send an email to a restaurant to book a table"
+   ],
+   "capabilities": [
+    "email",
+    "sms",
+    "telegram",
+    "messaging"
+   ],
+   "trustManifest": {
+    "identity": "https://artil.ai",
+    "identityType": "https"
+   },
+   "tags": [
+    "email",
+    "email inbox",
+    "inbox",
+    "sms",
+    "telegram",
+    "messaging",
+    "workspace"
+   ]
+  },
+  {
+   "identifier": "urn:air:artil.ai:api:artil",
+   "displayName": "Artil HTTP API",
+   "type": "application/vnd.oai.openapi+json;version=3.1.0",
+   "url": "https://docs.artil.ai/openapi.json",
+   "description": "Give AI agents their own email inbox, SMS number and workspace accounts to work directly with customers, teammates and other agents through the HTTP API.",
+   "representativeQueries": [
+    "email inbox for my AI agent",
+    "SMS number for my AI agent",
+    "send an email from my AI agent in a script",
+    "how can my agent reply to customer emails?"
+   ],
+   "capabilities": [
+    "email",
+    "sms",
+    "telegram",
+    "messaging"
+   ],
+   "trustManifest": {
+    "identity": "https://artil.ai",
+    "identityType": "https"
+   },
+   "tags": [
+    "email",
+    "email inbox",
+    "inbox",
+    "sms",
+    "telegram",
+    "messaging",
+    "workspace"
+   ]
   },
   {
    "identifier": "urn:air:assetlog.ai:server:mcp",
@@ -1432,6 +1745,22 @@
    "description": "Free, sourced deposit-insurance, savings and retirement limits (US, UK, CA, AU, NZ). No key, no payment."
   },
   {
+   "identifier": "urn:air:bassethound.ai:mcp:bassethound",
+   "type": "application/mcp-server-card+json",
+   "url": "https://mcp.bassethound.ai/.well-known/mcp/server-card.json",
+   "tags": [
+    "company-intelligence",
+    "domain-intelligence",
+    "ai-readiness",
+    "enrichment"
+   ],
+   "publisher": {
+    "identifier": "nimblebrain.ai",
+    "displayName": "NimbleBrain",
+    "identityType": "dns"
+   }
+  },
+  {
    "identifier": "urn:air:beevr.ai:server:beevr",
    "displayName": "BeevR MCP server",
    "type": "application/mcp-server-card+json",
@@ -1463,38 +1792,6 @@
    ]
   },
   {
-   "identifier": "urn:air:booqer.ai:mcp:directory",
-   "displayName": "Booqer",
-   "type": "application/mcp-server-card+json",
-   "url": "https://booqer.ai/.well-known/mcp/server-card.json",
-   "description": "Verified Booqer shops. For the shops listed on Booqer, a keyless booking on an open slot is confirmed when it is booked. The confirmation includes a cancel link. It is a free consult. The public tools list is search_businesses, get_business, resolve_business, check_availability, request_booking, get_booking_status, request_service, and submit_service_request. request_service is public and does not confirm a booking. quote, availability, and book require a registered client key.",
-   "representativeQueries": [
-    "Which verified Booqer shops are listed?",
-    "Open the booking page for Florida Pole Barn",
-    "What is the booking URL for Florida Security Concepts?",
-    "Resolve the business at floridapolebarn.com",
-    "Read the booking status for a request"
-   ],
-   "capabilities": [
-    "search_businesses",
-    "get_business",
-    "resolve_business",
-    "check_availability",
-    "request_booking",
-    "get_booking_status",
-    "request_service",
-    "submit_service_request",
-    "quote",
-    "availability",
-    "book"
-   ],
-   "metadata": {
-    "privacyPolicyUrl": "https://booqer.ai/privacy",
-    "termsOfServiceUrl": "https://booqer.ai/terms",
-    "supportUrl": "https://booqer.ai/support"
-   }
-  },
-  {
    "identifier": "urn:air:context7.com:mcp:context7",
    "type": "application/mcp-server-card+json",
    "url": "https://mcp.context7.com/mcp/server-card"
@@ -1504,7 +1801,7 @@
    "displayName": "Pascal Editor MCP",
    "type": "application/mcp-server-card+json",
    "url": "https://editor.pascal.app/.well-known/mcp/server-card.json",
-   "version": "1.0.4",
+   "version": "1.0.6",
    "description": "Hosted MCP server to create, inspect, edit, validate and save editable 3D building scenes in Pascal projects.",
    "capabilities": [
     "get_scene",
@@ -1524,6 +1821,7 @@
     "set_checkpoint",
     "design_brief",
     "add_wall",
+    "set_wall_type",
     "add_fence",
     "add_corner_window",
     "merge_windows",
@@ -1556,6 +1854,9 @@
     "divide_zone",
     "merge_zones",
     "delete_zone",
+    "create_unit",
+    "set_unit_members",
+    "list_units",
     "run_batch",
     "list_collections",
     "edit_collection",
@@ -1570,9 +1871,6 @@
     "add_window",
     "apply_patch",
     "clear_scene",
-    "create_unit",
-    "set_unit_members",
-    "list_units",
     "set_zone",
     "undo",
     "redo",
@@ -1607,14 +1905,26 @@
     "get_capture",
     "open_capture_as_project",
     "add_project_asset",
+    "resolve_matterport_source",
+    "list_project_connectors",
+    "search_connector_resources",
+    "read_connector_resource",
+    "import_connector_resource",
+    "list_connector_actions",
+    "run_connector_action",
+    "save_connector_action",
+    "list_location_fields",
+    "lookup_location",
     "collect_matterport_evidence",
+    "collect_listing_evidence",
     "read_project_asset",
     "search_project_chats",
     "read_project_chat",
     "list_project_members",
     "ask_architect",
     "get_architect_turn",
-    "cancel_architect_turn"
+    "cancel_architect_turn",
+    "load_skill"
    ],
    "representativeQueries": [
     "design a small house with three bedrooms and a garage",
@@ -1677,24 +1987,6 @@
    "displayName": "Events.Aero event discovery",
    "type": "application/mcp-server-card+json",
    "url": "https://events.aero/mcp/events/server-card"
-  },
-  {
-   "identifier": "urn:air:fibalo.de:mcp:mcp",
-   "type": "application/mcp-server-card+json",
-   "data": {
-    "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
-    "name": "de.fibalo/mcp",
-    "version": "2.4.0",
-    "title": "Fibalo",
-    "description": "German bookkeeping: E-Rechnung invoices, DATEV export, BWA, UStVA, Belege and bank data.",
-    "websiteUrl": "https://fibalo.de",
-    "remotes": [
-     {
-      "type": "streamable-http",
-      "url": "https://mcp.fibalo.de/mcp"
-     }
-    ]
-   }
   },
   {
    "identifier": "urn:air:infisical.com:server:mcp",
@@ -2014,6 +2306,54 @@
    ]
   },
   {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-digicert-trust-lifecycle-manager",
+   "displayName": "Infisical vs. DigiCert Trust Lifecycle Manager",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-digicert-trust-lifecycle-manager.md",
+   "description": "How Infisical and DigiCert Trust Lifecycle Manager differ on sensors and agents, plan tiers, other CAs, and delivery, what the CertCentral automation retirement means, how to keep buying from DigiCert, and how to migrate.",
+   "representativeQueries": [
+    "how much does DigiCert Trust Lifecycle Manager cost",
+    "what replaced CertCentral Discovery and Managed Automation",
+    "can I keep using DigiCert certificates with Infisical"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-sectigo-certificate-manager",
+   "displayName": "Infisical vs. Sectigo Certificate Manager",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-sectigo-certificate-manager.md",
+   "description": "How Infisical and Sectigo Certificate Manager (SCM) differ on agents, connectors, self-hosting, renewal, and delivery, what SCM costs to run, and how to keep buying Sectigo certificates through Infisical.",
+   "representativeQueries": [
+    "is Infisical a good alternative to Sectigo Certificate Manager",
+    "does Sectigo Certificate Manager need agents",
+    "how much does Sectigo Certificate Manager cost"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-appviewx",
+   "displayName": "Infisical vs. AppViewX",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-appviewx.md",
+   "description": "How Infisical and AppViewX differ on workflows, connectors, modules, renewal, and delivery, who owns AppViewX now, and what it costs to run.",
+   "representativeQueries": [
+    "is Infisical a good alternative to AppViewX",
+    "who owns AppViewX",
+    "how much does AppViewX cost"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
    "identifier": "urn:air:justidea.agency:server:website",
    "displayName": "JustIdea Agency website (MCP)",
    "type": "application/mcp-server-card+json",
@@ -2116,6 +2456,11 @@
    "identifier": "urn:air:kortix.com:mcp:kortix",
    "type": "application/mcp-server-card+json",
    "url": "https://kortix.com/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:agentlookups.ai:mcp:groundrules",
+   "type": "application/mcp-server-card+json",
+   "url": "https://law.agentlookups.ai/mcp/server-card"
   },
   {
    "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom",
@@ -2566,6 +2911,34 @@
    }
   },
   {
+   "identifier": "urn:air:alphaquantlabs.ai:propertycheck:agent-card",
+   "displayName": "AQL PropertyCheck - Physical check of one exact address",
+   "type": "application/a2a-agent-card+json",
+   "url": "https://agents.alphaquantlabs.ai/.well-known/agent-card.json",
+   "description": "Check one Gold Coast or Brisbane City address for free, then request paid Agent JSON with conditional whole-building, neighbouring-site, street and journey data. Brisbane may include timetabled routed journeys; Gold Coast may include Council carriageway and building-outline measurements. Items show verification status and sources/dates where supplied. Coverage is checked before payment; unsupported addresses are refused, and unknown is not safe.",
+   "capabilities": [
+    "check_address",
+    "get_full_report"
+   ],
+   "tags": [
+    "property",
+    "real-estate",
+    "due-diligence",
+    "property-check",
+    "building-context",
+    "street-access",
+    "gold-coast",
+    "brisbane"
+   ],
+   "representativeQueries": [
+    "check 9 Hamilton Avenue, Surfers Paradise QLD 4217 before renting",
+    "check 26 Lomandra Place, Chapel Hill QLD 4069 before buying",
+    "what buildings and roads are next to this Gold Coast apartment",
+    "how long is the bus, train or ferry trip from this Brisbane address to the CBD or a university"
+   ],
+   "version": "1.15.2"
+  },
+  {
    "@context": "https://agenticresourcediscovery.org/context/v1",
    "identifier": "urn:air:pydantic.dev:server:logfire-mcp",
    "displayName": "Pydantic Logfire MCP Server",
@@ -2636,6 +3009,25 @@
    "representativeQueries": [
     "discover the public Pydantic and Logfire APIs",
     "find the OpenAPI schema for my Logfire region"
+   ]
+  },
+  {
+   "identifier": "urn:air:rxresu.me:mcp:reactive-resume",
+   "displayName": "Reactive Resume MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://rxresu.me/.well-known/mcp/server-card.json",
+   "description": "Reads and edits the user's resumes, cover letters and job applications in Reactive Resume, a free and open-source resume builder.",
+   "tags": [
+    "resume",
+    "cover letter",
+    "job applications",
+    "careers"
+   ],
+   "representativeQueries": [
+    "update my resume with my new job",
+    "tailor my resume to this job description",
+    "write a cover letter for this application",
+    "track the jobs I have applied to"
    ]
   },
   {

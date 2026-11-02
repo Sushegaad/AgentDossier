@@ -19,7 +19,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 26.92,
+"adoption": 27.56,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -33,7 +33,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 73.3,
+"score": 74.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -44,7 +44,7 @@
 "external_ids": {
 "github": "Ebony-Vinyl/dsh-our-free-model"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,31 +66,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:12:45Z",
+"last_seen": "2026-11-02T14:41:31Z",
 "license": "MIT",
 "name": "dsh-our-free-model",
 "news": [
 {
-"cluster_size": 1,
-"date": "2026-10-26T05:02:50Z",
-"headline": "dsh-our-free-model: v2.7.2：修复旧版插件升级路径",
+"cluster_size": 3,
+"date": "2026-11-01T04:38:23Z",
+"headline": "dsh-our-free-model: 2.7.1 macOS (arm64) — 非官方社区构建 / unofficial community build",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# v2.7.2 插件发布\r\n\r\n本次只发布插件，桌面安装包和独立产品版本保持原状。\r\n\r\n## 修复旧版升级路径\r\n\r\n此前旧升级器最多接受 80 个文件、每个文件最多 4 MiB，而 2.7.1 清单有 93 个文件，并包含约 65 MiB 的引擎。无论换哪个下载源，旧用户都会在读取清单时失败。\r\n\r\n2.7.2 基于最新主线，将省 Token 模块合并为生成文件，引擎 gzip 压缩后拆成 9 个不超过 4 MiB 的分片。插件清单共 79 个文件，旧版可直接升级，无需",
+"summary": "## 非官方社区构建 / Unofficial community build\n\n这不是仓库作者发布的官方安装包。作者自 2.4.0 起将桌面安装包限制为 Windows-only，Mac 用户停留在 2.3.0。本 dmg 由本仓库的 GitHub Actions 从公开源码构建，可审计、可复现。\n\nThis is NOT an official release by the repository author. The author restricted desktop",
 "tag": "product_update",
-"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.7.2"
+"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.8.0-macos-unofficial"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-25T08:52:00Z",
-"headline": "dsh-our-free-model: v2.7.1 彻底移除 WorkBuddy 国内版/国际版与华为云渠道",
+"date": "2026-11-01T04:33:56Z",
+"headline": "dsh-our-free-model: v2.8.0：免费道整形层对齐参考网关 v1.4.6，引擎一键跟进",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## v2.7.1\n\n本版本专门收紧渠道排除：**WorkBuddy 国内版、WorkBuddy 国际版、华为云**这三个渠道在插件端与桌面端都不可用，也不存在任何指向它们的代码路径。\n\n### 补齐了此前漏掉的两个别名\n\n上一版的排除名单只覆盖 `workbuddy`、`workbuddy-ai`、`huaweicloud` 三个 id，实际存在两个漏洞：\n\n- **WorkBuddy 国内版在社区插件里常以 CodeBuddy 之名出现**，`codebuddy` / `",
+"summary": "# v2.8.0 插件发布\n\n本次只发布 DSH 插件，桌面安装包和独立产品版本保持原状。两个主线改动都在免费道与自带引擎的\n\"跟上上游\"这一层：匿名免费道的请求整形整体换成参考网关 opencode2api v1.4.6 的逐文件 JS 移植，\n自带 Magpie 引擎从 10-23 的 c551a22 跟进到 10-31 的 6a900e0d——并且从此跟进是一条命令。\n\n## 匿名免费道：整形层移植 opencode2api v1.4.6\n\n- **全部客户工具改名上线",
 "tag": "product_update",
-"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.7.1"
+"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.8.0"
 }
 ],
 "news_checked": true,
@@ -113,7 +113,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:40:44Z",
+"checked_at": "2026-11-02T15:05:17Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -121,19 +121,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-09-24T16:17:19Z",
-"github_forks": 1241,
+"github_forks": 1552,
 "github_language": "JavaScript",
-"github_open_issues": 345,
-"github_pushed_at": "2026-10-26T07:54:25Z",
-"github_stars": 44142,
+"github_open_issues": 113,
+"github_pushed_at": "2026-11-02T08:10:54Z",
+"github_stars": 56947,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "ebony-vinyl-dsh-our-free-model",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model"
 }

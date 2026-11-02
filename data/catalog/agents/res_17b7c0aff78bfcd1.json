@@ -20,16 +20,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-26)",
+"display": "Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://apify.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "2eb275b010d44f97330d9a27d23158db0887b461406727835b8255c18e5044b6",
+"next_check": "2026-11-09",
+"payload_hash": "c506f7c36c17919901324a9a73f8b01599036e30cb72df591f765d0242fe4950",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:27:44Z",
+"retrieved_at": "2026-11-02T14:55:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -46,16 +46,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-26)",
+"display": "Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://apify.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "2eb275b010d44f97330d9a27d23158db0887b461406727835b8255c18e5044b6",
+"next_check": "2026-11-09",
+"payload_hash": "c506f7c36c17919901324a9a73f8b01599036e30cb72df591f765d0242fe4950",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:27:44Z",
+"retrieved_at": "2026-11-02T14:55:35Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -100,7 +100,7 @@
 "external_ids": {
 "ard": "urn:air:apify.com:catalog:api"
 },
-"first_seen": "2026-10-26T12:21:43Z",
+"first_seen": "2026-11-02T14:50:30Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -122,7 +122,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:21:43Z",
+"last_seen": "2026-11-02T14:50:30Z",
 "license": null,
 "name": "Apify API catalog",
 "news": [],
@@ -133,7 +133,7 @@
 },
 "ard": {
 "identifier": "urn:air:apify.com:catalog:api",
-"manifest_url": "https://apify.com/.well-known/ai-catalog.json",
+"manifest_url": "https://apify.com/.well-known/ard.json",
 "media_type": "application/linkset+json",
 "parser_version": "ard-0.91",
 "status": "verified",
@@ -155,7 +155,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:43:57Z",
+"checked_at": "2026-11-02T15:08:17Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -165,9 +165,9 @@
 "sources": [
 {
 "payload_hash": "bc8d9d144b9fdde3062d47f249a9d1e99b5c55c0331480979083557b1e92976a",
-"retrieved_at": "2026-10-26T12:21:43Z",
+"retrieved_at": "2026-11-02T14:50:30Z",
 "system": "ard",
-"url": "https://apify.com/.well-known/ai-catalog.json"
+"url": "https://apify.com/.well-known/ard.json"
 }
 ],
 "tags": [
@@ -207,6 +207,37 @@
 "tier": 1,
 "title": "Registry probe of Apify API catalog's discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_17b7c0aff78bfcd1_59a0fb43/",
+"vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_17b7c0aff78bfcd1_ab177845",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_17b7c0aff78bfcd1_ab177845",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:5dae997d15f876657b023fa352977f2405406feb4dd381468437e5a6170df1aa",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Apify API catalog's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_17b7c0aff78bfcd1_ab177845/",
 "vendor_response": null
 }
 ],

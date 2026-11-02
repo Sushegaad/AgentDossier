@@ -30,7 +30,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 29.05,
+"adoption": 29.17,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -44,7 +44,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 71.2,
+"score": 71.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -53,7 +53,7 @@
 },
 "data": {
 "components": {
-"adoption": 29.05,
+"adoption": 29.17,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -67,7 +67,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 73.0,
+"score": 73.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -76,7 +76,7 @@
 },
 "technology": {
 "components": {
-"adoption": 29.05,
+"adoption": 29.17,
 "docs": 7.0,
 "domain_fit": 96.4,
 "ecosystem": 6.6,
@@ -90,7 +90,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 82.4,
+"score": 82.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -101,7 +101,7 @@
 "external_ids": {
 "github": "Panniantong/Agent-Reach"
 },
-"first_seen": "2026-10-26T12:15:43Z",
+"first_seen": "2026-11-02T14:44:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,10 +123,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:15:43Z",
+"last_seen": "2026-11-02T14:44:31Z",
 "license": "MIT",
 "name": "Agent-Reach",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-01T07:24:15Z",
+"headline": "Agent-Reach release v1.6.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "中文：\n\n- 全网搜索、Reddit、小红书、B站在 1.6.0 里会出现的几种\"明明能查却报错\"或\"显示成功但内容是空的\"，这版都修好了。\n- 电脑上别的软件占用了浏览器端口时，可以换一个端口，不用关掉那个软件。\n- 复制登录失败时会如实告诉你，不再假装成功。\n- Windows 上小红书带特殊符号的链接能正常打开了。\n\nEnglish:\n\n- Several 1.6.0 cases where web search, Reddit, Xiaohongshu or Bili",
+"tag": "product_update",
+"url": "https://github.com/Panniantong/Agent-Reach/releases/tag/v1.6.1"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-23T06:45:50Z",
@@ -161,7 +172,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:40:10Z",
+"checked_at": "2026-11-02T15:04:56Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -169,19 +180,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-24T02:10:24Z",
-"github_forks": 9128,
+"github_forks": 9630,
 "github_language": "Python",
-"github_open_issues": 245,
-"github_pushed_at": "2026-10-25T04:37:26Z",
-"github_stars": 102902,
+"github_open_issues": 266,
+"github_pushed_at": "2026-11-01T07:23:13Z",
+"github_stars": 107910,
 "github_topic": "ai-agent",
 "homepage": null
 },
 "slug": "panniantong-agent-reach",
 "sources": [
 {
-"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
-"retrieved_at": "2026-10-26T12:15:43Z",
+"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
+"retrieved_at": "2026-11-02T14:44:31Z",
 "system": "github",
 "url": "https://github.com/Panniantong/Agent-Reach"
 }

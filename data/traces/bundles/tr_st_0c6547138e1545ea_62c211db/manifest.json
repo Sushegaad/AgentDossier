@@ -1,0 +1,22 @@
+{
+ "agent": "res_0c6547138e1545ea",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_0c6547138e1545ea_62c211db",
+ "kind": "self_test",
+ "name": "ai.bassethound/bassethound",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-11-02T14:50:37Z",
+   "errors": [
+    "entries[0]: missing required term 'displayName'"
+   ],
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://bassethound.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "bassethound-ai-ai-bassethound-bassethound"
+}

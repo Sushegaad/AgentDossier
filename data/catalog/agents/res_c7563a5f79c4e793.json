@@ -5,53 +5,22 @@
 "commercial": false,
 "compliance": [
 {
-"certificate_id": "langchain, inc.",
-"covers_resource": "unknown",
-"credited": true,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "LangChain, Inc.",
-"terms": [
-"star_level_1",
-"caiq"
-]
-},
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/langchain, inc.",
-"framework": "csa_star",
-"issued": "2025-11-25",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:25:34Z",
-"review_reason": "entity 1.00 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "STAR_LEVEL_1"
-},
-{
 "certificate_id": null,
 "covers_resource": "unknown",
 "credited": true,
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-26)",
+"display": "Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "0802aaf09bf73613263a7ca394bf4c3c7c583455f741af8bf31a0b698353f51a",
+"next_check": "2026-11-09",
+"payload_hash": "0cf8b139c45296ba06df5f2be0358c6b7e194bd251520c609a2feb8b974c4a43",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:29:23Z",
+"retrieved_at": "2026-11-02T14:56:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -68,16 +37,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-26)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-02)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "0802aaf09bf73613263a7ca394bf4c3c7c583455f741af8bf31a0b698353f51a",
+"next_check": "2026-11-09",
+"payload_hash": "0cf8b139c45296ba06df5f2be0358c6b7e194bd251520c609a2feb8b974c4a43",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:29:23Z",
+"retrieved_at": "2026-11-02T14:56:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -94,16 +63,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-26)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "0802aaf09bf73613263a7ca394bf4c3c7c583455f741af8bf31a0b698353f51a",
+"next_check": "2026-11-09",
+"payload_hash": "0cf8b139c45296ba06df5f2be0358c6b7e194bd251520c609a2feb8b974c4a43",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:29:23Z",
+"retrieved_at": "2026-11-02T14:56:59Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -124,7 +93,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 16.2,
+"governance": 3.8,
 "health": 20.0,
 "trust": 21.0
 },
@@ -132,13 +101,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "soc2": 0.15
 },
 "profile": "general",
 "rank": 6,
 "recomputed": 95.1,
-"score": 90.9,
+"score": 90.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 6,
 "seed_score": 95.1,
@@ -151,7 +119,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 23.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -159,13 +127,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "soc2": 0.15
 },
 "profile": "security",
 "rank": 20,
 "recomputed": 83.1,
-"score": 87.6,
+"score": 85.6,
 "score_version": "sar-score-2.0",
 "seed_rank": 20,
 "seed_score": 83.1,
@@ -178,7 +145,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 13.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -186,7 +153,6 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "soc2": 0.15
 },
 "profile": "data",
@@ -205,7 +171,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 13.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -213,13 +179,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 39,
 "recomputed": 77.2,
-"score": 82.5,
+"score": 81.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 39,
 "seed_score": 77.2,
@@ -232,20 +197,18 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 20.0,
+"governance": 0.0,
 "health": 20.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
 "evidence_coverage": 1.0,
-"governance_credited": {
-"csa_star": 0.5
-},
+"governance_credited": {},
 "profile": "regulated",
 "rank": 45,
 "recomputed": 77.2,
-"score": 83.5,
+"score": 80.5,
 "score_version": "sar-score-2.0",
 "seed_rank": 45,
 "seed_score": 77.2,
@@ -258,7 +221,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -266,14 +229,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "hipaa": 0.15,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 31,
 "recomputed": 77.2,
-"score": 82.9,
+"score": 81.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 31,
 "seed_score": 77.2,
@@ -286,7 +248,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 13.3,
+"governance": 5.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -294,14 +256,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "hipaa": 0.15,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 24,
 "recomputed": 77.2,
-"score": 82.5,
+"score": 81.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 24,
 "seed_score": 77.2,
@@ -314,7 +275,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 13.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -322,13 +283,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 26,
 "recomputed": 77.2,
-"score": 82.5,
+"score": 81.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 26,
 "seed_score": 77.2,
@@ -341,7 +301,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 13.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -349,13 +309,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "soc2": 0.15
 },
 "profile": "regulated",
 "rank": 38,
 "recomputed": 77.2,
-"score": 82.5,
+"score": 81.0,
 "score_version": "sar-score-2.0",
 "seed_rank": 38,
 "seed_score": 77.2,
@@ -368,7 +327,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 16.0,
+"governance": 6.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -376,14 +335,13 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "gdpr": 0.15,
 "soc2": 0.15
 },
 "profile": "commercial",
 "rank": 20,
 "recomputed": 85.9,
-"score": 91.8,
+"score": 91.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 20,
 "seed_score": 85.9,
@@ -396,7 +354,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 16.2,
+"governance": 3.8,
 "health": 20.0,
 "trust": 21.0
 },
@@ -404,13 +362,12 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "soc2": 0.15
 },
 "profile": "operations",
 "rank": 18,
 "recomputed": 82.8,
-"score": 91.9,
+"score": 91.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 18,
 "seed_score": 82.8,
@@ -423,7 +380,7 @@
 "docs": 10.0,
 "domain_fit": 100.0,
 "ecosystem": 15.0,
-"governance": 13.0,
+"governance": 3.0,
 "health": 20.0,
 "trust": 21.0
 },
@@ -431,7 +388,6 @@
 "confidence": 1.0,
 "evidence_coverage": 1.0,
 "governance_credited": {
-"csa_star": 0.5,
 "soc2": 0.15
 },
 "profile": "technology",
@@ -448,7 +404,7 @@
 "external_ids": {
 "github": "langchain-ai/langgraph"
 },
-"first_seen": "2026-10-26T12:11:40Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -464,7 +420,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 18,
+"cves": 20,
 "incidents": 0,
 "links": [
 {
@@ -531,7 +487,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:12:45Z",
+"last_seen": "2026-11-02T14:41:31Z",
 "license": "MIT",
 "merged_ids": [
 "res_a1f4bd50815c179a"
@@ -540,32 +496,32 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-24T01:08:05Z",
-"headline": "langgraph==1.2.17",
+"date": "2026-10-30T22:23:43Z",
+"headline": "langgraph==1.2.19",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Changes since 1.2.16\n\n* release(langgraph): 1.2.17 (#9418)\n* fix(langgraph): apply an explicit recursion_limit equal to the default (#9417)\n* fix(langgraph): keep the caller's namespace in RemoteGraph.stream(subgraphs=True) (#9401)\n* chore(",
+"summary": "Changes since 1.2.18\n\n* release(langgraph): 1.2.19 (#9504)\n* release(checkpoint-sqlite): 3.1.3 (#9505)\n* fix(langgraph): keep trace_policy from rewriting streamed node payloads (#9486)\n* fix(langgraph): give messages and tools events the na",
 "tag": "product_update",
-"url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.17"
+"url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.19"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-23T14:22:29Z",
-"headline": "langgraph-cli==0.4.38",
+"date": "2026-10-30T22:18:54Z",
+"headline": "langgraph-checkpoint-sqlite==3.1.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Changes since cli==0.4.37\n\n* release(cli): 0.4.38 (#9411)\n* feat(cli): add the priority section to langgraph.json (#9393)\n* chore(deps): bump uv from 0.11.15 to 0.13.4 in /libs/cli (#9366)\n* chore(deps): bump certifi from 2026.2.25 to 2026.",
+"summary": "Changes since checkpointsqlite==3.1.2\n\n* release(checkpoint-sqlite): 3.1.3 (#9505)\n* release(checkpoint): 4.3.1 (#9447)\n* fix(checkpoint): reject NUL bytes in namespace labels (#9383)\n* chore(deps): bump certifi from 2026.1.4 to 2026.10.19",
 "tag": "product_update",
-"url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.38"
+"url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.3"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://docs.langchain.com/.well-known/agent-card.json",
-"checked_at": "2026-10-26T12:22:35Z",
+"checked_at": "2026-11-02T14:51:22Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -576,13 +532,13 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-10-26T12:22:33Z",
+"checked_at": "2026-11-02T14:51:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
 "card_url": "https://docs.langchain.com/.well-known/mcp.json",
-"checked_at": "2026-10-26T12:22:35Z",
+"checked_at": "2026-11-02T14:51:22Z",
 "parser_version": "mcp-2025-06-18",
 "remotes": [
 {
@@ -598,8 +554,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:31:33Z",
-"cves": 18,
+"checked_at": "2026-11-02T14:58:55Z",
+"cves": 20,
 "source": "nvd",
 "tier": 1
 },
@@ -619,11 +575,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-08-09T18:33:12Z",
-"github_forks": 7547,
+"github_forks": 7624,
 "github_language": "Python",
-"github_open_issues": 516,
-"github_pushed_at": "2026-10-26T05:20:08Z",
-"github_stars": 43924,
+"github_open_issues": 439,
+"github_pushed_at": "2026-11-02T04:37:36Z",
+"github_stars": 44333,
 "github_topic": "ai-agents",
 "homepage": "https://docs.langchain.com/oss/python/langgraph/",
 "observed_popularity": "~40k+",
@@ -639,13 +595,13 @@
 "sources": [
 {
 "payload_hash": "c2428981495d3394198fe53d3559d94718bb4596eae6a1079c5349430cbde0b8",
-"retrieved_at": "2026-10-26T12:11:40Z",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "seed_xlsx",
 "url": "https://github.com/langchain-ai/langgraph"
 },
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/langchain-ai/langgraph"
 }
@@ -712,7 +668,7 @@
 "protocols": 1,
 "security": 1,
 "traces": 1,
-"vendor_compliance": 1
+"vendor_compliance": 4
 },
 "url": "https://github.com/langchain-ai/langgraph",
 "vendor": "LangChain"

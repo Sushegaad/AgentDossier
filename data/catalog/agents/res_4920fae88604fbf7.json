@@ -4,78 +4,6 @@
 "commercial": true,
 "compliance": [
 {
-"certificate_id": "salesforce.com, inc.",
-"covers_resource": "unknown",
-"credited": false,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "Salesforce.com, Inc.",
-"terms": [
-"star_level_1",
-"star_for_ai_level_1",
-"partner_entries",
-"caiq",
-"ai-caiq",
-"eu-cloud-coc",
-"iso-iec-42001"
-]
-},
-"display": "STAR for AI: found in CSA STAR Registry on 2026-10-26",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/salesforce.com, inc.",
-"framework": "csa_star",
-"issued": "2016-03-13",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:25:41Z",
-"review_reason": "entity 1.00 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "STAR_FOR_AI"
-},
-{
-"certificate_id": "salesforce.com, inc.",
-"covers_resource": "unknown",
-"credited": false,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "Salesforce.com, Inc.",
-"terms": [
-"star_level_1",
-"star_for_ai_level_1",
-"partner_entries",
-"caiq",
-"ai-caiq",
-"eu-cloud-coc",
-"iso-iec-42001"
-]
-},
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/salesforce.com, inc.",
-"framework": "csa_star",
-"issued": "2016-03-13",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:25:41Z",
-"review_reason": "entity 1.00 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "STAR_LEVEL_1"
-},
-{
 "certificate_id": "FR1823447014",
 "covers_resource": "partial",
 "credited": false,
@@ -86,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "Moderate"
 },
-"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-10-26)",
+"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-02)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1823447014",
 "framework": "fedramp",
 "issued": "2020-05-20",
 "issuer": "Agency / 3PAO Schellman Compliance, LLC",
 "match_confidence": 0.913,
-"next_check": "2026-11-02",
-"payload_hash": "64bc98d4cebbc137a6e7b94442b8678790eefa29e4347928a0de8620b56a168a",
+"next_check": "2026-11-09",
+"payload_hash": "e4757f48dde02868071f3202de67f230d7dd2f74ef1409bfb1cd46aebbbb1526",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:24:32Z",
+"retrieved_at": "2026-11-02T14:53:18Z",
 "review_reason": "entity 1.00, offering 0.81",
 "reviewer": null,
 "scope": "product",
@@ -106,58 +34,22 @@
 "variant": "FEDRAMP_MODERATE"
 },
 {
-"certificate_id": "salesforce.com, inc.",
-"covers_resource": "unknown",
-"credited": false,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "Salesforce.com, Inc.",
-"terms": [
-"star_level_1",
-"star_for_ai_level_1",
-"partner_entries",
-"caiq",
-"ai-caiq",
-"eu-cloud-coc",
-"iso-iec-42001"
-]
-},
-"display": "ISO 42001: Found in CSA STAR Registry on 2026-10-26",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/salesforce.com, inc.",
-"framework": "iso42001",
-"issued": "2016-03-13",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:25:41Z",
-"review_reason": "entity 1.00 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "ISO42001"
-},
-{
 "certificate_id": null,
 "covers_resource": "unknown",
 "credited": false,
 "detail": {
 "pages_visited": 6
 },
-"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-10-26)",
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-11-02)",
 "evidence_url": "https://www.salesforce.com/company/legal/compliance/?bc=HL",
 "framework": "eu_ai_act",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "6f7a005021d188e87aa1d76d5835a851e00d5900fb9e38d72eac0e6001c88d26",
+"next_check": "2026-11-09",
+"payload_hash": "68ebc770f434601ac870b7e6a804ebd338f84a90bc1976928d18537f39af9e30",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:30:56Z",
+"retrieved_at": "2026-11-02T14:58:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -174,16 +66,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-26)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://www.salesforce.com/company/legal/privacy/?bc=HL",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "bdb7b403d8cfb69b2959721341a0d2ffc1f82571c13829d765965e1152334f6e",
+"next_check": "2026-11-09",
+"payload_hash": "132eb71a63dd2c1754a152487b416b1e4672e55cf6b23623381b252c6fc1769a",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:30:56Z",
+"retrieved_at": "2026-11-02T14:58:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -200,16 +92,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-10-26)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://www.salesforce.com/company/legal/privacy/?bc=HL",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "bdb7b403d8cfb69b2959721341a0d2ffc1f82571c13829d765965e1152334f6e",
+"next_check": "2026-11-09",
+"payload_hash": "132eb71a63dd2c1754a152487b416b1e4672e55cf6b23623381b252c6fc1769a",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:30:56Z",
+"retrieved_at": "2026-11-02T14:58:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -514,7 +406,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-10-26T12:11:40Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -536,24 +428,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:40Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": "Commercial",
 "name": "Agentforce Financial Services",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:21:40Z",
+"checked_at": "2026-11-02T14:50:29Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:21:39Z",
+"checked_at": "2026-11-02T14:50:28Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:21:41Z",
+"checked_at": "2026-11-02T14:50:30Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -563,7 +455,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:32:06Z",
+"checked_at": "2026-11-02T14:59:20Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -588,7 +480,7 @@
 "sources": [
 {
 "payload_hash": "d50e446b5061e1897d954016f22ed630460396198dc1708f6fd5cffe3ee71e41",
-"retrieved_at": "2026-10-26T12:11:40Z",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "seed_xlsx",
 "url": "https://aws.amazon.com/marketplace/pp/prodview-k6hfn7bv6gqzk"
 }
@@ -633,7 +525,7 @@
 "protocols": 5,
 "security": 1,
 "traces": 3,
-"vendor_compliance": 1
+"vendor_compliance": 4
 },
 "url": "https://aws.amazon.com/marketplace/pp/prodview-k6hfn7bv6gqzk",
 "vendor": "Salesforce"

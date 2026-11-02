@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.bassethound/bassethound"
 },
-"first_seen": "2026-10-26T12:11:41Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,21 +66,28 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:41Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": null,
 "name": "ai.bassethound/bassethound",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:21:48Z",
+"checked_at": "2026-11-02T14:50:38Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:21:47Z",
+"checked_at": "2026-11-02T14:50:37Z",
+"entries": 1,
+"errors": [
+"entries[0]: missing required term 'displayName'"
+],
 "parser_version": "ard-0.91",
-"status": "not_found"
+"sources": [
+"https://bassethound.ai/.well-known/ai-catalog.json"
+],
+"status": "invalid"
 },
 "mcp": {
 "parser_version": "mcp-2025-06-18",
@@ -92,7 +99,7 @@
 ],
 "server_name": "ai.bassethound/bassethound",
 "status": "claimed",
-"version": "0.9.1",
+"version": "0.9.3",
 "via": "mcp_registry"
 }
 },
@@ -101,16 +108,16 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:39:10Z",
+"checked_at": "2026-11-02T15:04:15Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-12T23:28:01.77676Z",
+"mcp_registry_published_at": "2026-10-27T08:28:58.999352Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-12T23:28:01.77676Z",
+"mcp_registry_updated_at": "2026-10-27T08:28:58.999352Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -118,22 +125,54 @@
 "slug": "bassethound-ai-ai-bassethound-bassethound",
 "sources": [
 {
-"payload_hash": "bc09c9e035e8448485c44d9437669f2b42b3cd97de9aeb1a405d93a5f81707a8",
-"retrieved_at": "2026-10-26T12:11:41Z",
+"payload_hash": "5da7ad45de818a88e4ab496fce8ebe4346777f70a256a30a804b09a3bd937bb0",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.bassethound/bassethound"
 }
 ],
 "tags": [],
 "tenant": null,
-"traces": [],
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_0c6547138e1545ea_62c211db",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_0c6547138e1545ea_62c211db",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD invalid (1 validation error)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:91e41e1a53f33a63642165f9feb2d339a21b0ec6dd40dbcbc9ae2675087a3930",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of ai.bassethound/bassethound's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_0c6547138e1545ea_62c211db/",
+"vendor_response": null
+}
+],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
 "protocols": 3,
 "security": 1,
-"traces": 5,
+"traces": 1,
 "vendor_compliance": null
 },
 "url": "https://bassethound.ai",

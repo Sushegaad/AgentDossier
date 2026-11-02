@@ -26,16 +26,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-10-26)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://trigger.dev/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "787f8741ee70ca7dce7f52d1435bb9ca07aa7cd21ca1f40fc66d3d8aad21ad88",
+"next_check": "2026-11-09",
+"payload_hash": "df89aebd6277c7969d03d8ac278178f3256b6c6ec0ffe6bf608b8ecdefda143f",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:31:04Z",
+"retrieved_at": "2026-11-02T14:58:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,16 +52,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-26)",
-"evidence_url": "https://trigger.dev/",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-02)",
+"evidence_url": "https://trigger.dev/legal/privacy",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "787f8741ee70ca7dce7f52d1435bb9ca07aa7cd21ca1f40fc66d3d8aad21ad88",
+"next_check": "2026-11-09",
+"payload_hash": "8c40b859099b2f0052bc7c277f63c0ef6b0be012ad605f807d93be4af55152f2",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:31:04Z",
+"retrieved_at": "2026-11-02T14:58:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -78,16 +78,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-10-26)",
-"evidence_url": "https://trigger.dev/security",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-02)",
+"evidence_url": "https://trigger.dev/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "226dde93fd8299f301d055bdcbaa1be89c069f4d20c122f9a1e5eed696b96b98",
+"next_check": "2026-11-09",
+"payload_hash": "df89aebd6277c7969d03d8ac278178f3256b6c6ec0ffe6bf608b8ecdefda143f",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:31:04Z",
+"retrieved_at": "2026-11-02T14:58:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -104,16 +104,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-26)",
-"evidence_url": "https://trigger.dev/",
+"display": "Vendor-claimed (vendor page, 2026-11-02)",
+"evidence_url": "https://trigger.dev/legal/privacy",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "787f8741ee70ca7dce7f52d1435bb9ca07aa7cd21ca1f40fc66d3d8aad21ad88",
+"next_check": "2026-11-09",
+"payload_hash": "8c40b859099b2f0052bc7c277f63c0ef6b0be012ad605f807d93be4af55152f2",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:31:04Z",
+"retrieved_at": "2026-11-02T14:58:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -130,16 +130,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-26)",
-"evidence_url": "https://trigger.dev/security",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-02)",
+"evidence_url": "https://trigger.dev/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "226dde93fd8299f301d055bdcbaa1be89c069f4d20c122f9a1e5eed696b96b98",
+"next_check": "2026-11-09",
+"payload_hash": "df89aebd6277c7969d03d8ac278178f3256b6c6ec0ffe6bf608b8ecdefda143f",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:31:04Z",
+"retrieved_at": "2026-11-02T14:58:32Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -156,7 +156,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.46,
+"adoption": 24.47,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -177,7 +177,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.46,
+"adoption": 24.47,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -200,7 +200,7 @@
 "external_ids": {
 "github": "triggerdotdev/trigger.dev"
 },
-"first_seen": "2026-10-26T12:12:50Z",
+"first_seen": "2026-11-02T14:41:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -283,7 +283,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:17:57Z",
+"last_seen": "2026-11-02T14:46:44Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_a33966d8329268ec"
@@ -292,36 +292,49 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-23T14:50:57Z",
-"headline": "trigger.dev: Helm Chart 4.8.1",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "### Installation\n```bash\nhelm upgrade --install trigger \\\n  oci://ghcr.io/triggerdotdev/charts/trigger \\\n  --version \"4.8.1\"\n```\n\n### Changes\nSee commit history for detailed changes in this release.",
-"tag": "product_update",
-"url": "https://github.com/triggerdotdev/trigger.dev/releases/tag/helm-v4.8.1"
+"date": "2026-11-02T01:09:16Z",
+"discussion_url": "https://news.ycombinator.com/item?id=50331784",
+"engagement": 208,
+"headline": "Trigger.dev customer environment variables exposed",
+"kind": "community",
+"link_confidence": 0.95,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://trigger.dev/blog/security-incident-nov-2026"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-23T14:28:11Z",
-"headline": "trigger.dev v4.8.1",
+"date": "2026-10-30T12:35:05Z",
+"headline": "trigger.dev: Helm Chart 4.8.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# trigger.dev v4.8.1\n\n## Upgrade\n\n```sh\nnpx trigger.dev@latest update  # npm\npnpm dlx trigger.dev@latest update  # pnpm\nyarn dlx trigger.dev@latest update  # yarn\nbunx trigger.dev@latest update  # bun\n```\n\nSelf-hosted Docker image: [`ghcr.i",
+"summary": "### Installation\n```bash\nhelm upgrade --install trigger \\\n  oci://ghcr.io/triggerdotdev/charts/trigger \\\n  --version \"4.8.3\"\n```\n\n### Changes\nSee commit history for detailed changes in this release.",
 "tag": "product_update",
-"url": "https://github.com/triggerdotdev/trigger.dev/releases/tag/v4.8.1"
+"url": "https://github.com/triggerdotdev/trigger.dev/releases/tag/helm-v4.8.3"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-30T12:22:45Z",
+"headline": "trigger.dev v4.8.3",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# trigger.dev v4.8.3\n\n## Upgrade\n\n```sh\nnpx trigger.dev@latest update  # npm\npnpm dlx trigger.dev@latest update  # pnpm\nyarn dlx trigger.dev@latest update  # yarn\nbunx trigger.dev@latest update  # bun\n```\n\nSelf-hosted Docker image: [`ghcr.i",
+"tag": "product_update",
+"url": "https://github.com/triggerdotdev/trigger.dev/releases/tag/v4.8.3"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:24:07Z",
+"checked_at": "2026-11-02T14:52:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:24:05Z",
+"checked_at": "2026-11-02T14:52:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -329,7 +342,7 @@
 "evidence_url": "https://trigger.dev/changelog",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-26T12:24:07Z",
+"checked_at": "2026-11-02T14:52:46Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -341,7 +354,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:41:56Z",
+"checked_at": "2026-11-02T15:06:30Z",
 "cves": 38,
 "source": "nvd",
 "tier": 1
@@ -349,19 +362,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-11-30T14:59:07Z",
-"github_forks": 1517,
+"github_forks": 1523,
 "github_language": "TypeScript",
-"github_open_issues": 249,
-"github_pushed_at": "2026-10-26T12:02:02Z",
-"github_stars": 16618,
-"github_topic": "ai-agents",
+"github_open_issues": 260,
+"github_pushed_at": "2026-10-31T11:59:31Z",
+"github_stars": 16696,
+"github_topic": "mcp-server",
 "homepage": "https://trigger.dev/changelog"
 },
 "slug": "triggerdotdev-trigger-dev",
 "sources": [
 {
-"payload_hash": "6df92b3df68576bb69e1682e253b5ca28bcf7bdf991c244a0ed3e8db137ec0ed",
-"retrieved_at": "2026-10-26T12:12:50Z",
+"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
+"retrieved_at": "2026-11-02T14:46:44Z",
 "system": "github",
 "url": "https://github.com/triggerdotdev/trigger.dev"
 }

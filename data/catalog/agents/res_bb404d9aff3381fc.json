@@ -1,0 +1,167 @@
+{
+"canonical_url": "agentgates.ai/.well-known/ard.json",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "MCP tools with no sign-in: compute_plans, compute_quote and compute_docs for confidential VMs paid in USDC over x402.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 8.8,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 35.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:agentgates.ai:server:compute"
+},
+"first_seen": "2026-11-02T14:49:36Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_bb404d9aff3381fc",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:49:36Z",
+"license": null,
+"name": "Agentgates compute MCP server",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agentgates.ai:server:compute",
+"manifest_url": "https://agentgates.ai/.well-known/ard.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "agentgates.ai",
+"representative_queries": [
+"MCP server to rent a confidential VM",
+"price a TEE virtual machine from my agent over MCP"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-02T15:07:44Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agentgates-ai-agentgates-compute-mcp-server",
+"sources": [
+{
+"payload_hash": "cb67a0e59099d53062e0d1587baa7bdd469e1bf049e693d8cd2c4b2e21cb72b2",
+"retrieved_at": "2026-11-02T14:49:36Z",
+"system": "ard",
+"url": "https://agentgates.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"mcp",
+"compute",
+"tee",
+"x402"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_bb404d9aff3381fc_8e4ca3b8",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_bb404d9aff3381fc_8e4ca3b8",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:3448d007cb9bb8c1aa52ac8c19baf61eabcb2a766e1b17e7961173e0fa171a54",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Agentgates compute MCP server's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_bb404d9aff3381fc_8e4ca3b8/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agentgates.ai/.well-known/ard.json",
+"vendor": "agentgates.ai"
+}

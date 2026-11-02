@@ -1,0 +1,19 @@
+{
+ "agent": "res_17285b75a4e4c057",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_17285b75a4e4c057_34600d40",
+ "kind": "self_test",
+ "name": "Artil HTTP API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:artil.ai:api:artil",
+   "manifest_url": "https://artil.ai/.well-known/ard.json",
+   "media_type": "application/vnd.oai.openapi+json;version=3.1.0",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "artil-ai-artil-http-api"
+}

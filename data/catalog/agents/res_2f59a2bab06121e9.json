@@ -13,71 +13,41 @@
 "taxonomy_version": "sar-taxonomy-1.0"
 },
 "commercial": false,
-"compliance": [
-{
-"certificate_id": "alibaba cloud",
-"covers_resource": "unknown",
-"credited": false,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "Alibaba Cloud",
-"terms": [
-"partner_entries",
-"eu-cloud-coc"
-]
-},
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/alibaba cloud",
-"framework": "csa_star",
-"issued": "2024-02-25",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:26:39Z",
-"review_reason": "entity 1.00 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "STAR_LEVEL_1"
-}
-],
+"compliance": [],
 "deployment": "self-hosted",
 "description": "Agentic AI Framework for Java Developers",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": 23.44,
+"adoption": 23.45,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.7,
-"governance": 0.0,
+"governance": null,
 "health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
-"evidence_coverage": 1.0,
+"evidence_coverage": 0.944,
 "governance_credited": {},
 "profile": "general",
 "rank": null,
 "score": 62.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": []
+"unknown": [
+"governance"
+]
 },
 "technology": {
 "components": {
-"adoption": 23.44,
+"adoption": 23.45,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 2.7,
-"governance": 0.0,
+"governance": null,
 "health": 20.0,
 "trust": 16.0
 },
@@ -90,13 +60,15 @@
 "score": 65.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": []
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "alibaba/spring-ai-alibaba"
 },
-"first_seen": "2026-10-26T12:19:50Z",
+"first_seen": "2026-11-02T14:48:40Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,24 +90,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:19:50Z",
+"last_seen": "2026-11-02T14:48:40Z",
 "license": "Apache-2.0",
 "name": "spring-ai-alibaba",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:23:09Z",
+"checked_at": "2026-11-02T14:51:52Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:23:04Z",
+"checked_at": "2026-11-02T14:51:47Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:23:11Z",
+"checked_at": "2026-11-02T14:51:54Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -145,7 +117,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:42:38Z",
+"checked_at": "2026-11-02T15:07:05Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -153,19 +125,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-09-09T01:35:50Z",
-"github_forks": 2461,
+"github_forks": 2462,
 "github_language": "Java",
-"github_open_issues": 180,
+"github_open_issues": 181,
 "github_pushed_at": "2026-10-07T13:48:56Z",
-"github_stars": 11065,
+"github_stars": 11095,
 "github_topic": "agentic",
 "homepage": "https://java2ai.com"
 },
 "slug": "alibaba-spring-ai-alibaba",
 "sources": [
 {
-"payload_hash": "200d912c0d6b35750372b0cd8c4e7982eec0ae557de32181c19bf114c2c80991",
-"retrieved_at": "2026-10-26T12:19:50Z",
+"payload_hash": "64966b0be75eb87cf46a123b40c5a4c17cd6344f80dc3225550e7e2cb10b57b0",
+"retrieved_at": "2026-11-02T14:48:40Z",
 "system": "github",
 "url": "https://github.com/alibaba/spring-ai-alibaba"
 }
@@ -190,7 +162,7 @@
 "protocols": 5,
 "security": 1,
 "traces": 5,
-"vendor_compliance": 1
+"vendor_compliance": null
 },
 "url": "https://java2ai.com",
 "vendor": "alibaba"

@@ -30,7 +30,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.4,
+"adoption": 28.44,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -44,7 +44,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 73.1,
+"score": 73.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -53,7 +53,7 @@
 },
 "data": {
 "components": {
-"adoption": 28.4,
+"adoption": 28.44,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -67,7 +67,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 75.8,
+"score": 75.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -76,7 +76,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.4,
+"adoption": 28.44,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -90,7 +90,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 80.8,
+"score": 80.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -101,7 +101,7 @@
 "external_ids": {
 "github": "ruvnet/ruflo"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,7 +123,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:17:57Z",
+"last_seen": "2026-11-02T14:46:44Z",
 "license": "MIT",
 "merged_ids": [
 "res_203ebd799fdf19df"
@@ -132,36 +132,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-26T03:25:18Z",
-"headline": "ruflo: v3.63.1 — ruflo-console install-record fix and merged fixes since 3.63.0",
+"date": "2026-11-01T20:19:14Z",
+"headline": "ruflo: v3.71.0 — automatic context delegation in ruflo-mods 0.15.0 (opt-in)",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [3.63.1] - 2026-10-25\n\nPatch release: `@claude-flow/cli`, `claude-flow`, `ruflo` 3.63.1. No leaf package published (the swarm fixes below live in `@claude-flow/swarm`, which the CLI does not depend on).\n\n### Fixed\n\n- **ruflo-console 0.49",
+"summary": "Plain-language summary: https://gist.github.com/ruvnet/496fe146754796522f133b31d526bc02\n\n> **How to get it:** the feature lives in the **ruflo-mods 0.15.0** Claude Code plugin, delivered through the ruflo plugin marketplace (update it with",
 "tag": "product_update",
-"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.63.1"
+"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.71.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-25T03:15:55Z",
-"headline": "ruflo: v3.63.0 — Managed Agents: bounded workflows, gated controls, verified advisory learning",
+"date": "2026-11-01T19:19:02Z",
+"headline": "ruflo: v3.70.0 — governed context delegation (opt-in) with checked citations",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Minor release: `@claude-flow/cli`, `claude-flow`, `ruflo` 3.63.0. Adds four MCP tools for Anthropic Claude Managed Agents (`managed_agent_capabilities`, `managed_agent_control`, `managed_agent_learning`, `managed_agent_interrupt`). No leaf",
+"summary": "Plain-language summary: https://gist.github.com/ruvnet/490ef952e5f2e8b94145577d1696341d\n\n\nMinor release: `@claude-flow/cli`, `claude-flow`, `ruflo` 3.70.0 — governed context delegation (ADR-521, #4648). Nothing changes by default.\n\n### Adde",
 "tag": "product_update",
-"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.63.0"
+"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.70.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:22:11Z",
+"checked_at": "2026-11-02T14:51:01Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:22:10Z",
+"checked_at": "2026-11-02T14:51:00Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -169,7 +169,7 @@
 "evidence_url": "https://Cognitum.One",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-26T12:22:11Z",
+"checked_at": "2026-11-02T14:51:01Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-02T21:24:20Z",
-"github_forks": 9319,
+"github_forks": 9461,
 "github_language": "TypeScript",
-"github_open_issues": 988,
-"github_pushed_at": "2026-10-26T09:39:41Z",
-"github_stars": 79400,
+"github_open_issues": 989,
+"github_pushed_at": "2026-11-02T09:21:09Z",
+"github_stars": 80602,
 "github_topic": "ai-agents",
 "homepage": "https://Cognitum.One"
 },
 "slug": "ruvnet-ruflo",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/ruvnet/ruflo"
 }

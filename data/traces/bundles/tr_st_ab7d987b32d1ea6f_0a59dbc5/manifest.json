@@ -1,0 +1,19 @@
+{
+ "agent": "res_ab7d987b32d1ea6f",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_ab7d987b32d1ea6f_0a59dbc5",
+ "kind": "self_test",
+ "name": "AQL PropertyCheck - Physical check of one exact address",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:alphaquantlabs.ai:propertycheck:agent-card",
+   "manifest_url": "https://property.alphaquantlabs.ai/.well-known/ard.json",
+   "media_type": "application/a2a-agent-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "alphaquantlabs-ai-aql-propertycheck-physical-check-of-one-exact-address"
+}

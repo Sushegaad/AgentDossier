@@ -24,16 +24,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-10-26)",
+"display": "Vendor-claimed (vendor page, 2026-11-02)",
 "evidence_url": "https://cua.ai/privacy-policy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "22d26dd9abb7643555b908d764075db672c3d442f96716c378e860c3bce337cc",
+"next_check": "2026-11-09",
+"payload_hash": "232c094c60cb738b580a4c82ce431f3be3a642091276450d16d5bdae2e8a2c9d",
 "period_end": null,
-"retrieved_at": "2026-10-26T12:29:02Z",
+"retrieved_at": "2026-11-02T14:56:44Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -42,58 +42,6 @@
 "tier": 4,
 "valid_until": null,
 "variant": null
-},
-{
-"certificate_id": null,
-"covers_resource": "unknown",
-"credited": false,
-"detail": {
-"pages_visited": 5
-},
-"display": "SOC 2 Type I: Vendor-claimed (vendor page, 2026-10-26)",
-"evidence_url": "https://cua.ai/trust",
-"framework": "soc2",
-"issued": null,
-"issuer": null,
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "ee02ef01ca75a2ce832c0a75e9151a35462304ddc5192b9dac5142496b8fa72d",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:29:02Z",
-"review_reason": "framework named on the vendor's own page",
-"reviewer": null,
-"scope": "entity",
-"source": "vendor_trust_centers",
-"status": "active",
-"tier": 4,
-"valid_until": null,
-"variant": "SOC2_TYPE_I"
-},
-{
-"certificate_id": null,
-"covers_resource": "unknown",
-"credited": false,
-"detail": {
-"pages_visited": 5
-},
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-10-26)",
-"evidence_url": "https://cua.ai/trust",
-"framework": "soc2",
-"issued": null,
-"issuer": null,
-"match_confidence": 1.0,
-"next_check": "2026-11-02",
-"payload_hash": "ee02ef01ca75a2ce832c0a75e9151a35462304ddc5192b9dac5142496b8fa72d",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:29:02Z",
-"review_reason": "framework named on the vendor's own page",
-"reviewer": null,
-"scope": "entity",
-"source": "vendor_trust_centers",
-"status": "active",
-"tier": 4,
-"valid_until": null,
-"variant": "SOC2_TYPE_II"
 }
 ],
 "deployment": "self-hosted",
@@ -102,7 +50,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.03,
+"adoption": 26.08,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -123,7 +71,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.03,
+"adoption": 26.08,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -144,7 +92,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.03,
+"adoption": 26.08,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -158,7 +106,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 68.7,
+"score": 68.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
@@ -167,7 +115,7 @@
 "external_ids": {
 "github": "trycua/cua"
 },
-"first_seen": "2026-10-26T12:15:43Z",
+"first_seen": "2026-11-02T14:44:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -189,47 +137,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:15:43Z",
+"last_seen": "2026-11-02T14:44:31Z",
 "license": "MIT",
 "name": "cua",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-26T08:35:11Z",
-"headline": "Cua Spaces v0.17.0-beta.1",
+"date": "2026-11-02T06:11:23Z",
+"headline": "Cua Spaces v0.19.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Cua Spaces 0.17.0-beta.1.",
+"summary": "# Cua Spaces 0.19.3\n\n## Summary\n\nThis release includes 1 fix.\n\n## Fixes\n\n- bundle cua 0.10.0 in Cua Spaces. ([#6298](https://github.com/trycua/cua/pull/6298))\n\n## Contributors\n\nThis release contains maintainer changes only.\n\n## Full changel",
 "tag": "product_update",
-"url": "https://github.com/trycua/cua/releases/tag/cua-spaces-v0.17.0-beta.1"
+"url": "https://github.com/trycua/cua/releases/tag/cua-spaces-v0.19.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-26T05:25:46Z",
-"headline": "cua release nightly-cua-driver-rs-v0.38.1-nightly.20261026.40269720879",
+"date": "2026-11-02T05:17:51Z",
+"headline": "cua release nightly-cua-driver-rs-v0.38.1-nightly.20261102.41388019333",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Cua Driver 0.38.1-nightly.20261026.40269720879 (nightly)\n\nAutomated immutable nightly built from an exact `main` commit. Nightlies are\nopt-in, may be less stable than regular releases, and never replace stable\nupdate discovery.\n\n## Source",
+"summary": "# Cua Driver 0.38.1-nightly.20261102.41388019333 (nightly)\n\nAutomated immutable nightly built from an exact `main` commit. Nightlies are\nopt-in, may be less stable than regular releases, and never replace stable\nupdate discovery.\n\n## Source",
 "tag": "product_update",
-"url": "https://github.com/trycua/cua/releases/tag/nightly-cua-driver-rs-v0.38.1-nightly.20261026.40269720879"
+"url": "https://github.com/trycua/cua/releases/tag/nightly-cua-driver-rs-v0.38.1-nightly.20261102.41388019333"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:22:15Z",
+"checked_at": "2026-11-02T14:51:07Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:22:14Z",
+"checked_at": "2026-11-02T14:51:06Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:22:15Z",
+"checked_at": "2026-11-02T14:51:07Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -240,19 +188,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-01-31T15:02:49Z",
-"github_forks": 2268,
+"github_forks": 2334,
 "github_language": "Rust",
-"github_open_issues": 1298,
-"github_pushed_at": "2026-10-26T11:29:48Z",
-"github_stars": 30998,
+"github_open_issues": 1381,
+"github_pushed_at": "2026-11-02T14:30:25Z",
+"github_stars": 31576,
 "github_topic": "ai-agent",
 "homepage": "https://cua.ai"
 },
 "slug": "trycua-cua",
 "sources": [
 {
-"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
-"retrieved_at": "2026-10-26T12:15:43Z",
+"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
+"retrieved_at": "2026-11-02T14:44:31Z",
 "system": "github",
 "url": "https://github.com/trycua/cua"
 }

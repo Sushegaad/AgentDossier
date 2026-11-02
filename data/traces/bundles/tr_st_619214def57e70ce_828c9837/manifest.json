@@ -1,0 +1,19 @@
+{
+ "agent": "res_619214def57e70ce",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_619214def57e70ce_828c9837",
+ "kind": "self_test",
+ "name": "Find a paid API and read what buyers said (skill)",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:agentgates.ai:skills:directory",
+   "manifest_url": "https://agentgates.ai/.well-known/ard.json",
+   "media_type": "application/agent-skills+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "agentgates-ai-find-a-paid-api-and-read-what-buyers-said-skill"
+}

@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 29.06,
+"adoption": 29.23,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -38,7 +38,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 67.7,
+"score": 67.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -47,7 +47,7 @@
 },
 "data": {
 "components": {
-"adoption": 29.06,
+"adoption": 29.23,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -61,7 +61,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 68.6,
+"score": 68.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 },
 "technology": {
 "components": {
-"adoption": 29.06,
+"adoption": 29.23,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -84,7 +84,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 74.0,
+"score": 74.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -95,7 +95,7 @@
 "external_ids": {
 "github": "thedotmack/claude-mem"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -124,47 +124,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:12:45Z",
+"last_seen": "2026-11-02T14:41:31Z",
 "license": "Apache-2.0",
 "name": "claude-mem",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-25T19:45:33Z",
-"headline": "claude-mem: v15.2.1 — npm trusted publishing",
+"date": "2026-11-02T06:26:25Z",
+"headline": "claude-mem release v15.8.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What changed\n\n- **npm publishing now uses trusted publishing (OIDC).** The \"Publish to npm\" GitHub Actions workflow authenticates to npm with a short-lived OIDC token issued for this repository's workflow instead of the long-lived `NPM_T",
+"summary": "## Privacy fix\n\nBrowser setup no longer uploads your prompts to cmem.ai without asking. Fixes #5176.\n\nThe browser setup opened by `npx claude-mem install` (since v15.2.0) scanned local agent histories and uploaded the full text of the last",
 "tag": "product_update",
-"url": "https://github.com/thedotmack/claude-mem/releases/tag/v15.2.1"
+"url": "https://github.com/thedotmack/claude-mem/releases/tag/v15.8.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-25T11:52:08Z",
-"headline": "claude-mem: v15.2.0 — Browser install funnel",
+"date": "2026-11-02T06:00:18Z",
+"headline": "claude-mem release v15.8.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Highlights\n\n### Install funnel in the browser (#5031)\nFresh installs now open a browser setup flow that finds your recent work and turns it into Work, Goals and Rules before setup finishes. Existing installations keep opening My Work as",
+"summary": "## Fixes\n- Work view: telemetry volume cuts. High-volume events (observer turns, work-state use, context injections, searches, skills) are now one daily rollup per install with a `count`; worker start/stop carry `restart_count`; failures ar",
 "tag": "product_update",
-"url": "https://github.com/thedotmack/claude-mem/releases/tag/v15.2.0"
+"url": "https://github.com/thedotmack/claude-mem/releases/tag/v15.8.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:22:08Z",
+"checked_at": "2026-11-02T14:50:56Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:22:07Z",
+"checked_at": "2026-11-02T14:50:55Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:22:09Z",
+"checked_at": "2026-11-02T14:50:57Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -174,7 +174,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:40:09Z",
+"checked_at": "2026-11-02T15:04:53Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-08-31T20:50:03Z",
-"github_forks": 9116,
+"github_forks": 9630,
 "github_language": "TypeScript",
-"github_open_issues": 94,
-"github_pushed_at": "2026-10-26T11:34:44Z",
-"github_stars": 103264,
+"github_open_issues": 137,
+"github_pushed_at": "2026-11-02T10:09:11Z",
+"github_stars": 110340,
 "github_topic": "ai-agents",
 "homepage": "https://claude-mem.ai"
 },
 "slug": "thedotmack-claude-mem",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/thedotmack/claude-mem"
 }

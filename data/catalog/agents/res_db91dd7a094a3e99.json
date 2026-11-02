@@ -30,7 +30,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.95,
+"adoption": 25.96,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -53,7 +53,7 @@
 },
 "data": {
 "components": {
-"adoption": 25.95,
+"adoption": 25.96,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -76,7 +76,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.95,
+"adoption": 25.96,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 3.0,
@@ -101,7 +101,7 @@
 "external_ids": {
 "github": "kestra-io/kestra"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,47 +123,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:12:45Z",
+"last_seen": "2026-11-02T14:41:31Z",
 "license": "Apache-2.0",
 "name": "kestra",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-20T15:13:45Z",
-"headline": "kestra release v1.3.44",
+"date": "2026-10-27T14:09:50Z",
+"headline": "kestra release v2.0.8",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\n\n### 🚀 Features\n**execution**\n- 458f859 add execution and taskrun state inside OTEL spans\n\n**traces**\n- 9808693 add taskId inside OTEL spans\n\n### 📘 Subtasks\n**core**\n- bf2979f generate ui translations through vertex ai (#21004)",
+"summary": "## Changelog\n\n### 🚀 Features\n**core**\n- 59de69f add dataURL Pebble function to resolve files into data: URLs (#20778) (#21900), closes #20778 #21900\n\n**system**\n- e3b300d add task runs and task runners cards to the system overview\n\n### 📘 Su",
 "tag": "product_update",
-"url": "https://github.com/kestra-io/kestra/releases/tag/v1.3.44"
+"url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.8"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-20T14:07:27Z",
-"headline": "kestra release v2.0.7",
+"date": "2026-10-27T13:35:10Z",
+"headline": "kestra release v1.3.45",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\r\n\r\n### 🚀 Features\r\n**execution**\r\n- daa30bf add execution and taskrun state inside OTEL spans\r\n\r\n**traces**\r\n- 4e9be71 add taskId inside OTEL spans\r\n\r\n### 📘 Subtasks\r\n**core**\r\n- 7b605c3 generate ui translations through vertex",
+"summary": "## Changelog\n\n### 📘 Subtasks\n**deps**\n- 5f4613e bump Playwright to 1.64.1 to support ubuntu-26.04 runners (#21905), closes #21905\n- 10e1184 Micronaut Platform 4.10.22\n\n**version**\n- 61e787d update to version '1.3.45'\n\n### 🐛 Bug Fixes\n**core",
 "tag": "product_update",
-"url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.7"
+"url": "https://github.com/kestra-io/kestra/releases/tag/v1.3.45"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:22:51Z",
+"checked_at": "2026-11-02T14:51:35Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:22:49Z",
+"checked_at": "2026-11-02T14:51:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:22:51Z",
+"checked_at": "2026-11-02T14:51:35Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -174,19 +174,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-08-24T13:56:15Z",
-"github_forks": 3477,
+"github_forks": 3495,
 "github_language": "Java",
-"github_open_issues": 859,
-"github_pushed_at": "2026-10-26T12:10:21Z",
-"github_stars": 30005,
+"github_open_issues": 775,
+"github_pushed_at": "2026-11-02T14:40:29Z",
+"github_stars": 30121,
 "github_topic": "ai-agents",
 "homepage": "https://go.kestra.io/home"
 },
 "slug": "kestra-io-kestra",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/kestra-io/kestra"
 }

@@ -1,0 +1,170 @@
+{
+"canonical_url": "agentgates.ai/skills/agentgates-wallet/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Pair an Agentgates wallet over MCP (OAuth) and act under owner-approved grants: read balances, propose sends, swaps and earn moves; the owner approves every money move.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 8.8,
+"governance": null,
+"health": null,
+"trust": 23.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 35.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:agentgates.ai:skills:wallet"
+},
+"first_seen": "2026-11-02T14:49:36Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f3a5fdbeba5ad26c",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:49:36Z",
+"license": null,
+"name": "Agentgates wallet over MCP (skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agentgates.ai:skills:wallet",
+"manifest_url": "https://agentgates.ai/.well-known/ard.json",
+"media_type": "application/agent-skills+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"evidence_url": "https://agentgates.ai/skills/agentgates-wallet/SKILL.md",
+"note": "named in the resource's own tags",
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "agentgates.ai",
+"representative_queries": [
+"MCP server that can hold a wallet and pay in USDC",
+"agent wallet with owner-approved spending",
+"pair my agent with a crypto wallet over MCP"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-02T15:07:55Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agentgates-ai-agentgates-wallet-over-mcp-skill",
+"sources": [
+{
+"payload_hash": "7c1f040ee918c8e4d98703efab685c15e6d888fedce23a0d679be1a50c183508",
+"retrieved_at": "2026-11-02T14:49:36Z",
+"system": "ard",
+"url": "https://agentgates.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"skill",
+"wallet",
+"mcp",
+"oauth"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_f3a5fdbeba5ad26c_6c7d8035",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_f3a5fdbeba5ad26c_6c7d8035",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:e48b0a4374a8c93e06d1a74d5bf8a390efcdd124b79933470cc7d2f7ef98f419",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Agentgates wallet over MCP (skill)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_f3a5fdbeba5ad26c_6c7d8035/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agentgates.ai/skills/agentgates-wallet/SKILL.md",
+"vendor": "agentgates.ai"
+}

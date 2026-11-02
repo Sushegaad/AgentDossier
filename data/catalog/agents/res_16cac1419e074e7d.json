@@ -22,7 +22,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.1,
+"adoption": 26.12,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -36,7 +36,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 67.4,
+"score": 67.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,7 +45,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.1,
+"adoption": 26.12,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 71.0,
+"score": 71.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "googleworkspace/cli"
 },
-"first_seen": "2026-10-26T12:15:43Z",
+"first_seen": "2026-11-02T14:44:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,24 +92,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:15:43Z",
+"last_seen": "2026-11-02T14:44:31Z",
 "license": "Apache-2.0",
 "name": "cli",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:22:22Z",
+"checked_at": "2026-11-02T14:51:13Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:22:20Z",
+"checked_at": "2026-11-02T14:51:12Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:22:23Z",
+"checked_at": "2026-11-02T14:51:15Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -120,19 +120,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-02T19:46:06Z",
-"github_forks": 1957,
+"github_forks": 1978,
 "github_language": "Rust",
 "github_open_issues": 139,
-"github_pushed_at": "2026-10-06T20:23:04Z",
-"github_stars": 31897,
+"github_pushed_at": "2026-10-30T16:06:54Z",
+"github_stars": 32061,
 "github_topic": "ai-agent",
 "homepage": "https://developers.google.com/workspace"
 },
 "slug": "googleworkspace-cli",
 "sources": [
 {
-"payload_hash": "88e004b309748cea1c8ca51534496426c04917a0390392431ed7e9c67f549de7",
-"retrieved_at": "2026-10-26T12:15:43Z",
+"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
+"retrieved_at": "2026-11-02T14:44:31Z",
 "system": "github",
 "url": "https://github.com/googleworkspace/cli"
 }

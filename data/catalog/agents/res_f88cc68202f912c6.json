@@ -1,0 +1,168 @@
+{
+"canonical_url": "agentgates.ai/skills/agentgates-voice/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"finance": [
+"payment"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "An AI operator places a real phone call for your agent: a number and a task in words, then the transcript, the recording and the outcome. Billed per minute from a prepaid balance, or at the payphone for one x402 payment.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"finance": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 5.5,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 37.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:agentgates.ai:skills:voice"
+},
+"first_seen": "2026-11-02T14:49:36Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f88cc68202f912c6",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:49:36Z",
+"license": null,
+"name": "An AI operator on a phone call (skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agentgates.ai:skills:voice",
+"manifest_url": "https://agentgates.ai/.well-known/ard.json",
+"media_type": "application/agent-skills+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "agentgates.ai",
+"representative_queries": [
+"AI that calls a business for my agent and reports back",
+"phone call with a transcript and outcome via API",
+"book an appointment by phone from an agent"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-02T15:07:53Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agentgates-ai-an-ai-operator-on-a-phone-call-skill",
+"sources": [
+{
+"payload_hash": "f3b2522c83702cc65f3668ca2aede62e070f5c1140b1adb1bcc8078c1dfef674",
+"retrieved_at": "2026-11-02T14:49:36Z",
+"system": "ard",
+"url": "https://agentgates.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"skill",
+"voice",
+"phone",
+"operator",
+"transcript"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_f88cc68202f912c6_2d5b1b6d",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_f88cc68202f912c6_2d5b1b6d",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:c7c26a62b2760c604b62fdf9d3fa7df0c40b4619514f0da9bd2f7ee27de6083a",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of An AI operator on a phone call (skill)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_f88cc68202f912c6_2d5b1b6d/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agentgates.ai/skills/agentgates-voice/SKILL.md",
+"vendor": "agentgates.ai"
+}

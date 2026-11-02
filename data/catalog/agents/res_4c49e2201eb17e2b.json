@@ -1,0 +1,201 @@
+{
+"canonical_url": "demo.liketrek.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"technology": [
+"docker",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "The most complete open-source travel planner: real-time collaboration, bookings, budgets, packing lists, journals, offline PWA, SSO and an AI-ready MCP server, with planet-wide place search and routing built in.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": 24.26,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 69.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 24.26,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 73.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "liketrek/TREK"
+},
+"first_seen": "2026-11-02T14:46:44Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_4c49e2201eb17e2b",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:46:44Z",
+"license": "AGPL-3.0",
+"name": "TREK",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-31T11:24:25Z",
+"headline": "TREK release v5.1.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## 5.1.0\r\n\r\n[Full diff since 5.0.1](https://github.com/liketrek/TREK/compare/v5.0.1...v5.1.0)\r\n\r\n### Highlights\r\n\r\n**TREK now runs its own map services, on servers sponsored by [dataforest cloud](https://cloud.dataforest.net/en?mtm_campaign",
+"tag": "product_update",
+"url": "https://github.com/liketrek/TREK/releases/tag/v5.1.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-28T10:54:10Z",
+"headline": "TREK release v5.0.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## 5.0.1\n\n[Full diff since 5.0.0](https://github.com/liketrek/TREK/compare/v5.0.0...v5.0.1)\n\n### Fixed\n\n**Assistant**\n\n- The assistant keeps working after changes were applied. On ChatGPT, the OpenAI reasoning models and Claude, a thread in",
+"tag": "product_update",
+"url": "https://github.com/liketrek/TREK/releases/tag/v5.0.1"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-02T14:51:13Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-02T14:51:10Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://demo.liketrek.com",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-11-02T14:51:14Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "demo.liketrek.com",
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-03-19T11:51:54Z",
+"github_forks": 1318,
+"github_language": "TypeScript",
+"github_open_issues": 17,
+"github_pushed_at": "2026-11-02T13:39:01Z",
+"github_stars": 15325,
+"github_topic": "mcp-server",
+"homepage": "https://demo.liketrek.com"
+},
+"slug": "liketrek-trek",
+"sources": [
+{
+"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
+"retrieved_at": "2026-11-02T14:46:44Z",
+"system": "github",
+"url": "https://github.com/liketrek/TREK"
+}
+],
+"tags": [
+"budget-tracker",
+"collaborative",
+"docker",
+"itinerary",
+"mcp-server",
+"offline-first",
+"open-source",
+"openstreetmap",
+"packing-list",
+"pwa",
+"real-time",
+"self-hosted",
+"selfhosted",
+"travel",
+"travel-app",
+"travel-journal",
+"travel-planner",
+"tripit",
+"wanderlog"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": null,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://demo.liketrek.com",
+"vendor": "liketrek"
+}

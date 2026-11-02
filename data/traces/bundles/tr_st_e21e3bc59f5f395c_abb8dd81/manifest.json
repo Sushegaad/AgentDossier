@@ -1,0 +1,25 @@
+{
+ "agent": "res_e21e3bc59f5f395c",
+ "date": "2026-11-02",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_e21e3bc59f5f395c_abb8dd81",
+ "kind": "self_test",
+ "name": "groundrules",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:agentlookups.ai:mcp:groundrules",
+   "manifest_url": "https://law.agentlookups.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "agentlookups-ai-groundrules"
+}

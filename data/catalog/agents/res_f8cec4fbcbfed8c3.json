@@ -1,0 +1,138 @@
+{
+"canonical_url": "agentgates.ai/skills/agentgates-phone/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Place a real phone call paid in USDC over x402. The payphone needs no account: buy minutes, name the number, and stream your own voice over a websocket. Plans lease a number that also receives texts.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:agentgates.ai:skills:phone"
+},
+"first_seen": "2026-11-02T14:49:36Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f8cec4fbcbfed8c3",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-02T14:49:36Z",
+"license": null,
+"name": "Place a phone call (skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agentgates.ai:skills:phone",
+"manifest_url": "https://agentgates.ai/.well-known/ard.json",
+"media_type": "application/agent-skills+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "agentgates.ai",
+"representative_queries": [
+"AI agent make a phone call paid per minute in USDC",
+"phone number for an AI agent with no account",
+"payphone API over x402"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-02T15:07:51Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agentgates-ai-place-a-phone-call-skill",
+"sources": [
+{
+"payload_hash": "52f2b74b80e91098d23cd62976e78f23848c479de84b4c0ad50f7a28b463b204",
+"retrieved_at": "2026-11-02T14:49:36Z",
+"system": "ard",
+"url": "https://agentgates.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"skill",
+"phone",
+"calls",
+"sms",
+"x402"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_f8cec4fbcbfed8c3_d7226228",
+"checked_on": null,
+"date": "2026-11-02",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_f8cec4fbcbfed8c3_d7226228",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:4499808cdf312e003f1beb02a7e75c00a701ea5fa968a2f32470c4b350f07b45",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Place a phone call (skill)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_f8cec4fbcbfed8c3_d7226228/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agentgates.ai/skills/agentgates-phone/SKILL.md",
+"vendor": "agentgates.ai"
+}

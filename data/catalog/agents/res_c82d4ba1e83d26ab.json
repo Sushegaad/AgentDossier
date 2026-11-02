@@ -63,7 +63,7 @@
 "external_ids": {
 "github": "continuedev/continue"
 },
-"first_seen": "2026-10-26T12:11:40Z",
+"first_seen": "2026-11-02T14:40:36Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -79,7 +79,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 1136,
+"cves": 1157,
 "incidents": 0,
 "links": [
 {
@@ -146,7 +146,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:11:40Z",
+"last_seen": "2026-11-02T14:40:36Z",
 "license": "Apache-2.0",
 "name": "Continue",
 "news": [
@@ -167,17 +167,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:22:13Z",
+"checked_at": "2026-11-02T14:51:03Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:22:12Z",
+"checked_at": "2026-11-02T14:51:02Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-10-26T12:22:13Z",
+"checked_at": "2026-11-02T14:51:04Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -187,8 +187,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:32:43Z",
-"cves": 1136,
+"checked_at": "2026-11-02T14:59:49Z",
+"cves": 1157,
 "source": "nvd",
 "tier": 1
 },
@@ -208,11 +208,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-05-24T03:39:39Z",
-"github_forks": 5523,
+"github_forks": 5543,
 "github_language": "TypeScript",
-"github_open_issues": 878,
-"github_pushed_at": "2026-10-26T07:34:12Z",
-"github_stars": 36328,
+"github_open_issues": 867,
+"github_pushed_at": "2026-11-02T12:11:19Z",
+"github_stars": 36401,
 "homepage": "https://continue.dev",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -228,7 +228,7 @@
 "sources": [
 {
 "payload_hash": "cfcd4010357ef805ce34e8df6c45461346b4f786d7882b0cd40dc5bbb86145e3",
-"retrieved_at": "2026-10-26T12:11:40Z",
+"retrieved_at": "2026-11-02T14:40:36Z",
 "system": "seed_xlsx",
 "url": "https://github.com/continuedev/continue"
 }

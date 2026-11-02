@@ -20,92 +20,64 @@
 "taxonomy_version": "sar-taxonomy-1.0"
 },
 "commercial": false,
-"compliance": [
-{
-"certificate_id": "paperclip",
-"covers_resource": "unknown",
-"credited": false,
-"detail": {
-"note": "From the STAR Registry index card; STAR Level 1 is a self-assessment (CAIQ), Level 2 a third-party certification or attestation.",
-"organization": "Paperclip",
-"terms": [
-"star_level_1",
-"caiq"
-]
-},
-"display": "STAR Level 1: found in CSA STAR Registry on 2026-10-26",
-"evidence_url": "https://cloudsecurityalliance.org/star/registry/paperclip",
-"framework": "csa_star",
-"issued": "2022-10-13",
-"issuer": "Cloud Security Alliance",
-"match_confidence": 0.9,
-"next_check": "2026-11-02",
-"payload_hash": "51c7c3cba565bd44fb1a057b2b3d9312894a56c98eab49f361756b0b3c868a15",
-"period_end": null,
-"retrieved_at": "2026-10-26T12:26:23Z",
-"review_reason": "entity 0.90 (index card)",
-"reviewer": null,
-"scope": "entity",
-"source": "csa_star",
-"status": "active",
-"tier": 1,
-"valid_until": null,
-"variant": "STAR_LEVEL_1"
-}
-],
+"compliance": [],
 "deployment": "self-hosted",
 "description": "The open-source app everyone uses to manage agents at work",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": 29.16,
+"adoption": 29.22,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
-"governance": 0.0,
+"governance": null,
 "health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
-"evidence_coverage": 1.0,
+"evidence_coverage": 0.944,
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 73.8,
+"score": 73.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": []
+"unknown": [
+"governance"
+]
 },
 "regulatory": {
 "components": {
-"adoption": 29.16,
+"adoption": 29.22,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
-"governance": 0.0,
+"governance": null,
 "health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
-"evidence_coverage": 1.0,
+"evidence_coverage": 0.85,
 "governance_credited": {},
 "profile": "regulated",
 "rank": null,
 "score": 56.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": []
+"unknown": [
+"governance"
+]
 },
 "technology": {
 "components": {
-"adoption": 29.16,
+"adoption": 29.22,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
-"governance": 0.0,
+"governance": null,
 "health": 20.0,
 "trust": 17.0
 },
@@ -118,13 +90,15 @@
 "score": 81.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
-"unknown": []
+"unknown": [
+"governance"
+]
 }
 },
 "external_ids": {
 "github": "paperclipai/paperclip"
 },
-"first_seen": "2026-10-26T12:12:45Z",
+"first_seen": "2026-11-02T14:41:31Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -140,7 +114,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 5,
+"cves": 6,
 "incidents": 0,
 "links": [
 {
@@ -172,12 +146,18 @@
 "kind": "cve",
 "title": "CVE-2026-77087",
 "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77087"
+},
+{
+"date": "2026-10-30",
+"kind": "cve",
+"title": "CVE-2026-119713",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119713"
 }
 ],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-10-26T12:12:45Z",
+"last_seen": "2026-11-02T14:41:31Z",
 "license": "MIT",
 "name": "paperclip",
 "news": [
@@ -220,12 +200,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-10-26T12:23:41Z",
+"checked_at": "2026-11-02T14:52:23Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-10-26T12:23:39Z",
+"checked_at": "2026-11-02T14:52:22Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -233,7 +213,7 @@
 "evidence_url": "https://paperclip.ing",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-10-26T12:23:41Z",
+"checked_at": "2026-11-02T14:52:23Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -245,27 +225,27 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-10-26T12:40:08Z",
-"cves": 5,
+"checked_at": "2026-11-02T15:04:54Z",
+"cves": 6,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-02T15:01:51Z",
-"github_forks": 17844,
+"github_forks": 18256,
 "github_language": "TypeScript",
-"github_open_issues": 6613,
-"github_pushed_at": "2026-10-26T10:34:57Z",
-"github_stars": 107485,
+"github_open_issues": 6632,
+"github_pushed_at": "2026-11-02T14:36:27Z",
+"github_stars": 110166,
 "github_topic": "ai-agents",
 "homepage": "https://paperclip.ing"
 },
 "slug": "paperclipai-paperclip",
 "sources": [
 {
-"payload_hash": "dcf9ecdde80ebf86aa81a99729d666b5b858d4e062bac229e5ac76bf5529d6bf",
-"retrieved_at": "2026-10-26T12:12:45Z",
+"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
+"retrieved_at": "2026-11-02T14:41:31Z",
 "system": "github",
 "url": "https://github.com/paperclipai/paperclip"
 }
@@ -301,7 +281,7 @@
 "protocols": 3,
 "security": 1,
 "traces": 5,
-"vendor_compliance": 1
+"vendor_compliance": null
 },
 "url": "https://paperclip.ing",
 "vendor": "paperclipai"
