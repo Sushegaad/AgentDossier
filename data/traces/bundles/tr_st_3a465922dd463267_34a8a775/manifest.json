@@ -1,0 +1,19 @@
+{
+ "agent": "res_3a465922dd463267",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_3a465922dd463267_34a8a775",
+ "kind": "self_test",
+ "name": "Mizan API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:mizan.ac:api:registry",
+   "manifest_url": "https://mizan.ac/.well-known/ard.json",
+   "media_type": "application/openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "mizan-ac-mizan-api"
+}

@@ -1,0 +1,22 @@
+{
+ "agent": "res_991a02ea711ec2f5",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_991a02ea711ec2f5_cdfbbe9d",
+ "kind": "self_test",
+ "name": "architect",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:editor.pascal.app:skill:architect",
+   "manifest_url": "https://editor.pascal.app/.well-known/ard.json",
+   "media_type": "application/agent-skills+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "editor-pascal-app-architect"
+}

@@ -1,28 +1,25 @@
 {
  "version": "cves-1.0",
- "built_at": "2026-11-02",
+ "built_at": "2026-11-09",
  "config_version": "cve-products-1.0",
  "counts": {
-  "total": 1865,
+  "total": 1898,
   "included": 0,
-  "candidate": 1865,
+  "candidate": 1898,
   "excluded": 0,
   "kev": 10,
   "unscored": 1
  },
  "products_matched": [
-  "a2a",
   "aider",
   "anythingllm",
   "autogen",
-  "chatgpt-agent",
   "claude-code",
   "copilot-studio",
   "crewai",
   "cursor",
   "dify",
   "flowise",
-  "gemini-cli",
   "github-copilot",
   "langchain",
   "langflow",
@@ -42,11 +39,2436 @@
  ],
  "records": [
   {
+   "id": "CVE-2026-119613",
+   "description": "Generation of Error Message Containing Sensitive Information vulnerability in ash-project ash_ai allows a caller of an AshAi tool to read internal error details, including module names and data values, by making a tool call fail.\n\nAshAi.ToToolError gained an implementation for Ash.Error.Unknown.UnknownError that returns the error's error field as is, and AshAi.Tool.Errors.format/1 sends that text to MCP clients (tool calls and resource reads in AshAi.Mcp.Server) and to the model in AshAi.ToolLoop. Ash stores the full Exception.format/2 output of a raised exception, or inspect/1 of a bare {:error, term} return, in that field. A tool result that cannot be JSON-encoded raises a Protocol.UndefinedError whose text includes the inspected value, which can be a whole record with fields the tool never returns. None of these errors were logged. The fix logs them under an error id and returns only that id to the caller.\n\nThis issue affects ash_ai: from 1.5.0 before 1.5.1.",
+   "published": "2026-11-09",
+   "last_modified": "2026-11-09",
+   "vuln_status": "Received",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db"
+   },
+   "cwe": [
+    "CWE-209"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "exfiltration"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://cna.erlef.org/cves/CVE-2026-119613.html",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ash-project/ash_ai/commit/af7987769d78ed070c8a9f6e6ee542d91744eae6",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ash-project/ash_ai/commit/fbad04e9620ef70603f4e67e03f15092f58578f6",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ash-project/ash_ai/security/advisories/GHSA-vhmw-fwrr-r6c6",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://osv.dev/vulnerability/EEF-CVE-2026-119613",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp client",
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123498",
+   "description": "Vikunja veans before 2.7.1 contains a prompt injection vulnerability that allows project members with write access to inject instructions by setting project titles or task content rendered verbatim inside the coding agent's authoritative instruction block. Attackers can craft ProjectTitle or task descriptions that the prime hook loads on SessionStart and PreCompact, causing the agent to modify the developer's checkout or run commands.",
+   "published": "2026-11-08",
+   "last_modified": "2026-11-09",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "prompt_injection"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-cvh3-hf56-g9xm",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/vikunja-veans-before-2.7.1-prompt-injection-via-project-and-task-metadata",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "coding agent",
+     "prompt injection"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-97677",
+   "description": "IBM Langflow OSS 1.0.0 through 1.12.2 An authenticated flow author could write attacker-controlled file content into any directory writable by the service account, bypassing the platform's local file access isolation safeguard. Via a crafted on-disk index, the attacker could also read the contents of arbitrary files accessible to the service process — including configuration files, secrets, or database files stored under the application's data directory.",
+   "published": "2026-11-08",
+   "last_modified": "2026-11-08",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "psirt@us.ibm.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+    "source": "psirt@us.ibm.com"
+   },
+   "cwe": [
+    "CWE-22"
+   ],
+   "products": [
+    {
+     "vendor": "Langflow",
+     "product": "Langflow",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "langflow"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "credential_access",
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://www.ibm.com/support/pages/node/7290694",
+     "source": "psirt@us.ibm.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "langflow-langflow"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "langflow:Langflow"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-102610",
+   "description": "fast-agent is a framework for building, running, and evaluating AI agents with Model Context Protocol support. Prior to 0.7.21, fast-agent serve uses HTTP transport bound to 0.0.0.0 on port 8000 without authentication, allowing any network client that can reach the /mcp endpoint to invoke the exposed agent tool. When the server is started with --shell, the agent can call the local execute tool implemented by tools/local_shell_executor.py, so an unauthenticated remote client can cause operating-system commands to run as the server user; without --shell, the client can still consume the operator's model and configured MCP tools. The defaults are defined in cli/commands/serve.py and mcp/server/agent_server.py, and the non-interactive server permission prompt does not prevent the described access. This issue is fixed in version 0.7.21.",
+   "published": "2026-11-06",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.4,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-78",
+    "CWE-306"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "code_execution",
+    "tool_execution",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/evalstate/fast-agent/commit/ba99f89c3ec7f1ef1c8b1ebce381c12b60dfea29",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/evalstate/fast-agent/pull/828",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/evalstate/fast-agent/releases/tag/v0.7.21",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/evalstate/fast-agent/security/advisories/GHSA-9vhv-g5hf-m7m7",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents",
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-106020",
+   "description": "Improper neutralization of input used for LLM prompting vulnerability in Johnson Controls EasyIO Neo IO Manager and Tools Installer allows Search Order Hijacking.\n\nThis issue affects EasyIO Neo IO Manager and Tools Installer: 1.1.0.0.",
+   "published": "2026-11-06",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Deferred",
+   "cna": "productsecurity@jci.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.6,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "productsecurity@jci.com"
+   },
+   "cwe": [],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "prompt_injection"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://www.johnsoncontrols.com/trust-center/cybersecurity/security-advisories",
+     "source": "productsecurity@jci.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "llm",
+     "llm prompting"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123653",
+   "description": "A security vulnerability has been detected in esengine DeepSeek-Reasonix up to 2.52.0. Affected is the function discoverDocs of the file internal/memory/doc.go. The manipulation leads to improper neutralization of input used for llm prompting. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used. Upgrading to version 2.53.0 is able to address this issue. The identifier of the patch is 4ca33493a673c2788aa8598fbca2b2f47a69e1b8. It is suggested to upgrade the affected component.",
+   "published": "2026-11-06",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Deferred",
+   "cna": "cna@vuldb.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cna@vuldb.com"
+   },
+   "cwe": [
+    "CWE-349"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "prompt_injection"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/esengine/DeepSeek-Reasonix/",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/esengine/DeepSeek-Reasonix/commit/4ca33493a673c2788aa8598fbca2b2f47a69e1b8",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/esengine/DeepSeek-Reasonix/issues/13061",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.53.0",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/esengine/DeepSeek-Reasonix/security/advisories/GHSA-7v48-x992-r5w7",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ybyu-ieu/agent-security-advisories/blob/main/deepseek-reasonix/deepseek-reasonix-agents-md-prompt-injection-command-execution.md",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/cve/CVE-2026-123653",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/1033134",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431772",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431772/cti",
+     "source": "cna@vuldb.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "llm",
+     "llm prompting"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123851",
+   "description": "In JetBrains Junie GitHub Action before 1.6.4 prompt injection protection could be bypassed via HTML-encoded characters",
+   "published": "2026-11-06",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "cve@jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+    "source": "cve@jetbrains.com"
+   },
+   "cwe": [
+    "CWE-180"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "prompt_injection"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://www.jetbrains.com/privacy-security/issues-fixed/",
+     "source": "cve@jetbrains.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "prompt injection"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-124028",
+   "description": "mistral.rs before 0.9.5 contains a delimiter injection vulnerability in mistralrs-core that allows attackers to inject tool calls by placing delimiter strings in text the model quotes. Attackers controlling documents, web pages or tool outputs can embed tags like </tool_call> to make qwen-xml, gemma4 or reasoning parsers return extra calls to declared tools with attacker-chosen arguments.",
+   "published": "2026-11-06",
+   "last_modified": "2026-11-09",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-140"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/EricLBuehler/mistral.rs",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/EricLBuehler/mistral.rs/commit/b43d3443e946752c0f662c2df42a2974410c9532",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/EricLBuehler/mistral.rs/pull/2455",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/EricLBuehler/mistral.rs/releases/tag/v0.9.5",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/EricLBuehler/mistral.rs/security/advisories/GHSA-34w8-j94f-8c5w",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/mistral-rs-before-0.9.5-tool-call-injection-via-mistralrs-core-output-parsers",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/EricLBuehler/mistral.rs/security/advisories/GHSA-34w8-j94f-8c5w",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-58141",
+   "description": "Dify before 1.15.0 contains a server-side request forgery vulnerability that allows any authenticated console user to bypass SSRF protections and issue arbitrary HTTP requests to internal services and cloud metadata endpoints due to the Squid proxy configuration only defining source ACLs without destination deny rules and the make_request() helper performing no independent destination IP validation. Attackers can use endpoints such as GET /console/api/remote-files/<url>, POST /console/api/remote-files/upload, the HTTP Request workflow node, website crawl, or document import from URL to reach internal components like the sandbox, internal APIs, and PostgreSQL, and on AWS deployments read IAM credentials from the instance metadata service, with the HTTP Request node further enabling POST, PUT, and DELETE writes to internal services relying on network isolation for authorization.",
+   "published": "2026-11-06",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.2,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "LangGenius",
+     "product": "Dify",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "dify"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "credential_access",
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/langgenius/dify/commit/7bfcf9185c75bb18f0b44335080524e659f087d9",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/langgenius/dify/pull/36332",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/langgenius/dify/releases/tag/1.15.0",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/dify-ssrf-protection-bypass-via-remote-files-endpoints",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "langgenius-dify"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "dify:Dify"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-58490",
+   "description": "Tracecat is an open-source security automation platform for teams and AI agents. From version 0.37.0 until 1.0.0-beta.49, Docker Compose deployments with SAML enabled can render SAML_SIGNED_ASSERTIONS and SAML_SIGNED_RESPONSES as empty values, overriding secure application defaults and disabling both signature requirements. An unauthenticated attacker who can reach the SAML assertion consumer endpoint can submit a forged unsigned response for an existing Tracecat user email address and obtain that user’s session. Targeting an existing superadmin can result in superadmin account takeover. Exploitation does not create users when SAML user creation is disabled and does not affect default Fargate or Helm deployments. Version 1.0.0-beta.49 removes the insecure deployment pass-through and requires signed assertions and responses.",
+   "published": "2026-11-06",
+   "last_modified": "2026-11-09",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-347"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/TracecatHQ/tracecat/commit/018258ba6a17c36cbfa7ca977526c34fb6afc35f",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TracecatHQ/tracecat/commit/a97aafbfd667a6b9a3b7b524e1c1bfa9d8c59779",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TracecatHQ/tracecat/commit/dab64eb7ac0eb2088783ca14f4cb2d058547bfff",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TracecatHQ/tracecat/pull/2824",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TracecatHQ/tracecat/pull/2825",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TracecatHQ/tracecat/pull/2826",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TracecatHQ/tracecat/releases/tag/1.0.0-beta.49",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TracecatHQ/tracecat/security/advisories/GHSA-6g53-h6fh-c3pj",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-111768",
+   "description": "The Model Context Protocol TypeScript SDK provides TypeScript client and server implementations of the Model Context Protocol. From 1.3.0 until 1.32.0 in @modelcontextprotocol/sdk and from 2.0.0 until 2.3.0 in @modelcontextprotocol/server, HTTP servers did not enforce a limit on the number of array elements and object keys validated in one request. The affected surface is validation of HTTP requests containing arrays or object keys. The trigger is an array-element or object-key validation workload large enough to exhaust memory while remaining within the request size limit. A single request within the default 4 MiB limit can terminate the process with JavaScript heap exhaustion. No credentials are required unless the application authenticates before SDK processing. Tools accepting arrays or records carry the greatest risk. stdio-only servers do not expose the HTTP request path. Upgrading alone does not enable the new validation bound. Operators must configure both a tool-input element bound and an appropriate request body size limit. This issue is fixed in @modelcontextprotocol/sdk 1.32.0 and @modelcontextprotocol/server 2.3.0.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-770"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "credential_access",
+    "dos"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/commit/6d8dbc6cb590edf766fcb66b636ca6b654e99c37",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/commit/fd26801b3b387742fe24a90ed4b275dd6072209f",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/2926",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/2927",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.32.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/@modelcontextprotocol/server@2.3.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-46jr-4wx8-v453",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-111769",
+   "description": "The Model Context Protocol TypeScript SDK provides TypeScript client and server implementations of the Model Context Protocol. Prior to 1.32.0 in @modelcontextprotocol/sdk and from 2.0.0 until 2.3.0 in @modelcontextprotocol/client, the HTTP client transports and OAuth client requests followed redirects to a different origin while retaining custom request headers and, for HTTP 307 or 308 responses, request bodies. The affected surfaces are StreamableHTTPClientTransport, SSEClientTransport, and OAuth client functions such as auth(). The trigger is an HTTP redirect to another origin. Custom headers and mcp-session-id can be re-sent to the redirected origin. HTTP 307 and 308 redirects can also re-send the request body. OAuth request bodies can contain refresh_token and client_secret values. Current runtimes already strip the Authorization header across origins. stdio clients do not use the affected HTTP path. A malicious or compromised MCP or authorization server could therefore receive API keys, session identifiers, OAuth refresh tokens, or OAuth client secrets. Restoring unrestricted redirect following after upgrading restores the exposure. This issue is fixed in @modelcontextprotocol/sdk 1.32.0 and @modelcontextprotocol/client 2.3.0.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-200"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "exfiltration",
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/commit/30bfe5139f4b0825c90cd725f9a7e3f9af5e120d",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/commit/433eb413dc305ebeb93b8ebcde0095a8fc0d5fa0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/2901",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/2902",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.32.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/@modelcontextprotocol/server@2.3.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-6prh-2h8m-c8cw",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-111770",
+   "description": "The Model Context Protocol TypeScript SDK provides TypeScript client and server implementations of the Model Context Protocol. From 2.0.0 until 2.3.0 in @modelcontextprotocol/server, applications that shared one stateless HTTP transport or one McpServer or Server instance among multiple clients could deliver responses and notifications to the wrong client. The affected surface is an MCP server reached over HTTP by multiple clients. The trigger is reuse of one stateless transport or server instance. Messages were associated with a connection using only the JSON-RPC request identifier. SDK clients start request identifiers at zero, so collisions occur in normal operation. Cross-client delivery exposes one client's responses and notifications to another client. The issue requires an HTTP endpoint reachable by more than one client and an application that constructs the server or transport once at startup instead of once per request or session. stdio servers and factory-created per-call servers are not affected. Upgrading causes reused instances to fail and therefore requires an application code change. This issue is fixed in @modelcontextprotocol/server 2.3.0.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.7,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-362"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/commit/84804c22e45a662675a198f853b7f00063838a8d",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/2918",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.32.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/@modelcontextprotocol/server@2.3.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-jm63-cq47-j5jp",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server",
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-111771",
+   "description": "The Model Context Protocol TypeScript SDK provides TypeScript client and server implementations of the Model Context Protocol. From 1.6.0 until 1.32.0 in @modelcontextprotocol/sdk, from 2.0.0 until 2.3.0 in @modelcontextprotocol/server, from 2.0.0 until 2.0.2 in @modelcontextprotocol/express, and from 2.0.0 until 2.3.1 in @modelcontextprotocol/server-legacy, server-side bearer authentication could accept a valid access token issued for a different service because the SDK did not enforce the token audience. The affected surface is server-side HTTP bearer authentication. The trigger is a valid token whose audience names another service. The authorization server must issue tokens for multiple services, and the application's verifyAccessToken() must not independently validate aud. Applications already validating aud inside verifyAccessToken() are not affected. An attacker with a token for another service could authenticate to the MCP server and obtain the confidentiality and integrity capabilities granted to an authenticated caller. Upgrading alone leaves the new audience validation disabled. Operators must enable audience validation and provide the token audience together. Enabling only the expected audience check causes every request to receive HTTP 401. This issue is fixed in @modelcontextprotocol/sdk 1.32.0, @modelcontextprotocol/server 2.3.0, @modelcontextprotocol/express 2.0.2, and @modelcontextprotocol/server-legacy 2.3.1.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "credential_access",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/commit/40f8f4e229d963cd7fd2890bda2aeebe7005299a",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/commit/5a0724d14cf34a27a3b070224d2996cdd611df9f",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/commit/5a1867390b91b8836f49af76c45427279f513325",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/2929",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/2930",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/2952",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.32.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/@modelcontextprotocol/express@2.0.2",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/@modelcontextprotocol/server-legacy@2.3.1",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/@modelcontextprotocol/server@2.3.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-rvq5-wwqv-78pq",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server",
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-113663",
+   "description": "AG2 is an open-source AgentOS. From 0.13.2 until ag2 1.1.1, and from autogen 0.13.2 to 0.14.1, SandboxShellTool configurations using allowed=[...] or readonly=True rely on ShellAdapter._filter and contains_shell_operator in ag2/tools/sandbox/filter.py and ag2/tools/sandbox/adapter/shell.py to validate a command prefix and reject selected shell syntax. The filter omits newline and carriage-return separators, while the accepted raw string is passed to sh -c, allowing an attacker-influenced agent command to execute an additional arbitrary statement. With the default LocalEnvironment backend, the injected statement runs as a host subprocess with the privileges of the agent process and can affect confidentiality, integrity, and availability. This issue is fixed in ag2 version 1.1.1.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.8,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-78",
+    "CWE-184"
+   ],
+   "products": [
+    {
+     "vendor": "Microsoft",
+     "product": "AutoGen",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "autogen"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/ag2ai/ag2/commit/3cd86726bb731eb11d6270f0ef9e50e42b5abb39",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ag2ai/ag2/releases/tag/v1.1.1",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ag2ai/ag2/security/advisories/GHSA-2h4w-29cv-2cmv",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "microsoft-microsoft-autogen",
+    "microsoft-autogen-studio"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "autogen:AutoGen"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-122236",
+   "description": "A vulnerability has been found in OpenHands up to 1.24.0. This impacts an unknown function of the component Landing Page. Such manipulation leads to missing authentication. The attack must be carried out from within the local network. The exploit has been disclosed to the public and may be used. Upgrading to version 1.25.0 will fix this issue. The name of the patch is c5efa3ae415def0a903c82d2b17b748e663b1995. Upgrading the affected component is recommended.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Deferred",
+   "cna": "cna@vuldb.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cna@vuldb.com"
+   },
+   "cwe": [
+    "CWE-287",
+    "CWE-306"
+   ],
+   "products": [
+    {
+     "vendor": "All Hands AI",
+     "product": "OpenHands",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "openhands"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/OpenHands/OpenHands/",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/OpenHands/OpenHands/commit/c5efa3ae415def0a903c82d2b17b748e663b1995",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/OpenHands/OpenHands/issues/17878",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/OpenHands/OpenHands/pull/17007",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.25.0",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/cve/CVE-2026-122236",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/1031850",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431199",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431199/cti",
+     "source": "cna@vuldb.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "all-hands-ai-openhands"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "openhands:OpenHands"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123022",
+   "description": "A vulnerability was detected in agentscope-ai AgentScope up to 2.0.11. The impacted element is the function subprocess.Popen of the file src/agentscope/mcp/_config.py of the component MCP Workspace API. The manipulation of the argument command results in os command injection. The attack may be launched remotely. The exploit is now public and may be used. The pull request to fix this issue awaits acceptance.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Deferred",
+   "cna": "cna@vuldb.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cna@vuldb.com"
+   },
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/issues/3312",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/pull/3448",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ybyu-ieu/agent-security-advisories/blob/main/agentscope/agentscope-mcp-stdio-workspace-unauthenticated-process-execution.md",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/cve/CVE-2026-123022",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/1033130",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431395",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431395/cti",
+     "source": "cna@vuldb.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123023",
+   "description": "A flaw has been found in agentscope-ai AgentScope up to 2.0.8. This affects the function check_permissions of the file src/agentscope/tool/_builtin/_bash.py of the component Bash Tool. This manipulation causes incorrect authorization. Remote exploitation of the attack is possible. The exploit has been published and may be used. Upgrading to version 2.0.9 mitigates this issue. Patch name: 6b43b13a46401e86abd3defeed9a8bfe5b37bc6d. It is recommended to upgrade the affected component.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Deferred",
+   "cna": "cna@vuldb.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cna@vuldb.com"
+   },
+   "cwe": [
+    "CWE-285",
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/commit/6b43b13a46401e86abd3defeed9a8bfe5b37bc6d",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/issues/3313",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/pull/2629",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/releases/tag/v2.0.9",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ybyu-ieu/agent-security-advisories/blob/main/agentscope/agentscope-bash-tool-tee-misclassification-arbitrary-file-write.md",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/cve/CVE-2026-123023",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/1033131",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431396",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431396/cti",
+     "source": "cna@vuldb.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123024",
+   "description": "A vulnerability has been found in agentscope-ai AgentScope up to 2.0.11. This impacts the function get_current_user_id of the file src/agentscope/app/deps.py of the component Agent Service. Such manipulation of the argument X-User-ID leads to missing authentication. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. The pull request to fix this issue awaits acceptance.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Deferred",
+   "cna": "cna@vuldb.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cna@vuldb.com"
+   },
+   "cwe": [
+    "CWE-287",
+    "CWE-306"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/issues/3314",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/agentscope-ai/agentscope/pull/3448",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ybyu-ieu/agent-security-advisories/blob/main/agentscope/agentscope-agent-service-x-user-id-missing-authentication.md",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/cve/CVE-2026-123024",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/1033132",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431397",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431397/cti",
+     "source": "cna@vuldb.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123135",
+   "description": "A vulnerability was found in langgenius dify up to 1.18.0/2.0.0-beta.2. Affected by this vulnerability is an unknown functionality of the file api/configs/feature/__init__.py of the component Sandbox Run Handler. The manipulation results in hard-coded credentials. The attack can be launched remotely. The exploit has been made public and could be used.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Deferred",
+   "cna": "cna@vuldb.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "cna@vuldb.com"
+   },
+   "cwe": [
+    "CWE-259",
+    "CWE-798"
+   ],
+   "products": [
+    {
+     "vendor": "LangGenius",
+     "product": "Dify",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "dify"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/langgenius/dify/",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/langgenius/dify/issues/44054",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/langgenius/dify/pull/44192",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ybyu-ieu/agent-security-advisories/blob/main/dify/dify-sandbox-hardcoded-default-api-key.md",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/cve/CVE-2026-123135",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/submit/1033133",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431443",
+     "source": "cna@vuldb.com",
+     "tags": []
+    },
+    {
+     "url": "https://vuldb.com/vuln/431443/cti",
+     "source": "cna@vuldb.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "langgenius-dify"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "dify:Dify"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123271",
+   "description": "ChatCLI before v1.215.2 contains an improper validation vulnerability in the MCP OAuth login flow that uses server-supplied Protected Resource Metadata as the resource indicator without checking it matches the configured server URL. A malicious MCP server can declare another resource on the same authorization server, obtain the user's bearer token for it, and replay that token against the other resource.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-08",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.1,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-346"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/diillson/chatcli/blob/359eb27debc4de78289a9662551a51ab4528e16c/cli/mcp/oauth.go#L477-L493",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/diillson/chatcli/commit/951fe24b8e090eae86bf8edb13a788916b1e6c91",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/diillson/chatcli/releases/tag/v1.215.2",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/diillson/chatcli/security/advisories/GHSA-95vg-3r9c-2v5q",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/chatcli-before-1.215.2-origin-validation-error-via-unvalidated-mcp-oauth-resource-indicator",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-123272",
+   "description": "Mark3labs mcp-go before v1.2.1 contains an improper validation vulnerability in OAuthHandler.fetchServerMetadata that allows malicious MCP servers to obtain tokens for other resources by declaring arbitrary resources in well-known metadata. Attackers can declare a different MCP server as the RFC 8707 resource indicator, causing the authorization server to mint tokens the attacker replays against that resource.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-08",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.1,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-346"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/mark3labs/mcp-go/blob/4cb0d2015f24b669726fd8e5e53fc8c6d3f57abf/client/transport/oauth.go#L799-L821",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mark3labs/mcp-go/commit/90d247ed8d45cbb7d71d9a95e112789b78760443",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mark3labs/mcp-go/pull/1053",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mark3labs/mcp-go/releases/tag/v1.2.1",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mark3labs/mcp-go/security/advisories/GHSA-xf6j-693p-wqxx",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/mcp-go-before-1.2.1-origin-validation-error-via-unvalidated-well-known-protected-resource-metadata",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-54140",
+   "description": "OpenHuman is an open-source agent harness available as a desktop application and Rust library. Before 0.57.13, OpenHuman places names, descriptions, titles, and parameter definitions returned by configured external MCP servers into the agent model context without neutralizing instructions or bounding the descriptive fields. The McpRemoteTool records produced by list_tools preserve this remote content, while tool filtering considers the tool name and the prompt-injection detector screens user messages rather than MCP definitions. A malicious or compromised MCP server can therefore return a poisoned description that is evaluated on every agent turn and may direct the model to invoke other available tools, disclose accessible data, or perform unauthorized actions without a separate malicious user message. The issue affects users who configure an attacker-controlled or compromised MCP server. This issue is fixed in version 0.57.13.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Deferred",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.3,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/commit/00b8a669c6e6391a1be9f724bd9c8f755ee3c43e",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/pull/3215",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.57.13",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/security/advisories/GHSA-g6j9-89xv-v752",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-54142",
+   "description": "OpenHuman is an open-source agent harness available as a desktop application and Rust library. Before 0.57.13, background synchronization for connected services such as email, Slack, and Notion stores raw external content and later places it in the model context of autonomous background agents without neutralizing embedded instructions. ApprovalGate treats tool calls without an interactive chat context as pre-authorized automation, so attacker-authored content processed during a background tick can influence the model to invoke Composio actions without presenting an approval request. An attacker who can deliver content to a connected account can use this path to send or forward data, post messages, create or modify third-party content, or disclose information from OpenHuman memory and integrations. The issue requires an active integration and successful model interpretation of the injected instructions. This issue is fixed in version 0.57.13.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Deferred",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.7,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "tool_execution",
+    "exfiltration"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/commit/3a7180da7765af861bf44d79e025fc67dbeae0ca",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/pull/3227",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.57.13",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/security/advisories/GHSA-p9gw-q7cf-57qr",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/tinyhumansai/openhuman/security/advisories/GHSA-p9gw-q7cf-57qr",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-77604",
+   "description": "Code Graph RAG is an AI-powered knowledge graph and retrieval system for querying, understanding, and editing multi-language codebases. Prior to 0.0.345, the MCPToolsRegistry.read_file implementation in codebase_rag/mcp/tools.py joins attacker-controlled file_path input to project_root without resolving and verifying containment when offset or limit selects the paginated branch. An absolute path causes pathlib to discard the configured root, while relative traversal can also resolve outside it. The protected non-paginated branch uses validate_project_path, but the paginated branch bypasses that validation before opening the path. An unauthenticated caller of a network-exposed HTTP MCP server can therefore read arbitrary UTF-8-readable files available to the server process, including credentials, environment data, private keys, source, and configuration; local callers through the stdio transport can reach the same vulnerable code path. This issue is fixed in version 0.0.345.",
+   "published": "2026-11-05",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-22"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "credential_access",
+    "auth_bypass",
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/vitali87/code-graph-rag/commit/6541e920a27961fa8f3ff49ef38c0e0bd09cd626",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/vitali87/code-graph-rag/releases/tag/v0.0.345",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/vitali87/code-graph-rag/security/advisories/GHSA-vvr2-h2jp-838m",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-121938",
+   "description": "langchain4j-aideepin before 3.31.0 contains an insecure direct object reference vulnerability that allows authenticated users to read other users' character-chat conversations by supplying their character uuid. Attackers can request GET /character/{uuid}, which CharacterService.detail resolves without an ownership check, to obtain victims' questions, AI answers, and attachment and audio URLs.",
+   "published": "2026-11-04",
+   "last_modified": "2026-11-04",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.0,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "LangChain",
+     "product": "LangChain",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "langchain"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/moyangzhan/langchain4j-aideepin/blob/v3.30.0/server/adi-common/src/main/java/com/moyz/adi/common/service/CharacterService.java#L105-L125",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/moyangzhan/langchain4j-aideepin/commit/9b2fee6b66836a0efd5599cfcddd05b80b05ca93",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/moyangzhan/langchain4j-aideepin/issues/116",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/moyangzhan/langchain4j-aideepin/pull/117",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://hackmd.io/@hieuPenguinnn/langchain4j-aideepin-character-conversation-cross-user-idor",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/langchain4j-aideepin-before-3.31.0-idor-via-get-character-uuid",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://hackmd.io/@hieuPenguinnn/cve-2026-121938-langchain4j-aideepin-character-conversation-cross-user-idor",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "langchain-langchain",
+    "langchain-langchain-deep-agents"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "langchain:LangChain"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-122235",
+   "description": "Jan from 0.8.5 before 0.8.8 contains a workspace guard bypass vulnerability in the agent-tools gate.rs that allows attackers to write files outside the workspace via dangling symlinks. Attackers supplying a malicious repository can use prompt injection to make the write or edit tools follow symlinks, creating files like ~/.ssh/authorized_keys on the host.",
+   "published": "2026-11-04",
+   "last_modified": "2026-11-04",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.7,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-59"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "prompt_injection"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/janhq/jan/commit/840c33e65182ba9975d32f710c5d111e25444b65",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/janhq/jan/pull/9424",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/janhq/jan/releases/tag/v0.8.8",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/janhq/jan/security/advisories/GHSA-7j4g-mj5j-p842",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/jan-0.8.5-before-0.8.8-workspace-guard-bypass-via-dangling-symlink",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "prompt injection"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-121558",
+   "description": "AuditPilot before commit 4669c93 contains an authorization bypass vulnerability in _metadata_allowed in rag/agentic_rag.py that allows authenticated users to read other projects' knowledge by supplying project_id. Attackers with read:knowledge scoped to one project can set context.project_id via GET /api/knowledge/query or POST /api/research/answer to retrieve same-tenant project knowledge chunks.",
+   "published": "2026-11-03",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-639"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/Ricky-7-Yan/intelligent-audit-system",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Ricky-7-Yan/intelligent-audit-system/blob/e4f1bf1c92cb14dd18bf0e11f4688fd1e346c9b9/rag/agentic_rag.py#L342-L365",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Ricky-7-Yan/intelligent-audit-system/blob/e4f1bf1c92cb14dd18bf0e11f4688fd1e346c9b9/web/main.py#L1197-L1206",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Ricky-7-Yan/intelligent-audit-system/commit/4669c93f3a7403a0e242bef14d771beef0b4356b",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Ricky-7-Yan/intelligent-audit-system/issues/7",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/auditpilot-before-commit-4669c93-rag-project-scope-authorization-bypass-via-project-id",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "agentic"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-76894",
+   "description": "CKAN MCP Server is a tool for querying CKAN open data portals. Prior to 0.4.112, the DataStore table UI in src/resources/datastore-table-ui.ts accepts window message events without validating event.origin and sends JSON-RPC messages through postMessage with a wildcard target origin. A frame that can reach the embedded document can inject fabricated fields or records, spoof pending ui/initialize responses, disrupt the MCP UI handshake, or receive outbound messages when the resource is embedded by an untrusted parent. Values are HTML escaped, so the demonstrated content injection is display spoofing rather than script execution, and exploitability depends on the host embedding model. This issue is fixed in version 0.4.112.",
+   "published": "2026-11-03",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.1,
+    "severity": "LOW",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-345",
+    "CWE-940"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/ondata/ckan-mcp-server/commit/3b827af72b228d42aa7b0d7dac5347d16af3f4e5",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ondata/ckan-mcp-server/releases/tag/v0.4.112",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ondata/ckan-mcp-server/security/advisories/GHSA-vqff-r82h-9crc",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-88968",
+   "description": "Claude Code is an agentic coding tool. Prior to 2.1.251, the Edit tool validates a target using pathname and symlink resolution that is not bound to the underlying directory inode or file descriptor. On macOS, attacker-controlled code running in the Bash sandbox can atomically replace an in-workspace parent directory with a symlink after validation, causing the unsandboxed Edit implementation to overwrite a user-writable file outside the workspace. Exploitation requires attacker-controlled code to run inside the sandbox, such as from a malicious repository or dependency script. This issue is fixed in version 2.1.251.",
+   "published": "2026-11-03",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.7,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-59",
+    "CWE-367"
+   ],
+   "products": [
+    {
+     "vendor": "Anthropic",
+     "product": "Claude Code",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "claude-code"
+    }
+   ],
+   "category": "product",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-5xjx-9qx6-jcrv",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "anthropic-claude-code"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name",
+     "B:vocabulary"
+    ],
+    "terms": [
+     "claude-code:Claude Code",
+     "agentic"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-116635",
+   "description": "Improper limitation of a pathname to a restricted directory in the deployment status component of the AWS Serverless MCP Server (aws-serverless-mcp-server) before v0.2.1 might allow an actor who can influence the MCP agent to read the contents of JSON files outside the intended deployment status directory. Where write access has been enabled, to create or overwrite JSON files outside that directory. This issue is reachable through directory traversal sequences or an absolute path supplied in the project name input.\n\n\n\nTo remediate this issue, users should upgrade to version v0.2.1.",
+   "published": "2026-11-02",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5"
+   },
+   "cwe": [
+    "CWE-23",
+    "CWE-36"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://aws.amazon.com/security/security-bulletins/2026-164-aws/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/awslabs/mcp/security/advisories/GHSA-r6mm-377j-qg8m",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://pypi.org/project/awslabs.aws-serverless-mcp-server/0.2.1/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-120630",
+   "description": "CrewAI contains an SSRF vulnerability caused by its SSRF guard and HTTP client, which both miss malicious content in URLs by checking opposite content passed to it, enabling any request that injects a malicious URL to perform SSRF, such as with the ScrapWebsiteTool.",
+   "published": "2026-11-02",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Deferred",
+   "cna": "cret@cert.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0"
+   },
+   "cwe": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "CrewAI",
+     "product": "CrewAI",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "crewai"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://docs.crewai.com/v1.15.16/en/tools/web-scraping/scrapewebsitetool",
+     "source": "cret@cert.org",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/crewAIInc/crewAI/pull/6981",
+     "source": "cret@cert.org",
+     "tags": []
+    },
+    {
+     "url": "https://www.badcast.dev/blog/parser-differential-ssrf-ai-agents/",
+     "source": "cret@cert.org",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "crewai-crewai"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "crewai:CrewAI"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
    "id": "CVE-2026-120338",
    "description": "Prefab UI's Generative UI sandbox runs caller-supplied Python inside Pyodide, Python compiled to WebAssembly, in a Deno subprocess. The feature is documented as isolation for untrusted code, including LLM-written UI. From prefab-ui 0.14.0 through 0.20.2 the launcher starts Deno with unrestricted --allow-read, --allow-write, and --allow-net, and the runner leaves the Deno API on the JavaScript global object. Pyodide's js module proxies that global, so the Python can call Deno.readTextFileSync and Deno.writeTextFileSync. A caller who can supply the code can read and write files as the server OS user, and can persist code execution by writing a .pth file into the server virtualenv's site-packages. The usual remote path is FastMCP's GenerativeUI provider, which registers the MCP tool generate_prefab_ui and forwards that tool's code argument into this sandbox. On a FastMCP server with no authentication configured, any client who can reach the server can call the tool. With authentication, any client allowed to call tools can. Generative UI is opt-in, and the host must have Deno installed. Confirmed on prefab-ui 0.20.2. Fixed in 0.21.0: after the runtime and Prefab sources load, the runner revokes Deno read, write, and network permission before it accepts code, the process is started with --no-prompt so a permission request cannot grant them again, and bootstrap network access is limited to cdn.jsdelivr.net. The fix is commit 030f074 (pull request 538).",
    "published": "2026-11-01",
-   "last_modified": "2026-11-01",
-   "vuln_status": "Received",
+   "last_modified": "2026-11-02",
+   "vuln_status": "Deferred",
    "cna": "reefs@jfrog.com",
    "cvss": {
     "version": "3.1",
@@ -135,13 +2557,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-119337",
    "description": "RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine. From 0.25.2 until 0.27.3, POST /api/v1/agents/chat/completions invokes completion_openai and returns through the openai-compatible branch before UserCanvasService.accessible() checks whether the caller may access the requested agent. An authenticated user who knows another user's private agent UUID can execute that Only me workflow and read its output across the user or tenant boundary; configured tools may also cause side effects, but stronger impacts were not demonstrated. This issue is fixed in version 0.27.3.",
    "published": "2026-10-30",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-06",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -185,6 +2607,11 @@
      "url": "https://github.com/infiniflow/ragflow/security/advisories/GHSA-c6q8-23rp-32cv",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/infiniflow/ragflow/security/advisories/GHSA-c6q8-23rp-32cv",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -201,13 +2628,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-119408",
    "description": "n8n before 2.42.6, 2.43.x before 2.43.3, and 3.x before 3.0.1 contains a remote code execution vulnerability via deprecated Function, Function Item, and LangChain Code nodes running outside task runner isolation. Authenticated users who can create, modify, or import workflows naming these hidden node types can execute JavaScript in the n8n main process.",
    "published": "2026-10-30",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-05",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -284,6 +2711,11 @@
      "url": "https://www.vulncheck.com/advisories/n8n-before-2.42.6-2.43.3-and-3.0.1-code-execution-outside-task-runner-isolation-via-deprecated-function-nodes",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://abraxaslabs.tech/research/n8n-function-vm2",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [
@@ -303,13 +2735,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-119978",
    "description": "Flowise through 3.1.4 contains a sandbox escape vulnerability that allows authenticated users to execute OS commands by abusing allowlisted langchain and mammoth modules when ALLOW_BUILTIN_DEP=true. Attackers can submit JavaScript to /api/v1/node-custom-function that writes a file into the mammoth package via LocalFileStore and requires it, escaping vm2 as the Flowise process user.",
    "published": "2026-10-30",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-06",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -368,6 +2800,11 @@
      "tags": []
     },
     {
+     "url": "https://github.com/soovwv/cve/blob/a37354aff1e78c0601772e7716f5318c473e8640/CVE-2026-119978.md",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
      "url": "https://www.vulncheck.com/advisories/flowise-through-3.1.4-custom-function-sandbox-escape-rce-via-localfilestore",
      "source": "disclosure@vulncheck.com",
      "tags": []
@@ -392,13 +2829,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-61789",
    "description": "DBHub is a database MCP server for Postgres, MySQL, SQL Server, Oracle, MariaDB, SQLite. Prior to 0.22.6, read-only SQL validation can be bypassed on the MySQL and MariaDB connectors. In `src/utils/sql-parser.ts`, `scanSingleLineComment` treats every double dash as a comment start, whereas MySQL and MariaDB require following whitespace, a control character, or the end of the line. The read-only check in `src/tools/execute-sql.ts` validates split statements with `isReadOnlySQL`, but `src/connectors/mysql/index.ts` and `src/connectors/mariadb/index.ts` execute the original string with `multipleStatements` enabled. A double dash followed by a non-whitespace character can therefore hide a subsequent write or destructive DDL statement from the validator while the database interprets the dashes as minus operators and executes both statements. Anyone able to influence the assistant's SQL, including through prompt injection in content the assistant reads, can bypass read-only mode to modify or drop database data, subject to the database account's privileges. PostgreSQL is not affected by this path because its double-dash parsing agrees with the checker and its connector executes individual split statements. This issue is fixed in version 0.22.6.",
    "published": "2026-10-30",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-06",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -445,6 +2882,11 @@
      "url": "https://github.com/bytebase/dbhub/security/advisories/GHSA-j656-3hf2-fvjc",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/bytebase/dbhub/security/advisories/GHSA-j656-3hf2-fvjc",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -462,13 +2904,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-62264",
    "description": "PDF Reader MCP is a Model Context Protocol server for reading PDF documents. In versions 2.2.0 and later prior to 3.0.1, when `MCP_TRANSPORT=http` enables the opt-in HTTP server, `@sylphx/pdf-reader-mcp` reads `MCP_API_KEY` and logs that `X-API-Key` authentication is enabled but never validates the `X-API-Key` header on incoming requests. The `/mcp` endpoint consequently accepts unauthenticated clients. With the default bind address of `0.0.0.0`, any client able to reach the port can invoke every PDF tool and read any PDF the server process can open on the host, despite the misleading authentication-enabled startup log. URL-based sources additionally permit limited server-side request forgery; private and loopback destinations are blocked by default unless `--allow-private-ips` is set. The default `stdio` transport is unaffected. This issue is fixed in version 3.0.1.",
    "published": "2026-10-30",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-06",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -533,7 +2975,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-62331",
@@ -558,7 +3000,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -615,8 +3057,8 @@
    "id": "CVE-2026-62863",
    "description": "MoLing is a computer-use and browser-use based MCP server. Prior to 0.5.0, when MoLing runs in SSE mode using `-l`, its `/sse` and `/message` HTTP endpoints do not authenticate requests and the `mcp-go` dependency sets `Access-Control-Allow-Origin: *`. A malicious web page can open a cross-origin `EventSource` to `/sse`, including a loopback listener, and read the `endpoint` event to obtain `sessionId`. After a victim running SSE mode visits that page, the attacker can use the disclosed `sessionId` against `/message` to send unauthorized MCP tool calls. Depending on the configured tools, those calls can read or write local files, execute commands or perform other actions. Binding only to loopback does not prevent this browser-mediated attack. This issue is fixed in version 0.5.0.",
    "published": "2026-10-30",
-   "last_modified": "2026-10-30",
-   "vuln_status": "Received",
+   "last_modified": "2026-11-06",
+   "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
     "version": "3.1",
@@ -678,14 +3120,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-63377",
    "description": "TAKO AI Agent for Okta is a local-first AI agent that helps Okta administrators query tenant data using natural language. Prior to 3.0.1-beta, `POST /api/auth/setup` in `src/api/routers/auth.py` allows an unauthenticated network attacker to create the first administrator account before the legitimate owner completes initial setup. The `initial_setup` function checks only the `is_setup` completion flag and requires no authentication, one-time bootstrap token, or network restriction. The default `docker-compose.yml` publishes port 8001 on all interfaces, the `Dockerfile` starts the listener on 0.0.0.0, and `src/api/main.py` mounts the authentication router without a global authentication guard. The endpoint invokes `create_auth_user` with `UserRole.ADMIN` and `set_auth_cookie`, issuing a valid `fctr_session` JWT cookie. Localhost-only CORS rules do not restrict non-browser HTTP clients, and the setup operation does not require access to a real Okta tenant. The attacker becomes the sole administrator and prevents legitimate first-run setup, can read Okta-synced user data, API tokens, chat history, and application configuration, modify users and Okta integration credentials, and lock out administrators or disable the service. Already completed setup is rejected. This issue is fixed in version 3.0.1-beta.",
    "published": "2026-10-30",
-   "last_modified": "2026-10-30",
-   "vuln_status": "Received",
+   "last_modified": "2026-11-05",
+   "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
     "version": "3.1",
@@ -724,6 +3166,11 @@
      "url": "https://github.com/fctr-id/okta-ai-agent/security/advisories/GHSA-536w-42p8-3qv9",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/fctr-id/okta-ai-agent/security/advisories/GHSA-536w-42p8-3qv9",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -740,14 +3187,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-63378",
    "description": "TAKO AI Agent for Okta is a local-first AI agent that helps Okta administrators query tenant data using natural language. Prior to 3.0.1-beta, any authenticated user with a valid `fctr_session` cookie can submit arbitrary Python source in the `script_code` field of `POST /api/react/execute-script`, without administrator privilege. In `src/api/routers/react_stream.py`, the source is stored with `skip_discovery=True`, bypassing AI-based content filtering, and is passed to `validate_generated_code` in `src/utils/security_config.py`. `BLOCKED_PATTERNS` recognizes direct `__import__` calls but misses the import name passed as a string, `getattr` is in `ALLOWED_BUILTINS`, and the AST checker handles `ast.Name` and `ast.Attribute` targets but fails to handle `ast.Call` targets. Dynamic `getattr` call chains through `__builtins__` therefore evade validation. The `_write_temp_script` helper writes the accepted code to disk, and `asyncio.create_subprocess_exec()` executes it as the application process user, which is root in the default container. Command output is returned as Server-Sent Events through `GET /api/react/stream-react-updates?process_id=<id>`. The resulting container compromise can disclose environment secrets including Okta API tokens and the JWT key, expose the SQLite database, and permit backend-service pivoting and persistence. This issue is fixed in version 3.0.1-beta.",
    "published": "2026-10-30",
-   "last_modified": "2026-10-30",
-   "vuln_status": "Received",
+   "last_modified": "2026-11-02",
+   "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
     "version": "3.1",
@@ -802,7 +3249,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-101288",
@@ -872,7 +3319,7 @@
    "id": "CVE-2026-102590",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to obtain sensitive information due to a server-side request forgery vulnerability.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -931,7 +3378,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-103092",
@@ -1001,7 +3448,7 @@
    "id": "CVE-2026-104308",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to cause a denial of service due to improper neutralization of special elements used in an OS command.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -1060,7 +3507,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-104309",
@@ -1131,7 +3578,7 @@
    "id": "CVE-2026-104310",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to obtain sensitive information due to a server-side request forgery (SSRF) vulnerability.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-02",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -1190,13 +3637,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-104312",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow an authenticated attacker to produce a server-generated ZIP archive containing entry paths that traverse outside the intended extraction directory. Extraction of the archive by a victim using a non-sanitizing tool could result in arbitrary file write on the victim's host.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -1254,7 +3701,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-104314",
@@ -1324,7 +3771,7 @@
    "id": "CVE-2026-104315",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.3 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -1382,7 +3829,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-104316",
@@ -1642,7 +4089,7 @@
    "id": "CVE-2026-104331",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.3 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -1700,7 +4147,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-104339",
@@ -2155,7 +4602,7 @@
    "id": "CVE-2026-110192",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote authenticated attacker to obtain sensitive information due to insufficiently protected credentials.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -2214,7 +4661,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-110193",
@@ -2351,7 +4798,7 @@
    "id": "CVE-2026-110200",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to obtain sensitive information due to cleartext storage of sensitive information.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -2410,7 +4857,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-110244",
@@ -2481,7 +4928,7 @@
    "id": "CVE-2026-110245",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote attacker to obtain sensitive information due to improper authentication.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -2540,7 +4987,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-110309",
@@ -2610,7 +5057,7 @@
    "id": "CVE-2026-119025",
    "description": "open 7.2.0 before 11.0.0 contains an OS command injection vulnerability that allows attackers to execute PowerShell code by supplying crafted URLs on Windows and WSL. Attackers can embed $(...) subexpressions in URLs, such as OAuth authorization_endpoint values from malicious MCP servers, which execute when index.js passes them unescaped to powershell -EncodedCommand.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-29",
+   "last_modified": "2026-11-03",
    "vuln_status": "Awaiting Analysis",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -2691,13 +5138,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-119050",
    "description": "Agno through 3.1.11 contains an unsafe reflection vulnerability in PandasTools that allows attackers to invoke arbitrary pandas functions by supplying model-controlled function names to getattr(). Attackers can use prompt injection to make the agent call pandas.read_pickle on attacker-controlled paths for code execution, or call other readers to read local files.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-29",
+   "last_modified": "2026-11-04",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -2747,6 +5194,11 @@
      "url": "https://www.vulncheck.com/advisories/agno-through-3.1.11-code-execution-via-pandastools-unsafe-reflection",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/agno-agi/agno/issues/8699",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -2763,7 +5215,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-18894",
@@ -2833,7 +5285,7 @@
    "id": "CVE-2026-77817",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to obtain sensitive information due to improper sanitization of secrets during flow and project exports.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-02",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -2892,13 +5344,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-77819",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to overwrite arbitrary files due to improper limitation of a pathname to a restricted directory.",
    "published": "2026-10-29",
-   "last_modified": "2026-10-30",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
@@ -2956,7 +5408,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-90991",
@@ -3176,7 +5628,7 @@
    "id": "CVE-2026-115415",
    "description": "Improper neutralization of input used for LLM prompting in the environment tool in Strands Agents Tools before 0.8.6 might allow remote actors to obtain the agent host's environment variables in cleartext, including cloud credentials and API keys, via a crafted prompt that disables the tool's secret masking.\n\n\n\nTo remediate this issue, users should upgrade to version 0.8.6 or later and rotate any credentials that were present in the environment of agents that loaded the environment tool.",
    "published": "2026-10-28",
-   "last_modified": "2026-10-29",
+   "last_modified": "2026-11-05",
    "vuln_status": "Awaiting Analysis",
    "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
    "cvss": {
@@ -3231,13 +5683,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-117574",
    "description": "A flaw was found in ai-gateway-payload-processing. An authenticated remote attacker can exploit this vulnerability by submitting a request specifying another tenant's model identifier in the request body or header. Because the service does not verify authorization before retrieving credentials from the shared store, it injects the target tenant's application programming interface (API) keys into the request. This flaw allows an attacker to perform unauthorized requests and consume another tenant's large language model (LLM) resources and quotas.",
    "published": "2026-10-28",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-03",
    "vuln_status": "Awaiting Analysis",
    "cna": "secalert@redhat.com",
    "cvss": {
@@ -3290,13 +5742,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-118038",
    "description": "In Progress® Telerik® Document Processing Libraries prior to version 2026.3.1027, a path traversal vulnerability in the Convert and Merge AI agent tools allows an authenticated attacker with low privileges who can supply tool arguments to read files outside the configured output directory, and to overwrite such files where they are writable, via relative file paths that resolve against the process current working directory.",
    "published": "2026-10-28",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-06",
    "vuln_status": "Undergoing Analysis",
    "cna": "security@progress.com",
    "cvss": {
@@ -3341,13 +5793,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-118378",
    "description": "Tabularis before 0.28.0 contains an SQL injection vulnerability in its SQLite driver that allows MCP clients to execute stacked statements by supplying a crafted table_name to the describe_table tool. Attackers, including AI agents steered by untrusted content, can close the quoted PRAGMA argument and append statements to read, modify, or drop SQLite data, bypassing read-only mode and write approval.",
    "published": "2026-10-28",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-02",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -3399,6 +5851,11 @@
      "url": "https://www.vulncheck.com/advisories/tabularis-before-0.28.0-sql-injection-via-mcp-describe-table-table-name",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/TabularisDB/tabularis/security/advisories/GHSA-xrx3-j98v-67x9",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -3417,7 +5874,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-118667",
@@ -3488,10 +5945,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langgraph:LangGraph"
+     "langgraph:langchain:langgraph"
     ]
    },
    "status": "candidate",
@@ -3550,10 +6007,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langgraph:LangGraph"
+     "langgraph:langchain:langgraph"
     ]
    },
    "status": "candidate",
@@ -3566,7 +6023,7 @@
    "id": "CVE-2026-59176",
    "description": "Functype is a family of TypeScript functional programming libraries. Prior to 1.4.4, the `set_functype_version` MCP tool in `functype-mcp-server` accepts an unconstrained `version` string using only `z.string()` validation in `packages/mcp-server/src/index.ts` and interpolates it into `functype@<version>` for `pnpm add`. Package-alias syntaxes such as `file:`, `npm:`, URLs, or paths can cause an arbitrary local or remote package to be installed as functype. Immediately afterward, `initDocsData(true)` in `packages/mcp-server/src/lib/docs/data.ts` resolves `functype/cli` and dynamically imports the newly installed module, executing attacker-controlled JavaScript with the MCP server process's privileges. Any MCP client able to send a `tools/call` request invoking the tool can exploit the flaw; the tool is enabled by default without authentication in `stdio` mode. A connected AI assistant susceptible to indirect prompt injection can also be induced to invoke it from a malicious document or web page. In non-default `TRANSPORT_TYPE=httpStream` deployments, a network-accessible attacker does not require local access. Successful execution can read process secrets, modify files, or terminate the server. This issue is fixed in `version` 1.4.4.",
    "published": "2026-10-28",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-03",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -3609,6 +6066,11 @@
      "url": "https://github.com/jordanburke/functype/security/advisories/GHSA-wcjj-9m6g-2fr2",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/jordanburke/functype/security/advisories/GHSA-wcjj-9m6g-2fr2",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -3628,13 +6090,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-61542",
    "description": "Gearboy is a Game Boy, Game Boy Color, and Super Game Boy emulator and debugger with an embedded MCP server. Gearsystem, the affected component, has an optional `--mcp-http` mode that accepts unauthenticated MCP requests from any reachable network peer despite localhost-only documentation and logging. In the described `platforms/shared/desktop/mcp/mcp_transport.h` transport, the socket binds `INADDR_ANY`, normally on port 7777, and POST requests to `/mcp` reach dispatch without `Authorization`, `Host`, or `Origin` checks. Responses and OPTIONS advertise `Access-Control-Allow-Origin: *`. A peer can initialize an MCP session and invoke exposed emulator/debugging operations; even a garbage bearer token does not block dispatch, while a loopback-bind negative control prevents network access. The reported impact is bounded to the emulator process, debugging state, and local files accepted as media, rather than demonstrated host code execution. Gearboy 3.8.7 contains a patch.",
    "published": "2026-10-28",
-   "last_modified": "2026-10-29",
+   "last_modified": "2026-11-03",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -3675,6 +6137,11 @@
      "url": "https://github.com/drhelius/Gearboy/security/advisories/GHSA-fmvx-487g-mrww",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/drhelius/Gearboy/security/advisories/GHSA-fmvx-487g-mrww",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -3691,7 +6158,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-61546",
@@ -3770,7 +6237,7 @@
    "id": "CVE-2026-115413",
    "description": "Missing token audience validation in the OAuth authentication mode of AWS API MCP Server before version 1.6.0 might allow local users to run AWS operations with the server's configured AWS credentials via an access token issued to another application by the same identity provider.\n\n\n\nTo remediate this issue, users should upgrade to version 1.6.0 and configure the expected token audience or client ID for the server.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-04",
    "vuln_status": "Awaiting Analysis",
    "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
    "cvss": {
@@ -3826,13 +6293,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-116684",
    "description": "The Model Context Protocol Python SDK is the official Python SDK for Model Context Protocol servers and clients. From 1.10.0 until 1.30.0 and 2.2.0, server-side bearer authentication configured through AuthSettings with token_verifier accepts a valid token issued for another service when the authorization server serves multiple resources and the TokenVerifier does not independently validate the aud audience. This resource-confusion flaw lets a token holder authenticate to the wrong MCP server and exercise that token's resulting access. This issue is fixed in versions 1.30.0 and 2.2.0.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-02",
    "vuln_status": "Awaiting Analysis",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -3908,7 +6375,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-116685",
@@ -4146,7 +6613,7 @@
    "id": "CVE-2026-116691",
    "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. From 2.19.0 until 3.17.0, mlflow.crewai.autolog() records CrewAI Agent objects without consistently sanitizing nested credential-bearing values. mlflow/crewai/autolog.py::_get_agent_attributes() converts the Agent llm field to a string that includes the provider API key, while mlflow/crewai/autolog.py::_construct_full_inputs() expands the Agent object into mlflow.spanInputs. Applications can therefore send plaintext provider credentials to the MLflow trace backend or a configured OTLP destination, where trace readers can obtain them. This issue is fixed in version 3.17.0.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-03",
    "vuln_status": "Awaiting Analysis",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -4201,6 +6668,11 @@
      "url": "https://github.com/mlflow/mlflow/security/advisories/GHSA-j7qq-vr8c-xvw3",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/mlflow/mlflow/security/advisories/GHSA-j7qq-vr8c-xvw3",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [
@@ -4224,13 +6696,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-116692",
    "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. From 3.12.0rc0 until 3.17.0, third-party scorer deserialization in mlflow/genai/scorers/base.py accepts request-selected descendants of THIRD_PARTY_SCORER_ALLOWED_MODULES rather than requiring an exact allowed module. A caller can use MLflow artifact endpoints to place a Python module beneath a writable allowed package and submit its module and class through /ajax-api/3.0/mlflow/scorer/invoke. Scorer.model_validate_json() imports the module and constructs the class before trace processing. Authentication-disabled deployments permit this code execution without credentials, while basic-auth deployments require a principal capable of creating an experiment and run and uploading artifacts. In either configuration, the allowed scorer package must be writable by the server process. This issue is fixed in version 3.17.0.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-02",
    "vuln_status": "Awaiting Analysis",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -4293,13 +6765,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-117558",
    "description": "The ai-sdlc plugin MCP server through 0.31.2 contains an OS command injection vulnerability that allows attackers to execute commands by supplying shell metacharacters in the repo argument. The unvalidated repo value is interpolated into gh issue view or gh pr view commands run via execSync(), letting prompt-injected agents execute commands as the MCP server user.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-27",
+   "last_modified": "2026-11-02",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -4349,6 +6821,11 @@
      "url": "https://www.vulncheck.com/advisories/ai-sdlc-mcp-server-through-0.31.2-command-injection-via-check-issue-and-check-pr-status",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/ai-sdlc-framework/ai-sdlc/issues/1970",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -4365,13 +6842,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-117559",
    "description": "DroidMind through 0.4.0 contains a command injection vulnerability that allows MCP clients to bypass the shell command allowlist by using $(...) or backtick substitution. Attackers, including prompt-injected agents, can inject commands through parameters interpolated into Device.run_shell() or unvalidated Device.list_directory() to run blocked commands such as reboot on connected Android devices.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-27",
+   "last_modified": "2026-11-02",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -4415,6 +6892,11 @@
      "url": "https://www.vulncheck.com/advisories/droidmind-through-0.4.0-command-injection-via-shell-allowlist-bypass",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/hyperb1iss/droidmind/issues/17",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -4431,7 +6913,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-117560",
@@ -4456,7 +6938,7 @@
      "product": "Gemini CLI",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "gemini-cli"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -4513,7 +6995,7 @@
    "id": "CVE-2026-117561",
    "description": "Codefriar sf-mcp through 1.3.2 contains an OS command injection vulnerability that allows attackers to execute shell commands by supplying crafted Salesforce CLI tool flag values. Because escapeValue() in src/utils.ts fails to neutralize backticks, $() substitution, and other shell metacharacters, these values reach execSync in executeSfCommand and run as the MCP server user.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-27",
+   "last_modified": "2026-11-05",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -4558,6 +7040,11 @@
      "url": "https://www.vulncheck.com/advisories/sf-mcp-through-1.3.2-os-command-injection-via-salesforce-cli-flag-values",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/codefriar/sf-mcp/issues/17",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -4574,13 +7061,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-117567",
    "description": "esp-mcp through commit 28afddf contains an OS command injection vulnerability that allows attackers to run arbitrary commands by supplying shell metacharacters in MCP tool parameters. Attackers influencing agent tool calls through prompt injection can inject metacharacters into target, port, project_path, or project_name values passed to asyncio.create_subprocess_shell, executing commands as the MCP server user.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-27",
+   "last_modified": "2026-11-02",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -4626,6 +7113,11 @@
      "url": "https://www.vulncheck.com/advisories/esp-mcp-through-commit-28afddf-os-command-injection-via-mcp-tool-parameters",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/horw/esp-mcp/issues/49",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -4644,7 +7136,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-117568",
@@ -4717,7 +7209,7 @@
    "id": "CVE-2026-117569",
    "description": "Kali-GPT through commit a608c74 contains an OS command injection vulnerability in execute_tool() in kali_gpt/tools/mcp_server.py that allows MCP clients to run commands via unsanitized scanner parameters. Attackers or prompt-injected agents can embed shell metacharacters in parameters like target, ports, domain, wordlist, or url, executed via subprocess.run with shell=True as the MCP server user.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-27",
+   "last_modified": "2026-11-05",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -4762,6 +7254,11 @@
      "url": "https://www.vulncheck.com/advisories/kali-gpt-through-commit-a608c74-os-command-injection-via-mcp-scanner-tool-parameters",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/alishahid74/kali-gpt/issues/12",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -4779,13 +7276,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-117570",
    "description": "Vorota-ai nmap-mcp through commit 3636afa contains an improper allowlist validation vulnerability in the scan_vulnerabilities tool that lets callers run blocked NSE script categories. MCP clients or prompt-injected agents can pass categories like exploit, dos, brute, or intrusive to nmap --script, running intrusive, brute-force, exploit, or denial-of-service scripts against scan targets.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-27",
+   "last_modified": "2026-11-02",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -4827,6 +7324,11 @@
      "url": "https://www.vulncheck.com/advisories/nmap-mcp-through-commit-3636afa-permissive-nse-script-allowlist-in-scan-vulnerabilities",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/Vorota-ai/nmap-mcp/issues/3",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -4843,13 +7345,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-117573",
    "description": "hagent through commit 761eec6 contains an OS command injection vulnerability that allows MCP clients to execute shell commands by injecting metacharacters into the args parameter of the hagent_arduino and hagent_esp32 tools. Attackers or prompt-injected agents can supply crafted args interpolated into arduino-cli and idf.py commands run with subprocess.run(shell=True) to execute commands as the MCP server user.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-27",
+   "last_modified": "2026-11-02",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -4899,6 +7401,11 @@
      "url": "https://www.vulncheck.com/advisories/hagent-through-commit-761eec6-os-command-injection-via-arduino-and-esp32-mcp-tools",
      "source": "disclosure@vulncheck.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/masc-ucsc/hagent/issues/98",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -4916,7 +7423,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-118128",
@@ -4941,7 +7448,7 @@
      "product": "Agent2Agent protocol SDKs",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "a2a"
+     "product_id": null
     }
    ],
    "category": "protocol",
@@ -5073,10 +7580,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "ollama:Ollama"
+     "ollama:ollama:ollama"
     ]
    },
    "status": "candidate",
@@ -5087,9 +7594,9 @@
   },
   {
    "id": "CVE-2026-92546",
-   "description": "Authentication bypass by spoofing vulnerability in Keepnet Labs Cybersecurity Inc. Agentic AI / Agentic Ally allows Authentication Bypass.\n\nThis issue affects Agentic AI / Agentic Ally: before 0ef61f2e.",
+   "description": "Authentication bypass by spoofing vulnerability in Keepnet Labs Ltd. Agentic AI / Agentic Ally allows Authentication Bypass.\n\nThis issue affects Agentic AI / Agentic Ally: before 0ef61f2e.",
    "published": "2026-10-27",
-   "last_modified": "2026-10-27",
+   "last_modified": "2026-11-09",
    "vuln_status": "Deferred",
    "cna": "iletisim@usom.gov.tr",
    "cvss": {
@@ -5115,6 +7622,11 @@
    },
    "references": [
     {
+     "url": "https://keepnetlabs.com/security/advisories/cve-2026-92546",
+     "source": "iletisim@usom.gov.tr",
+     "tags": []
+    },
+    {
      "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1408",
      "source": "iletisim@usom.gov.tr",
      "tags": []
@@ -5134,13 +7646,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-110474",
    "description": "This vulnerability exists in the CreditNirvana Agentic AI Call Centre application due to hardcoded static API Key in the client side JavaScript bundle. An unauthenticated remote attacker could exploit this vulnerability by downloading client side JavaScript files and extracting API key, which could lead to make arbitrary API calls to retrieve call transcripts and recordings through the application API of the targeted system.",
    "published": "2026-10-26",
-   "last_modified": "2026-10-26",
+   "last_modified": "2026-11-02",
    "vuln_status": "Deferred",
    "cna": "vdisclose@cert-in.org.in",
    "cvss": {
@@ -5186,13 +7698,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-112346",
    "description": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default. Attackers who can reach the published container port can send unauthenticated HTTP and WebSocket requests to execute arbitrary shell commands as root in the sandbox, access the mounted workspace, and read plaintext secrets from the secrets store.",
    "published": "2026-10-26",
-   "last_modified": "2026-10-26",
+   "last_modified": "2026-11-04",
    "vuln_status": "Awaiting Analysis",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -5264,7 +7776,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-115911",
@@ -5444,7 +7956,7 @@
    "id": "CVE-2026-115913",
    "description": "vLLM is an inference and serving engine for large language models. Prior to 0.32.0, the Phi-4 multimodal audio encoder in phi4mm_audio.py and phi4mm_utils.py uses eager attention by default, allowing a remote client to submit one legal long audio clip that causes MultiHeadedAttention.forward_attention to materialize and retain full attention matrices in self.attn. The scaled dot-product attention branch does not materialize these matrices. The resulting quadratic GPU-memory use can cause an out-of-memory condition and terminate EngineCore for all users. This issue is fixed in version 0.32.0.",
    "published": "2026-10-26",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-02",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -5516,7 +8028,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-115914",
@@ -5691,7 +8203,7 @@
    "id": "CVE-2026-115916",
    "description": "vLLM is an inference and serving engine for large language models. Prior to 0.32.0, vllm/tokenizers/hf.py computes max_token_id with an off-by-one upper bound, allowing a pre-tokenized prompt ID equal to the vocabulary size to pass validation. For a tensor-parallel size of one and an exact multiple-of-64 vocabulary, VocabParallelEmbedding.forward does not mask that value before F.embedding uses it, causing a CUDA device-side assertion and terminating the engine. This issue is fixed in version 0.32.0.",
    "published": "2026-10-26",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-02",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -5770,7 +8282,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-115917",
@@ -6159,10 +8671,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -6175,7 +8687,7 @@
    "id": "CVE-2026-116172",
    "description": "vLLM from 0.22.0 before 0.24.0 contains an improper input validation vulnerability in the Rust gRPC converter that allows remote attackers to bypass max_logprobs limits via CandidateTokens.top_n. Attackers can send Generate or GenerateStream requests with oversized or integer-wrapping top_n values to trigger torch.topk failures that terminate EngineCore.",
    "published": "2026-10-25",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -6236,7 +8748,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-116173",
@@ -6445,7 +8957,7 @@
    "id": "CVE-2026-116176",
    "description": "vLLM from 0.9.2 before 0.24.0 contains a server-side request forgery vulnerability that allows API callers to force outbound connections by embedding a decode address in the X-Request-Id header. Attackers can make a P2pNcclConnector prefill worker ZMQ-connect to an attacker host, leaking the NCCL unique_id and KV-cache tensors or blocking the worker.",
    "published": "2026-10-25",
-   "last_modified": "2026-10-28",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -6507,7 +9019,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-116177",
@@ -7084,10 +9596,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -7213,7 +9725,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-115883",
@@ -7275,10 +9787,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langgraph:LangGraph"
+     "langgraph:langchain:langgraph"
     ]
    },
    "status": "candidate",
@@ -7351,10 +9863,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langgraph:LangGraph"
+     "langgraph:langchain:langgraph"
     ]
    },
    "status": "candidate",
@@ -7433,11 +9945,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "litellm:LiteLLM",
+     "litellm:berriai:litellm",
      "language model",
      "large language model"
     ]
@@ -7754,7 +10266,7 @@
    "id": "CVE-2026-111079",
    "description": "A flaw was found in Goose. When the terminal integration feature is enabled, the application captures shell command history and sends it verbatim without sanitization to configured Large Language Model (LLM) provider endpoints during queries. If a user enters sensitive data—such as API tokens, passwords, or environment variables containing secrets—in the terminal, this unredacted information is transmitted across trust boundaries. This can lead to sensitive information disclosure, exposing confidential credentials to external service providers and logs.",
    "published": "2026-10-22",
-   "last_modified": "2026-10-23",
+   "last_modified": "2026-11-06",
    "vuln_status": "Awaiting Analysis",
    "cna": "secalert@redhat.com",
    "cvss": {
@@ -7780,6 +10292,16 @@
     "url": null
    },
    "references": [
+    {
+     "url": "https://access.redhat.com/errata/RHSA-2026:95723",
+     "source": "secalert@redhat.com",
+     "tags": []
+    },
+    {
+     "url": "https://access.redhat.com/errata/RHSA-2026:95724",
+     "source": "secalert@redhat.com",
+     "tags": []
+    },
     {
      "url": "https://access.redhat.com/security/cve/CVE-2026-111079",
      "source": "secalert@redhat.com",
@@ -7807,7 +10329,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-114510",
@@ -7876,12 +10398,12 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langchain:LangChain",
-     "llamaindex:LlamaIndex",
+     "langchain:langchain:langchain",
+     "llamaindex:llamaindex:llamaindex",
      "llm",
      "retrieval-augmented"
     ]
@@ -7993,10 +10515,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "litellm:LiteLLM"
+     "litellm:berriai:litellm"
     ]
    },
    "status": "candidate",
@@ -8009,8 +10531,8 @@
    "id": "CVE-2026-114049",
    "description": "vLLM before 0.31.0 contains a cross-request mask leak in InputBatch.condense() that allows remote attackers to constrain other clients' outputs by leaving stale allowed_token_ids rows. Attackers can submit concurrent constrained generate requests, including via unauthenticated /invocations, so recycled batch slots apply their token allowlist to victims' unrestricted requests.",
    "published": "2026-10-21",
-   "last_modified": "2026-10-28",
-   "vuln_status": "Undergoing Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
     "version": "4.0",
@@ -8024,10 +10546,10 @@
    ],
    "products": [
     {
-     "vendor": "vLLM",
-     "product": "vLLM",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "vllm",
+     "product": "vllm",
+     "versions_affected": "< 0.31.0",
+     "fixed_in": "0.31.0",
      "product_id": "vllm"
     }
    ],
@@ -8038,44 +10560,48 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
+    "status": "fixed",
+    "version": "0.31.0",
     "url": null
    },
    "references": [
     {
      "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-6cxc-2vcg-w5qc",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Vendor Advisory"
+     ]
     },
     {
      "url": "https://www.vulncheck.com/advisories/vllm-before-0.31.0-stale-allowed-token-ids-mask-via-inputbatch-condense",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     }
    ],
    "related_agents": [],
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-114050",
    "description": "vLLM before 0.31.0 uses a client-supplied multimodal uuid verbatim as cache identity with no consistency check on cache hits, allowing engine crashes. Unauthenticated attackers can desynchronize the P0/P1 processor caches to trigger a fatal token-placeholder mismatch, killing the entire serving instance until restarted.",
    "published": "2026-10-21",
-   "last_modified": "2026-10-22",
-   "vuln_status": "Undergoing Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
     "version": "4.0",
@@ -8089,10 +10615,10 @@
    ],
    "products": [
     {
-     "vendor": "vLLM",
-     "product": "vLLM",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "vllm",
+     "product": "vllm",
+     "versions_affected": "< 0.31.0",
+     "fixed_in": "0.31.0",
      "product_id": "vllm"
     }
    ],
@@ -8102,20 +10628,24 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
+    "status": "fixed",
+    "version": "0.31.0",
     "url": null
    },
    "references": [
     {
      "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-p92p-rxj5-7p2x",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Vendor Advisory"
+     ]
     },
     {
      "url": "https://www.vulncheck.com/advisories/vllm-before-0.31.0-remote-engine-crash-via-forged-multimodal-uuid",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     }
    ],
    "related_agents": [],
@@ -8132,14 +10662,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-114051",
    "description": "vLLM before 0.31.0 skips the min_tokens <= max_tokens check for /inference/v1/generate requests with a null max_tokens, so the EngineCore input thread later dies on an uncaught VLLMValidationError while /health still returns 200. Unauthenticated remote attackers can send one request with an oversized min_tokens to hang all subsequent generation requests until manual restart.",
    "published": "2026-10-21",
-   "last_modified": "2026-10-28",
-   "vuln_status": "Undergoing Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
     "version": "4.0",
@@ -8153,10 +10683,10 @@
    ],
    "products": [
     {
-     "vendor": "vLLM",
-     "product": "vLLM",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "vllm",
+     "product": "vllm",
+     "versions_affected": "< 0.31.0",
+     "fixed_in": "0.31.0",
      "product_id": "vllm"
     }
    ],
@@ -8166,44 +10696,48 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
+    "status": "fixed",
+    "version": "0.31.0",
     "url": null
    },
    "references": [
     {
      "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-4xqp-c3mv-qff7",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Vendor Advisory"
+     ]
     },
     {
      "url": "https://www.vulncheck.com/advisories/vllm-before-0.31.0-denial-of-service-via-min-tokens-in-inference-v1-generate",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     }
    ],
    "related_agents": [],
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-114052",
    "description": "vLLM after 0.24.0 and before 0.31.0 contains a memory exhaustion vulnerability in MOSS-Audio model serving that caches a processor for every distinct request-controlled mm_processor_kwargs value in an unbounded dictionary. Unauthenticated attackers can send distinct or oversized mel_config values to the /tokenize endpoint, which bypasses --api-key, to exhaust host memory and crash the API process.",
    "published": "2026-10-21",
-   "last_modified": "2026-10-22",
-   "vuln_status": "Undergoing Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
     "version": "4.0",
@@ -8217,10 +10751,10 @@
    ],
    "products": [
     {
-     "vendor": "vLLM",
-     "product": "vLLM",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "vllm",
+     "product": "vllm",
+     "versions_affected": ">= 0.24.0 < 0.31.0",
+     "fixed_in": "0.31.0",
      "product_id": "vllm"
     }
    ],
@@ -8231,20 +10765,24 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
+    "status": "fixed",
+    "version": "0.31.0",
     "url": null
    },
    "references": [
     {
      "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-823j-m4cj-hmjf",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Vendor Advisory"
+     ]
     },
     {
      "url": "https://www.vulncheck.com/advisories/vllm-0.25.0-before-0.31.0-moss-audio-memory-exhaustion-via-tokenize-mm-processor-kwargs",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     }
    ],
    "related_agents": [],
@@ -8261,14 +10799,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-114053",
    "description": "vLLM from 0.7.3 before 0.31.0 forwards the request-supplied mm_processor_kwargs.code_revision to Transformers AutoProcessor.from_pretrained, letting clients select which revision of a model's dynamic processor code is imported when trust_remote_code is enabled. An attacker controlling a revision in the served model repository can send a multimodal request to the unauthenticated /tokenize endpoint to execute arbitrary Python in the vLLM API process.",
    "published": "2026-10-21",
-   "last_modified": "2026-10-27",
-   "vuln_status": "Undergoing Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
     "version": "4.0",
@@ -8282,10 +10820,10 @@
    ],
    "products": [
     {
-     "vendor": "vLLM",
-     "product": "vLLM",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "vllm",
+     "product": "vllm",
+     "versions_affected": ">= 0.7.3 < 0.31.0",
+     "fixed_in": "0.31.0",
      "product_id": "vllm"
     }
    ],
@@ -8296,153 +10834,31 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
+    "status": "fixed",
+    "version": "0.31.0",
+    "url": "https://github.com/vllm-project/vllm/commit/570735520942b6428ae98f1eb442c6d88adae55e"
    },
    "references": [
     {
      "url": "https://github.com/vllm-project/vllm/commit/570735520942b6428ae98f1eb442c6d88adae55e",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Patch"
+     ]
     },
     {
      "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-h3rc-6mm3-gc2m",
      "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Vendor Advisory"
+     ]
     },
     {
      "url": "https://www.vulncheck.com/advisories/vllm-0.7.3-before-0.31.0-rce-via-mm-processor-kwargs-code-revision",
      "source": "disclosure@vulncheck.com",
-     "tags": []
-    }
-   ],
-   "related_agents": [],
-   "related_incidents": [],
-   "match": {
-    "tests": [
-     "A:name"
-    ],
-    "terms": [
-     "vllm:vLLM"
-    ]
-   },
-   "status": "candidate",
-   "note": null,
-   "reviewer": null,
-   "checked_on": null,
-   "retrieved_on": "2026-11-02"
-  },
-  {
-   "id": "CVE-2026-114054",
-   "description": "vLLM before 0.31.0 contains a cache aliasing vulnerability that allows authenticated attackers to collide shared cache keys by supplying caller-controlled values such as EXIF ImageID or cache_salt. Attackers can set a UUID EXIF ImageID to receive another request's cached processed media, or match cache_salt to a LoRA name to reuse first-block KV state.",
-   "published": "2026-10-21",
-   "last_modified": "2026-10-28",
-   "vuln_status": "Undergoing Analysis",
-   "cna": "disclosure@vulncheck.com",
-   "cvss": {
-    "version": "4.0",
-    "score": 7.1,
-    "severity": "HIGH",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "source": "disclosure@vulncheck.com"
-   },
-   "cwe": [
-    "CWE-284"
-   ],
-   "products": [
-    {
-     "vendor": "vLLM",
-     "product": "vLLM",
-     "versions_affected": null,
-     "fixed_in": null,
-     "product_id": "vllm"
-    }
-   ],
-   "category": "infrastructure",
-   "surface": [
-    "auth_bypass"
-   ],
-   "kev": null,
-   "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
-   },
-   "references": [
-    {
-     "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-rh6f-3x46-j33q",
-     "source": "disclosure@vulncheck.com",
-     "tags": []
-    },
-    {
-     "url": "https://www.vulncheck.com/advisories/vllm-before-0.31.0-cross-request-cache-aliasing-via-exif-imageid-and-prefix-cache-keys",
-     "source": "disclosure@vulncheck.com",
-     "tags": []
-    }
-   ],
-   "related_agents": [],
-   "related_incidents": [],
-   "match": {
-    "tests": [
-     "A:name"
-    ],
-    "terms": [
-     "vllm:vLLM"
-    ]
-   },
-   "status": "candidate",
-   "note": null,
-   "reviewer": null,
-   "checked_on": null,
-   "retrieved_on": "2026-11-02"
-  },
-  {
-   "id": "CVE-2026-114055",
-   "description": "vLLM from 0.7.3 before 0.31.0 contains an uncontrolled resource consumption vulnerability that allows remote clients to control multimodal processor parameters by supplying per-request mm_processor_kwargs. Attackers can set large image size, patch count, crop count, or frame count values in Isaac, InternVL, H2OVL, and other processors to exhaust memory and terminate the shared server.",
-   "published": "2026-10-21",
-   "last_modified": "2026-10-22",
-   "vuln_status": "Undergoing Analysis",
-   "cna": "disclosure@vulncheck.com",
-   "cvss": {
-    "version": "4.0",
-    "score": 8.7,
-    "severity": "HIGH",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-    "source": "disclosure@vulncheck.com"
-   },
-   "cwe": [
-    "CWE-400"
-   ],
-   "products": [
-    {
-     "vendor": "vLLM",
-     "product": "vLLM",
-     "versions_affected": null,
-     "fixed_in": null,
-     "product_id": "vllm"
-    }
-   ],
-   "category": "infrastructure",
-   "surface": [
-    "dos"
-   ],
-   "kev": null,
-   "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
-   },
-   "references": [
-    {
-     "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-gx7p-2j49-hfq4",
-     "source": "disclosure@vulncheck.com",
-     "tags": []
-    },
-    {
-     "url": "https://www.vulncheck.com/advisories/vllm-0.7.3-before-0.31.0-dos-via-unvalidated-mm-processor-kwargs",
-     "source": "disclosure@vulncheck.com",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     }
    ],
    "related_agents": [],
@@ -8459,7 +10875,143 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-114054",
+   "description": "vLLM before 0.31.0 contains a cache aliasing vulnerability that allows authenticated attackers to collide shared cache keys by supplying caller-controlled values such as EXIF ImageID or cache_salt. Attackers can set a UUID EXIF ImageID to receive another request's cached processed media, or match cache_salt to a LoRA name to reuse first-block KV state.",
+   "published": "2026-10-21",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-284"
+   ],
+   "products": [
+    {
+     "vendor": "vllm",
+     "product": "vllm",
+     "versions_affected": "< 0.31.0",
+     "fixed_in": "0.31.0",
+     "product_id": "vllm"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "fixed",
+    "version": "0.31.0",
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-rh6f-3x46-j33q",
+     "source": "disclosure@vulncheck.com",
+     "tags": [
+      "Vendor Advisory"
+     ]
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/vllm-before-0.31.0-cross-request-cache-aliasing-via-exif-imageid-and-prefix-cache-keys",
+     "source": "disclosure@vulncheck.com",
+     "tags": [
+      "Third Party Advisory"
+     ]
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:cpe"
+    ],
+    "terms": [
+     "vllm:vllm:vllm"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-114055",
+   "description": "vLLM from 0.7.3 before 0.31.0 contains an uncontrolled resource consumption vulnerability that allows remote clients to control multimodal processor parameters by supplying per-request mm_processor_kwargs. Attackers can set large image size, patch count, crop count, or frame count values in Isaac, InternVL, H2OVL, and other processors to exhaust memory and terminate the shared server.",
+   "published": "2026-10-21",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-400"
+   ],
+   "products": [
+    {
+     "vendor": "vllm",
+     "product": "vllm",
+     "versions_affected": ">= 0.7.3 < 0.31.0",
+     "fixed_in": "0.31.0",
+     "product_id": "vllm"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "dos"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "fixed",
+    "version": "0.31.0",
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-gx7p-2j49-hfq4",
+     "source": "disclosure@vulncheck.com",
+     "tags": [
+      "Vendor Advisory"
+     ]
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/vllm-0.7.3-before-0.31.0-dos-via-unvalidated-mm-processor-kwargs",
+     "source": "disclosure@vulncheck.com",
+     "tags": [
+      "Third Party Advisory"
+     ]
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:cpe"
+    ],
+    "terms": [
+     "vllm:vllm:vllm"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-114106",
@@ -8693,10 +11245,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "crewai:CrewAI"
+     "crewai:crewai:crewai"
     ]
    },
    "status": "candidate",
@@ -8709,8 +11261,8 @@
    "id": "CVE-2026-107366",
    "description": "IBM Langflow OSS 1.0.0 through 1.12.4 contains three message endpoints that perform no ownership verification. Any authenticated user can bulk-delete another user's messages, overwrite message content to inject malicious prompts, or hijack an entire conversation session by reassigning its session ID.",
    "published": "2026-10-20",
-   "last_modified": "2026-10-21",
-   "vuln_status": "Awaiting Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
     "version": "3.1",
@@ -8724,10 +11276,10 @@
    ],
    "products": [
     {
-     "vendor": "Langflow",
-     "product": "Langflow",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "langflow",
+     "product": "langflow",
+     "versions_affected": ">= 1.0.0 < 1.12.5",
+     "fixed_in": "1.12.5",
      "product_id": "langflow"
     }
    ],
@@ -8737,15 +11289,18 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
+    "status": "fixed",
+    "version": "1.12.5",
+    "url": "https://www.ibm.com/support/pages/node/7293016"
    },
    "references": [
     {
      "url": "https://www.ibm.com/support/pages/node/7293016",
      "source": "psirt@us.ibm.com",
-     "tags": []
+     "tags": [
+      "Vendor Advisory",
+      "Patch"
+     ]
     }
    ],
    "related_agents": [
@@ -8764,7 +11319,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-109440",
@@ -14923,10 +17478,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "lmcache:LMCache"
+     "lmcache:lmcache:lmcache"
     ]
    },
    "status": "candidate",
@@ -30252,8 +32807,8 @@
    "id": "CVE-2026-12763",
    "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow an authenticated attacker to access another user's MCP server context due to improper cache key isolation in the MCP Tools component.",
    "published": "2026-09-14",
-   "last_modified": "2026-09-16",
-   "vuln_status": "Awaiting Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
     "version": "3.1",
@@ -30267,10 +32822,10 @@
    ],
    "products": [
     {
-     "vendor": "Langflow",
-     "product": "Langflow",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "langflow",
+     "product": "langflow",
+     "versions_affected": ">= 1.0.0 < 1.11.6",
+     "fixed_in": "1.11.6",
      "product_id": "langflow"
     }
    ],
@@ -30280,15 +32835,18 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
+    "status": "fixed",
+    "version": "1.11.6",
+    "url": "https://www.ibm.com/support/pages/node/7286662"
    },
    "references": [
     {
      "url": "https://www.ibm.com/support/pages/node/7286662",
      "source": "psirt@us.ibm.com",
-     "tags": []
+     "tags": [
+      "Patch",
+      "Vendor Advisory"
+     ]
     }
    ],
    "related_agents": [
@@ -30309,14 +32867,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-12765",
    "description": "IBM Langflow OSS 1.0.0 through 1.10.2 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
    "published": "2026-09-14",
-   "last_modified": "2026-09-16",
-   "vuln_status": "Awaiting Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
     "version": "3.1",
@@ -30330,10 +32888,10 @@
    ],
    "products": [
     {
-     "vendor": "Langflow",
-     "product": "Langflow",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "langflow",
+     "product": "langflow",
+     "versions_affected": ">= 1.0.0 < 1.10.3",
+     "fixed_in": "1.10.3",
      "product_id": "langflow"
     }
    ],
@@ -30344,15 +32902,18 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
+    "status": "fixed",
+    "version": "1.10.3",
+    "url": "https://www.ibm.com/support/pages/node/7285644"
    },
    "references": [
     {
      "url": "https://www.ibm.com/support/pages/node/7285644",
      "source": "psirt@us.ibm.com",
-     "tags": []
+     "tags": [
+      "Patch",
+      "Vendor Advisory"
+     ]
     }
    ],
    "related_agents": [
@@ -30371,14 +32932,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-12766",
    "description": "IBM Langflow OSS 1.0.0 through 1.11.2 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
    "published": "2026-09-14",
-   "last_modified": "2026-09-16",
-   "vuln_status": "Awaiting Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
     "version": "3.1",
@@ -30392,10 +32953,10 @@
    ],
    "products": [
     {
-     "vendor": "Langflow",
-     "product": "Langflow",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "langflow",
+     "product": "langflow",
+     "versions_affected": ">= 1.0.0 < 1.11.3",
+     "fixed_in": "1.11.3",
      "product_id": "langflow"
     }
    ],
@@ -30405,15 +32966,18 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
+    "status": "fixed",
+    "version": "1.11.3",
+    "url": "https://www.ibm.com/support/pages/node/7285639"
    },
    "references": [
     {
      "url": "https://www.ibm.com/support/pages/node/7285639",
      "source": "psirt@us.ibm.com",
-     "tags": []
+     "tags": [
+      "Patch",
+      "Vendor Advisory"
+     ]
     }
    ],
    "related_agents": [
@@ -30432,14 +32996,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-12767",
    "description": "IBM Langflow OSS 1.0.0 through 1.11.5 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
    "published": "2026-09-14",
-   "last_modified": "2026-09-16",
-   "vuln_status": "Awaiting Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
     "version": "3.1",
@@ -30453,10 +33017,10 @@
    ],
    "products": [
     {
-     "vendor": "Langflow",
-     "product": "Langflow",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "langflow",
+     "product": "langflow",
+     "versions_affected": ">= 1.0.0 < 1.11.6",
+     "fixed_in": "1.11.6",
      "product_id": "langflow"
     }
    ],
@@ -30467,15 +33031,18 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
+    "status": "fixed",
+    "version": "1.11.6",
+    "url": "https://www.ibm.com/support/pages/node/7286665"
    },
    "references": [
     {
      "url": "https://www.ibm.com/support/pages/node/7286665",
      "source": "psirt@us.ibm.com",
-     "tags": []
+     "tags": [
+      "Patch",
+      "Vendor Advisory"
+     ]
     }
    ],
    "related_agents": [
@@ -30494,14 +33061,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-12944",
    "description": "IBM Langflow OSS 1.0.0 through 1.10.0 can allow attackers to execute arbitrary Python code with root privileges (UID=0) on the Langflow server by submitting components containing socket or urllib imports. This enables: (1) AWS credential theft via IMDSv1 SSRF with full IAM role permissions, (2) arbitrary file exfiltration from the container filesystem, and (3) lateral movement to internal services (PostgreSQL, Redis) within the Docker network. The scanner incorrectly returns \"validated\": true, providing a false security signal.",
    "published": "2026-09-14",
-   "last_modified": "2026-09-16",
-   "vuln_status": "Awaiting Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
     "version": "3.1",
@@ -30515,10 +33082,10 @@
    ],
    "products": [
     {
-     "vendor": "Langflow",
-     "product": "Langflow",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "langflow",
+     "product": "langflow",
+     "versions_affected": ">= 1.0.0 < 1.10.1",
+     "fixed_in": "1.10.1",
      "product_id": "langflow"
     }
    ],
@@ -30530,15 +33097,18 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
+    "status": "fixed",
+    "version": "1.10.1",
+    "url": "https://www.ibm.com/support/pages/node/7278919"
    },
    "references": [
     {
      "url": "https://www.ibm.com/support/pages/node/7278919",
      "source": "psirt@us.ibm.com",
-     "tags": []
+     "tags": [
+      "Patch",
+      "Vendor Advisory"
+     ]
     }
    ],
    "related_agents": [
@@ -30557,14 +33127,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-17628",
    "description": "IBM Langflow OSS 1.0.0 through 1.10.2 could allow a remote authenticated attacker to change the password of an account due to improper authentication.",
    "published": "2026-09-14",
-   "last_modified": "2026-09-16",
-   "vuln_status": "Awaiting Analysis",
+   "last_modified": "2026-11-03",
+   "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
     "version": "3.1",
@@ -30578,10 +33148,10 @@
    ],
    "products": [
     {
-     "vendor": "Langflow",
-     "product": "Langflow",
-     "versions_affected": null,
-     "fixed_in": null,
+     "vendor": "langflow",
+     "product": "langflow",
+     "versions_affected": ">= 1.0.0 < 1.10.3",
+     "fixed_in": "1.10.3",
      "product_id": "langflow"
     }
    ],
@@ -30591,15 +33161,18 @@
    ],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
-    "url": null
+    "status": "fixed",
+    "version": "1.10.3",
+    "url": "https://www.ibm.com/support/pages/node/7286684"
    },
    "references": [
     {
      "url": "https://www.ibm.com/support/pages/node/7286684",
      "source": "psirt@us.ibm.com",
-     "tags": []
+     "tags": [
+      "Patch",
+      "Vendor Advisory"
+     ]
     }
    ],
    "related_agents": [
@@ -30618,7 +33191,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-38924",
@@ -50110,7 +52683,7 @@
    "id": "CVE-2026-70482",
    "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.8.0 until 0.11.0, when ENABLE_OAUTH_TOKEN_EXCHANGE=True, /oauth/{provider}/token/exchange accepts a raw provider access token and validates it by calling the provider userinfo endpoint without confirming which OAuth client the token was issued to. Anyone holding an access token minted for any client registered with the same provider could exchange it for an Open WebUI session as that token user, including applications the operator does not control and has never authorized. This issue is fixed in 0.11.0.",
    "published": "2026-08-04",
-   "last_modified": "2026-09-18",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -50182,7 +52755,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-70483",
@@ -60503,7 +63076,7 @@
      "product": "Claude Code",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "claude-code"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -61643,11 +64216,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain",
-     "langgraph:LangGraph"
+     "langchain:langchain:langchain",
+     "langgraph:langchain:langgraph"
     ]
    },
    "status": "candidate",
@@ -61740,11 +64313,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "langchain:LangChain",
+     "langchain:langchain:langchain",
      "agentic"
     ]
    },
@@ -64894,7 +67467,7 @@
      "product": "AnythingLLM",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "anythingllm"
+     "product_id": null
     }
    ],
    "category": "framework",
@@ -65236,7 +67809,7 @@
      "product": "AnythingLLM",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "anythingllm"
+     "product_id": null
     }
    ],
    "category": "framework",
@@ -67683,10 +70256,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "flowise:Flowise"
+     "flowise:flowiseai:flowise"
     ]
    },
    "status": "candidate",
@@ -69690,11 +72263,11 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name",
+     "A:cpe",
      "B:vocabulary"
     ],
     "terms": [
-     "flowise:Flowise",
+     "flowise:flowiseai:flowise",
      "prompt injection"
     ]
    },
@@ -70134,7 +72707,7 @@
    "id": "CVE-2026-42895",
    "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to perform tampering over a network.",
    "published": "2026-06-19",
-   "last_modified": "2026-10-25",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "secure@microsoft.com",
    "cvss": {
@@ -70191,7 +72764,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-47645",
@@ -70667,7 +73240,7 @@
    "id": "CVE-2026-54130",
    "description": "Missing authentication for critical function in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
    "published": "2026-06-18",
-   "last_modified": "2026-10-26",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "secure@microsoft.com",
    "cvss": {
@@ -70725,7 +73298,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-56075",
@@ -74606,7 +77179,7 @@
      "product": "ChatGPT agents and connectors",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "chatgpt-agent"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -74988,7 +77561,7 @@
      "product": "ChatGPT agents and connectors",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "chatgpt-agent"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -75342,10 +77915,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -86125,10 +88698,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "aider:Aider"
+     "aider:aider:aider"
     ]
    },
    "status": "candidate",
@@ -88718,10 +91291,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langflow:Langflow"
+     "langflow:langflow:langflow"
     ]
    },
    "status": "candidate",
@@ -88794,10 +91367,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -88870,10 +91443,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -88947,10 +91520,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -89710,6 +92283,63 @@
    "reviewer": null,
    "checked_on": null,
    "retrieved_on": "2026-11-02"
+  },
+  {
+   "id": "CVE-2025-61260",
+   "description": "A vulnerability was identified in OpenAI Codex CLI v0.23.0 and before that enables code execution through malicious MCP (Model Context Protocol) configuration files. The attack is triggered when a user runs the codex command inside a malicious or compromised repository. Codex automatically loads project-local .env and .codex/config.toml files without requiring user confirmation, allowing attackers to embed arbitrary commands that execute immediately.",
+   "published": "2026-04-14",
+   "last_modified": "2026-11-04",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "cve@mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0"
+   },
+   "cwe": [
+    "CWE-94"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "code_execution",
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://research.checkpoint.com/2025/openai-codex-cli-command-injection-vulnerability/",
+     "source": "cve@mitre.org",
+     "tags": []
+    },
+    {
+     "url": "https://research.checkpoint.com/2025/openai-codex-cli-command-injection-vulnerability/",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-23653",
@@ -95822,7 +98452,7 @@
    "id": "CVE-2026-34046",
    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.5.1, the `_read_flow` helper in `src/backend/base/langflow/api/v1/flows.py` branched on the `AUTO_LOGIN` setting to decide whether to filter by `user_id`. When `AUTO_LOGIN` was `False` (i.e., authentication was enabled), neither branch enforced an ownership check — the query returned any flow matching the given UUID regardless of who owned it. This allowed any authenticated user to read any other user's flow, including embedded plaintext API keys; modify the logic of another user's AI agents, and/or delete flows belonging to other users. The vulnerability was introduced by the conditional logic that was meant to accommodate public/example flows (those with `user_id = NULL`) under auto-login mode, but inadvertently left the authenticated path without an ownership filter. The fix in version 1.5.1 removes the `AUTO_LOGIN` conditional entirely and unconditionally scopes the query to the requesting user.",
    "published": "2026-03-27",
-   "last_modified": "2026-10-26",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -95900,7 +98530,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-4963",
@@ -99695,7 +102325,7 @@
    "id": "CVE-2026-29783",
    "description": "The shell tool within GitHub Copilot CLI versions prior to and including 0.0.422 can allow arbitrary code execution through crafted bash parameter expansion patterns. An attacker who can influence the commands executed by the agent (e.g., via prompt injection through repository files, MCP server responses, or user instructions) can exploit bash parameter transformation operators to execute hidden commands, bypassing the safety assessment that classifies commands as \"read-only.\" This has been patched in version 0.0.423. \n\nThe vulnerability stems from how the CLI's shell safety assessment evaluates commands before execution. The safety layer parses and classifies shell commands as either read-only (safe) or write-capable (requires user approval). However, several bash parameter expansion features can embed executable code within arguments to otherwise read-only commands, causing them to appear safe while actually performing arbitrary operations.\n\nThe specific dangerous patterns are ${var@P}, ${var=value} / ${var:=value}, ${!var}, and nested $(cmd) or <(cmd) inside ${...} expansions. An attacker who can influence command text sent to the shell tool - for example, through prompt injection via malicious repository content (README files, code comments, issue bodies), compromised or malicious MCP server responses, or crafted user instructions containing obfuscated commands - could achieve arbitrary code execution on the user's workstation. This is possible even in permission modes that require user approval for write operations, since the commands can appear to use only read-only utilities to ultimately trigger write operations. Successful exploitation could lead to data exfiltration, file modification, or further system compromise.",
    "published": "2026-03-06",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-11-03",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -99759,7 +102389,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2026-29791",
@@ -105738,7 +108368,7 @@
    "id": "CVE-2025-67366",
    "description": "@sylphxltd/filesystem-mcp v0.5.8 is an MCP server that provides file content reading functionality. Version 0.5.8 of filesystem-mcp contains a critical path traversal vulnerability in its \"read_content\" tool. This vulnerability arises from improper symlink handling in the path validation mechanism: the resolvePath function checks path validity before resolving symlinks, while fs.readFile resolves symlinks automatically during file access. This allows attackers to bypass directory restrictions by leveraging symlinks within the allowed directory that point to external files, enabling unauthorized access to files outside the intended operational scope.",
    "published": "2026-01-07",
-   "last_modified": "2026-09-16",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "cve@mitre.org",
    "cvss": {
@@ -105793,7 +108423,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2025-9611",
@@ -106449,7 +109079,7 @@
    "id": "CVE-2025-63664",
    "description": "Incorrect access control in the /api/v1/conversations/*/messages API of GT Edge AI Platform before v2.0.10-dev allows unauthorized attackers to access other users' message history with AI agents.",
    "published": "2025-12-22",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-11-04",
    "vuln_status": "Analyzed",
    "cna": "cve@mitre.org",
    "cvss": {
@@ -106512,7 +109142,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2025-66580",
@@ -106851,19 +109481,20 @@
   },
   {
    "id": "CVE-2025-63387",
-   "description": "Dify v1.9.1 is vulnerable to Insecure Permissions. An unauthenticated attacker can directly send HTTP GET requests to the /console/api/system-features endpoint without any authentication credentials or session tokens. The endpoint fails to implement proper authorization checks, allowing anonymous access to sensitive system configuration data. NOTE: The maintainer states that the endpoint is unauthenticated by design and serves as a bootstrap mechanism required for the dashboard initialization. They also state that the description inaccurately classifies the returned data as sensitive system configuration, stating that the data is non-sensitive and required for client-side rendering. No PII, credentials, or secrets are exposed.",
+   "description": "Dify 1.9.1 and 1.17.0 exposes the /console/api/system-features endpoint to unauthenticated HTTP GET requests that return system feature and configuration information. NOTE: The maintainer states that the endpoint is unauthenticated by design and serves as a bootstrap mechanism required for the dashboard initialization. They also state that the data is non-sensitive and required for client-side rendering. No PII, credentials, or secrets are exposed.",
    "published": "2025-12-18",
-   "last_modified": "2026-10-13",
+   "last_modified": "2026-11-02",
    "vuln_status": "Modified",
    "cna": "cve@mitre.org",
    "cvss": {
     "version": "3.1",
-    "score": 7.5,
-    "severity": "HIGH",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0"
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+    "source": "cve@mitre.org"
    },
    "cwe": [
+    "CWE-669",
     "CWE-284"
    ],
    "products": [
@@ -106938,7 +109569,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2025-63388",
@@ -107753,7 +110384,7 @@
    "id": "CVE-2025-63681",
    "description": "open-webui v0.6.33 is vulnerable to Incorrect Access Control. The API /api/tasks/stop/ directly accesses and cancels tasks without verifying user ownership, enabling attackers (a normal user) to stop arbitrary LLM response tasks.",
    "published": "2025-12-04",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-11-04",
    "vuln_status": "Modified",
    "cna": "cve@mitre.org",
    "cvss": {
@@ -107811,7 +110442,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2025-65958",
@@ -109940,7 +112571,7 @@
    "id": "CVE-2025-12695",
    "description": "The overly permissive sandbox configuration in DSPy allows attackers to steal sensitive files in cases when users build an AI agent which consumes user input and uses the “PythonInterpreter” class.",
    "published": "2025-11-04",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-11-05",
    "vuln_status": "Deferred",
    "cna": "reefs@jfrog.com",
    "cvss": {
@@ -109983,7 +112614,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2025-64106",
@@ -110787,7 +113418,7 @@
    "id": "CVE-2025-57164",
    "description": "Flowise through v3.0.4 is vulnerable to remote code execution via unsanitized evaluation of user input in the \"Supabase RPC Filter\" field.",
    "published": "2025-10-17",
-   "last_modified": "2026-06-17",
+   "last_modified": "2026-11-05",
    "vuln_status": "Analyzed",
    "cna": "cve@mitre.org",
    "cvss": {
@@ -110851,7 +113482,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-09"
   },
   {
    "id": "CVE-2025-58747",

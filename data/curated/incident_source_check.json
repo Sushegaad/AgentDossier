@@ -1,13 +1,13 @@
 {
   "version": "incident-source-check-1.0",
-  "checked_on": "2026-11-02",
-  "incidents_checked": 24,
-  "sources_checked": 39,
+  "checked_on": "2026-11-09",
+  "incidents_checked": 25,
+  "sources_checked": 40,
   "summary": {
     "ok": 31,
     "moved": 0,
     "gone": 1,
-    "unverified": 7,
+    "unverified": 8,
     "error": 0
   },
   "needs_attention": [
@@ -226,8 +226,9 @@
       },
       {
         "url": "https://cybersecuritynews.com/claude-code-opus-5-auto-mode-hijacked/",
-        "status": "ok",
-        "http": 202
+        "status": "unverified",
+        "http": 403,
+        "error": "HTTP 403"
       }
     ],
     "TR-2026-026": [
@@ -261,6 +262,13 @@
     "TR-2026-030": [
       {
         "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-031": [
+      {
+        "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
         "status": "ok",
         "http": 200
       }

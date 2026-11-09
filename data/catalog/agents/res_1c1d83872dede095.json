@@ -21,16 +21,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-02)",
+"display": "Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://manufact.com/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "28ee0e6cf5156ad6be444eef8043f46d1665e078350211b3d5dfa822a43ddd72",
+"next_check": "2026-11-16",
+"payload_hash": "7b023ef28cf351b263306e04dd89c589c204692baf9239416984d70833ed586e",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:57:38Z",
+"retrieved_at": "2026-11-09T15:21:30Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "mcp-use/mcp-use"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,42 +92,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "MIT",
 "name": "mcp-use",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-29T17:37:24Z",
-"headline": "mcp-use 2.12.2",
+"date": "2026-11-07T20:09:53Z",
+"headline": "mcp-use 2.12.4-canary.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Release 2.12.2 of mcp-use",
+"summary": "Release 2.12.4-canary.1 of mcp-use",
 "tag": "product_update",
-"url": "https://github.com/mcp-use/mcp-use/releases/tag/mcp-use%402.12.2"
+"url": "https://github.com/mcp-use/mcp-use/releases/tag/mcp-use%402.12.4-canary.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-29T17:37:23Z",
-"headline": "mcp-use: @mcp-use/inspector 20.3.27",
+"date": "2026-11-07T20:09:52Z",
+"headline": "mcp-use: @mcp-use/cli 5.1.0-canary.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Patch Changes\n\n- 7f9027f: Rebuild bundled workspace code and synchronize published internal package metadata.",
+"summary": "### Minor Changes\n\n- a22376b: Add `mcp-use feedback send` for explicit CLI reports to PostHog, with a single positional message, anonymous identity, JSON receipts, bounded delivery, and actionable errors. Keep report contents separate from",
 "tag": "product_update",
-"url": "https://github.com/mcp-use/mcp-use/releases/tag/%40mcp-use/inspector%4020.3.27"
+"url": "https://github.com/mcp-use/mcp-use/releases/tag/%40mcp-use/cli%405.1.0-canary.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:56Z",
+"checked_at": "2026-11-09T15:16:03Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:55Z",
+"checked_at": "2026-11-09T15:16:01Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -136,7 +136,7 @@
 "note": "named in the resource's own tags",
 "probe": {
 "card_url": "https://manufact.com/.well-known/mcp.json",
-"checked_at": "2026-11-02T14:51:57Z",
+"checked_at": "2026-11-09T15:16:04Z",
 "status": "invalid"
 },
 "source": "self_description",
@@ -149,19 +149,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-28T10:06:31Z",
-"github_forks": 1534,
+"github_forks": 1546,
 "github_language": "TypeScript",
-"github_open_issues": 112,
-"github_pushed_at": "2026-10-30T22:29:57Z",
-"github_stars": 10840,
+"github_open_issues": 133,
+"github_pushed_at": "2026-11-07T20:09:55Z",
+"github_stars": 10860,
 "github_topic": "mcp-server",
 "homepage": "https://manufact.com"
 },
 "slug": "mcp-use-mcp-use",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/mcp-use/mcp-use"
 }

@@ -24,7 +24,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 25.06,
+"adoption": 25.09,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -38,7 +38,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 73.0,
+"score": 73.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -47,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.06,
+"adoption": 25.09,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "Evil0ctal/Douyin_TikTok_Download_API"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -101,10 +101,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "Apache-2.0",
 "name": "Douyin_TikTok_Download_API",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-08T07:42:00Z",
+"headline": "Douyin_TikTok_Download_API release v5.1.11",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's new\n\n**TikTok lists and search that get past the posts TikTok will not play.** One\npost sent without a media address used to turn a whole page of an author's posts\nor a search into a 502. Those posts are TikTok Shop videos, whose",
+"tag": "product_update",
+"url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API/releases/tag/v5.1.11"
+},
 {
 "cluster_size": 1,
 "date": "2026-11-02T07:43:08Z",
@@ -115,28 +126,17 @@
 "summary": "## What's new\n\n**Fixes for what the demo's traffic turned up.** Under load an instance could\nrun out of database connections and answer with 500s; guest identities the\nplatforms had flagged were never retired, and the risk-control answers t",
 "tag": "product_update",
 "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API/releases/tag/v5.1.10"
-},
-{
-"cluster_size": 1,
-"date": "2026-11-02T06:01:13Z",
-"headline": "Douyin_TikTok_Download_API release v5.1.9",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's new\n\n**A pool with proxies now refills past one identity per platform, and the\nbrowser image can be built where GitHub is out of reach.** Adding a proxy no\nlonger takes the machine's own IP out of minting: it counts as one more ex",
-"tag": "product_update",
-"url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API/releases/tag/v5.1.9"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:24Z",
+"checked_at": "2026-11-09T15:15:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:22Z",
+"checked_at": "2026-11-09T15:15:26Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -144,7 +144,7 @@
 "evidence_url": "https://douyin.wtf",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:51:24Z",
+"checked_at": "2026-11-09T15:15:27Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -156,7 +156,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:19Z",
+"checked_at": "2026-11-09T15:31:11Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -164,19 +164,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2021-11-07T01:35:09Z",
-"github_forks": 2938,
+"github_forks": 2961,
 "github_language": "Python",
 "github_open_issues": 3,
-"github_pushed_at": "2026-11-02T07:43:14Z",
-"github_stars": 21109,
+"github_pushed_at": "2026-11-09T13:39:03Z",
+"github_stars": 21311,
 "github_topic": "mcp-server",
 "homepage": "https://douyin.wtf"
 },
 "slug": "evil0ctal-douyin-tiktok-download-api",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API"
 }

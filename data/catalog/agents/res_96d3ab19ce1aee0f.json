@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.76,
+"adoption": 25.77,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -49,7 +49,7 @@
 },
 "supply_chain": {
 "components": {
-"adoption": 25.76,
+"adoption": 25.77,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -72,7 +72,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.76,
+"adoption": 25.77,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.0,
@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "OthmanAdi/planning-with-files"
 },
-"first_seen": "2026-11-02T14:46:21Z",
+"first_seen": "2026-11-09T15:10:01Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,47 +119,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:21Z",
+"last_seen": "2026-11-09T15:10:01Z",
 "license": "MIT",
 "name": "planning-with-files",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-30T20:57:43Z",
-"headline": "planning-with-files: v3.27.0 - Agent-readable plan inventory",
+"date": "2026-11-07T11:24:33Z",
+"headline": "planning-with-files: v3.28.1 - Attestation refusals and selector safety",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Planning agents can request a bounded JSON inventory from the existing listing helpers with `--list --json` or PowerShell `-List -Json`. It includes root and named planning-file paths, availability, phase metadata, shared defaults and expli",
+"summary": "`attest-plan` now reports one refusal that names its cause on both the shell and PowerShell routes, and selectors echoed in a refusal cannot forge output.\n\n### Security\n- Control characters in an echoed `PLAN_ID`, `PWF_PLAN_ROOT` or target",
 "tag": "product_update",
-"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.27.0"
+"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.28.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-28T17:42:47Z",
-"headline": "planning-with-files: v3.26.0 - Claude subagent isolation and hook fixes",
+"date": "2026-11-03T02:02:21Z",
+"headline": "planning-with-files: v3.28.0 - Archive and restore finished plans",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Added\n\nClaude Code can suppress plan context and progress reminders for subagent tool calls with `PWF_SKIP_SUBAGENTS=1`. The default is unchanged. The opt-in also fails closed when the hook cannot classify its input (#348).\n\n## Fixed\n\n-",
+"summary": "## Added\n\n- Opt-in archive and restore for named plans. `set-active-plan.sh --archive <id>` (PowerShell: `-Archive <id>`) previews the move to `.planning/.archive/<id>/`, `--yes` (`-Yes`) applies it, and `--restore <id>` moves a plan back t",
 "tag": "product_update",
-"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.26.0"
+"url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.28.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:34Z",
+"checked_at": "2026-11-09T15:15:38Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:33Z",
+"checked_at": "2026-11-09T15:15:37Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:51:35Z",
+"checked_at": "2026-11-09T15:15:39Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -169,7 +169,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:02Z",
+"checked_at": "2026-11-09T15:30:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -177,19 +177,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-01-03T07:37:28Z",
-"github_forks": 2309,
+"github_forks": 2313,
 "github_language": "Shell",
-"github_open_issues": 7,
-"github_pushed_at": "2026-10-30T20:57:42Z",
-"github_stars": 27829,
+"github_open_issues": 17,
+"github_pushed_at": "2026-11-07T11:24:31Z",
+"github_stars": 27967,
 "github_topic": "llm-agents",
 "homepage": "https://gilded-laurel-c7nj.here.now/"
 },
 "slug": "othmanadi-planning-with-files",
 "sources": [
 {
-"payload_hash": "f2b91f05484977753cdc8a7a232695b4793655d1755b9d70a4330e88d5f436c1",
-"retrieved_at": "2026-11-02T14:46:21Z",
+"payload_hash": "935c95d08d48b06204dba34fab86a06c6927f29be08bd3adad49fc7d43846641",
+"retrieved_at": "2026-11-09T15:10:01Z",
 "system": "github",
 "url": "https://github.com/OthmanAdi/planning-with-files"
 }

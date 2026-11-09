@@ -13,7 +13,7 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Rent a confidential VM (Intel TDX) by the hour with USDC over x402 and run a Docker workload on it. No signup; the paying wallet owns the machine.",
+"description": "Confidential computers for AI swarms: rent a confidential VM (Intel TDX) for each agent by the hour with USDC over x402 and run a Docker workload on it. No signup; the paying wallet owns the machine.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
@@ -45,7 +45,7 @@
 "external_ids": {
 "ard": "urn:air:agentgates.ai:skills:compute"
 },
-"first_seen": "2026-11-02T14:49:36Z",
+"first_seen": "2026-11-09T15:13:38Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,9 +67,9 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:49:36Z",
+"last_seen": "2026-11-09T15:13:38Z",
 "license": null,
-"name": "Buy confidential compute (skill)",
+"name": "Confidential computers for AI swarms (skill)",
 "news": [],
 "news_checked": true,
 "protocols": {
@@ -91,6 +91,7 @@
 "publisher_domain": "agentgates.ai",
 "representative_queries": [
 "rent a confidential VM with USDC, no signup",
+"confidential computers for an AI trading swarm",
 "run docker on a TEE machine my agent pays for",
 "buy compute with crypto over plain HTTP"
 ],
@@ -98,17 +99,17 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:07:47Z",
+"checked_at": "2026-11-09T15:33:02Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {},
-"slug": "agentgates-ai-buy-confidential-compute-skill",
+"slug": "agentgates-ai-confidential-computers-for-ai-swarms-skill",
 "sources": [
 {
-"payload_hash": "cce666a8b855cf305bf2da02e30d24ccb2a7fe3d8f1fbf85b5c0d2ec8228a0fe",
-"retrieved_at": "2026-11-02T14:49:36Z",
+"payload_hash": "5aa43890ad3b111757fcde3ca8a6e0284eadf9e07f1180187fdd16ba8d1759aa",
+"retrieved_at": "2026-11-09T15:13:38Z",
 "system": "ard",
 "url": "https://agentgates.ai/.well-known/ard.json"
 }

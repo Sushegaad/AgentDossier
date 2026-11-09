@@ -14,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-02)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-09)",
 "evidence_url": "https://marketplace.fedramp.gov/products/F1603087869",
 "framework": "fedramp",
 "issued": "2020-04-29",
 "issuer": "JAB / 3PAO Kratos",
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "e4757f48dde02868071f3202de67f230d7dd2f74ef1409bfb1cd46aebbbb1526",
+"next_check": "2026-11-16",
+"payload_hash": "68c944e2b769164876336b97e0c101f0a5fa34eed405551a943e6b43e1d055d4",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:53:13Z",
+"retrieved_at": "2026-11-09T15:17:30Z",
 "review_reason": "vendor authorization for Azure Government (includes Dynamics 365); entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -330,7 +330,7 @@
 "external_ids": {
 "github": "microsoft/agent-framework"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -352,47 +352,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:40:36Z",
+"last_seen": "2026-11-09T15:03:53Z",
 "license": "MIT",
 "name": "Microsoft Agent Framework",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-30T21:52:13Z",
-"headline": "agent-framework release python-1.24.0",
+"date": "2026-11-07T15:52:42Z",
+"headline": "agent-framework release python-1.25.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [1.24.0] - 2026-10-30\n\n> [!WARNING]\n> **Redis context index migration:** The beta `RedisContextProvider` now preserves exact scope identity and rejects the legacy raw-scope index schema. Delete the old context index and its context hashe",
+"summary": "### Added\n- **agent-framework-core**, **agent-framework-foundry-hosting**: Support callable MCP discovery approval policies and honor Foundry Toolbox approval metadata, including tool-name and read-only filters, explicit caller overrides,",
 "tag": "product_update",
-"url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.24.0"
+"url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.25.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-30T18:55:48Z",
-"headline": "agent-framework release dotnet-1.27.0",
+"date": "2026-11-06T22:00:01Z",
+"headline": "agent-framework release dotnet-1.28.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [1.27.0] - 2026-10-30\r\n\r\n### Added\r\n\r\n* skills: Add a .NET consumer skill for building with Agent Framework ([#9651](https://github.com/microsoft/agent-framework/pull/9651) by @westey-m).\r\n* .NET, CI: Add a script to bump the .NET rele",
+"summary": "## [1.28.0] - 2026-11-06\r\n\r\n### Added\r\n\r\n* Foundry: Add the GA computer tool through `FoundryAITool.CreateComputerTool()` and carry computer calls and results through Foundry hosting, including batched actions. Add an Azure OpenAI computer-",
 "tag": "product_update",
-"url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.27.0"
+"url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.28.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:49:48Z",
+"checked_at": "2026-11-09T15:13:58Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:49:47Z",
+"checked_at": "2026-11-09T15:13:56Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:49:49Z",
+"checked_at": "2026-11-09T15:13:59Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -402,7 +402,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T14:59:07Z",
+"checked_at": "2026-11-09T15:23:13Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -423,11 +423,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-28T19:40:42Z",
-"github_forks": 2554,
+"github_forks": 2598,
 "github_language": "Python",
-"github_open_issues": 886,
-"github_pushed_at": "2026-11-02T14:44:08Z",
-"github_stars": 14495,
+"github_open_issues": 904,
+"github_pushed_at": "2026-11-09T13:54:16Z",
+"github_stars": 14604,
 "homepage": "https://aka.ms/agent-framework",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -443,7 +443,7 @@
 "sources": [
 {
 "payload_hash": "ab764a8c58b92adbb7b1cf057a4b3eab7d0a883f8e2313fac35ddd208496373d",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"retrieved_at": "2026-11-09T15:03:53Z",
 "system": "seed_xlsx",
 "url": "https://github.com/microsoft/agent-framework"
 }

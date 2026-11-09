@@ -25,16 +25,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-02)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://paradev.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "479ee878c134a77ef47726c0752202210930d003fb29cbe38b882e24882015f7",
+"next_check": "2026-11-16",
+"payload_hash": "05aab580ed4febc2b288568bb4184eee2d0c494d299ec14c2f62a47bf847ab9a",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:58:09Z",
+"retrieved_at": "2026-11-09T15:22:06Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -46,12 +46,12 @@
 }
 ],
 "deployment": "self-hosted",
-"description": "Paradev (formerly Superset) is an agentic IDE to orchestrate 100+ coding agents in parallel. Run any agent with your own subscription.",
+"description": "Paradev is an open-source Codex App and Conductor alternative. Orchestrate an army coding agents in parallel with your own subscriptions.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.34,
+"adoption": 24.39,
 "docs": 7.0,
 "domain_fit": 94.5,
 "ecosystem": 12.0,
@@ -77,7 +77,7 @@
 "ard": "urn:air:paradev.com:agent:superset",
 "github": "ParadevAI/Paradev"
 },
-"first_seen": "2026-11-02T14:41:36Z",
+"first_seen": "2026-11-09T15:04:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -99,8 +99,8 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:52:27Z",
-"license": "Other",
+"last_seen": "2026-11-09T15:16:35Z",
+"license": "MIT",
 "merged_ids": [
 "res_3943f02a2f41a5e9"
 ],
@@ -108,25 +108,25 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-02T13:16:48Z",
+"date": "2026-11-09T12:57:35Z",
 "headline": "Paradev Desktop Canary",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Internal Testing Build**\n\nThis is an automated canary build from `main` branch.\n\n- Commit: 344c299f43c69787d63a08d0ba0c9052a5fe51d0\n- Short SHA: 344c299f43\n- Built: 2026-11-02T12:07:55Z\n\n⚠️ This build is for internal testing only and may",
+"summary": "**Internal Testing Build**\n\nThis is an automated canary build from `main` branch.\n\n- Commit: a865880dad4265cbcc188753506ab0abdbce701e\n- Short SHA: a865880dad\n- Built: 2026-11-09T12:07:53Z\n\n⚠️ This build is for internal testing only and may",
 "tag": "product_update",
 "url": "https://github.com/ParadevAI/Paradev/releases/tag/desktop-canary"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-01T16:43:22Z",
-"headline": "Paradev Desktop desktop-v2.0.3",
+"date": "2026-11-08T06:22:21Z",
+"headline": "Paradev Desktop desktop-v2.0.6",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* test(host-service): fold git-status-store adversarial suites into regular tests by @saddlepaddle in https://github.com/ParadevAI/Paradev/pull/9067\n* feat(desktop, chat): per-turn changes card, turn snapshots and Undo (SU",
+"summary": "## What's Changed\n* docs: Bring Your Own Cloud guide and the MIT license blog post by @Kitenite in https://github.com/ParadevAI/Paradev/pull/9382\n* chore(desktop): bump version to 2.0.5 by @Kitenite in https://github.com/ParadevAI/Paradev/p",
 "tag": "product_update",
-"url": "https://github.com/ParadevAI/Paradev/releases/tag/desktop-v2.0.3"
+"url": "https://github.com/ParadevAI/Paradev/releases/tag/desktop-v2.0.6"
 }
 ],
 "news_checked": true,
@@ -136,7 +136,7 @@
 "oauth2"
 ],
 "card_url": "https://paradev.com/.well-known/agent-card.json",
-"checked_at": "2026-11-02T14:52:24Z",
+"checked_at": "2026-11-09T15:16:34Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -150,7 +150,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:22Z",
+"checked_at": "2026-11-09T15:16:32Z",
 "entries": 13,
 "parser_version": "ard-0.91",
 "sources": [
@@ -160,7 +160,7 @@
 },
 "mcp": {
 "card_url": "https://paradev.com/.well-known/mcp.json",
-"checked_at": "2026-11-02T14:52:24Z",
+"checked_at": "2026-11-09T15:16:34Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid"
 }
@@ -171,25 +171,25 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-10-21T09:16:51Z",
-"github_forks": 1413,
+"github_forks": 1445,
 "github_language": "TypeScript",
-"github_open_issues": 1150,
-"github_pushed_at": "2026-11-02T13:16:48Z",
-"github_stars": 15837,
+"github_open_issues": 1226,
+"github_pushed_at": "2026-11-09T13:27:15Z",
+"github_stars": 16135,
 "github_topic": "ai-agents",
 "homepage": "https://paradev.com"
 },
 "slug": "paradevai-paradev",
 "sources": [
 {
-"payload_hash": "94499c572df18dc70a0043553f47353def1b8673c8db741127572db5dd048e22",
-"retrieved_at": "2026-11-02T14:41:36Z",
+"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
+"retrieved_at": "2026-11-09T15:04:57Z",
 "system": "github",
 "url": "https://github.com/ParadevAI/Paradev"
 },
 {
 "payload_hash": "b86ecd909bebc485b200d7d27cf466eacd53e0ceb6253316a4fe16451a5f51b6",
-"retrieved_at": "2026-11-02T14:52:27Z",
+"retrieved_at": "2026-11-09T15:16:35Z",
 "system": "ard",
 "url": "https://paradev.com/.well-known/ai-catalog.json"
 }
@@ -205,6 +205,7 @@
 "cli",
 "codex",
 "coding-agents",
+"conductor",
 "cursor-agent",
 "developer-tools",
 "devtools",
@@ -214,8 +215,7 @@
 "orchestration",
 "parallel-agents",
 "terminal",
-"worktrees",
-"yc-backed"
+"worktrees"
 ],
 "tenant": null,
 "traces": [

@@ -19,7 +19,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 28.1,
+"adoption": 28.11,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -44,7 +44,7 @@
 "external_ids": {
 "github": "code-yeongyu/oh-my-openagent"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,47 +66,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "Other",
 "name": "oh-my-openagent",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-02T13:40:11Z",
-"headline": "oh-my-openagent release v5.1.58",
+"date": "2026-11-09T00:19:32Z",
+"headline": "oh-my-openagent release v5.1.65",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Runs on senpi 2026.11.2-1: Claude subscription sign-in works again. ([#12126](https://github.com/code-yeongyu/oh-my-openagent/pull/12126))\n\n**A timed-out or cancelled ultimate-browsing template gives its browser a graceful quit.** On macOS/",
+"summary": "**A message an agent sends to a session on another device now says who sent it.** It used to arrive there as plain text, indistinguishable from that session's own user. It now carries the same sender line and authority notice as a message b",
 "tag": "product_update",
-"url": "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v5.1.58"
+"url": "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v5.1.65"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-01T20:40:15Z",
-"headline": "oh-my-openagent release v5.1.57",
+"date": "2026-11-07T16:57:24Z",
+"headline": "oh-my-openagent release v5.1.64",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Runs on senpi 2026.10.31-2: Claude subscription sign-in now goes through the Claude Code CLI (accounts from the old sign-in are asked once to sign in again, keeping their name, pin and order), `/gpt-account unblock <id>` clears a usage-limi",
+"summary": "**Desktop memory sync now starts as soon as the engine boots, without waiting for a session.** An engine started by `omo host ensure` loads extensions only when a session opens, while the desktop opens none until the engine has sent the mem",
 "tag": "product_update",
-"url": "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v5.1.57"
+"url": "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v5.1.64"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:20Z",
+"checked_at": "2026-11-09T15:16:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:12Z",
+"checked_at": "2026-11-09T15:16:21Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:52:27Z",
+"checked_at": "2026-11-09T15:16:35Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -116,7 +116,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:05:09Z",
+"checked_at": "2026-11-09T15:29:55Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -124,19 +124,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-03T01:40:05Z",
-"github_forks": 5828,
+"github_forks": 5843,
 "github_language": "TypeScript",
-"github_open_issues": 2076,
-"github_pushed_at": "2026-11-02T14:41:04Z",
-"github_stars": 70614,
+"github_open_issues": 2474,
+"github_pushed_at": "2026-11-09T12:11:52Z",
+"github_stars": 70799,
 "github_topic": "ai-agents",
 "homepage": "https://omo.dev"
 },
 "slug": "code-yeongyu-oh-my-openagent",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/code-yeongyu/oh-my-openagent"
 }

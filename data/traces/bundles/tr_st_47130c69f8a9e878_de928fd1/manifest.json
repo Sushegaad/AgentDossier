@@ -1,0 +1,22 @@
+{
+ "agent": "res_47130c69f8a9e878",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_47130c69f8a9e878_de928fd1",
+ "kind": "self_test",
+ "name": "superplane",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-11-09T15:16:53Z",
+   "errors": [
+    "manifest must be an object with an 'entries' array (ardManifest)"
+   ],
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://superplane.com/.well-known/ai-catalog.json"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "superplanehq-superplane"
+}

@@ -18,7 +18,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.78,
+"adoption": 24.79,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -43,7 +43,7 @@
 "external_ids": {
 "github": "nukeop/nuclear"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,42 +65,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "AGPL-3.0",
 "name": "nuclear",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-02T02:19:34Z",
-"headline": "Nuclear Player v1.54.0",
+"date": "2026-11-06T01:38:08Z",
+"headline": "Nuclear Player v1.54.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's New in v1.54.0\n\n- **Feature**: New View API for plugins, HTTP API and MCP lets you create new custom views, listed in the left sidebar. `Plugins` - @nukeop\n- **Feature**: Navigation API for plugins. `Integrations` - @nukeop\n\n> **m",
+"summary": "## What's New in v1.54.2\n\n- **Fix**: Fix queue panel virtualization. Improves performance for large queues. `Queue` - @nukeop\n\n> **macOS:** If the app won't open, run `sudo xattr -r -d com.apple.quarantine /Applications/Nuclear.app` in Term",
 "tag": "product_update",
-"url": "https://github.com/nukeop/nuclear/releases/tag/player%401.54.0"
+"url": "https://github.com/nukeop/nuclear/releases/tag/player%401.54.2"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-31T01:27:05Z",
-"headline": "Nuclear Player v1.53.1",
+"date": "2026-11-04T02:51:20Z",
+"headline": "Nuclear Player v1.54.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's New in v1.53.1\n\n- **Fix**: Fix yt-dlp client selection. `YouTube` - @nukeop\n\n> **macOS:** If the app won't open, run `sudo xattr -r -d com.apple.quarantine /Applications/Nuclear.app` in Terminal.",
+"summary": "## What's New in v1.54.1\n\n- **Fix**: Fix YouTube search returning no results for some queries. `YouTube` - @nukeop\n- **Fix**: Fix tracks longer than about 1h30m failing to play with an unsupported format error. `Playback` - @nukeop\n- **Fix*",
 "tag": "product_update",
-"url": "https://github.com/nukeop/nuclear/releases/tag/player%401.53.1"
+"url": "https://github.com/nukeop/nuclear/releases/tag/player%401.54.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:10Z",
+"checked_at": "2026-11-09T15:16:19Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:09Z",
+"checked_at": "2026-11-09T15:16:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -108,7 +108,7 @@
 "evidence_url": "https://nuclearplayer.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:10Z",
+"checked_at": "2026-11-09T15:16:19Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -121,19 +121,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2016-09-22T22:58:21Z",
-"github_forks": 1355,
+"github_forks": 1357,
 "github_language": "TypeScript",
 "github_open_issues": 7,
-"github_pushed_at": "2026-11-02T14:28:30Z",
-"github_stars": 18853,
+"github_pushed_at": "2026-11-08T12:52:02Z",
+"github_stars": 18906,
 "github_topic": "mcp-server",
 "homepage": "https://nuclearplayer.com"
 },
 "slug": "nukeop-nuclear",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/nukeop/nuclear"
 }

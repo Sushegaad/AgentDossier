@@ -1,0 +1,221 @@
+{
+"canonical_url": "28in28.ai/agent-service-desk",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"sales": [
+"service desk"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-09)",
+"evidence_url": "https://28in28.ai/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-16",
+"payload_hash": "6f0580e1b4b82303526ba7334c2ab4a907314a7b7c4544828b10783ab85b6a3d",
+"period_end": null,
+"retrieved_at": "2026-11-09T15:18:24Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-09)",
+"evidence_url": "https://28in28.ai/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-16",
+"payload_hash": "6f0580e1b4b82303526ba7334c2ab4a907314a7b7c4544828b10783ab85b6a3d",
+"period_end": null,
+"retrieved_at": "2026-11-09T15:18:24Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPF_ACTIVE"
+}
+],
+"deployment": null,
+"description": "Check SPF/DKIM/DMARC of a domain, get a non-binding Fix & Verify quote, re-verify after the DNS fix.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"sales": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": 3.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_credited": {
+"gdpr": 0.15
+},
+"profile": "commercial",
+"rank": null,
+"score": 43.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 48.9,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.28in28/agent-service-desk"
+},
+"first_seen": "2026-11-09T15:03:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_6c20207127723a9a",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-09T15:03:54Z",
+"license": null,
+"name": "28/28 Agent Service Desk: Fix & Verify",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-09T15:13:22Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-09T15:13:19Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://28in28.ai/mcp"
+}
+],
+"server_name": "ai.28in28/agent-service-desk",
+"status": "claimed",
+"version": "1.1.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "28in28.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-09T15:25:52Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-11-06T23:47:15.643596Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-11-06T23:47:15.643596Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "28in28-ai-28-28-agent-service-desk-fix-verify",
+"sources": [
+{
+"payload_hash": "d068797b4bf7be6dfc6f345ea1f4f3bf472c174e3d7ce687a623c938ebb24871",
+"retrieved_at": "2026-11-09T15:03:54Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.28in28/agent-service-desk"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": 4
+},
+"url": "https://28in28.ai/agent-service-desk",
+"vendor": "28in28.ai"
+}

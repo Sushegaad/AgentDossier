@@ -19,7 +19,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 27.56,
+"adoption": 27.98,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -33,7 +33,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 74.0,
+"score": 74.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -44,7 +44,7 @@
 "external_ids": {
 "github": "Ebony-Vinyl/dsh-our-free-model"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,31 +66,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "MIT",
 "name": "dsh-our-free-model",
 "news": [
 {
-"cluster_size": 3,
-"date": "2026-11-01T04:38:23Z",
-"headline": "dsh-our-free-model: 2.7.1 macOS (arm64) — 非官方社区构建 / unofficial community build",
+"cluster_size": 1,
+"date": "2026-11-08T06:38:08Z",
+"headline": "dsh-our-free-model: v2.8.3:Claude TUI 交互模式修复(45 秒互等根治)",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## 修复\n\n### Claude 订阅 TUI 交互模式卡 45 秒后回退 -p(根治)\n\n新版 Claude Code(2.1.316+)首次运行多了一屏「安全须知,按回车继续」和「终端设置,按 Esc 跳过」。旧引擎不认识这两屏:Claude 等按键、引擎等输入提示符,两边互等 45 秒后放弃并退回 `-p`;连续失败还会进入最长 24 小时\"直接走 -p\"的退避——这就是「claude 的 tui 用不了,只能用 p」的根因。\n\n- 引擎整体跟上上游修复(pin `6",
+"tag": "product_update",
+"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.8.3"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-07T16:18:06Z",
+"headline": "dsh-our-free-model: 2.8.2 macOS (arm64) — 非官方社区构建 / unofficial community build",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "## 非官方社区构建 / Unofficial community build\n\n这不是仓库作者发布的官方安装包。作者自 2.4.0 起将桌面安装包限制为 Windows-only，Mac 用户停留在 2.3.0。本 dmg 由本仓库的 GitHub Actions 从公开源码构建，可审计、可复现。\n\nThis is NOT an official release by the repository author. The author restricted desktop",
 "tag": "product_update",
-"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.8.0-macos-unofficial"
-},
-{
-"cluster_size": 1,
-"date": "2026-11-01T04:33:56Z",
-"headline": "dsh-our-free-model: v2.8.0：免费道整形层对齐参考网关 v1.4.6，引擎一键跟进",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "# v2.8.0 插件发布\n\n本次只发布 DSH 插件，桌面安装包和独立产品版本保持原状。两个主线改动都在免费道与自带引擎的\n\"跟上上游\"这一层：匿名免费道的请求整形整体换成参考网关 opencode2api v1.4.6 的逐文件 JS 移植，\n自带 Magpie 引擎从 10-23 的 c551a22 跟进到 10-31 的 6a900e0d——并且从此跟进是一条命令。\n\n## 匿名免费道：整形层移植 opencode2api v1.4.6\n\n- **全部客户工具改名上线",
-"tag": "product_update",
-"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.8.0"
+"url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/releases/tag/v2.8.2-macos-unofficial"
 }
 ],
 "news_checked": true,
@@ -113,7 +113,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:05:17Z",
+"checked_at": "2026-11-09T15:29:59Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -121,19 +121,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-09-24T16:17:19Z",
-"github_forks": 1552,
+"github_forks": 1806,
 "github_language": "JavaScript",
-"github_open_issues": 113,
-"github_pushed_at": "2026-11-02T08:10:54Z",
-"github_stars": 56947,
+"github_open_issues": 159,
+"github_pushed_at": "2026-11-09T03:18:51Z",
+"github_stars": 67156,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "ebony-vinyl-dsh-our-free-model",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model"
 }

@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-11-02)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://appdeploy.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "b2cf7c5e87d7bf950e3af62915cfdb5a6617c495bec63714e7497e69283e84a3",
+"next_check": "2026-11-16",
+"payload_hash": "67fb65dc91be23dcb9132b93f1a2052f027ca73d889eb122c8ce842b4207a902",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:55:37Z",
+"retrieved_at": "2026-11-09T15:19:29Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -45,16 +45,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-11-02)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-09)",
 "evidence_url": "https://appdeploy.ai/security",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "3606524c23246994bd7ab7fd3cf47ed73ca776db5b8007793f00550a120e2199",
+"next_check": "2026-11-16",
+"payload_hash": "d29b67a4aa7b87a6001dc3e005f3619a49a4e8ec0c6e38cd4ded85d7985b9da6",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:55:37Z",
+"retrieved_at": "2026-11-09T15:19:29Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "external_ids": {
 "ard": "urn:air:appdeploy.ai:skill:appdeploy-claude-code"
 },
-"first_seen": "2026-11-02T14:50:30Z",
+"first_seen": "2026-11-09T15:14:35Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,7 +119,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:50:30Z",
+"last_seen": "2026-11-09T15:14:35Z",
 "license": null,
 "name": "AppDeploy for Claude Code",
 "news": [],
@@ -149,7 +149,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:08:31Z",
+"checked_at": "2026-11-09T15:33:51Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -159,7 +159,7 @@
 "sources": [
 {
 "payload_hash": "f659d13bb1a0e9ac09abdc1a1d3ff09ab2211c6529cc30e7449d43587eb9208f",
-"retrieved_at": "2026-11-02T14:50:30Z",
+"retrieved_at": "2026-11-09T15:14:35Z",
 "system": "ard",
 "url": "https://appdeploy.ai/.well-known/ai-catalog.json"
 }

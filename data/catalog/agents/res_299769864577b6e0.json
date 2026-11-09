@@ -1,5 +1,5 @@
 {
-"canonical_url": "n9e.github.io",
+"canonical_url": "n9e.io",
 "category": "Open-source project",
 "classification": {
 "matched": {
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "ccfos/nightingale"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -83,7 +83,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "Apache-2.0",
 "name": "nightingale",
 "news": [
@@ -113,32 +113,32 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:06Z",
+"checked_at": "2026-11-09T15:16:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:05Z",
+"checked_at": "2026-11-09T15:16:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"evidence_url": "https://n9e.github.io",
+"evidence_url": "https://n9e.io",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:06Z",
+"checked_at": "2026-11-09T15:16:15Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 }
 },
-"publisher_domain": "n9e.github.io",
+"publisher_domain": "n9e.io",
 "resource_type": "mcp_server",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:47Z",
+"checked_at": "2026-11-09T15:31:53Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -146,19 +146,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2020-03-03T17:08:26Z",
-"github_forks": 1796,
+"github_forks": 1798,
 "github_language": "Go",
-"github_open_issues": 243,
-"github_pushed_at": "2026-11-01T13:19:24Z",
-"github_stars": 13428,
+"github_open_issues": 242,
+"github_pushed_at": "2026-11-06T14:17:27Z",
+"github_stars": 13470,
 "github_topic": "mcp-server",
-"homepage": "https://n9e.github.io"
+"homepage": "https://n9e.io"
 },
 "slug": "ccfos-nightingale",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/ccfos/nightingale"
 }
@@ -196,6 +196,6 @@
 "traces": 5,
 "vendor_compliance": null
 },
-"url": "https://n9e.github.io",
+"url": "https://n9e.io",
 "vendor": "ccfos"
 }

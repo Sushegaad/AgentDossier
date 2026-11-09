@@ -21,7 +21,7 @@
 "domains": {
 "regulatory": {
 "components": {
-"adoption": 26.98,
+"adoption": 27.0,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 10.6,
@@ -44,7 +44,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.98,
+"adoption": 27.0,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 10.6,
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "reactive-resume/reactive-resume"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,42 +91,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "MIT",
 "name": "reactive-resume",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-30T06:45:34Z",
-"headline": "reactive-resume release forme-native-v0.0.0-f7a5ce86fcfafb330e8f8b0b05a9403e132f0185bf7b74ef8ff411dedf05ceb9",
+"date": "2026-11-05T03:55:20Z",
+"headline": "reactive-resume release v6.1.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Highlights\n\n![Application packet with approved resume and letter versions, answers and manual downloads](https://raw.githubusercontent.com/reactive-resume/reactive-resume/9390156a0a4b2d41f43452ea1ab5054a764bf254/docs/images/guides/career",
+"tag": "product_update",
+"url": "https://github.com/reactive-resume/reactive-resume/releases/tag/v6.1.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-04T21:20:47Z",
+"headline": "reactive-resume release forme-native-v0.0.0-53f30d4e76f87b341b6a72a0847bddc49c6a3ea035b587802948d3733e8a2486",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "Native Forme binaries. Review and commit prebuilt.json before building mobile apps.",
 "tag": "product_update",
-"url": "https://github.com/reactive-resume/reactive-resume/releases/tag/forme-native-v0.0.0-f7a5ce86fcfafb330e8f8b0b05a9403e132f0185bf7b74ef8ff411dedf05ceb9"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-29T21:35:46Z",
-"headline": "reactive-resume release v6.0.9",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## Highlights\n\n- **Write a cover letter with its own sender details.** Edit your name, email, phone and location without changing a resume, or choose **No resume** for a standalone letter. Your saved details carry through the preview, signa",
-"tag": "product_update",
-"url": "https://github.com/reactive-resume/reactive-resume/releases/tag/v6.0.9"
+"url": "https://github.com/reactive-resume/reactive-resume/releases/tag/forme-native-v0.0.0-53f30d4e76f87b341b6a72a0847bddc49c6a3ea035b587802948d3733e8a2486"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:32Z",
+"checked_at": "2026-11-09T15:16:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:31Z",
+"checked_at": "2026-11-09T15:16:42Z",
 "entries": 1,
 "parser_version": "ard-0.91",
 "sources": [
@@ -138,7 +138,7 @@
 "evidence_url": "https://rxresu.me",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:33Z",
+"checked_at": "2026-11-09T15:16:44Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -150,7 +150,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:05:24Z",
+"checked_at": "2026-11-09T15:30:15Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -158,19 +158,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2020-03-25T14:08:22Z",
-"github_forks": 4909,
+"github_forks": 4940,
 "github_language": "TypeScript",
-"github_open_issues": 20,
-"github_pushed_at": "2026-11-02T14:38:59Z",
-"github_stars": 45201,
+"github_open_issues": 18,
+"github_pushed_at": "2026-11-08T20:43:39Z",
+"github_stars": 45532,
 "github_topic": "mcp-server",
 "homepage": "https://rxresu.me"
 },
 "slug": "reactive-resume-reactive-resume",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/reactive-resume/reactive-resume"
 }

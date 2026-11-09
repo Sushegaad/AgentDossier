@@ -1,0 +1,126 @@
+{
+"canonical_url": "bevgtin.ai/mcp",
+"capabilities": [
+"confirm_gtin"
+],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "The GTIN confirm for beverage alcohol: the second factor on every agent-bev order.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:agent-bev.ai:bevgtin"
+},
+"first_seen": "2026-11-09T15:13:36Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_5a60496ff03c5581",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-09T15:13:36Z",
+"license": null,
+"name": "bevGTIN",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agent-bev.ai:bevgtin",
+"manifest_url": "https://agent-bev.ai/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "agent-bev.ai",
+"representative_queries": [],
+"resource_type": "agent",
+"scope": "public",
+"signals": {},
+"slug": "agent-bev-ai-bevgtin",
+"sources": [
+{
+"payload_hash": "22584064c46a98d76ec05ab338a4817aabf4f471598eebd6a549daf1426602e9",
+"retrieved_at": "2026-11-09T15:13:36Z",
+"system": "ard",
+"url": "https://agent-bev.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_5a60496ff03c5581_e01ca544",
+"checked_on": null,
+"date": "2026-11-09",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_5a60496ff03c5581_e01ca544",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:9cf30542eaf2d1a49891f27ab78a66e7ecdf3fa654923f810a9735e1c3bcc5b7",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of bevGTIN's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_5a60496ff03c5581_e01ca544/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": null,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://bevgtin.ai/mcp",
+"vendor": "agent-bev.ai"
+}

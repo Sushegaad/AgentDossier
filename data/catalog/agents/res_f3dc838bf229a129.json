@@ -26,16 +26,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-02)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-09)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1805751477",
 "framework": "fedramp",
 "issued": "2019-12-04",
 "issuer": "JAB / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "e4757f48dde02868071f3202de67f230d7dd2f74ef1409bfb1cd46aebbbb1526",
+"next_check": "2026-11-16",
+"payload_hash": "68c944e2b769164876336b97e0c101f0a5fa34eed405551a943e6b43e1d055d4",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:54:28Z",
+"retrieved_at": "2026-11-09T15:18:05Z",
 "review_reason": "vendor authorization for Google Services (Google Cloud Platform Products and underlying Infrastructure); entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -47,12 +47,12 @@
 }
 ],
 "deployment": "self-hosted",
-"description": "Open-source skills for designing and reviewing software with AI agents",
+"description": "Open-source plugin for designing and reviewing software with agents",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
 "components": {
-"adoption": 23.23,
+"adoption": 24.37,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 3.0,
@@ -66,7 +66,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 71.3,
+"score": 72.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
@@ -75,7 +75,7 @@
 "external_ids": {
 "github": "google/elephant-goldfish-model"
 },
-"first_seen": "2026-11-02T14:41:36Z",
+"first_seen": "2026-11-09T15:04:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -97,10 +97,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:36Z",
+"last_seen": "2026-11-09T15:04:57Z",
 "license": "Apache-2.0",
 "name": "elephant-goldfish-model",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-06T21:50:31Z",
+"headline": "elephant-goldfish-model: EGM v0.1.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "EGM v0.1.1 updates the plugin listing and packages the current Claude and OpenAI runtimes.\n\n- Clarifies listing copy, adds three OpenAI plugin starter prompts, and separates publisher policy destinations (#316, #314).\n- Adds the TRIZ invent",
+"tag": "product_update",
+"url": "https://github.com/google/elephant-goldfish-model/releases/tag/v0.1.1"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-27T07:46:34Z",
@@ -116,17 +127,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:25Z",
+"checked_at": "2026-11-09T15:15:29Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:24Z",
+"checked_at": "2026-11-09T15:15:28Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:51:25Z",
+"checked_at": "2026-11-09T15:15:29Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -136,7 +147,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:07:15Z",
+"checked_at": "2026-11-09T15:31:36Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -144,19 +155,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-09-13T16:31:06Z",
-"github_forks": 673,
+"github_forks": 1173,
 "github_language": "Python",
-"github_open_issues": 78,
-"github_pushed_at": "2026-11-01T13:38:10Z",
-"github_stars": 10200,
+"github_open_issues": 89,
+"github_pushed_at": "2026-11-09T02:35:53Z",
+"github_stars": 16042,
 "github_topic": "ai-agents",
 "homepage": "https://egm.dev"
 },
 "slug": "google-elephant-goldfish-model",
 "sources": [
 {
-"payload_hash": "94499c572df18dc70a0043553f47353def1b8673c8db741127572db5dd048e22",
-"retrieved_at": "2026-11-02T14:41:36Z",
+"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
+"retrieved_at": "2026-11-09T15:04:57Z",
 "system": "github",
 "url": "https://github.com/google/elephant-goldfish-model"
 }

@@ -6,6 +6,9 @@
 "business": [
 "copilot"
 ],
+"data": [
+"search"
+],
 "technology": [
 "cli",
 "code",
@@ -18,12 +21,12 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
+"description": "Free, local plugin that keeps tool output out of your coding agent's context window. Sandbox and SQLite FTS5 search, 99% fewer bytes in context. Works with Claude Code, Codex, Pi, OpenCode, Gemini CLI, Copilot CLI and 4 more agents. Zero telemetry.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": 26.21,
+"adoption": 26.24,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -44,9 +47,32 @@
 "governance"
 ]
 },
+"data": {
+"components": {
+"adoption": 26.24,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 70.7,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
 "technology": {
 "components": {
-"adoption": 26.21,
+"adoption": 26.24,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -71,7 +97,7 @@
 "external_ids": {
 "github": "mksglu/context-mode"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,42 +119,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "Other",
 "name": "context-mode",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-02T11:45:39Z",
-"headline": "context-mode release v2.0.0-next.27",
+"date": "2026-11-08T15:00:33Z",
+"headline": "context-mode release v2.1.7",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Features\n- feat(readme): daily npm downloads charts (daily, weekly, monthly, yearly)\n\n### Fixes\n- fix(uninstall): delete a marketplace root only inside the Claude plugin cache; a directory marketplace source dir stays (D-UNINST-CACHE-ON",
+"summary": "### Fixes\n- fix: #1338 source test follows the D1 helper (d1UpdateCommand)\n- fix: doctor D1 in an unsupported host shows the host line, not the Gemini update command (#1340)\n- fix: the #1338 ctx_upgrade test follows the platform: no CLAUDE_",
 "tag": "product_update",
-"url": "https://github.com/mksglu/context-mode/releases/tag/v2.0.0-next.27"
+"url": "https://github.com/mksglu/context-mode/releases/tag/v2.1.7"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-02T00:52:15Z",
-"headline": "context-mode release v2.0.0-next.26",
+"date": "2026-11-08T01:05:53Z",
+"headline": "context-mode release v2.1.6",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Fixes\n- fix(uninstall): delete a marketplace root only inside the Claude plugin cache; a directory marketplace source dir stays (D-UNINST-CACHE-ONLY-1)\n- fix(doctor): Codex D3/D4/D5 read the Codex home the running plugin sits in; D5 PAS",
+"summary": "### Fixes\n- fix: skill and rule files under the agent's config dir reach the model whole; Read deny names a route that works; CTX_REPLACE_TRIGGER_BYTES setting (#1326)\n- fix: OpenCode ctx_* tools go through OpenCode permission rules (#1331)",
 "tag": "product_update",
-"url": "https://github.com/mksglu/context-mode/releases/tag/v2.0.0-next.26"
+"url": "https://github.com/mksglu/context-mode/releases/tag/v2.1.6"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:03Z",
+"checked_at": "2026-11-09T15:15:07Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:02Z",
+"checked_at": "2026-11-09T15:15:06Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -136,7 +162,7 @@
 "evidence_url": "https://contextmode.ai",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:51:03Z",
+"checked_at": "2026-11-09T15:15:07Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -148,7 +174,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:05:42Z",
+"checked_at": "2026-11-09T15:30:35Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -156,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-23T05:56:28Z",
-"github_forks": 2293,
-"github_language": "TypeScript",
-"github_open_issues": 354,
-"github_pushed_at": "2026-11-02T14:36:30Z",
-"github_stars": 33236,
+"github_forks": 2310,
+"github_language": "JavaScript",
+"github_open_issues": 17,
+"github_pushed_at": "2026-11-09T03:26:10Z",
+"github_stars": 33742,
 "github_topic": "mcp-server",
 "homepage": "https://contextmode.ai"
 },
 "slug": "mksglu-context-mode",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/mksglu/context-mode"
 }

@@ -21,7 +21,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.07,
+"adoption": 24.08,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -44,7 +44,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.07,
+"adoption": 24.08,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "browseros-ai/BrowserOS"
 },
-"first_seen": "2026-11-02T14:41:36Z",
+"first_seen": "2026-11-09T15:04:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,7 +91,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:36Z",
+"last_seen": "2026-11-09T15:04:57Z",
 "license": "AGPL-3.0",
 "name": "BrowserOS",
 "news": [
@@ -121,12 +121,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:50:53Z",
+"checked_at": "2026-11-09T15:14:59Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:50:51Z",
+"checked_at": "2026-11-09T15:14:57Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -134,7 +134,7 @@
 "evidence_url": "https://BrowserOS.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:50:53Z",
+"checked_at": "2026-11-09T15:14:59Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -146,7 +146,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:41Z",
+"checked_at": "2026-11-09T15:31:46Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -154,19 +154,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-18T16:23:54Z",
-"github_forks": 1525,
+"github_forks": 1536,
 "github_language": "TypeScript",
-"github_open_issues": 117,
-"github_pushed_at": "2026-11-02T03:52:53Z",
-"github_stars": 14221,
+"github_open_issues": 141,
+"github_pushed_at": "2026-11-09T14:22:22Z",
+"github_stars": 14293,
 "github_topic": "ai-agents",
 "homepage": "https://BrowserOS.com"
 },
 "slug": "browseros-ai-browseros",
 "sources": [
 {
-"payload_hash": "94499c572df18dc70a0043553f47353def1b8673c8db741127572db5dd048e22",
-"retrieved_at": "2026-11-02T14:41:36Z",
+"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
+"retrieved_at": "2026-11-09T15:04:57Z",
 "system": "github",
 "url": "https://github.com/browseros-ai/BrowserOS"
 }

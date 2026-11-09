@@ -7,6 +7,7 @@
 "copilot"
 ],
 "technology": [
+"cli",
 "code",
 "coding",
 "github",
@@ -18,12 +19,12 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+"description": "Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot, and Pi, written once in Markdown and adapted to each tool by generators with validation and evals.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "business": {
 "components": {
-"adoption": 26.8,
+"adoption": 26.82,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -37,7 +38,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 69.1,
+"score": 69.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -46,21 +47,21 @@
 },
 "technology": {
 "components": {
-"adoption": 26.8,
+"adoption": 26.82,
 "docs": 7.0,
-"domain_fit": 81.0,
+"domain_fit": 87.5,
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.81,
+"confidence": 0.875,
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 78.6,
+"score": 79.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -71,7 +72,7 @@
 "external_ids": {
 "github": "wshobson/agents"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,19 +94,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "MIT",
 "name": "agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:35Z",
+"checked_at": "2026-11-09T15:16:47Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:34Z",
+"checked_at": "2026-11-09T15:16:46Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -113,7 +114,7 @@
 "evidence_url": "https://sethhobson.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:35Z",
+"checked_at": "2026-11-09T15:16:47Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -126,19 +127,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-24T23:28:14Z",
-"github_forks": 4453,
+"github_forks": 4474,
 "github_language": "Python",
-"github_open_issues": 7,
-"github_pushed_at": "2026-11-02T01:08:47Z",
-"github_stars": 42100,
+"github_open_issues": 9,
+"github_pushed_at": "2026-11-09T01:08:33Z",
+"github_stars": 42350,
 "github_topic": "ai-agents",
 "homepage": "https://sethhobson.com"
 },
 "slug": "wshobson-agents",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/wshobson/agents"
 }

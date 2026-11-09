@@ -28,7 +28,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.78,
+"adoption": 28.99,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -42,7 +42,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 71.0,
+"score": 71.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -51,7 +51,7 @@
 },
 "data": {
 "components": {
-"adoption": 28.78,
+"adoption": 28.99,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -65,7 +65,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 78.4,
+"score": 78.6,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -74,7 +74,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.78,
+"adoption": 28.99,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -88,7 +88,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 80.6,
+"score": 80.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -99,7 +99,7 @@
 "external_ids": {
 "github": "D4Vinci/Scrapling"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -128,10 +128,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "BSD-3-Clause",
 "name": "Scrapling",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-04T20:29:16Z",
+"headline": "Scrapling: Release v0.5.1",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**Small version bump, big browser upgrade! This version lets AI agents follow motion and control drag and drop, adds dedicated remote browser sessions, and brings fixes across parsing, spiders, proxies, and the shell 🚀**\r\n\r\n**With this upda",
+"tag": "product_update",
+"url": "https://github.com/D4Vinci/Scrapling/releases/tag/v0.5.1"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-17T21:43:59Z",
@@ -142,28 +153,17 @@
 "summary": "**Scrapling v0.5 upgrades almost everything: fetching, parsing, spiders, browser automation, AI tools, and docs in ten languages 🚀**\n\n> [!NOTE]\n> **[Follow us on X for daily tips and tricks](https://x.com/Scrapling_dev)**\n\n> [!WARNING]\n> **",
 "tag": "product_update",
 "url": "https://github.com/D4Vinci/Scrapling/releases/tag/v0.5"
-},
-{
-"cluster_size": 1,
-"date": "2026-08-23T19:43:24Z",
-"headline": "Scrapling: Release v0.4.15",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "**One of the biggest releases this year: a reworked MCP server, RAG-ready Markdown in one line, an improved Cloudflare solver, and browser tabs that stay open for automation 🚀**\r\n\r\n> [!NOTE]\r\n> **[Follow us on X for daily tips and tricks](h",
-"tag": "product_update",
-"url": "https://github.com/D4Vinci/Scrapling/releases/tag/v0.4.15"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:34Z",
+"checked_at": "2026-11-09T15:16:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:32Z",
+"checked_at": "2026-11-09T15:16:43Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -171,7 +171,7 @@
 "evidence_url": "https://scrapling.readthedocs.io/en/latest/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:34Z",
+"checked_at": "2026-11-09T15:16:48Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -183,7 +183,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:04:57Z",
+"checked_at": "2026-11-09T15:29:42Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -191,19 +191,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-10-13T20:29:53Z",
-"github_forks": 9747,
+"github_forks": 10486,
 "github_language": "Python",
-"github_open_issues": 18,
-"github_pushed_at": "2026-11-02T14:39:57Z",
-"github_stars": 92357,
+"github_open_issues": 19,
+"github_pushed_at": "2026-11-09T10:36:37Z",
+"github_stars": 100329,
 "github_topic": "mcp-server",
 "homepage": "https://scrapling.readthedocs.io/en/latest/"
 },
 "slug": "d4vinci-scrapling",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/D4Vinci/Scrapling"
 }

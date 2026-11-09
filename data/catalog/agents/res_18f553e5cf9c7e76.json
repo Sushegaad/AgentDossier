@@ -22,16 +22,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-02)",
+"display": "Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://arketo.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "ecdd90e1a12ff8e5c07f008b6bc8b7c1267c53715345926fbccda68e3bfcbe6a",
+"next_check": "2026-11-16",
+"payload_hash": "e76d66b3100515c7d9efcd5c3296a29e0c0dfea71bc33725d33bed79ba174d29",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:55:45Z",
+"retrieved_at": "2026-11-09T15:19:38Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -53,7 +53,7 @@
 "domain_fit": 34.0,
 "ecosystem": 4.6,
 "governance": 0.0,
-"health": 16.0,
+"health": 12.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
@@ -62,7 +62,7 @@
 "governance_credited": {},
 "profile": "security",
 "rank": null,
-"score": 42.7,
+"score": 39.7,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -76,7 +76,7 @@
 "domain_fit": 56.4,
 "ecosystem": 4.6,
 "governance": 0.0,
-"health": 16.0,
+"health": 12.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
@@ -85,7 +85,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 44.9,
+"score": 40.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -96,7 +96,7 @@
 "external_ids": {
 "mcp_registry": "ai.arketo/arketo"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,19 +118,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:40:36Z",
+"last_seen": "2026-11-09T15:03:54Z",
 "license": null,
 "name": "Arketo",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:50:11Z",
+"checked_at": "2026-11-09T15:14:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:50:08Z",
+"checked_at": "2026-11-09T15:14:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -163,8 +163,8 @@
 "slug": "arketo-ai-arketo",
 "sources": [
 {
-"payload_hash": "67804d8ddfe839ee1bfb929edb81f67c534139cebc85b54ac7840d44dc82efae",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"payload_hash": "4b441cef1def7c8e5279300947c005ad8448e1f1a3f4e7a7166dccefceb1620a",
+"retrieved_at": "2026-11-09T15:03:54Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.arketo/arketo"
 }

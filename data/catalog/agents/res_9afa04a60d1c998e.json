@@ -24,7 +24,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 26.41,
+"adoption": 26.42,
 "docs": 7.0,
 "domain_fit": 96.4,
 "ecosystem": 3.0,
@@ -38,7 +38,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 75.3,
+"score": 75.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -49,7 +49,7 @@
 "external_ids": {
 "github": "esengine/DeepSeek-Reasonix"
 },
-"first_seen": "2026-11-02T14:44:31Z",
+"first_seen": "2026-11-09T15:07:59Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,7 +65,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 1,
+"cves": 3,
 "incidents": 0,
 "links": [
 {
@@ -73,52 +73,64 @@
 "kind": "cve",
 "title": "CVE-2026-102437",
 "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102437"
+},
+{
+"date": "2026-11-06",
+"kind": "cve",
+"title": "CVE-2026-123653",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123653"
+},
+{
+"date": "2026-11-07",
+"kind": "cve",
+"title": "CVE-2026-123989",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123989"
 }
 ],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:44:31Z",
+"last_seen": "2026-11-09T15:07:59Z",
 "license": "MIT",
 "name": "DeepSeek-Reasonix",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-02T09:43:24Z",
-"headline": "DeepSeek-Reasonix: Reasonix Desktop v1.39.11",
+"date": "2026-11-09T01:16:39Z",
+"headline": "DeepSeek-Reasonix: Reasonix CLI v2.58.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "> 安全修复：python3 -v 脚本 不再被当成只读的版本探针，和其他会运行代码的命令一样需要先批准。\n\n**发布渠道：稳定版 · v1.39.11**\n\n[English →](https://reasonix.io/changelog/v1.39.11/?lang=en) · [网页版完整更新日志 →](https://reasonix.io/changelog/v1.39.11/)\n\n## 概览\n\n**Reasonix v1.39.11 — Reasonix 1.3",
+"summary": "CLI archives built from the Studio release [studio-v2.58.1](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.58.1).",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/desktop-v1.39.11"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v2.58.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-02T09:43:17Z",
-"headline": "DeepSeek-Reasonix: Reasonix CLI v1.39.11",
+"date": "2026-11-09T01:07:25Z",
+"headline": "DeepSeek-Reasonix: Reasonix Studio v2.58.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "> 安全修复：python3 -v 脚本 不再被当成只读的版本探针，和其他会运行代码的命令一样需要先批准。\n\n**发布渠道：稳定版 · v1.39.11**\n\n[English →](https://reasonix.io/changelog/v1.39.11/?lang=en) · [网页版完整更新日志 →](https://reasonix.io/changelog/v1.39.11/)\n\n## 概览\n\n**Reasonix v1.39.11 — Reasonix 1.3",
+"summary": "本版是修复版：修好 2.58.0 里设置页版面错位、会话行置顶按钮常驻、模型菜单标签折行、思考「展开」被限高等问题，修复 Windows 启动闪控制台窗口、命令行 `mcp --help` 误执行和 Linux 终端选择。\n\n## 变更\n\n- 桌面壳的 Electron 升到 45.2.3（Chromium 156，含上游的安全与稳定性修复）。关联 #15027。\n\n## 修复\n\n- 修复 Linux 上「在终端中打开」不管你把哪个终端设成默认，总是按固定顺序挑一个（比如装了",
 "tag": "product_update",
-"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/v1.39.11"
+"url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.58.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:30Z",
+"checked_at": "2026-11-09T15:16:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:29Z",
+"checked_at": "2026-11-09T15:16:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:52:31Z",
+"checked_at": "2026-11-09T15:16:42Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -128,27 +140,27 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:05:37Z",
-"cves": 1,
+"checked_at": "2026-11-09T15:30:31Z",
+"cves": 3,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-21T08:27:02Z",
-"github_forks": 2500,
+"github_forks": 2507,
 "github_language": "Go",
-"github_open_issues": 640,
-"github_pushed_at": "2026-11-02T14:33:35Z",
-"github_stars": 36041,
+"github_open_issues": 713,
+"github_pushed_at": "2026-11-09T14:46:52Z",
+"github_stars": 36139,
 "github_topic": "ai-agent",
 "homepage": "http://reasonix.io/"
 },
 "slug": "esengine-deepseek-reasonix",
 "sources": [
 {
-"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
-"retrieved_at": "2026-11-02T14:44:31Z",
+"payload_hash": "4e47a3b317c996ea8b260b8a528e94604cc3ec5b0fb32a8a2f13cec3a29c52c1",
+"retrieved_at": "2026-11-09T15:07:59Z",
 "system": "github",
 "url": "https://github.com/esengine/DeepSeek-Reasonix"
 }

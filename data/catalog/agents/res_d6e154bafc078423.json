@@ -27,7 +27,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 29.22,
+"adoption": 29.28,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -50,7 +50,7 @@
 },
 "regulatory": {
 "components": {
-"adoption": 29.22,
+"adoption": 29.28,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -73,7 +73,7 @@
 },
 "technology": {
 "components": {
-"adoption": 29.22,
+"adoption": 29.28,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -87,7 +87,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 81.0,
+"score": 81.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -98,7 +98,7 @@
 "external_ids": {
 "github": "paperclipai/paperclip"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -157,10 +157,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "MIT",
 "name": "paperclip",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-06T22:31:53Z",
+"headline": "paperclip release v2026.1106.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "# Paperclip v2026.1106.0\n\n> Released: 2026-11-06\n\nPaperclip v2026.1106.0 carries 515 commits, promoted from `2026.1023.0-beta.0`. The headline is that the Paperclip Runner is now the default for new agents: new Claude, Codex, OpenCode, and",
+"tag": "product_update",
+"url": "https://github.com/paperclipai/paperclip/releases/tag/v2026.1106.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-24T00:03:59Z",
@@ -171,41 +182,17 @@
 "summary": "# Paperclip v2026.1023.0\n\n> Released: 2026-10-23\n\nPaperclip v2026.1023.0 carries 200 commits, promoted from `2026.1012.1-beta.0`. The headline is private work: a task or project can now be marked private and shared with named people and age",
 "tag": "product_update",
 "url": "https://github.com/paperclipai/paperclip/releases/tag/v2026.1023.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-12T21:06:53Z",
-"headline": "paperclip release v2026.1012.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "# Paperclip v2026.1012.0\n\n> Released: 2026-10-12\n\nPaperclip v2026.1012.0 carries 130 commits, promoted from `2026.1006.0-beta.0`. The headline is that outside assistants can now join your team: Claude Code, Codex, OpenCode, and any MCP clie",
-"tag": "product_update",
-"url": "https://github.com/paperclipai/paperclip/releases/tag/v2026.1012.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-08-08T17:39:16Z",
-"discussion_url": "https://news.ycombinator.com/item?id=49223981",
-"engagement": 11,
-"headline": "Show HN: Clippy for macOS – retro floating paperclip with computer use",
-"kind": "community",
-"link_confidence": 0.88,
-"outlet": "Hacker News",
-"summary": null,
-"tag": "news",
-"url": "https://github.com/Ar9av/clippy"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:23Z",
+"checked_at": "2026-11-09T15:16:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:22Z",
+"checked_at": "2026-11-09T15:16:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -213,7 +200,7 @@
 "evidence_url": "https://paperclip.ing",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:23Z",
+"checked_at": "2026-11-09T15:16:33Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -225,7 +212,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:04:54Z",
+"checked_at": "2026-11-09T15:29:39Z",
 "cves": 6,
 "source": "nvd",
 "tier": 1
@@ -233,19 +220,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-02T15:01:51Z",
-"github_forks": 18256,
+"github_forks": 18661,
 "github_language": "TypeScript",
-"github_open_issues": 6632,
-"github_pushed_at": "2026-11-02T14:36:27Z",
-"github_stars": 110166,
+"github_open_issues": 6606,
+"github_pushed_at": "2026-11-09T15:03:19Z",
+"github_stars": 112522,
 "github_topic": "ai-agents",
 "homepage": "https://paperclip.ing"
 },
 "slug": "paperclipai-paperclip",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/paperclipai/paperclip"
 }

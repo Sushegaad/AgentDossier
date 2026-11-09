@@ -1,0 +1,235 @@
+{
+"canonical_url": "aimochi.ai/blog_detail/20261107",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"business": [
+"meeting"
+],
+"data": [
+"search"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-11-09)",
+"evidence_url": "https://www.aimochi.ai/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-16",
+"payload_hash": "eeabf7ccb4a37960137b03d1f87ed4a799ebebf8a1ca252d1a29464186c48945",
+"period_end": null,
+"retrieved_at": "2026-11-09T15:19:03Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": null,
+"description": "Read-only access to your AIMochi meeting notes: list, search and read transcripts and summaries.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.722,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 44.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+},
+"data": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 48.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 48.9,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.aimochi/notes"
+},
+"first_seen": "2026-11-09T15:03:54Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_384e1aa2480f53ed",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-09T15:03:54Z",
+"license": null,
+"name": "AIMochi",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-11-07T11:20:46+00:00",
+"headline": "AIMochi 支援 MCP：讓 Claude Code、Cursor 直接讀取你的會議筆記（設定教學）",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "aimochi.ai (vendor)",
+"summary": "AIMochi 新增「AI 工具連線（MCP）」：到 app.aimochi.ai/settings 建立個人存取權杖，Claude Code、Cursor 等支援 MCP 的 AI 工具就能以唯讀方式列出、搜尋、讀取你的 AIMochi 筆記。本文說明 MCP 是什麼、設定步驟、可用工具、使用情境與權杖安全注意事項。",
+"tag": "news",
+"url": "https://www.aimochi.ai/blog_detail/20261107/"
+},
+{
+"cluster_size": 1,
+"date": "2026-10-02T05:59:46+00:00",
+"headline": "2026 逐字稿工具推薦：7 款中文語音轉文字工具比較（AIMochi、雅婷、Notta、Otter、Taption、Whisper）",
+"kind": "vendor",
+"link_confidence": 0.95,
+"outlet": "aimochi.ai (vendor)",
+"summary": "2026 年挑中文逐字稿工具，先看三件事：中文（含中英夾雜、台語）辨識、你在哪裡錄音與交付、需不需要講者標記與摘要。本文比較 AIMochi、雅婷逐字稿、Notta、Otter.ai、Taption、Whisper 與手機內建功能，依會議、訪談、課堂、影片字幕等情境給出選擇建議。",
+"tag": "news",
+"url": "https://www.aimochi.ai/blog_detail/20261002/"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-09T15:13:53Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-09T15:13:50Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://api.aimochi.ai/mcp"
+}
+],
+"server_name": "ai.aimochi/notes",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "aimochi.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-11-08T04:17:55.774243Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-11-08T04:17:55.774243Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "aimochi-ai-aimochi",
+"sources": [
+{
+"payload_hash": "d93c2ce39aef2c2b46e001525a93222ce7519b0fc789449bec367b505ff17934",
+"retrieved_at": "2026-11-09T15:03:54Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aimochi/notes"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": null,
+"traces": 5,
+"vendor_compliance": 4
+},
+"url": "https://www.aimochi.ai/blog_detail/20261107/",
+"vendor": "aimochi.ai"
+}

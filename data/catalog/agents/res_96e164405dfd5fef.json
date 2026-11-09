@@ -21,7 +21,7 @@
 "domains": {
 "cybersecurity": {
 "components": {
-"adoption": 25.04,
+"adoption": 25.05,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -44,7 +44,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.04,
+"adoption": 25.05,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "modelscope/FunASR"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,31 +91,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "MIT",
 "name": "FunASR",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-02T08:59:03Z",
-"headline": "FunASR release v1.4.20",
+"date": "2026-11-08T05:12:34Z",
+"headline": "FunASR release v1.4.24",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- release1420-pypi-verified-20261102 -->\n### Final Publication Acceptance\n\nGitHub Release and PyPI 1.4.20 are both published. Both distributions were downloaded from official PyPI and match the accepted GitHub assets by SHA-256 and size:",
+"summary": "<!-- release1424-pypi-verified-20261108 -->\n### Final Publication Acceptance\n\nGitHub Release and PyPI 1.4.24 are both published. Both distributions were downloaded from official PyPI and match the accepted GitHub assets by SHA-256 and size:",
 "tag": "product_update",
-"url": "https://github.com/modelscope/FunASR/releases/tag/v1.4.20"
+"url": "https://github.com/modelscope/FunASR/releases/tag/v1.4.24"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-02T07:32:35Z",
-"headline": "FunASR ONNX runtime v0.4.5",
+"date": "2026-11-07T05:04:09Z",
+"headline": "FunASR release v1.4.23",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Standalone `funasr-onnx` 0.4.5. This does not update the root `funasr` release.\n\nInstall: `python -m pip install -U funasr-onnx==0.4.5`.\n\nFixes streaming Paraformer short/no-feature packet IndexError (#3827), preserving\nbuffered audio, fina",
+"summary": "<!-- release1423-pypi-verified-20261107 -->\n### Final Publication Acceptance\n\nGitHub Release and PyPI 1.4.23 are both published. Both distributions were downloaded from official PyPI and match the accepted GitHub assets by SHA-256 and size:",
 "tag": "product_update",
-"url": "https://github.com/modelscope/FunASR/releases/tag/runtime-onnx-v0.4.5"
+"url": "https://github.com/modelscope/FunASR/releases/tag/v1.4.23"
 }
 ],
 "news_checked": true,
@@ -141,19 +141,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-11-24T02:28:11Z",
-"github_forks": 2102,
+"github_forks": 2115,
 "github_language": "Python",
-"github_open_issues": 52,
-"github_pushed_at": "2026-11-02T08:58:26Z",
-"github_stars": 20912,
+"github_open_issues": 51,
+"github_pushed_at": "2026-11-09T04:49:20Z",
+"github_stars": 20977,
 "github_topic": "mcp-server",
 "homepage": "www.funasr.com"
 },
 "slug": "modelscope-funasr",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/modelscope/FunASR"
 }

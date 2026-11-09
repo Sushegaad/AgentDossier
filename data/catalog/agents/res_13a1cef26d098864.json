@@ -1,0 +1,174 @@
+{
+"canonical_url": "aitmpl.com",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"cli",
+"code",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Open-source registry and CLI for Claude Code components: agents, commands, skills, hooks, MCPs, settings and mods",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 26.21,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 77.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "davila7/claude-code-templates"
+},
+"first_seen": "2026-11-09T15:04:52Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_13a1cef26d098864",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-09T15:04:52Z",
+"license": "MIT",
+"name": "claude-code-templates",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-09T15:31:15Z",
+"headline": "claude-code-templates release v1.29.7",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Security\n- **Fix command injection in the analytics Console Bridge** (port 3334) —\n  GHSA-4jm9-m3fr-9jpx, reported by @manus-pi. Affected 1.11.0 through\n  1.29.6. Terminal input is spawned with argv and passed through the\n  environment",
+"tag": "product_update",
+"url": "https://github.com/davila7/claude-code-templates/releases/tag/v1.29.7"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-17T01:14:32Z",
+"headline": "claude-code-templates: v1.29.6 — Claude Mods: --mod installs Anthropic-layout plugins, 24 mods",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Function Hooks become **Claude Mods**. Anthropic renamed the feature, shipped it\nbehind an early-access flag in Claude Code >= 2.1.259, and published the source of\nits three built-in mods plus the full TypeScript declarations\n([anthropics/c",
+"tag": "product_update",
+"url": "https://github.com/davila7/claude-code-templates/releases/tag/v1.29.6"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-09T15:13:55Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-09T15:13:54Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://aitmpl.com",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-11-09T15:13:56Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "aitmpl.com",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-09T15:30:38Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-07-04T01:26:26Z",
+"github_forks": 3898,
+"github_language": "Python",
+"github_open_issues": 478,
+"github_pushed_at": "2026-11-09T04:20:42Z",
+"github_stars": 33232,
+"github_topic": "ai-agents",
+"homepage": "https://aitmpl.com"
+},
+"slug": "davila7-claude-code-templates",
+"sources": [
+{
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
+"system": "github",
+"url": "https://github.com/davila7/claude-code-templates"
+}
+],
+"tags": [
+"agent-skills",
+"ai-agents",
+"anthropic",
+"anthropic-claude",
+"claude",
+"claude-code",
+"claude-code-plugins",
+"cli",
+"mcp",
+"registry"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://aitmpl.com",
+"vendor": "davila7"
+}

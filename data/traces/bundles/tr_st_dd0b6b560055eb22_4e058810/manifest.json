@@ -1,0 +1,32 @@
+{
+ "agent": "res_dd0b6b560055eb22",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_dd0b6b560055eb22_4e058810",
+ "kind": "self_test",
+ "name": "Agent Blueprint",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://agentblueprint.ai/.well-known/agent.json",
+   "checked_at": "2026-11-09T15:13:36Z",
+   "errors": [
+    "missing 'version'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "signed": false,
+   "status": "invalid"
+  },
+  "ard": {
+   "checked_at": "2026-11-09T15:13:34Z",
+   "errors": [
+    "entries[0]: missing required term 'displayName'"
+   ],
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://agentblueprint.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "invalid"
+  }
+ },
+ "slug": "agentblueprint-ai-agent-blueprint"
+}

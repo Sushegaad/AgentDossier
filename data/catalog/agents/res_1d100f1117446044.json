@@ -71,7 +71,7 @@
 "external_ids": {
 "github": "dolthub/dolt"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,47 +93,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "Apache-2.0",
 "name": "dolt",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-31T16:59:19Z",
-"headline": "dolt release v2.6.2",
+"date": "2026-11-05T20:30:33Z",
+"headline": "dolt release v2.7.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Merged PRs\n\n## dolt\n\n* [12277](https://github.com/dolthub/dolt/pull/12277): go: fsck: Validate everything reachable from working sets.\n  fsck now validates the working and staged roots of every working set, plus the roots and commits reco",
+"summary": "# Merged PRs\n\n## dolt\n\n* [12360](https://github.com/dolthub/dolt/pull/12360): pk change merge failure with multi-merge-bases\n  Related: https://github.com/dolthub/dolt/issues/12357\n\n## go-mysql-server\n\n* [4123](https://github.com/dolthub/go",
 "tag": "product_update",
-"url": "https://github.com/dolthub/dolt/releases/tag/v2.6.2"
+"url": "https://github.com/dolthub/dolt/releases/tag/v2.7.2"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-26T17:35:56Z",
-"headline": "dolt release v2.6.1",
+"date": "2026-11-05T03:48:09Z",
+"headline": "dolt release v2.7.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Merged PRs\n\n## dolt\n\n* [12203](https://github.com/dolthub/dolt/pull/12203): nbs: deduplicate archive dictionaries by content\n  Fix dolthub/dolt#12177\n* [12198](https://github.com/dolthub/dolt/pull/12198): Build virtual merge bases in UTC",
+"summary": "# Merged PRs\n\n## dolt\n\n* [12354](https://github.com/dolthub/dolt/pull/12354): Fix merge-preview schema order when rekeying the ancestor\n  Preserve the `(base, ours, theirs)` order returned by `applySchemaFallbacks` when binding and returnin",
 "tag": "product_update",
-"url": "https://github.com/dolthub/dolt/releases/tag/v2.6.1"
+"url": "https://github.com/dolthub/dolt/releases/tag/v2.7.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:25Z",
+"checked_at": "2026-11-09T15:15:28Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:22Z",
+"checked_at": "2026-11-09T15:15:25Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:51:26Z",
+"checked_at": "2026-11-09T15:15:29Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -144,19 +144,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-07-24T17:46:25Z",
-"github_forks": 911,
+"github_forks": 917,
 "github_language": "Go",
-"github_open_issues": 671,
-"github_pushed_at": "2026-10-31T16:59:19Z",
-"github_stars": 24800,
+"github_open_issues": 687,
+"github_pushed_at": "2026-11-09T13:43:04Z",
+"github_stars": 24850,
 "github_topic": "ai-agents",
 "homepage": "https://www.dolthub.com"
 },
 "slug": "dolthub-dolt",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/dolthub/dolt"
 }
