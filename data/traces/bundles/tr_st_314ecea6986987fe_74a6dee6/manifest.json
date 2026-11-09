@@ -1,0 +1,34 @@
+{
+ "agent": "res_314ecea6986987fe",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_314ecea6986987fe_74a6dee6",
+ "kind": "self_test",
+ "name": "Mizan",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://mizan.ac/.well-known/agent-card.json",
+   "checked_at": "2026-11-09T15:16:09Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "Look up a player",
+    "Check up to 100 Steam accounts",
+    "List the ban lists Mizan reads",
+    "The registry's size"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-11-09T15:16:08Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://mizan.ac/.well-known/ard.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "mizan-ac-mizan"
+}

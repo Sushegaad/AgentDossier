@@ -5,18 +5,18 @@
 "classification": {
 "matched": {
 "business": [
-"assistant",
 "workflow"
 ],
 "data": [
 "rag",
+"search",
 "vector"
 ],
 "technology": [
 "code",
 "deploy",
-"framework",
 "mcp",
+"orchestration",
 "typescript"
 ]
 },
@@ -30,21 +30,21 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.44,
+"adoption": 28.46,
 "docs": 7.0,
-"domain_fit": 56.4,
+"domain_fit": 34.0,
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.564,
+"confidence": 0.34,
 "evidence_coverage": 0.944,
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 73.2,
+"score": 70.7,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -53,21 +53,21 @@
 },
 "data": {
 "components": {
-"adoption": 28.44,
+"adoption": 28.46,
 "docs": 7.0,
-"domain_fit": 56.4,
+"domain_fit": 71.3,
 "ecosystem": 6.6,
 "governance": null,
 "health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.564,
+"confidence": 0.713,
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 75.9,
+"score": 78.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -76,7 +76,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.44,
+"adoption": 28.46,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -101,7 +101,7 @@
 "external_ids": {
 "github": "ruvnet/ruflo"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,7 +123,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "MIT",
 "merged_ids": [
 "res_203ebd799fdf19df"
@@ -132,44 +132,44 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-01T20:19:14Z",
-"headline": "ruflo: v3.71.0 — automatic context delegation in ruflo-mods 0.15.0 (opt-in)",
+"date": "2026-11-09T06:55:59Z",
+"headline": "ruflo: v3.74.1 — @metaharness/darwin in-process (ADR-526), zod 4 security, PageRank",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Plain-language summary: https://gist.github.com/ruvnet/496fe146754796522f133b31d526bc02\n\n> **How to get it:** the feature lives in the **ruflo-mods 0.15.0** Claude Code plugin, delivered through the ruflo plugin marketplace (update it with",
+"summary": "> **Use 3.74.1, not 3.74.0.** The `@claude-flow/cli@3.74.0` tarball shipped stale `.claude/helpers` files (3.63.4 content), and `ruflo@3.74.0` depends on that exact version. 3.74.1 ships the helpers from main. The publish script now refuses",
 "tag": "product_update",
-"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.71.0"
+"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.74.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-01T19:19:02Z",
-"headline": "ruflo: v3.70.0 — governed context delegation (opt-in) with checked citations",
+"date": "2026-11-09T01:30:07Z",
+"headline": "ruflo: v3.73.0 — init ends with your project, opt-in activation telemetry, Node 20 keeps ruvector",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Plain-language summary: https://gist.github.com/ruvnet/490ef952e5f2e8b94145577d1696341d\n\n\nMinor release: `@claude-flow/cli`, `claude-flow`, `ruflo` 3.70.0 — governed context delegation (ADR-521, #4648). Nothing changes by default.\n\n### Adde",
+"summary": "## Faster first five minutes\n\n- **`init` ends with your project, not a list of commands** (#4871, #4875). It prints a quick local snapshot: tracked files, top languages, the most-changed file in the last 90 days, and your test command. Then",
 "tag": "product_update",
-"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.70.0"
+"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.73.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:01Z",
+"checked_at": "2026-11-09T15:15:06Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:00Z",
+"checked_at": "2026-11-09T15:15:04Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"evidence_url": "https://Cognitum.One",
+"evidence_url": "https://cognitum.one",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:51:01Z",
+"checked_at": "2026-11-09T15:15:06Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -182,44 +182,44 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-02T21:24:20Z",
-"github_forks": 9461,
+"github_forks": 9568,
 "github_language": "TypeScript",
-"github_open_issues": 989,
-"github_pushed_at": "2026-11-02T09:21:09Z",
-"github_stars": 80602,
+"github_open_issues": 622,
+"github_pushed_at": "2026-11-09T09:20:19Z",
+"github_stars": 81326,
 "github_topic": "ai-agents",
-"homepage": "https://Cognitum.One"
+"homepage": "https://cognitum.one"
 },
 "slug": "ruvnet-ruflo",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/ruvnet/ruflo"
 }
 ],
 "tags": [
+"agent-memory",
+"agent-orchestration",
 "agentic-ai",
-"agentic-framework",
 "agentic-workflow",
-"agents",
 "ai-agents",
-"ai-assistant",
-"ai-skills",
 "autonomous-agents",
 "claude",
+"claude-code",
 "codex",
-"dsh-plugin",
-"harness",
+"hnsw",
+"mcp",
 "mcp-server",
 "multi-agent",
 "multi-agent-systems",
-"npm",
-"skills",
+"plugins",
+"rvf",
 "swarm",
 "swarm-intelligence",
-"typescript"
+"typescript",
+"vector-search"
 ],
 "tenant": null,
 "traces": [],
@@ -232,6 +232,6 @@
 "traces": 5,
 "vendor_compliance": null
 },
-"url": "https://Cognitum.One",
+"url": "https://cognitum.one",
 "vendor": "ruvnet"
 }

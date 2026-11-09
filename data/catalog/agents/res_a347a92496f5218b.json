@@ -33,13 +33,13 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.47,
+"adoption": 25.48,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 18.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
@@ -47,7 +47,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 70.3,
+"score": 71.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -56,13 +56,13 @@
 },
 "data": {
 "components": {
-"adoption": 25.47,
+"adoption": 25.48,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 18.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -70,7 +70,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 67.2,
+"score": 68.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -79,13 +79,13 @@
 },
 "regulatory": {
 "components": {
-"adoption": 25.47,
+"adoption": 25.48,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 18.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -93,7 +93,7 @@
 "governance_credited": {},
 "profile": "regulated",
 "rank": null,
-"score": 53.0,
+"score": 54.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -102,13 +102,13 @@
 },
 "sales": {
 "components": {
-"adoption": 25.47,
+"adoption": 25.48,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 18.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
@@ -116,7 +116,7 @@
 "governance_credited": {},
 "profile": "commercial",
 "rank": null,
-"score": 62.2,
+"score": 63.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -125,13 +125,13 @@
 },
 "technology": {
 "components": {
-"adoption": 25.47,
+"adoption": 25.48,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
 "governance": null,
 "health": 20.0,
-"trust": 18.0
+"trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -139,7 +139,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 72.0,
+"score": 72.8,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -150,7 +150,7 @@
 "external_ids": {
 "github": "nocobase/nocobase"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -233,8 +233,8 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:44:31Z",
-"license": null,
+"last_seen": "2026-11-09T15:07:59Z",
+"license": "Other",
 "merged_ids": [
 "res_a347a92496f5218b"
 ],
@@ -242,41 +242,41 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-02T08:18:37Z",
-"headline": "NocoBase v3 Beta · 2026-11-02.1",
+"date": "2026-11-09T11:19:49Z",
+"headline": "NocoBase v3 Beta · 2026-11-09.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### 🚀 Improvements\n\n- **[Agents]** Applications can order conversation-linked work by its latest update without additional requests. ([#11283](https://github.com/nocobase/nocobase/pull/11283)) by @2013xile\n- **[Users]** Invited users can ch",
+"summary": "### 🎉 New Features\n\n- **[Skills]** Add Agent Skills for configuring and verifying multi-instance applications and shared Redis backends. ([#11397](https://github.com/nocobase/nocobase/pull/11397)) by @chenos\n- **[App foundation]** Add a `fo",
 "tag": "product_update",
-"url": "https://github.com/nocobase/nocobase/releases/tag/nocobase-v3-beta/2026-11-02.1"
+"url": "https://github.com/nocobase/nocobase/releases/tag/nocobase-v3-beta/2026-11-09.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-31T14:31:11Z",
-"headline": "NocoBase v3 Beta · 2026-10-31.1",
+"date": "2026-11-09T03:43:06Z",
+"headline": "NocoBase v3 Beta · 2026-11-09.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### 🎉 New Features\n\n- **[Realtime updates]** Redis-backed realtime now requires explicit registration of the commercial broker plugin, while single-instance applications retain the built-in Memory broker. ([#11258](https://github.com/nocoba",
+"summary": "### 🚀 Improvements\n\n- **[App foundation]** Features and extensions now opens the first matching feature by default on desktop while preserving search filters. ([#11396](https://github.com/nocobase/nocobase/pull/11396)) by @chenos\n\n### 🐛 Bug",
 "tag": "product_update",
-"url": "https://github.com/nocobase/nocobase/releases/tag/nocobase-v3-beta/2026-10-31.1"
+"url": "https://github.com/nocobase/nocobase/releases/tag/nocobase-v3-beta/2026-11-09.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:15Z",
+"checked_at": "2026-11-09T15:16:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:08Z",
+"checked_at": "2026-11-09T15:16:17Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:52:19Z",
+"checked_at": "2026-11-09T15:16:28Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -286,7 +286,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:08Z",
+"checked_at": "2026-11-09T15:31:00Z",
 "cves": 15,
 "source": "nvd",
 "tier": 1
@@ -294,19 +294,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2020-10-24T07:27:48Z",
-"github_forks": 2948,
+"github_forks": 2954,
 "github_language": "TypeScript",
-"github_open_issues": 346,
-"github_pushed_at": "2026-11-02T12:17:20Z",
-"github_stars": 24822,
-"github_topic": "ai-agent",
+"github_open_issues": 313,
+"github_pushed_at": "2026-11-09T14:59:31Z",
+"github_stars": 24876,
+"github_topic": "ai-agents",
 "homepage": "https://www.nocobase.com"
 },
 "slug": "nocobase-nocobase",
 "sources": [
 {
-"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
-"retrieved_at": "2026-11-02T14:44:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/nocobase/nocobase"
 }

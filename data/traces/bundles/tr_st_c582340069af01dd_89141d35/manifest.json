@@ -1,0 +1,19 @@
+{
+ "agent": "res_c582340069af01dd",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c582340069af01dd_89141d35",
+ "kind": "self_test",
+ "name": "Mizan",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:mizan.ac:mcp:registry",
+   "manifest_url": "https://mizan.ac/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "mizan-ac-mizan"
+}

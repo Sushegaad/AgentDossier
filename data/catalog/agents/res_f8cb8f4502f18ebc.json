@@ -26,16 +26,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-11-02)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://teable.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "9948baccf360b7222cf87151e15b6b3da6ad045460603b642b24cc28c78d5c90",
+"next_check": "2026-11-16",
+"payload_hash": "e5cef5ceadd62c955774099e8816861b8f64b0eca6f92422e52d2a579265150e",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:58:26Z",
+"retrieved_at": "2026-11-09T15:22:28Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,16 +52,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-11-02)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://teable.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "5a65a649be95f6b85d0824807213be4b872dad35bc98198ce0aef87dfd13f716",
+"next_check": "2026-11-16",
+"payload_hash": "10d0402106c3ff09746f7bd490d53301b7809854c120f9aaa76ce51cc81621b5",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:58:26Z",
+"retrieved_at": "2026-11-09T15:22:28Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -78,16 +78,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "ISO 27001: Vendor-claimed (vendor page, 2026-11-02)",
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://teable.ai/",
 "framework": "iso27001",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "9948baccf360b7222cf87151e15b6b3da6ad045460603b642b24cc28c78d5c90",
+"next_check": "2026-11-16",
+"payload_hash": "e5cef5ceadd62c955774099e8816861b8f64b0eca6f92422e52d2a579265150e",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:58:26Z",
+"retrieved_at": "2026-11-09T15:22:28Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -104,16 +104,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-02)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://teable.ai/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "9948baccf360b7222cf87151e15b6b3da6ad045460603b642b24cc28c78d5c90",
+"next_check": "2026-11-16",
+"payload_hash": "e5cef5ceadd62c955774099e8816861b8f64b0eca6f92422e52d2a579265150e",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:58:26Z",
+"retrieved_at": "2026-11-09T15:22:28Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -195,7 +195,7 @@
 "external_ids": {
 "github": "teableio/teable"
 },
-"first_seen": "2026-11-02T14:44:31Z",
+"first_seen": "2026-11-09T15:07:59Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -217,47 +217,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:44:31Z",
+"last_seen": "2026-11-09T15:07:59Z",
 "license": "Other",
 "name": "teable",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-01T09:20:00Z",
-"headline": "teable release release.2026-11-01T07-52-11Z.3675",
+"date": "2026-11-06T12:28:17Z",
+"headline": "teable release release.2026-11-06T11-23-32Z.3804",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Feature Updates\n- Record details now open in a resizable, non-modal side panel within the table, keeping the selected row highlighted and remembering the panel width between sessions.\n- Linked records open in the same panel, with breadcr",
+"summary": "## Bug Fixes & Improvements\n- Improved the security of key management.",
 "tag": "product_update",
-"url": "https://github.com/teableio/teable/releases/tag/release.2026-11-01T07-52-11Z.3675"
+"url": "https://github.com/teableio/teable/releases/tag/release.2026-11-06T11-23-32Z.3804"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-30T13:12:47Z",
-"headline": "teable release release.2026-10-30T09-29-42Z.3673",
+"date": "2026-11-06T10:16:52Z",
+"headline": "teable release release.2026-11-06T08-34-24Z.3803",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Feature Updates\n- Global search now highlights all visible matching cells, shows the active match and total count, and supports Enter to move between results. Highlights and navigation respect filters, hidden fields, shared views, and pe",
+"summary": "## Feature Updates\n- Added the read-only MCP query-data tool for structured record retrieval, filtering, pagination, aggregation, grouping, and bucketing without SQL. Queries follow existing access controls, and unsupported capabilities ret",
 "tag": "product_update",
-"url": "https://github.com/teableio/teable/releases/tag/release.2026-10-30T09-29-42Z.3673"
+"url": "https://github.com/teableio/teable/releases/tag/release.2026-11-06T08-34-24Z.3803"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:41Z",
+"checked_at": "2026-11-09T15:16:56Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:40Z",
+"checked_at": "2026-11-09T15:16:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:52:41Z",
+"checked_at": "2026-11-09T15:16:56Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -268,19 +268,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-11-01T07:02:49Z",
-"github_forks": 1357,
+"github_forks": 1361,
 "github_language": "TypeScript",
-"github_open_issues": 151,
-"github_pushed_at": "2026-11-02T13:17:45Z",
-"github_stars": 21950,
+"github_open_issues": 149,
+"github_pushed_at": "2026-11-09T10:03:23Z",
+"github_stars": 21964,
 "github_topic": "ai-agent",
 "homepage": "https://teable.ai"
 },
 "slug": "teableio-teable",
 "sources": [
 {
-"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
-"retrieved_at": "2026-11-02T14:44:31Z",
+"payload_hash": "4e47a3b317c996ea8b260b8a528e94604cc3ec5b0fb32a8a2f13cec3a29c52c1",
+"retrieved_at": "2026-11-09T15:07:59Z",
 "system": "github",
 "url": "https://github.com/teableio/teable"
 }

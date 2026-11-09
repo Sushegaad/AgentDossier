@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.aquex/stage1"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,19 +66,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:40:36Z",
+"last_seen": "2026-11-09T15:03:54Z",
 "license": null,
 "name": "ai.aquex/stage1",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:50:07Z",
+"checked_at": "2026-11-09T15:14:21Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:50:05Z",
+"checked_at": "2026-11-09T15:14:20Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -88,13 +88,13 @@
 "identifier": "@aquex/stage1",
 "registry": "npm",
 "transport": "stdio",
-"version": "0.6.0"
+"version": "0.7.0"
 }
 ],
 "parser_version": "mcp-2025-06-18",
 "server_name": "ai.aquex/stage1",
 "status": "claimed",
-"version": "0.6.0",
+"version": "0.7.0",
 "via": "mcp_registry"
 }
 },
@@ -103,23 +103,23 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:03:08Z",
+"checked_at": "2026-11-09T15:27:59Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 1,
-"mcp_registry_published_at": "2026-10-08T13:22:52.80521Z",
+"mcp_registry_published_at": "2026-11-02T16:20:41.404162Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-08T13:22:52.80521Z",
+"mcp_registry_updated_at": "2026-11-02T16:20:41.404162Z",
 "mcp_transports": []
 },
 "slug": "aquex-ai-ai-aquex-stage1",
 "sources": [
 {
-"payload_hash": "67804d8ddfe839ee1bfb929edb81f67c534139cebc85b54ac7840d44dc82efae",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"payload_hash": "d93c2ce39aef2c2b46e001525a93222ce7519b0fc789449bec367b505ff17934",
+"retrieved_at": "2026-11-09T15:03:54Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aquex/stage1"
 }

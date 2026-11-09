@@ -27,16 +27,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-02)",
+"display": "Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://orchestrator.inc/privacy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "13eeb6bf4fcb4f24e6cf25a717b6262df925cbb5d756e071f3b1aef7bf4a472e",
+"next_check": "2026-11-16",
+"payload_hash": "f79b3fc0dbd0ce1964b104ce9e42320b86ee07e35649f7e981edf5b93c2d00c8",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:58:04Z",
+"retrieved_at": "2026-11-09T15:22:00Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -53,7 +53,7 @@
 "domains": {
 "supply_chain": {
 "components": {
-"adoption": 24.03,
+"adoption": 24.09,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -67,14 +67,14 @@
 "governance_credited": {},
 "profile": "operations",
 "rank": null,
-"score": 57.1,
+"score": 57.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
 },
 "technology": {
 "components": {
-"adoption": 24.03,
+"adoption": 24.09,
 "docs": 7.0,
 "domain_fit": 94.5,
 "ecosystem": 3.0,
@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "OrchestratorInc/agent-orchestrator"
 },
-"first_seen": "2026-11-02T14:41:36Z",
+"first_seen": "2026-11-09T15:04:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,47 +119,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:36Z",
+"last_seen": "2026-11-09T15:04:57Z",
 "license": "Apache-2.0",
 "name": "agent-orchestrator",
 "news": [
 {
-"cluster_size": 2,
-"date": "2026-10-30T13:20:33Z",
-"headline": "agent-orchestrator release v0.14.8",
+"cluster_size": 1,
+"date": "2026-11-08T18:52:08Z",
+"headline": "agent-orchestrator release v0.14.11-nightly.202611081824",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Added\n\n- Consistent Chromium identity, and Chrome mode for agents in the user's own Chrome by @Vaibhaav-Tiwari in [#6876](https://github.com/Untrivial-ai/agent-orchestrator/pull/6876)\n- Let the new chat page take pasted images and files",
+"summary": "**Changes in this nightly**\n\n- Shorten the remote hosts toggle description by @illegalcall in [#7994](https://github.com/Untrivial-ai/agent-orchestrator/pull/7994)\n- Cut Go CI runner time ~5x and the slowest PR check from 10 to ~4\\.5 minute",
 "tag": "product_update",
-"url": "https://github.com/OrchestratorInc/agent-orchestrator/releases/tag/v0.14.8"
+"url": "https://github.com/OrchestratorInc/agent-orchestrator/releases/tag/v0.14.11-nightly.202611081824"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-01T19:03:40Z",
-"headline": "agent-orchestrator release v0.14.9-nightly.202611011830",
+"date": "2026-11-08T16:24:20Z",
+"headline": "agent-orchestrator release v0.14.11-nightly.202611081556",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Changes in this nightly**\n\n- Browse, comment on and restore a session's artifacts by @Prasad-D-Ware in [#7355](https://github.com/Untrivial-ai/agent-orchestrator/pull/7355)\n- Usable Chat sooner when a paused session wakes by @mohakchakrab",
+"summary": "**Changes in this nightly**\n\n- Keep a loader up through chat/terminal switches by @MohamedKamran in [#7908](https://github.com/Untrivial-ai/agent-orchestrator/pull/7908)\n- Add Summary with the account picker to orchestrator sessions by @ill",
 "tag": "product_update",
-"url": "https://github.com/OrchestratorInc/agent-orchestrator/releases/tag/v0.14.9-nightly.202611011830"
+"url": "https://github.com/OrchestratorInc/agent-orchestrator/releases/tag/v0.14.11-nightly.202611081556"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:20Z",
+"checked_at": "2026-11-09T15:16:31Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:19Z",
+"checked_at": "2026-11-09T15:16:29Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:52:21Z",
+"checked_at": "2026-11-09T15:16:31Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -169,7 +169,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:43Z",
+"checked_at": "2026-11-09T15:31:45Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -177,19 +177,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-13T09:52:36Z",
-"github_forks": 1912,
-"github_language": "Go",
-"github_open_issues": 824,
-"github_pushed_at": "2026-11-02T14:41:13Z",
-"github_stars": 14014,
+"github_forks": 1950,
+"github_language": "TypeScript",
+"github_open_issues": 925,
+"github_pushed_at": "2026-11-09T14:58:08Z",
+"github_stars": 14337,
 "github_topic": "ai-agents",
 "homepage": "https://orchestrator.inc"
 },
 "slug": "orchestratorinc-agent-orchestrator",
 "sources": [
 {
-"payload_hash": "94499c572df18dc70a0043553f47353def1b8673c8db741127572db5dd048e22",
-"retrieved_at": "2026-11-02T14:41:36Z",
+"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
+"retrieved_at": "2026-11-09T15:04:57Z",
 "system": "github",
 "url": "https://github.com/OrchestratorInc/agent-orchestrator"
 }

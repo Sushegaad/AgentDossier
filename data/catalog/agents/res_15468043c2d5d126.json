@@ -1,0 +1,159 @@
+{
+"canonical_url": "github.com/ccch1mneyyy/dsh-go",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"coding",
+"llm"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 24.56,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 69.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "ccch1mneyyy/dsh-Go"
+},
+"first_seen": "2026-11-09T15:07:59Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_15468043c2d5d126",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-09T15:07:59Z",
+"license": "AGPL-3.0",
+"name": "dsh-Go",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-11-09T02:25:45Z",
+"headline": "dsh-Go: DSH Go 1.0.14",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**手机安装：只需下载 [`dsh-go-1.0.14-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.0.14/dsh-go-1.0.14-arm64.apk)。**\n\n`update.json` 和 `SHA256SUMS` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phon",
+"tag": "product_update",
+"url": "https://github.com/ccch1mneyyy/dsh-Go/releases/tag/v1.0.14"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-07T17:47:57Z",
+"headline": "dsh-Go: DSH Go 1.0.13",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**手机安装：只需下载 [`dsh-go-1.0.13-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.0.13/dsh-go-1.0.13-arm64.apk)。**\n\n`update.json` 和 `SHA256SUMS` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phon",
+"tag": "product_update",
+"url": "https://github.com/ccch1mneyyy/dsh-Go/releases/tag/v1.0.13"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"not_checked": "code_host",
+"status": "unknown"
+},
+"ard": {
+"not_checked": "code_host",
+"status": "unknown"
+},
+"mcp": {
+"not_checked": "code_host",
+"status": "unknown"
+}
+},
+"publisher_domain": "github.com",
+"resource_type": "agent",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-10-25T08:09:52Z",
+"github_forks": 744,
+"github_language": "Dart",
+"github_open_issues": 429,
+"github_pushed_at": "2026-11-09T14:59:37Z",
+"github_stars": 17310,
+"github_topic": "ai-agent",
+"homepage": null
+},
+"slug": "ccch1mneyyy-dsh-go",
+"sources": [
+{
+"payload_hash": "4e47a3b317c996ea8b260b8a528e94604cc3ec5b0fb32a8a2f13cec3a29c52c1",
+"retrieved_at": "2026-11-09T15:07:59Z",
+"system": "github",
+"url": "https://github.com/ccch1mneyyy/dsh-Go"
+}
+],
+"tags": [
+"ai-agent",
+"android",
+"android-app",
+"coding-agent",
+"deepseek",
+"deepseek-harness",
+"dsh",
+"dsh-plugin",
+"dsh-tui",
+"flutter",
+"llm"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": null,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://github.com/ccch1mneyyy/dsh-Go",
+"vendor": "ccch1mneyyy"
+}

@@ -24,7 +24,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 23.53,
+"adoption": 23.52,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -47,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.53,
+"adoption": 23.52,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "holaboss-ai/holaOS"
 },
-"first_seen": "2026-11-02T14:41:36Z",
+"first_seen": "2026-11-09T15:04:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,35 +94,23 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:48:40Z",
+"last_seen": "2026-11-09T15:12:32Z",
 "license": "Other",
 "merged_ids": [
 "res_daa4256fea40246b",
 "res_daa4256fea40246b"
 ],
 "name": "holaOS",
-"news": [
-{
-"cluster_size": 1,
-"date": "2026-08-06T16:22:28Z",
-"headline": "holaOS Latest",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "Here is the link to our [Releases](https://github.com/holaboss-ai/holaOS-releases/releases)",
-"tag": "product_update",
-"url": "https://github.com/holaboss-ai/holaOS/releases/tag/latest"
-}
-],
+"news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:42Z",
+"checked_at": "2026-11-09T15:15:48Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:41Z",
+"checked_at": "2026-11-09T15:15:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -130,7 +118,7 @@
 "evidence_url": "https://holaos.ai",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:51:44Z",
+"checked_at": "2026-11-09T15:15:49Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -143,19 +131,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-22T07:36:16Z",
-"github_forks": 719,
+"github_forks": 721,
 "github_language": "TypeScript",
-"github_open_issues": 11,
-"github_pushed_at": "2026-10-28T05:05:03Z",
-"github_stars": 11453,
+"github_open_issues": 13,
+"github_pushed_at": "2026-11-06T16:41:22Z",
+"github_stars": 11435,
 "github_topic": "ai-agents",
 "homepage": "https://holaos.ai"
 },
 "slug": "holaboss-ai-holaos",
 "sources": [
 {
-"payload_hash": "94499c572df18dc70a0043553f47353def1b8673c8db741127572db5dd048e22",
-"retrieved_at": "2026-11-02T14:41:36Z",
+"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
+"retrieved_at": "2026-11-09T15:04:57Z",
 "system": "github",
 "url": "https://github.com/holaboss-ai/holaOS"
 }

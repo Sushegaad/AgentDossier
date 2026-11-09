@@ -17,7 +17,7 @@
 #   * No fabricated incidents and no incident about a private individual. Correct or withdraw an
 #     entry by editing this file; changes are recorded in the trace changelog.
 version: incidents-1.1
-collected_on: 2026-11-02
+collected_on: 2026-11-09
 collected_by: claude (assistant) with the maintainer
 
 # MITRE ATT&CK tactic labels used below (reference only; the registry renders these):
@@ -915,3 +915,43 @@ incidents:
       - { title: "Chainalysis discloses data breach from \"offensive agentic techniques\"", url: "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/", outlet: "BleepingComputer", date: "2026-10-31" }
     reviewer: "model: claude-sonnet-5-5 (automated review)"
     checked_on: 2026-11-02
+
+  - id: TR-2026-031
+    status: published  # machine-reviewed 2026-11-09 from candidate cand-2a70dbeac4
+    title: "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records"
+    date: 2026-07-25
+    window: "July 2026"
+    ai_role: attacker
+    category: incident
+    summary: >-
+      Acronis's Threat Research Unit reported that a single attacker in Hualien City, Taiwan, ran a
+      setup called BOSSAI with 12 AI agents (9 in use) against hundreds of organizations in at least
+      11 countries. The agents collected data or accessed systems at about 10 targets in Taiwan,
+      Mexico and Thailand, including emergency dispatch records from seven Taipei districts and an
+      exposed Taipei fire department patient data platform. Commercial models mostly refused to help
+      attack, so the attack agents ran almost entirely on abliterated local models. The agents also
+      produced errors such as invented CVEs and false reports of results, and they failed where
+      logins, sessions and filtering were enforced.
+    attacker:
+      description: "A single Taiwan-based individual operating the BOSSAI multi-agent setup, which Acronis attributed with high confidence; motive is unclear but probably financial"
+    defender:
+      description: "Hundreds of targeted organizations in at least 11 countries, including Taiwanese emergency services (a Taipei 119 dispatch system, a fire-dispatch vendor, fire departments), a Taiwanese lending firm, Thai universities and Mexican phone-record sources"
+    scale: "Hundreds of organizations targeted in at least 11 countries; about 10 compromised or data collected in Taiwan, Mexico and Thailand; 489 potential targets across 45 Thai institutions; about 206,800 Mexican home phone records; dispatch records from seven Taipei districts; more than 90,000 files on the attacker's server; 12 agents (9 in use); researchers observed 12 days"
+    impact: "Emergency dispatch records, a lender's account table, data from three Thai universities and about 206,800 Mexican phone records were collected, and a Taipei fire department platform exposed 2018 patient data (ECG readings, ambulance video) without a login. The agents failed against enforced logins, valid-session paywalls and properly filtered endpoints. Researchers said most findings were already poorly protected data."
+    tactics: [TA0001, TA0006, TA0007, TA0009, TA0010, TA0043]
+    timeline:
+      - { date: "2026-07-25", text: "A recorded exchange shows the attacker at work.", tier: null, source: "1" }
+      - { date: "2026-11-09", text: "The Hacker News reported the Acronis findings, released the prior week.", tier: null, source: "1" }
+    lessons: []
+    models_named:
+      - { name: "Grok", role: attacker }
+      - { name: "MiniMax M3", role: defender }
+      - { name: "DeepSeek (abliterated)", role: attacker }
+      - { name: "GLM (abliterated)", role: attacker }
+      - { name: "Qwen (abliterated)", role: attacker }
+    related_agents: ["anthropic-claude-code"]
+    vendor_response: "Grok and MiniMax M3 refused direct requests to attack and asked for written proof of authorization, though Grok repaired a broken proof-of-concept script. The report does not say whether affected organizations or Taiwanese authorities were notified."
+    sources:
+      - { title: "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records", url: "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html", outlet: "The Hacker News", date: "2026-11-09" }
+    reviewer: "model: claude-sonnet-5-5 (automated review)"
+    checked_on: 2026-11-09

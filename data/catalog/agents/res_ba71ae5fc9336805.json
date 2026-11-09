@@ -45,7 +45,7 @@
 "github": "ankimcp/anki-mcp-server-addon",
 "mcp_registry": "ai.ankimcp/anki-mcp-server-addon"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,42 +67,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:40:36Z",
+"last_seen": "2026-11-09T15:03:54Z",
 "license": null,
 "name": "AnkiMCP Server",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-11T18:29:01Z",
-"headline": "anki-mcp-server-addon release v0.40.0",
+"date": "2026-11-09T05:02:23Z",
+"headline": "anki-mcp-server-addon release v0.41.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Breaking: one tool per action\n\nThe four multi-action tools `card_management`, `tag_management`, `filtered_deck` and `model_fields` are gone. Each action is now its own tool with its own schema and annotations, 24 in all:\n\n| Group | Tools",
+"summary": "## What's Changed\n* fix(build): pin the build Python to 3.13 so anyio 4.16 can't be bundled (0.41.1) by @anatoly314 in https://github.com/ankimcp/anki-mcp-server-addon/pull/89\n\n\n**Full Changelog**: https://github.com/ankimcp/anki-mcp-server",
 "tag": "product_update",
-"url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.40.0"
+"url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.41.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-10T20:38:04Z",
-"headline": "anki-mcp-server-addon release v0.32.1",
+"date": "2026-11-07T13:21:55Z",
+"headline": "anki-mcp-server-addon release v0.41.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Full Changelog**: https://github.com/ankimcp/anki-mcp-server-addon/compare/v0.32.0...v0.32.1",
+"summary": "## Deck descriptions\n\nTwo new tools expose the text Anki shows on a deck's overview screen, so an AI client can keep a per-deck authoring guide inside Anki and consult it before adding cards:\n\n| Tool | Annotations | What it does |\n|---|---|",
 "tag": "product_update",
-"url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.32.1"
+"url": "https://github.com/ankimcp/anki-mcp-server-addon/releases/tag/v0.41.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:49:56Z",
+"checked_at": "2026-11-09T15:14:08Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:49:55Z",
+"checked_at": "2026-11-09T15:14:07Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -110,7 +110,7 @@
 "parser_version": "mcp-2025-06-18",
 "server_name": "ai.ankimcp/anki-mcp-server-addon",
 "status": "claimed",
-"version": "0.40.0",
+"version": "0.41.1",
 "via": "mcp_registry"
 }
 },
@@ -119,23 +119,23 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:02:56Z",
+"checked_at": "2026-11-09T15:27:46Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-11T18:29:12.499147Z",
+"mcp_registry_published_at": "2026-11-09T05:02:32.671983Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-11T18:29:12.499147Z",
+"mcp_registry_updated_at": "2026-11-09T05:02:32.671983Z",
 "mcp_transports": []
 },
 "slug": "ankimcp-ai-ankimcp-server",
 "sources": [
 {
-"payload_hash": "67804d8ddfe839ee1bfb929edb81f67c534139cebc85b54ac7840d44dc82efae",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"payload_hash": "d93c2ce39aef2c2b46e001525a93222ce7519b0fc789449bec367b505ff17934",
+"retrieved_at": "2026-11-09T15:03:54Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ankimcp/anki-mcp-server-addon"
 }

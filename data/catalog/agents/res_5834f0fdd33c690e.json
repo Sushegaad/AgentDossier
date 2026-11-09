@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.19,
+"adoption": 25.3,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -38,7 +38,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 64.1,
+"score": 64.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -47,7 +47,7 @@
 },
 "data": {
 "components": {
-"adoption": 25.19,
+"adoption": 25.3,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -61,7 +61,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 65.4,
+"score": 65.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.19,
+"adoption": 25.3,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -84,7 +84,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 70.1,
+"score": 70.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -95,7 +95,7 @@
 "external_ids": {
 "github": "lexmount/moli"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -117,47 +117,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "Apache-2.0",
 "name": "moli",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-30T14:03:22Z",
-"headline": "Moli v1.1.20",
+"date": "2026-11-06T15:05:26Z",
+"headline": "Moli v1.1.22",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\r\n\r\n### IndexedDB & SQLite\r\n\r\n* feat(indexeddb): replace JSON storage with SQLite #2141\r\n* refactor(indexeddb): use Tokio owners and defer result loading #2153\r\n* feat(indexeddb): add transactional SQLite schema renames #21",
+"summary": "## What's Changed\r\n\r\n### Markdown & DOM Export\r\n\r\n* fix(renderer): export live rendered content through shared markdown conversion by @lanyue-llk in #1337\r\n* fix(markdown): export composed Shadow DOM content #2376\r\n* perf(markdown): export",
 "tag": "product_update",
-"url": "https://github.com/lexmount/moli/releases/tag/v1.1.20"
+"url": "https://github.com/lexmount/moli/releases/tag/v1.1.22"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-21T20:55:05Z",
-"headline": "Moli v1.1.19",
+"date": "2026-11-03T05:54:45Z",
+"headline": "Moli v1.1.21",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\r\n\r\n### CDP, Inspector & Browser Lifecycle\r\n\r\n* feat(cdp): support instance-scoped Browser.close shutdown by @254808127 in #1771\r\n* test(cdp): verify Browser.close process exit and profile reopen by @BibekPathak in #815\r\n*",
+"summary": "## What's Changed\r\n\r\n### Security, Isolation & Cookie Policies\r\n\r\n* fix: validate request headers and randomize CDP identities #2342\r\n* fix(fetch): enforce CORP before redirect and response delivery #2286\r\n* fix(stylesheets): validate integ",
 "tag": "product_update",
-"url": "https://github.com/lexmount/moli/releases/tag/v1.1.19"
+"url": "https://github.com/lexmount/moli/releases/tag/v1.1.21"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:50:55Z",
+"checked_at": "2026-11-09T15:15:01Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:50:51Z",
+"checked_at": "2026-11-09T15:14:57Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:50:57Z",
+"checked_at": "2026-11-09T15:15:03Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -168,19 +168,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-08-10T13:20:30Z",
-"github_forks": 605,
+"github_forks": 647,
 "github_language": "Rust",
-"github_open_issues": 533,
-"github_pushed_at": "2026-11-02T14:31:04Z",
-"github_stars": 22186,
+"github_open_issues": 579,
+"github_pushed_at": "2026-11-09T15:03:06Z",
+"github_stars": 23150,
 "github_topic": "ai-agents",
 "homepage": "https://browser.lexmount.com"
 },
 "slug": "lexmount-moli",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/lexmount/moli"
 }

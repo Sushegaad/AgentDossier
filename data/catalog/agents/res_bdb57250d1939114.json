@@ -13,7 +13,7 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Confidential VMs (Intel TDX) by the hour, paid in USDC over x402: live plans, prices, how to buy.",
+"description": "Confidential computers for AI swarms: sealed VMs (Intel TDX) by the hour, USDC over x402.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
@@ -43,9 +43,10 @@
 },
 "external_ids": {
 "ard": "urn:air:agentgates.ai:platform:agent-card",
+"github": "agentgates-ai/agentgates",
 "mcp_registry": "ai.agentgates/compute"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +68,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:49:36Z",
+"last_seen": "2026-11-09T15:13:38Z",
 "license": null,
 "merged_ids": [
 "res_b8fc0a7f34eb165f",
@@ -79,12 +80,12 @@
 "protocols": {
 "a2a": {
 "card_url": "https://agentgates.ai/.well-known/agent-card.json",
-"checked_at": "2026-11-02T14:49:33Z",
+"checked_at": "2026-11-09T15:13:38Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
 "skills": [
-"Buy confidential compute",
+"Confidential computers for AI swarms",
 "Find a paid API and read what buyers said",
 "Pay-per-request inference",
 "Place a phone call",
@@ -97,7 +98,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-02T14:49:32Z",
+"checked_at": "2026-11-09T15:13:36Z",
 "entries": 26,
 "parser_version": "ard-0.91",
 "sources": [
@@ -116,7 +117,7 @@
 ],
 "server_name": "ai.agentgates/compute",
 "status": "claimed",
-"version": "1.0.0",
+"version": "1.0.3",
 "via": "mcp_registry"
 }
 },
@@ -125,16 +126,16 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:02:05Z",
+"checked_at": "2026-11-09T15:26:19Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-11-02T06:32:32.007261Z",
+"mcp_registry_published_at": "2026-11-05T22:38:47.26369Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-11-02T06:32:32.007261Z",
+"mcp_registry_updated_at": "2026-11-05T22:38:47.26369Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -142,20 +143,20 @@
 "slug": "agentgates-ai-agentgates-compute",
 "sources": [
 {
-"payload_hash": "cac24c56c010784b24aa0da2a1951dd5a38c302cafc7306ff6914f99299fe02f",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"payload_hash": "d068797b4bf7be6dfc6f345ea1f4f3bf472c174e3d7ce687a623c938ebb24871",
+"retrieved_at": "2026-11-09T15:03:54Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentgates/compute"
 },
 {
-"payload_hash": "cac24c56c010784b24aa0da2a1951dd5a38c302cafc7306ff6914f99299fe02f",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"payload_hash": "d068797b4bf7be6dfc6f345ea1f4f3bf472c174e3d7ce687a623c938ebb24871",
+"retrieved_at": "2026-11-09T15:03:54Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentgates/mcp"
 },
 {
 "payload_hash": "691505ea71fe4a91280a1ad1a283e70ee11dd252cbae74d646d0125e7b170646",
-"retrieved_at": "2026-11-02T14:49:36Z",
+"retrieved_at": "2026-11-09T15:13:38Z",
 "system": "ard",
 "url": "https://agentgates.ai/.well-known/ard.json"
 }
@@ -196,6 +197,38 @@
 "tier": 1,
 "title": "Registry probe of Agentgates Compute's discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_bdb57250d1939114_9e700100/",
+"vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_bdb57250d1939114_c7f85261",
+"checked_on": null,
+"date": "2026-11-09",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_bdb57250d1939114_c7f85261",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document",
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (unsigned); ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:3df68169a03dc2ed2028aeed67115c3a9202de5475b0a49250d5bf324788cf00",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Agentgates Compute's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_bdb57250d1939114_c7f85261/",
 "vendor_response": null
 }
 ],

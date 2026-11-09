@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.93,
+"adoption": 25.96,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -31,7 +31,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 68.6,
+"score": 68.7,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "harvard-edge/cs249r_book"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,47 +64,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "Other",
 "name": "cs249r_book",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-25T14:56:30Z",
-"headline": "cs249r_book: MLSys·im 0.3.0",
+"date": "2026-11-06T18:27:55Z",
+"headline": "cs249r_book: Slides v0.1.1: Publish updated Volume I and II lecture materials",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# MLSys·im 0.3.0\n*First-principles infrastructure modeling for the [Machine Learning Systems](https://mlsysbook.ai) textbook.*\n\n\nMLSys·im 0.3.0 reorganizes the package around nested registries and a dedicated\n`mlsysim.engine` layer, adds Ph",
+"summary": "Slides 0.1.1 updates the lecture materials and portal for Volumes I and II.\n\n- Rebuild and revise decks around the book's chapter sequence, with selected Volume I topics split into paired lectures.\n- Revise figures, typography, speaker note",
 "tag": "product_update",
-"url": "https://github.com/harvard-edge/cs249r_book/releases/tag/mlsysim-v0.3.0"
+"url": "https://github.com/harvard-edge/cs249r_book/releases/tag/slides-v0.1.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-24T21:06:17Z",
-"headline": "cs249r_book: TinyTorch v0.2.1 - CUDA matrix-multiply extension, tito venv tool fixes, dark mode and phone layout for the guide",
+"date": "2026-11-06T18:05:33Z",
+"headline": "cs249r_book: TinyTorch v0.2.2 - Publish TinyTorch updates and portable exercise timing",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## TinyTorch v0.2.1\n\nCUDA matrix-multiply extension, tito venv tool fixes, dark mode and phone layout for the guide\n\n<!-- Release notes generated using configuration in .github/release.yml at tinytorch-v0.2.1 -->\n\n## What's Changed\n### 🐛 Bu",
+"summary": "TinyTorch 0.2.2 updates teaching exercises and the Module 01 broadcasting explanation.\n\n- Use a high-resolution interval clock in activation and data-loader timing exercises, avoiding zero-duration wall-clock readings on short runs such as",
 "tag": "product_update",
-"url": "https://github.com/harvard-edge/cs249r_book/releases/tag/tinytorch-v0.2.1"
+"url": "https://github.com/harvard-edge/cs249r_book/releases/tag/tinytorch-v0.2.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:01Z",
+"checked_at": "2026-11-09T15:16:13Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:01Z",
+"checked_at": "2026-11-09T15:16:09Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:52:02Z",
+"checked_at": "2026-11-09T15:16:14Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -114,7 +114,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:05:57Z",
+"checked_at": "2026-11-09T15:30:45Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -122,19 +122,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-09-06T19:31:06Z",
-"github_forks": 3683,
+"github_forks": 3732,
 "github_language": "Python",
-"github_open_issues": 8,
-"github_pushed_at": "2026-11-02T12:32:17Z",
-"github_stars": 29783,
+"github_open_issues": 9,
+"github_pushed_at": "2026-11-09T12:34:35Z",
+"github_stars": 30084,
 "github_topic": "ai-agents",
 "homepage": "https://mlsysbook.ai"
 },
 "slug": "harvard-edge-cs249r-book",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/harvard-edge/cs249r_book"
 }

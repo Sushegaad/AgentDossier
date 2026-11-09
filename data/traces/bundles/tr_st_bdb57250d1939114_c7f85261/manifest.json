@@ -1,0 +1,39 @@
+{
+ "agent": "res_bdb57250d1939114",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_bdb57250d1939114_c7f85261",
+ "kind": "self_test",
+ "name": "Agentgates Compute",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://agentgates.ai/.well-known/agent-card.json",
+   "checked_at": "2026-11-09T15:13:38Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "Confidential computers for AI swarms",
+    "Find a paid API and read what buyers said",
+    "Pay-per-request inference",
+    "Place a phone call",
+    "An email inbox for the agent",
+    "An AI operator on a phone call",
+    "An account in one command",
+    "Agentgates wallet over MCP"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-11-09T15:13:36Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://agentgates.ai/.well-known/ard.json",
+    "https://agentgates.ai/.well-known/ard.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "agentgates-ai-agentgates-compute"
+}

@@ -1,0 +1,217 @@
+{
+"canonical_url": "mizan.ac/.well-known/mcp/server-card.json",
+"capabilities": [
+"lookup_player",
+"check_players",
+"list_sources",
+"registry_stats",
+"list_my_communities"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-09)",
+"evidence_url": "https://mizan.ac/",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-16",
+"payload_hash": "670cba6c672d18db64f32c7361e0ed5e73d2c73f207a3cce6af4c229ec80fc9f",
+"period_end": null,
+"retrieved_at": "2026-11-09T15:21:40Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-09)",
+"evidence_url": "https://mizan.ac/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-16",
+"payload_hash": "b07f5af0ab3c6ce873143a52f94d6ca2ce885f645a729a53faf4f6dda6f76d72",
+"period_end": null,
+"retrieved_at": "2026-11-09T15:21:40Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPF_ACTIVE"
+}
+],
+"deployment": null,
+"description": "Mizan's MCP server: a player's ban record across every list Mizan reads, up to 100 Steam accounts at once, the lists Mizan reads and the registry's size, with no sign-in; the signed-in person's communities with OAuth (https://mizan.ac/auth.md).",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 7.6,
+"governance": 0.0,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 32.8,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:mizan.ac:mcp:registry"
+},
+"first_seen": "2026-11-09T15:16:25Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_c582340069af01dd",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-09T15:16:25Z",
+"license": null,
+"name": "Mizan",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:mizan.ac:mcp:registry",
+"manifest_url": "https://mizan.ac/.well-known/ard.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"server_card_url": "https://mizan.ac/.well-known/mcp/server-card.json",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "mizan.ac",
+"representative_queries": [
+"is this Steam account banned on any community servers",
+"check whether STEAM_0:0:11101 has been banned for cheating",
+"check every player on my server for cheating bans",
+"which ban lists does Mizan read for Rust",
+"list the communities I belong to on Mizan"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {},
+"slug": "mizan-ac-mizan",
+"sources": [
+{
+"payload_hash": "611e85309c1e1bc1240ba8c5eb5724f83fb1291fe3d8af2ed3cc83fd1054cb3c",
+"retrieved_at": "2026-11-09T15:16:25Z",
+"system": "ard",
+"url": "https://mizan.ac/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_c582340069af01dd_89141d35",
+"checked_on": null,
+"date": "2026-11-09",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_c582340069af01dd_89141d35",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:1e78da625c7e4dde04d7b09564a03bd76b7d316454a16c8e6dfe6d2c09d4f190",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Mizan's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_c582340069af01dd_89141d35/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": null,
+"traces": 1,
+"vendor_compliance": 4
+},
+"url": "https://mizan.ac/.well-known/mcp/server-card.json",
+"vendor": "mizan.ac"
+}

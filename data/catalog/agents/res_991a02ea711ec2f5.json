@@ -1,0 +1,219 @@
+{
+"canonical_url": "editor.pascal.app/.well-known/agent-skills/architect/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-11-09)",
+"evidence_url": "https://editor.pascal.app/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-16",
+"payload_hash": "41e8722e4e27bc214e2753814dcefb0146531fcbf54cf15435ea247d28a7f77b",
+"period_end": null,
+"retrieved_at": "2026-11-09T15:20:50Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": null,
+"description": "Use Architect, Pascal's AI building designer, to generate buildings, floor plans, and spatial designs from a brief. Use this skill when a user asks Architect to generate or design a building or space inside Pascal. Architect queues a background turn, polls for its result, and surfaces the finished Pascal scene or report.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:editor.pascal.app:skill:architect"
+},
+"first_seen": "2026-11-09T15:15:33Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_991a02ea711ec2f5",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 621,
+"incidents": 0,
+"links": [
+{
+"date": "1992-07-21",
+"kind": "cve",
+"title": "CVE-1999-1396",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-1999-1396"
+},
+{
+"date": "2000-03-29",
+"kind": "cve",
+"title": "CVE-2000-0244",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2000-0244"
+},
+{
+"date": "2001-04-17",
+"kind": "cve",
+"title": "CVE-2001-1399",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2001-1399"
+},
+{
+"date": "2001-08-22",
+"kind": "cve",
+"title": "CVE-2001-0608",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2001-0608"
+},
+{
+"date": "2001-10-18",
+"kind": "cve",
+"title": "CVE-2001-0734",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2001-0734"
+},
+{
+"date": "2001-12-06",
+"kind": "cve",
+"title": "CVE-2001-0856",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2001-0856"
+},
+{
+"date": "2001-12-13",
+"kind": "cve",
+"title": "CVE-2001-1192",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2001-1192"
+},
+{
+"date": "2001-12-31",
+"kind": "cve",
+"title": "CVE-2001-1509",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2001-1509"
+},
+{
+"date": "2003-08-18",
+"kind": "cve",
+"title": "CVE-2003-0465",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2003-0465"
+},
+{
+"date": "2003-12-31",
+"kind": "cve",
+"title": "CVE-2003-0959",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2003-0959"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-09T15:15:33Z",
+"license": null,
+"name": "architect",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:editor.pascal.app:skill:architect",
+"manifest_url": "https://editor.pascal.app/.well-known/ard.json",
+"media_type": "application/agent-skills+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "editor.pascal.app",
+"representative_queries": [],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-09T15:34:10Z",
+"cves": 621,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "editor-pascal-app-architect",
+"sources": [
+{
+"payload_hash": "49eb0902154cba69725d19767958038526874779c4597541908f1b587fe595e9",
+"retrieved_at": "2026-11-09T15:15:33Z",
+"system": "ard",
+"url": "https://editor.pascal.app/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_991a02ea711ec2f5_cdfbbe9d",
+"checked_on": null,
+"date": "2026-11-09",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_991a02ea711ec2f5_cdfbbe9d",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:643787f81145a2992a4f0ca0f3c96a882a01a3ece3293fb5aa532ed380618dbf",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of architect's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_991a02ea711ec2f5_cdfbbe9d/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": 4
+},
+"url": "https://editor.pascal.app/.well-known/agent-skills/architect/SKILL.md",
+"vendor": "editor.pascal.app"
+}

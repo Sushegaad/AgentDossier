@@ -38,7 +38,7 @@
 "external_ids": {
 "github": "assafelovic/gpt-researcher"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,13 +67,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_d3140ab6ca3a0456"
 ],
 "name": "GPT Researcher",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-09T15:12:43Z",
+"headline": "gpt-researcher: New paper UI, detailed reports in 3:27, and 53 community fixes",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## A new UI, and detailed reports in under 4 minutes\n\n<a href=\"https://github.com/user-attachments/assets/4d3f26cf-8ccc-413a-b17c-80aa9e1b52d1\">\n  <img src=\"https://github.com/user-attachments/assets/3a56a008-fcbd-4373-9e40-8d6027120cfb\" al",
+"tag": "product_update",
+"url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.8.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-26T17:46:25Z",
@@ -84,24 +95,13 @@
 "summary": "## Smarter context, no embeddings required\r\n\r\nGPT Researcher now picks the context it sends to the LLM by **usefulness, not similarity**.\r\nEvery passage scraped for a research question is scored by [Jev](https://typesafe.ai/blog/introducing",
 "tag": "product_update",
 "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.7.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-08-24T06:58:47Z",
-"headline": "gpt-researcher: Major fixes",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\r\n* fix: restore main, add CI, and land 97 queued PRs by @assafelovic in https://github.com/assafelovic/gpt-researcher/pull/2074\r\n* fix(readme): restore broken star history chart by @Dessalines39394 in https://github.com/as",
-"tag": "product_update",
-"url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.6.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://gptr.dev/.well-known/agent-card.json",
-"checked_at": "2026-11-02T14:51:38Z",
+"checked_at": "2026-11-09T15:15:42Z",
 "parser_version": "a2a-0.3+1.0",
 "signed": false,
 "skills": [
@@ -114,13 +114,13 @@
 "version": "0.14.8"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:35Z",
+"checked_at": "2026-11-09T15:15:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
 "card_url": "https://gptr.dev/.well-known/mcp.json",
-"checked_at": "2026-11-02T14:51:39Z",
+"checked_at": "2026-11-09T15:15:42Z",
 "parser_version": "mcp-2025-06-18",
 "remotes": [
 {
@@ -149,7 +149,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:01:02Z",
+"checked_at": "2026-11-09T15:25:00Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -170,11 +170,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-05-12T10:33:54Z",
-"github_forks": 4167,
+"github_forks": 4202,
 "github_language": "Python",
-"github_open_issues": 73,
-"github_pushed_at": "2026-10-10T22:03:53Z",
-"github_stars": 30433,
+"github_open_issues": 9,
+"github_pushed_at": "2026-11-09T11:06:26Z",
+"github_stars": 30597,
 "github_topic": "mcp-server",
 "homepage": "https://gptr.dev",
 "observed_popularity": "Not captured",
@@ -190,13 +190,13 @@
 "sources": [
 {
 "payload_hash": "fc6cb83f166649e66d1ce742647baded087d9f5d44c17cdcbf376193217a6d4d",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"retrieved_at": "2026-11-09T15:03:53Z",
 "system": "seed_xlsx",
 "url": "https://github.com/assafelovic/gpt-researcher"
 },
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/assafelovic/gpt-researcher"
 }

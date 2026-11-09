@@ -13,7 +13,7 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Free MCP tools: Solana token safety and Polymarket kit samples, x402 quotes, verdict grading rubric",
+"description": "Free MCP tools to quote and sample x402 APIs: Solana rug checks, Base token-watch, $49 starter kit",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.avasis.agents/avasis"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,7 +66,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:40:36Z",
+"last_seen": "2026-11-09T15:03:54Z",
 "license": null,
 "name": "Avasis Agent Platform",
 "news": [],
@@ -74,7 +74,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://agents.avasis.ai/.well-known/agent-card.json",
-"checked_at": "2026-11-02T14:49:37Z",
+"checked_at": "2026-11-09T15:13:42Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -95,7 +95,7 @@
 "version": "0.1.0"
 },
 "ard": {
-"checked_at": "2026-11-02T14:49:36Z",
+"checked_at": "2026-11-09T15:13:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -109,7 +109,7 @@
 ],
 "server_name": "ai.avasis.agents/avasis",
 "status": "claimed",
-"version": "1.0.0",
+"version": "1.0.1",
 "via": "mcp_registry"
 }
 },
@@ -118,16 +118,16 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:03:49Z",
+"checked_at": "2026-11-09T15:28:45Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-31T12:12:03.190758Z",
+"mcp_registry_published_at": "2026-11-06T13:33:14.517281Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-31T12:12:03.190758Z",
+"mcp_registry_updated_at": "2026-11-06T13:33:14.517281Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -135,8 +135,8 @@
 "slug": "agents-avasis-ai-avasis-agent-platform",
 "sources": [
 {
-"payload_hash": "5da7ad45de818a88e4ab496fce8ebe4346777f70a256a30a804b09a3bd937bb0",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"payload_hash": "4b441cef1def7c8e5279300947c005ad8448e1f1a3f4e7a7166dccefceb1620a",
+"retrieved_at": "2026-11-09T15:03:54Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.avasis.agents/avasis"
 }

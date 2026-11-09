@@ -25,16 +25,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-11-02)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-09)",
 "evidence_url": "https://infisical.com/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "9658b18ce17a2bc094b6450bd7d5fa7b0613d6cd63e7393d9bc8ca437cced3ed",
+"next_check": "2026-11-16",
+"payload_hash": "9089a05fd13cfee8c90eb09cac4581821ef10930dc45fe1a36cc9d20772947fe",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:57:28Z",
+"retrieved_at": "2026-11-09T15:21:18Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -51,16 +51,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-02)",
+"display": "Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://infisical.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "9658b18ce17a2bc094b6450bd7d5fa7b0613d6cd63e7393d9bc8ca437cced3ed",
+"next_check": "2026-11-16",
+"payload_hash": "9089a05fd13cfee8c90eb09cac4581821ef10930dc45fe1a36cc9d20772947fe",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:57:28Z",
+"retrieved_at": "2026-11-09T15:21:18Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -77,7 +77,7 @@
 "domains": {
 "cybersecurity": {
 "components": {
-"adoption": 25.97,
+"adoption": 25.98,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 7.0,
@@ -100,7 +100,7 @@
 },
 "data": {
 "components": {
-"adoption": 25.97,
+"adoption": 25.98,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 7.0,
@@ -123,7 +123,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.97,
+"adoption": 25.98,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 7.0,
@@ -148,7 +148,7 @@
 "external_ids": {
 "github": "Infisical/infisical"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -170,31 +170,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "Other",
 "name": "infisical",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-26T20:03:31Z",
-"headline": "infisical release v0.167.4",
+"date": "2026-11-08T19:41:40Z",
+"headline": "infisical release v0.167.7",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\r\n* fix(cros-project-import): return on overview page  by @adilsitos in https://github.com/Infisical/infisical/pull/8901\r\n* fix(secret-syncs): stop showing cloudflare workers options on other connection forms by @DimitrisSt",
+"summary": "## What's Changed\r\n* feat: fallback to worker version API in worker sync by @mathnogueira in https://github.com/Infisical/infisical/pull/9107\r\n* docs(backend): stop recommending .uuid() for projectId in CODE_QUALITY.md by @andrewhuhh in htt",
 "tag": "product_update",
-"url": "https://github.com/Infisical/infisical/releases/tag/v0.167.4"
+"url": "https://github.com/Infisical/infisical/releases/tag/v0.167.7"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-26T16:00:54Z",
-"headline": "infisical release v0.167.3",
+"date": "2026-11-03T18:00:18Z",
+"headline": "infisical release v0.167.6",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\r\n* feat(api): add private v2 batch commit route for batched secret and folder changes (SECRETS-804) by @andrewhuhh in https://github.com/Infisical/infisical/pull/8689\r\n* chore: rename CLAUDE.md files to AGENTS.md by @andre",
+"summary": "## What's Changed\r\n* docs(agent-vault): positioning overhaul by @adkah in https://github.com/Infisical/infisical/pull/9065\r\n* fix(frontend): keep secret share revoked badge clear of row actions by @andrewhuhh in https://github.com/Infisical",
 "tag": "product_update",
-"url": "https://github.com/Infisical/infisical/releases/tag/v0.167.3"
+"url": "https://github.com/Infisical/infisical/releases/tag/v0.167.6"
 },
 {
 "cluster_size": 1,
@@ -226,13 +226,13 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:45Z",
+"checked_at": "2026-11-09T15:15:51Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:44Z",
-"entries": 66,
+"checked_at": "2026-11-09T15:15:50Z",
+"entries": 81,
 "parser_version": "ard-0.91",
 "sources": [
 "https://infisical.com/.well-known/ard.json",
@@ -242,7 +242,7 @@
 "status": "verified"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:51:46Z",
+"checked_at": "2026-11-09T15:15:52Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -252,7 +252,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:05:56Z",
+"checked_at": "2026-11-09T15:30:44Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -260,19 +260,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2022-08-05T13:50:00Z",
-"github_forks": 2407,
+"github_forks": 2416,
 "github_language": "TypeScript",
-"github_open_issues": 878,
-"github_pushed_at": "2026-11-02T14:37:05Z",
-"github_stars": 30214,
+"github_open_issues": 891,
+"github_pushed_at": "2026-11-09T14:59:50Z",
+"github_stars": 30383,
 "github_topic": "ai-agents",
 "homepage": "https://infisical.com"
 },
 "slug": "infisical-infisical",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/Infisical/infisical"
 }

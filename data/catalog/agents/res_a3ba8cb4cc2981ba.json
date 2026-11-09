@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-02)",
+"display": "Vendor-claimed (vendor page, 2026-11-09)",
 "evidence_url": "https://autron.ai/privacy",
 "framework": "pci_dss",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "57f8305837069da58eafbb6adabf8d811a70f559bae6482a8cb441b4ad34bc3d",
+"next_check": "2026-11-16",
+"payload_hash": "a836929b08eaba5db51e8442fbacf0ec1975cf3df97d2ddf9425a14ec6a96208",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:56:02Z",
+"retrieved_at": "2026-11-09T15:19:56Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -50,7 +50,7 @@
 "domain_fit": 56.4,
 "ecosystem": 4.6,
 "governance": 0.0,
-"health": 20.0,
+"health": 16.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 48.9,
+"score": 44.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 "external_ids": {
 "mcp_registry": "ai.autron/autron"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,19 +92,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:40:36Z",
+"last_seen": "2026-11-09T15:03:54Z",
 "license": null,
 "name": "Autron",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:50:27Z",
+"checked_at": "2026-11-09T15:14:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:50:26Z",
+"checked_at": "2026-11-09T15:14:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -137,8 +137,8 @@
 "slug": "autron-ai-autron",
 "sources": [
 {
-"payload_hash": "5da7ad45de818a88e4ab496fce8ebe4346777f70a256a30a804b09a3bd937bb0",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"payload_hash": "4b441cef1def7c8e5279300947c005ad8448e1f1a3f4e7a7166dccefceb1620a",
+"retrieved_at": "2026-11-09T15:03:54Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.autron/autron"
 }

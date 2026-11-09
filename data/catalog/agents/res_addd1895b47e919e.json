@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.anywhereintelligence/switchboard"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -73,19 +73,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:40:36Z",
+"last_seen": "2026-11-09T15:03:54Z",
 "license": null,
 "name": "Switchboard",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:40Z",
+"checked_at": "2026-11-09T15:16:55Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:38Z",
+"checked_at": "2026-11-09T15:16:53Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -99,7 +99,7 @@
 ],
 "server_name": "ai.anywhereintelligence/switchboard",
 "status": "claimed",
-"version": "1.0.0",
+"version": "1.1.67",
 "via": "mcp_registry"
 }
 },
@@ -108,16 +108,16 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:02:59Z",
+"checked_at": "2026-11-09T15:27:50Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-09T09:53:23.549252Z",
+"mcp_registry_published_at": "2026-11-07T11:13:47.373814Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-09T09:53:23.549252Z",
+"mcp_registry_updated_at": "2026-11-07T11:13:47.373814Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -125,8 +125,8 @@
 "slug": "anywhereintelligence-ai-switchboard",
 "sources": [
 {
-"payload_hash": "67804d8ddfe839ee1bfb929edb81f67c534139cebc85b54ac7840d44dc82efae",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"payload_hash": "d93c2ce39aef2c2b46e001525a93222ce7519b0fc789449bec367b505ff17934",
+"retrieved_at": "2026-11-09T15:03:54Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.anywhereintelligence/switchboard"
 }

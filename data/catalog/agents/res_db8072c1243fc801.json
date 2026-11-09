@@ -21,7 +21,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.24,
+"adoption": 23.29,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -35,7 +35,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 68.5,
+"score": 68.6,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -44,7 +44,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.24,
+"adoption": 23.29,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "mobile-next/mobile-mcp"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -98,10 +98,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "Apache-2.0",
 "name": "mobile-mcp",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-02T16:03:37Z",
+"headline": "mobile-mcp release 1.0.16",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## [1.0.16](https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.16) (2026-11-02)\n* Feat: `mobile_list_elements_on_screen` accepts `format: \"raw\"` to return the unfiltered platform UI hierarchy, including parent nodes and values the c",
+"tag": "product_update",
+"url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.16"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-30T16:10:58Z",
@@ -112,28 +123,17 @@
 "summary": "* Feat: `mobile_clear_app_data` clears an app's data on Android and iOS Simulator ([#524](https://github.com/mobile-next/mobile-mcp/pull/524))\r\n* Fix: `mobile_save_screenshot` and `mobile_get_device_logs` replace the output file by rename,",
 "tag": "product_update",
 "url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.15"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-26T17:22:08Z",
-"headline": "mobile-mcp: Version 1.0.14",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "* Feat: `npx @mobilenext/mobile-mcp@latest install` detects the MCP clients on the machine and adds mobile-mcp to the ones you pick, or to all of them with `--yes` ([#531](https://github.com/mobile-next/mobile-mcp/pull/531))",
-"tag": "product_update",
-"url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.14"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:03Z",
+"checked_at": "2026-11-09T15:16:12Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:02Z",
+"checked_at": "2026-11-09T15:16:10Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -141,7 +141,7 @@
 "evidence_url": "https://mobilenext.ai",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:04Z",
+"checked_at": "2026-11-09T15:16:13Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -153,7 +153,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:07:14Z",
+"checked_at": "2026-11-09T15:32:19Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -161,19 +161,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-28T16:21:06Z",
-"github_forks": 916,
+"github_forks": 934,
 "github_language": "TypeScript",
-"github_open_issues": 66,
-"github_pushed_at": "2026-11-02T14:46:38Z",
-"github_stars": 10223,
+"github_open_issues": 67,
+"github_pushed_at": "2026-11-07T08:39:20Z",
+"github_stars": 10435,
 "github_topic": "mcp-server",
 "homepage": "https://mobilenext.ai"
 },
 "slug": "mobile-next-mobile-mcp",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/mobile-next/mobile-mcp"
 }

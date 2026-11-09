@@ -20,12 +20,12 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.15,
+"adoption": 25.18,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 2.7,
 "governance": null,
-"health": 16.0,
+"health": 20.0,
 "trust": 16.0
 },
 "components_version": "components-from-signals-1.0",
@@ -34,7 +34,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 68.2,
+"score": 72.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,7 +45,7 @@
 "external_ids": {
 "github": "KKKKhazix/khazix-skills"
 },
-"first_seen": "2026-11-02T14:41:31Z",
+"first_seen": "2026-11-09T15:04:52Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,10 +67,33 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "MIT",
 "name": "khazix-skills",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-11-08T08:45:34Z",
+"headline": "khazix-skills: v1.2.0 · 按现状更新、Linux 支持与社区修复",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "这次更新把仓库里已经过时的说法和文件，对齐到 2026 年 11 月各家工具的现行文档和 aihot.news 线上版本，并合并两个社区 PR。完整改动见 #75、#76、#77。\n\n## 本次更新\n\n- **安装**：手动安装按工具列出 skills 目录（Claude Code 用 `~/.claude/skills`；Codex、Gemini CLI、GitHub Copilot 等用通用目录 `~/.agents/skills`）。Claude Code 插件的更新方",
+"tag": "product_update",
+"url": "https://github.com/KKKKhazix/khazix-skills/releases/tag/v1.2.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-03T21:50:31Z",
+"headline": "khazix-skills: v1.1.0 · 六个 Skill 维护与社区反馈修复",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "本次维护更新覆盖仓库现有的六个 Skill，并逐条处理发布前积压的 24 个 Issue 与 27 个 PR。完整处理说明见 #74。\n\n## 本次修复\n\n- **storage-analyzer**：修复报告数据嵌入、清理路径边界、批量操作预校验、Windows junction 重复扫描、只读缓存删除、中文 JSON 编码和后台服务不退出的问题。扫描结果仍是估算，移入回收站不等于立即释放磁盘空间。\n- **aihot**：共享目录迁移后保留原有 Claude 入口；官网安",
+"tag": "product_update",
+"url": "https://github.com/KKKKhazix/khazix-skills/releases/tag/v1.1.0"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
@@ -91,7 +114,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:14Z",
+"checked_at": "2026-11-09T15:31:07Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -99,19 +122,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-06T07:37:02Z",
-"github_forks": 2301,
+"github_forks": 2321,
 "github_language": "Python",
-"github_open_issues": 51,
-"github_pushed_at": "2026-10-01T13:15:32Z",
-"github_stars": 21830,
+"github_open_issues": 1,
+"github_pushed_at": "2026-11-08T08:46:42Z",
+"github_stars": 22107,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "kkkkhazix-khazix-skills",
 "sources": [
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/KKKKhazix/khazix-skills"
 }

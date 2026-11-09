@@ -1,5 +1,5 @@
 {
-"canonical_url": "bankrolled.ai/.well-known/mcp/server-card.json",
+"canonical_url": "bankrolled.ai/mcp/server-card",
 "capabilities": [],
 "category": null,
 "classification": {
@@ -73,7 +73,7 @@
 "external_ids": {
 "ard": "urn:air:bankrolled.ai:mcp:agent-hub"
 },
-"first_seen": "2026-11-02T14:51:09Z",
+"first_seen": "2026-11-09T15:15:06Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -95,7 +95,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:51:09Z",
+"last_seen": "2026-11-09T15:15:06Z",
 "license": null,
 "name": "agent-hub",
 "news": [],
@@ -119,7 +119,7 @@
 ]
 },
 "mcp": {
-"server_card_url": "https://bankrolled.ai/.well-known/mcp/server-card.json",
+"server_card_url": "https://bankrolled.ai/mcp/server-card",
 "status": "claimed",
 "via": "ard-entry"
 }
@@ -132,8 +132,8 @@
 "slug": "bankrolled-ai-agent-hub",
 "sources": [
 {
-"payload_hash": "0efc89e65fcecb76532f5149042e85ff7f1ebf8146ebcba57e13dc7c45987db1",
-"retrieved_at": "2026-11-02T14:51:09Z",
+"payload_hash": "bb8d65abc5c530949fea760e328de1fd97143e2c26c27a9427aeda89c652af42",
+"retrieved_at": "2026-11-09T15:15:06Z",
 "system": "ard",
 "url": "https://bankrolled.ai/.well-known/ai-catalog.json"
 }
@@ -182,6 +182,6 @@
 "traces": 1,
 "vendor_compliance": null
 },
-"url": "https://bankrolled.ai/.well-known/mcp/server-card.json",
+"url": "https://bankrolled.ai/mcp/server-card",
 "vendor": "bankrolled.ai"
 }

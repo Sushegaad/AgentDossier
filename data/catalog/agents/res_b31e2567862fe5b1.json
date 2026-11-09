@@ -1,0 +1,156 @@
+{
+"canonical_url": "aitoearn.ai",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"api",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Let's use AI to Earn!",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 25.73,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 75.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "yikart/AiToEarn"
+},
+"first_seen": "2026-11-09T15:10:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_b31e2567862fe5b1",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-09T15:10:26Z",
+"license": "MIT",
+"name": "AiToEarn",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-09T15:14:07Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-09T15:13:54Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://aitoearn.ai/",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-11-09T15:14:14Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "aitoearn.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-09T15:30:53Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2025-02-24T08:03:24Z",
+"github_forks": 4581,
+"github_language": "TypeScript",
+"github_open_issues": 7,
+"github_pushed_at": "2026-11-09T09:08:45Z",
+"github_stars": 27528,
+"github_topic": "mcp-server",
+"homepage": "https://aitoearn.ai/"
+},
+"slug": "yikart-aitoearn",
+"sources": [
+{
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
+"system": "github",
+"url": "https://github.com/yikart/AiToEarn"
+}
+],
+"tags": [
+"agent-skills",
+"auto-publish",
+"codex-skills",
+"douyin",
+"douyin-api",
+"dsh-plugin",
+"electron-app",
+"electron-react",
+"kuaishou",
+"kwai",
+"mcp",
+"mcp-server",
+"published",
+"shipinhao",
+"tool",
+"xiaohongshu"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://aitoearn.ai/",
+"vendor": "yikart"
+}

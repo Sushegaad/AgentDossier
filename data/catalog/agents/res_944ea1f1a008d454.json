@@ -25,7 +25,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 23.69,
+"adoption": 23.71,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -48,7 +48,7 @@
 },
 "sales": {
 "components": {
-"adoption": 23.69,
+"adoption": 23.71,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -62,7 +62,7 @@
 "governance_credited": {},
 "profile": "commercial",
 "rank": null,
-"score": 63.5,
+"score": 63.6,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -71,7 +71,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.69,
+"adoption": 23.71,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -96,7 +96,7 @@
 "external_ids": {
 "github": "MemTensor/MemOS"
 },
-"first_seen": "2026-11-02T14:41:36Z",
+"first_seen": "2026-11-09T15:04:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,42 +118,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:36Z",
+"last_seen": "2026-11-09T15:04:57Z",
 "license": "Apache-2.0",
 "name": "MemOS",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-29T09:15:46Z",
-"headline": "MemOS Local Plugin v2.0.21",
+"date": "2026-11-09T12:35:22Z",
+"headline": "MemOS: Release v2.0.36",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\r\n\r\n### Added\r\n- **Local model settings**: The Viewer settings page now exposes mirror URL, model path, cache directory, offline mode, and load timeout for local embeddings.\r\n\r\n### Improved\r\n- **Runtime compatibility**: The plug",
+"summary": "## What's Changed\r\n* Fix #2308: LLM facade drops opts.op before providers — per-op provider switches (e.g. think by @Memtensor-AI in https://github.com/MemTensor/MemOS/pull/2309\r\n* fix: restore OpenClaw installation and automatic memory hoo",
 "tag": "product_update",
-"url": "https://github.com/MemTensor/MemOS/releases/tag/memos-local-plugin-v2.0.21"
+"url": "https://github.com/MemTensor/MemOS/releases/tag/v2.0.36"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-23T05:24:20Z",
-"headline": "MemOS release v2.0.34",
+"date": "2026-11-04T06:42:20Z",
+"headline": "MemOS Local Plugin v2.0.21-beta.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "MemoryOS 2.0.34 release.\n\n<!-- doc-agent-local-plugin-release-intent\n{\"schema\":\"memos.local-plugin.release-intent.v2\",\"enabled\":false,\"memos_release_tag\":\"v2.0.34\",\"paired_release\":false,\"version\":\"\",\"tag\":\"\",\"source_sha\":\"\",\"evidence_diges",
+"summary": "## Changelog\n\n### Prerelease\n- Published MemOS Local Plugin v2.0.21-beta.1 as a package prerelease for validation through the npm `beta` dist-tag.\n\n### Release Evidence\n- Package tag: memos-local-plugin-v2.0.21-beta.1\n- Previous package tag",
 "tag": "product_update",
-"url": "https://github.com/MemTensor/MemOS/releases/tag/v2.0.34"
+"url": "https://github.com/MemTensor/MemOS/releases/tag/memos-local-plugin-v2.0.21-beta.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:08Z",
+"checked_at": "2026-11-09T15:16:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:00Z",
+"checked_at": "2026-11-09T15:16:07Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -161,7 +161,7 @@
 "evidence_url": "https://memos.openmem.net",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:14Z",
+"checked_at": "2026-11-09T15:16:23Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -174,19 +174,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-06T09:51:27Z",
-"github_forks": 1102,
+"github_forks": 1116,
 "github_language": "TypeScript",
-"github_open_issues": 151,
-"github_pushed_at": "2026-11-02T13:41:21Z",
-"github_stars": 12228,
+"github_open_issues": 96,
+"github_pushed_at": "2026-11-09T12:33:06Z",
+"github_stars": 12334,
 "github_topic": "ai-agents",
 "homepage": "https://memos.openmem.net"
 },
 "slug": "memtensor-memos",
 "sources": [
 {
-"payload_hash": "94499c572df18dc70a0043553f47353def1b8673c8db741127572db5dd048e22",
-"retrieved_at": "2026-11-02T14:41:36Z",
+"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
+"retrieved_at": "2026-11-09T15:04:57Z",
 "system": "github",
 "url": "https://github.com/MemTensor/MemOS"
 }

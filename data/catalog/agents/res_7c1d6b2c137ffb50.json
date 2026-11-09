@@ -25,7 +25,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.85,
+"adoption": 25.87,
 "docs": 7.0,
 "domain_fit": 96.4,
 "ecosystem": 6.6,
@@ -50,7 +50,7 @@
 "external_ids": {
 "github": "QwenLM/qwen-code"
 },
-"first_seen": "2026-11-02T14:44:31Z",
+"first_seen": "2026-11-09T15:07:59Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -72,7 +72,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:48:40Z",
+"last_seen": "2026-11-09T15:12:32Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_7c1d6b2c137ffb50"
@@ -80,37 +80,37 @@
 "name": "qwen-code",
 "news": [
 {
-"cluster_size": 2,
-"date": "2026-11-01T22:43:08Z",
-"headline": "qwen-code: Release v0.26.5-nightly.20261101.7b4b353750",
+"cluster_size": 1,
+"date": "2026-11-09T14:50:08Z",
+"headline": "qwen-code: SDK TypeScript Release v0.1.31",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at release/v0.26.5-nightly.20261101.7b4b353750 -->\n\n## What's Changed\n* refactor(managed-agent): Share the session event delivery loop by @doudouOUC in https://github.c",
+"summary": "## Bundled CLI Version\n\nThis SDK release bundles CLI version: 0.27.1\n\nSource: CLI built from source (same branch/ref as SDK)\n\n---\n\n## Bundled CLI Version\n\nThis SDK release bundles CLI version: 0.27.0\n\nSource: CLI built from source (same bra",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5-nightly.20261101.7b4b353750"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.31"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-01T03:59:58Z",
-"headline": "qwen-code: Qwen Code Desktop v0.26.5",
+"date": "2026-11-09T14:24:08Z",
+"headline": "qwen-code: Qwen Code Desktop v0.27.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "<!-- Release notes generated using configuration in .github/release.yml at db0e4e24a0d89b211b2a15f4af2be22adac71dfc -->\n\n## What's Changed\n* feat(managed): Add bounded SQL history queries by @doudouOUC in https://github.com/QwenLM/qwen-code",
+"summary": "<!-- Release notes generated using configuration in .github/release.yml at c2eccf7459c8d6d4b2a5df3733d2f3833153763b -->\n\n## What's Changed\n* docs(providers): document Wally under OpenAI-compatible providers by @sanchitmonga22 in https://git",
 "tag": "product_update",
-"url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.26.5"
+"url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.27.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:29Z",
+"checked_at": "2026-11-09T15:16:39Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:28Z",
+"checked_at": "2026-11-09T15:16:38Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -118,7 +118,7 @@
 "evidence_url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:29Z",
+"checked_at": "2026-11-09T15:16:40Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -130,7 +130,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:00Z",
+"checked_at": "2026-11-09T15:30:49Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -138,19 +138,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-26T01:37:46Z",
-"github_forks": 3297,
+"github_forks": 3334,
 "github_language": "TypeScript",
-"github_open_issues": 2089,
-"github_pushed_at": "2026-11-02T14:41:02Z",
-"github_stars": 28886,
+"github_open_issues": 2143,
+"github_pushed_at": "2026-11-09T14:56:20Z",
+"github_stars": 29130,
 "github_topic": "ai-agent",
 "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview"
 },
 "slug": "qwenlm-qwen-code",
 "sources": [
 {
-"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
-"retrieved_at": "2026-11-02T14:44:31Z",
+"payload_hash": "4e47a3b317c996ea8b260b8a528e94604cc3ec5b0fb32a8a2f13cec3a29c52c1",
+"retrieved_at": "2026-11-09T15:07:59Z",
 "system": "github",
 "url": "https://github.com/QwenLM/qwen-code"
 }

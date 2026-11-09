@@ -14,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "Moderate"
 },
-"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-02)",
+"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-09)",
 "evidence_url": "https://marketplace.fedramp.gov/products/F1602257856",
 "framework": "fedramp",
 "issued": "2017-06-13",
 "issuer": "Agency / 3PAO Fortreum, LLC",
 "match_confidence": 1.0,
-"next_check": "2026-11-09",
-"payload_hash": "e4757f48dde02868071f3202de67f230d7dd2f74ef1409bfb1cd46aebbbb1526",
+"next_check": "2026-11-16",
+"payload_hash": "68c944e2b769164876336b97e0c101f0a5fa34eed405551a943e6b43e1d055d4",
 "period_end": null,
-"retrieved_at": "2026-11-02T14:53:21Z",
+"retrieved_at": "2026-11-09T15:17:34Z",
 "review_reason": "vendor authorization for DoD Cloud Intelligent Enterprise – DD-CIE; entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -330,7 +330,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -352,24 +352,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:40:36Z",
+"last_seen": "2026-11-09T15:03:53Z",
 "license": "SAP service",
 "name": "SAP Joule Agents",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:35Z",
+"checked_at": "2026-11-09T15:16:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:32Z",
+"checked_at": "2026-11-09T15:16:42Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:52:37Z",
+"checked_at": "2026-11-09T15:16:48Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -379,7 +379,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T14:59:35Z",
+"checked_at": "2026-11-09T15:23:47Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -404,7 +404,7 @@
 "sources": [
 {
 "payload_hash": "752572dc1bca02c2f0b6ef9491aacc57c776240d8634163ea0a58998e22c8ff9",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"retrieved_at": "2026-11-09T15:03:53Z",
 "system": "seed_xlsx",
 "url": "https://www.sap.com/products/artificial-intelligence/ai-assistant.html"
 }

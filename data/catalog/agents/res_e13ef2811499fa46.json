@@ -64,7 +64,7 @@
 "external_ids": {
 "github": "ComposioHQ/composio"
 },
-"first_seen": "2026-11-02T14:40:36Z",
+"first_seen": "2026-11-09T15:03:53Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -80,7 +80,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 11,
+"cves": 12,
 "incidents": 0,
 "links": [
 {
@@ -147,7 +147,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:31Z",
+"last_seen": "2026-11-09T15:04:52Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_46affc1a027cd9da"
@@ -156,36 +156,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-01T21:52:48Z",
-"headline": "composio: CLI @composio/cli@0.6.0",
+"date": "2026-11-06T11:29:55Z",
+"headline": "composio: CLI Beta @composio/cli@0.6.1-beta.535",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Composio CLI 0.6.0\n\nThis minor release brings consistent developer-project and acting-user resolution, explicit interruption outcomes, listener failure controls, and safer telemetry derived from parsed command input.\n\n### Highlights\n\n- D",
+"summary": "## What's Changed\n* feat(core): rename custom tools options to localTools and localToolkits by @composio-zen[bot] in https://github.com/ComposioHQ/composio/pull/5215\n* feat(python): rename custom tools options to local_tools and local_toolk",
 "tag": "product_update",
-"url": "https://github.com/ComposioHQ/composio/releases/tag/%40composio/cli%400.6.0"
+"url": "https://github.com/ComposioHQ/composio/releases/tag/%40composio/cli%400.6.1-beta.535"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-01T21:44:35Z",
-"headline": "composio: CLI Beta @composio/cli@0.6.0-beta.528",
+"date": "2026-11-04T15:00:02Z",
+"headline": "composio: CLI Beta @composio/cli@0.6.1-beta.534",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Full Changelog**: https://github.com/ComposioHQ/composio/compare/@composio/cli@0.5.1-beta.526...@composio/cli@0.6.0-beta.528",
+"summary": "## What's Changed\n* docs: correct minimum Python version in README by @rbous in https://github.com/ComposioHQ/composio/pull/5178\n* docs(kb): refresh public support knowledge by @sdkrelease[bot] in https://github.com/ComposioHQ/composio/pull",
 "tag": "product_update",
-"url": "https://github.com/ComposioHQ/composio/releases/tag/%40composio/cli%400.6.0-beta.528"
+"url": "https://github.com/ComposioHQ/composio/releases/tag/%40composio/cli%400.6.1-beta.534"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:21Z",
+"checked_at": "2026-11-09T15:15:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:20Z",
+"checked_at": "2026-11-09T15:15:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -193,7 +193,7 @@
 "evidence_url": "https://github.com/ComposioHQ/composio",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:51:21Z",
+"checked_at": "2026-11-09T15:15:24Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -205,8 +205,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:00:53Z",
-"cves": 11,
+"checked_at": "2026-11-09T15:24:53Z",
+"cves": 12,
 "source": "nvd",
 "tier": 1
 },
@@ -226,11 +226,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-02-23T13:58:27Z",
-"github_forks": 4913,
+"github_forks": 4935,
 "github_language": "TypeScript",
-"github_open_issues": 133,
-"github_pushed_at": "2026-11-02T13:42:02Z",
-"github_stars": 30876,
+"github_open_issues": 139,
+"github_pushed_at": "2026-11-09T14:59:58Z",
+"github_stars": 30998,
 "github_topic": "ai-agents",
 "homepage": "https://docs.composio.dev",
 "observed_popularity": "Not captured",
@@ -246,13 +246,13 @@
 "sources": [
 {
 "payload_hash": "437a4f7602ed2d97d35fbf01e0d776a176d1df76e8b63ac0c3134989f55866ef",
-"retrieved_at": "2026-11-02T14:40:36Z",
+"retrieved_at": "2026-11-09T15:03:53Z",
 "system": "seed_xlsx",
 "url": "https://github.com/ComposioHQ/composio"
 },
 {
-"payload_hash": "745037f3572e4370d6a1fdb77ec126bfc86cc74beecfeda2138d2510cdab86a4",
-"retrieved_at": "2026-11-02T14:41:31Z",
+"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
+"retrieved_at": "2026-11-09T15:04:52Z",
 "system": "github",
 "url": "https://github.com/ComposioHQ/composio"
 }

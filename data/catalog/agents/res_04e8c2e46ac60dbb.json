@@ -28,7 +28,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.09,
+"adoption": 24.27,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.8,
@@ -42,7 +42,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 65.3,
+"score": 65.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -51,7 +51,7 @@
 },
 "data": {
 "components": {
-"adoption": 24.09,
+"adoption": 24.27,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.8,
@@ -65,7 +65,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 70.4,
+"score": 70.6,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -74,7 +74,7 @@
 },
 "sales": {
 "components": {
-"adoption": 24.09,
+"adoption": 24.27,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.8,
@@ -88,7 +88,7 @@
 "governance_credited": {},
 "profile": "commercial",
 "rank": null,
-"score": 65.4,
+"score": 65.6,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -97,7 +97,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.09,
+"adoption": 24.27,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.8,
@@ -111,7 +111,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 69.4,
+"score": 69.6,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -122,7 +122,7 @@
 "external_ids": {
 "github": "apify/apify-mcp-server"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -144,42 +144,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "MIT",
 "name": "apify-mcp-server",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-29T13:16:51Z",
-"headline": "apify-mcp-server release v0.20.0",
+"date": "2026-11-06T12:19:32Z",
+"headline": "apify-mcp-server release v0.21.4",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [0.20.0](https://github.com/apify/apify-mcp-server/releases/tag/v0.20.0) (2026-10-29)\n\n### 🚀 Features\n\n- [**breaking**] Split MCP calls out of call-actor ([#1685](https://github.com/apify/apify-mcp-server/pull/1685)) ([910c297](https://g",
+"summary": "## [0.21.4](https://github.com/apify/apify-mcp-server/releases/tag/v0.21.4) (2026-11-06)\n\n### 🐛 Bug Fixes\n\n- Serve the removed apify--rag-web-browser in default sessions ([#1844](https://github.com/apify/apify-mcp-server/pull/1844)) ([c3a93",
 "tag": "product_update",
-"url": "https://github.com/apify/apify-mcp-server/releases/tag/v0.20.0"
+"url": "https://github.com/apify/apify-mcp-server/releases/tag/v0.21.4"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-27T17:26:29Z",
-"headline": "apify-mcp-server release v0.19.5",
+"date": "2026-11-06T09:02:14Z",
+"headline": "apify-mcp-server release v0.21.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## [0.19.5](https://github.com/apify/apify-mcp-server/releases/tag/v0.19.5) (2026-10-27)\n\n### 🚀 Features\n\n- Let search-actors take a use case, except for Claude clients ([#1715](https://github.com/apify/apify-mcp-server/pull/1715)) ([464b95",
+"summary": "## [0.21.3](https://github.com/apify/apify-mcp-server/releases/tag/v0.21.3) (2026-11-06)\n\n### 🐛 Bug Fixes\n\n- Add icon, title and website to server.json ([#1835](https://github.com/apify/apify-mcp-server/pull/1835)) ([21f6c12](https://github",
 "tag": "product_update",
-"url": "https://github.com/apify/apify-mcp-server/releases/tag/v0.19.5"
+"url": "https://github.com/apify/apify-mcp-server/releases/tag/v0.21.3"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:59Z",
+"checked_at": "2026-11-09T15:16:06Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:58Z",
+"checked_at": "2026-11-09T15:16:06Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -187,7 +187,7 @@
 "evidence_url": "https://mcp.apify.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:52:00Z",
+"checked_at": "2026-11-09T15:16:07Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -199,7 +199,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:40Z",
+"checked_at": "2026-11-09T15:31:38Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -207,19 +207,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-01-02T15:43:09Z",
-"github_forks": 417,
+"github_forks": 438,
 "github_language": "TypeScript",
-"github_open_issues": 246,
-"github_pushed_at": "2026-11-02T14:39:00Z",
-"github_stars": 14354,
+"github_open_issues": 257,
+"github_pushed_at": "2026-11-09T10:37:50Z",
+"github_stars": 15400,
 "github_topic": "mcp-server",
 "homepage": "https://mcp.apify.com"
 },
 "slug": "apify-apify-mcp-server",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/apify/apify-mcp-server"
 }

@@ -1,0 +1,25 @@
+{
+ "agent": "res_66277aebd4bd7bfb",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_66277aebd4bd7bfb_ac2881f0",
+ "kind": "self_test",
+ "name": "agent-blueprint",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:agentblueprint.ai:mcp:agent-blueprint",
+   "manifest_url": "https://agentblueprint.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "agentblueprint-ai-agent-blueprint"
+}

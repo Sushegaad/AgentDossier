@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "rowboatlabs/rowboat"
 },
-"first_seen": "2026-11-02T14:41:36Z",
+"first_seen": "2026-11-09T15:04:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,47 +94,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:41:36Z",
+"last_seen": "2026-11-09T15:04:57Z",
 "license": "Apache-2.0",
 "name": "rowboat",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-09-30T07:51:24Z",
-"headline": "rowboat release v1.0.5",
+"date": "2026-11-03T06:19:23Z",
+"headline": "rowboat release v1.0.7",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": null,
+"summary": "This prerelease carries the Spaces skill refresh instruction into desktop-managed agents: update and read the latest rowboat-spaces skill once per session, with an offline fallback. The shared skill also asks directly connected Hermes agent",
 "tag": "product_update",
-"url": "https://github.com/rowboatlabs/rowboat/releases/tag/v1.0.5"
+"url": "https://github.com/rowboatlabs/rowboat/releases/tag/v1.0.7"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-22T18:30:16Z",
-"headline": "rowboat release v1.0.4",
+"date": "2026-11-03T06:07:17Z",
+"headline": "rowboat release v1.0.6",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": null,
+"summary": "**Superseded by [v1.0.7](https://github.com/rowboatlabs/rowboat/releases/tag/v1.0.7)**, which includes the Linux packaging fix and installers for all platforms.\n\nThis desktop prerelease includes the shared Spaces prompt that refreshes the R",
 "tag": "product_update",
-"url": "https://github.com/rowboatlabs/rowboat/releases/tag/v1.0.4"
+"url": "https://github.com/rowboatlabs/rowboat/releases/tag/v1.0.6"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:52:32Z",
+"checked_at": "2026-11-09T15:16:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:52:30Z",
+"checked_at": "2026-11-09T15:16:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:52:32Z",
+"checked_at": "2026-11-09T15:16:43Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -145,19 +145,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-01-13T09:30:40Z",
-"github_forks": 1815,
+"github_forks": 1820,
 "github_language": "TypeScript",
-"github_open_issues": 227,
-"github_pushed_at": "2026-11-02T14:12:56Z",
-"github_stars": 18123,
+"github_open_issues": 232,
+"github_pushed_at": "2026-11-09T14:48:50Z",
+"github_stars": 18147,
 "github_topic": "ai-agents",
 "homepage": "https://www.rowboatlabs.com"
 },
 "slug": "rowboatlabs-rowboat",
 "sources": [
 {
-"payload_hash": "94499c572df18dc70a0043553f47353def1b8673c8db741127572db5dd048e22",
-"retrieved_at": "2026-11-02T14:41:36Z",
+"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
+"retrieved_at": "2026-11-09T15:04:57Z",
 "system": "github",
 "url": "https://github.com/rowboatlabs/rowboat"
 }

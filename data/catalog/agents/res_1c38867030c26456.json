@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.48,
+"adoption": 24.53,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.5,
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "xpzouying/xiaohongshu-mcp"
 },
-"first_seen": "2026-11-02T14:46:44Z",
+"first_seen": "2026-11-09T15:10:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,42 +64,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:46:44Z",
+"last_seen": "2026-11-09T15:10:26Z",
 "license": "Apache-2.0",
 "name": "xiaohongshu-mcp",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-01T19:38:25Z",
-"headline": "xiaohongshu-mcp: Release v2.7.0",
+"date": "2026-11-06T07:22:51Z",
+"headline": "xiaohongshu-mcp: Release v2.7.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## 🚀 新版本发布: v2.7.0\n\n\n\n### 📋 更新内容\n\n- Merge pull request #902 from xpzouying/codex/fix-search-response-race (d6352e5)\n- fix(search): recheck page state after queued response updates (03bae2d)\n- refactor(publish): simplify optional title refoc",
+"summary": "v2.7.3 修复搜索过程中的风控重定向诊断。搜索页延迟跳到安全验证页或登录页时，会及时返回对应提示，帮助调用方判断需要扫码验证还是重新登录。\n\n- 在等待搜索结果期间识别延迟重定向，并覆盖结果就绪后、导航后停顿期间的跳转。\n- 按 URL 路径判断页面类型，避免查询参数导致误判。\n- 保留正常空结果行为，补齐本地浏览器回归测试。感谢 @SamYunquChen 的修复与测试贡献。[#872](https://github.com/xpzouying/xiaohongshu-",
 "tag": "product_update",
-"url": "https://github.com/xpzouying/xiaohongshu-mcp/releases/tag/v2.7.0"
+"url": "https://github.com/xpzouying/xiaohongshu-mcp/releases/tag/v2.7.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-01T17:24:18Z",
-"headline": "xiaohongshu-mcp: Release v2.6.1",
+"date": "2026-11-03T17:21:00Z",
+"headline": "xiaohongshu-mcp: Release v2.7.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## 🚀 新版本发布: v2.6.1\n\n\n\n### 📋 更新内容\n\n- fix(security): 升级 Go 与 MCP 依赖并拒绝跨站请求 (#894) (87f1dec)\n- docs: 简化 Docker 部署说明并归档 noVNC 验证资料 (#893) (a233bfb)\n\n---\n\n### 📦 下载说明\n\n**主程序（MCP 服务）：**\n- **macOS Apple Silicon**: `xiaohongshu-mcp-darwin-arm64`\n- *",
+"summary": "## 🚀 新版本发布: v2.7.2\n\n\n\n### 📋 更新内容\n\n- Merge pull request #905 from xpzouying/all-contributors/add-ACCLE123 (539d296)\n- Merge pull request #867 from ACCLE123/fix/publish-topic-tag-race (2c9cafa)\n- fix(publish): 核对编辑器实际插入的话题 (5c1c233)\n- docs: u",
 "tag": "product_update",
-"url": "https://github.com/xpzouying/xiaohongshu-mcp/releases/tag/v2.6.1"
+"url": "https://github.com/xpzouying/xiaohongshu-mcp/releases/tag/v2.7.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:51:38Z",
+"checked_at": "2026-11-09T15:15:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:51:36Z",
+"checked_at": "2026-11-09T15:15:41Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -107,7 +107,7 @@
 "evidence_url": "https://www.haha.ai/xiaohongshu-mcp",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-02T14:51:39Z",
+"checked_at": "2026-11-09T15:15:44Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -119,7 +119,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-02T15:06:29Z",
+"checked_at": "2026-11-09T15:31:32Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -127,19 +127,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-08-03T09:08:45Z",
-"github_forks": 2459,
+"github_forks": 2502,
 "github_language": "Go",
 "github_open_issues": 113,
-"github_pushed_at": "2026-11-02T04:35:32Z",
-"github_stars": 16744,
+"github_pushed_at": "2026-11-09T04:35:53Z",
+"github_stars": 17046,
 "github_topic": "mcp-server",
 "homepage": "https://www.haha.ai/xiaohongshu-mcp"
 },
 "slug": "xpzouying-xiaohongshu-mcp",
 "sources": [
 {
-"payload_hash": "10e983ec216ad4661bcc34cddfc7c8786acff536d72d5a21b4a63d87a5f95cbf",
-"retrieved_at": "2026-11-02T14:46:44Z",
+"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
+"retrieved_at": "2026-11-09T15:10:26Z",
 "system": "github",
 "url": "https://github.com/xpzouying/xiaohongshu-mcp"
 }

@@ -22,7 +22,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 22.92,
+"adoption": 23.09,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -36,7 +36,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 62.0,
+"score": 62.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,7 +45,7 @@
 },
 "technology": {
 "components": {
-"adoption": 22.92,
+"adoption": 23.09,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 69.3,
+"score": 69.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "makecindy/cindy"
 },
-"first_seen": "2026-11-02T14:44:31Z",
+"first_seen": "2026-11-09T15:07:59Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,47 +92,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-02T14:44:31Z",
+"last_seen": "2026-11-09T15:07:59Z",
 "license": "Apache-2.0",
 "name": "cindy",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-02T09:38:32Z",
-"headline": "cindy release v0.1.122-beta",
+"date": "2026-11-06T10:31:24Z",
+"headline": "cindy release v0.1.128",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Desktop release 0.1.122\n\n## 更新说明\n### 🧩 插件可以带可交互页面了\n插件现在可以带可交互页面，安装时单独确认权限，手机和远程设备也能打开确认，并支持文件导入导出；聊天里的表格等文件可按 7 天引用交给插件，插件还能在新建任务时选模型、为自动化做运行前检查。 @DavidShenXD @dashhuang @fmfsaisai @techsaurabh-394 @zhaodengfeng @zqchris\n\n### 🌐 用「我的浏览器」操作自己",
+"summary": "Desktop release 0.1.128\n\n## 更新说明\n### 🔌 重复 MCP 连接会提醒\n当 Cindy 与 Claude Code 的配置里有相同或相近的 MCP 连接时，会提示你选择保留哪个来源，并记住这台电脑上的选择；同名服务的识别和设置兼容也更准确。 @DavidShenXD\n\n### 🖥️ macOS Dock 图标已恢复\n修复 0.1.127 打包版在 macOS 上 Dock 图标空白的问题，打包版重新显示正常图标。 @GaoWeiLiuXD\n\n#",
 "tag": "product_update",
-"url": "https://github.com/makecindy/cindy/releases/tag/v0.1.122-beta"
+"url": "https://github.com/makecindy/cindy/releases/tag/v0.1.128"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-30T06:31:54Z",
-"headline": "cindy release v0.1.121",
+"date": "2026-11-06T03:01:29Z",
+"headline": "cindy release v0.1.127-beta",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Desktop release 0.1.121\n\n## 更新说明\n### 🛰️ 自建中转服务，一键部署到自己的服务器\n设置里新增「中转服务」：可在这台电脑直接开启，或用 SSH 部署到自己的 Linux 服务器，自动申请并续期 HTTPS 证书，支持配对加入、升级和卸载；服务器已用 Nginx 时也能自动复用原站点。 @MagicLizi\n\n### 🔗 分享的供应商可直接连上执行电脑\n分享供应商后，对方新任务可直连组内执行电脑，获得短期授权、到期收回，断线自动改用中转；历史任",
+"summary": "Desktop release 0.1.127\n\n## 更新说明\n### 🧩 插件能用上原生界面\n插件现在可以使用客户端原生界面和独立视图，页面里可直接调用模型选择器；插件详情新增图文介绍，手机端也能查看。插件图标不再显示占位色块，定时任务因插件缺失而失败时会说明缺少哪个插件并给出安装入口。 @GaoWeiLiuXD @MagicLizi @dashhuang @zqchris\n\n### 🤖 模型接入更多，路由更稳\n新增 OpenHubs 与 Ollama Cloud 供应商",
 "tag": "product_update",
-"url": "https://github.com/makecindy/cindy/releases/tag/v0.1.121"
+"url": "https://github.com/makecindy/cindy/releases/tag/v0.1.127-beta"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-02T14:50:59Z",
+"checked_at": "2026-11-09T15:15:04Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-02T14:50:54Z",
+"checked_at": "2026-11-09T15:15:00Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-02T14:51:02Z",
+"checked_at": "2026-11-09T15:15:06Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -143,19 +143,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-07-22T17:49:34Z",
-"github_forks": 1082,
+"github_forks": 1199,
 "github_language": "TypeScript",
-"github_open_issues": 2439,
-"github_pushed_at": "2026-11-02T14:36:38Z",
-"github_stars": 8991,
+"github_open_issues": 2913,
+"github_pushed_at": "2026-11-09T14:38:40Z",
+"github_stars": 9624,
 "github_topic": "ai-agent",
 "homepage": "https://cindy.app"
 },
 "slug": "makecindy-cindy",
 "sources": [
 {
-"payload_hash": "f6261427f97a01e5ab5cc851baab8ac413e348a1147cb14ea232175770fbc0b9",
-"retrieved_at": "2026-11-02T14:44:31Z",
+"payload_hash": "4e47a3b317c996ea8b260b8a528e94604cc3ec5b0fb32a8a2f13cec3a29c52c1",
+"retrieved_at": "2026-11-09T15:07:59Z",
 "system": "github",
 "url": "https://github.com/makecindy/cindy"
 }

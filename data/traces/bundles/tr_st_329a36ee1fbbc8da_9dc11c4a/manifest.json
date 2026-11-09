@@ -1,0 +1,26 @@
+{
+ "agent": "res_329a36ee1fbbc8da",
+ "date": "2026-11-09",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_329a36ee1fbbc8da_9dc11c4a",
+ "kind": "self_test",
+ "name": "Ankra Docs",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://docs.ankra.ai/.well-known/agent-card.json",
+   "checked_at": "2026-11-09T15:15:22Z",
+   "errors": [
+    "missing 'description'"
+   ],
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "ankra"
+   ],
+   "status": "invalid",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "ankra-ai-ankra-docs"
+}
