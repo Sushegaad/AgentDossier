@@ -1,0 +1,19 @@
+{
+ "agent": "res_0d5e39afbc41c41b",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_0d5e39afbc41c41b_a874385b",
+ "kind": "self_test",
+ "name": "agent-bev Library",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-11-16T14:52:08Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://bev-cuvee.org/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "agent-bev-ai-agent-bev-library"
+}

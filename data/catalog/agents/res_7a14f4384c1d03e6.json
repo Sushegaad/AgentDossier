@@ -1,0 +1,228 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/quiz_question",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Multiple-choice or true/false question card with CSS checkbox trick for answer reveal. Correct option is highlighted green on selection, wrong options dim. No JavaScript required — pure CSS :checked selectors drive the feedback state. Optionally shows an explanation block after any answer is chosen.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:quiz_question"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_7a14f4384c1d03e6",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 20,
+"incidents": 0,
+"links": [
+{
+"date": "2009-06-05",
+"kind": "cve",
+"title": "CVE-2009-1942",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2009-1942"
+},
+{
+"date": "2013-11-26",
+"kind": "cve",
+"title": "CVE-2013-4525",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4525"
+},
+{
+"date": "2014-03-24",
+"kind": "cve",
+"title": "CVE-2014-2571",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2014-2571"
+},
+{
+"date": "2018-07-10",
+"kind": "cve",
+"title": "CVE-2018-10891",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2018-10891"
+},
+{
+"date": "2018-09-17",
+"kind": "cve",
+"title": "CVE-2018-14630",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14630"
+},
+{
+"date": "2021-01-01",
+"kind": "cve",
+"title": "CVE-2020-35949",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2020-35949"
+},
+{
+"date": "2024-02-05",
+"kind": "cve",
+"title": "CVE-2024-1208",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1208"
+},
+{
+"date": "2025-11-19",
+"kind": "cve",
+"title": "CVE-2025-12426",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-12426"
+},
+{
+"date": "2025-11-21",
+"kind": "cve",
+"title": "CVE-2025-11368",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11368"
+},
+{
+"date": "2026-03-23",
+"kind": "cve",
+"title": "CVE-2026-3225",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3225"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Quiz Question",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:quiz_question",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a MCQ or true/false question with CSS-only correct/wrong feedback",
+"multiple-choice or true/false question card with css checkbox trick for answer reveal. correct option is highlighted",
+"render a quiz question"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:21:08Z",
+"cves": 20,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-quiz-question",
+"sources": [
+{
+"payload_hash": "0b0924964675760afdcfb16010ae1e8a5ff32341c04db67137798e1b064f858e",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_7a14f4384c1d03e6_cd5f7c10",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_7a14f4384c1d03e6_cd5f7c10",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:a9e296b99ac2c6b6573467e69e9f0861cb6eda42f5cbc0023cb765931e6d9231",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Quiz Question's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_7a14f4384c1d03e6_cd5f7c10/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/quiz_question/",
+"vendor": "a2uicatalog.ai"
+}

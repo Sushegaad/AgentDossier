@@ -1,0 +1,195 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/sortable_list",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Drag to reorder a list, emitting the new position as one event.\nA DATA atom, not a domain one: it renders whatever {id, label} pairs it is given and emits a position, so the same atom serves form fields, a shopping run, or any other AUTHORED ordering. There is deliberately no sortable_jobs and no sortable_fields — one named interaction per use case is the drift this vocabulary already has (onFlightClick, onAssign), and it costs a renderer change every time.\nThe reason it fits a declarative binding model at all is containment: the gesture never reaches the state engine. dragstart/dragover/drop are high-frequency and purely visual; only the DROP publishes, once, through the `onReorder` output wire as {id, order}. That is the same shape the atom renders FROM, so position is derived state rather than a second source of truth — what it emits and what it consumes are one field.\n`order` is fractional: a drop takes the midpoint of its two neighbours, so exactly one item changes. Dense re-indexing would rewrite every position on every drag, turning a one-line reviewable diff into a wall of noise, which matters wherever the result is a change someone accepts or reverts.\nUse it only where order is AUTHORED. Where order is COMPUTED — a job list ranked by severity then priority — a dragged position becomes a second, competing ordering, and the derivation boundary rule says that ranking belongs to the server.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 30.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:sortable_list"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_8f57671f5a2410ba",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Sortable List",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:sortable_list",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a drag-to-reorder list emitting {id, order} on drop",
+"drag to reorder a list, emitting the new position as one event.\na data atom, not a domain one: it renders whatever",
+"render a sortable list"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:41Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-sortable-list",
+"sources": [
+{
+"payload_hash": "d4b9a5b658d9f23dfa3b4b7566d83130f5927bd823916a351094ded0b6a8591e",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_8f57671f5a2410ba_f798ddb4",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_8f57671f5a2410ba_f798ddb4",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:bbcf953e6b4f697feb0b19adca54f976407b51afd3d54703ac03245fcb75b47e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Sortable List's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_8f57671f5a2410ba_f798ddb4/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/sortable_list/",
+"vendor": "a2uicatalog.ai"
+}

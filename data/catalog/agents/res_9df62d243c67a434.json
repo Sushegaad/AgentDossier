@@ -1,0 +1,168 @@
+{
+"canonical_url": "antislop.ai.id",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"code",
+"coding"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 23.01,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 3.0,
+"governance": null,
+"health": 20.0,
+"trust": 16.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 68.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "miqdadbadjuber/anti-slop"
+},
+"first_seen": "2026-11-16T14:41:29Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9df62d243c67a434",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:41:29Z",
+"license": "MIT",
+"name": "anti-slop",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-11-13T10:35:33Z",
+"headline": "anti-slop: v3.2.30: Kilo Code joins the installer",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**Kilo Code joins the installer, and two community fixes ride along.** Kilo reads the shared `.agents/skills` folder at both scopes, so it costs one row and no new path. A new `antislop-ui` pattern covers the navigation shell, and the insta",
+"tag": "product_update",
+"url": "https://github.com/miqdadbadjuber/anti-slop/releases/tag/v3.2.30"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-12T12:35:24Z",
+"headline": "anti-slop: v3.2.29: Muse Code becomes the ninth plugin door",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "**Muse Code becomes the ninth plugin door, and it needed no new manifest.** Set one experimental flag, add the repository as a marketplace, and Muse imports all six skills from a manifest it already understands.\r\n\r\n## It needed no new manif",
+"tag": "product_update",
+"url": "https://github.com/miqdadbadjuber/anti-slop/releases/tag/v3.2.29"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-16T14:51:24Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-16T14:51:23Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"checked_at": "2026-11-16T14:51:25Z",
+"parser_version": "mcp-2025-06-18",
+"status": "not_found"
+}
+},
+"publisher_domain": "antislop.ai.id",
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:22Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-08-07T10:29:56Z",
+"github_forks": 639,
+"github_language": "JavaScript",
+"github_open_issues": 1,
+"github_pushed_at": "2026-11-13T12:29:58Z",
+"github_stars": 9346,
+"github_topic": "ai-agents",
+"homepage": "https://antislop.ai.id"
+},
+"slug": "miqdadbadjuber-anti-slop",
+"sources": [
+{
+"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
+"retrieved_at": "2026-11-16T14:41:29Z",
+"system": "github",
+"url": "https://github.com/miqdadbadjuber/anti-slop"
+}
+],
+"tags": [
+"accessibility",
+"agent-skills",
+"ai-agents",
+"ai-coding-agent",
+"ai-slop",
+"anti-slop",
+"claude-code",
+"copywriting",
+"design-rules",
+"ui-design"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 5,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://antislop.ai.id",
+"vendor": "miqdadbadjuber"
+}

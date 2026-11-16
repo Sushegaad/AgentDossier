@@ -1,0 +1,224 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/contour_plot",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"supply_chain": [
+"delivery"
+],
+"technology": [
+"cloud",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Filled contour bands drawn from data: either a grid of values (a temperature, elevation or pressure field) or a cloud of points (the density of delivery locations, incidents or customers). Both use d3-contour: for a grid, marching squares at evenly spaced levels (d3's default count of levels, or the thresholds field); for points, a kernel density estimate (d3 contourDensity: the points are smoothed with the given bandwidth and contoured at up to 20 levels). Bands run from light to dark as the value or density rises, every band is named in a legend as a range of numbers (never colour alone), and a thin outline marks each level. A grid is drawn with column and row numbers on its axes; points use their own x and y with nice axis ticks and are also drawn as faint dots. Static SVG, no script, scaled to its container. The hidden tables give every level with its colour name and, for a grid, the share of cells at or above it, for points the share of points in cells at or above it, then the points themselves (first 200). The aria label gives the mode, the size, the value range and the number of levels. Motion-ready: each band reads --p through a --k so a motion_timeline track on p draws the bands from the lowest level up; the standalone render is the finished picture.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 30.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"supply_chain": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "operations",
+"rank": null,
+"score": 31.8,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 30.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:contour_plot"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_368912d4ec458244",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Contour Plot",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:contour_plot",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a contour_plot: filled contour bands of a value grid or of the density of points",
+"filled contour bands drawn from data: either a grid of values (a temperature, elevation or pressure field) or a cloud",
+"render a contour plot"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:25:05Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-contour-plot",
+"sources": [
+{
+"payload_hash": "c408fb03f3bbe4a5350e6a358a9d20417032e2d6a3defcb20512f4145110c408",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_368912d4ec458244_1eb7b954",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_368912d4ec458244_1eb7b954",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:bd9a8ec1b0798588531fba12c6655df203dfcb29018a24392c3246cea3e50733",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Contour Plot's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_368912d4ec458244_1eb7b954/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/contour_plot/",
+"vendor": "a2uicatalog.ai"
+}

@@ -1,0 +1,192 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/code_diff",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-apps-script-side-panel",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"code",
+"mcp",
+"python"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Unified diff view computed server-side via Python difflib. Added lines have a green left border and fade-in background; removed lines have red. Unchanged context lines are neutral. Optional line numbers, language badge, and title. No JavaScript required — diff is computed at render time, not in the browser.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 71.3,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 32.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:code_diff"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_eeb635a41b592f0d",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2025-07-25",
+"kind": "cve",
+"title": "CVE-2025-38416",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-38416"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Code Diff",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-29T12:22:44Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49891989",
+"engagement": 8,
+"headline": "Show HN: CodeDiff – Fast (<100ms), robust (99.95%) syntax-aware code diff",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://github.com/ivankovic/codediff"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:code_diff",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a server-side unified diff view with green additions and red removals",
+"unified diff view computed server-side via python difflib. added lines have a green left border and fade-in",
+"render a code diff"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:15:30Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-code-diff",
+"sources": [
+{
+"payload_hash": "40f0b7e29f6b2697caed41dd0800ca7944623b7312c5d7b6b8d5526610b32727",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_eeb635a41b592f0d_f1360296",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_eeb635a41b592f0d_f1360296",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:468af0a0d7f2faafd41d1cdbb0519226aff1fac25c6eba4bb29cbc17fecb2862",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Code Diff's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_eeb635a41b592f0d_f1360296/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/code_diff/",
+"vendor": "a2uicatalog.ai"
+}

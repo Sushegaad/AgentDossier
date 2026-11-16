@@ -1,0 +1,175 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/particle_type",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Agentic typeface: the words an agent supplies assemble out of thousands of coloured particles that fly in from random positions and settle into the letterforms; the pointer scatters them and they reform. Text is rasterised on an offscreen canvas and sampled into particle targets, so any string works, at any panel size, in a system font. Honours prefers-reduced-motion (renders the settled word), pauses offscreen, DPR-aware. The words are also emitted as visually-hidden text so they stay readable and selectable. Sibling of light_type (words as flowing light) and living_type (letters that breathe). Every option is an enum or a clamped int; text is JSON-encoded into the script with \"<\" escaped, so it can never break out.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:particle_type"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_121df3ee39824c24",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2017-02-21",
+"kind": "cve",
+"title": "CVE-2016-9053",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2016-9053"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Particle Type",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:particle_type",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a agent-supplied words assemble from particles; pointer scatters them",
+"agentic typeface: the words an agent supplies assemble out of thousands of coloured particles that fly in from random",
+"render a particle type"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:19:25Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-particle-type",
+"sources": [
+{
+"payload_hash": "4a13c1343c39c75f93a74c332ca6797ce9def89492818ebb21a182e47c2272bd",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_121df3ee39824c24_997d6e92",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_121df3ee39824c24_997d6e92",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:3c0bdf9316821119f7ff08c365c0f663b160c2c6c64fde886a896c2ba2c978b6",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Particle Type's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_121df3ee39824c24_997d6e92/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/particle_type/",
+"vendor": "a2uicatalog.ai"
+}

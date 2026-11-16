@@ -22,7 +22,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 24.52,
+"adoption": 24.59,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 9.6,
@@ -36,7 +36,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 75.4,
+"score": 75.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,7 +45,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.52,
+"adoption": 24.59,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 9.6,
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 81.5,
+"score": 81.6,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "a2ui-project/a2ui"
 },
-"first_seen": "2026-11-09T15:12:24Z",
+"first_seen": "2026-11-16T14:49:32Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,31 +92,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:12:24Z",
+"last_seen": "2026-11-16T14:49:32Z",
 "license": "Apache-2.0",
 "name": "a2ui",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-09T05:46:27Z",
-"headline": "a2ui: Documentation Media Assets (Do Not Delete)",
+"date": "2026-11-11T01:57:49Z",
+"headline": "A2UI CLI v0.3.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Immutable, content-addressed media assets referenced by docs/site/assets-manifest.json.",
+"summary": "- **Breaking:** Requires `a2ui_core` `^0.7.0` (`a2ui_cli` exposes `a2ui_core`\n  types in its public API).\n\n- Added `a2ui lint` (`LintCommand`, `lintCatalog`, `CatalogLintFinding`, and `LintSeverity`) to validate catalog JSON schemas against",
 "tag": "product_update",
-"url": "https://github.com/a2ui-project/a2ui/releases/tag/docs-assets"
+"url": "https://github.com/a2ui-project/a2ui/releases/tag/cli-v0.3.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-02T02:38:25Z",
-"headline": "a2ui-adk 0.2.0",
+"date": "2026-11-10T22:15:39Z",
+"headline": "a2ui-adk 0.3.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "- **BREAKING CHANGE**: `GenAIFileResolver` is removed, along with the\n  `FileResolver` it extended in `a2ui-agent-sdk`.\n  [#3731](https://github.com/a2ui-project/a2ui/pull/3731)\n- **BREAKING CHANGE**: `SendA2uiToClientToolset(a2ui_enabled,",
+"summary": "- `a2ui_rpc_callback` takes `renderer_calls`, a provider of the session's\n  `RendererFunctionCalls` such as `A2uiRendererCallsStore.get`, and `catalogs`\n  becomes optional (pass one or both). The callback processes each message\n  with a `Re",
 "tag": "product_update",
-"url": "https://github.com/a2ui-project/a2ui/releases/tag/python/a2ui-adk/v0.2.0"
+"url": "https://github.com/a2ui-project/a2ui/releases/tag/python/a2ui-adk/v0.3.0"
 }
 ],
 "news_checked": true,
@@ -125,14 +125,14 @@
 "evidence_url": "https://a2ui.org/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-09T15:13:23Z",
+"checked_at": "2026-11-16T14:50:35Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-11-09T15:13:22Z",
+"checked_at": "2026-11-16T14:50:34Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -140,7 +140,7 @@
 "evidence_url": "https://a2ui.org/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-09T15:13:24Z",
+"checked_at": "2026-11-16T14:50:35Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -153,19 +153,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-09-24T23:14:02Z",
-"github_forks": 1375,
+"github_forks": 1416,
 "github_language": "TypeScript",
-"github_open_issues": 533,
-"github_pushed_at": "2026-11-09T11:46:35Z",
-"github_stars": 17025,
+"github_open_issues": 490,
+"github_pushed_at": "2026-11-16T02:59:48Z",
+"github_stars": 17480,
 "github_topic": "a2a",
 "homepage": "https://a2ui.org/"
 },
 "slug": "a2ui-project-a2ui",
 "sources": [
 {
-"payload_hash": "3c1120c178946868f143639e0b83514aea6d1026d2126ea00ca9f59dbde7dc20",
-"retrieved_at": "2026-11-09T15:12:24Z",
+"payload_hash": "f9061a033435286f51d1f3db7a0fe3ef5aafdfc566dcc1bb7bbc9c4fd89f23f6",
+"retrieved_at": "2026-11-16T14:49:32Z",
 "system": "github",
 "url": "https://github.com/a2ui-project/a2ui"
 }

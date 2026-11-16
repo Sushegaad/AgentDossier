@@ -4,8 +4,8 @@
 "category": "MCP server",
 "classification": {
 "matched": {
-"business": [
-"email"
+"healthcare": [
+"health"
 ],
 "technology": [
 "mcp"
@@ -16,10 +16,10 @@
 "commercial": null,
 "compliance": [],
 "deployment": null,
-"description": "Email for long-term client relationships: ARVX reads each person first and remembers every pair.",
+"description": "ARVX™ models both people in a relationship and reads its health area by area with every Reading.",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
-"business": {
+"healthcare": {
 "components": {
 "adoption": null,
 "docs": 7.0,
@@ -31,11 +31,11 @@
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.34,
-"evidence_coverage": 0.667,
+"evidence_coverage": 0.7,
 "governance_credited": {},
-"profile": "general",
+"profile": "regulated",
 "rank": null,
-"score": 42.0,
+"score": 39.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -72,7 +72,7 @@
 "github": "centricai/arvx-mcp",
 "mcp_registry": "ai.arvx/arvx"
 },
-"first_seen": "2026-11-09T15:03:54Z",
+"first_seen": "2026-11-16T14:40:28Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,19 +94,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:03:54Z",
+"last_seen": "2026-11-16T14:40:28Z",
 "license": null,
 "name": "ARVX",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:15:15Z",
+"checked_at": "2026-11-16T14:52:43Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:15:14Z",
+"checked_at": "2026-11-16T14:52:33Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -120,7 +120,7 @@
 ],
 "server_name": "ai.arvx/arvx",
 "status": "claimed",
-"version": "1.0.0",
+"version": "1.0.2",
 "via": "mcp_registry"
 }
 },
@@ -129,9 +129,9 @@
 "scope": "public",
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-10-19T02:55:15.554192Z",
+"mcp_registry_published_at": "2026-11-10T18:14:15.832373Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-10-19T02:55:15.554192Z",
+"mcp_registry_updated_at": "2026-11-10T18:14:15.832373Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -139,8 +139,8 @@
 "slug": "arvx-ai-arvx",
 "sources": [
 {
-"payload_hash": "4b441cef1def7c8e5279300947c005ad8448e1f1a3f4e7a7166dccefceb1620a",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
+"retrieved_at": "2026-11-16T14:40:28Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.arvx/arvx"
 }

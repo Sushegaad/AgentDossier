@@ -1,0 +1,195 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/brick_build_3d",
+"capabilities": [
+"google-apps-script-web",
+"web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"legal": [
+"trademark"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Equation-driven toy-brick 3D model that assembles itself stud by stud, drawn in real brick proportions (8 mm pitch, 9.6 mm brick) with dependency-free WebGL — key-light shadows cast between parts, glossy plastic shading and an outline on every part edge, like an instruction-booklet render — and a canvas-2D fallback where WebGL is unavailable. Two kinds of model. Toy bricks (bricks or shape) are procedural boxes with studs, from a named shape (heart, sphere, torus, helix, pyramid, house) or an explicit bricks array. Real parts (partsModel) are baked geometry from the LDraw.org Parts Library, under CC BY. Every design is checked by deterministic geometry — collisions, every brick anchored through stud connections (real parts also through pins, hinges, axles and clips), connection count, centre of mass over the footprint — and the verdicts show beside the model. An instructions mode steps through the build layer by layer, and a parts list groups bricks by size and colour with an indicative cost. Known limit, each brick canvas holds two WebGL contexts and a page allows about 16, so keep to about 7 brick canvases per page. Not affiliated with or endorsed by the LEGO Group. LEGO is a trademark of the LEGO Group.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"legal": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 34.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:brick_build_3d"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_072ff114a7f6a3ff",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Brick Build 3D",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:brick_build_3d",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a self-assembling 3D brick model, toy bricks or real LDraw parts, with build checks, build steps and a parts list",
+"equation-driven toy-brick 3d model that assembles itself stud by stud, drawn in real brick proportions (8 mm pitch,",
+"render a brick build 3d"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:21:51Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-brick-build-3d",
+"sources": [
+{
+"payload_hash": "6370cca5a4b92cf1a0764128051394fbb38ffc1aaa9431336bc346acbf6a928c",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_072ff114a7f6a3ff_ccf49e75",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_072ff114a7f6a3ff_ccf49e75",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:0679d7eed26488e79a4714338f1bd96b93453870a25d89aad06c15d558d89082",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Brick Build 3D's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_072ff114a7f6a3ff_ccf49e75/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/brick_build_3d/",
+"vendor": "a2uicatalog.ai"
+}

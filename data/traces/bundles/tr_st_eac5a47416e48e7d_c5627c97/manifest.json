@@ -1,0 +1,19 @@
+{
+ "agent": "res_eac5a47416e48e7d",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_eac5a47416e48e7d_c5627c97",
+ "kind": "self_test",
+ "name": "Glitch Text",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:a2uicatalog.ai:atom:glitch_text",
+   "manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+   "media_type": "application/vnd.a2ui.atom+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "a2uicatalog-ai-glitch-text"
+}

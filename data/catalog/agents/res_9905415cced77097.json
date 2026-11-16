@@ -4,8 +4,9 @@
 "classification": {
 "matched": {
 "technology": [
-"code",
-"mcp"
+"debug",
+"mcp",
+"test"
 ]
 },
 "taxonomy_version": "sar-taxonomy-1.0"
@@ -19,16 +20,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-11-09)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://www.n8n-mcp.com/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "289539d027ac0bcd37692ec5dee9ec6460e6654f1d5f4a1ebf1277c22138360f",
+"next_check": "2026-11-23",
+"payload_hash": "dbce05ef4ec3f16da91198208bf32a2588ac803aaf2b87c1a22e86a598361345",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:21:46Z",
+"retrieved_at": "2026-11-16T15:00:01Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -40,26 +41,26 @@
 }
 ],
 "deployment": "self-hosted",
-"description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
+"description": "MCP server that lets Claude, ChatGPT, Cursor and other AI assistants operate n8n: debug, edit, validate, test and build workflows on any n8n instance",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
 "components": {
 "adoption": 25.31,
 "docs": 7.0,
-"domain_fit": 56.4,
+"domain_fit": 71.3,
 "ecosystem": 4.8,
 "governance": 0.0,
 "health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
-"confidence": 0.564,
+"confidence": 0.713,
 "evidence_coverage": 1.0,
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 72.8,
+"score": 74.3,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
@@ -68,7 +69,7 @@
 "external_ids": {
 "github": "czlonkowski/n8n-mcp"
 },
-"first_seen": "2026-11-09T15:10:26Z",
+"first_seen": "2026-11-16T14:47:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -90,7 +91,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:10:26Z",
+"last_seen": "2026-11-16T14:47:21Z",
 "license": "MIT",
 "name": "n8n-mcp",
 "news": [
@@ -120,12 +121,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:16:15Z",
+"checked_at": "2026-11-16T14:53:48Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:16:12Z",
+"checked_at": "2026-11-16T14:53:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -133,7 +134,7 @@
 "evidence_url": "https://www.n8n-mcp.com/",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-09T15:16:16Z",
+"checked_at": "2026-11-16T14:53:49Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -146,19 +147,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-07T12:15:57Z",
-"github_forks": 3683,
+"github_forks": 3679,
 "github_language": "TypeScript",
-"github_open_issues": 60,
-"github_pushed_at": "2026-11-09T12:08:18Z",
-"github_stars": 23230,
+"github_open_issues": 61,
+"github_pushed_at": "2026-11-16T09:42:11Z",
+"github_stars": 23266,
 "github_topic": "mcp-server",
 "homepage": "https://www.n8n-mcp.com/"
 },
 "slug": "czlonkowski-n8n-mcp",
 "sources": [
 {
-"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
-"retrieved_at": "2026-11-09T15:10:26Z",
+"payload_hash": "f34688fd0cb2f70801315df09aadb471b17c21e7a00e4711b74bed2a125caebe",
+"retrieved_at": "2026-11-16T14:47:21Z",
 "system": "github",
 "url": "https://github.com/czlonkowski/n8n-mcp"
 }

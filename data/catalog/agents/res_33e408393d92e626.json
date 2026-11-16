@@ -1,0 +1,262 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/footnote",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-chat",
+"email",
+"pdf",
+"google-apps-script-web",
+"mcp-apps",
+"android",
+"slides",
+"pptx"
+],
+"category": null,
+"classification": {
+"matched": {
+"business": [
+"email"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Renders a numbered footnote reference and its corresponding text, typically",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 30.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:footnote"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_33e408393d92e626",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 13,
+"incidents": 0,
+"links": [
+{
+"date": "2021-12-14",
+"kind": "cve",
+"title": "CVE-2021-43827",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2021-43827"
+},
+{
+"date": "2023-06-22",
+"kind": "cve",
+"title": "CVE-2023-28423",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28423"
+},
+{
+"date": "2023-10-20",
+"kind": "cve",
+"title": "CVE-2023-5618",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2023-5618"
+},
+{
+"date": "2023-10-25",
+"kind": "cve",
+"title": "CVE-2023-37912",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2023-37912"
+},
+{
+"date": "2025-01-02",
+"kind": "cve",
+"title": "CVE-2024-56019",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56019"
+},
+{
+"date": "2025-04-01",
+"kind": "cve",
+"title": "CVE-2025-31735",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31735"
+},
+{
+"date": "2025-06-20",
+"kind": "cve",
+"title": "CVE-2025-50049",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-50049"
+},
+{
+"date": "2025-11-04",
+"kind": "cve",
+"title": "CVE-2025-11733",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11733"
+},
+{
+"date": "2026-01-14",
+"kind": "cve",
+"title": "CVE-2025-15378",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15378"
+},
+{
+"date": "2026-06-09",
+"kind": "cve",
+"title": "CVE-2026-10553",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10553"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Footnote",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:footnote",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a numbered footnote reference at the bottom of a section or page",
+"renders a numbered footnote reference and its corresponding text, typically",
+"render a footnote"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:15:05Z",
+"cves": 13,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-footnote",
+"sources": [
+{
+"payload_hash": "fb0cb1226b660cf1b06827cf3da0b2b74f70ee5841ef816ebdc2b48805a21291",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_33e408393d92e626_a92ec90a",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_33e408393d92e626_a92ec90a",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:e240e6208edea3d13d7d47b5c42ec36c013cc2a14291104dd01f35bf273b1575",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Footnote's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_33e408393d92e626_a92ec90a/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/footnote/",
+"vendor": "a2uicatalog.ai"
+}

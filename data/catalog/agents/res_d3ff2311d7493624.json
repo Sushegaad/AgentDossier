@@ -1,0 +1,134 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/stat_pulse",
+"capabilities": [
+"google-chat-chromium-render"
+],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Three hero stat tiles (value, label, delta with tone) above a small trend bar chart with rounded tops and one emphasized \"current\" bar. A closing figure for any status or activity digest.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:stat_pulse"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d3ff2311d7493624",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Stat Pulse",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:stat_pulse",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a three hero stat tiles plus a small emphasized trend bar chart",
+"three hero stat tiles (value, label, delta with tone) above a small trend bar chart with rounded tops and one",
+"render a stat pulse"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:24:47Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-stat-pulse",
+"sources": [
+{
+"payload_hash": "0e43e999ef5a4fe4654fa23da9008191fecf3545f684f42aa72f385c8c4aea52",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_d3ff2311d7493624_b7a4a443",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_d3ff2311d7493624_b7a4a443",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:15d4b184ead7e3b64348ea5ac75e302903d9baf042f38fa3ab21cb5c22ee4ab8",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Stat Pulse's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_d3ff2311d7493624_b7a4a443/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/stat_pulse/",
+"vendor": "a2uicatalog.ai"
+}

@@ -1,0 +1,238 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/before_after",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"code",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Side-by-side code comparison — red/green panels showing old vs new",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 30.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:before_after"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_693a54bc4b91a457",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 9,
+"incidents": 0,
+"links": [
+{
+"date": "2005-11-22",
+"kind": "cve",
+"title": "CVE-2005-3753",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2005-3753"
+},
+{
+"date": "2024-02-12",
+"kind": "cve",
+"title": "CVE-2024-24931",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24931"
+},
+{
+"date": "2025-04-18",
+"kind": "cve",
+"title": "CVE-2024-13650",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-13650"
+},
+{
+"date": "2025-10-04",
+"kind": "cve",
+"title": "CVE-2025-9030",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-9030"
+},
+{
+"date": "2026-07-14",
+"kind": "cve",
+"title": "CVE-2025-15665",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15665"
+},
+{
+"date": "2026-09-02",
+"kind": "cve",
+"title": "CVE-2025-15663",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15663"
+},
+{
+"date": "2026-09-02",
+"kind": "cve",
+"title": "CVE-2025-15664",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15664"
+},
+{
+"date": "2026-10-09",
+"kind": "cve",
+"title": "CVE-2026-62028",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62028"
+},
+{
+"date": "2026-10-10",
+"kind": "cve",
+"title": "CVE-2026-62034",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62034"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Before After",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-08-19T07:19:40Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49358066",
+"engagement": 11,
+"headline": "New images reveal before/after when a SpaceX rocket slammed into the moon",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://www.cnn.com/2026/08/18/science/nasa-images-spacex-rocket-moon-collision"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:before_after",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a side-by-side code or content before and after comparison approach",
+"side-by-side code comparison — red/green panels showing old vs new",
+"render a before after"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:34Z",
+"cves": 9,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-before-after",
+"sources": [
+{
+"payload_hash": "80b4a2fd7988d7d1988ac43c6ef85c76ee6818e6429f0fb2b35ead115c1c9157",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_693a54bc4b91a457_8b3a30cd",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_693a54bc4b91a457_8b3a30cd",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:daf884b762e9d09b9054d8180c71f8e99b80becd99f78defd0dc0e4dfe0cdc2b",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Before After's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_693a54bc4b91a457_8b3a30cd/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/before_after/",
+"vendor": "a2uicatalog.ai"
+}

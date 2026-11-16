@@ -1,0 +1,228 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/navigation_menu",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Multi-level horizontal navigation bar with a brand/logo slot, top-level nav items, optional dropdown submenus, and a right-aligned CTA button. First item with children renders its submenu panel open for preview. Radix NavigationMenu pattern.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:navigation_menu"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_19dbf14466afdc2e",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 18,
+"incidents": 0,
+"links": [
+{
+"date": "2024-04-18",
+"kind": "cve",
+"title": "CVE-2024-32126",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-32126"
+},
+{
+"date": "2024-06-07",
+"kind": "cve",
+"title": "CVE-2024-5542",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5542"
+},
+{
+"date": "2026-04-01",
+"kind": "cve",
+"title": "CVE-2026-34564",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34564"
+},
+{
+"date": "2026-04-01",
+"kind": "cve",
+"title": "CVE-2026-34565",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34565"
+},
+{
+"date": "2026-05-14",
+"kind": "cve",
+"title": "CVE-2026-5243",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5243"
+},
+{
+"date": "2026-06-24",
+"kind": "cve",
+"title": "CVE-2026-8688",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8688"
+},
+{
+"date": "2026-07-17",
+"kind": "cve",
+"title": "CVE-2026-13402",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13402"
+},
+{
+"date": "2026-07-22",
+"kind": "cve",
+"title": "CVE-2026-15787",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15787"
+},
+{
+"date": "2026-08-02",
+"kind": "cve",
+"title": "CVE-2026-11872",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11872"
+},
+{
+"date": "2026-08-10",
+"kind": "cve",
+"title": "CVE-2026-66738",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66738"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Navigation Menu",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:navigation_menu",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a multi-level horizontal nav with submenu panels — Radix pattern",
+"multi-level horizontal navigation bar with a brand/logo slot, top-level nav items, optional dropdown submenus, and a",
+"render a navigation menu"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:18:46Z",
+"cves": 18,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-navigation-menu",
+"sources": [
+{
+"payload_hash": "f70d0509938c6c0f75a8ac3b69f9559fc8ce93acd161c9c330349183a6316d1b",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_19dbf14466afdc2e_d831c75d",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_19dbf14466afdc2e_d831c75d",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:2f5b563cc16cac38841d176fc0495c996026a79ab805a649be3fc28868c78997",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Navigation Menu's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_19dbf14466afdc2e_d831c75d/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/navigation_menu/",
+"vendor": "a2uicatalog.ai"
+}

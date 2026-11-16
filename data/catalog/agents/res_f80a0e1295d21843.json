@@ -14,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "LI-SaaS"
 },
-"display": "FedRAMP LI-SaaS: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-09)",
+"display": "FedRAMP LI-SaaS: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-16)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1812058188",
 "framework": "fedramp",
 "issued": "2018-10-04",
 "issuer": "Agency / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 0.933,
-"next_check": "2026-11-16",
-"payload_hash": "68c944e2b769164876336b97e0c101f0a5fa34eed405551a943e6b43e1d055d4",
+"next_check": "2026-11-23",
+"payload_hash": "1a6ddb44e526a42b57a26d5b8c719ca6a836347034e9fccd25550c59d0f34976",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:17:26Z",
+"retrieved_at": "2026-11-16T14:54:47Z",
 "review_reason": "entity 1.00, offering 0.85",
 "reviewer": null,
 "scope": "product",
@@ -40,16 +40,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "Vendor-claimed (vendor page, 2026-11-09)",
+"display": "Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://github.com/security",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "d879fcb762221f4dd8f7d2a482f7f385bcb15a2cef6f9c03338931d53e50ac11",
+"next_check": "2026-11-23",
+"payload_hash": "a2759ffa6a82119497039cd201101360218ea11233127c981e3376e37229fe85",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:21:03Z",
+"retrieved_at": "2026-11-16T14:59:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -66,16 +66,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "NIST AI RMF aligned: Aligned with NIST AI RMF / NIST CSF 2.0 (vendor statement, 2026-11-09)",
+"display": "NIST AI RMF aligned: Aligned with NIST AI RMF / NIST CSF 2.0 (vendor statement, 2026-11-16)",
 "evidence_url": "https://github.com/trust-center",
 "framework": "nist_ai_rmf",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "9345b46d185eb24a684ff5c811d072f980a9f619cf60268a774c5272dd789a26",
+"next_check": "2026-11-23",
+"payload_hash": "8d295a198647b44624cf6cfc22da18186f89f7a0694f15fa6ceebed505f96737",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:21:03Z",
+"retrieved_at": "2026-11-16T14:59:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,16 +92,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "Vendor-claimed (vendor page, 2026-11-09)",
+"display": "Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://github.com/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "d879fcb762221f4dd8f7d2a482f7f385bcb15a2cef6f9c03338931d53e50ac11",
+"next_check": "2026-11-23",
+"payload_hash": "a2759ffa6a82119497039cd201101360218ea11233127c981e3376e37229fe85",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:21:03Z",
+"retrieved_at": "2026-11-16T14:59:17Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -406,7 +406,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-11-09T15:03:53Z",
+"first_seen": "2026-11-16T14:40:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -428,7 +428,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:03:53Z",
+"last_seen": "2026-11-16T14:40:27Z",
 "license": "Proprietary",
 "name": "GitHub Copilot coding agent",
 "news": [],
@@ -456,7 +456,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:22:53Z",
+"checked_at": "2026-11-16T15:01:14Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -481,7 +481,7 @@
 "sources": [
 {
 "payload_hash": "eed24d4e9b6459846936ea478d1f7d4ea47522b6df41a59f0062ed6be6ab72de",
-"retrieved_at": "2026-11-09T15:03:53Z",
+"retrieved_at": "2026-11-16T14:40:27Z",
 "system": "seed_xlsx",
 "url": "https://github.com/features/copilot"
 }

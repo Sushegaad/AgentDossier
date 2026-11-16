@@ -1,0 +1,189 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/icon_list",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"pdf",
+"mcp-apps",
+"android",
+"slides",
+"pptx"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "List of items each with a colored icon circle, label, and text. More visual than bullet_list. Use for feature lists, how-it-works, benefits.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:icon_list"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_faf59cea06972b3a",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 3,
+"incidents": 0,
+"links": [
+{
+"date": "2025-02-25",
+"kind": "cve",
+"title": "CVE-2025-26937",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-26937"
+},
+{
+"date": "2025-11-18",
+"kind": "cve",
+"title": "CVE-2025-12376",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-12376"
+},
+{
+"date": "2026-03-13",
+"kind": "cve",
+"title": "CVE-2026-32359",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32359"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Icon List",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:icon_list",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a icon-circle list — emoji/icon per item, label + text, color per item",
+"list of items each with a colored icon circle, label, and text. more visual than bullet_list. use for feature lists,",
+"render a icon list"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:18:57Z",
+"cves": 3,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-icon-list",
+"sources": [
+{
+"payload_hash": "45f3db3dc853171dbe548c0b85489e1f1f258939d52b909f519b4bc31effb6e9",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_faf59cea06972b3a_21fb71d0",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_faf59cea06972b3a_21fb71d0",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:0b6b4a8e9eb16da9da2dd9192f35ffd5137e4cf0f3233b441f0d0daaabdfaaf7",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Icon List's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_faf59cea06972b3a_21fb71d0/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/icon_list/",
+"vendor": "a2uicatalog.ai"
+}

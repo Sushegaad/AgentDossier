@@ -1,0 +1,19 @@
+{
+ "agent": "res_507e5b1c71658b81",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_507e5b1c71658b81_3de9f2a5",
+ "kind": "self_test",
+ "name": "Block Robot",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:a2uicatalog.ai:atom:block_robot",
+   "manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+   "media_type": "application/vnd.a2ui.atom+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "a2uicatalog-ai-block-robot"
+}

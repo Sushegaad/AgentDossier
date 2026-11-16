@@ -72,7 +72,7 @@
 "github": "modelcontextprotocol/registry",
 "mcp_registry": "agency.ottobot/business-contact-finder"
 },
-"first_seen": "2026-11-09T15:03:54Z",
+"first_seen": "2026-11-16T14:40:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,7 +94,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:03:54Z",
+"last_seen": "2026-11-16T14:40:27Z",
 "license": null,
 "merged_ids": [
 "res_a66f73376e049ced",
@@ -102,6 +102,17 @@
 ],
 "name": "Business Contact Finder",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-10T11:08:07Z",
+"headline": "registry release v1.8.9",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Optimize incremental-sync pagination by selecting indexed page keys before fetching payloads, while retaining prepared statement reuse. Includes staged production autoscaling configuration and deployment guardrails. See #1840 for validation",
+"tag": "product_update",
+"url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.9"
+},
 {
 "cluster_size": 1,
 "date": "2026-11-06T14:07:07Z",
@@ -112,17 +123,6 @@
 "summary": "This release uses the source commit validated in staging. Different server names may now share a remote URL; consumers should key listings by server name and version rather than assuming URL uniqueness. No database migration is required.\n##",
 "tag": "product_update",
 "url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.8"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-30T11:24:12Z",
-"headline": "registry release v1.8.7",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "Adds prepared listing JSON to avoid repeated decoding and rebuilding of server payloads on listing reads. Prepared reads are disabled by default and support bounded backfill and flag rollback. Listing rows release their database connection",
-"tag": "product_update",
-"url": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.7"
 }
 ],
 "news_checked": true,
@@ -154,7 +154,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:25:45Z",
+"checked_at": "2026-11-16T15:07:43Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -171,20 +171,20 @@
 "slug": "ottobot-agency-business-contact-finder",
 "sources": [
 {
-"payload_hash": "d068797b4bf7be6dfc6f345ea1f4f3bf472c174e3d7ce687a623c938ebb24871",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
+"retrieved_at": "2026-11-16T14:40:27Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.ottobot/business-contact-finder"
 },
 {
-"payload_hash": "d068797b4bf7be6dfc6f345ea1f4f3bf472c174e3d7ce687a623c938ebb24871",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
+"retrieved_at": "2026-11-16T14:40:27Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.ottobot/contractor-license-changes"
 },
 {
-"payload_hash": "d068797b4bf7be6dfc6f345ea1f4f3bf472c174e3d7ce687a623c938ebb24871",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
+"retrieved_at": "2026-11-16T14:40:27Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.ottobot/licensed-house-painters"
 }

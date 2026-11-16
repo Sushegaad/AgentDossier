@@ -1,0 +1,134 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/doc_ai_summary",
+"capabilities": [
+"google-apps-script-web"
+],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Opens a Google Doc by ID, sends its text to Vertex AI Gemini, and renders the response as a structured summary card with word count and a link to the original doc. Requires VERTEX_PROJECT_ID in Script Properties.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:doc_ai_summary"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_5ad44bbf85cb835b",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Doc Ai Summary",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:doc_ai_summary",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a AI-powered Google Doc summary via Vertex AI Gemini",
+"opens a google doc by id, sends its text to vertex ai gemini, and renders the response as a structured summary card",
+"render a doc ai summary"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:21:39Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-doc-ai-summary",
+"sources": [
+{
+"payload_hash": "d00c19422733a831f4fa6f491cae448e1431dbb402b9712232be7486e5d66cb0",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_5ad44bbf85cb835b_baee3e9e",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_5ad44bbf85cb835b_baee3e9e",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:09c0e768c41d04c82e8e17a1382a89c8d20cc25c9c32af7beba1c5926483edb6",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Doc Ai Summary's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_5ad44bbf85cb835b_baee3e9e/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/doc_ai_summary/",
+"vendor": "a2uicatalog.ai"
+}

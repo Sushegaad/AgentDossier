@@ -1,0 +1,34 @@
+{
+ "agent": "res_5eea27b3c807b33c",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_5eea27b3c807b33c_98681579",
+ "kind": "self_test",
+ "name": "bevGTIN",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "none"
+   ],
+   "card_url": "https://gtin-bev.ai/.well-known/agent-card.json",
+   "checked_at": "2026-11-16T14:53:08Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3.0",
+   "signed": false,
+   "skills": [
+    "confirm_gtin"
+   ],
+   "status": "verified",
+   "version": "0.2.0"
+  },
+  "ard": {
+   "checked_at": "2026-11-16T14:53:07Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://gtin-bev.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "agent-bev-ai-bevgtin"
+}

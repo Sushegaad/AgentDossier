@@ -1,0 +1,167 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/chord_diagram",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Flows between a few entities in both directions as a circle: each group is an arc on the ring (its length is the flow that leaves it) and each ribbon joins two groups, its width at each end showing the flow from that group to the other, so migration between regions, traffic between services or trade between countries reads at a glance. Laid out by d3-chord chord() with sorted subgroups and drawn with d3-shape arc() and d3-chord ribbon() paths on the server, so there is no script. With the optional directed true the same matrix is laid out by chordDirected() and every flow is an arrow (ribbonArrow()) from the sending group to the receiving one, so direction is drawn instead of read from two widths. Each group has its own hue and a ribbon takes the colour of its source group at reduced opacity; every ribbon carries \"A to B: value (B to A: value)\" (one direction when directed) in a hover title, and the hidden tables list every non-zero flow (from, to, value) and each group's total out and in; the aria label gives the number of groups, the total flow and the largest flow. Group names sit outside the ring, rotated to read outward and never upside down, shortened with an ellipsis where they do not fit and left out where a neighbour is too close (a visible legend always names every group). Motion-ready: every moving value reads --p (build progress 0 to 1, default 1) through a per-group --k, so a motion_timeline track on p builds it group by group and the standalone render is the finished picture; reduced motion shows the end state.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:chord_diagram"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_76e30cd44517b6e5",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Chord Diagram",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:chord_diagram",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a chord_diagram: flows between a few entities as ribbons on a ring",
+"flows between a few entities in both directions as a circle: each group is an arc on the ring (its length is the flow",
+"render a chord diagram"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:25:01Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-chord-diagram",
+"sources": [
+{
+"payload_hash": "8e4495bbada074b9826a3e7120bdcac08e0e700798f0a9a5c5ffc980b8537417",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_76e30cd44517b6e5_10070b3d",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_76e30cd44517b6e5_10070b3d",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:381864b62ead1e0c392dc3b102885cd0c799379beace71984a1d8bf700ee056e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Chord Diagram's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_76e30cd44517b6e5_10070b3d/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/chord_diagram/",
+"vendor": "a2uicatalog.ai"
+}

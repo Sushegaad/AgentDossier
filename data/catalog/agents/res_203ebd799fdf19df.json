@@ -30,7 +30,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.46,
+"adoption": 28.48,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -53,7 +53,7 @@
 },
 "data": {
 "components": {
-"adoption": 28.46,
+"adoption": 28.48,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -76,7 +76,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.46,
+"adoption": 28.48,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -101,7 +101,7 @@
 "external_ids": {
 "github": "ruvnet/ruflo"
 },
-"first_seen": "2026-11-09T15:04:52Z",
+"first_seen": "2026-11-16T14:41:23Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,7 +123,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:10:26Z",
+"last_seen": "2026-11-16T14:47:21Z",
 "license": "MIT",
 "merged_ids": [
 "res_203ebd799fdf19df"
@@ -132,36 +132,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-09T06:55:59Z",
-"headline": "ruflo: v3.74.1 — @metaharness/darwin in-process (ADR-526), zod 4 security, PageRank",
+"date": "2026-11-13T21:05:38Z",
+"headline": "ruflo: v3.77.1 — AgentDB honours the configured embedding model",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "> **Use 3.74.1, not 3.74.0.** The `@claude-flow/cli@3.74.0` tarball shipped stale `.claude/helpers` files (3.63.4 content), and `ruflo@3.74.0` depends on that exact version. 3.74.1 ships the helpers from main. The publish script now refuses",
+"summary": "## 3.77.1\n\n**Fix: AgentDB now honours the configured embedding model and dimension (#4984, #4985)**\n\n`memory_store` ignored `.claude-flow/embeddings.json` after #2305: the controller registry created AgentDB with only a `dbPath`, so a confi",
 "tag": "product_update",
-"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.74.1"
+"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.77.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-09T01:30:07Z",
-"headline": "ruflo: v3.73.0 — init ends with your project, opt-in activation telemetry, Node 20 keeps ruvector",
+"date": "2026-11-12T22:07:03Z",
+"headline": "ruflo: v3.77.0 — neural wsp (ruv-FANN), opt-in judge routing, guidance WASM fix",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Faster first five minutes\n\n- **`init` ends with your project, not a list of commands** (#4871, #4875). It prints a quick local snapshot: tracked files, top languages, the most-changed file in the last 90 days, and your test command. Then",
+"summary": "Minor release.\n\n## What's new\n- **`neural wsp` — optional ruv-FANN weight-space tooling (ADR-528, #4980).** `ruflo neural wsp status | inspect | check | gate | export-centroid`. The three `ruv-fann-wsp*` packages are `optionalDependencies`;",
 "tag": "product_update",
-"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.73.0"
+"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.77.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:15:06Z",
+"checked_at": "2026-11-16T14:52:35Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:15:04Z",
+"checked_at": "2026-11-16T14:52:23Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -169,7 +169,7 @@
 "evidence_url": "https://cognitum.one",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-09T15:15:06Z",
+"checked_at": "2026-11-16T14:52:35Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-02T21:24:20Z",
-"github_forks": 9568,
+"github_forks": 9647,
 "github_language": "TypeScript",
-"github_open_issues": 622,
-"github_pushed_at": "2026-11-09T09:20:19Z",
-"github_stars": 81326,
-"github_topic": "ai-agents",
+"github_open_issues": 607,
+"github_pushed_at": "2026-11-16T09:19:52Z",
+"github_stars": 81857,
+"github_topic": "mcp-server",
 "homepage": "https://cognitum.one"
 },
 "slug": "ruvnet-ruflo",
 "sources": [
 {
-"payload_hash": "3edddbaa0dd0a48e1bc4ebceee7292c6953b6e742426d500308419b5439c3331",
-"retrieved_at": "2026-11-09T15:04:52Z",
+"payload_hash": "f34688fd0cb2f70801315df09aadb471b17c21e7a00e4711b74bed2a125caebe",
+"retrieved_at": "2026-11-16T14:47:21Z",
 "system": "github",
 "url": "https://github.com/ruvnet/ruflo"
 }

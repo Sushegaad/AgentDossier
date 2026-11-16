@@ -1,0 +1,171 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/agent_sketchpad",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "A single composite SVG canvas built from an ORDERED list of validated SVG elements, for an agent to progressively draw one coherent picture across multiple real updates (e.g. one A2A message per shape) rather than svg_path_draw's one-shot single shape. Every re-render draws all elements except the last as already-complete (no animation); only the LAST element in the list gets the real stroke-dasharray/stroke-dashoffset draw-in animation -- a stateless rule that works under this catalogue's full-rerender model without any incremental DOM patching. Redesigned 2026-08-24 from a path-only shape to a general SVG-primitive one (with fill), to match what a real freeform tool-calling loop actually produces (see streaming-testbench's demos/sketch/sketch_agent.py, the origin of this atom's validation approach) -- works anywhere svg_path_draw does.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 7.0,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 32.2,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:agent_sketchpad"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_34b9b77ec820638a",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Agent Sketchpad",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"evidence_url": "https://a2uicatalog.ai/atoms/agent_sketchpad/",
+"note": "named in the resource's own description",
+"source": "self_description",
+"status": "claimed"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:agent_sketchpad",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a composite multi-shape SVG canvas, newest shape draws itself in",
+"a single composite svg canvas built from an ordered list of validated svg elements, for an agent to progressively draw",
+"render a agent sketchpad"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:21:06Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-agent-sketchpad",
+"sources": [
+{
+"payload_hash": "b7797570788323eb1105f97dff453703dd13c835ca0a3a4e7d7dcbfd5a0ff293",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_34b9b77ec820638a_dc2c53df",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_34b9b77ec820638a_dc2c53df",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:7613378599d6f1153321b2456c5dbf569fff53818fb2a1cb5f0fcd1d30a50317",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Agent Sketchpad's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_34b9b77ec820638a_dc2c53df/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/agent_sketchpad/",
+"vendor": "a2uicatalog.ai"
+}

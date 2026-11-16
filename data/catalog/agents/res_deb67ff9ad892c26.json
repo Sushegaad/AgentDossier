@@ -14,7 +14,7 @@
 "external_ids": {
 "github": "nesquena/hermes-webui"
 },
-"first_seen": "2026-11-09T15:04:57Z",
+"first_seen": "2026-11-16T14:41:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -49,47 +49,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:04:57Z",
+"last_seen": "2026-11-16T14:41:29Z",
 "license": "MIT",
 "name": "hermes-webui",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-09T09:58:20Z",
-"headline": "hermes-webui release exp-v0.52.659",
+"date": "2026-11-16T06:46:03Z",
+"headline": "hermes-webui release exp-v0.52.697",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* Release: the clarify-timeout tests follow the installed Agent's default (#8943) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8944\n* test(clarify): follow the Agent's clarify-timeout default instea",
+"summary": "## What's Changed\n* Release exp-v0.52.697: P1: clicking the YOLO pill can no longer turn auto-approval on or approve a waiting command (#9116, part of #9101) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/9117\n* fix(yo",
 "tag": "product_update",
-"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.659"
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.697"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-09T08:30:58Z",
-"headline": "hermes-webui release exp-v0.52.658",
+"date": "2026-11-16T00:18:11Z",
+"headline": "hermes-webui release exp-v0.52.696",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* Release: the docs link check can no longer cancel a release check (#8946) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/8947\n* ci(docs-ci): bound the informational link check so it can't cancel the",
+"summary": "## What's Changed\n* docs(changelog): stamp v0.52.679 by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/9107\n* Release exp-v0.52.696: typing a skill's exact name in the slash menu puts that skill first (#9049, #9035) by @n",
 "tag": "product_update",
-"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.658"
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.696"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:15:36Z",
+"checked_at": "2026-11-16T14:53:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:15:35Z",
+"checked_at": "2026-11-16T14:53:00Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-09T15:15:36Z",
+"checked_at": "2026-11-16T14:53:01Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -99,7 +99,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:31:18Z",
+"checked_at": "2026-11-16T15:12:56Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -107,19 +107,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-30T21:50:12Z",
-"github_forks": 2824,
+"github_forks": 2837,
 "github_language": "Python",
-"github_open_issues": 982,
-"github_pushed_at": "2026-11-09T14:43:37Z",
-"github_stars": 19459,
+"github_open_issues": 997,
+"github_pushed_at": "2026-11-16T14:06:55Z",
+"github_stars": 19542,
 "github_topic": "ai-agents",
 "homepage": "https://get-hermes.ai/setup"
 },
 "slug": "nesquena-hermes-webui",
 "sources": [
 {
-"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
-"retrieved_at": "2026-11-09T15:04:57Z",
+"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
+"retrieved_at": "2026-11-16T14:41:29Z",
 "system": "github",
 "url": "https://github.com/nesquena/hermes-webui"
 }

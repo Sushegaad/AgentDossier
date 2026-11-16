@@ -1,0 +1,129 @@
+{
+"canonical_url": "api.admux.ai/mcp/server-card",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": null,
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:admux.ai:mcp:admux"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_89d10454e2dd1739",
+"identity": {
+"evidence": [
+"publisher_domain_matches_vendor"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "admux",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"errors": [
+"missing required term 'displayName'"
+],
+"identifier": "urn:air:admux.ai:mcp:admux",
+"manifest_url": "https://admux.ai/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "invalid",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"server_card_url": "https://api.admux.ai/mcp/server-card",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "admux.ai",
+"representative_queries": [],
+"resource_type": "mcp_server",
+"scope": "public",
+"signals": {},
+"slug": "admux-ai-admux",
+"sources": [
+{
+"payload_hash": "a6d5f66768cc2eff43fc6974e591fd2295e78b16838553e6a9b449ccf15d8ed4",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://admux.ai/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_89d10454e2dd1739_7832208a",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_89d10454e2dd1739_7832208a",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD invalid (1 validation error)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:d4d607cc7dc8ce7203188b85f49b79971487e1ddef1c0b80af59d64fb7866a77",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of admux's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_89d10454e2dd1739_7832208a/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": null,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://api.admux.ai/mcp/server-card",
+"vendor": "admux.ai"
+}

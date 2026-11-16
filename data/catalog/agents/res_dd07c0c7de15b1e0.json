@@ -1,0 +1,171 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/layer_stack",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"api",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Declarative labelled layers for a layered architecture — a protocol stack, a request path, any \"what lives at which level\" picture. Each layer is a band carrying a mono technical fact (`field`) beside a plain-language gloss (`note`) — primitive_plate's labelling pairing, without its image substrate: a primitive_plate pin annotates a REAL capture and must never annotate a hand-drawn illustration, and an abstract stack has no capture to pin. Two things concept_ladder cannot do: declare `columns` and each layer renders its `cells` side by side, so ONE stack carries a per-layer comparison of two systems; and set a layer or cell to `status: absent` and it renders a visibly hollow, dashed band, so a level a system does NOT define reads as a stated absence rather than an omission from the diagram. Shares article_journey / concept_ladder's palette token system and IBM Plex fonts so the explainer atoms read as one design system. renderers/web_article.py is the reference implementation; apps-script-surface/gas-wired-renderer/atoms_layers.gs is the port that carries it to every other surface (GAS ?p= URLs, the MCP Apps bundle and the Worker's /api/render all compile from the .gs sources).",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 7.6,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 35.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:layer_stack"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_dd07c0c7de15b1e0",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Layer Stack",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:layer_stack",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"evidence_url": "https://a2uicatalog.ai/atoms/layer_stack/",
+"note": "named in the resource's own description",
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a labelled layer bands — field/note per layer, optional side-by-side columns, absent layers render hollow",
+"declarative labelled layers for a layered architecture — a protocol stack, a request path, any \"what lives at which",
+"render a layer stack"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:24:52Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-layer-stack",
+"sources": [
+{
+"payload_hash": "3a456ca3548ad3d91b6204b9cbf713939773da1ad32a5ed021bd3a7b422a4791",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_dd07c0c7de15b1e0_e0c4df99",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_dd07c0c7de15b1e0_e0c4df99",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:4a661b528b9bc518b8970fd33a93a2b1a88fafb97d0c0ca612d2f458b96f3896",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Layer Stack's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_dd07c0c7de15b1e0_e0c4df99/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/layer_stack/",
+"vendor": "a2uicatalog.ai"
+}

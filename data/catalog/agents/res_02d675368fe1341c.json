@@ -21,7 +21,7 @@
 "domains": {
 "regulatory": {
 "components": {
-"adoption": 27.0,
+"adoption": 27.01,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 10.6,
@@ -44,7 +44,7 @@
 },
 "technology": {
 "components": {
-"adoption": 27.0,
+"adoption": 27.01,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 10.6,
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "reactive-resume/reactive-resume"
 },
-"first_seen": "2026-11-09T15:10:26Z",
+"first_seen": "2026-11-16T14:47:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,42 +91,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:10:26Z",
+"last_seen": "2026-11-16T14:47:21Z",
 "license": "MIT",
 "name": "reactive-resume",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-05T03:55:20Z",
-"headline": "reactive-resume release v6.1.0",
+"date": "2026-11-14T02:39:57Z",
+"headline": "reactive-resume: Android 1.0.2 (354)",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Highlights\n\n![Application packet with approved resume and letter versions, answers and manual downloads](https://raw.githubusercontent.com/reactive-resume/reactive-resume/9390156a0a4b2d41f43452ea1ab5054a764bf254/docs/images/guides/career",
+"summary": "The same build as the Google Play production release, as one universal APK signed by Google Play. It updates a Play Store install, and the Play Store can update it.",
 "tag": "product_update",
-"url": "https://github.com/reactive-resume/reactive-resume/releases/tag/v6.1.0"
+"url": "https://github.com/reactive-resume/reactive-resume/releases/tag/android-354"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-04T21:20:47Z",
-"headline": "reactive-resume release forme-native-v0.0.0-53f30d4e76f87b341b6a72a0847bddc49c6a3ea035b587802948d3733e8a2486",
+"date": "2026-11-13T14:12:51Z",
+"headline": "reactive-resume release v6.1.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Native Forme binaries. Review and commit prebuilt.json before building mobile apps.",
+"summary": "## Highlights\n\n- **A calmer workspace for your job search.** Today, Documents, Applications, Career and the resume builder have a refreshed interface, with clearer navigation, focused editing panels and layouts that adapt to phones. The bui",
 "tag": "product_update",
-"url": "https://github.com/reactive-resume/reactive-resume/releases/tag/forme-native-v0.0.0-53f30d4e76f87b341b6a72a0847bddc49c6a3ea035b587802948d3733e8a2486"
+"url": "https://github.com/reactive-resume/reactive-resume/releases/tag/v6.1.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:16:43Z",
+"checked_at": "2026-11-16T14:54:10Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:16:42Z",
+"checked_at": "2026-11-16T14:54:09Z",
 "entries": 1,
 "parser_version": "ard-0.91",
 "sources": [
@@ -138,7 +138,7 @@
 "evidence_url": "https://rxresu.me",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-09T15:16:44Z",
+"checked_at": "2026-11-16T14:54:11Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -150,7 +150,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:30:15Z",
+"checked_at": "2026-11-16T15:11:52Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -158,19 +158,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2020-03-25T14:08:22Z",
-"github_forks": 4940,
+"github_forks": 4960,
 "github_language": "TypeScript",
-"github_open_issues": 18,
-"github_pushed_at": "2026-11-08T20:43:39Z",
-"github_stars": 45532,
+"github_open_issues": 7,
+"github_pushed_at": "2026-11-15T13:42:12Z",
+"github_stars": 45815,
 "github_topic": "mcp-server",
 "homepage": "https://rxresu.me"
 },
 "slug": "reactive-resume-reactive-resume",
 "sources": [
 {
-"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
-"retrieved_at": "2026-11-09T15:10:26Z",
+"payload_hash": "f34688fd0cb2f70801315df09aadb471b17c21e7a00e4711b74bed2a125caebe",
+"retrieved_at": "2026-11-16T14:47:21Z",
 "system": "github",
 "url": "https://github.com/reactive-resume/reactive-resume"
 }

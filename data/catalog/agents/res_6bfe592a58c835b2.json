@@ -35,7 +35,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 23.97,
+"adoption": 23.99,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -58,7 +58,7 @@
 },
 "finance": {
 "components": {
-"adoption": 23.97,
+"adoption": 23.99,
 "docs": 7.0,
 "domain_fit": 91.7,
 "ecosystem": 6.6,
@@ -81,7 +81,7 @@
 },
 "regulatory": {
 "components": {
-"adoption": 23.97,
+"adoption": 23.99,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -104,7 +104,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.97,
+"adoption": 23.99,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -129,7 +129,7 @@
 "external_ids": {
 "github": "OpenByteInc/QuantDinger"
 },
-"first_seen": "2026-11-09T15:04:57Z",
+"first_seen": "2026-11-16T14:41:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -151,7 +151,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:10:26Z",
+"last_seen": "2026-11-16T14:47:21Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_6bfe592a58c835b2"
@@ -160,36 +160,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-08T08:16:34Z",
-"headline": "QuantDinger release v5.8.5",
+"date": "2026-11-15T14:33:42Z",
+"headline": "QuantDinger release v5.8.10",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Backend v5.8.5\n\n**Docker image (multi-arch, amd64 + arm64):**\n\n```bash\ndocker pull ghcr.io/openbyteinc/quantdinger-backend:v5.8.5\n```\n\nPin in `docker-compose.ghcr.yml` via `IMAGE_TAG=v5.8.5` in a project-root `.env`.\n\nThe image is signed",
+"summary": "## Backend v5.8.10\n\n**Docker image (multi-arch, amd64 + arm64):**\n\n```bash\ndocker pull ghcr.io/openbyteinc/quantdinger-backend:v5.8.10\n```\n\nPin in `docker-compose.ghcr.yml` via `IMAGE_TAG=v5.8.10` in a project-root `.env`.\n\nThe image is sig",
 "tag": "product_update",
-"url": "https://github.com/OpenByteInc/QuantDinger/releases/tag/v5.8.5"
+"url": "https://github.com/OpenByteInc/QuantDinger/releases/tag/v5.8.10"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-06T18:09:36Z",
-"headline": "QuantDinger release v5.8.4",
+"date": "2026-11-14T07:10:14Z",
+"headline": "QuantDinger release v5.8.9",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Backend v5.8.4\n\n**Docker image (multi-arch, amd64 + arm64):**\n\n```bash\ndocker pull ghcr.io/openbyteinc/quantdinger-backend:v5.8.4\n```\n\nPin in `docker-compose.ghcr.yml` via `IMAGE_TAG=v5.8.4` in a project-root `.env`.\n\nThe image is signed",
+"summary": "## Backend v5.8.9\n\n**Docker image (multi-arch, amd64 + arm64):**\n\n```bash\ndocker pull ghcr.io/openbyteinc/quantdinger-backend:v5.8.9\n```\n\nPin in `docker-compose.ghcr.yml` via `IMAGE_TAG=v5.8.9` in a project-root `.env`.\n\nThe image is signed",
 "tag": "product_update",
-"url": "https://github.com/OpenByteInc/QuantDinger/releases/tag/v5.8.4"
+"url": "https://github.com/OpenByteInc/QuantDinger/releases/tag/v5.8.9"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:13:50Z",
+"checked_at": "2026-11-16T14:51:02Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:13:46Z",
+"checked_at": "2026-11-16T14:50:58Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -197,7 +197,7 @@
 "evidence_url": "https://ai.quantdinger.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-09T15:13:51Z",
+"checked_at": "2026-11-16T14:51:04Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -209,7 +209,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:31:51Z",
+"checked_at": "2026-11-16T15:13:22Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -217,19 +217,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-28T18:39:26Z",
-"github_forks": 2784,
+"github_forks": 2814,
 "github_language": "Python",
-"github_open_issues": 39,
-"github_pushed_at": "2026-11-08T08:17:07Z",
-"github_stars": 13652,
+"github_open_issues": 42,
+"github_pushed_at": "2026-11-16T08:40:35Z",
+"github_stars": 13800,
 "github_topic": "ai-agents",
 "homepage": "https://ai.quantdinger.com"
 },
 "slug": "openbyteinc-quantdinger",
 "sources": [
 {
-"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
-"retrieved_at": "2026-11-09T15:04:57Z",
+"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
+"retrieved_at": "2026-11-16T14:41:29Z",
 "system": "github",
 "url": "https://github.com/OpenByteInc/QuantDinger"
 }

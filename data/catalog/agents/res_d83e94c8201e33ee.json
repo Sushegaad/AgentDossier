@@ -20,16 +20,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-11-09)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://apitree.ai/security",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "bf0d3d6b554ea135a668ea822c09b7266dde9c5398bc64a5b08ddec25362994d",
+"next_check": "2026-11-23",
+"payload_hash": "3fe8c61e59854bd726422ce090e38a1a8b9518b00b8f14202c56f9dafa19d23e",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:19:31Z",
+"retrieved_at": "2026-11-16T14:57:30Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -46,16 +46,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-09)",
+"display": "Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://apitree.ai/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "56fa4adbca2528e2678b606a0a2e5834773334707634495cef1d401f96b3f541",
+"next_check": "2026-11-23",
+"payload_hash": "6d86059c6504fce782b229883aaaa2017ed7a0b01b7eaf0e41829444847b4844",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:19:31Z",
+"retrieved_at": "2026-11-16T14:57:30Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -72,16 +72,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-09)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://apitree.ai/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "bf0d3d6b554ea135a668ea822c09b7266dde9c5398bc64a5b08ddec25362994d",
+"next_check": "2026-11-23",
+"payload_hash": "3fe8c61e59854bd726422ce090e38a1a8b9518b00b8f14202c56f9dafa19d23e",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:19:31Z",
+"retrieved_at": "2026-11-16T14:57:30Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -125,7 +125,7 @@
 "external_ids": {
 "mcp_registry": "ai.apitree/apitree"
 },
-"first_seen": "2026-11-09T15:03:54Z",
+"first_seen": "2026-11-16T14:40:28Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -147,19 +147,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:03:54Z",
+"last_seen": "2026-11-16T14:40:28Z",
 "license": null,
 "name": "apitree — AI-Native API Marketplace",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:14:18Z",
+"checked_at": "2026-11-16T14:51:34Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:14:16Z",
+"checked_at": "2026-11-16T14:51:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -182,7 +182,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:27:55Z",
+"checked_at": "2026-11-16T15:09:45Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -199,8 +199,8 @@
 "slug": "apitree-ai-apitree-ai-native-api-marketplace",
 "sources": [
 {
-"payload_hash": "d93c2ce39aef2c2b46e001525a93222ce7519b0fc789449bec367b505ff17934",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
+"retrieved_at": "2026-11-16T14:40:28Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.apitree/apitree"
 }

@@ -1,0 +1,171 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/motion_envelope",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "An envelope that carries a letter. Children are ordinary atoms shown on the letter card. With mode open, the flap flips up and the letter rises out as p goes 0 to 1; with mode seal, the letter drops in, the flap closes and the stamp lands. Optional address line (to) and stamp text. Plain HTML and CSS, no script; standalone it renders the finished state (open: letter out; seal: sealed and stamped). Use inside a motion_timeline to show a message being packed or delivered, e.g. an A2UI payload wrapped as an MCP tool result.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 7.6,
+"governance": null,
+"health": null,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 32.8,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:motion_envelope"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_501f4cf98fc46bf6",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Motion Envelope",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:motion_envelope",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"evidence_url": "https://a2uicatalog.ai/atoms/motion_envelope/",
+"note": "named in the resource's own description",
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a envelope that opens to reveal (or seals in) a letter of atoms, with address and stamp",
+"an envelope that carries a letter. children are ordinary atoms shown on the letter card. with mode open, the flap",
+"render a motion envelope"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:20:34Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-motion-envelope",
+"sources": [
+{
+"payload_hash": "bf8288306e187bf2ed8affdd2f3b336d808b3896aa52c7df615a8e5bc10d233c",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_501f4cf98fc46bf6_1d51cc76",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_501f4cf98fc46bf6_1d51cc76",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:2b55695d5310d3dbad6b197d7aa1086589befaced58cd58f2527806bf1b1f888",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Motion Envelope's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_501f4cf98fc46bf6_1d51cc76/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/motion_envelope/",
+"vendor": "a2uicatalog.ai"
+}

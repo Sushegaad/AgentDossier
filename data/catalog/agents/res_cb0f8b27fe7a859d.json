@@ -1,0 +1,168 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/signal_tunnel",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Full-bleed animated hero background: light streaks travel along fixed radial lanes through a vanishing point (right, centre or left), converging into it by default (signals arriving) or, in \"out\" mode, radiating away from it (signals broadcasting). Each streak accelerates as it nears the vanishing point and is coloured by its lane angle, so the tunnel reads as many distinct signals rather than one; an additive glow marks the vanishing point itself. Optional eyebrow/title/body copy sits opposite the tunnel behind a readability veil, the same flow_field/try.cloudflare.com hero layout (copy on one side, motion on the other). Honours prefers-reduced-motion (renders one pre-simulated frame, no loop), pauses when scrolled offscreen, and is DPR-aware. Pure canvas + requestAnimationFrame, zero dependencies, on the same shared kit as flow_field/orbit_mark. Every option is an enum or a clamped integer and colours must be #rrggbb: the config is baked into inline script, so nothing free-form ever reaches it. Dark backgrounds only -- streaks are additive and vanish on white.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:signal_tunnel"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_cb0f8b27fe7a859d",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Signal Tunnel",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:signal_tunnel",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a radial light streaks converging on (or radiating from) a vanishing point, hero background",
+"full-bleed animated hero background: light streaks travel along fixed radial lanes through a vanishing point (right,",
+"render a signal tunnel"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:20:11Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-signal-tunnel",
+"sources": [
+{
+"payload_hash": "6532c081775fb0db999dfd9313eb699952a2d378aabd04ff1baba9c6c02e0ac9",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_cb0f8b27fe7a859d_5e437be6",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_cb0f8b27fe7a859d_5e437be6",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:6b7f84a8501f1c5aa8a5c02ffe0817aac9a64143cfed6841ae57f1eb6f338fe9",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Signal Tunnel's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_cb0f8b27fe7a859d_5e437be6/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/signal_tunnel/",
+"vendor": "a2uicatalog.ai"
+}

@@ -1,0 +1,223 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/photo_stepper",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"legal": [
+"contract"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "A full-viewport, one-photo-at-a-time lightbox with prev/next and a vote button per slide — the sibling photo_grid does not cover: reviewing options ONE AT A TIME with full attention, immersively, rather than scanning a grid. Neither replaces the other; pick per use case, or offer both. Renders closed as a compact trigger card (first photo + label); clicking it opens the full takeover.\nThe takeover itself is a pure-CSS checkbox toggle — the SAME `#checkbox:checked ~ .overlay{display:...}` pattern the `css_modal` atom already uses for its own position:fixed;inset:0 overlay, not a new mechanism. Paging within the open overlay is the SAME pure-CSS radio-input trick the existing `carousel` atom already uses (sibling :checked selectors drive the slide transform) — no JS-tracked index to go stale, and critically, nothing for a live data refresh to disturb: `carousel` never had a live-update wire to worry about, but this atom does, and the radio's own browser-owned :checked state surviving a vote untouched is what stops \"vote on photo 12, get silently bounced back to photo 1\" from ever being possible in the first place — not a bug that was fixed, a failure mode the design does not have. Same reasoning protects open/closed state: the checkbox is the browser's own state too, so a live update cannot close the overlay out from under you either.\nThat is also why this atom's live-update path (_a2uiUpdatePhotoStepper) is NOT a rebuild like photo_grid's own _a2uiUpdatePhotoGrid — it patches each slide's badge/vote-button/voter-line IN PLACE, matched by candidate id (not array position), and touches nothing else. Matching by id, specifically, because the typical consumer of this atom (a live vote board) re-sorts its candidate list by vote count on every read while voting is open — so a candidate's position in the incoming array can move the instant ANY vote lands, including the one just cast on the slide currently open; patching by position against a reordered array would silently swap a different candidate's photo/name into the slide the radio's :checked state still has open. A consequence worth knowing before using this atom: because the update path patches EXISTING slide elements rather than creating them, the caller should populate the initial `images` prop with real data at render time (server-side), not rely purely on the `rows` wire to populate an empty first paint — an update arriving before any slide exists to patch has nothing to act on.\nReuses photo_grid's click contract exactly for the vote button (same data-row-json attribute, same generalised [data-row-json] binder in A2UIState.html) — the third consumer of a mechanism built once for data_table's own onRowClick.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 30.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"legal": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 34.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:photo_stepper"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9ad83205c3de7651",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Photo Stepper",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:photo_stepper",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a full-viewport one-at-a-time photo lightbox — opens from a compact trigger card, carousel-style CSS paging, per-slide vote button reusing photo_grid''s click contract, live badge/voter updates patched in place by candidate id so voting never resets position or swaps photos",
+"a full-viewport, one-photo-at-a-time lightbox with prev/next and a vote button per slide — the sibling photo_grid does",
+"render a photo stepper"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:43Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-photo-stepper",
+"sources": [
+{
+"payload_hash": "c9e436ea5c3193a38896608aea3fbc2ef23de0a40b0a7e635d76e2ff76d25b35",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_9ad83205c3de7651_78220158",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_9ad83205c3de7651_78220158",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:b8f1ce38b911ff5400b191c13b31bddb231047419bf3360c0a4cb948a189c553",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Photo Stepper's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_9ad83205c3de7651_78220158/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/photo_stepper/",
+"vendor": "a2uicatalog.ai"
+}
