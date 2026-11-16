@@ -1,0 +1,266 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/photo_grid",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"data"
+],
+"legal": [
+"contract"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "A clickable image grid: every tile is both a photo and a row.\nBuilt to close a real gap — data_table has no way to show what a row IS, only what it says about itself, so a photo-driven decision (which wallpaper, which chair) forced a text table plus a separate \"View photo\" link plus a separate select-then-tap-a-button flow before an action could fire. This atom is the shape that removes all three: the thing you look at and the thing you click are the same element.\nReuses data_table's onRowClick contract exactly — same data-row-json attribute, same _a2uiBindRowClicks binder, same array-wire form for \"select AND immediately run an action\" in one tap (shipped 2026-08-04 for onRowClick, inherited here for free rather than rebuilt). A DATA atom, not a domain one, same reasoning sortable_list gives for its own genericness: it renders whatever {id, url, ...} objects it is given and fires whatever the caller wired onRowClick to, so the same atom serves a voting board, a photo picker, or a product chooser without a second named atom per use case.\n`badge` and `active` exist because a click-driven UI still has to show its OWN state back — a starred tile that does not visibly read as starred after the tap is a button that looks like it did nothing. Both are plain strings/booleans the caller derives server-side (a star count, a \"you picked this\" flag); the atom does not compute either.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 30.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"legal": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 34.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:photo_grid"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_842acb11e819d4bb",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 7,
+"incidents": 0,
+"links": [
+{
+"date": "2025-11-15",
+"kind": "cve",
+"title": "CVE-2025-12494",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-12494"
+},
+{
+"date": "2025-12-12",
+"kind": "cve",
+"title": "CVE-2025-13891",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13891"
+},
+{
+"date": "2025-12-15",
+"kind": "cve",
+"title": "CVE-2025-14003",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14003"
+},
+{
+"date": "2026-02-14",
+"kind": "cve",
+"title": "CVE-2026-1254",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1254"
+},
+{
+"date": "2026-09-25",
+"kind": "cve",
+"title": "CVE-2026-89406",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89406"
+},
+{
+"date": "2026-09-25",
+"kind": "cve",
+"title": "CVE-2026-92713",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92713"
+},
+{
+"date": "2026-10-16",
+"kind": "cve",
+"title": "CVE-2026-107659",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107659"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Photo Grid",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:photo_grid",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a clickable image grid — data-row-json tiles, reuses data_table's onRowClick contract; badge + active show per-tile state",
+"a clickable image grid: every tile is both a photo and a row.\nbuilt to close a real gap — data_table has no way to",
+"render a photo grid"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:42Z",
+"cves": 7,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-photo-grid",
+"sources": [
+{
+"payload_hash": "328f71a0440460627d988da7e20da322794d034a6e56b5769875f67dea47a814",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_842acb11e819d4bb_baa789aa",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_842acb11e819d4bb_baa789aa",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:8f8ec327f4d503aa0ef2ffc3bf3a7ec7832c436be23690eac3b670e9de6083ed",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Photo Grid's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_842acb11e819d4bb_baa789aa/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/photo_grid/",
+"vendor": "a2uicatalog.ai"
+}

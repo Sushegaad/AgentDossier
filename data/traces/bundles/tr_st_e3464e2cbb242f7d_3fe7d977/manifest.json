@@ -1,0 +1,19 @@
+{
+ "agent": "res_e3464e2cbb242f7d",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_e3464e2cbb242f7d_3fe7d977",
+ "kind": "self_test",
+ "name": "Order Status Card",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:a2uicatalog.ai:atom:order_status_card",
+   "manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+   "media_type": "application/vnd.a2ui.atom+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "a2uicatalog-ai-order-status-card"
+}

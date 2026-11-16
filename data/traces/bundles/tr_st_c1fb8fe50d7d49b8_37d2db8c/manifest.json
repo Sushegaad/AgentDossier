@@ -1,0 +1,45 @@
+{
+ "agent": "res_c1fb8fe50d7d49b8",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c1fb8fe50d7d49b8_37d2db8c",
+ "kind": "self_test",
+ "name": "A2UI Atomic Catalog",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://a2uicatalog.ai/.well-known/agent-card.json",
+   "checked_at": "2026-11-16T14:50:36Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "2024-11-05",
+   "signed": false,
+   "skills": [
+    "List catalogs",
+    "Get catalog",
+    "Required catalogs",
+    "Render to URL",
+    "Preview render",
+    "Render inline",
+    "Build multi-page surface",
+    "Distill document",
+    "Graduate to standing app",
+    "Emit training runbook",
+    "Emit runbook surface",
+    "Publish short link",
+    "Unpublish link"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  },
+  "ard": {
+   "checked_at": "2026-11-16T14:50:34Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://a2uicatalog.ai/.well-known/ard.json",
+    "https://a2uicatalog.ai/.well-known/ard.json",
+    "https://a2uicatalog.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "a2uicatalog-ai-a2ui-atomic-catalog"
+}

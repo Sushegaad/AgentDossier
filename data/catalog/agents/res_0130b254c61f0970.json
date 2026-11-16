@@ -1,0 +1,216 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/blockquote",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Styled pull-quote with optional attribution line",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:blockquote"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_0130b254c61f0970",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 8,
+"incidents": 0,
+"links": [
+{
+"date": "2011-06-06",
+"kind": "cve",
+"title": "CVE-2011-1953",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2011-1953"
+},
+{
+"date": "2021-12-17",
+"kind": "cve",
+"title": "CVE-2021-43838",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2021-43838"
+},
+{
+"date": "2021-12-20",
+"kind": "cve",
+"title": "CVE-2021-43843",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2021-43843"
+},
+{
+"date": "2022-12-12",
+"kind": "cve",
+"title": "CVE-2022-44031",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2022-44031"
+},
+{
+"date": "2024-02-22",
+"kind": "cve",
+"title": "CVE-2024-25873",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-25873"
+},
+{
+"date": "2026-03-26",
+"kind": "cve",
+"title": "CVE-2026-4833",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4833"
+},
+{
+"date": "2026-09-14",
+"kind": "cve",
+"title": "CVE-2026-86349",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86349"
+},
+{
+"date": "2026-11-13",
+"kind": "cve",
+"title": "CVE-2026-129170",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129170"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Blockquote",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:blockquote",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a styled pull-quote with attribution",
+"styled pull-quote with optional attribution line",
+"render a blockquote"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:22:07Z",
+"cves": 8,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-blockquote",
+"sources": [
+{
+"payload_hash": "cc0d1198a05a616ca172ca8796e835b0ddc06a144f7c9fb3c4be362403010a96",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_0130b254c61f0970_0639711e",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_0130b254c61f0970_0639711e",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:7d016244d90c31c4be15922e40b2392f5c10c20d736ef7dc7c4395b76a4f889e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Blockquote's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_0130b254c61f0970_0639711e/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/blockquote/",
+"vendor": "a2uicatalog.ai"
+}

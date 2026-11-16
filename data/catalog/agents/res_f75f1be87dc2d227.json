@@ -1,0 +1,246 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/pipeline",
+"capabilities": [
+"web",
+"google-meet-stage",
+"pdf",
+"google-apps-script-web",
+"mcp-apps",
+"android",
+"slides",
+"pptx"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Inline left-to-right flow (e.g. build pipeline steps)",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:pipeline"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f75f1be87dc2d227",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 735,
+"incidents": 0,
+"links": [
+{
+"date": "1998-03-16",
+"kind": "cve",
+"title": "CVE-1999-0060",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-1999-0060"
+},
+{
+"date": "2002-12-31",
+"kind": "cve",
+"title": "CVE-2002-2148",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2002-2148"
+},
+{
+"date": "2004-04-15",
+"kind": "cve",
+"title": "CVE-2004-1935",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2004-1935"
+},
+{
+"date": "2004-12-31",
+"kind": "cve",
+"title": "CVE-2004-1593",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2004-1593"
+},
+{
+"date": "2007-07-06",
+"kind": "cve",
+"title": "CVE-2007-3604",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2007-3604"
+},
+{
+"date": "2013-04-10",
+"kind": "cve",
+"title": "CVE-2013-1912",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2013-1912"
+},
+{
+"date": "2013-09-28",
+"kind": "cve",
+"title": "CVE-2013-5959",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2013-5959"
+},
+{
+"date": "2013-10-21",
+"kind": "cve",
+"title": "CVE-2013-4450",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4450"
+},
+{
+"date": "2015-02-04",
+"kind": "cve",
+"title": "CVE-2014-9044",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9044"
+},
+{
+"date": "2015-06-09",
+"kind": "cve",
+"title": "CVE-2015-3330",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3330"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Pipeline",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-15T10:43:36Z",
+"discussion_url": "https://news.ycombinator.com/item?id=50101813",
+"engagement": 1233,
+"headline": "AdFection: Targeted ads turned into a pipeline for zero-click mercenary spyware",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:pipeline",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a left-to-right step flow diagram",
+"inline left-to-right flow (e.g. build pipeline steps)",
+"render a pipeline"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:28Z",
+"cves": 735,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-pipeline",
+"sources": [
+{
+"payload_hash": "dc20549c73879f77bd3eea733a2202161ada853a21ba91d78334df4d58c8bd5d",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_f75f1be87dc2d227_e3dba71c",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_f75f1be87dc2d227_e3dba71c",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:c023e65694543501a5e8f69f6bf47f76ef14afb9077e2a53a796a3e4512a809e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Pipeline's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_f75f1be87dc2d227_e3dba71c/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/pipeline/",
+"vendor": "a2uicatalog.ai"
+}

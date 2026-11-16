@@ -1,0 +1,243 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/breadcrumb",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "A navigation aid indicating the user's current location within a hierarchical",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:breadcrumb"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_477dca6a413688c0",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 61,
+"incidents": 0,
+"links": [
+{
+"date": "2006-08-26",
+"kind": "cve",
+"title": "CVE-2006-4376",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2006-4376"
+},
+{
+"date": "2006-08-26",
+"kind": "cve",
+"title": "CVE-2006-4377",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2006-4377"
+},
+{
+"date": "2010-05-19",
+"kind": "cve",
+"title": "CVE-2010-1976",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2010-1976"
+},
+{
+"date": "2010-05-19",
+"kind": "cve",
+"title": "CVE-2010-1984",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2010-1984"
+},
+{
+"date": "2012-05-21",
+"kind": "cve",
+"title": "CVE-2012-2907",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2012-2907"
+},
+{
+"date": "2012-06-27",
+"kind": "cve",
+"title": "CVE-2012-2705",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2012-2705"
+},
+{
+"date": "2012-06-27",
+"kind": "cve",
+"title": "CVE-2012-2710",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2012-2710"
+},
+{
+"date": "2014-06-20",
+"kind": "cve",
+"title": "CVE-2014-4505",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2014-4505"
+},
+{
+"date": "2014-11-28",
+"kind": "cve",
+"title": "CVE-2014-7850",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2014-7850"
+},
+{
+"date": "2015-04-21",
+"kind": "cve",
+"title": "CVE-2015-3391",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3391"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Breadcrumb",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-01T17:58:37Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49924943",
+"engagement": 57,
+"headline": "Show HN: Breadcrumb, record everything on your mac + context manager for AI",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://innerloop.works/breadcrumb"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:breadcrumb",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a navigation breadcrumb trail structure",
+"a navigation aid indicating the user's current location within a hierarchical",
+"render a breadcrumb"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:58Z",
+"cves": 61,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-breadcrumb",
+"sources": [
+{
+"payload_hash": "b785405788486a9fa20bf2a65f5ec7dcfd6fd9950e1bb8a84957bfa976b4badd",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_477dca6a413688c0_cc09ca29",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_477dca6a413688c0_cc09ca29",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:f1721b3432932845e06747f0ec5d9811d6af1f47dae228acf6523e27e1606ef8",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Breadcrumb's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_477dca6a413688c0_cc09ca29/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/breadcrumb/",
+"vendor": "a2uicatalog.ai"
+}

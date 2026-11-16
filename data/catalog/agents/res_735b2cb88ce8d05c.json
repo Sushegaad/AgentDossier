@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.apiant/apiant"
 },
-"first_seen": "2026-11-09T15:03:54Z",
+"first_seen": "2026-11-16T14:40:28Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,23 +66,22 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:03:54Z",
+"last_seen": "2026-11-16T14:40:28Z",
 "license": null,
 "name": "APIANT",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:14:15Z",
+"checked_at": "2026-11-16T14:51:31Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:14:14Z",
-"entries": 6,
+"checked_at": "2026-11-16T14:51:30Z",
+"entries": 3,
 "parser_version": "ard-0.91",
 "sources": [
-"https://apiant.ai/.well-known/ard.json",
 "https://apiant.ai/.well-known/ard.json"
 ],
 "status": "verified"
@@ -116,8 +115,8 @@
 "slug": "apiant-ai-apiant",
 "sources": [
 {
-"payload_hash": "d93c2ce39aef2c2b46e001525a93222ce7519b0fc789449bec367b505ff17934",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
+"retrieved_at": "2026-11-16T14:40:28Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.apiant/apiant"
 }
@@ -154,6 +153,37 @@
 "tier": 1,
 "title": "Registry probe of APIANT's discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_735b2cb88ce8d05c_cff8114a/",
+"vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_735b2cb88ce8d05c_17294b22",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_735b2cb88ce8d05c_17294b22",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:a76316eb48ad04e23123f2da9a636283b4a121c6a8a21a043b68605d77071d56",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of APIANT's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_735b2cb88ce8d05c_17294b22/",
 "vendor_response": null
 }
 ],

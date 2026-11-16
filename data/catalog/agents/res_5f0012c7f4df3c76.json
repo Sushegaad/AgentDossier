@@ -21,7 +21,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.08,
+"adoption": 24.1,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -44,7 +44,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.08,
+"adoption": 24.1,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 6.6,
@@ -69,7 +69,7 @@
 "external_ids": {
 "github": "browseros-ai/BrowserOS"
 },
-"first_seen": "2026-11-09T15:04:57Z",
+"first_seen": "2026-11-16T14:41:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -91,42 +91,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:04:57Z",
+"last_seen": "2026-11-16T14:41:29Z",
 "license": "AGPL-3.0",
 "name": "BrowserOS",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-31T05:30:20Z",
-"headline": "BrowserOS neo v0.52.0",
+"date": "2026-11-13T17:35:39Z",
+"headline": "BrowserOS: BrowserClaw Server - v0.0.95",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### ✨ What's new\r\n\r\n- **See what every agent is doing.** The refreshed cockpit shows live task previews, each task's open tabs, and a quick way to jump to the page you need. Quiet tasks now show as idle.\r\n\r\n- **Replay tasks at full size.**",
+"summary": "- Revert \"feat(claw): Show what claude / codex would have used under the saving…\" (#3587) (f49ddffd9)\n- feat: implement the ultrafast plan (#3585) (496d1cc7d)\n- feat(neo-sdk): Neo stores no picture while a private box shows its value, and a",
 "tag": "product_update",
-"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/browserclaw/v0.52.0"
+"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/claw-server/v0.0.95"
 },
 {
 "cluster_size": 1,
-"date": "2026-10-30T01:31:47Z",
-"headline": "BrowserOS: BrowserClaw Server - v0.0.90",
+"date": "2026-11-13T17:16:48Z",
+"headline": "BrowserOS neo Extension - v0.2.58.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "- fix(mcp): run SDK primitives that lagged Playwright: insertText, check, drag, goto, history, fill, screenshot, evaluate, run cap (#3098) (b117de31d)\n- feat(neo): Make the mouse act as a finger in mobile mode (#3101) (a2de9e519)\n- fix(neo)",
+"summary": "- Revert \"feat(claw): Show what claude / codex would have used under the saving…\" (#3587) (f49ddffd9)\n- feat: implement the ultrafast plan (#3585) (496d1cc7d)\n- chore: bump browserclaw extension version to 0.2.56.0 (#3128) (b04405ad9)\n- cho",
 "tag": "product_update",
-"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/claw-server/v0.0.90"
+"url": "https://github.com/browseros-ai/BrowserOS/releases/tag/ext-browserclaw/v0.2.58.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:14:59Z",
+"checked_at": "2026-11-16T14:52:15Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:14:57Z",
+"checked_at": "2026-11-16T14:52:14Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -134,7 +134,7 @@
 "evidence_url": "https://BrowserOS.com",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-09T15:14:59Z",
+"checked_at": "2026-11-16T14:52:16Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -146,7 +146,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:31:46Z",
+"checked_at": "2026-11-16T15:13:19Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -154,19 +154,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-18T16:23:54Z",
-"github_forks": 1536,
-"github_language": "TypeScript",
-"github_open_issues": 141,
-"github_pushed_at": "2026-11-09T14:22:22Z",
-"github_stars": 14293,
+"github_forks": 1545,
+"github_language": "Rust",
+"github_open_issues": 157,
+"github_pushed_at": "2026-11-16T03:50:38Z",
+"github_stars": 14364,
 "github_topic": "ai-agents",
 "homepage": "https://BrowserOS.com"
 },
 "slug": "browseros-ai-browseros",
 "sources": [
 {
-"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
-"retrieved_at": "2026-11-09T15:04:57Z",
+"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
+"retrieved_at": "2026-11-16T14:41:29Z",
 "system": "github",
 "url": "https://github.com/browseros-ai/BrowserOS"
 }

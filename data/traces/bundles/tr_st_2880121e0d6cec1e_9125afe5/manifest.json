@@ -1,0 +1,19 @@
+{
+ "agent": "res_2880121e0d6cec1e",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_2880121e0d6cec1e_9125afe5",
+ "kind": "self_test",
+ "name": "Mastra agent skills",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:mastra.ai:docs:skills",
+   "manifest_url": "https://mastra.ai/.well-known/ard.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "mastra-ai-mastra-agent-skills"
+}

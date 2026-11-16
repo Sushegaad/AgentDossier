@@ -1,0 +1,19 @@
+{
+ "agent": "res_5fc0f592f87ec0ea",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_5fc0f592f87ec0ea_5ba018bd",
+ "kind": "self_test",
+ "name": "Lesson Nav",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:a2uicatalog.ai:atom:lesson_nav",
+   "manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+   "media_type": "application/vnd.a2ui.atom+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "a2uicatalog-ai-lesson-nav"
+}

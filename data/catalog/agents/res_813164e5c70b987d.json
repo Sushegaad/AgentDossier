@@ -43,7 +43,7 @@
 "external_ids": {
 "github": "XiaomiMiMo/MiMo-Code"
 },
-"first_seen": "2026-11-09T15:04:57Z",
+"first_seen": "2026-11-16T14:41:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,10 +65,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:04:57Z",
+"last_seen": "2026-11-16T14:41:29Z",
 "license": "MIT",
 "name": "MiMo-Code",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-13T08:02:45Z",
+"headline": "MiMo-Code release v0.1.17",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## 简介\n\n本版本移除了一些过时的策略，减少针对特定模型的行为改变：上下文与输出上限、推理档位改从 models.dev 和用户配置读取，不再按模型名推断，也不再默认发送 temperature / top_p；`/variants` 可在配置中直接按档位名启用，子 agent 继承父会话的档位；GPT 模型也不再自动开启 Codex 风格的提示词和工具集，所有模型默认使用同一套（需要时可设置 `MIMOCODE_CODEX_MODE=true`）。\n\n此外，内置联网搜索改",
+"tag": "product_update",
+"url": "https://github.com/XiaomiMiMo/MiMo-Code/releases/tag/v0.1.17"
+},
 {
 "cluster_size": 1,
 "date": "2026-10-26T09:44:36Z",
@@ -79,33 +90,22 @@
 "summary": "## Upgrade notes\n\n**中文**\n\n本版本移除 legacy Compose：`compose` 主智能体、内置 workflow 及全部 `compose:*` 技能不再提供，复杂任务请改用 build 模式下的 `/compose-next`（clarify → spec → implement → verify → review → finish）。MCP 工具默认懒加载，按需发现并在就绪后调用。`npm i @mimo-ai/cli` 目前仅包含启动器",
 "tag": "product_update",
 "url": "https://github.com/XiaomiMiMo/MiMo-Code/releases/tag/v0.1.16"
-},
-{
-"cluster_size": 1,
-"date": "2026-09-23T08:10:10Z",
-"headline": "MiMo-Code release v0.1.14",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\n* fix(skill): replace broken skill-tools filtering with glob prefix matching by @MiMoHardFather in https://github.com/XiaomiMiMo/MiMo-Code/pull/2166\n* fix: remove skill search reminders and related infrastructure by @MiMoH",
-"tag": "product_update",
-"url": "https://github.com/XiaomiMiMo/MiMo-Code/releases/tag/v0.1.14"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:16:12Z",
+"checked_at": "2026-11-16T14:53:39Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:16:08Z",
+"checked_at": "2026-11-16T14:53:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-09T15:16:13Z",
+"checked_at": "2026-11-16T14:53:40Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -115,7 +115,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:31:49Z",
+"checked_at": "2026-11-16T15:13:23Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -123,19 +123,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-06-10T11:52:41Z",
-"github_forks": 1477,
+"github_forks": 1479,
 "github_language": "TypeScript",
-"github_open_issues": 1197,
-"github_pushed_at": "2026-11-09T07:04:39Z",
-"github_stars": 13773,
+"github_open_issues": 1190,
+"github_pushed_at": "2026-11-16T14:18:51Z",
+"github_stars": 13784,
 "github_topic": "ai-agents",
 "homepage": "https://mimo.xiaomi.com/mimocode"
 },
 "slug": "xiaomimimo-mimo-code",
 "sources": [
 {
-"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
-"retrieved_at": "2026-11-09T15:04:57Z",
+"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
+"retrieved_at": "2026-11-16T14:41:29Z",
 "system": "github",
 "url": "https://github.com/XiaomiMiMo/MiMo-Code"
 }

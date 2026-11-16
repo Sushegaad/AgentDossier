@@ -46,7 +46,7 @@
 "github": "autonomous-ai/openharness",
 "mcp_registry": "ai.autonomous.harness/harness"
 },
-"first_seen": "2026-11-09T15:03:54Z",
+"first_seen": "2026-11-16T14:40:28Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -68,42 +68,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:03:54Z",
+"last_seen": "2026-11-16T14:40:28Z",
 "license": null,
 "name": "Harness",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-09T15:05:08Z",
-"headline": "openharness release v0.5.83_cli",
+"date": "2026-11-16T14:46:51Z",
+"headline": "openharness: Harness Desktop 1.4.50",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Harness CLI 0.5.83\n\n- CLI Swarm v4: every Swarm agent starts with the team's basics, and posts without naming its Swarm (#3636)\n- Backend Swarm v4: a removed command is accepted and ignored, not refused; the integration list is one file a l",
+"summary": "Harness Desktop 1.4.50\n\n- Remove Swarm and its retired settings, menus and saved state.\n- Open an agent’s Browser in a pane beside its terminal.\n- Remove the Plum palette; saved Plum settings use the default light theme.\n\n\n---\n\n## Downloads",
 "tag": "product_update",
-"url": "https://github.com/autonomous-ai/openharness/releases/tag/v0.5.83_cli"
+"url": "https://github.com/autonomous-ai/openharness/releases/tag/v1.4.50_desktop"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-09T14:44:22Z",
-"headline": "openharness: Harness Desktop 1.4.11",
+"date": "2026-11-16T10:49:28Z",
+"headline": "openharness: Harness Web 1.4.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Harness Desktop 1.4.11\n\n- Desktop: a person reads and changes their agent's instructions from any of their computers, over the link between them (#3635)\n- CLI Swarm v4: a person's message in their agent's own chat is typed as typed, and the",
+"summary": "Browser build of the shared desktop Flutter app.\nServed by harness.autonomous.ai from image autonomous-code-website:v1.4.1_web.",
 "tag": "product_update",
-"url": "https://github.com/autonomous-ai/openharness/releases/tag/v1.4.11_desktop"
+"url": "https://github.com/autonomous-ai/openharness/releases/tag/v1.4.1_web"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:15:44Z",
+"checked_at": "2026-11-16T14:53:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:15:42Z",
+"checked_at": "2026-11-16T14:53:08Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -142,8 +142,8 @@
 "slug": "harness-autonomous-ai-harness",
 "sources": [
 {
-"payload_hash": "4b441cef1def7c8e5279300947c005ad8448e1f1a3f4e7a7166dccefceb1620a",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
+"retrieved_at": "2026-11-16T14:40:28Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.autonomous.harness/harness"
 }

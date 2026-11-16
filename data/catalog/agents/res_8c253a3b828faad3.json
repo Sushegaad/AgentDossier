@@ -23,16 +23,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-09)",
+"display": "Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://analyticslegends.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "15846b001903a9ad9ee96283c5730d2c804426ea853c8b2565ff78039c9112be",
+"next_check": "2026-11-23",
+"payload_hash": "7685b9669acbd9a32ee1d348c9a2612989b046b23f47cd0fd3c54b6c926e9d81",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:19:15Z",
+"retrieved_at": "2026-11-16T14:57:12Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -49,16 +49,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-11-09)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://analyticslegends.ai/privacy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "1eb07266154446bb67c850c3eecb9ba1ac65a5d1d08b49adad587f4199290930",
+"next_check": "2026-11-23",
+"payload_hash": "bc09bc442aece91810eabfef4224fa45c71d810a2201b933b832d85899dde535",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:19:15Z",
+"retrieved_at": "2026-11-16T14:57:12Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,16 +75,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-09)",
+"display": "Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://analyticslegends.ai/privacy/",
 "framework": "pci_dss",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "1eb07266154446bb67c850c3eecb9ba1ac65a5d1d08b49adad587f4199290930",
+"next_check": "2026-11-23",
+"payload_hash": "bc09bc442aece91810eabfef4224fa45c71d810a2201b933b832d85899dde535",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:19:15Z",
+"retrieved_at": "2026-11-16T14:57:12Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -104,10 +104,10 @@
 "adoption": null,
 "docs": 7.0,
 "domain_fit": 56.4,
-"ecosystem": 4.6,
+"ecosystem": 9.6,
 "governance": 0.0,
 "health": 20.0,
-"trust": 19.0
+"trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.564,
@@ -115,7 +115,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 51.8,
+"score": 58.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -127,10 +127,10 @@
 "adoption": null,
 "docs": 7.0,
 "domain_fit": 71.3,
-"ecosystem": 4.6,
+"ecosystem": 9.6,
 "governance": 0.0,
 "health": 20.0,
-"trust": 19.0
+"trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 0.713,
@@ -138,7 +138,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 50.4,
+"score": 57.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -150,7 +150,7 @@
 "github": "analyticslegends/analytics-legends-mcp",
 "mcp_registry": "ai.analyticslegends/sap-analytics"
 },
-"first_seen": "2026-11-09T15:03:54Z",
+"first_seen": "2026-11-16T14:40:27Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -159,7 +159,7 @@
 "id": "res_8c253a3b828faad3",
 "identity": {
 "evidence": [
-"vendor_domain_product_page"
+"standards_metadata_at_publisher_domain"
 ],
 "rules_version": "identity-1.1",
 "tier": 2
@@ -172,25 +172,53 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:03:54Z",
+"last_seen": "2026-11-16T14:40:27Z",
 "license": null,
 "name": "Analytics Legends — SAP AI & Analytics MCP Server",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"card_url": "https://analyticslegends.ai/.well-known/agent.json",
-"checked_at": "2026-11-09T15:14:06Z",
-"errors": [
-"missing service endpoint ('url' or 'supportedInterfaces')"
+"auth_schemes": [
+"bearer"
 ],
+"card_url": "https://analyticslegends.ai/.well-known/agent-card.json",
+"checked_at": "2026-11-16T14:51:20Z",
 "parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3.0",
 "signed": false,
-"status": "invalid",
+"skills": [
+"Find the answer to an SAP AI & analytics problem",
+"Search the SAP AI & analytics firm directory",
+"Count the firm directory by country, region, kind, module or SAP signal",
+"Get one firm's published profile",
+"List firm kinds with live counts",
+"List the CV/profile platforms a consultant can sign up on",
+"Search the public SAP AI & analytics contract radar",
+"Search SAP AI & analytics market news",
+"Search the SAP AI & analytics concept encyclopaedia",
+"Concept metadata and editor's summary",
+"List the deep-research studies (metadata only)",
+"Public SAP AI & analytics day-rate aggregate",
+"SAP AI & analytics module taxonomy",
+"Search the Academy training catalogue",
+"Traverse the learning knowledge graph",
+"Full concept card",
+"Read a study",
+"Read an Academy module",
+"Search the SAP end-customer corpus",
+"One SAP end-customer profile",
+"Expansion brief for a target region",
+"Local partner or acquisition candidates for a market entry",
+"Firm intelligence profile",
+"Submit a private SAP need",
+"Brief selection and introductions"
+],
+"status": "verified",
 "version": "1.84.0"
 },
 "ard": {
-"checked_at": "2026-11-09T15:14:05Z",
+"checked_at": "2026-11-16T14:51:19Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -204,7 +232,7 @@
 ],
 "server_name": "ai.analyticslegends/sap-analytics",
 "status": "claimed",
-"version": "1.1.2",
+"version": "1.2.0",
 "via": "mcp_registry"
 }
 },
@@ -213,16 +241,16 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:27:41Z",
+"checked_at": "2026-11-16T15:09:27Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
 },
 "signals": {
 "mcp_packages": 0,
-"mcp_registry_published_at": "2026-11-06T12:29:01.021078Z",
+"mcp_registry_published_at": "2026-11-11T03:36:09.633011Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-11-06T12:29:01.021078Z",
+"mcp_registry_updated_at": "2026-11-11T03:36:09.633011Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -230,8 +258,8 @@
 "slug": "analyticslegends-ai-analytics-legends-sap-ai-analytics-mcp-server",
 "sources": [
 {
-"payload_hash": "d93c2ce39aef2c2b46e001525a93222ce7519b0fc789449bec367b505ff17934",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "429253434a0de11b675bd0e6e7a3d2a56e21efaa3d73c9e5e79a67cc0416c783",
+"retrieved_at": "2026-11-16T14:40:27Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.analyticslegends/sap-analytics"
 }
@@ -269,13 +297,44 @@
 "title": "Registry probe of Analytics Legends — SAP Analytics Intelligence's discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_8c253a3b828faad3_737cf267/",
 "vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_8c253a3b828faad3_1523b63b",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_8c253a3b828faad3_1523b63b",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (auth bearer; unsigned)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:a8035962e42fb439c8ef1233d2b7e1074aed1ea4b8bc620082c5d72a56e6db30",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Analytics Legends — SAP AI & Analytics MCP Server's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_8c253a3b828faad3_1523b63b/",
+"vendor_response": null
 }
 ],
 "trust": {
 "compliance": 5,
 "identity": 2,
 "issues": 1,
-"protocols": 3,
+"protocols": 1,
 "security": 1,
 "traces": 1,
 "vendor_compliance": 4

@@ -1,0 +1,27 @@
+{
+ "agent": "res_bcc202a4bc249c5f",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_bcc202a4bc249c5f_44be66b5",
+ "kind": "self_test",
+ "name": "AnyForge",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "anyforgeBearer"
+   ],
+   "card_url": "https://anyforge.ai/.well-known/agent-card.json",
+   "checked_at": "2026-11-16T14:51:29Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "Ask the Oracle",
+    "File a request"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "anyforge-ai-anyforge"
+}

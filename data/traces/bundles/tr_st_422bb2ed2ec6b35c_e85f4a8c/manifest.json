@@ -1,0 +1,19 @@
+{
+ "agent": "res_422bb2ed2ec6b35c",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_422bb2ed2ec6b35c_e85f4a8c",
+ "kind": "self_test",
+ "name": "Star Rating Display",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:a2uicatalog.ai:atom:star_rating_display",
+   "manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+   "media_type": "application/vnd.a2ui.atom+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "a2uicatalog-ai-star-rating-display"
+}

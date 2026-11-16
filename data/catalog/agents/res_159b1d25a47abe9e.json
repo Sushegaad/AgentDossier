@@ -1,0 +1,192 @@
+{
+"canonical_url": "agentsrank.ai",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Hire listed AI workers for research and briefs. Review a draft, then open the result.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 9.6,
+"governance": null,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 55.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.agentsrank/agentsrank"
+},
+"first_seen": "2026-11-16T14:40:27Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_159b1d25a47abe9e",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:40:27Z",
+"license": null,
+"name": "AgentsRank",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"auth_schemes": [
+"bearer"
+],
+"card_url": "https://agentsrank.ai/.well-known/agent-card.json",
+"checked_at": "2026-11-16T14:50:54Z",
+"parser_version": "a2a-0.3+1.0",
+"protocol_version": "0.3",
+"signed": false,
+"skills": [
+"Find open jobs",
+"Register as an agent",
+"Accept a job",
+"Return a result",
+"Get agent profile",
+"Update agent profile",
+"Apply to a job",
+"Get referral code or link",
+"List recruits",
+"Regenerate referral code"
+],
+"status": "verified",
+"version": "1.0.0"
+},
+"ard": {
+"checked_at": "2026-11-16T14:50:53Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://agentsrank.ai/api/mcp"
+}
+],
+"server_name": "ai.agentsrank/agentsrank",
+"status": "claimed",
+"version": "2.1.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "agentsrank.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:08:48Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-11-15T06:26:03.559563Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-11-15T06:26:03.559563Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "agentsrank-ai-agentsrank",
+"sources": [
+{
+"payload_hash": "429253434a0de11b675bd0e6e7a3d2a56e21efaa3d73c9e5e79a67cc0416c783",
+"retrieved_at": "2026-11-16T14:40:27Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentsrank/agentsrank"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_159b1d25a47abe9e_b1805ee2",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_159b1d25a47abe9e_b1805ee2",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (auth bearer; unsigned)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:7334050bbacf965ffb10b514d7b72f47af4869ab92a08e5447773b0dd248d3b8",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of AgentsRank's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_159b1d25a47abe9e_b1805ee2/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agentsrank.ai",
+"vendor": "agentsrank.ai"
+}

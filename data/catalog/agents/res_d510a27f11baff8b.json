@@ -1,0 +1,231 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/progress_bar",
+"capabilities": [
+"web",
+"google-meet-stage",
+"google-apps-script-web",
+"mcp-apps",
+"claude-code",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"code",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Progress bar with an animated width transition, an optional percentage and an optional caption",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 30.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:progress_bar"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_d510a27f11baff8b",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 18,
+"incidents": 0,
+"links": [
+{
+"date": "2004-12-31",
+"kind": "cve",
+"title": "CVE-2004-2743",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2004-2743"
+},
+{
+"date": "2006-09-07",
+"kind": "cve",
+"title": "CVE-2006-4619",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2006-4619"
+},
+{
+"date": "2021-10-18",
+"kind": "cve",
+"title": "CVE-2021-24752",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2021-24752"
+},
+{
+"date": "2023-05-29",
+"kind": "cve",
+"title": "CVE-2023-23699",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2023-23699"
+},
+{
+"date": "2023-12-15",
+"kind": "cve",
+"title": "CVE-2023-40954",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2023-40954"
+},
+{
+"date": "2024-03-16",
+"kind": "cve",
+"title": "CVE-2023-6525",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2023-6525"
+},
+{
+"date": "2024-05-03",
+"kind": "cve",
+"title": "CVE-2024-34062",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-34062"
+},
+{
+"date": "2024-07-02",
+"kind": "cve",
+"title": "CVE-2024-37479",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37479"
+},
+{
+"date": "2024-11-19",
+"kind": "cve",
+"title": "CVE-2024-50548",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-50548"
+},
+{
+"date": "2024-11-21",
+"kind": "cve",
+"title": "CVE-2024-11385",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-11385"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Progress Bar",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:progress_bar",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a labelled horizontal progress bar with percentage",
+"progress bar with an animated width transition, an optional percentage and an optional caption",
+"render a progress bar"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:47Z",
+"cves": 18,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-progress-bar",
+"sources": [
+{
+"payload_hash": "d237ca46f6c2a30f27b10d1e06dc8efef39a25c71b4d7229e714d7ed446c8ebf",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_d510a27f11baff8b_86e70271",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_d510a27f11baff8b_86e70271",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:fe9e04fd76a418eecc0c6f85f25c8ef83efdf67d0216e4d023cc8bfea0a9d55d",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Progress Bar's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_d510a27f11baff8b_86e70271/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/progress_bar/",
+"vendor": "a2uicatalog.ai"
+}

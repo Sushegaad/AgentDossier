@@ -1,0 +1,19 @@
+{
+ "agent": "res_d05141301082360b",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_d05141301082360b_15d9e5b6",
+ "kind": "self_test",
+ "name": "Choropleth Map",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:a2uicatalog.ai:atom:choropleth_map",
+   "manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+   "media_type": "application/vnd.a2ui.atom+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "a2uicatalog-ai-choropleth-map"
+}

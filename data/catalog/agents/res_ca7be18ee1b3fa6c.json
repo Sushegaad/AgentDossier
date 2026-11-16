@@ -1,0 +1,134 @@
+{
+"canonical_url": "mcp.bev-cuvee.org/mcp",
+"capabilities": [
+"get_rulebook",
+"list_countries"
+],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "The trade rulebook for beverage alcohol, country by country, each section with its official sources.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:bev-cuvee.org:library"
+},
+"first_seen": "2026-11-16T14:52:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_ca7be18ee1b3fa6c",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:52:26Z",
+"license": null,
+"name": "agent-bev Library",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:bev-cuvee.org:library",
+"manifest_url": "https://bev-cuvee.org/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "bev-cuvee.org",
+"representative_queries": [],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:27:43Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "bev-cuvee-org-agent-bev-library",
+"sources": [
+{
+"payload_hash": "7f141ac2be17ddd1f5224ec9e67fa88e9e571946759940c4ddd56b8c7b291312",
+"retrieved_at": "2026-11-16T14:52:26Z",
+"system": "ard",
+"url": "https://bev-cuvee.org/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_ca7be18ee1b3fa6c_890198dc",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_ca7be18ee1b3fa6c_890198dc",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:fcf4037cd79547d9f008bde783fbc44482c901f320791e1953e21a08c61ff6db",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of agent-bev Library's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_ca7be18ee1b3fa6c_890198dc/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://mcp.bev-cuvee.org/mcp",
+"vendor": "bev-cuvee.org"
+}

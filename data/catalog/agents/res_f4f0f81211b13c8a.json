@@ -1,0 +1,244 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/jira_ticket",
+"capabilities": [
+"web",
+"google-meet-stage",
+"email",
+"pdf",
+"google-apps-script-web",
+"mcp-apps",
+"android",
+"slides",
+"pptx"
+],
+"category": null,
+"classification": {
+"matched": {
+"business": [
+"email",
+"jira"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Atlassian Design System Jira issue card showing issue key, type icon (bug/story/task/epic/subtask), one-line summary, status lozenge, priority indicator, assignee, optional description, and label chips. Adapted from Atlassian Design System Card + Lozenge patterns.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 32.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:jira_ticket"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f4f0f81211b13c8a",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 7,
+"incidents": 0,
+"links": [
+{
+"date": "2022-01-26",
+"kind": "cve",
+"title": "CVE-2022-22932",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22932"
+},
+{
+"date": "2025-12-24",
+"kind": "cve",
+"title": "CVE-2025-64641",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2025-64641"
+},
+{
+"date": "2026-04-27",
+"kind": "cve",
+"title": "CVE-2026-40858",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40858"
+},
+{
+"date": "2026-05-11",
+"kind": "cve",
+"title": "CVE-2026-42864",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42864"
+},
+{
+"date": "2026-08-24",
+"kind": "cve",
+"title": "CVE-2026-66908",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66908"
+},
+{
+"date": "2026-10-24",
+"kind": "cve",
+"title": "CVE-2026-115975",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115975"
+},
+{
+"date": "2026-11-03",
+"kind": "cve",
+"title": "CVE-2026-121580",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121580"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Jira Ticket",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:jira_ticket",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a Jira issue card with type icon, status lozenge, priority, and assignee",
+"atlassian design system jira issue card showing issue key, type icon (bug/story/task/epic/subtask), one-line summary,",
+"render a jira ticket"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:18:38Z",
+"cves": 7,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-jira-ticket",
+"sources": [
+{
+"payload_hash": "e9c909e2db4c46414a35ad362a8b6e48c7cd1b1f3067c16f9a40db2bd68ae98d",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_f4f0f81211b13c8a_9ee938f5",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_f4f0f81211b13c8a_9ee938f5",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:09dc78f30b1a27bec5b8c9859d4025fe8199bf71613ecd4934410eaefa939185",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Jira Ticket's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_f4f0f81211b13c8a_9ee938f5/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/jira_ticket/",
+"vendor": "a2uicatalog.ai"
+}

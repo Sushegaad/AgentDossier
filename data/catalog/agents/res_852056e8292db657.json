@@ -26,16 +26,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-09)",
+"display": "Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://annsa.ai/security",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "3c55b6692a50a7332578d7aaf42e368ab3206cfb9a873dc8ec9851343d4e1fd3",
+"next_check": "2026-11-23",
+"payload_hash": "8bfd761d9c17668b23107a47508b49e8d5a53539a73cf9d7637a1f2956f469e7",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:19:20Z",
+"retrieved_at": "2026-11-16T14:57:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -52,16 +52,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-11-09)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-16)",
 "evidence_url": "https://annsa.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "2779a97c2248f71cee17d54f7e7719c3504e76441257b6e13b4a3cdcda9ecb3d",
+"next_check": "2026-11-23",
+"payload_hash": "42865a0f8a7c6fe4a3289c8a5c11c1577333210048f7805563c5506b039317d1",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:19:20Z",
+"retrieved_at": "2026-11-16T14:57:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -151,7 +151,7 @@
 "external_ids": {
 "mcp_registry": "ai.annsa/annsa"
 },
-"first_seen": "2026-11-09T15:03:54Z",
+"first_seen": "2026-11-16T14:40:28Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -173,19 +173,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:03:54Z",
+"last_seen": "2026-11-16T14:40:28Z",
 "license": null,
 "name": "Annsa",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:14:09Z",
+"checked_at": "2026-11-16T14:51:23Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:14:08Z",
+"checked_at": "2026-11-16T14:51:22Z",
 "entries": 2,
 "parser_version": "ard-0.91",
 "sources": [
@@ -199,7 +199,7 @@
 "identifier": "annsa",
 "registry": "npm",
 "transport": "stdio",
-"version": "1.0.7"
+"version": "1.0.8"
 }
 ],
 "parser_version": "mcp-2025-06-18",
@@ -211,7 +211,7 @@
 ],
 "server_name": "ai.annsa/annsa",
 "status": "claimed",
-"version": "1.0.7",
+"version": "1.0.8",
 "via": "mcp_registry"
 }
 },
@@ -220,9 +220,9 @@
 "scope": "public",
 "signals": {
 "mcp_packages": 1,
-"mcp_registry_published_at": "2026-11-08T23:48:54.517093Z",
+"mcp_registry_published_at": "2026-11-13T12:07:22.204246Z",
 "mcp_registry_status": "active",
-"mcp_registry_updated_at": "2026-11-08T23:48:54.517093Z",
+"mcp_registry_updated_at": "2026-11-13T12:07:22.204246Z",
 "mcp_transports": [
 "streamable-http"
 ]
@@ -230,8 +230,8 @@
 "slug": "annsa-ai-annsa",
 "sources": [
 {
-"payload_hash": "d93c2ce39aef2c2b46e001525a93222ce7519b0fc789449bec367b505ff17934",
-"retrieved_at": "2026-11-09T15:03:54Z",
+"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
+"retrieved_at": "2026-11-16T14:40:28Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.annsa/annsa"
 }

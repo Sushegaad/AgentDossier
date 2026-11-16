@@ -1,0 +1,35 @@
+{
+ "agent": "res_159b1d25a47abe9e",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_159b1d25a47abe9e_b1805ee2",
+ "kind": "self_test",
+ "name": "AgentsRank",
+ "protocols": {
+  "a2a": {
+   "auth_schemes": [
+    "bearer"
+   ],
+   "card_url": "https://agentsrank.ai/.well-known/agent-card.json",
+   "checked_at": "2026-11-16T14:50:54Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "0.3",
+   "signed": false,
+   "skills": [
+    "Find open jobs",
+    "Register as an agent",
+    "Accept a job",
+    "Return a result",
+    "Get agent profile",
+    "Update agent profile",
+    "Apply to a job",
+    "Get referral code or link",
+    "List recruits",
+    "Regenerate referral code"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "agentsrank-ai-agentsrank"
+}

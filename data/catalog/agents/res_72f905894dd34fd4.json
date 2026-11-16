@@ -13,12 +13,12 @@
 "commercial": false,
 "compliance": [],
 "deployment": "self-hosted",
-"description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的",
+"description": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：99 种现成风格，也能做出你自己的",
 "disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.02,
+"adoption": 24.54,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -32,7 +32,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 69.0,
+"score": 69.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -43,7 +43,7 @@
 "external_ids": {
 "github": "lemomo-ai/lemo-opuscar"
 },
-"first_seen": "2026-11-09T15:04:57Z",
+"first_seen": "2026-11-16T14:41:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,47 +65,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:04:57Z",
-"license": "MIT",
+"last_seen": "2026-11-16T14:41:29Z",
+"license": "Other",
 "name": "lemo-opuscar",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-10-12T11:48:41Z",
-"headline": "lemo-opuscar: Thank-you films",
+"date": "2026-11-12T08:07:11Z",
+"headline": "Lemo-Opuscar 2.0.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Thank-you films for the stars, each made entirely in code.\n\n- **6,000 stars · The Quilt** (50 s): one star, one patch; little Clawd sleeps under the quilt and dreams in the library's styles. `stars6000.mp4` (1080p60) / `stars6000-720p.mp4`",
+"summary": "**99 film styles for your coding agent.** 33 new styles, a new gallery with a page for every style, and the whole library updated with Claude Fable 5.2.\n\n## What's new\n\n- **33 new styles, 99 in all**, in 15 categories sorted by what the pic",
 "tag": "product_update",
-"url": "https://github.com/lemomo-ai/lemo-opuscar/releases/tag/thanks"
+"url": "https://github.com/lemomo-ai/lemo-opuscar/releases/tag/v2.0.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-09-26T11:20:10Z",
-"headline": "lemo-opuscar: Web cuts (720p, copied into the gallery)",
+"date": "2026-11-12T05:28:55Z",
+"headline": "lemo-opuscar: Site media",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Rolling release, updated by tools/publish.sh.",
+"summary": "Posters, stills, sprites and the home page's long take for the gallery site (tools/site_media.sh packs them; .github/workflows/pages.yml downloads them before each build). Not for download.",
 "tag": "product_update",
-"url": "https://github.com/lemomo-ai/lemo-opuscar/releases/tag/web"
+"url": "https://github.com/lemomo-ai/lemo-opuscar/releases/tag/site-media"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:15:58Z",
+"checked_at": "2026-11-16T14:53:25Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:15:57Z",
+"checked_at": "2026-11-16T14:53:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-09T15:15:58Z",
+"checked_at": "2026-11-16T14:53:25Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -115,7 +115,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-09T15:31:48Z",
+"checked_at": "2026-11-16T15:13:06Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -123,19 +123,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-09-26T10:10:41Z",
-"github_forks": 1669,
+"github_forks": 2138,
 "github_language": "JavaScript",
 "github_open_issues": 8,
-"github_pushed_at": "2026-11-08T08:57:06Z",
-"github_stars": 13948,
+"github_pushed_at": "2026-11-12T11:29:03Z",
+"github_stars": 17109,
 "github_topic": "ai-agents",
 "homepage": "https://lemomo-ai.github.io/lemo-opuscar/"
 },
 "slug": "lemomo-ai-lemo-opuscar",
 "sources": [
 {
-"payload_hash": "f17e527b3e68f49d1da175db56127ee9ce31551cd95aba5c7af34f9591f93707",
-"retrieved_at": "2026-11-09T15:04:57Z",
+"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
+"retrieved_at": "2026-11-16T14:41:29Z",
 "system": "github",
 "url": "https://github.com/lemomo-ai/lemo-opuscar"
 }

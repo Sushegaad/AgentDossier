@@ -21,16 +21,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-09)",
-"evidence_url": "https://manufact.com/privacy",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-16)",
+"evidence_url": "https://manufact.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-16",
-"payload_hash": "7b023ef28cf351b263306e04dd89c589c204692baf9239416984d70833ed586e",
+"next_check": "2026-11-23",
+"payload_hash": "c1740b73faf294b540011b0a5b0ed0943cf43d130249643b449c69468ef11ad6",
 "period_end": null,
-"retrieved_at": "2026-11-09T15:21:30Z",
+"retrieved_at": "2026-11-16T14:59:45Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -38,7 +38,7 @@
 "status": "active",
 "tier": 4,
 "valid_until": null,
-"variant": null
+"variant": "DPA_AVAILABLE"
 }
 ],
 "deployment": "self-hosted",
@@ -47,7 +47,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 23.39,
+"adoption": 23.42,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "mcp-use/mcp-use"
 },
-"first_seen": "2026-11-09T15:10:26Z",
+"first_seen": "2026-11-16T14:47:21Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,42 +92,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-09T15:10:26Z",
+"last_seen": "2026-11-16T14:47:21Z",
 "license": "MIT",
 "name": "mcp-use",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-07T20:09:53Z",
-"headline": "mcp-use 2.12.4-canary.1",
+"date": "2026-11-13T19:33:44Z",
+"headline": "mcp-use 2.12.5-canary.9",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Release 2.12.4-canary.1 of mcp-use",
+"summary": "Release 2.12.5-canary.9 of mcp-use",
 "tag": "product_update",
-"url": "https://github.com/mcp-use/mcp-use/releases/tag/mcp-use%402.12.4-canary.1"
+"url": "https://github.com/mcp-use/mcp-use/releases/tag/mcp-use%402.12.5-canary.9"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-07T20:09:52Z",
-"headline": "mcp-use: @mcp-use/cli 5.1.0-canary.1",
+"date": "2026-11-13T19:33:43Z",
+"headline": "mcp-use: @mcp-use/inspector 20.3.30-canary.4",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Minor Changes\n\n- a22376b: Add `mcp-use feedback send` for explicit CLI reports to PostHog, with a single positional message, anonymous identity, JSON receipts, bounded delivery, and actionable errors. Keep report contents separate from",
+"summary": "### Patch Changes\n\n- 620471f: The Inspector now renders MCP Apps views from tools that only send the deprecated flat `_meta[\"ui/resourceUri\"]` key: chat results, tool execution resource prefetch and MCP Apps capability detection read the sa",
 "tag": "product_update",
-"url": "https://github.com/mcp-use/mcp-use/releases/tag/%40mcp-use/cli%405.1.0-canary.1"
+"url": "https://github.com/mcp-use/mcp-use/releases/tag/%40mcp-use/inspector%4020.3.30-canary.4"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-09T15:16:03Z",
+"checked_at": "2026-11-16T14:53:29Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-09T15:16:01Z",
+"checked_at": "2026-11-16T14:53:28Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -136,7 +136,7 @@
 "note": "named in the resource's own tags",
 "probe": {
 "card_url": "https://manufact.com/.well-known/mcp.json",
-"checked_at": "2026-11-09T15:16:04Z",
+"checked_at": "2026-11-16T14:53:30Z",
 "status": "invalid"
 },
 "source": "self_description",
@@ -149,19 +149,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-28T10:06:31Z",
-"github_forks": 1546,
+"github_forks": 1550,
 "github_language": "TypeScript",
-"github_open_issues": 133,
-"github_pushed_at": "2026-11-07T20:09:55Z",
-"github_stars": 10860,
+"github_open_issues": 114,
+"github_pushed_at": "2026-11-13T22:02:51Z",
+"github_stars": 10981,
 "github_topic": "mcp-server",
 "homepage": "https://manufact.com"
 },
 "slug": "mcp-use-mcp-use",
 "sources": [
 {
-"payload_hash": "970579bd1c39706f3f47ef25f965f41e8d45ef20d9b5a02b7900d07109943c7a",
-"retrieved_at": "2026-11-09T15:10:26Z",
+"payload_hash": "f34688fd0cb2f70801315df09aadb471b17c21e7a00e4711b74bed2a125caebe",
+"retrieved_at": "2026-11-16T14:47:21Z",
 "system": "github",
 "url": "https://github.com/mcp-use/mcp-use"
 }

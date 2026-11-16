@@ -1,0 +1,25 @@
+{
+ "agent": "res_542ae285a7949039",
+ "date": "2026-11-16",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_542ae285a7949039_c9fbc233",
+ "kind": "self_test",
+ "name": "awen",
+ "protocols": {
+  "ard": {
+   "errors": [
+    "missing required term 'displayName'"
+   ],
+   "identifier": "urn:air:awen.ai:mcp:awen",
+   "manifest_url": "https://www.awen.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "invalid",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "awen-ai-awen"
+}

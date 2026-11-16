@@ -1,0 +1,228 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/back_button",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Styled back navigation button. Links to a URL, a named page slug, or browser history. Three visual styles.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:back_button"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_333c45e674f890e5",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 17,
+"incidents": 0,
+"links": [
+{
+"date": "2002-12-31",
+"kind": "cve",
+"title": "CVE-2002-1688",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2002-1688"
+},
+{
+"date": "2002-12-31",
+"kind": "cve",
+"title": "CVE-2002-1849",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2002-1849"
+},
+{
+"date": "2009-02-04",
+"kind": "cve",
+"title": "CVE-2009-0358",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0358"
+},
+{
+"date": "2011-02-28",
+"kind": "cve",
+"title": "CVE-2011-1007",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2011-1007"
+},
+{
+"date": "2014-02-22",
+"kind": "cve",
+"title": "CVE-2014-0861",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0861"
+},
+{
+"date": "2017-07-29",
+"kind": "cve",
+"title": "CVE-2017-11725",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2017-11725"
+},
+{
+"date": "2019-05-09",
+"kind": "cve",
+"title": "CVE-2019-4072",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2019-4072"
+},
+{
+"date": "2021-01-13",
+"kind": "cve",
+"title": "CVE-2020-15218",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2020-15218"
+},
+{
+"date": "2022-03-14",
+"kind": "cve",
+"title": "CVE-2022-24742",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2022-24742"
+},
+{
+"date": "2023-11-06",
+"kind": "cve",
+"title": "CVE-2023-4910",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4910"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Back Button",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:back_button",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a back navigation — url, nav_slug, or history.back(); ghost/outline/text style",
+"styled back navigation button. links to a url, a named page slug, or browser history. three visual styles",
+"render a back button"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:19:03Z",
+"cves": 17,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-back-button",
+"sources": [
+{
+"payload_hash": "21848e6caeab68e6eb1e1e1028cc515a90113e0c097a0b5609377df2753dee49",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_333c45e674f890e5_a6f354fc",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_333c45e674f890e5_a6f354fc",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:22db5d027a7c8e60adf389b4d8eb5c3e71596d8cbb417d2aac9c0b7f4caf4a5e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Back Button's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_333c45e674f890e5_a6f354fc/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/back_button/",
+"vendor": "a2uicatalog.ai"
+}

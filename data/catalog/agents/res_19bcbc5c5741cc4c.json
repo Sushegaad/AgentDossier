@@ -1,0 +1,219 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/api_reference",
+"capabilities": [
+"web",
+"google-meet-stage",
+"pdf",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"api",
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Full API/function reference block — name, description, parameters table, return value, and example.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 30.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:api_reference"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_19bcbc5c5741cc4c",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 8,
+"incidents": 0,
+"links": [
+{
+"date": "2026-06-23",
+"kind": "cve",
+"title": "CVE-2026-54761",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54761"
+},
+{
+"date": "2026-08-19",
+"kind": "cve",
+"title": "CVE-2026-76313",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76313"
+},
+{
+"date": "2026-08-19",
+"kind": "cve",
+"title": "CVE-2026-76345",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76345"
+},
+{
+"date": "2026-09-14",
+"kind": "cve",
+"title": "CVE-2026-53718",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53718"
+},
+{
+"date": "2026-10-21",
+"kind": "cve",
+"title": "CVE-2026-76306",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76306"
+},
+{
+"date": "2026-10-21",
+"kind": "cve",
+"title": "CVE-2026-76307",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76307"
+},
+{
+"date": "2026-10-21",
+"kind": "cve",
+"title": "CVE-2026-76308",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76308"
+},
+{
+"date": "2026-10-21",
+"kind": "cve",
+"title": "CVE-2026-76406",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76406"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Api Reference",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:api_reference",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a API endpoint method parameters and response docs",
+"full api/function reference block — name, description, parameters table, return value, and example",
+"render a api reference"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:14:36Z",
+"cves": 8,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-api-reference",
+"sources": [
+{
+"payload_hash": "0eded1314e3574f49f6674e10162abde6457ce3d75ffc53a9687e104dcd9f85f",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_19bcbc5c5741cc4c_b4a6780f",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_19bcbc5c5741cc4c_b4a6780f",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:6d18d283b2f91c889212c08d595ac2e6b1e22d13deae4c8be784279ef68f4ac6",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Api Reference's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_19bcbc5c5741cc4c_b4a6780f/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/api_reference/",
+"vendor": "a2uicatalog.ai"
+}

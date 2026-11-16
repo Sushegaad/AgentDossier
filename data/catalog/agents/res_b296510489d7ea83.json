@@ -1,0 +1,198 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/tooltip_glossary",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Glossary list where hovering a term shows its definition as a tooltip",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:tooltip_glossary"
+},
+"first_seen": "2026-11-16T14:50:43Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_b296510489d7ea83",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 5,
+"incidents": 0,
+"links": [
+{
+"date": "2021-10-04",
+"kind": "cve",
+"title": "CVE-2021-24678",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2021-24678"
+},
+{
+"date": "2024-05-02",
+"kind": "cve",
+"title": "CVE-2024-4086",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-4086"
+},
+{
+"date": "2024-08-12",
+"kind": "cve",
+"title": "CVE-2024-43149",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43149"
+},
+{
+"date": "2024-10-11",
+"kind": "cve",
+"title": "CVE-2024-48041",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-48041"
+},
+{
+"date": "2025-05-15",
+"kind": "cve",
+"title": "CVE-2024-5026",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5026"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:50:43Z",
+"license": null,
+"name": "Tooltip Glossary",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:tooltip_glossary",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a glossary with hover tooltips",
+"glossary list where hovering a term shows its definition as a tooltip",
+"render a tooltip glossary"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:22:47Z",
+"cves": 5,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-tooltip-glossary",
+"sources": [
+{
+"payload_hash": "28faefbe462d896f0fa469bdfdd7a79ee00add5b2541512ca18fe219f23f2221",
+"retrieved_at": "2026-11-16T14:50:43Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_b296510489d7ea83_e1b6b619",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_b296510489d7ea83_e1b6b619",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:f33a3b83bf51d6ba5278a58ce6bb496c2bae1e096307c980351a176477ed112e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Tooltip Glossary's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_b296510489d7ea83_e1b6b619/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/tooltip_glossary/",
+"vendor": "a2uicatalog.ai"
+}

@@ -1,0 +1,134 @@
+{
+"canonical_url": "employerofrecord.ae/mcp/server-card",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": null,
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:employerofrecord.ae:mcp"
+},
+"first_seen": "2026-11-16T14:53:05Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_a62d9bdcdeab4472",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-16T14:53:05Z",
+"license": null,
+"name": "Moha: price and prepare a hire in the UAE",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:employerofrecord.ae:mcp",
+"manifest_url": "https://employerofrecord.ae/.well-known/ai-catalog.json",
+"media_type": "application/mcp-server-card+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"server_card_url": "https://employerofrecord.ae/mcp/server-card",
+"status": "claimed",
+"via": "ard-entry"
+}
+},
+"publisher_domain": "employerofrecord.ae",
+"representative_queries": [
+"How much does it cost to hire someone in Dubai?",
+"Hire a developer in the UAE without a company there",
+"Prepare an Employer of Record hire in Abu Dhabi"
+],
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-16T15:27:52Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "employerofrecord-ae-moha-price-and-prepare-a-hire-in-the-uae",
+"sources": [
+{
+"payload_hash": "82a78ea711d256d752d2c863af75cb1c94f37d251d467b33420dddb395f7be02",
+"retrieved_at": "2026-11-16T14:53:05Z",
+"system": "ard",
+"url": "https://employerofrecord.ae/.well-known/ai-catalog.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_a62d9bdcdeab4472_6b0cfd56",
+"checked_on": null,
+"date": "2026-11-16",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_a62d9bdcdeab4472_6b0cfd56",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:3cfed144315d264c9871b6f58ceb30947eddca9d4494a76a5ce2b209a9dc052b",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Moha: price and prepare a hire in the UAE's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_a62d9bdcdeab4472_6b0cfd56/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://employerofrecord.ae/mcp/server-card",
+"vendor": "employerofrecord.ae"
+}
