@@ -1,0 +1,22 @@
+{
+ "agent": "res_7f5e2b67491f0da3",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_7f5e2b67491f0da3_156ea176",
+ "kind": "self_test",
+ "name": "affogato-studios",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:affogato.ai:skill:affogato-studios",
+   "manifest_url": "https://affogato.ai/.well-known/ard.json",
+   "media_type": "text/markdown",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "affogato-ai-affogato-studios"
+}

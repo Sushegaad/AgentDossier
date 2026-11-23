@@ -1,0 +1,212 @@
+{
+"canonical_url": "npmjs.com/package/ffmpeg-skill",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"legal": [
+"contract"
+],
+"technology": [
+"api",
+"cli",
+"cloud",
+"code",
+"coding",
+"mcp",
+"python"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"legal": {
+"components": {
+"adoption": 23.21,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.85,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 53.3,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 23.21,
+"docs": 7.0,
+"domain_fit": 94.5,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 17.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.945,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 76.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "kajisho5/ffmpeg-skill"
+},
+"first_seen": "2026-11-23T17:17:57Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_761be138c8ff1e29",
+"identity": {
+"evidence": [
+"repository_ownership"
+],
+"rules_version": "identity-1.1",
+"tier": 3
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:23:10Z",
+"license": "MIT",
+"merged_ids": [
+"res_761be138c8ff1e29"
+],
+"name": "ffmpeg-skill",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-11-22T14:28:21Z",
+"headline": "ffmpeg-skill release v4.7.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "_Automated release: version and notes generated from pull requests merged since 4.6.5._\n\n### Added\n\n- **`audio.py --track FILE`: several audio tracks in one file, each with a name and a language (#420).**\n  The input's own sound (`--audio-",
+"tag": "product_update",
+"url": "https://github.com/kajisho5/ffmpeg-skill/releases/tag/v4.7.0"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-22T12:05:05Z",
+"headline": "ffmpeg-skill release v4.6.5",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "_Automated release: version and notes generated from pull requests merged since 4.6.4._\n\n### Fixed\n\n- **The mixing tools get #711's relabel too.** `grid.py`, `join.py`, `multicam.py`, `broll.py` and\n  `overlay.py` build each source's BT.70",
+"tag": "product_update",
+"url": "https://github.com/kajisho5/ffmpeg-skill/releases/tag/v4.6.5"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"not_checked": "code_host",
+"status": "unknown"
+},
+"ard": {
+"not_checked": "code_host",
+"status": "unknown"
+},
+"mcp": {
+"evidence_url": "https://www.npmjs.com/package/ffmpeg-skill",
+"note": "named in the resource's own tags",
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "npmjs.com",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:43:12Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-09-03T14:33:38Z",
+"github_forks": 888,
+"github_language": "Python",
+"github_open_issues": 52,
+"github_pushed_at": "2026-11-23T14:32:32Z",
+"github_stars": 10119,
+"github_topic": "mcp-server",
+"homepage": "https://www.npmjs.com/package/ffmpeg-skill"
+},
+"slug": "kajisho5-ffmpeg-skill",
+"sources": [
+{
+"payload_hash": "21ccb4a24b81da53ffdcedf96e8707a4d7aa966fc44f622b35c472d945ac4b55",
+"retrieved_at": "2026-11-23T17:23:10Z",
+"system": "github",
+"url": "https://github.com/kajisho5/ffmpeg-skill"
+}
+],
+"tags": [
+"agent-skills",
+"ai-agents",
+"audio-processing",
+"captions",
+"claude-code",
+"codex",
+"coding-agent",
+"cursor",
+"ffmpeg",
+"gemini-cli-extension",
+"loudness-normalization",
+"mcp",
+"mcp-server",
+"model-context-protocol",
+"python",
+"subtitles",
+"transcoding",
+"video",
+"video-editing",
+"whisper"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 3,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://www.npmjs.com/package/ffmpeg-skill",
+"vendor": "kajisho5"
+}

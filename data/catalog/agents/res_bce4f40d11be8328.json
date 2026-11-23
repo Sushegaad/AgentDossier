@@ -22,16 +22,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://appgoat.ai/legal/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "354122ea5d3c3bb61992ab1326d5f09bd84f4f318e866bd730961c5c24797af9",
+"next_check": "2026-11-30",
+"payload_hash": "3208c09704b7118d3c427780fea4005cbd7d3a40d5854b385117598d6c1759cc",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:57:31Z",
+"retrieved_at": "2026-11-23T17:32:16Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -53,7 +53,7 @@
 "domain_fit": 34.0,
 "ecosystem": 4.6,
 "governance": 0.0,
-"health": 20.0,
+"health": 16.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
@@ -62,7 +62,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 48.4,
+"score": 44.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -76,7 +76,7 @@
 "domain_fit": 56.4,
 "ecosystem": 4.6,
 "governance": 0.0,
-"health": 20.0,
+"health": 16.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
@@ -85,7 +85,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 48.9,
+"score": 44.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -96,7 +96,7 @@
 "external_ids": {
 "mcp_registry": "ai.appgoat/mcp"
 },
-"first_seen": "2026-11-16T14:40:28Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,19 +118,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:28Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "name": "AppGoat",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:51:37Z",
+"checked_at": "2026-11-23T17:27:14Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:51:36Z",
+"checked_at": "2026-11-23T17:27:13Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -163,8 +163,8 @@
 "slug": "appgoat-ai-appgoat",
 "sources": [
 {
-"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
-"retrieved_at": "2026-11-16T14:40:28Z",
+"payload_hash": "a7c60a8f79ee7c922d0879681b089382ce047bb6b93d2fbc0c0436132c091b3e",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.appgoat/mcp"
 }

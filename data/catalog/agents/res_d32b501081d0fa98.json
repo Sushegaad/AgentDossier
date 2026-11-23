@@ -22,16 +22,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-16)",
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://aislabs.ai/cve-priority-kit/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "d3afbe76bab733faddf0fdd75eb4464fa699ae0740a453c925d6176fcac2f1b0",
+"next_check": "2026-11-30",
+"payload_hash": "8e2d5caae495e52fae216682564ab16724ab7765d13dc46e39a2b7555119906f",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:56:57Z",
+"retrieved_at": "2026-11-23T17:31:48Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -96,7 +96,7 @@
 "external_ids": {
 "mcp_registry": "ai.aislabs/cve"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -118,7 +118,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "merged_ids": [
 "res_81fcabd040903819",
@@ -129,12 +129,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:51:06Z",
+"checked_at": "2026-11-23T17:26:49Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:51:05Z",
+"checked_at": "2026-11-23T17:26:48Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -157,7 +157,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:09:10Z",
+"checked_at": "2026-11-23T17:39:21Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -174,20 +174,20 @@
 "slug": "aislabs-ai-ais-cve-priorities-daily-exploit-ranked-patch-list-for-ai-agents",
 "sources": [
 {
-"payload_hash": "429253434a0de11b675bd0e6e7a3d2a56e21efaa3d73c9e5e79a67cc0416c783",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "a7c60a8f79ee7c922d0879681b089382ce047bb6b93d2fbc0c0436132c091b3e",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aislabs/cve"
 },
 {
-"payload_hash": "429253434a0de11b675bd0e6e7a3d2a56e21efaa3d73c9e5e79a67cc0416c783",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "a7c60a8f79ee7c922d0879681b089382ce047bb6b93d2fbc0c0436132c091b3e",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aislabs/gateway"
 },
 {
-"payload_hash": "429253434a0de11b675bd0e6e7a3d2a56e21efaa3d73c9e5e79a67cc0416c783",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "a7c60a8f79ee7c922d0879681b089382ce047bb6b93d2fbc0c0436132c091b3e",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.aislabs/recorder"
 }

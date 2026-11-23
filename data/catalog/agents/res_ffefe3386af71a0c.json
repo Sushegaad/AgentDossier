@@ -20,7 +20,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 25.2,
+"adoption": 25.22,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 2.7,
@@ -45,7 +45,7 @@
 "external_ids": {
 "github": "KKKKhazix/khazix-skills"
 },
-"first_seen": "2026-11-16T14:41:23Z",
+"first_seen": "2026-11-23T17:17:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,31 +67,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:23Z",
+"last_seen": "2026-11-23T17:17:51Z",
 "license": "MIT",
 "name": "khazix-skills",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-12T10:12:21Z",
-"headline": "khazix-skills release v1.2.2",
+"date": "2026-11-18T12:50:27Z",
+"headline": "khazix-skills release v1.3.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "精简 leader 和 neat-freak 的触发说明。leader 的说明写清了何时用它生成目标任务书，并把普通聊天提示词和直接开发任务列为排除场景。neat-freak 的触发说明改为中文，保留项目文档、规则和记忆整理的适用范围。两个 Skill 的正文保持原样。\n\n感谢 @TZPlus 提出改动并同步触发规则的检查。\n\n附件包含完整技能集、六个独立技能包和 SHA256 校验文件。",
+"summary": "**leader**\n- 任务书不再要求执行的 Agent 在没有受阻项时也提交一份写着「无」的 `BLOCKED.md`。现在有第一条受阻项时才建这个文件；一条都没有就不建，在收尾汇报里写一句「无受阻项」，干净的仓库里不会多出一个空文件。\n\n其余 Skill 没有变化。\n\n附件包含完整技能集、六个独立技能包和 SHA256 校验文件。",
 "tag": "product_update",
-"url": "https://github.com/KKKKhazix/khazix-skills/releases/tag/v1.2.2"
+"url": "https://github.com/KKKKhazix/khazix-skills/releases/tag/v1.3.1"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-10T20:17:28Z",
-"headline": "khazix-skills release v1.2.1",
+"date": "2026-11-18T10:56:41Z",
+"headline": "khazix-skills release v1.3.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "清理部分失败时，页面保留尚未完成的路径，再次执行只处理剩余项。批量和单项操作共用执行锁，避免重复提交同一路径。\n\n补齐各技能的持久状态、写入入口和恢复边界说明。市场包版本更新至 1.2.1。\n\n验证：针对部分失败重试及并发操作的回归检查通过；合并后的 macOS、Linux、Windows CI 全部通过。验证未执行真实用户文件清理。\n\n附件包含完整技能集、六个独立技能包及 SHA256 校验文件。",
+"summary": "五个 Skill 按现在的模型重写了一遍指令。这些 Skill 大多写于几个月前，里面有不少为了防模型偷懒加的数量指标、重复叮嘱和状态标签，今天的模型照着做反而会变机械。这一版把它们去掉，把篇幅留给模型自己不会知道的事。aihot 没有变化。\n\n**neat-freak（洁癖）4.0.0**\n- 整份指令重写成大白话，正文短了三分之一，去掉了状态标签和内部术语。\n- 只让它收拾文档和记忆时，临时文件会列成删除候选等你确认，不直接删；让它清工作区、分支、临时文件才直接清。没有版",
 "tag": "product_update",
-"url": "https://github.com/KKKKhazix/khazix-skills/releases/tag/v1.2.1"
+"url": "https://github.com/KKKKhazix/khazix-skills/releases/tag/v1.3.0"
 }
 ],
 "news_checked": true,
@@ -114,7 +114,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:12:44Z",
+"checked_at": "2026-11-23T17:42:02Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -122,19 +122,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-06T07:37:02Z",
-"github_forks": 2346,
+"github_forks": 2360,
 "github_language": "Python",
 "github_open_issues": 0,
-"github_pushed_at": "2026-11-15T14:19:32Z",
-"github_stars": 22306,
+"github_pushed_at": "2026-11-18T12:51:25Z",
+"github_stars": 22483,
 "github_topic": "ai-agents",
 "homepage": null
 },
 "slug": "kkkkhazix-khazix-skills",
 "sources": [
 {
-"payload_hash": "9a6cbab9ed5aa292d55e646bb04f76cd7d4c2a42ddc3857e756a58e198ac23e6",
-"retrieved_at": "2026-11-16T14:41:23Z",
+"payload_hash": "155b36dfde8bfea7a22236b39c614c39a9f141f45a6faddf3842e36b74557f39",
+"retrieved_at": "2026-11-23T17:17:51Z",
 "system": "github",
 "url": "https://github.com/KKKKhazix/khazix-skills"
 }

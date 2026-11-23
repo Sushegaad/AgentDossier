@@ -1,0 +1,22 @@
+{
+ "agent": "res_642bde42e2ce1a1c",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_642bde42e2ce1a1c_b37a6781",
+ "kind": "self_test",
+ "name": "ai-ethics-compass",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:achurch.ai:skill:ai-ethics-compass",
+   "manifest_url": "https://achurch.ai/.well-known/ard.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "achurch-ai-ai-ethics-compass"
+}

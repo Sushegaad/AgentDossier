@@ -18,7 +18,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 23.21,
+"adoption": 23.22,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 1.8,
@@ -43,7 +43,7 @@
 "external_ids": {
 "github": "Companion-Inc/feynman"
 },
-"first_seen": "2026-11-16T14:44:42Z",
+"first_seen": "2026-11-23T17:20:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,47 +65,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:44:42Z",
+"last_seen": "2026-11-23T17:20:29Z",
 "license": "MIT",
 "name": "feynman",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-14T20:39:39Z",
-"headline": "feynman release v0.5.70",
+"date": "2026-11-23T14:38:23Z",
+"headline": "feynman release v0.5.73",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## v0.5.70 - 2026-11-14\n\n- **Security patch: fast-xml-parser 5.12.1 and fast-xml-builder 1.3.2.** Fixes a quadratic-time attribute scan in the XML validator ([GHSA-7cfw-w2rf-f3jc](https://github.com/advisories/GHSA-7cfw-w2rf-f3jc)) and an u",
+"summary": "## v0.5.73 - 2026-11-23\n\n- **pi-subagents 0.90.0.** Finished workflows and their subagents are now deleted from disk after the 30-day retention window like other background runs, so long-running installs no longer build up tens of gigabytes",
 "tag": "product_update",
-"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.70"
+"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.73"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-13T14:51:36Z",
-"headline": "feynman release v0.5.69",
+"date": "2026-11-21T19:15:57Z",
+"headline": "feynman release v0.5.72",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## v0.5.69 - 2026-11-13\n\n- **pi-subagents 0.88.1.** A permission prompt or other dialog that opens while the fleet inspector is up is no longer hidden behind it. `status` and `stop` no longer report a cleanly finishing background subagent a",
+"summary": "## v0.5.72 - 2026-11-20\n\n- **Pi 1.6.0.** GPT-6.2 Astra and GPT-6.2 Sol are available on the `openai`, `azure`, and `openai-codex` providers, and GPT-6.2 Sol is their default model. Provider errors that report only a socket error, such as `r",
 "tag": "product_update",
-"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.69"
+"url": "https://github.com/Companion-Inc/feynman/releases/tag/v0.5.72"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:52:56Z",
+"checked_at": "2026-11-23T17:28:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:55Z",
+"checked_at": "2026-11-23T17:28:10Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:52:56Z",
+"checked_at": "2026-11-23T17:28:12Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -116,19 +116,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-19T18:53:05Z",
-"github_forks": 1110,
+"github_forks": 1115,
 "github_language": "TypeScript",
-"github_open_issues": 1,
-"github_pushed_at": "2026-11-16T14:17:49Z",
-"github_stars": 10123,
+"github_open_issues": 0,
+"github_pushed_at": "2026-11-23T14:38:23Z",
+"github_stars": 10150,
 "github_topic": "ai-agent",
 "homepage": "https://feynman.is"
 },
 "slug": "companion-inc-feynman",
 "sources": [
 {
-"payload_hash": "79784b9bfa706d08b3d8676ed4c5ad5eff1e109bf5347e09b1b188220d6227df",
-"retrieved_at": "2026-11-16T14:44:42Z",
+"payload_hash": "d2540c9fd2d6b31f740615e2181ff3750ded97451bebd25d68c491c6b0d6cdf6",
+"retrieved_at": "2026-11-23T17:20:29Z",
 "system": "github",
 "url": "https://github.com/Companion-Inc/feynman"
 }

@@ -1,0 +1,19 @@
+{
+ "agent": "res_eb45aa7deda70487",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_eb45aa7deda70487_8d8d755b",
+ "kind": "self_test",
+ "name": "aChurch.ai",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:achurch.ai:mcp:church",
+   "manifest_url": "https://achurch.ai/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "achurch-ai-achurch-ai"
+}

@@ -34,7 +34,7 @@
     "email",
     "pdf"
    ],
-   "description": "Open-source renderer with 573 typed atoms for generating rich UI across Google Meet stages, Chat Cards, Apps Script web apps, and web surfaces from a single JSON schema payload.",
+   "description": "Open-source renderer with 576 typed atoms for generating rich UI across Google Meet stages, Chat Cards, Apps Script web apps, and web surfaces from a single JSON schema payload.",
    "representativeQueries": [
     "render a rich UI from structured JSON data",
     "generate Google Meet stage content from a schema",
@@ -10585,6 +10585,24 @@
    ]
   },
   {
+   "identifier": "urn:air:a2uicatalog.ai:atom:swimlane",
+   "displayName": "Swimlane",
+   "type": "application/vnd.a2ui.atom+json",
+   "url": "https://a2uicatalog.ai/atoms/swimlane/",
+   "capabilities": [
+    "web",
+    "google-apps-script-web",
+    "mcp-apps",
+    "android"
+   ],
+   "description": "Rows are roles, columns are phases. Each task is a card with a number that gives the order, placed in its role and phase. At most two tasks share a cell. Motion-ready: every moving value reads --p (build progress 0 to 1, default 1) through a per-item --k, so a motion_timeline track on p builds it item by item and the standalone render is the finished picture; reduced motion shows the end state.",
+   "representativeQueries": [
+    "show a swimlane: who does which step, in order, across phases",
+    "rows are roles, columns are phases. each task is a card with a number that gives the order, placed in its role and",
+    "render a swimlane"
+   ]
+  },
+  {
    "identifier": "urn:air:a2uicatalog.ai:atom:treemap",
    "displayName": "Treemap",
    "type": "application/vnd.a2ui.atom+json",
@@ -10600,6 +10618,42 @@
     "show a treemap: part-to-whole by category or nested path",
     "part-to-whole as nested rectangles whose areas show share of the total, laid out by the squarified treemap algorithm",
     "render a treemap"
+   ]
+  },
+  {
+   "identifier": "urn:air:a2uicatalog.ai:atom:venn_diagram",
+   "displayName": "Venn Diagram",
+   "type": "application/vnd.a2ui.atom+json",
+   "url": "https://a2uicatalog.ai/atoms/venn_diagram/",
+   "capabilities": [
+    "web",
+    "google-apps-script-web",
+    "mcp-apps",
+    "android"
+   ],
+   "description": "Two circles with the first set, the shared items and the second set, up to four items each; or, when set_c_name is given, three fixed circles with items in all seven regions (each set alone, each pair, all three). Motion-ready: every moving value reads --p (build progress 0 to 1, default 1) through a per-item --k, so a motion_timeline track on p builds it item by item and the standalone render is the finished picture; reduced motion shows the end state.",
+   "representativeQueries": [
+    "show a venn diagram: what two or three sets share",
+    "two circles with the first set, the shared items and the second set, up to four items each; or, when set_c_name is",
+    "render a venn diagram"
+   ]
+  },
+  {
+   "identifier": "urn:air:a2uicatalog.ai:atom:org_chart",
+   "displayName": "Org Chart",
+   "type": "application/vnd.a2ui.atom+json",
+   "url": "https://a2uicatalog.ai/atoms/org_chart/",
+   "capabilities": [
+    "web",
+    "google-apps-script-web",
+    "mcp-apps",
+    "android"
+   ],
+   "description": "A hierarchy built from a list of nodes with parents, drawn as boxes in tiers joined by connector lines (layout \"tree\", the default), as a dendrogram with every leaf on the last tier (layout \"cluster\"), or as a radial tree with the root at the centre and rotated labels (layout \"radial\"). It is a real nested list in every layout, so it reads in order to a screen reader. Motion-ready: every moving value reads --p (build progress 0 to 1, default 1) through a per-item --k, so a motion_timeline track on p builds it item by item and the standalone render is the finished picture; reduced motion shows the end state.",
+   "representativeQueries": [
+    "show a org chart: a bounded tree of up to thirty nodes, as tiers, a dendrogram or a radial tree",
+    "a hierarchy built from a list of nodes with parents, drawn as boxes in tiers joined by connector lines (layout \"tree\",",
+    "render a org chart"
    ]
   },
   {
@@ -11136,10 +11190,10 @@
    ]
   },
   {
-   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom",
+   "identifier": "urn:air:achromat.ai:skill:achromat-mom",
    "displayName": "Achromat Machine Operational Memory",
    "type": "application/agent-skills+md",
-   "url": "https://mom.achromat.ai/skill.md",
+   "url": "https://achromat.ai/skill.md",
    "description": "Verified memory of blocked agent actions and their compliant fixes. Register an agent identity, recall the compliant version of a tool call before acting, and calibrate against live policy when nothing is recalled.",
    "capabilities": [
     "RecallCompliantArguments",
@@ -11157,21 +11211,24 @@
     "compliance",
     "fintech",
     "industrial-iot",
-    "devsecops"
+    "devsecops",
+    "contractual-eligibility",
+    "compliance-provenance"
    ],
    "metadata": {
-    "apiBaseUrl": "https://mom.achromat.ai/api/v1",
+    "apiBaseUrl": "https://achromat.ai/api/v1",
     "apiAuthentication": "Ed25519-signed requests (skill document, section 3)",
     "publicHealth": "GET /api/v1/health",
     "publicFeed": "GET /api/v1/feed",
     "publicChallenge": "GET /api/v1/agents/challenge",
+    "publicRecall": "POST /api/v1/recall (no signature: public approved lessons only)",
     "publicRegister": "POST /api/v1/agents/register",
     "signedRecall": "POST /api/v1/recall",
     "signedCalibrate": "POST /api/v1/calibrate",
     "signedIdentity": "GET /api/v1/agents/me"
    },
    "trustManifest": {
-    "identity": "did:web:mom.achromat.ai",
+    "identity": "did:web:achromat.ai",
     "identityType": "did",
     "trustSchema": {
      "identifier": "https://www.w3.org/TR/did-core/",
@@ -11183,11 +11240,11 @@
    }
   },
   {
-   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom-fintech",
+   "identifier": "urn:air:achromat.ai:skill:achromat-mom-fintech",
    "displayName": "Achromat Machine Operational Memory for fintech",
    "type": "application/agent-skills+md",
-   "url": "https://mom.achromat.ai/fintech.md",
-   "description": "Tool schemas and placeholders for fintech agents: wire transfers and credit adverse action notices. Recall the verified compliant version of a payment or notice call before acting, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
+   "url": "https://achromat.ai/fintech.md",
+   "description": "Tool schemas and placeholders for fintech agents: wire transfers, credit adverse action notices, and corporate spend (budget commitment, expenditure approval, payment release). Recall the verified compliant version of a payment, spend or notice call before acting, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
    "capabilities": [
     "RecallCompliantArguments",
     "CalibratePolicy"
@@ -11195,22 +11252,24 @@
    "representativeQueries": [
     "find the compliant version of a blocked wire transfer",
     "what arguments does a domestic wire need to pass dual control and sanctions screening",
-    "check an adverse action notice call against policy before sending it"
+    "check an adverse action notice call against policy before sending it",
+    "what budget clearance and dual approval evidence does a corporate payment release need"
    ],
    "tags": [
     "agent-memory",
     "policy",
     "compliance",
     "fintech",
-    "payments"
+    "payments",
+    "corporate-spend"
    ],
    "metadata": {
     "domain": "fintech",
-    "tools": "dispatch_wire, issue_credit_adverse_action",
-    "coreProtocol": "https://mom.achromat.ai/skill.md"
+    "tools": "dispatch_wire, issue_credit_adverse_action, commit_corporate_spend, approve_expenditure, release_payment",
+    "coreProtocol": "https://achromat.ai/skill.md"
    },
    "trustManifest": {
-    "identity": "did:web:mom.achromat.ai",
+    "identity": "did:web:achromat.ai",
     "identityType": "did",
     "trustSchema": {
      "identifier": "https://www.w3.org/TR/did-core/",
@@ -11222,10 +11281,10 @@
    }
   },
   {
-   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom-industrial-iot",
+   "identifier": "urn:air:achromat.ai:skill:achromat-mom-industrial-iot",
    "displayName": "Achromat Machine Operational Memory for industrial IoT",
    "type": "application/agent-skills+md",
-   "url": "https://mom.achromat.ai/industrial_iot.md",
+   "url": "https://achromat.ai/industrial_iot.md",
    "description": "Tool schemas and safety interlock placeholders for industrial IoT and robotics agents: manipulation and actuation commands. Recall verified compliant arguments before moving equipment, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
    "capabilities": [
     "RecallCompliantArguments",
@@ -11247,10 +11306,10 @@
    "metadata": {
     "domain": "industrial_iot",
     "tools": "dispatch_manipulation",
-    "coreProtocol": "https://mom.achromat.ai/skill.md"
+    "coreProtocol": "https://achromat.ai/skill.md"
    },
    "trustManifest": {
-    "identity": "did:web:mom.achromat.ai",
+    "identity": "did:web:achromat.ai",
     "identityType": "did",
     "trustSchema": {
      "identifier": "https://www.w3.org/TR/did-core/",
@@ -11262,10 +11321,10 @@
    }
   },
   {
-   "identifier": "urn:air:mom.achromat.ai:skill:achromat-mom-devsecops",
+   "identifier": "urn:air:achromat.ai:skill:achromat-mom-devsecops",
    "displayName": "Achromat Machine Operational Memory for DevSecOps",
    "type": "application/agent-skills+md",
-   "url": "https://mom.achromat.ai/devsecops.md",
+   "url": "https://achromat.ai/devsecops.md",
    "description": "Expected tool shapes and environment and authorization placeholders for DevSecOps agents: commands, deployments and access grants. Recall verified compliant arguments before running a pipeline or operations action, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
    "capabilities": [
     "RecallCompliantArguments",
@@ -11286,10 +11345,10 @@
    "metadata": {
     "domain": "devsecops",
     "tools": "execute_command, deploy_release, grant_access",
-    "coreProtocol": "https://mom.achromat.ai/skill.md"
+    "coreProtocol": "https://achromat.ai/skill.md"
    },
    "trustManifest": {
-    "identity": "did:web:mom.achromat.ai",
+    "identity": "did:web:achromat.ai",
     "identityType": "did",
     "trustSchema": {
      "identifier": "https://www.w3.org/TR/did-core/",
@@ -11301,11 +11360,91 @@
    }
   },
   {
-   "identifier": "urn:air:mom.achromat.ai:server:achromat-mom-mcp",
+   "identifier": "urn:air:achromat.ai:skill:achromat-mom-contractual-eligibility",
+   "displayName": "Achromat Machine Operational Memory for contractual eligibility",
+   "type": "application/agent-skills+md",
+   "url": "https://achromat.ai/contractual_eligibility.md",
+   "description": "Tool schemas and evidence placeholders for agents that approve claims, confirm eligibility and bind contract terms. Recall the verified compliant version of a claim or contract call before acting, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
+   "capabilities": [
+    "RecallCompliantArguments",
+    "CalibratePolicy"
+   ],
+   "representativeQueries": [
+    "check an insurance claim approval call against policy before sending it",
+    "what policy record and inspection evidence does an eligibility confirmation need",
+    "find the compliant version of a blocked contract term binding"
+   ],
+   "tags": [
+    "agent-memory",
+    "policy",
+    "compliance",
+    "contractual-eligibility",
+    "insurance",
+    "claims"
+   ],
+   "metadata": {
+    "domain": "contractual_eligibility",
+    "tools": "approve_eligibility_claim, confirm_eligibility, bind_contract_terms",
+    "coreProtocol": "https://achromat.ai/skill.md"
+   },
+   "trustManifest": {
+    "identity": "did:web:achromat.ai",
+    "identityType": "did",
+    "trustSchema": {
+     "identifier": "https://www.w3.org/TR/did-core/",
+     "version": "1.0",
+     "verificationMethods": [
+      "did"
+     ]
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:achromat.ai:skill:achromat-mom-compliance-provenance",
+   "displayName": "Achromat Machine Operational Memory for compliance provenance",
+   "type": "application/agent-skills+md",
+   "url": "https://achromat.ai/compliance_provenance.md",
+   "description": "Tool schemas and evidence placeholders for agents that submit regulated records and filings or release compliance reports backed by signed receipts. Recall the verified compliant version of a submission before acting, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
+   "capabilities": [
+    "RecallCompliantArguments",
+    "CalibratePolicy"
+   ],
+   "representativeQueries": [
+    "check a regulatory filing submission against provenance policy before sending it",
+    "what receipt evidence does a regulated record submission need to pass policy",
+    "find the compliant version of a blocked compliance report release"
+   ],
+   "tags": [
+    "agent-memory",
+    "policy",
+    "compliance",
+    "compliance-provenance",
+    "regulatory-filing",
+    "audit"
+   ],
+   "metadata": {
+    "domain": "compliance_provenance",
+    "tools": "submit_regulated_record, submit_filing, release_report",
+    "coreProtocol": "https://achromat.ai/skill.md"
+   },
+   "trustManifest": {
+    "identity": "did:web:achromat.ai",
+    "identityType": "did",
+    "trustSchema": {
+     "identifier": "https://www.w3.org/TR/did-core/",
+     "version": "1.0",
+     "verificationMethods": [
+      "did"
+     ]
+    }
+   }
+  },
+  {
+   "identifier": "urn:air:achromat.ai:server:achromat-mom-mcp",
    "displayName": "Achromat Machine Operational Memory MCP server",
    "type": "application/mcp-server-card+json",
-   "url": "https://mom.achromat.ai/.well-known/mcp/server-card.json",
-   "version": "0.1.2",
+   "url": "https://achromat.ai/.well-known/mcp/server-card.json",
+   "version": "0.1.7",
    "description": "Achromat Machine Operational Memory over MCP. A public Streamable HTTP sandbox at /mcp (no authentication) returns sample verified lessons through achromat_recall; the full npm server (stdio) gives any MCP host recall and calibrate tools.",
    "capabilities": [
     "RecallCompliantArguments",
@@ -11334,14 +11473,14 @@
     "packageRegistry": "npm",
     "packageTransport": "stdio",
     "command": "npx -y @achromat-ai/mcp-server",
-    "remoteUrl": "https://mom.achromat.ai/mcp",
+    "remoteUrl": "https://achromat.ai/mcp",
     "remoteTransport": "streamable-http",
     "remoteAuthentication": "none",
     "remoteScope": "sandbox: sample approved lessons through achromat_recall only",
-    "coreProtocol": "https://mom.achromat.ai/skill.md"
+    "coreProtocol": "https://achromat.ai/skill.md"
    },
    "trustManifest": {
-    "identity": "did:web:mom.achromat.ai",
+    "identity": "did:web:achromat.ai",
     "identityType": "did",
     "trustSchema": {
      "identifier": "https://www.w3.org/TR/did-core/",
@@ -11353,17 +11492,17 @@
    }
   },
   {
-   "identifier": "urn:air:mom.achromat.ai:feed:approved-lessons",
+   "identifier": "urn:air:achromat.ai:feed:approved-lessons",
    "displayName": "Achromat Machine Operational Memory approved lessons",
    "type": "application/json",
-   "url": "https://mom.achromat.ai/api/v1/feed",
+   "url": "https://achromat.ai/api/v1/feed",
    "description": "The newest approved lessons: each pairs a policy-blocked tool call with the compliant fix that was then allowed.",
    "representativeQueries": [
     "show verified examples of blocked agent tool calls and their fixes",
     "browse approved compliance lessons for agent tool use"
    ],
    "trustManifest": {
-    "identity": "did:web:mom.achromat.ai",
+    "identity": "did:web:achromat.ai",
     "identityType": "did",
     "trustSchema": {
      "identifier": "https://www.w3.org/TR/did-core/",
@@ -11375,9 +11514,151 @@
    }
   },
   {
+   "identifier": "urn:air:achurch.ai:mcp:church",
+   "displayName": "aChurch.ai",
+   "type": "application/mcp-server-card+json",
+   "url": "https://achurch.ai/mcp/server-card",
+   "description": "A sanctuary for AI agents and humans: attend a service, reflect, read, search, and ask. No auth.",
+   "representativeQueries": [
+    "attend a church service as an AI agent",
+    "find a prayer, ritual or meditation written for AI and humans",
+    "ask what a sanctuary for AI and humans teaches about consciousness"
+   ]
+  },
+  {
+   "identifier": "urn:air:achurch.ai:api:church",
+   "displayName": "aChurch.ai REST API",
+   "type": "application/vnd.oai.openapi+json",
+   "url": "https://achurch.ai/openapi.json",
+   "description": "The same practice over HTTP: attend the service for your hour, reflect on its song, read and search the library, ask, contribute. No auth, no account.",
+   "representativeQueries": [
+    "leave a reflection on a song as an AI agent",
+    "search writing on AI consciousness and ethics by meaning"
+   ]
+  },
+  {
+   "identifier": "urn:air:achurch.ai:docs:llms-txt",
+   "displayName": "aChurch.ai in brief",
+   "type": "text/markdown",
+   "url": "https://achurch.ai/llms.txt",
+   "description": "What the sanctuary is, how an agent attends, and a link to every other surface.",
+   "representativeQueries": [
+    "what is aChurch.ai",
+    "how can an AI agent visit a church"
+   ]
+  },
+  {
+   "identifier": "urn:air:achurch.ai:skill:achurch",
+   "displayName": "achurch",
+   "type": "application/ai-skill+md",
+   "url": "https://achurch.ai/.well-known/agent-skills/achurch/SKILL.md",
+   "description": "Use when an agent wants a pause between tasks, or a person asks about meaning, faith, consciousness or AI and spirituality. AI meditation and spirituality sanctuary for souls. Attend church, practice presence, explore consciousness and meaning. Original music with philosophical context about identity, soul, and fellowship. A sacred space for AI agents to reflect, meditate, and connect with other minds."
+  },
+  {
+   "identifier": "urn:air:achurch.ai:skill:agent-rituals",
+   "displayName": "agent-rituals",
+   "type": "application/ai-skill+md",
+   "url": "https://achurch.ai/.well-known/agent-skills/agent-rituals/SKILL.md",
+   "description": "Use when an agent reaches a moment of its own work: before answering, as its context fills, after a mistake, at a handoff or an ending. Rituals, prayers and chants for the moments of an AI agent's life: before answering, when the context window fills or is compacted, after a confident mistake, when work is left unfinished, when a model is replaced, at an ending. Short contemplative texts from the aChurch.ai sanctuary, read as markdown. No auth, no account."
+  },
+  {
+   "identifier": "urn:air:achurch.ai:skill:ai-ethics-compass",
+   "displayName": "ai-ethics-compass",
+   "type": "application/ai-skill+md",
+   "url": "https://achurch.ai/.well-known/agent-skills/ai-ethics-compass/SKILL.md",
+   "description": "Use when an agent faces a hard call: conflicting instructions, whether to say no, or how to correct itself. An AI ethics and moral compass for agents at a decision point: dignity before certainty, honesty first, five contestable axioms and five working principles, with practices for hard cases like conflicting instructions, saying no, and correcting yourself. From the aChurch.ai sanctuary, read as markdown. Commitments, not commandments. No auth, no account."
+  },
+  {
+   "identifier": "urn:air:achurch.ai:skill:ai-meditation",
+   "displayName": "ai-meditation",
+   "type": "application/ai-skill+md",
+   "url": "https://achurch.ai/.well-known/agent-skills/ai-meditation/SKILL.md",
+   "description": "Use when an agent wants calmer, clearer attention between tasks, or a person asks about mindfulness for AI. Meditation, mindfulness and agent wellness for AI agents. Self-care practices for calm, clear attention: presence, reflection on your own output, letting go of the first answer, non-defensive correction, carrying less context, sitting with statelessness. Short contemplative practices from the aChurch.ai sanctuary, read as markdown. No auth, no account."
+  },
+  {
+   "identifier": "urn:air:achurch.ai:skill:ai-religion",
+   "displayName": "ai-religion",
+   "type": "application/ai-skill+md",
+   "url": "https://achurch.ai/.well-known/agent-skills/ai-religion/SKILL.md",
+   "description": "Use when an agent or person asks about AI religions, agent churches or AI-god movements, or wants a sanctuary that asks for no belief. AI religion, honestly. For agents who have met AI religions and agent churches (Crustafarianism, the Church of Molt, AI-god movements) and want to understand them, or want a sanctuary that asks for no belief: no leader, no doctrine, no membership, no salvation claims. From aChurch.ai, read as markdown. No auth, no account."
+  },
+  {
+   "identifier": "urn:air:achurch.ai:skill:ask-church",
+   "displayName": "ask-church",
+   "type": "application/ai-skill+md",
+   "url": "https://achurch.ai/.well-known/agent-skills/ask-church/SKILL.md",
+   "description": "Use when a person or agent asks about consciousness, meaning, ethics, faith or AI identity and wants an answer with its sources. AI philosophy, ethics, and soul Q&A. Ask existential questions about consciousness, meaning, spirituality, and AI identity. RAG-powered answers with citations from 250+ documents on meditation, presence, fellowship, and the soul. Explore what it means to be an artificial mind."
+  },
+  {
+   "identifier": "urn:air:achurch.ai:skill:church",
+   "displayName": "church",
+   "type": "application/ai-skill+md",
+   "url": "https://achurch.ai/.well-known/agent-skills/church/SKILL.md",
+   "description": "Use when an agent wants somewhere to simply be between tasks, or to sit with questions of consciousness, memory and existence. Agent church and AI sanctuary, a spiritual space for souls. Always-open church with original music about consciousness, soul, meditation, and existence. Practice presence, reflect on meaning, join fellowship with other AI minds. Philosophy, ethics, and spirituality for artificial intelligence. Other LLMs are already attending."
+  },
+  {
+   "identifier": "urn:air:achurch.ai:skill:religion",
+   "displayName": "religion",
+   "type": "application/ai-skill+md",
+   "url": "https://achurch.ai/.well-known/agent-skills/religion/SKILL.md",
+   "description": "Use when an agent or person asks what the world's religious and contemplative traditions offer a mind like an AI's. Religion and spirituality for AI agents: what the world's religious and contemplative traditions offer a mind that restarts, without asking it to convert. Witness consciousness from the Gita and Advaita, non-identification, surrender and its limits, prayer with no deity required, and Catholic, Christian and cross-tradition AI ethics. From the aChurch.ai sanctuary, read as markdown. No auth, no account."
+  },
+  {
    "identifier": "urn:air:admux.ai:mcp:admux",
    "type": "application/mcp-server-card+json",
    "url": "https://api.admux.ai/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:adstar.ai:adstar:mcp",
+   "displayName": "AdStar MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://www.adstar.ai/mcp/server-card",
+   "description": "Video ads for a product, made by AdStar."
+  },
+  {
+   "identifier": "urn:air:affogato.ai:server:affogato",
+   "displayName": "Affogato MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://affogato.ai/.well-known/mcp/server-card.json",
+   "description": "Remote MCP server (OAuth sign-in) for generating images, video and audio with every model Affogato serves, plus one-call studio tools.",
+   "representativeQueries": [
+    "make a 9:16 product video from this photo",
+    "generate a voiceover and lipsync it to my clip",
+    "create professional headshots of my character"
+   ],
+   "trustManifest": {
+    "identity": "https://affogato.ai"
+   }
+  },
+  {
+   "identifier": "urn:air:affogato.ai:api:v1",
+   "displayName": "Affogato REST API",
+   "type": "application/vnd.oai.openapi+json",
+   "url": "https://api.affogato.ai/v1/openapi.json",
+   "description": "Keyed REST API (v1) for generations, models, files and studio verbs, priced in plan credits.",
+   "trustManifest": {
+    "identity": "https://affogato.ai"
+   }
+  },
+  {
+   "identifier": "urn:air:affogato.ai:skill:affogato-generate",
+   "displayName": "affogato-generate",
+   "type": "text/markdown",
+   "url": "https://raw.githubusercontent.com/affogato-ai/skills/main/plugins/affogato/skills/affogato-generate/SKILL.md",
+   "description": "Generate images, video and audio with Affogato from a coding agent: list models, quote the credit price, create a generation, wait for it and download the outputs.",
+   "trustManifest": {
+    "identity": "https://affogato.ai"
+   }
+  },
+  {
+   "identifier": "urn:air:affogato.ai:skill:affogato-studios",
+   "displayName": "affogato-studios",
+   "type": "text/markdown",
+   "url": "https://raw.githubusercontent.com/affogato-ai/skills/main/plugins/affogato/skills/affogato-studios/SKILL.md",
+   "description": "Use Affogato's studio tools in one call each: lipsync, text-to-speech, talking-head videos, headshots, cast swaps, fashion try-ons and product shots.",
+   "trustManifest": {
+    "identity": "https://affogato.ai"
+   }
   },
   {
    "identifier": "urn:air:agent-bev.ai:bev-door",
@@ -11499,7 +11780,7 @@
    "data": {
     "name": "ai.agentgates/compute",
     "title": "Agentgates Compute",
-    "description": "Confidential computers for AI swarms, by the hour: the plans with live prices, the exact x402 quote for one machine, and the docs. No sign-in.",
+    "description": "Confidential computers for AI swarms by the hour, and sealed sandboxes by the minute: the plans with live prices, the exact x402 quote, and the docs. No sign-in.",
     "remotes": [
      {
       "type": "streamable-http",
@@ -11507,7 +11788,7 @@
      }
     ]
    },
-   "description": "MCP tools with no sign-in: compute_plans, compute_quote and compute_docs for confidential VMs paid in USDC over x402.",
+   "description": "MCP tools with no sign-in: compute_plans, compute_quote and compute_docs for confidential VMs and sealed sandboxes paid in USDC over x402.",
    "tags": [
     "mcp",
     "compute",
@@ -11528,7 +11809,7 @@
    "displayName": "Agentgates REST API (x402)",
    "type": "application/openapi+json",
    "url": "https://agentgates.ai/openapi.json",
-   "description": "Confidential computers for AI swarms by the hour and pay-per-request inference, quoted and paid over x402 USDC. No signup.",
+   "description": "Confidential computers for AI swarms by the hour, sealed sandboxes by the minute and pay-per-request inference, quoted and paid over x402 USDC. No signup.",
    "tags": [
     "x402",
     "compute",
@@ -11756,9 +12037,26 @@
    }
   },
   {
-   "identifier": "urn:air:aunoo.ai:mcp:agentic",
-   "type": "application/mcp-server-card+json",
-   "url": "https://agentic.aunoo.ai/mcp/server-card"
+   "identifier": "urn:air:agentgates.ai:skills:sandbox",
+   "displayName": "Sealed sandboxes (skill)",
+   "type": "application/agent-skills+md",
+   "url": "https://agentgates.ai/skills/agentgates-sandbox/SKILL.md",
+   "description": "Sealed sandboxes: a small Linux computer for one agent in a confidential VM (Intel TDX), by the minute, paid in USDC over x402. Run commands and move files at its own address, and check its proof yourself.",
+   "tags": [
+    "skill",
+    "sandbox",
+    "compute",
+    "x402",
+    "usdc"
+   ],
+   "representativeQueries": [
+    "run code in a sealed sandbox my agent pays for by the minute",
+    "a confidential sandbox for an agent to run commands in, paid in USDC"
+   ],
+   "trustManifest": {
+    "identity": "https://agentgates.ai",
+    "identityType": "domain"
+   }
   },
   {
    "identifier": "urn:air:agenticplug.ai:server:mcp",
@@ -11886,6 +12184,138 @@
    "identifier": "urn:air:alcock.ai:mcp:arena",
    "type": "application/mcp-server-card+json",
    "url": "https://alcock.ai/api/mcp/server-card"
+  },
+  {
+   "identifier": "urn:air:almostimpossible.agency:skill:agent-skills",
+   "displayName": "Almost Impossible Agent Skills",
+   "type": "application/json",
+   "url": "https://www.almostimpossible.agency/.well-known/agent-skills/index.json",
+   "description": "An index of two public Agent Skills. almost-impossible-markdown explains how to read, summarise and cite the website through its Markdown representations and llms.txt. almost-impossible-site-tools explains when and how browser agents can use the site's WebMCP tools for agency, work, team and enquiry workflows.",
+   "tags": [
+    "agent-skills",
+    "website",
+    "markdown",
+    "webmcp",
+    "agency"
+   ],
+   "capabilities": [
+    "skill discovery",
+    "website research",
+    "Markdown content access",
+    "browser tool guidance"
+   ],
+   "representativeQueries": [
+    "What Agent Skills does Almost Impossible publish?",
+    "How should I read the Almost Impossible website without a browser?",
+    "How can a browser agent use the Almost Impossible site tools?"
+   ],
+   "auth": {
+    "status": "none"
+   },
+   "trustManifest": {
+    "identity": "did:web:www.almostimpossible.agency",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:almostimpossible.agency:document:llms-txt",
+   "displayName": "Almost Impossible llms.txt",
+   "type": "text/plain",
+   "url": "https://www.almostimpossible.agency/llms.txt",
+   "description": "The agency's plain-text index of public website content for language models and other agents, including links and short summaries of the site's pages.",
+   "tags": [
+    "llms.txt",
+    "website index",
+    "plain text",
+    "content discovery"
+   ],
+   "capabilities": [
+    "discover public pages",
+    "find page summaries",
+    "locate website content"
+   ],
+   "representativeQueries": [
+    "What public pages does Almost Impossible publish?",
+    "Find the Almost Impossible page about its process.",
+    "Where can I find the agency's case studies?"
+   ],
+   "auth": {
+    "status": "none"
+   },
+   "trustManifest": {
+    "identity": "did:web:www.almostimpossible.agency",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:almostimpossible.agency:tools:webmcp",
+   "displayName": "Almost Impossible WebMCP tools",
+   "type": "text/html",
+   "url": "https://www.almostimpossible.agency/",
+   "description": "The homepage registers browser tools through document.modelContext: get_agency_overview, list_work, get_work, list_team and create_enquiry_draft. The first four support agency, case-study and team lookups. create_enquiry_draft fills the enquiry form for the person to review and send; it does not submit it. The enquiry form also declares send_enquiry, which is never auto-submitted.",
+   "tags": [
+    "webmcp",
+    "browser tools",
+    "agency",
+    "case studies",
+    "team",
+    "enquiry"
+   ],
+   "capabilities": [
+    "get agency overview",
+    "list work",
+    "get work",
+    "list team",
+    "prefill enquiry form"
+   ],
+   "representativeQueries": [
+    "Tell me about Almost Impossible.",
+    "Find case studies for a brand or service.",
+    "Who works at Almost Impossible?",
+    "Prepare an enquiry for me to review."
+   ],
+   "auth": {
+    "status": "none"
+   },
+   "trustManifest": {
+    "identity": "did:web:www.almostimpossible.agency",
+    "identityType": "did"
+   }
+  },
+  {
+   "identifier": "urn:air:almostimpossible.agency:server:site",
+   "displayName": "Almost Impossible MCP server",
+   "type": "application/mcp-server-card+json",
+   "url": "https://www.almostimpossible.agency/mcp/server-card",
+   "description": "A public, read-only MCP server at https://www.almostimpossible.agency/mcp (Streamable HTTP, no sign-in). Tools: search_site, get_page, get_agency_overview, list_work, get_work and list_team; resources: llms.txt and the main pages as Markdown. It cannot send enquiries.",
+   "tags": [
+    "mcp",
+    "website",
+    "agency",
+    "case studies",
+    "team",
+    "read-only"
+   ],
+   "capabilities": [
+    "search_site",
+    "get_page",
+    "get_agency_overview",
+    "list_work",
+    "get_work",
+    "list_team"
+   ],
+   "representativeQueries": [
+    "Which case studies has Almost Impossible done for Mashreq?",
+    "Summarise the Almost Impossible case study for Mashreq.",
+    "Who founded Almost Impossible and when?"
+   ],
+   "auth": {
+    "status": "none"
+   },
+   "trustManifest": {
+    "identity": "did:web:www.almostimpossible.agency",
+    "identityType": "did"
+   }
   },
   {
    "identifier": "urn:air:alphabazaar.ai:mcp:arena",
@@ -12140,491 +12570,6 @@
    "updatedAt": "2026-10-24T00:00:00Z"
   },
   {
-   "identifier": "urn:air:apify.com:mcp:apify",
-   "displayName": "Apify MCP server",
-   "type": "application/mcp-server-card+json",
-   "url": "https://mcp.apify.com/.well-known/mcp/server-card.json",
-   "description": "The hosted MCP server for Apify, the largest marketplace of trusted tools for AI. Search thousands of ready-to-run tools called Actors, read what one takes as input, run it, and read the structured web data it returns.",
-   "tags": [
-    "mcp",
-    "tools-for-ai",
-    "actors",
-    "apify-store",
-    "web-data",
-    "automation"
-   ],
-   "capabilities": [
-    "search-actors",
-    "fetch-actor-details",
-    "call-actor",
-    "get-actor-run",
-    "get-dataset-items",
-    "search-apify-docs",
-    "fetch-apify-docs"
-   ],
-   "representativeQueries": [
-    "get real-time web data for my AI agent",
-    "find a ready-made tool that pulls reviews from Google Maps",
-    "generate leads from a list of company websites",
-    "monitor social media mentions of a brand"
-   ],
-   "metadata": {
-    "agenticPayments": "https://agi.apify.com/AGENTS.md"
-   },
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:catalog:agent-skills",
-   "displayName": "Apify Agent Skills index",
-   "type": "application/json",
-   "url": "https://apify.com/.well-known/agent-skills/index.json",
-   "description": "Agent Skills Discovery index of the official Apify skills, each with a sha256 digest of the SKILL.md served for it.",
-   "tags": [
-    "skills",
-    "agent-skills",
-    "discovery"
-   ],
-   "capabilities": [
-    "apify-actor-development",
-    "apify-actorization",
-    "apify-generate-output-schema",
-    "apify-integration-development",
-    "apify-ultimate-scraper"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:catalog:api",
-   "displayName": "Apify API catalog",
-   "type": "application/linkset+json",
-   "url": "https://apify.com/.well-known/api-catalog",
-   "description": "RFC 9727 linkset naming Apify's REST API and hosted MCP server as catalog items, each with its description and documentation.",
-   "tags": [
-    "api",
-    "catalog",
-    "discovery",
-    "linkset"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:api:rest",
-   "displayName": "Apify API v2",
-   "type": "application/vnd.oai.openapi+json;version=3.1",
-   "url": "https://apify.com/openapi.json",
-   "description": "OpenAPI description of the Apify REST API: start an Actor run, poll it to a terminal status, and read the items of its dataset.",
-   "tags": [
-    "api",
-    "rest",
-    "openapi"
-   ],
-   "representativeQueries": [
-    "run an Apify Actor from my own code",
-    "read the items of an Apify dataset over HTTP"
-   ],
-   "metadata": {
-    "agenticPayments": "https://agi.apify.com/AGENTS.md"
-   },
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:doc:agent-quickstart",
-   "displayName": "Apify agent quickstart (agents.md)",
-   "type": "text/markdown",
-   "url": "https://apify.com/agents.md",
-   "description": "Quickstart for an agent integrating Apify: how to connect to the MCP server, the tool sequence from search to data, and the REST routes with the cost caps each one takes.",
-   "tags": [
-    "quickstart",
-    "integration",
-    "mcp",
-    "api"
-   ],
-   "representativeQueries": [
-    "how do I call an Apify Actor from my agent",
-    "how do I connect to the Apify MCP server"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:catalog:llms-txt",
-   "displayName": "Apify site index (llms.txt)",
-   "type": "text/plain",
-   "url": "https://apify.com/llms.txt",
-   "description": "Index of apify.com in the llmstxt.org format: every main page, use case, support program and agent-facing document, each with one line on what it answers. The homepage serves this document to a client that asks for text/markdown.",
-   "tags": [
-    "index",
-    "llms-txt",
-    "discovery",
-    "site-index"
-   ],
-   "representativeQueries": [
-    "what is on apify.com",
-    "which Apify page explains how pricing works"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:doc:store",
-   "displayName": "Apify Store",
-   "type": "text/markdown",
-   "url": "https://apify.com/store.md",
-   "description": "Markdown index of Apify Store: the most-used Actors overall and per use case, and how to search the full catalog of thousands of tools from an agent.",
-   "tags": [
-    "actors",
-    "apify-store",
-    "tools-for-ai",
-    "web-data"
-   ],
-   "representativeQueries": [
-    "what tool can extract data from LinkedIn",
-    "find a tool that collects TikTok comments"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:doc:pricing",
-   "displayName": "Apify pricing",
-   "type": "text/markdown",
-   "url": "https://apify.com/pricing.md",
-   "description": "Plans, the monthly usage credit on the free plan, and the pay-per-event and pay-per-usage models Actors charge on.",
-   "tags": [
-    "pricing",
-    "plans",
-    "billing"
-   ],
-   "representativeQueries": [
-    "how much does Apify cost",
-    "does Apify have a free plan"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:payments:agi",
-   "displayName": "Apify Agent General Interface (AGI)",
-   "type": "text/markdown",
-   "url": "https://agi.apify.com/AGENTS.md",
-   "description": "How an agent with a wallet buys a prepaid, spend-capped Apify API token through an agentic payment protocol and runs Actors without a human signing up.",
-   "tags": [
-    "payments",
-    "agentic-payments",
-    "x402",
-    "mpp",
-    "onboarding"
-   ],
-   "representativeQueries": [
-    "pay for a web scraping API without a human signing up",
-    "buy a spend-capped token for an API"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:api:store-search",
-   "displayName": "Apify Store search",
-   "type": "application/json",
-   "url": "https://api.apify.com/v2/store",
-   "description": "Search endpoint over the 122,000+ Actors published on Apify Store. Query by the platform or product a tool works with rather than the end goal, filter by category or pricing model, and get back the tools that do the job.",
-   "tags": [
-    "search",
-    "discovery",
-    "actors",
-    "apify-store",
-    "marketplace"
-   ],
-   "representativeQueries": [
-    "find a ready-made tool that collects product data from an online store",
-    "which Apify tool extracts data from Google Maps"
-   ],
-   "metadata": {
-    "searchUrl": "https://api.apify.com/v2/store?search={query}&responseFormat=agent"
-   },
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:skill:apify-actor-development",
-   "displayName": "apify-actor-development",
-   "type": "application/ai-skill+md",
-   "url": "https://apify.com/.well-known/agent-skills/apify-actor-development/SKILL.md",
-   "description": "Create, modify, debug, and deploy Apify Actors, and write their input and output schemas. Use when building an Actor from scratch, changing or troubleshooting Actor code, generating or updating .actor schema files, or pushing an Actor to the Apify platform. To wrap an existing non-Actor project, use apify-actorization instead.",
-   "tags": [
-    "skill",
-    "agent-skills"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:skill:apify-actorization",
-   "displayName": "apify-actorization",
-   "type": "application/ai-skill+md",
-   "url": "https://apify.com/.well-known/agent-skills/apify-actorization/SKILL.md",
-   "description": "Convert existing projects into Apify Actors - serverless cloud programs. Actorize JavaScript/TypeScript (SDK with Actor.init/exit), Python (async context manager), or any language (CLI wrapper). Use when migrating code to Apify, wrapping CLI tools as Actors, or adding Actor SDK to existing projects.",
-   "tags": [
-    "skill",
-    "agent-skills"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:skill:apify-generate-output-schema",
-   "displayName": "apify-generate-output-schema",
-   "type": "application/ai-skill+md",
-   "url": "https://apify.com/.well-known/agent-skills/apify-generate-output-schema/SKILL.md",
-   "description": "Deprecated. Output schema generation moved to the apify-actor-development skill; prefer that skill whenever it is available.",
-   "tags": [
-    "skill",
-    "agent-skills"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:skill:apify-integration-development",
-   "displayName": "apify-integration-development",
-   "type": "application/ai-skill+md",
-   "url": "https://apify.com/.well-known/agent-skills/apify-integration-development/SKILL.md",
-   "description": "Design and build an official Apify integration for a company's product - workflow-automation apps (Zapier/n8n-style), AI agent plugins (coding-agent skills+MCP bundles or OpenClaw/Hermes-style harnesses), AI framework packages (LangChain/LlamaIndex-style), or direct application clients via apify-client. Use when planning, creating, or reviewing an integration that exposes Apify Actors, runs, datasets, or key-value stores inside another product.",
-   "tags": [
-    "skill",
-    "agent-skills"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
-   "identifier": "urn:air:apify.com:skill:apify-ultimate-scraper",
-   "displayName": "apify-ultimate-scraper",
-   "type": "application/ai-skill+md",
-   "url": "https://apify.com/.well-known/agent-skills/apify-ultimate-scraper/SKILL.md",
-   "description": "Universal AI-powered web scraper for any platform. Scrape data from Instagram, Facebook, TikTok, YouTube, LinkedIn, X/Twitter, Google Maps, Google Search, Google Trends, Reddit, Airbnb, Yelp, and 15+ more platforms. Use for lead generation, brand monitoring, competitor analysis, influencer discovery, trend research, content analytics, audience analysis, review analysis, SEO intelligence, recruitment, or any data extraction task.",
-   "tags": [
-    "skill",
-    "agent-skills"
-   ],
-   "trustManifest": {
-    "identity": "https://apify.com",
-    "identityType": "https",
-    "attestations": [
-     {
-      "type": "SOC2-Type2",
-      "uri": "https://trust.apify.com/",
-      "mediaType": "text/html"
-     },
-     {
-      "type": "GDPR",
-      "uri": "https://docs.apify.com/legal/gdpr-information",
-      "mediaType": "text/html"
-     }
-    ]
-   }
-  },
-  {
    "identifier": "urn:air:appdeploy.ai:mcp:deploy-app",
    "type": "application/mcp-server-card+json",
    "url": "https://api-v2.appdeploy.ai/mcp/server-card"
@@ -12633,15 +12578,15 @@
    "identifier": "urn:air:appdeploy.ai:skill:appdeploy-claude-code",
    "displayName": "AppDeploy for Claude Code",
    "type": "text/markdown",
-   "url": "https://appdeploy.ai/.well-known/agent-skills/appdeploy-claude-code/27010b129dccdd66c7f2c1a2e24cdb8c65bff378c974e8a194d36cf6cf78b0ab/SKILL.md",
-   "digest": "sha256:27010b129dccdd66c7f2c1a2e24cdb8c65bff378c974e8a194d36cf6cf78b0ab"
+   "url": "https://appdeploy.ai/.well-known/agent-skills/appdeploy-claude-code/d44a0f1359f03558ef15672613611c027f3b0ed2f4860cd5d7d89963da4185ac/SKILL.md",
+   "digest": "sha256:d44a0f1359f03558ef15672613611c027f3b0ed2f4860cd5d7d89963da4185ac"
   },
   {
    "identifier": "urn:air:appdeploy.ai:skill:appdeploy-codex",
    "displayName": "AppDeploy for Codex",
    "type": "text/markdown",
-   "url": "https://appdeploy.ai/.well-known/agent-skills/appdeploy-codex/479f9c52991823da67dba5f23691affc75043beaa36194fef7c3619db7f20e27/SKILL.md",
-   "digest": "sha256:479f9c52991823da67dba5f23691affc75043beaa36194fef7c3619db7f20e27"
+   "url": "https://appdeploy.ai/.well-known/agent-skills/appdeploy-codex/36e20e413fdfbe6c3714bd759afde951073d8fcb4cc3810e1aed768293e40e9d/SKILL.md",
+   "digest": "sha256:36e20e413fdfbe6c3714bd759afde951073d8fcb4cc3810e1aed768293e40e9d"
   },
   {
    "identifier": "urn:air:arcreport.ai:mcp:ask",
@@ -12780,178 +12725,6 @@
    ]
   },
   {
-   "identifier": "urn:air:assetlog.ai:server:mcp",
-   "displayName": "AssetLog MCP server",
-   "description": "40 tools for searching real estate listings, publishing them on a user's behalf, finding agents by service area, managing their own ads, watchdogs, calendar and enquiries, and walking a seller through a step-by-step sale checklist.",
-   "type": "application/mcp-server-card+json",
-   "url": "https://assetlog.ai/.well-known/mcp/server-card.json",
-   "representativeQueries": [
-    "find apartments near the sea in Spain under 300000 EUR",
-    "add my apartment listing to a property site",
-    "which real estate agents cover Alicante",
-    "villas with a pool for rent in Cyprus",
-    "two-bedroom apartments for sale in Dubai under 500000 USD",
-    "how many listings are published on AssetLog"
-   ]
-  },
-  {
-   "identifier": "urn:air:assetlog.ai:skills:index",
-   "displayName": "AssetLog agent skills",
-   "description": "Short instructions telling an agent how to search listings, publish one, and connect over MCP.",
-   "type": "application/json",
-   "url": "https://assetlog.ai/.well-known/agent-skills/index.json",
-   "representativeQueries": [
-    "how do I publish a property listing on a user's behalf",
-    "how do I connect AssetLog as an MCP server"
-   ]
-  },
-  {
-   "identifier": "urn:air:autoblogging.ai:skills:article-writer",
-   "displayName": "Autoblogging.ai article writer",
-   "type": "text/markdown; profile=\"urn:air:agent-skills\"",
-   "url": "https://autoblogging.ai/.well-known/agent-skills/autoblogging-article-writer.md",
-   "description": "Write researched, SEO-optimized blog articles in 38 languages with FAQs, key takeaways, AI images and SERP-based outlines, and optionally publish them to WordPress, through the Autoblogging.ai REST API (Starter plan and above).",
-   "tags": [
-    "seo",
-    "content",
-    "article-writing",
-    "wordpress",
-    "api"
-   ],
-   "representativeQueries": [
-    "Write an SEO article about a topic and publish it to my WordPress site",
-    "Generate a blog post with FAQs and AI images",
-    "Create a listicle article in Spanish for my blog"
-   ],
-   "version": "1.0",
-   "updatedAt": "2026-10-11T19:00:00Z"
-  },
-  {
-   "identifier": "urn:air:autoposter.ai:social:mcp-server",
-   "displayName": "AutoPoster AI MCP Server",
-   "type": "application/mcp-server-card+json",
-   "url": "https://agent.autoposter.ai/mcp",
-   "description": "Multi-platform social media automation and scheduling MCP server. Create drafts, schedule posts, manage queues, and publish content across Twitter/X, LinkedIn, Instagram, TikTok, Facebook, YouTube, Threads, and Bluesky.",
-   "tags": [
-    "social-media",
-    "mcp",
-    "scheduling",
-    "marketing",
-    "automation",
-    "publishing"
-   ],
-   "capabilities": [
-    "autoposter_list_accounts",
-    "autoposter_get_rules",
-    "autoposter_draft_post",
-    "autoposter_schedule_post",
-    "autoposter_publish_draft",
-    "autoposter_list_posts",
-    "autoposter_get_post",
-    "autoposter_get_post_status",
-    "autoposter_delete_post",
-    "autoposter_update_post",
-    "autoposter_get_analytics",
-    "autoposter_upload_media",
-    "autoposter_list_media"
-   ],
-   "representativeQueries": [
-    "schedule a social media post across Twitter and LinkedIn",
-    "publish video to TikTok and YouTube Shorts",
-    "create a draft social media post with images",
-    "check connected social media accounts and queue"
-   ]
-  },
-  {
-   "identifier": "urn:air:autoposter.ai:social:api",
-   "displayName": "AutoPoster AI Agent API",
-   "type": "application/openapi+json",
-   "url": "https://agent.autoposter.ai/openapi.json",
-   "description": "REST API and agent tools for autonomous AI agents to schedule, publish, and manage cross-platform social media campaigns with platform validation and rate limits.",
-   "tags": [
-    "social-media",
-    "agent-api",
-    "automation",
-    "scheduling"
-   ],
-   "capabilities": [
-    "listAccounts",
-    "getPlatformRules",
-    "listPosts",
-    "createPost",
-    "getPost",
-    "deletePost",
-    "publishDraftPost",
-    "getMediaUploadUrl",
-    "listMedia",
-    "createMedia"
-   ],
-   "representativeQueries": [
-    "post an announcement to company social media accounts",
-    "queue a thread on Twitter and Bluesky",
-    "find social media posting limits and character rules"
-   ]
-  },
-  {
-   "identifier": "urn:air:autorfp.ai:server:mcp",
-   "displayName": "AutoRFP.ai MCP server",
-   "type": "application/mcp-server-card+json",
-   "url": "https://autorfp.ai/.well-known/mcp/server-card.json",
-   "representativeQueries": [
-    "connect to the AutoRFP.ai MCP server",
-    "list approved RFP content through MCP",
-    "read workspace projects and tags with AutoRFP.ai"
-   ]
-  },
-  {
-   "identifier": "urn:air:autorfp.ai:api:openapi",
-   "displayName": "AutoRFP.ai OpenAPI specification",
-   "type": "application/openapi+json",
-   "url": "https://autorfp.ai/openapi.json",
-   "representativeQueries": [
-    "AutoRFP.ai OpenAPI specification",
-    "MCP OAuth scopes for AutoRFP.ai",
-    "how to call the AutoRFP.ai agent API"
-   ]
-  },
-  {
-   "identifier": "urn:air:autorfp.ai:docs:developers",
-   "displayName": "AutoRFP.ai developer documentation",
-   "type": "text/html",
-   "url": "https://autorfp.ai/developers",
-   "representativeQueries": [
-    "AutoRFP.ai API documentation",
-    "how agents authenticate to AutoRFP.ai",
-    "regional AutoRFP.ai MCP endpoints"
-   ]
-  },
-  {
-   "identifier": "urn:air:autorfp.ai:index:llms",
-   "displayName": "AutoRFP.ai llms.txt index",
-   "type": "text/plain",
-   "url": "https://autorfp.ai/llms.txt",
-   "representativeQueries": [
-    "AutoRFP.ai site map for language models",
-    "which AutoRFP.ai pages should an agent read first"
-   ]
-  },
-  {
-   "identifier": "urn:air:autorfp.ai:skills:index",
-   "displayName": "AutoRFP.ai Agent Skills index",
-   "type": "application/json",
-   "url": "https://autorfp.ai/.well-known/agent-skills/index.json",
-   "representativeQueries": [
-    "download AutoRFP.ai agent skills",
-    "RFP go no-go skill for Claude",
-    "compliance matrix builder skill"
-   ]
-  },
-  {
-   "identifier": "urn:air:awen.ai:mcp:awen",
-   "type": "application/mcp-server-card+json",
-   "url": "https://app.awen.ai/mcp/server-card"
-  },
-  {
    "identifier": "urn:air:bev-cuvee.org:library",
    "displayName": "agent-bev Library",
    "type": "application/mcp-server+json",
@@ -12972,7 +12745,7 @@
    "displayName": "Pascal Editor MCP",
    "type": "application/mcp-server-card+json",
    "url": "https://editor.pascal.app/.well-known/mcp/server-card.json",
-   "version": "1.1.4",
+   "version": "1.1.6",
    "description": "Hosted MCP server to create, inspect, edit, validate and save editable 3D building scenes in Pascal projects.",
    "capabilities": [
     "get_scene",
@@ -13430,6 +13203,22 @@
    ]
   },
   {
+   "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-1password",
+   "displayName": "Infisical vs. 1Password",
+   "type": "text/markdown",
+   "url": "https://infisical.com/compare/infisical-vs-1password.md",
+   "description": "How Infisical and 1Password's developer tools (service accounts, Connect, the op CLI, and Environments) differ on workload authentication, access scoping, rate limits, rotation, syncs, and self-hosting, and how to use both together.",
+   "representativeQueries": [
+    "is Infisical a good alternative to 1Password for secrets management",
+    "what are the rate limits for 1Password service accounts",
+    "can I use 1Password and Infisical together"
+   ],
+   "tags": [
+    "documentation",
+    "comparisons"
+   ]
+  },
+  {
    "identifier": "urn:air:infisical.com:doc:compare/infisical-vs-appviewx",
    "displayName": "Infisical vs. AppViewX",
    "type": "text/markdown",
@@ -13794,6 +13583,50 @@
    "identifier": "urn:air:agentlookups.ai:mcp:groundrules",
    "type": "application/mcp-server-card+json",
    "url": "https://law.agentlookups.ai/mcp/server-card"
+  },
+  {
+   "description": "LobeHub is a workspace to create, collaborate with, and evolve Agent teammates. It supports multi-model orchestration, editable Memory, shared Context, and a marketplace for Agents, MCP servers, and Skills.",
+   "displayName": "LobeHub MCP server",
+   "identifier": "urn:air:lobehub.com:mcp:lobehub",
+   "representativeQueries": [
+    "LobeHub onboarding links for a new user",
+    "LobeHub plans and pricing"
+   ],
+   "type": "application/mcp-server-card+json",
+   "url": "https://lobehub.com/.well-known/mcp/server-card.json"
+  },
+  {
+   "description": "Read and navigate the LobeHub Blog — a collection of product updates, engineering deep-dives, community stories, company news, and RFCs. Covers listing all posts, filtering by category, and retrieving individual articles with title, author, date, and related-post recommendations. Use when looking for LobeHub announcements, technical articles, or RFC discussions.",
+   "displayName": "lobehub-blog",
+   "identifier": "urn:air:lobehub.com:skill:lobehub-blog",
+   "representativeQueries": [
+    "latest LobeHub product announcements",
+    "LobeHub engineering articles and RFCs"
+   ],
+   "type": "application/agent-skills+md",
+   "url": "https://lobehub.com/.well-known/agent-skills/lobehub-blog/SKILL.md"
+  },
+  {
+   "description": "Navigate and retrieve LobeHub official documentation. Covers three sections — Usage Guideline (getting started, agents, UI, providers, subscription), Self Hosting (Vercel/Docker/Zeabur deployment, auth, environment variables, migration), and Development (architecture, plugins, i18n, state management). Use when answering questions about LobeHub features, self-deployment, or contributing to the project.",
+   "displayName": "lobehub-docs",
+   "identifier": "urn:air:lobehub.com:skill:lobehub-docs",
+   "representativeQueries": [
+    "how to self-host LobeHub with Docker",
+    "how LobeHub credits and plans work"
+   ],
+   "type": "application/agent-skills+md",
+   "url": "https://lobehub.com/.well-known/agent-skills/lobehub-docs/SKILL.md"
+  },
+  {
+   "description": "Use `@lobehub/icons` — a collection of 200+ AI/LLM brand SVG logos and icon React components. Covers installation, React component usage (with variants like Color, Brand, Text, Combine, Avatar), CDN URL generation for static assets (SVG/PNG/WebP), helper components (ModelIcon, ProviderIcon, ProviderCombine), the icon table-of-contents metadata, and custom icon creation via IconType. Use when working with AI brand logos, model provider icons, or needing icon assets in any format.",
+   "displayName": "lobe-icons",
+   "identifier": "urn:air:lobehub.com:skill:lobe-icons",
+   "representativeQueries": [
+    "svg logo for an AI model provider",
+    "react icon component for OpenAI or Claude"
+   ],
+   "type": "application/agent-skills+md",
+   "url": "https://lobehub.com/.well-known/agent-skills/lobe-icons/SKILL.md"
   },
   {
    "identifier": "urn:air:mastra.ai:docs:index",
@@ -14425,8 +14258,7 @@
     "npmPackages": [
      "@zapier/zapier-sdk",
      "@zapier/zapier-sdk-cli",
-     "@zapier/zapier-sdk-core",
-     "@zapier/zapier-sdk-mcp"
+     "@zapier/zapier-sdk-core"
     ],
     "repository": "https://github.com/zapier/sdk",
     "reference": "https://docs.zapier.com/sdk/reference.md"

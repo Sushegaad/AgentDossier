@@ -10,16 +10,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://mastra.ai/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "252406c176481952c87efb6325f931984dba8071d89515222f93d3881c4198c8",
+"next_check": "2026-11-30",
+"payload_hash": "df8c971f86b6852fe48a2d82eacfca6fec5792c9e2643b5819fcdb35a9e3047d",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:59:47Z",
+"retrieved_at": "2026-11-23T17:33:52Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -62,7 +62,7 @@
 "external_ids": {
 "github": "mastra-ai/mastra"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -84,10 +84,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:54Z",
 "license": "Elastic-2.0",
 "name": "Mastra",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-18T10:36:18Z",
+"headline": "mastra: November 17, 2026",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## Highlights\r\n\r\n### Storage Version 2 for Agents & Evented Workflows (much smaller writes + faster runs)\r\nAgents (`createDurableAgent`, `createEventedAgent`) and evented workflows can now opt into experimental `storageVersion: 2`, storing",
+"tag": "product_update",
+"url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.84.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-11-13T14:32:29Z",
@@ -98,28 +109,17 @@
 "summary": "## Highlights\r\n\r\n### Resumable Agent streams (now for every Agent)\r\nEvery `Agent` can now publish a resumable run stream with replay caching, cross-instance observe/abort (`agent.observe(runId)`, `observe().abort()`, `agent.abortRunStream(r",
 "tag": "product_update",
 "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.83.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-11-04T10:59:56Z",
-"headline": "mastra: November 4, 2026",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## Highlights\r\n\r\n### Knowledge v2: page-tree model, richer tools, and server-side sync APIs\r\nKnowledge is now a first-class page tree (pages/notes/pins) with major tool upgrades: `knowledge_list`, line/section/grep-style reads in `knowledge",
-"tag": "product_update",
-"url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.82.0"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:30Z",
+"checked_at": "2026-11-23T17:28:40Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:29Z",
+"checked_at": "2026-11-23T17:28:40Z",
 "entries": 4,
 "parser_version": "ard-0.91",
 "sources": [
@@ -131,7 +131,7 @@
 "evidence_url": "https://github.com/mastra-ai/mastra",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-16T14:53:30Z",
+"checked_at": "2026-11-23T17:28:41Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -157,11 +157,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-08-06T20:44:31Z",
-"github_forks": 3102,
+"github_forks": 3131,
 "github_language": "TypeScript",
-"github_open_issues": 792,
-"github_pushed_at": "2026-11-16T14:50:08Z",
-"github_stars": 29544,
+"github_open_issues": 909,
+"github_pushed_at": "2026-11-23T17:24:21Z",
+"github_stars": 29762,
 "homepage": "https://mastra.ai",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -177,7 +177,7 @@
 "sources": [
 {
 "payload_hash": "ed55274ab88591d562bd74fe65b633feaac631c779a3ca0ddfeb36eefd8ab326",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"retrieved_at": "2026-11-23T17:16:54Z",
 "system": "seed_xlsx",
 "url": "https://github.com/mastra-ai/mastra"
 }

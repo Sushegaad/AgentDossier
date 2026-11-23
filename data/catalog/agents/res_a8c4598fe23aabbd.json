@@ -24,16 +24,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-16)",
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://cua.ai/privacy-policy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "c3f77869e753be1ee5b5ea6e50c8cd1ce6ea76f7bcc89434bfbecaacbddf6132",
+"next_check": "2026-11-30",
+"payload_hash": "a8de19a1c9eb7096ff8ce5b5c4f632dc0c2a9d98841df8518c5a382d817437c6",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:58:36Z",
+"retrieved_at": "2026-11-23T17:32:51Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -50,7 +50,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.15,
+"adoption": 26.18,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -71,7 +71,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.15,
+"adoption": 26.18,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -92,7 +92,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.15,
+"adoption": 26.18,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -106,7 +106,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 68.8,
+"score": 68.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": []
@@ -115,7 +115,7 @@
 "external_ids": {
 "github": "trycua/cua"
 },
-"first_seen": "2026-11-16T14:44:42Z",
+"first_seen": "2026-11-23T17:20:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -137,47 +137,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:44:42Z",
+"last_seen": "2026-11-23T17:20:29Z",
 "license": "MIT",
 "name": "cua",
 "news": [
 {
-"cluster_size": 1,
-"date": "2026-11-16T12:34:09Z",
-"headline": "cua-driver-rs: v0.52.6",
+"cluster_size": 2,
+"date": "2026-11-23T05:45:56Z",
+"headline": "cua-driver-rs: v0.59.4",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Cua Driver 0.52.6\n\n## Summary\n\nThis release includes 1 fix.\n\n## Fixes\n\n- deliver desktop click and scroll on the nested cua-compositor. ([#7926](https://github.com/trycua/cua/pull/7926)) reported by @muness.\n\n## Contributors\n\nThanks to @m",
+"summary": "# Cua Driver 0.59.4\n\n## Summary\n\nThis release includes 1 fix.\n\n## Fixes\n\n- isolate semantic AX lookups by renderer target. ([#8153](https://github.com/trycua/cua/pull/8153)) Thanks @Iflaqbhat; reported by @jacklau04.\n\n## Contributors\n\nThank",
 "tag": "product_update",
-"url": "https://github.com/trycua/cua/releases/tag/cua-driver-rs-v0.52.6"
+"url": "https://github.com/trycua/cua/releases/tag/cua-driver-rs-v0.59.4"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-16T10:24:56Z",
-"headline": "Cua Spaces v0.36.25",
+"date": "2026-11-23T14:49:26Z",
+"headline": "cua-driver-rs: v0.59.5",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Cua Spaces 0.36.25\n\n## Summary\n\nThis release includes 1 fix.\n\n## Fixes\n\n- bundle Cua Driver 0.52.4 in Cua Spaces. ([#7898](https://github.com/trycua/cua/pull/7898))\n\n## Contributors\n\nThis release contains maintainer changes only.\n\n## Full",
+"summary": "# Cua Driver 0.59.5\n\n## Summary\n\nThis release includes 3 fixes.\n\n## Fixes\n\n- give the + route in the macOS permission guides. ([#8572](https://github.com/trycua/cua/pull/8572))\n- draw no agent cursor for a human viewer's desktop click on Wa",
 "tag": "product_update",
-"url": "https://github.com/trycua/cua/releases/tag/cua-spaces-v0.36.25"
+"url": "https://github.com/trycua/cua/releases/tag/cua-driver-rs-v0.59.5"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:52:29Z",
+"checked_at": "2026-11-23T17:27:46Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:28Z",
+"checked_at": "2026-11-23T17:27:45Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:52:30Z",
+"checked_at": "2026-11-23T17:27:47Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -188,19 +188,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-01-31T15:02:49Z",
-"github_forks": 2441,
+"github_forks": 2488,
 "github_language": "Rust",
-"github_open_issues": 1497,
-"github_pushed_at": "2026-11-16T14:35:02Z",
-"github_stars": 32445,
+"github_open_issues": 1564,
+"github_pushed_at": "2026-11-23T17:14:48Z",
+"github_stars": 32822,
 "github_topic": "ai-agent",
 "homepage": "https://cua.ai"
 },
 "slug": "trycua-cua",
 "sources": [
 {
-"payload_hash": "79784b9bfa706d08b3d8676ed4c5ad5eff1e109bf5347e09b1b188220d6227df",
-"retrieved_at": "2026-11-16T14:44:42Z",
+"payload_hash": "d2540c9fd2d6b31f740615e2181ff3750ded97451bebd25d68c491c6b0d6cdf6",
+"retrieved_at": "2026-11-23T17:20:29Z",
 "system": "github",
 "url": "https://github.com/trycua/cua"
 }

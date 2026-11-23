@@ -24,7 +24,7 @@
 "domains": {
 "finance": {
 "components": {
-"adoption": 25.08,
+"adoption": 25.1,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -47,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.08,
+"adoption": 25.1,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "hummingbot/hummingbot"
 },
-"first_seen": "2026-11-16T14:41:23Z",
+"first_seen": "2026-11-23T17:17:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -94,10 +94,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:23Z",
+"last_seen": "2026-11-23T17:17:57Z",
 "license": "Apache-2.0",
 "name": "hummingbot",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-18T13:37:49Z",
+"headline": "hummingbot release v2.18.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n* fix / race condition in api throttler acquire() by @mnaamani in https://github.com/hummingbot/hummingbot/pull/8461\r\n* fix: release previous reference in PyRef assignment operator by @Janche in https://github.com/humming",
+"tag": "product_update",
+"url": "https://github.com/hummingbot/hummingbot/releases/tag/v2.18.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-09-22T08:55:11Z",
@@ -113,17 +124,17 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:15Z",
+"checked_at": "2026-11-23T17:28:26Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:14Z",
+"checked_at": "2026-11-23T17:28:25Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:53:15Z",
+"checked_at": "2026-11-23T17:28:27Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -133,7 +144,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:12:51Z",
+"checked_at": "2026-11-23T17:42:10Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -141,19 +152,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-04-02T21:41:52Z",
-"github_forks": 5150,
+"github_forks": 5170,
 "github_language": "Python",
-"github_open_issues": 209,
-"github_pushed_at": "2026-11-16T06:07:53Z",
-"github_stars": 21230,
+"github_open_issues": 218,
+"github_pushed_at": "2026-11-20T16:31:48Z",
+"github_stars": 21370,
 "github_topic": "ai-agents",
 "homepage": "https://hummingbot.org"
 },
 "slug": "hummingbot-hummingbot",
 "sources": [
 {
-"payload_hash": "9a6cbab9ed5aa292d55e646bb04f76cd7d4c2a42ddc3857e756a58e198ac23e6",
-"retrieved_at": "2026-11-16T14:41:23Z",
+"payload_hash": "bae6e998b85a33287b7ab41e1646f304bbde3c74c3f21bc0fd80b49fb5d1ec98",
+"retrieved_at": "2026-11-23T17:17:57Z",
 "system": "github",
 "url": "https://github.com/hummingbot/hummingbot"
 }

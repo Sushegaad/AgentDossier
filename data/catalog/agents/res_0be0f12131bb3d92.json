@@ -22,16 +22,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-16)",
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://www.agenticbooks.ai/privacy",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
+"next_check": "2026-11-30",
 "payload_hash": "5eacb8013178deff11deabc6ef0aeba38ed8678d1c1ec4e6de0d7ad56ada112e",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:56:33Z",
+"retrieved_at": "2026-11-23T17:31:33Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -97,7 +97,7 @@
 "github": "AgenticBooks/agenticbooks",
 "mcp_registry": "ai.agenticbooks/books"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,19 +119,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "name": "AgenticBooks",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:50:50Z",
+"checked_at": "2026-11-23T17:26:36Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:50:48Z",
+"checked_at": "2026-11-23T17:26:35Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -154,7 +154,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:08:29Z",
+"checked_at": "2026-11-23T17:38:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -171,8 +171,8 @@
 "slug": "agenticbooks-ai-agenticbooks",
 "sources": [
 {
-"payload_hash": "429253434a0de11b675bd0e6e7a3d2a56e21efaa3d73c9e5e79a67cc0416c783",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agenticbooks/books"
 }

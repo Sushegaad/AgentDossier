@@ -11,16 +11,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-16)",
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://www.firecrawl.dev/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "e4c9289c730d8e173566a6841da022f949f58a3c429b4fb096c929a7fef6c4a8",
+"next_check": "2026-11-30",
+"payload_hash": "5faae83a03f34b6f9a614b032e24b84064b06f7db1c02a36d3c93edcdfb6e8c5",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:59:08Z",
+"retrieved_at": "2026-11-23T17:33:19Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -37,16 +37,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://www.firecrawl.dev/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "24d839ec8409ebaff3e3b0a6446c0fe6ad2df346376f1f26e2cc74d06900a6ea",
+"next_check": "2026-11-30",
+"payload_hash": "a22a5a63e84fe92cc883136086a48d9d4ea7d0b1b2cd6ed7243a7f3716356b29",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:59:08Z",
+"retrieved_at": "2026-11-23T17:33:19Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -305,7 +305,7 @@
 "external_ids": {
 "github": "firecrawl/firecrawl"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -364,7 +364,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:23Z",
+"last_seen": "2026-11-23T17:17:51Z",
 "license": "AGPL-3.0",
 "merged_ids": [
 "res_31b34b6397e501ae"
@@ -388,18 +388,18 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:52:57Z",
+"checked_at": "2026-11-23T17:28:13Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:55Z",
+"checked_at": "2026-11-23T17:28:11Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
 "card_url": "https://www.firecrawl.dev/.well-known/mcp.json",
-"checked_at": "2026-11-16T14:52:58Z",
+"checked_at": "2026-11-23T17:28:14Z",
 "parser_version": "mcp-2025-06-18",
 "status": "invalid",
 "tools": [
@@ -421,7 +421,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:06:17Z",
+"checked_at": "2026-11-23T17:36:48Z",
 "cves": 6,
 "source": "nvd",
 "tier": 1
@@ -442,11 +442,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2024-04-15T21:02:29Z",
-"github_forks": 10601,
+"github_forks": 10853,
 "github_language": "TypeScript",
-"github_open_issues": 806,
-"github_pushed_at": "2026-11-16T14:23:08Z",
-"github_stars": 202237,
+"github_open_issues": 926,
+"github_pushed_at": "2026-11-23T17:09:46Z",
+"github_stars": 207650,
 "github_topic": "ai-agents",
 "homepage": "https://firecrawl.dev",
 "observed_popularity": "Not captured",
@@ -462,13 +462,13 @@
 "sources": [
 {
 "payload_hash": "c7d3fc7a8c1cc2689e7f32952f0b65b7d11d494d11374c3e8698c4365757f6eb",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"retrieved_at": "2026-11-23T17:16:54Z",
 "system": "seed_xlsx",
 "url": "https://github.com/firecrawl/firecrawl"
 },
 {
-"payload_hash": "9a6cbab9ed5aa292d55e646bb04f76cd7d4c2a42ddc3857e756a58e198ac23e6",
-"retrieved_at": "2026-11-16T14:41:23Z",
+"payload_hash": "155b36dfde8bfea7a22236b39c614c39a9f141f45a6faddf3842e36b74557f39",
+"retrieved_at": "2026-11-23T17:17:51Z",
 "system": "github",
 "url": "https://github.com/firecrawl/firecrawl"
 }

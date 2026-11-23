@@ -14,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "Moderate"
 },
-"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-16)",
+"display": "FedRAMP Moderate: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-23)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1823447014",
 "framework": "fedramp",
 "issued": "2020-05-20",
 "issuer": "Agency / 3PAO Schellman Compliance, LLC",
 "match_confidence": 0.913,
-"next_check": "2026-11-23",
+"next_check": "2026-11-30",
 "payload_hash": "1a6ddb44e526a42b57a26d5b8c719ca6a836347034e9fccd25550c59d0f34976",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:54:47Z",
+"retrieved_at": "2026-11-23T17:29:41Z",
 "review_reason": "entity 1.00, offering 0.81",
 "reviewer": null,
 "scope": "product",
@@ -40,16 +40,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-11-16)",
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-11-23)",
 "evidence_url": "https://www.salesforce.com/company/legal/compliance/?bc=HL",
 "framework": "eu_ai_act",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "6629451233f9ee2e75683e649cb858141f16235e3a5aee2a736e6adf2f541526",
+"next_check": "2026-11-30",
+"payload_hash": "52135e39d6b10b9475f34319c07622cceb02c56a11ed80d166862ab77fa29814",
 "period_end": null,
-"retrieved_at": "2026-11-16T15:00:36Z",
+"retrieved_at": "2026-11-23T17:34:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -66,16 +66,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "DPA available: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://www.salesforce.com/company/legal/privacy/?bc=HL",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "63c901f992ecd79ecf1ee1d80162c04e7cb7980c18f77297a7fc43e85fc70d1c",
+"next_check": "2026-11-30",
+"payload_hash": "3b7f481e0f5942d094a3253768f2c29557450b287d35743c8c1ee10707492e6f",
 "period_end": null,
-"retrieved_at": "2026-11-16T15:00:36Z",
+"retrieved_at": "2026-11-23T17:34:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -92,16 +92,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://www.salesforce.com/company/legal/privacy/?bc=HL",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "63c901f992ecd79ecf1ee1d80162c04e7cb7980c18f77297a7fc43e85fc70d1c",
+"next_check": "2026-11-30",
+"payload_hash": "3b7f481e0f5942d094a3253768f2c29557450b287d35743c8c1ee10707492e6f",
 "period_end": null,
-"retrieved_at": "2026-11-16T15:00:36Z",
+"retrieved_at": "2026-11-23T17:34:34Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -410,7 +410,7 @@
 }
 },
 "external_ids": {},
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -451,33 +451,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:54Z",
 "license": "Salesforce service",
 "name": "Salesforce Agentforce",
-"news": [
-{
-"cluster_size": 1,
-"date": "2026-08-21T20:56:21Z",
-"discussion_url": "https://news.ycombinator.com/item?id=49393691",
-"engagement": 6,
-"headline": "Salesforce Agentforce at total dud for partners",
-"kind": "community",
-"link_confidence": 0.95,
-"outlet": "Hacker News",
-"summary": null,
-"tag": "partnership",
-"url": "https://www.theregister.com/saas/2026/08/21/salesforce-partners-are-not-seeing-revenue-from-agentforce-ai-platform-report-says/5291167"
-}
-],
+"news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:54:13Z",
+"checked_at": "2026-11-23T17:29:11Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:54:09Z",
+"checked_at": "2026-11-23T17:29:09Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -487,7 +473,7 @@
 "evidence_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
 "note": "MCP Solutions (Agentforce developer guide)",
 "probe": {
-"checked_at": "2026-11-16T14:54:15Z",
+"checked_at": "2026-11-23T17:29:13Z",
 "status": "not_found"
 },
 "source": "curated_claim",
@@ -499,7 +485,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:01:24Z",
+"checked_at": "2026-11-23T17:35:05Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -524,7 +510,7 @@
 "sources": [
 {
 "payload_hash": "fb7513f6ee04b2e0ff0cf34bb13e2b2ed834467a73df7dda0f772ac39b0c7157",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"retrieved_at": "2026-11-23T17:16:54Z",
 "system": "seed_xlsx",
 "url": "https://www.salesforce.com/agentforce/"
 }

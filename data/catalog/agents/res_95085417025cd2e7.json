@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://adkix.ai/confidentialite",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "4e85f623bda93529bb94e54946f524537cafbd49e7423c131f4cfe98acd69b21",
+"next_check": "2026-11-30",
+"payload_hash": "2f67a349fcae77b008b05d3caf4ca41852e29951194eff993d9ede40b44ab67d",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:56:23Z",
+"retrieved_at": "2026-11-23T17:31:20Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -50,7 +50,7 @@
 "domain_fit": 56.4,
 "ecosystem": 4.6,
 "governance": 0.0,
-"health": 20.0,
+"health": 16.0,
 "trust": 19.0
 },
 "components_version": "components-from-signals-1.0",
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 48.9,
+"score": 44.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 "external_ids": {
 "mcp_registry": "ai.adkix/adkix"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,19 +92,19 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "name": "adkix",
 "news": [],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:50:40Z",
+"checked_at": "2026-11-23T17:26:27Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:50:38Z",
+"checked_at": "2026-11-23T17:26:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -137,8 +137,8 @@
 "slug": "adkix-ai-adkix",
 "sources": [
 {
-"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "5247ec168cd37429ff34ad1070a2fbc8a0691b3cceeb9f8d527628d7a28cbc96",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.adkix/adkix"
 }

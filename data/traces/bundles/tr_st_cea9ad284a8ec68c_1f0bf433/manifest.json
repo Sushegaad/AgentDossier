@@ -1,0 +1,19 @@
+{
+ "agent": "res_cea9ad284a8ec68c",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_cea9ad284a8ec68c_1f0bf433",
+ "kind": "self_test",
+ "name": "Achromat Machine Operational Memory approved lessons",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:achromat.ai:feed:approved-lessons",
+   "manifest_url": "https://achromat.ai/.well-known/ard.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "achromat-ai-achromat-machine-operational-memory-approved-lessons"
+}

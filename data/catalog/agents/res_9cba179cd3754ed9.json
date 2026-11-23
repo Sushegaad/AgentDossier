@@ -20,7 +20,7 @@
 "domains": {
 "sales": {
 "components": {
-"adoption": 24.13,
+"adoption": 24.14,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.8,
@@ -43,7 +43,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.13,
+"adoption": 24.14,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.8,
@@ -68,7 +68,7 @@
 "external_ids": {
 "github": "fathah/hermes-desktop"
 },
-"first_seen": "2026-11-16T14:44:42Z",
+"first_seen": "2026-11-23T17:20:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -90,10 +90,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:44:42Z",
+"last_seen": "2026-11-23T17:20:29Z",
 "license": "MIT",
 "name": "hermes-desktop",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-18T05:46:06Z",
+"headline": "hermes-desktop: Hermes Desktop v0.7.9",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Hermes Desktop v0.7.9 aligns the stable release branch with the reviewed v0.7.8 application under a fresh version tag.\n\nThis patch changes release metadata only. Application code, runtime assets and dependency versions match v0.7.8, retaini",
+"tag": "product_update",
+"url": "https://github.com/fathah/hermes-desktop/releases/tag/v0.7.9"
+},
 {
 "cluster_size": 1,
 "date": "2026-11-12T13:21:03Z",
@@ -104,33 +115,22 @@
 "summary": "Hermes Desktop v0.7.8 catches up with Hermes Agent v0.23.1 while retaining older Agent installation support.\n\n- Supports current Agent approvals, multi-question clarification, cancellation and reconnect restoration across Local, SSH and Rem",
 "tag": "product_update",
 "url": "https://github.com/fathah/hermes-desktop/releases/tag/v0.7.8"
-},
-{
-"cluster_size": 2,
-"date": "2026-09-04T04:48:16Z",
-"headline": "hermes-desktop: Hermes Desktop v0.7.7",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\n* fix: support Docker-backed Hermes installs in SSH mode by @dergachoff in https://github.com/fathah/hermes-desktop/pull/435\n* feat(office): derive activity from running Kanban cards by @ohjy1006kenneth in https://github.c",
-"tag": "product_update",
-"url": "https://github.com/fathah/hermes-desktop/releases/tag/v0.7.7"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:11Z",
+"checked_at": "2026-11-23T17:28:25Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:10Z",
+"checked_at": "2026-11-23T17:28:24Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:53:12Z",
+"checked_at": "2026-11-23T17:28:25Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -140,7 +140,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:13:17Z",
+"checked_at": "2026-11-23T17:42:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -148,19 +148,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-02T15:26:49Z",
-"github_forks": 1637,
+"github_forks": 1639,
 "github_language": "TypeScript",
-"github_open_issues": 336,
-"github_pushed_at": "2026-11-12T13:20:12Z",
-"github_stars": 14582,
+"github_open_issues": 344,
+"github_pushed_at": "2026-11-18T06:21:02Z",
+"github_stars": 14621,
 "github_topic": "ai-agent",
 "homepage": "https://hermesone.org"
 },
 "slug": "fathah-hermes-desktop",
 "sources": [
 {
-"payload_hash": "79784b9bfa706d08b3d8676ed4c5ad5eff1e109bf5347e09b1b188220d6227df",
-"retrieved_at": "2026-11-16T14:44:42Z",
+"payload_hash": "d2540c9fd2d6b31f740615e2181ff3750ded97451bebd25d68c491c6b0d6cdf6",
+"retrieved_at": "2026-11-23T17:20:29Z",
 "system": "github",
 "url": "https://github.com/fathah/hermes-desktop"
 }

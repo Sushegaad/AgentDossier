@@ -1,0 +1,19 @@
+{
+ "agent": "res_db4b735217bdfe39",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_db4b735217bdfe39_6ba415ca",
+ "kind": "self_test",
+ "name": "Almost Impossible WebMCP tools",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:almostimpossible.agency:tools:webmcp",
+   "manifest_url": "https://www.almostimpossible.agency/.well-known/ard.json",
+   "media_type": "text/html",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "almostimpossible-agency-almost-impossible-webmcp-tools"
+}

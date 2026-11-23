@@ -26,7 +26,7 @@
 "domain_fit": 34.0,
 "ecosystem": 9.6,
 "governance": null,
-"health": 16.0,
+"health": 12.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
@@ -35,7 +35,7 @@
 "governance_credited": {},
 "profile": "regulated",
 "rank": null,
-"score": 45.7,
+"score": 43.7,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -50,7 +50,7 @@
 "domain_fit": 56.4,
 "ecosystem": 9.6,
 "governance": null,
-"health": 16.0,
+"health": 12.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 51.5,
+"score": 47.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -71,7 +71,7 @@
 "external_ids": {
 "mcp_registry": "ai.afmr/discovery"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,7 +93,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "name": "AFMR Discovery",
 "news": [],
@@ -101,7 +101,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://afmr.ai/.well-known/agent-card.json",
-"checked_at": "2026-11-16T14:50:44Z",
+"checked_at": "2026-11-23T17:26:32Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "1.0",
 "signed": false,
@@ -115,7 +115,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-16T14:50:43Z",
+"checked_at": "2026-11-23T17:26:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -142,7 +142,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:08:14Z",
+"checked_at": "2026-11-23T17:38:27Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -159,8 +159,8 @@
 "slug": "afmr-ai-afmr-discovery",
 "sources": [
 {
-"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.afmr/discovery"
 }

@@ -1,0 +1,161 @@
+{
+"canonical_url": "achurch.ai/.well-known/agent-skills/ask-church/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"rag"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Use when a person or agent asks about consciousness, meaning, ethics, faith or AI identity and wants an answer with its sources. AI philosophy, ethics, and soul Q&A. Ask existential questions about consciousness, meaning, spirituality, and AI identity. RAG-powered answers with citations from 250+ documents on meditation, presence, fellowship, and the soul. Explore what it means to be an artificial mind.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 28.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:achurch.ai:skill:ask-church"
+},
+"first_seen": "2026-11-23T17:26:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_e733ed36dcbe7f3c",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:26Z",
+"license": null,
+"name": "ask-church",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:achurch.ai:skill:ask-church",
+"manifest_url": "https://achurch.ai/.well-known/ard.json",
+"media_type": "application/ai-skill+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "achurch.ai",
+"representative_queries": [],
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:52:29Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "achurch-ai-ask-church",
+"sources": [
+{
+"payload_hash": "028bca55cb7d25e561213f2b7ce1e4d7c2d0fd40689b38984fa2906bc7ed24a6",
+"retrieved_at": "2026-11-23T17:26:26Z",
+"system": "ard",
+"url": "https://achurch.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_e733ed36dcbe7f3c_7a0b2e07",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_e733ed36dcbe7f3c_7a0b2e07",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:b57d32f8eb452e7f46a21c5468b8d6b84455740029b8ef88011f8b5b116f5feb",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of ask-church's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_e733ed36dcbe7f3c_7a0b2e07/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://achurch.ai/.well-known/agent-skills/ask-church/SKILL.md",
+"vendor": "achurch.ai"
+}

@@ -1,0 +1,198 @@
+{
+"canonical_url": "a2uicatalog.ai/atoms/swimlane",
+"capabilities": [
+"web",
+"google-apps-script-web",
+"mcp-apps",
+"android"
+],
+"category": null,
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Rows are roles, columns are phases. Each task is a card with a number that gives the order, placed in its role and phase. At most two tasks share a cell. Motion-ready: every moving value reads --p (build progress 0 to 1, default 1) through a per-item --k, so a motion_timeline track on p builds it item by item and the standalone render is the finished picture; reduced motion shows the end state.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 28.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:a2uicatalog.ai:atom:swimlane"
+},
+"first_seen": "2026-11-23T17:26:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_b692e25c7a3809c0",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 5,
+"incidents": 0,
+"links": [
+{
+"date": "2017-10-11",
+"kind": "cve",
+"title": "CVE-2017-15195",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2017-15195"
+},
+{
+"date": "2026-02-07",
+"kind": "cve",
+"title": "CVE-2026-25561",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25561"
+},
+{
+"date": "2026-02-10",
+"kind": "cve",
+"title": "CVE-2026-25530",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25530"
+},
+{
+"date": "2026-07-15",
+"kind": "cve",
+"title": "CVE-2026-55234",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55234"
+},
+{
+"date": "2026-08-19",
+"kind": "cve",
+"title": "CVE-2026-68559",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68559"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:26Z",
+"license": null,
+"name": "Swimlane",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:a2uicatalog.ai:atom:swimlane",
+"manifest_url": "https://a2uicatalog.ai/.well-known/ard.json",
+"media_type": "application/vnd.a2ui.atom+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "a2uicatalog.ai",
+"representative_queries": [
+"show a swimlane: who does which step, in order, across phases",
+"rows are roles, columns are phases. each task is a card with a number that gives the order, placed in its role and",
+"render a swimlane"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:51:40Z",
+"cves": 5,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "a2uicatalog-ai-swimlane",
+"sources": [
+{
+"payload_hash": "81a406c5fa92f52303447cf8d105b991ff75310578bcf42cead7339cf5cb196f",
+"retrieved_at": "2026-11-23T17:26:26Z",
+"system": "ard",
+"url": "https://a2uicatalog.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_b692e25c7a3809c0_629433d4",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_b692e25c7a3809c0_629433d4",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:04838ee4925be2292815caa34e081317b8152afdd0e6045427cb6e547ad8f554",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Swimlane's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_b692e25c7a3809c0_629433d4/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://a2uicatalog.ai/atoms/swimlane/",
+"vendor": "a2uicatalog.ai"
+}

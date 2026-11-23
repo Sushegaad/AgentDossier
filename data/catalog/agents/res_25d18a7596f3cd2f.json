@@ -22,7 +22,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 23.24,
+"adoption": 23.3,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -36,7 +36,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 62.3,
+"score": 62.4,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,7 +45,7 @@
 },
 "technology": {
 "components": {
-"adoption": 23.24,
+"adoption": 23.3,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "makecindy/cindy"
 },
-"first_seen": "2026-11-16T14:44:42Z",
+"first_seen": "2026-11-23T17:20:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,47 +92,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:44:42Z",
+"last_seen": "2026-11-23T17:20:29Z",
 "license": "Apache-2.0",
 "name": "cindy",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-16T07:10:30Z",
-"headline": "cindy release v0.1.137",
+"date": "2026-11-23T03:19:53Z",
+"headline": "cindy release v0.1.144",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Desktop release 0.1.137\n\n## 更新说明\n### 🖥️ 在电脑上看另一台电脑的设备画面\n查看另一台电脑上的任务时，右侧栏可以直接打开那台电脑正在运行的设备模拟器画面，像操作本机模拟器一样缩放、滑动、截图和切换设备。 @dashhuang\n\n### 🔒 离开电脑时用隐私屏代替锁屏\n设置里的「离开电脑时」统一为隐私屏：屏幕被遮住，但电脑保持唤醒，AI 任务可以继续运行；远程连接时也能选择连接期间遮屏、结束后保护电脑。 @dashhuang @zqchris",
+"summary": "Desktop release 0.1.144\n\n## 更新说明\n### 📁 侧栏浏览与文件预览\n可以在右侧边栏直接浏览任务目录，就地预览图片、视频和 HTML 文件；预览远程文件时显示取回进度，打开独立侧栏窗口也能用同样的操作和快捷键。\n\n### 🧩 插件引擎与供应商\n插件引擎可以开放给同一账号的其他电脑或分享的朋友使用，对方无需安装插件。模型供应商设置里能统一管理插件提供的供应商并选择隐藏或停用，插件自动化也可以只在指定电脑上运行。 @MagicLizi @WZBbiao",
 "tag": "product_update",
-"url": "https://github.com/makecindy/cindy/releases/tag/v0.1.137"
+"url": "https://github.com/makecindy/cindy/releases/tag/v0.1.144"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-13T03:10:16Z",
-"headline": "cindy release v0.1.136",
+"date": "2026-11-20T04:47:49Z",
+"headline": "cindy release v0.1.143",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Desktop release 0.1.136\n\n## 更新说明\n### 🤖 模型组：把多个模型排成一条路线\n新增模型组设置：把已连接的模型合成一条路线，按额度、顺序或轮次自动挑选；路线还能跨电脑和共享供应商取用。任务会用一句话说明这次选了哪个来源、为什么。 @zqchris\n\n### 👥 带项目的伙伴群聊\n群可以绑定一个项目，伙伴在群里开出的任务、@ 唤醒与任务卡都落到这里，任务结果也会回到群里。群里的 Cindy 会标明替谁说话；伙伴文案统一为「伙伴」。 @DavidSh",
+"summary": "Desktop release 0.1.143\n\n## 更新说明\n### 🧩 插件引擎与扩展能力\n插件现在可以作为独立执行引擎接入，在任务中切换引擎、查看权限菜单里的引擎模式，移动端、自动化和协作分工也能用；缺失插件可直接在任务内安装，授权插件还能调用 Cindy AI 生图、生视频与语音能力。 @GaoWeiLiuXD @MagicLizi @dashhuang @xuzini-xzn\n\n### 💳 计费与礼品卡\n新增购买礼品卡：可选面额（含自定义）、数量和署名留言，买完可",
 "tag": "product_update",
-"url": "https://github.com/makecindy/cindy/releases/tag/v0.1.136"
+"url": "https://github.com/makecindy/cindy/releases/tag/v0.1.143"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:52:23Z",
+"checked_at": "2026-11-23T17:27:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:18Z",
+"checked_at": "2026-11-23T17:27:36Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:52:26Z",
+"checked_at": "2026-11-23T17:27:44Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -143,19 +143,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-07-22T17:49:34Z",
-"github_forks": 1284,
+"github_forks": 1336,
 "github_language": "TypeScript",
-"github_open_issues": 3403,
-"github_pushed_at": "2026-11-16T14:40:26Z",
-"github_stars": 10217,
+"github_open_issues": 3700,
+"github_pushed_at": "2026-11-23T17:18:30Z",
+"github_stars": 10487,
 "github_topic": "ai-agent",
 "homepage": "https://cindy.app"
 },
 "slug": "makecindy-cindy",
 "sources": [
 {
-"payload_hash": "79784b9bfa706d08b3d8676ed4c5ad5eff1e109bf5347e09b1b188220d6227df",
-"retrieved_at": "2026-11-16T14:44:42Z",
+"payload_hash": "d2540c9fd2d6b31f740615e2181ff3750ded97451bebd25d68c491c6b0d6cdf6",
+"retrieved_at": "2026-11-23T17:20:29Z",
 "system": "github",
 "url": "https://github.com/makecindy/cindy"
 }

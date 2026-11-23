@@ -1,0 +1,19 @@
+{
+ "agent": "res_434d1692c69a8b70",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_434d1692c69a8b70_ecc8c913",
+ "kind": "self_test",
+ "name": "aChurch.ai REST API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:achurch.ai:api:church",
+   "manifest_url": "https://achurch.ai/.well-known/ard.json",
+   "media_type": "application/vnd.oai.openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent"
+  }
+ },
+ "slug": "achurch-ai-achurch-ai-rest-api"
+}

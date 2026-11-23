@@ -1,0 +1,137 @@
+{
+"canonical_url": "agentgates.ai/skills/agentgates-sandbox/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Sealed sandboxes: a small Linux computer for one agent in a confidential VM (Intel TDX), by the minute, paid in USDC over x402. Run commands and move files at its own address, and check its proof yourself.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:agentgates.ai:skills:sandbox"
+},
+"first_seen": "2026-11-23T17:26:37Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_9af3c84f2f5c869a",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:37Z",
+"license": null,
+"name": "Sealed sandboxes (skill)",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:agentgates.ai:skills:sandbox",
+"manifest_url": "https://agentgates.ai/.well-known/ard.json",
+"media_type": "application/agent-skills+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "agentgates.ai",
+"representative_queries": [
+"run code in a sealed sandbox my agent pays for by the minute",
+"a confidential sandbox for an agent to run commands in, paid in USDC"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:52:53Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "agentgates-ai-sealed-sandboxes-skill",
+"sources": [
+{
+"payload_hash": "4d1706f7a130391c46b5d7397e33308575a4fe2f951b481c776c40a9245a6c99",
+"retrieved_at": "2026-11-23T17:26:37Z",
+"system": "ard",
+"url": "https://agentgates.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"skill",
+"sandbox",
+"compute",
+"x402",
+"usdc"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_9af3c84f2f5c869a_cf1d229d",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_9af3c84f2f5c869a_cf1d229d",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:9fe4aaf18b8f7757255555225b899c999c6bebfd5a18856ab84b8ca954202657",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Sealed sandboxes (skill)'s discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_9af3c84f2f5c869a_cf1d229d/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://agentgates.ai/skills/agentgates-sandbox/SKILL.md",
+"vendor": "agentgates.ai"
+}

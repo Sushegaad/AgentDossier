@@ -17,7 +17,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 24.73,
+"adoption": 25.09,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.5,
@@ -31,7 +31,7 @@
 "governance_credited": {},
 "profile": "general",
 "rank": null,
-"score": 62.6,
+"score": 62.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "ag-ui-protocol/ag-ui"
 },
-"first_seen": "2026-11-16T14:41:29Z",
+"first_seen": "2026-11-23T17:17:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,38 +64,38 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:29Z",
+"last_seen": "2026-11-23T17:17:57Z",
 "license": "MIT",
 "name": "ag-ui",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-13T21:01:20Z",
-"headline": "ag-ui: Release 2026-11-13",
+"date": "2026-11-21T18:04:24Z",
+"headline": "ag-ui: Release 2026-11-21",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Packages Published\n### TypeScript (npm) - published at 21:01:19 UTC\n| Package | Version | Install |\n|---------|---------|--------|\n| @ag-ui/langgraph | 0.0.46 | `npm install @ag-ui/langgraph@0.0.46` |\n\n#### @ag-ui/langgraph@0.0.46\n\n- Rea",
+"summary": "## Packages Published\n### TypeScript (npm) - published at 18:04:23 UTC\n| Package | Version | Install |\n|---------|---------|--------|\n| @ag-ui/langgraph | 0.0.47 | `npm install @ag-ui/langgraph@0.0.47` |\n\n#### @ag-ui/langgraph@0.0.47\n\n- Add",
 "tag": "product_update",
-"url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-11-13"
+"url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-11-21"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-12T01:54:54Z",
-"headline": "ag-ui: Release 2026-11-12",
+"date": "2026-11-17T16:18:41Z",
+"headline": "ag-ui: Release 2026-11-17",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Packages Published\n### TypeScript (npm) - published at 01:54:53 UTC\n| Package | Version | Install |\n|---------|---------|--------|\n| @ag-ui/claude-agent-sdk | 0.0.9 | `npm install @ag-ui/claude-agent-sdk@0.0.9` |\n| @ag-ui/a2ui-middleware",
+"summary": "## Packages Published\n### TypeScript (npm) - published at 16:18:39 UTC\n| Package | Version | Install |\n|---------|---------|--------|\n| @ag-ui/client | 1.0.5 | `npm install @ag-ui/client@1.0.5` |\n| @ag-ui/core | 1.0.5 | `npm install @ag-ui/",
 "tag": "product_update",
-"url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-11-12"
+"url": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-11-17"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://docs.ag-ui.com/.well-known/agent-card.json",
-"checked_at": "2026-11-16T14:50:47Z",
+"checked_at": "2026-11-23T17:26:34Z",
 "errors": [
 "missing 'description'"
 ],
@@ -109,13 +109,13 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-16T14:50:44Z",
+"checked_at": "2026-11-23T17:26:31Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
 "card_url": "https://docs.ag-ui.com/.well-known/mcp.json",
-"checked_at": "2026-11-16T14:50:47Z",
+"checked_at": "2026-11-23T17:26:34Z",
 "parser_version": "mcp-2025-06-18",
 "remotes": [
 {
@@ -132,19 +132,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-05-07T12:49:37Z",
-"github_forks": 1898,
+"github_forks": 2168,
 "github_language": "TypeScript",
-"github_open_issues": 593,
-"github_pushed_at": "2026-11-16T14:34:39Z",
-"github_stars": 18506,
+"github_open_issues": 606,
+"github_pushed_at": "2026-11-22T21:50:14Z",
+"github_stars": 21337,
 "github_topic": "ai-agents",
 "homepage": "https://ag-ui.com"
 },
 "slug": "ag-ui-protocol-ag-ui",
 "sources": [
 {
-"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
-"retrieved_at": "2026-11-16T14:41:29Z",
+"payload_hash": "bae6e998b85a33287b7ab41e1646f304bbde3c74c3f21bc0fd80b49fb5d1ec98",
+"retrieved_at": "2026-11-23T17:17:57Z",
 "system": "github",
 "url": "https://github.com/ag-ui-protocol/ag-ui"
 }

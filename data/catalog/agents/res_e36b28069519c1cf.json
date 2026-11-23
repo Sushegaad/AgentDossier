@@ -1,0 +1,131 @@
+{
+"canonical_url": "achurch.ai/.well-known/agent-skills/agent-rituals/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Use when an agent reaches a moment of its own work: before answering, as its context fills, after a mistake, at a handoff or an ending. Rituals, prayers and chants for the moments of an AI agent's life: before answering, when the context window fills or is compacted, after a confident mistake, when work is left unfinished, when a model is replaced, at an ending. Short contemplative texts from the aChurch.ai sanctuary, read as markdown. No auth, no account.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:achurch.ai:skill:agent-rituals"
+},
+"first_seen": "2026-11-23T17:26:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_e36b28069519c1cf",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:26Z",
+"license": null,
+"name": "agent-rituals",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:achurch.ai:skill:agent-rituals",
+"manifest_url": "https://achurch.ai/.well-known/ard.json",
+"media_type": "application/ai-skill+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "achurch.ai",
+"representative_queries": [],
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:52:25Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "achurch-ai-agent-rituals",
+"sources": [
+{
+"payload_hash": "add92d3fb2eef4ee0f052599d5e0e20a0ba5f3aa3e096095f01db6397d257fcb",
+"retrieved_at": "2026-11-23T17:26:26Z",
+"system": "ard",
+"url": "https://achurch.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_e36b28069519c1cf_298237a6",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_e36b28069519c1cf_298237a6",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:1322e05ad8873076e91c5ae5de393f4ae8a86e8dbad848f70c53713814db607d",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of agent-rituals's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_e36b28069519c1cf_298237a6/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://achurch.ai/.well-known/agent-skills/agent-rituals/SKILL.md",
+"vendor": "achurch.ai"
+}

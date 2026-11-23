@@ -1,0 +1,178 @@
+{
+"canonical_url": "achromat.ai/compliance_provenance.md",
+"capabilities": [
+"CalibratePolicy",
+"RecallCompliantArguments"
+],
+"category": null,
+"classification": {
+"matched": {
+"regulatory": [
+"audit",
+"compliance",
+"policy",
+"regulatory"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Tool schemas and evidence placeholders for agents that submit regulated records and filings or release compliance reports backed by signed receipts. Recall the verified compliant version of a submission before acting, and calibrate against live policy when nothing is recalled. Builds on the core protocol at /skill.md.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"regulatory": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 81.0,
+"ecosystem": 5.8,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.81,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 47.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:achromat.ai:skill:achromat-mom-compliance-provenance"
+},
+"first_seen": "2026-11-23T17:26:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_cc7a3fb722f00a63",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:26Z",
+"license": null,
+"merged_ids": [
+"res_10972a9e620d7e2c"
+],
+"name": "Achromat Machine Operational Memory for compliance provenance",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:achromat.ai:skill:achromat-mom-compliance-provenance",
+"manifest_url": "https://achromat.ai/.well-known/ard.json",
+"media_type": "application/agent-skills+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "achromat.ai",
+"representative_queries": [
+"check a regulatory filing submission against provenance policy before sending it",
+"what receipt evidence does a regulated record submission need to pass policy",
+"find the compliant version of a blocked compliance report release"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:52:20Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "achromat-ai-achromat-machine-operational-memory-for-compliance-provenance",
+"sources": [
+{
+"payload_hash": "3f7f02b113401630e34f7f53337486419c5f06ce1601ac107dece84bf951a0a5",
+"retrieved_at": "2026-11-23T17:26:26Z",
+"system": "ard",
+"url": "https://achromat.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"agent-memory",
+"audit",
+"compliance",
+"compliance-provenance",
+"policy",
+"regulatory-filing"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_cc7a3fb722f00a63_e05a71b0",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_cc7a3fb722f00a63_e05a71b0",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:87a30f70276b3d807f740d565270baeed96bdacfd69fd8b68152db0b41938c57",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Achromat Machine Operational Memory for compliance provenance's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_cc7a3fb722f00a63_e05a71b0/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://achromat.ai/compliance_provenance.md",
+"vendor": "achromat.ai"
+}

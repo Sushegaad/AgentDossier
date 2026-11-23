@@ -324,7 +324,7 @@
 "external_ids": {
 "github": "crewAIInc/crewAI"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -346,7 +346,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:23Z",
+"last_seen": "2026-11-23T17:17:51Z",
 "license": "MIT",
 "merged_ids": [
 "res_bcb8d1284f57fc92"
@@ -355,41 +355,41 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-12T18:42:07Z",
-"headline": "crewAI release 1.15.41",
+"date": "2026-11-19T17:59:49Z",
+"headline": "crewAI release 1.15.44",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n\n### Features\n- Allow approved private URL hosts.\n\n### Bug Fixes\n- Fix projects to depend on PyMuPDF 2.x.\n- Drop a real storage URL from the URL read tests.\n- Keep earlier step outputs across a human-feedback resume.\n- Str",
+"summary": "## What's Changed\n\n### Features\n- Add capability to save files as versioned, shareable artifacts.\n\n### Bug Fixes\n- Fix inline agent and crew action references relative to the flow file.\n- Stop duplicating kept separators when merging chunks",
 "tag": "product_update",
-"url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.41"
+"url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.44"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-11T22:19:53Z",
-"headline": "crewAI release 1.15.40",
+"date": "2026-11-19T04:12:47Z",
+"headline": "crewAI release 1.15.43",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n\n### Features\n- Remove chromadb from the embedding function layer.\n- Add exact historical state lookup by row id.\n- Wire jsonl into rag data type discovery.\n- Scaffold standalone agents as JSON by default.\n- Add backend re",
+"summary": "## What's Changed\n\n### Bug Fixes\n- Fix detection of multimodal support for Claude 5.\n\n### Documentation\n- Update snapshot and changelog for v1.15.42.\n\n## Contributors\n\n@Vidit-Ostwal, @anubhavlal07, @joaomdmoura",
 "tag": "product_update",
-"url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.40"
+"url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.43"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:52:29Z",
+"checked_at": "2026-11-23T17:27:45Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:27Z",
+"checked_at": "2026-11-23T17:27:44Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:52:29Z",
+"checked_at": "2026-11-23T17:27:46Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -413,11 +413,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-10-27T03:26:59Z",
-"github_forks": 9206,
+"github_forks": 9257,
 "github_language": "Python",
-"github_open_issues": 1261,
-"github_pushed_at": "2026-11-16T10:15:01Z",
-"github_stars": 60989,
+"github_open_issues": 1252,
+"github_pushed_at": "2026-11-23T16:06:27Z",
+"github_stars": 61202,
 "github_topic": "ai-agents",
 "homepage": "https://crewai.com",
 "observed_popularity": "~50k+",
@@ -433,13 +433,13 @@
 "sources": [
 {
 "payload_hash": "119607801fe7263273ffea4762c7b5de21f86af9301727a015fafe20f084d02b",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"retrieved_at": "2026-11-23T17:16:54Z",
 "system": "seed_xlsx",
 "url": "https://github.com/crewAIInc/crewAI"
 },
 {
-"payload_hash": "9a6cbab9ed5aa292d55e646bb04f76cd7d4c2a42ddc3857e756a58e198ac23e6",
-"retrieved_at": "2026-11-16T14:41:23Z",
+"payload_hash": "155b36dfde8bfea7a22236b39c614c39a9f141f45a6faddf3842e36b74557f39",
+"retrieved_at": "2026-11-23T17:17:51Z",
 "system": "github",
 "url": "https://github.com/crewAIInc/crewAI"
 }
