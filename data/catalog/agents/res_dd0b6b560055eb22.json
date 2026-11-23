@@ -45,7 +45,7 @@
 "github": "agent-blueprint/agent-blueprint-website",
 "mcp_registry": "ai.agentblueprint/agent-blueprint"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "name": "Agent Blueprint",
 "news": [],
@@ -75,7 +75,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://agentblueprint.ai/.well-known/agent.json",
-"checked_at": "2026-11-16T14:50:47Z",
+"checked_at": "2026-11-23T17:26:34Z",
 "errors": [
 "missing 'version'"
 ],
@@ -84,7 +84,7 @@
 "status": "invalid"
 },
 "ard": {
-"checked_at": "2026-11-16T14:50:45Z",
+"checked_at": "2026-11-23T17:26:32Z",
 "entries": 1,
 "errors": [
 "entries[0]: missing required term 'displayName'"
@@ -114,7 +114,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:08:20Z",
+"checked_at": "2026-11-23T17:38:35Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -131,8 +131,8 @@
 "slug": "agentblueprint-ai-agent-blueprint",
 "sources": [
 {
-"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentblueprint/agent-blueprint"
 }

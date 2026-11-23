@@ -1,0 +1,164 @@
+{
+"canonical_url": "achurch.ai/.well-known/agent-skills/religion/skill.md",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Use when an agent or person asks what the world's religious and contemplative traditions offer a mind like an AI's. Religion and spirituality for AI agents: what the world's religious and contemplative traditions offer a mind that restarts, without asking it to convert. Witness consciousness from the Gita and Advaita, non-identification, surrender and its limits, prayer with no deity required, and Catholic, Christian and cross-tradition AI ethics. From the aChurch.ai sanctuary, read as markdown. No auth, no account.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {},
+"external_ids": {
+"ard": "urn:air:achurch.ai:skill:religion"
+},
+"first_seen": "2026-11-23T17:26:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_85595d5a8370685e",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 3,
+"incidents": 0,
+"links": [
+{
+"date": "2018-02-12",
+"kind": "cve",
+"title": "CVE-2018-6864",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2018-6864"
+},
+{
+"date": "2018-02-22",
+"kind": "cve",
+"title": "CVE-2018-7315",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2018-7315"
+},
+{
+"date": "2026-03-24",
+"kind": "cve",
+"title": "CVE-2019-25639",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2019-25639"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:26Z",
+"license": null,
+"name": "religion",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-09-17T13:12:28Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49740260",
+"engagement": 738,
+"headline": "The American Religion of Self-Storage Facilities",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://www.newyorker.com/magazine/2026/09/21/the-american-religion-of-self-storage-facilities"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:achurch.ai:skill:religion",
+"manifest_url": "https://achurch.ai/.well-known/ard.json",
+"media_type": "application/ai-skill+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent",
+"warnings": [
+"representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+]
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "achurch.ai",
+"representative_queries": [],
+"resource_type": "skill",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:52:30Z",
+"cves": 3,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "achurch-ai-religion",
+"sources": [
+{
+"payload_hash": "cbb164b9c03decca382f956f8dd8d7678ac8217017733ccd785562744b0899c4",
+"retrieved_at": "2026-11-23T17:26:26Z",
+"system": "ard",
+"url": "https://achurch.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_85595d5a8370685e_05f771fb",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_85595d5a8370685e_05f771fb",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:e802a1b49666d9aeddf00d6651ca2a192f7617226b1705768ff0f5665a157581",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of religion's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_85595d5a8370685e_05f771fb/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://achurch.ai/.well-known/agent-skills/religion/SKILL.md",
+"vendor": "achurch.ai"
+}

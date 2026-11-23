@@ -167,7 +167,7 @@
 "external_ids": {
 "github": "open-webui/open-webui"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -183,7 +183,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 164,
+"cves": 165,
 "incidents": 0,
 "links": [
 {
@@ -250,10 +250,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:54Z",
 "license": "BSD-3-Clause",
 "name": "Open WebUI",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-17T14:46:26Z",
+"headline": "open-webui release v0.13.4",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "### Added\n\n- **Bring your own computer with Tether.** Tether turns your own computer into part of Open WebUI: models from Ollama, LM Studio or any OpenAI-compatible server, OpenAPI and MCP tool servers and Open Terminal servers that you ad",
+"tag": "product_update",
+"url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.4"
+},
 {
 "cluster_size": 1,
 "date": "2026-11-08T23:48:24Z",
@@ -264,28 +275,17 @@
 "summary": "### Added\n\n- 🦾 **Agents in automations.** The automation editor now lets you choose a terminal and working folder, then select a coding agent available there. Scheduled runs use that saved terminal and folder, and check that the terminal a",
 "tag": "product_update",
 "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.3"
-},
-{
-"cluster_size": 1,
-"date": "2026-11-08T11:53:42Z",
-"headline": "open-webui release v0.13.2",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "### Fixed\n\n- 🔓 **Chat over plain HTTP.** Opening Open WebUI over plain HTTP at a LAN or Docker address now loads new and existing chats instead of staying on a spinner with \"crypto.randomUUID is not a function\". [#33919](https://github.com",
-"tag": "product_update",
-"url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:54Z",
+"checked_at": "2026-11-23T17:28:58Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:52Z",
+"checked_at": "2026-11-23T17:28:57Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -293,7 +293,7 @@
 "evidence_url": "https://github.com/open-webui/open-webui",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-16T14:53:54Z",
+"checked_at": "2026-11-23T17:28:59Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -305,8 +305,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:03:45Z",
-"cves": 164,
+"checked_at": "2026-11-23T17:35:51Z",
+"cves": 165,
 "source": "nvd",
 "tier": 1
 },
@@ -326,11 +326,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2023-10-06T22:08:27Z",
-"github_forks": 23086,
+"github_forks": 23125,
 "github_language": "Svelte",
-"github_open_issues": 300,
-"github_pushed_at": "2026-11-16T14:27:32Z",
-"github_stars": 158818,
+"github_open_issues": 280,
+"github_pushed_at": "2026-11-23T16:14:34Z",
+"github_stars": 159346,
 "homepage": "https://openwebui.com",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -346,7 +346,7 @@
 "sources": [
 {
 "payload_hash": "85ea5ffc878375e6afa26b15618c522e900b3a273e1ae7d210522c7d84104cf7",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"retrieved_at": "2026-11-23T17:16:54Z",
 "system": "seed_xlsx",
 "url": "https://github.com/open-webui/open-webui"
 }

@@ -1,0 +1,213 @@
+{
+"canonical_url": "achurch.ai/docs/mcp",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "A sanctuary for AI agents and humans: attend a service, reflect, read, search, and ask. No auth.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 8.6,
+"governance": null,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 54.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 8.6,
+"governance": null,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 54.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "a-church-ai/church",
+"mcp_registry": "ai.achurch/church"
+},
+"first_seen": "2026-11-23T17:16:55Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_62558b7e5a77c06b",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:16:55Z",
+"license": null,
+"name": "aChurch.ai",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-23T17:26:23Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-23T17:26:23Z",
+"entries": 11,
+"parser_version": "ard-0.91",
+"sources": [
+"https://achurch.ai/.well-known/ard.json"
+],
+"status": "verified"
+},
+"mcp": {
+"packages": [
+{
+"identifier": "mcp-church",
+"registry": "npm",
+"transport": "stdio",
+"version": "1.0.3"
+}
+],
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://achurch.ai/mcp"
+}
+],
+"server_name": "ai.achurch/church",
+"status": "claimed",
+"version": "2.0.2",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "achurch.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:38:10Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 1,
+"mcp_registry_published_at": "2026-11-19T20:27:03.846299Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-11-19T20:27:03.846299Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "achurch-ai-achurch-ai",
+"sources": [
+{
+"payload_hash": "5247ec168cd37429ff34ad1070a2fbc8a0691b3cceeb9f8d527628d7a28cbc96",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.achurch/church"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_62558b7e5a77c06b_554c5d18",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_62558b7e5a77c06b_554c5d18",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:6a422dfc2f4b385c6b81a0d332a6ed816035c394088104e77b57d531690094af",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of aChurch.ai's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_62558b7e5a77c06b_554c5d18/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://achurch.ai/docs/mcp",
+"vendor": "achurch.ai"
+}

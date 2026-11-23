@@ -1,0 +1,19 @@
+{
+ "agent": "res_9124bf6796b42147",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_9124bf6796b42147_30fe72fd",
+ "kind": "self_test",
+ "name": "Almost Impossible Agent Skills",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:almostimpossible.agency:skill:agent-skills",
+   "manifest_url": "https://www.almostimpossible.agency/.well-known/ard.json",
+   "media_type": "application/json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "almostimpossible-agency-almost-impossible-agent-skills"
+}

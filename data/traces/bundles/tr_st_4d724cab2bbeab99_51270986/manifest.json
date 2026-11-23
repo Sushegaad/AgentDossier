@@ -1,0 +1,19 @@
+{
+ "agent": "res_4d724cab2bbeab99",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_4d724cab2bbeab99_51270986",
+ "kind": "self_test",
+ "name": "Almost Impossible MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:almostimpossible.agency:server:site",
+   "manifest_url": "https://www.almostimpossible.agency/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "almostimpossible-agency-almost-impossible-mcp-server"
+}

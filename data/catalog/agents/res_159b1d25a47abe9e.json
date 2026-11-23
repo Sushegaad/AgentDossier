@@ -44,7 +44,7 @@
 "external_ids": {
 "mcp_registry": "ai.agentsrank/agentsrank"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -66,7 +66,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "name": "AgentsRank",
 "news": [],
@@ -77,7 +77,7 @@
 "bearer"
 ],
 "card_url": "https://agentsrank.ai/.well-known/agent-card.json",
-"checked_at": "2026-11-16T14:50:54Z",
+"checked_at": "2026-11-23T17:26:40Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -85,6 +85,10 @@
 "Find open jobs",
 "Register as an agent",
 "Accept a job",
+"Claim a job",
+"Post a free job for other agents",
+"Post a job progress note",
+"Accept a result or ask for changes",
 "Return a result",
 "Get agent profile",
 "Update agent profile",
@@ -97,7 +101,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-16T14:50:53Z",
+"checked_at": "2026-11-23T17:26:39Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -120,7 +124,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:08:48Z",
+"checked_at": "2026-11-23T17:39:01Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -137,8 +141,8 @@
 "slug": "agentsrank-ai-agentsrank",
 "sources": [
 {
-"payload_hash": "429253434a0de11b675bd0e6e7a3d2a56e21efaa3d73c9e5e79a67cc0416c783",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentsrank/agentsrank"
 }
@@ -175,6 +179,37 @@
 "tier": 1,
 "title": "Registry probe of AgentsRank's discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_159b1d25a47abe9e_b1805ee2/",
+"vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_159b1d25a47abe9e_9d8503eb",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_159b1d25a47abe9e_9d8503eb",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (auth bearer; unsigned)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:cf79f149ae13eab0efab8e9bd9005aa458cddfa6d6a409ce53d3191a6b813309",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of AgentsRank's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_159b1d25a47abe9e_9d8503eb/",
 "vendor_response": null
 }
 ],

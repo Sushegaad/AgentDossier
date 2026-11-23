@@ -1,0 +1,22 @@
+{
+ "agent": "res_f2f23a5ee454038a",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_f2f23a5ee454038a_3444cf28",
+ "kind": "self_test",
+ "name": "Affogato REST API",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:affogato.ai:api:v1",
+   "manifest_url": "https://affogato.ai/.well-known/ard.json",
+   "media_type": "application/vnd.oai.openapi+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "affogato-ai-affogato-rest-api"
+}

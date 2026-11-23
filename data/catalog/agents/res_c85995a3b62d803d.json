@@ -51,7 +51,7 @@
 "external_ids": {
 "ard": "urn:air:a2uicatalog.ai:atom:file_tree"
 },
-"first_seen": "2026-11-16T14:50:43Z",
+"first_seen": "2026-11-23T17:26:26Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,7 +67,7 @@
 },
 "issues": {
 "advisories": 0,
-"cves": 7,
+"cves": 9,
 "incidents": 0,
 "links": [
 {
@@ -111,12 +111,24 @@
 "kind": "cve",
 "title": "CVE-2025-71424",
 "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71424"
+},
+{
+"date": "2026-11-19",
+"kind": "cve",
+"title": "CVE-2026-133172",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133172"
+},
+{
+"date": "2026-11-22",
+"kind": "cve",
+"title": "CVE-2026-134754",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134754"
 }
 ],
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:50:43Z",
+"last_seen": "2026-11-23T17:26:26Z",
 "license": null,
 "name": "File Tree",
 "news": [],
@@ -147,8 +159,8 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:16:22Z",
-"cves": 7,
+"checked_at": "2026-11-23T17:44:50Z",
+"cves": 9,
 "source": "nvd",
 "tier": 1
 },
@@ -157,7 +169,7 @@
 "sources": [
 {
 "payload_hash": "6154f8d25e740bfb24ea1808316bbb412c0a5d30751b031c423a6f573e2e4d3d",
-"retrieved_at": "2026-11-16T14:50:43Z",
+"retrieved_at": "2026-11-23T17:26:26Z",
 "system": "ard",
 "url": "https://a2uicatalog.ai/.well-known/ard.json"
 }

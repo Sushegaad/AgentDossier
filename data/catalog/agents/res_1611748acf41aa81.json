@@ -14,16 +14,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "High"
 },
-"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-16)",
+"display": "FedRAMP High: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-23)",
 "evidence_url": "https://marketplace.fedramp.gov/products/F1603087869",
 "framework": "fedramp",
 "issued": "2020-04-29",
 "issuer": "JAB / 3PAO Kratos",
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
+"next_check": "2026-11-30",
 "payload_hash": "1a6ddb44e526a42b57a26d5b8c719ca6a836347034e9fccd25550c59d0f34976",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:54:50Z",
+"retrieved_at": "2026-11-23T17:29:44Z",
 "review_reason": "vendor authorization for Azure Government (includes Dynamics 365); entity 1.00",
 "reviewer": null,
 "scope": "entity",
@@ -32,6 +32,422 @@
 "tier": 1,
 "valid_until": null,
 "variant": "FEDRAMP_HIGH"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Cyber Essentials: Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "cyber_essentials",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "CYBER_ESSENTIALS"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Cyber Essentials Plus: Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "cyber_essentials",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "CYBER_ESSENTIALS_PLUS"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "dora",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "EU AI Act: Art. 50 statement (vendor statement, 2026-11-23)",
+"evidence_url": "https://www.microsoft.com/en-us/trust-center",
+"framework": "eu_ai_act",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "fd7509cf64de36be689309b77910df0e960eaf46a5156d7adbb50ebe68d204b9",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ART50_STATEMENT"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "fedramp",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "hipaa",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "hitrust",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "irap",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "iso27001",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ISO27001"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "ISO 27017: Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "iso27001",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ISO27017"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "ISO 27018: Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "iso27001",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ISO27018"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "ISO 27701: Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "iso27701",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ISO27701"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "ISO 42001: Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "iso42001",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "ISO42001"
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "pci_dss",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+},
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": false,
+"detail": {
+"pages_visited": 6
+},
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-home",
+"framework": "soc2",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "6773f520d27cef2ba9707cb1c445155edf6c98f42115388dc9d887e1691cb2a5",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:34:04Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
 }
 ],
 "deployment": "GitHub; Azure / Microsoft ecosystem",
@@ -46,7 +462,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -55,7 +471,7 @@
 "profile": "general",
 "rank": 20,
 "recomputed": 92.8,
-"score": 82.3,
+"score": 77.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 20,
 "seed_score": 92.8,
@@ -70,7 +486,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -79,7 +495,7 @@
 "profile": "security",
 "rank": 30,
 "recomputed": 82.1,
-"score": 77.7,
+"score": 72.7,
 "score_version": "sar-score-2.0",
 "seed_rank": 30,
 "seed_score": 82.1,
@@ -94,7 +510,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -103,7 +519,7 @@
 "profile": "data",
 "rank": 47,
 "recomputed": 86.9,
-"score": 88.9,
+"score": 84.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 47,
 "seed_score": 86.9,
@@ -118,7 +534,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -127,7 +543,7 @@
 "profile": "regulated",
 "rank": 49,
 "recomputed": 76.8,
-"score": 73.2,
+"score": 68.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 49,
 "seed_score": 76.8,
@@ -142,7 +558,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -151,7 +567,7 @@
 "profile": "regulated",
 "rank": 20,
 "recomputed": 94.5,
-"score": 73.2,
+"score": 68.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 20,
 "seed_score": 94.5,
@@ -166,7 +582,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -175,7 +591,7 @@
 "profile": "regulated",
 "rank": 41,
 "recomputed": 76.8,
-"score": 73.2,
+"score": 68.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 41,
 "seed_score": 76.8,
@@ -190,7 +606,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -199,7 +615,7 @@
 "profile": "regulated",
 "rank": 35,
 "recomputed": 76.8,
-"score": 73.2,
+"score": 68.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 35,
 "seed_score": 76.8,
@@ -214,7 +630,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -223,7 +639,7 @@
 "profile": "regulated",
 "rank": 38,
 "recomputed": 76.8,
-"score": 73.2,
+"score": 68.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 38,
 "seed_score": 76.8,
@@ -238,7 +654,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -247,7 +663,7 @@
 "profile": "regulated",
 "rank": 47,
 "recomputed": 76.8,
-"score": 73.2,
+"score": 68.2,
 "score_version": "sar-score-2.0",
 "seed_rank": 47,
 "seed_score": 76.8,
@@ -262,7 +678,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -271,7 +687,7 @@
 "profile": "commercial",
 "rank": 37,
 "recomputed": 84.2,
-"score": 83.9,
+"score": 79.9,
 "score_version": "sar-score-2.0",
 "seed_rank": 37,
 "seed_score": 84.2,
@@ -286,7 +702,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -295,7 +711,7 @@
 "profile": "operations",
 "rank": 31,
 "recomputed": 81.6,
-"score": 84.3,
+"score": 80.3,
 "score_version": "sar-score-2.0",
 "seed_rank": 31,
 "seed_score": 81.6,
@@ -310,7 +726,7 @@
 "ecosystem": 15.0,
 "governance": 0.0,
 "health": 20.0,
-"trust": 16.0
+"trust": 11.0
 },
 "components_version": "components-from-signals-1.0",
 "confidence": 1.0,
@@ -319,7 +735,7 @@
 "profile": "technology",
 "rank": 21,
 "recomputed": 95.9,
-"score": 88.4,
+"score": 84.4,
 "score_version": "sar-score-2.0",
 "seed_rank": 21,
 "seed_score": 95.9,
@@ -327,10 +743,8 @@
 "unknown": []
 }
 },
-"external_ids": {
-"github": "microsoft/agent-framework"
-},
-"first_seen": "2026-11-16T14:40:27Z",
+"external_ids": {},
+"first_seen": "2026-11-23T17:16:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -339,10 +753,10 @@
 "id": "res_1611748acf41aa81",
 "identity": {
 "evidence": [
-"repository_ownership"
+"vendor_name_only"
 ],
 "rules_version": "identity-1.1",
-"tier": 3
+"tier": 4
 },
 "issues": {
 "advisories": 0,
@@ -352,57 +766,45 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:54Z",
 "license": "MIT",
 "name": "Microsoft Agent Framework",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-13T08:28:16Z",
-"headline": "agent-framework release python-1.26.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "### Added\n- **agent-framework-core**: Expose `loop_return_final_only` on `create_harness_agent()` so non-streaming callers can request only the final loop response without changing the existing default or streaming behavior ([#10214](https:",
-"tag": "product_update",
-"url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.26.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-11-07T15:52:42Z",
-"headline": "agent-framework release python-1.25.0",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "### Added\n- **agent-framework-core**, **agent-framework-foundry-hosting**: Support callable MCP discovery approval policies and honor Foundry Toolbox approval metadata, including tool-name and read-only filters, explicit caller overrides,",
-"tag": "product_update",
-"url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.25.0"
+"date": "2026-11-19T04:29:50Z",
+"discussion_url": "https://news.ycombinator.com/item?id=50556098",
+"engagement": 5,
+"headline": "Official Microsoft agent-framework PyPI package compromised",
+"kind": "community",
+"link_confidence": 0.95,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://opensourcemalware.com/blog/agent-framework-pypi-compromised"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:51:16Z",
-"parser_version": "a2a-0.3+1.0",
-"status": "not_found"
+"not_checked": "code_host",
+"status": "unknown"
 },
 "ard": {
-"checked_at": "2026-11-16T14:51:09Z",
-"parser_version": "ard-0.91",
-"status": "not_found"
+"not_checked": "code_host",
+"status": "unknown"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:51:17Z",
-"parser_version": "mcp-2025-06-18",
-"status": "not_found"
+"not_checked": "code_host",
+"status": "unknown"
 }
 },
-"publisher_domain": "aka.ms",
+"publisher_domain": "github.com",
 "resource_type": "framework",
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:02:27Z",
+"checked_at": "2026-11-23T17:35:24Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -421,50 +823,23 @@
 "trust": 25.0
 },
 "signals": {
-"github_archived": false,
-"github_created_at": "2025-04-28T19:40:42Z",
-"github_forks": 2637,
-"github_language": "Python",
-"github_open_issues": 931,
-"github_pushed_at": "2026-11-16T13:03:00Z",
-"github_stars": 14712,
-"homepage": "https://aka.ms/agent-framework",
-"observed_popularity": "Not captured",
-"seed_enrich": {
-"changed": [
-"external_ids.github",
-"publisher_domain",
-"tags"
-],
-"repo": "microsoft/agent-framework"
-}
+"observed_popularity": "Not captured"
 },
 "slug": "microsoft-microsoft-agent-framework",
 "sources": [
 {
 "payload_hash": "ab764a8c58b92adbb7b1cf057a4b3eab7d0a883f8e2313fac35ddd208496373d",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"retrieved_at": "2026-11-23T17:16:54Z",
 "system": "seed_xlsx",
 "url": "https://github.com/microsoft/agent-framework"
 }
 ],
-"tags": [
-"agent-framework",
-"agentic-ai",
-"agents",
-"ai",
-"dotnet",
-"multi-agent",
-"orchestration",
-"python",
-"sdk",
-"workflows"
-],
+"tags": [],
 "tenant": null,
 "traces": [],
 "trust": {
 "compliance": 5,
-"identity": 3,
+"identity": 4,
 "issues": 1,
 "protocols": 5,
 "security": 1,

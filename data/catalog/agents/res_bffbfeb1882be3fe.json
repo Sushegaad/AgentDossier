@@ -1,0 +1,237 @@
+{
+"canonical_url": "almostimpossible.agency/developers",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "DPA available: Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://www.almostimpossible.agency/privacy",
+"framework": "gdpr",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "301efe74f870108df2cfebbaa76394c17ed75bb934f81aba5fd1a582a84d6311",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:31:56Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": "DPA_AVAILABLE"
+}
+],
+"deployment": null,
+"description": "Read-only access to the Almost Impossible agency website: case studies, team, news and pages.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 8.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 21.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 54.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "agency.almostimpossible/site"
+},
+"first_seen": "2026-11-23T17:16:55Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_bffbfeb1882be3fe",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 1,
+"incidents": 0,
+"links": [
+{
+"date": "2026-03-26",
+"kind": "cve",
+"title": "CVE-2026-33525",
+"url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33525"
+}
+],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:16:55Z",
+"license": null,
+"name": "Almost Impossible",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-10-05T13:22:31Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49964537",
+"engagement": 146,
+"headline": "Spending on AI is becoming almost impossible for businesses to budget",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://www.wsj.com/tech/personal-tech/ai-token-spending-businesses-431ee94a"
+},
+{
+"cluster_size": 1,
+"date": "2026-09-13T00:00:55Z",
+"discussion_url": "https://news.ycombinator.com/item?id=49678519",
+"engagement": 18,
+"headline": "Iran's Internet Blackout Is Almost Impossible to Escape",
+"kind": "community",
+"link_confidence": 0.88,
+"outlet": "Hacker News",
+"summary": null,
+"tag": "news",
+"url": "https://www.bloomberg.com/features/2026-iran-internet/"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-23T17:26:57Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-23T17:26:56Z",
+"entries": 4,
+"parser_version": "ard-0.91",
+"sources": [
+"https://www.almostimpossible.agency/.well-known/ard.json"
+],
+"status": "verified"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://www.almostimpossible.agency/mcp"
+}
+],
+"server_name": "agency.almostimpossible/site",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "almostimpossible.agency",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:37:52Z",
+"cves": 1,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-11-17T21:04:09.09325Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-11-17T21:04:09.09325Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "almostimpossible-agency-almost-impossible",
+"sources": [
+{
+"payload_hash": "5247ec168cd37429ff34ad1070a2fbc8a0691b3cceeb9f8d527628d7a28cbc96",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=agency.almostimpossible/site"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_bffbfeb1882be3fe_beb3ceeb",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_bffbfeb1882be3fe_beb3ceeb",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:b0aefdaaf761df72f6ae380c8621c1e87e21ac9e3a01dfa7ff821e2797c2b353",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Almost Impossible's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_bffbfeb1882be3fe_beb3ceeb/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 3,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": 4
+},
+"url": "https://www.almostimpossible.agency/developers",
+"vendor": "almostimpossible.agency"
+}

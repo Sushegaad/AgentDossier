@@ -1,0 +1,505 @@
+{
+"canonical_url": "agentapigate.ai",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"sales": [
+"shopify"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [
+{
+"certificate_id": null,
+"covers_resource": "unknown",
+"credited": true,
+"detail": {
+"pages_visited": 5
+},
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
+"evidence_url": "https://agentapigate.ai/privacy",
+"framework": "pci_dss",
+"issued": null,
+"issuer": null,
+"match_confidence": 1.0,
+"next_check": "2026-11-30",
+"payload_hash": "034297e560e762dfff740079d6af5b929b00f4d71eba69aa2cbdde0892342d3b",
+"period_end": null,
+"retrieved_at": "2026-11-23T17:31:29Z",
+"review_reason": "framework named on the vendor's own page",
+"reviewer": null,
+"scope": "entity",
+"source": "vendor_trust_centers",
+"status": "active",
+"tier": 4,
+"valid_until": null,
+"variant": null
+}
+],
+"deployment": null,
+"description": "Walmart, Shopee, TikTok Shop, Shopify & WooCommerce live product & pricing MCP (x402 USDC or key).",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"sales": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.75,
+"governance_credited": {},
+"profile": "commercial",
+"rank": null,
+"score": 43.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 4.6,
+"governance": 0.0,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 50.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp"
+},
+"first_seen": "2026-11-23T17:16:55Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_dff66b8c4a7dbe72",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:16:55Z",
+"license": null,
+"merged_ids": [
+"res_c3dad508f924bf65",
+"res_e2201006ac8afb28",
+"res_9f2150d3a3f30340",
+"res_213c2d9c5413b57b",
+"res_c30dbc5aa652a33b",
+"res_f2e8c4c95cdeab33",
+"res_493b97b6b8f6726a",
+"res_cd6fa9a5018dc14a",
+"res_b31fe340d028362c",
+"res_4357573fc980f1aa",
+"res_3be41a31907b9e0b",
+"res_7078a372d2f48560",
+"res_f3cac32eaeb16af9",
+"res_621467427f915d3a",
+"res_2b3c31508dec9d5d",
+"res_090bd9c6a8a10300",
+"res_28bba162333b3577",
+"res_378d35e7066b4755",
+"res_1a9011100d4e30f1",
+"res_2d773a741d264ed6",
+"res_3a884c4aacbca504",
+"res_2256954d6662dfad",
+"res_1b0b87fc84c3a9cf",
+"res_54e61f127dd446ee",
+"res_52c3b9d6d1a671e7",
+"res_b7c0f60ad899a388",
+"res_d1fc5b1c63357878",
+"res_b164389f0d22955e",
+"res_a3442f0dc5356cde",
+"res_98715ba6b7d62675",
+"res_59ba530c77671fd1",
+"res_e0b5cf77d6e7eb90",
+"res_c6417cc8137de51f",
+"res_0fe6a8b035579869",
+"res_39decf05d463407e",
+"res_e45ac3387baf9925",
+"res_819cf870d78fa313",
+"res_224110cc78189a40",
+"res_cca6a2ad72b95b14"
+],
+"name": "AgentAPIHub — Walmart, Shopee, TikTok Shop, Shopify & WooCommerce Catalog MCP",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"card_url": "https://agentapigate.ai/.well-known/agent-card.json",
+"checked_at": "2026-11-23T17:26:33Z",
+"errors": [
+"missing 'version'"
+],
+"parser_version": "a2a-0.3+1.0",
+"signed": false,
+"status": "invalid"
+},
+"ard": {
+"checked_at": "2026-11-23T17:26:32Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://mcp.agentapigate.ai/mcp"
+}
+],
+"server_name": "ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "agentapigate.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:38:32Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-11-20T10:13:39.411762Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-11-20T10:13:39.411762Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "agentapigate-ai-agentapihub-walmart-shopee-tiktok-shop-shopify-woocommerce-catal",
+"sources": [
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/bluesky-substack-social-newsletter-scraper-api-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/customs-bill-of-lading-import-export-trade-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/douyin-xiaohongshu-rednote-social-scraper-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/facebook-meta-google-tiktok-ads-library-api-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/github-huggingface-arxiv-papers-repos-search-api-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/google-maps-places-business-app-reviews-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/google-serp-web-scraping-domain-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/google-trends-seo-keywords-serp-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/job-postings-company-ats-career-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/linkedin-company-b2b-business-profile-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/polymarket-odds-prediction-market-events-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/reddit-hacker-news-forum-posts-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/sec-edgar-crypto-real-estate-pinterest-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/stocks-crypto-ohlcv-quote-market-data-api-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/threads-instagram-truthsocial-linkedin-posts-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/tiktok-instagram-short-video-creator-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/twitter-x-tweets-trending-topics-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapigate/youtube-transcript-video-subtitles-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/amazon-product-walmart-shopify-ecommerce-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/bluesky-substack-social-newsletter-scraper-api-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/customs-bill-of-lading-import-export-trade-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/douyin-xiaohongshu-rednote-social-scraper-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/facebook-meta-google-tiktok-ads-library-api-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/github-huggingface-arxiv-papers-repos-search-api-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/google-maps-places-business-app-reviews-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/google-serp-web-scraping-domain-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/google-trends-seo-keywords-serp-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/job-postings-company-ats-career-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/linkedin-company-b2b-business-profile-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/polymarket-odds-prediction-market-events-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/reddit-hacker-news-forum-posts-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/sec-edgar-crypto-real-estate-pinterest-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/stocks-crypto-ohlcv-quote-market-data-api-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/threads-instagram-truthsocial-linkedin-posts-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/tiktok-instagram-short-video-creator-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/twitter-x-tweets-trending-topics-search-mcp"
+},
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentapihub/youtube-transcript-video-subtitles-search-mcp"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_dff66b8c4a7dbe72_92810aca",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_dff66b8c4a7dbe72_92810aca",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A invalid (unsigned; 1 validation error)",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:c48a8cc5a31040e4a515faa160821f6fa76aa9fb694b2c9c84cdadace386bd78",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of AgentAPIHub — Walmart, Shopee, TikTok Shop, Shopify & WooCommerce Catalog MCP's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_dff66b8c4a7dbe72_92810aca/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 1,
+"vendor_compliance": 4
+},
+"url": "https://agentapigate.ai",
+"vendor": "agentapigate.ai"
+}

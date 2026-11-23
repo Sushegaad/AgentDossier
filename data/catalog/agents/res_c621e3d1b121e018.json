@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.57,
+"adoption": 24.64,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 1.8,
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "opensandbox-group/OpenSandbox"
 },
-"first_seen": "2026-11-16T14:44:42Z",
+"first_seen": "2026-11-23T17:20:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,47 +64,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:44:42Z",
+"last_seen": "2026-11-23T17:20:29Z",
 "license": "Apache-2.0",
 "name": "OpenSandbox",
 "news": [
 {
-"cluster_size": 2,
-"date": "2026-11-13T02:04:52Z",
-"headline": "OpenSandbox 1.2.1",
+"cluster_size": 1,
+"date": "2026-11-23T16:53:17Z",
+"headline": "OpenSandbox 1.3.0-rc.3",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Stable patch release for users upgrading from `1.2.0`, including both `1.2.1` release candidates and subsequent fixes. Server, CLI, SDKs, charts, and platform images ship together at `1.2.1`.\n\n## Highlights\n\n- **Dynamic credentials:** Crede",
+"summary": "Third release candidate on the `1.3.0` feature line, cut from `release-1.3.0-rc.2` (2026-11-19). Baseline for every section is `release-1.3.0-rc.2`; rc users on that tag should upgrade. rc releases publish images but hold packages — SDK/CLI",
 "tag": "product_update",
-"url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.2.1"
+"url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.3.0-rc.3"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-16T05:09:47Z",
-"headline": "OpenSandbox 1.3.0-rc.1",
+"date": "2026-11-19T09:34:13Z",
+"headline": "OpenSandbox 1.3.0-rc.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "First release candidate on the `1.3.0` feature line, cut from `release-1.2.1` (2026-11-13). Headline: fast-sandbox rootfs-only snapshots reach the public lifecycle API across all five SDKs, and the OSEP-0018 execd-as-init topology becomes t",
+"summary": "Second release candidate on the `1.3.0` feature line, cut from `release-1.3.0-rc.1` (2026-11-16). Baseline for every section is `release-1.3.0-rc.1`; rc users on that tag should upgrade. rc releases publish images but hold packages — SDK/CL",
 "tag": "product_update",
-"url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.3.0-rc.1"
+"url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.3.0-rc.2"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:51Z",
+"checked_at": "2026-11-23T17:28:55Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:50Z",
+"checked_at": "2026-11-23T17:28:54Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:53:52Z",
+"checked_at": "2026-11-23T17:28:56Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -114,7 +114,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:13:02Z",
+"checked_at": "2026-11-23T17:42:18Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -122,19 +122,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-12-17T08:41:09Z",
-"github_forks": 1655,
+"github_forks": 1720,
 "github_language": "Go",
-"github_open_issues": 197,
-"github_pushed_at": "2026-11-16T12:12:28Z",
-"github_stars": 17348,
+"github_open_issues": 215,
+"github_pushed_at": "2026-11-23T16:53:14Z",
+"github_stars": 17832,
 "github_topic": "ai-agent",
 "homepage": "https://open-sandbox.ai"
 },
 "slug": "opensandbox-group-opensandbox",
 "sources": [
 {
-"payload_hash": "79784b9bfa706d08b3d8676ed4c5ad5eff1e109bf5347e09b1b188220d6227df",
-"retrieved_at": "2026-11-16T14:44:42Z",
+"payload_hash": "d2540c9fd2d6b31f740615e2181ff3750ded97451bebd25d68c491c6b0d6cdf6",
+"retrieved_at": "2026-11-23T17:20:29Z",
 "system": "github",
 "url": "https://github.com/opensandbox-group/OpenSandbox"
 }

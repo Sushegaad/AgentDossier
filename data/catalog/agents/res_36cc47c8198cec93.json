@@ -1,0 +1,176 @@
+{
+"canonical_url": "theia-ide.org",
+"category": "Open-source project",
+"classification": {
+"matched": {
+"technology": [
+"cloud",
+"framework",
+"ide",
+"llm",
+"mcp",
+"typescript"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "Eclipse Theia is an open-source platform for building custom IDEs and tools for browser and desktop. It includes Theia AI, the vendor-neutral AI harness platform, and powers the AI-native Theia IDE.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"technology": {
+"components": {
+"adoption": 25.14,
+"docs": 7.0,
+"domain_fit": 91.7,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.917,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 80.4,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "eclipse-theia/theia"
+},
+"first_seen": "2026-11-23T17:17:57Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_36cc47c8198cec93",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:17:57Z",
+"license": "EPL-2.0",
+"name": "theia",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-11-23T00:31:00Z",
+"headline": "theia: Native Dependencies - Next (2026-11-23)",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "Automated next build of native dependencies from `master` (commit `f5d466aa4652a7b9e99929a3ced8be3087292163`, 2026-11-23 00:30 UTC).",
+"tag": "product_update",
+"url": "https://github.com/eclipse-theia/theia/releases/tag/next"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-05T19:31:06Z",
+"headline": "theia: Eclipse Theia v1.77.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## What's Changed\r\n\r\n- [Release Notes](https://github.com/eclipse-theia/theia/blob/release/1.77.x/CHANGELOG.md#1770---1152026)\r\n- [Breaking Changes](https://github.com/eclipse-theia/theia/blob/release/1.77.x/CHANGELOG.md#breaking_changes_1.",
+"tag": "product_update",
+"url": "https://github.com/eclipse-theia/theia/releases/tag/v1.77.0"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-23T17:29:21Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-23T17:29:20Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://theia-ide.org/",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-11-23T17:29:22Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "theia-ide.org",
+"resource_type": "framework",
+"scope": "public",
+"signals": {
+"github_archived": false,
+"github_created_at": "2017-02-24T14:42:05Z",
+"github_forks": 2946,
+"github_language": "TypeScript",
+"github_open_issues": 1520,
+"github_pushed_at": "2026-11-23T16:17:14Z",
+"github_stars": 21783,
+"github_topic": "ai-agents",
+"homepage": "https://theia-ide.org/"
+},
+"slug": "eclipse-theia-theia",
+"sources": [
+{
+"payload_hash": "bae6e998b85a33287b7ab41e1646f304bbde3c74c3f21bc0fd80b49fb5d1ec98",
+"retrieved_at": "2026-11-23T17:17:57Z",
+"system": "github",
+"url": "https://github.com/eclipse-theia/theia"
+}
+],
+"tags": [
+"agent-skills",
+"agentic-ai",
+"ai",
+"ai-agents",
+"ai-harness",
+"ai-native",
+"cloud-ide",
+"editor",
+"electron",
+"ide",
+"ide-framework",
+"language-server-protocol",
+"llm",
+"mcp",
+"model-context-protocol",
+"typescript"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": null,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://theia-ide.org/",
+"vendor": "eclipse-theia"
+}

@@ -14,7 +14,7 @@
 "external_ids": {
 "github": "nesquena/hermes-webui"
 },
-"first_seen": "2026-11-16T14:41:29Z",
+"first_seen": "2026-11-23T17:17:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -49,47 +49,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:29Z",
+"last_seen": "2026-11-23T17:17:57Z",
 "license": "MIT",
 "name": "hermes-webui",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-16T06:46:03Z",
-"headline": "hermes-webui release exp-v0.52.697",
+"date": "2026-11-23T16:43:29Z",
+"headline": "hermes-webui release exp-v0.52.743",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* Release exp-v0.52.697: P1: clicking the YOLO pill can no longer turn auto-approval on or approve a waiting command (#9116, part of #9101) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/9117\n* fix(yo",
+"summary": "## What's Changed\n* Release exp-v0.52.743: send: keep a switched-away start on its issuing chat (#9284) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/9319\n* fix(send): keep a pending turn on the chat that issued it wh",
 "tag": "product_update",
-"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.697"
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.743"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-16T00:18:11Z",
-"headline": "hermes-webui release exp-v0.52.696",
+"date": "2026-11-23T13:16:31Z",
+"headline": "hermes-webui release exp-v0.52.742",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\n* docs(changelog): stamp v0.52.679 by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/9107\n* Release exp-v0.52.696: typing a skill's exact name in the slash menu puts that skill first (#9049, #9035) by @n",
+"summary": "## What's Changed\n* Release exp-v0.52.733: streaming: retry a failed compressor rebind on the next turn (#9215) by @nesquena-hermes in https://github.com/nesquena/hermes-webui/pull/9270\n* fix(streaming): harden the cached-agent compressor r",
 "tag": "product_update",
-"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.696"
+"url": "https://github.com/nesquena/hermes-webui/releases/tag/exp-v0.52.742"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:00Z",
+"checked_at": "2026-11-23T17:28:16Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:00Z",
+"checked_at": "2026-11-23T17:28:15Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:53:01Z",
+"checked_at": "2026-11-23T17:28:16Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -99,7 +99,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:12:56Z",
+"checked_at": "2026-11-23T17:42:14Z",
 "cves": 2,
 "source": "nvd",
 "tier": 1
@@ -107,19 +107,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-03-30T21:50:12Z",
-"github_forks": 2837,
+"github_forks": 2859,
 "github_language": "Python",
-"github_open_issues": 997,
-"github_pushed_at": "2026-11-16T14:06:55Z",
-"github_stars": 19542,
+"github_open_issues": 1027,
+"github_pushed_at": "2026-11-23T16:43:14Z",
+"github_stars": 19619,
 "github_topic": "ai-agents",
 "homepage": "https://get-hermes.ai/setup"
 },
 "slug": "nesquena-hermes-webui",
 "sources": [
 {
-"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
-"retrieved_at": "2026-11-16T14:41:29Z",
+"payload_hash": "bae6e998b85a33287b7ab41e1646f304bbde3c74c3f21bc0fd80b49fb5d1ec98",
+"retrieved_at": "2026-11-23T17:17:57Z",
 "system": "github",
 "url": "https://github.com/nesquena/hermes-webui"
 }

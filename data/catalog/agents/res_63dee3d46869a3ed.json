@@ -10,16 +10,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-16)",
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "e9c7990b6d35185f4a25b59009a83fa05c7e29c4537c091e746563151c6340f7",
+"next_check": "2026-11-30",
+"payload_hash": "114c4c83abbc59146d548db23827378132b945272dff25939956fde0922b69b3",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:58:56Z",
+"retrieved_at": "2026-11-23T17:33:09Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -36,16 +36,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "HIPAA: BAA available (vendor-claimed, 2026-11-16)",
+"display": "HIPAA: BAA available (vendor-claimed, 2026-11-23)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "hipaa",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "e9c7990b6d35185f4a25b59009a83fa05c7e29c4537c091e746563151c6340f7",
+"next_check": "2026-11-30",
+"payload_hash": "114c4c83abbc59146d548db23827378132b945272dff25939956fde0922b69b3",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:58:56Z",
+"retrieved_at": "2026-11-23T17:33:09Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -62,16 +62,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "SOC 2 Type II: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://docs.langchain.com/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "e9c7990b6d35185f4a25b59009a83fa05c7e29c4537c091e746563151c6340f7",
+"next_check": "2026-11-30",
+"payload_hash": "114c4c83abbc59146d548db23827378132b945272dff25939956fde0922b69b3",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:58:56Z",
+"retrieved_at": "2026-11-23T17:33:09Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -195,7 +195,7 @@
 "external_ids": {
 "github": "langchain-ai/deepagents"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:54Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -217,38 +217,38 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:54Z",
 "license": "MIT",
 "name": "LangChain Deep Agents",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-13T20:17:27Z",
-"headline": "deepagents release deepagents-code 0.2.8",
+"date": "2026-11-20T23:14:43Z",
+"headline": "deepagents release deepagents-acp 0.1.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Features\n\n- Set `DEEPAGENTS_CODE=1` in the local shell environment. ([#7701](https://github.com/langchain-ai/deepagents/pull/7701))\n\n### Bug Fixes\n\n- Replace unencodable characters in redirected output. ([#7717](https://github.com/langc",
+"summary": "### ⚠ BREAKING CHANGES\n\n- Requires `agent-client-protocol>=1.0.0,<2.0.0`. ([#7781](https://github.com/langchain-ai/deepagents/pull/7781))\n\n### Bug Fixes\n\n- Fixed a crash when running `dcode --acp` with agent-client-protocol 1.0. ([#7779](ht",
 "tag": "product_update",
-"url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents-code%3D%3D0.2.8"
+"url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents-acp%3D%3D0.1.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-13T19:53:12Z",
-"headline": "deepagents release langchain-modal 0.0.8",
+"date": "2026-11-20T22:28:53Z",
+"headline": "deepagents release deepagents-code 0.2.13",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Bug Fixes\n\n- Updated `ModalSandbox` file I/O to use the `Sandbox.filesystem` API ([#7664](https://github.com/langchain-ai/deepagents/pull/7664)).\n\n[Full changelog](https://github.com/langchain-ai/deepagents/blob/02d53e7c537b25ee6acc61f9",
+"summary": "### Bug Fixes\n\n- Correctly report unapproved MCP servers disabled via F2 as disabled, and report project MCP servers skipped due to missing approval ([#7908](https://github.com/langchain-ai/deepagents/pull/7908), [#7904](https://github.com/",
 "tag": "product_update",
-"url": "https://github.com/langchain-ai/deepagents/releases/tag/langchain-modal%3D%3D0.0.8"
+"url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents-code%3D%3D0.2.13"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
 "card_url": "https://docs.langchain.com/.well-known/agent-card.json",
-"checked_at": "2026-11-16T14:52:47Z",
+"checked_at": "2026-11-23T17:28:04Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -259,13 +259,13 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:46Z",
+"checked_at": "2026-11-23T17:28:02Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
 "card_url": "https://docs.langchain.com/.well-known/mcp.json",
-"checked_at": "2026-11-16T14:52:47Z",
+"checked_at": "2026-11-23T17:28:04Z",
 "parser_version": "mcp-2025-06-18",
 "remotes": [
 {
@@ -281,7 +281,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:06:27Z",
+"checked_at": "2026-11-23T17:36:53Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -302,11 +302,11 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-07-27T23:07:53Z",
-"github_forks": 4425,
+"github_forks": 4463,
 "github_language": "Python",
-"github_open_issues": 237,
-"github_pushed_at": "2026-11-16T13:16:27Z",
-"github_stars": 31326,
+"github_open_issues": 245,
+"github_pushed_at": "2026-11-23T17:05:55Z",
+"github_stars": 31538,
 "homepage": "https://docs.langchain.com/deepagents",
 "observed_popularity": "Not captured",
 "seed_enrich": {
@@ -322,7 +322,7 @@
 "sources": [
 {
 "payload_hash": "2111c58d553f4b75295ced22ecd6fda83433ce35cb0e1fc471650ff4bdaf9351",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"retrieved_at": "2026-11-23T17:16:54Z",
 "system": "seed_xlsx",
 "url": "https://github.com/langchain-ai/deepagents"
 }

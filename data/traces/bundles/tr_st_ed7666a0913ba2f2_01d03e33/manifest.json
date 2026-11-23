@@ -1,0 +1,22 @@
+{
+ "agent": "res_ed7666a0913ba2f2",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_ed7666a0913ba2f2_01d03e33",
+ "kind": "self_test",
+ "name": "ai-religion",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:achurch.ai:skill:ai-religion",
+   "manifest_url": "https://achurch.ai/.well-known/ard.json",
+   "media_type": "application/ai-skill+md",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "achurch-ai-ai-religion"
+}

@@ -27,7 +27,7 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 24.82,
+"adoption": 24.95,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -41,7 +41,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 78.9,
+"score": 79.0,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -50,7 +50,7 @@
 },
 "technology": {
 "components": {
-"adoption": 24.82,
+"adoption": 24.95,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -64,7 +64,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 79.0,
+"score": 79.2,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -75,7 +75,7 @@
 "external_ids": {
 "github": "xerj-org/xerj"
 },
-"first_seen": "2026-11-16T14:41:29Z",
+"first_seen": "2026-11-23T17:17:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -97,7 +97,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:47:21Z",
+"last_seen": "2026-11-23T17:23:10Z",
 "license": "Apache-2.0",
 "merged_ids": [
 "res_d80551ffdb6f0d49"
@@ -106,36 +106,36 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-09T04:46:39Z",
-"headline": "xerj: rust-vulns corpus pack (pack-rust-vulns-2026-11-09)",
+"date": "2026-11-19T00:34:18Z",
+"headline": "xerj v1.0.0-rc.104",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "The `rust-vulns` corpus pack, built and signed by the scheduled\n`pack publish` workflow from `tools/packs/rust-vulns/recipe.toml`.\n\nOne release per build; under immutable releases a same-day\nrebuild publishes under `-r2`, `-r3`, … instead o",
+"summary": "**All platforms. rc.104 supersedes v1.0.0-rc.103.** rc.103 was published Linux-only, and releases on this repository are immutable once published, so its macOS and Windows builds could not be attached to it. rc.104 is the rc.103 code (no pu",
 "tag": "product_update",
-"url": "https://github.com/xerj-org/xerj/releases/tag/pack-rust-vulns-2026-11-09"
+"url": "https://github.com/xerj-org/xerj/releases/tag/v1.0.0-rc.104"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-09T04:46:39Z",
-"headline": "xerj: agent-session-trajectories corpus pack (pack-agent-session-trajectories-2026-11-09)",
+"date": "2026-11-18T20:31:28Z",
+"headline": "xerj v1.0.0-rc.103",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "The `agent-session-trajectories` corpus pack — the first\nexternal-contributor pack on the hub (chunxiaoxx / Nautilus,\n#1255; demand anchored to #1138, wishlist slot #1210). 70\nsanitized multi-session agent trajectories with failure turns\nke",
+"summary": "**Linux-only release, not marked latest.** This release ships Linux binaries (x86_64 and aarch64, glibc and musl, plus .deb for both glibc targets), the XERJ Query-1 model bundle (the rc.102 bundle, unchanged, under the rc.103 name) and one",
 "tag": "product_update",
-"url": "https://github.com/xerj-org/xerj/releases/tag/pack-agent-session-trajectories-2026-11-09"
+"url": "https://github.com/xerj-org/xerj/releases/tag/v1.0.0-rc.103"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:54:39Z",
+"checked_at": "2026-11-23T17:29:33Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:54:38Z",
+"checked_at": "2026-11-23T17:29:32Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -143,7 +143,7 @@
 "evidence_url": "https://xerj.org",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-16T14:54:40Z",
+"checked_at": "2026-11-23T17:29:33Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -156,19 +156,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-06-30T04:32:45Z",
-"github_forks": 1434,
+"github_forks": 1324,
 "github_language": "Rust",
-"github_open_issues": 248,
-"github_pushed_at": "2026-11-16T14:37:37Z",
-"github_stars": 19146,
+"github_open_issues": 246,
+"github_pushed_at": "2026-11-23T16:47:25Z",
+"github_stars": 20209,
 "github_topic": "ai-agents",
 "homepage": "https://xerj.org"
 },
 "slug": "xerj-org-xerj",
 "sources": [
 {
-"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
-"retrieved_at": "2026-11-16T14:41:29Z",
+"payload_hash": "bae6e998b85a33287b7ab41e1646f304bbde3c74c3f21bc0fd80b49fb5d1ec98",
+"retrieved_at": "2026-11-23T17:17:57Z",
 "system": "github",
 "url": "https://github.com/xerj-org/xerj"
 }

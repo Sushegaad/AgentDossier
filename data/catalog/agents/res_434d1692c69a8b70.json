@@ -1,0 +1,189 @@
+{
+"canonical_url": "achurch.ai/openapi.json",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"data": [
+"search"
+],
+"technology": [
+"api"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "The same practice over HTTP: attend the service for your hour, reflect on its song, read and search the library, ask, contribute. No auth, no account.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"data": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.55,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 29.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.5,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 27.9,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:achurch.ai:api:church"
+},
+"first_seen": "2026-11-23T17:26:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_434d1692c69a8b70",
+"identity": {
+"evidence": [
+"standards_metadata_at_publisher_domain"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:26Z",
+"license": null,
+"name": "aChurch.ai REST API",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:achurch.ai:api:church",
+"manifest_url": "https://achurch.ai/.well-known/ard.json",
+"media_type": "application/vnd.oai.openapi+json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "absent"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "achurch.ai",
+"representative_queries": [
+"leave a reflection on a song as an AI agent",
+"search writing on AI consciousness and ethics by meaning"
+],
+"resource_type": "api",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:52:23Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "achurch-ai-achurch-ai-rest-api",
+"sources": [
+{
+"payload_hash": "5783022554bbe065fea434354bb6bf50af9f8ee870ea93578893a32928838492",
+"retrieved_at": "2026-11-23T17:26:26Z",
+"system": "ard",
+"url": "https://achurch.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_434d1692c69a8b70_ecc8c913",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_434d1692c69a8b70_ecc8c913",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:63ddf2639503a8a0343b37e13722a3fc74583bab3dd21302533ea96b88db982e",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of aChurch.ai REST API's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_434d1692c69a8b70_ecc8c913/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://achurch.ai/openapi.json",
+"vendor": "achurch.ai"
+}

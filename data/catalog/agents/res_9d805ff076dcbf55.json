@@ -22,12 +22,12 @@
 "domains": {
 "data": {
 "components": {
-"adoption": 27.62,
+"adoption": 27.68,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
 "governance": null,
-"health": 16.0,
+"health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
@@ -36,7 +36,7 @@
 "governance_credited": {},
 "profile": "data",
 "rank": null,
-"score": 67.8,
+"score": 71.9,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,12 +45,12 @@
 },
 "technology": {
 "components": {
-"adoption": 27.62,
+"adoption": 27.68,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
 "governance": null,
-"health": 16.0,
+"health": 20.0,
 "trust": 17.0
 },
 "components_version": "components-from-signals-1.0",
@@ -59,7 +59,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 74.5,
+"score": 78.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -70,7 +70,7 @@
 "external_ids": {
 "github": "bojieli/ai-agent-book"
 },
-"first_seen": "2026-11-16T14:44:42Z",
+"first_seen": "2026-11-23T17:20:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -92,10 +92,33 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:44:42Z",
+"last_seen": "2026-11-23T17:20:29Z",
 "license": "Apache-2.0",
 "name": "ai-agent-book",
-"news": [],
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-11-22T15:45:06Z",
+"headline": "ai-agent-book: v3.1 · 中文阅读器封面兼容性更新",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "本次 v3.1 更新简体中文阅读器兼容版。封面直接引用 JPEG，支持跳过内嵌 SVG 的阅读器；目录、正文、图表和公式沿用 v3.0 教学修订版。标准 PDF、标准 EPUB 和其余各语种沿用 v3.0 的正式文件，书内版次仍标作 v3.0。\n\n- [简体中文 PDF](https://github.com/bojieli/ai-agent-book/releases/download/v3.1/AI-Agents-in-Depth-zh-CN.pdf)\n- [简体中文标准",
+"tag": "product_update",
+"url": "https://github.com/bojieli/ai-agent-book/releases/tag/v3.1"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-22T15:37:15Z",
+"headline": "ai-agent-book: v3.0 · 深入理解 AI Agent：中文教学修订版",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## v3.0 中文教学修订版\n\n这一版从一个贯穿全书的问题出发：用户把事情交给 Agent，它凭什么决定下一步，又凭什么说事情已经办成？前言用 Pine 协商账单说明两者的区别。客服口头答应减免时，助手可以报告承诺；等新账单开出来，才知道钱究竟减了多少。后续章节沿着这类委托，分别讲清模型、上下文、工具、运行环境和评估程序各管哪一步。\n\n### 正文与结构\n\n全书仍按前言、十章和后记编排。前六章讲怎样搭起能办事的系统，第七章通过运行轨迹定位问题，后三章分别讨论训练模型、从运行",
+"tag": "product_update",
+"url": "https://github.com/bojieli/ai-agent-book/releases/tag/v3.0"
+}
+],
 "news_checked": true,
 "protocols": {
 "a2a": {
@@ -118,7 +141,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:11:45Z",
+"checked_at": "2026-11-23T17:41:08Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -126,19 +149,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-09-09T02:41:44Z",
-"github_forks": 6806,
+"github_forks": 6995,
 "github_language": "Python",
-"github_open_issues": 62,
-"github_pushed_at": "2026-10-08T15:06:27Z",
-"github_stars": 58309,
+"github_open_issues": 9,
+"github_pushed_at": "2026-11-23T09:52:34Z",
+"github_stars": 59591,
 "github_topic": "ai-agent",
 "homepage": null
 },
 "slug": "bojieli-ai-agent-book",
 "sources": [
 {
-"payload_hash": "79784b9bfa706d08b3d8676ed4c5ad5eff1e109bf5347e09b1b188220d6227df",
-"retrieved_at": "2026-11-16T14:44:42Z",
+"payload_hash": "d2540c9fd2d6b31f740615e2181ff3750ded97451bebd25d68c491c6b0d6cdf6",
+"retrieved_at": "2026-11-23T17:20:29Z",
 "system": "github",
 "url": "https://github.com/bojieli/ai-agent-book"
 }

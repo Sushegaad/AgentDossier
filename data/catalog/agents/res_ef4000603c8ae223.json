@@ -23,7 +23,7 @@
 "domain_fit": 56.4,
 "ecosystem": 9.6,
 "governance": null,
-"health": 20.0,
+"health": 16.0,
 "trust": 21.0
 },
 "components_version": "components-from-signals-1.0",
@@ -32,7 +32,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 55.5,
+"score": 51.5,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -45,7 +45,7 @@
 "github": "askgina/plugins",
 "mcp_registry": "ai.askgina/gina"
 },
-"first_seen": "2026-11-16T14:40:28Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,12 +67,10 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:28Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "merged_ids": [
-"res_5a7bbb4218c3a1a0",
-"res_5013c758de4c0bd3",
-"res_9d14442292fda45d"
+"res_5a7bbb4218c3a1a0"
 ],
 "name": "Ask Gina",
 "news": [
@@ -92,7 +90,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://docs.askgina.ai/.well-known/agent-card.json",
-"checked_at": "2026-11-16T14:52:41Z",
+"checked_at": "2026-11-23T17:28:02Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3",
 "signed": false,
@@ -103,7 +101,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:39Z",
+"checked_at": "2026-11-23T17:27:59Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -126,7 +124,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:10:07Z",
+"checked_at": "2026-11-23T17:40:17Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -143,28 +141,16 @@
 "slug": "askgina-ai-ask-gina",
 "sources": [
 {
-"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
-"retrieved_at": "2026-11-16T14:40:28Z",
+"payload_hash": "8f4cd03e73ef3bc3a721bcf024071174ab7322d9c50a88e978dc91cc117fb1e0",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.askgina/gina"
 },
 {
-"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
-"retrieved_at": "2026-11-16T14:40:28Z",
+"payload_hash": "8f4cd03e73ef3bc3a721bcf024071174ab7322d9c50a88e978dc91cc117fb1e0",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.askgina/perps"
-},
-{
-"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
-"retrieved_at": "2026-11-16T14:40:28Z",
-"system": "mcp_registry",
-"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.askgina/predictions"
-},
-{
-"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
-"retrieved_at": "2026-11-16T14:40:28Z",
-"system": "mcp_registry",
-"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.askgina/spot"
 }
 ],
 "tags": [],

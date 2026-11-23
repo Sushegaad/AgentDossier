@@ -45,7 +45,7 @@
 "github": "dealfluence/adeu",
 "mcp_registry": "ai.adeu/adeu"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -67,31 +67,31 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "name": "ai.adeu/adeu",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-13T12:09:46Z",
-"headline": "adeu: Release v4.0.1",
+"date": "2026-11-21T18:52:49Z",
+"headline": "Adeu 4.2.0 – document tool security update",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## What's Changed\r\n## Security & Dependency Maintenance (`v4.0.1`)\r\n\r\nResolves all 45 Dependabot security advisories across Python, LangChain, and Node workspaces:\r\n- **Python (`adeu`, `adeu[mcp]`, `langchain-adeu`):** Bumped `fastmcp[apps]",
+"summary": "Adeu 4.2.0 is a security update for the Node and Python MCP servers, the desktop extension, and the LangChain file tools. Upgrade any installation that gives an assistant access to local documents.\n\nDocument tools now check the resolved des",
 "tag": "product_update",
-"url": "https://github.com/dealfluence/adeu/releases/tag/v4.0.1"
+"url": "https://github.com/dealfluence/adeu/releases/tag/v4.2.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-13T10:47:26Z",
-"headline": "adeu: Release v4.0.0",
+"date": "2026-11-17T10:49:38Z",
+"headline": "adeu: Release v4.1.0",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Full Changelog**: https://github.com/dealfluence/adeu/compare/v3.2.2...v4.0.0\r\n\r\n## Breaking Change (Python): MCP Server Moved to `adeu[mcp]`\r\n\r\nCore `adeu` on PyPI no longer installs `fastmcp` or `jinja2` by default — reducing the Python",
+"summary": "**Full Changelog**: https://github.com/dealfluence/adeu/compare/v4.0.1...v4.1.0",
 "tag": "product_update",
-"url": "https://github.com/dealfluence/adeu/releases/tag/v4.0.0"
+"url": "https://github.com/dealfluence/adeu/releases/tag/v4.1.0"
 }
 ],
 "news_checked": true,
@@ -125,7 +125,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:08:01Z",
+"checked_at": "2026-11-23T17:38:14Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -140,8 +140,8 @@
 "slug": "adeu-ai-ai-adeu-adeu",
 "sources": [
 {
-"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "5247ec168cd37429ff34ad1070a2fbc8a0691b3cceeb9f8d527628d7a28cbc96",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.adeu/adeu"
 }

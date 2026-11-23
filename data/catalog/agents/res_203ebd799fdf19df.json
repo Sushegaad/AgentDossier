@@ -1,5 +1,5 @@
 {
-"canonical_url": "cognitum.one",
+"canonical_url": "cognitum.one/rupro",
 "capabilities": [],
 "category": "Open-source project",
 "classification": {
@@ -30,7 +30,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.48,
+"adoption": 28.49,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -53,7 +53,7 @@
 },
 "data": {
 "components": {
-"adoption": 28.48,
+"adoption": 28.49,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 6.6,
@@ -76,7 +76,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.48,
+"adoption": 28.49,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 6.6,
@@ -101,7 +101,7 @@
 "external_ids": {
 "github": "ruvnet/ruflo"
 },
-"first_seen": "2026-11-16T14:41:23Z",
+"first_seen": "2026-11-23T17:17:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,7 +123,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:47:21Z",
+"last_seen": "2026-11-23T17:23:10Z",
 "license": "MIT",
 "merged_ids": [
 "res_203ebd799fdf19df"
@@ -132,44 +132,44 @@
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-13T21:05:38Z",
-"headline": "ruflo: v3.77.1 — AgentDB honours the configured embedding model",
+"date": "2026-11-21T03:34:46Z",
+"headline": "ruflo: v3.80.0 — SIM handoff ingestion, darwin 0.16, federation and ledger fixes",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## 3.77.1\n\n**Fix: AgentDB now honours the configured embedding model and dimension (#4984, #4985)**\n\n`memory_store` ignored `.claude-flow/embeddings.json` after #2305: the controller registry created AgentDB with only a `dbPath`, so a confi",
+"summary": "## New: signed SIM handoff ingestion\n\n`ruflo metaharness sim-ingest` ingests signed SIM handoffs from MetaHarness Darwin (#5054). It is opt-in. `@metaharness/darwin` is now pinned to `~0.16.0`. That version fixes the 0.15.0 bug that could l",
 "tag": "product_update",
-"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.77.1"
+"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.80.0"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-12T22:07:03Z",
-"headline": "ruflo: v3.77.0 — neural wsp (ruv-FANN), opt-in judge routing, guidance WASM fix",
+"date": "2026-11-20T13:48:27Z",
+"headline": "ruflo: v3.79.1 — README images on npm",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "Minor release.\n\n## What's new\n- **`neural wsp` — optional ruv-FANN weight-space tooling (ADR-528, #4980).** `ruflo neural wsp status | inspect | check | gate | export-centroid`. The three `ruv-fann-wsp*` packages are `optionalDependencies`;",
+"summary": "## Fix: README images and links on npm\n\nOn npmjs.com the `ruflo` and `@claude-flow/cli` README pages were missing most images (41 of 51 on `ruflo`), and their relative links went to 404 pages. npm resolves relative README URLs against the p",
 "tag": "product_update",
-"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.77.0"
+"url": "https://github.com/ruvnet/ruflo/releases/tag/v3.79.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:52:35Z",
+"checked_at": "2026-11-23T17:27:41Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:23Z",
+"checked_at": "2026-11-23T17:27:40Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"evidence_url": "https://cognitum.one",
+"evidence_url": "https://cognitum.one/ruPro",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-16T14:52:35Z",
+"checked_at": "2026-11-23T17:27:42Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-06-02T21:24:20Z",
-"github_forks": 9647,
+"github_forks": 9699,
 "github_language": "TypeScript",
-"github_open_issues": 607,
-"github_pushed_at": "2026-11-16T09:19:52Z",
-"github_stars": 81857,
-"github_topic": "mcp-server",
-"homepage": "https://cognitum.one"
+"github_open_issues": 561,
+"github_pushed_at": "2026-11-23T07:27:13Z",
+"github_stars": 82319,
+"github_topic": "ai-agents",
+"homepage": "https://cognitum.one/ruPro"
 },
 "slug": "ruvnet-ruflo",
 "sources": [
 {
-"payload_hash": "f34688fd0cb2f70801315df09aadb471b17c21e7a00e4711b74bed2a125caebe",
-"retrieved_at": "2026-11-16T14:47:21Z",
+"payload_hash": "155b36dfde8bfea7a22236b39c614c39a9f141f45a6faddf3842e36b74557f39",
+"retrieved_at": "2026-11-23T17:17:51Z",
 "system": "github",
 "url": "https://github.com/ruvnet/ruflo"
 }
@@ -232,6 +232,6 @@
 "traces": 5,
 "vendor_compliance": null
 },
-"url": "https://cognitum.one",
+"url": "https://cognitum.one/ruPro",
 "vendor": "ruvnet"
 }

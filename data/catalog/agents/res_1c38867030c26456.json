@@ -17,7 +17,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 24.54,
+"adoption": 24.56,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 4.5,
@@ -31,7 +31,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 69.5,
+"score": 69.6,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -42,7 +42,7 @@
 "external_ids": {
 "github": "xpzouying/xiaohongshu-mcp"
 },
-"first_seen": "2026-11-16T14:47:21Z",
+"first_seen": "2026-11-23T17:23:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -64,10 +64,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:47:21Z",
+"last_seen": "2026-11-23T17:23:10Z",
 "license": "Apache-2.0",
 "name": "xiaohongshu-mcp",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-23T15:31:46Z",
+"headline": "xiaohongshu-mcp: Release v2.7.5",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## 🚀 新版本发布: v2.7.5\n\n\n\n### 📋 更新内容\n\n- 添加 SkySlity 到代码贡献者名单 (8ae865e)\n- docs: update .all-contributorsrc [skip ci] (9b10449)\n- docs: update README_EN.md [skip ci] (e091e2f)\n- docs: update README.md [skip ci] (2ea4dfe)\n- 添加 zhyfor 到代码贡献者名单 (2fe",
+"tag": "product_update",
+"url": "https://github.com/xpzouying/xiaohongshu-mcp/releases/tag/v2.7.5"
+},
 {
 "cluster_size": 1,
 "date": "2026-11-10T17:46:52Z",
@@ -78,28 +89,17 @@
 "summary": "## 🚀 新版本发布: v2.7.4\n\n\n\n### 📋 更新内容\n\n- Merge pull request #912 from xpzouying/all-contributors/add-kalivid (bb6fa2e)\n- docs: update .all-contributorsrc [skip ci] (6ea38f3)\n- docs: update README_EN.md [skip ci] (91e1abe)\n- docs: update README.m",
 "tag": "product_update",
 "url": "https://github.com/xpzouying/xiaohongshu-mcp/releases/tag/v2.7.4"
-},
-{
-"cluster_size": 1,
-"date": "2026-11-06T07:22:51Z",
-"headline": "xiaohongshu-mcp: Release v2.7.3",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "v2.7.3 修复搜索过程中的风控重定向诊断。搜索页延迟跳到安全验证页或登录页时，会及时返回对应提示，帮助调用方判断需要扫码验证还是重新登录。\n\n- 在等待搜索结果期间识别延迟重定向，并覆盖结果就绪后、导航后停顿期间的跳转。\n- 按 URL 路径判断页面类型，避免查询参数导致误判。\n- 保留正常空结果行为，补齐本地浏览器回归测试。感谢 @SamYunquChen 的修复与测试贡献。[#872](https://github.com/xpzouying/xiaohongshu-",
-"tag": "product_update",
-"url": "https://github.com/xpzouying/xiaohongshu-mcp/releases/tag/v2.7.3"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:09Z",
+"checked_at": "2026-11-23T17:28:24Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:07Z",
+"checked_at": "2026-11-23T17:28:22Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -107,7 +107,7 @@
 "evidence_url": "https://www.haha.ai/xiaohongshu-mcp",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-16T14:53:10Z",
+"checked_at": "2026-11-23T17:28:24Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -119,7 +119,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:13:04Z",
+"checked_at": "2026-11-23T17:42:21Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -127,19 +127,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-08-03T09:08:45Z",
-"github_forks": 2528,
+"github_forks": 2553,
 "github_language": "Go",
-"github_open_issues": 111,
-"github_pushed_at": "2026-11-16T04:43:40Z",
-"github_stars": 17151,
+"github_open_issues": 114,
+"github_pushed_at": "2026-11-23T15:29:57Z",
+"github_stars": 17297,
 "github_topic": "mcp-server",
 "homepage": "https://www.haha.ai/xiaohongshu-mcp"
 },
 "slug": "xpzouying-xiaohongshu-mcp",
 "sources": [
 {
-"payload_hash": "f34688fd0cb2f70801315df09aadb471b17c21e7a00e4711b74bed2a125caebe",
-"retrieved_at": "2026-11-16T14:47:21Z",
+"payload_hash": "21ccb4a24b81da53ffdcedf96e8707a4d7aa966fc44f622b35c472d945ac4b55",
+"retrieved_at": "2026-11-23T17:23:10Z",
 "system": "github",
 "url": "https://github.com/xpzouying/xiaohongshu-mcp"
 }

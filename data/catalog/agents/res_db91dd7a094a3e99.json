@@ -30,7 +30,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 25.97,
+"adoption": 25.98,
 "docs": 7.0,
 "domain_fit": 71.3,
 "ecosystem": 3.0,
@@ -53,7 +53,7 @@
 },
 "data": {
 "components": {
-"adoption": 25.97,
+"adoption": 25.98,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -76,7 +76,7 @@
 },
 "technology": {
 "components": {
-"adoption": 25.97,
+"adoption": 25.98,
 "docs": 7.0,
 "domain_fit": 87.5,
 "ecosystem": 3.0,
@@ -101,7 +101,7 @@
 "external_ids": {
 "github": "kestra-io/kestra"
 },
-"first_seen": "2026-11-16T14:41:23Z",
+"first_seen": "2026-11-23T17:17:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -123,47 +123,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:23Z",
+"last_seen": "2026-11-23T17:17:51Z",
 "license": "Apache-2.0",
 "name": "kestra",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-10T15:16:01Z",
-"headline": "kestra release v1.3.47",
+"date": "2026-11-20T14:47:46Z",
+"headline": "kestra release v2.0.12",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\n\n### 📘 Subtasks\n**version**\n- be537d7 update to version '1.3.47'\n\n### 🐛 Bug Fixes\n**core**\n- 7c071c9 honour http.nonProxyHosts in the Micronaut HTTP client (backport #22390) (#22393), closes #22390 #22393\n- e535f95 clear fronte",
+"summary": "## Changelog\n\n### 🚀 Features\n**tasks**\n- 6c543b1 kestra.tasks.http.use-system-proxy for HTTP tasks behind a JVM proxy (#22807), closes #22807\n\n**worker**\n- 17e1d04 metrics for job stream reconnections and stranded job resubmissions\n\n### 📘 S",
 "tag": "product_update",
-"url": "https://github.com/kestra-io/kestra/releases/tag/v1.3.47"
+"url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.12"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-10T15:08:29Z",
-"headline": "kestra release v2.0.10",
+"date": "2026-11-17T17:17:38Z",
+"headline": "kestra release v1.3.48",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "## Changelog\r\n\r\n### 🚀 Features\r\n**core**\r\n- 9bbc3a2 add an overridable scope around copilot tool calls (#22107) (#22467), closes #22107 #22467\r\n\r\n**triggers**\r\n- dd22869 webhook hmac signature validation (#19659), closes #19659\r\n\r\n### 📘 Sub",
+"summary": "## Changelog\n\n### 🚀 Features\n**executions**\n- b76e60f Email button next to mailto output values, closes #22595 #22601\n\n### 📘 Subtasks\n**version**\n- f6f8cdb update to version '1.3.48'\n\n### 🐛 Bug Fixes\n**core**\n- c3d0857 declare kv ttl and de",
 "tag": "product_update",
-"url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.10"
+"url": "https://github.com/kestra-io/kestra/releases/tag/v1.3.48"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:04Z",
+"checked_at": "2026-11-23T17:28:19Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:03Z",
+"checked_at": "2026-11-23T17:28:18Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:53:05Z",
+"checked_at": "2026-11-23T17:28:20Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -174,19 +174,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2019-08-24T13:56:15Z",
-"github_forks": 3531,
+"github_forks": 3550,
 "github_language": "Java",
-"github_open_issues": 684,
-"github_pushed_at": "2026-11-16T14:37:45Z",
-"github_stars": 30242,
+"github_open_issues": 620,
+"github_pushed_at": "2026-11-23T17:15:08Z",
+"github_stars": 30323,
 "github_topic": "ai-agents",
 "homepage": "https://go.kestra.io/home"
 },
 "slug": "kestra-io-kestra",
 "sources": [
 {
-"payload_hash": "9a6cbab9ed5aa292d55e646bb04f76cd7d4c2a42ddc3857e756a58e198ac23e6",
-"retrieved_at": "2026-11-16T14:41:23Z",
+"payload_hash": "155b36dfde8bfea7a22236b39c614c39a9f141f45a6faddf3842e36b74557f39",
+"retrieved_at": "2026-11-23T17:17:51Z",
 "system": "github",
 "url": "https://github.com/kestra-io/kestra"
 }

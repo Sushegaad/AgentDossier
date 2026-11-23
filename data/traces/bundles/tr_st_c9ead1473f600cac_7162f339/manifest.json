@@ -1,0 +1,31 @@
+{
+ "agent": "res_c9ead1473f600cac",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c9ead1473f600cac_7162f339",
+ "kind": "self_test",
+ "name": "Divisi",
+ "protocols": {
+  "a2a": {
+   "card_url": "https://divisi.africa/.well-known/agent-card.json",
+   "checked_at": "2026-11-23T17:27:57Z",
+   "parser_version": "a2a-0.3+1.0",
+   "protocol_version": "1.0",
+   "signed": false,
+   "skills": [
+    "Find crops for a place",
+    "When to plant a crop",
+    "Identify a crop problem",
+    "Read a crop or pest guide",
+    "Check market prices",
+    "Find a market",
+    "Find farming events",
+    "Search the market",
+    "Find an expert"
+   ],
+   "status": "verified",
+   "version": "1.0.0"
+  }
+ },
+ "slug": "divisi-africa-divisi"
+}

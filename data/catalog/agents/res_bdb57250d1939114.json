@@ -46,7 +46,7 @@
 "github": "agentgates-ai/agentgates",
 "mcp_registry": "ai.agentgates/compute"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -68,10 +68,9 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:50:49Z",
+"last_seen": "2026-11-23T17:26:37Z",
 "license": null,
 "merged_ids": [
-"res_b8fc0a7f34eb165f",
 "res_530067a5c028040c"
 ],
 "name": "Agentgates Compute",
@@ -80,7 +79,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://agentgates.ai/.well-known/agent-card.json",
-"checked_at": "2026-11-16T14:50:48Z",
+"checked_at": "2026-11-23T17:26:37Z",
 "parser_version": "a2a-0.3+1.0",
 "protocol_version": "0.3.0",
 "signed": false,
@@ -92,14 +91,15 @@
 "An email inbox for the agent",
 "An AI operator on a phone call",
 "An account in one command",
-"Agentgates wallet over MCP"
+"Agentgates wallet over MCP",
+"Sealed sandboxes"
 ],
 "status": "verified",
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-16T14:50:47Z",
-"entries": 26,
+"checked_at": "2026-11-23T17:26:34Z",
+"entries": 28,
 "parser_version": "ard-0.91",
 "sources": [
 "https://agentgates.ai/.well-known/ard.json",
@@ -126,7 +126,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:08:24Z",
+"checked_at": "2026-11-23T17:38:39Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -143,20 +143,14 @@
 "slug": "agentgates-ai-agentgates-compute",
 "sources": [
 {
-"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentgates/compute"
 },
 {
-"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
-"retrieved_at": "2026-11-16T14:40:27Z",
-"system": "mcp_registry",
-"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agentgates/mcp"
-},
-{
 "payload_hash": "691505ea71fe4a91280a1ad1a283e70ee11dd252cbae74d646d0125e7b170646",
-"retrieved_at": "2026-11-16T14:50:49Z",
+"retrieved_at": "2026-11-23T17:26:37Z",
 "system": "ard",
 "url": "https://agentgates.ai/.well-known/ard.json"
 }
@@ -229,6 +223,38 @@
 "tier": 1,
 "title": "Registry probe of Agentgates Compute's discovery endpoints",
 "url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_bdb57250d1939114_c7f85261/",
+"vendor_response": null
+},
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_bdb57250d1939114_230b0641",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_bdb57250d1939114_230b0641",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agent2Agent (A2A) document",
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "A2A verified (unsigned); ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:2ab2ecee29498b7d09dba1967aba3bedcf78059a33f4912d7a7974ffd0c5925f",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Agentgates Compute's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_bdb57250d1939114_230b0641/",
 "vendor_response": null
 }
 ],

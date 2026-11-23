@@ -1,0 +1,168 @@
+{
+"canonical_url": "agent-neo.ai/case/it/claude-code",
+"capabilities": [],
+"category": "MCP server",
+"classification": {
+"matched": {
+"business": [
+"meeting"
+],
+"technology": [
+"mcp"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Read your team's chats, decisions and wiki in Agent NEO, and save meeting notes back to a thread.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 4.6,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.667,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 44.6,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": null,
+"docs": 7.0,
+"domain_fit": 56.4,
+"ecosystem": 4.6,
+"governance": null,
+"health": 20.0,
+"trust": 19.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.7,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 48.9,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"governance"
+]
+}
+},
+"external_ids": {
+"mcp_registry": "ai.agent-neo/neo"
+},
+"first_seen": "2026-11-23T17:16:55Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_f8263ea37b42369e",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:16:55Z",
+"license": null,
+"name": "Agent NEO",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-23T17:26:33Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-23T17:26:32Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"parser_version": "mcp-2025-06-18",
+"remotes": [
+{
+"type": "streamable-http",
+"url": "https://api.agent-neo.ai/api/v1/mcp"
+}
+],
+"server_name": "ai.agent-neo/neo",
+"status": "claimed",
+"version": "1.0.0",
+"via": "mcp_registry"
+}
+},
+"publisher_domain": "agent-neo.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:38:31Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"mcp_packages": 0,
+"mcp_registry_published_at": "2026-11-18T04:27:41.858442Z",
+"mcp_registry_status": "active",
+"mcp_registry_updated_at": "2026-11-18T04:27:41.858442Z",
+"mcp_transports": [
+"streamable-http"
+]
+},
+"slug": "agent-neo-ai-agent-neo",
+"sources": [
+{
+"payload_hash": "5cda89788658a8a26d198436d607b8a181e77fa6a3fbccaaa60da3a09b0bce24",
+"retrieved_at": "2026-11-23T17:16:55Z",
+"system": "mcp_registry",
+"url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.agent-neo/neo"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://agent-neo.ai/case/it/claude-code/?utm_source=mcp_registry&utm_medium=referral",
+"vendor": "agent-neo.ai"
+}

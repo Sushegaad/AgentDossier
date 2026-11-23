@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "EKKOLearnAI/ekko-studio"
 },
-"first_seen": "2026-11-16T14:44:42Z",
+"first_seen": "2026-11-23T17:20:29Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -126,47 +126,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:44:42Z",
+"last_seen": "2026-11-23T17:20:29Z",
 "license": "Other",
 "name": "ekko-studio",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-16T12:13:24Z",
-"headline": "ekko-studio: Ekko Studio v0.8.25",
+"date": "2026-11-21T11:03:14Z",
+"headline": "ekko-studio: Ekko Studio v0.8.30",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Studio v0.8.25 中文更新说明\n\n日期：2026-11-16\n\n- Provider 改为按 Studio 账户管理，同一账户的所有 Profile 共用 Provider 池；迁移时同名项优先保留 default Profile，备份原配置并保留旧模型路由别名，已有会话续接解析到保留项 (#3831)\n- 新增供 Hermes、Ekko、scoped Coding Agent 和插件 Agent 使用的统一模型网关，支持 Chat Completions、R",
+"summary": "# Studio 0.8.30\n\n本版基于 `66c13ec3b73830890314916871bfe9255a34bcd7`，上一正式版为 `v0.8.29`。\n\n- 插件可为 Hermes 和 Ekko 的普通单聊生成上下文压缩摘要，覆盖自动压缩和手动压缩。插件未提供有效摘要时，Studio 会使用内置摘要器。 (#3891)\n- 群聊在后台生成滚动摘要时，如果没有当前请求账号，会使用仍有权限的房主账号选择 Provider，避免串用其他账号的模型配置。 (#3885)",
 "tag": "product_update",
-"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.8.25"
+"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.8.30"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-15T07:37:44Z",
-"headline": "ekko-studio: Ekko Studio v0.8.24",
+"date": "2026-11-20T00:52:37Z",
+"headline": "ekko-studio: Ekko Studio v0.8.29",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "# Studio v0.8.24 中文更新说明\n\n日期：2026-11-15\n\n- 受信任插件新增入站 HTTP 拦截能力，可在认证和路由前改写已解析请求、修改响应或直接返回结果，支持优先级、流式内容及停用清理；不拦截出站请求、WebSocket 或已提交响应 (#3809)\n- OMP 改为独立分发，新安装的 Studio 不再捆绑或自动安装 OMP，可通过插件中心或开发链接安装和更新；已有安装快照、启停状态、配置及引擎文件保留 (#3820)\n- 插件页面实时同步 Stu",
+"summary": "# Studio 0.8.29\n\n本版基于 `3fac62347eeb7157f54a0f69977aa5324b94d0a3`，上一正式版为 `v0.8.28`。\n\n- 聊天中的审批和澄清提交后会收到确认。Studio 右上角可处理账号关联的各个 Profile 的聊天审批、澄清及工作流审批，并在重新连接后刷新待处理请求。 (#3886)\n- 插件中心新增第三方插件风险提示。启用时会提示确认，安装、更新或切换来源时会显示可用的作者和仓库信息，并提示已启用的插件可能立即运行新",
 "tag": "product_update",
-"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.8.24"
+"url": "https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.8.29"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:52:55Z",
+"checked_at": "2026-11-23T17:28:09Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:51Z",
+"checked_at": "2026-11-23T17:28:07Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:52:55Z",
+"checked_at": "2026-11-23T17:28:10Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -176,7 +176,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:13:48Z",
+"checked_at": "2026-11-23T17:42:54Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -184,19 +184,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-04-11T07:38:18Z",
-"github_forks": 1475,
+"github_forks": 1477,
 "github_language": "TypeScript",
-"github_open_issues": 590,
-"github_pushed_at": "2026-11-16T12:13:19Z",
-"github_stars": 11781,
+"github_open_issues": 605,
+"github_pushed_at": "2026-11-23T12:43:51Z",
+"github_stars": 11814,
 "github_topic": "ai-agent",
 "homepage": "https://ekkostudio.xyz"
 },
 "slug": "ekkolearnai-ekko-studio",
 "sources": [
 {
-"payload_hash": "79784b9bfa706d08b3d8676ed4c5ad5eff1e109bf5347e09b1b188220d6227df",
-"retrieved_at": "2026-11-16T14:44:42Z",
+"payload_hash": "d2540c9fd2d6b31f740615e2181ff3750ded97451bebd25d68c491c6b0d6cdf6",
+"retrieved_at": "2026-11-23T17:20:29Z",
 "system": "github",
 "url": "https://github.com/EKKOLearnAI/ekko-studio"
 }

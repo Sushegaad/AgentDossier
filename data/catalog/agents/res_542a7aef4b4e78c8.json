@@ -19,16 +19,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "DPF active: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "DPF active: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://www.apogee.ad/en/legal/privacy/",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "d2eb03e418c853fb1693c3d51a3428c876bb6509d6861e753ac855876230e77e",
+"next_check": "2026-11-30",
+"payload_hash": "77bf57239166aa6b3f80b2517d44c4cfc5e3ca71baefaf6ce6334d08e6ab3fb4",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:57:31Z",
+"retrieved_at": "2026-11-23T17:32:14Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -71,7 +71,7 @@
 "github": "ApogeeGIT/apogee-mcp",
 "mcp_registry": "ad.apogee/apogee"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -93,7 +93,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:27Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "name": "Apogee: Bulk Ad Launcher for Meta, TikTok & Snapchat",
 "news": [
@@ -112,12 +112,12 @@
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:51:35Z",
+"checked_at": "2026-11-23T17:27:13Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:51:33Z",
+"checked_at": "2026-11-23T17:27:11Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -140,7 +140,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:06:58Z",
+"checked_at": "2026-11-23T17:37:20Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -157,8 +157,8 @@
 "slug": "apogee-ad-apogee-bulk-ad-launcher-for-meta-tiktok-snapchat",
 "sources": [
 {
-"payload_hash": "87fefc634661f2ba8f0df5f861bf6beb16118ab0e5168969325d187897522e11",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "5247ec168cd37429ff34ad1070a2fbc8a0691b3cceeb9f8d527628d7a28cbc96",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ad.apogee/apogee"
 }

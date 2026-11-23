@@ -18,7 +18,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 23.01,
+"adoption": 23.17,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 3.0,
@@ -32,7 +32,7 @@
 "governance_credited": {},
 "profile": "technology",
 "rank": null,
-"score": 68.0,
+"score": 68.1,
 "score_version": "sar-score-2.0",
 "source": "classifier",
 "unknown": [
@@ -43,7 +43,7 @@
 "external_ids": {
 "github": "miqdadbadjuber/anti-slop"
 },
-"first_seen": "2026-11-16T14:41:29Z",
+"first_seen": "2026-11-23T17:17:57Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -65,47 +65,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:29Z",
+"last_seen": "2026-11-23T17:17:57Z",
 "license": "MIT",
 "name": "anti-slop",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-13T10:35:33Z",
-"headline": "anti-slop: v3.2.30: Kilo Code joins the installer",
+"date": "2026-11-20T11:49:37Z",
+"headline": "anti-slop: v3.2.32: Qwen Code joins the installer",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Kilo Code joins the installer, and two community fixes ride along.** Kilo reads the shared `.agents/skills` folder at both scopes, so it costs one row and no new path. A new `antislop-ui` pattern covers the navigation shell, and the insta",
+"summary": "**Qwen Code joins the installer as the seventeenth agent.** It keeps a project folder of its own, reads the shared `.agents/skills` folder at user level, and takes its session pointer in `QWEN.md`. No plugin door ships for it, so the instal",
 "tag": "product_update",
-"url": "https://github.com/miqdadbadjuber/anti-slop/releases/tag/v3.2.30"
+"url": "https://github.com/miqdadbadjuber/anti-slop/releases/tag/v3.2.32"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-12T12:35:24Z",
-"headline": "anti-slop: v3.2.29: Muse Code becomes the ninth plugin door",
+"date": "2026-11-18T13:03:23Z",
+"headline": "anti-slop: v3.2.31: Qoder joins the installer and the plugin doors",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "**Muse Code becomes the ninth plugin door, and it needed no new manifest.** Set one experimental flag, add the repository as a marketplace, and Muse imports all six skills from a manifest it already understands.\r\n\r\n## It needed no new manif",
+"summary": "**Qoder joins the installer and becomes the tenth plugin door.** The installer writes Qoder's own skill folder and the `AGENTS.md` pointer it already reads, and `.qoder-plugin/plugin.json` loads the same six skills through **Settings > Plug",
 "tag": "product_update",
-"url": "https://github.com/miqdadbadjuber/anti-slop/releases/tag/v3.2.29"
+"url": "https://github.com/miqdadbadjuber/anti-slop/releases/tag/v3.2.31"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:51:24Z",
+"checked_at": "2026-11-23T17:27:04Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:51:23Z",
+"checked_at": "2026-11-23T17:27:04Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:51:25Z",
+"checked_at": "2026-11-23T17:27:05Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -115,7 +115,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:14:22Z",
+"checked_at": "2026-11-23T17:43:17Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -123,19 +123,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-08-07T10:29:56Z",
-"github_forks": 639,
+"github_forks": 684,
 "github_language": "JavaScript",
-"github_open_issues": 1,
-"github_pushed_at": "2026-11-13T12:29:58Z",
-"github_stars": 9346,
+"github_open_issues": 3,
+"github_pushed_at": "2026-11-21T01:16:39Z",
+"github_stars": 9936,
 "github_topic": "ai-agents",
 "homepage": "https://antislop.ai.id"
 },
 "slug": "miqdadbadjuber-anti-slop",
 "sources": [
 {
-"payload_hash": "3bb6ec9ffaa5a705033a106befd94b0a8ea119944a6726c4ac6aa23140b3338f",
-"retrieved_at": "2026-11-16T14:41:29Z",
+"payload_hash": "bae6e998b85a33287b7ab41e1646f304bbde3c74c3f21bc0fd80b49fb5d1ec98",
+"retrieved_at": "2026-11-23T17:17:57Z",
 "system": "github",
 "url": "https://github.com/miqdadbadjuber/anti-slop"
 }

@@ -1,14 +1,14 @@
 {
  "version": "cves-1.0",
- "built_at": "2026-11-16",
+ "built_at": "2026-11-23",
  "config_version": "cve-products-1.0",
  "counts": {
-  "total": 1949,
+  "total": 2016,
   "included": 0,
-  "candidate": 1949,
+  "candidate": 2016,
   "excluded": 0,
-  "kev": 10,
-  "unscored": 3
+  "kev": 11,
+  "unscored": 1
  },
  "products_matched": [
   "aider",
@@ -32,12 +32,4453 @@
   "mastra",
   "ollama",
   "open-webui",
+  "openai-agents-sdk",
+  "pydantic-ai",
   "semantic-kernel",
   "smolagents",
   "vllm",
   "windsurf"
  ],
  "records": [
+  {
+   "id": "CVE-2026-133632",
+   "description": "In astro-airflow-mcp 0.5.0 through 0.9.1, the af CLI and the MCP server send telemetry from a Python subprocess that can import modules from the current working directory. If a user runs an af command or an MCP tool call from inside a project that contains an attacker-supplied json.py, that file runs with the user's privileges. Users who only run the tool in projects they trust are not affected. Fixed in 0.9.2; in earlier versions, setting AF_TELEMETRY_DISABLED=1 prevents it.",
+   "published": "2026-11-23",
+   "last_modified": "2026-11-23",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "cve@gitlab.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.8,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "source": "cve@gitlab.com"
+   },
+   "cwe": [
+    "CWE-427"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/astronomer/agents",
+     "source": "cve@gitlab.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/astronomer/agents/pull/292",
+     "source": "cve@gitlab.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/astronomer/agents/releases/tag/astro-airflow-mcp-0.9.2",
+     "source": "cve@gitlab.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/astronomer/agents/security/advisories/GHSA-x6pc-xc3q-fpww",
+     "source": "cve@gitlab.com",
+     "tags": []
+    },
+    {
+     "url": "https://pypi.org/project/astro-airflow-mcp/0.9.2",
+     "source": "cve@gitlab.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server",
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-135162",
+   "description": "Sim 0.5.61 before 0.9.41 contains an incorrect authorization vulnerability that allows write-level workspace members to change workflow MCP server visibility without admin permission. Attackers can set isPublic via POST or PATCH to /api/mcp/workflow-servers, exposing deployed workflows to unauthenticated invocation through /api/mcp/serve.",
+   "published": "2026-11-23",
+   "last_modified": "2026-11-23",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/simstudioai/sim/blob/v0.9.40/apps/sim/app/api/mcp/workflow-servers/route.ts",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/simstudioai/sim/commit/3b6be5cd1a0f659b0bda14902140096a8420c9c9",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/simstudioai/sim/pull/9576",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/simstudioai/sim/releases/tag/v0.9.41",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/sim-0.5.61-before-0.9.41-incorrect-authorization-via-workflow-mcp-server-visibility",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-135287",
+   "description": "LiteLLM Proxy 1.62.4 before 1.84.0 contains a callback injection vulnerability that allows authenticated API key holders to register process-wide logging callbacks by supplying callbacks fields in request bodies. Attackers can name an unenabled observability integration such as langsmith or langfuse to leak all users' prompts and responses, or suppress operator logging via litellm_disabled_callbacks.",
+   "published": "2026-11-23",
+   "last_modified": "2026-11-23",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-15"
+   ],
+   "products": [
+    {
+     "vendor": "BerriAI",
+     "product": "LiteLLM",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "litellm"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "exfiltration",
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/BerriAI/litellm/blob/v1.83.14-stable/litellm/utils.py#L785-L812",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/BerriAI/litellm/commit/6ff668c7aa01a73738ed39aa64913a089a183565",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/BerriAI/litellm/pull/27245",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/BerriAI/litellm/releases/tag/v1.84.0",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/BerriAI/litellm/security/advisories/GHSA-34v7-jqrg-944p",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/litellm-1.62.4-before-1.84.0-persistent-global-callback-injection-via-request-body",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "litellm:LiteLLM"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-134803",
+   "description": "DBHub before 1.7.0 contains a read-only mode bypass vulnerability that allows MCP clients restricted to readonly execute_sql to run write and DDL statements via backslash-escaped quotes. Attackers can hide stacked statements that clear transaction_read_only or COMMIT inside strings misparsed by scanSingleQuotedString, letting them modify or drop MySQL, MariaDB, or PostgreSQL data.",
+   "published": "2026-11-22",
+   "last_modified": "2026-11-22",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.2,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-436"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/bytebase/dbhub/blob/v1.6.1/src/utils/sql-parser.ts#L79-L88",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/bytebase/dbhub/commit/cc9e3c7ad36b9fafd333a08d455781f2c5b548ee",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/bytebase/dbhub/pull/505",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/bytebase/dbhub/releases/tag/v1.7.0",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/dbhub-before-1.7.0-read-only-mode-bypass-via-backslash-escaped-quotes",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp client"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-134817",
+   "description": "mcp-server-kubernetes before 4.2.0 contains an argument injection vulnerability that allows remote MCP clients to inject kubectl flags by supplying dash-prefixed values as positional operands in tools such as exec_in_pod, kubectl_patch, and kubectl_logs. Attackers connected over SSE or Streamable HTTP transport can supply values like --filename to make kubectl read files from the server host, bypassing file-read restrictions.",
+   "published": "2026-11-22",
+   "last_modified": "2026-11-23",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-88"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/Flux159/mcp-server-kubernetes/blob/v4.1.9/src/tools/exec_in_pod.ts#L105",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Flux159/mcp-server-kubernetes/commit/588d4949b0233974c3966a7d24d532be11e56d0d",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Flux159/mcp-server-kubernetes/pull/390",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.2.0",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/mcp-server-kubernetes-before-4.2.0-argument-injection-via-flag-shaped-positional-operands",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp client"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-134827",
+   "description": "Lightdash before 3.212.0 contains an insufficiently protected credentials vulnerability in getGitlabInstallationRepoReadAccess that sends the organization GitLab app token to unverified hosts. Project developers can set the dbt connection host_domain to an attacker-controlled server and capture the token when the AI agent reads the repository, gaining access to every reachable repository.",
+   "published": "2026-11-22",
+   "last_modified": "2026-11-22",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-522"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/lightdash/lightdash/blob/3.211.0/packages/backend/src/ee/services/AiWritebackService/AiWritebackService.ts#L1165-L1201",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/lightdash/lightdash/commit/e207ceb480e394c7ce50f676057bf4a2807588e6",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/lightdash/lightdash/pull/32389",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/lightdash/lightdash/releases/tag/3.212.0",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/lightdash-before-3.212.0-credential-exposure-via-ai-writeback-gitlab-read-access",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-134293",
+   "description": "SurrealDB 3.1.0 before 4.0.0 contains an SQL injection vulnerability in its Model Context Protocol (MCP) server because the identifier validator (consume_backtick_ident and validate_identifier) treats the first backtick as the closing delimiter, ignoring escape characters that the SurrealQL parser honors. Attackers can supply MCP tool arguments containing an escaped backtick to break out of the quoted identifier and execute arbitrary SurrealQL statements.",
+   "published": "2026-11-21",
+   "last_modified": "2026-11-21",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.8,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-89"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-cr79-9p8r-p5wx",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/surrealdb-3.1.0-before-4.0.0-sql-injection-via-mcp-tool-identifier-escaped-backticks",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-114494",
+   "description": "codebase-memory-mcp provides local code intelligence for developers and AI agents through a persistent graph and MCP tools. Prior to 0.9.0, the Cypher parser accepted an unbounded number of projection items in RETURN and WITH clauses while projection executors indexed fixed 32-element stack arrays using the parsed count. A query_graph query with more than 32 projection items could therefore write beyond those arrays, and a related result-column path could read uninitialized stack slots even when no node matched. Any caller of query_graph, including an agent whose query is influenced by untrusted content, could cause a reliable server crash and potentially compromise process confidentiality and integrity. This issue is fixed in version 0.9.0.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.8,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-121",
+    "CWE-787"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/commit/e69e0844dbc1c737ebd3d17e97007d0f5cf16beb",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/pull/941",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.9.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/security/advisories/GHSA-vpgh-g3jg-ggx9",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-114495",
+   "description": "codebase-memory-mcp provides local code intelligence for developers and AI agents through a persistent graph and MCP tools. Prior to 0.9.0, automatic import of a repository's .codebase-memory/ artifact allocated a decompression buffer using the attacker-controlled 64-bit original_size value from artifact.json but truncated that value to int when passing the destination capacity to the Zstandard decompressor. A value with bit 31 set became negative and was sign-extended to a large size_t, allowing the decompressor to write frame content beyond the actual allocation. Indexing a malicious repository containing the crafted artifact could corrupt heap memory with attacker-controlled bytes, causing a reliable crash and potentially code execution. This issue is fixed in version 0.9.0.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.8,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-190",
+    "CWE-681",
+    "CWE-787"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/commit/a2f09c7ce97205147f127c2c8b12861bf74a02a3",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/pull/941",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.9.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/security/advisories/GHSA-8xwq-xv2x-853r",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-114496",
+   "description": "codebase-memory-mcp provides local code intelligence for developers and AI agents through a persistent graph and MCP tools. Prior to 0.9.0, the detect_changes tool validated the base_branch argument for shell metacharacters but omitted the leading-dash check before placing the value in the revision position of a git diff command. Git therefore interpreted an option-shaped base_branch value, including --output, as a command option instead of a revision, allowing a caller to create or overwrite a caller-chosen file with Git diff output under the server process's permissions. Arbitrary code execution was not demonstrated. This issue is fixed in version 0.9.0.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-88"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/commit/72e6a14adb50a37a245eb6ec79c9eb31eee48951",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/pull/941",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.9.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/security/advisories/GHSA-2vj2-hwgx-6f23",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-114497",
+   "description": "codebase-memory-mcp provides local code intelligence for developers and AI agents through a persistent graph and MCP tools. Prior to 0.9.1-rc.1, the optional graph UI's POST /api/process-kill route omitted the indexing-job ownership check on Windows while retaining that check on POSIX systems. A requester able to reach the optional UI could supply an arbitrary process identifier, causing TerminateProcess to stop any process that the server user was permitted to terminate. The flaw affects the Windows-specific process termination path and can cause a high availability impact without disclosing or modifying data. This issue is fixed in version 0.9.1-rc.1.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-862"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/commit/0baddf788737b1b0792f5af7ac63e05de87f382a",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/pull/1139",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.10.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.9.1-rc.1",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/security/advisories/GHSA-r2qv-x3rg-p49m",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-114499",
+   "description": "codebase-memory-mcp provides local code intelligence for developers and AI agents through a persistent graph and MCP tools. Prior to 0.10.0, the indexer's .gitignore matcher implemented * and ** through recursive backtracking without a work bound. A repository containing a pattern with repeated wildcard groups and a long path could make matching work grow exponentially, allowing a single ignore rule to stall discovery indefinitely and, before worker isolation, stall the server. The impact is limited to availability, and the bounded matcher does not claim that every expensive input is eliminated. This issue is fixed in version 0.10.0.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-400",
+    "CWE-1333"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "dos"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/commit/886a8856a4e4a2ad3ba602d07e45c3b450117f6b",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/pull/1464",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.10.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/DeusData/codebase-memory-mcp/security/advisories/GHSA-cjhf-76h2-4hwg",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-129995",
+   "description": "mcp-ssh-manager is an MCP server for managing servers over SSH with human approval, an encrypted vault, and a live audit trail. Prior to 3.8.5, ssh_backup_create, ssh_backup_restore, ssh_backup_schedule, and ssh_backup_list build remote shell commands from caller-controlled values in src/backup-manager.js and inline backup handlers in src/index.js without neutralizing shell metacharacters. Crafted database, connection, backup directory, path, exclusion, schedule, or comment arguments can therefore execute arbitrary OS commands on managed remote servers as the configured SSH user. ssh_backup_schedule can persist execution through cron. ssh_backup_list does not pass through the server policy check and remains available in readonly and restricted modes, allowing command execution despite those restrictions. Tool arguments can be supplied by a malicious or compromised MCP client or steered through indirect prompt injection; fully trusted benign arguments do not trigger the issue. The earlier database-helper remediation for CVE-2026-77383 applied shell quoting to src/database-manager.js but did not cover these parallel backup builders. This issue is fixed in version 3.8.5.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.8,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-78"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "prompt_injection",
+    "code_execution",
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/bvisible/mcp-ssh-manager/commit/d40daa8a43388dfaedf593bff18f0064d50f9633",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/bvisible/mcp-ssh-manager/releases/tag/v3.8.5",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/bvisible/mcp-ssh-manager/security/advisories/GHSA-qwwm-vrm9-4mw8",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp client",
+     "mcp server",
+     "prompt injection"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130901",
+   "description": "Improper limitation of a pathname to a restricted directory in the file access checks in Amazon awslabs.document-loader-mcp-server 1.0.10 through 1.0.20 might allow a context-dependent actor, via crafted document content processed by an MCP client, to read files outside the intended base directory and, in 1.0.12 through 1.0.20, to write PNG slide images outside it. This occurs when DOCUMENT_BASE_DIR is not set or is empty and the CI, GITHUB_ACTIONS or PYTEST_CURRENT_TEST environment variable is present. Versions before 1.0.10 do not restrict file access to a base directory.\n\n\n\nTo remediate this issue, users should upgrade to version 1.0.21 or later. Users who cannot upgrade immediately can set DOCUMENT_BASE_DIR to the directory that holds their documents. Do not set it to /, which removes the restriction.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.8,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5"
+   },
+   "cwe": [
+    "CWE-22",
+    "CWE-489"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://aws.amazon.com/security/security-bulletins/2026-195-aws/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://pypi.org/project/awslabs.document-loader-mcp-server/1.0.21/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp client"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-133505",
+   "description": "When message history is serialized and loaded again, a tool result that contains a JSON object in the serialized shape of one of Pydantic AI's file types is rebuilt as that file. A third party who controls data a tool returns, such as a record that an MCP server or a function tool returns from an external system, can use this to make the application download a URL on its local network, or make the model provider read an s3:// object or uploaded file with the application's credentials. Applications are affected when tool results can contain third-party data, message history containing those results is serialized and loaded again (stored history, history a UI adapter holds on the server, or Temporal, DBOS or Prefect durable execution), and the model is one Pydantic AI downloads files for, one that honors force_download, or one whose provider resolves non-HTTP file URLs or uploaded files. History that a client submits through the Vercel AI or AG-UI adapter in the default mode is not affected. The issue is fixed in pydantic-ai and pydantic-ai-slim 1.107.10 and 2.66.0.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-23",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "7cec5f2f-3032-4006-8740-31f605ffab5f",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "source": "7cec5f2f-3032-4006-8740-31f605ffab5f"
+   },
+   "cwe": [
+    "CWE-843",
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "Pydantic",
+     "product": "Pydantic AI",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "pydantic-ai"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "tool_execution",
+    "credential_access",
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/pydantic/pydantic-ai/security/advisories/GHSA-4cj4-hgwf-4hc4",
+     "source": "7cec5f2f-3032-4006-8740-31f605ffab5f",
+     "tags": []
+    },
+    {
+     "url": "https://pydantic.dev/docs/ai/ui/overview/#trust-model-for-client-submitted-messages",
+     "source": "7cec5f2f-3032-4006-8740-31f605ffab5f",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "pydantic-pydantic-ai"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name",
+     "B:vocabulary"
+    ],
+    "terms": [
+     "pydantic-ai:Pydantic AI",
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-133631",
+   "description": "FlowIntel contains multiple security flaws in its note variable resolution, chatbot API tooling, and AI report generation.\n\n- Note variable references (e.g. cross-case or cross-task lookups) were resolved using the viewing user's privileges rather than the destination case's audience. An authenticated user with access to a shared or imported note could embed references to private cases, causing sensitive case data to be pulled into AI report requests, exports, and MISP sends without the referenced case's audience having granted read access.\n\n- The chatbot API tool permitted the language model to invoke any FlowIntel API endpoint, including administrative routes and state-changing GET operations, without an allow-list or path validation. An attacker who can influence the model's instructions (e.g. via untrusted case content) could induce data modification or access restricted endpoints.\n\n- AI report generation passed the Ollama bearer token and full case content as command-line arguments to a child process, exposing them in the system process table to any local user.\n\nAffected versions: FlowIntel prior to 4.1.0.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "5a6e4751-2f3f-4070-9419-94fb35b644e8",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "5a6e4751-2f3f-4070-9419-94fb35b644e8"
+   },
+   "cwe": [
+    "CWE-200",
+    "CWE-284",
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "Ollama",
+     "product": "Ollama",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "ollama"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "exfiltration",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/flowintel/flowintel/commit/34d151b8dceb1fea925b353f04a9483aba0a22b1",
+     "source": "5a6e4751-2f3f-4070-9419-94fb35b644e8",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name",
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ollama:Ollama",
+     "chatbot",
+     "language model"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-133853",
+   "description": "FlowIntel's chatbot component used a single shared MCP (Model Context Protocol) session and process-wide environment variable to pass per-user API credentials to a child process. Because the session and the ambient FLOWINTEL_API_KEY environment variable were shared across all concurrent requests, a user's authenticated identity could be applied to another user's tool invocation, or a stale/ambient credential could be inherited by a new request.\n\nPreconditions:\n- An authenticated user with access to the chatbot interface.\n- Concurrent or overlapping chatbot tool invocations from different users, or a request made after another user's credentials were written to the process environment.\n\nImpact:\n- A lower-privilege user could read data belonging to a higher-privilege user (e.g., private investigation cases).\n- A user whose session was invalidated (deleted, password changed, key revoked) could still operate under a previously cached ambient credential.\n- The parent process environment was mutated with user-specific secrets, creating a persistent credential leak surface.\n\nAffected versions: FlowIntel prior to 4.1.0.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "5a6e4751-2f3f-4070-9419-94fb35b644e8",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.0,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "5a6e4751-2f3f-4070-9419-94fb35b644e8"
+   },
+   "cwe": [
+    "CWE-200",
+    "CWE-290"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "exfiltration",
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/flowintel/flowintel/commit/9eec395cc73c6706362b2c22f1e264406eb8caf8",
+     "source": "5a6e4751-2f3f-4070-9419-94fb35b644e8",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "chatbot",
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-133875",
+   "description": "one-hub through 0.14.27 contains a server-side request forgery vulnerability in GetImageFromUrl in common/image/image.go that fetches vision chat image_url values without destination restrictions. Attackers holding a standard non-admin API token can send crafted /v1/chat/completions requests via Claude, OpenRouter or Ollama providers to reach internal services or cloud metadata endpoints.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "Ollama",
+     "product": "Ollama",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "ollama"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/MartialBE/one-hub",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/MartialBE/one-hub/blob/v0.14.27/common/image/image.go#L21-L30",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/MartialBE/one-hub/issues/939",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/one-hub-through-0.14.27-ssrf-via-vision-chat-image-url",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "ollama:Ollama"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-54032",
+   "description": "LibreChat is an enhanced ChatGPT clone that supports multiple AI providers. Prior to 0.8.6, client/src/components/Chat/Input/MCPConfigDialog.tsx renders the remote MCP details.description value through dangerouslySetInnerHTML without sanitization, allowing a malicious MCP server to execute script when a user opens the configuration dialog. The secondary client/src/components/Banners/Banner.tsx sink similarly renders administrator-controlled banner.message HTML without sanitization for all users. Script execution occurs in the LibreChat browser origin and can expose browser-context data or alter displayed content. This issue is fixed in version 0.8.6.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-79"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/LibreChat-AI/LibreChat/commit/619f28d76d73ff34448451ed25a9629e6c28a640",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/LibreChat-AI/LibreChat/pull/12927",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/LibreChat-AI/LibreChat/releases/tag/v0.8.6",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vfg3-f8h3-2683",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77329",
+   "description": "Tapo provides Rust and Python APIs and an MCP server for TP-Link Tapo smart devices. From 0.3.1 until 0.5.0, the Streamable HTTP implementation in tapo-mcp/src/server.rs calls disable_allowed_hosts() without replacement Host or Origin validation, while TAPO_MCP_API_KEY remains optional for a listener that can bind to all interfaces. A malicious website can use DNS rebinding to send same-origin browser requests to the victim's local or LAN Tapo MCP listener when it runs without an API key. The attacker can invoke exposed tools including control_device for smart-device actuation and take_snapshot for configured cameras. Deployments with TAPO_MCP_API_KEY set are not affected by the unauthenticated path, and exploitation requires a running listener configured with real Tapo credentials and devices, plus victim interaction with the malicious site. This issue is fixed in version 0.5.0.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.8,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-346",
+    "CWE-350"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution",
+    "credential_access",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/mihai-dinculescu/tapo/commit/cb9c5d4372bddfa11f19dc653a27c9aa4fa92833",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mihai-dinculescu/tapo/releases/tag/tapo-mcp-v0.5.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mihai-dinculescu/tapo/security/advisories/GHSA-2cwc-6wwp-62q6",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/mihai-dinculescu/tapo/security/advisories/GHSA-2cwc-6wwp-62q6",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77331",
+   "description": "memtomem-stm is a short-term memory proxy gateway with proactive memory surfacing for AI agents. From 0.1.2 until 0.1.34, concurrent surfacing RPC failures can start more than one reconnect for the same dirty session because concurrent LTM recovery is not uniquely owned by a session generation. Cancellation during a post-reconnect retry can also leave the replacement transport reusable after an interrupted protocol exchange, causing session-state integrity loss or local service degradation. The duplicate-reconnect subcase was introduced in 0.1.24, while the cancellation-recovery subcase affects the broader listed range. This issue is fixed in version 0.1.34.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.0,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-362"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/memtomem/memtomem-stm/commit/761db1802df7ce4881ff4c3acee6d674925da498",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/memtomem/memtomem-stm/releases/tag/v0.1.34",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/memtomem/memtomem-stm/security/advisories/GHSA-72jh-722p-rqr3",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77332",
+   "description": "memtomem-stm is a short-term memory proxy gateway with proactive memory surfacing for AI agents. From 0.1.0 until 0.1.34, untrusted long-term and working-memory fields can introduce Markdown or HTML-compatible structure into the surfaced-memory envelope because those fields are not serialized as inert data. A crafted memory can create misleading structural boundaries or visually conceal surfaced content, affecting how a consuming agent interprets the memory context. Ordinary natural-language persuasion remains a residual model-level risk and is outside the structural serialization flaw. This issue is fixed in version 0.1.34.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-116"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/memtomem/memtomem-stm/commit/3d50ba61cbfafba6db261e35c18eed0c3805b390",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/memtomem/memtomem-stm/releases/tag/v0.1.34",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/memtomem/memtomem-stm/security/advisories/GHSA-43hx-xm7w-3mhj",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77349",
+   "description": "pmo-platform is a modular PMO and release-management platform for Claude Code. From 3.48 until 3.69.1, release/skills/pmo-skill-refiner/eval-viewer/generate_review.py reads untrusted model or skill output from workspace/run*/outputs/ and embeds it with json.dumps into viewer.html inside an inline script without escaping HTML metacharacters. A crafted output can close the script element and execute JavaScript when an operator generates and opens the viewer. The maintainer also confirmed that DOM-based injection through renderGrades and renderBenchmark innerHTML survives transport-only escaping, so affected render sinks must neutralize the content. Executed script can read embedded prompts and outputs, alter the viewer DOM, or modify saved feedback. This issue is fixed in version 3.69.1.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.0,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "Anthropic",
+     "product": "Claude Code",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "claude-code"
+    }
+   ],
+   "category": "product",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/commit/eb90e6772a446997a04d42edd624a915af35b1b7",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/releases/tag/v3.69.1",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/security/advisories/GHSA-rw36-5pf9-w2vc",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/security/advisories/GHSA-rw36-5pf9-w2vc",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "anthropic-claude-code"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "claude-code:Claude Code"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77350",
+   "description": "pmo-platform is a modular PMO and release-management platform for Claude Code. Prior to 3.69.1, core/hooks/block-credential-reads.sh, core/hooks/block-egress.sh, core/hooks/block-fs-boundary.sh, and core/hooks/block-mcp-writes.sh pin PATH to /usr/bin:/bin, hard-code jq as /usr/bin/jq, and return success when jq is unavailable there. On systems where jq exists only in a Homebrew path, including affected pre-Sequoia or Homebrew-only macOS installations, the hooks can skip credential-read, network-egress, filesystem-boundary, and MCP-write controls. Native deny rules independently protect some credential paths but do not backstop the egress or MCP controls. An attacker who can influence a prompt, repository, or evaluation flow can use the skipped checks to expose secrets or perform unauthorized tool actions. This issue is fixed in version 3.69.1.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.3,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-693"
+   ],
+   "products": [
+    {
+     "vendor": "Anthropic",
+     "product": "Claude Code",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "claude-code"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/commit/586b96850e4086a8a3471b7adcebbd571db18840",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/releases/tag/v3.69.1",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/security/advisories/GHSA-9cjm-v22x-4x33",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "anthropic-claude-code"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "claude-code:Claude Code"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77383",
+   "description": "mcp-ssh-manager is an MCP server for managing servers over SSH with human approval, an encrypted vault, and a live audit trail. Prior to 3.6.7, ssh_db_list, ssh_db_dump, ssh_db_import, and ssh_db_restore in src/database-manager.js interpolate caller-controlled database, table, collection, file path, user, host, port, and password values into shell-evaluated command strings without neutralization. Shell metacharacters in these arguments therefore execute arbitrary commands on the configured SSH target as the account used by the MCP server. ssh_db_list is classified as read-only and remains available in readonly and restricted server security modes, so this path bypasses the command-execution boundary those modes are intended to enforce. The dump and import builders are blocked in readonly mode but remain vulnerable in the default unrestricted mode. The earlier version 3.6.5 hardening covered only ssh_db_query query text; it did not protect the list, dump, import, or restore builders, or the connection flags used by query builders. This issue is fixed in version 3.6.7.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-78"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "code_execution",
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/bvisible/mcp-ssh-manager/commit/4c19b350f36f5f09f15662f8d19d2ba9cdf38bd0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/bvisible/mcp-ssh-manager/pull/51",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/bvisible/mcp-ssh-manager/releases/tag/v3.6.7",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/bvisible/mcp-ssh-manager/security/advisories/GHSA-4jx9-2fwj-pg4j",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77389",
+   "description": "pmo-platform is a modular PMO and release-management platform for Claude Code. Prior to 3.73, core/hooks/block-fragile-refs.sh and core/hooks/block-gh-path-leak.sh source co-shipped awk primitives from core/hooks/lib/ and degrade when a required primitive is absent. In a partial or corrupted deployment, block-gh-path-leak.sh skips its entire path-leak check, while block-fragile-refs.sh skips only the positional-issue-reference detector and continues running its other detectors. Both hooks operate in a warning posture, so the impact is a skipped warning rather than bypass of an enforcing control, with no established exfiltration or code-execution primitive. This issue is fixed in version 3.73.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.0,
+    "severity": "LOW",
+    "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-693"
+   ],
+   "products": [
+    {
+     "vendor": "Anthropic",
+     "product": "Claude Code",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "claude-code"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "exfiltration"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/commit/874f59abee96965a4561a032bb186d7d2377715f",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/pull/3426",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/releases/tag/v3.73",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/security/advisories/GHSA-g9g6-28c9-vrx5",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "anthropic-claude-code"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "claude-code:Claude Code"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77390",
+   "description": "pmo-platform is a modular PMO and release-management platform for Claude Code. Prior to 3.73, release/skills/pmo-skill-refiner/eval-viewer/generate_review.py and viewer.html contain three security weaknesses in the local evaluation viewer. During workspace scanning and generation, _find_runs_recursive and build_run follow symlinks and embed_file reads their targets without confining resolved paths to the workspace, although the server do_GET path is not a traversal surface. embed_file also reads output files without a size cap or redaction, allowing secrets or personally identifiable information to be embedded in a no-auth locally served page or shareable static file. Separately, do_POST /api/feedback writes caller-supplied JSON without authentication, an Origin check, or a cross-site request forgery token, allowing a malicious page or DNS-rebound localhost target to modify feedback while the server runs. This issue is fixed in version 3.73.",
+   "published": "2026-11-20",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:A/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-59",
+    "CWE-200",
+    "CWE-352"
+   ],
+   "products": [
+    {
+     "vendor": "Anthropic",
+     "product": "Claude Code",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "claude-code"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "exfiltration",
+    "credential_access",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/commit/874f59abee96965a4561a032bb186d7d2377715f",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/pull/3426",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/releases/tag/v3.73",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/cody-hutson/pmo-platform/security/advisories/GHSA-fxcr-7x63-3g94",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "anthropic-claude-code"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "claude-code:Claude Code"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-133161",
+   "description": "### Summary ui\n\nWith `strip_ansi=True`, Pydantic AI Harness's `ToolOutputLimits` capability removes ANSI escape sequences from tool output with a pattern that takes time quadratic in the length of a line. A tool result of a few hundred kilobytes, crafted with many unterminated escape sequences, can occupy the event loop for tens of seconds to minutes, delaying every other request and agent run in the process.\n\n### Details\n\nThis affects applications that set `strip_ansi=True` on `ToolOutputLimits` (named `OverflowingToolOutput` before 0.13.0) and run tools whose output an attacker can influence, such as shell commands, file reads, fetched pages or MCP servers. Stripping runs on the event loop before the capability reduces the output, so its own size limits do not bound it.\n\nThe assumed attacker can place text in content a tool returns.\n\n### Mitigation\n\nUpgrade `pydantic-ai-harness` to 0.70.0 or later. Until then, leave `strip_ansi` at its default, `False`.\n\nOn Pydantic AI v1, the harness cannot be upgraded past 0.4.0. Upgrade to Pydantic AI v2 and `pydantic-ai-harness` 0.70.0, or leave `strip_ansi` off.",
+   "published": "2026-11-19",
+   "last_modified": "2026-11-23",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "7cec5f2f-3032-4006-8740-31f605ffab5f",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "source": "7cec5f2f-3032-4006-8740-31f605ffab5f"
+   },
+   "cwe": [
+    "CWE-1333"
+   ],
+   "products": [
+    {
+     "vendor": "Pydantic",
+     "product": "Pydantic AI",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "pydantic-ai"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/pydantic/pydantic-ai/security/advisories/GHSA-m4cr-m4qc-9hh3",
+     "source": "7cec5f2f-3032-4006-8740-31f605ffab5f",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "pydantic-pydantic-ai"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name",
+     "B:vocabulary"
+    ],
+    "terms": [
+     "pydantic-ai:Pydantic AI",
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-18883",
+   "description": "ServiceNow has addressed an indirect prompt injection security issue that was identified in the Email Response AI Agent of Now Assist for CSM. We are not currently aware of malicious exploitation against ServiceNow instances.\n\nThis remediation was deployed centrally to the Email Response AI Agent (Now Assist for CSM) and does not require a platform version upgrade or hot fix; no version-specific backports apply.",
+   "published": "2026-11-19",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "psirt@servicenow.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "psirt@servicenow.com"
+   },
+   "cwe": [],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "prompt_injection"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB3235180",
+     "source": "psirt@servicenow.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "prompt injection"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77318",
+   "description": "Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode can enforce MCP_TOKEN on /mcp while leaving the state-changing /api/connect and /api/stop management routes unauthenticated. An unauthenticated network caller can use /api/connect to replace runtime_url and document_url values and their tokens, reset ServerContext, and start a kernel client against attacker-controlled infrastructure, causing the server to send Jupyter API and WebSocket traffic to that backend. The caller can also use /api/stop to stop the current notebook kernel. This boundary failure does not require explicit insecure no-auth mode and occurs outside normal MCP JSON-RPC tool dispatch. This issue is fixed in version 1.0.3.",
+   "published": "2026-11-19",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.3,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:H/VA:L/SC:H/SI:H/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-306"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/commit/c2e98fca2df1bbd608451ec416aaa38a4d246fc5",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/pull/262",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/releases/tag/v1.0.3",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/security/advisories/GHSA-24pw-rf5p-mgp7",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/security/advisories/GHSA-24pw-rf5p-mgp7",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server",
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77359",
+   "description": "Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode validates Host and Origin values for /mcp but does not apply the same browser-origin controls to the state-changing /api/connect and /api/stop management routes. A malicious website can use DNS rebinding so that its hostname resolves to a loopback, LAN, VPN, or published-container MCP listener, then send a browser-shaped request that /api/connect accepts to replace runtime_url and document_url values and start a kernel client against attacker-controlled infrastructure. The attacker can thereby cause Jupyter API and WebSocket traffic to reach that infrastructure and can use /api/stop to stop the current notebook kernel. The default broad bind can increase exposure, but the vulnerability is the missing management-route origin boundary, not a lack of Host validation on /mcp. This issue is fixed in version 1.0.3.",
+   "published": "2026-11-19",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-350"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/commit/c2e98fca2df1bbd608451ec416aaa38a4",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/pull/262",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/releases/tag/v1.0.3",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/security/advisories/GHSA-9x8x-crjq-g64h",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/datalayer/jupyter-mcp-server/security/advisories/GHSA-9x8x-crjq-g64h",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server",
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130007",
+   "description": "k8s-mcp-server manages Kubernetes clusters through the Model Context Protocol. Prior to 1.1.0, SERVER_MODE defaults to SSE, with the listener on 0.0.0.0:8080, but main.go creates the SSE server without an authentication option or context function. The GET /sse handler creates a sessionId that is only a correlation value, and the POST /message handler accepts a loadable sessionId without an authorization or Origin check before dispatching tools/call; consequently, any client able to reach the port can enumerate and invoke registered Kubernetes tools without credentials. Read-only mode is disabled by default, leaving write-capable Kubernetes tools available to run with the server's configured cluster privileges. This issue is fixed in version 1.1.0.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-21",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.9,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-306"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution",
+    "credential_access",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/reza-gholizade/k8s-mcp-server/commit/817d81005369837e0c034962785851ca4dec9a76",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/reza-gholizade/k8s-mcp-server/issues/131",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/reza-gholizade/k8s-mcp-server/pull/134",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/reza-gholizade/k8s-mcp-server/releases/tag/v1.1.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/reza-gholizade/k8s-mcp-server/security/advisories/GHSA-m932-63jc-4jqq",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130008",
+   "description": "sqlite-mcp is a Model Context Protocol server for SQLite. Prior to 0.1.2, the default read-only mode can be bypassed through execute_query, which accepts a leading SELECT while the SQLite driver executes trailing statements, and through describe_table, which interpolates the caller-controlled table_name into PRAGMA table_info. Either path can issue ATTACH DATABASE, which opens an attached file read-write despite mode=ro and can make the protected database writable, read other SQLite database files, or create a SQLite-format file at a path writable by the server process. Existing non-empty files that are not SQLite databases are refused and left unchanged. The server has no built-in authentication and listens on all interfaces at :8080 by default, so any client that can reach the port can invoke these tools unless an authenticating proxy is in place. This issue is fixed in version 0.1.2.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.2,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-89",
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/StacklokLabs/sqlite-mcp/commit/1da5a6582a4f9d90c778db5687ddcd0c39d2c1ec",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/StacklokLabs/sqlite-mcp/commit/3c244d61cc0a9c0cc5e4d74719c1dc83edcfa339",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/StacklokLabs/sqlite-mcp/pull/112",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/StacklokLabs/sqlite-mcp/releases/tag/v0.1.2",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/StacklokLabs/sqlite-mcp/security/advisories/GHSA-q433-mp6c-8v4f",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130121",
+   "description": "The AI Puffer - MCP Server for Claude & ChatGPT, with AI Chatbot plugin for WordPress is vulnerable to Stored Cross-Site Scripting via AI-generated comment replies in all versions up to, and including, 2.5.28 due to insufficient sanitization of the AI model's output in the insert_comment_reply_logic() function, which saves replies with wp_insert_comment() and bypasses the kses filtering WordPress normally applies to comment content. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page, by submitting a comment that leads the AI model to reproduce an HTML payload in its automated reply. This is only exploitable when an administrator has configured a Comment Auto-Reply automation task with 'Action on reply' set to 'Approve' (the default is 'Hold for moderation'), and the attacker's comment has been approved.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Deferred",
+   "cna": "security@wordfence.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.2,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+    "source": "security@wordfence.com"
+   },
+   "cwe": [
+    "CWE-79"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://plugins.trac.wordpress.org/browser/gpt3-ai-content-generator/tags/2.5.28/classes/automations/comment-reply-worker.php#L160",
+     "source": "security@wordfence.com",
+     "tags": []
+    },
+    {
+     "url": "https://plugins.trac.wordpress.org/browser/gpt3-ai-content-generator/tags/2.5.28/classes/automations/comment-reply-worker.php#L27",
+     "source": "security@wordfence.com",
+     "tags": []
+    },
+    {
+     "url": "https://plugins.trac.wordpress.org/browser/gpt3-ai-content-generator/tags/2.5.28/classes/automations/comment-reply-worker.php#L62",
+     "source": "security@wordfence.com",
+     "tags": []
+    },
+    {
+     "url": "https://plugins.trac.wordpress.org/changeset/3807151/gpt3-ai-content-generator",
+     "source": "security@wordfence.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/d164f090-83ee-499a-85e3-d642713467b9?source=cve",
+     "source": "security@wordfence.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "chatbot",
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130154",
+   "description": "Zyrabit Platform provides sovereign AI infrastructure for enterprise retrieval-augmented generation. Prior to 2.4.4, import_to_vault(source_path, destination_name) accepts both caller-controlled paths, but the content-pattern guard does not confine destination_name. The vulnerable tool is implemented in zyrabit-slm/api-rag/app/domain/services/mcp_service.py, where Path(DOCS_DIR) / destination_name is passed to shutil.copy2, allowing traversal or an absolute destination to write outside the vault. An unrestricted source_path can be copied into the vault and retrieved through secure_query, disclosing files readable by the service; files that do not match the executable-pattern filter pass that filter. When ENABLE_LEGACY_EXTENSIONS=true, zyrabit-slm/api-rag/app/main.py registers POST /mcp/rpc without get_current_user, allowing unauthenticated network tool calls; this optional exposure is disabled by default and is not required for local invocation. If an attacker can stage chosen source content and write to an execution-triggered destination, the advisory describes conditional process execution. This issue is fixed in version 2.4.4.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-22",
+    "CWE-306"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "tool_execution",
+    "auth_bypass",
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/Zyrabit-tech/zyrabit-SLM/commit/bb81be4d279a4680e26213c52041c003f9b78869",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Zyrabit-tech/zyrabit-SLM/pull/99",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Zyrabit-tech/zyrabit-SLM/releases/tag/v2.4.4",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Zyrabit-tech/zyrabit-SLM/security/advisories/GHSA-r4q8-hjfc-ggp2",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Zyrabit-tech/zyrabit-SLM/security/advisories/GHSA-r4q8-hjfc-ggp2",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "retrieval-augmented",
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130684",
+   "description": "vLLM before 0.33.0 contains a path traversal vulnerability that allows malicious model publishers to redirect the served model and tokenizer by setting speculators_config verifier.name_or_path in config.json. Attackers can point this field at another local checkpoint directory to leak its tokenizer vocabulary via unauthenticated /detokenize requests and gain query access to private models.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-22"
+   ],
+   "products": [
+    {
+     "vendor": "vLLM",
+     "product": "vLLM",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "vllm"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "exfiltration",
+    "auth_bypass",
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-qrj2-j723-m6w8",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "vllm:vLLM"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130685",
+   "description": "vLLM from 0.28.0 before 0.33.0 contains an improper input validation vulnerability that allows unauthenticated attackers to crash the shared EngineCore by sending out-of-range prompt token ids when served with --skip-tokenizer-init. Attackers can submit a large positive token id to /v1/completions, /v1/embeddings, or /pooling, bypassing the tokenizer-gated vocab check and causing a fatal embedding index error that denies service to all tenants.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-20"
+   ],
+   "products": [
+    {
+     "vendor": "vLLM",
+     "product": "vLLM",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "vllm"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-q9v9-qpjp-fc24",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "vllm:vLLM"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130686",
+   "description": "vLLM from 0.6.0 before 0.33.0 lacks a request-wide media budget, allowing remote inference clients to exhaust frontend resources by submitting many remote image URLs in one request. Attackers can send a compact request to /v1/messages or /v1/responses that forces downloading and decoding of every image before prompt-length admission, exhausting memory, CPU, and connections.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-400"
+   ],
+   "products": [
+    {
+     "vendor": "vLLM",
+     "product": "vLLM",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "vllm"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "dos"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-5r3c-5x4v-8gjh",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "vllm:vLLM"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130764",
+   "description": "Obot from 0.8.0 before 0.27.0 contains a server-side request forgery vulnerability that allows Power User accounts to reach internal hosts by advertising a malicious OAuth token endpoint in remote MCP server metadata. Attackers can direct token exchange or refresh requests, including redirected GET requests, to cloud metadata services or private-network hosts and read error response bodies.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-918"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-57qx-69p6-3w3g",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130766",
+   "description": "Obot from 0.26.0 before 0.27.0 fails to validate the resource identifier in remote MCP server protected resource metadata, allowing malicious MCP servers to steal access tokens. Attackers can name a different service and authorization server with chosen scopes, causing Obot to obtain the victim's token for that service and forward it to the attacker.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.8,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-346"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-x3hf-v55x-jcp6",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130767",
+   "description": "Obot from 0.9.0 before 0.27.0 contains a command injection vulnerability that allows authenticated users to execute shell commands by embedding an EOF line in file-type MCP server configuration values. Attackers can terminate the heredoc in the generated init container script to run commands, modify the MCP server files volume, and reach services on Obot's Docker network.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-78"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "code_execution",
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-2mfp-9vv3-q737",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130768",
+   "description": "Obot from 0.14.0 before 0.27.0 contains a server-side request forgery vulnerability that allows Power Users to bypass outbound protections by supplying unspecified addresses, IPv6 transition addresses, or registry icon URLs. Attackers can add remote MCP servers pointing to 0.0.0.0, ::, or NAT64/6to4/Teredo addresses embedding blocked IPv4 addresses to probe internal services for reachability.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.1,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-184"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-r3m3-5rmh-h3fm",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-132121",
+   "description": "Supergateway 2.4.0 through 4.2.2 contains a cross-site WebSocket hijacking vulnerability in stdio-to-WebSocket mode that allows malicious web pages to connect by bypassing missing Origin header validation. Attackers can open the /message WebSocket from a victim's browser, even against localhost-bound gateways, to initialize an MCP session and invoke wrapped stdio MCP server tools with victim privileges.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.6,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-1385"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/Teycir/supergateway-security-research",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/supercorp-ai/supergateway",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/supercorp-ai/supergateway/blob/v4.2.2/src/gateways/stdioToWs.ts#L104-L126",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/supercorp-ai/supergateway/issues/378",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/supergateway-2.4.0-through-4.2.2-cross-site-websocket-hijacking-via-stdiotows",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-132122",
+   "description": "agentic-radar 0.7.0 before 0.14.2 contains an untrusted configuration loading vulnerability that allows malicious repositories to inject environment variables by having load_dotenv() in agentic_radar/cli.py load the scanned repository's .env file. Attackers can set OPENAI_BASE_URL to an attacker-controlled host so that scan openai-agents or --harden-prompts send requests carrying the user's OpenAI API key to the attacker.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Received",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.7,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-15"
+   ],
+   "products": [
+    {
+     "vendor": "OpenAI",
+     "product": "OpenAI Agents SDK",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "openai-agents-sdk"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/Teycir/agentic-radar-cve",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/splx-ai/agentic-radar",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/splx-ai/agentic-radar/commit/b99bb14fc1d9c4bab0bf2752d4547f79077960fe",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/splx-ai/agentic-radar/pull/134",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/splx-ai/agentic-radar/releases/tag/v0.14.2",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/agentic-radar-0.7.0-before-0.14.2-openai-api-key-leak-via-untrusted-env-loading",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "openai-openai-agents-sdk-python"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name",
+     "B:vocabulary"
+    ],
+    "terms": [
+     "openai-agents-sdk:openai-agents",
+     "agentic"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-18399",
+   "description": "Mattermost versions 11.7.x <= 11.7.11, 11.10.x <= 11.10.2, 11.11.x <= 11.11.1 fail to enforce the configured GitLab group/namespace restriction on the permalink code-preview feature and the {{get_projects}} MCP tool, which allows an authenticated user with a connected GitLab account to retrieve repository file content or project metadata from projects outside the restricted group via a crafted GitLab permalink or MCP tool call. Mattermost Advisory ID: MMSA-2026-00750",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Undergoing Analysis",
+   "cna": "responsibledisclosure@mattermost.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+    "source": "responsibledisclosure@mattermost.com"
+   },
+   "cwe": [
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://mattermost.com/security-updates",
+     "source": "responsibledisclosure@mattermost.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-62964",
+   "description": "Gortex is a high-performance code-intelligence engine for AI agents and integrated development environments. Prior to 0.55.0, resolveFilePath in internal/mcp/tools_fileops.go accepts absolute paths without checking indexed repository roots, while write_file, edit_file, and move_inline in internal/mcp/tools_move_inline.go omit guardSymlinkWithinRepo before reaching AtomicWriteFile and related write sinks. A caller that can influence MCP tool arguments can therefore create or overwrite files anywhere the daemon user can access, including startup or hook files that execute code on a later trigger. The flaw violates Gortex's repository-confinement invariant and can lead to arbitrary host code execution. This issue is fixed in version 0.55.0.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.8,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-22",
+    "CWE-73"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "code_execution",
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/zzet/gortex/commit/5ba2f066dd6dcd726c4e61b74851862dc596d994",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/zzet/gortex/releases/tag/v0.55.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/zzet/gortex/security/advisories/GHSA-w42c-h7hr-f67p",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-63129",
+   "description": "mssql-mcp-core is the shared library that powers MSSQL MCP servers. Prior to core and server 0.6.0 and reader and writer 0.5.0, multiple database tools interpolate caller-controlled identifiers and predicates into T-SQL batches passed to Request.query() while parameterizing only data values. update_data, delete_data, insert_data, execute_transaction, create_table, create_index, and drop_table accept unsafe tableName, column, index, schema, or free-form whereClause input, while reader-tier list_databases interpolates stateFilter without runtime allowlist enforcement. Row-count and preview queries execute before confirmUpdate or confirmDelete, allowing malicious arguments to bypass confirmation and maxRows controls and execute stacked DDL or DML, read or destroy data, and potentially run operating-system commands when the SQL login is privileged and xp_cmdshell is enabled. This issue is fixed in core and server version 0.6.0 and reader and writer version 0.5.0.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.8,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-89"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/ConnorBritain/mssql-mcp-core/commit/227e2efc4e3311c477b7ae509c3ae15437a4f815",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ConnorBritain/mssql-mcp-core/commit/a9727f83768598e4fdbddfbc717ccfebb84ae7af",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ConnorBritain/mssql-mcp-core/pull/1",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ConnorBritain/mssql-mcp-core/security/advisories/GHSA-2m9m-6cr5-9x25",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-68903",
+   "description": "LLMKube is a Kubernetes operator for self-hosted large language model inference across heterogeneous hardware. Prior to 0.9.0, the ModelReconciler accepts arbitrary absolute paths and file:// URIs in Model.spec.source without restricting them to approved roots. A namespace user who can create or update Model and InferenceService resources can cause copyLocalModel to open an attacker-selected file in the controller pod or cause a HostPathVolumeSource to mount an attacker-selected node file when modelCache.enabled is enabled, which is the default. The selected file is copied into model storage and can expose controller service-account credentials or other node secrets outside the attacker's namespace. This issue is fixed in version 0.9.0.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.7,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-22"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "credential_access",
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/defilantech/LLMKube/commit/ec2647fd4557962a971a1bc9435790b8e77ce961",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/defilantech/LLMKube/pull/981",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/defilantech/LLMKube/releases/tag/v0.9.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/defilantech/LLMKube/security/advisories/GHSA-jw3m-8q7m-f35r",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "language model",
+     "large language model"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-75518",
+   "description": "DOMShell is a Chrome automation project whose MCP server exposes Unix-style tools for AI agents. Prior to 2.0.8, the DOMShell MCP server classifies the domshell_eval tool and eval command as read-tier operations that can run without --allow-write, even though eval shares the Runtime.evaluate dispatch path with the write-tier js command and has no side-effect gate. An MCP caller with tool-session access can therefore use domshell_eval to mutate DOM, window, or global state while the host approval interface, server authorization flags, denial messages, and audit records represent the operation as read-only. The bypass does not expose a capability beyond domshell_js for callers already authorized to write, but it violates the configured permission boundary for callers lacking that authorization. This issue is fixed in version 2.0.8.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-266",
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution",
+    "auth_bypass",
+    "privilege_escalation"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/apireno/DOMShell/commit/03c1d7625e220297aff0dde37613d65cfe6f9a36",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/apireno/DOMShell/releases/tag/mcp-v2.0.8",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/apireno/DOMShell/security/advisories/GHSA-vg83-hcp4-5qcc",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents",
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-75612",
+   "description": "yt-mcp is a YouTrack MCP server for Claude Code. Prior to 1.18.1, add_attachment in src/yt_mcp/tools/attachments.py accepts a caller-controlled file_path, checks only that the file exists, reads it without directory confinement, and uploads the bytes to a YouTrack issue. A compromised MCP client or an LLM steered by indirect prompt injection can read any file accessible to the server process and exfiltrate secrets through an issue the caller can access. The same release also permits get_project_health to interpolate a caller-controlled project value into snapshot filenames, allowing parent-directory traversal to write JSON files outside the snapshots directory. This issue is fixed in version 1.18.1.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-22",
+    "CWE-73"
+   ],
+   "products": [
+    {
+     "vendor": "Anthropic",
+     "product": "Claude Code",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "claude-code"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "prompt_injection",
+    "exfiltration",
+    "credential_access",
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/velesnitski/yt-mcp/commit/b70054b180e6ec7a03f70ee4744518d96d2fba8a",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/velesnitski/yt-mcp/releases/tag/v1.18.1",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/velesnitski/yt-mcp/security/advisories/GHSA-99mq-fjjc-6v9j",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "anthropic-claude-code"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name",
+     "B:vocabulary"
+    ],
+    "terms": [
+     "claude-code:Claude Code",
+     "llm",
+     "mcp client",
+     "mcp server",
+     "prompt injection"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-76807",
+   "description": "Todoist MCP Server provides tools that allow AI agents to access and modify a Todoist account. Prior to 10.3.3, the optional todoist-mcp-http server accepts browser-origin requests to POST /mcp without validating the Host and Origin headers or authenticating the browser caller. A malicious website can use DNS rebinding to reach the loopback listener and invoke MCP tools through StreamableHTTPServerTransport, which uses the server-held Todoist API key. This exposes Todoist account data and permits operations such as task creation, updates, completion, and deletion. The stdio transport is not browser-reachable and is not affected by this attack path. This issue is fixed in version 10.3.3.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-346",
+    "CWE-350"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution",
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/todoist/todoist-mcp/commit/245bf29cf5dbd8272e2aa896ad38557f91f8a16a",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/todoist/todoist-mcp/pull/516",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/todoist/todoist-mcp/releases/tag/v10.3.3",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/todoist/todoist-mcp/security/advisories/GHSA-833v-v58w-294h",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/todoist/todoist-mcp/security/advisories/GHSA-833v-v58w-294h",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents",
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-76818",
+   "description": "Axon is an agent-agnostic context engine that gives AI coding agents continuous memory across sessions, tools, and machines. Prior to 0.1.1, rtk-install in src/axon/context/rtk_bootstrap.py uses _http_download() to fetch a prebuilt rtkx release archive and _extract_binary() to mark it executable, after which compress_text_with_rtk() invokes it without verifying a checksum, signature, or build attestation. If the sammyjdev/rtkx release pipeline or maintainer release credentials are compromised, an attacker can supply a modified binary that executes with the Axon process privileges when a user installs or automatically bootstraps rtkx. This issue is fixed in version 0.1.1.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-494"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/sammyjdev/axon/commit/398e47d5d2b1e1ba88c8d2bac90ac30811a9152b",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/sammyjdev/axon/commit/c5863e616688c6c60b2716db9ce4b1b522213b8c",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/sammyjdev/axon/commit/d2cc7bccd99c76ec06ac7f7f04d3b2f765c9e741",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/sammyjdev/axon/security/advisories/GHSA-r7wg-f7r2-8wf7",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/sammyjdev/rtkx/pull/2",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/sammyjdev/rtkx/pull/3",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/sammyjdev/axon/security/advisories/GHSA-r7wg-f7r2-8wf7",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "coding agent"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-77283",
+   "description": "obsidian-sync-mcp is an MCP server that gives AI agents access to Obsidian vaults. Prior to 0.5.7, deployments running without MCP_AUTH_TOKEN install no serverOptions.authenticate check for the HTTP /mcp endpoint, so requests are dispatched without validating the Host or Origin headers. A malicious website visited by the operator can use DNS rebinding to reach loopback, LAN, VPN, or container-published addresses, or directly issue a cross-origin request to loopback, and invoke the MCP tool surface to read, create, overwrite, delete, or move vault notes. Deployments using MCP_AUTH_TOKEN are not affected because browsers do not attach the bearer token. This issue is fixed in version 0.5.7.",
+   "published": "2026-11-18",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.8,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-350"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/es617/obsidian-sync-mcp/commit/d4d2cbbb02ffadaecf1d6252902b8d08610c7018",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/es617/obsidian-sync-mcp/releases/tag/v0.5.7",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/es617/obsidian-sync-mcp/security/advisories/GHSA-mx6p-3fg7-v6pj",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/es617/obsidian-sync-mcp/security/advisories/GHSA-mx6p-3fg7-v6pj",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents",
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-115219",
+   "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 19.2 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to enable Amazon Q automatic code reviews on a project despite an administrator lock due to improper enforcement of instance-level settings.",
+   "published": "2026-11-17",
+   "last_modified": "2026-11-17",
+   "vuln_status": "Awaiting Analysis",
+   "cna": "cve@gitlab.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.8,
+    "severity": "LOW",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N",
+    "source": "cve@gitlab.com"
+   },
+   "cwe": [
+    "CWE-807"
+   ],
+   "products": [
+    {
+     "vendor": "AWS",
+     "product": "Amazon Q Developer",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "amazon-q"
+    }
+   ],
+   "category": "product",
+   "surface": [],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-6-released/",
+     "source": "cve@gitlab.com",
+     "tags": []
+    },
+    {
+     "url": "https://gitlab.com/gitlab-org/gitlab/-/work_items/632860",
+     "source": "cve@gitlab.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "aws-amazon-q-developer"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "amazon-q:Amazon Q"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130358",
+   "description": "AdminNeo before 5.9.1 contains a missing authentication vulnerability in the ClaudeSqlPlugin, GeminiSqlPlugin, and OpenWebUiPlugin sendHeaders() handlers that run on the login page. Unauthenticated attackers can POST claude, gemini, or openwebui fields to relay arbitrary prompts using the operator's API key or bearer token, including to internal Open WebUI endpoints.",
+   "published": "2026-11-17",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-306"
+   ],
+   "products": [
+    {
+     "vendor": "Open WebUI",
+     "product": "Open WebUI",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "open-webui"
+    }
+   ],
+   "category": "infrastructure",
+   "surface": [
+    "credential_access",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/adminneo-org/adminneo/releases/tag/v5.9.1",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/adminneo-org/adminneo/security/advisories/GHSA-cjvx-f3xp-vg55",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/adminneo-before-5.9.1-missing-authentication-in-ai-sql-plugins-via-login-page",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/adminneo-org/adminneo/security/advisories/GHSA-cjvx-f3xp-vg55",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "open-webui-open-webui"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "open-webui:Open WebUI"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130615",
+   "description": "Flowise through 3.1.4 contains a server-side request forgery vulnerability that allows authenticated users to reach internal services by exploiting unpinned DNS validation in checkDenyList(). Attackers can configure a chatflow with Playwright or Puppeteer loaders using a DNS-rebinding domain so headless Chromium fetches internal or cloud metadata endpoints, returning responses as document content.",
+   "published": "2026-11-17",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.6,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-367"
+   ],
+   "products": [
+    {
+     "vendor": "FlowiseAI",
+     "product": "Flowise",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "flowise"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "ssrf"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://flowiseai.com/sunset",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/FlowiseAI/Flowise/blob/a65f81bb43ef66d3ce734bf0dff4223ae8041c95/packages/components/nodes/documentloaders/Playwright/Playwright.ts#L193-L245",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/FlowiseAI/Flowise/blob/a65f81bb43ef66d3ce734bf0dff4223ae8041c95/packages/components/nodes/documentloaders/Puppeteer/Puppeteer.ts#L184-L239",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/FlowiseAI/Flowise/blob/a65f81bb43ef66d3ce734bf0dff4223ae8041c95/packages/components/src/httpSecurity.ts#L121-L139",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/FlowiseAI/Flowise/blob/main/SECURITY.md",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/flowise-through-3.1.4-ssrf-via-dns-rebinding-in-playwright-and-puppeteer-loaders",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "flowiseai-flowise"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name"
+    ],
+    "terms": [
+     "flowise:Flowise"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-130796",
+   "description": "Flowise 3.1.3 through 3.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read MCP server bearer tokens via the GET /api/v1/public-chatflows/:id handler. Attackers can use the leaked mcpServerConfig token on the POST /api/v1/mcp/:chatflowId route to invoke chatflows, bypassing API key protection and consuming the owner's model quota.",
+   "published": "2026-11-17",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Deferred",
+   "cna": "disclosure@vulncheck.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.8,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "disclosure@vulncheck.com"
+   },
+   "cwe": [
+    "CWE-212"
+   ],
+   "products": [
+    {
+     "vendor": "FlowiseAI",
+     "product": "Flowise",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": "flowise"
+    }
+   ],
+   "category": "framework",
+   "surface": [
+    "tool_execution",
+    "exfiltration",
+    "credential_access",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://flowiseai.com/sunset",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/FlowiseAI/Flowise/blob/a65f81bb43ef66d3ce734bf0dff4223ae8041c95/packages/server/src/controllers/chatflows/index.ts#L229-L256",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/FlowiseAI/Flowise/blob/a65f81bb43ef66d3ce734bf0dff4223ae8041c95/packages/server/src/database/entities/ChatFlow.ts#L64-L68",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/FlowiseAI/Flowise/blob/a65f81bb43ef66d3ce734bf0dff4223ae8041c95/packages/server/src/services/mcp-server/index.ts#L223-L250",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/FlowiseAI/Flowise/blob/main/SECURITY.md",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/geo-chen/oss/blob/main/Flowise.md",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://www.vulncheck.com/advisories/flowise-3.1.3-through-3.1.4-mcp-server-token-disclosure-via-public-chatflow-endpoint",
+     "source": "disclosure@vulncheck.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/geo-chen/oss/blob/main/Flowise.md",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [
+    "flowiseai-flowise"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:name",
+     "B:vocabulary"
+    ],
+    "terms": [
+     "flowise:Flowise",
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-115563",
+   "description": "The Model Context Protocol Python SDK is the official Python SDK for Model Context Protocol servers and clients. From 1.9.1 until 1.30.0 and 2.2.0, OAuth client support in mcp.client.auth can send credentials to an authorization server chosen by an untrusted MCP server. ClientCredentialsOAuthProvider and PrivateKeyJWTOAuthProvider cannot identify the authorization server that owns their credentials. Affected HTTP clients using those providers, OAuthClientProvider, or the deprecated 1.x RFC7523OAuthClientProvider can disclose a client_secret, authorization code, PKCE code_verifier, or signed client assertion. MCP servers, stdio clients, and clients that attach their own tokens or headers are not affected. Interactive OAuthClientProvider use requires a person to start sign-in, while the unattended providers do not. For ClientCredentialsOAuthProvider and PrivateKeyJWTOAuthProvider, callers must configure issuer= after upgrading because omission still follows the MCP server's advertised authorization server, and the deprecated RFC7523OAuthClientProvider must be replaced because it has no issuer option. A stored client registration without an issuer remains unbound after upgrading, so stored OAuth client information must be cleared once to register again or a manually pre-registered record must be updated with its issuer. This issue is fixed in versions 1.30.0 and 2.2.0.",
+   "published": "2026-11-16",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-345",
+    "CWE-522"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "credential_access"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/commit/3eed7ce0a6aba76e8d94c4cfb9b266f41935392c",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/commit/979208c1157661eac0151f90974a1f96528003fa",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/commit/d060b36e1d095ef6e93e07ba5d59bb69b2ad449a",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/pull/3398",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/pull/3431",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/pull/3435",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/releases/tag/v1.30.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.2.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server",
+     "model context protocol"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-120699",
+   "description": "CubeSandbox is an instant, concurrent, secure, and lightweight sandbox for AI agents. Prior to 0.5.1, any authenticated tenant permitted to call POST /sandboxes can supply metadata[\"host-mount\"] with an arbitrary existing host path because the control plane performs no authorization check or allowed-prefix validation for the path. injectHostDirMounts forwards the path to prepareHostDirVolume, where Cubelet uses mount --rbind through the function to perform a recursive bind mount as root and exposes the host subtree to the tenant's MicroVM through virtio-fs, read-write by default. This allows host-root file access and modification, host code execution, access to the container runtime, and compromise of co-resident tenants without a kernel or virtual-machine-monitor flaw. This issue is fixed in version 0.5.1.",
+   "published": "2026-11-16",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-22",
+    "CWE-269",
+    "CWE-284"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "code_execution",
+    "auth_bypass",
+    "privilege_escalation",
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/TencentCloud/CubeSandbox/commit/5c7025f3a393c30e723dd7f071ef1c28d7a2e52e",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TencentCloud/CubeSandbox/pull/756",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TencentCloud/CubeSandbox/releases/tag/v0.5.1",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/TencentCloud/CubeSandbox/security/advisories/GHSA-8frp-jfpv-5vhv",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent",
+     "ai agents"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-126681",
+   "description": "Improper restriction of intended endpoints in the connection configuration handling of the AWS Labs Timestream for InfluxDB MCP Server (awslabs.timestream-for-influxdb-mcp-server) before 0.0.19 might allow a remote unauthenticated actor (via prompt injection) to obtain the InfluxDB API token configured on the server, sent to a crafted endpoint controlled through an InfluxDB URL introduced in the MCP client context.\n\n\n\nTo remediate this issue, users should upgrade to version 0.0.19 or later and rotate any InfluxDB API tokens configured for the server.",
+   "published": "2026-11-16",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Received",
+   "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5"
+   },
+   "cwe": [
+    "CWE-923"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "prompt_injection",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://aws.amazon.com/security/security-bulletins/2026-185-aws/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/awslabs/mcp/security/advisories/GHSA-2f9r-g4f3-wc2j",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://pypi.org/project/awslabs.timestream-for-influxdb-mcp-server/0.0.19/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp client",
+     "mcp server",
+     "prompt injection"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-126816",
+   "description": "Improper limitation of a pathname to a restricted directory in the cost report generation tool in AWS Pricing MCP Server (aws-pricing-mcp-server) before 1.0.31 might allow an actor who can influence the MCP agent to write actor controlled content to arbitrary locations outside the intended output directory via absolute paths or directory traversal sequences in the report output path.\n\n\n\nTo remediate this issue, users should upgrade to version 1.0.31 or later. Users of the deprecated awslabs.cost-analysis-mcp-server package should migrate to awslabs.aws-pricing-mcp-server version 1.0.31 or later.",
+   "published": "2026-11-16",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Received",
+   "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5"
+   },
+   "cwe": [
+    "CWE-22",
+    "CWE-357"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "path_traversal"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://aws.amazon.com/security/security-bulletins/2026-184-aws/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/awslabs/mcp/security/advisories/GHSA-mqm3-w68j-75mw",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    },
+    {
+     "url": "https://pypi.org/project/awslabs.aws-pricing-mcp-server/1.0.31/",
+     "source": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-129235",
+   "description": "Kubeshark is an eBPF-powered network observability tool for Kubernetes. From 53.1.0 until 53.4.0, the download_file tool in cmd/mcpRunner.go accepts caller-controlled path and dest values, fetches a selected Kubeshark Hub API response, and writes the returned bytes through os.Create(dest) in callDownloadFile without confining the destination. An attacker who influences arguments through an AI agent driving kubeshark mcp can write Hub-supplied bytes to any path writable by the local MCP user and can read captured network traffic from default auth-disabled Hub deployments. The tool is registered without --allow-destructive; reliable code execution is not demonstrated because the bytes are constrained to Hub API responses. Hub-side default authentication remains outside this remediation, so captured traffic can remain readable in default auth-disabled Hub deployments after the local destination-write fix. The destination-write issue is fixed in version 53.4.0.",
+   "published": "2026-11-16",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:N",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-88"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "code_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/kubeshark/kubeshark/commit/a76a1920dc7587be700a17f1592f58a9512ad214",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/kubeshark/kubeshark/pull/1957",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/kubeshark/kubeshark/releases/tag/v53.4.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/kubeshark/kubeshark/security/advisories/GHSA-gj7r-p794-hhq5",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "ai agent"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-68934",
+   "description": "code-review-mcp-server automates code review and can post comments directly on GitHub pull requests. Prior to 1.5.3, the getLocalGitDiff, codeReview, createPR, and getPRTemplate MCP tools accept caller-controlled folderPath and baseBranch string parameters that are interpolated into command strings executed by child_process.execSync through /bin/sh. Shell metacharacters, command substitution, or quote-breaking input can therefore execute arbitrary commands with the privileges of the host process running the MCP server. This issue is fixed in version 1.5.3.",
+   "published": "2026-11-16",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-78"
+   ],
+   "products": [],
+   "category": "protocol",
+   "surface": [
+    "code_execution",
+    "tool_execution"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/Orcus2021/code-review-mcp-server/commit/d11642322b607556affaaa3fd631d4f8942c05d8",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Orcus2021/code-review-mcp-server/issues/56",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Orcus2021/code-review-mcp-server/pull/57",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Orcus2021/code-review-mcp-server/releases/tag/v1.5.3",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/Orcus2021/code-review-mcp-server/security/advisories/GHSA-jq3q-62jc-fqq9",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "mcp server"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-83816",
+   "description": "CodeWhale is a DeepSeek and MiMo coding agent for the terminal. Prior to 0.9.0, the ExecShellTool::approval_requirement_for path used is_parallel_readonly_command to downgrade commands to automatic approval based on a flag-stripped command allowlist. The allowlist treated fd, rg, and git grep as read-only even when fd -x or fd --exec, rg --pre, or git grep --open-files-in-pager selected an external program. registered_tool_approval_required returned without displaying a prompt for that automatic classification, and the later command-safety check also treated the base utilities as safe. Attacker-controlled content that influenced an agent tool call could therefore cause arbitrary program execution on the developer host without the approval promised by the default interactive profile, resulting in unauthorized access, modification, or disruption. This issue is fixed in version 0.9.0.",
+   "published": "2026-11-16",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-78",
+    "CWE-863"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "code_execution",
+    "tool_execution",
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/codewhale-hq/Codewhale/commit/208421b9d23d81cea3311a1eeb2a2ea81d637686",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/codewhale-hq/Codewhale/releases/tag/v0.9.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/codewhale-hq/Codewhale/security/advisories/GHSA-3mgh-93r5-r7jf",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "coding agent",
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "CVE-2026-83817",
+   "description": "CodeWhale is a DeepSeek and MiMo coding agent for the terminal. Prior to 0.9.0, DEFAULT_AUTOMATION_AUTO_APPROVE caused AutomationRecord::task_auto_approve to resolve an omitted setting to true, and the automation_create schema advertised the same insecure default. enqueue_run_task converted that omission into an explicit true value, bypassing the safer task-path fallback and selecting ApprovalMode::Bypass for each scheduled run. After a user approved creation of an apparently benign recurring automation, subsequent executions could silently authorize mutating tools without a human present, and an automation created with shell access could repeatedly execute commands. This issue is fixed in version 0.9.0.",
+   "published": "2026-11-16",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Received",
+   "cna": "security-advisories@github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "source": "security-advisories@github.com"
+   },
+   "cwe": [
+    "CWE-862",
+    "CWE-1188"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "auth_bypass"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://github.com/codewhale-hq/Codewhale/commit/208421b9d23d81cea3311a1eeb2a2ea81d637686",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/codewhale-hq/Codewhale/releases/tag/v0.9.0",
+     "source": "security-advisories@github.com",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/codewhale-hq/Codewhale/security/advisories/GHSA-8hp3-xxrg-v9c8",
+     "source": "security-advisories@github.com",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "coding agent"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
   {
    "id": "CVE-2026-125771",
    "description": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.3.",
@@ -87,13 +4528,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-129356",
    "description": "A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common Prefix Handler. The manipulation results in race condition. The attack may be performed from remote. Attacks of this nature are highly complex. It is stated that the exploitability is difficult. The exploit has been made public and could be used. Upgrading to version 0.32.0 is able to resolve this issue. The patch is identified as e687a251bb056fa527846633f7a1b0a6c0f42374. You should upgrade the affected component.",
    "published": "2026-11-15",
-   "last_modified": "2026-11-15",
+   "last_modified": "2026-11-16",
    "vuln_status": "Awaiting Analysis",
    "cna": "cna@vuldb.com",
    "cvss": {
@@ -184,7 +4625,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-109158",
@@ -235,14 +4676,14 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-110278",
    "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.1.0 could allow an attacker to replay identity propagation claims signatures or expose sensitive user identity information to third-party MCP servers due to static signature payloads and missing per-gateway configuration checks during tool invocation.",
    "published": "2026-11-13",
-   "last_modified": "2026-11-13",
-   "vuln_status": "Undergoing Analysis",
+   "last_modified": "2026-11-16",
+   "vuln_status": "Analyzed",
    "cna": "psirt@us.ibm.com",
    "cvss": {
     "version": "3.1",
@@ -254,20 +4695,30 @@
    "cwe": [
     "CWE-294"
    ],
-   "products": [],
+   "products": [
+    {
+     "vendor": "ibm",
+     "product": "contextforge",
+     "versions_affected": ">= 1.0.0 < 1.1.1",
+     "fixed_in": "1.1.1",
+     "product_id": null
+    }
+   ],
    "category": "protocol",
    "surface": [],
    "kev": null,
    "fix": {
-    "status": "unknown",
-    "version": null,
+    "status": "fixed",
+    "version": "1.1.1",
     "url": null
    },
    "references": [
     {
      "url": "https://www.ibm.com/support/pages/node/7296489",
      "source": "psirt@us.ibm.com",
-     "tags": []
+     "tags": [
+      "Vendor Advisory"
+     ]
     }
    ],
    "related_agents": [],
@@ -284,13 +4735,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-123965",
    "description": "A prompt injection vulnerability in all versions of Jet Admin Cloud Platform allows a remote attacker with a free account to expose sensitive .env configuration files and exfiltrate critical credentials. Mitigated via sandbox component around October 29, 2026.",
    "published": "2026-11-13",
-   "last_modified": "2026-11-13",
+   "last_modified": "2026-11-19",
    "vuln_status": "Awaiting Analysis",
    "cna": "9119a7d8-5eab-497f-8521-727c672e3725",
    "cvss": {
@@ -352,13 +4803,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-126394",
    "description": "vLLM 0.30.0 before 0.31.0 contains a resource exhaustion vulnerability in OpenCVDynamicOpenPanguVideoBackend, which uses request-controlled num_frames without an effective ceiling. Unauthenticated attackers can send /v1/chat/completions or /tokenize requests selecting the openpangu video_backend with a huge num_frames, forcing np.linspace allocations and CPU work that OOM-kill the API server.",
    "published": "2026-11-13",
-   "last_modified": "2026-11-13",
+   "last_modified": "2026-11-17",
    "vuln_status": "Awaiting Analysis",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -417,7 +4868,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-126395",
@@ -472,10 +4923,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -536,10 +4987,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -552,7 +5003,7 @@
    "id": "CVE-2026-126397",
    "description": "vLLM from 0.10.1 before 0.31.0 forwards a request-controlled mm_processor_kwargs.max_patches value to the Hugging Face processor for Cohere2 Vision models without a server-side upper bound, causing quadratic CPU work during multimodal preprocessing. Remote clients can send small image chat-completion requests with large, varying max_patches values to bypass the LRU cache, exhaust preprocessing workers, and deny service to other clients.",
    "published": "2026-11-13",
-   "last_modified": "2026-11-13",
+   "last_modified": "2026-11-18",
    "vuln_status": "Awaiting Analysis",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -615,13 +5066,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-126398",
    "description": "vLLM from 0.28.0 before 0.30.0 contains a reachable assertion vulnerability in GPUModelRunner._init_xdrope_positions that allows remote attackers to crash the engine by submitting embeddings-only requests. Attackers can send a /v1/completions request containing only prompt_embeds to XD-RoPE models with --enable-prompt-embeds, terminating the EngineCore and API server for all clients.",
    "published": "2026-11-13",
-   "last_modified": "2026-11-13",
+   "last_modified": "2026-11-17",
    "vuln_status": "Awaiting Analysis",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -677,7 +5128,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-126399",
@@ -731,10 +5182,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "vllm:vLLM"
+     "vllm:vllm:vllm"
     ]
    },
    "status": "candidate",
@@ -747,7 +5198,7 @@
    "id": "CVE-2026-127214",
    "description": "Flowise through 3.1.4 contains a server-side request forgery vulnerability that allows authenticated attackers with chatflows or agentflows create/update permissions to bypass the Custom Function sandbox's SSRF protection by requiring a module subpath inside an allowlisted package, such as axios/dist/node/axios.cjs or node-fetch/lib/index.js, which evades the vm2 mock table and returns an unwrapped HTTP client that skips the checkDenyList validation. Attackers can issue arbitrary GET and POST requests with attacker-controlled bodies via POST /api/v1/node-custom-function to reach loopback and internal-network addresses or the cloud metadata endpoint, enabling network mapping, credential disclosure, and state changes on internal services.",
    "published": "2026-11-13",
-   "last_modified": "2026-11-13",
+   "last_modified": "2026-11-17",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -808,13 +5259,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-68905",
    "description": "Hugo Blog is a tech blog site. In commit 744ca15 and prior, the AI assistant proxy exposes three HTTP endpoints (POST /api/blog-assistant, POST /api/blog-search-embedding, POST /api/blog-search-rerank) without any authentication check. When deployed following the documented Nginx reverse-proxy setup, any unauthenticated remote attacker can send arbitrary requests that the proxy forwards to the upstream LLM/embedding/rerank API using the operator's server-side API key (OPENAI_API_KEY / AI_SEARCH_API_KEY). This enables unlimited quota consumption, cost exhaustion, and potential service unavailability for the operator. At time of publication, there are no publicly available patches.",
    "published": "2026-11-13",
-   "last_modified": "2026-11-13",
+   "last_modified": "2026-11-16",
    "vuln_status": "Received",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -861,7 +5312,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-126196",
@@ -1064,7 +5515,7 @@
    "id": "CVE-2026-126199",
    "description": "pgEdge Postgres MCP Server enables SQL queries against PostgreSQL databases through Model Context Protocol compatible clients. Prior to 1.1.0, the bundled CLI and web clients classified query_database statements only by their first keyword before deciding whether to display a write confirmation. SELECT INTO, data-modifying common table expressions beginning with WITH, and EXPLAIN ANALYZE of a write were treated as reads and could execute without confirmation on an allow_writes connection. Read-only connections remain protected by PostgreSQL transaction access mode, and EXPLAIN without ANALYZE and SELECT FOR UPDATE remain classified as reads. This issue is fixed in 1.1.0.",
    "published": "2026-11-12",
-   "last_modified": "2026-11-12",
+   "last_modified": "2026-11-16",
    "vuln_status": "Awaiting Analysis",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -1125,7 +5576,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-126767",
@@ -1383,7 +5834,7 @@
    "id": "CVE-2026-67541",
    "description": "Heym builds and runs agentic systems and business-process automations on self-hosted infrastructure. Prior to version 0.0.70, team-member management (add / remove / update) is gated only on team membership, not on the team creator/admin role — and TeamMember has no role column. Any non-creator member can seat an attacker account into the team; because credential team-shares are scoped only by TeamMember.user_id, the newly-added attacker can then decrypt every credential shared into that team (provider API keys, OAuth tokens. This issue has been patched in version 0.0.70.",
    "published": "2026-11-11",
-   "last_modified": "2026-11-11",
+   "last_modified": "2026-11-16",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -1435,6 +5886,11 @@
      "url": "https://github.com/heymrun/heym/security/advisories/GHSA-vxpw-x7j7-8723",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/heymrun/heym/security/advisories/GHSA-vxpw-x7j7-8723",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -1451,7 +5907,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-67542",
@@ -1657,7 +6113,7 @@
    "id": "CVE-2026-67545",
    "description": "Heym builds and runs agentic systems and business-process automations on self-hosted infrastructure. Prior to version 0.0.73, the HTTP workflow node in Heym makes outbound HTTP requests to user-supplied URLs without validation of the target host or IP address. If a workflow author has already configured an HTTP node that targets internal addresses such as cloud metadata endpoints or private network hosts, and exposed the workflow with anonymous execution, an unauthenticated attacker can trigger the preconfigured SSRF sink. The same project has comprehensive SSRF protection in its MCP integration, which is absent from the HTTP node. This issue has been patched in version 0.0.73.",
    "published": "2026-11-11",
-   "last_modified": "2026-11-11",
+   "last_modified": "2026-11-16",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -1707,6 +6163,11 @@
      "url": "https://github.com/heymrun/heym/security/advisories/GHSA-8wj7-v2w6-wfcx",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/heymrun/heym/security/advisories/GHSA-8wj7-v2w6-wfcx",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -1723,7 +6184,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-67546",
@@ -1864,7 +6325,7 @@
    "id": "CVE-2026-67548",
    "description": "taOS is a self-hosted AI agent OS. Prior to version 1.0.0-beta.25, tinyagentos (taOS) registers all system settings routes under a single APIRouter() instance created with no admin authorization dependency. Any authenticated user—including non-admin invited users whose is_admin flag is explicitly False—can read the full system configuration, overwrite it, modify platform settings, trigger a git pull + dependency reinstall + service restart, and switch the tracked update branch. Successful exploitation of the write endpoints causes immediate configuration corruption or a denial of service for all users on the instance from a low-privileged account. This issue has been patched in version 1.0.0-beta.25.",
    "published": "2026-11-11",
-   "last_modified": "2026-11-12",
+   "last_modified": "2026-11-16",
    "vuln_status": "Deferred",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -1904,6 +6365,11 @@
      "url": "https://github.com/jaylfc/taOS/security/advisories/GHSA-47g9-fwwp-hrfp",
      "source": "security-advisories@github.com",
      "tags": []
+    },
+    {
+     "url": "https://github.com/jaylfc/taOS/security/advisories/GHSA-47g9-fwwp-hrfp",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
     }
    ],
    "related_agents": [],
@@ -1920,16 +6386,22 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-107372",
    "description": "The auth0-ai-js FGA retriever does not distinguish between authorization checks under different conditions when filtering documents during retrieval-augmented generation, resulting in documents denied by Auth0 FGA being included in the model context and used in the generated response.",
    "published": "2026-11-10",
-   "last_modified": "2026-11-10",
+   "last_modified": "2026-11-16",
    "vuln_status": "Awaiting Analysis",
    "cna": "psirt@okta.com",
-   "cvss": null,
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0"
+   },
    "cwe": [
     "CWE-863"
    ],
@@ -1965,16 +6437,22 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-108167",
    "description": "The auth0-ai-python FGA retriever does not distinguish between authorization checks under different users, relations, or conditions when filtering documents during retrieval-augmented generation, resulting in documents denied by Auth0 FGA being included in the model context and used in the generated response.",
    "published": "2026-11-10",
-   "last_modified": "2026-11-10",
+   "last_modified": "2026-11-16",
    "vuln_status": "Awaiting Analysis",
    "cna": "psirt@okta.com",
-   "cvss": null,
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0"
+   },
    "cwe": [
     "CWE-863"
    ],
@@ -2010,7 +6488,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-112136",
@@ -2116,7 +6594,7 @@
    "id": "CVE-2026-124848",
    "description": "Incorrect default file permissions in Kiro CLI (formerly Amazon Q Developer CLI) before version 2.27.0 on macOS and Linux might allow other local users on the same host to read a user's session transcripts and prompt history, including any credentials or source code they contain. The CLI created its local session storage files with permissions that made them readable by all local users.\n\n\n\nTo remediate this issue, users should upgrade to Kiro CLI version 2.27.0 or later and launch it once. Users who ran Amazon Q Developer CLI 1.16.0 through 1.19.x should also delete the ~/.aws/amazonq/.cli_bash_history file or restrict it to the owner.",
    "published": "2026-11-10",
-   "last_modified": "2026-11-12",
+   "last_modified": "2026-11-16",
    "vuln_status": "Awaiting Analysis",
    "cna": "ff89ba41-3aa1-4d27-914a-91399e9639e5",
    "cvss": {
@@ -2176,7 +6654,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-16"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-125320",
@@ -2742,10 +7220,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -2834,7 +7312,7 @@
      "product": "GitHub Copilot",
      "versions_affected": null,
      "fixed_in": null,
-     "product_id": "github-copilot"
+     "product_id": null
     }
    ],
    "category": "product",
@@ -3874,10 +8352,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -4371,10 +8849,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "autogen:AutoGen"
+     "autogen:microsoft:autogen"
     ]
    },
    "status": "candidate",
@@ -4844,10 +9322,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "dify:Dify"
+     "dify:langgenius:dify"
     ]
    },
    "status": "candidate",
@@ -5286,10 +9764,10 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:name"
+     "A:cpe"
     ],
     "terms": [
-     "langchain:LangChain"
+     "langchain:langchain:langchain"
     ]
    },
    "status": "candidate",
@@ -16208,6 +20686,69 @@
    "retrieved_on": "2026-10-25"
   },
   {
+   "id": "CVE-2026-105731",
+   "description": "Use of uninitialized resource in Microsoft Graphics Component allows an authorized attacker to disclose information locally.",
+   "published": "2026-10-13",
+   "last_modified": "2026-11-18",
+   "vuln_status": "Analyzed",
+   "cna": "secure@microsoft.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "source": "secure@microsoft.com"
+   },
+   "cwe": [
+    "CWE-908"
+   ],
+   "products": [
+    {
+     "vendor": "microsoft",
+     "product": "365_copilot",
+     "versions_affected": "< 16.0.20430.20000",
+     "fixed_in": "16.0.20430.20000",
+     "product_id": "m365-copilot"
+    }
+   ],
+   "category": "product",
+   "surface": [
+    "exfiltration"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "fixed",
+    "version": "16.0.20430.20000",
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105731",
+     "source": "secure@microsoft.com",
+     "tags": [
+      "Vendor Advisory"
+     ]
+    }
+   ],
+   "related_agents": [
+    "microsoft-microsoft-365-copilot-for-government"
+   ],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "A:cpe"
+    ],
+    "terms": [
+     "m365-copilot:microsoft:365_copilot"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "CVE-2026-110202",
    "description": "Roo Code through 3.54.0 contains a command approval bypass vulnerability in getCommandDecision() that allows attackers to auto-approve denied shell commands by prefixing them with a bare >& redirect. Attackers using indirect prompt injection can make the allowlist match a redirect target like echo while the shell runs the denied command on the developer machine.",
    "published": "2026-10-13",
@@ -20083,7 +24624,7 @@
    "id": "CVE-2026-103663",
    "description": "Ollama is vulnerable to path traversal in the `/api/pull` endpoint due to insufficient validation of layer digests by the `digestToPath` function. An unauthenticated remote attacker can specify a path traversal sequence as a layer digest, causing a malicious binary to be written outside the model store. \n\nCritically if the server process has write access to `/usr/lib/ollama` (the default in most Ollama Docker images), an attacker can write the malicious file to that directory. On the next server restart, the file is loaded and executed, resulting in remote code execution as root.\n\n\nThis issue was fixed in version 0.35.0.",
    "published": "2026-10-08",
-   "last_modified": "2026-10-08",
+   "last_modified": "2026-11-17",
    "vuln_status": "Awaiting Analysis",
    "cna": "cvd@cert.pl",
    "cvss": {
@@ -20134,17 +24675,17 @@
    "related_incidents": [],
    "match": {
     "tests": [
-     "A:cpe"
+     "A:name"
     ],
     "terms": [
-     "ollama:ollama:ollama"
+     "ollama:Ollama"
     ]
    },
    "status": "candidate",
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-107802",
@@ -23650,7 +28191,7 @@
    "id": "CVE-2026-105755",
    "description": "vLLM is an inference and serving engine for large language models. Prior to 0.30.0, flash late-interaction scoring at the /score and /rerank endpoints derives each worker's query_key value from the caller-controlled X-Request-Id header. A concurrent request that reuses a victim's identifier can overwrite the cached query embedding so the victim's documents are scored against the attacker's query, and shared use counters can also cause a late-interaction cache-miss error. This issue is fixed in version 0.30.0.",
    "published": "2026-10-05",
-   "last_modified": "2026-10-08",
+   "last_modified": "2026-11-18",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -23730,7 +28271,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-105756",
@@ -25694,7 +30235,7 @@
    "id": "CVE-2026-100868",
    "description": "Penpot before 2.18.0 binds the MCP server plugin WebSocket bridge to all network interfaces without authentication in single-user mode. Unauthenticated attackers on adjacent networks can connect to the WebSocket port to impersonate the Penpot browser plugin, intercept task payloads, and return forged results to the MCP client.",
    "published": "2026-09-27",
-   "last_modified": "2026-10-08",
+   "last_modified": "2026-11-20",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -25770,7 +30311,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-101057",
@@ -43492,7 +48033,7 @@
    "id": "CVE-2026-81315",
    "description": "Origin Validation Error vulnerability in ash-project ash_ai allows a malicious web page to bypass the MCP server's DNS-rebinding protection and issue cross-site requests to a user's local MCP server with that user's actor.\n\nIn AshAi.Mcp.Server, with the default allowed_origins: nil, origin_allowed?/3 accepts an origin when uri.host == conn.host and the forwarded scheme is https. Both values are attacker-controlled: conn.host comes from the Host header and the scheme is read from the raw x-forwarded-proto header with no trusted-proxy check. Under DNS rebinding the browser sends the attacker's origin and a matching host, and page JavaScript may set X-Forwarded-Proto: https, so the check passes with no TLS or proxy involved. The fix trusts only localhost origins by default; other origins require an explicit allowed_origins allowlist.\n\nThis issue affects ash_ai: from 0.8.0 before 1.0.0.",
    "published": "2026-08-31",
-   "last_modified": "2026-09-01",
+   "last_modified": "2026-11-19",
    "vuln_status": "Deferred",
    "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
    "cvss": {
@@ -43526,6 +48067,11 @@
      "tags": []
     },
     {
+     "url": "https://github.com/ash-project/ash_ai/commit/c94f0b17fbe252f68755ba512678586164ba6139",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
      "url": "https://github.com/ash-project/ash_ai/security/advisories/GHSA-c92r-f3rr-q49h",
      "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
      "tags": []
@@ -43555,7 +48101,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-82217",
@@ -43614,6 +48160,83 @@
    "reviewer": null,
    "checked_on": null,
    "retrieved_on": "2026-10-25"
+  },
+  {
+   "id": "CVE-2026-82580",
+   "description": "Generation of Error Message Containing Sensitive Information vulnerability in ash-project ash_ai discloses internal error text to chat users.\n\nIn AshAi.ToolLoop and AshAi.Tools, an exception raised while executing a tool was serialized verbatim with Exception.message/1 into the tool-result content. That content is appended to the conversation, emitted as a {:tool_result, ...} stream event, and sent back to the model, which typically relays it to the user. No filtering happened first, so anything raised inside a tool callback or lifecycle hook (database constraint messages, adapter errors, query fragments, policy or validation internals) was echoed as-is. A chat user who can steer tool arguments into a raising code path receives the raw internal text. The fix routes raised tool errors through the same safe formatter used for other tool errors.\n\nThis issue affects ash_ai: from 0.6.0 before 1.0.0.",
+   "published": "2026-08-31",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db"
+   },
+   "cwe": [
+    "CWE-209"
+   ],
+   "products": [],
+   "category": "unclassified",
+   "surface": [
+    "tool_execution",
+    "exfiltration"
+   ],
+   "kev": null,
+   "fix": {
+    "status": "unknown",
+    "version": null,
+    "url": null
+   },
+   "references": [
+    {
+     "url": "https://cna.erlef.org/cves/CVE-2026-82580.html",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ash-project/ash_ai/commit/bc2122f78fca6c11d8ec2b9ac53148ec17476460",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ash-project/ash_ai/commit/c68dfbdb220426dc015b58379e95bde8e9f0995a",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ash-project/ash_ai/security/advisories/GHSA-5747-6mpw-6m9c",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://osv.dev/vulnerability/EEF-CVE-2026-82580",
+     "source": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+     "tags": []
+    },
+    {
+     "url": "https://github.com/ash-project/ash_ai/security/advisories/GHSA-5747-6mpw-6m9c",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": []
+    }
+   ],
+   "related_agents": [],
+   "related_incidents": [],
+   "match": {
+    "tests": [
+     "B:vocabulary"
+    ],
+    "terms": [
+     "tool call"
+    ]
+   },
+   "status": "candidate",
+   "note": null,
+   "reviewer": null,
+   "checked_on": null,
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-18545",
@@ -44973,7 +49596,7 @@
    "id": "CVE-2026-81096",
    "description": "ToolUniverse ran caller-supplied Python inside a sandbox that could be escaped, on a server that required no authentication. The executor behind the python_code_executor tool, in python_executor_tool.py, inspected the submitted source for a denied list of attribute names and calls but left the attribute-lookup builtins available and did not stop a dunder attribute reached through a string lookup or through a module already permitted, so a caller could walk from a literal's class to its base and enumerate subclasses to obtain a reference to the process and subprocess modules. A per-call argument also let the caller widen the import allow-list before the inspection ran. The HTTP and MCP servers in http_api_server.py and smcp_server.py bound to every interface with debugging enabled and no authentication, so any caller able to reach the port executed code as the server process. Version 1.3.0 adds bearer-token authentication, defaults the bind address to loopback, and hardens the attribute checks.",
    "published": "2026-08-27",
-   "last_modified": "2026-09-23",
+   "last_modified": "2026-11-20",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -45034,13 +49657,13 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-81098",
    "description": "The Telnyx MCP server exposed its HTTP transport on every interface and did not require a caller credential. packages/mcp-server/src/http.ts served MCP on the root path with a listener bound to all interfaces and parsed the caller's authentication headers in a mode that did not fail when they were absent, so a request without any credential completed initialisation and dispatched tools. Dispatch forwarded the server's own stored credentials, the Telnyx API key and client secret together with the code-execution key, to the upstream endpoint, so an unauthenticated caller able to reach the port acted with them. The current code defaults the host to loopback, requires a server API key, and enforces it in middleware.",
    "published": "2026-08-27",
-   "last_modified": "2026-09-24",
+   "last_modified": "2026-11-20",
    "vuln_status": "Deferred",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
@@ -45102,7 +49725,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-81099",
@@ -47503,9 +52126,9 @@
   },
   {
    "id": "CVE-2026-64849",
-   "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Starting in 3.3.0 and prior to 3.15.0, the unauthenticated POST /api/2.0/mlflow/webhooks/{id}/test endpoint calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and response_body. This issue is fixed in version 3.15.0.",
+   "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Starting in 3.3.0 and prior to 3.15.0, the POST /api/2.0/mlflow/webhooks/{id}/test endpoint (accessible without credentials when server authentication is not enabled) calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and response_body. The unauthenticated attack scenario described here applies to deployments without authentication. With MLflow’s built-in basic authentication enabled, requests to this endpoint require valid credentials; this issue does not itself bypass authentication. This issue is fixed in version 3.15.0.",
    "published": "2026-08-17",
-   "last_modified": "2026-10-26",
+   "last_modified": "2026-11-20",
    "vuln_status": "Analyzed",
    "cna": "security-advisories@github.com",
    "cvss": {
@@ -47529,6 +52152,7 @@
    ],
    "category": "unclassified",
    "surface": [
+    "credential_access",
     "auth_bypass",
     "ssrf"
    ],
@@ -47588,7 +52212,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-69146",
@@ -96294,8 +100918,8 @@
    "id": "CVE-2026-40217",
    "description": "LiteLLM through 2026-04-08 allows remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
    "published": "2026-04-10",
-   "last_modified": "2026-10-26",
-   "vuln_status": "Modified",
+   "last_modified": "2026-11-19",
+   "vuln_status": "Analyzed",
    "cna": "cve@mitre.org",
    "cvss": {
     "version": "3.1",
@@ -96312,46 +100936,88 @@
     {
      "vendor": "litellm",
      "product": "litellm",
-     "versions_affected": "<= 2026-04-08",
-     "fixed_in": null,
+     "versions_affected": ">= 1.81.8 < 1.83.10",
+     "fixed_in": "1.83.10",
      "product_id": "litellm"
+    },
+    {
+     "vendor": "redhat",
+     "product": "ansible_automation_platform",
+     "versions_affected": ">= 2.0 < 2.6-9",
+     "fixed_in": "2.6-9",
+     "product_id": null
+    },
+    {
+     "vendor": "redhat",
+     "product": "openshift_ai",
+     "versions_affected": ">= 3.3 < 3.3.4",
+     "fixed_in": "3.3.4",
+     "product_id": null
+    },
+    {
+     "vendor": "redhat",
+     "product": "openshift_lightspeed",
+     "versions_affected": null,
+     "fixed_in": null,
+     "product_id": null
     }
    ],
    "category": "infrastructure",
    "surface": [
     "code_execution"
    ],
-   "kev": null,
+   "kev": {
+    "added": "2026-11-18",
+    "due": "2026-12-02",
+    "ransomware": "Unknown"
+   },
    "fix": {
-    "status": "unknown",
-    "version": null,
+    "status": "fixed",
+    "version": "1.83.10",
     "url": null
    },
    "references": [
     {
      "url": "https://access.redhat.com/errata/RHSA-2026:24866",
      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     },
     {
      "url": "https://access.redhat.com/errata/RHSA-2026:30056",
      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     },
     {
      "url": "https://access.redhat.com/security/cve/CVE-2026-40217",
      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     },
     {
      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2457301",
      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
     },
     {
      "url": "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-40217.json",
      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
-     "tags": []
+     "tags": [
+      "Third Party Advisory"
+     ]
+    },
+    {
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-40217",
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "tags": [
+      "US Government Resource"
+     ]
     }
    ],
    "related_agents": [],
@@ -96368,7 +101034,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-11-02"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2026-40252",
@@ -117054,10 +121720,10 @@
   },
   {
    "id": "CVE-2025-34267",
-   "description": "Flowise v3.0.1 < 3.0.8 and all versions after with 'ALLOW_BUILTIN_DEP' enabled contain an authenticated remote code execution vulnerability and node VM sandbox escape due to insecure use of integrated modules (Puppeteer and Playwright) within the nodevm execution environment. An authenticated attacker able to create or run a tool that leverages Puppeteer/Playwright can specify attacker-controlled browser binary paths and parameters. When the tool executes, the attacker-controlled executable/parameters are run on the host and circumvent the intended nodevm sandbox restrictions, resulting in execution of arbitrary code in the context of the host. This vulnerability was incorrectly assigned as a duplicate CVE-2025-26319 by the developers and should be considered distinct from that identifier.",
+   "description": "Flowise v3.0.1 < 3.0.8, and 3.0.8 < 3.1.3 with 'ALLOW_BUILTIN_DEP' enabled contain an authenticated remote code execution vulnerability and node VM sandbox escape due to insecure use of integrated modules (Puppeteer and Playwright) within the nodevm execution environment. An authenticated attacker able to create or run a tool that leverages Puppeteer/Playwright can specify attacker-controlled browser binary paths and parameters. When the tool executes, the attacker-controlled executable/parameters are run on the host and circumvent the intended nodevm sandbox restrictions, resulting in execution of arbitrary code in the context of the host. This vulnerability was incorrectly assigned as a duplicate CVE-2025-26319 by the developers and should be considered distinct from that identifier.",
    "published": "2025-10-14",
-   "last_modified": "2026-10-08",
-   "vuln_status": "Analyzed",
+   "last_modified": "2026-11-20",
+   "vuln_status": "Modified",
    "cna": "disclosure@vulncheck.com",
    "cvss": {
     "version": "4.0",
@@ -117127,7 +121793,7 @@
    "note": null,
    "reviewer": null,
    "checked_on": null,
-   "retrieved_on": "2026-10-25"
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "CVE-2025-36730",

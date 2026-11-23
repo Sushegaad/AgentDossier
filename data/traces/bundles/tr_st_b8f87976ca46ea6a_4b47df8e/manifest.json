@@ -1,0 +1,19 @@
+{
+ "agent": "res_b8f87976ca46ea6a",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_b8f87976ca46ea6a_4b47df8e",
+ "kind": "self_test",
+ "name": "AdStar",
+ "protocols": {
+  "ard": {
+   "checked_at": "2026-11-23T17:26:28Z",
+   "parser_version": "ard-0.91",
+   "sources": [
+    "https://adstar.ai/.well-known/ai-catalog.json"
+   ],
+   "status": "verified"
+  }
+ },
+ "slug": "adstar-ai-adstar"
+}

@@ -1,0 +1,22 @@
+{
+ "agent": "res_8a12de6974bb1171",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_8a12de6974bb1171_f5f04b96",
+ "kind": "self_test",
+ "name": "AdStar MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:adstar.ai:adstar:mcp",
+   "manifest_url": "https://adstar.ai/.well-known/ai-catalog.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "absent",
+   "warnings": [
+    "representativeQueries should contain 2-5 examples (entry will be hard to find by search)"
+   ]
+  }
+ },
+ "slug": "adstar-ai-adstar-mcp-server"
+}

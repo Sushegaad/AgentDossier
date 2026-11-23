@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.7,
+"adoption": 26.72,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -49,7 +49,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.7,
+"adoption": 26.72,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 3.0,
@@ -72,7 +72,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.7,
+"adoption": 26.72,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 3.0,
@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "VectifyAI/PageIndex"
 },
-"first_seen": "2026-11-16T14:41:23Z",
+"first_seen": "2026-11-23T17:17:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -138,47 +138,47 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:41:23Z",
+"last_seen": "2026-11-23T17:17:51Z",
 "license": "MIT",
 "name": "PageIndex",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-15T18:54:51Z",
-"headline": "PageIndex 0.7.0 — Lower Cost, Higher Accuracy than Vector RAG",
+"date": "2026-11-19T14:34:59Z",
+"headline": "PageIndex 0.7.4 — Lower Cost, Higher Accuracy than Vector RAG",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "- **Cheaper** than vector RAG: for both index and query.\n- **Faster**: trees are created from layout stats.\n- **Unified** SDK: vectorless RAG. **Local** or **cloud**, for index and chat.\n- Runs on your **Claude subscription**.\n\nIndex, to ch",
 "tag": "product_update",
-"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.7.0"
+"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.7.4"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-14T02:40:33Z",
-"headline": "PageIndex 0.6.0 — Lower Cost, Higher Accuracy than Vector RAG",
+"date": "2026-11-19T08:35:05Z",
+"headline": "PageIndex 0.7.3 — Lower Cost, Higher Accuracy than Vector RAG",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
 "summary": "- **Cheaper** than vector RAG: for both index and query.\n- **Faster**: trees are created from layout stats.\n- **Unified** SDK: vectorless RAG. **Local** or **cloud**, for index and chat.\n- Runs on your **Claude subscription**.\n\nIndex, to ch",
 "tag": "product_update",
-"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.6.0"
+"url": "https://github.com/VectifyAI/PageIndex/releases/tag/v0.7.3"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:53:57Z",
+"checked_at": "2026-11-23T17:29:00Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:56Z",
+"checked_at": "2026-11-23T17:28:59Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
 "mcp": {
-"checked_at": "2026-11-16T14:53:57Z",
+"checked_at": "2026-11-23T17:29:01Z",
 "parser_version": "mcp-2025-06-18",
 "status": "not_found"
 }
@@ -188,7 +188,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:11:57Z",
+"checked_at": "2026-11-23T17:41:19Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -196,19 +196,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-04-01T10:53:54Z",
-"github_forks": 3475,
+"github_forks": 3499,
 "github_language": "Python",
-"github_open_issues": 171,
-"github_pushed_at": "2026-11-15T21:52:28Z",
-"github_stars": 40452,
+"github_open_issues": 174,
+"github_pushed_at": "2026-11-21T09:27:39Z",
+"github_stars": 40761,
 "github_topic": "ai-agents",
 "homepage": "https://pageindex.ai"
 },
 "slug": "vectifyai-pageindex",
 "sources": [
 {
-"payload_hash": "9a6cbab9ed5aa292d55e646bb04f76cd7d4c2a42ddc3857e756a58e198ac23e6",
-"retrieved_at": "2026-11-16T14:41:23Z",
+"payload_hash": "155b36dfde8bfea7a22236b39c614c39a9f141f45a6faddf3842e36b74557f39",
+"retrieved_at": "2026-11-23T17:17:51Z",
 "system": "github",
 "url": "https://github.com/VectifyAI/PageIndex"
 }

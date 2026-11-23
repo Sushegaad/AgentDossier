@@ -26,7 +26,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 26.28,
+"adoption": 26.29,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -49,7 +49,7 @@
 },
 "data": {
 "components": {
-"adoption": 26.28,
+"adoption": 26.29,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 6.6,
@@ -72,7 +72,7 @@
 },
 "technology": {
 "components": {
-"adoption": 26.28,
+"adoption": 26.29,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 6.6,
@@ -97,7 +97,7 @@
 "external_ids": {
 "github": "mksglu/context-mode"
 },
-"first_seen": "2026-11-16T14:47:21Z",
+"first_seen": "2026-11-23T17:23:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -119,42 +119,42 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:47:21Z",
+"last_seen": "2026-11-23T17:23:10Z",
 "license": "Other",
 "name": "context-mode",
 "news": [
 {
 "cluster_size": 1,
-"date": "2026-11-14T15:54:28Z",
-"headline": "context-mode release v2.2.0",
+"date": "2026-11-22T18:19:09Z",
+"headline": "context-mode release v2.2.2",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Features\n- feat: OMP (oh-my-pi) is the 11th supported agent (ADR-0026, #1332)\n- feat: ADR-0023 omp row, PRD and TECH-SPEC 11 agents, 01-contracts and 12-plugins name OMP, intake reads OMP (OMP M8)\n- feat: docs/install/omp.md with OMP's",
+"summary": "### Fixes\n- fix: a Fake-IP DNS name in 198.18.0.0/15 passes the SSRF guard after a once-per-process .invalid probe; literals and all other ranges stay blocked (#1403)\n- fix: only an absolute missing cwd walks up to its nearest existing pare",
 "tag": "product_update",
-"url": "https://github.com/mksglu/context-mode/releases/tag/v2.2.0"
+"url": "https://github.com/mksglu/context-mode/releases/tag/v2.2.2"
 },
 {
 "cluster_size": 1,
-"date": "2026-11-12T15:38:16Z",
-"headline": "context-mode release v2.1.10",
+"date": "2026-11-17T17:11:43Z",
+"headline": "context-mode release v2.2.1",
 "kind": "vendor",
 "link_confidence": 1.0,
 "outlet": "GitHub releases",
-"summary": "### Fixes\n- fix(doctor): env line names the PATH node for ctx_execute, PATH node version read beside the checks (#1350)\n- fix(doctor): D5 bound scales with the node start, in-process hosts check shape only, env line names the host Bun (#135",
+"summary": "### Fixes\n- fix: omp read with a line range in the path is a bounded read, not replaced (#1392)\n- fix: recall skips rows and line units written after the latest compaction (#1394)\n- fix: SessionStart(compact) sends the state block once per",
 "tag": "product_update",
-"url": "https://github.com/mksglu/context-mode/releases/tag/v2.1.10"
+"url": "https://github.com/mksglu/context-mode/releases/tag/v2.2.1"
 }
 ],
 "news_checked": true,
 "protocols": {
 "a2a": {
-"checked_at": "2026-11-16T14:52:26Z",
+"checked_at": "2026-11-23T17:27:42Z",
 "parser_version": "a2a-0.3+1.0",
 "status": "not_found"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:25Z",
+"checked_at": "2026-11-23T17:27:42Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -162,7 +162,7 @@
 "evidence_url": "https://contextmode.ai",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-16T14:52:27Z",
+"checked_at": "2026-11-23T17:27:43Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -174,7 +174,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:12:11Z",
+"checked_at": "2026-11-23T17:41:31Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -182,19 +182,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-23T05:56:28Z",
-"github_forks": 2351,
+"github_forks": 2372,
 "github_language": "JavaScript",
-"github_open_issues": 13,
-"github_pushed_at": "2026-11-16T05:50:47Z",
-"github_stars": 34168,
+"github_open_issues": 11,
+"github_pushed_at": "2026-11-23T03:29:37Z",
+"github_stars": 34416,
 "github_topic": "mcp-server",
 "homepage": "https://contextmode.ai"
 },
 "slug": "mksglu-context-mode",
 "sources": [
 {
-"payload_hash": "f34688fd0cb2f70801315df09aadb471b17c21e7a00e4711b74bed2a125caebe",
-"retrieved_at": "2026-11-16T14:47:21Z",
+"payload_hash": "21ccb4a24b81da53ffdcedf96e8707a4d7aa966fc44f622b35c472d945ac4b55",
+"retrieved_at": "2026-11-23T17:23:10Z",
 "system": "github",
 "url": "https://github.com/mksglu/context-mode"
 }

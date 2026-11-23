@@ -23,16 +23,16 @@
 "fedramp_status": "FedRAMP Authorized",
 "impact_level": "LI-SaaS"
 },
-"display": "FedRAMP LI-SaaS: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-16)",
+"display": "FedRAMP LI-SaaS: FedRAMP Authorized (FedRAMP Marketplace, 2026-11-23)",
 "evidence_url": "https://marketplace.fedramp.gov/products/FR1812058188",
 "framework": "fedramp",
 "issued": "2018-10-04",
 "issuer": "Agency / 3PAO Coalfire Systems, Inc.",
 "match_confidence": 0.933,
-"next_check": "2026-11-23",
+"next_check": "2026-11-30",
 "payload_hash": "1a6ddb44e526a42b57a26d5b8c719ca6a836347034e9fccd25550c59d0f34976",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:55:18Z",
+"retrieved_at": "2026-11-23T17:30:16Z",
 "review_reason": "entity 1.00, offering 0.85",
 "reviewer": null,
 "scope": "product",
@@ -49,16 +49,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "Vendor-claimed (vendor page, 2026-11-16)",
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://github.com/security",
 "framework": "gdpr",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "a2759ffa6a82119497039cd201101360218ea11233127c981e3376e37229fe85",
+"next_check": "2026-11-30",
+"payload_hash": "83d0bc05ff6c5f633ff8dae8e6e942188f1b38f115e68d1713e8abd7bc14e23b",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:59:17Z",
+"retrieved_at": "2026-11-23T17:33:25Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -75,16 +75,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "NIST AI RMF aligned: Aligned with NIST AI RMF / NIST CSF 2.0 (vendor statement, 2026-11-16)",
+"display": "NIST AI RMF aligned: Aligned with NIST AI RMF / NIST CSF 2.0 (vendor statement, 2026-11-23)",
 "evidence_url": "https://github.com/trust-center",
 "framework": "nist_ai_rmf",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "8d295a198647b44624cf6cfc22da18186f89f7a0694f15fa6ceebed505f96737",
+"next_check": "2026-11-30",
+"payload_hash": "44a470e73c9b700556c115b98a991c3d9afeb3c516937acea0341ca57dda5835",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:59:17Z",
+"retrieved_at": "2026-11-23T17:33:25Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -101,16 +101,16 @@
 "detail": {
 "pages_visited": 6
 },
-"display": "Vendor-claimed (vendor page, 2026-11-16)",
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://github.com/security",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "a2759ffa6a82119497039cd201101360218ea11233127c981e3376e37229fe85",
+"next_check": "2026-11-30",
+"payload_hash": "83d0bc05ff6c5f633ff8dae8e6e942188f1b38f115e68d1713e8abd7bc14e23b",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:59:17Z",
+"retrieved_at": "2026-11-23T17:33:25Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -127,7 +127,7 @@
 "domains": {
 "technology": {
 "components": {
-"adoption": 26.3,
+"adoption": 26.31,
 "docs": 7.0,
 "domain_fit": 56.4,
 "ecosystem": 4.5,
@@ -150,7 +150,7 @@
 "external_ids": {
 "github": "github/github-mcp-server"
 },
-"first_seen": "2026-11-16T14:47:21Z",
+"first_seen": "2026-11-23T17:23:10Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -179,10 +179,21 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:47:21Z",
+"last_seen": "2026-11-23T17:23:10Z",
 "license": "MIT",
 "name": "github-mcp-server",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-16T23:30:46Z",
+"headline": "github-mcp-server: GitHub MCP Server 2.2.0",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## 2.2.0 \"The one with Skills\"\r\n\r\n## What's Changed\r\n* fix: return non-nil empty completion results by @omgitsads in https://github.com/github/github-mcp-server/pull/3665\r\n* Avoid overflow in validation error capacity by @omgitsads in https",
+"tag": "product_update",
+"url": "https://github.com/github/github-mcp-server/releases/tag/v2.2.0"
+},
 {
 "cluster_size": 1,
 "date": "2026-11-03T11:11:41Z",
@@ -193,17 +204,6 @@
 "summary": "## What's Changed\r\n* build(deps-dev): bump @types/node from 26.6.4 to 26.6.5 in /ui by @dependabot[bot] in https://github.com/github/github-mcp-server/pull/3516\r\n* docs: fix broken MCP SDKs link in host-integration.md by @muba76ma in https:",
 "tag": "product_update",
 "url": "https://github.com/github/github-mcp-server/releases/tag/v2.1.0"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-21T09:52:29Z",
-"headline": "github-mcp-server: GitHub MCP Server 2.0.3",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "## What's Changed\r\n* build(deps): bump @modelcontextprotocol/client from 2.2.0 to 2.3.1 in /ui by @dependabot[bot] in https://github.com/github/github-mcp-server/pull/3462\r\n* build(deps-dev): bump @vitejs/plugin-react from 6.1.1 to 6.1.2 in",
-"tag": "product_update",
-"url": "https://github.com/github/github-mcp-server/releases/tag/v2.0.3"
 }
 ],
 "news_checked": true,
@@ -228,7 +228,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:12:09Z",
+"checked_at": "2026-11-23T17:41:29Z",
 "cves": 1,
 "source": "nvd",
 "tier": 1
@@ -236,19 +236,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2025-03-04T16:42:04Z",
-"github_forks": 5360,
+"github_forks": 5413,
 "github_language": "Go",
-"github_open_issues": 458,
-"github_pushed_at": "2026-11-16T13:45:56Z",
-"github_stars": 34523,
+"github_open_issues": 461,
+"github_pushed_at": "2026-11-21T08:39:12Z",
+"github_stars": 34692,
 "github_topic": "mcp-server",
 "homepage": null
 },
 "slug": "github-github-mcp-server",
 "sources": [
 {
-"payload_hash": "f34688fd0cb2f70801315df09aadb471b17c21e7a00e4711b74bed2a125caebe",
-"retrieved_at": "2026-11-16T14:47:21Z",
+"payload_hash": "21ccb4a24b81da53ffdcedf96e8707a4d7aa966fc44f622b35c472d945ac4b55",
+"retrieved_at": "2026-11-23T17:23:10Z",
 "system": "github",
 "url": "https://github.com/github/github-mcp-server"
 }

@@ -1,0 +1,19 @@
+{
+ "agent": "res_c18a6c08e0e2d27d",
+ "date": "2026-11-23",
+ "harness_version": "probe-1.0",
+ "id": "tr_st_c18a6c08e0e2d27d_1958bd79",
+ "kind": "self_test",
+ "name": "Achromat Machine Operational Memory MCP server",
+ "protocols": {
+  "ard": {
+   "identifier": "urn:air:achromat.ai:server:achromat-mom-mcp",
+   "manifest_url": "https://achromat.ai/.well-known/ard.json",
+   "media_type": "application/mcp-server-card+json",
+   "parser_version": "ard-0.91",
+   "status": "verified",
+   "trust_manifest": "present-binding-ok"
+  }
+ },
+ "slug": "achromat-ai-achromat-machine-operational-memory-mcp-server"
+}

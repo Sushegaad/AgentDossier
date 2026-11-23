@@ -24,7 +24,7 @@
 "domains": {
 "business": {
 "components": {
-"adoption": 28.66,
+"adoption": 28.71,
 "docs": 7.0,
 "domain_fit": 34.0,
 "ecosystem": 9.6,
@@ -47,7 +47,7 @@
 },
 "technology": {
 "components": {
-"adoption": 28.66,
+"adoption": 28.71,
 "docs": 7.0,
 "domain_fit": 81.0,
 "ecosystem": 9.6,
@@ -72,7 +72,7 @@
 "external_ids": {
 "github": "cheaper-inference/OmniRoute"
 },
-"first_seen": "2026-11-16T14:41:23Z",
+"first_seen": "2026-11-23T17:17:51Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -113,13 +113,24 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:49:32Z",
+"last_seen": "2026-11-23T17:25:25Z",
 "license": "MIT",
 "merged_ids": [
 "res_446442540ccca8ee"
 ],
 "name": "OmniRoute",
 "news": [
+{
+"cluster_size": 1,
+"date": "2026-11-17T14:04:45Z",
+"headline": "OmniRoute release v3.8.54",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "## OmniRoute v3.8.54\n\n- **Providers:** official \"Sign in with ChatGPT\" provider (`chatgpt`, PKCE + live model discovery); MiniMax Code (managed gateway + dashboard device-code sign-in); RenderHour (images, video, speech); MegaBrain (dual au",
+"tag": "product_update",
+"url": "https://github.com/cheaper-inference/OmniRoute/releases/tag/v3.8.54"
+},
 {
 "cluster_size": 1,
 "date": "2026-11-06T10:53:35Z",
@@ -130,17 +141,6 @@
 "summary": "# OmniRoute v3.8.53\n\n**1,189 documented changes** from 1,162 commits in the cycle, with **222 people** contributing. Thank you all.\n\n📄 **Complete release notes** (every entry, full description and credit): attached below as `CHANGELOG-v3.8.",
 "tag": "product_update",
 "url": "https://github.com/cheaper-inference/OmniRoute/releases/tag/v3.8.53"
-},
-{
-"cluster_size": 1,
-"date": "2026-10-19T20:02:45Z",
-"headline": "OmniRoute release v3.8.52",
-"kind": "vendor",
-"link_confidence": 1.0,
-"outlet": "GitHub releases",
-"summary": "# OmniRoute v3.8.52\n\n**1,442 documented changes** — 135 features, 1,112 fixes and 195 maintenance entries from 1,386 commits in the cycle, with **306 external contributors**. Thank you all.\n\n📄 **Complete release notes** (every entry, full d",
-"tag": "product_update",
-"url": "https://github.com/cheaper-inference/OmniRoute/releases/tag/v3.8.52"
 }
 ],
 "news_checked": true,
@@ -149,14 +149,14 @@
 "evidence_url": "https://omniroute.online",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-16T14:53:49Z",
+"checked_at": "2026-11-23T17:28:53Z",
 "status": "not_found"
 },
 "source": "self_description",
 "status": "claimed"
 },
 "ard": {
-"checked_at": "2026-11-16T14:53:47Z",
+"checked_at": "2026-11-23T17:28:52Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -164,7 +164,7 @@
 "evidence_url": "https://omniroute.online",
 "note": "named in the resource's own tags",
 "probe": {
-"checked_at": "2026-11-16T14:53:49Z",
+"checked_at": "2026-11-23T17:28:54Z",
 "status": "not_found"
 },
 "source": "self_description",
@@ -176,7 +176,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:11:22Z",
+"checked_at": "2026-11-23T17:40:48Z",
 "cves": 3,
 "source": "nvd",
 "tier": 1
@@ -184,19 +184,19 @@
 "signals": {
 "github_archived": false,
 "github_created_at": "2026-02-13T12:38:31Z",
-"github_forks": 13490,
+"github_forks": 13923,
 "github_language": "TypeScript",
-"github_open_issues": 622,
-"github_pushed_at": "2026-11-16T13:50:39Z",
-"github_stars": 87973,
-"github_topic": "ai-agents",
+"github_open_issues": 864,
+"github_pushed_at": "2026-11-23T16:54:10Z",
+"github_stars": 89806,
+"github_topic": "a2a",
 "homepage": "https://omniroute.online"
 },
 "slug": "cheaper-inference-omniroute",
 "sources": [
 {
-"payload_hash": "9a6cbab9ed5aa292d55e646bb04f76cd7d4c2a42ddc3857e756a58e198ac23e6",
-"retrieved_at": "2026-11-16T14:41:23Z",
+"payload_hash": "9d26b06de5908519d30ccda36ba9bc3fe5295e2a9f836b7a9476bb37ce066dfc",
+"retrieved_at": "2026-11-23T17:25:25Z",
 "system": "github",
 "url": "https://github.com/cheaper-inference/OmniRoute"
 }

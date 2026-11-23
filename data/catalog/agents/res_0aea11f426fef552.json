@@ -1,0 +1,245 @@
+{
+"canonical_url": "rocketride.ai",
+"capabilities": [],
+"category": "Open-source project",
+"classification": {
+"matched": {
+"business": [
+"document",
+"enterprise",
+"workflow"
+],
+"data": [
+"rag"
+],
+"technology": [
+"framework",
+"llm",
+"mcp",
+"orchestration",
+"programming",
+"test"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": false,
+"compliance": [],
+"deployment": "self-hosted",
+"description": "RocketRide is an open source AI meta-harness with the only enterprise-grade runtime built on C++. Build, test and publish durable agents that scale in production.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"business": {
+"components": {
+"adoption": 24.93,
+"docs": 7.0,
+"domain_fit": 71.3,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.713,
+"evidence_coverage": 0.944,
+"governance_credited": {},
+"profile": "general",
+"rank": null,
+"score": 74.2,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"data": {
+"components": {
+"adoption": 24.93,
+"docs": 7.0,
+"domain_fit": 34.0,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "data",
+"rank": null,
+"score": 72.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+},
+"technology": {
+"components": {
+"adoption": 24.93,
+"docs": 7.0,
+"domain_fit": 91.7,
+"ecosystem": 6.6,
+"governance": null,
+"health": 20.0,
+"trust": 20.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.917,
+"evidence_coverage": 1.0,
+"governance_credited": {},
+"profile": "technology",
+"rank": null,
+"score": 80.2,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"governance"
+]
+}
+},
+"external_ids": {
+"github": "rocketride-org/rocketride-server"
+},
+"first_seen": "2026-11-23T17:17:57Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_0aea11f426fef552",
+"identity": {
+"evidence": [
+"vendor_domain_product_page"
+],
+"rules_version": "identity-1.1",
+"tier": 2
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:23:10Z",
+"license": "MIT",
+"merged_ids": [
+"res_0aea11f426fef552"
+],
+"name": "rocketride-server",
+"news": [
+{
+"cluster_size": 1,
+"date": "2026-11-22T21:28:45Z",
+"headline": "rocketride-server: RocketRide Server v3.6.0 (prerelease)",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "_Automated prerelease from `develop` — **Server** v3.6.0._\n\n\n### Added\n- **builder**: `--cmake-config=Sanitize` (Linux only) builds the engine, its C++ test programs and the C++ nodes with ASan and UBSan in one build (#3338)\n- **ci**: an op",
+"tag": "product_update",
+"url": "https://github.com/rocketride-org/rocketride-server/releases/tag/server-v3.6.0-prerelease"
+},
+{
+"cluster_size": 1,
+"date": "2026-11-22T21:27:44Z",
+"headline": "rocketride-server: RocketRide TypeScript Client v1.6.0 (prerelease)",
+"kind": "vendor",
+"link_confidence": 1.0,
+"outlet": "GitHub releases",
+"summary": "_Automated prerelease from `develop` — **TypeScript Client** v1.6.0._\n\n\n### Added\n- **builder**: `--cmake-config=Sanitize` (Linux only) builds the engine, its C++ test programs and the C++ nodes with ASan and UBSan in one build (#3338)\n- **",
+"tag": "product_update",
+"url": "https://github.com/rocketride-org/rocketride-server/releases/tag/client-typescript-v1.6.0-prerelease"
+}
+],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"checked_at": "2026-11-23T17:29:09Z",
+"parser_version": "a2a-0.3+1.0",
+"status": "not_found"
+},
+"ard": {
+"checked_at": "2026-11-23T17:29:08Z",
+"parser_version": "ard-0.91",
+"status": "not_found"
+},
+"mcp": {
+"evidence_url": "https://rocketride.ai",
+"note": "named in the resource's own tags",
+"probe": {
+"checked_at": "2026-11-23T17:29:10Z",
+"status": "not_found"
+},
+"source": "self_description",
+"status": "claimed"
+}
+},
+"publisher_domain": "rocketride.ai",
+"resource_type": "mcp_server",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:42:12Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {
+"github_archived": false,
+"github_created_at": "2026-02-11T17:02:53Z",
+"github_forks": 8667,
+"github_language": "Python",
+"github_open_issues": 580,
+"github_pushed_at": "2026-11-23T17:10:16Z",
+"github_stars": 19992,
+"github_topic": "ai-agents",
+"homepage": "https://rocketride.ai"
+},
+"slug": "rocketride-org-rocketride-server",
+"sources": [
+{
+"payload_hash": "bae6e998b85a33287b7ab41e1646f304bbde3c74c3f21bc0fd80b49fb5d1ec98",
+"retrieved_at": "2026-11-23T17:17:57Z",
+"system": "github",
+"url": "https://github.com/rocketride-org/rocketride-server"
+}
+],
+"tags": [
+"agent-framework",
+"agent-harness",
+"agent-orchestration",
+"agentic-ai",
+"ai-agents",
+"ai-observability",
+"cpp",
+"document-processing",
+"llm",
+"llmops",
+"mcp",
+"mcp-server",
+"meta-harness",
+"model-context-protocol",
+"open-source",
+"rag",
+"self-hosted",
+"visual-programming",
+"vscode-extension",
+"workflow-engine"
+],
+"tenant": null,
+"traces": [],
+"trust": {
+"compliance": 5,
+"identity": 2,
+"issues": 1,
+"protocols": 3,
+"security": 1,
+"traces": 5,
+"vendor_compliance": null
+},
+"url": "https://rocketride.ai",
+"vendor": "rocketride-org"
+}

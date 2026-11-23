@@ -1,13 +1,13 @@
 {
   "version": "incident-source-check-1.0",
-  "checked_on": "2026-11-16",
-  "incidents_checked": 25,
-  "sources_checked": 40,
+  "checked_on": "2026-11-23",
+  "incidents_checked": 26,
+  "sources_checked": 41,
   "summary": {
-    "ok": 31,
+    "ok": 39,
     "moved": 0,
     "gone": 1,
-    "unverified": 8,
+    "unverified": 1,
     "error": 0
   },
   "needs_attention": [
@@ -84,9 +84,8 @@
       },
       {
         "url": "https://www.eweek.com/news/replit-ai-coding-assistant-failure/",
-        "status": "unverified",
-        "http": 403,
-        "error": "HTTP 403"
+        "status": "ok",
+        "http": 200
       }
     ],
     "TR-2026-010": [
@@ -104,15 +103,13 @@
     "TR-2026-011": [
       {
         "url": "https://www.securityweek.com/several-vulnerabilities-patched-in-ai-code-editor-cursor/",
-        "status": "unverified",
-        "http": 403,
-        "error": "HTTP 403"
+        "status": "ok",
+        "http": 200
       },
       {
         "url": "https://www.scworld.com/news/cursor-flaw-risks-rce-from-prompt-injections-on-mcp-server-researchers-say",
-        "status": "unverified",
-        "http": 403,
-        "error": "HTTP 403"
+        "status": "ok",
+        "http": 200
       }
     ],
     "TR-2026-012": [
@@ -130,17 +127,15 @@
       },
       {
         "url": "https://www.techrepublic.com/article/news-google-gemini-indirect-prompt-injection-attack/",
-        "status": "unverified",
-        "http": 403,
-        "error": "HTTP 403"
+        "status": "ok",
+        "http": 200
       }
     ],
     "TR-2026-015": [
       {
         "url": "https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack",
-        "status": "unverified",
-        "http": 403,
-        "error": "HTTP 403"
+        "status": "ok",
+        "http": 200
       },
       {
         "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
@@ -185,9 +180,8 @@
     "TR-2026-023": [
       {
         "url": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
-        "status": "unverified",
-        "http": 403,
-        "error": "HTTP 403"
+        "status": "ok",
+        "http": 200
       },
       {
         "url": "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents",
@@ -226,9 +220,8 @@
       },
       {
         "url": "https://cybersecuritynews.com/claude-code-opus-5-auto-mode-hijacked/",
-        "status": "unverified",
-        "http": 403,
-        "error": "HTTP 403"
+        "status": "ok",
+        "http": 202
       }
     ],
     "TR-2026-026": [
@@ -269,6 +262,13 @@
     "TR-2026-031": [
       {
         "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+        "status": "ok",
+        "http": 200
+      }
+    ],
+    "TR-2026-032": [
+      {
+        "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
         "status": "ok",
         "http": 200
       }

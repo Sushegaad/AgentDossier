@@ -1,0 +1,236 @@
+{
+"canonical_url": "achromat.ai/skill.md",
+"capabilities": [
+"CalibratePolicy",
+"RecallCompliantArguments"
+],
+"category": null,
+"classification": {
+"matched": {
+"finance": [
+"fintech"
+],
+"regulatory": [
+"compliance",
+"policy"
+],
+"supply_chain": [
+"industrial",
+"iot"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "Verified memory of blocked agent actions and their compliant fixes. Register an agent identity, recall the compliant version of a tool call before acting, and calibrate against live policy when nothing is recalled.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"finance": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 34.0,
+"ecosystem": 6.4,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 38.1,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"regulatory": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 6.4,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 42.5,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+},
+"supply_chain": {
+"components": {
+"adoption": null,
+"docs": 10.0,
+"domain_fit": 56.4,
+"ecosystem": 6.4,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.564,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "operations",
+"rank": null,
+"score": 40.3,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:achromat.ai:skill:achromat-mom"
+},
+"first_seen": "2026-11-23T17:26:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_7d35a07eabd096b0",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:26Z",
+"license": null,
+"merged_ids": [
+"res_454a721909762002"
+],
+"name": "Achromat Machine Operational Memory",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:achromat.ai:skill:achromat-mom",
+"manifest_url": "https://achromat.ai/.well-known/ard.json",
+"media_type": "application/agent-skills+md",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "achromat.ai",
+"representative_queries": [
+"check whether a tool call will be blocked by policy before running it",
+"find the compliant version of a blocked wire transfer",
+"learn from earlier policy blocks so my agent gets the call right the first time",
+"get verified safe arguments for an industrial robot command"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:52:15Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "achromat-ai-achromat-machine-operational-memory",
+"sources": [
+{
+"payload_hash": "b6458087b5d4617fd38d1fa49db71bfbeb9757022f55062fc17e8da4881b3306",
+"retrieved_at": "2026-11-23T17:26:26Z",
+"system": "ard",
+"url": "https://achromat.ai/.well-known/ard.json"
+}
+],
+"tags": [
+"agent-memory",
+"compliance",
+"compliance-provenance",
+"contractual-eligibility",
+"devsecops",
+"fintech",
+"industrial-iot",
+"policy"
+],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_7d35a07eabd096b0_25c205cf",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_7d35a07eabd096b0_25c205cf",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:de4651c4f895df62af1a633ff737303a903eab0ad140a236f2c2c92ee577e509",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Achromat Machine Operational Memory's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_7d35a07eabd096b0_25c205cf/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://achromat.ai/skill.md",
+"vendor": "achromat.ai"
+}

@@ -1,0 +1,161 @@
+{
+"canonical_url": "achromat.ai/api/v1/feed",
+"capabilities": [],
+"category": null,
+"classification": {
+"matched": {
+"regulatory": [
+"policy"
+]
+},
+"taxonomy_version": "sar-taxonomy-1.0"
+},
+"commercial": null,
+"compliance": [],
+"deployment": null,
+"description": "The newest approved lessons: each pairs a policy-blocked tool call with the compliant fix that was then allowed.",
+"disclaimer": "Reference implementation by Hemant Naik. Compliance information is compiled from the sources shown as of the date shown. It is not an assessment, certification, legal opinion or recommendation. Confirm current status with the vendor and the issuing body.",
+"domains": {
+"regulatory": {
+"components": {
+"adoption": null,
+"docs": 9.0,
+"domain_fit": 34.0,
+"ecosystem": 4.0,
+"governance": null,
+"health": null,
+"trust": 22.0
+},
+"components_version": "components-from-signals-1.0",
+"confidence": 0.34,
+"evidence_coverage": 0.6,
+"governance_credited": {},
+"profile": "regulated",
+"rank": null,
+"score": 36.0,
+"score_version": "sar-score-2.0",
+"source": "classifier",
+"unknown": [
+"adoption",
+"health",
+"governance"
+]
+}
+},
+"external_ids": {
+"ard": "urn:air:achromat.ai:feed:approved-lessons"
+},
+"first_seen": "2026-11-23T17:26:26Z",
+"governance": {
+"certification_disclaimer": true,
+"claims": [],
+"evidence_urls": []
+},
+"id": "res_cea9ad284a8ec68c",
+"identity": {
+"evidence": [
+"ard_trust_manifest_binding"
+],
+"rules_version": "identity-1.1",
+"tier": 1
+},
+"issues": {
+"advisories": 0,
+"cves": 0,
+"incidents": 0,
+"links": [],
+"regulator_actions": 0,
+"withdrawn_certificates": 0
+},
+"last_seen": "2026-11-23T17:26:26Z",
+"license": null,
+"name": "Achromat Machine Operational Memory approved lessons",
+"news": [],
+"news_checked": true,
+"protocols": {
+"a2a": {
+"status": "unknown"
+},
+"ard": {
+"identifier": "urn:air:achromat.ai:feed:approved-lessons",
+"manifest_url": "https://achromat.ai/.well-known/ard.json",
+"media_type": "application/json",
+"parser_version": "ard-0.91",
+"status": "verified",
+"trust_manifest": "present-binding-ok"
+},
+"mcp": {
+"status": "unknown"
+}
+},
+"publisher_domain": "achromat.ai",
+"representative_queries": [
+"show verified examples of blocked agent tool calls and their fixes",
+"browse approved compliance lessons for agent tool use"
+],
+"resource_type": "agent",
+"scope": "public",
+"security": {
+"advisories": 0,
+"checked_at": "2026-11-23T17:52:21Z",
+"cves": 0,
+"source": "nvd",
+"tier": 1
+},
+"signals": {},
+"slug": "achromat-ai-achromat-machine-operational-memory-approved-lessons",
+"sources": [
+{
+"payload_hash": "d675067f4bff52efccb66632178c0d2734480e2c3c306eb22d6fe886c93a5855",
+"retrieved_at": "2026-11-23T17:26:26Z",
+"system": "ard",
+"url": "https://achromat.ai/.well-known/ard.json"
+}
+],
+"tags": [],
+"tenant": null,
+"traces": [
+{
+"agent_version": null,
+"bundle": "bundles/tr_st_cea9ad284a8ec68c_1f0bf433",
+"checked_on": null,
+"date": "2026-11-23",
+"format": "bundle",
+"harness_version": "probe-1.0",
+"id": "tr_st_cea9ad284a8ec68c_1f0bf433",
+"kind": "self_test",
+"notes": "Produced automatically on every refresh; a new bundle is written only when the observation changes",
+"observed": {
+"actions": [
+"served Agentic Resource Discovery (ARD) document"
+],
+"approval": null,
+"egress": false,
+"entry": "GET on the publisher's well-known discovery paths",
+"outcome": "ARD verified",
+"refused": null,
+"secrets_touched": false
+},
+"reviewer": null,
+"scenario": "Fetch and validate the ARD manifest, A2A agent card and MCP server card at the publisher's well-known paths",
+"scope": "product",
+"sha256": "sha256:048488514aa86b214eb3a511f240c37da668a460e67a07875dbad6a5cdafef31",
+"source": "AgentDossier refresh",
+"tier": 1,
+"title": "Registry probe of Achromat Machine Operational Memory approved lessons's discovery endpoints",
+"url": "https://sushegaad.github.io/AgentDossier/traces/tr_st_cea9ad284a8ec68c_1f0bf433/",
+"vendor_response": null
+}
+],
+"trust": {
+"compliance": 5,
+"identity": 1,
+"issues": 1,
+"protocols": 1,
+"security": 1,
+"traces": 1,
+"vendor_compliance": null
+},
+"url": "https://achromat.ai/api/v1/feed",
+"vendor": "achromat.ai"
+}

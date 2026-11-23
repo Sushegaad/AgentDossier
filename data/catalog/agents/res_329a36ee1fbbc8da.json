@@ -23,16 +23,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "ISO 27001: Vendor-claimed (vendor page, 2026-11-16)",
+"display": "ISO 27001: Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://docs.ankra.ai/",
 "framework": "iso27001",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "03763c2cd04d4f2e5c74a5363dde5009837eb46acad3a478c2915ce3a5109aca",
+"next_check": "2026-11-30",
+"payload_hash": "fb80ff732a79b979dc2ea592774d74be4f933faf3588b828813dd6e0a09232f1",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:58:48Z",
+"retrieved_at": "2026-11-23T17:33:04Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -49,16 +49,16 @@
 "detail": {
 "pages_visited": 5
 },
-"display": "Vendor-claimed (vendor page, 2026-11-16)",
+"display": "Vendor-claimed (vendor page, 2026-11-23)",
 "evidence_url": "https://docs.ankra.ai/",
 "framework": "soc2",
 "issued": null,
 "issuer": null,
 "match_confidence": 1.0,
-"next_check": "2026-11-23",
-"payload_hash": "03763c2cd04d4f2e5c74a5363dde5009837eb46acad3a478c2915ce3a5109aca",
+"next_check": "2026-11-30",
+"payload_hash": "fb80ff732a79b979dc2ea592774d74be4f933faf3588b828813dd6e0a09232f1",
 "period_end": null,
-"retrieved_at": "2026-11-16T14:58:48Z",
+"retrieved_at": "2026-11-23T17:33:04Z",
 "review_reason": "framework named on the vendor's own page",
 "reviewer": null,
 "scope": "entity",
@@ -124,7 +124,7 @@
 "github": "ankraio/cursor-plugin",
 "mcp_registry": "ai.ankra/docs"
 },
-"first_seen": "2026-11-16T14:40:27Z",
+"first_seen": "2026-11-23T17:16:55Z",
 "governance": {
 "certification_disclaimer": true,
 "claims": [],
@@ -146,7 +146,7 @@
 "regulator_actions": 0,
 "withdrawn_certificates": 0
 },
-"last_seen": "2026-11-16T14:40:28Z",
+"last_seen": "2026-11-23T17:16:55Z",
 "license": null,
 "merged_ids": [
 "res_c8f97e3daa5d7a16"
@@ -157,7 +157,7 @@
 "protocols": {
 "a2a": {
 "card_url": "https://docs.ankra.ai/.well-known/agent-card.json",
-"checked_at": "2026-11-16T14:52:42Z",
+"checked_at": "2026-11-23T17:28:00Z",
 "errors": [
 "missing 'description'"
 ],
@@ -171,7 +171,7 @@
 "version": "1.0.0"
 },
 "ard": {
-"checked_at": "2026-11-16T14:52:39Z",
+"checked_at": "2026-11-23T17:27:58Z",
 "parser_version": "ard-0.91",
 "status": "not_found"
 },
@@ -194,7 +194,7 @@
 "scope": "public",
 "security": {
 "advisories": 0,
-"checked_at": "2026-11-16T15:09:33Z",
+"checked_at": "2026-11-23T17:39:42Z",
 "cves": 0,
 "source": "nvd",
 "tier": 1
@@ -211,14 +211,14 @@
 "slug": "ankra-ai-ankra-docs",
 "sources": [
 {
-"payload_hash": "429253434a0de11b675bd0e6e7a3d2a56e21efaa3d73c9e5e79a67cc0416c783",
-"retrieved_at": "2026-11-16T14:40:27Z",
+"payload_hash": "a7c60a8f79ee7c922d0879681b089382ce047bb6b93d2fbc0c0436132c091b3e",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ankra/docs"
 },
 {
-"payload_hash": "3ea03485333000fbbdbd7a5c68ce549574b2ffdb0828dac801ee7c8c5ce6d0a9",
-"retrieved_at": "2026-11-16T14:40:28Z",
+"payload_hash": "a7c60a8f79ee7c922d0879681b089382ce047bb6b93d2fbc0c0436132c091b3e",
+"retrieved_at": "2026-11-23T17:16:55Z",
 "system": "mcp_registry",
 "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.ankra/platform"
 }
